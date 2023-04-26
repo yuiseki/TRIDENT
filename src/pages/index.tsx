@@ -24,7 +24,7 @@ export default function Home() {
   >([
     {
       who: "assistant",
-      text: "Hello! I'm Trident. What kind of documentation are you looking for?",
+      text: "Hello! I'm Trident, an UN dedicated interactive document exploration and humanity assistance system. What kind of documentation are you looking for?",
     },
   ]);
   const [inputText, setInputText] = useState("");
