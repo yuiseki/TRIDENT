@@ -215,7 +215,7 @@ export default function Home() {
         >
           <textarea
             value={inputText}
-            placeholder="What is Vector tile?"
+            placeholder="How to build vector tile map?"
             onChange={(e) => setInputText(e.currentTarget.value)}
             rows={4}
             style={{
