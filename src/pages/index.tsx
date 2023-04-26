@@ -223,7 +223,7 @@ export default function Home() {
                       );
                     })}
                     {dialogueElement.docs && (
-                      <ul>
+                      <ul style={{ paddingLeft: "2em" }}>
                         {dialogueElement.docs?.map((doc, docIdx) => {
                           return (
                             <li
