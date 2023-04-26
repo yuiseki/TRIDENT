@@ -3,6 +3,14 @@ import { nextPostJson } from "@/common/nextPostJson";
 import Head from "next/head";
 import { useCallback, useState } from "react";
 
+type Doc = {
+  pageContent: string;
+  metadata: {
+    source: string;
+    title: string;
+  };
+};
+
 const sleep = (msec: number) =>
   new Promise((resolve) => setTimeout(resolve, msec));
 
@@ -19,7 +27,8 @@ export default function Home() {
     {
       who: string;
       text: string;
-      details?: string;
+      textEnd?: string;
+      docs?: Doc[][];
     }[]
   >([
     {
@@ -51,25 +60,23 @@ export default function Home() {
     await sleep(200);
 
     const res = await nextPostJson("/api/search", { query: newInputText });
-    const json = await res.json();
-    const text = json
-      .slice(0, 4)
-      .map((item: any) => {
-        return (
-          "- " + item[0].metadata.title + "\n    - " + item[0].metadata.source
-        );
-      })
-      .join("\n\n");
+    const json: Doc[][] = await res.json();
+    const docs = json
+      .filter(
+        (element: Doc[], index, self) =>
+          self.findIndex(
+            (e) => e[0].metadata.source === element[0].metadata.source
+          ) === index
+      )
+      .slice(0, 4);
 
     newDialogueListWithUserAndAssistantAndResponse = [
       ...newDialogueListWithUser,
       {
         who: "assistant",
-        text:
-          "Hmm, please wait...\n" +
-          "I found the following documents:\n\n" +
-          text +
-          "\n\nWould these be helpful?",
+        text: "Hmm, please wait...\n" + "I found the following documents:\n",
+        docs: docs,
+        textEnd: "\nWould these be helpful?",
       },
     ];
     setDialogueList(newDialogueListWithUserAndAssistantAndResponse);
@@ -206,6 +213,37 @@ export default function Home() {
                       return (
                         <div
                           key={`${dialogueIndex}-${rowIdx}`}
+                          style={{
+                            minHeight: "1em",
+                            marginLeft: row.startsWith(" ") ? "1em" : "0px",
+                          }}
+                        >
+                          {row}
+                        </div>
+                      );
+                    })}
+                    {dialogueElement.docs && (
+                      <ul>
+                        {dialogueElement.docs?.map((doc, docIdx) => {
+                          return (
+                            <li
+                              key={`${dialogueIndex}-${docIdx}`}
+                              style={{
+                                minHeight: "1em",
+                              }}
+                            >
+                              <a href={doc[0].metadata.source} target="_blank">
+                                {doc[0].metadata.title}
+                              </a>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    )}
+                    {dialogueElement.textEnd?.split("\n").map((row, rowIdx) => {
+                      return (
+                        <div
+                          key={`${dialogueIndex}-${rowIdx}-end`}
                           style={{
                             minHeight: "1em",
                             marginLeft: row.startsWith(" ") ? "1em" : "0px",
