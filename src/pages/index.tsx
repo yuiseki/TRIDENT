@@ -90,6 +90,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100vw",
+          height: "100vh",
+          backgroundColor: "rgba(0, 0, 0, 0.4)",
+        }}
+      ></div>
       <main
         style={{
           position: "relative",
@@ -100,6 +110,7 @@ export default function Home() {
           maxWidth: "1000px",
           minHeight: "100vh",
           margin: "auto",
+          zIndex: "1000",
         }}
       >
         <div
