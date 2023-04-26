@@ -97,7 +97,7 @@ export default function Home() {
           left: 0,
           width: "100vw",
           height: "100vh",
-          backgroundColor: "rgba(0, 0, 0, 0.4)",
+          backgroundColor: "rgba(0, 0, 0, 0.3)",
         }}
       ></div>
       <main
@@ -125,12 +125,17 @@ export default function Home() {
               <div
                 key={dialogueIndex}
                 style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "12px",
                   width: "100%",
                   padding: "14px",
-                  marginTop: "1em",
+                  marginTop: "20px",
+                  marginBottom: "30px",
                   border: "2px solid rgba(219, 219, 219, 0.5)",
+                  borderRadius: "2px",
                   boxShadow: " 0 2px 6px 0 rgba(219, 219, 219, 0.3)",
-                  backgroundColor: "rgba(255, 255, 255, 0.4)",
+                  backgroundColor: "rgba(255, 255, 255, 0.9)",
                 }}
               >
                 <div
@@ -191,11 +196,10 @@ export default function Home() {
                   </div>
                 </div>
                 <div>
-                  {" "}
                   <div
                     style={{
                       fontSize: "1.2em",
-                      paddingLeft: "66px",
+                      paddingLeft: "70px",
                     }}
                   >
                     {dialogueElement.text?.split("\n").map((row, rowIdx) => {
@@ -234,22 +238,22 @@ export default function Home() {
               color: "rgba(0, 0, 0, 0.8)",
               backgroundColor: "rgba(255, 255, 255, 0.9)",
               borderRadius: "2px",
-              border: "2px solid rgba(219, 219, 219, 0.8)",
-              boxShadow: "0 2px 6px 0 rgba(219, 219, 219, 0.3)",
+              border: "2px solid rgba(0, 158, 219, 0.8)",
+              boxShadow: "0 2px 6px 0 rgba(0, 158, 219, 0.3)",
               padding: "12px 8px",
               fontSize: "1.2em",
             }}
           />
           <input
             type="button"
-            value="submit"
+            value="Submit"
             onClick={submit}
             style={{
               color: "rgb(253, 254, 255)",
-              backgroundColor: "rgba(0, 0, 0, 0.8)",
-              border: "2px solid rgba(0, 0, 0, 0.8)",
+              backgroundColor: "rgba(0, 158, 219, 1)",
+              boxShadow: "0 2px 6px 0 rgba(0, 158, 219, 0.6)",
+              border: "2px solid rgba(0, 158, 219, 0.6)",
               borderRadius: "2px",
-              boxShadow: "0 2px 6px 0 rgba(0, 0, 0, 0.8)",
               display: "block",
               textAlign: "right",
               padding: "8px",
