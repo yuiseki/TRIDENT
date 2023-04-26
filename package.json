@@ -2,21 +2,29 @@
   "name": "trident-next",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "site:qiita.com:fetch": "node --loader ts-node/esm ./scripts/qiita.com/fetch_and_store.ts",
+    "site:qiita.com:test": "node --loader ts-node/esm ./scripts/qiita.com/test.ts"
   },
   "dependencies": {
     "@types/node": "18.16.1",
     "@types/react": "18.2.0",
     "@types/react-dom": "18.2.1",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.0.3",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.1",
+    "hnswlib-node": "^1.4.2",
+    "langchain": "^0.0.64",
     "next": "13.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "ts-node": "^10.9.1",
     "typescript": "5.0.4"
   }
 }
