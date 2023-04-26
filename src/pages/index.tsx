@@ -80,13 +80,12 @@ export default function Home() {
     <>
       <Head>
         <title>
-          TRIDENT - Interactive document search human assistance system
-          dedicated to the United Nations
+          TRIDENT - UN dedicated interactive document explorer humanity
+          assistant AGI
         </title>
         <meta
           name="description"
-          content="TRIDENT - Interactive document search human assistance system
-          dedicated to the United Nations"
+          content="TRIDENT - UN dedicated interactive document explorer humanity assistant AGI"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
