@@ -79,8 +79,15 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Trident - Poseidon&abos;s weapon</title>
-        <meta name="description" content="Trident - Poseidon's weapon" />
+        <title>
+          TRIDENT - Interactive document search human assistance system
+          dedicated to the United Nations
+        </title>
+        <meta
+          name="description"
+          content="TRIDENT - Interactive document search human assistance system
+          dedicated to the United Nations"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
