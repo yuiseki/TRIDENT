@@ -43,9 +43,7 @@ export default async function handler(
     const vectorStoreDirectory = path.resolve(
       `public/${site}/vector_stores/base`
     );
-    console.info(vectorStoreDirectory);
     try {
-      await fs.lstat(vectorStoreDirectory);
       const vectorStore = await HNSWLib.load(
         vectorStoreDirectory,
         new OpenAIEmbeddings()
