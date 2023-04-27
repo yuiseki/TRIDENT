@@ -39,7 +39,7 @@ export default async function handler(
   const finalResults: [Document, number][][] = [];
   const targetDomains = ["github.com", "qiita.com"];
 
-  for await (const targetDomain of targetDomains) {
+  for (const targetDomain of targetDomains) {
     const vectorStoreDirectory = path.resolve(
       `public/${targetDomain}/vector_stores/base`
     );
