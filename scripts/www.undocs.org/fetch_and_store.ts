@@ -89,7 +89,7 @@ for await (const url of urls.reverse()) {
     try {
       const alreadyFetched = (
         await fs.lstat(
-          `./public/www.undocs.org/pdfs/${resolutionId}/resolution.pdf`
+          `./tmp/www.undocs.org/en/pdfs/${resolutionId}/resolution.pdf`
         )
       ).isFile();
       if (alreadyFetched) {
@@ -130,11 +130,11 @@ for await (const url of urls.reverse()) {
     const content = await res.blob();
     const buffer = Buffer.from(await content.arrayBuffer());
 
-    await fs.mkdir(`./public/www.undocs.org/pdfs/${resolutionId}/`, {
+    await fs.mkdir(`./tmp/www.undocs.org/en/pdfs/${resolutionId}/`, {
       recursive: true,
     });
     await fs.writeFile(
-      `./public/www.undocs.org/pdfs/${resolutionId}/resolution.pdf`,
+      `./tmp/www.undocs.org/en/pdfs/${resolutionId}/resolution.pdf`,
       buffer
     );
   } catch (error) {
