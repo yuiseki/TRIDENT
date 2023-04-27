@@ -40,7 +40,8 @@ export default async function handler(
   const sites = ["github.com", "qiita.com"];
 
   for await (const site of sites) {
-    const vectorStoreDirectory = path.resolve(
+    const vectorStoreDirectory = path.join(
+      process.cwd(),
       "public",
       site,
       "vector_stores",
