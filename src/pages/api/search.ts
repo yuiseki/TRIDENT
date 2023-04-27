@@ -38,17 +38,15 @@ export default async function handler(
 
   //const finalResults: [Document, number][][] = [];
   const targetDomains = ["github.com", "qiita.com"];
+  const targetDomainsDirectories = targetDomains.map((targetDomain) => {
+    return path.resolve(`public/${targetDomain}/vector_stores/base`);
+  });
+  console.info(targetDomainsDirectories);
 
   const finalResults = await Promise.all(
-    targetDomains.map(async (targetDomain) => {
-      const vectorStoreDirectory = path.resolve(
-        `public/${targetDomain}/vector_stores/base`
-      );
+    targetDomainsDirectories.map(async (dir) => {
       try {
-        const vectorStore = await HNSWLib.load(
-          vectorStoreDirectory,
-          new OpenAIEmbeddings()
-        );
+        const vectorStore = await HNSWLib.load(dir, new OpenAIEmbeddings());
         const results = await vectorStore.similaritySearchWithScore(
           queryString,
           4
