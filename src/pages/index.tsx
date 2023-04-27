@@ -96,7 +96,7 @@ export default function Home() {
       </Head>
       <div
         style={{
-          position: "absolute",
+          position: "fixed",
           top: 0,
           left: 0,
           width: "100vw",
