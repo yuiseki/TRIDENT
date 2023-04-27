@@ -37,9 +37,10 @@ export default async function handler(
   }
 
   const finalResults: [Document, number][][] = [];
+  const sites = ["github.com", "qiita.com"];
 
   const vectorStoreDirectory = path.resolve(
-    `public/qiita.com/vector_stores/base`
+    `public/${sites[0]}/vector_stores/base`
   );
   try {
     const vectorStore = await HNSWLib.load(
