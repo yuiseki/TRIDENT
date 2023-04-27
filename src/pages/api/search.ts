@@ -3,6 +3,7 @@ import { OpenAIEmbeddings } from "langchain/embeddings/openai";
 import { HNSWLib } from "langchain/vectorstores/hnswlib";
 import path from "path";
 import { Document } from "langchain/dist/document";
+import fs from "node:fs/promises";
 
 export default async function handler(
   req: NextApiRequest,
@@ -45,12 +46,21 @@ export default async function handler(
       "vector_stores",
       "base"
     );
-    const vectorStore = await HNSWLib.load(
-      vectorStoreDirectory,
-      new OpenAIEmbeddings()
-    );
-    const results = await vectorStore.similaritySearchWithScore(queryString, 4);
-    finalResults.push(results);
+    console.info(vectorStoreDirectory);
+    try {
+      await fs.lstat(vectorStoreDirectory);
+      const vectorStore = await HNSWLib.load(
+        vectorStoreDirectory,
+        new OpenAIEmbeddings()
+      );
+      const results = await vectorStore.similaritySearchWithScore(
+        queryString,
+        4
+      );
+      finalResults.push(results);
+    } catch (error) {
+      console.error(error);
+    }
   }
 
   res.status(200).json(finalResults.flat().sort((a, b) => a[1] - b[1]));
