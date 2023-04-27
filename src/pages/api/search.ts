@@ -42,7 +42,6 @@ export default async function handler(
   for await (const site of sites) {
     const vectorStoreDirectory = path.join(
       process.cwd(),
-      "public",
       site,
       "vector_stores",
       "base"
