@@ -24,6 +24,7 @@
     "hnswlib-node": "^1.4.2",
     "langchain": "^0.0.64",
     "next": "13.3.1",
+    "pdf-parse": "^1.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "ts-node": "^10.9.1",

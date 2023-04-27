@@ -60,5 +60,16 @@ export default async function handler(
   const results2 = await vectorStore2.similaritySearchWithScore(queryString, 4);
   finalResults.push(results2);
 
+  // www.undocs.org
+  const vectorStoreSaveDir3 = path.resolve(
+    `public/www.undocs.org/vector_stores/base`
+  );
+  const vectorStore3 = await HNSWLib.load(
+    vectorStoreSaveDir3,
+    new OpenAIEmbeddings()
+  );
+  const results3 = await vectorStore3.similaritySearchWithScore(queryString, 4);
+  finalResults.push(results3);
+
   res.status(200).json(finalResults.flat().sort((a, b) => a[1] - b[1]));
 }

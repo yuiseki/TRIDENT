@@ -31,7 +31,7 @@ for await (const url of urls) {
       full_name: metadataJson.full_name,
       author: metadataJson.owner.login,
       authorUrl: metadataJson.owner.html_url,
-      title: metadataJson.full_name + " " + metadataJson.description,
+      title: metadataJson.full_name + "; " + metadataJson.description,
       license: metadataJson.license.name,
     };
 
