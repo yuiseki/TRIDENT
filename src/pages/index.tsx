@@ -61,15 +61,12 @@ export default function Home() {
 
     const res = await nextPostJson("/api/search", { query: newInputText });
     const json: Doc[][] = await res.json();
-    const docs = json
-      .filter(
-        (element: Doc[], index, self) =>
-          self.findIndex(
-            (e) => e[0].metadata.source === element[0].metadata.source
-          ) === index
-      )
-      .slice(0, 4);
-
+    const docs = json.filter(
+      (element: Doc[], index, self) =>
+        self.findIndex(
+          (e) => e[0].metadata.source === element[0].metadata.source
+        ) === index
+    );
     newDialogueListWithUserAndAssistantAndResponse = [
       ...newDialogueListWithUser,
       {
@@ -232,7 +229,9 @@ export default function Home() {
                               }}
                             >
                               <a href={doc[0].metadata.source} target="_blank">
-                                {doc[0].metadata.title}
+                                {doc[0].metadata.title
+                                  ? doc[0].metadata.title
+                                  : doc[0].metadata.source}
                               </a>
                             </li>
                           );

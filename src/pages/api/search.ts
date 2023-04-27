@@ -2,6 +2,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import { OpenAIEmbeddings } from "langchain/embeddings/openai";
 import { HNSWLib } from "langchain/vectorstores/hnswlib";
 import path from "path";
+import { Document } from "langchain/dist/document";
 
 export default async function handler(
   req: NextApiRequest,
@@ -34,14 +35,23 @@ export default async function handler(
     return;
   }
 
-  const directory = path.resolve(
-    "public",
-    "qiita.com",
-    "vector_stores",
-    "base"
-  );
-  const vectorStore = await HNSWLib.load(directory, new OpenAIEmbeddings());
+  const finalResults: [Document, number][][] = [];
+  const sites = ["github.com", "qiita.com"];
 
-  const results = await vectorStore.similaritySearchWithScore(queryString, 10);
-  res.status(200).json(results);
+  for await (const site of sites) {
+    const vectorStoreDirectory = path.resolve(
+      "public",
+      site,
+      "vector_stores",
+      "base"
+    );
+    const vectorStore = await HNSWLib.load(
+      vectorStoreDirectory,
+      new OpenAIEmbeddings()
+    );
+    const results = await vectorStore.similaritySearchWithScore(queryString, 4);
+    finalResults.push(results);
+  }
+
+  res.status(200).json(finalResults.flat().sort((a, b) => a[1] - b[1]));
 }
