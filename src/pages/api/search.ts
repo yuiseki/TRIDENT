@@ -37,20 +37,25 @@ export default async function handler(
   }
 
   const finalResults: [Document, number][][] = [];
-  const sites = ["github.com", "qiita.com"];
+  const targetDomains = ["github.com", "qiita.com"];
 
-  const vectorStoreDirectory = path.resolve(
-    `public/${sites[0]}/vector_stores/base`
-  );
-  try {
-    const vectorStore = await HNSWLib.load(
-      vectorStoreDirectory,
-      new OpenAIEmbeddings()
+  for await (const targetDomain of targetDomains) {
+    const vectorStoreDirectory = path.resolve(
+      `public/${targetDomain}/vector_stores/base`
     );
-    const results = await vectorStore.similaritySearchWithScore(queryString, 4);
-    finalResults.push(results);
-  } catch (error) {
-    console.error(error);
+    try {
+      const vectorStore = await HNSWLib.load(
+        vectorStoreDirectory,
+        new OpenAIEmbeddings()
+      );
+      const results = await vectorStore.similaritySearchWithScore(
+        queryString,
+        4
+      );
+      finalResults.push(results);
+    } catch (error) {
+      console.error(error);
+    }
   }
 
   res.status(200).json(finalResults.flat().sort((a, b) => a[1] - b[1]));
