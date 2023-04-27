@@ -36,29 +36,29 @@ export default async function handler(
     return;
   }
 
-  //const finalResults: [Document, number][][] = [];
-  const targetDomains = ["github.com", "qiita.com"];
-  const targetDomainsDirectories = targetDomains.map((targetDomain) => {
-    return path.resolve(`public/${targetDomain}/vector_stores/base`);
-  });
-  console.info(targetDomainsDirectories);
+  const finalResults: [Document, number][][] = [];
 
-  const finalResults = await Promise.all(
-    targetDomainsDirectories.map(async (dir) => {
-      try {
-        const vectorStore = await HNSWLib.load(dir, new OpenAIEmbeddings());
-        const results = await vectorStore.similaritySearchWithScore(
-          queryString,
-          4
-        );
-        return results;
-        //finalResults.push(results);
-      } catch (error) {
-        console.error(error);
-        return [];
-      }
-    })
+  // qiita.com
+  const vectorStoreSaveDir1 = path.resolve(
+    `public/qiita.com/vector_stores/base`
   );
+  const vectorStore1 = await HNSWLib.load(
+    vectorStoreSaveDir1,
+    new OpenAIEmbeddings()
+  );
+  const results1 = await vectorStore1.similaritySearchWithScore(queryString, 4);
+  finalResults.push(results1);
+
+  // github.com
+  const vectorStoreSaveDir2 = path.resolve(
+    `public/github.com/vector_stores/base`
+  );
+  const vectorStore2 = await HNSWLib.load(
+    vectorStoreSaveDir2,
+    new OpenAIEmbeddings()
+  );
+  const results2 = await vectorStore1.similaritySearchWithScore(queryString, 4);
+  finalResults.push(results2);
 
   res.status(200).json(finalResults.flat().sort((a, b) => a[1] - b[1]));
 }
