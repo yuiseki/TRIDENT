@@ -57,7 +57,7 @@ export default async function handler(
     vectorStoreSaveDir2,
     new OpenAIEmbeddings()
   );
-  const results2 = await vectorStore1.similaritySearchWithScore(queryString, 4);
+  const results2 = await vectorStore2.similaritySearchWithScore(queryString, 4);
   finalResults.push(results2);
 
   res.status(200).json(finalResults.flat().sort((a, b) => a[1] - b[1]));
