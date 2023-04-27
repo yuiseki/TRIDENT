@@ -36,27 +36,31 @@ export default async function handler(
     return;
   }
 
-  const finalResults: [Document, number][][] = [];
+  //const finalResults: [Document, number][][] = [];
   const targetDomains = ["github.com", "qiita.com"];
 
-  for (const targetDomain of targetDomains) {
-    const vectorStoreDirectory = path.resolve(
-      `public/${targetDomain}/vector_stores/base`
-    );
-    try {
-      const vectorStore = await HNSWLib.load(
-        vectorStoreDirectory,
-        new OpenAIEmbeddings()
+  const finalResults = await Promise.all(
+    targetDomains.map(async (targetDomain) => {
+      const vectorStoreDirectory = path.resolve(
+        `public/${targetDomain}/vector_stores/base`
       );
-      const results = await vectorStore.similaritySearchWithScore(
-        queryString,
-        4
-      );
-      finalResults.push(results);
-    } catch (error) {
-      console.error(error);
-    }
-  }
+      try {
+        const vectorStore = await HNSWLib.load(
+          vectorStoreDirectory,
+          new OpenAIEmbeddings()
+        );
+        const results = await vectorStore.similaritySearchWithScore(
+          queryString,
+          4
+        );
+        return results;
+        //finalResults.push(results);
+      } catch (error) {
+        console.error(error);
+        return [];
+      }
+    })
+  );
 
   res.status(200).json(finalResults.flat().sort((a, b) => a[1] - b[1]));
 }
