@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "site:qiita.com:fetch": "node --loader ts-node/esm ./scripts/qiita.com/fetch_and_store.ts",
-    "site:qiita.com:test": "node --loader ts-node/esm ./scripts/qiita.com/test.ts"
+    "site:qiita.com:test": "node --loader ts-node/esm ./scripts/qiita.com/test.ts",
+    "site:www.undocs.org:fetch": "node --openssl-config=./openssl.cnf --loader ts-node/esm ./scripts/www.undocs.org/fetch_and_store.ts"
   },
   "dependencies": {
     "@types/node": "18.16.1",
