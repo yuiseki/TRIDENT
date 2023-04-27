@@ -21,7 +21,30 @@ for await (const url of urls) {
     continue;
   }
   try {
+    const metadataUrl =
+      "https://api.github.com/repos/" + url.replace("https://github.com/", "");
+    const metadataRes = await fetch(metadataUrl);
+    const metadataJson = await metadataRes.json();
+
+    const metadata = {
+      name: metadataJson.name,
+      full_name: metadataJson.full_name,
+      author: metadataJson.owner.login,
+      authorUrl: metadataJson.owner.html_url,
+      title: metadataJson.full_name + " " + metadataJson.description,
+      license: metadataJson.license.name,
+    };
+
     let readMeUrl = "";
+
+    const ghPagesBranchReadMeUrl = url + "/raw/gh-pages/README.md";
+    const ghPagesBranchReadMeHeadRes = await fetch(ghPagesBranchReadMeUrl, {
+      method: "HEAD",
+      redirect: "follow",
+    });
+    if (ghPagesBranchReadMeHeadRes.ok) {
+      readMeUrl = ghPagesBranchReadMeUrl;
+    }
 
     const masterBranchReadMeUrl = url + "/raw/master/README.md";
     const masterBranchReadMeHeadRes = await fetch(masterBranchReadMeUrl, {
@@ -47,9 +70,10 @@ for await (const url of urls) {
 
     const singleDocs = await splitter.createDocuments(
       [readMeContent],
-      [{ source: url }]
+      [{ source: url, ...metadata }]
     );
     docs.push(singleDocs);
+    console.log();
   } catch (error) {
     console.error(error);
   }
