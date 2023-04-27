@@ -41,10 +41,7 @@ export default async function handler(
 
   for await (const site of sites) {
     const vectorStoreDirectory = path.resolve(
-      "./public",
-      site,
-      "vector_stores",
-      "base"
+      `public/${site}/vector_stores/base`
     );
     console.info(vectorStoreDirectory);
     try {
