@@ -122,9 +122,8 @@ export default function Home() {
       >
         <div
           style={{
-            width: "100%",
-            marginTop: "3em",
-            marginBottom: "15em",
+            maxWidth: "100%",
+            margin: "3em auto 15em",
           }}
         >
           {dialogueList.map((dialogueElement, dialogueIndex) => {
@@ -263,45 +262,53 @@ export default function Home() {
           style={{
             position: "absolute",
             bottom: "5em",
-            width: "1000px",
+            width: "100vw",
+            margin: "auto",
           }}
         >
-          <textarea
-            value={inputText}
-            placeholder="How to build vector tile map?"
-            onChange={(e) => setInputText(e.currentTarget.value)}
-            rows={4}
+          <div
             style={{
-              width: "100%",
-              color: "rgba(0, 0, 0, 0.8)",
-              backgroundColor: "rgba(255, 255, 255, 0.9)",
-              borderRadius: "2px",
-              border: "2px solid rgba(0, 158, 219, 0.8)",
-              boxShadow: "0 2px 6px 0 rgba(0, 158, 219, 0.3)",
-              padding: "12px 8px",
-              fontSize: "1.2em",
+              maxWidth: "1000px",
+              margin: "auto",
             }}
-          />
-          <input
-            type="button"
-            value="Submit"
-            onClick={submit}
-            style={{
-              color: "rgb(253, 254, 255)",
-              backgroundColor: "rgba(0, 158, 219, 1)",
-              boxShadow: "0 2px 6px 0 rgba(0, 158, 219, 0.6)",
-              border: "2px solid rgba(0, 158, 219, 0.6)",
-              borderRadius: "2px",
-              display: "block",
-              textAlign: "right",
-              padding: "8px",
-              marginRight: 0,
-              marginLeft: "auto",
-              fontSize: "1.1em",
-              fontWeight: "bold",
-              letterSpacing: "2px",
-            }}
-          />
+          >
+            <textarea
+              value={inputText}
+              placeholder="How to build vector tile map?"
+              onChange={(e) => setInputText(e.currentTarget.value)}
+              rows={4}
+              style={{
+                width: "100%",
+                color: "rgba(0, 0, 0, 0.8)",
+                backgroundColor: "rgba(255, 255, 255, 0.9)",
+                borderRadius: "2px",
+                border: "2px solid rgba(0, 158, 219, 0.8)",
+                boxShadow: "0 2px 6px 0 rgba(0, 158, 219, 0.3)",
+                padding: "12px 8px",
+                fontSize: "1.2em",
+              }}
+            />
+            <input
+              type="button"
+              value="Submit"
+              onClick={submit}
+              style={{
+                color: "rgb(253, 254, 255)",
+                backgroundColor: "rgba(0, 158, 219, 1)",
+                boxShadow: "0 2px 6px 0 rgba(0, 158, 219, 0.6)",
+                border: "2px solid rgba(0, 158, 219, 0.6)",
+                borderRadius: "2px",
+                display: "block",
+                textAlign: "right",
+                padding: "8px",
+                marginRight: 0,
+                marginLeft: "auto",
+                fontSize: "1.1em",
+                fontWeight: "bold",
+                letterSpacing: "2px",
+              }}
+            />
+          </div>
         </div>
       </main>
     </>
