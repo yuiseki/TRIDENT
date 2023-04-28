@@ -9,6 +9,13 @@ import { useCallback, useEffect, useState } from "react";
 const sleep = (msec: number) =>
   new Promise((resolve) => setTimeout(resolve, msec));
 
+const timeoutExec = (func: () => void, msec: number) =>
+  new Promise((resolve) =>
+    setTimeout(() => {
+      resolve(func());
+    }, msec)
+  );
+
 const scrollToBottom = async () => {
   await sleep(100);
   window.scroll({
@@ -29,6 +36,7 @@ export default function Home() {
   ]);
   const [inputText, setInputText] = useState("");
   const [outputText, setOutputText] = useState(greetings);
+  const [lazyInserting, setLazyInserting] = useState(false);
   const [responding, setResponding] = useState(false);
   const [initialized, setInitialized] = useState(false);
 
@@ -58,24 +66,66 @@ export default function Home() {
     setTimeout(initializer, 25);
   }, [initializer]);
 
+  const [lazyInsertingInitialized, setLazyInsertingInitialized] =
+    useState(false);
+  const [intervalId, setIntervalId] = useState<NodeJS.Timer>();
+  useEffect(() => {
+    if (lazyInserting) {
+      if (!lazyInsertingInitialized) {
+        const newIntervalId = setInterval(() => {
+          setDialogueList((prev) => {
+            const last = prev[prev.length - 1];
+            last.text = outputText.slice(0, last.text.length + 1);
+            if (outputText.length === last.text.length) {
+              setLazyInserting(false);
+              setLazyInsertingInitialized(false);
+              setOutputText("");
+            }
+            return [...prev.slice(0, prev.length - 1), last];
+          });
+        }, 50);
+        setIntervalId(newIntervalId);
+        setLazyInsertingInitialized(true);
+      }
+    } else {
+      clearInterval(intervalId);
+      setIntervalId(undefined);
+    }
+    return () => {
+      if (!lazyInserting) {
+        clearInterval(intervalId);
+        setIntervalId(undefined);
+      }
+    };
+  }, [intervalId, lazyInserting, lazyInsertingInitialized, outputText]);
+
+  const insertNewDialogue = useCallback(
+    (newDialogueElement: DialogueElement, lazy?: boolean) => {
+      if (!lazy) {
+        setDialogueList((prev) => {
+          return [...prev, newDialogueElement];
+        });
+      } else {
+        const lazyNewDialogueElement = {
+          ...newDialogueElement,
+          text: "",
+        };
+        setDialogueList((prev) => {
+          return [...prev, lazyNewDialogueElement];
+        });
+        setOutputText(newDialogueElement.text);
+        setLazyInserting(true);
+      }
+    },
+    []
+  );
+
   const submit = useCallback(async () => {
     const newInputText = inputText;
     setInputText("");
 
-    const newDialogueListWithUser = [
-      ...dialogueList,
-      { who: "user", text: inputText },
-    ];
-    setDialogueList(newDialogueListWithUser);
+    insertNewDialogue({ who: "user", text: inputText });
 
-    let newDialogueListWithUserAndAssistantAndResponse = [
-      ...newDialogueListWithUser,
-      {
-        who: "assistant",
-        text: "Hmm, please wait...",
-      },
-    ];
-    setDialogueList(newDialogueListWithUserAndAssistantAndResponse);
     await scrollToBottom();
     await sleep(200);
 
@@ -87,18 +137,17 @@ export default function Home() {
           (e) => e[0].metadata.source === element[0].metadata.source
         ) === index
     );
-    newDialogueListWithUserAndAssistantAndResponse = [
-      ...newDialogueListWithUser,
+    insertNewDialogue(
       {
         who: "assistant",
-        text: "Hmm, please wait...\n" + "I found the following documents:\n",
+        text: "Hmm, please wait...\nI found the following documents:\n",
         docs: docs,
         textEnd: "\nWould these be helpful?",
       },
-    ];
-    setDialogueList(newDialogueListWithUserAndAssistantAndResponse);
+      true
+    );
     scrollToBottom();
-  }, [dialogueList, inputText]);
+  }, [inputText, insertNewDialogue]);
 
   return (
     <>
@@ -151,7 +200,8 @@ export default function Home() {
                 dialogueElement={dialogueElement}
                 dialogueIndex={dialogueIndex}
                 isResponding={
-                  responding && dialogueIndex === dialogueList.length - 1
+                  (responding || lazyInserting) &&
+                  dialogueIndex === dialogueList.length - 1
                 }
               />
             );
