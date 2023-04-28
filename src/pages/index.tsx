@@ -1,15 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import { nextPostJson } from "@/common/nextPostJson";
+import { DialogueElementItem } from "@/components/DialogueElementItem";
+import { DialogueElement } from "@/types/DialogueElement";
+import { Document } from "@/types/Document";
 import Head from "next/head";
-import { useCallback, useState } from "react";
-
-type Doc = {
-  pageContent: string;
-  metadata: {
-    source: string;
-    title: string;
-  };
-};
+import { useCallback, useEffect, useState } from "react";
 
 const sleep = (msec: number) =>
   new Promise((resolve) => setTimeout(resolve, msec));
@@ -22,21 +17,46 @@ const scrollToBottom = async () => {
   });
 };
 
+const greetings =
+  "Hello! I'm Trident, an UN dedicated interactive document exploration and humanity assistance system. What kind of documentation are you looking for?";
+
 export default function Home() {
-  const [dialogueList, setDialogueList] = useState<
-    {
-      who: string;
-      text: string;
-      textEnd?: string;
-      docs?: Doc[][];
-    }[]
-  >([
+  const [dialogueList, setDialogueList] = useState<DialogueElement[]>([
     {
       who: "assistant",
-      text: "Hello! I'm Trident, an UN dedicated interactive document exploration and humanity assistance system. What kind of documentation are you looking for?",
+      text: "",
     },
   ]);
   const [inputText, setInputText] = useState("");
+  const [outputText, setOutputText] = useState(greetings);
+  const [responding, setResponding] = useState(false);
+  const [initialized, setInitialized] = useState(false);
+
+  const initializer = useCallback(() => {
+    if (initialized) {
+      return;
+    }
+    setResponding(true);
+    const outputtingTextLength =
+      dialogueList[dialogueList.length - 1].text.length;
+    if (outputtingTextLength < outputText.length) {
+      const newDialogueList = [
+        {
+          who: "assistant",
+          text: outputText.slice(0, outputtingTextLength + 1),
+        },
+      ];
+      setDialogueList(newDialogueList);
+    } else {
+      setOutputText("");
+      setResponding(false);
+      setInitialized(true);
+    }
+  }, [dialogueList, initialized, outputText]);
+
+  useEffect(() => {
+    setTimeout(initializer, 25);
+  }, [initializer]);
 
   const submit = useCallback(async () => {
     const newInputText = inputText;
@@ -60,9 +80,9 @@ export default function Home() {
     await sleep(200);
 
     const res = await nextPostJson("/api/search", { query: newInputText });
-    const json: Doc[][] = await res.json();
+    const json: Document[][] = await res.json();
     const docs = json.filter(
-      (element: Doc[], index, self) =>
+      (element: Document[], index, self) =>
         self.findIndex(
           (e) => e[0].metadata.source === element[0].metadata.source
         ) === index
@@ -111,6 +131,7 @@ export default function Home() {
           flexDirection: "column",
           justifyContent: "space-between",
           alignItems: "center",
+          minWidth: "1000px",
           maxWidth: "1000px",
           minHeight: "100vh",
           margin: "auto",
@@ -119,141 +140,20 @@ export default function Home() {
       >
         <div
           style={{
-            maxWidth: "100%",
+            width: "100%",
             margin: "3em auto 15em",
           }}
         >
           {dialogueList.map((dialogueElement, dialogueIndex) => {
             return (
-              <div
+              <DialogueElementItem
                 key={dialogueIndex}
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "12px",
-                  width: "100%",
-                  padding: "14px",
-                  marginTop: "20px",
-                  marginBottom: "30px",
-                  border: "2px solid rgba(219, 219, 219, 0.5)",
-                  borderRadius: "2px",
-                  boxShadow: " 0 2px 6px 0 rgba(219, 219, 219, 0.3)",
-                  backgroundColor: "rgba(255, 255, 255, 0.9)",
-                }}
-              >
-                <div
-                  style={{
-                    display: "flex",
-                    justifyItems: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  <div
-                    style={{
-                      marginRight: "10px",
-                      width: "44px",
-                      height: "44px",
-                      marginLeft: "8px",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      display: "flex",
-                      backdropFilter: "blur(4px)",
-                      backgroundColor:
-                        dialogueElement.who === "assistant"
-                          ? "rgb(0, 158, 219)"
-                          : "rgba(0, 0, 0, 0.5)",
-                      border:
-                        dialogueElement.who === "assistant"
-                          ? "2px solid rgba(0, 158, 219, 0.6)"
-                          : "2px solid rgba(0, 0, 0, 0.1)",
-                      boxShadow:
-                        dialogueElement.who === "assistant"
-                          ? "0 2px 6px 0 rgba(0, 158, 219, 0.6)"
-                          : "0 2px 6px 0 rgba(0, 0, 0, 0.3)",
-                    }}
-                  >
-                    {dialogueElement.who === "assistant" ? (
-                      <img
-                        width={30}
-                        height={30}
-                        src="https://i.gyazo.com/d597c2b08219ea88a211cf98859d9265.png"
-                        alt="ai icon"
-                      />
-                    ) : (
-                      <img
-                        width={30}
-                        height={30}
-                        src="https://i.gyazo.com/8960181a3459473ada71a8718df8785b.png"
-                        alt="user icon"
-                      />
-                    )}
-                  </div>
-                  <div
-                    style={{
-                      fontWeight: "bold",
-                      fontSize: "1.4em",
-                      marginLeft: "4px",
-                    }}
-                  >
-                    {dialogueElement.who === "assistant" ? "TRIDENT" : "USER"}
-                  </div>
-                </div>
-                <div>
-                  <div
-                    style={{
-                      fontSize: "1.2em",
-                      paddingLeft: "70px",
-                    }}
-                  >
-                    {dialogueElement.text?.split("\n").map((row, rowIdx) => {
-                      return (
-                        <div
-                          key={`${dialogueIndex}-${rowIdx}`}
-                          style={{
-                            minHeight: "1em",
-                            marginLeft: row.startsWith(" ") ? "1em" : "0px",
-                          }}
-                        >
-                          {row}
-                        </div>
-                      );
-                    })}
-                    {dialogueElement.docs && (
-                      <ul style={{ paddingLeft: "2em" }}>
-                        {dialogueElement.docs?.map((doc, docIdx) => {
-                          return (
-                            <li
-                              key={`${dialogueIndex}-${docIdx}`}
-                              style={{
-                                minHeight: "1em",
-                              }}
-                            >
-                              <a href={doc[0].metadata.source} target="_blank">
-                                {doc[0].metadata.title
-                                  ? doc[0].metadata.title
-                                  : doc[0].metadata.source}
-                              </a>
-                            </li>
-                          );
-                        })}
-                      </ul>
-                    )}
-                    {dialogueElement.textEnd?.split("\n").map((row, rowIdx) => {
-                      return (
-                        <div
-                          key={`${dialogueIndex}-${rowIdx}-end`}
-                          style={{
-                            minHeight: "1em",
-                            marginLeft: row.startsWith(" ") ? "1em" : "0px",
-                          }}
-                        >
-                          {row}
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              </div>
+                dialogueElement={dialogueElement}
+                dialogueIndex={dialogueIndex}
+                isResponding={
+                  responding && dialogueIndex === dialogueList.length - 1
+                }
+              />
             );
           })}
         </div>
