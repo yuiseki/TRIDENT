@@ -82,7 +82,7 @@ const urls = [...gaUrls, ...secUrls];
 
 console.info("urls:", urls.length);
 
-for await (const url of urls.reverse().slice(0, 3)) {
+for await (const url of urls.reverse()) {
   console.log("----- ----- -----");
   console.info("fetch:", url);
   if (0 === url.length) {
