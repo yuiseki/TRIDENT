@@ -16,7 +16,7 @@
     "site:github.com:fetch": "node --loader ts-node/esm ./scripts/github.com/fetch_and_store.ts"
   },
   "dependencies": {
-    "@types/node": "18.16.2",
+    "@types/node": "18.16.3",
     "@types/react": "18.2.0",
     "@types/react-dom": "18.2.1",
     "cheerio": "^1.0.0-rc.12",
