@@ -85,6 +85,7 @@ console.info("urls:", urls.length);
 for await (const url of urls.reverse()) {
   console.log("----- ----- -----");
   console.info("fetch:", url);
+  console.info(urls.indexOf(url), "/", urls.length);
   if (0 === url.length) {
     continue;
   }
