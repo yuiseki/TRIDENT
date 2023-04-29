@@ -33,4 +33,6 @@ for await (const url of urls) {
   }
 }
 
-console.log(docs.join("\n"));
+console.log(docs.length);
+
+await fs.writeFile(`./public/www.undocs.org/s_res_urls.txt`, docs.join("\n"));
