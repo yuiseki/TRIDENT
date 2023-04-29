@@ -64,6 +64,7 @@ for await (const url of urls.reverse()) {
 }
 
 console.log(allDocs.length);
+console.log(allDocs.flat().length);
 
 const vectorStoreSaveDir = "public/www.undocs.org/vector_stores/base";
 const vectorStore = await HNSWLib.fromDocuments(
