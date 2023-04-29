@@ -3,7 +3,8 @@ import { OpenAIEmbeddings } from "langchain/embeddings/openai";
 import { HNSWLib } from "langchain/vectorstores/hnswlib";
 import path from "path";
 import { Document } from "langchain/dist/document";
-import fs from "node:fs/promises";
+import { PineconeClient } from "@pinecone-database/pinecone";
+import { PineconeStore } from "langchain/vectorstores";
 
 export default async function handler(
   req: NextApiRequest,
@@ -61,15 +62,18 @@ export default async function handler(
   finalResults.push(results2);
 
   // www.undocs.org
-  const vectorStoreSaveDir3 = path.resolve(
-    `public/www.undocs.org/vector_stores/base`
+  const client = new PineconeClient();
+  await client.init({
+    apiKey: process.env.PINECONE_API_KEY || "",
+    environment: process.env.PINECONE_ENVIRONMENT || "",
+  });
+  const pineconeIndex = client.Index(process.env.PINECONE_INDEX || "");
+  const vectorStore = await PineconeStore.fromExistingIndex(
+    new OpenAIEmbeddings(),
+    { pineconeIndex }
   );
-  const vectorStore3 = await HNSWLib.load(
-    vectorStoreSaveDir3,
-    new OpenAIEmbeddings()
-  );
-  const results3 = await vectorStore3.similaritySearchWithScore(queryString, 4);
-  finalResults.push(results3);
+  const results = await vectorStore.similaritySearchWithScore(queryString, 4);
+  finalResults.push(results);
 
   res.status(200).json(finalResults.flat().sort((a, b) => a[1] - b[1]));
 }

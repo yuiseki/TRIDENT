@@ -1,11 +1,18 @@
 import * as dotenv from "dotenv";
 import { OpenAIEmbeddings } from "langchain/embeddings/openai";
 import { PDFLoader } from "langchain/document_loaders/fs/pdf";
-import { HNSWLib } from "langchain/vectorstores/hnswlib";
+import { PineconeClient } from "@pinecone-database/pinecone";
+import { PineconeStore } from "langchain/vectorstores";
 
 import fs from "node:fs/promises";
 
 dotenv.config();
+const client = new PineconeClient();
+await client.init({
+  apiKey: process.env.PINECONE_API_KEY || "",
+  environment: process.env.PINECONE_ENVIRONMENT || "",
+});
+const pineconeIndex = client.Index(process.env.PINECONE_INDEX || "");
 
 const gaUrlsFile = await fs.readFile("public/www.undocs.org/urls.txt", "utf-8");
 const gaUrls = gaUrlsFile.split("\n");
@@ -66,9 +73,6 @@ for await (const url of urls.reverse()) {
 console.log(allDocs.length);
 console.log(allDocs.flat().length);
 
-const vectorStoreSaveDir = "public/www.undocs.org/vector_stores/base";
-const vectorStore = await HNSWLib.fromDocuments(
-  allDocs.flat(),
-  new OpenAIEmbeddings()
-);
-await vectorStore.save(vectorStoreSaveDir);
+await PineconeStore.fromDocuments(allDocs.flat(), new OpenAIEmbeddings(), {
+  pineconeIndex,
+});
