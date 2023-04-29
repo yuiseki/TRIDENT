@@ -82,7 +82,7 @@ const urls = [...gaUrls, ...secUrls];
 
 console.info("urls:", urls.length);
 
-for await (const url of urls.reverse()) {
+for await (const url of urls.reverse().slice(0, 3)) {
   console.log("----- ----- -----");
   console.info("fetch:", url);
   if (0 === url.length) {
@@ -93,7 +93,9 @@ for await (const url of urls.reverse()) {
       .replace("http://", "")
       .replace("https://", "")
       .replace("www.undocs.org/", "")
-      .replace("undocs.org/", "");
+      .replace("undocs.org/", "")
+      .replace("en/", "");
+    console.log("resolutionId:", resolutionId);
     try {
       const alreadyFetched = (
         await fs.lstat(
@@ -108,9 +110,9 @@ for await (const url of urls.reverse()) {
     }
 
     const englishUrl = "https://www.undocs.org/en/" + resolutionId;
-    console.log(englishUrl);
+    console.log("englishUrl:", englishUrl);
 
-    const myCookies = process.env["UN_COOKIES"] || "";
+    const myCookies = process.env["UNDOCS_COOKIES"] || "";
 
     const [redirectedUrl, redirectCookies] = await followRedirect(
       englishUrl,
@@ -125,11 +127,12 @@ for await (const url of urls.reverse()) {
     console.log(refreshedUrl);
     console.log();
 
-    const userAgent =
-      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36";
+    const userAgent = process.env["UNDOCS_UA"] || "";
+    const referrer = new URL(refreshedUrl).origin;
+    console.log("referrer:", referrer);
 
     const res = await fetch(refreshedUrl, {
-      referrer: new URL(refreshedUrl).origin,
+      referrer: referrer,
       headers: { Cookie: cookies ? cookies : "", "User-Agent": userAgent },
     });
     const content = await res.blob();
