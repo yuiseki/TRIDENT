@@ -134,6 +134,13 @@ for await (const url of urls.reverse()) {
       referrer: referrer,
       headers: { Cookie: cookies ? cookies : "", "User-Agent": userAgent },
     });
+
+    const contentType = res.headers.get("Content-Type");
+    console.log(contentType);
+    if (contentType !== "application/pdf") {
+      throw Error("Response is not PDF");
+    }
+
     const content = await res.blob();
     const buffer = Buffer.from(await content.arrayBuffer());
 
@@ -149,6 +156,6 @@ for await (const url of urls.reverse()) {
   } catch (error) {
     console.error(error);
   }
-  await sleep(1500);
+  await sleep(2500);
   console.log("----- ----- -----");
 }
