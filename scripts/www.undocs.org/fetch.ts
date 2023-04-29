@@ -156,6 +156,6 @@ for await (const url of urls.reverse()) {
   } catch (error) {
     console.error(error);
   }
-  await sleep(2500);
+  await sleep(3000);
   console.log("----- ----- -----");
 }
