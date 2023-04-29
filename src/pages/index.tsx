@@ -161,7 +161,10 @@ export default function Home() {
           content="TRIDENT - UN dedicated interactive document exploration and humanity assistance system"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          href="https://i.gyazo.com/36f5e676caec5f5e746a95054a46504f.png"
+        />
       </Head>
       <div
         style={{
