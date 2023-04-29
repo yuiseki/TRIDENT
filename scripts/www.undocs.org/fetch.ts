@@ -129,7 +129,6 @@ for await (const url of urls.reverse()) {
 
     const userAgent = process.env["UNDOCS_UA"] || "";
     const referrer = new URL(refreshedUrl).origin;
-    console.log("referrer:", referrer);
 
     const res = await fetch(refreshedUrl, {
       referrer: referrer,
@@ -137,6 +136,8 @@ for await (const url of urls.reverse()) {
     });
     const content = await res.blob();
     const buffer = Buffer.from(await content.arrayBuffer());
+
+    console.log("res length:", buffer.length);
 
     await fs.mkdir(`./tmp/www.undocs.org/en/pdfs/${resolutionId}/`, {
       recursive: true,
