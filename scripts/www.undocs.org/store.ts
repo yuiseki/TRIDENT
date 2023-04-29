@@ -27,7 +27,13 @@ for await (const url of urls.reverse()) {
   if (0 === url.length) {
     continue;
   }
-  const resolutionId = url.replace("https://www.undocs.org/", "");
+  const resolutionId = url
+    .replace("http://", "")
+    .replace("https://", "")
+    .replace("www.undocs.org/", "")
+    .replace("undocs.org/", "")
+    .replace("en/", "");
+  console.log("resolutionId:", resolutionId);
   const pdfFilePath = `./tmp/www.undocs.org/en/pdfs/${resolutionId}/resolution.pdf`;
 
   try {
