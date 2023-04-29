@@ -89,8 +89,11 @@ for await (const url of urls.reverse()) {
     continue;
   }
   try {
-    const resolutionId = url.replace("https://www.undocs.org/", "");
-
+    const resolutionId = url
+      .replace("http://", "")
+      .replace("https://", "")
+      .replace("www.undocs.org/", "")
+      .replace("undocs.org/", "");
     try {
       const alreadyFetched = (
         await fs.lstat(
@@ -104,10 +107,7 @@ for await (const url of urls.reverse()) {
       console.log("");
     }
 
-    const englishUrl = url.replace(
-      "https://www.undocs.org/",
-      "https://www.undocs.org/en/"
-    );
+    const englishUrl = "https://www.undocs.org/en/" + resolutionId;
     console.log(englishUrl);
 
     const myCookies = process.env["UN_COOKIES"] || "";
