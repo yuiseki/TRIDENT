@@ -166,7 +166,7 @@ export default function Home() {
     insertNewDialogue(
       {
         who: "assistant",
-        text: `${json.text.slice(1, json.text.length)}\n\n`,
+        text: `${json.text.slice(1, json.text.length)}\n`,
         docs: docs,
       },
       true
