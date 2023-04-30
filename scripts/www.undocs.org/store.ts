@@ -2,7 +2,7 @@ import * as dotenv from "dotenv";
 import { OpenAIEmbeddings } from "langchain/embeddings/openai";
 import { PDFLoader } from "langchain/document_loaders/fs/pdf";
 import { PineconeClient } from "@pinecone-database/pinecone";
-import { PineconeStore } from "langchain/vectorstores";
+import { PineconeStore } from "langchain/vectorstores/pinecone";
 
 import fs from "node:fs/promises";
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
