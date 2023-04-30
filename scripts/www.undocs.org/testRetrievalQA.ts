@@ -23,7 +23,7 @@ const vectorStore = await PineconeStore.fromExistingIndex(
 
 // initialize the LLM and chain
 const model = new OpenAI({ temperature: 0 });
-const chain = RetrievalQAChain.fromLLM(model, vectorStore.asRetriever());
+const chain = RetrievalQAChain.fromLLM(model, vectorStore.asRetriever(10));
 
 const queries = [
   "What is the UN doing in South Sudan?",
