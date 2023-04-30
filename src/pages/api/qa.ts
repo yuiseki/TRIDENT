@@ -52,13 +52,41 @@ export default async function handler(
   );
 
   // initialize the LLM and chain
-  const model = new OpenAI({ temperature: 0, maxTokens: 1500 });
-  const chain = RetrievalQAChain.fromLLM(model, vectorStore.asRetriever(10), {
-    returnSourceDocuments: true,
-  });
-  const answer = await chain.call({
-    query: query,
-  });
+  const model = new OpenAI({ temperature: 0, maxTokens: 2000 });
+  const baseRetrievalQAChain = RetrievalQAChain.fromLLM(
+    model,
+    vectorStore.asRetriever(10),
+    {
+      returnSourceDocuments: true,
+    }
+  );
+  const miniRetrievalQAChain = RetrievalQAChain.fromLLM(
+    model,
+    vectorStore.asRetriever(4),
+    {
+      returnSourceDocuments: true,
+    }
+  );
+  let answer;
+  try {
+    answer = await baseRetrievalQAChain.call({
+      query: query,
+    });
+  } catch (error) {
+    console.log("baseRetrievalQAChain Error!!");
+    console.log("try miniRetrievalQAChain!");
+    try {
+      answer = await miniRetrievalQAChain.call({
+        query: query,
+      });
+    } catch (error) {
+      console.log("miniRetrievalQAChain also error!!");
+      answer = {
+        text: " Sorry, Internal Server Error.",
+        sourceDocuments: [],
+      };
+    }
+  }
 
   res.status(200).json(answer);
 }
