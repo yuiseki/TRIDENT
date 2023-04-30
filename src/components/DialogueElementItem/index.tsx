@@ -66,24 +66,27 @@ export const DialogueElementItem: React.FC<{
             );
           })}
           {!isResponding && dialogueElement.docs && (
-            <ul style={{ paddingLeft: "2em" }}>
-              {dialogueElement.docs?.map((doc, docIdx) => {
-                return (
-                  <li
-                    key={`${dialogueIndex}-${docIdx}`}
-                    style={{
-                      minHeight: "1em",
-                    }}
-                  >
-                    <a href={doc[0].metadata.source} target="_blank">
-                      {doc[0].metadata.title
-                        ? doc[0].metadata.title
-                        : doc[0].metadata.source}
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
+            <details>
+              <summary>Related documents</summary>
+              <ul style={{ paddingLeft: "2em" }}>
+                {dialogueElement.docs?.map((doc, docIdx) => {
+                  return (
+                    <li
+                      key={`${dialogueIndex}-${docIdx}`}
+                      style={{
+                        minHeight: "1em",
+                      }}
+                    >
+                      <a href={doc.metadata.source} target="_blank">
+                        {doc.metadata.title
+                          ? doc.metadata.title
+                          : doc.metadata.source}
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
+            </details>
           )}
           {!isResponding &&
             dialogueElement.textEnd?.split("\n").map((row, rowIdx) => {

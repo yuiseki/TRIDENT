@@ -27,6 +27,13 @@ const scrollToBottom = async () => {
 const greetings =
   "Hello! I'm Trident, an UN dedicated interactive document exploration and humanity assistance system. What kind of documentation are you looking for?";
 
+const placeholders = [
+  "What is the name of the UN mission in South Sudan?",
+  "When did the UN start mission in South Sudan?",
+  "Who is the latest head of South Sudan at the UN mission?",
+  "Where is the headquarters of the UN mission in South Sudan?",
+];
+
 export default function Home() {
   const [dialogueList, setDialogueList] = useState<DialogueElement[]>([
     {
@@ -39,6 +46,8 @@ export default function Home() {
   const [lazyInserting, setLazyInserting] = useState(false);
   const [responding, setResponding] = useState(false);
   const [initialized, setInitialized] = useState(false);
+  const [placeholder, setPlaceholder] = useState(placeholders[0]);
+  const [placeholderInitialized, setPlaceholderInitialized] = useState(false);
 
   const initializer = useCallback(() => {
     if (initialized) {
@@ -65,6 +74,23 @@ export default function Home() {
   useEffect(() => {
     setTimeout(initializer, 25);
   }, [initializer]);
+
+  useEffect(() => {
+    if (placeholderInitialized) {
+      return;
+    }
+    setInterval(() => {
+      setPlaceholder((prev) => {
+        const idx = placeholders.indexOf(prev);
+        if (idx === placeholders.length - 1) {
+          return placeholders[0];
+        } else {
+          return placeholders[idx + 1];
+        }
+      });
+    }, 5000);
+    setPlaceholderInitialized(true);
+  }, []);
 
   const [lazyInsertingInitialized, setLazyInsertingInitialized] =
     useState(false);
@@ -129,23 +155,23 @@ export default function Home() {
     await scrollToBottom();
     await sleep(200);
 
-    const res = await nextPostJson("/api/search", { query: newInputText });
-    const json: Document[][] = await res.json();
-    const docs = json.filter(
-      (element: Document[], index, self) =>
-        self.findIndex(
-          (e) => e[0].metadata.source === element[0].metadata.source
-        ) === index
+    const res = await nextPostJson("/api/qa", { query: newInputText });
+    const json: { text: string; sourceDocuments: Document[] } =
+      await res.json();
+    const docs = json.sourceDocuments.filter(
+      (element: Document, index, self) =>
+        self.findIndex((e) => e.metadata.source === element.metadata.source) ===
+        index
     );
     insertNewDialogue(
       {
         who: "assistant",
-        text: "Hmm, please wait...\nI found the following documents:\n",
+        text: `${json.text.slice(1, json.text.length)}\n\n`,
         docs: docs,
-        textEnd: "\nWould these be helpful?",
       },
       true
     );
+
     scrollToBottom();
   }, [inputText, insertNewDialogue]);
 
@@ -226,7 +252,7 @@ export default function Home() {
           >
             <textarea
               value={inputText}
-              placeholder="How to build vector tile map?"
+              placeholder={placeholder}
               onChange={(e) => setInputText(e.currentTarget.value)}
               rows={4}
               style={{
