@@ -77,7 +77,7 @@ for await (const url of urls.reverse().slice(0, 50)) {
       });
       if ("text" in res) {
         summary = res.text;
-        console.log("summarized", summary.length);
+        console.log("summarized", summary.length, "chars");
         if (summary.length === 0) {
           console.log("generate summary failed!!", pdfFilePath);
           continue;
