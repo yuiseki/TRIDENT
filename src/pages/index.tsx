@@ -252,7 +252,7 @@ export default function Home() {
           >
             <textarea
               value={inputText}
-              placeholder={placeholder}
+              placeholder={responding ? "..." : placeholder}
               onChange={(e) => setInputText(e.currentTarget.value)}
               rows={4}
               style={{
