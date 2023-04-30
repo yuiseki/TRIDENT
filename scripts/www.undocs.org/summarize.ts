@@ -24,7 +24,7 @@ const urls = [...gaUrls, ...secUrls];
 console.info("urls:", urls.length);
 
 // load all documents
-for await (const url of urls.reverse().slice(0, 50)) {
+for await (const url of urls.slice(0, 100)) {
   console.log("----- ----- -----");
   console.info("load:", url);
   if (0 === url.length) {
@@ -60,17 +60,25 @@ for await (const url of urls.reverse().slice(0, 50)) {
         console.log("load summary", summary.length);
       }
     } catch (error) {
+      const charLength = docs
+        .map((d) => d.pageContent.length)
+        .reduce((sum, element) => {
+          return sum + element;
+        }, 0);
       console.log(
         "generate summary...",
         docs.length,
         "pages,",
-        docs
-          .map((d) => d.pageContent.length)
-          .reduce((sum, element) => {
-            return sum + element;
-          }, 0),
+        charLength,
         "chars"
       );
+      if (30000 < charLength) {
+        console.error("!!!!! !!!!! !!!!!");
+        console.error("!!!!! number of chars too long !!!!!");
+        console.error("!!!!! SKIP !!!!!");
+        console.error("!!!!! !!!!! !!!!!");
+        continue;
+      }
       const chain = loadSummarizationChain(model);
       const res = await chain.call({
         input_documents: docs,
