@@ -15,6 +15,7 @@
     "site:www.undocs.org:store": "node --loader ts-node/esm ./scripts/www.undocs.org/store.ts",
     "site:www.undocs.org:summarize": "node --loader ts-node/esm ./scripts/www.undocs.org/summarize.ts",
     "site:www.undocs.org:testRetrievalQA": "node --loader ts-node/esm ./scripts/www.undocs.org/testRetrievalQA.ts",
+    "site:www.undocs.org:testConversationalRetrievalQA": "node --loader ts-node/esm ./scripts/www.undocs.org/testConversationalRetrievalQA.ts",
     "site:github.com:fetch": "node --loader ts-node/esm ./scripts/github.com/fetch_and_store.ts"
   },
   "dependencies": {

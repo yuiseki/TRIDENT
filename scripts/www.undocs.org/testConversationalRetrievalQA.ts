@@ -1,6 +1,6 @@
 import * as dotenv from "dotenv";
 import { OpenAI } from "langchain/llms/openai";
-import { RetrievalQAChain } from "langchain/chains";
+import { ConversationalRetrievalQAChain } from "langchain/chains";
 import { OpenAIEmbeddings } from "langchain/embeddings/openai";
 import { PineconeClient } from "@pinecone-database/pinecone";
 import { PineconeStore } from "langchain/vectorstores/pinecone";
@@ -23,25 +23,29 @@ const vectorStore = await PineconeStore.fromExistingIndex(
 
 // initialize the LLM and chain
 const model = new OpenAI({ temperature: 0 });
-const chain = RetrievalQAChain.fromLLM(model, vectorStore.asRetriever(10));
+const chain = ConversationalRetrievalQAChain.fromLLM(
+  model,
+  vectorStore.asRetriever(10)
+);
 
 const queries = [
-  "What is the UN doing in South Sudan?",
   "What is the name of the UN mission in South Sudan?",
-  "When did the UN start mission in South Sudan?",
-  "Who is the latest head of South Sudan at the UN?",
-  "What is the UN doing in Kosovo?",
-  "What is the name of the UN mission in Kosovo?",
-  "When did the UN start mission in Kosovo?",
-  "Who is the latest head of Kosovo at the UN?",
+  "When that mission has started?",
+  "Who is the latest head of that mission?",
+  "Where is the headquarters of that mission?",
 ];
+
+const chatHistory: string[] = [];
 
 for (const query of queries) {
   console.log("----- ----- -----");
   const res = await chain.call({
-    query: query,
+    question: query,
+    chat_history: chatHistory.join(" "),
   });
   console.log("Q:", query);
   console.log("A:", res.text);
+  chatHistory.push(query);
+  chatHistory.push(res.text);
   console.log("----- ----- -----");
 }
