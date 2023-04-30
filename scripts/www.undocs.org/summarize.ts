@@ -60,7 +60,17 @@ for await (const url of urls.reverse().slice(0, 50)) {
         console.log("load summary", summary.length);
       }
     } catch (error) {
-      console.log("generate summary...", docs.length);
+      console.log(
+        "generate summary...",
+        docs.length,
+        "pages,",
+        docs
+          .map((d) => d.pageContent.length)
+          .reduce((sum, element) => {
+            return sum + element;
+          }, 0),
+        "chars"
+      );
       const chain = loadSummarizationChain(model);
       const res = await chain.call({
         input_documents: docs,
