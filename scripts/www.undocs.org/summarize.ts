@@ -24,7 +24,7 @@ const urls = [...gaUrls, ...secUrls];
 console.info("urls:", urls.length);
 
 // load all documents
-for await (const url of urls.slice(0, 100)) {
+for await (const url of urls.slice(0, 500)) {
   console.log("----- ----- -----");
   console.info("load:", url);
   if (0 === url.length) {
@@ -74,8 +74,9 @@ for await (const url of urls.slice(0, 100)) {
       );
       if (30000 < charLength) {
         console.error("!!!!! !!!!! !!!!!");
-        console.error("!!!!! number of chars too long !!!!!");
-        console.error("!!!!! SKIP !!!!!");
+        console.error("!!!!! SKIP");
+        console.error("!!!!! number of chars too long!");
+        console.error("!!!!! SKIP");
         console.error("!!!!! !!!!! !!!!!");
         continue;
       }
