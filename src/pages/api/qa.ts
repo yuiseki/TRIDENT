@@ -4,7 +4,7 @@ import { HNSWLib } from "langchain/vectorstores/hnswlib";
 import path from "path";
 import { Document } from "langchain/dist/document";
 import { PineconeClient } from "@pinecone-database/pinecone";
-import { PineconeStore } from "langchain/vectorstores";
+import { PineconeStore } from "langchain/vectorstores/pinecone";
 import { OpenAI } from "langchain/llms/openai";
 import { RetrievalQAChain } from "langchain/chains";
 
@@ -52,7 +52,7 @@ export default async function handler(
   );
 
   // initialize the LLM and chain
-  const model = new OpenAI({ temperature: 0 });
+  const model = new OpenAI({ temperature: 0, maxTokens: 1500 });
   const chain = RetrievalQAChain.fromLLM(model, vectorStore.asRetriever(10), {
     returnSourceDocuments: true,
   });
