@@ -5,6 +5,7 @@ import { PineconeClient } from "@pinecone-database/pinecone";
 import { PineconeStore } from "langchain/vectorstores";
 
 import fs from "node:fs/promises";
+import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
 
 dotenv.config();
 
@@ -27,11 +28,15 @@ const secUrls = secUrlsFile.split("\n");
 const urls = [...gaUrls, ...secUrls];
 console.info("urls:", urls.length);
 
+const splitter = new RecursiveCharacterTextSplitter({
+  chunkSize: 1000,
+  chunkOverlap: 100,
+});
+
 // load all documents
-const allDocs: any = [];
+const allDocsPerPage: any = [];
+const allSplittedDocs: any = [];
 for await (const url of urls.reverse()) {
-  console.log("----- ----- -----");
-  console.info("load:", url);
   if (0 === url.length) {
     continue;
   }
@@ -41,7 +46,6 @@ for await (const url of urls.reverse()) {
     .replace("www.undocs.org/", "")
     .replace("undocs.org/", "")
     .replace("en/", "");
-  console.log("resolutionId:", resolutionId);
   const pdfFilePath = `./tmp/www.undocs.org/en/pdfs/${resolutionId}/resolution.pdf`;
 
   try {
@@ -54,6 +58,7 @@ for await (const url of urls.reverse()) {
     const docs = await loader.load();
     const updatedDocs = docs.map((doc) => {
       doc.metadata.source = url;
+      doc.metadata.id = resolutionId;
       if (doc.metadata.pdf.info.Author) {
         doc.metadata.author = doc.metadata.pdf.info.Author;
       }
@@ -65,16 +70,22 @@ for await (const url of urls.reverse()) {
       }
       return doc;
     });
-    allDocs.push(updatedDocs);
-  } catch (error) {
-    console.log(error);
-  }
+    allDocsPerPage.push(updatedDocs);
+    const splittedDocs = await splitter.splitDocuments(updatedDocs);
+    allSplittedDocs.push(splittedDocs);
+  } catch (error) {}
 }
 
-console.log(allDocs.length);
-console.log(allDocs.flat().length);
+console.log("all docs", allDocsPerPage.length);
+console.log("all docs flat", allDocsPerPage.flat().length);
+console.log("all splits", allSplittedDocs.length);
+console.log("all splits flat", allSplittedDocs.flat().length);
 
 // vectorize and store documents
-await PineconeStore.fromDocuments(allDocs.flat(), new OpenAIEmbeddings(), {
-  pineconeIndex,
-});
+await PineconeStore.fromDocuments(
+  allSplittedDocs.flat(),
+  new OpenAIEmbeddings(),
+  {
+    pineconeIndex,
+  }
+);

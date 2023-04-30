@@ -14,6 +14,7 @@
     "site:www.undocs.org:fetch": "node --openssl-config=./openssl.cnf --loader ts-node/esm ./scripts/www.undocs.org/fetch.ts",
     "site:www.undocs.org:store": "node --loader ts-node/esm ./scripts/www.undocs.org/store.ts",
     "site:www.undocs.org:summarize": "node --loader ts-node/esm ./scripts/www.undocs.org/summarize.ts",
+    "site:www.undocs.org:testRetrievalQA": "node --loader ts-node/esm ./scripts/www.undocs.org/testRetrievalQA.ts",
     "site:github.com:fetch": "node --loader ts-node/esm ./scripts/github.com/fetch_and_store.ts"
   },
   "dependencies": {

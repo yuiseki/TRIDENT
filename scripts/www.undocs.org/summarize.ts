@@ -50,6 +50,8 @@ for await (const url of urls.slice(0, 500)) {
     }
     const loader = new PDFLoader(pdfFilePath);
     const docs = await loader.load();
+    // TODO: try RecursiveCharacterTextSplitter splitDocuments
+    // TODO: try AnalyzeDocumentChain
 
     let summary = "";
     try {
