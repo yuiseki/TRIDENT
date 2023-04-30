@@ -252,7 +252,7 @@ export default function Home() {
           >
             <textarea
               value={inputText}
-              placeholder={responding ? "..." : placeholder}
+              placeholder={responding || lazyInserting ? "..." : placeholder}
               onChange={(e) => setInputText(e.currentTarget.value)}
               rows={4}
               style={{
