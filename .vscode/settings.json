@@ -4,6 +4,7 @@
     "hnswlib",
     "KHTML",
     "langchain",
+    "llms",
     "openai",
     "qiita",
     "undocs",

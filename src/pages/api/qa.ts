@@ -1,8 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { OpenAIEmbeddings } from "langchain/embeddings/openai";
-import { HNSWLib } from "langchain/vectorstores/hnswlib";
-import path from "path";
-import { Document } from "langchain/dist/document";
 import { PineconeClient } from "@pinecone-database/pinecone";
 import { PineconeStore } from "langchain/vectorstores/pinecone";
 import { OpenAI } from "langchain/llms/openai";
