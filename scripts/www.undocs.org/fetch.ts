@@ -69,19 +69,18 @@ const followRefresh = async (
   }
 };
 
+// list of all documents
 const gaUrlsFile = await fs.readFile("public/www.undocs.org/urls.txt", "utf-8");
 const gaUrls = gaUrlsFile.split("\n");
-
 const secUrlsFile = await fs.readFile(
   "public/www.undocs.org/s_res_urls_uniq.txt",
   "utf-8"
 );
 const secUrls = secUrlsFile.split("\n");
-
 const urls = [...gaUrls, ...secUrls];
-
 console.info("urls:", urls.length);
 
+// fetch and save all documents
 for await (const url of urls.reverse()) {
   console.log("----- ----- -----");
   console.info("fetch:", url);

@@ -7,6 +7,8 @@ import { PineconeStore } from "langchain/vectorstores";
 import fs from "node:fs/promises";
 
 dotenv.config();
+
+// pinecone
 const client = new PineconeClient();
 await client.init({
   apiKey: process.env.PINECONE_API_KEY || "",
@@ -14,19 +16,18 @@ await client.init({
 });
 const pineconeIndex = client.Index(process.env.PINECONE_INDEX || "");
 
+// list of all documents
 const gaUrlsFile = await fs.readFile("public/www.undocs.org/urls.txt", "utf-8");
 const gaUrls = gaUrlsFile.split("\n");
-
 const secUrlsFile = await fs.readFile(
   "public/www.undocs.org/s_res_urls_uniq.txt",
   "utf-8"
 );
 const secUrls = secUrlsFile.split("\n");
-
 const urls = [...gaUrls, ...secUrls];
-
 console.info("urls:", urls.length);
 
+// load all documents
 const allDocs: any = [];
 for await (const url of urls.reverse()) {
   console.log("----- ----- -----");
@@ -73,6 +74,7 @@ for await (const url of urls.reverse()) {
 console.log(allDocs.length);
 console.log(allDocs.flat().length);
 
+// vectorize and store documents
 await PineconeStore.fromDocuments(allDocs.flat(), new OpenAIEmbeddings(), {
   pineconeIndex,
 });
