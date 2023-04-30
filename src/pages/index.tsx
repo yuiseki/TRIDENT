@@ -106,6 +106,7 @@ export default function Home() {
               setLazyInserting(false);
               setLazyInsertingInitialized(false);
               setOutputText("");
+              scrollToBottom();
             }
             return [...prev.slice(0, prev.length - 1), last];
           });
@@ -153,6 +154,7 @@ export default function Home() {
     insertNewDialogue({ who: "user", text: inputText });
 
     await scrollToBottom();
+    setResponding(true);
     await sleep(200);
 
     const res = await nextPostJson("/api/qa", { query: newInputText });
@@ -172,7 +174,7 @@ export default function Home() {
       true
     );
 
-    scrollToBottom();
+    setResponding(false);
   }, [inputText, insertNewDialogue]);
 
   return (
