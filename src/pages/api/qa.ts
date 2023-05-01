@@ -79,7 +79,7 @@ export default async function handler(
     } catch (error) {
       console.log("miniRetrievalQAChain also error!!");
       answer = {
-        text: " Sorry, Internal Server Error.",
+        text: " Sorry, something went wrong.",
         sourceDocuments: [],
       };
     }
