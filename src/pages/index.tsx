@@ -19,10 +19,17 @@ const greetings =
   "Hello! I'm Trident, an UN dedicated interactive document exploration and humanity assistance system. What kind of documentation are you looking for?";
 
 const placeholders = [
+  "Where is the headquarters of the UN?",
+  "When and where was the United Nations Charter signed?",
   "What is the name of the UN mission in South Sudan?",
   "When did the UN start mission in South Sudan?",
   "Who is the latest head of South Sudan at the UN mission?",
   "Where is the headquarters of the UN mission in South Sudan?",
+  "Where is the headquarters of the UNIFIL?",
+  "Where is the headquarters of UNHCR?",
+  "Where is the headquarters of WHO?",
+  "Where is the headquarters of the World Bank?",
+  "Where is the Permanent Mission of Japan to the United Nations?",
 ];
 
 export default function Home() {
