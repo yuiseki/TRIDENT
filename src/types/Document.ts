@@ -3,5 +3,6 @@ export type Document = {
   metadata: {
     source: string;
     title: string;
+    "pdf.metadata._metadata.xmp:modifydate": string;
   };
 };

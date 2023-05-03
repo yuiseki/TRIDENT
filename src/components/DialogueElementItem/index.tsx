@@ -172,6 +172,14 @@ export const DialogueElementItem: React.FC<{
                             ? doc.metadata.title
                             : doc.metadata.source}
                         </a>
+                        {" - "}
+                        <span>
+                          {new Date(
+                            doc.metadata[
+                              "pdf.metadata._metadata.xmp:modifydate"
+                            ]
+                          ).toLocaleDateString()}
+                        </span>
                       </li>
                     );
                   })}
