@@ -76,8 +76,8 @@ Question: Where is the headquarters of the UNIFIL?
 Possibly useful hint: The headquarters of the UNIFIL is in southern Lebanon.
 Overpass API query:
 \`\`\`
-[out:json][timeout:Lebanon];
-area["name:en"="Geneva"]->.searchArea;
+[out:json][timeout:30000];
+area["name:en"="Lebanon"]->.searchArea;
 (
   nwr["name"~"UNIFIL"](area.searchArea);
   nwr["name:en"~"UNIFIL"](area.searchArea);
