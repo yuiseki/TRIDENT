@@ -10,6 +10,11 @@
   unicode-range: U+00A9-E007F;
 }
 
+input[type="button"]:disabled {
+  opacity: 0.4;
+  background-color: rgba(0, 158, 219, 0.4) !important;
+}
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
