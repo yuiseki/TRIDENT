@@ -64,6 +64,8 @@ export default async function handler(
       returnSourceDocuments: true,
     }
   );
+
+  // execute chain
   let answer;
   try {
     answer = await baseRetrievalQAChain.call({
