@@ -6,7 +6,7 @@ import { Marker, useMap } from "react-map-gl";
 export const GeoJsonToMarkers: React.FC<{
   geojson: FeatureCollection;
   emoji?: string;
-}> = ({ geojson, emoji }) => {
+}> = ({ geojson, emoji = "🇺🇳" }) => {
   const { current: map } = useMap();
 
   const [currentZoom, setCurrentZoom] = useState<number | undefined>(8);
