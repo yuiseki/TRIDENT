@@ -8,6 +8,7 @@ import { scrollToBottom } from "@/utils/scrollToBottom";
 import { FeatureCollection } from "geojson";
 import { getOverpassResponse } from "@/utils/getOverpassResponse";
 import osmtogeojson from "osmtogeojson";
+import { placeholders } from "@/const/placeholders";
 
 export const DialogueElementItem: React.FC<{
   prevDialogueElement?: DialogueElement;
@@ -132,6 +133,25 @@ export const DialogueElementItem: React.FC<{
               </div>
             );
           })}
+          {!isResponding && dialogueIndex === 0 && (
+            <details style={{ marginTop: "25px" }}>
+              <summary>Examples</summary>
+              <ul style={{ paddingLeft: "2em" }}>
+                {placeholders.map((placeholder, placeholderIdx) => {
+                  return (
+                    <li
+                      key={`${dialogueIndex}-${placeholderIdx}`}
+                      style={{
+                        minHeight: "1em",
+                      }}
+                    >
+                      {placeholder}
+                    </li>
+                  );
+                })}
+              </ul>
+            </details>
+          )}
           {!isResponding &&
             dialogueElement.docs &&
             0 < dialogueElement.docs.length &&

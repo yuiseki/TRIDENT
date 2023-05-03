@@ -7,6 +7,7 @@ import Head from "next/head";
 import { useCallback, useEffect, useState } from "react";
 import { scrollToBottom } from "@/utils/scrollToBottom";
 import { sleep } from "@/utils/sleep";
+import { placeholders } from "@/const/placeholders";
 
 const timeoutExec = (func: () => void, msec: number) =>
   new Promise((resolve) =>
@@ -17,27 +18,6 @@ const timeoutExec = (func: () => void, msec: number) =>
 
 const greetings =
   "Hello! I'm Trident, an UN dedicated interactive information retrieval and humanity assistance system. What kind of information are you looking for?";
-
-const placeholders = [
-  "Where is the headquarters of the UN?",
-  "How does the UN place a high priority on GIS?",
-  "Which region is the UN most concerned about climate change?",
-  "Which region is the UN most concerned about poverty?",
-  "Which region is the UN most concerned about sanitation issues?",
-  "Which region is the UN most concerned about human rights issues?",
-  "What is the name of the UN mission in South Sudan?",
-  "When did the UN start mission in South Sudan?",
-  "What is the UNMISS?",
-  "Why did the UN start UNMISS?",
-  "Who is the latest head of South Sudan at the UN mission?",
-  "Where is the headquarters of the UN mission in South Sudan?",
-  "Where is the headquarters of the UNIFIL?",
-  "Where is the headquarters of UNHCR?",
-  "Where is the headquarters of WHO?",
-  "Where is the headquarters of the World Bank?",
-  "Where is the Permanent Mission of Japan to the United Nations?",
-  "When and where was the United Nations Charter signed?",
-];
 
 export default function Home() {
   const [dialogueList, setDialogueList] = useState<DialogueElement[]>([
