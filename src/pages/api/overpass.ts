@@ -9,36 +9,25 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const queryString = getRequestParamAsString(req, "query");
-  if (queryString === undefined) {
+  const overpassQuery = getRequestParamAsString(req, "query");
+  if (overpassQuery === undefined) {
     res.status(400).json({ status: "ng", message: "query is missing" });
     return;
   }
-  if (queryString.length > 400) {
+  if (overpassQuery.length > 400) {
     res.status(400).json({ status: "ng", message: "query is too long" });
     return;
   }
-  if (isQueryStringDanger(queryString)) {
+  if (isQueryStringDanger(overpassQuery)) {
     res.status(400).json({ status: "ng", message: "invalid query" });
     return;
   }
 
-  const hintString = getRequestParamAsString(req, "hint");
-  if (hintString === undefined) {
-    res.status(400).json({ status: "ng", message: "hint is missing" });
-    return;
-  }
-  if (hintString.length > 400) {
-    res.status(400).json({ status: "ng", message: "hint is too long" });
-    return;
-  }
-  if (isQueryStringDanger(hintString)) {
-    res.status(400).json({ status: "ng", message: "invalid hint" });
-    return;
-  }
-
-  const overpassQuery = await getOverpassQuery(queryString, hintString);
   console.log("overpass query:", overpassQuery);
 
-  res.status(200).send(overpassQuery);
+  const overpassRes = await getOverpassResponse(overpassQuery);
+  console.log(overpassRes);
+  const geojson = osmtogeojson(overpassRes);
+
+  res.status(200).json(geojson);
 }
