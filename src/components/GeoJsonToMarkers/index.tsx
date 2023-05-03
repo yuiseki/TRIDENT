@@ -60,7 +60,6 @@ export const GeoJsonToMarkers: React.FC<{
         let zIndex = 100;
         let fontSize = "1.5em";
         let icon = emoji;
-        let name = "No name";
         let title = "No name";
 
         if (
@@ -68,7 +67,6 @@ export const GeoJsonToMarkers: React.FC<{
           feature.properties.name &&
           feature.properties.name.length > 0
         ) {
-          name = feature.properties.name;
           title = feature.properties.name;
         }
 
@@ -85,55 +83,6 @@ export const GeoJsonToMarkers: React.FC<{
         ) {
           icon = "🇺🇳";
           zIndex = 110;
-        }
-
-        // EU
-        if (
-          (feature.properties &&
-            feature.properties.operator &&
-            feature.properties.operator.includes("EU")) ||
-          (feature.properties &&
-            feature.properties.name &&
-            feature.properties.name.includes("EU"))
-        ) {
-          icon = "🇪🇺";
-          zIndex = 110;
-        }
-
-        // NATO, KFOR
-        if (
-          (feature.properties &&
-            feature.properties.operator &&
-            (feature.properties.operator.includes("NATO") ||
-              feature.properties.operator.includes("KFOR"))) ||
-          (feature.properties &&
-            feature.properties.name &&
-            (feature.properties.name.includes("NATO") ||
-              feature.properties.name.includes("KFOR")))
-        ) {
-          icon = "🟦";
-          zIndex = 110;
-        }
-
-        // Road closed
-        if (emoji === "🚧") {
-          zIndex = 115;
-          fontSize = "1em";
-          name = "";
-        }
-
-        if (emoji === "🚗") {
-          zIndex = 100;
-          fontSize = "1.5em";
-          name = "";
-        }
-
-        // Incidents
-        if (emoji === "⚠️") {
-          zIndex = 120;
-          if (feature.properties && feature.properties["incident:detail"]) {
-            name = feature.properties["incident:detail"];
-          }
         }
 
         let center: Feature<Point, GeoJsonProperties> | undefined = undefined;
@@ -161,15 +110,11 @@ export const GeoJsonToMarkers: React.FC<{
             opacity = 1.0;
           } else if (12 < currentZoom) {
             opacity = 0.95;
-            //name = "";
           } else if (10 < currentZoom) {
             opacity = 0.9;
-            //name = "";
           } else if (8 < currentZoom) {
             opacity = 0.85;
-            name = "";
           } else {
-            name = "";
           }
         }
         return (
@@ -202,24 +147,6 @@ export const GeoJsonToMarkers: React.FC<{
               >
                 {icon}
               </div>
-              {name.length > 0 && (
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    color: "rgba(0, 0, 0, 0.8)",
-                    backgroundColor: "rgba(255, 255, 255, 0.5)",
-                    backdropFilter: "blur(5px)",
-                    borderRadius: "4px",
-                    margin: "4px 0",
-                    padding: "6px 8px",
-                    fontSize: "1.1em",
-                  }}
-                >
-                  {name}
-                </div>
-              )}
             </div>
           </Marker>
         );

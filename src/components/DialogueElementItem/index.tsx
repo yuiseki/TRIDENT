@@ -164,11 +164,11 @@ export const DialogueElementItem: React.FC<{
                           borderRadius: "2px",
                           display: "block",
                           textAlign: "right",
-                          padding: "8px",
+                          padding: "6px",
                           marginRight: 0,
                           marginLeft: "auto",
-                          fontSize: "1.1em",
-                          fontWeight: "bold",
+                          fontSize: "1em",
+                          fontWeight: "normal",
                           letterSpacing: "2px",
                         }}
                         onClick={() => {
