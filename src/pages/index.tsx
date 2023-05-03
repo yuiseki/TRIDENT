@@ -16,14 +16,19 @@ const timeoutExec = (func: () => void, msec: number) =>
   );
 
 const greetings =
-  "Hello! I'm Trident, an UN dedicated interactive document exploration and humanity assistance system. What kind of documentation are you looking for?";
+  "Hello! I'm Trident, an UN dedicated interactive information retrieval and humanity assistance system. What kind of information are you looking for?";
 
 const placeholders = [
   "Where is the headquarters of the UN?",
+  "How does the UN place a high priority on GIS?",
   "Which region is the UN most concerned about climate change?",
   "Which region is the UN most concerned about poverty?",
+  "Which region is the UN most concerned about sanitation issues?",
+  "Which region is the UN most concerned about human rights issues?",
   "What is the name of the UN mission in South Sudan?",
   "When did the UN start mission in South Sudan?",
+  "What is the UNMISS?",
+  "Why did the UN start UNMISS?",
   "Who is the latest head of South Sudan at the UN mission?",
   "Where is the headquarters of the UN mission in South Sudan?",
   "Where is the headquarters of the UNIFIL?",
@@ -95,6 +100,7 @@ export default function Home() {
   const [lazyInsertingInitialized, setLazyInsertingInitialized] =
     useState(false);
   const [intervalId, setIntervalId] = useState<NodeJS.Timer>();
+
   useEffect(() => {
     if (lazyInserting) {
       if (!lazyInsertingInitialized) {
@@ -102,11 +108,11 @@ export default function Home() {
           setDialogueList((prev) => {
             const last = prev[prev.length - 1];
             last.text = outputText.slice(0, last.text.length + 1);
+            scrollToBottom();
             if (outputText.length === last.text.length) {
               setLazyInserting(false);
               setLazyInsertingInitialized(false);
               setOutputText("");
-              scrollToBottom();
             }
             return [...prev.slice(0, prev.length - 1), last];
           });

@@ -25,14 +25,21 @@ export const getRetrievalQAAnswer = async (query: string) => {
   });
   const baseRetrievalQAChain = RetrievalQAChain.fromLLM(
     model,
-    vectorStore.asRetriever(10),
+    vectorStore.asRetriever(6),
     {
       returnSourceDocuments: true,
     }
   );
-  const miniRetrievalQAChain = RetrievalQAChain.fromLLM(
+  const smallRetrievalQAChain = RetrievalQAChain.fromLLM(
     model,
     vectorStore.asRetriever(4),
+    {
+      returnSourceDocuments: true,
+    }
+  );
+  const tinyRetrievalQAChain = RetrievalQAChain.fromLLM(
+    model,
+    vectorStore.asRetriever(2),
     {
       returnSourceDocuments: true,
     }
@@ -40,28 +47,34 @@ export const getRetrievalQAAnswer = async (query: string) => {
 
   // execute chain
   console.info("----- ----- -----");
-  let answer;
-  try {
-    answer = await baseRetrievalQAChain.call({
-      query: query,
-    });
-    console.log("baseRetrievalQAChain succeeded");
-  } catch (error) {
-    console.error("!!!!! baseRetrievalQAChain Error !!!!!");
-    //console.error(error);
-    console.log("try miniRetrievalQAChain...");
+  let answer = undefined;
+  for await (const retrievalQAChain of [
+    baseRetrievalQAChain,
+    smallRetrievalQAChain,
+    tinyRetrievalQAChain,
+  ]) {
     try {
-      answer = await miniRetrievalQAChain.call({
+      if ("k" in retrievalQAChain.retriever) {
+        console.info(
+          "retrievalQAChain.retriever.k:",
+          retrievalQAChain.retriever.k
+        );
+      }
+      answer = await retrievalQAChain.call({
         query: query,
       });
-      console.log("miniRetrievalQAChain succeeded");
+      console.error("----- retrievalQAChain succeeded -----");
+      break;
     } catch (error) {
-      console.log("!!!!! miniRetrievalQAChain also error !!!!!");
-      answer = {
-        text: " Sorry, something went wrong.",
-        sourceDocuments: [],
-      };
+      console.error("!!!!! retrievalQAChain failed !!!!!");
+      continue;
     }
+  }
+  if (answer === undefined) {
+    answer = {
+      text: " Sorry, something went wrong.",
+      sourceDocuments: [],
+    };
   }
   console.info("----- ----- -----");
   return answer;
