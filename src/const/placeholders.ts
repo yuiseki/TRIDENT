@@ -1,6 +1,6 @@
 export const placeholders = [
   "Where is the headquarters of the UN?",
-  "How does the UN place a high priority on GIS?",
+  "How much the UN place a high priority on GIS?",
   "Which region is the UN most concerned about climate change?",
   "Which region is the UN most concerned about poverty?",
   "Which region is the UN most concerned about sanitation issues?",
