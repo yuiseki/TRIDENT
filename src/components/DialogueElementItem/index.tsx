@@ -180,7 +180,10 @@ export const DialogueElementItem: React.FC<{
                     </div>
                   )}
                 {(requestingOverpassQuery || requestingOverpassApi) && (
-                  <div style={{ width: "100%" }}>Loading...</div>
+                  <div style={{ width: "100%" }}>
+                    Loading...
+                    <span className="blinkingCursor" />
+                  </div>
                 )}
                 {geojson && overpassQuery && (
                   <div style={{ width: "100%" }}>
