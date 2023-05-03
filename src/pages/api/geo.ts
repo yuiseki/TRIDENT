@@ -26,8 +26,13 @@ export default async function handler(
     res.status(400).json({ status: "ng", message: "hint is missing" });
     return;
   }
-  if (hintString.length > 400) {
-    res.status(400).json({ status: "ng", message: "hint is too long" });
+  if (hintString.length > 1000) {
+    res
+      .status(400)
+      .json({
+        status: "ng",
+        message: `hint is too long, ${hintString.length}`,
+      });
     return;
   }
   if (isQueryStringDanger(hintString)) {

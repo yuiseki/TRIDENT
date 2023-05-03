@@ -132,29 +132,31 @@ export const DialogueElementItem: React.FC<{
               </div>
             );
           })}
-          {!isResponding && dialogueElement.docs && (
-            <details>
-              <summary>Related documents</summary>
-              <ul style={{ paddingLeft: "2em" }}>
-                {dialogueElement.docs?.map((doc, docIdx) => {
-                  return (
-                    <li
-                      key={`${dialogueIndex}-${docIdx}`}
-                      style={{
-                        minHeight: "1em",
-                      }}
-                    >
-                      <a href={doc.metadata.source} target="_blank">
-                        {doc.metadata.title
-                          ? doc.metadata.title
-                          : doc.metadata.source}
-                      </a>
-                    </li>
-                  );
-                })}
-              </ul>
-            </details>
-          )}
+          {!isResponding &&
+            dialogueElement.docs &&
+            0 < dialogueElement.docs.length && (
+              <details>
+                <summary>Related documents</summary>
+                <ul style={{ paddingLeft: "2em" }}>
+                  {dialogueElement.docs?.map((doc, docIdx) => {
+                    return (
+                      <li
+                        key={`${dialogueIndex}-${docIdx}`}
+                        style={{
+                          minHeight: "1em",
+                        }}
+                      >
+                        <a href={doc.metadata.source} target="_blank">
+                          {doc.metadata.title
+                            ? doc.metadata.title
+                            : doc.metadata.source}
+                        </a>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </details>
+            )}
           {!isResponding &&
             dialogueElement.textEnd?.split("\n").map((row, rowIdx) => {
               return (

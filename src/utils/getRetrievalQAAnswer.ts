@@ -18,7 +18,7 @@ export const getRetrievalQAAnswer = async (query: string) => {
   );
 
   // initialize the LLM and chain
-  const model = new OpenAI({ temperature: 0, maxTokens: 2000 });
+  const model = new OpenAI({ temperature: 0, maxTokens: 2048 });
   const baseRetrievalQAChain = RetrievalQAChain.fromLLM(
     model,
     vectorStore.asRetriever(10),
@@ -41,14 +41,15 @@ export const getRetrievalQAAnswer = async (query: string) => {
       query: query,
     });
   } catch (error) {
-    console.log("baseRetrievalQAChain Error!!");
-    console.log("try miniRetrievalQAChain!");
+    console.error("!!!!! baseRetrievalQAChain Error !!!!!");
+    console.log("try miniRetrievalQAChain...");
     try {
       answer = await miniRetrievalQAChain.call({
         query: query,
       });
+      console.log("miniRetrievalQAChain succeeded");
     } catch (error) {
-      console.log("miniRetrievalQAChain also error!!");
+      console.log("!!!!! miniRetrievalQAChain also error !!!!!");
       answer = {
         text: " Sorry, something went wrong.",
         sourceDocuments: [],

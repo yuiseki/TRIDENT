@@ -114,18 +114,27 @@ Multiple Overpass API queries:`;
   const overpassQueryPromptTemplate = PromptTemplate.fromTemplate(
     overpassQueryPromptTemplateString
   );
-  //const model = new OpenAI({ temperature: 0, modelName: "gpt-3.5-turbo" });
-  const model = new OpenAI({ temperature: 0, maxTokens: 2048 });
+  const modelName = "text-davinci-003";
+  //const modelName = "gpt-3.5-turbo";
+  const model = new OpenAI({
+    temperature: 0,
+    maxTokens: 2048,
+    modelName: modelName,
+  });
   const chain = new LLMChain({
     llm: model,
     prompt: overpassQueryPromptTemplate,
   });
-  const res = await chain.call({
-    question: question,
-    hint: hint,
-  });
-  const queries = res.text.split("```").filter((i: string) => {
-    return i !== "\n" && i !== "\n\n" && i !== "\n===" && i.length !== 0;
-  });
-  return queries;
+  try {
+    const res = await chain.call({
+      question: question,
+      hint: hint,
+    });
+    const queries = res.text.split("```").filter((i: string) => {
+      return i !== "\n" && i !== "\n\n" && i !== "\n===" && i.length !== 0;
+    });
+    return queries;
+  } catch (error) {
+    return [];
+  }
 };
