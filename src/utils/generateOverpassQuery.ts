@@ -14,18 +14,15 @@ The assistant will always reply according to the following rules:
 (4) The query utilize a area specifier.
 (4) The query will search nwr.
 (5) The query must be out geom.
-(6) The query must be enclosed by three backticks on new lines, denoting that it is a code block.
-(7) Always output valid Overpass API queries as many as possible.
-(8) All queries must be enclosed by three backticks on new lines, denoting that it is a code block.
-(9) The queries always expands all possible patterns with and without :en for area and tags.
+(6) Must output valid Overpass API queries as many as possible.
+(7) All queries must be enclosed by three backticks on new lines, denoting that it is a code block.
+(8) Must expands all possible patterns of Overpass API query with and without :en for area and tags.
+(9) Must output Overpass API query at the end to retrieve the region that also expands all variant names for fallback.
 
 Assistant has a serious personality.
 
-Examples:
-===
-Question: Where is the headquarters of the UN?
-Possibly useful hint: The headquarters of the UN is in New York City, USA.
-Multiple Overpass API queries:
+==========
+Examples of the expanded Overpass API queries:
 \`\`\`
 [out:json][timeout:30000];
 area["name"="New York"]->.searchArea;
@@ -45,13 +42,7 @@ area["name:en"="New York"]->.searchArea;
 );
 out geom;
 \`\`\`
-===
 
-Example 2:
-===
-Question: Where is the headquarters of UNMISS?
-Possibly useful hint: The headquarters of UNMISS is in Juba, South Sudan.
-Multiple Overpass API queries:
 \`\`\`
 [out:json][timeout:30000];
 area["name"="Juba"]->.searchArea;
@@ -79,13 +70,7 @@ area["name:en"="Juba"]->.searchArea;
 );
 out geom;
 \`\`\`
-===
 
-Example 3:
-===
-Question: Where was the United Nations Charter signed?
-Possibly useful hint: The United Nations Charter was signed in San Francisco, California, USA on June 26, 1945.
-Multiple Overpass API queries:
 \`\`\`
 [out:json][timeout:30000];
 area["name"="San Francisco"]->.searchArea;
@@ -109,7 +94,17 @@ area["name"="California"]->.searchArea;
 );
 out geom;
 \`\`\`
-===
+
+\`\`\`
+[out:json][timeout:30000];
+area["name"="United States"]->.searchArea;
+(
+  nwr["name"="San Francisco"](area.searchArea);
+  nwr["name:en"="San Francisco"](area.searchArea);
+);
+out geom;
+\`\`\`
+==========
 
 
 Question: {question}
@@ -120,7 +115,7 @@ Multiple Overpass API queries:`;
     overpassQueryPromptTemplateString
   );
   //const model = new OpenAI({ temperature: 0, modelName: "gpt-3.5-turbo" });
-  const model = new OpenAI({ temperature: 0, maxTokens: 2000 });
+  const model = new OpenAI({ temperature: 0, maxTokens: 2048 });
   const chain = new LLMChain({
     llm: model,
     prompt: overpassQueryPromptTemplate,
