@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { nextPostJson } from "@/common/nextPostJson";
+import { nextPostJson } from "@/utils/nextPostJson";
 import { DialogueElementItem } from "@/components/DialogueElementItem";
 import { DialogueElement } from "@/types/DialogueElement";
 import { Document } from "@/types/Document";
