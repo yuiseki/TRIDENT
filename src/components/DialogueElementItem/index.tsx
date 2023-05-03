@@ -34,6 +34,7 @@ export const DialogueElementItem: React.FC<{
       });
       const newOverpassQueries = await res.json();
       setGeneratingOverpassQuery(false);
+      let newGeojson;
       for await (const query of newOverpassQueries) {
         console.log(query);
         setOverpassQuery(query);
@@ -41,16 +42,27 @@ export const DialogueElementItem: React.FC<{
         try {
           const overpassRes = await getOverpassResponse(query);
           const overpassJson = await overpassRes.json();
-          const newGeojson = osmtogeojson(overpassJson);
+          newGeojson = osmtogeojson(overpassJson);
           console.log(newGeojson);
           if (newGeojson.features.length === 0) {
-            await sleep(500);
-            continue;
+            if (
+              newOverpassQueries.indexOf(query) ===
+              newOverpassQueries.length - 1
+            ) {
+              setGeojson(newGeojson);
+              setRequestingOverpassApi(false);
+              scrollToBottom();
+              break;
+            } else {
+              await sleep(500);
+              continue;
+            }
           } else {
             setGeojson(newGeojson);
-            await sleep(500);
-            scrollToBottom();
+            await sleep(200);
             setRequestingOverpassApi(false);
+            await sleep(200);
+            scrollToBottom();
             break;
           }
         } catch (error) {

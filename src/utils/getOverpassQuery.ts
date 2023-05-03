@@ -88,7 +88,7 @@ Multiple Overpass API queries:`;
     hint: hint,
   });
   const queries = res.text.split("```").filter((i: string) => {
-    return i !== "\n" && i.length !== 0;
+    return i !== "\n" && i !== "\n\n" && i !== "\n===" && i.length !== 0;
   });
   return queries;
 };
