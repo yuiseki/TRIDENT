@@ -1,3 +1,15 @@
+@font-face {
+  font-family: emoji;
+  /*
+    https://xem.github.io/unicode13/emoji.html
+  */
+  src: url(/Twemoji.ttf);
+  /*
+    https://github.com/mozilla/twemoji-colr/issues/56
+  */
+  unicode-range: U+00A9-E007F;
+}
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;

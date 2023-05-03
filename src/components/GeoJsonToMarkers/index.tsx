@@ -58,7 +58,7 @@ export const GeoJsonToMarkers: React.FC<{
         }
 
         let zIndex = 100;
-        let fontSize = "2em";
+        let fontSize = "1.5em";
         let icon = emoji;
         let name = "No name";
         let title = "No name";
@@ -209,8 +209,8 @@ export const GeoJsonToMarkers: React.FC<{
                     alignItems: "center",
                     justifyContent: "center",
                     color: "rgba(0, 0, 0, 0.8)",
-                    backgroundColor: "rgba(255, 255, 255, 0.7)",
-                    backdropFilter: "blur(4px)",
+                    backgroundColor: "rgba(255, 255, 255, 0.5)",
+                    backdropFilter: "blur(5px)",
                     borderRadius: "4px",
                     margin: "4px 0",
                     padding: "6px 8px",

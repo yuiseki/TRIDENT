@@ -184,15 +184,20 @@ export const DialogueElementItem: React.FC<{
                 )}
                 {geojson && overpassQuery && (
                   <div style={{ width: "100%" }}>
-                    <details style={{ marginBottom: "25px" }}>
-                      <summary>Overpass API query</summary>
-                      <pre style={{ paddingLeft: "2em" }}>{overpassQuery}</pre>
-                    </details>
                     {geojson && geojson.features.length === 0 ? (
                       <div>Sorry, something went wrong.</div>
                     ) : (
-                      <GeoJsonMap geojson={geojson} />
+                      <>
+                        <div style={{ marginBottom: "10px" }}>
+                          Related places
+                        </div>
+                        <GeoJsonMap geojson={geojson} />
+                      </>
                     )}
+                    <details style={{ marginTop: "25px" }}>
+                      <summary>Overpass API query</summary>
+                      <pre style={{ paddingLeft: "2em" }}>{overpassQuery}</pre>
+                    </details>
                   </div>
                 )}
               </div>
