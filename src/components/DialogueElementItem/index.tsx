@@ -43,7 +43,6 @@ export const DialogueElementItem: React.FC<{
           const overpassRes = await getOverpassResponse(query);
           const overpassJson = await overpassRes.json();
           newGeojson = osmtogeojson(overpassJson);
-          console.log(newGeojson);
           if (newGeojson.features.length === 0) {
             if (
               newOverpassQueries.indexOf(query) ===

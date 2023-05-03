@@ -18,7 +18,6 @@ export const GeoJsonMap = ({ geojson }: { geojson: FeatureCollection }) => {
       if (!mapRef || !mapRef.current) return;
       if (geojson === undefined) return;
       try {
-        console.log(geojson);
         const [minLng, minLat, maxLng, maxLat] = turf.bbox(geojson);
 
         mapRef.current.fitBounds(
