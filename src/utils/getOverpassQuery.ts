@@ -53,7 +53,7 @@ out geom;
 \`\`\`
 ===
 
-Example 2:
+Example 3:
 ===
 Question: Where is the headquarters of UNHCR?
 Possibly useful hint: The headquarters of UNHCR is in Geneva, Switzerland.
