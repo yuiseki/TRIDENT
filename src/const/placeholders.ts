@@ -1,6 +1,7 @@
 export const placeholders = [
   "Where is the headquarters of the UN?",
-  "Concisely describe the UN's stance on artificial intelligence.",
+  "How can the UN use artificial intelligence to achieve this goal?",
+  "Concisely describe the UN's concern on artificial intelligence.",
   "How much the UN place a high priority on GIS?",
   "Which region is the UN most concerned about climate change?",
   "Does the UN take gender into account in its climate change action?",

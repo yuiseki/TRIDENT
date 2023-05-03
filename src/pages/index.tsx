@@ -263,6 +263,7 @@ export default function Home() {
             <input
               type="button"
               value="Request information retrieval"
+              disabled={responding || lazyInserting}
               onClick={submitQuestion}
               style={{
                 color: "rgb(253, 254, 255)",
