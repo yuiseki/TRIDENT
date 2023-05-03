@@ -6,6 +6,8 @@ import { GeoJsonMap } from "../GeoJsonMap";
 import { sleep } from "@/utils/sleep";
 import { scrollToBottom } from "@/utils/scrollToBottom";
 import { FeatureCollection } from "geojson";
+import { getOverpassResponse } from "@/utils/getOverpassResponse";
+import osmtogeojson from "osmtogeojson";
 
 export const DialogueElementItem: React.FC<{
   prevDialogueElement?: DialogueElement;
@@ -19,31 +21,43 @@ export const DialogueElementItem: React.FC<{
   isResponding,
 }) => {
   const [geojson, setGeojson] = useState<FeatureCollection>();
-  const [requestingOverpassQuery, setRequestingOverpassQuery] = useState(false);
+  const [generatingOverpassQuery, setGeneratingOverpassQuery] = useState(false);
   const [requestingOverpassApi, setRequestingOverpassApi] = useState(false);
   const [overpassQuery, setOverpassQuery] = useState<string | undefined>();
 
   const searchRelatedPlaces = useCallback(
     async (question: string, hint: string) => {
-      setRequestingOverpassQuery(true);
+      setGeneratingOverpassQuery(true);
       const res = await nextPostJson("/api/geo", {
         query: question,
         hint: hint,
       });
-      const newOverpassQuery = await res.text();
-      console.log(newOverpassQuery);
-      setOverpassQuery(newOverpassQuery);
-      setRequestingOverpassQuery(false);
-      setRequestingOverpassApi(true);
-      const overpassRes = await nextPostJson("/api/overpass", {
-        query: newOverpassQuery,
-      });
-      const newGeojson = await overpassRes.json();
-      console.log(newGeojson);
-      setGeojson(newGeojson);
-      await sleep(500);
-      scrollToBottom();
-      setRequestingOverpassApi(false);
+      const newOverpassQueries = await res.json();
+      setGeneratingOverpassQuery(false);
+      for await (const query of newOverpassQueries) {
+        console.log(query);
+        setOverpassQuery(query);
+        setRequestingOverpassApi(true);
+        try {
+          const overpassRes = await getOverpassResponse(query);
+          const overpassJson = await overpassRes.json();
+          const newGeojson = osmtogeojson(overpassJson);
+          console.log(newGeojson);
+          if (newGeojson.features.length === 0) {
+            await sleep(500);
+            continue;
+          } else {
+            setGeojson(newGeojson);
+            await sleep(500);
+            scrollToBottom();
+            setRequestingOverpassApi(false);
+            break;
+          }
+        } catch (error) {
+          console.log(error);
+          continue;
+        }
+      }
     },
     []
   );
@@ -150,7 +164,7 @@ export const DialogueElementItem: React.FC<{
               <div style={{ margin: "25px 0", width: "100%" }}>
                 {geojson === undefined &&
                   overpassQuery === undefined &&
-                  !requestingOverpassQuery &&
+                  !generatingOverpassQuery &&
                   !requestingOverpassApi && (
                     <div style={{ width: "100%", textAlign: "right" }}>
                       <input
@@ -179,9 +193,15 @@ export const DialogueElementItem: React.FC<{
                       />
                     </div>
                   )}
-                {(requestingOverpassQuery || requestingOverpassApi) && (
+                {generatingOverpassQuery && (
                   <div style={{ width: "100%" }}>
-                    Loading, please wait...
+                    Generating query for Overpass API, please wait...
+                    <span className="blinkingCursor" />
+                  </div>
+                )}
+                {requestingOverpassApi && (
+                  <div style={{ width: "100%" }}>
+                    Waiting response from Overpass API, please wait...
                     <span className="blinkingCursor" />
                   </div>
                 )}

@@ -1,16 +1,14 @@
 import { getOverpassQuery } from "@/utils/getOverpassQuery";
-import { getOverpassResponse } from "@/utils/getOverpassResponse";
 import { getRequestParamAsString } from "@/utils/getRequestParamAsString";
 import { isQueryStringDanger } from "@/utils/isQueryStringDanger";
 import type { NextApiRequest, NextApiResponse } from "next";
-import osmtogeojson from "osmtogeojson";
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
   const queryString = getRequestParamAsString(req, "query");
-  if (queryString === undefined) {
+  if (queryString === undefined || queryString.length === 0) {
     res.status(400).json({ status: "ng", message: "query is missing" });
     return;
   }
@@ -38,7 +36,9 @@ export default async function handler(
   }
 
   const overpassQuery = await getOverpassQuery(queryString, hintString);
-  console.log("overpass query:", overpassQuery);
+  overpassQuery.map((q) => {
+    console.log("overpass query:", q);
+  });
 
-  res.status(200).send(overpassQuery);
+  res.status(200).json(overpassQuery);
 }
