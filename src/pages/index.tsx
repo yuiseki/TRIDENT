@@ -167,12 +167,12 @@ export default function Home() {
     <>
       <Head>
         <title>
-          TRIDENT - UN dedicated interactive document exploration and humanity
+          TRIDENT - UN dedicated interactive information retrieval and humanity
           assistance system
         </title>
         <meta
           name="description"
-          content="TRIDENT - UN dedicated interactive document exploration and humanity assistance system"
+          content="TRIDENT - UN dedicated interactive information retrieval and humanity assistance system"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
