@@ -1,14 +1,15 @@
 import { NextApiRequest } from "next";
 
-export const getRequestQueryString = (
-  req: NextApiRequest
+export const getRequestParamAsString = (
+  req: NextApiRequest,
+  paramName: string
 ): string | undefined => {
   let query = undefined;
-  const { query: queryInQuery } = req.query;
+  const queryInQuery = req.query[paramName];
   if (queryInQuery !== undefined) {
     return queryInQuery as string;
   }
-  const { query: queryInBody } = req.body;
+  const queryInBody = req.body[paramName];
   if (queryInBody !== undefined) {
     return queryInBody;
   }
