@@ -2,7 +2,7 @@ import { LLMChain } from "langchain/chains";
 import { OpenAI } from "langchain/llms/openai";
 import { PromptTemplate } from "langchain/prompts";
 
-export const getOverpassQuery = async (
+export const generateOverpassQuery = async (
   question: string,
   hint: string
 ): Promise<string[]> => {
@@ -70,6 +70,24 @@ out geom;
 \`\`\`
 ===
 
+Example 4:
+===
+Question: Where is the headquarters of the UNIFIL?
+Possibly useful hint: The headquarters of the UNIFIL is in southern Lebanon.
+Overpass API query:
+\`\`\`
+[out:json][timeout:Lebanon];
+area["name:en"="Geneva"]->.searchArea;
+(
+  nwr["name"~"UNIFIL"](area.searchArea);
+  nwr["name:en"~"UNIFIL"](area.searchArea);
+  nwr["short_name"~"UNIFIL"](area.searchArea);
+  nwr["short_name:en"~"UNIFIL"](area.searchArea);
+);
+out geom;
+\`\`\`
+===
+
 Question: {question}
 Possibly useful hint: {hint}
 Multiple Overpass API queries:`;
@@ -78,7 +96,7 @@ Multiple Overpass API queries:`;
     overpassQueryPromptTemplateString
   );
   //const model = new OpenAI({ temperature: 0, modelName: "gpt-3.5-turbo" });
-  const model = new OpenAI({ temperature: 0, maxTokens: 1000 });
+  const model = new OpenAI({ temperature: 0, maxTokens: 2000 });
   const chain = new LLMChain({
     llm: model,
     prompt: overpassQueryPromptTemplate,

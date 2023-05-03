@@ -1,4 +1,4 @@
-import { getOverpassQuery } from "@/utils/getOverpassQuery";
+import { generateOverpassQuery } from "@/utils/generateOverpassQuery";
 import { getRequestParamAsString } from "@/utils/getRequestParamAsString";
 import { isQueryStringDanger } from "@/utils/isQueryStringDanger";
 import type { NextApiRequest, NextApiResponse } from "next";
@@ -35,7 +35,7 @@ export default async function handler(
     return;
   }
 
-  const overpassQuery = await getOverpassQuery(queryString, hintString);
+  const overpassQuery = await generateOverpassQuery(queryString, hintString);
   overpassQuery.map((q) => {
     console.log("overpass query:", q);
   });
