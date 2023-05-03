@@ -134,7 +134,8 @@ export const DialogueElementItem: React.FC<{
           })}
           {!isResponding &&
             dialogueElement.docs &&
-            0 < dialogueElement.docs.length && (
+            0 < dialogueElement.docs.length &&
+            !dialogueElement.text.includes("I don't know.") && (
               <details>
                 <summary>Related documents</summary>
                 <ul style={{ paddingLeft: "2em" }}>
@@ -173,7 +174,8 @@ export const DialogueElementItem: React.FC<{
             })}
           {!isResponding &&
             prevDialogueElement &&
-            dialogueElement.who === "assistant" && (
+            dialogueElement.who === "assistant" &&
+            !dialogueElement.text.includes("I don't know.") && (
               <div style={{ margin: "25px 0", width: "100%" }}>
                 {geojson === undefined &&
                   overpassQuery === undefined &&

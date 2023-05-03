@@ -20,7 +20,8 @@ const greetings =
 
 const placeholders = [
   "Where is the headquarters of the UN?",
-  "When and where was the United Nations Charter signed?",
+  "Which region is the UN most concerned about climate change?",
+  "Which region is the UN most concerned about poverty?",
   "What is the name of the UN mission in South Sudan?",
   "When did the UN start mission in South Sudan?",
   "Who is the latest head of South Sudan at the UN mission?",
@@ -30,6 +31,7 @@ const placeholders = [
   "Where is the headquarters of WHO?",
   "Where is the headquarters of the World Bank?",
   "Where is the Permanent Mission of Japan to the United Nations?",
+  "When and where was the United Nations Charter signed?",
 ];
 
 export default function Home() {

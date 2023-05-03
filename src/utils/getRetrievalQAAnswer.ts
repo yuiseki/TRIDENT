@@ -18,7 +18,11 @@ export const getRetrievalQAAnswer = async (query: string) => {
   );
 
   // initialize the LLM and chain
-  const model = new OpenAI({ temperature: 0, maxTokens: 2048 });
+  const model = new OpenAI({
+    temperature: 0,
+    maxTokens: 3000,
+    modelName: "text-davinci-003",
+  });
   const baseRetrievalQAChain = RetrievalQAChain.fromLLM(
     model,
     vectorStore.asRetriever(10),
@@ -35,13 +39,16 @@ export const getRetrievalQAAnswer = async (query: string) => {
   );
 
   // execute chain
+  console.info("----- ----- -----");
   let answer;
   try {
     answer = await baseRetrievalQAChain.call({
       query: query,
     });
+    console.log("baseRetrievalQAChain succeeded");
   } catch (error) {
     console.error("!!!!! baseRetrievalQAChain Error !!!!!");
+    //console.error(error);
     console.log("try miniRetrievalQAChain...");
     try {
       answer = await miniRetrievalQAChain.call({
@@ -56,5 +63,6 @@ export const getRetrievalQAAnswer = async (query: string) => {
       };
     }
   }
+  console.info("----- ----- -----");
   return answer;
 };
