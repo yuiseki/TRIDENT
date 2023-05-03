@@ -73,7 +73,7 @@ export default function Home() {
           return placeholders[idx + 1];
         }
       });
-    }, 5000);
+    }, 10000);
     setPlaceholderInitialized(true);
   }, []);
 
