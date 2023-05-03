@@ -181,7 +181,7 @@ export const DialogueElementItem: React.FC<{
                   )}
                 {(requestingOverpassQuery || requestingOverpassApi) && (
                   <div style={{ width: "100%" }}>
-                    Loading...
+                    Loading, please wait...
                     <span className="blinkingCursor" />
                   </div>
                 )}

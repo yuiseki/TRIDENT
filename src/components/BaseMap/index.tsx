@@ -62,7 +62,7 @@ export const BaseMap: React.FC<{
       style={{
         display: "block",
         width: "100%",
-        height: "20vh",
+        height: "25vh",
       }}
       id={id}
       ref={mapRef}
