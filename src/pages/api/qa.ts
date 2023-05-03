@@ -24,7 +24,6 @@ export default async function handler(
   }
 
   const answer = await getRetrievalQAAnswer(queryString);
-  console.log("answer:", answer.text);
 
   res.status(200).json(answer);
 }

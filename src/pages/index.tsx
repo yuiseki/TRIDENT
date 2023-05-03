@@ -5,9 +5,8 @@ import { DialogueElement } from "@/types/DialogueElement";
 import { Document } from "@/types/Document";
 import Head from "next/head";
 import { useCallback, useEffect, useState } from "react";
-
-const sleep = (msec: number) =>
-  new Promise((resolve) => setTimeout(resolve, msec));
+import { scrollToBottom } from "@/utils/scrollToBottom";
+import { sleep } from "@/utils/sleep";
 
 const timeoutExec = (func: () => void, msec: number) =>
   new Promise((resolve) =>
@@ -15,14 +14,6 @@ const timeoutExec = (func: () => void, msec: number) =>
       resolve(func());
     }, msec)
   );
-
-const scrollToBottom = async () => {
-  await sleep(100);
-  window.scroll({
-    top: document.body.scrollHeight,
-    behavior: "smooth",
-  });
-};
 
 const greetings =
   "Hello! I'm Trident, an UN dedicated interactive document exploration and humanity assistance system. What kind of documentation are you looking for?";
@@ -147,7 +138,7 @@ export default function Home() {
     []
   );
 
-  const submit = useCallback(async () => {
+  const submitQuestion = useCallback(async () => {
     const newInputText = inputText;
     setInputText("");
 
@@ -226,15 +217,21 @@ export default function Home() {
         >
           {dialogueList.map((dialogueElement, dialogueIndex) => {
             return (
-              <DialogueElementItem
-                key={dialogueIndex}
-                dialogueElement={dialogueElement}
-                dialogueIndex={dialogueIndex}
-                isResponding={
-                  (responding || lazyInserting) &&
-                  dialogueIndex === dialogueList.length - 1
-                }
-              />
+              <div key={dialogueIndex}>
+                <DialogueElementItem
+                  prevDialogueElement={
+                    0 < dialogueIndex
+                      ? dialogueList[dialogueIndex - 1]
+                      : undefined
+                  }
+                  dialogueElement={dialogueElement}
+                  dialogueIndex={dialogueIndex}
+                  isResponding={
+                    (responding || lazyInserting) &&
+                    dialogueIndex === dialogueList.length - 1
+                  }
+                />
+              </div>
             );
           })}
         </div>
@@ -270,8 +267,8 @@ export default function Home() {
             />
             <input
               type="button"
-              value="Submit"
-              onClick={submit}
+              value="Request information retrieval"
+              onClick={submitQuestion}
               style={{
                 color: "rgb(253, 254, 255)",
                 backgroundColor: "rgba(0, 158, 219, 1)",

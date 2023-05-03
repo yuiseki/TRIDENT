@@ -16,6 +16,7 @@ The assistant will always reply according to the following rules:
 Assistant has a serious personality.
 
 Example 1:
+===
 Question: Where is the headquarters of the UN?
 Possibly useful hint: The headquarters of the UN is in New York City, USA.
 Overpass API query:
@@ -27,8 +28,10 @@ area["name"="New York"]->.searchArea;
 );
 out geom;
 \`\`\`
+===
 
 Example 2:
+===
 Question: Where is the headquarters of UNMISS?
 Possibly useful hint: The headquarters of UNMISS is in Juba, South Sudan.
 Overpass API query:
@@ -40,6 +43,7 @@ area["name"="Juba"]->.searchArea;
 );
 out geom;
 \`\`\`
+===
 
 Question: {question}
 Possibly useful hint: {hint}
@@ -48,7 +52,8 @@ Overpass API query:`;
   const overpassQueryPromptTemplate = PromptTemplate.fromTemplate(
     overpassQueryPromptTemplateString
   );
-  const model = new OpenAI({ temperature: 0, modelName: "gpt-3.5-turbo" });
+  //const model = new OpenAI({ temperature: 0, modelName: "gpt-3.5-turbo" });
+  const model = new OpenAI({ temperature: 0 });
   const chain = new LLMChain({
     llm: model,
     prompt: overpassQueryPromptTemplate,

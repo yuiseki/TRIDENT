@@ -23,10 +23,7 @@ export default async function handler(
     return;
   }
 
-  console.log("overpass query:", overpassQuery);
-
   const overpassRes = await getOverpassResponse(overpassQuery);
-  console.log(overpassRes);
   const geojson = osmtogeojson(overpassRes);
 
   res.status(200).json(geojson);
