@@ -20,10 +20,9 @@ const secUrls = secUrlsFile.split("\n");
 const urls = [...gaUrls, ...secUrls];
 console.info("urls:", urls.length);
 
-// TODO: もっと小さくする
 const splitter = new TokenTextSplitter({
   encodingName: "p50k_base",
-  chunkSize: 300,
+  chunkSize: 150,
   chunkOverlap: 5,
 });
 

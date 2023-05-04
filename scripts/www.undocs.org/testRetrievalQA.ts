@@ -13,7 +13,7 @@ for (const query of queries) {
   try {
     const answer = await getRetrievalQAAnswer(query);
     console.log("A:", answer.text);
-    console.log(answer.sourceDocuments.map((d: Document) => d.metadata.title));
+    console.log("Sources:", answer.sourceDocuments.length);
   } catch (error) {
     console.log("!!!!! error !!!!!");
   }
