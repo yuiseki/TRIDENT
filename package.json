@@ -19,6 +19,7 @@
     "site:github.com:fetch": "node --loader ts-node/esm ./scripts/github.com/fetch_and_store.ts"
   },
   "dependencies": {
+    "@dqbd/tiktoken": "^1.0.7",
     "@pinecone-database/pinecone": "^0.0.14",
     "@turf/turf": "^6.5.0",
     "@types/node": "18.16.3",

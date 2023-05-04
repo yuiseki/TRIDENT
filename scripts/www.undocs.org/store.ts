@@ -5,17 +5,9 @@ import { PineconeClient } from "@pinecone-database/pinecone";
 import { PineconeStore } from "langchain/vectorstores/pinecone";
 
 import fs from "node:fs/promises";
-import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
+import { TokenTextSplitter } from "langchain/text_splitter";
 
 dotenv.config();
-
-// pinecone
-const client = new PineconeClient();
-await client.init({
-  apiKey: process.env.PINECONE_API_KEY || "",
-  environment: process.env.PINECONE_ENVIRONMENT || "",
-});
-const pineconeIndex = client.Index(process.env.PINECONE_INDEX || "");
 
 // list of all documents
 const gaUrlsFile = await fs.readFile("public/www.undocs.org/urls.txt", "utf-8");
@@ -28,9 +20,11 @@ const secUrls = secUrlsFile.split("\n");
 const urls = [...gaUrls, ...secUrls];
 console.info("urls:", urls.length);
 
-const splitter = new RecursiveCharacterTextSplitter({
-  chunkSize: 1000,
-  chunkOverlap: 100,
+// TODO: もっと小さくする
+const splitter = new TokenTextSplitter({
+  encodingName: "p50k_base",
+  chunkSize: 300,
+  chunkOverlap: 5,
 });
 
 // load all documents
@@ -80,6 +74,14 @@ console.log("all docs", allDocsPerPage.length);
 console.log("all docs flat", allDocsPerPage.flat().length);
 console.log("all splits", allSplittedDocs.length);
 console.log("all splits flat", allSplittedDocs.flat().length);
+
+// initialize pinecone
+const client = new PineconeClient();
+await client.init({
+  apiKey: process.env.PINECONE_API_KEY || "",
+  environment: process.env.PINECONE_ENVIRONMENT || "",
+});
+const pineconeIndex = client.Index(process.env.PINECONE_INDEX || "");
 
 // vectorize and store documents
 await PineconeStore.fromDocuments(
