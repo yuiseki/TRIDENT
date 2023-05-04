@@ -256,9 +256,9 @@ export const DialogueElementItem: React.FC<{
                 {requestingOverpassApi && overpassQueries && overpassQuery && (
                   <div style={{ width: "100%" }}>
                     Waiting response from Overpass API...
-                    {`${overpassQueries.indexOf(overpassQuery) + 1} / ${
+                    {` (${overpassQueries.indexOf(overpassQuery) + 1} / ${
                       overpassQueries.length
-                    }`}
+                    })`}
                     <span className="blinkingCursor" />
                   </div>
                 )}
