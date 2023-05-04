@@ -81,6 +81,6 @@ Insight:`;
     return res;
   } catch (error) {
     console.error("error !!!!!");
-    return [];
+    return { text: "Sorry, analyze failed." };
   }
 };

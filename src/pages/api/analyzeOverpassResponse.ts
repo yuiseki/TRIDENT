@@ -60,7 +60,7 @@ export default async function handler(
     hintString,
     JSON.parse(overpassJsonString)
   );
-  console.log(analyzeResult);
+  console.log(analyzeResult.text);
 
   res.status(200).json(analyzeResult);
 }
