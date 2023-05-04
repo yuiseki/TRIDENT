@@ -24,6 +24,9 @@ export const DialogueElementItem: React.FC<{
   const [geojson, setGeojson] = useState<FeatureCollection>();
   const [generatingOverpassQuery, setGeneratingOverpassQuery] = useState(false);
   const [requestingOverpassApi, setRequestingOverpassApi] = useState(false);
+  const [overpassQueries, setOverpassQueries] = useState<
+    string[] | undefined
+  >();
   const [overpassQuery, setOverpassQuery] = useState<string | undefined>();
 
   const searchRelatedPlaces = useCallback(
@@ -35,6 +38,7 @@ export const DialogueElementItem: React.FC<{
       });
       const newOverpassQueries = await res.json();
       setGeneratingOverpassQuery(false);
+      setOverpassQueries(newOverpassQueries);
       let newGeojson;
       for await (const query of newOverpassQueries) {
         console.log(query);
@@ -244,9 +248,17 @@ export const DialogueElementItem: React.FC<{
                     <span className="blinkingCursor" />
                   </div>
                 )}
-                {requestingOverpassApi && (
+                {!generatingOverpassQuery && requestingOverpassApi && (
                   <div style={{ width: "100%" }}>
-                    Waiting response from Overpass API, please wait...
+                    Generating query for Overpass API finished.
+                  </div>
+                )}
+                {requestingOverpassApi && overpassQueries && overpassQuery && (
+                  <div style={{ width: "100%" }}>
+                    Waiting response from Overpass API...
+                    {`${overpassQueries.indexOf(overpassQuery) + 1} / ${
+                      overpassQueries.length
+                    }`}
                     <span className="blinkingCursor" />
                   </div>
                 )}
