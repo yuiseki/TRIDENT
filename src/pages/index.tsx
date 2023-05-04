@@ -134,14 +134,14 @@ export default function Home() {
   );
 
   const submitQuestion = useCallback(async () => {
-    const newInputText = inputText;
+    const newInputText = inputText.trim();
     setInputText("");
 
-    insertNewDialogue({ who: "user", text: inputText });
+    insertNewDialogue({ who: "user", text: newInputText });
 
-    await scrollToBottom();
-    setResponding(true);
     await sleep(200);
+    scrollToBottom();
+    setResponding(true);
 
     const res = await nextPostJson("/api/qa", { query: newInputText });
     const json: { text: string; sourceDocuments: Document[] } =

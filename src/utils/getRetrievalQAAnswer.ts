@@ -25,7 +25,21 @@ export const getRetrievalQAAnswer = async (query: string) => {
     maxTokens: 3000,
     modelName: "text-davinci-003",
   });
-  const baseRetrievalQAChain = RetrievalQAChain.fromLLM(
+  const bigRetrievalQAChain = RetrievalQAChain.fromLLM(
+    model,
+    vectorStore.asRetriever(10),
+    {
+      returnSourceDocuments: true,
+    }
+  );
+  const moreRetrievalQAChain = RetrievalQAChain.fromLLM(
+    model,
+    vectorStore.asRetriever(8),
+    {
+      returnSourceDocuments: true,
+    }
+  );
+  const mediumRetrievalQAChain = RetrievalQAChain.fromLLM(
     model,
     vectorStore.asRetriever(6),
     {
@@ -48,16 +62,18 @@ export const getRetrievalQAAnswer = async (query: string) => {
   );
 
   // execute chain
-  console.info("----- ----- -----");
   let answer = undefined;
   for await (const retrievalQAChain of [
-    baseRetrievalQAChain,
+    //bigRetrievalQAChain,
+    //moreRetrievalQAChain,
+    mediumRetrievalQAChain,
     smallRetrievalQAChain,
     tinyRetrievalQAChain,
   ]) {
     try {
       if ("k" in retrievalQAChain.retriever) {
         console.info(
+          "getRetrievalQAAnswer",
           "retrievalQAChain.retriever.k:",
           retrievalQAChain.retriever.k
         );
@@ -65,10 +81,10 @@ export const getRetrievalQAAnswer = async (query: string) => {
       answer = await retrievalQAChain.call({
         query: query,
       });
-      console.error("----- retrievalQAChain succeeded -----");
+      console.log("getRetrievalQAAnswer", "retrievalQAChain succeeded");
       break;
     } catch (error) {
-      console.error("!!!!! retrievalQAChain failed !!!!!");
+      console.error("getRetrievalQAAnswer", "retrievalQAChain failed !!!!!");
       continue;
     }
   }
@@ -78,6 +94,5 @@ export const getRetrievalQAAnswer = async (query: string) => {
       sourceDocuments: [],
     };
   }
-  console.info("----- ----- -----");
   return answer;
 };

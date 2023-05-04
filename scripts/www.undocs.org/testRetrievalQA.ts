@@ -1,5 +1,4 @@
 import * as dotenv from "dotenv";
-import { Document } from "langchain/dist/document";
 import { getRetrievalQAAnswer } from "./../../src/utils/getRetrievalQAAnswer.ts";
 import { placeholders } from "./../../src/const/placeholders.ts";
 
@@ -8,14 +7,14 @@ dotenv.config();
 const queries = placeholders;
 
 for (const query of queries) {
-  console.log("----- ----- -----");
-  console.log("Q:", query);
+  console.log("\n\n");
+  console.log("testRetrievalQA", "Q:", query);
   try {
     const answer = await getRetrievalQAAnswer(query);
-    console.log("A:", answer.text);
-    console.log("Sources:", answer.sourceDocuments.length);
+    console.log("testRetrievalQA", "A:", answer.text);
+    console.log("testRetrievalQA", "Sources:", answer.sourceDocuments.length);
   } catch (error) {
-    console.log("!!!!! error !!!!!");
+    console.log("testRetrievalQA", "error !!!!!");
   }
-  console.log("----- ----- -----");
+  console.log("\n\n");
 }

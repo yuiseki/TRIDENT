@@ -20,6 +20,8 @@ const secUrls = secUrlsFile.split("\n");
 const urls = [...gaUrls, ...secUrls];
 console.info("urls:", urls.length);
 
+// TODO: Where is the Permanent Mission of Japan to the United Nations? -> I don't know.
+// TODO: try to increase overlap
 const splitter = new TokenTextSplitter({
   encodingName: "p50k_base",
   chunkSize: 150,
