@@ -229,6 +229,19 @@ export default function Home() {
                     (responding || lazyInserting) &&
                     dialogueIndex === dialogueList.length - 1
                   }
+                  setInputText={async (text) => {
+                    setInputText(text);
+                    await sleep(250);
+                    scrollToBottom();
+                    await sleep(250);
+                    if (textareaRef.current !== null) {
+                      textareaRef.current.focus();
+                      textareaRef.current.setSelectionRange(
+                        text.length,
+                        text.length
+                      );
+                    }
+                  }}
                 />
               </div>
             );
@@ -281,16 +294,16 @@ export default function Home() {
               }}
             />
             <button
+              onClick={submitQuestion}
               disabled={
                 responding ||
                 lazyInserting ||
                 !initialized ||
                 inputText.length === 0
               }
-              onClick={submitQuestion}
               style={{
                 position: "absolute",
-                bottom: 15,
+                bottom: 18,
                 right: 15,
                 color: "rgb(253, 254, 255)",
                 backgroundColor: "rgba(0, 158, 219, 1)",

@@ -15,11 +15,13 @@ export const DialogueElementItem: React.FC<{
   dialogueElement: DialogueElement;
   dialogueIndex: number;
   isResponding: boolean;
+  setInputText?: (text: string) => void;
 }> = ({
   prevDialogueElement,
   dialogueElement,
   dialogueIndex,
   isResponding,
+  setInputText,
 }) => {
   const [geojson, setGeojson] = useState<FeatureCollection>();
   const [generatingOverpassQuery, setGeneratingOverpassQuery] = useState(false);
@@ -149,7 +151,24 @@ export const DialogueElementItem: React.FC<{
                         minHeight: "1em",
                       }}
                     >
-                      {placeholder}
+                      <span>{placeholder}</span>
+                      <button
+                        onClick={() => {
+                          setInputText && setInputText(placeholder);
+                        }}
+                        style={{
+                          fontSize: "0.8em",
+                          padding: "0 4px",
+                          margin: "4px 0px 4px 20px",
+                          color: "rgb(253, 254, 255)",
+                          backgroundColor: "rgba(0, 158, 219, 1)",
+                          boxShadow: "0 2px 6px 0 rgba(0, 158, 219, 0.6)",
+                          border: "2px solid rgba(0, 158, 219, 0.6)",
+                          borderRadius: "2px",
+                        }}
+                      >
+                        Ask this
+                      </button>
                     </li>
                   );
                 })}
