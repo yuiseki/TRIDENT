@@ -1,7 +1,7 @@
 export const placeholders = [
   "What is the United Nations in a nutshell?",
   "What is the primary role of the United Nations?",
-  "Why was the humanity formed the UN?",
+  "Why was the humanity formed the United Nations?",
   "When and where was the United Nations Charter signed?",
   "Where is the headquarters of the UN?",
   "How can the UN use artificial intelligence to achieve our goal?",
