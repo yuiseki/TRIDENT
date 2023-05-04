@@ -26,4 +26,6 @@ export const placeholders = [
   "Who is the latest head of South Sudan at the UN mission?",
   "Does the UN take gender into account in its climate change action?",
   "Why is the UN taking gender considerations into account in climate change action?",
+  "What is the latest situation in Sudan?",
+  "Tell me in detail about the UN's activities in Kosovo.",
 ];
