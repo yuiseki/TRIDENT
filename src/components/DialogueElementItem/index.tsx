@@ -181,7 +181,9 @@ export const DialogueElementItem: React.FC<{
             !dialogueElement.text.includes("I don't know.") &&
             !dialogueElement.text.includes("Sorry, something went wrong.") && (
               <details>
-                <summary>Related documents</summary>
+                <summary>
+                  Related documents {`(${dialogueElement.docs.length})`}
+                </summary>
                 <ul style={{ paddingLeft: "2em" }}>
                   {dialogueElement.docs?.map((doc, docIdx) => {
                     return (
