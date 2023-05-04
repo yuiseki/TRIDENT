@@ -32,7 +32,7 @@ export const DialogueElementItem: React.FC<{
   const searchRelatedPlaces = useCallback(
     async (question: string, hint: string) => {
       setGeneratingOverpassQuery(true);
-      const res = await nextPostJson("/api/geo", {
+      const res = await nextPostJson("/api/generateOverpassQuery", {
         query: question,
         hint: hint,
       });
@@ -216,9 +216,7 @@ export const DialogueElementItem: React.FC<{
                   !generatingOverpassQuery &&
                   !requestingOverpassApi && (
                     <div style={{ width: "100%", textAlign: "right" }}>
-                      <input
-                        type="button"
-                        value="Search related places"
+                      <button
                         style={{
                           color: "rgb(253, 254, 255)",
                           backgroundColor: "rgba(0, 158, 219, 1)",
@@ -239,7 +237,9 @@ export const DialogueElementItem: React.FC<{
                           const hint = dialogueElement.text;
                           searchRelatedPlaces(question, hint);
                         }}
-                      />
+                      >
+                        Search related places
+                      </button>
                     </div>
                   )}
                 {generatingOverpassQuery && (

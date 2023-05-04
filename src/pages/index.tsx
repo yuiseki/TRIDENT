@@ -4,7 +4,7 @@ import { DialogueElementItem } from "@/components/DialogueElementItem";
 import { DialogueElement } from "@/types/DialogueElement";
 import { Document } from "@/types/Document";
 import Head from "next/head";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { scrollToBottom } from "@/utils/scrollToBottom";
 import { sleep } from "@/utils/sleep";
 import { placeholders } from "@/const/placeholders";
@@ -33,6 +33,7 @@ export default function Home() {
   const [initialized, setInitialized] = useState(false);
   const [placeholder, setPlaceholder] = useState(placeholders[0]);
   const [placeholderInitialized, setPlaceholderInitialized] = useState(false);
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
 
   const initializer = useCallback(() => {
     if (initialized) {
@@ -53,6 +54,9 @@ export default function Home() {
       setOutputText("");
       setResponding(false);
       setInitialized(true);
+      if (textareaRef.current !== null) {
+        textareaRef.current.focus();
+      }
     }
   }, [dialogueList, initialized, outputText]);
 
@@ -233,54 +237,80 @@ export default function Home() {
         <div
           style={{
             position: "absolute",
-            bottom: "5em",
+            bottom: "3em",
             width: "100vw",
             margin: "auto",
           }}
         >
           <div
             style={{
+              position: "relative",
               maxWidth: "1000px",
               margin: "auto",
             }}
           >
             <textarea
+              ref={textareaRef}
               value={inputText}
               placeholder={responding || lazyInserting ? "..." : placeholder}
-              onChange={(e) => setInputText(e.currentTarget.value)}
-              rows={4}
+              onChange={(e) => {
+                setTimeout(() => {
+                  if (textareaRef.current) {
+                    textareaRef.current.style.height = "0px";
+                    textareaRef.current.style.height =
+                      textareaRef.current.scrollHeight + "px";
+                  }
+                }, 100);
+                setInputText(e.currentTarget.value);
+              }}
+              rows={inputText ? inputText.split("\n").length : 1}
+              maxLength={400}
               style={{
+                overflowY: "hidden",
+                resize: "none",
+                minHeight: "50px",
+                maxHeight: "200px",
+                whiteSpace: "pre-wrap",
+                height: "auto",
                 width: "100%",
                 color: "rgba(0, 0, 0, 0.8)",
                 backgroundColor: "rgba(255, 255, 255, 0.9)",
                 borderRadius: "2px",
-                border: "2px solid rgba(0, 158, 219, 0.8)",
-                boxShadow: "0 2px 6px 0 rgba(0, 158, 219, 0.3)",
-                padding: "12px 8px",
-                fontSize: "1.2em",
+                padding: "8px 46px 8px 12px",
+                fontWeight: 400,
               }}
             />
-            <input
-              type="button"
-              value="Request information retrieval"
-              disabled={responding || lazyInserting || !initialized}
+            <button
+              value=""
+              disabled={
+                responding ||
+                lazyInserting ||
+                !initialized ||
+                inputText.length === 0
+              }
               onClick={submitQuestion}
               style={{
+                position: "absolute",
+                bottom: 15,
+                right: 15,
                 color: "rgb(253, 254, 255)",
                 backgroundColor: "rgba(0, 158, 219, 1)",
                 boxShadow: "0 2px 6px 0 rgba(0, 158, 219, 0.6)",
                 border: "2px solid rgba(0, 158, 219, 0.6)",
                 borderRadius: "2px",
                 display: "block",
-                textAlign: "right",
-                padding: "8px",
-                marginRight: 0,
-                marginLeft: "auto",
-                fontSize: "1.1em",
-                fontWeight: "bold",
-                letterSpacing: "2px",
+                padding: "4px",
+                height: "34px",
+                width: "34px",
               }}
-            />
+            >
+              <img
+                style={{ height: "24px", width: "24px" }}
+                src="https://i.gyazo.com/d597c2b08219ea88a211cf98859d9265.png"
+                alt="Request information retrieval"
+                title="Request information retrieval"
+              />
+            </button>
           </div>
         </div>
       </main>

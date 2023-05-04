@@ -15,6 +15,26 @@ input[type="button"]:disabled {
   background-color: rgba(0, 158, 219, 0.4) !important;
 }
 
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  background-color: rgba(0, 158, 219, 0.4) !important;
+}
+
+textarea {
+  border: 4px solid rgba(0, 158, 219, 0.4);
+  outline: none;
+}
+textarea:focus {
+  border: 4px solid rgba(0, 158, 219, 0.95);
+  box-shadow: 2px 2px 2px 0 rgba(0, 158, 219, 0.7);
+  outline: none;
+}
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -61,6 +81,8 @@ input[type="button"]:disabled {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-size: 1rem;
+  line-height: 1.75;
 }
 
 html,
@@ -75,6 +97,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  font-family: Söhne, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+    Ubuntu, Cantarell, Noto Sans, sans-serif, Helvetica Neue, Arial,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
 div.overlay {

@@ -27,12 +27,10 @@ export default async function handler(
     return;
   }
   if (hintString.length > 1000) {
-    res
-      .status(400)
-      .json({
-        status: "ng",
-        message: `hint is too long, ${hintString.length}`,
-      });
+    res.status(400).json({
+      status: "ng",
+      message: `hint is too long, ${hintString.length}`,
+    });
     return;
   }
   if (isQueryStringDanger(hintString)) {
@@ -42,7 +40,7 @@ export default async function handler(
 
   const overpassQuery = await generateOverpassQuery(queryString, hintString);
   overpassQuery.map((q) => {
-    console.log("overpass query:", q);
+    console.log("overpass query:", q.length);
   });
 
   res.status(200).json(overpassQuery);
