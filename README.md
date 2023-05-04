@@ -1,4 +1,4 @@
-# TRIDENT - UN dedicated interactive information retrieval and humanity assistance system
+# TRIDENT - Unofficial UN dedicated interactive information retrieval and humanity assistance system
 
 ## How to use
 

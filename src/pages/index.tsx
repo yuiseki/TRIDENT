@@ -17,7 +17,7 @@ const timeoutExec = (func: () => void, msec: number) =>
   );
 
 const greetings =
-  "Hello! I'm TRIDENT, an UN dedicated interactive information retrieval and humanity assistance system. What kind of information are you looking for?";
+  "Hello! I'm TRIDENT, an unofficial UN dedicated interactive information retrieval and humanity assistance system. What kind of information are you looking for?";
 
 export default function Home() {
   const [dialogueList, setDialogueList] = useState<DialogueElement[]>([
@@ -171,12 +171,12 @@ export default function Home() {
     <>
       <Head>
         <title>
-          TRIDENT - UN dedicated interactive information retrieval and humanity
-          assistance system
+          TRIDENT - Unofficial UN dedicated interactive information retrieval
+          and humanity assistance system
         </title>
         <meta
           name="description"
-          content="TRIDENT - UN dedicated interactive information retrieval and humanity assistance system"
+          content="TRIDENT - Unofficial UN dedicated interactive information retrieval and humanity assistance system"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
