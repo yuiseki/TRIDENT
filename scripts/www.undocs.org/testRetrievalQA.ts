@@ -1,20 +1,11 @@
 import * as dotenv from "dotenv";
 import { Document } from "langchain/dist/document";
 import { getRetrievalQAAnswer } from "@/utils/getRetrievalQAAnswer";
+import { placeholders } from "@/const/placeholders";
 
 dotenv.config();
 
-const queries = [
-  "What is the UN doing in South Sudan?",
-  "What is the name of the UN mission in South Sudan?",
-  "When did the UN start mission in South Sudan?",
-  "Who is the latest head of South Sudan at the UN?",
-  "Where is the headquarters of South Sudan at the UN?",
-  "What is the UN doing in Kosovo?",
-  "What is the name of the UN mission in Kosovo?",
-  "When did the UN start mission in Kosovo?",
-  "Who is the latest head of Kosovo at the UN?",
-];
+const queries = placeholders;
 
 for (const query of queries) {
   console.log("----- ----- -----");
