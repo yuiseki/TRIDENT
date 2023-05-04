@@ -312,7 +312,7 @@ export const DialogueElementItem: React.FC<{
                         <GeoJsonMap geojson={geojson} />
                         {analyze ? (
                           <div style={{ width: "100%" }}>
-                            <strong>Insights by TRIDENT: </strong>
+                            <strong>Insights from TRIDENT: </strong>
                             {analyze}
                           </div>
                         ) : (
