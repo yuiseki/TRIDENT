@@ -1,4 +1,4 @@
-import { analyzeGeoJSON } from "@/utils/analyzeGeoJSON";
+import { analyzeOverpassResponse } from "@/utils/analyzeOverpassResponse";
 import { getRequestParamAsString } from "@/utils/getRequestParamAsString";
 import { isQueryStringDanger } from "@/utils/isQueryStringDanger";
 import type { NextApiRequest, NextApiResponse } from "next";
@@ -55,7 +55,7 @@ export default async function handler(
     return;
   }
 
-  const analyzeResult = await analyzeGeoJSON(
+  const analyzeResult = await analyzeOverpassResponse(
     queryString,
     hintString,
     JSON.parse(overpassJsonString)

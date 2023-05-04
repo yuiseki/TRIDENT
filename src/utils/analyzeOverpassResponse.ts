@@ -6,7 +6,7 @@ import { FeatureCollection, Feature, Position, Geometry } from "geojson";
 import * as turf from "@turf/turf";
 import { OverpassJson } from "overpass-ts";
 
-export const analyzeGeoJSON = async (
+export const analyzeOverpassResponse = async (
   question: string,
   hint: string,
   rawOverpassJson: OverpassJson

@@ -1,5 +1,5 @@
 import * as dotenv from "dotenv";
-import { analyzeGeoJSON } from "./../../src/utils/analyzeGeoJSON.ts";
+import { analyzeOverpassResponse } from "../../src/utils/analyzeOverpassResponse.ts";
 
 dotenv.config();
 
@@ -901,7 +901,7 @@ const overpassResponse = `
 
 console.log(overpassResponse.length);
 
-const res = await analyzeGeoJSON(
+const res = await analyzeOverpassResponse(
   "Where is the headquarters of the UNIFIL?",
   "The headquarters of the UNIFIL is located in Naqoura, Lebanon.",
   JSON.parse(overpassResponse)
