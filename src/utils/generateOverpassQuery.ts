@@ -108,7 +108,7 @@ out geom;
 
 
 Question: {question}
-Possibly useful hint: {hint}
+Useful hint: {hint}
 Multiple Overpass API queries:`;
 
   const overpassQueryPromptTemplate = PromptTemplate.fromTemplate(

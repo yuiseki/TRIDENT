@@ -23,13 +23,14 @@ export const DialogueElementItem: React.FC<{
   isResponding,
   setInputText,
 }) => {
-  const [geojson, setGeojson] = useState<FeatureCollection>();
   const [generatingOverpassQuery, setGeneratingOverpassQuery] = useState(false);
-  const [requestingOverpassApi, setRequestingOverpassApi] = useState(false);
   const [overpassQueries, setOverpassQueries] = useState<
     string[] | undefined
   >();
   const [overpassQuery, setOverpassQuery] = useState<string | undefined>();
+  const [requestingOverpassApi, setRequestingOverpassApi] = useState(false);
+  const [geojson, setGeojson] = useState<FeatureCollection>();
+  const [analyze, setAnalyze] = useState<string>();
 
   const searchRelatedPlaces = useCallback(
     async (question: string, hint: string) => {
@@ -41,7 +42,7 @@ export const DialogueElementItem: React.FC<{
       const newOverpassQueries = await res.json();
       setGeneratingOverpassQuery(false);
       setOverpassQueries(newOverpassQueries);
-      let newGeojson;
+      let newGeojson: FeatureCollection;
       for await (const query of newOverpassQueries) {
         console.log(query);
         setOverpassQuery(query);
@@ -50,6 +51,7 @@ export const DialogueElementItem: React.FC<{
           const overpassRes = await getOverpassResponse(query);
           const overpassJson = await overpassRes.json();
           newGeojson = osmtogeojson(overpassJson);
+          console.log(JSON.stringify(newGeojson));
           if (newGeojson.features.length === 0) {
             if (
               newOverpassQueries.indexOf(query) ===
@@ -69,6 +71,21 @@ export const DialogueElementItem: React.FC<{
             setRequestingOverpassApi(false);
             await sleep(200);
             scrollToBottom();
+            try {
+              const analyzeRes = await nextPostJson(
+                "/api/analyzeOverpassResponse",
+                {
+                  query: question,
+                  hint: hint,
+                  overpassJson: JSON.stringify(overpassJson),
+                }
+              );
+              const analyzeJson = await analyzeRes.json();
+              console.log(analyzeJson.text);
+              setAnalyze(analyzeJson.text);
+            } catch (error) {
+              console.log(error);
+            }
             break;
           }
         } catch (error) {
@@ -293,6 +310,16 @@ export const DialogueElementItem: React.FC<{
                           Related places
                         </div>
                         <GeoJsonMap geojson={geojson} />
+                        {analyze ? (
+                          <div style={{ width: "100%" }}>
+                            <strong>Insights by TRIDENT: </strong>
+                            {analyze}
+                          </div>
+                        ) : (
+                          <div style={{ width: "100%" }}>
+                            Analyzing geospatial characteristics...
+                          </div>
+                        )}
                       </>
                     )}
                     <details style={{ marginTop: "25px" }}>
