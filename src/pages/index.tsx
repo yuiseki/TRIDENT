@@ -324,6 +324,16 @@ export default function Home() {
               />
             </button>
           </div>
+          <div
+            style={{
+              color: "white",
+              width: "100%",
+              textAlign: "center",
+              opacity: 0.8,
+            }}
+          >
+            TRIDENT may produce inaccurate information.
+          </div>
         </div>
       </main>
     </>
