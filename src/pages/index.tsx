@@ -281,7 +281,6 @@ export default function Home() {
               }}
             />
             <button
-              value=""
               disabled={
                 responding ||
                 lazyInserting ||
