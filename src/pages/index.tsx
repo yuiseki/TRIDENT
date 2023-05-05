@@ -215,14 +215,14 @@ export default function Home() {
           flexDirection: "column",
           justifyContent: "space-between",
           alignItems: "center",
-          width: "1000px",
+          maxWidth: "1000px",
           margin: "auto",
           zIndex: "1000",
         }}
       >
         <div
           style={{
-            width: "100%",
+            width: "98%",
             margin: "0.5em auto 10em",
           }}
         >
@@ -263,7 +263,7 @@ export default function Home() {
           style={{
             position: "absolute",
             bottom: "1em",
-            width: "100vw",
+            width: "98%",
             margin: "auto",
           }}
         >
