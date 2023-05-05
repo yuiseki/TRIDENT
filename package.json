@@ -26,7 +26,7 @@
     "@turf/turf": "^6.5.0",
     "@types/node": "18.16.3",
     "@types/react": "18.2.5",
-    "@types/react-dom": "18.2.3",
+    "@types/react-dom": "18.2.4",
     "cheerio": "^1.0.0-rc.12",
     "dotenv": "^16.0.3",
     "eslint": "8.39.0",
