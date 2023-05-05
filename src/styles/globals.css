@@ -92,11 +92,7 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background-image: url("/Flag_of_the_United_Nations.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  color: rgba(0, 0, 0, 0.9);
   font-family: Söhne, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
     Ubuntu, Cantarell, Noto Sans, sans-serif, Helvetica Neue, Arial,
     Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;

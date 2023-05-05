@@ -191,6 +191,20 @@ export default function Home() {
           left: 0,
           width: "100vw",
           height: "100vh",
+          backgroundColor: "rgba(0, 158, 219, 1)",
+          backgroundImage: 'url("/Flag_of_the_United_Nations.svg")',
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+        }}
+      ></div>
+      <div
+        style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          width: "100vw",
+          height: "100vh",
           backgroundColor: "rgba(0, 0, 0, 0.3)",
         }}
       ></div>
