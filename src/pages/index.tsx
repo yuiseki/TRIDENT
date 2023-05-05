@@ -211,7 +211,7 @@ export default function Home() {
         <div
           style={{
             width: "100%",
-            margin: "3em auto 15em",
+            margin: "0.5em auto 10em",
           }}
         >
           {dialogueList.map((dialogueElement, dialogueIndex) => {
@@ -250,7 +250,7 @@ export default function Home() {
         <div
           style={{
             position: "absolute",
-            bottom: "3em",
+            bottom: "1em",
             width: "100vw",
             margin: "auto",
           }}
