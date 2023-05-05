@@ -98,6 +98,11 @@ body {
     Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
+main {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
 div.overlay {
   background: linear-gradient(
       to bottom,

@@ -216,8 +216,6 @@ export default function Home() {
           justifyContent: "space-between",
           alignItems: "center",
           width: "1000px",
-          maxWidth: "100vw",
-          minHeight: "100vh",
           margin: "auto",
           zIndex: "1000",
         }}
