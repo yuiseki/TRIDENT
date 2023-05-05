@@ -1,6 +1,6 @@
 import { getRequestParamAsString } from "@/utils/getRequestParamAsString";
-import { getRetrievalQAAnswer } from "@/utils/getRetrievalQAAnswer";
 import { isQueryStringDanger } from "@/utils/isQueryStringDanger";
+import { getRetrievalQAAnswer } from "@/utils/langchain/getRetrievalQAAnswer";
 import type { NextApiRequest, NextApiResponse } from "next";
 
 export default async function handler(

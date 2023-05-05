@@ -1,5 +1,5 @@
 import * as dotenv from "dotenv";
-import { getRetrievalQAAnswer } from "./../../src/utils/getRetrievalQAAnswer.ts";
+import { getRetrievalQAAnswer } from "../../src/utils/langchain/getRetrievalQAAnswer.ts";
 import { placeholders } from "./../../src/const/placeholders.ts";
 
 dotenv.config();

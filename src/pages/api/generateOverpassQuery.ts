@@ -1,4 +1,4 @@
-import { generateOverpassQuery } from "@/utils/generateOverpassQuery";
+import { generateOverpassQuery } from "@/utils/langchain/generateOverpassQuery";
 import { getRequestParamAsString } from "@/utils/getRequestParamAsString";
 import { isQueryStringDanger } from "@/utils/isQueryStringDanger";
 import type { NextApiRequest, NextApiResponse } from "next";
