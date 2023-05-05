@@ -210,17 +210,17 @@ export const DialogueElementItem: React.FC<{
                           minHeight: "1em",
                         }}
                       >
-                        <a href={doc.metadata.source} target="_blank">
-                          {doc.metadata.title
-                            ? doc.metadata.title
-                            : doc.metadata.source}
+                        <a
+                          href={doc.metadata.source}
+                          title={doc.metadata.title}
+                          target="_blank"
+                        >
+                          {doc.metadata.id}
                         </a>
                         {" - "}
                         <span>
                           {new Date(
-                            doc.metadata[
-                              "pdf.metadata._metadata.xmp:modifydate"
-                            ]
+                            doc.metadata.created_at * 1000
                           ).toLocaleDateString()}
                         </span>
                       </li>

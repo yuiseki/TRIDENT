@@ -3,7 +3,6 @@ import { PineconeClient } from "@pinecone-database/pinecone";
 import { PineconeStore } from "langchain/vectorstores/pinecone";
 import { OpenAI } from "langchain/llms/openai";
 import { RetrievalQAChain } from "langchain/chains";
-//import { TimeWeightedVectorStoreRetriever } from "langchain/retrievers/time_weighted";
 
 export const getRetrievalQAAnswer = async (query: string) => {
   // initialize pinecone
