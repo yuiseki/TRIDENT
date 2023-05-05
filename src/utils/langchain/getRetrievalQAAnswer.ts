@@ -3,6 +3,7 @@ import { PineconeClient } from "@pinecone-database/pinecone";
 import { PineconeStore } from "langchain/vectorstores/pinecone";
 import { OpenAI } from "langchain/llms/openai";
 import { RetrievalQAChain } from "langchain/chains";
+//import { TimeWeightedVectorStoreRetriever } from "langchain/retrievers/time_weighted";
 
 export const getRetrievalQAAnswer = async (query: string) => {
   // initialize pinecone
@@ -25,59 +26,19 @@ export const getRetrievalQAAnswer = async (query: string) => {
     maxTokens: 3000,
     modelName: "text-davinci-003",
   });
-  const bigRetrievalQAChain = RetrievalQAChain.fromLLM(
-    model,
-    vectorStore.asRetriever(10),
-    {
-      returnSourceDocuments: true,
-    }
-  );
-  const moreRetrievalQAChain = RetrievalQAChain.fromLLM(
-    model,
-    vectorStore.asRetriever(8),
-    {
-      returnSourceDocuments: true,
-    }
-  );
-  const mediumRetrievalQAChain = RetrievalQAChain.fromLLM(
-    model,
-    vectorStore.asRetriever(6),
-    {
-      returnSourceDocuments: true,
-    }
-  );
-  const smallRetrievalQAChain = RetrievalQAChain.fromLLM(
-    model,
-    vectorStore.asRetriever(4),
-    {
-      returnSourceDocuments: true,
-    }
-  );
-  const tinyRetrievalQAChain = RetrievalQAChain.fromLLM(
-    model,
-    vectorStore.asRetriever(2),
-    {
-      returnSourceDocuments: true,
-    }
-  );
 
   // execute chain
   let answer = undefined;
-  for await (const retrievalQAChain of [
-    //bigRetrievalQAChain,
-    //moreRetrievalQAChain,
-    mediumRetrievalQAChain,
-    smallRetrievalQAChain,
-    tinyRetrievalQAChain,
-  ]) {
-    try {
-      if ("k" in retrievalQAChain.retriever) {
-        console.info(
-          "getRetrievalQAAnswer",
-          "retrievalQAChain.retriever.k:",
-          retrievalQAChain.retriever.k
-        );
+  for await (const k of [6, 4, 2]) {
+    console.info("getRetrievalQAAnswer", "retrievalQAChain.retriever.k:", k);
+    const retrievalQAChain = RetrievalQAChain.fromLLM(
+      model,
+      vectorStore.asRetriever(k),
+      {
+        returnSourceDocuments: true,
       }
+    );
+    try {
       answer = await retrievalQAChain.call({
         query: query,
       });
