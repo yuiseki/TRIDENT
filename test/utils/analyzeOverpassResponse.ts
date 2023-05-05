@@ -1,5 +1,5 @@
 import * as dotenv from "dotenv";
-import { analyzeOverpassResponse } from "../../src/utils/analyzeOverpassResponse.ts";
+import { analyzeOverpassResponse } from "../../src/utils/langchain/analyzeOverpassResponse.ts";
 
 dotenv.config();
 

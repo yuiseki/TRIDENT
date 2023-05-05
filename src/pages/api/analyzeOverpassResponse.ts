@@ -1,4 +1,4 @@
-import { analyzeOverpassResponse } from "@/utils/analyzeOverpassResponse";
+import { analyzeOverpassResponse } from "@/utils/langchain/analyzeOverpassResponse";
 import { getRequestParamAsString } from "@/utils/getRequestParamAsString";
 import { isQueryStringDanger } from "@/utils/isQueryStringDanger";
 import type { NextApiRequest, NextApiResponse } from "next";
