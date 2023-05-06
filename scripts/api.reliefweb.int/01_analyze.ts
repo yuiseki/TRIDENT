@@ -39,21 +39,6 @@ for await (const jsonFilePath of jsonFilePathList) {
     console.log("unexpected json structure");
     console.log(jsonFilePath);
     exit(1);
-    /*
-    if (
-      json.data &&
-      json.data.length === 1 &&
-      json.data[0] &&
-      json.data[0].fields
-    ) {
-      if (json.data[0].fields.status === "ongoing") {
-        ongoingDisasterJsonList.push(json.data[0]);
-      }
-    } else {
-      console.log(json);
-      console.log(jsonFilePath);
-    }
-    */
   }
 }
 
@@ -87,6 +72,8 @@ for await (const ongoingDisasterJson of ongoingDisastersJsonList.reverse()) {
         "utf-8"
       );
       const disasterSummaryJson = JSON.parse(disasterSummaryJsonFile);
+      delete disasterSummaryJson.original;
+      delete disasterSummaryJson.text;
       ongoingDisasterSummaryJsonList.push(disasterSummaryJson);
       continue;
     }
@@ -95,7 +82,7 @@ for await (const ongoingDisasterJson of ongoingDisastersJsonList.reverse()) {
   }
 
   // main content
-  const disasterPageContent = `${ongoingDisasterJson.fields.name}
+  const disasterPageContent: string | any = `${ongoingDisasterJson.fields.name}
 
 ${ongoingDisasterJson.fields.description}`;
 
@@ -142,6 +129,8 @@ ${ongoingDisasterJson.fields.description}`;
       disasterSummaryPublicPath,
       JSON.stringify(disasterSummarizedJson, null, 2)
     );
+    delete disasterSummarizedJson.original;
+    delete disasterSummarizedJson.text;
     ongoingDisasterSummaryJsonList.push(disasterSummarizedJson);
   } else {
     console.error("!!!!! generate summary failed !!!!!");
@@ -154,6 +143,7 @@ console.log("----- ----- -----");
 
 // generate summary for today
 console.log(ongoingDisasterSummaryJsonList.length);
+//console.log(ongoingDisasterSummaryJsonList[0]);
 const ongoingDisastersSummaryJoined = ongoingDisasterSummaryJsonList
   .sort((a, b) => b.metadata.date_event - a.metadata.date_event)
   .slice(0, 15)
@@ -161,7 +151,7 @@ const ongoingDisastersSummaryJoined = ongoingDisasterSummaryJsonList
   .join("\n")
   .replaceAll("\n\n\n", "\n")
   .replaceAll("\n\n", "\n");
-console.log(ongoingDisastersSummaryJoined);
+//console.log(ongoingDisastersSummaryJoined);
 console.log(ongoingDisastersSummaryJoined.length);
 const ongoingDisastersSummaryJoinedBaseDir = `./public/api.reliefweb.int/disasters/summaries/${new Date().getFullYear()}/${
   new Date().getMonth() + 1
@@ -199,8 +189,16 @@ try {
       JSON.stringify(ongoingDisastersSummaryJoinedJson, null, 2)
     );
     await fs.writeFile(
+      `${ongoingDisastersSummaryJoinedBaseDir}/summary.txt`,
+      res.text
+    );
+    await fs.writeFile(
       "./public/api.reliefweb.int/disasters/summaries/latest_summary.json",
       JSON.stringify(ongoingDisastersSummaryJoinedJson, null, 2)
+    );
+    await fs.writeFile(
+      "./public/api.reliefweb.int/disasters/summaries/latest_summary.txt",
+      res.text
     );
   }
 }
