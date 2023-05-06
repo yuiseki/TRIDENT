@@ -1,0 +1,81 @@
+{
+  "original": {
+    "id": "51550",
+    "fields": {
+      "date": {
+        "changed": "2023-04-17T18:54:50+00:00",
+        "event": "2023-04-14T00:00:00+00:00",
+        "created": "2023-04-17T18:54:50+00:00"
+      },
+      "primary_type": {
+        "code": "VO",
+        "name": "Volcano",
+        "id": 4615
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/64",
+          "name": "Colombia",
+          "location": {
+            "lon": -73.07,
+            "lat": 3.9
+          },
+          "id": 64,
+          "shortname": "Colombia",
+          "iso3": "col",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/64",
+        "name": "Colombia",
+        "location": {
+          "lon": -73.07,
+          "lat": 3.9
+        },
+        "id": 64,
+        "shortname": "Colombia",
+        "iso3": "col"
+      },
+      "profile": {
+        "overview": "According to the Colombian Geological Service (SGC), the alert level of the Nevado del Ruiz Volcano changed from Yellow level (I) to Orange level (II) on 30 March 2023, which represents a probable eruption in matter of days or weeks, prompting local authorities to take preparatory, mitigation and communication actions...The change from yellow level (I) implies that the volcano is active and shows changes in its behavior. Furthermore, an orange level (II) means that, given the changes in the volcano's activity, there is a probability that in days or weeks the Nevado del Ruiz volcano will erupt, and it’s expected to be more than it has done in the last decade. In the worst-case scenario, the alert level could change from orange to red (III), indicating that the volcano is in the process of erupting or is going to erupt any time, representing the highest level of alert. This emergency endangers more than 57,000 people in the surrounding areas. ([IFRC, 17 Apr 2023](https://reliefweb.int/node/3953646))",
+        "overview-html": "<p>According to the Colombian Geological Service (SGC), the alert level of the Nevado del Ruiz Volcano changed from Yellow level (I) to Orange level (II) on 30 March 2023, which represents a probable eruption in matter of days or weeks, prompting local authorities to take preparatory, mitigation and communication actions...The change from yellow level (I) implies that the volcano is active and shows changes in its behavior. Furthermore, an orange level (II) means that, given the changes in the volcano's activity, there is a probability that in days or weeks the Nevado del Ruiz volcano will erupt, and it’s expected to be more than it has done in the last decade. In the worst-case scenario, the alert level could change from orange to red (III), indicating that the volcano is in the process of erupting or is going to erupt any time, representing the highest level of alert. This emergency endangers more than 57,000 people in the surrounding areas. (<a href=\"https://reliefweb.int/node/3953646\">IFRC, 17 Apr 2023</a>)</p>\n"
+      },
+      "description-html": "<p>According to the Colombian Geological Service (SGC), the alert level of the Nevado del Ruiz Volcano changed from Yellow level (I) to Orange level (II) on 30 March 2023, which represents a probable eruption in matter of days or weeks, prompting local authorities to take preparatory, mitigation and communication actions...The change from yellow level (I) implies that the volcano is active and shows changes in its behavior. Furthermore, an orange level (II) means that, given the changes in the volcano's activity, there is a probability that in days or weeks the Nevado del Ruiz volcano will erupt, and it’s expected to be more than it has done in the last decade. In the worst-case scenario, the alert level could change from orange to red (III), indicating that the volcano is in the process of erupting or is going to erupt any time, representing the highest level of alert. This emergency endangers more than 57,000 people in the surrounding areas. (<a href=\"https://reliefweb.int/node/3953646\">IFRC, 17 Apr 2023</a>)</p>\n",
+      "description": "According to the Colombian Geological Service (SGC), the alert level of the Nevado del Ruiz Volcano changed from Yellow level (I) to Orange level (II) on 30 March 2023, which represents a probable eruption in matter of days or weeks, prompting local authorities to take preparatory, mitigation and communication actions...The change from yellow level (I) implies that the volcano is active and shows changes in its behavior. Furthermore, an orange level (II) means that, given the changes in the volcano's activity, there is a probability that in days or weeks the Nevado del Ruiz volcano will erupt, and it’s expected to be more than it has done in the last decade. In the worst-case scenario, the alert level could change from orange to red (III), indicating that the volcano is in the process of erupting or is going to erupt any time, representing the highest level of alert. This emergency endangers more than 57,000 people in the surrounding areas. ([IFRC, 17 Apr 2023](https://reliefweb.int/node/3953646))",
+      "type": [
+        {
+          "code": "VO",
+          "name": "Volcano",
+          "id": 4615,
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/51550",
+      "url_alias": "https://reliefweb.int/disaster/vo-2023-000059-col",
+      "name": "Colombia: Nevado del Ruiz Volcano - Apr 2023",
+      "id": 51550,
+      "glide": "VO-2023-000059-COL",
+      "status": "alert"
+    }
+  },
+  "text": "Colombia: Nevado del Ruiz Volcano - Apr 2023\n\nAccording to the Colombian Geological Service (SGC), the alert level of the Nevado del Ruiz Volcano changed from Yellow level (I) to Orange level (II) on 30 March 2023, which represents a probable eruption in matter of days or weeks, prompting local authorities to take preparatory, mitigation and communication actions...The change from yellow level (I) implies that the volcano is active and shows changes in its behavior. Furthermore, an orange level (II) means that, given the changes in the volcano's activity, there is a probability that in days or weeks the Nevado del Ruiz volcano will erupt, and it’s expected to be more than it has done in the last decade. In the worst-case scenario, the alert level could change from orange to red (III), indicating that the volcano is in the process of erupting or is going to erupt any time, representing the highest level of alert. This emergency endangers more than 57,000 people in the surrounding areas. ([IFRC, 17 Apr 2023](https://reliefweb.int/node/3953646))",
+  "summary": " On March 30th, 2023, the Colombian Geological Service (SGC) raised the alert level of the Nevado del Ruiz Volcano from Yellow (I) to Orange (II), indicating a probable eruption in the near future. This could potentially endanger the lives of 57,000 people in the surrounding areas, and the alert level could even reach Red (III) in the worst-case scenario.",
+  "metadata": {
+    "id": "51550",
+    "name": "Colombia: Nevado del Ruiz Volcano - Apr 2023",
+    "date_event": 1681430400000,
+    "date_changed": 1681757690000,
+    "date_created": 1681757690000,
+    "primary_country_id": 64,
+    "primary_country_name": "Colombia",
+    "primary_country_iso3": "col",
+    "primary_country_location": {
+      "lon": -73.07,
+      "lat": 3.9
+    },
+    "primary_type_id": 4615,
+    "primary_type_code": "VO",
+    "primary_type_name": "Volcano"
+  }
+}

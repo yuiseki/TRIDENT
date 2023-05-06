@@ -1,0 +1,92 @@
+{
+  "original": {
+    "id": "51197",
+    "fields": {
+      "date": {
+        "changed": "2023-05-01T19:45:07+00:00",
+        "event": "2022-03-03T00:00:00+00:00",
+        "created": "2022-03-03T00:00:00+00:00"
+      },
+      "primary_type": {
+        "code": "DR",
+        "name": "Drought",
+        "id": 4672
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/77",
+          "name": "Djibouti",
+          "location": {
+            "lon": 42.58,
+            "lat": 11.75
+          },
+          "id": 77,
+          "shortname": "Djibouti",
+          "iso3": "dji",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/77",
+        "name": "Djibouti",
+        "location": {
+          "lon": 42.58,
+          "lat": 11.75
+        },
+        "id": 77,
+        "shortname": "Djibouti",
+        "iso3": "dji"
+      },
+      "profile": {
+        "appeals_response_plans": {
+          "active": [
+            {
+              "cover": "https://reliefweb.int/sites/default/files/styles/small/public/previews/73/1a/731ac1bc-5a94-449b-8868-2f5478a44abd.png",
+              "title": "IFRC: Djibouti: Hunger Crisis - Emergency Plan of Action (EPoA) DREF Operation no. MDRDJ005",
+              "url": "https://reliefweb.int/node/3862372"
+            }
+          ],
+          "title": "Appeals & Response Plans"
+        },
+        "overview": "The ongoing drought and compounding regional and international shocks resulting in high price volatility are affecting the food security and nutrition situation in Djibouti. Rural populations in Ali Sabieh, Arta, Obock, Tadjourah and Dikhil are particularly exposed to extreme deprivation and no longer able to cope due to lack of access to main basic services as water, health, and education. Malnutrition rates are almost double from last year in at least one health center visited by DG ECHO in May 2022. Communities report the depletion of livestock assets, loss of body mass index, and lack of milk production followed by death of livestock. According to the latest IPC, approximately 13% of the population (132,000 people) is facing acute food insecurity (IPC3) and is in need of immediate assistance. Projections indicate an increase in food insecurity to 16% of the population by December 2022. ([ECHO, 7 Jun 2022](https://reliefweb.int/node/3854203))\n\nIPC projections for July to December 2022 indicate an increase in the number of acutely food insecure people, likely reaching 192,168 people, representing 16% of analysed population (1.2 million people, which is about the entire country). The number of people in emergency (IPC 4) will likely increase 12,390 people, a 250% rise from the current numbers, while the 179,778 people could be in crisis (IPC 3).\n\nCurrent IPC analysis for the period of March to June 2022, highlight that approximately 132,000 people, representing 11% of the analysed population (of nearly 1.2 million people), are estimated to be acutely food insecure (IPC Phase 3 and 4). More precisely, an estimated 5,000 people (less than one percent of the population analysed) are estimated to already be in Emergency (IPC Phase 4) and approximately 127,000 people (11% of the population analysed) are in Crisis (IPC Phase 3). ([IFRC, 1 Jul 2022](https://reliefweb.int/node/3862372))",
+        "overview-html": "<p>The ongoing drought and compounding regional and international shocks resulting in high price volatility are affecting the food security and nutrition situation in Djibouti. Rural populations in Ali Sabieh, Arta, Obock, Tadjourah and Dikhil are particularly exposed to extreme deprivation and no longer able to cope due to lack of access to main basic services as water, health, and education. Malnutrition rates are almost double from last year in at least one health center visited by DG ECHO in May 2022. Communities report the depletion of livestock assets, loss of body mass index, and lack of milk production followed by death of livestock. According to the latest IPC, approximately 13% of the population (132,000 people) is facing acute food insecurity (IPC3) and is in need of immediate assistance. Projections indicate an increase in food insecurity to 16% of the population by December 2022. (<a href=\"https://reliefweb.int/node/3854203\">ECHO, 7 Jun 2022</a>)</p>\n<p>IPC projections for July to December 2022 indicate an increase in the number of acutely food insecure people, likely reaching 192,168 people, representing 16% of analysed population (1.2 million people, which is about the entire country). The number of people in emergency (IPC 4) will likely increase 12,390 people, a 250% rise from the current numbers, while the 179,778 people could be in crisis (IPC 3).</p>\n<p>Current IPC analysis for the period of March to June 2022, highlight that approximately 132,000 people, representing 11% of the analysed population (of nearly 1.2 million people), are estimated to be acutely food insecure (IPC Phase 3 and 4). More precisely, an estimated 5,000 people (less than one percent of the population analysed) are estimated to already be in Emergency (IPC Phase 4) and approximately 127,000 people (11% of the population analysed) are in Crisis (IPC Phase 3). (<a href=\"https://reliefweb.int/node/3862372\">IFRC, 1 Jul 2022</a>)</p>\n"
+      },
+      "description-html": "<p>The ongoing drought and compounding regional and international shocks resulting in high price volatility are affecting the food security and nutrition situation in Djibouti. Rural populations in Ali Sabieh, Arta, Obock, Tadjourah and Dikhil are particularly exposed to extreme deprivation and no longer able to cope due to lack of access to main basic services as water, health, and education. Malnutrition rates are almost double from last year in at least one health center visited by DG ECHO in May 2022. Communities report the depletion of livestock assets, loss of body mass index, and lack of milk production followed by death of livestock. According to the latest IPC, approximately 13% of the population (132,000 people) is facing acute food insecurity (IPC3) and is in need of immediate assistance. Projections indicate an increase in food insecurity to 16% of the population by December 2022. (<a href=\"https://reliefweb.int/node/3854203\">ECHO, 7 Jun 2022</a>)</p>\n<p>IPC projections for July to December 2022 indicate an increase in the number of acutely food insecure people, likely reaching 192,168 people, representing 16% of analysed population (1.2 million people, which is about the entire country). The number of people in emergency (IPC 4) will likely increase 12,390 people, a 250% rise from the current numbers, while the 179,778 people could be in crisis (IPC 3).</p>\n<p>Current IPC analysis for the period of March to June 2022, highlight that approximately 132,000 people, representing 11% of the analysed population (of nearly 1.2 million people), are estimated to be acutely food insecure (IPC Phase 3 and 4). More precisely, an estimated 5,000 people (less than one percent of the population analysed) are estimated to already be in Emergency (IPC Phase 4) and approximately 127,000 people (11% of the population analysed) are in Crisis (IPC Phase 3). (<a href=\"https://reliefweb.int/node/3862372\">IFRC, 1 Jul 2022</a>)</p>\n<h3>Appeals &amp; Response Plans</h3>\n<ul>\n<li>\n<a href=\"https://reliefweb.int/node/3862372\"><img src=\"https://reliefweb.int/sites/default/files/styles/small/public/previews/73/1a/731ac1bc-5a94-449b-8868-2f5478a44abd.png\" alt=\"IFRC: Djibouti: Hunger Crisis - Emergency Plan of Action (EPoA) DREF Operation no. MDRDJ005 - Cover preview\" /> IFRC: Djibouti: Hunger Crisis - Emergency Plan of Action (EPoA) DREF Operation no. MDRDJ005</a>\n</li>\n</ul>\n",
+      "description": "The ongoing drought and compounding regional and international shocks resulting in high price volatility are affecting the food security and nutrition situation in Djibouti. Rural populations in Ali Sabieh, Arta, Obock, Tadjourah and Dikhil are particularly exposed to extreme deprivation and no longer able to cope due to lack of access to main basic services as water, health, and education. Malnutrition rates are almost double from last year in at least one health center visited by DG ECHO in May 2022. Communities report the depletion of livestock assets, loss of body mass index, and lack of milk production followed by death of livestock. According to the latest IPC, approximately 13% of the population (132,000 people) is facing acute food insecurity (IPC3) and is in need of immediate assistance. Projections indicate an increase in food insecurity to 16% of the population by December 2022. ([ECHO, 7 Jun 2022](https://reliefweb.int/node/3854203))\n\nIPC projections for July to December 2022 indicate an increase in the number of acutely food insecure people, likely reaching 192,168 people, representing 16% of analysed population (1.2 million people, which is about the entire country). The number of people in emergency (IPC 4) will likely increase 12,390 people, a 250% rise from the current numbers, while the 179,778 people could be in crisis (IPC 3).\n\nCurrent IPC analysis for the period of March to June 2022, highlight that approximately 132,000 people, representing 11% of the analysed population (of nearly 1.2 million people), are estimated to be acutely food insecure (IPC Phase 3 and 4). More precisely, an estimated 5,000 people (less than one percent of the population analysed) are estimated to already be in Emergency (IPC Phase 4) and approximately 127,000 people (11% of the population analysed) are in Crisis (IPC Phase 3). ([IFRC, 1 Jul 2022](https://reliefweb.int/node/3862372))\n### Appeals & Response Plans\n\n- [![IFRC: Djibouti: Hunger Crisis - Emergency Plan of Action (EPoA) DREF Operation no. MDRDJ005 - Cover preview](https://reliefweb.int/sites/default/files/styles/small/public/previews/73/1a/731ac1bc-5a94-449b-8868-2f5478a44abd.png) IFRC: Djibouti: Hunger Crisis - Emergency Plan of Action (EPoA) DREF Operation no. MDRDJ005](https://reliefweb.int/node/3862372)",
+      "type": [
+        {
+          "code": "DR",
+          "name": "Drought",
+          "id": 4672,
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/51197",
+      "current": true,
+      "url_alias": "https://reliefweb.int/disaster/dr-2022-000238-dji",
+      "name": "Djibouti: Drought - Mar 2022",
+      "id": 51197,
+      "glide": "DR-2022-000238-DJI",
+      "status": "ongoing"
+    }
+  },
+  "text": "Djibouti: Drought - Mar 2022\n\nThe ongoing drought and compounding regional and international shocks resulting in high price volatility are affecting the food security and nutrition situation in Djibouti. Rural populations in Ali Sabieh, Arta, Obock, Tadjourah and Dikhil are particularly exposed to extreme deprivation and no longer able to cope due to lack of access to main basic services as water, health, and education. Malnutrition rates are almost double from last year in at least one health center visited by DG ECHO in May 2022. Communities report the depletion of livestock assets, loss of body mass index, and lack of milk production followed by death of livestock. According to the latest IPC, approximately 13% of the population (132,000 people) is facing acute food insecurity (IPC3) and is in need of immediate assistance. Projections indicate an increase in food insecurity to 16% of the population by December 2022. ([ECHO, 7 Jun 2022](https://reliefweb.int/node/3854203))\n\nIPC projections for July to December 2022 indicate an increase in the number of acutely food insecure people, likely reaching 192,168 people, representing 16% of analysed population (1.2 million people, which is about the entire country). The number of people in emergency (IPC 4) will likely increase 12,390 people, a 250% rise from the current numbers, while the 179,778 people could be in crisis (IPC 3).\n\nCurrent IPC analysis for the period of March to June 2022, highlight that approximately 132,000 people, representing 11% of the analysed population (of nearly 1.2 million people), are estimated to be acutely food insecure (IPC Phase 3 and 4). More precisely, an estimated 5,000 people (less than one percent of the population analysed) are estimated to already be in Emergency (IPC Phase 4) and approximately 127,000 people (11% of the population analysed) are in Crisis (IPC Phase 3). ([IFRC, 1 Jul 2022](https://reliefweb.int/node/3862372))\n### Appeals & Response Plans\n\n- [![IFRC: Djibouti: Hunger Crisis - Emergency Plan of Action (EPoA) DREF Operation no. MDRDJ005 - Cover preview](https://reliefweb.int/sites/default/files/styles/small/public/previews/73/1a/731ac1bc-5a94-449b-8868-2f5478a44abd.png) IFRC: Djibouti: Hunger Crisis - Emergency Plan of Action (EPoA) DREF Operation no. MDRDJ005](https://reliefweb.int/node/3862372)",
+  "summary": " Djibouti is facing a severe drought and food insecurity crisis, with 13% of the population (132,000 people) facing acute food insecurity (IPC3) and projections indicating an increase to 16% of the population by December 2022. The International Federation of Red Cross and Red Crescent Societies (IFRC) has launched an Emergency Plan of Action (EPoA) to address the crisis.",
+  "metadata": {
+    "id": "51197",
+    "name": "Djibouti: Drought - Mar 2022",
+    "date_event": 1646265600000,
+    "date_changed": 1682970307000,
+    "date_created": 1646265600000,
+    "primary_country_id": 77,
+    "primary_country_name": "Djibouti",
+    "primary_country_iso3": "dji",
+    "primary_country_location": {
+      "lon": 42.58,
+      "lat": 11.75
+    },
+    "primary_type_id": 4672,
+    "primary_type_code": "DR",
+    "primary_type_name": "Drought"
+  }
+}

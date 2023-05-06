@@ -1,0 +1,82 @@
+{
+  "original": {
+    "id": "51539",
+    "fields": {
+      "date": {
+        "changed": "2023-04-03T07:02:46+00:00",
+        "event": "2022-05-13T00:00:00+00:00",
+        "created": "2023-03-31T20:15:33+00:00"
+      },
+      "primary_type": {
+        "code": "EP",
+        "name": "Epidemic",
+        "id": 4642
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/206",
+          "name": "Sao Tome and Principe",
+          "location": {
+            "lon": 6.74,
+            "lat": 0.46
+          },
+          "id": 206,
+          "shortname": "Sao Tome and Principe",
+          "iso3": "stp",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/206",
+        "name": "Sao Tome and Principe",
+        "location": {
+          "lon": 6.74,
+          "lat": 0.46
+        },
+        "id": 206,
+        "shortname": "Sao Tome and Principe",
+        "iso3": "stp"
+      },
+      "profile": {
+        "overview": "On 13 May 2022, the Ministry of Public Health of Sao Tome-and-Principe reported the first outbreak of Dengue fever in Sao Tome-and-Principe to the WHO. The suspected cases started end March 2022, with recorded cases suffering from severe fever and clinical characteristics of Dengue fever. On 11 April 2022, the laboratory of the central hospital reported a suspected case of dengue fever to clinical officials, triggering such implementation of epidemiological and entomological surveillance protocols. On the same day, the Ayres Central Hospital in Menezes reported a positive case of dengue fever to officials at the Epidemiological Surveillance Department (DVE in Portuguese). The reported case was a 27-year-old Sao Tomean, whose place of residence is Portugal and who works on the island of Guadeloupe. He reportedly arrived on leave with his family on 26 March 2022. He started having symptoms (fever, headaches, and joint pain) on 4 April 2022. Initially treated at the Mezochi (Trindade) health centre, he was referred to the main central hospital because of persistent fever. The disease spread quickly to all the country districts and as of 26th August 2022, 980 cases of dengue fever were already reported. Ahead of the rainy season, there was a high probability to see a pick-up on the caseload and, given the health capacity, a risk of the outbreak getting out of hand without stronger early actions and preventive measures. Part of the MoH partners, the Cruz Vermelha de Sao Tome e Principe launched a DREF for anticipatory action ahead of the flooding season. ([IFRC, 19 Oct 2022](https://reliefweb.int/node/3898040))",
+        "overview-html": "<p>On 13 May 2022, the Ministry of Public Health of Sao Tome-and-Principe reported the first outbreak of Dengue fever in Sao Tome-and-Principe to the WHO. The suspected cases started end March 2022, with recorded cases suffering from severe fever and clinical characteristics of Dengue fever. On 11 April 2022, the laboratory of the central hospital reported a suspected case of dengue fever to clinical officials, triggering such implementation of epidemiological and entomological surveillance protocols. On the same day, the Ayres Central Hospital in Menezes reported a positive case of dengue fever to officials at the Epidemiological Surveillance Department (DVE in Portuguese). The reported case was a 27-year-old Sao Tomean, whose place of residence is Portugal and who works on the island of Guadeloupe. He reportedly arrived on leave with his family on 26 March 2022. He started having symptoms (fever, headaches, and joint pain) on 4 April 2022. Initially treated at the Mezochi (Trindade) health centre, he was referred to the main central hospital because of persistent fever. The disease spread quickly to all the country districts and as of 26th August 2022, 980 cases of dengue fever were already reported. Ahead of the rainy season, there was a high probability to see a pick-up on the caseload and, given the health capacity, a risk of the outbreak getting out of hand without stronger early actions and preventive measures. Part of the MoH partners, the Cruz Vermelha de Sao Tome e Principe launched a DREF for anticipatory action ahead of the flooding season. (<a href=\"https://reliefweb.int/node/3898040\">IFRC, 19 Oct 2022</a>)</p>\n"
+      },
+      "description-html": "<p>On 13 May 2022, the Ministry of Public Health of Sao Tome-and-Principe reported the first outbreak of Dengue fever in Sao Tome-and-Principe to the WHO. The suspected cases started end March 2022, with recorded cases suffering from severe fever and clinical characteristics of Dengue fever. On 11 April 2022, the laboratory of the central hospital reported a suspected case of dengue fever to clinical officials, triggering such implementation of epidemiological and entomological surveillance protocols. On the same day, the Ayres Central Hospital in Menezes reported a positive case of dengue fever to officials at the Epidemiological Surveillance Department (DVE in Portuguese). The reported case was a 27-year-old Sao Tomean, whose place of residence is Portugal and who works on the island of Guadeloupe. He reportedly arrived on leave with his family on 26 March 2022. He started having symptoms (fever, headaches, and joint pain) on 4 April 2022. Initially treated at the Mezochi (Trindade) health centre, he was referred to the main central hospital because of persistent fever. The disease spread quickly to all the country districts and as of 26th August 2022, 980 cases of dengue fever were already reported. Ahead of the rainy season, there was a high probability to see a pick-up on the caseload and, given the health capacity, a risk of the outbreak getting out of hand without stronger early actions and preventive measures. Part of the MoH partners, the Cruz Vermelha de Sao Tome e Principe launched a DREF for anticipatory action ahead of the flooding season. (<a href=\"https://reliefweb.int/node/3898040\">IFRC, 19 Oct 2022</a>)</p>\n",
+      "description": "On 13 May 2022, the Ministry of Public Health of Sao Tome-and-Principe reported the first outbreak of Dengue fever in Sao Tome-and-Principe to the WHO. The suspected cases started end March 2022, with recorded cases suffering from severe fever and clinical characteristics of Dengue fever. On 11 April 2022, the laboratory of the central hospital reported a suspected case of dengue fever to clinical officials, triggering such implementation of epidemiological and entomological surveillance protocols. On the same day, the Ayres Central Hospital in Menezes reported a positive case of dengue fever to officials at the Epidemiological Surveillance Department (DVE in Portuguese). The reported case was a 27-year-old Sao Tomean, whose place of residence is Portugal and who works on the island of Guadeloupe. He reportedly arrived on leave with his family on 26 March 2022. He started having symptoms (fever, headaches, and joint pain) on 4 April 2022. Initially treated at the Mezochi (Trindade) health centre, he was referred to the main central hospital because of persistent fever. The disease spread quickly to all the country districts and as of 26th August 2022, 980 cases of dengue fever were already reported. Ahead of the rainy season, there was a high probability to see a pick-up on the caseload and, given the health capacity, a risk of the outbreak getting out of hand without stronger early actions and preventive measures. Part of the MoH partners, the Cruz Vermelha de Sao Tome e Principe launched a DREF for anticipatory action ahead of the flooding season. ([IFRC, 19 Oct 2022](https://reliefweb.int/node/3898040))",
+      "type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642,
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/51539",
+      "current": true,
+      "url_alias": "https://reliefweb.int/disaster/ep-2022-000388-stp",
+      "name": "Sao Tome and Principe: Dengue Fever Outbreak - May 2022",
+      "id": 51539,
+      "glide": "EP-2022-000388-STP",
+      "status": "ongoing"
+    }
+  },
+  "text": "Sao Tome and Principe: Dengue Fever Outbreak - May 2022\n\nOn 13 May 2022, the Ministry of Public Health of Sao Tome-and-Principe reported the first outbreak of Dengue fever in Sao Tome-and-Principe to the WHO. The suspected cases started end March 2022, with recorded cases suffering from severe fever and clinical characteristics of Dengue fever. On 11 April 2022, the laboratory of the central hospital reported a suspected case of dengue fever to clinical officials, triggering such implementation of epidemiological and entomological surveillance protocols. On the same day, the Ayres Central Hospital in Menezes reported a positive case of dengue fever to officials at the Epidemiological Surveillance Department (DVE in Portuguese). The reported case was a 27-year-old Sao Tomean, whose place of residence is Portugal and who works on the island of Guadeloupe. He reportedly arrived on leave with his family on 26 March 2022. He started having symptoms (fever, headaches, and joint pain) on 4 April 2022. Initially treated at the Mezochi (Trindade) health centre, he was referred to the main central hospital because of persistent fever. The disease spread quickly to all the country districts and as of 26th August 2022, 980 cases of dengue fever were already reported. Ahead of the rainy season, there was a high probability to see a pick-up on the caseload and, given the health capacity, a risk of the outbreak getting out of hand without stronger early actions and preventive measures. Part of the MoH partners, the Cruz Vermelha de Sao Tome e Principe launched a DREF for anticipatory action ahead of the flooding season. ([IFRC, 19 Oct 2022](https://reliefweb.int/node/3898040))",
+  "summary": " On 13 May 2022, the Ministry of Public Health of Sao Tome-and-Principe reported the first outbreak of Dengue fever to the WHO. The disease spread quickly to all the country districts and as of 26th August 2022, 980 cases of dengue fever were already reported. Ahead of the rainy season, the Cruz Vermelha de Sao Tome e Principe launched a DREF for anticipatory action ahead of the flooding season.",
+  "metadata": {
+    "id": "51539",
+    "name": "Sao Tome and Principe: Dengue Fever Outbreak - May 2022",
+    "date_event": 1652400000000,
+    "date_changed": 1680505366000,
+    "date_created": 1680293733000,
+    "primary_country_id": 206,
+    "primary_country_name": "Sao Tome and Principe",
+    "primary_country_iso3": "stp",
+    "primary_country_location": {
+      "lon": 6.74,
+      "lat": 0.46
+    },
+    "primary_type_id": 4642,
+    "primary_type_code": "EP",
+    "primary_type_name": "Epidemic"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "original": {
+    "id": "51453",
+    "fields": {
+      "date": {
+        "changed": "2023-05-01T12:01:11+00:00",
+        "event": "2022-12-21T00:00:00+00:00",
+        "created": "2023-01-25T00:48:33+00:00"
+      },
+      "primary_type": {
+        "code": "EP",
+        "name": "Epidemic",
+        "id": 4642
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/164",
+          "name": "Mozambique",
+          "location": {
+            "lon": 34.75,
+            "lat": -18.09
+          },
+          "id": 164,
+          "shortname": "Mozambique",
+          "iso3": "moz",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/164",
+        "name": "Mozambique",
+        "location": {
+          "lon": 34.75,
+          "lat": -18.09
+        },
+        "id": 164,
+        "shortname": "Mozambique",
+        "iso3": "moz"
+      },
+      "profile": {
+        "overview": "On 8th January 2023, the Niassa Daily Cholera Bulletin from the Ministry of Health (MoH) indicated an alarming increase in the number of Cholera cases in the province of the same name, which borders Malawi where the current cholera outbreak is worsening. At the time, Niassa province recorded 379 confirmed cholera cases and six deaths in Lago, 250 in Lichinga district with two deaths reported. As of 13th January 2023, the reports from MoH showed a cumulative caseload of 878 confirmed cases and 14 deaths. This is an 80% increase from the number of cases recorded on 21 December 2022, which was 409 cases confirmed with seven reported deaths. To note, five provinces are facing the cholera outbreak or are at risk of experiencing it given the rate at which the outbreak is spreading. Concerned areas include the districts of Lago, Lichinga , Sanga, Chimbonila and Mecanhelas in Niassa province; the districts of Xai-Xai and Chilaulene in Gaza province; Tete province; Zambezia province and the districts of Caia and Buzi in Sofala province. A similar risk is also considered in other surrounding countries, mainly Malawi, Zimbabwe, Tanzania and Zambia. [...] The upcoming rainy season further poses a threat of the disease spreading nation-wide. Given the surge in cases with the floods season ahead, there is a high risk to exacerbate the Cholera situation and overall humanitarian situation in the coming weeks, until the end of the rain and cyclone season. ([IFRC, 24 Jan 2023](https://reliefweb.int/node/3926764))\n\nCholera outbreak has been reported from Sofala and Zambezia provinces of Mozambique. From 14 September 2022 to 5 March 2023, a total of 7 517 cases and 41 deaths (CFR 0.6%) have been reported from six provinces and 33 districts. ([WHO, 11 March 2023](https://reliefweb.int/node/3942403))\n\nFrom 14 September 2022 to 16 April 2023, a total of 26 841 cases and 123 deaths (CFR 0.5%) have been reported from 11 provinces and 53 districts. ([WHO, 27 Apr 2023](https://reliefweb.int/node/3956535))\n\nAs of 26 April, health authorities have reported 28,958 cumulative cases of cholera in 10 provinces of the country, with 129 deaths. In the past 24 hours, 143 new cases were registered. Cabo Delgado (district of Namuno with 42 cases) and Nampula (district of Memba with 22 and Cidade de Nampula with 124 cases) are the current hotspots of the cholera outbreak, both reporting additional number of affected districts and cases in the past week. To address this concern, humanitarian partners developed and rolled out cholera community kits to support the response at the household levels in the newly affected districts in both provinces. ([OCHA, 29 Apr 2023](https://reliefweb.int/node/3957180))",
+        "overview-html": "<p>On 8th January 2023, the Niassa Daily Cholera Bulletin from the Ministry of Health (MoH) indicated an alarming increase in the number of Cholera cases in the province of the same name, which borders Malawi where the current cholera outbreak is worsening. At the time, Niassa province recorded 379 confirmed cholera cases and six deaths in Lago, 250 in Lichinga district with two deaths reported. As of 13th January 2023, the reports from MoH showed a cumulative caseload of 878 confirmed cases and 14 deaths. This is an 80% increase from the number of cases recorded on 21 December 2022, which was 409 cases confirmed with seven reported deaths. To note, five provinces are facing the cholera outbreak or are at risk of experiencing it given the rate at which the outbreak is spreading. Concerned areas include the districts of Lago, Lichinga , Sanga, Chimbonila and Mecanhelas in Niassa province; the districts of Xai-Xai and Chilaulene in Gaza province; Tete province; Zambezia province and the districts of Caia and Buzi in Sofala province. A similar risk is also considered in other surrounding countries, mainly Malawi, Zimbabwe, Tanzania and Zambia. [...] The upcoming rainy season further poses a threat of the disease spreading nation-wide. Given the surge in cases with the floods season ahead, there is a high risk to exacerbate the Cholera situation and overall humanitarian situation in the coming weeks, until the end of the rain and cyclone season. (<a href=\"https://reliefweb.int/node/3926764\">IFRC, 24 Jan 2023</a>)</p>\n<p>Cholera outbreak has been reported from Sofala and Zambezia provinces of Mozambique. From 14 September 2022 to 5 March 2023, a total of 7 517 cases and 41 deaths (CFR 0.6%) have been reported from six provinces and 33 districts. (<a href=\"https://reliefweb.int/node/3942403\">WHO, 11 March 2023</a>)</p>\n<p>From 14 September 2022 to 16 April 2023, a total of 26 841 cases and 123 deaths (CFR 0.5%) have been reported from 11 provinces and 53 districts. (<a href=\"https://reliefweb.int/node/3956535\">WHO, 27 Apr 2023</a>)</p>\n<p>As of 26 April, health authorities have reported 28,958 cumulative cases of cholera in 10 provinces of the country, with 129 deaths. In the past 24 hours, 143 new cases were registered. Cabo Delgado (district of Namuno with 42 cases) and Nampula (district of Memba with 22 and Cidade de Nampula with 124 cases) are the current hotspots of the cholera outbreak, both reporting additional number of affected districts and cases in the past week. To address this concern, humanitarian partners developed and rolled out cholera community kits to support the response at the household levels in the newly affected districts in both provinces. (<a href=\"https://reliefweb.int/node/3957180\">OCHA, 29 Apr 2023</a>)</p>\n"
+      },
+      "description-html": "<p>On 8th January 2023, the Niassa Daily Cholera Bulletin from the Ministry of Health (MoH) indicated an alarming increase in the number of Cholera cases in the province of the same name, which borders Malawi where the current cholera outbreak is worsening. At the time, Niassa province recorded 379 confirmed cholera cases and six deaths in Lago, 250 in Lichinga district with two deaths reported. As of 13th January 2023, the reports from MoH showed a cumulative caseload of 878 confirmed cases and 14 deaths. This is an 80% increase from the number of cases recorded on 21 December 2022, which was 409 cases confirmed with seven reported deaths. To note, five provinces are facing the cholera outbreak or are at risk of experiencing it given the rate at which the outbreak is spreading. Concerned areas include the districts of Lago, Lichinga , Sanga, Chimbonila and Mecanhelas in Niassa province; the districts of Xai-Xai and Chilaulene in Gaza province; Tete province; Zambezia province and the districts of Caia and Buzi in Sofala province. A similar risk is also considered in other surrounding countries, mainly Malawi, Zimbabwe, Tanzania and Zambia. [...] The upcoming rainy season further poses a threat of the disease spreading nation-wide. Given the surge in cases with the floods season ahead, there is a high risk to exacerbate the Cholera situation and overall humanitarian situation in the coming weeks, until the end of the rain and cyclone season. (<a href=\"https://reliefweb.int/node/3926764\">IFRC, 24 Jan 2023</a>)</p>\n<p>Cholera outbreak has been reported from Sofala and Zambezia provinces of Mozambique. From 14 September 2022 to 5 March 2023, a total of 7 517 cases and 41 deaths (CFR 0.6%) have been reported from six provinces and 33 districts. (<a href=\"https://reliefweb.int/node/3942403\">WHO, 11 March 2023</a>)</p>\n<p>From 14 September 2022 to 16 April 2023, a total of 26 841 cases and 123 deaths (CFR 0.5%) have been reported from 11 provinces and 53 districts. (<a href=\"https://reliefweb.int/node/3956535\">WHO, 27 Apr 2023</a>)</p>\n<p>As of 26 April, health authorities have reported 28,958 cumulative cases of cholera in 10 provinces of the country, with 129 deaths. In the past 24 hours, 143 new cases were registered. Cabo Delgado (district of Namuno with 42 cases) and Nampula (district of Memba with 22 and Cidade de Nampula with 124 cases) are the current hotspots of the cholera outbreak, both reporting additional number of affected districts and cases in the past week. To address this concern, humanitarian partners developed and rolled out cholera community kits to support the response at the household levels in the newly affected districts in both provinces. (<a href=\"https://reliefweb.int/node/3957180\">OCHA, 29 Apr 2023</a>)</p>\n",
+      "description": "On 8th January 2023, the Niassa Daily Cholera Bulletin from the Ministry of Health (MoH) indicated an alarming increase in the number of Cholera cases in the province of the same name, which borders Malawi where the current cholera outbreak is worsening. At the time, Niassa province recorded 379 confirmed cholera cases and six deaths in Lago, 250 in Lichinga district with two deaths reported. As of 13th January 2023, the reports from MoH showed a cumulative caseload of 878 confirmed cases and 14 deaths. This is an 80% increase from the number of cases recorded on 21 December 2022, which was 409 cases confirmed with seven reported deaths. To note, five provinces are facing the cholera outbreak or are at risk of experiencing it given the rate at which the outbreak is spreading. Concerned areas include the districts of Lago, Lichinga , Sanga, Chimbonila and Mecanhelas in Niassa province; the districts of Xai-Xai and Chilaulene in Gaza province; Tete province; Zambezia province and the districts of Caia and Buzi in Sofala province. A similar risk is also considered in other surrounding countries, mainly Malawi, Zimbabwe, Tanzania and Zambia. [...] The upcoming rainy season further poses a threat of the disease spreading nation-wide. Given the surge in cases with the floods season ahead, there is a high risk to exacerbate the Cholera situation and overall humanitarian situation in the coming weeks, until the end of the rain and cyclone season. ([IFRC, 24 Jan 2023](https://reliefweb.int/node/3926764))\n\nCholera outbreak has been reported from Sofala and Zambezia provinces of Mozambique. From 14 September 2022 to 5 March 2023, a total of 7 517 cases and 41 deaths (CFR 0.6%) have been reported from six provinces and 33 districts. ([WHO, 11 March 2023](https://reliefweb.int/node/3942403))\n\nFrom 14 September 2022 to 16 April 2023, a total of 26 841 cases and 123 deaths (CFR 0.5%) have been reported from 11 provinces and 53 districts. ([WHO, 27 Apr 2023](https://reliefweb.int/node/3956535))\n\nAs of 26 April, health authorities have reported 28,958 cumulative cases of cholera in 10 provinces of the country, with 129 deaths. In the past 24 hours, 143 new cases were registered. Cabo Delgado (district of Namuno with 42 cases) and Nampula (district of Memba with 22 and Cidade de Nampula with 124 cases) are the current hotspots of the cholera outbreak, both reporting additional number of affected districts and cases in the past week. To address this concern, humanitarian partners developed and rolled out cholera community kits to support the response at the household levels in the newly affected districts in both provinces. ([OCHA, 29 Apr 2023](https://reliefweb.int/node/3957180))",
+      "type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642,
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/51453",
+      "current": true,
+      "url_alias": "https://reliefweb.int/disaster/ep-2023-000006-moz",
+      "name": "Mozambique: Cholera Outbreak - Dec 2022",
+      "id": 51453,
+      "glide": "EP-2023-000006-MOZ",
+      "status": "ongoing"
+    }
+  },
+  "text": "Mozambique: Cholera Outbreak - Dec 2022\n\nOn 8th January 2023, the Niassa Daily Cholera Bulletin from the Ministry of Health (MoH) indicated an alarming increase in the number of Cholera cases in the province of the same name, which borders Malawi where the current cholera outbreak is worsening. At the time, Niassa province recorded 379 confirmed cholera cases and six deaths in Lago, 250 in Lichinga district with two deaths reported. As of 13th January 2023, the reports from MoH showed a cumulative caseload of 878 confirmed cases and 14 deaths. This is an 80% increase from the number of cases recorded on 21 December 2022, which was 409 cases confirmed with seven reported deaths. To note, five provinces are facing the cholera outbreak or are at risk of experiencing it given the rate at which the outbreak is spreading. Concerned areas include the districts of Lago, Lichinga , Sanga, Chimbonila and Mecanhelas in Niassa province; the districts of Xai-Xai and Chilaulene in Gaza province; Tete province; Zambezia province and the districts of Caia and Buzi in Sofala province. A similar risk is also considered in other surrounding countries, mainly Malawi, Zimbabwe, Tanzania and Zambia. [...] The upcoming rainy season further poses a threat of the disease spreading nation-wide. Given the surge in cases with the floods season ahead, there is a high risk to exacerbate the Cholera situation and overall humanitarian situation in the coming weeks, until the end of the rain and cyclone season. ([IFRC, 24 Jan 2023](https://reliefweb.int/node/3926764))\n\nCholera outbreak has been reported from Sofala and Zambezia provinces of Mozambique. From 14 September 2022 to 5 March 2023, a total of 7 517 cases and 41 deaths (CFR 0.6%) have been reported from six provinces and 33 districts. ([WHO, 11 March 2023](https://reliefweb.int/node/3942403))\n\nFrom 14 September 2022 to 16 April 2023, a total of 26 841 cases and 123 deaths (CFR 0.5%) have been reported from 11 provinces and 53 districts. ([WHO, 27 Apr 2023](https://reliefweb.int/node/3956535))\n\nAs of 26 April, health authorities have reported 28,958 cumulative cases of cholera in 10 provinces of the country, with 129 deaths. In the past 24 hours, 143 new cases were registered. Cabo Delgado (district of Namuno with 42 cases) and Nampula (district of Memba with 22 and Cidade de Nampula with 124 cases) are the current hotspots of the cholera outbreak, both reporting additional number of affected districts and cases in the past week. To address this concern, humanitarian partners developed and rolled out cholera community kits to support the response at the household levels in the newly affected districts in both provinces. ([OCHA, 29 Apr 2023](https://reliefweb.int/node/3957180))",
+  "summary": "\n\nIn December 2022, an outbreak of cholera was reported in Mozambique, with 878 confirmed cases and 14 deaths reported by January 2023. The outbreak has since spread to 11 provinces and 53 districts, with 28,958 cumulative cases and 129 deaths reported as of April 2023. Humanitarian partners have developed and rolled out cholera community kits to support the response in newly affected districts. The upcoming rainy season poses a further threat of the disease spreading nation-wide.",
+  "metadata": {
+    "id": "51453",
+    "name": "Mozambique: Cholera Outbreak - Dec 2022",
+    "date_event": 1671580800000,
+    "date_changed": 1682942471000,
+    "date_created": 1674607713000,
+    "primary_country_id": 164,
+    "primary_country_name": "Mozambique",
+    "primary_country_iso3": "moz",
+    "primary_country_location": {
+      "lon": 34.75,
+      "lat": -18.09
+    },
+    "primary_type_id": 4642,
+    "primary_type_code": "EP",
+    "primary_type_name": "Epidemic"
+  }
+}

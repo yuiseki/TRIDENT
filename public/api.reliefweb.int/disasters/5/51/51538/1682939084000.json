@@ -1,0 +1,82 @@
+{
+  "original": {
+    "id": "51538",
+    "fields": {
+      "date": {
+        "changed": "2023-05-01T11:04:44+00:00",
+        "event": "2022-12-10T00:00:00+00:00",
+        "created": "2023-03-31T18:48:41+00:00"
+      },
+      "primary_type": {
+        "code": "EP",
+        "name": "Epidemic",
+        "id": 4642
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/8657",
+          "name": "South Sudan",
+          "location": {
+            "lon": 30.5,
+            "lat": 6.9
+          },
+          "id": 8657,
+          "shortname": "South Sudan",
+          "iso3": "ssd",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/8657",
+        "name": "South Sudan",
+        "location": {
+          "lon": 30.5,
+          "lat": 6.9
+        },
+        "id": 8657,
+        "shortname": "South Sudan",
+        "iso3": "ssd"
+      },
+      "profile": {
+        "overview": "The Ministry of Health of the Republic of South Sudan declared a measles outbreak on the 10th of Dec 2022.\nThis is the second declaration of a measles outbreak last year after the first one on 23 February 2022.\nSouth Sudan started reporting measles cases in January 2022 in two counties -Torit in Eastern Equatoria State and Maban in Upper Nile State and as of week 5 (ending 04 February 2023), 55 counties across all 10 States have reported suspected measles cases. Out of the counties reporting measles cases, outbreaks have been confirmed in 25 counties after surpassing the outbreak threshold. [Gov't South Sudan/WHO, 6 Feb 2023](https://reliefweb.int/node/3948315)\n\nData obtained from January 1, 2022, to March 19, 2023, shows that a total of 63 counties across all 10 States have reported at least one suspected measles case, with confirmed outbreaks in 36 counties.  \nTwenty-one (21) counties conducted reactive campaigns with 937,123 children vaccinated. A cumulative sum of 5,810 suspected cases have been reported; 4,137 and 1,673 in 2022 and 2023, respectively. [Gov't South Sudan/WHO, 28 Mar 2023](https://reliefweb.int/node/3948324)\n\nThe Ministry of Health, South Sudan, in partnership with Gavi, the Vaccine Alliance, UNICEF, WHO and other key partners, has launched a nationwide measles vaccination campaign. The campaign aims to vaccinate more than 2.7 million children aged 6-59 months against the highly infectious disease. [GAVI, 24 Apr 2023](https://reliefweb.int/node/3955469)",
+        "overview-html": "<p>The Ministry of Health of the Republic of South Sudan declared a measles outbreak on the 10th of Dec 2022.\nThis is the second declaration of a measles outbreak last year after the first one on 23 February 2022.\nSouth Sudan started reporting measles cases in January 2022 in two counties -Torit in Eastern Equatoria State and Maban in Upper Nile State and as of week 5 (ending 04 February 2023), 55 counties across all 10 States have reported suspected measles cases. Out of the counties reporting measles cases, outbreaks have been confirmed in 25 counties after surpassing the outbreak threshold. <a href=\"https://reliefweb.int/node/3948315\">Gov't South Sudan/WHO, 6 Feb 2023</a></p>\n<p>Data obtained from January 1, 2022, to March 19, 2023, shows that a total of 63 counties across all 10 States have reported at least one suspected measles case, with confirmed outbreaks in 36 counties.<br />\nTwenty-one (21) counties conducted reactive campaigns with 937,123 children vaccinated. A cumulative sum of 5,810 suspected cases have been reported; 4,137 and 1,673 in 2022 and 2023, respectively. <a href=\"https://reliefweb.int/node/3948324\">Gov't South Sudan/WHO, 28 Mar 2023</a></p>\n<p>The Ministry of Health, South Sudan, in partnership with Gavi, the Vaccine Alliance, UNICEF, WHO and other key partners, has launched a nationwide measles vaccination campaign. The campaign aims to vaccinate more than 2.7 million children aged 6-59 months against the highly infectious disease. <a href=\"https://reliefweb.int/node/3955469\">GAVI, 24 Apr 2023</a></p>\n"
+      },
+      "description-html": "<p>The Ministry of Health of the Republic of South Sudan declared a measles outbreak on the 10th of Dec 2022.\nThis is the second declaration of a measles outbreak last year after the first one on 23 February 2022.\nSouth Sudan started reporting measles cases in January 2022 in two counties -Torit in Eastern Equatoria State and Maban in Upper Nile State and as of week 5 (ending 04 February 2023), 55 counties across all 10 States have reported suspected measles cases. Out of the counties reporting measles cases, outbreaks have been confirmed in 25 counties after surpassing the outbreak threshold. <a href=\"https://reliefweb.int/node/3948315\">Gov't South Sudan/WHO, 6 Feb 2023</a></p>\n<p>Data obtained from January 1, 2022, to March 19, 2023, shows that a total of 63 counties across all 10 States have reported at least one suspected measles case, with confirmed outbreaks in 36 counties.<br />\nTwenty-one (21) counties conducted reactive campaigns with 937,123 children vaccinated. A cumulative sum of 5,810 suspected cases have been reported; 4,137 and 1,673 in 2022 and 2023, respectively. <a href=\"https://reliefweb.int/node/3948324\">Gov't South Sudan/WHO, 28 Mar 2023</a></p>\n<p>The Ministry of Health, South Sudan, in partnership with Gavi, the Vaccine Alliance, UNICEF, WHO and other key partners, has launched a nationwide measles vaccination campaign. The campaign aims to vaccinate more than 2.7 million children aged 6-59 months against the highly infectious disease. <a href=\"https://reliefweb.int/node/3955469\">GAVI, 24 Apr 2023</a></p>\n",
+      "description": "The Ministry of Health of the Republic of South Sudan declared a measles outbreak on the 10th of Dec 2022.\nThis is the second declaration of a measles outbreak last year after the first one on 23 February 2022.\nSouth Sudan started reporting measles cases in January 2022 in two counties -Torit in Eastern Equatoria State and Maban in Upper Nile State and as of week 5 (ending 04 February 2023), 55 counties across all 10 States have reported suspected measles cases. Out of the counties reporting measles cases, outbreaks have been confirmed in 25 counties after surpassing the outbreak threshold. [Gov't South Sudan/WHO, 6 Feb 2023](https://reliefweb.int/node/3948315)\n\nData obtained from January 1, 2022, to March 19, 2023, shows that a total of 63 counties across all 10 States have reported at least one suspected measles case, with confirmed outbreaks in 36 counties.  \nTwenty-one (21) counties conducted reactive campaigns with 937,123 children vaccinated. A cumulative sum of 5,810 suspected cases have been reported; 4,137 and 1,673 in 2022 and 2023, respectively. [Gov't South Sudan/WHO, 28 Mar 2023](https://reliefweb.int/node/3948324)\n\nThe Ministry of Health, South Sudan, in partnership with Gavi, the Vaccine Alliance, UNICEF, WHO and other key partners, has launched a nationwide measles vaccination campaign. The campaign aims to vaccinate more than 2.7 million children aged 6-59 months against the highly infectious disease. [GAVI, 24 Apr 2023](https://reliefweb.int/node/3955469)",
+      "type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642,
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/51538",
+      "current": true,
+      "url_alias": "https://reliefweb.int/disaster/ep-2023-000048-ssd",
+      "name": "South Sudan: Measles - Dec 2022",
+      "id": 51538,
+      "glide": "EP-2023-000048-SSD",
+      "status": "ongoing"
+    }
+  },
+  "text": "South Sudan: Measles - Dec 2022\n\nThe Ministry of Health of the Republic of South Sudan declared a measles outbreak on the 10th of Dec 2022.\nThis is the second declaration of a measles outbreak last year after the first one on 23 February 2022.\nSouth Sudan started reporting measles cases in January 2022 in two counties -Torit in Eastern Equatoria State and Maban in Upper Nile State and as of week 5 (ending 04 February 2023), 55 counties across all 10 States have reported suspected measles cases. Out of the counties reporting measles cases, outbreaks have been confirmed in 25 counties after surpassing the outbreak threshold. [Gov't South Sudan/WHO, 6 Feb 2023](https://reliefweb.int/node/3948315)\n\nData obtained from January 1, 2022, to March 19, 2023, shows that a total of 63 counties across all 10 States have reported at least one suspected measles case, with confirmed outbreaks in 36 counties.  \nTwenty-one (21) counties conducted reactive campaigns with 937,123 children vaccinated. A cumulative sum of 5,810 suspected cases have been reported; 4,137 and 1,673 in 2022 and 2023, respectively. [Gov't South Sudan/WHO, 28 Mar 2023](https://reliefweb.int/node/3948324)\n\nThe Ministry of Health, South Sudan, in partnership with Gavi, the Vaccine Alliance, UNICEF, WHO and other key partners, has launched a nationwide measles vaccination campaign. The campaign aims to vaccinate more than 2.7 million children aged 6-59 months against the highly infectious disease. [GAVI, 24 Apr 2023](https://reliefweb.int/node/3955469)",
+  "summary": " The Ministry of Health of South Sudan declared a measles outbreak on December 10, 2022. By March 19, 2023, 63 counties across all 10 States had reported at least one suspected measles case, with confirmed outbreaks in 36 counties. A nationwide measles vaccination campaign was launched in April 2023 to vaccinate more than 2.7 million children aged 6-59 months against the highly infectious disease.",
+  "metadata": {
+    "id": "51538",
+    "name": "South Sudan: Measles - Dec 2022",
+    "date_event": 1670630400000,
+    "date_changed": 1682939084000,
+    "date_created": 1680288521000,
+    "primary_country_id": 8657,
+    "primary_country_name": "South Sudan",
+    "primary_country_iso3": "ssd",
+    "primary_country_location": {
+      "lon": 30.5,
+      "lat": 6.9
+    },
+    "primary_type_id": 4642,
+    "primary_type_code": "EP",
+    "primary_type_name": "Epidemic"
+  }
+}

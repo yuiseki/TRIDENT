@@ -16,8 +16,9 @@
     "site:www.undocs.org:summarize": "node --loader ts-node/esm ./scripts/www.undocs.org/summarize.ts",
     "site:www.undocs.org:testRetrievalQA": "node --loader ts-node/esm ./scripts/www.undocs.org/testRetrievalQA.ts",
     "site:www.undocs.org:testConversationalRetrievalQA": "node --loader ts-node/esm ./scripts/www.undocs.org/testConversationalRetrievalQA.ts",
-    "site:api.reliefweb.int:fetch": "node --loader ts-node/esm ./scripts/api.reliefweb.int/fetch.ts",
-    "site:api.reliefweb.int:analyze": "node --loader ts-node/esm ./scripts/api.reliefweb.int/analyze.ts",
+    "site:api.reliefweb.int:00_fetch": "node --loader ts-node/esm ./scripts/api.reliefweb.int/00_fetch.ts",
+    "site:api.reliefweb.int:01_analyze": "node --loader ts-node/esm ./scripts/api.reliefweb.int/01_analyze.ts",
+    "site:api.reliefweb.int:02_store": "node --loader ts-node/esm ./scripts/api.reliefweb.int/02_store.ts",
     "site:github.com:fetch": "node --loader ts-node/esm ./scripts/github.com/fetch_and_store.ts",
     "test:utils:analyzeGeoJSON": "node --loader ts-node/esm ./test/utils/analyzeGeoJSON.ts"
   },

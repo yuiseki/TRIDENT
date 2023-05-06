@@ -1,0 +1,92 @@
+{
+  "original": {
+    "id": "51310",
+    "fields": {
+      "date": {
+        "changed": "2023-05-01T12:29:06+00:00",
+        "event": "2022-09-10T00:00:00+00:00",
+        "created": "2022-09-14T07:31:22+00:00"
+      },
+      "primary_type": {
+        "code": "EP",
+        "name": "Epidemic",
+        "id": 4642
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/226",
+          "name": "Syrian Arab Republic",
+          "location": {
+            "lon": 38.51,
+            "lat": 35.01
+          },
+          "id": 226,
+          "shortname": "Syria",
+          "iso3": "syr",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/226",
+        "name": "Syrian Arab Republic",
+        "location": {
+          "lon": 38.51,
+          "lat": 35.01
+        },
+        "id": 226,
+        "shortname": "Syria",
+        "iso3": "syr"
+      },
+      "profile": {
+        "appeals_response_plans": {
+          "active": [
+            {
+              "cover": "https://reliefweb.int/sites/default/files/styles/small/public/previews/26/9f/269fa089-f35c-4e5c-9b9b-63ac1cc88808.png",
+              "title": "Health Cluster: Whole of Syria Acute Watery Diarrhea/Cholera Response Plan January - June 2023",
+              "url": "https://reliefweb.int/node/3943460"
+            }
+          ],
+          "title": "Appeals & Response Plans"
+        },
+        "overview": "On 10 September, the Syrian Ministry of Health (MoH) declared an outbreak of cholera in Aleppo Governorate following 15 confirmed laboratory cases, including one death. Between 25 August and 10 September, the surveillance data showed that a total of 936 severe acute watery diarrhoea cases were reported in Syria, including at least eight deaths. Most of the cases were reported from Aleppo (72.2%, 676 cases), Deir-ez-Zor (21.5%, 201 cases), Ar-Raqqa (1.8% 17 cases), Al Hasakeh (4.1%, 38 cases), Hama (0.2%, 2 cases) and Lattakia (0.2%, 2 cases). The number of confirmed cholera cases so far is 20 in Aleppo, four in Lattakia and two in Damascus (people coming from Aleppo). Based on a rapid assessment conducted by health authorities and partners, the source of infection is believed to be linked to people drinking unsafe water from the Euphrates River and using contaminated water to irrigate crops, resulting in food contamination. ([OCHA, 12 Sep 2022](https://reliefweb.int/node/3885666))\n\nSuspected cholera cases (AWD) have been reported from all 14 governorates, of which 12 have reported cases that were positive by rapid diagnostic test. Between 25 August and 8 October, 15,823 suspected cases have been reported, including 68 deaths (case fatality rate of 0.43%). Of the 1,635 samples tested with rapid diagnostic tests, 807 have tested positive. To date, 644 stool samples have been cultured, of which 245 have tested positive for Vibrio Cholera. The overall proportion of positive cases is 46%. ([OCHA, WHO, 14 Oct 2022](https://reliefweb.int/node/3896669))\n\nCholera remains a serious concern with 65,218 suspected cases and 23 deaths. While the case fatality rate remains below the acceptable WHO threshold of 1 per cent, the attack rate has continued to slowly increase, rising to 1.41 per cent during this reporting period in NW Syria. ([UNICEF, 18 Apr 2023](https://reliefweb.int/node/3954028))",
+        "overview-html": "<p>On 10 September, the Syrian Ministry of Health (MoH) declared an outbreak of cholera in Aleppo Governorate following 15 confirmed laboratory cases, including one death. Between 25 August and 10 September, the surveillance data showed that a total of 936 severe acute watery diarrhoea cases were reported in Syria, including at least eight deaths. Most of the cases were reported from Aleppo (72.2%, 676 cases), Deir-ez-Zor (21.5%, 201 cases), Ar-Raqqa (1.8% 17 cases), Al Hasakeh (4.1%, 38 cases), Hama (0.2%, 2 cases) and Lattakia (0.2%, 2 cases). The number of confirmed cholera cases so far is 20 in Aleppo, four in Lattakia and two in Damascus (people coming from Aleppo). Based on a rapid assessment conducted by health authorities and partners, the source of infection is believed to be linked to people drinking unsafe water from the Euphrates River and using contaminated water to irrigate crops, resulting in food contamination. (<a href=\"https://reliefweb.int/node/3885666\">OCHA, 12 Sep 2022</a>)</p>\n<p>Suspected cholera cases (AWD) have been reported from all 14 governorates, of which 12 have reported cases that were positive by rapid diagnostic test. Between 25 August and 8 October, 15,823 suspected cases have been reported, including 68 deaths (case fatality rate of 0.43%). Of the 1,635 samples tested with rapid diagnostic tests, 807 have tested positive. To date, 644 stool samples have been cultured, of which 245 have tested positive for Vibrio Cholera. The overall proportion of positive cases is 46%. (<a href=\"https://reliefweb.int/node/3896669\">OCHA, WHO, 14 Oct 2022</a>)</p>\n<p>Cholera remains a serious concern with 65,218 suspected cases and 23 deaths. While the case fatality rate remains below the acceptable WHO threshold of 1 per cent, the attack rate has continued to slowly increase, rising to 1.41 per cent during this reporting period in NW Syria. (<a href=\"https://reliefweb.int/node/3954028\">UNICEF, 18 Apr 2023</a>)</p>\n"
+      },
+      "description-html": "<p>On 10 September, the Syrian Ministry of Health (MoH) declared an outbreak of cholera in Aleppo Governorate following 15 confirmed laboratory cases, including one death. Between 25 August and 10 September, the surveillance data showed that a total of 936 severe acute watery diarrhoea cases were reported in Syria, including at least eight deaths. Most of the cases were reported from Aleppo (72.2%, 676 cases), Deir-ez-Zor (21.5%, 201 cases), Ar-Raqqa (1.8% 17 cases), Al Hasakeh (4.1%, 38 cases), Hama (0.2%, 2 cases) and Lattakia (0.2%, 2 cases). The number of confirmed cholera cases so far is 20 in Aleppo, four in Lattakia and two in Damascus (people coming from Aleppo). Based on a rapid assessment conducted by health authorities and partners, the source of infection is believed to be linked to people drinking unsafe water from the Euphrates River and using contaminated water to irrigate crops, resulting in food contamination. (<a href=\"https://reliefweb.int/node/3885666\">OCHA, 12 Sep 2022</a>)</p>\n<p>Suspected cholera cases (AWD) have been reported from all 14 governorates, of which 12 have reported cases that were positive by rapid diagnostic test. Between 25 August and 8 October, 15,823 suspected cases have been reported, including 68 deaths (case fatality rate of 0.43%). Of the 1,635 samples tested with rapid diagnostic tests, 807 have tested positive. To date, 644 stool samples have been cultured, of which 245 have tested positive for Vibrio Cholera. The overall proportion of positive cases is 46%. (<a href=\"https://reliefweb.int/node/3896669\">OCHA, WHO, 14 Oct 2022</a>)</p>\n<p>Cholera remains a serious concern with 65,218 suspected cases and 23 deaths. While the case fatality rate remains below the acceptable WHO threshold of 1 per cent, the attack rate has continued to slowly increase, rising to 1.41 per cent during this reporting period in NW Syria. (<a href=\"https://reliefweb.int/node/3954028\">UNICEF, 18 Apr 2023</a>)</p>\n<h3>Appeals &amp; Response Plans</h3>\n<ul>\n<li>\n<a href=\"https://reliefweb.int/node/3943460\"><img src=\"https://reliefweb.int/sites/default/files/styles/small/public/previews/26/9f/269fa089-f35c-4e5c-9b9b-63ac1cc88808.png\" alt=\"Health Cluster: Whole of Syria Acute Watery Diarrhea/Cholera Response Plan January - June 2023 - Cover preview\" /> Health Cluster: Whole of Syria Acute Watery Diarrhea/Cholera Response Plan January - June 2023</a>\n</li>\n</ul>\n",
+      "description": "On 10 September, the Syrian Ministry of Health (MoH) declared an outbreak of cholera in Aleppo Governorate following 15 confirmed laboratory cases, including one death. Between 25 August and 10 September, the surveillance data showed that a total of 936 severe acute watery diarrhoea cases were reported in Syria, including at least eight deaths. Most of the cases were reported from Aleppo (72.2%, 676 cases), Deir-ez-Zor (21.5%, 201 cases), Ar-Raqqa (1.8% 17 cases), Al Hasakeh (4.1%, 38 cases), Hama (0.2%, 2 cases) and Lattakia (0.2%, 2 cases). The number of confirmed cholera cases so far is 20 in Aleppo, four in Lattakia and two in Damascus (people coming from Aleppo). Based on a rapid assessment conducted by health authorities and partners, the source of infection is believed to be linked to people drinking unsafe water from the Euphrates River and using contaminated water to irrigate crops, resulting in food contamination. ([OCHA, 12 Sep 2022](https://reliefweb.int/node/3885666))\n\nSuspected cholera cases (AWD) have been reported from all 14 governorates, of which 12 have reported cases that were positive by rapid diagnostic test. Between 25 August and 8 October, 15,823 suspected cases have been reported, including 68 deaths (case fatality rate of 0.43%). Of the 1,635 samples tested with rapid diagnostic tests, 807 have tested positive. To date, 644 stool samples have been cultured, of which 245 have tested positive for Vibrio Cholera. The overall proportion of positive cases is 46%. ([OCHA, WHO, 14 Oct 2022](https://reliefweb.int/node/3896669))\n\nCholera remains a serious concern with 65,218 suspected cases and 23 deaths. While the case fatality rate remains below the acceptable WHO threshold of 1 per cent, the attack rate has continued to slowly increase, rising to 1.41 per cent during this reporting period in NW Syria. ([UNICEF, 18 Apr 2023](https://reliefweb.int/node/3954028))\n### Appeals & Response Plans\n\n- [![Health Cluster: Whole of Syria Acute Watery Diarrhea/Cholera Response Plan January - June 2023 - Cover preview](https://reliefweb.int/sites/default/files/styles/small/public/previews/26/9f/269fa089-f35c-4e5c-9b9b-63ac1cc88808.png) Health Cluster: Whole of Syria Acute Watery Diarrhea/Cholera Response Plan January - June 2023](https://reliefweb.int/node/3943460)",
+      "type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642,
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/51310",
+      "current": true,
+      "url_alias": "https://reliefweb.int/disaster/ep-2022-000310-syr",
+      "name": "Syria: Cholera Outbreak - Sep 2022",
+      "id": 51310,
+      "glide": "EP-2022-000310-SYR",
+      "status": "ongoing"
+    }
+  },
+  "text": "Syria: Cholera Outbreak - Sep 2022\n\nOn 10 September, the Syrian Ministry of Health (MoH) declared an outbreak of cholera in Aleppo Governorate following 15 confirmed laboratory cases, including one death. Between 25 August and 10 September, the surveillance data showed that a total of 936 severe acute watery diarrhoea cases were reported in Syria, including at least eight deaths. Most of the cases were reported from Aleppo (72.2%, 676 cases), Deir-ez-Zor (21.5%, 201 cases), Ar-Raqqa (1.8% 17 cases), Al Hasakeh (4.1%, 38 cases), Hama (0.2%, 2 cases) and Lattakia (0.2%, 2 cases). The number of confirmed cholera cases so far is 20 in Aleppo, four in Lattakia and two in Damascus (people coming from Aleppo). Based on a rapid assessment conducted by health authorities and partners, the source of infection is believed to be linked to people drinking unsafe water from the Euphrates River and using contaminated water to irrigate crops, resulting in food contamination. ([OCHA, 12 Sep 2022](https://reliefweb.int/node/3885666))\n\nSuspected cholera cases (AWD) have been reported from all 14 governorates, of which 12 have reported cases that were positive by rapid diagnostic test. Between 25 August and 8 October, 15,823 suspected cases have been reported, including 68 deaths (case fatality rate of 0.43%). Of the 1,635 samples tested with rapid diagnostic tests, 807 have tested positive. To date, 644 stool samples have been cultured, of which 245 have tested positive for Vibrio Cholera. The overall proportion of positive cases is 46%. ([OCHA, WHO, 14 Oct 2022](https://reliefweb.int/node/3896669))\n\nCholera remains a serious concern with 65,218 suspected cases and 23 deaths. While the case fatality rate remains below the acceptable WHO threshold of 1 per cent, the attack rate has continued to slowly increase, rising to 1.41 per cent during this reporting period in NW Syria. ([UNICEF, 18 Apr 2023](https://reliefweb.int/node/3954028))\n### Appeals & Response Plans\n\n- [![Health Cluster: Whole of Syria Acute Watery Diarrhea/Cholera Response Plan January - June 2023 - Cover preview](https://reliefweb.int/sites/default/files/styles/small/public/previews/26/9f/269fa089-f35c-4e5c-9b9b-63ac1cc88808.png) Health Cluster: Whole of Syria Acute Watery Diarrhea/Cholera Response Plan January - June 2023](https://reliefweb.int/node/3943460)",
+  "summary": " In September 2022, the Syrian Ministry of Health declared an outbreak of cholera in Aleppo Governorate, with 15 confirmed laboratory cases and one death. By October 2022, 15,823 suspected cases had been reported, including 68 deaths. By April 2023, the number of suspected cases had risen to 65,218, with 23 deaths. The source of infection is believed to be linked to people drinking unsafe water from the Euphrates River and using contaminated water to irrigate crops. The Health Cluster has released a Whole of Syria Acute Watery Diarrhea/Cholera Response Plan for January - June 2023.",
+  "metadata": {
+    "id": "51310",
+    "name": "Syria: Cholera Outbreak - Sep 2022",
+    "date_event": 1662768000000,
+    "date_changed": 1682944146000,
+    "date_created": 1663140682000,
+    "primary_country_id": 226,
+    "primary_country_name": "Syrian Arab Republic",
+    "primary_country_iso3": "syr",
+    "primary_country_location": {
+      "lon": 38.51,
+      "lat": 35.01
+    },
+    "primary_type_id": 4642,
+    "primary_type_code": "EP",
+    "primary_type_name": "Epidemic"
+  }
+}

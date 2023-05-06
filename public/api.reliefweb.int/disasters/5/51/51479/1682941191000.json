@@ -1,0 +1,82 @@
+{
+  "original": {
+    "id": "51479",
+    "fields": {
+      "date": {
+        "changed": "2023-05-01T11:39:51+00:00",
+        "event": "2023-02-07T00:00:00+00:00",
+        "created": "2023-02-11T19:26:46+00:00"
+      },
+      "primary_type": {
+        "code": "FL",
+        "name": "Flood",
+        "id": 4611
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/164",
+          "name": "Mozambique",
+          "location": {
+            "lon": 34.75,
+            "lat": -18.09
+          },
+          "id": 164,
+          "shortname": "Mozambique",
+          "iso3": "moz",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/164",
+        "name": "Mozambique",
+        "location": {
+          "lon": 34.75,
+          "lat": -18.09
+        },
+        "id": 164,
+        "shortname": "Mozambique",
+        "iso3": "moz"
+      },
+      "profile": {
+        "overview": "Between 7-10 February, heavy rains reaching up to 100 mm in 24 hours hit the southern region of the country, causing widespread flooding in Maputo city and Maputo province. According to the National Institute for Disaster Management and Risk Reduction (INGD), the rain already affected some 30,605 people (5,721 families), displaced 422 people, and killed four people. Five accommodation centres have been established that are currently hosting 422 people.\n\nAccording to preliminary data from authorities, eight houses have been partially destroyed and 4,286 have been flooded, while five health units and 13 schools across the province have been reportedly damaged by the rain. Power cuts have been reported in all the areas affected – particularly around the basins of the rivers Maputo, Incomáti, and Umbelúzi – where the alert level has been reached. Movement across the region has also been curtailed. The Provincial Delegation of the National Roads Administration (DPANE) reported that the roads N2 (Matola/Boane), N3 (Impaputo/Goba), R408/CrzR407, CrzR407/CrzN3, N200, R406 (Salamanga/Catuane), R402 (Moamba/Sabie), and NC (Mazambanine/ETA) are currently impassable.\n\nThe National Institute of Meteorology (INAM) warned that heavy rains and strong winds will continue to hit the southern provinces of the country, possibly for the next 14 days. Authorities estimate that an additional 53,000 people could be affected as a result of weather conditions combined with water releases in dams further upstream. Humanitarian partners are monitoring the situation and mobilising to support government-led efforts. ([OCHA, 11 Feb 2023](https://reliefweb.int/node/3932735/))\n\nBetween 31 Jan and 12 Mar 2023, heavy rainfall has occurred in 10/11 Provinces of Mozambique, including rains from the the Freddy cyclone system which has made landfall twice. As of 31 March, 1 255 786 people have been affected by Freddy’s double landfall in Mozambique, in eight provinces including Zambezia, Sofala, Inhambane, Tete, Maputo City, Niassa, Gaza, and Manica. A total of 186 deaths have been reported, including 157 deaths in Zambezia which is by far the most affected province after Freddy’s second passage. Nearly 200 870 people have been displaced and relocated across accommodation centres in Zambezia, Sofala, Tete, Inhambane, and Niassa. ([WHO, 18 Apr 2023](https://reliefweb.int/node/3953810/))",
+        "overview-html": "<p>Between 7-10 February, heavy rains reaching up to 100 mm in 24 hours hit the southern region of the country, causing widespread flooding in Maputo city and Maputo province. According to the National Institute for Disaster Management and Risk Reduction (INGD), the rain already affected some 30,605 people (5,721 families), displaced 422 people, and killed four people. Five accommodation centres have been established that are currently hosting 422 people.</p>\n<p>According to preliminary data from authorities, eight houses have been partially destroyed and 4,286 have been flooded, while five health units and 13 schools across the province have been reportedly damaged by the rain. Power cuts have been reported in all the areas affected – particularly around the basins of the rivers Maputo, Incomáti, and Umbelúzi – where the alert level has been reached. Movement across the region has also been curtailed. The Provincial Delegation of the National Roads Administration (DPANE) reported that the roads N2 (Matola/Boane), N3 (Impaputo/Goba), R408/CrzR407, CrzR407/CrzN3, N200, R406 (Salamanga/Catuane), R402 (Moamba/Sabie), and NC (Mazambanine/ETA) are currently impassable.</p>\n<p>The National Institute of Meteorology (INAM) warned that heavy rains and strong winds will continue to hit the southern provinces of the country, possibly for the next 14 days. Authorities estimate that an additional 53,000 people could be affected as a result of weather conditions combined with water releases in dams further upstream. Humanitarian partners are monitoring the situation and mobilising to support government-led efforts. (<a href=\"https://reliefweb.int/node/3932735/\">OCHA, 11 Feb 2023</a>)</p>\n<p>Between 31 Jan and 12 Mar 2023, heavy rainfall has occurred in 10/11 Provinces of Mozambique, including rains from the the Freddy cyclone system which has made landfall twice. As of 31 March, 1 255 786 people have been affected by Freddy’s double landfall in Mozambique, in eight provinces including Zambezia, Sofala, Inhambane, Tete, Maputo City, Niassa, Gaza, and Manica. A total of 186 deaths have been reported, including 157 deaths in Zambezia which is by far the most affected province after Freddy’s second passage. Nearly 200 870 people have been displaced and relocated across accommodation centres in Zambezia, Sofala, Tete, Inhambane, and Niassa. (<a href=\"https://reliefweb.int/node/3953810/\">WHO, 18 Apr 2023</a>)</p>\n"
+      },
+      "description-html": "<p>Between 7-10 February, heavy rains reaching up to 100 mm in 24 hours hit the southern region of the country, causing widespread flooding in Maputo city and Maputo province. According to the National Institute for Disaster Management and Risk Reduction (INGD), the rain already affected some 30,605 people (5,721 families), displaced 422 people, and killed four people. Five accommodation centres have been established that are currently hosting 422 people.</p>\n<p>According to preliminary data from authorities, eight houses have been partially destroyed and 4,286 have been flooded, while five health units and 13 schools across the province have been reportedly damaged by the rain. Power cuts have been reported in all the areas affected – particularly around the basins of the rivers Maputo, Incomáti, and Umbelúzi – where the alert level has been reached. Movement across the region has also been curtailed. The Provincial Delegation of the National Roads Administration (DPANE) reported that the roads N2 (Matola/Boane), N3 (Impaputo/Goba), R408/CrzR407, CrzR407/CrzN3, N200, R406 (Salamanga/Catuane), R402 (Moamba/Sabie), and NC (Mazambanine/ETA) are currently impassable.</p>\n<p>The National Institute of Meteorology (INAM) warned that heavy rains and strong winds will continue to hit the southern provinces of the country, possibly for the next 14 days. Authorities estimate that an additional 53,000 people could be affected as a result of weather conditions combined with water releases in dams further upstream. Humanitarian partners are monitoring the situation and mobilising to support government-led efforts. (<a href=\"https://reliefweb.int/node/3932735/\">OCHA, 11 Feb 2023</a>)</p>\n<p>Between 31 Jan and 12 Mar 2023, heavy rainfall has occurred in 10/11 Provinces of Mozambique, including rains from the the Freddy cyclone system which has made landfall twice. As of 31 March, 1 255 786 people have been affected by Freddy’s double landfall in Mozambique, in eight provinces including Zambezia, Sofala, Inhambane, Tete, Maputo City, Niassa, Gaza, and Manica. A total of 186 deaths have been reported, including 157 deaths in Zambezia which is by far the most affected province after Freddy’s second passage. Nearly 200 870 people have been displaced and relocated across accommodation centres in Zambezia, Sofala, Tete, Inhambane, and Niassa. (<a href=\"https://reliefweb.int/node/3953810/\">WHO, 18 Apr 2023</a>)</p>\n",
+      "description": "Between 7-10 February, heavy rains reaching up to 100 mm in 24 hours hit the southern region of the country, causing widespread flooding in Maputo city and Maputo province. According to the National Institute for Disaster Management and Risk Reduction (INGD), the rain already affected some 30,605 people (5,721 families), displaced 422 people, and killed four people. Five accommodation centres have been established that are currently hosting 422 people.\n\nAccording to preliminary data from authorities, eight houses have been partially destroyed and 4,286 have been flooded, while five health units and 13 schools across the province have been reportedly damaged by the rain. Power cuts have been reported in all the areas affected – particularly around the basins of the rivers Maputo, Incomáti, and Umbelúzi – where the alert level has been reached. Movement across the region has also been curtailed. The Provincial Delegation of the National Roads Administration (DPANE) reported that the roads N2 (Matola/Boane), N3 (Impaputo/Goba), R408/CrzR407, CrzR407/CrzN3, N200, R406 (Salamanga/Catuane), R402 (Moamba/Sabie), and NC (Mazambanine/ETA) are currently impassable.\n\nThe National Institute of Meteorology (INAM) warned that heavy rains and strong winds will continue to hit the southern provinces of the country, possibly for the next 14 days. Authorities estimate that an additional 53,000 people could be affected as a result of weather conditions combined with water releases in dams further upstream. Humanitarian partners are monitoring the situation and mobilising to support government-led efforts. ([OCHA, 11 Feb 2023](https://reliefweb.int/node/3932735/))\n\nBetween 31 Jan and 12 Mar 2023, heavy rainfall has occurred in 10/11 Provinces of Mozambique, including rains from the the Freddy cyclone system which has made landfall twice. As of 31 March, 1 255 786 people have been affected by Freddy’s double landfall in Mozambique, in eight provinces including Zambezia, Sofala, Inhambane, Tete, Maputo City, Niassa, Gaza, and Manica. A total of 186 deaths have been reported, including 157 deaths in Zambezia which is by far the most affected province after Freddy’s second passage. Nearly 200 870 people have been displaced and relocated across accommodation centres in Zambezia, Sofala, Tete, Inhambane, and Niassa. ([WHO, 18 Apr 2023](https://reliefweb.int/node/3953810/))",
+      "type": [
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611,
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/51479",
+      "current": true,
+      "url_alias": "https://reliefweb.int/disaster/fl-2023-000018-moz",
+      "name": "Mozambique: Floods - Feb 2023",
+      "id": 51479,
+      "glide": "FL-2023-000018-MOZ",
+      "status": "ongoing"
+    }
+  },
+  "text": "Mozambique: Floods - Feb 2023\n\nBetween 7-10 February, heavy rains reaching up to 100 mm in 24 hours hit the southern region of the country, causing widespread flooding in Maputo city and Maputo province. According to the National Institute for Disaster Management and Risk Reduction (INGD), the rain already affected some 30,605 people (5,721 families), displaced 422 people, and killed four people. Five accommodation centres have been established that are currently hosting 422 people.\n\nAccording to preliminary data from authorities, eight houses have been partially destroyed and 4,286 have been flooded, while five health units and 13 schools across the province have been reportedly damaged by the rain. Power cuts have been reported in all the areas affected – particularly around the basins of the rivers Maputo, Incomáti, and Umbelúzi – where the alert level has been reached. Movement across the region has also been curtailed. The Provincial Delegation of the National Roads Administration (DPANE) reported that the roads N2 (Matola/Boane), N3 (Impaputo/Goba), R408/CrzR407, CrzR407/CrzN3, N200, R406 (Salamanga/Catuane), R402 (Moamba/Sabie), and NC (Mazambanine/ETA) are currently impassable.\n\nThe National Institute of Meteorology (INAM) warned that heavy rains and strong winds will continue to hit the southern provinces of the country, possibly for the next 14 days. Authorities estimate that an additional 53,000 people could be affected as a result of weather conditions combined with water releases in dams further upstream. Humanitarian partners are monitoring the situation and mobilising to support government-led efforts. ([OCHA, 11 Feb 2023](https://reliefweb.int/node/3932735/))\n\nBetween 31 Jan and 12 Mar 2023, heavy rainfall has occurred in 10/11 Provinces of Mozambique, including rains from the the Freddy cyclone system which has made landfall twice. As of 31 March, 1 255 786 people have been affected by Freddy’s double landfall in Mozambique, in eight provinces including Zambezia, Sofala, Inhambane, Tete, Maputo City, Niassa, Gaza, and Manica. A total of 186 deaths have been reported, including 157 deaths in Zambezia which is by far the most affected province after Freddy’s second passage. Nearly 200 870 people have been displaced and relocated across accommodation centres in Zambezia, Sofala, Tete, Inhambane, and Niassa. ([WHO, 18 Apr 2023](https://reliefweb.int/node/3953810/))",
+  "summary": " In February 2023, heavy rains caused flooding in Maputo city and Maputo province in Mozambique, affecting 30,605 people, displacing 422 people, and killing four people. In April 2023, the Freddy cyclone system made two landfalls in Mozambique, affecting 1,255,786 people, resulting in 186 deaths and nearly 200,870 displaced people.",
+  "metadata": {
+    "id": "51479",
+    "name": "Mozambique: Floods - Feb 2023",
+    "date_event": 1675728000000,
+    "date_changed": 1682941191000,
+    "date_created": 1676143606000,
+    "primary_country_id": 164,
+    "primary_country_name": "Mozambique",
+    "primary_country_iso3": "moz",
+    "primary_country_location": {
+      "lon": 34.75,
+      "lat": -18.09
+    },
+    "primary_type_id": 4611,
+    "primary_type_code": "FL",
+    "primary_type_name": "Flood"
+  }
+}

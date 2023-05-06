@@ -1,0 +1,82 @@
+{
+  "original": {
+    "id": "51514",
+    "fields": {
+      "date": {
+        "changed": "2023-03-14T06:38:20+00:00",
+        "event": "2023-03-03T00:00:00+00:00",
+        "created": "2023-03-10T03:25:55+00:00"
+      },
+      "primary_type": {
+        "code": "EQ",
+        "name": "Earthquake",
+        "id": 4628
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/249",
+          "name": "Vanuatu",
+          "location": {
+            "lon": 167.72,
+            "lat": -16.26
+          },
+          "id": 249,
+          "shortname": "Vanuatu",
+          "iso3": "vut",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/249",
+        "name": "Vanuatu",
+        "location": {
+          "lon": 167.72,
+          "lat": -16.26
+        },
+        "id": 249,
+        "shortname": "Vanuatu",
+        "iso3": "vut"
+      },
+      "profile": {
+        "overview": "Vanuatu has been affected by two destructive cyclones and a 6.6 M earthquake between 1-4 March 2023. On 7 March, Vanuatu requested assistance from the Union Civil Protection Mechanism (UCPM) for aerial capacities and vessels in support of possible evacuation, further assessment, and delivery of assistance to the people affected. ([ECHO, 8 Mar 2023](https://reliefweb.int/node/3941258))\n\nVanuatu declared a state of emergency for the whole country. The UN, NDMO and the humanitarian community are carrying out a needs assessment. Early indications indicate widespread damage and destruction to shelter, structures made from local materials (including latrines, bush kitchens, and houses), infrastructures in general, loss of crops and home gardens, and lastly water and sanitation-related needs. Port Vila and Tanna Island are the most affected areas. ([ECHO, 10 Mar 2023](https://reliefweb.int/node/3942192))\n\nThe disasters have caused widespread damage and destruction. The cost of damages is estimated at US$50 million. About 30,000 households are affected, and 5,000 people are still displaced in evacuation centres. Fifteen days after the disasters, food security, lack of drinkable water, and water-borne disease risks are a growing common concern among stakeholders. ([ECHO, 13 Mar 2023](https://reliefweb.int/node/3942727))",
+        "overview-html": "<p>Vanuatu has been affected by two destructive cyclones and a 6.6 M earthquake between 1-4 March 2023. On 7 March, Vanuatu requested assistance from the Union Civil Protection Mechanism (UCPM) for aerial capacities and vessels in support of possible evacuation, further assessment, and delivery of assistance to the people affected. (<a href=\"https://reliefweb.int/node/3941258\">ECHO, 8 Mar 2023</a>)</p>\n<p>Vanuatu declared a state of emergency for the whole country. The UN, NDMO and the humanitarian community are carrying out a needs assessment. Early indications indicate widespread damage and destruction to shelter, structures made from local materials (including latrines, bush kitchens, and houses), infrastructures in general, loss of crops and home gardens, and lastly water and sanitation-related needs. Port Vila and Tanna Island are the most affected areas. (<a href=\"https://reliefweb.int/node/3942192\">ECHO, 10 Mar 2023</a>)</p>\n<p>The disasters have caused widespread damage and destruction. The cost of damages is estimated at US$50 million. About 30,000 households are affected, and 5,000 people are still displaced in evacuation centres. Fifteen days after the disasters, food security, lack of drinkable water, and water-borne disease risks are a growing common concern among stakeholders. (<a href=\"https://reliefweb.int/node/3942727\">ECHO, 13 Mar 2023</a>)</p>\n"
+      },
+      "description-html": "<p>Vanuatu has been affected by two destructive cyclones and a 6.6 M earthquake between 1-4 March 2023. On 7 March, Vanuatu requested assistance from the Union Civil Protection Mechanism (UCPM) for aerial capacities and vessels in support of possible evacuation, further assessment, and delivery of assistance to the people affected. (<a href=\"https://reliefweb.int/node/3941258\">ECHO, 8 Mar 2023</a>)</p>\n<p>Vanuatu declared a state of emergency for the whole country. The UN, NDMO and the humanitarian community are carrying out a needs assessment. Early indications indicate widespread damage and destruction to shelter, structures made from local materials (including latrines, bush kitchens, and houses), infrastructures in general, loss of crops and home gardens, and lastly water and sanitation-related needs. Port Vila and Tanna Island are the most affected areas. (<a href=\"https://reliefweb.int/node/3942192\">ECHO, 10 Mar 2023</a>)</p>\n<p>The disasters have caused widespread damage and destruction. The cost of damages is estimated at US$50 million. About 30,000 households are affected, and 5,000 people are still displaced in evacuation centres. Fifteen days after the disasters, food security, lack of drinkable water, and water-borne disease risks are a growing common concern among stakeholders. (<a href=\"https://reliefweb.int/node/3942727\">ECHO, 13 Mar 2023</a>)</p>\n",
+      "description": "Vanuatu has been affected by two destructive cyclones and a 6.6 M earthquake between 1-4 March 2023. On 7 March, Vanuatu requested assistance from the Union Civil Protection Mechanism (UCPM) for aerial capacities and vessels in support of possible evacuation, further assessment, and delivery of assistance to the people affected. ([ECHO, 8 Mar 2023](https://reliefweb.int/node/3941258))\n\nVanuatu declared a state of emergency for the whole country. The UN, NDMO and the humanitarian community are carrying out a needs assessment. Early indications indicate widespread damage and destruction to shelter, structures made from local materials (including latrines, bush kitchens, and houses), infrastructures in general, loss of crops and home gardens, and lastly water and sanitation-related needs. Port Vila and Tanna Island are the most affected areas. ([ECHO, 10 Mar 2023](https://reliefweb.int/node/3942192))\n\nThe disasters have caused widespread damage and destruction. The cost of damages is estimated at US$50 million. About 30,000 households are affected, and 5,000 people are still displaced in evacuation centres. Fifteen days after the disasters, food security, lack of drinkable water, and water-borne disease risks are a growing common concern among stakeholders. ([ECHO, 13 Mar 2023](https://reliefweb.int/node/3942727))",
+      "type": [
+        {
+          "code": "EQ",
+          "name": "Earthquake",
+          "id": 4628,
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/51514",
+      "current": true,
+      "url_alias": "https://reliefweb.int/disaster/eq-2023-000035-vut",
+      "name": "Vanuatu: Earthquake - Mar 2023",
+      "id": 51514,
+      "glide": "EQ-2023-000035-VUT",
+      "status": "ongoing"
+    }
+  },
+  "text": "Vanuatu: Earthquake - Mar 2023\n\nVanuatu has been affected by two destructive cyclones and a 6.6 M earthquake between 1-4 March 2023. On 7 March, Vanuatu requested assistance from the Union Civil Protection Mechanism (UCPM) for aerial capacities and vessels in support of possible evacuation, further assessment, and delivery of assistance to the people affected. ([ECHO, 8 Mar 2023](https://reliefweb.int/node/3941258))\n\nVanuatu declared a state of emergency for the whole country. The UN, NDMO and the humanitarian community are carrying out a needs assessment. Early indications indicate widespread damage and destruction to shelter, structures made from local materials (including latrines, bush kitchens, and houses), infrastructures in general, loss of crops and home gardens, and lastly water and sanitation-related needs. Port Vila and Tanna Island are the most affected areas. ([ECHO, 10 Mar 2023](https://reliefweb.int/node/3942192))\n\nThe disasters have caused widespread damage and destruction. The cost of damages is estimated at US$50 million. About 30,000 households are affected, and 5,000 people are still displaced in evacuation centres. Fifteen days after the disasters, food security, lack of drinkable water, and water-borne disease risks are a growing common concern among stakeholders. ([ECHO, 13 Mar 2023](https://reliefweb.int/node/3942727))",
+  "summary": " In March 2023, Vanuatu was affected by two destructive cyclones and a 6.6 M earthquake. The disasters caused widespread damage and destruction, with an estimated cost of US$50 million. About 30,000 households were affected, and 5,000 people were displaced. Fifteen days after the disasters, food security, lack of drinkable water, and water-borne disease risks were a growing concern. Vanuatu requested assistance from the Union Civil Protection Mechanism (UCPM) for aerial capacities and vessels in support of possible evacuation, further assessment, and delivery of assistance to the people affected.",
+  "metadata": {
+    "id": "51514",
+    "name": "Vanuatu: Earthquake - Mar 2023",
+    "date_event": 1677801600000,
+    "date_changed": 1678775900000,
+    "date_created": 1678418755000,
+    "primary_country_id": 249,
+    "primary_country_name": "Vanuatu",
+    "primary_country_iso3": "vut",
+    "primary_country_location": {
+      "lon": 167.72,
+      "lat": -16.26
+    },
+    "primary_type_id": 4628,
+    "primary_type_code": "EQ",
+    "primary_type_name": "Earthquake"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "original": {
+    "id": "51526",
+    "fields": {
+      "date": {
+        "changed": "2023-04-13T15:43:59+00:00",
+        "event": "2023-03-18T00:00:00+00:00",
+        "created": "2023-03-20T12:36:09+00:00"
+      },
+      "primary_type": {
+        "code": "EQ",
+        "name": "Earthquake",
+        "id": 4628
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/81",
+          "name": "Ecuador",
+          "location": {
+            "lon": -78.43,
+            "lat": -1.16
+          },
+          "id": 81,
+          "shortname": "Ecuador",
+          "iso3": "ecu",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/187",
+          "name": "Peru",
+          "location": {
+            "lon": -75.31,
+            "lat": -10.15
+          },
+          "id": 187,
+          "shortname": "Peru",
+          "iso3": "per"
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/81",
+        "name": "Ecuador",
+        "location": {
+          "lon": -78.43,
+          "lat": -1.16
+        },
+        "id": 81,
+        "shortname": "Ecuador",
+        "iso3": "ecu"
+      },
+      "profile": {
+        "overview": "Following the 6.8 M earthquake (6.5 for Ecuadorean Authorities) that occurred on 18 March at 17:12 UTC that affected mostly the Provinces of Guayas, Azuay, Cañar y El Oro (central-southwestern Ecuador), the amount of injured people and damage has increased. In addition, the seismic event hit Tumbes Province (north-western Peru) and resulted in casualties and damage. In Ecuador, the Risk Management Secretariat of Ecuador (SGR) reports 13 fatalities (11 in El Oro Province and two in Azuay Province), 461 injured people, 89 destroyed houses and 192 damaged. In Peru, according to the National Institute of Civil Defense of Peru (INDECI), one person died, another has been injured, 140 people have been affected, and more than 50 houses have been damaged or destroyed across Tumbes Province. National authorities are still conducting the damage assessment and are providing help for those affected. ([ECHO, 20 Mar 2023](https://reliefweb.int/node/3945000))",
+        "overview-html": "<p>Following the 6.8 M earthquake (6.5 for Ecuadorean Authorities) that occurred on 18 March at 17:12 UTC that affected mostly the Provinces of Guayas, Azuay, Cañar y El Oro (central-southwestern Ecuador), the amount of injured people and damage has increased. In addition, the seismic event hit Tumbes Province (north-western Peru) and resulted in casualties and damage. In Ecuador, the Risk Management Secretariat of Ecuador (SGR) reports 13 fatalities (11 in El Oro Province and two in Azuay Province), 461 injured people, 89 destroyed houses and 192 damaged. In Peru, according to the National Institute of Civil Defense of Peru (INDECI), one person died, another has been injured, 140 people have been affected, and more than 50 houses have been damaged or destroyed across Tumbes Province. National authorities are still conducting the damage assessment and are providing help for those affected. (<a href=\"https://reliefweb.int/node/3945000\">ECHO, 20 Mar 2023</a>)</p>\n"
+      },
+      "description-html": "<p>Following the 6.8 M earthquake (6.5 for Ecuadorean Authorities) that occurred on 18 March at 17:12 UTC that affected mostly the Provinces of Guayas, Azuay, Cañar y El Oro (central-southwestern Ecuador), the amount of injured people and damage has increased. In addition, the seismic event hit Tumbes Province (north-western Peru) and resulted in casualties and damage. In Ecuador, the Risk Management Secretariat of Ecuador (SGR) reports 13 fatalities (11 in El Oro Province and two in Azuay Province), 461 injured people, 89 destroyed houses and 192 damaged. In Peru, according to the National Institute of Civil Defense of Peru (INDECI), one person died, another has been injured, 140 people have been affected, and more than 50 houses have been damaged or destroyed across Tumbes Province. National authorities are still conducting the damage assessment and are providing help for those affected. (<a href=\"https://reliefweb.int/node/3945000\">ECHO, 20 Mar 2023</a>)</p>\n",
+      "description": "Following the 6.8 M earthquake (6.5 for Ecuadorean Authorities) that occurred on 18 March at 17:12 UTC that affected mostly the Provinces of Guayas, Azuay, Cañar y El Oro (central-southwestern Ecuador), the amount of injured people and damage has increased. In addition, the seismic event hit Tumbes Province (north-western Peru) and resulted in casualties and damage. In Ecuador, the Risk Management Secretariat of Ecuador (SGR) reports 13 fatalities (11 in El Oro Province and two in Azuay Province), 461 injured people, 89 destroyed houses and 192 damaged. In Peru, according to the National Institute of Civil Defense of Peru (INDECI), one person died, another has been injured, 140 people have been affected, and more than 50 houses have been damaged or destroyed across Tumbes Province. National authorities are still conducting the damage assessment and are providing help for those affected. ([ECHO, 20 Mar 2023](https://reliefweb.int/node/3945000))",
+      "type": [
+        {
+          "code": "EQ",
+          "name": "Earthquake",
+          "id": 4628,
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/51526",
+      "current": true,
+      "url_alias": "https://reliefweb.int/disaster/eq-2023-000038-ecu",
+      "name": "Ecuador/Peru: Earthquake - Mar 2023",
+      "id": 51526,
+      "glide": "EQ-2023-000038-ECU",
+      "status": "ongoing"
+    }
+  },
+  "text": "Ecuador/Peru: Earthquake - Mar 2023\n\nFollowing the 6.8 M earthquake (6.5 for Ecuadorean Authorities) that occurred on 18 March at 17:12 UTC that affected mostly the Provinces of Guayas, Azuay, Cañar y El Oro (central-southwestern Ecuador), the amount of injured people and damage has increased. In addition, the seismic event hit Tumbes Province (north-western Peru) and resulted in casualties and damage. In Ecuador, the Risk Management Secretariat of Ecuador (SGR) reports 13 fatalities (11 in El Oro Province and two in Azuay Province), 461 injured people, 89 destroyed houses and 192 damaged. In Peru, according to the National Institute of Civil Defense of Peru (INDECI), one person died, another has been injured, 140 people have been affected, and more than 50 houses have been damaged or destroyed across Tumbes Province. National authorities are still conducting the damage assessment and are providing help for those affected. ([ECHO, 20 Mar 2023](https://reliefweb.int/node/3945000))",
+  "summary": " On 18 March 2023, a 6.8 magnitude earthquake struck central-southwestern Ecuador and north-western Peru, resulting in 13 fatalities, 461 injured people, 89 destroyed houses, and 192 damaged houses in Ecuador, and 1 fatality, 1 injured person, 140 affected people, and over 50 damaged or destroyed houses in Peru. National authorities are providing help for those affected.",
+  "metadata": {
+    "id": "51526",
+    "name": "Ecuador/Peru: Earthquake - Mar 2023",
+    "date_event": 1679097600000,
+    "date_changed": 1681400639000,
+    "date_created": 1679315769000,
+    "primary_country_id": 81,
+    "primary_country_name": "Ecuador",
+    "primary_country_iso3": "ecu",
+    "primary_country_location": {
+      "lon": -78.43,
+      "lat": -1.16
+    },
+    "primary_type_id": 4628,
+    "primary_type_code": "EQ",
+    "primary_type_name": "Earthquake"
+  }
+}

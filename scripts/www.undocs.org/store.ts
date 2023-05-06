@@ -1,10 +1,10 @@
+import fs from "node:fs/promises";
 import * as dotenv from "dotenv";
 import { OpenAIEmbeddings } from "langchain/embeddings/openai";
 import { PDFLoader } from "langchain/document_loaders/fs/pdf";
 import { PineconeClient } from "@pinecone-database/pinecone";
 import { PineconeStore } from "langchain/vectorstores/pinecone";
 
-import fs from "node:fs/promises";
 import { TokenTextSplitter } from "langchain/text_splitter";
 import { sleep } from "../../src/utils/sleep.ts";
 

@@ -1,0 +1,82 @@
+{
+  "original": {
+    "id": "51549",
+    "fields": {
+      "date": {
+        "changed": "2023-04-17T08:12:38+00:00",
+        "event": "2023-04-01T00:00:00+00:00",
+        "created": "2023-04-17T08:12:38+00:00"
+      },
+      "primary_type": {
+        "code": "FL",
+        "name": "Flood",
+        "id": 4611
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/244",
+          "name": "United Republic of Tanzania",
+          "location": {
+            "lon": 34.82,
+            "lat": -6.27
+          },
+          "id": 244,
+          "shortname": "Tanzania",
+          "iso3": "tza",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/244",
+        "name": "United Republic of Tanzania",
+        "location": {
+          "lon": 34.82,
+          "lat": -6.27
+        },
+        "id": 244,
+        "shortname": "Tanzania",
+        "iso3": "tza"
+      },
+      "profile": {
+        "overview": "On the night of 1st April 2023, the villages around the Ruvuma River experienced severe floods as a result of heavy downpours from the ongoing monsoon rains. So far, this flood has affected the village of Kivava, especially in the suburbs of Sokoni and Kivukuni, villages of Angazo, and Kilamboma, and making 1,400 people displaced, representing 395 households affected in the suburbs of the market and the port. These 1,400 displaced people have been moved to temporary shelters in primary schools that are elevated due to their houses being surrounded by water. In addition, about 60 houses have collapsed with more than 100 toilets having collapsed and fields having been destroyed by water. The road from the village of Angazo to the village of Kilambo has been damaged, thus causing a lack of transportation and communication between those areas. Kivava village is one of the 110 villages in the district council. This village has 4 neighborhoods which are sokoni, kivukoni, dinanji, and lilumbi, the number of residents in this village is 1,976 and there are 518 households. The main economic activity in the village is agriculture and food business. The cultivated crops are rice, sorghum, cassava, cashews, coconuts, and legumes. Most of the agricultural areas were washed away by floods. TRCS branch (Mtwara Red Cross regional team) aside from local authorities visited the affected villages on 5th April and issued initial assessment data to start guiding the first emergency assistance to the affected communities through local actions. TRCS branch, further to this assessment provided first distributions and helped the local authorities in the initial food distribution. ([IFRC, 14 Apr 2023](https://reliefweb.int/node/3953164))",
+        "overview-html": "<p>On the night of 1st April 2023, the villages around the Ruvuma River experienced severe floods as a result of heavy downpours from the ongoing monsoon rains. So far, this flood has affected the village of Kivava, especially in the suburbs of Sokoni and Kivukuni, villages of Angazo, and Kilamboma, and making 1,400 people displaced, representing 395 households affected in the suburbs of the market and the port. These 1,400 displaced people have been moved to temporary shelters in primary schools that are elevated due to their houses being surrounded by water. In addition, about 60 houses have collapsed with more than 100 toilets having collapsed and fields having been destroyed by water. The road from the village of Angazo to the village of Kilambo has been damaged, thus causing a lack of transportation and communication between those areas. Kivava village is one of the 110 villages in the district council. This village has 4 neighborhoods which are sokoni, kivukoni, dinanji, and lilumbi, the number of residents in this village is 1,976 and there are 518 households. The main economic activity in the village is agriculture and food business. The cultivated crops are rice, sorghum, cassava, cashews, coconuts, and legumes. Most of the agricultural areas were washed away by floods. TRCS branch (Mtwara Red Cross regional team) aside from local authorities visited the affected villages on 5th April and issued initial assessment data to start guiding the first emergency assistance to the affected communities through local actions. TRCS branch, further to this assessment provided first distributions and helped the local authorities in the initial food distribution. (<a href=\"https://reliefweb.int/node/3953164\">IFRC, 14 Apr 2023</a>)</p>\n"
+      },
+      "description-html": "<p>On the night of 1st April 2023, the villages around the Ruvuma River experienced severe floods as a result of heavy downpours from the ongoing monsoon rains. So far, this flood has affected the village of Kivava, especially in the suburbs of Sokoni and Kivukuni, villages of Angazo, and Kilamboma, and making 1,400 people displaced, representing 395 households affected in the suburbs of the market and the port. These 1,400 displaced people have been moved to temporary shelters in primary schools that are elevated due to their houses being surrounded by water. In addition, about 60 houses have collapsed with more than 100 toilets having collapsed and fields having been destroyed by water. The road from the village of Angazo to the village of Kilambo has been damaged, thus causing a lack of transportation and communication between those areas. Kivava village is one of the 110 villages in the district council. This village has 4 neighborhoods which are sokoni, kivukoni, dinanji, and lilumbi, the number of residents in this village is 1,976 and there are 518 households. The main economic activity in the village is agriculture and food business. The cultivated crops are rice, sorghum, cassava, cashews, coconuts, and legumes. Most of the agricultural areas were washed away by floods. TRCS branch (Mtwara Red Cross regional team) aside from local authorities visited the affected villages on 5th April and issued initial assessment data to start guiding the first emergency assistance to the affected communities through local actions. TRCS branch, further to this assessment provided first distributions and helped the local authorities in the initial food distribution. (<a href=\"https://reliefweb.int/node/3953164\">IFRC, 14 Apr 2023</a>)</p>\n",
+      "description": "On the night of 1st April 2023, the villages around the Ruvuma River experienced severe floods as a result of heavy downpours from the ongoing monsoon rains. So far, this flood has affected the village of Kivava, especially in the suburbs of Sokoni and Kivukuni, villages of Angazo, and Kilamboma, and making 1,400 people displaced, representing 395 households affected in the suburbs of the market and the port. These 1,400 displaced people have been moved to temporary shelters in primary schools that are elevated due to their houses being surrounded by water. In addition, about 60 houses have collapsed with more than 100 toilets having collapsed and fields having been destroyed by water. The road from the village of Angazo to the village of Kilambo has been damaged, thus causing a lack of transportation and communication between those areas. Kivava village is one of the 110 villages in the district council. This village has 4 neighborhoods which are sokoni, kivukoni, dinanji, and lilumbi, the number of residents in this village is 1,976 and there are 518 households. The main economic activity in the village is agriculture and food business. The cultivated crops are rice, sorghum, cassava, cashews, coconuts, and legumes. Most of the agricultural areas were washed away by floods. TRCS branch (Mtwara Red Cross regional team) aside from local authorities visited the affected villages on 5th April and issued initial assessment data to start guiding the first emergency assistance to the affected communities through local actions. TRCS branch, further to this assessment provided first distributions and helped the local authorities in the initial food distribution. ([IFRC, 14 Apr 2023](https://reliefweb.int/node/3953164))",
+      "type": [
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611,
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/51549",
+      "current": true,
+      "url_alias": "https://reliefweb.int/disaster/fl-2023-000056-tza",
+      "name": "Tanzania: Floods - Apr 2023",
+      "id": 51549,
+      "glide": "FL-2023-000056-TZA",
+      "status": "ongoing"
+    }
+  },
+  "text": "Tanzania: Floods - Apr 2023\n\nOn the night of 1st April 2023, the villages around the Ruvuma River experienced severe floods as a result of heavy downpours from the ongoing monsoon rains. So far, this flood has affected the village of Kivava, especially in the suburbs of Sokoni and Kivukuni, villages of Angazo, and Kilamboma, and making 1,400 people displaced, representing 395 households affected in the suburbs of the market and the port. These 1,400 displaced people have been moved to temporary shelters in primary schools that are elevated due to their houses being surrounded by water. In addition, about 60 houses have collapsed with more than 100 toilets having collapsed and fields having been destroyed by water. The road from the village of Angazo to the village of Kilambo has been damaged, thus causing a lack of transportation and communication between those areas. Kivava village is one of the 110 villages in the district council. This village has 4 neighborhoods which are sokoni, kivukoni, dinanji, and lilumbi, the number of residents in this village is 1,976 and there are 518 households. The main economic activity in the village is agriculture and food business. The cultivated crops are rice, sorghum, cassava, cashews, coconuts, and legumes. Most of the agricultural areas were washed away by floods. TRCS branch (Mtwara Red Cross regional team) aside from local authorities visited the affected villages on 5th April and issued initial assessment data to start guiding the first emergency assistance to the affected communities through local actions. TRCS branch, further to this assessment provided first distributions and helped the local authorities in the initial food distribution. ([IFRC, 14 Apr 2023](https://reliefweb.int/node/3953164))",
+  "summary": " On April 1st, 2023, heavy monsoon rains caused severe flooding in the villages around the Ruvuma River in Tanzania. This flood has displaced 1,400 people, destroyed 60 houses, and damaged the road between the villages of Angazo and Kilambo. The Tanzania Red Cross Society branch visited the affected villages on April 5th and provided initial distributions and food assistance.",
+  "metadata": {
+    "id": "51549",
+    "name": "Tanzania: Floods - Apr 2023",
+    "date_event": 1680307200000,
+    "date_changed": 1681719158000,
+    "date_created": 1681719158000,
+    "primary_country_id": 244,
+    "primary_country_name": "United Republic of Tanzania",
+    "primary_country_iso3": "tza",
+    "primary_country_location": {
+      "lon": 34.82,
+      "lat": -6.27
+    },
+    "primary_type_id": 4611,
+    "primary_type_code": "FL",
+    "primary_type_name": "Flood"
+  }
+}

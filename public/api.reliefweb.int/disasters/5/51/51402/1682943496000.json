@@ -1,0 +1,82 @@
+{
+  "original": {
+    "id": "51402",
+    "fields": {
+      "date": {
+        "changed": "2023-05-01T12:18:16+00:00",
+        "event": "2022-10-08T00:00:00+00:00",
+        "created": "2022-11-25T11:34:20+00:00"
+      },
+      "primary_type": {
+        "code": "EP",
+        "name": "Epidemic",
+        "id": 4642
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/131",
+          "name": "Kenya",
+          "location": {
+            "lon": 37.86,
+            "lat": 0.53
+          },
+          "id": 131,
+          "shortname": "Kenya",
+          "iso3": "ken",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/131",
+        "name": "Kenya",
+        "location": {
+          "lon": 37.86,
+          "lat": 0.53
+        },
+        "id": 131,
+        "shortname": "Kenya",
+        "iso3": "ken"
+      },
+      "profile": {
+        "overview": "On 19 October 2022, the Kenya Ministry of Health issued a communication to all County Directors of Health on a multi-county cholera outbreak following the isolation of Vibrio cholerae-01 Ogawa serotype at The National Public Health Microbiology Laboratory. The first cases were detected following a wedding festival that was held in Limuru sub-county, Kiambu County on Saturday of 8 October 2022. Additional cases have been linked to another function that was help on 29 October 2022 along Kiambu road. The date of onset for the first cases is 8 October 2022. The outbreak is currently active in seven counties and been controlled in Nakuru and Uasin Gishu Counties. As of 13 November 2022, a total of 568 cases with 281 confirmed (48 cases by culture and 233 by rapid diagnostic test) and 15 deaths (CFR = 2.6%), have been reported so far. The highest caseload has been registered in Machakos county with 215 cases (37.8%), followed by Nairobi County with 155 cases (27.3%), and Kiambu County with 86 cases (15.1%). Among the 15 deaths reported, nine (60.0%) are reported from Nairobi County and Garissa, while Kiambu and Machakos Counties have reported each two deaths so far. In the past one week (week 45), a total of 326 new cases with seven new deaths were reported. ([WHO, 25 Nov 2022](https://reliefweb.int/node/3910559))\n\nSince the confirmation of the first case on 8 October 2022, the cumulative number of suspected cases as of 14 January 2023, was 3 970 cases including 70 deaths (CFR 1.8%). ([WHO, 20 Jan 2023](https://reliefweb.int/node/3926027))\n\nThe outbreak has affected 16 counties: Nairobi, Kiambu, Nakuru, UasinGishu, Kajiado, Murang’a, Machakos, Garissa, Meru, Nyeri, Wajir, Tana River, Kitui, Homa Bay, Mandera and West Pokot counties. West Pokot is the new county reporting new cases. A total of 4 845 cases with 167 confirmed by culture and 85 deaths (CFR 1.8 %) have been reported. In the last epi week 192 cases with two deaths were reported. ([WHO, 11 March 2023](https://reliefweb.int/node/3942403))\n\nA total of 15 new cholera cases were reported in the last 24 hours, bringing the total number of cases to 8 960 as of 16 April 2023. The counties reporting the new cases are Mandera (14), and Marsabit (1). Zero new death was reported in the last 24 hours. The cumulative deaths since the beginning of the outbreak are 142 (CFR 1.6%). The index case was reported on 5 October 2022. A total of 4 673 (52%) of the cumulative cases are males, while 4 287 (48%) are females. Most cases, 3 114 (35%) are in the age group of less than 10 years old. ([WHO, 27 April 2023](https://reliefweb.int/node/3956535))",
+        "overview-html": "<p>On 19 October 2022, the Kenya Ministry of Health issued a communication to all County Directors of Health on a multi-county cholera outbreak following the isolation of Vibrio cholerae-01 Ogawa serotype at The National Public Health Microbiology Laboratory. The first cases were detected following a wedding festival that was held in Limuru sub-county, Kiambu County on Saturday of 8 October 2022. Additional cases have been linked to another function that was help on 29 October 2022 along Kiambu road. The date of onset for the first cases is 8 October 2022. The outbreak is currently active in seven counties and been controlled in Nakuru and Uasin Gishu Counties. As of 13 November 2022, a total of 568 cases with 281 confirmed (48 cases by culture and 233 by rapid diagnostic test) and 15 deaths (CFR = 2.6%), have been reported so far. The highest caseload has been registered in Machakos county with 215 cases (37.8%), followed by Nairobi County with 155 cases (27.3%), and Kiambu County with 86 cases (15.1%). Among the 15 deaths reported, nine (60.0%) are reported from Nairobi County and Garissa, while Kiambu and Machakos Counties have reported each two deaths so far. In the past one week (week 45), a total of 326 new cases with seven new deaths were reported. (<a href=\"https://reliefweb.int/node/3910559\">WHO, 25 Nov 2022</a>)</p>\n<p>Since the confirmation of the first case on 8 October 2022, the cumulative number of suspected cases as of 14 January 2023, was 3 970 cases including 70 deaths (CFR 1.8%). (<a href=\"https://reliefweb.int/node/3926027\">WHO, 20 Jan 2023</a>)</p>\n<p>The outbreak has affected 16 counties: Nairobi, Kiambu, Nakuru, UasinGishu, Kajiado, Murang’a, Machakos, Garissa, Meru, Nyeri, Wajir, Tana River, Kitui, Homa Bay, Mandera and West Pokot counties. West Pokot is the new county reporting new cases. A total of 4 845 cases with 167 confirmed by culture and 85 deaths (CFR 1.8 %) have been reported. In the last epi week 192 cases with two deaths were reported. (<a href=\"https://reliefweb.int/node/3942403\">WHO, 11 March 2023</a>)</p>\n<p>A total of 15 new cholera cases were reported in the last 24 hours, bringing the total number of cases to 8 960 as of 16 April 2023. The counties reporting the new cases are Mandera (14), and Marsabit (1). Zero new death was reported in the last 24 hours. The cumulative deaths since the beginning of the outbreak are 142 (CFR 1.6%). The index case was reported on 5 October 2022. A total of 4 673 (52%) of the cumulative cases are males, while 4 287 (48%) are females. Most cases, 3 114 (35%) are in the age group of less than 10 years old. (<a href=\"https://reliefweb.int/node/3956535\">WHO, 27 April 2023</a>)</p>\n"
+      },
+      "description-html": "<p>On 19 October 2022, the Kenya Ministry of Health issued a communication to all County Directors of Health on a multi-county cholera outbreak following the isolation of Vibrio cholerae-01 Ogawa serotype at The National Public Health Microbiology Laboratory. The first cases were detected following a wedding festival that was held in Limuru sub-county, Kiambu County on Saturday of 8 October 2022. Additional cases have been linked to another function that was help on 29 October 2022 along Kiambu road. The date of onset for the first cases is 8 October 2022. The outbreak is currently active in seven counties and been controlled in Nakuru and Uasin Gishu Counties. As of 13 November 2022, a total of 568 cases with 281 confirmed (48 cases by culture and 233 by rapid diagnostic test) and 15 deaths (CFR = 2.6%), have been reported so far. The highest caseload has been registered in Machakos county with 215 cases (37.8%), followed by Nairobi County with 155 cases (27.3%), and Kiambu County with 86 cases (15.1%). Among the 15 deaths reported, nine (60.0%) are reported from Nairobi County and Garissa, while Kiambu and Machakos Counties have reported each two deaths so far. In the past one week (week 45), a total of 326 new cases with seven new deaths were reported. (<a href=\"https://reliefweb.int/node/3910559\">WHO, 25 Nov 2022</a>)</p>\n<p>Since the confirmation of the first case on 8 October 2022, the cumulative number of suspected cases as of 14 January 2023, was 3 970 cases including 70 deaths (CFR 1.8%). (<a href=\"https://reliefweb.int/node/3926027\">WHO, 20 Jan 2023</a>)</p>\n<p>The outbreak has affected 16 counties: Nairobi, Kiambu, Nakuru, UasinGishu, Kajiado, Murang’a, Machakos, Garissa, Meru, Nyeri, Wajir, Tana River, Kitui, Homa Bay, Mandera and West Pokot counties. West Pokot is the new county reporting new cases. A total of 4 845 cases with 167 confirmed by culture and 85 deaths (CFR 1.8 %) have been reported. In the last epi week 192 cases with two deaths were reported. (<a href=\"https://reliefweb.int/node/3942403\">WHO, 11 March 2023</a>)</p>\n<p>A total of 15 new cholera cases were reported in the last 24 hours, bringing the total number of cases to 8 960 as of 16 April 2023. The counties reporting the new cases are Mandera (14), and Marsabit (1). Zero new death was reported in the last 24 hours. The cumulative deaths since the beginning of the outbreak are 142 (CFR 1.6%). The index case was reported on 5 October 2022. A total of 4 673 (52%) of the cumulative cases are males, while 4 287 (48%) are females. Most cases, 3 114 (35%) are in the age group of less than 10 years old. (<a href=\"https://reliefweb.int/node/3956535\">WHO, 27 April 2023</a>)</p>\n",
+      "description": "On 19 October 2022, the Kenya Ministry of Health issued a communication to all County Directors of Health on a multi-county cholera outbreak following the isolation of Vibrio cholerae-01 Ogawa serotype at The National Public Health Microbiology Laboratory. The first cases were detected following a wedding festival that was held in Limuru sub-county, Kiambu County on Saturday of 8 October 2022. Additional cases have been linked to another function that was help on 29 October 2022 along Kiambu road. The date of onset for the first cases is 8 October 2022. The outbreak is currently active in seven counties and been controlled in Nakuru and Uasin Gishu Counties. As of 13 November 2022, a total of 568 cases with 281 confirmed (48 cases by culture and 233 by rapid diagnostic test) and 15 deaths (CFR = 2.6%), have been reported so far. The highest caseload has been registered in Machakos county with 215 cases (37.8%), followed by Nairobi County with 155 cases (27.3%), and Kiambu County with 86 cases (15.1%). Among the 15 deaths reported, nine (60.0%) are reported from Nairobi County and Garissa, while Kiambu and Machakos Counties have reported each two deaths so far. In the past one week (week 45), a total of 326 new cases with seven new deaths were reported. ([WHO, 25 Nov 2022](https://reliefweb.int/node/3910559))\n\nSince the confirmation of the first case on 8 October 2022, the cumulative number of suspected cases as of 14 January 2023, was 3 970 cases including 70 deaths (CFR 1.8%). ([WHO, 20 Jan 2023](https://reliefweb.int/node/3926027))\n\nThe outbreak has affected 16 counties: Nairobi, Kiambu, Nakuru, UasinGishu, Kajiado, Murang’a, Machakos, Garissa, Meru, Nyeri, Wajir, Tana River, Kitui, Homa Bay, Mandera and West Pokot counties. West Pokot is the new county reporting new cases. A total of 4 845 cases with 167 confirmed by culture and 85 deaths (CFR 1.8 %) have been reported. In the last epi week 192 cases with two deaths were reported. ([WHO, 11 March 2023](https://reliefweb.int/node/3942403))\n\nA total of 15 new cholera cases were reported in the last 24 hours, bringing the total number of cases to 8 960 as of 16 April 2023. The counties reporting the new cases are Mandera (14), and Marsabit (1). Zero new death was reported in the last 24 hours. The cumulative deaths since the beginning of the outbreak are 142 (CFR 1.6%). The index case was reported on 5 October 2022. A total of 4 673 (52%) of the cumulative cases are males, while 4 287 (48%) are females. Most cases, 3 114 (35%) are in the age group of less than 10 years old. ([WHO, 27 April 2023](https://reliefweb.int/node/3956535))",
+      "type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642,
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/51402",
+      "current": true,
+      "url_alias": "https://reliefweb.int/disaster/ep-2022-000367-ken",
+      "name": "Kenya: Cholera Outbreak - Oct 2022",
+      "id": 51402,
+      "glide": "EP-2022-000367-KEN",
+      "status": "ongoing"
+    }
+  },
+  "text": "Kenya: Cholera Outbreak - Oct 2022\n\nOn 19 October 2022, the Kenya Ministry of Health issued a communication to all County Directors of Health on a multi-county cholera outbreak following the isolation of Vibrio cholerae-01 Ogawa serotype at The National Public Health Microbiology Laboratory. The first cases were detected following a wedding festival that was held in Limuru sub-county, Kiambu County on Saturday of 8 October 2022. Additional cases have been linked to another function that was help on 29 October 2022 along Kiambu road. The date of onset for the first cases is 8 October 2022. The outbreak is currently active in seven counties and been controlled in Nakuru and Uasin Gishu Counties. As of 13 November 2022, a total of 568 cases with 281 confirmed (48 cases by culture and 233 by rapid diagnostic test) and 15 deaths (CFR = 2.6%), have been reported so far. The highest caseload has been registered in Machakos county with 215 cases (37.8%), followed by Nairobi County with 155 cases (27.3%), and Kiambu County with 86 cases (15.1%). Among the 15 deaths reported, nine (60.0%) are reported from Nairobi County and Garissa, while Kiambu and Machakos Counties have reported each two deaths so far. In the past one week (week 45), a total of 326 new cases with seven new deaths were reported. ([WHO, 25 Nov 2022](https://reliefweb.int/node/3910559))\n\nSince the confirmation of the first case on 8 October 2022, the cumulative number of suspected cases as of 14 January 2023, was 3 970 cases including 70 deaths (CFR 1.8%). ([WHO, 20 Jan 2023](https://reliefweb.int/node/3926027))\n\nThe outbreak has affected 16 counties: Nairobi, Kiambu, Nakuru, UasinGishu, Kajiado, Murang’a, Machakos, Garissa, Meru, Nyeri, Wajir, Tana River, Kitui, Homa Bay, Mandera and West Pokot counties. West Pokot is the new county reporting new cases. A total of 4 845 cases with 167 confirmed by culture and 85 deaths (CFR 1.8 %) have been reported. In the last epi week 192 cases with two deaths were reported. ([WHO, 11 March 2023](https://reliefweb.int/node/3942403))\n\nA total of 15 new cholera cases were reported in the last 24 hours, bringing the total number of cases to 8 960 as of 16 April 2023. The counties reporting the new cases are Mandera (14), and Marsabit (1). Zero new death was reported in the last 24 hours. The cumulative deaths since the beginning of the outbreak are 142 (CFR 1.6%). The index case was reported on 5 October 2022. A total of 4 673 (52%) of the cumulative cases are males, while 4 287 (48%) are females. Most cases, 3 114 (35%) are in the age group of less than 10 years old. ([WHO, 27 April 2023](https://reliefweb.int/node/3956535))",
+  "summary": " In October 2022, Kenya experienced a multi-county cholera outbreak following the isolation of Vibrio cholerae-01 Ogawa serotype at The National Public Health Microbiology Laboratory. As of April 2023, 8,960 cases and 142 deaths (CFR 1.6%) have been reported across 16 counties. The highest caseload has been registered in Machakos county with 215 cases (37.8%), followed by Nairobi County with 155 cases (27.3%), and Kiambu County with 86 cases (15.1%). Most cases (35%) are in the age group of less than 10 years old.",
+  "metadata": {
+    "id": "51402",
+    "name": "Kenya: Cholera Outbreak - Oct 2022",
+    "date_event": 1665187200000,
+    "date_changed": 1682943496000,
+    "date_created": 1669376060000,
+    "primary_country_id": 131,
+    "primary_country_name": "Kenya",
+    "primary_country_iso3": "ken",
+    "primary_country_location": {
+      "lon": 37.86,
+      "lat": 0.53
+    },
+    "primary_type_id": 4642,
+    "primary_type_code": "EP",
+    "primary_type_name": "Epidemic"
+  }
+}

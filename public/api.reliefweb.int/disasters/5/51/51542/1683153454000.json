@@ -1,0 +1,82 @@
+{
+  "original": {
+    "id": "51542",
+    "fields": {
+      "date": {
+        "changed": "2023-05-03T22:37:34+00:00",
+        "event": "2023-03-01T00:00:00+00:00",
+        "created": "2023-04-06T06:55:29+00:00"
+      },
+      "primary_type": {
+        "code": "FL",
+        "name": "Flood",
+        "id": 4611
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/87",
+          "name": "Ethiopia",
+          "location": {
+            "lon": 39.62,
+            "lat": 8.63
+          },
+          "id": 87,
+          "shortname": "Ethiopia",
+          "iso3": "eth",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/87",
+        "name": "Ethiopia",
+        "location": {
+          "lon": 39.62,
+          "lat": 8.63
+        },
+        "id": 87,
+        "shortname": "Ethiopia",
+        "iso3": "eth"
+      },
+      "profile": {
+        "overview": "Since the start of March, heavy rainfall has been affecting several regions of Ethiopia (particularly the Somali Region), causing widespread floods, the overflow of rivers and leading to casualties and damage. According to UN OCHA, at least 29 people have died (all in Somali Region), and 240,000 have been affected or displaced across the country. Many of the affected people are located in Somali, Oromia and Afar Region. ([ECHO, 5 Apr 2023](https://reliefweb.int/node/3950312))\n\nNew flood incidents have been reported end of March in Loka Abaya Woreda of Sidama Region displacing 2,500 people and damaging 92 hectares of crops and vegetables. There is an urgent need for transportation (alternatives to road) to move those stranded. Flash floods have also affected eight kebeles in Harawa Woreda (Fafan Zone) of the Somali Region (which has reportedly impacted about 46,900 households, destroyed over 16,800 livestock and more than 24,400 hectares of crops across 4 zones. ([OCHA, 24 Apr 2023](https://reliefweb.int/node/3955432))",
+        "overview-html": "<p>Since the start of March, heavy rainfall has been affecting several regions of Ethiopia (particularly the Somali Region), causing widespread floods, the overflow of rivers and leading to casualties and damage. According to UN OCHA, at least 29 people have died (all in Somali Region), and 240,000 have been affected or displaced across the country. Many of the affected people are located in Somali, Oromia and Afar Region. (<a href=\"https://reliefweb.int/node/3950312\">ECHO, 5 Apr 2023</a>)</p>\n<p>New flood incidents have been reported end of March in Loka Abaya Woreda of Sidama Region displacing 2,500 people and damaging 92 hectares of crops and vegetables. There is an urgent need for transportation (alternatives to road) to move those stranded. Flash floods have also affected eight kebeles in Harawa Woreda (Fafan Zone) of the Somali Region (which has reportedly impacted about 46,900 households, destroyed over 16,800 livestock and more than 24,400 hectares of crops across 4 zones. (<a href=\"https://reliefweb.int/node/3955432\">OCHA, 24 Apr 2023</a>)</p>\n"
+      },
+      "description-html": "<p>Since the start of March, heavy rainfall has been affecting several regions of Ethiopia (particularly the Somali Region), causing widespread floods, the overflow of rivers and leading to casualties and damage. According to UN OCHA, at least 29 people have died (all in Somali Region), and 240,000 have been affected or displaced across the country. Many of the affected people are located in Somali, Oromia and Afar Region. (<a href=\"https://reliefweb.int/node/3950312\">ECHO, 5 Apr 2023</a>)</p>\n<p>New flood incidents have been reported end of March in Loka Abaya Woreda of Sidama Region displacing 2,500 people and damaging 92 hectares of crops and vegetables. There is an urgent need for transportation (alternatives to road) to move those stranded. Flash floods have also affected eight kebeles in Harawa Woreda (Fafan Zone) of the Somali Region (which has reportedly impacted about 46,900 households, destroyed over 16,800 livestock and more than 24,400 hectares of crops across 4 zones. (<a href=\"https://reliefweb.int/node/3955432\">OCHA, 24 Apr 2023</a>)</p>\n",
+      "description": "Since the start of March, heavy rainfall has been affecting several regions of Ethiopia (particularly the Somali Region), causing widespread floods, the overflow of rivers and leading to casualties and damage. According to UN OCHA, at least 29 people have died (all in Somali Region), and 240,000 have been affected or displaced across the country. Many of the affected people are located in Somali, Oromia and Afar Region. ([ECHO, 5 Apr 2023](https://reliefweb.int/node/3950312))\n\nNew flood incidents have been reported end of March in Loka Abaya Woreda of Sidama Region displacing 2,500 people and damaging 92 hectares of crops and vegetables. There is an urgent need for transportation (alternatives to road) to move those stranded. Flash floods have also affected eight kebeles in Harawa Woreda (Fafan Zone) of the Somali Region (which has reportedly impacted about 46,900 households, destroyed over 16,800 livestock and more than 24,400 hectares of crops across 4 zones. ([OCHA, 24 Apr 2023](https://reliefweb.int/node/3955432))",
+      "type": [
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611,
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/51542",
+      "current": true,
+      "url_alias": "https://reliefweb.int/disaster/fl-2023-000052-eth",
+      "name": "Ethiopia: Floods - Mar 2023",
+      "id": 51542,
+      "glide": "FL-2023-000052-ETH",
+      "status": "ongoing"
+    }
+  },
+  "text": "Ethiopia: Floods - Mar 2023\n\nSince the start of March, heavy rainfall has been affecting several regions of Ethiopia (particularly the Somali Region), causing widespread floods, the overflow of rivers and leading to casualties and damage. According to UN OCHA, at least 29 people have died (all in Somali Region), and 240,000 have been affected or displaced across the country. Many of the affected people are located in Somali, Oromia and Afar Region. ([ECHO, 5 Apr 2023](https://reliefweb.int/node/3950312))\n\nNew flood incidents have been reported end of March in Loka Abaya Woreda of Sidama Region displacing 2,500 people and damaging 92 hectares of crops and vegetables. There is an urgent need for transportation (alternatives to road) to move those stranded. Flash floods have also affected eight kebeles in Harawa Woreda (Fafan Zone) of the Somali Region (which has reportedly impacted about 46,900 households, destroyed over 16,800 livestock and more than 24,400 hectares of crops across 4 zones. ([OCHA, 24 Apr 2023](https://reliefweb.int/node/3955432))",
+  "summary": " In March 2023, heavy rainfall in Ethiopia caused widespread flooding, resulting in 29 deaths and displacement of 240,000 people across the country. At the end of March, 2,500 people were displaced and 92 hectares of crops were damaged in Loka Abaya Woreda of Sidama Region. In Harawa Woreda of the Somali Region, flash floods affected eight kebeles, impacting 46,900 households, destroying 16,800 livestock and 24,400 hectares of crops.",
+  "metadata": {
+    "id": "51542",
+    "name": "Ethiopia: Floods - Mar 2023",
+    "date_event": 1677628800000,
+    "date_changed": 1683153454000,
+    "date_created": 1680764129000,
+    "primary_country_id": 87,
+    "primary_country_name": "Ethiopia",
+    "primary_country_iso3": "eth",
+    "primary_country_location": {
+      "lon": 39.62,
+      "lat": 8.63
+    },
+    "primary_type_id": 4611,
+    "primary_type_code": "FL",
+    "primary_type_name": "Flood"
+  }
+}

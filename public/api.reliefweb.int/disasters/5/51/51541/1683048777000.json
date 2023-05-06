@@ -1,0 +1,91 @@
+{
+  "original": {
+    "id": "51541",
+    "fields": {
+      "date": {
+        "changed": "2023-05-02T17:32:57+00:00",
+        "event": "2023-03-18T00:00:00+00:00",
+        "created": "2023-04-05T12:00:38+00:00"
+      },
+      "primary_type": {
+        "code": "FL",
+        "name": "Flood",
+        "id": 4611
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/49",
+          "name": "Cameroon",
+          "location": {
+            "lon": 12.21,
+            "lat": 4.81
+          },
+          "id": 49,
+          "shortname": "Cameroon",
+          "iso3": "cmr",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/49",
+        "name": "Cameroon",
+        "location": {
+          "lon": 12.21,
+          "lat": 4.81
+        },
+        "id": 49,
+        "shortname": "Cameroon",
+        "iso3": "cmr"
+      },
+      "profile": {
+        "overview": "On 18 March 2023, torrential rains in Buea town in the South-West region, led to flash floods and mudslides from Mount Cameroon affecting some communities at the foot of the mountain, and causing several casualties among residents of Buea. The following day on 19 March, OCHA facilitated a joint mission with humanitarian partners, including some United Nations agencies, Cluster representatives, national and international NGOs, to the affected areas for an overview of the situation and an assessment of the most urgent needs. Preliminary findings revealed that two persons were found dead, four were hospitalized and one was reported missing. An estimated 3,000 people are affected. Some households lost their livelihood and personal belongings including livestock, stored grains, crops and civil documents. The water catchment in Buea-town neighborhood was also destroyed and water supply pipes were broken in all affected communities, depriving them from access to water. Water, sanitation, and hygiene (WASH), as well as shelter, non-food items (NFIs), health and protection were reported as the most immediate needs. The community, the Government, humanitarian organizations and the private sector provided lifesaving support to the affected population. ([OCHA, 2 May 2023](https://reliefweb.int/node/3957657))",
+        "overview-html": "<p>On 18 March 2023, torrential rains in Buea town in the South-West region, led to flash floods and mudslides from Mount Cameroon affecting some communities at the foot of the mountain, and causing several casualties among residents of Buea. The following day on 19 March, OCHA facilitated a joint mission with humanitarian partners, including some United Nations agencies, Cluster representatives, national and international NGOs, to the affected areas for an overview of the situation and an assessment of the most urgent needs. Preliminary findings revealed that two persons were found dead, four were hospitalized and one was reported missing. An estimated 3,000 people are affected. Some households lost their livelihood and personal belongings including livestock, stored grains, crops and civil documents. The water catchment in Buea-town neighborhood was also destroyed and water supply pipes were broken in all affected communities, depriving them from access to water. Water, sanitation, and hygiene (WASH), as well as shelter, non-food items (NFIs), health and protection were reported as the most immediate needs. The community, the Government, humanitarian organizations and the private sector provided lifesaving support to the affected population. (<a href=\"https://reliefweb.int/node/3957657\">OCHA, 2 May 2023</a>)</p>\n"
+      },
+      "description-html": "<p>On 18 March 2023, torrential rains in Buea town in the South-West region, led to flash floods and mudslides from Mount Cameroon affecting some communities at the foot of the mountain, and causing several casualties among residents of Buea. The following day on 19 March, OCHA facilitated a joint mission with humanitarian partners, including some United Nations agencies, Cluster representatives, national and international NGOs, to the affected areas for an overview of the situation and an assessment of the most urgent needs. Preliminary findings revealed that two persons were found dead, four were hospitalized and one was reported missing. An estimated 3,000 people are affected. Some households lost their livelihood and personal belongings including livestock, stored grains, crops and civil documents. The water catchment in Buea-town neighborhood was also destroyed and water supply pipes were broken in all affected communities, depriving them from access to water. Water, sanitation, and hygiene (WASH), as well as shelter, non-food items (NFIs), health and protection were reported as the most immediate needs. The community, the Government, humanitarian organizations and the private sector provided lifesaving support to the affected population. (<a href=\"https://reliefweb.int/node/3957657\">OCHA, 2 May 2023</a>)</p>\n",
+      "description": "On 18 March 2023, torrential rains in Buea town in the South-West region, led to flash floods and mudslides from Mount Cameroon affecting some communities at the foot of the mountain, and causing several casualties among residents of Buea. The following day on 19 March, OCHA facilitated a joint mission with humanitarian partners, including some United Nations agencies, Cluster representatives, national and international NGOs, to the affected areas for an overview of the situation and an assessment of the most urgent needs. Preliminary findings revealed that two persons were found dead, four were hospitalized and one was reported missing. An estimated 3,000 people are affected. Some households lost their livelihood and personal belongings including livestock, stored grains, crops and civil documents. The water catchment in Buea-town neighborhood was also destroyed and water supply pipes were broken in all affected communities, depriving them from access to water. Water, sanitation, and hygiene (WASH), as well as shelter, non-food items (NFIs), health and protection were reported as the most immediate needs. The community, the Government, humanitarian organizations and the private sector provided lifesaving support to the affected population. ([OCHA, 2 May 2023](https://reliefweb.int/node/3957657))",
+      "type": [
+        {
+          "code": "FF",
+          "name": "Flash Flood",
+          "id": 4624
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611,
+          "primary": true
+        },
+        {
+          "code": "MS",
+          "name": "Mud Slide",
+          "id": 4814
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/51541",
+      "url_alias": "https://reliefweb.int/disaster/fl-2023-000063-cmr",
+      "name": "Cameroon: Floods - Mar 2023",
+      "id": 51541,
+      "glide": "FL-2023-000063-CMR",
+      "status": "alert"
+    }
+  },
+  "text": "Cameroon: Floods - Mar 2023\n\nOn 18 March 2023, torrential rains in Buea town in the South-West region, led to flash floods and mudslides from Mount Cameroon affecting some communities at the foot of the mountain, and causing several casualties among residents of Buea. The following day on 19 March, OCHA facilitated a joint mission with humanitarian partners, including some United Nations agencies, Cluster representatives, national and international NGOs, to the affected areas for an overview of the situation and an assessment of the most urgent needs. Preliminary findings revealed that two persons were found dead, four were hospitalized and one was reported missing. An estimated 3,000 people are affected. Some households lost their livelihood and personal belongings including livestock, stored grains, crops and civil documents. The water catchment in Buea-town neighborhood was also destroyed and water supply pipes were broken in all affected communities, depriving them from access to water. Water, sanitation, and hygiene (WASH), as well as shelter, non-food items (NFIs), health and protection were reported as the most immediate needs. The community, the Government, humanitarian organizations and the private sector provided lifesaving support to the affected population. ([OCHA, 2 May 2023](https://reliefweb.int/node/3957657))",
+  "summary": " On 18 March 2023, heavy rains in Buea town in the South-West region of Cameroon caused flash floods and mudslides from Mount Cameroon, resulting in several casualties. An assessment of the situation revealed that two people were found dead, four were hospitalized, and one was reported missing. An estimated 3,000 people were affected, with some households losing their livelihoods and personal belongings. Water catchment in Buea-town was destroyed and water supply pipes were broken, depriving the affected communities of access to water. The community, government, humanitarian organizations, and private sector provided lifesaving support to the affected population.",
+  "metadata": {
+    "id": "51541",
+    "name": "Cameroon: Floods - Mar 2023",
+    "date_event": 1679097600000,
+    "date_changed": 1683048777000,
+    "date_created": 1680696038000,
+    "primary_country_id": 49,
+    "primary_country_name": "Cameroon",
+    "primary_country_iso3": "cmr",
+    "primary_country_location": {
+      "lon": 12.21,
+      "lat": 4.81
+    },
+    "primary_type_id": 4611,
+    "primary_type_code": "FL",
+    "primary_type_name": "Flood"
+  }
+}

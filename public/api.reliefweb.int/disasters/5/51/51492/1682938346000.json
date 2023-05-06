@@ -1,0 +1,86 @@
+{
+  "original": {
+    "id": "51492",
+    "fields": {
+      "date": {
+        "changed": "2023-05-01T10:52:26+00:00",
+        "event": "2023-02-09T00:00:00+00:00",
+        "created": "2023-02-22T07:12:10+00:00"
+      },
+      "primary_type": {
+        "code": "FL",
+        "name": "Flood",
+        "id": 4611
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/226",
+          "name": "Syrian Arab Republic",
+          "location": {
+            "lon": 38.51,
+            "lat": 35.01
+          },
+          "id": 226,
+          "shortname": "Syria",
+          "iso3": "syr",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/226",
+        "name": "Syrian Arab Republic",
+        "location": {
+          "lon": 38.51,
+          "lat": 35.01
+        },
+        "id": 226,
+        "shortname": "Syria",
+        "iso3": "syr"
+      },
+      "profile": {
+        "overview": "In Idlib province, following the earthquake, the Asi/Orontes river overflowed its banks, following the opening of the al-Rastan Dam [...], along with the collapse of a concrete dam between Antakya and Reyhanli in Türkiye [...]. Flooding in the village of al-Talul in Idlib affected some 1,000 homes, forcing around 7,000 people to evacuate as of 9 February [.] ([DFA, 17 Feb 2023](https://reliefweb.int/node/3934952))\n\nOn 16 March, a heavy rainstorms swept through Northern Syria and the wider region. In Northeast Syria, the consequent floods caused significant damages, the destruction of infrastructure and loss of livelihoods, leaving bridges and agricultural land damaged. At least eight people died due to the floods in Al Hasakah, Ar-Raqqa and Kobane. The Abu Khashab camp suffered severe damages with accumulation of mud on the roads and water entering the tents, worsening the living conditions of more than 10,000 Internally Displaced Persons (IDPs). ([ECHO, 20 Mar 2023](https://reliefweb.int/node/3944997))\n\nOver 80,000 people across more than 50 displacement sites have been affected by flooding and strong windstorms last week, particularly in reception centers across Idleb and Aleppo Governorates. The flooding and windstorms have destroyed or damaged more than 3,000 tents, many of which were set up to house people displaced due to the earthquakes. The flood damage has also caused some displaced families to lose their food stocks, while rendering some latrines unusable and led to the collapse and clogging of some septic tanks. ([OCHA, 4 Apr 2023](https://reliefweb.int/node/3950778))",
+        "overview-html": "<p>In Idlib province, following the earthquake, the Asi/Orontes river overflowed its banks, following the opening of the al-Rastan Dam [...], along with the collapse of a concrete dam between Antakya and Reyhanli in Türkiye [...]. Flooding in the village of al-Talul in Idlib affected some 1,000 homes, forcing around 7,000 people to evacuate as of 9 February [.] (<a href=\"https://reliefweb.int/node/3934952\">DFA, 17 Feb 2023</a>)</p>\n<p>On 16 March, a heavy rainstorms swept through Northern Syria and the wider region. In Northeast Syria, the consequent floods caused significant damages, the destruction of infrastructure and loss of livelihoods, leaving bridges and agricultural land damaged. At least eight people died due to the floods in Al Hasakah, Ar-Raqqa and Kobane. The Abu Khashab camp suffered severe damages with accumulation of mud on the roads and water entering the tents, worsening the living conditions of more than 10,000 Internally Displaced Persons (IDPs). (<a href=\"https://reliefweb.int/node/3944997\">ECHO, 20 Mar 2023</a>)</p>\n<p>Over 80,000 people across more than 50 displacement sites have been affected by flooding and strong windstorms last week, particularly in reception centers across Idleb and Aleppo Governorates. The flooding and windstorms have destroyed or damaged more than 3,000 tents, many of which were set up to house people displaced due to the earthquakes. The flood damage has also caused some displaced families to lose their food stocks, while rendering some latrines unusable and led to the collapse and clogging of some septic tanks. (<a href=\"https://reliefweb.int/node/3950778\">OCHA, 4 Apr 2023</a>)</p>\n"
+      },
+      "description-html": "<p>In Idlib province, following the earthquake, the Asi/Orontes river overflowed its banks, following the opening of the al-Rastan Dam [...], along with the collapse of a concrete dam between Antakya and Reyhanli in Türkiye [...]. Flooding in the village of al-Talul in Idlib affected some 1,000 homes, forcing around 7,000 people to evacuate as of 9 February [.] (<a href=\"https://reliefweb.int/node/3934952\">DFA, 17 Feb 2023</a>)</p>\n<p>On 16 March, a heavy rainstorms swept through Northern Syria and the wider region. In Northeast Syria, the consequent floods caused significant damages, the destruction of infrastructure and loss of livelihoods, leaving bridges and agricultural land damaged. At least eight people died due to the floods in Al Hasakah, Ar-Raqqa and Kobane. The Abu Khashab camp suffered severe damages with accumulation of mud on the roads and water entering the tents, worsening the living conditions of more than 10,000 Internally Displaced Persons (IDPs). (<a href=\"https://reliefweb.int/node/3944997\">ECHO, 20 Mar 2023</a>)</p>\n<p>Over 80,000 people across more than 50 displacement sites have been affected by flooding and strong windstorms last week, particularly in reception centers across Idleb and Aleppo Governorates. The flooding and windstorms have destroyed or damaged more than 3,000 tents, many of which were set up to house people displaced due to the earthquakes. The flood damage has also caused some displaced families to lose their food stocks, while rendering some latrines unusable and led to the collapse and clogging of some septic tanks. (<a href=\"https://reliefweb.int/node/3950778\">OCHA, 4 Apr 2023</a>)</p>\n",
+      "description": "In Idlib province, following the earthquake, the Asi/Orontes river overflowed its banks, following the opening of the al-Rastan Dam [...], along with the collapse of a concrete dam between Antakya and Reyhanli in Türkiye [...]. Flooding in the village of al-Talul in Idlib affected some 1,000 homes, forcing around 7,000 people to evacuate as of 9 February [.] ([DFA, 17 Feb 2023](https://reliefweb.int/node/3934952))\n\nOn 16 March, a heavy rainstorms swept through Northern Syria and the wider region. In Northeast Syria, the consequent floods caused significant damages, the destruction of infrastructure and loss of livelihoods, leaving bridges and agricultural land damaged. At least eight people died due to the floods in Al Hasakah, Ar-Raqqa and Kobane. The Abu Khashab camp suffered severe damages with accumulation of mud on the roads and water entering the tents, worsening the living conditions of more than 10,000 Internally Displaced Persons (IDPs). ([ECHO, 20 Mar 2023](https://reliefweb.int/node/3944997))\n\nOver 80,000 people across more than 50 displacement sites have been affected by flooding and strong windstorms last week, particularly in reception centers across Idleb and Aleppo Governorates. The flooding and windstorms have destroyed or damaged more than 3,000 tents, many of which were set up to house people displaced due to the earthquakes. The flood damage has also caused some displaced families to lose their food stocks, while rendering some latrines unusable and led to the collapse and clogging of some septic tanks. ([OCHA, 4 Apr 2023](https://reliefweb.int/node/3950778))",
+      "type": [
+        {
+          "code": "FF",
+          "name": "Flash Flood",
+          "id": 4624
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611,
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/51492",
+      "url_alias": "https://reliefweb.int/disaster/fl-2023-000042-syr",
+      "name": "Syria: Floods - Feb 2023",
+      "id": 51492,
+      "glide": "FL-2023-000042-SYR",
+      "status": "alert"
+    }
+  },
+  "text": "Syria: Floods - Feb 2023\n\nIn Idlib province, following the earthquake, the Asi/Orontes river overflowed its banks, following the opening of the al-Rastan Dam [...], along with the collapse of a concrete dam between Antakya and Reyhanli in Türkiye [...]. Flooding in the village of al-Talul in Idlib affected some 1,000 homes, forcing around 7,000 people to evacuate as of 9 February [.] ([DFA, 17 Feb 2023](https://reliefweb.int/node/3934952))\n\nOn 16 March, a heavy rainstorms swept through Northern Syria and the wider region. In Northeast Syria, the consequent floods caused significant damages, the destruction of infrastructure and loss of livelihoods, leaving bridges and agricultural land damaged. At least eight people died due to the floods in Al Hasakah, Ar-Raqqa and Kobane. The Abu Khashab camp suffered severe damages with accumulation of mud on the roads and water entering the tents, worsening the living conditions of more than 10,000 Internally Displaced Persons (IDPs). ([ECHO, 20 Mar 2023](https://reliefweb.int/node/3944997))\n\nOver 80,000 people across more than 50 displacement sites have been affected by flooding and strong windstorms last week, particularly in reception centers across Idleb and Aleppo Governorates. The flooding and windstorms have destroyed or damaged more than 3,000 tents, many of which were set up to house people displaced due to the earthquakes. The flood damage has also caused some displaced families to lose their food stocks, while rendering some latrines unusable and led to the collapse and clogging of some septic tanks. ([OCHA, 4 Apr 2023](https://reliefweb.int/node/3950778))",
+  "summary": " In February 2023, flooding in Idlib province caused 7,000 people to evacuate, and in March, heavy rainstorms in Northern Syria caused significant damages, destruction of infrastructure, and loss of livelihoods, resulting in 8 deaths. In April, over 80,000 people across more than 50 displacement sites were affected by flooding and strong windstorms, resulting in the destruction or damage of 3,000 tents, loss of food stocks, and unusable latrines.",
+  "metadata": {
+    "id": "51492",
+    "name": "Syria: Floods - Feb 2023",
+    "date_event": 1675900800000,
+    "date_changed": 1682938346000,
+    "date_created": 1677049930000,
+    "primary_country_id": 226,
+    "primary_country_name": "Syrian Arab Republic",
+    "primary_country_iso3": "syr",
+    "primary_country_location": {
+      "lon": 38.51,
+      "lat": 35.01
+    },
+    "primary_type_id": 4611,
+    "primary_type_code": "FL",
+    "primary_type_name": "Flood"
+  }
+}

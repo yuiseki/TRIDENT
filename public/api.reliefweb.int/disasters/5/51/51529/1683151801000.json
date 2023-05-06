@@ -1,0 +1,82 @@
+{
+  "original": {
+    "id": "51529",
+    "fields": {
+      "date": {
+        "changed": "2023-05-03T22:10:01+00:00",
+        "event": "2023-03-15T00:00:00+00:00",
+        "created": "2023-03-21T08:08:59+00:00"
+      },
+      "primary_type": {
+        "code": "FL",
+        "name": "Flood",
+        "id": 4611
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/236",
+          "name": "Türkiye",
+          "location": {
+            "lon": 35.18,
+            "lat": 39.06
+          },
+          "id": 236,
+          "shortname": "Türkiye",
+          "iso3": "tur",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/236",
+        "name": "Türkiye",
+        "location": {
+          "lon": 35.18,
+          "lat": 39.06
+        },
+        "id": 236,
+        "shortname": "Türkiye",
+        "iso3": "tur"
+      },
+      "profile": {
+        "overview": "On 14-15 March heavy rainfall affected the Provinces of Adiyaman and Sanliurfa (southern Türkiye) causing floods and resulting in casualties and damage. According to media, 14 people have died, of which 12 in Sanliurfa (hit by 111 mm of rain in 24 hours) and two others in Adiyaman (136 mm of rain in 24 hours). In addition, at least five people are still missing (three in Adiyaman and two in Sanliurfa) as reported by the Disaster and Emergency Management Presidency (AFAD) and media. Search and rescue operations conducted by national authorities are ongoing over the area. ([ECHO, 16 Mar 2023](https://reliefweb.int/node/3944005))\n\nThe damage of the flooding and what is left behind is striking in many districts of Adıyaman and Şanlıurfa, as the infrastructure facilities such as buildings, bridges and highways are demolished while some buildings can only be accessed by boat due to the river-like streets. More than 2000 homes, workplaces and vehicles are damaged, and some have been submerged in water. Despite surviving the earthquake, some homes have now been inundated with floodwaters, resulting in further displacement. ([Turkish Red Crescent Society, 04 Apr 2023](https://reliefweb.int/node/3950212/))",
+        "overview-html": "<p>On 14-15 March heavy rainfall affected the Provinces of Adiyaman and Sanliurfa (southern Türkiye) causing floods and resulting in casualties and damage. According to media, 14 people have died, of which 12 in Sanliurfa (hit by 111 mm of rain in 24 hours) and two others in Adiyaman (136 mm of rain in 24 hours). In addition, at least five people are still missing (three in Adiyaman and two in Sanliurfa) as reported by the Disaster and Emergency Management Presidency (AFAD) and media. Search and rescue operations conducted by national authorities are ongoing over the area. (<a href=\"https://reliefweb.int/node/3944005\">ECHO, 16 Mar 2023</a>)</p>\n<p>The damage of the flooding and what is left behind is striking in many districts of Adıyaman and Şanlıurfa, as the infrastructure facilities such as buildings, bridges and highways are demolished while some buildings can only be accessed by boat due to the river-like streets. More than 2000 homes, workplaces and vehicles are damaged, and some have been submerged in water. Despite surviving the earthquake, some homes have now been inundated with floodwaters, resulting in further displacement. (<a href=\"https://reliefweb.int/node/3950212/\">Turkish Red Crescent Society, 04 Apr 2023</a>)</p>\n"
+      },
+      "description-html": "<p>On 14-15 March heavy rainfall affected the Provinces of Adiyaman and Sanliurfa (southern Türkiye) causing floods and resulting in casualties and damage. According to media, 14 people have died, of which 12 in Sanliurfa (hit by 111 mm of rain in 24 hours) and two others in Adiyaman (136 mm of rain in 24 hours). In addition, at least five people are still missing (three in Adiyaman and two in Sanliurfa) as reported by the Disaster and Emergency Management Presidency (AFAD) and media. Search and rescue operations conducted by national authorities are ongoing over the area. (<a href=\"https://reliefweb.int/node/3944005\">ECHO, 16 Mar 2023</a>)</p>\n<p>The damage of the flooding and what is left behind is striking in many districts of Adıyaman and Şanlıurfa, as the infrastructure facilities such as buildings, bridges and highways are demolished while some buildings can only be accessed by boat due to the river-like streets. More than 2000 homes, workplaces and vehicles are damaged, and some have been submerged in water. Despite surviving the earthquake, some homes have now been inundated with floodwaters, resulting in further displacement. (<a href=\"https://reliefweb.int/node/3950212/\">Turkish Red Crescent Society, 04 Apr 2023</a>)</p>\n",
+      "description": "On 14-15 March heavy rainfall affected the Provinces of Adiyaman and Sanliurfa (southern Türkiye) causing floods and resulting in casualties and damage. According to media, 14 people have died, of which 12 in Sanliurfa (hit by 111 mm of rain in 24 hours) and two others in Adiyaman (136 mm of rain in 24 hours). In addition, at least five people are still missing (three in Adiyaman and two in Sanliurfa) as reported by the Disaster and Emergency Management Presidency (AFAD) and media. Search and rescue operations conducted by national authorities are ongoing over the area. ([ECHO, 16 Mar 2023](https://reliefweb.int/node/3944005))\n\nThe damage of the flooding and what is left behind is striking in many districts of Adıyaman and Şanlıurfa, as the infrastructure facilities such as buildings, bridges and highways are demolished while some buildings can only be accessed by boat due to the river-like streets. More than 2000 homes, workplaces and vehicles are damaged, and some have been submerged in water. Despite surviving the earthquake, some homes have now been inundated with floodwaters, resulting in further displacement. ([Turkish Red Crescent Society, 04 Apr 2023](https://reliefweb.int/node/3950212/))",
+      "type": [
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611,
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/51529",
+      "current": true,
+      "url_alias": "https://reliefweb.int/disaster/fl-2023-000040-tur",
+      "name": "Türkiye: Floods - Mar 2023",
+      "id": 51529,
+      "glide": "FL-2023-000040-TUR",
+      "status": "ongoing"
+    }
+  },
+  "text": "Türkiye: Floods - Mar 2023\n\nOn 14-15 March heavy rainfall affected the Provinces of Adiyaman and Sanliurfa (southern Türkiye) causing floods and resulting in casualties and damage. According to media, 14 people have died, of which 12 in Sanliurfa (hit by 111 mm of rain in 24 hours) and two others in Adiyaman (136 mm of rain in 24 hours). In addition, at least five people are still missing (three in Adiyaman and two in Sanliurfa) as reported by the Disaster and Emergency Management Presidency (AFAD) and media. Search and rescue operations conducted by national authorities are ongoing over the area. ([ECHO, 16 Mar 2023](https://reliefweb.int/node/3944005))\n\nThe damage of the flooding and what is left behind is striking in many districts of Adıyaman and Şanlıurfa, as the infrastructure facilities such as buildings, bridges and highways are demolished while some buildings can only be accessed by boat due to the river-like streets. More than 2000 homes, workplaces and vehicles are damaged, and some have been submerged in water. Despite surviving the earthquake, some homes have now been inundated with floodwaters, resulting in further displacement. ([Turkish Red Crescent Society, 04 Apr 2023](https://reliefweb.int/node/3950212/))",
+  "summary": " In March 2023, heavy rainfall caused flooding in the Provinces of Adiyaman and Sanliurfa in southern Türkiye, resulting in 14 deaths and five people missing. Search and rescue operations are ongoing, and the damage to infrastructure and homes is extensive. Thousands of homes, workplaces and vehicles have been damaged, and some have been submerged in water.",
+  "metadata": {
+    "id": "51529",
+    "name": "Türkiye: Floods - Mar 2023",
+    "date_event": 1678838400000,
+    "date_changed": 1683151801000,
+    "date_created": 1679386139000,
+    "primary_country_id": 236,
+    "primary_country_name": "Türkiye",
+    "primary_country_iso3": "tur",
+    "primary_country_location": {
+      "lon": 35.18,
+      "lat": 39.06
+    },
+    "primary_type_id": 4611,
+    "primary_type_code": "FL",
+    "primary_type_name": "Flood"
+  }
+}

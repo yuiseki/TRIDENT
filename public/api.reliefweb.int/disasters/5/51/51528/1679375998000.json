@@ -1,0 +1,87 @@
+{
+  "original": {
+    "id": "51528",
+    "fields": {
+      "date": {
+        "changed": "2023-03-21T05:19:58+00:00",
+        "event": "2023-02-17T00:00:00+00:00",
+        "created": "2023-03-21T05:08:30+00:00"
+      },
+      "primary_type": {
+        "code": "FL",
+        "name": "Flood",
+        "id": 4611
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/186",
+          "name": "Paraguay",
+          "location": {
+            "lon": -58.39,
+            "lat": -23.24
+          },
+          "id": 186,
+          "shortname": "Paraguay",
+          "iso3": "pry",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/186",
+        "name": "Paraguay",
+        "location": {
+          "lon": -58.39,
+          "lat": -23.24
+        },
+        "id": 186,
+        "shortname": "Paraguay",
+        "iso3": "pry"
+      },
+      "profile": {
+        "overview": "The rains in the northern part of Paraguay that began in mid-February registered a maximum impact on 28 February, with more than 350 mm of rain recorded in a period of 12 hours, causing flash floods in the departments of Concepción, Alto Paraguay and Amambay.\n\nOn 27 February, a Departmental Declaration of Emergency was issued for the Department of Concepcion stating that \"the Department of Concepcion is declared in a state of emergency as a result of the heavy rains that affected the districts of San Lazaro, Horqueta, Sargento Felix Lopez, Paso Horqueta and Paso Barreto of the Department of Concepcion, causing flooding, road closures, isolation of several communities, affected homes and consequently paralyzing the activities in the areas of mining, agricultural, livestock, forestry and commercial production.\" \n\nRegarding the flood emergency situation, the Minister of the National Emergency Secretariat (SEN) mentioned during\nthe inter-institutional coordination meeting held at the Government Palace on 10 March, that this phenomenon impacts the Departments of Alto Paraguay, Amambay, Concepción, Pdte. Hayes, San Pedro and Itapuá and to date has affected almost 30,000 families across the country, evacuating several families by air, land and water, using its own means, the Air Force and the Paraguayan Navy. [...] According to the scenario presented by technicians from Meteorology and Hydrology Directorate, in the short term the number of families affected by floods could quadruple, according to the latest statistics, and there could be more than 100,000 families affected along the basins of the Paraguay River, Paraná and its affluents. There is also concern about an outbreak of mosquito-borne diseases such as dengue and chikungunya, with the Ministry of Public Health and Social Wellbeing reporting nearly 15,000 new cases on a weekly basis. ([IFRC, 18 Mar 2023](https://reliefweb.int/node/3944664))",
+        "overview-html": "<p>The rains in the northern part of Paraguay that began in mid-February registered a maximum impact on 28 February, with more than 350 mm of rain recorded in a period of 12 hours, causing flash floods in the departments of Concepción, Alto Paraguay and Amambay.</p>\n<p>On 27 February, a Departmental Declaration of Emergency was issued for the Department of Concepcion stating that &quot;the Department of Concepcion is declared in a state of emergency as a result of the heavy rains that affected the districts of San Lazaro, Horqueta, Sargento Felix Lopez, Paso Horqueta and Paso Barreto of the Department of Concepcion, causing flooding, road closures, isolation of several communities, affected homes and consequently paralyzing the activities in the areas of mining, agricultural, livestock, forestry and commercial production.&quot;</p>\n<p>Regarding the flood emergency situation, the Minister of the National Emergency Secretariat (SEN) mentioned during\nthe inter-institutional coordination meeting held at the Government Palace on 10 March, that this phenomenon impacts the Departments of Alto Paraguay, Amambay, Concepción, Pdte. Hayes, San Pedro and Itapuá and to date has affected almost 30,000 families across the country, evacuating several families by air, land and water, using its own means, the Air Force and the Paraguayan Navy. [...] According to the scenario presented by technicians from Meteorology and Hydrology Directorate, in the short term the number of families affected by floods could quadruple, according to the latest statistics, and there could be more than 100,000 families affected along the basins of the Paraguay River, Paraná and its affluents. There is also concern about an outbreak of mosquito-borne diseases such as dengue and chikungunya, with the Ministry of Public Health and Social Wellbeing reporting nearly 15,000 new cases on a weekly basis. (<a href=\"https://reliefweb.int/node/3944664\">IFRC, 18 Mar 2023</a>)</p>\n"
+      },
+      "description-html": "<p>The rains in the northern part of Paraguay that began in mid-February registered a maximum impact on 28 February, with more than 350 mm of rain recorded in a period of 12 hours, causing flash floods in the departments of Concepción, Alto Paraguay and Amambay.</p>\n<p>On 27 February, a Departmental Declaration of Emergency was issued for the Department of Concepcion stating that &quot;the Department of Concepcion is declared in a state of emergency as a result of the heavy rains that affected the districts of San Lazaro, Horqueta, Sargento Felix Lopez, Paso Horqueta and Paso Barreto of the Department of Concepcion, causing flooding, road closures, isolation of several communities, affected homes and consequently paralyzing the activities in the areas of mining, agricultural, livestock, forestry and commercial production.&quot;</p>\n<p>Regarding the flood emergency situation, the Minister of the National Emergency Secretariat (SEN) mentioned during\nthe inter-institutional coordination meeting held at the Government Palace on 10 March, that this phenomenon impacts the Departments of Alto Paraguay, Amambay, Concepción, Pdte. Hayes, San Pedro and Itapuá and to date has affected almost 30,000 families across the country, evacuating several families by air, land and water, using its own means, the Air Force and the Paraguayan Navy. [...] According to the scenario presented by technicians from Meteorology and Hydrology Directorate, in the short term the number of families affected by floods could quadruple, according to the latest statistics, and there could be more than 100,000 families affected along the basins of the Paraguay River, Paraná and its affluents. There is also concern about an outbreak of mosquito-borne diseases such as dengue and chikungunya, with the Ministry of Public Health and Social Wellbeing reporting nearly 15,000 new cases on a weekly basis. (<a href=\"https://reliefweb.int/node/3944664\">IFRC, 18 Mar 2023</a>)</p>\n",
+      "description": "The rains in the northern part of Paraguay that began in mid-February registered a maximum impact on 28 February, with more than 350 mm of rain recorded in a period of 12 hours, causing flash floods in the departments of Concepción, Alto Paraguay and Amambay.\n\nOn 27 February, a Departmental Declaration of Emergency was issued for the Department of Concepcion stating that \"the Department of Concepcion is declared in a state of emergency as a result of the heavy rains that affected the districts of San Lazaro, Horqueta, Sargento Felix Lopez, Paso Horqueta and Paso Barreto of the Department of Concepcion, causing flooding, road closures, isolation of several communities, affected homes and consequently paralyzing the activities in the areas of mining, agricultural, livestock, forestry and commercial production.\" \n\nRegarding the flood emergency situation, the Minister of the National Emergency Secretariat (SEN) mentioned during\nthe inter-institutional coordination meeting held at the Government Palace on 10 March, that this phenomenon impacts the Departments of Alto Paraguay, Amambay, Concepción, Pdte. Hayes, San Pedro and Itapuá and to date has affected almost 30,000 families across the country, evacuating several families by air, land and water, using its own means, the Air Force and the Paraguayan Navy. [...] According to the scenario presented by technicians from Meteorology and Hydrology Directorate, in the short term the number of families affected by floods could quadruple, according to the latest statistics, and there could be more than 100,000 families affected along the basins of the Paraguay River, Paraná and its affluents. There is also concern about an outbreak of mosquito-borne diseases such as dengue and chikungunya, with the Ministry of Public Health and Social Wellbeing reporting nearly 15,000 new cases on a weekly basis. ([IFRC, 18 Mar 2023](https://reliefweb.int/node/3944664))",
+      "type": [
+        {
+          "code": "FF",
+          "name": "Flash Flood",
+          "id": 4624
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611,
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/51528",
+      "current": true,
+      "url_alias": "https://reliefweb.int/disaster/fl-2023-000041-pry",
+      "name": "Paraguay: Floods - Feb 2023",
+      "id": 51528,
+      "glide": "FL-2023-000041-PRY",
+      "status": "ongoing"
+    }
+  },
+  "text": "Paraguay: Floods - Feb 2023\n\nThe rains in the northern part of Paraguay that began in mid-February registered a maximum impact on 28 February, with more than 350 mm of rain recorded in a period of 12 hours, causing flash floods in the departments of Concepción, Alto Paraguay and Amambay.\n\nOn 27 February, a Departmental Declaration of Emergency was issued for the Department of Concepcion stating that \"the Department of Concepcion is declared in a state of emergency as a result of the heavy rains that affected the districts of San Lazaro, Horqueta, Sargento Felix Lopez, Paso Horqueta and Paso Barreto of the Department of Concepcion, causing flooding, road closures, isolation of several communities, affected homes and consequently paralyzing the activities in the areas of mining, agricultural, livestock, forestry and commercial production.\" \n\nRegarding the flood emergency situation, the Minister of the National Emergency Secretariat (SEN) mentioned during\nthe inter-institutional coordination meeting held at the Government Palace on 10 March, that this phenomenon impacts the Departments of Alto Paraguay, Amambay, Concepción, Pdte. Hayes, San Pedro and Itapuá and to date has affected almost 30,000 families across the country, evacuating several families by air, land and water, using its own means, the Air Force and the Paraguayan Navy. [...] According to the scenario presented by technicians from Meteorology and Hydrology Directorate, in the short term the number of families affected by floods could quadruple, according to the latest statistics, and there could be more than 100,000 families affected along the basins of the Paraguay River, Paraná and its affluents. There is also concern about an outbreak of mosquito-borne diseases such as dengue and chikungunya, with the Ministry of Public Health and Social Wellbeing reporting nearly 15,000 new cases on a weekly basis. ([IFRC, 18 Mar 2023](https://reliefweb.int/node/3944664))",
+  "summary": " In February 2023, heavy rains in northern Paraguay caused flash floods in the departments of Concepción, Alto Paraguay and Amambay. A Departmental Declaration of Emergency was issued for the Department of Concepcion, and the floods have affected nearly 30,000 families across the country. According to technicians from Meteorology and Hydrology Directorate, the number of families affected by floods could quadruple, and there is concern about an outbreak of mosquito-borne diseases such as dengue and chikungunya.",
+  "metadata": {
+    "id": "51528",
+    "name": "Paraguay: Floods - Feb 2023",
+    "date_event": 1676592000000,
+    "date_changed": 1679375998000,
+    "date_created": 1679375310000,
+    "primary_country_id": 186,
+    "primary_country_name": "Paraguay",
+    "primary_country_iso3": "pry",
+    "primary_country_location": {
+      "lon": -58.39,
+      "lat": -23.24
+    },
+    "primary_type_id": 4611,
+    "primary_type_code": "FL",
+    "primary_type_name": "Flood"
+  }
+}

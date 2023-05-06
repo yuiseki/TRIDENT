@@ -1,0 +1,82 @@
+{
+  "original": {
+    "id": "51464",
+    "fields": {
+      "date": {
+        "changed": "2023-03-09T11:53:41+00:00",
+        "event": "2023-01-11T00:00:00+00:00",
+        "created": "2023-01-31T12:18:57+00:00"
+      },
+      "primary_type": {
+        "code": "FL",
+        "name": "Flood",
+        "id": 4611
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/256",
+          "name": "Zambia",
+          "location": {
+            "lon": 27.43,
+            "lat": -14
+          },
+          "id": 256,
+          "shortname": "Zambia",
+          "iso3": "zmb",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/256",
+        "name": "Zambia",
+        "location": {
+          "lon": 27.43,
+          "lat": -14
+        },
+        "id": 256,
+        "shortname": "Zambia",
+        "iso3": "zmb"
+      },
+      "profile": {
+        "overview": "Heavy rainfall and thunderstorms have been affecting central-southern Zambia (in particular Southern, Central, Eastern, and Lusaka Provinces) since 11 January, causing severe floods and rivers overflow (particularly Luangwa, and Mkushi Rivers) that have resulted in casualties and damage. [...] Media also report several collapsed and severely damaged houses, a number of damaged bridges, and many isolated communities across the aforementioned affected provinces. Over the next 24 hours, more heavy rainfall is forecast over the whole country, with locally very heavy rainfall over the Central Province. ([ECHO, 31 Jan 2023](https://reliefweb.int/node/3928815))\n\nStarting on 7th February 2023, the country experienced the most severe flooding in over 50 years, according to reports from the Zambia Disaster Management and Mitigation Unit (DMMU). By 9th February, the rains worsened, leading to exponential increase in affected areas and prompting the Government on 10th February to request for assistance from humanitarian partners, including the Red Cross. The flooding occurred across 9 provinces (37 districts), with Southern Province experiencing the most severe impact. This situation has resulted in devastating impacts, with over 25,768 households (equivalent to 154,608 people) affected by the floods in five Districts of Southern Province. ([IFRC, 27 Feb 2023](https://reliefweb.int/node/3938257))\n\nMedia report, as of 9 March, eight fatalities, nearly 7,500 evacuated people in 22 evacuation centres and a total of more than 373,500 affected people across the area of the capital city Lusaka and its Province (southern Zambia). In addition, media report tens of thousands flooded houses, nearly 100 damaged roads and a number of damaged bridges across the same area. Moreover, around 500 people were reported evacuated across the Eastern Province. ([ECHO, 09 Mar 2023](https://reliefweb.int/node/3941629))",
+        "overview-html": "<p>Heavy rainfall and thunderstorms have been affecting central-southern Zambia (in particular Southern, Central, Eastern, and Lusaka Provinces) since 11 January, causing severe floods and rivers overflow (particularly Luangwa, and Mkushi Rivers) that have resulted in casualties and damage. [...] Media also report several collapsed and severely damaged houses, a number of damaged bridges, and many isolated communities across the aforementioned affected provinces. Over the next 24 hours, more heavy rainfall is forecast over the whole country, with locally very heavy rainfall over the Central Province. (<a href=\"https://reliefweb.int/node/3928815\">ECHO, 31 Jan 2023</a>)</p>\n<p>Starting on 7th February 2023, the country experienced the most severe flooding in over 50 years, according to reports from the Zambia Disaster Management and Mitigation Unit (DMMU). By 9th February, the rains worsened, leading to exponential increase in affected areas and prompting the Government on 10th February to request for assistance from humanitarian partners, including the Red Cross. The flooding occurred across 9 provinces (37 districts), with Southern Province experiencing the most severe impact. This situation has resulted in devastating impacts, with over 25,768 households (equivalent to 154,608 people) affected by the floods in five Districts of Southern Province. (<a href=\"https://reliefweb.int/node/3938257\">IFRC, 27 Feb 2023</a>)</p>\n<p>Media report, as of 9 March, eight fatalities, nearly 7,500 evacuated people in 22 evacuation centres and a total of more than 373,500 affected people across the area of the capital city Lusaka and its Province (southern Zambia). In addition, media report tens of thousands flooded houses, nearly 100 damaged roads and a number of damaged bridges across the same area. Moreover, around 500 people were reported evacuated across the Eastern Province. (<a href=\"https://reliefweb.int/node/3941629\">ECHO, 09 Mar 2023</a>)</p>\n"
+      },
+      "description-html": "<p>Heavy rainfall and thunderstorms have been affecting central-southern Zambia (in particular Southern, Central, Eastern, and Lusaka Provinces) since 11 January, causing severe floods and rivers overflow (particularly Luangwa, and Mkushi Rivers) that have resulted in casualties and damage. [...] Media also report several collapsed and severely damaged houses, a number of damaged bridges, and many isolated communities across the aforementioned affected provinces. Over the next 24 hours, more heavy rainfall is forecast over the whole country, with locally very heavy rainfall over the Central Province. (<a href=\"https://reliefweb.int/node/3928815\">ECHO, 31 Jan 2023</a>)</p>\n<p>Starting on 7th February 2023, the country experienced the most severe flooding in over 50 years, according to reports from the Zambia Disaster Management and Mitigation Unit (DMMU). By 9th February, the rains worsened, leading to exponential increase in affected areas and prompting the Government on 10th February to request for assistance from humanitarian partners, including the Red Cross. The flooding occurred across 9 provinces (37 districts), with Southern Province experiencing the most severe impact. This situation has resulted in devastating impacts, with over 25,768 households (equivalent to 154,608 people) affected by the floods in five Districts of Southern Province. (<a href=\"https://reliefweb.int/node/3938257\">IFRC, 27 Feb 2023</a>)</p>\n<p>Media report, as of 9 March, eight fatalities, nearly 7,500 evacuated people in 22 evacuation centres and a total of more than 373,500 affected people across the area of the capital city Lusaka and its Province (southern Zambia). In addition, media report tens of thousands flooded houses, nearly 100 damaged roads and a number of damaged bridges across the same area. Moreover, around 500 people were reported evacuated across the Eastern Province. (<a href=\"https://reliefweb.int/node/3941629\">ECHO, 09 Mar 2023</a>)</p>\n",
+      "description": "Heavy rainfall and thunderstorms have been affecting central-southern Zambia (in particular Southern, Central, Eastern, and Lusaka Provinces) since 11 January, causing severe floods and rivers overflow (particularly Luangwa, and Mkushi Rivers) that have resulted in casualties and damage. [...] Media also report several collapsed and severely damaged houses, a number of damaged bridges, and many isolated communities across the aforementioned affected provinces. Over the next 24 hours, more heavy rainfall is forecast over the whole country, with locally very heavy rainfall over the Central Province. ([ECHO, 31 Jan 2023](https://reliefweb.int/node/3928815))\n\nStarting on 7th February 2023, the country experienced the most severe flooding in over 50 years, according to reports from the Zambia Disaster Management and Mitigation Unit (DMMU). By 9th February, the rains worsened, leading to exponential increase in affected areas and prompting the Government on 10th February to request for assistance from humanitarian partners, including the Red Cross. The flooding occurred across 9 provinces (37 districts), with Southern Province experiencing the most severe impact. This situation has resulted in devastating impacts, with over 25,768 households (equivalent to 154,608 people) affected by the floods in five Districts of Southern Province. ([IFRC, 27 Feb 2023](https://reliefweb.int/node/3938257))\n\nMedia report, as of 9 March, eight fatalities, nearly 7,500 evacuated people in 22 evacuation centres and a total of more than 373,500 affected people across the area of the capital city Lusaka and its Province (southern Zambia). In addition, media report tens of thousands flooded houses, nearly 100 damaged roads and a number of damaged bridges across the same area. Moreover, around 500 people were reported evacuated across the Eastern Province. ([ECHO, 09 Mar 2023](https://reliefweb.int/node/3941629))",
+      "type": [
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611,
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/51464",
+      "current": true,
+      "url_alias": "https://reliefweb.int/disaster/fl-2023-000014-zmb",
+      "name": "Zambia: Floods - Jan 2023",
+      "id": 51464,
+      "glide": "FL-2023-000014-ZMB",
+      "status": "ongoing"
+    }
+  },
+  "text": "Zambia: Floods - Jan 2023\n\nHeavy rainfall and thunderstorms have been affecting central-southern Zambia (in particular Southern, Central, Eastern, and Lusaka Provinces) since 11 January, causing severe floods and rivers overflow (particularly Luangwa, and Mkushi Rivers) that have resulted in casualties and damage. [...] Media also report several collapsed and severely damaged houses, a number of damaged bridges, and many isolated communities across the aforementioned affected provinces. Over the next 24 hours, more heavy rainfall is forecast over the whole country, with locally very heavy rainfall over the Central Province. ([ECHO, 31 Jan 2023](https://reliefweb.int/node/3928815))\n\nStarting on 7th February 2023, the country experienced the most severe flooding in over 50 years, according to reports from the Zambia Disaster Management and Mitigation Unit (DMMU). By 9th February, the rains worsened, leading to exponential increase in affected areas and prompting the Government on 10th February to request for assistance from humanitarian partners, including the Red Cross. The flooding occurred across 9 provinces (37 districts), with Southern Province experiencing the most severe impact. This situation has resulted in devastating impacts, with over 25,768 households (equivalent to 154,608 people) affected by the floods in five Districts of Southern Province. ([IFRC, 27 Feb 2023](https://reliefweb.int/node/3938257))\n\nMedia report, as of 9 March, eight fatalities, nearly 7,500 evacuated people in 22 evacuation centres and a total of more than 373,500 affected people across the area of the capital city Lusaka and its Province (southern Zambia). In addition, media report tens of thousands flooded houses, nearly 100 damaged roads and a number of damaged bridges across the same area. Moreover, around 500 people were reported evacuated across the Eastern Province. ([ECHO, 09 Mar 2023](https://reliefweb.int/node/3941629))",
+  "summary": " In January 2023, Zambia experienced severe flooding due to heavy rainfall and thunderstorms, resulting in casualties and damage. By February, the rains had worsened, leading to over 25,768 households (equivalent to 154,608 people) affected by the floods in five Districts of Southern Province. By March, the flooding had caused eight fatalities, nearly 7,500 evacuated people in 22 evacuation centres, 373,500 affected people, tens of thousands of flooded houses, nearly 100 damaged roads, and a number of damaged bridges.",
+  "metadata": {
+    "id": "51464",
+    "name": "Zambia: Floods - Jan 2023",
+    "date_event": 1673395200000,
+    "date_changed": 1678362821000,
+    "date_created": 1675167537000,
+    "primary_country_id": 256,
+    "primary_country_name": "Zambia",
+    "primary_country_iso3": "zmb",
+    "primary_country_location": {
+      "lon": 27.43,
+      "lat": -14
+    },
+    "primary_type_id": 4611,
+    "primary_type_code": "FL",
+    "primary_type_name": "Flood"
+  }
+}

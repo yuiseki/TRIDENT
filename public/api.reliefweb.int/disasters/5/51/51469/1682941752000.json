@@ -1,0 +1,82 @@
+{
+  "original": {
+    "id": "51469",
+    "fields": {
+      "date": {
+        "changed": "2023-05-01T11:49:12+00:00",
+        "event": "2023-01-26T00:00:00+00:00",
+        "created": "2023-02-03T20:54:19+00:00"
+      },
+      "primary_type": {
+        "code": "EP",
+        "name": "Epidemic",
+        "id": 4642
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/256",
+          "name": "Zambia",
+          "location": {
+            "lon": 27.43,
+            "lat": -14
+          },
+          "id": 256,
+          "shortname": "Zambia",
+          "iso3": "zmb",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/256",
+        "name": "Zambia",
+        "location": {
+          "lon": 27.43,
+          "lat": -14
+        },
+        "id": 256,
+        "shortname": "Zambia",
+        "iso3": "zmb"
+      },
+      "profile": {
+        "overview": "Ministry of Health declared the Cholera outbreak in Zambia in a Press conference on 26 January. The epidemic count of 21 cases registered from 21st to 30 January 2023 in the Vubwi district. On 27 January, there were 13 suspected cases, 6 confirmed, 12 admitted, 7 discharged, and one death. The Ministry of Health (MoH) has indeed declared the vigilance state to the population at risk (53,080 people) and requested all stakeholders to support the efforts to stop the spread of this outbreak. According to the minister, 719 people have been identified as contact persons in six villages. ([IFRC, 3 February 2023](https://reliefweb.int/node/3930261))\n\nZambia’s index case was confirmed in Vubwi district on 21 January 2023 and was linked to the Mozambique outbreak. Cumulatively, 334 cases and eight deaths (CFR = 2.4%) have reported as of 16 April 2023. There are three districts in three provinces currecntly reporting cases; Chipata in Eastern Province, Nchelenge district in Luapula Province and Nsama and Mpulungundisteicts, the cholera hotspot area in Notthern Province. ([WHO, 27 Apr 2023](https://reliefweb.int/node/3956535))",
+        "overview-html": "<p>Ministry of Health declared the Cholera outbreak in Zambia in a Press conference on 26 January. The epidemic count of 21 cases registered from 21st to 30 January 2023 in the Vubwi district. On 27 January, there were 13 suspected cases, 6 confirmed, 12 admitted, 7 discharged, and one death. The Ministry of Health (MoH) has indeed declared the vigilance state to the population at risk (53,080 people) and requested all stakeholders to support the efforts to stop the spread of this outbreak. According to the minister, 719 people have been identified as contact persons in six villages. (<a href=\"https://reliefweb.int/node/3930261\">IFRC, 3 February 2023</a>)</p>\n<p>Zambia’s index case was confirmed in Vubwi district on 21 January 2023 and was linked to the Mozambique outbreak. Cumulatively, 334 cases and eight deaths (CFR = 2.4%) have reported as of 16 April 2023. There are three districts in three provinces currecntly reporting cases; Chipata in Eastern Province, Nchelenge district in Luapula Province and Nsama and Mpulungundisteicts, the cholera hotspot area in Notthern Province. (<a href=\"https://reliefweb.int/node/3956535\">WHO, 27 Apr 2023</a>)</p>\n"
+      },
+      "description-html": "<p>Ministry of Health declared the Cholera outbreak in Zambia in a Press conference on 26 January. The epidemic count of 21 cases registered from 21st to 30 January 2023 in the Vubwi district. On 27 January, there were 13 suspected cases, 6 confirmed, 12 admitted, 7 discharged, and one death. The Ministry of Health (MoH) has indeed declared the vigilance state to the population at risk (53,080 people) and requested all stakeholders to support the efforts to stop the spread of this outbreak. According to the minister, 719 people have been identified as contact persons in six villages. (<a href=\"https://reliefweb.int/node/3930261\">IFRC, 3 February 2023</a>)</p>\n<p>Zambia’s index case was confirmed in Vubwi district on 21 January 2023 and was linked to the Mozambique outbreak. Cumulatively, 334 cases and eight deaths (CFR = 2.4%) have reported as of 16 April 2023. There are three districts in three provinces currecntly reporting cases; Chipata in Eastern Province, Nchelenge district in Luapula Province and Nsama and Mpulungundisteicts, the cholera hotspot area in Notthern Province. (<a href=\"https://reliefweb.int/node/3956535\">WHO, 27 Apr 2023</a>)</p>\n",
+      "description": "Ministry of Health declared the Cholera outbreak in Zambia in a Press conference on 26 January. The epidemic count of 21 cases registered from 21st to 30 January 2023 in the Vubwi district. On 27 January, there were 13 suspected cases, 6 confirmed, 12 admitted, 7 discharged, and one death. The Ministry of Health (MoH) has indeed declared the vigilance state to the population at risk (53,080 people) and requested all stakeholders to support the efforts to stop the spread of this outbreak. According to the minister, 719 people have been identified as contact persons in six villages. ([IFRC, 3 February 2023](https://reliefweb.int/node/3930261))\n\nZambia’s index case was confirmed in Vubwi district on 21 January 2023 and was linked to the Mozambique outbreak. Cumulatively, 334 cases and eight deaths (CFR = 2.4%) have reported as of 16 April 2023. There are three districts in three provinces currecntly reporting cases; Chipata in Eastern Province, Nchelenge district in Luapula Province and Nsama and Mpulungundisteicts, the cholera hotspot area in Notthern Province. ([WHO, 27 Apr 2023](https://reliefweb.int/node/3956535))",
+      "type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642,
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/51469",
+      "current": true,
+      "url_alias": "https://reliefweb.int/disaster/ep-2023-000013-zmb",
+      "name": "Zambia: Cholera Outbreak - Jan 2023",
+      "id": 51469,
+      "glide": "EP-2023-000013-ZMB",
+      "status": "ongoing"
+    }
+  },
+  "text": "Zambia: Cholera Outbreak - Jan 2023\n\nMinistry of Health declared the Cholera outbreak in Zambia in a Press conference on 26 January. The epidemic count of 21 cases registered from 21st to 30 January 2023 in the Vubwi district. On 27 January, there were 13 suspected cases, 6 confirmed, 12 admitted, 7 discharged, and one death. The Ministry of Health (MoH) has indeed declared the vigilance state to the population at risk (53,080 people) and requested all stakeholders to support the efforts to stop the spread of this outbreak. According to the minister, 719 people have been identified as contact persons in six villages. ([IFRC, 3 February 2023](https://reliefweb.int/node/3930261))\n\nZambia’s index case was confirmed in Vubwi district on 21 January 2023 and was linked to the Mozambique outbreak. Cumulatively, 334 cases and eight deaths (CFR = 2.4%) have reported as of 16 April 2023. There are three districts in three provinces currecntly reporting cases; Chipata in Eastern Province, Nchelenge district in Luapula Province and Nsama and Mpulungundisteicts, the cholera hotspot area in Notthern Province. ([WHO, 27 Apr 2023](https://reliefweb.int/node/3956535))",
+  "summary": " On 26 January 2023, the Ministry of Health in Zambia declared a Cholera outbreak in the Vubwi district, with 21 cases registered from 21st to 30 January. As of 16 April 2023, 334 cases and 8 deaths (CFR = 2.4%) have been reported in three districts in three provinces. The outbreak is linked to the Mozambique outbreak. The Ministry of Health has declared a vigilance state and requested all stakeholders to support the efforts to stop the spread of the outbreak.",
+  "metadata": {
+    "id": "51469",
+    "name": "Zambia: Cholera Outbreak - Jan 2023",
+    "date_event": 1674691200000,
+    "date_changed": 1682941752000,
+    "date_created": 1675457659000,
+    "primary_country_id": 256,
+    "primary_country_name": "Zambia",
+    "primary_country_iso3": "zmb",
+    "primary_country_location": {
+      "lon": 27.43,
+      "lat": -14
+    },
+    "primary_type_id": 4642,
+    "primary_type_code": "EP",
+    "primary_type_name": "Epidemic"
+  }
+}

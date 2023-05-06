@@ -1,0 +1,81 @@
+{
+  "original": {
+    "id": "51520",
+    "fields": {
+      "date": {
+        "changed": "2023-05-01T10:46:02+00:00",
+        "event": "2023-01-20T00:00:00+00:00",
+        "created": "2023-03-16T01:52:54+00:00"
+      },
+      "primary_type": {
+        "code": "EP",
+        "name": "Epidemic",
+        "id": 4642
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/175",
+          "name": "Nigeria",
+          "location": {
+            "lon": 8.11,
+            "lat": 9.59
+          },
+          "id": 175,
+          "shortname": "Nigeria",
+          "iso3": "nga",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/175",
+        "name": "Nigeria",
+        "location": {
+          "lon": 8.11,
+          "lat": 9.59
+        },
+        "id": 175,
+        "shortname": "Nigeria",
+        "iso3": "nga"
+      },
+      "profile": {
+        "overview": "There has been an alarming increase in the diphtheria in Nigeria since early 2023, which worsened in March. The suspected cases reported increased from 136 cases in Week 1 of 2023 to 253 cases by Week 4. As of 2nd March 2023, Nigeria Centre for Disease Control (NCDC) recorded again further increase of the disease. In the total of 733 suspected cases, including 89 deaths, children between the ages of 5 and 18 are the age group most afflicted. The overall case fatality rate is (12.3%). The latest data received by the World Health Organization (WHO) from ProMed reported that 20 states are currently reporting suspected cases. This outbreak has been labelled as one of the most severe outbreaks of diphtheria in Nigeria in recent years. ([IFRC, 15 Mar 2023](https://reliefweb.int/node/3943850/))\n\nSince the beginning of 2023, 557 confirmed cases of diphtheria have been detected in Nigeria, affecting 21 of the 36 states and the Federal Capital Territory. ([WHO, 27 Apr 2023](https://reliefweb.int/node/3956599))",
+        "overview-html": "<p>There has been an alarming increase in the diphtheria in Nigeria since early 2023, which worsened in March. The suspected cases reported increased from 136 cases in Week 1 of 2023 to 253 cases by Week 4. As of 2nd March 2023, Nigeria Centre for Disease Control (NCDC) recorded again further increase of the disease. In the total of 733 suspected cases, including 89 deaths, children between the ages of 5 and 18 are the age group most afflicted. The overall case fatality rate is (12.3%). The latest data received by the World Health Organization (WHO) from ProMed reported that 20 states are currently reporting suspected cases. This outbreak has been labelled as one of the most severe outbreaks of diphtheria in Nigeria in recent years. (<a href=\"https://reliefweb.int/node/3943850/\">IFRC, 15 Mar 2023</a>)</p>\n<p>Since the beginning of 2023, 557 confirmed cases of diphtheria have been detected in Nigeria, affecting 21 of the 36 states and the Federal Capital Territory. (<a href=\"https://reliefweb.int/node/3956599\">WHO, 27 Apr 2023</a>)</p>\n"
+      },
+      "description-html": "<p>There has been an alarming increase in the diphtheria in Nigeria since early 2023, which worsened in March. The suspected cases reported increased from 136 cases in Week 1 of 2023 to 253 cases by Week 4. As of 2nd March 2023, Nigeria Centre for Disease Control (NCDC) recorded again further increase of the disease. In the total of 733 suspected cases, including 89 deaths, children between the ages of 5 and 18 are the age group most afflicted. The overall case fatality rate is (12.3%). The latest data received by the World Health Organization (WHO) from ProMed reported that 20 states are currently reporting suspected cases. This outbreak has been labelled as one of the most severe outbreaks of diphtheria in Nigeria in recent years. (<a href=\"https://reliefweb.int/node/3943850/\">IFRC, 15 Mar 2023</a>)</p>\n<p>Since the beginning of 2023, 557 confirmed cases of diphtheria have been detected in Nigeria, affecting 21 of the 36 states and the Federal Capital Territory. (<a href=\"https://reliefweb.int/node/3956599\">WHO, 27 Apr 2023</a>)</p>\n",
+      "description": "There has been an alarming increase in the diphtheria in Nigeria since early 2023, which worsened in March. The suspected cases reported increased from 136 cases in Week 1 of 2023 to 253 cases by Week 4. As of 2nd March 2023, Nigeria Centre for Disease Control (NCDC) recorded again further increase of the disease. In the total of 733 suspected cases, including 89 deaths, children between the ages of 5 and 18 are the age group most afflicted. The overall case fatality rate is (12.3%). The latest data received by the World Health Organization (WHO) from ProMed reported that 20 states are currently reporting suspected cases. This outbreak has been labelled as one of the most severe outbreaks of diphtheria in Nigeria in recent years. ([IFRC, 15 Mar 2023](https://reliefweb.int/node/3943850/))\n\nSince the beginning of 2023, 557 confirmed cases of diphtheria have been detected in Nigeria, affecting 21 of the 36 states and the Federal Capital Territory. ([WHO, 27 Apr 2023](https://reliefweb.int/node/3956599))",
+      "type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642,
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/51520",
+      "url_alias": "https://reliefweb.int/disaster/ep-2023-000034-nga",
+      "name": "Nigeria: Diphtheria Outbreak - Jan 2023",
+      "id": 51520,
+      "glide": "EP-2023-000034-NGA",
+      "status": "alert"
+    }
+  },
+  "text": "Nigeria: Diphtheria Outbreak - Jan 2023\n\nThere has been an alarming increase in the diphtheria in Nigeria since early 2023, which worsened in March. The suspected cases reported increased from 136 cases in Week 1 of 2023 to 253 cases by Week 4. As of 2nd March 2023, Nigeria Centre for Disease Control (NCDC) recorded again further increase of the disease. In the total of 733 suspected cases, including 89 deaths, children between the ages of 5 and 18 are the age group most afflicted. The overall case fatality rate is (12.3%). The latest data received by the World Health Organization (WHO) from ProMed reported that 20 states are currently reporting suspected cases. This outbreak has been labelled as one of the most severe outbreaks of diphtheria in Nigeria in recent years. ([IFRC, 15 Mar 2023](https://reliefweb.int/node/3943850/))\n\nSince the beginning of 2023, 557 confirmed cases of diphtheria have been detected in Nigeria, affecting 21 of the 36 states and the Federal Capital Territory. ([WHO, 27 Apr 2023](https://reliefweb.int/node/3956599))",
+  "summary": " In Nigeria, there has been a severe outbreak of diphtheria since early 2023, with 733 suspected cases and 89 deaths reported as of March 2nd. The most affected age group is children between 5 and 18, and 20 states are currently reporting suspected cases. As of April 27th, 557 confirmed cases have been detected in 21 of the 36 states and the Federal Capital Territory.",
+  "metadata": {
+    "id": "51520",
+    "name": "Nigeria: Diphtheria Outbreak - Jan 2023",
+    "date_event": 1674172800000,
+    "date_changed": 1682937962000,
+    "date_created": 1678931574000,
+    "primary_country_id": 175,
+    "primary_country_name": "Nigeria",
+    "primary_country_iso3": "nga",
+    "primary_country_location": {
+      "lon": 8.11,
+      "lat": 9.59
+    },
+    "primary_type_id": 4642,
+    "primary_type_code": "EP",
+    "primary_type_name": "Epidemic"
+  }
+}

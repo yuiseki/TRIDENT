@@ -1,0 +1,82 @@
+{
+  "original": {
+    "id": "50435",
+    "fields": {
+      "date": {
+        "changed": "2023-05-01T13:42:12+00:00",
+        "event": "2020-08-14T00:00:00+00:00",
+        "created": "2020-08-14T00:00:00+00:00"
+      },
+      "primary_type": {
+        "code": "EP",
+        "name": "Epidemic",
+        "id": 4642
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/255",
+          "name": "Yemen",
+          "location": {
+            "lon": 47.62,
+            "lat": 15.94
+          },
+          "id": 255,
+          "shortname": "Yemen",
+          "iso3": "yem",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/255",
+        "name": "Yemen",
+        "location": {
+          "lon": 47.62,
+          "lat": 15.94
+        },
+        "id": 255,
+        "shortname": "Yemen",
+        "iso3": "yem"
+      },
+      "profile": {
+        "overview": "A polio outbreak has been declared in Yemen following 15 reported cases of vaccine derived poliovirus type 1 (cVDPV1) in the first weeks of August 2020. The cases were detected in different districts of Sa’ada Governorate, in the north-west of the country. Children aged from 8 months to 13 years are affected. Significant challenges and delays in the shipment of stool samples from Yemen during the last two years have resulted in delayed detection. An outbreak response is being implemented by UNICEF and WHO in support of the local health authorities. Local impediments, including security, limit the application of internationally recommended protocol of house-to-house vaccination campaigns. ([ECHO, 25 Aug 2020](https://reliefweb.int/node/3664605))\n\nThe cases in Yemen are clustered in the Sa'adah governorate in the war-ravaged country's north-west, an area that has very low routine immunization levels and which has been inaccessible to the polio programme for more than 2 years. The last house-to-house campaigns in this area were nearly 2 years ago, in November 2018. ([UNICEF/WHO, 11 Sep 2020](https://reliefweb.int/node/3669481))\n\nUNICEF supported the response planning to the vaccine derived Poliovirus outbreak declared in Sa’ada at the beginning of August and procured 2.4 million doses of polio vaccine. ([UNICEF, 12 Nov 2020](https://reliefweb.int/node/3687535))\n\nNo case of circulating vaccine-derived poliovirus type 1 (cVDPV1) was reported this week. There are 19 cVDPV1 cases reported in the country so far.  ([GPEI, 2 Jan 2021](https://reliefweb.int/node/3701413))\n\nTwo cases of circulating vaccine-derived poliovirus type 2 (cVDPV2) were reported this week in Saadah. In 2021, nine cases have been reported: three cVDPV1 and six cVDPV2. ([GPEI, 28 Dec 2021](https://reliefweb.int/node/3805047))\n\nThere were 162 cases reported in 2022. ([GPEI, 26 Apr 2023](https://reliefweb.int/node/3956699))",
+        "overview-html": "<p>A polio outbreak has been declared in Yemen following 15 reported cases of vaccine derived poliovirus type 1 (cVDPV1) in the first weeks of August 2020. The cases were detected in different districts of Sa’ada Governorate, in the north-west of the country. Children aged from 8 months to 13 years are affected. Significant challenges and delays in the shipment of stool samples from Yemen during the last two years have resulted in delayed detection. An outbreak response is being implemented by UNICEF and WHO in support of the local health authorities. Local impediments, including security, limit the application of internationally recommended protocol of house-to-house vaccination campaigns. (<a href=\"https://reliefweb.int/node/3664605\">ECHO, 25 Aug 2020</a>)</p>\n<p>The cases in Yemen are clustered in the Sa'adah governorate in the war-ravaged country's north-west, an area that has very low routine immunization levels and which has been inaccessible to the polio programme for more than 2 years. The last house-to-house campaigns in this area were nearly 2 years ago, in November 2018. (<a href=\"https://reliefweb.int/node/3669481\">UNICEF/WHO, 11 Sep 2020</a>)</p>\n<p>UNICEF supported the response planning to the vaccine derived Poliovirus outbreak declared in Sa’ada at the beginning of August and procured 2.4 million doses of polio vaccine. (<a href=\"https://reliefweb.int/node/3687535\">UNICEF, 12 Nov 2020</a>)</p>\n<p>No case of circulating vaccine-derived poliovirus type 1 (cVDPV1) was reported this week. There are 19 cVDPV1 cases reported in the country so far.  (<a href=\"https://reliefweb.int/node/3701413\">GPEI, 2 Jan 2021</a>)</p>\n<p>Two cases of circulating vaccine-derived poliovirus type 2 (cVDPV2) were reported this week in Saadah. In 2021, nine cases have been reported: three cVDPV1 and six cVDPV2. (<a href=\"https://reliefweb.int/node/3805047\">GPEI, 28 Dec 2021</a>)</p>\n<p>There were 162 cases reported in 2022. (<a href=\"https://reliefweb.int/node/3956699\">GPEI, 26 Apr 2023</a>)</p>\n"
+      },
+      "description-html": "<p>A polio outbreak has been declared in Yemen following 15 reported cases of vaccine derived poliovirus type 1 (cVDPV1) in the first weeks of August 2020. The cases were detected in different districts of Sa’ada Governorate, in the north-west of the country. Children aged from 8 months to 13 years are affected. Significant challenges and delays in the shipment of stool samples from Yemen during the last two years have resulted in delayed detection. An outbreak response is being implemented by UNICEF and WHO in support of the local health authorities. Local impediments, including security, limit the application of internationally recommended protocol of house-to-house vaccination campaigns. (<a href=\"https://reliefweb.int/node/3664605\">ECHO, 25 Aug 2020</a>)</p>\n<p>The cases in Yemen are clustered in the Sa'adah governorate in the war-ravaged country's north-west, an area that has very low routine immunization levels and which has been inaccessible to the polio programme for more than 2 years. The last house-to-house campaigns in this area were nearly 2 years ago, in November 2018. (<a href=\"https://reliefweb.int/node/3669481\">UNICEF/WHO, 11 Sep 2020</a>)</p>\n<p>UNICEF supported the response planning to the vaccine derived Poliovirus outbreak declared in Sa’ada at the beginning of August and procured 2.4 million doses of polio vaccine. (<a href=\"https://reliefweb.int/node/3687535\">UNICEF, 12 Nov 2020</a>)</p>\n<p>No case of circulating vaccine-derived poliovirus type 1 (cVDPV1) was reported this week. There are 19 cVDPV1 cases reported in the country so far.  (<a href=\"https://reliefweb.int/node/3701413\">GPEI, 2 Jan 2021</a>)</p>\n<p>Two cases of circulating vaccine-derived poliovirus type 2 (cVDPV2) were reported this week in Saadah. In 2021, nine cases have been reported: three cVDPV1 and six cVDPV2. (<a href=\"https://reliefweb.int/node/3805047\">GPEI, 28 Dec 2021</a>)</p>\n<p>There were 162 cases reported in 2022. (<a href=\"https://reliefweb.int/node/3956699\">GPEI, 26 Apr 2023</a>)</p>\n",
+      "description": "A polio outbreak has been declared in Yemen following 15 reported cases of vaccine derived poliovirus type 1 (cVDPV1) in the first weeks of August 2020. The cases were detected in different districts of Sa’ada Governorate, in the north-west of the country. Children aged from 8 months to 13 years are affected. Significant challenges and delays in the shipment of stool samples from Yemen during the last two years have resulted in delayed detection. An outbreak response is being implemented by UNICEF and WHO in support of the local health authorities. Local impediments, including security, limit the application of internationally recommended protocol of house-to-house vaccination campaigns. ([ECHO, 25 Aug 2020](https://reliefweb.int/node/3664605))\n\nThe cases in Yemen are clustered in the Sa'adah governorate in the war-ravaged country's north-west, an area that has very low routine immunization levels and which has been inaccessible to the polio programme for more than 2 years. The last house-to-house campaigns in this area were nearly 2 years ago, in November 2018. ([UNICEF/WHO, 11 Sep 2020](https://reliefweb.int/node/3669481))\n\nUNICEF supported the response planning to the vaccine derived Poliovirus outbreak declared in Sa’ada at the beginning of August and procured 2.4 million doses of polio vaccine. ([UNICEF, 12 Nov 2020](https://reliefweb.int/node/3687535))\n\nNo case of circulating vaccine-derived poliovirus type 1 (cVDPV1) was reported this week. There are 19 cVDPV1 cases reported in the country so far.  ([GPEI, 2 Jan 2021](https://reliefweb.int/node/3701413))\n\nTwo cases of circulating vaccine-derived poliovirus type 2 (cVDPV2) were reported this week in Saadah. In 2021, nine cases have been reported: three cVDPV1 and six cVDPV2. ([GPEI, 28 Dec 2021](https://reliefweb.int/node/3805047))\n\nThere were 162 cases reported in 2022. ([GPEI, 26 Apr 2023](https://reliefweb.int/node/3956699))",
+      "type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642,
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/50435",
+      "current": true,
+      "url_alias": "https://reliefweb.int/disaster/ep-2020-000201-yem",
+      "name": "Yemen: Polio Outbreak - Aug 2020",
+      "id": 50435,
+      "glide": "EP-2020-000201-YEM",
+      "status": "ongoing"
+    }
+  },
+  "text": "Yemen: Polio Outbreak - Aug 2020\n\nA polio outbreak has been declared in Yemen following 15 reported cases of vaccine derived poliovirus type 1 (cVDPV1) in the first weeks of August 2020. The cases were detected in different districts of Sa’ada Governorate, in the north-west of the country. Children aged from 8 months to 13 years are affected. Significant challenges and delays in the shipment of stool samples from Yemen during the last two years have resulted in delayed detection. An outbreak response is being implemented by UNICEF and WHO in support of the local health authorities. Local impediments, including security, limit the application of internationally recommended protocol of house-to-house vaccination campaigns. ([ECHO, 25 Aug 2020](https://reliefweb.int/node/3664605))\n\nThe cases in Yemen are clustered in the Sa'adah governorate in the war-ravaged country's north-west, an area that has very low routine immunization levels and which has been inaccessible to the polio programme for more than 2 years. The last house-to-house campaigns in this area were nearly 2 years ago, in November 2018. ([UNICEF/WHO, 11 Sep 2020](https://reliefweb.int/node/3669481))\n\nUNICEF supported the response planning to the vaccine derived Poliovirus outbreak declared in Sa’ada at the beginning of August and procured 2.4 million doses of polio vaccine. ([UNICEF, 12 Nov 2020](https://reliefweb.int/node/3687535))\n\nNo case of circulating vaccine-derived poliovirus type 1 (cVDPV1) was reported this week. There are 19 cVDPV1 cases reported in the country so far.  ([GPEI, 2 Jan 2021](https://reliefweb.int/node/3701413))\n\nTwo cases of circulating vaccine-derived poliovirus type 2 (cVDPV2) were reported this week in Saadah. In 2021, nine cases have been reported: three cVDPV1 and six cVDPV2. ([GPEI, 28 Dec 2021](https://reliefweb.int/node/3805047))\n\nThere were 162 cases reported in 2022. ([GPEI, 26 Apr 2023](https://reliefweb.int/node/3956699))",
+  "summary": " In August 2020, 15 cases of vaccine-derived poliovirus type 1 (cVDPV1) were reported in Yemen, clustered in the Sa'adah governorate. UNICEF and WHO have implemented an outbreak response, including procuring 2.4 million doses of polio vaccine. In 2021, nine cases of cVDPV1 and cVDPV2 were reported, and 162 cases were reported in 2022.",
+  "metadata": {
+    "id": "50435",
+    "name": "Yemen: Polio Outbreak - Aug 2020",
+    "date_event": 1597363200000,
+    "date_changed": 1682948532000,
+    "date_created": 1597363200000,
+    "primary_country_id": 255,
+    "primary_country_name": "Yemen",
+    "primary_country_iso3": "yem",
+    "primary_country_location": {
+      "lon": 47.62,
+      "lat": 15.94
+    },
+    "primary_type_id": 4642,
+    "primary_type_code": "EP",
+    "primary_type_name": "Epidemic"
+  }
+}

@@ -1,4 +1,4 @@
-import { sleep } from "./../../src/utils/sleep.ts";
+import { sleep } from "../../src/utils/sleep.js";
 import fs from "node:fs/promises";
 
 const limit = 200;

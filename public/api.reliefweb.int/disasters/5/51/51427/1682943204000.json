@@ -1,0 +1,82 @@
+{
+  "original": {
+    "id": "51427",
+    "fields": {
+      "date": {
+        "changed": "2023-05-01T12:13:24+00:00",
+        "event": "2022-12-10T00:00:00+00:00",
+        "created": "2022-12-28T02:08:00+00:00"
+      },
+      "primary_type": {
+        "code": "FL",
+        "name": "Flood",
+        "id": 4611
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/217",
+          "name": "South Africa",
+          "location": {
+            "lon": 23.91,
+            "lat": -28.38
+          },
+          "id": 217,
+          "shortname": "South Africa",
+          "iso3": "zaf",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/217",
+        "name": "South Africa",
+        "location": {
+          "lon": 23.91,
+          "lat": -28.38
+        },
+        "id": 217,
+        "shortname": "South Africa",
+        "iso3": "zaf"
+      },
+      "profile": {
+        "overview": "Parts of Gauteng Province and North West Province were negatively affected by recent floods that hit parts of Soweto, Erkhuleni, Johannesburg, Vereeniging, Brakpan (Gauteng Province), and Rustenburg, Bojanala (North West Province) on 10-11 December 2022. More than 40,000 people have been affected so far. ([IFRC, 27 Dec 2022](https://reliefweb.int/node/3919898/))    \n\nHeavy rainfall has been affecting southern South Africa (in particular the Eastern Cape Province) over the last 24 hours, causing floods and river overflow (particularly the Komani River) that have resulted in evacuations and damage. Media report, as of 9 February, around 1,000 evacuated people, some flooded hospitals and a number of affected bridges and closed roads across the Komani Town area (formerly Queenstown, central Eastern Cape Province). ([ECHO, 9 Feb 2023](https://reliefweb.int/node/3932049/))\n\nSecond wave of heavy rainfall were recorded on February. The level of flooding incidence led on 13th of February 2023, to the government to declared a National State of Disaster to enable an intensive, coordinated response to the impact of floods that are affecting Mpumalanga, the Eastern Cape, Gauteng, KwaZulu-Natal, Limpopo, the Northern Cape and North West provinces. Mpumalanga and the Eastern Cape provinces had been receiving rains as early as the 8th of February and were identified as the hardest hit out of the 7 provinces. Impacts of the floods included over 48 fatalities reported, 12 people reported missing, 1,568 people (the bulk being in Eastern Cape with 1,259 people) have been displaced, and are now accommodated in 12 evacuation centers (inclusive of the 1 under the 11th December floods). Additionally, several homes have been flooded, vehicles swept away by floodwaters and overflowing dams and sewerage facilities, to the loss of basic infrastructure and damage to roads, bridges, and a Limpopo hospital. ([IFRC, 8 Mar 2023](https://reliefweb.int/node/3941520/))",
+        "overview-html": "<p>Parts of Gauteng Province and North West Province were negatively affected by recent floods that hit parts of Soweto, Erkhuleni, Johannesburg, Vereeniging, Brakpan (Gauteng Province), and Rustenburg, Bojanala (North West Province) on 10-11 December 2022. More than 40,000 people have been affected so far. (<a href=\"https://reliefweb.int/node/3919898/\">IFRC, 27 Dec 2022</a>)</p>\n<p>Heavy rainfall has been affecting southern South Africa (in particular the Eastern Cape Province) over the last 24 hours, causing floods and river overflow (particularly the Komani River) that have resulted in evacuations and damage. Media report, as of 9 February, around 1,000 evacuated people, some flooded hospitals and a number of affected bridges and closed roads across the Komani Town area (formerly Queenstown, central Eastern Cape Province). (<a href=\"https://reliefweb.int/node/3932049/\">ECHO, 9 Feb 2023</a>)</p>\n<p>Second wave of heavy rainfall were recorded on February. The level of flooding incidence led on 13th of February 2023, to the government to declared a National State of Disaster to enable an intensive, coordinated response to the impact of floods that are affecting Mpumalanga, the Eastern Cape, Gauteng, KwaZulu-Natal, Limpopo, the Northern Cape and North West provinces. Mpumalanga and the Eastern Cape provinces had been receiving rains as early as the 8th of February and were identified as the hardest hit out of the 7 provinces. Impacts of the floods included over 48 fatalities reported, 12 people reported missing, 1,568 people (the bulk being in Eastern Cape with 1,259 people) have been displaced, and are now accommodated in 12 evacuation centers (inclusive of the 1 under the 11th December floods). Additionally, several homes have been flooded, vehicles swept away by floodwaters and overflowing dams and sewerage facilities, to the loss of basic infrastructure and damage to roads, bridges, and a Limpopo hospital. (<a href=\"https://reliefweb.int/node/3941520/\">IFRC, 8 Mar 2023</a>)</p>\n"
+      },
+      "description-html": "<p>Parts of Gauteng Province and North West Province were negatively affected by recent floods that hit parts of Soweto, Erkhuleni, Johannesburg, Vereeniging, Brakpan (Gauteng Province), and Rustenburg, Bojanala (North West Province) on 10-11 December 2022. More than 40,000 people have been affected so far. (<a href=\"https://reliefweb.int/node/3919898/\">IFRC, 27 Dec 2022</a>)</p>\n<p>Heavy rainfall has been affecting southern South Africa (in particular the Eastern Cape Province) over the last 24 hours, causing floods and river overflow (particularly the Komani River) that have resulted in evacuations and damage. Media report, as of 9 February, around 1,000 evacuated people, some flooded hospitals and a number of affected bridges and closed roads across the Komani Town area (formerly Queenstown, central Eastern Cape Province). (<a href=\"https://reliefweb.int/node/3932049/\">ECHO, 9 Feb 2023</a>)</p>\n<p>Second wave of heavy rainfall were recorded on February. The level of flooding incidence led on 13th of February 2023, to the government to declared a National State of Disaster to enable an intensive, coordinated response to the impact of floods that are affecting Mpumalanga, the Eastern Cape, Gauteng, KwaZulu-Natal, Limpopo, the Northern Cape and North West provinces. Mpumalanga and the Eastern Cape provinces had been receiving rains as early as the 8th of February and were identified as the hardest hit out of the 7 provinces. Impacts of the floods included over 48 fatalities reported, 12 people reported missing, 1,568 people (the bulk being in Eastern Cape with 1,259 people) have been displaced, and are now accommodated in 12 evacuation centers (inclusive of the 1 under the 11th December floods). Additionally, several homes have been flooded, vehicles swept away by floodwaters and overflowing dams and sewerage facilities, to the loss of basic infrastructure and damage to roads, bridges, and a Limpopo hospital. (<a href=\"https://reliefweb.int/node/3941520/\">IFRC, 8 Mar 2023</a>)</p>\n",
+      "description": "Parts of Gauteng Province and North West Province were negatively affected by recent floods that hit parts of Soweto, Erkhuleni, Johannesburg, Vereeniging, Brakpan (Gauteng Province), and Rustenburg, Bojanala (North West Province) on 10-11 December 2022. More than 40,000 people have been affected so far. ([IFRC, 27 Dec 2022](https://reliefweb.int/node/3919898/))    \n\nHeavy rainfall has been affecting southern South Africa (in particular the Eastern Cape Province) over the last 24 hours, causing floods and river overflow (particularly the Komani River) that have resulted in evacuations and damage. Media report, as of 9 February, around 1,000 evacuated people, some flooded hospitals and a number of affected bridges and closed roads across the Komani Town area (formerly Queenstown, central Eastern Cape Province). ([ECHO, 9 Feb 2023](https://reliefweb.int/node/3932049/))\n\nSecond wave of heavy rainfall were recorded on February. The level of flooding incidence led on 13th of February 2023, to the government to declared a National State of Disaster to enable an intensive, coordinated response to the impact of floods that are affecting Mpumalanga, the Eastern Cape, Gauteng, KwaZulu-Natal, Limpopo, the Northern Cape and North West provinces. Mpumalanga and the Eastern Cape provinces had been receiving rains as early as the 8th of February and were identified as the hardest hit out of the 7 provinces. Impacts of the floods included over 48 fatalities reported, 12 people reported missing, 1,568 people (the bulk being in Eastern Cape with 1,259 people) have been displaced, and are now accommodated in 12 evacuation centers (inclusive of the 1 under the 11th December floods). Additionally, several homes have been flooded, vehicles swept away by floodwaters and overflowing dams and sewerage facilities, to the loss of basic infrastructure and damage to roads, bridges, and a Limpopo hospital. ([IFRC, 8 Mar 2023](https://reliefweb.int/node/3941520/))",
+      "type": [
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611,
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/51427",
+      "current": true,
+      "url_alias": "https://reliefweb.int/disaster/fl-2022-000382-zaf",
+      "name": "South Africa: Floods - Dec 2022",
+      "id": 51427,
+      "glide": "FL-2022-000382-ZAF",
+      "status": "ongoing"
+    }
+  },
+  "text": "South Africa: Floods - Dec 2022\n\nParts of Gauteng Province and North West Province were negatively affected by recent floods that hit parts of Soweto, Erkhuleni, Johannesburg, Vereeniging, Brakpan (Gauteng Province), and Rustenburg, Bojanala (North West Province) on 10-11 December 2022. More than 40,000 people have been affected so far. ([IFRC, 27 Dec 2022](https://reliefweb.int/node/3919898/))    \n\nHeavy rainfall has been affecting southern South Africa (in particular the Eastern Cape Province) over the last 24 hours, causing floods and river overflow (particularly the Komani River) that have resulted in evacuations and damage. Media report, as of 9 February, around 1,000 evacuated people, some flooded hospitals and a number of affected bridges and closed roads across the Komani Town area (formerly Queenstown, central Eastern Cape Province). ([ECHO, 9 Feb 2023](https://reliefweb.int/node/3932049/))\n\nSecond wave of heavy rainfall were recorded on February. The level of flooding incidence led on 13th of February 2023, to the government to declared a National State of Disaster to enable an intensive, coordinated response to the impact of floods that are affecting Mpumalanga, the Eastern Cape, Gauteng, KwaZulu-Natal, Limpopo, the Northern Cape and North West provinces. Mpumalanga and the Eastern Cape provinces had been receiving rains as early as the 8th of February and were identified as the hardest hit out of the 7 provinces. Impacts of the floods included over 48 fatalities reported, 12 people reported missing, 1,568 people (the bulk being in Eastern Cape with 1,259 people) have been displaced, and are now accommodated in 12 evacuation centers (inclusive of the 1 under the 11th December floods). Additionally, several homes have been flooded, vehicles swept away by floodwaters and overflowing dams and sewerage facilities, to the loss of basic infrastructure and damage to roads, bridges, and a Limpopo hospital. ([IFRC, 8 Mar 2023](https://reliefweb.int/node/3941520/))",
+  "summary": " In December 2022, floods affected parts of Gauteng and North West Provinces in South Africa, affecting over 40,000 people. In February 2023, heavy rainfall caused floods and river overflow in the Eastern Cape Province, resulting in evacuations and damage. The government declared a National State of Disaster in February 2023 due to the floods, resulting in 48 fatalities, 1,568 displaced people, and damage to infrastructure and roads.",
+  "metadata": {
+    "id": "51427",
+    "name": "South Africa: Floods - Dec 2022",
+    "date_event": 1670630400000,
+    "date_changed": 1682943204000,
+    "date_created": 1672193280000,
+    "primary_country_id": 217,
+    "primary_country_name": "South Africa",
+    "primary_country_iso3": "zaf",
+    "primary_country_location": {
+      "lon": 23.91,
+      "lat": -28.38
+    },
+    "primary_type_id": 4611,
+    "primary_type_code": "FL",
+    "primary_type_name": "Flood"
+  }
+}

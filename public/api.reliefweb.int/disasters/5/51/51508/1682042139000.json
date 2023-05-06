@@ -1,0 +1,82 @@
+{
+  "original": {
+    "id": "51508",
+    "fields": {
+      "date": {
+        "changed": "2023-04-21T01:55:39+00:00",
+        "event": "2023-03-05T00:00:00+00:00",
+        "created": "2023-03-07T05:32:59+00:00"
+      },
+      "primary_type": {
+        "code": "FR",
+        "name": "Fire",
+        "id": 5706
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/31",
+          "name": "Bangladesh",
+          "location": {
+            "lon": 90.27,
+            "lat": 23.84
+          },
+          "id": 31,
+          "shortname": "Bangladesh",
+          "iso3": "bgd",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/31",
+        "name": "Bangladesh",
+        "location": {
+          "lon": 90.27,
+          "lat": 23.84
+        },
+        "id": 31,
+        "shortname": "Bangladesh",
+        "iso3": "bgd"
+      },
+      "profile": {
+        "overview": "In the afternoon of 5 March 2023, a massive and devastating fire broke out in Kutupalong Balukhali refugee camps in Cox’s Bazar, Bangladesh. Flames blazed for some three hours in Camp 11, which is managed by IOM, until the Rohingya refugee Safety Unit Volunteers trained on firefighting, local fire fighters and local authorities managed to contain the fire, around 5pm. Three-wheeler Mobile Fire Fighting Units provided by UNHCR, were deployed from across the camps and helped reach the congested areas. So far, no casualties have been reported. Some 12,000 refugees were displaced, more than 2,000 shelters were destroyed or damaged, and more than 90 facilities were damaged including hospitals and learning centres. [(UNHCR, 5 Mar 2023)](https://reliefweb.int/node/3940215/)\n\nAlthough the cause of the fire incident remains unknown as no official reports have been released by the government, however, the current season, wind intensity and direction as well as the type of materials used for the settlement and density of shelters, have been key contributing factors as to why the fire had spread rapidly and engulfed its surrounding areas. Based on situation reports dated 6 March 2023, more than 3,000 households or more than 15,000 individuals have been affected, with more than 5,000 individuals displaced. More than 2,800 shelters have been damaged (2,664 fully damaged; 141 partially damaged) including their household belongings such as blankets, sleeping mats, clothing, cooking materials, mosquito nets and hygiene related items. More than 1,000 WASH infrastructures were destroyed including three water networks, four Fecal Sludge Managment (FSM) Treatment plants, one Material Recovery Facility (MRF), 153 bathing cubicles, 538 latrine doors, and 351 tube-wells with hand pumps. Moreover, three Health facilities were destroyed, including one Health Post (HP)and two Primary Health Centers (PHCs). In addition, 155 critical infrastructures such as learning centers, Women Friendly Spaces, women-led community center, child friendly space, moktubs/mosques, have been reported to be destroyed including their equipment and materials being used.  [(IFRC, 11 Mar 2023)](https://reliefweb.int/node/3942433/)\n\nAccording to the latest report, there are 15,926 people affected by the recent incident (3,691 men, 4,036 women, 4,121 boys and 4,078 girls). Out of this number, 5,274 people have been displaced from their homes. A total of 2,805 shelters have been damaged, with 2,664 of them being destroyed and 141 partially damaged. 155 facilities have been damaged, and 992 WASH facilities have been damaged. [(ISCG, 20 Apr 2023)](https://reliefweb.int/node/3954672/)",
+        "overview-html": "<p>In the afternoon of 5 March 2023, a massive and devastating fire broke out in Kutupalong Balukhali refugee camps in Cox’s Bazar, Bangladesh. Flames blazed for some three hours in Camp 11, which is managed by IOM, until the Rohingya refugee Safety Unit Volunteers trained on firefighting, local fire fighters and local authorities managed to contain the fire, around 5pm. Three-wheeler Mobile Fire Fighting Units provided by UNHCR, were deployed from across the camps and helped reach the congested areas. So far, no casualties have been reported. Some 12,000 refugees were displaced, more than 2,000 shelters were destroyed or damaged, and more than 90 facilities were damaged including hospitals and learning centres. <a href=\"https://reliefweb.int/node/3940215/\">(UNHCR, 5 Mar 2023)</a></p>\n<p>Although the cause of the fire incident remains unknown as no official reports have been released by the government, however, the current season, wind intensity and direction as well as the type of materials used for the settlement and density of shelters, have been key contributing factors as to why the fire had spread rapidly and engulfed its surrounding areas. Based on situation reports dated 6 March 2023, more than 3,000 households or more than 15,000 individuals have been affected, with more than 5,000 individuals displaced. More than 2,800 shelters have been damaged (2,664 fully damaged; 141 partially damaged) including their household belongings such as blankets, sleeping mats, clothing, cooking materials, mosquito nets and hygiene related items. More than 1,000 WASH infrastructures were destroyed including three water networks, four Fecal Sludge Managment (FSM) Treatment plants, one Material Recovery Facility (MRF), 153 bathing cubicles, 538 latrine doors, and 351 tube-wells with hand pumps. Moreover, three Health facilities were destroyed, including one Health Post (HP)and two Primary Health Centers (PHCs). In addition, 155 critical infrastructures such as learning centers, Women Friendly Spaces, women-led community center, child friendly space, moktubs/mosques, have been reported to be destroyed including their equipment and materials being used.  <a href=\"https://reliefweb.int/node/3942433/\">(IFRC, 11 Mar 2023)</a></p>\n<p>According to the latest report, there are 15,926 people affected by the recent incident (3,691 men, 4,036 women, 4,121 boys and 4,078 girls). Out of this number, 5,274 people have been displaced from their homes. A total of 2,805 shelters have been damaged, with 2,664 of them being destroyed and 141 partially damaged. 155 facilities have been damaged, and 992 WASH facilities have been damaged. <a href=\"https://reliefweb.int/node/3954672/\">(ISCG, 20 Apr 2023)</a></p>\n"
+      },
+      "description-html": "<p>In the afternoon of 5 March 2023, a massive and devastating fire broke out in Kutupalong Balukhali refugee camps in Cox’s Bazar, Bangladesh. Flames blazed for some three hours in Camp 11, which is managed by IOM, until the Rohingya refugee Safety Unit Volunteers trained on firefighting, local fire fighters and local authorities managed to contain the fire, around 5pm. Three-wheeler Mobile Fire Fighting Units provided by UNHCR, were deployed from across the camps and helped reach the congested areas. So far, no casualties have been reported. Some 12,000 refugees were displaced, more than 2,000 shelters were destroyed or damaged, and more than 90 facilities were damaged including hospitals and learning centres. <a href=\"https://reliefweb.int/node/3940215/\">(UNHCR, 5 Mar 2023)</a></p>\n<p>Although the cause of the fire incident remains unknown as no official reports have been released by the government, however, the current season, wind intensity and direction as well as the type of materials used for the settlement and density of shelters, have been key contributing factors as to why the fire had spread rapidly and engulfed its surrounding areas. Based on situation reports dated 6 March 2023, more than 3,000 households or more than 15,000 individuals have been affected, with more than 5,000 individuals displaced. More than 2,800 shelters have been damaged (2,664 fully damaged; 141 partially damaged) including their household belongings such as blankets, sleeping mats, clothing, cooking materials, mosquito nets and hygiene related items. More than 1,000 WASH infrastructures were destroyed including three water networks, four Fecal Sludge Managment (FSM) Treatment plants, one Material Recovery Facility (MRF), 153 bathing cubicles, 538 latrine doors, and 351 tube-wells with hand pumps. Moreover, three Health facilities were destroyed, including one Health Post (HP)and two Primary Health Centers (PHCs). In addition, 155 critical infrastructures such as learning centers, Women Friendly Spaces, women-led community center, child friendly space, moktubs/mosques, have been reported to be destroyed including their equipment and materials being used.  <a href=\"https://reliefweb.int/node/3942433/\">(IFRC, 11 Mar 2023)</a></p>\n<p>According to the latest report, there are 15,926 people affected by the recent incident (3,691 men, 4,036 women, 4,121 boys and 4,078 girls). Out of this number, 5,274 people have been displaced from their homes. A total of 2,805 shelters have been damaged, with 2,664 of them being destroyed and 141 partially damaged. 155 facilities have been damaged, and 992 WASH facilities have been damaged. <a href=\"https://reliefweb.int/node/3954672/\">(ISCG, 20 Apr 2023)</a></p>\n",
+      "description": "In the afternoon of 5 March 2023, a massive and devastating fire broke out in Kutupalong Balukhali refugee camps in Cox’s Bazar, Bangladesh. Flames blazed for some three hours in Camp 11, which is managed by IOM, until the Rohingya refugee Safety Unit Volunteers trained on firefighting, local fire fighters and local authorities managed to contain the fire, around 5pm. Three-wheeler Mobile Fire Fighting Units provided by UNHCR, were deployed from across the camps and helped reach the congested areas. So far, no casualties have been reported. Some 12,000 refugees were displaced, more than 2,000 shelters were destroyed or damaged, and more than 90 facilities were damaged including hospitals and learning centres. [(UNHCR, 5 Mar 2023)](https://reliefweb.int/node/3940215/)\n\nAlthough the cause of the fire incident remains unknown as no official reports have been released by the government, however, the current season, wind intensity and direction as well as the type of materials used for the settlement and density of shelters, have been key contributing factors as to why the fire had spread rapidly and engulfed its surrounding areas. Based on situation reports dated 6 March 2023, more than 3,000 households or more than 15,000 individuals have been affected, with more than 5,000 individuals displaced. More than 2,800 shelters have been damaged (2,664 fully damaged; 141 partially damaged) including their household belongings such as blankets, sleeping mats, clothing, cooking materials, mosquito nets and hygiene related items. More than 1,000 WASH infrastructures were destroyed including three water networks, four Fecal Sludge Managment (FSM) Treatment plants, one Material Recovery Facility (MRF), 153 bathing cubicles, 538 latrine doors, and 351 tube-wells with hand pumps. Moreover, three Health facilities were destroyed, including one Health Post (HP)and two Primary Health Centers (PHCs). In addition, 155 critical infrastructures such as learning centers, Women Friendly Spaces, women-led community center, child friendly space, moktubs/mosques, have been reported to be destroyed including their equipment and materials being used.  [(IFRC, 11 Mar 2023)](https://reliefweb.int/node/3942433/)\n\nAccording to the latest report, there are 15,926 people affected by the recent incident (3,691 men, 4,036 women, 4,121 boys and 4,078 girls). Out of this number, 5,274 people have been displaced from their homes. A total of 2,805 shelters have been damaged, with 2,664 of them being destroyed and 141 partially damaged. 155 facilities have been damaged, and 992 WASH facilities have been damaged. [(ISCG, 20 Apr 2023)](https://reliefweb.int/node/3954672/)",
+      "type": [
+        {
+          "code": "FR",
+          "name": "Fire",
+          "id": 5706,
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/51508",
+      "current": true,
+      "url_alias": "https://reliefweb.int/disaster/fr-2023-000031-bgd",
+      "name": "Bangladesh: Cox’s Bazar Camp Settlement Fire - Mar 2023",
+      "id": 51508,
+      "glide": "FR-2023-000031-BGD",
+      "status": "ongoing"
+    }
+  },
+  "text": "Bangladesh: Cox’s Bazar Camp Settlement Fire - Mar 2023\n\nIn the afternoon of 5 March 2023, a massive and devastating fire broke out in Kutupalong Balukhali refugee camps in Cox’s Bazar, Bangladesh. Flames blazed for some three hours in Camp 11, which is managed by IOM, until the Rohingya refugee Safety Unit Volunteers trained on firefighting, local fire fighters and local authorities managed to contain the fire, around 5pm. Three-wheeler Mobile Fire Fighting Units provided by UNHCR, were deployed from across the camps and helped reach the congested areas. So far, no casualties have been reported. Some 12,000 refugees were displaced, more than 2,000 shelters were destroyed or damaged, and more than 90 facilities were damaged including hospitals and learning centres. [(UNHCR, 5 Mar 2023)](https://reliefweb.int/node/3940215/)\n\nAlthough the cause of the fire incident remains unknown as no official reports have been released by the government, however, the current season, wind intensity and direction as well as the type of materials used for the settlement and density of shelters, have been key contributing factors as to why the fire had spread rapidly and engulfed its surrounding areas. Based on situation reports dated 6 March 2023, more than 3,000 households or more than 15,000 individuals have been affected, with more than 5,000 individuals displaced. More than 2,800 shelters have been damaged (2,664 fully damaged; 141 partially damaged) including their household belongings such as blankets, sleeping mats, clothing, cooking materials, mosquito nets and hygiene related items. More than 1,000 WASH infrastructures were destroyed including three water networks, four Fecal Sludge Managment (FSM) Treatment plants, one Material Recovery Facility (MRF), 153 bathing cubicles, 538 latrine doors, and 351 tube-wells with hand pumps. Moreover, three Health facilities were destroyed, including one Health Post (HP)and two Primary Health Centers (PHCs). In addition, 155 critical infrastructures such as learning centers, Women Friendly Spaces, women-led community center, child friendly space, moktubs/mosques, have been reported to be destroyed including their equipment and materials being used.  [(IFRC, 11 Mar 2023)](https://reliefweb.int/node/3942433/)\n\nAccording to the latest report, there are 15,926 people affected by the recent incident (3,691 men, 4,036 women, 4,121 boys and 4,078 girls). Out of this number, 5,274 people have been displaced from their homes. A total of 2,805 shelters have been damaged, with 2,664 of them being destroyed and 141 partially damaged. 155 facilities have been damaged, and 992 WASH facilities have been damaged. [(ISCG, 20 Apr 2023)](https://reliefweb.int/node/3954672/)",
+  "summary": " On 5 March 2023, a massive fire broke out in Kutupalong Balukhali refugee camps in Cox’s Bazar, Bangladesh. The fire was contained after three hours, with no casualties reported. However, 12,000 refugees were displaced, more than 2,000 shelters were destroyed or damaged, and more than 90 facilities were damaged including hospitals and learning centres. The cause of the fire is unknown, but the season, wind intensity and direction, type of materials used for the settlement, and density of shelters are believed to be contributing factors. According to the latest report, 15,926 people have been affected, with 5,274 displaced from their homes, 2,805 shelters damaged, 155 facilities damaged, and 992 WASH facilities damaged.",
+  "metadata": {
+    "id": "51508",
+    "name": "Bangladesh: Cox’s Bazar Camp Settlement Fire - Mar 2023",
+    "date_event": 1677974400000,
+    "date_changed": 1682042139000,
+    "date_created": 1678167179000,
+    "primary_country_id": 31,
+    "primary_country_name": "Bangladesh",
+    "primary_country_iso3": "bgd",
+    "primary_country_location": {
+      "lon": 90.27,
+      "lat": 23.84
+    },
+    "primary_type_id": 5706,
+    "primary_type_code": "FR",
+    "primary_type_name": "Fire"
+  }
+}

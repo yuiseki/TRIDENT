@@ -1,0 +1,82 @@
+{
+  "original": {
+    "id": "51537",
+    "fields": {
+      "date": {
+        "changed": "2023-05-01T11:12:37+00:00",
+        "event": "2023-03-16T00:00:00+00:00",
+        "created": "2023-03-30T13:04:08+00:00"
+      },
+      "primary_type": {
+        "code": "EP",
+        "name": "Epidemic",
+        "id": 4642
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/244",
+          "name": "United Republic of Tanzania",
+          "location": {
+            "lon": 34.82,
+            "lat": -6.27
+          },
+          "id": 244,
+          "shortname": "Tanzania",
+          "iso3": "tza",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/244",
+        "name": "United Republic of Tanzania",
+        "location": {
+          "lon": 34.82,
+          "lat": -6.27
+        },
+        "id": 244,
+        "shortname": "Tanzania",
+        "iso3": "tza"
+      },
+      "profile": {
+        "overview": "On 16 March 2023, the Ministry of Health (MOH) of the Republic of Tanzania announced that seven cases and five deaths of an unknown disease had been reported in Kagera region (that borders Rwanda, Uganda, and Burundi) in Bukoba rural, Maruku and Kanyengereko ward in Bulinda and Butayaibega villages. The cases were confirmed for Marburg Virus Disease (MVD) on 21 March 2023. The index case was reported to have a travel history from Goziba in Lake Victoria and developed symptoms upon returning to his village in Bukoba while the timeline for exposure and onset of symptoms remains unknown. Four other cases were from the same family as the index case. Two healthcare workers were also infected and one of them succumbed to the disease. This is the first officially declared Marburg Outbreak in Tanzania, although serological studies have found the presence of Marburg in bat populations in the region. As of 22 March 2023, a total of eight cases including five deaths (CFR 63.6%) have been reported, while another three cases are currently undergoing treatment in health facilities in the Kagera region. ([IFRC, 30 Mar 2023](https://reliefweb.int/node/3948419))\n\nA total of 17 confirmed cases and 12 deaths since the declaration of the outbreak on 13 February 2023 through 21 April 2023 have been reported. Among the 17 confirmed cases, three are survivors, 12 deaths, one is admitted and one with unknown outcome. ([IFRC, 27 Apr 2023](https://reliefweb.int/node/3956535))",
+        "overview-html": "<p>On 16 March 2023, the Ministry of Health (MOH) of the Republic of Tanzania announced that seven cases and five deaths of an unknown disease had been reported in Kagera region (that borders Rwanda, Uganda, and Burundi) in Bukoba rural, Maruku and Kanyengereko ward in Bulinda and Butayaibega villages. The cases were confirmed for Marburg Virus Disease (MVD) on 21 March 2023. The index case was reported to have a travel history from Goziba in Lake Victoria and developed symptoms upon returning to his village in Bukoba while the timeline for exposure and onset of symptoms remains unknown. Four other cases were from the same family as the index case. Two healthcare workers were also infected and one of them succumbed to the disease. This is the first officially declared Marburg Outbreak in Tanzania, although serological studies have found the presence of Marburg in bat populations in the region. As of 22 March 2023, a total of eight cases including five deaths (CFR 63.6%) have been reported, while another three cases are currently undergoing treatment in health facilities in the Kagera region. (<a href=\"https://reliefweb.int/node/3948419\">IFRC, 30 Mar 2023</a>)</p>\n<p>A total of 17 confirmed cases and 12 deaths since the declaration of the outbreak on 13 February 2023 through 21 April 2023 have been reported. Among the 17 confirmed cases, three are survivors, 12 deaths, one is admitted and one with unknown outcome. (<a href=\"https://reliefweb.int/node/3956535\">IFRC, 27 Apr 2023</a>)</p>\n"
+      },
+      "description-html": "<p>On 16 March 2023, the Ministry of Health (MOH) of the Republic of Tanzania announced that seven cases and five deaths of an unknown disease had been reported in Kagera region (that borders Rwanda, Uganda, and Burundi) in Bukoba rural, Maruku and Kanyengereko ward in Bulinda and Butayaibega villages. The cases were confirmed for Marburg Virus Disease (MVD) on 21 March 2023. The index case was reported to have a travel history from Goziba in Lake Victoria and developed symptoms upon returning to his village in Bukoba while the timeline for exposure and onset of symptoms remains unknown. Four other cases were from the same family as the index case. Two healthcare workers were also infected and one of them succumbed to the disease. This is the first officially declared Marburg Outbreak in Tanzania, although serological studies have found the presence of Marburg in bat populations in the region. As of 22 March 2023, a total of eight cases including five deaths (CFR 63.6%) have been reported, while another three cases are currently undergoing treatment in health facilities in the Kagera region. (<a href=\"https://reliefweb.int/node/3948419\">IFRC, 30 Mar 2023</a>)</p>\n<p>A total of 17 confirmed cases and 12 deaths since the declaration of the outbreak on 13 February 2023 through 21 April 2023 have been reported. Among the 17 confirmed cases, three are survivors, 12 deaths, one is admitted and one with unknown outcome. (<a href=\"https://reliefweb.int/node/3956535\">IFRC, 27 Apr 2023</a>)</p>\n",
+      "description": "On 16 March 2023, the Ministry of Health (MOH) of the Republic of Tanzania announced that seven cases and five deaths of an unknown disease had been reported in Kagera region (that borders Rwanda, Uganda, and Burundi) in Bukoba rural, Maruku and Kanyengereko ward in Bulinda and Butayaibega villages. The cases were confirmed for Marburg Virus Disease (MVD) on 21 March 2023. The index case was reported to have a travel history from Goziba in Lake Victoria and developed symptoms upon returning to his village in Bukoba while the timeline for exposure and onset of symptoms remains unknown. Four other cases were from the same family as the index case. Two healthcare workers were also infected and one of them succumbed to the disease. This is the first officially declared Marburg Outbreak in Tanzania, although serological studies have found the presence of Marburg in bat populations in the region. As of 22 March 2023, a total of eight cases including five deaths (CFR 63.6%) have been reported, while another three cases are currently undergoing treatment in health facilities in the Kagera region. ([IFRC, 30 Mar 2023](https://reliefweb.int/node/3948419))\n\nA total of 17 confirmed cases and 12 deaths since the declaration of the outbreak on 13 February 2023 through 21 April 2023 have been reported. Among the 17 confirmed cases, three are survivors, 12 deaths, one is admitted and one with unknown outcome. ([IFRC, 27 Apr 2023](https://reliefweb.int/node/3956535))",
+      "type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642,
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/51537",
+      "current": true,
+      "url_alias": "https://reliefweb.int/disaster/ep-2023-000047-tza",
+      "name": "Tanzania: Marburg Virus Disease Outbreak - Mar 2023",
+      "id": 51537,
+      "glide": "EP-2023-000047-TZA",
+      "status": "ongoing"
+    }
+  },
+  "text": "Tanzania: Marburg Virus Disease Outbreak - Mar 2023\n\nOn 16 March 2023, the Ministry of Health (MOH) of the Republic of Tanzania announced that seven cases and five deaths of an unknown disease had been reported in Kagera region (that borders Rwanda, Uganda, and Burundi) in Bukoba rural, Maruku and Kanyengereko ward in Bulinda and Butayaibega villages. The cases were confirmed for Marburg Virus Disease (MVD) on 21 March 2023. The index case was reported to have a travel history from Goziba in Lake Victoria and developed symptoms upon returning to his village in Bukoba while the timeline for exposure and onset of symptoms remains unknown. Four other cases were from the same family as the index case. Two healthcare workers were also infected and one of them succumbed to the disease. This is the first officially declared Marburg Outbreak in Tanzania, although serological studies have found the presence of Marburg in bat populations in the region. As of 22 March 2023, a total of eight cases including five deaths (CFR 63.6%) have been reported, while another three cases are currently undergoing treatment in health facilities in the Kagera region. ([IFRC, 30 Mar 2023](https://reliefweb.int/node/3948419))\n\nA total of 17 confirmed cases and 12 deaths since the declaration of the outbreak on 13 February 2023 through 21 April 2023 have been reported. Among the 17 confirmed cases, three are survivors, 12 deaths, one is admitted and one with unknown outcome. ([IFRC, 27 Apr 2023](https://reliefweb.int/node/3956535))",
+  "summary": " On March 16th, 2023, the Ministry of Health of Tanzania announced seven cases and five deaths of an unknown disease in the Kagera region. The cases were later confirmed to be Marburg Virus Disease (MVD). As of April 21st, 2023, there have been 17 confirmed cases and 12 deaths reported, with three survivors, one admitted, and one with an unknown outcome.",
+  "metadata": {
+    "id": "51537",
+    "name": "Tanzania: Marburg Virus Disease Outbreak - Mar 2023",
+    "date_event": 1678924800000,
+    "date_changed": 1682939557000,
+    "date_created": 1680181448000,
+    "primary_country_id": 244,
+    "primary_country_name": "United Republic of Tanzania",
+    "primary_country_iso3": "tza",
+    "primary_country_location": {
+      "lon": 34.82,
+      "lat": -6.27
+    },
+    "primary_type_id": 4642,
+    "primary_type_code": "EP",
+    "primary_type_name": "Epidemic"
+  }
+}

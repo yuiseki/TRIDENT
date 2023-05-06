@@ -1,0 +1,87 @@
+{
+  "original": {
+    "id": "51420",
+    "fields": {
+      "date": {
+        "changed": "2023-04-19T11:55:20+00:00",
+        "event": "2022-12-13T00:00:00+00:00",
+        "created": "2022-12-14T20:54:56+00:00"
+      },
+      "primary_type": {
+        "code": "FL",
+        "name": "Flood",
+        "id": 4611
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/75",
+          "name": "Democratic Republic of the Congo",
+          "location": {
+            "lon": 21.7587,
+            "lat": -4.03833
+          },
+          "id": 75,
+          "shortname": "DR Congo",
+          "iso3": "cod",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/75",
+        "name": "Democratic Republic of the Congo",
+        "location": {
+          "lon": 21.7587,
+          "lat": -4.03833
+        },
+        "id": 75,
+        "shortname": "DR Congo",
+        "iso3": "cod"
+      },
+      "profile": {
+        "overview": "Flooding caused by heavy rains has caused loss of life and extensive property damages and the destruction of critical infrastructure in Kinshasa, the capital of the Democratic Republic of Congo (DRC), on the night of 12 to 13 December. According to the Congolese authorities, at least 120 people died, nearly 39,000 households were flooded and at least 282 houses were destroyed, leaving many families homeless. ([OCHA, 14 Dec 2022](https://reliefweb.int/node/3916360))\n\nAs of 16 December, the Congolese authorities reported that at least 169 people have died; around 30 were injured and receiving treatment in hospitals across the city and at least 280 houses were destroyed. Mont-Ngafula and Ngaliema are the hardest hit areas by the heavy downpour which has affected around 38,000 people across the city, according to the Government. ([OCHA, 16 Dec 2022](https://reliefweb.int/node/3917054))\n\nOn 29-30 December, a number of landslides caused by heavy rainfall occurred in South Kivu Province in the eastern Democratic Republic of Congo (DRC), resulting in casualties. According to media reports, at least 10 people died, nine others have been injured and a number of individuals are missing. Moderate to locally heavy rainfall is forecast on 4-7 January over western, southern and eastern DRC, including South Kivu Province. ([ECHO, 4 Jan 2023](https://reliefweb.int/node/3921264))\n\nSouth Kivu province located in the far eastern Democratic Republic of the Congo (DRC) continues to be affected by floods and landslides caused by heavy rainfall, which have resulted in an increased humanitarian impact. According to media reports, five additional fatalities occurred on 4-5 January in Bukavu city, where several people had to be rescued and at least eight individuals were injured. Several parts of the city were damaged, including some road sections and a number of houses, leaving some residents displaced. On 9-11 January, moderate to locally heavy rainfall is forecast over southern, central-eastern and eastern DRC, including South Kivu Province. ([ECHO, 9 Jan 2023](https://reliefweb.int/node/3922183))\n\nHeavy rainfall and thunderstorms affected the southern Democratic Republic of the Congo, in particular the Kasaï Central Province, over the period from 15 to 17 April, causing some severe weather-related incidents (particularly due to lightning) that have resulted in casualties and damage. Media report, as of 19 April, eight fatalities and one heavily damaged house in the Tshimbulu Town (eastern Kasaï Central Province) due to lightning which occurred on 15-16 April. Over the next 24 hours, very heavy rainfall is still forecast over most of the Country, including the already affected Kasaï Central Province. ([ECHO, 19 Apr 2023](https://reliefweb.int/node/3954303))",
+        "overview-html": "<p>Flooding caused by heavy rains has caused loss of life and extensive property damages and the destruction of critical infrastructure in Kinshasa, the capital of the Democratic Republic of Congo (DRC), on the night of 12 to 13 December. According to the Congolese authorities, at least 120 people died, nearly 39,000 households were flooded and at least 282 houses were destroyed, leaving many families homeless. (<a href=\"https://reliefweb.int/node/3916360\">OCHA, 14 Dec 2022</a>)</p>\n<p>As of 16 December, the Congolese authorities reported that at least 169 people have died; around 30 were injured and receiving treatment in hospitals across the city and at least 280 houses were destroyed. Mont-Ngafula and Ngaliema are the hardest hit areas by the heavy downpour which has affected around 38,000 people across the city, according to the Government. (<a href=\"https://reliefweb.int/node/3917054\">OCHA, 16 Dec 2022</a>)</p>\n<p>On 29-30 December, a number of landslides caused by heavy rainfall occurred in South Kivu Province in the eastern Democratic Republic of Congo (DRC), resulting in casualties. According to media reports, at least 10 people died, nine others have been injured and a number of individuals are missing. Moderate to locally heavy rainfall is forecast on 4-7 January over western, southern and eastern DRC, including South Kivu Province. (<a href=\"https://reliefweb.int/node/3921264\">ECHO, 4 Jan 2023</a>)</p>\n<p>South Kivu province located in the far eastern Democratic Republic of the Congo (DRC) continues to be affected by floods and landslides caused by heavy rainfall, which have resulted in an increased humanitarian impact. According to media reports, five additional fatalities occurred on 4-5 January in Bukavu city, where several people had to be rescued and at least eight individuals were injured. Several parts of the city were damaged, including some road sections and a number of houses, leaving some residents displaced. On 9-11 January, moderate to locally heavy rainfall is forecast over southern, central-eastern and eastern DRC, including South Kivu Province. (<a href=\"https://reliefweb.int/node/3922183\">ECHO, 9 Jan 2023</a>)</p>\n<p>Heavy rainfall and thunderstorms affected the southern Democratic Republic of the Congo, in particular the Kasaï Central Province, over the period from 15 to 17 April, causing some severe weather-related incidents (particularly due to lightning) that have resulted in casualties and damage. Media report, as of 19 April, eight fatalities and one heavily damaged house in the Tshimbulu Town (eastern Kasaï Central Province) due to lightning which occurred on 15-16 April. Over the next 24 hours, very heavy rainfall is still forecast over most of the Country, including the already affected Kasaï Central Province. (<a href=\"https://reliefweb.int/node/3954303\">ECHO, 19 Apr 2023</a>)</p>\n"
+      },
+      "description-html": "<p>Flooding caused by heavy rains has caused loss of life and extensive property damages and the destruction of critical infrastructure in Kinshasa, the capital of the Democratic Republic of Congo (DRC), on the night of 12 to 13 December. According to the Congolese authorities, at least 120 people died, nearly 39,000 households were flooded and at least 282 houses were destroyed, leaving many families homeless. (<a href=\"https://reliefweb.int/node/3916360\">OCHA, 14 Dec 2022</a>)</p>\n<p>As of 16 December, the Congolese authorities reported that at least 169 people have died; around 30 were injured and receiving treatment in hospitals across the city and at least 280 houses were destroyed. Mont-Ngafula and Ngaliema are the hardest hit areas by the heavy downpour which has affected around 38,000 people across the city, according to the Government. (<a href=\"https://reliefweb.int/node/3917054\">OCHA, 16 Dec 2022</a>)</p>\n<p>On 29-30 December, a number of landslides caused by heavy rainfall occurred in South Kivu Province in the eastern Democratic Republic of Congo (DRC), resulting in casualties. According to media reports, at least 10 people died, nine others have been injured and a number of individuals are missing. Moderate to locally heavy rainfall is forecast on 4-7 January over western, southern and eastern DRC, including South Kivu Province. (<a href=\"https://reliefweb.int/node/3921264\">ECHO, 4 Jan 2023</a>)</p>\n<p>South Kivu province located in the far eastern Democratic Republic of the Congo (DRC) continues to be affected by floods and landslides caused by heavy rainfall, which have resulted in an increased humanitarian impact. According to media reports, five additional fatalities occurred on 4-5 January in Bukavu city, where several people had to be rescued and at least eight individuals were injured. Several parts of the city were damaged, including some road sections and a number of houses, leaving some residents displaced. On 9-11 January, moderate to locally heavy rainfall is forecast over southern, central-eastern and eastern DRC, including South Kivu Province. (<a href=\"https://reliefweb.int/node/3922183\">ECHO, 9 Jan 2023</a>)</p>\n<p>Heavy rainfall and thunderstorms affected the southern Democratic Republic of the Congo, in particular the Kasaï Central Province, over the period from 15 to 17 April, causing some severe weather-related incidents (particularly due to lightning) that have resulted in casualties and damage. Media report, as of 19 April, eight fatalities and one heavily damaged house in the Tshimbulu Town (eastern Kasaï Central Province) due to lightning which occurred on 15-16 April. Over the next 24 hours, very heavy rainfall is still forecast over most of the Country, including the already affected Kasaï Central Province. (<a href=\"https://reliefweb.int/node/3954303\">ECHO, 19 Apr 2023</a>)</p>\n",
+      "description": "Flooding caused by heavy rains has caused loss of life and extensive property damages and the destruction of critical infrastructure in Kinshasa, the capital of the Democratic Republic of Congo (DRC), on the night of 12 to 13 December. According to the Congolese authorities, at least 120 people died, nearly 39,000 households were flooded and at least 282 houses were destroyed, leaving many families homeless. ([OCHA, 14 Dec 2022](https://reliefweb.int/node/3916360))\n\nAs of 16 December, the Congolese authorities reported that at least 169 people have died; around 30 were injured and receiving treatment in hospitals across the city and at least 280 houses were destroyed. Mont-Ngafula and Ngaliema are the hardest hit areas by the heavy downpour which has affected around 38,000 people across the city, according to the Government. ([OCHA, 16 Dec 2022](https://reliefweb.int/node/3917054))\n\nOn 29-30 December, a number of landslides caused by heavy rainfall occurred in South Kivu Province in the eastern Democratic Republic of Congo (DRC), resulting in casualties. According to media reports, at least 10 people died, nine others have been injured and a number of individuals are missing. Moderate to locally heavy rainfall is forecast on 4-7 January over western, southern and eastern DRC, including South Kivu Province. ([ECHO, 4 Jan 2023](https://reliefweb.int/node/3921264))\n\nSouth Kivu province located in the far eastern Democratic Republic of the Congo (DRC) continues to be affected by floods and landslides caused by heavy rainfall, which have resulted in an increased humanitarian impact. According to media reports, five additional fatalities occurred on 4-5 January in Bukavu city, where several people had to be rescued and at least eight individuals were injured. Several parts of the city were damaged, including some road sections and a number of houses, leaving some residents displaced. On 9-11 January, moderate to locally heavy rainfall is forecast over southern, central-eastern and eastern DRC, including South Kivu Province. ([ECHO, 9 Jan 2023](https://reliefweb.int/node/3922183))\n\nHeavy rainfall and thunderstorms affected the southern Democratic Republic of the Congo, in particular the Kasaï Central Province, over the period from 15 to 17 April, causing some severe weather-related incidents (particularly due to lightning) that have resulted in casualties and damage. Media report, as of 19 April, eight fatalities and one heavily damaged house in the Tshimbulu Town (eastern Kasaï Central Province) due to lightning which occurred on 15-16 April. Over the next 24 hours, very heavy rainfall is still forecast over most of the Country, including the already affected Kasaï Central Province. ([ECHO, 19 Apr 2023](https://reliefweb.int/node/3954303))",
+      "type": [
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611,
+          "primary": true
+        },
+        {
+          "code": "LS",
+          "name": "Land Slide",
+          "id": 4728
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/51420",
+      "current": true,
+      "url_alias": "https://reliefweb.int/disaster/fl-2022-000376-cod",
+      "name": "DR Congo: Floods and Landslides - Dec 2022",
+      "id": 51420,
+      "glide": "FL-2022-000376-COD",
+      "status": "ongoing"
+    }
+  },
+  "text": "DR Congo: Floods and Landslides - Dec 2022\n\nFlooding caused by heavy rains has caused loss of life and extensive property damages and the destruction of critical infrastructure in Kinshasa, the capital of the Democratic Republic of Congo (DRC), on the night of 12 to 13 December. According to the Congolese authorities, at least 120 people died, nearly 39,000 households were flooded and at least 282 houses were destroyed, leaving many families homeless. ([OCHA, 14 Dec 2022](https://reliefweb.int/node/3916360))\n\nAs of 16 December, the Congolese authorities reported that at least 169 people have died; around 30 were injured and receiving treatment in hospitals across the city and at least 280 houses were destroyed. Mont-Ngafula and Ngaliema are the hardest hit areas by the heavy downpour which has affected around 38,000 people across the city, according to the Government. ([OCHA, 16 Dec 2022](https://reliefweb.int/node/3917054))\n\nOn 29-30 December, a number of landslides caused by heavy rainfall occurred in South Kivu Province in the eastern Democratic Republic of Congo (DRC), resulting in casualties. According to media reports, at least 10 people died, nine others have been injured and a number of individuals are missing. Moderate to locally heavy rainfall is forecast on 4-7 January over western, southern and eastern DRC, including South Kivu Province. ([ECHO, 4 Jan 2023](https://reliefweb.int/node/3921264))\n\nSouth Kivu province located in the far eastern Democratic Republic of the Congo (DRC) continues to be affected by floods and landslides caused by heavy rainfall, which have resulted in an increased humanitarian impact. According to media reports, five additional fatalities occurred on 4-5 January in Bukavu city, where several people had to be rescued and at least eight individuals were injured. Several parts of the city were damaged, including some road sections and a number of houses, leaving some residents displaced. On 9-11 January, moderate to locally heavy rainfall is forecast over southern, central-eastern and eastern DRC, including South Kivu Province. ([ECHO, 9 Jan 2023](https://reliefweb.int/node/3922183))\n\nHeavy rainfall and thunderstorms affected the southern Democratic Republic of the Congo, in particular the Kasaï Central Province, over the period from 15 to 17 April, causing some severe weather-related incidents (particularly due to lightning) that have resulted in casualties and damage. Media report, as of 19 April, eight fatalities and one heavily damaged house in the Tshimbulu Town (eastern Kasaï Central Province) due to lightning which occurred on 15-16 April. Over the next 24 hours, very heavy rainfall is still forecast over most of the Country, including the already affected Kasaï Central Province. ([ECHO, 19 Apr 2023](https://reliefweb.int/node/3954303))",
+  "summary": " Heavy rainfall in the Democratic Republic of Congo (DRC) has caused flooding, landslides, and lightning incidents resulting in loss of life and destruction of property. As of April 19th, at least 169 people have died, 30 have been injured, and 280 houses have been destroyed due to the flooding and landslides. Additionally, 8 fatalities and 1 heavily damaged house have been reported due to lightning.",
+  "metadata": {
+    "id": "51420",
+    "name": "DR Congo: Floods and Landslides - Dec 2022",
+    "date_event": 1670889600000,
+    "date_changed": 1681905320000,
+    "date_created": 1671051296000,
+    "primary_country_id": 75,
+    "primary_country_name": "Democratic Republic of the Congo",
+    "primary_country_iso3": "cod",
+    "primary_country_location": {
+      "lon": 21.7587,
+      "lat": -4.03833
+    },
+    "primary_type_id": 4611,
+    "primary_type_code": "FL",
+    "primary_type_name": "Flood"
+  }
+}

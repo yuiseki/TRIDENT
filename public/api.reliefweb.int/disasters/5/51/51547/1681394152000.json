@@ -1,0 +1,82 @@
+{
+  "original": {
+    "id": "51547",
+    "fields": {
+      "date": {
+        "changed": "2023-04-13T13:55:52+00:00",
+        "event": "2023-03-23T00:00:00+00:00",
+        "created": "2023-04-13T13:54:42+00:00"
+      },
+      "primary_type": {
+        "code": "EQ",
+        "name": "Earthquake",
+        "id": 4628
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/227",
+          "name": "Tajikistan",
+          "location": {
+            "lon": 71.04,
+            "lat": 38.84
+          },
+          "id": 227,
+          "shortname": "Tajikistan",
+          "iso3": "tjk",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/227",
+        "name": "Tajikistan",
+        "location": {
+          "lon": 71.04,
+          "lat": 38.84
+        },
+        "id": 227,
+        "shortname": "Tajikistan",
+        "iso3": "tjk"
+      },
+      "profile": {
+        "overview": "On 23 March 2023, two earthquakes were registered on the territory of Tajikistan. The first one occurred at 1:07 local time. The epicenter of the earthquake was registered 6-7 km away from Paldorak village, Langar rural jamoat of Kuhistoni Mastchoh district of Sughd Region. The intensity of the first tremors was of 5 to 6 magnitude in the aforementioned districts, 4 to 5 magnitude in Rasht district, and 3 to 4 magnitude as measured in Dushanbe city. The second earthquake occurred at a depth of 40 km at 07:53 local time, with a magnitude of 4.8. In Dushanbe, the intensity of the tremors was 1 to 2 magnitudes and a tremor of 2 magnitudes struck Rasht district. According to preliminary information, no deaths were reported, however, three residents of the Kuhistoni Mastchoh district were injured. On 28 March 2023, Tajikistan Governmental Commission on damages identified the scale of damages and losses, that include 318 damaged houses in Kuhistoni Mashoh district of Sughd province. All damaged properties were inspected by the Emergency Situations Commission in Paldorak, Yarm, and Pakshif villages of Langar rural jamoat of Kuhistoni Mashoh district. Paldorak village was affected the most with 165 houses damaged. In Pakshif village 49 houses, in Yarm- 23, in Dashti Miyona -11, in Dehmanoro -18, in Rogh - 44, in Samjon - 7 and in Khudqifi Bolo -7 houses were damaged by the earthquake. All damaged houses and auxiliary structures were built in the 1970s and 80s. The damaged structures are located on hills and had weak foundations, the earthquake has damaged walls and timber structures, rendering these homes unsafe. ([IFRC, 13 Apr 2023](https://reliefweb.int/node/3952727))",
+        "overview-html": "<p>On 23 March 2023, two earthquakes were registered on the territory of Tajikistan. The first one occurred at 1:07 local time. The epicenter of the earthquake was registered 6-7 km away from Paldorak village, Langar rural jamoat of Kuhistoni Mastchoh district of Sughd Region. The intensity of the first tremors was of 5 to 6 magnitude in the aforementioned districts, 4 to 5 magnitude in Rasht district, and 3 to 4 magnitude as measured in Dushanbe city. The second earthquake occurred at a depth of 40 km at 07:53 local time, with a magnitude of 4.8. In Dushanbe, the intensity of the tremors was 1 to 2 magnitudes and a tremor of 2 magnitudes struck Rasht district. According to preliminary information, no deaths were reported, however, three residents of the Kuhistoni Mastchoh district were injured. On 28 March 2023, Tajikistan Governmental Commission on damages identified the scale of damages and losses, that include 318 damaged houses in Kuhistoni Mashoh district of Sughd province. All damaged properties were inspected by the Emergency Situations Commission in Paldorak, Yarm, and Pakshif villages of Langar rural jamoat of Kuhistoni Mashoh district. Paldorak village was affected the most with 165 houses damaged. In Pakshif village 49 houses, in Yarm- 23, in Dashti Miyona -11, in Dehmanoro -18, in Rogh - 44, in Samjon - 7 and in Khudqifi Bolo -7 houses were damaged by the earthquake. All damaged houses and auxiliary structures were built in the 1970s and 80s. The damaged structures are located on hills and had weak foundations, the earthquake has damaged walls and timber structures, rendering these homes unsafe. (<a href=\"https://reliefweb.int/node/3952727\">IFRC, 13 Apr 2023</a>)</p>\n"
+      },
+      "description-html": "<p>On 23 March 2023, two earthquakes were registered on the territory of Tajikistan. The first one occurred at 1:07 local time. The epicenter of the earthquake was registered 6-7 km away from Paldorak village, Langar rural jamoat of Kuhistoni Mastchoh district of Sughd Region. The intensity of the first tremors was of 5 to 6 magnitude in the aforementioned districts, 4 to 5 magnitude in Rasht district, and 3 to 4 magnitude as measured in Dushanbe city. The second earthquake occurred at a depth of 40 km at 07:53 local time, with a magnitude of 4.8. In Dushanbe, the intensity of the tremors was 1 to 2 magnitudes and a tremor of 2 magnitudes struck Rasht district. According to preliminary information, no deaths were reported, however, three residents of the Kuhistoni Mastchoh district were injured. On 28 March 2023, Tajikistan Governmental Commission on damages identified the scale of damages and losses, that include 318 damaged houses in Kuhistoni Mashoh district of Sughd province. All damaged properties were inspected by the Emergency Situations Commission in Paldorak, Yarm, and Pakshif villages of Langar rural jamoat of Kuhistoni Mashoh district. Paldorak village was affected the most with 165 houses damaged. In Pakshif village 49 houses, in Yarm- 23, in Dashti Miyona -11, in Dehmanoro -18, in Rogh - 44, in Samjon - 7 and in Khudqifi Bolo -7 houses were damaged by the earthquake. All damaged houses and auxiliary structures were built in the 1970s and 80s. The damaged structures are located on hills and had weak foundations, the earthquake has damaged walls and timber structures, rendering these homes unsafe. (<a href=\"https://reliefweb.int/node/3952727\">IFRC, 13 Apr 2023</a>)</p>\n",
+      "description": "On 23 March 2023, two earthquakes were registered on the territory of Tajikistan. The first one occurred at 1:07 local time. The epicenter of the earthquake was registered 6-7 km away from Paldorak village, Langar rural jamoat of Kuhistoni Mastchoh district of Sughd Region. The intensity of the first tremors was of 5 to 6 magnitude in the aforementioned districts, 4 to 5 magnitude in Rasht district, and 3 to 4 magnitude as measured in Dushanbe city. The second earthquake occurred at a depth of 40 km at 07:53 local time, with a magnitude of 4.8. In Dushanbe, the intensity of the tremors was 1 to 2 magnitudes and a tremor of 2 magnitudes struck Rasht district. According to preliminary information, no deaths were reported, however, three residents of the Kuhistoni Mastchoh district were injured. On 28 March 2023, Tajikistan Governmental Commission on damages identified the scale of damages and losses, that include 318 damaged houses in Kuhistoni Mashoh district of Sughd province. All damaged properties were inspected by the Emergency Situations Commission in Paldorak, Yarm, and Pakshif villages of Langar rural jamoat of Kuhistoni Mashoh district. Paldorak village was affected the most with 165 houses damaged. In Pakshif village 49 houses, in Yarm- 23, in Dashti Miyona -11, in Dehmanoro -18, in Rogh - 44, in Samjon - 7 and in Khudqifi Bolo -7 houses were damaged by the earthquake. All damaged houses and auxiliary structures were built in the 1970s and 80s. The damaged structures are located on hills and had weak foundations, the earthquake has damaged walls and timber structures, rendering these homes unsafe. ([IFRC, 13 Apr 2023](https://reliefweb.int/node/3952727))",
+      "type": [
+        {
+          "code": "EQ",
+          "name": "Earthquake",
+          "id": 4628,
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/51547",
+      "current": true,
+      "url_alias": "https://reliefweb.int/disaster/eq-2023-000043-tjk",
+      "name": "Tajikistan: Earthquake - Mar 2023",
+      "id": 51547,
+      "glide": "EQ-2023-000043-TJK",
+      "status": "ongoing"
+    }
+  },
+  "text": "Tajikistan: Earthquake - Mar 2023\n\nOn 23 March 2023, two earthquakes were registered on the territory of Tajikistan. The first one occurred at 1:07 local time. The epicenter of the earthquake was registered 6-7 km away from Paldorak village, Langar rural jamoat of Kuhistoni Mastchoh district of Sughd Region. The intensity of the first tremors was of 5 to 6 magnitude in the aforementioned districts, 4 to 5 magnitude in Rasht district, and 3 to 4 magnitude as measured in Dushanbe city. The second earthquake occurred at a depth of 40 km at 07:53 local time, with a magnitude of 4.8. In Dushanbe, the intensity of the tremors was 1 to 2 magnitudes and a tremor of 2 magnitudes struck Rasht district. According to preliminary information, no deaths were reported, however, three residents of the Kuhistoni Mastchoh district were injured. On 28 March 2023, Tajikistan Governmental Commission on damages identified the scale of damages and losses, that include 318 damaged houses in Kuhistoni Mashoh district of Sughd province. All damaged properties were inspected by the Emergency Situations Commission in Paldorak, Yarm, and Pakshif villages of Langar rural jamoat of Kuhistoni Mashoh district. Paldorak village was affected the most with 165 houses damaged. In Pakshif village 49 houses, in Yarm- 23, in Dashti Miyona -11, in Dehmanoro -18, in Rogh - 44, in Samjon - 7 and in Khudqifi Bolo -7 houses were damaged by the earthquake. All damaged houses and auxiliary structures were built in the 1970s and 80s. The damaged structures are located on hills and had weak foundations, the earthquake has damaged walls and timber structures, rendering these homes unsafe. ([IFRC, 13 Apr 2023](https://reliefweb.int/node/3952727))",
+  "summary": " On 23 March 2023, two earthquakes occurred in Tajikistan, with the first registering 5-6 magnitude in the Kuhistoni Mastchoh district and 4-5 magnitude in Rasht district. The second earthquake registered 4.8 magnitude. Three people were injured and 318 houses were damaged in the Kuhistoni Mastchoh district, with 165 of them in Paldorak village. The damaged houses were built in the 1970s and 80s and had weak foundations, resulting in damaged walls and timber structures.",
+  "metadata": {
+    "id": "51547",
+    "name": "Tajikistan: Earthquake - Mar 2023",
+    "date_event": 1679529600000,
+    "date_changed": 1681394152000,
+    "date_created": 1681394082000,
+    "primary_country_id": 227,
+    "primary_country_name": "Tajikistan",
+    "primary_country_iso3": "tjk",
+    "primary_country_location": {
+      "lon": 71.04,
+      "lat": 38.84
+    },
+    "primary_type_id": 4628,
+    "primary_type_code": "EQ",
+    "primary_type_name": "Earthquake"
+  }
+}

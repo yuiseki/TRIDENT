@@ -1,0 +1,87 @@
+{
+  "original": {
+    "id": "51536",
+    "fields": {
+      "date": {
+        "changed": "2023-04-13T15:51:58+00:00",
+        "event": "2023-02-18T00:00:00+00:00",
+        "created": "2023-03-29T11:50:13+00:00"
+      },
+      "primary_type": {
+        "code": "FL",
+        "name": "Flood",
+        "id": 4611
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/81",
+          "name": "Ecuador",
+          "location": {
+            "lon": -78.43,
+            "lat": -1.16
+          },
+          "id": 81,
+          "shortname": "Ecuador",
+          "iso3": "ecu",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/81",
+        "name": "Ecuador",
+        "location": {
+          "lon": -78.43,
+          "lat": -1.16
+        },
+        "id": 81,
+        "shortname": "Ecuador",
+        "iso3": "ecu"
+      },
+      "profile": {
+        "overview": "Over 18-21 February, floods and landslides triggered by heavy rainfall affected Ecuador and resulted in casualties and damage. The most affected Provinces are Chimborazo, Esmeraldas, Los Ríos, Loja, Manabí, El Oro and Guayas. According to the Risk Management Secretariat, at least six people have died due to flood events (four across Chimborazo Province and two others in Esmeraldas Province in central and northern Ecuador). ([ECHO, 23 Feb 2023](https://reliefweb.int/node/3936928))\n\nFollowing the deadly landslide that occurred in Alausí Canton (Chimborazo Province, central Ecuador) on 26 March, the number of casualties increased. The Risk Management Secretariat of Ecuador (SGR) reports, as of 29 March at 2.00 UTC, 12 fatalities, 67 missing, 31 injured and 32 rescued people. In addition, 500 people have been affected as well as more than 160 houses. National authorities are conducting rescue and emergency activities and are providing help for those affected. ([ECHO, 29 Mar 2023](https://reliefweb.int/node/3948030))\n\nIn the rainy season, heavy rainfall has affected more than 58,700 people across 173 Cantons. The Guayas Province is one of the worst hit with 28,200 affected people. Other affected Provinces are Manabí, Los Ríos, Santa Elena, Cotopaxi, El Oro, Santo Domingo de Los Tsáchilas, Imbabura and Chimborazo. According to UN OCHA, 25 people died in the rainy season and 33 more following the landslide that occurred in Alausí Town (Chimborazo Province) on 26 March. In addition, 12,200 houses have been damaged displacing several people. ([ECHO, 11 Apr 2023](https://reliefweb.int/node/3951819))",
+        "overview-html": "<p>Over 18-21 February, floods and landslides triggered by heavy rainfall affected Ecuador and resulted in casualties and damage. The most affected Provinces are Chimborazo, Esmeraldas, Los Ríos, Loja, Manabí, El Oro and Guayas. According to the Risk Management Secretariat, at least six people have died due to flood events (four across Chimborazo Province and two others in Esmeraldas Province in central and northern Ecuador). (<a href=\"https://reliefweb.int/node/3936928\">ECHO, 23 Feb 2023</a>)</p>\n<p>Following the deadly landslide that occurred in Alausí Canton (Chimborazo Province, central Ecuador) on 26 March, the number of casualties increased. The Risk Management Secretariat of Ecuador (SGR) reports, as of 29 March at 2.00 UTC, 12 fatalities, 67 missing, 31 injured and 32 rescued people. In addition, 500 people have been affected as well as more than 160 houses. National authorities are conducting rescue and emergency activities and are providing help for those affected. (<a href=\"https://reliefweb.int/node/3948030\">ECHO, 29 Mar 2023</a>)</p>\n<p>In the rainy season, heavy rainfall has affected more than 58,700 people across 173 Cantons. The Guayas Province is one of the worst hit with 28,200 affected people. Other affected Provinces are Manabí, Los Ríos, Santa Elena, Cotopaxi, El Oro, Santo Domingo de Los Tsáchilas, Imbabura and Chimborazo. According to UN OCHA, 25 people died in the rainy season and 33 more following the landslide that occurred in Alausí Town (Chimborazo Province) on 26 March. In addition, 12,200 houses have been damaged displacing several people. (<a href=\"https://reliefweb.int/node/3951819\">ECHO, 11 Apr 2023</a>)</p>\n"
+      },
+      "description-html": "<p>Over 18-21 February, floods and landslides triggered by heavy rainfall affected Ecuador and resulted in casualties and damage. The most affected Provinces are Chimborazo, Esmeraldas, Los Ríos, Loja, Manabí, El Oro and Guayas. According to the Risk Management Secretariat, at least six people have died due to flood events (four across Chimborazo Province and two others in Esmeraldas Province in central and northern Ecuador). (<a href=\"https://reliefweb.int/node/3936928\">ECHO, 23 Feb 2023</a>)</p>\n<p>Following the deadly landslide that occurred in Alausí Canton (Chimborazo Province, central Ecuador) on 26 March, the number of casualties increased. The Risk Management Secretariat of Ecuador (SGR) reports, as of 29 March at 2.00 UTC, 12 fatalities, 67 missing, 31 injured and 32 rescued people. In addition, 500 people have been affected as well as more than 160 houses. National authorities are conducting rescue and emergency activities and are providing help for those affected. (<a href=\"https://reliefweb.int/node/3948030\">ECHO, 29 Mar 2023</a>)</p>\n<p>In the rainy season, heavy rainfall has affected more than 58,700 people across 173 Cantons. The Guayas Province is one of the worst hit with 28,200 affected people. Other affected Provinces are Manabí, Los Ríos, Santa Elena, Cotopaxi, El Oro, Santo Domingo de Los Tsáchilas, Imbabura and Chimborazo. According to UN OCHA, 25 people died in the rainy season and 33 more following the landslide that occurred in Alausí Town (Chimborazo Province) on 26 March. In addition, 12,200 houses have been damaged displacing several people. (<a href=\"https://reliefweb.int/node/3951819\">ECHO, 11 Apr 2023</a>)</p>\n",
+      "description": "Over 18-21 February, floods and landslides triggered by heavy rainfall affected Ecuador and resulted in casualties and damage. The most affected Provinces are Chimborazo, Esmeraldas, Los Ríos, Loja, Manabí, El Oro and Guayas. According to the Risk Management Secretariat, at least six people have died due to flood events (four across Chimborazo Province and two others in Esmeraldas Province in central and northern Ecuador). ([ECHO, 23 Feb 2023](https://reliefweb.int/node/3936928))\n\nFollowing the deadly landslide that occurred in Alausí Canton (Chimborazo Province, central Ecuador) on 26 March, the number of casualties increased. The Risk Management Secretariat of Ecuador (SGR) reports, as of 29 March at 2.00 UTC, 12 fatalities, 67 missing, 31 injured and 32 rescued people. In addition, 500 people have been affected as well as more than 160 houses. National authorities are conducting rescue and emergency activities and are providing help for those affected. ([ECHO, 29 Mar 2023](https://reliefweb.int/node/3948030))\n\nIn the rainy season, heavy rainfall has affected more than 58,700 people across 173 Cantons. The Guayas Province is one of the worst hit with 28,200 affected people. Other affected Provinces are Manabí, Los Ríos, Santa Elena, Cotopaxi, El Oro, Santo Domingo de Los Tsáchilas, Imbabura and Chimborazo. According to UN OCHA, 25 people died in the rainy season and 33 more following the landslide that occurred in Alausí Town (Chimborazo Province) on 26 March. In addition, 12,200 houses have been damaged displacing several people. ([ECHO, 11 Apr 2023](https://reliefweb.int/node/3951819))",
+      "type": [
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611,
+          "primary": true
+        },
+        {
+          "code": "LS",
+          "name": "Land Slide",
+          "id": 4728
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/51536",
+      "current": true,
+      "url_alias": "https://reliefweb.int/disaster/fl-2023-000053-ecu",
+      "name": "Ecuador: Floods and Landslides - Feb 2023",
+      "id": 51536,
+      "glide": "FL-2023-000053-ECU",
+      "status": "ongoing"
+    }
+  },
+  "text": "Ecuador: Floods and Landslides - Feb 2023\n\nOver 18-21 February, floods and landslides triggered by heavy rainfall affected Ecuador and resulted in casualties and damage. The most affected Provinces are Chimborazo, Esmeraldas, Los Ríos, Loja, Manabí, El Oro and Guayas. According to the Risk Management Secretariat, at least six people have died due to flood events (four across Chimborazo Province and two others in Esmeraldas Province in central and northern Ecuador). ([ECHO, 23 Feb 2023](https://reliefweb.int/node/3936928))\n\nFollowing the deadly landslide that occurred in Alausí Canton (Chimborazo Province, central Ecuador) on 26 March, the number of casualties increased. The Risk Management Secretariat of Ecuador (SGR) reports, as of 29 March at 2.00 UTC, 12 fatalities, 67 missing, 31 injured and 32 rescued people. In addition, 500 people have been affected as well as more than 160 houses. National authorities are conducting rescue and emergency activities and are providing help for those affected. ([ECHO, 29 Mar 2023](https://reliefweb.int/node/3948030))\n\nIn the rainy season, heavy rainfall has affected more than 58,700 people across 173 Cantons. The Guayas Province is one of the worst hit with 28,200 affected people. Other affected Provinces are Manabí, Los Ríos, Santa Elena, Cotopaxi, El Oro, Santo Domingo de Los Tsáchilas, Imbabura and Chimborazo. According to UN OCHA, 25 people died in the rainy season and 33 more following the landslide that occurred in Alausí Town (Chimborazo Province) on 26 March. In addition, 12,200 houses have been damaged displacing several people. ([ECHO, 11 Apr 2023](https://reliefweb.int/node/3951819))",
+  "summary": " In February and March of 2023, heavy rainfall in Ecuador caused floods and landslides, resulting in casualties and damage. At least 25 people have died, 33 are missing, 31 are injured, and 32 have been rescued. 58,700 people have been affected across 173 Cantons, with 28,200 in the Guayas Province alone. 12,200 houses have been damaged, displacing many people.",
+  "metadata": {
+    "id": "51536",
+    "name": "Ecuador: Floods and Landslides - Feb 2023",
+    "date_event": 1676678400000,
+    "date_changed": 1681401118000,
+    "date_created": 1680090613000,
+    "primary_country_id": 81,
+    "primary_country_name": "Ecuador",
+    "primary_country_iso3": "ecu",
+    "primary_country_location": {
+      "lon": -78.43,
+      "lat": -1.16
+    },
+    "primary_type_id": 4611,
+    "primary_type_code": "FL",
+    "primary_type_name": "Flood"
+  }
+}

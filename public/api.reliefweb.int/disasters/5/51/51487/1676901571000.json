@@ -1,0 +1,82 @@
+{
+  "original": {
+    "id": "51487",
+    "fields": {
+      "date": {
+        "changed": "2023-02-20T13:59:31+00:00",
+        "event": "2023-01-13T00:00:00+00:00",
+        "created": "2023-02-20T07:24:38+00:00"
+      },
+      "primary_type": {
+        "code": "FL",
+        "name": "Flood",
+        "id": 4611
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/166",
+          "name": "Namibia",
+          "location": {
+            "lon": 17.29,
+            "lat": -21.2
+          },
+          "id": 166,
+          "shortname": "Namibia",
+          "iso3": "nam",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/166",
+        "name": "Namibia",
+        "location": {
+          "lon": 17.29,
+          "lat": -21.2
+        },
+        "id": 166,
+        "shortname": "Namibia",
+        "iso3": "nam"
+      },
+      "profile": {
+        "overview": "Heavy rains were received in southeastern parts of Angola and northeastern parts of Namibia in the Cuvelai catchment during the 2nd week of January 2023, resulting in flooding conditions in Ondjiva and surrounding areas. First floodwaters were observed in some of the eastern flowing Cuvelai Iishanas (river plains) in the morning of Friday the 13 January 2023 and during the early hours of the 17th of January, the hydrological recording station at Shanalumono located approximately 10km southwest of Oshikango reported floodwaters reaching the central Cuvelai Iishanas (river plain) with local media reporting dozens of homes flooded in several villages including Engela and Ouhongo. Shanalumono is one of the main Iishanas (river plains) of the central Cuvelai River System on the Namibian side. According to the Namibia Hydrological Services, the water levels in the main Iishanas (river plains) south of the Angola/Namibia border are rising. On 27 January 2023, water levels at Engela station exceeded the 1m mark. Flood levels continue to increase as more rain persists in the Cuvelai catchment. The government with the support of Namibia RC has started some assistance to the affected people but given the increasing numbers of people affected and the limited support available for the affected households, on the 6 and the 7 of February 2023, the Oshana and Ohangwena regional councils issued formal requests to the NRCS to support the affected households. ([IFRC, 18 Feb 2023](https://reliefweb.int/node/3935087))",
+        "overview-html": "<p>Heavy rains were received in southeastern parts of Angola and northeastern parts of Namibia in the Cuvelai catchment during the 2nd week of January 2023, resulting in flooding conditions in Ondjiva and surrounding areas. First floodwaters were observed in some of the eastern flowing Cuvelai Iishanas (river plains) in the morning of Friday the 13 January 2023 and during the early hours of the 17th of January, the hydrological recording station at Shanalumono located approximately 10km southwest of Oshikango reported floodwaters reaching the central Cuvelai Iishanas (river plain) with local media reporting dozens of homes flooded in several villages including Engela and Ouhongo. Shanalumono is one of the main Iishanas (river plains) of the central Cuvelai River System on the Namibian side. According to the Namibia Hydrological Services, the water levels in the main Iishanas (river plains) south of the Angola/Namibia border are rising. On 27 January 2023, water levels at Engela station exceeded the 1m mark. Flood levels continue to increase as more rain persists in the Cuvelai catchment. The government with the support of Namibia RC has started some assistance to the affected people but given the increasing numbers of people affected and the limited support available for the affected households, on the 6 and the 7 of February 2023, the Oshana and Ohangwena regional councils issued formal requests to the NRCS to support the affected households. (<a href=\"https://reliefweb.int/node/3935087\">IFRC, 18 Feb 2023</a>)</p>\n"
+      },
+      "description-html": "<p>Heavy rains were received in southeastern parts of Angola and northeastern parts of Namibia in the Cuvelai catchment during the 2nd week of January 2023, resulting in flooding conditions in Ondjiva and surrounding areas. First floodwaters were observed in some of the eastern flowing Cuvelai Iishanas (river plains) in the morning of Friday the 13 January 2023 and during the early hours of the 17th of January, the hydrological recording station at Shanalumono located approximately 10km southwest of Oshikango reported floodwaters reaching the central Cuvelai Iishanas (river plain) with local media reporting dozens of homes flooded in several villages including Engela and Ouhongo. Shanalumono is one of the main Iishanas (river plains) of the central Cuvelai River System on the Namibian side. According to the Namibia Hydrological Services, the water levels in the main Iishanas (river plains) south of the Angola/Namibia border are rising. On 27 January 2023, water levels at Engela station exceeded the 1m mark. Flood levels continue to increase as more rain persists in the Cuvelai catchment. The government with the support of Namibia RC has started some assistance to the affected people but given the increasing numbers of people affected and the limited support available for the affected households, on the 6 and the 7 of February 2023, the Oshana and Ohangwena regional councils issued formal requests to the NRCS to support the affected households. (<a href=\"https://reliefweb.int/node/3935087\">IFRC, 18 Feb 2023</a>)</p>\n",
+      "description": "Heavy rains were received in southeastern parts of Angola and northeastern parts of Namibia in the Cuvelai catchment during the 2nd week of January 2023, resulting in flooding conditions in Ondjiva and surrounding areas. First floodwaters were observed in some of the eastern flowing Cuvelai Iishanas (river plains) in the morning of Friday the 13 January 2023 and during the early hours of the 17th of January, the hydrological recording station at Shanalumono located approximately 10km southwest of Oshikango reported floodwaters reaching the central Cuvelai Iishanas (river plain) with local media reporting dozens of homes flooded in several villages including Engela and Ouhongo. Shanalumono is one of the main Iishanas (river plains) of the central Cuvelai River System on the Namibian side. According to the Namibia Hydrological Services, the water levels in the main Iishanas (river plains) south of the Angola/Namibia border are rising. On 27 January 2023, water levels at Engela station exceeded the 1m mark. Flood levels continue to increase as more rain persists in the Cuvelai catchment. The government with the support of Namibia RC has started some assistance to the affected people but given the increasing numbers of people affected and the limited support available for the affected households, on the 6 and the 7 of February 2023, the Oshana and Ohangwena regional councils issued formal requests to the NRCS to support the affected households. ([IFRC, 18 Feb 2023](https://reliefweb.int/node/3935087))",
+      "type": [
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611,
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/51487",
+      "current": true,
+      "url_alias": "https://reliefweb.int/disaster/fl-2023-000021-nam",
+      "name": "Namibia: Floods - Jan 2023",
+      "id": 51487,
+      "glide": "FL-2023-000021-NAM",
+      "status": "ongoing"
+    }
+  },
+  "text": "Namibia: Floods - Jan 2023\n\nHeavy rains were received in southeastern parts of Angola and northeastern parts of Namibia in the Cuvelai catchment during the 2nd week of January 2023, resulting in flooding conditions in Ondjiva and surrounding areas. First floodwaters were observed in some of the eastern flowing Cuvelai Iishanas (river plains) in the morning of Friday the 13 January 2023 and during the early hours of the 17th of January, the hydrological recording station at Shanalumono located approximately 10km southwest of Oshikango reported floodwaters reaching the central Cuvelai Iishanas (river plain) with local media reporting dozens of homes flooded in several villages including Engela and Ouhongo. Shanalumono is one of the main Iishanas (river plains) of the central Cuvelai River System on the Namibian side. According to the Namibia Hydrological Services, the water levels in the main Iishanas (river plains) south of the Angola/Namibia border are rising. On 27 January 2023, water levels at Engela station exceeded the 1m mark. Flood levels continue to increase as more rain persists in the Cuvelai catchment. The government with the support of Namibia RC has started some assistance to the affected people but given the increasing numbers of people affected and the limited support available for the affected households, on the 6 and the 7 of February 2023, the Oshana and Ohangwena regional councils issued formal requests to the NRCS to support the affected households. ([IFRC, 18 Feb 2023](https://reliefweb.int/node/3935087))",
+  "summary": " In January 2023, heavy rains in Angola and Namibia caused flooding in Ondjiva and surrounding areas. On 27 January, water levels at Engela station exceeded 1m. The government and Namibia RC have started providing assistance to the affected people, but due to the increasing numbers of people affected, the Oshana and Ohangwena regional councils have requested additional support from the NRCS.",
+  "metadata": {
+    "id": "51487",
+    "name": "Namibia: Floods - Jan 2023",
+    "date_event": 1673568000000,
+    "date_changed": 1676901571000,
+    "date_created": 1676877878000,
+    "primary_country_id": 166,
+    "primary_country_name": "Namibia",
+    "primary_country_iso3": "nam",
+    "primary_country_location": {
+      "lon": 17.29,
+      "lat": -21.2
+    },
+    "primary_type_id": 4611,
+    "primary_type_code": "FL",
+    "primary_type_name": "Flood"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "original": {
+    "id": "51170",
+    "fields": {
+      "date": {
+        "changed": "2022-09-02T13:58:59+00:00",
+        "event": "2022-05-10T00:00:00+00:00",
+        "created": "2022-05-10T00:00:00+00:00"
+      },
+      "primary_type": {
+        "code": "DR",
+        "name": "Drought",
+        "id": 4672
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/174",
+          "name": "Niger",
+          "location": {
+            "lon": 9.4,
+            "lat": 17.43
+          },
+          "id": 174,
+          "shortname": "Niger",
+          "iso3": "ner",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/174",
+        "name": "Niger",
+        "location": {
+          "lon": 9.4,
+          "lat": 17.43
+        },
+        "id": 174,
+        "shortname": "Niger",
+        "iso3": "ner"
+      },
+      "profile": {
+        "appeals_response_plans": {
+          "active": [
+            {
+              "cover": "https://reliefweb.int/sites/default/files/styles/small/public/previews/29/87/2987ed2d-c8a6-4117-a17f-ba0e15c9b749.png",
+              "title": "IFRC: Niger: Food Insecurity Crisis - Emergency Appeal No. MDRNE026 - Operational Strategy",
+              "url": "https://reliefweb.int/node/3866823"
+            }
+          ],
+          "title": "Appeals & Response Plans"
+        },
+        "overview": "In Niger, over four million households are facing the devastating effects of food insecurity caused by consecutive failed rainy seasons and decades of increasing desertification of the Sahel. The severe food insecurity situation is confirmed by the Cadre Harmonisé findings, which reported that between 2.5 and 3.3 million people are currently food insecure countrywide (Phase 3 to 5 as per the Integrated Food Security Phase Classification – IPC), and that between 3.6 and 4.4 million people will be food insecure in June – August 2022 period due to a delayed 2022 rainy season and irregular distribution of rainfall, long dry spells, and high risks of flooding that can lead to losses in crops, material goods, and animal and human lives in exposed localities. ([IFRC, 9 May 2022](https://reliefweb.int/node/3845536))",
+        "overview-html": "<p>In Niger, over four million households are facing the devastating effects of food insecurity caused by consecutive failed rainy seasons and decades of increasing desertification of the Sahel. The severe food insecurity situation is confirmed by the Cadre Harmonisé findings, which reported that between 2.5 and 3.3 million people are currently food insecure countrywide (Phase 3 to 5 as per the Integrated Food Security Phase Classification – IPC), and that between 3.6 and 4.4 million people will be food insecure in June – August 2022 period due to a delayed 2022 rainy season and irregular distribution of rainfall, long dry spells, and high risks of flooding that can lead to losses in crops, material goods, and animal and human lives in exposed localities. (<a href=\"https://reliefweb.int/node/3845536\">IFRC, 9 May 2022</a>)</p>\n"
+      },
+      "description-html": "<p>In Niger, over four million households are facing the devastating effects of food insecurity caused by consecutive failed rainy seasons and decades of increasing desertification of the Sahel. The severe food insecurity situation is confirmed by the Cadre Harmonisé findings, which reported that between 2.5 and 3.3 million people are currently food insecure countrywide (Phase 3 to 5 as per the Integrated Food Security Phase Classification – IPC), and that between 3.6 and 4.4 million people will be food insecure in June – August 2022 period due to a delayed 2022 rainy season and irregular distribution of rainfall, long dry spells, and high risks of flooding that can lead to losses in crops, material goods, and animal and human lives in exposed localities. (<a href=\"https://reliefweb.int/node/3845536\">IFRC, 9 May 2022</a>)</p>\n<h3>Appeals &amp; Response Plans</h3>\n<ul>\n<li>\n<a href=\"https://reliefweb.int/node/3866823\"><img src=\"https://reliefweb.int/sites/default/files/styles/small/public/previews/29/87/2987ed2d-c8a6-4117-a17f-ba0e15c9b749.png\" alt=\"IFRC: Niger: Food Insecurity Crisis - Emergency Appeal No. MDRNE026 - Operational Strategy - Cover preview\" /> IFRC: Niger: Food Insecurity Crisis - Emergency Appeal No. MDRNE026 - Operational Strategy</a>\n</li>\n</ul>\n",
+      "description": "In Niger, over four million households are facing the devastating effects of food insecurity caused by consecutive failed rainy seasons and decades of increasing desertification of the Sahel. The severe food insecurity situation is confirmed by the Cadre Harmonisé findings, which reported that between 2.5 and 3.3 million people are currently food insecure countrywide (Phase 3 to 5 as per the Integrated Food Security Phase Classification – IPC), and that between 3.6 and 4.4 million people will be food insecure in June – August 2022 period due to a delayed 2022 rainy season and irregular distribution of rainfall, long dry spells, and high risks of flooding that can lead to losses in crops, material goods, and animal and human lives in exposed localities. ([IFRC, 9 May 2022](https://reliefweb.int/node/3845536))\n### Appeals & Response Plans\n\n- [![IFRC: Niger: Food Insecurity Crisis - Emergency Appeal No. MDRNE026 - Operational Strategy - Cover preview](https://reliefweb.int/sites/default/files/styles/small/public/previews/29/87/2987ed2d-c8a6-4117-a17f-ba0e15c9b749.png) IFRC: Niger: Food Insecurity Crisis - Emergency Appeal No. MDRNE026 - Operational Strategy](https://reliefweb.int/node/3866823)",
+      "type": [
+        {
+          "code": "DR",
+          "name": "Drought",
+          "id": 4672,
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/51170",
+      "related_glide": [
+        "OT-2022-000263-NER"
+      ],
+      "current": true,
+      "url_alias": "https://reliefweb.int/disaster/dr-2022-000210-ner",
+      "name": "Niger: Drought - May 2022",
+      "id": 51170,
+      "glide": "DR-2022-000210-NER",
+      "status": "ongoing"
+    }
+  },
+  "text": "Niger: Drought - May 2022\n\nIn Niger, over four million households are facing the devastating effects of food insecurity caused by consecutive failed rainy seasons and decades of increasing desertification of the Sahel. The severe food insecurity situation is confirmed by the Cadre Harmonisé findings, which reported that between 2.5 and 3.3 million people are currently food insecure countrywide (Phase 3 to 5 as per the Integrated Food Security Phase Classification – IPC), and that between 3.6 and 4.4 million people will be food insecure in June – August 2022 period due to a delayed 2022 rainy season and irregular distribution of rainfall, long dry spells, and high risks of flooding that can lead to losses in crops, material goods, and animal and human lives in exposed localities. ([IFRC, 9 May 2022](https://reliefweb.int/node/3845536))\n### Appeals & Response Plans\n\n- [![IFRC: Niger: Food Insecurity Crisis - Emergency Appeal No. MDRNE026 - Operational Strategy - Cover preview](https://reliefweb.int/sites/default/files/styles/small/public/previews/29/87/2987ed2d-c8a6-4117-a17f-ba0e15c9b749.png) IFRC: Niger: Food Insecurity Crisis - Emergency Appeal No. MDRNE026 - Operational Strategy](https://reliefweb.int/node/3866823)",
+  "summary": " In Niger, over four million households are facing food insecurity due to consecutive failed rainy seasons and desertification. The Integrated Food Security Phase Classification (IPC) reported that between 2.5 and 3.3 million people are currently food insecure, and that between 3.6 and 4.4 million people will be food insecure in June-August 2022 due to a delayed rainy season and other risks. The IFRC has issued an Emergency Appeal No. MDRNE026 to respond to the crisis.",
+  "metadata": {
+    "id": "51170",
+    "name": "Niger: Drought - May 2022",
+    "date_event": 1652140800000,
+    "date_changed": 1662127139000,
+    "date_created": 1652140800000,
+    "primary_country_id": 174,
+    "primary_country_name": "Niger",
+    "primary_country_iso3": "ner",
+    "primary_country_location": {
+      "lon": 9.4,
+      "lat": 17.43
+    },
+    "primary_type_id": 4672,
+    "primary_type_code": "DR",
+    "primary_type_name": "Drought"
+  }
+}

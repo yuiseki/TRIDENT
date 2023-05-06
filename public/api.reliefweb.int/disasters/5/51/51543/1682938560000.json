@@ -1,0 +1,87 @@
+{
+  "original": {
+    "id": "51543",
+    "fields": {
+      "date": {
+        "changed": "2023-05-01T10:56:00+00:00",
+        "event": "2023-03-30T00:00:00+00:00",
+        "created": "2023-04-06T18:17:39+00:00"
+      },
+      "primary_type": {
+        "code": "FL",
+        "name": "Flood",
+        "id": 4611
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/131",
+          "name": "Kenya",
+          "location": {
+            "lon": 37.86,
+            "lat": 0.53
+          },
+          "id": 131,
+          "shortname": "Kenya",
+          "iso3": "ken",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/131",
+        "name": "Kenya",
+        "location": {
+          "lon": 37.86,
+          "lat": 0.53
+        },
+        "id": 131,
+        "shortname": "Kenya",
+        "iso3": "ken"
+      },
+      "profile": {
+        "overview": "Heavy rainfall has been affecting several parts of Kenya and Ethiopia over the last week, causing floods and severe weather-related incidents that resulted in casualties and widespread damage [...] According to media reports, in Kenya, at least 12 people died, of which seven were in Gilgil Town (Nauru County), three others in West Pokot County, one in the capital Nairobi, and another in Suswa Town (Narok County). In addition, thousands of people have been displaced (including 812 households in Marsabit County, northern Kenya), and several houses damaged. [(ECHO, 30 Mar 2023)](https://reliefweb.int/node/3948409)    \n\nOn 2 April, heavy rainfall affected Taita–Taveta County (southern Kenya), causing flash floods and resulting in casualties and damage. According to media, one person (a pregnant woman) died while two others are still missing following a flash flood event. Widespread damage was reported across the affected County and also in Narok County (south-western Kenya) due to heavy rain and floods. [(ECHO, 6 Apr 2023)](https://reliefweb.int/node/3950713)\n\nOver the past few days, heavy rainfall has affected Kisumu County (south-western Kenya), causing flash floods and resulting in displacement and damage.\nAccording to media report a total of 1,000 people have been displaced across several parts of the county. [(ECHO, 28 Apr 2023)](https://reliefweb.int/node/3956967)",
+        "overview-html": "<p>Heavy rainfall has been affecting several parts of Kenya and Ethiopia over the last week, causing floods and severe weather-related incidents that resulted in casualties and widespread damage [...] According to media reports, in Kenya, at least 12 people died, of which seven were in Gilgil Town (Nauru County), three others in West Pokot County, one in the capital Nairobi, and another in Suswa Town (Narok County). In addition, thousands of people have been displaced (including 812 households in Marsabit County, northern Kenya), and several houses damaged. <a href=\"https://reliefweb.int/node/3948409\">(ECHO, 30 Mar 2023)</a></p>\n<p>On 2 April, heavy rainfall affected Taita–Taveta County (southern Kenya), causing flash floods and resulting in casualties and damage. According to media, one person (a pregnant woman) died while two others are still missing following a flash flood event. Widespread damage was reported across the affected County and also in Narok County (south-western Kenya) due to heavy rain and floods. <a href=\"https://reliefweb.int/node/3950713\">(ECHO, 6 Apr 2023)</a></p>\n<p>Over the past few days, heavy rainfall has affected Kisumu County (south-western Kenya), causing flash floods and resulting in displacement and damage.\nAccording to media report a total of 1,000 people have been displaced across several parts of the county. <a href=\"https://reliefweb.int/node/3956967\">(ECHO, 28 Apr 2023)</a></p>\n"
+      },
+      "description-html": "<p>Heavy rainfall has been affecting several parts of Kenya and Ethiopia over the last week, causing floods and severe weather-related incidents that resulted in casualties and widespread damage [...] According to media reports, in Kenya, at least 12 people died, of which seven were in Gilgil Town (Nauru County), three others in West Pokot County, one in the capital Nairobi, and another in Suswa Town (Narok County). In addition, thousands of people have been displaced (including 812 households in Marsabit County, northern Kenya), and several houses damaged. <a href=\"https://reliefweb.int/node/3948409\">(ECHO, 30 Mar 2023)</a></p>\n<p>On 2 April, heavy rainfall affected Taita–Taveta County (southern Kenya), causing flash floods and resulting in casualties and damage. According to media, one person (a pregnant woman) died while two others are still missing following a flash flood event. Widespread damage was reported across the affected County and also in Narok County (south-western Kenya) due to heavy rain and floods. <a href=\"https://reliefweb.int/node/3950713\">(ECHO, 6 Apr 2023)</a></p>\n<p>Over the past few days, heavy rainfall has affected Kisumu County (south-western Kenya), causing flash floods and resulting in displacement and damage.\nAccording to media report a total of 1,000 people have been displaced across several parts of the county. <a href=\"https://reliefweb.int/node/3956967\">(ECHO, 28 Apr 2023)</a></p>\n",
+      "description": "Heavy rainfall has been affecting several parts of Kenya and Ethiopia over the last week, causing floods and severe weather-related incidents that resulted in casualties and widespread damage [...] According to media reports, in Kenya, at least 12 people died, of which seven were in Gilgil Town (Nauru County), three others in West Pokot County, one in the capital Nairobi, and another in Suswa Town (Narok County). In addition, thousands of people have been displaced (including 812 households in Marsabit County, northern Kenya), and several houses damaged. [(ECHO, 30 Mar 2023)](https://reliefweb.int/node/3948409)    \n\nOn 2 April, heavy rainfall affected Taita–Taveta County (southern Kenya), causing flash floods and resulting in casualties and damage. According to media, one person (a pregnant woman) died while two others are still missing following a flash flood event. Widespread damage was reported across the affected County and also in Narok County (south-western Kenya) due to heavy rain and floods. [(ECHO, 6 Apr 2023)](https://reliefweb.int/node/3950713)\n\nOver the past few days, heavy rainfall has affected Kisumu County (south-western Kenya), causing flash floods and resulting in displacement and damage.\nAccording to media report a total of 1,000 people have been displaced across several parts of the county. [(ECHO, 28 Apr 2023)](https://reliefweb.int/node/3956967)",
+      "type": [
+        {
+          "code": "FF",
+          "name": "Flash Flood",
+          "id": 4624
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611,
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/51543",
+      "current": true,
+      "url_alias": "https://reliefweb.int/disaster/ff-2023-000051-ken",
+      "name": "Kenya: Floods - Mar 2023",
+      "id": 51543,
+      "glide": "FF-2023-000051-KEN",
+      "status": "ongoing"
+    }
+  },
+  "text": "Kenya: Floods - Mar 2023\n\nHeavy rainfall has been affecting several parts of Kenya and Ethiopia over the last week, causing floods and severe weather-related incidents that resulted in casualties and widespread damage [...] According to media reports, in Kenya, at least 12 people died, of which seven were in Gilgil Town (Nauru County), three others in West Pokot County, one in the capital Nairobi, and another in Suswa Town (Narok County). In addition, thousands of people have been displaced (including 812 households in Marsabit County, northern Kenya), and several houses damaged. [(ECHO, 30 Mar 2023)](https://reliefweb.int/node/3948409)    \n\nOn 2 April, heavy rainfall affected Taita–Taveta County (southern Kenya), causing flash floods and resulting in casualties and damage. According to media, one person (a pregnant woman) died while two others are still missing following a flash flood event. Widespread damage was reported across the affected County and also in Narok County (south-western Kenya) due to heavy rain and floods. [(ECHO, 6 Apr 2023)](https://reliefweb.int/node/3950713)\n\nOver the past few days, heavy rainfall has affected Kisumu County (south-western Kenya), causing flash floods and resulting in displacement and damage.\nAccording to media report a total of 1,000 people have been displaced across several parts of the county. [(ECHO, 28 Apr 2023)](https://reliefweb.int/node/3956967)",
+  "summary": " In March, heavy rainfall caused floods in Kenya resulting in 12 deaths and thousands of people displaced. In April, further heavy rainfall caused flash floods in Taita–Taveta County, resulting in one death and two missing people. In April, heavy rainfall also affected Kisumu County, resulting in 1,000 people displaced.",
+  "metadata": {
+    "id": "51543",
+    "name": "Kenya: Floods - Mar 2023",
+    "date_event": 1680134400000,
+    "date_changed": 1682938560000,
+    "date_created": 1680805059000,
+    "primary_country_id": 131,
+    "primary_country_name": "Kenya",
+    "primary_country_iso3": "ken",
+    "primary_country_location": {
+      "lon": 37.86,
+      "lat": 0.53
+    },
+    "primary_type_id": 4611,
+    "primary_type_code": "FL",
+    "primary_type_name": "Flood"
+  }
+}

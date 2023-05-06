@@ -1,0 +1,90 @@
+{
+  "original": {
+    "id": "51530",
+    "fields": {
+      "date": {
+        "changed": "2023-05-03T22:36:09+00:00",
+        "event": "2023-03-12T00:00:00+00:00",
+        "created": "2023-03-24T09:57:08+00:00"
+      },
+      "primary_type": {
+        "code": "FL",
+        "name": "Flood",
+        "id": 4611
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/216",
+          "name": "Somalia",
+          "location": {
+            "lon": 47.33,
+            "lat": 5.79
+          },
+          "id": 216,
+          "shortname": "Somalia",
+          "iso3": "som",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/216",
+        "name": "Somalia",
+        "location": {
+          "lon": 47.33,
+          "lat": 5.79
+        },
+        "id": 216,
+        "shortname": "Somalia",
+        "iso3": "som"
+      },
+      "profile": {
+        "overview": "Several areas of Somalia received moderate rains in the week starting 12 March, with the heaviest rainfall recorded in Gedo and Bay regions, particularly in Baardheere, Wanle Wayne, Luuq and Doolow districts. According to the latest rainfall outlook for the 2023 Gu season. Partners have raised concerns over a likely deterioration of the living conditions, particularly for Internally Displaced Persons (IDPs) living in overcrowded settlements with inadequate shelter. The rains also come at a time when partners are struggling with a surge in disease outbreaks, including acute watery diarrhoea/cholera, and measles cases, which are likely to increase due to the risk of people consuming contaminated water and lack of adequate sanitation and hygiene facilities and services. ([OCHA, 23 Mar 2023](https://reliefweb.int/node/3946596))\n\nNearly 100,000 people have been affected by heavy rains and flash flooding in several areas of Somalia over the last week. [...] The worst affected district is Baardheere in Jubaland State; 21 people including six children have reportedly been killed. More than 13,000 families (about 78,000 people) have been affected; shelters for 8,945 families (about 53,600 people) were damaged or destroyed. ([OCHA, 3 Apr 2023](https://reliefweb.int/node/3949478))\n\nFloods have affected over 175,000 people in Somalia since the beginning of the rainy season, of whom 140,000 have been displaced. ([OCHA, 13 Apr 2023](https://reliefweb.int/node/3952601))",
+        "overview-html": "<p>Several areas of Somalia received moderate rains in the week starting 12 March, with the heaviest rainfall recorded in Gedo and Bay regions, particularly in Baardheere, Wanle Wayne, Luuq and Doolow districts. According to the latest rainfall outlook for the 2023 Gu season. Partners have raised concerns over a likely deterioration of the living conditions, particularly for Internally Displaced Persons (IDPs) living in overcrowded settlements with inadequate shelter. The rains also come at a time when partners are struggling with a surge in disease outbreaks, including acute watery diarrhoea/cholera, and measles cases, which are likely to increase due to the risk of people consuming contaminated water and lack of adequate sanitation and hygiene facilities and services. (<a href=\"https://reliefweb.int/node/3946596\">OCHA, 23 Mar 2023</a>)</p>\n<p>Nearly 100,000 people have been affected by heavy rains and flash flooding in several areas of Somalia over the last week. [...] The worst affected district is Baardheere in Jubaland State; 21 people including six children have reportedly been killed. More than 13,000 families (about 78,000 people) have been affected; shelters for 8,945 families (about 53,600 people) were damaged or destroyed. (<a href=\"https://reliefweb.int/node/3949478\">OCHA, 3 Apr 2023</a>)</p>\n<p>Floods have affected over 175,000 people in Somalia since the beginning of the rainy season, of whom 140,000 have been displaced. (<a href=\"https://reliefweb.int/node/3952601\">OCHA, 13 Apr 2023</a>)</p>\n"
+      },
+      "description-html": "<p>Several areas of Somalia received moderate rains in the week starting 12 March, with the heaviest rainfall recorded in Gedo and Bay regions, particularly in Baardheere, Wanle Wayne, Luuq and Doolow districts. According to the latest rainfall outlook for the 2023 Gu season. Partners have raised concerns over a likely deterioration of the living conditions, particularly for Internally Displaced Persons (IDPs) living in overcrowded settlements with inadequate shelter. The rains also come at a time when partners are struggling with a surge in disease outbreaks, including acute watery diarrhoea/cholera, and measles cases, which are likely to increase due to the risk of people consuming contaminated water and lack of adequate sanitation and hygiene facilities and services. (<a href=\"https://reliefweb.int/node/3946596\">OCHA, 23 Mar 2023</a>)</p>\n<p>Nearly 100,000 people have been affected by heavy rains and flash flooding in several areas of Somalia over the last week. [...] The worst affected district is Baardheere in Jubaland State; 21 people including six children have reportedly been killed. More than 13,000 families (about 78,000 people) have been affected; shelters for 8,945 families (about 53,600 people) were damaged or destroyed. (<a href=\"https://reliefweb.int/node/3949478\">OCHA, 3 Apr 2023</a>)</p>\n<p>Floods have affected over 175,000 people in Somalia since the beginning of the rainy season, of whom 140,000 have been displaced. (<a href=\"https://reliefweb.int/node/3952601\">OCHA, 13 Apr 2023</a>)</p>\n",
+      "description": "Several areas of Somalia received moderate rains in the week starting 12 March, with the heaviest rainfall recorded in Gedo and Bay regions, particularly in Baardheere, Wanle Wayne, Luuq and Doolow districts. According to the latest rainfall outlook for the 2023 Gu season. Partners have raised concerns over a likely deterioration of the living conditions, particularly for Internally Displaced Persons (IDPs) living in overcrowded settlements with inadequate shelter. The rains also come at a time when partners are struggling with a surge in disease outbreaks, including acute watery diarrhoea/cholera, and measles cases, which are likely to increase due to the risk of people consuming contaminated water and lack of adequate sanitation and hygiene facilities and services. ([OCHA, 23 Mar 2023](https://reliefweb.int/node/3946596))\n\nNearly 100,000 people have been affected by heavy rains and flash flooding in several areas of Somalia over the last week. [...] The worst affected district is Baardheere in Jubaland State; 21 people including six children have reportedly been killed. More than 13,000 families (about 78,000 people) have been affected; shelters for 8,945 families (about 53,600 people) were damaged or destroyed. ([OCHA, 3 Apr 2023](https://reliefweb.int/node/3949478))\n\nFloods have affected over 175,000 people in Somalia since the beginning of the rainy season, of whom 140,000 have been displaced. ([OCHA, 13 Apr 2023](https://reliefweb.int/node/3952601))",
+      "type": [
+        {
+          "code": "FF",
+          "name": "Flash Flood",
+          "id": 4624
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611,
+          "primary": true
+        }
+      ],
+      "url": "https://reliefweb.int/taxonomy/term/51530",
+      "related_glide": [
+        "FL-2023-000057-SOM"
+      ],
+      "current": true,
+      "url_alias": "https://reliefweb.int/disaster/ff-2023-000044-som",
+      "name": "Somalia: Floods - Mar 2023",
+      "id": 51530,
+      "glide": "FF-2023-000044-SOM",
+      "status": "ongoing"
+    }
+  },
+  "text": "Somalia: Floods - Mar 2023\n\nSeveral areas of Somalia received moderate rains in the week starting 12 March, with the heaviest rainfall recorded in Gedo and Bay regions, particularly in Baardheere, Wanle Wayne, Luuq and Doolow districts. According to the latest rainfall outlook for the 2023 Gu season. Partners have raised concerns over a likely deterioration of the living conditions, particularly for Internally Displaced Persons (IDPs) living in overcrowded settlements with inadequate shelter. The rains also come at a time when partners are struggling with a surge in disease outbreaks, including acute watery diarrhoea/cholera, and measles cases, which are likely to increase due to the risk of people consuming contaminated water and lack of adequate sanitation and hygiene facilities and services. ([OCHA, 23 Mar 2023](https://reliefweb.int/node/3946596))\n\nNearly 100,000 people have been affected by heavy rains and flash flooding in several areas of Somalia over the last week. [...] The worst affected district is Baardheere in Jubaland State; 21 people including six children have reportedly been killed. More than 13,000 families (about 78,000 people) have been affected; shelters for 8,945 families (about 53,600 people) were damaged or destroyed. ([OCHA, 3 Apr 2023](https://reliefweb.int/node/3949478))\n\nFloods have affected over 175,000 people in Somalia since the beginning of the rainy season, of whom 140,000 have been displaced. ([OCHA, 13 Apr 2023](https://reliefweb.int/node/3952601))",
+  "summary": " In March 2023, Somalia experienced heavy rains and flash flooding, resulting in the displacement of over 175,000 people. The worst affected district was Baardheere in Jubaland State, where 21 people, including six children, were killed. The rains have also caused a surge in disease outbreaks, including acute watery diarrhoea/cholera and measles.",
+  "metadata": {
+    "id": "51530",
+    "name": "Somalia: Floods - Mar 2023",
+    "date_event": 1678579200000,
+    "date_changed": 1683153369000,
+    "date_created": 1679651828000,
+    "primary_country_id": 216,
+    "primary_country_name": "Somalia",
+    "primary_country_iso3": "som",
+    "primary_country_location": {
+      "lon": 47.33,
+      "lat": 5.79
+    },
+    "primary_type_id": 4611,
+    "primary_type_code": "FL",
+    "primary_type_name": "Flood"
+  }
+}
