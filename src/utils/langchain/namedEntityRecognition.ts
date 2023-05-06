@@ -16,7 +16,7 @@ Entity Definition:
 
 Output Format:
 {{'PERSON': [list of entities present], 'DATE': [list of entities present], 'LOC': [list of entities present]}}
-If no entities are presented in any categories keep it None
+If no entities are presented in any categories keep it as empty
 
 Examples:
 
@@ -24,7 +24,7 @@ Examples:
 Output: {{'PERSON': ['Mr. Jacob'], 'DATE': ['12th January 2015'], 'LOC': ['Madrid']}}
 
 2. Sentence: Mr. Rajeev Mishra and Sunita Roy are friends and they meet each other on 24/03/1998.
-Output: {{'PERSON': ['Mr. Rajeev Mishra', 'Sunita Roy'], 'DATE': ['24/03/1998'], 'LOC': ['None']}}
+Output: {{'PERSON': ['Mr. Rajeev Mishra', 'Sunita Roy'], 'DATE': ['24/03/1998'], 'LOC': []}}
 
 3. Sentence: {sentence}
 Output:`;
