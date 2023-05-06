@@ -16,8 +16,7 @@ const timeoutExec = (func: () => void, msec: number) =>
     }, msec)
   );
 
-const greetings =
-  "Hello! I'm TRIDENT, an unofficial UN dedicated interactive information retrieval and humanity assistance system. What kind of information are you looking for?";
+const greetings = `Hello! I'm TRIDENT, an unofficial UN dedicated interactive information retrieval and humanity assistance system. What kind of information are you looking for?`;
 
 export default function Home() {
   const [dialogueList, setDialogueList] = useState<DialogueElement[]>([

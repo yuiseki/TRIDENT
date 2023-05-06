@@ -1,0 +1,943 @@
+{
+  "summary": " In March and April 2023, heavy rainfall and flooding caused displacement and destruction in Tanzania, Tajikistan, Kenya, Ethiopia, Sao Tome-and-Principe, South Sudan, Tanzania, Ecuador, Somalia, Paraguay, Peru, Vanuatu, Bangladesh, Equatorial Guinea, Angola, Namibia, Madagascar, Mozambique, Malawi, and Zimbabwe. In addition, two earthquakes, two cyclones, and a fire occurred in the same period. The disasters caused casualties, displacement, and damage to infrastructure. The governments and humanitarian organizations are providing assistance to the affected people.",
+  "disasters": [
+    {
+      "original": "Tanzania: Floods - Apr 2023\n\nOn the night of 1st April 2023, the villages around the Ruvuma River experienced severe floods as a result of heavy downpours from the ongoing monsoon rains. So far, this flood has affected the village of Kivava, especially in the suburbs of Sokoni and Kivukuni, villages of Angazo, and Kilamboma, and making 1,400 people displaced, representing 395 households affected in the suburbs of the market and the port. These 1,400 displaced people have been moved to temporary shelters in primary schools that are elevated due to their houses being surrounded by water. In addition, about 60 houses have collapsed with more than 100 toilets having collapsed and fields having been destroyed by water. The road from the village of Angazo to the village of Kilambo has been damaged, thus causing a lack of transportation and communication between those areas. Kivava village is one of the 110 villages in the district council. This village has 4 neighborhoods which are sokoni, kivukoni, dinanji, and lilumbi, the number of residents in this village is 1,976 and there are 518 households. The main economic activity in the village is agriculture and food business. The cultivated crops are rice, sorghum, cassava, cashews, coconuts, and legumes. Most of the agricultural areas were washed away by floods. TRCS branch (Mtwara Red Cross regional team) aside from local authorities visited the affected villages on 5th April and issued initial assessment data to start guiding the first emergency assistance to the affected communities through local actions. TRCS branch, further to this assessment provided first distributions and helped the local authorities in the initial food distribution. ([IFRC, 14 Apr 2023](https://reliefweb.int/node/3953164))",
+      "summary": " On April 1st, 2023, heavy monsoon rains caused severe flooding in the villages around the Ruvuma River in Tanzania. This flood has displaced 1,400 people, destroyed 60 houses, and damaged the road between the villages of Angazo and Kilambo. The Tanzania Red Cross Society branch visited the affected villages on April 5th and provided initial distributions and food assistance.",
+      "metadata": {
+        "id": "51549",
+        "date_event": 1680307200000,
+        "date_changed": 1681719158000,
+        "date_created": 1681719158000,
+        "primary_country_id": 244,
+        "primary_country_name": "United Republic of Tanzania",
+        "primary_country_iso3": "tza",
+        "primary_country_location": {
+          "lon": 34.82,
+          "lat": -6.27
+        },
+        "primary_type_id": 4611,
+        "primary_type_name": "Flood",
+        "countries": [
+          {
+            "href": "https://api.reliefweb.int/v1/countries/244",
+            "name": "United Republic of Tanzania",
+            "location": {
+              "lon": 34.82,
+              "lat": -6.27
+            },
+            "id": 244,
+            "shortname": "Tanzania",
+            "iso3": "tza",
+            "primary": true
+          }
+        ],
+        "types": [
+          {
+            "code": "FL",
+            "name": "Flood",
+            "id": 4611,
+            "primary": true
+          }
+        ]
+      }
+    },
+    {
+      "original": "Tajikistan: Earthquake - Mar 2023\n\nOn 23 March 2023, two earthquakes were registered on the territory of Tajikistan. The first one occurred at 1:07 local time. The epicenter of the earthquake was registered 6-7 km away from Paldorak village, Langar rural jamoat of Kuhistoni Mastchoh district of Sughd Region. The intensity of the first tremors was of 5 to 6 magnitude in the aforementioned districts, 4 to 5 magnitude in Rasht district, and 3 to 4 magnitude as measured in Dushanbe city. The second earthquake occurred at a depth of 40 km at 07:53 local time, with a magnitude of 4.8. In Dushanbe, the intensity of the tremors was 1 to 2 magnitudes and a tremor of 2 magnitudes struck Rasht district. According to preliminary information, no deaths were reported, however, three residents of the Kuhistoni Mastchoh district were injured. On 28 March 2023, Tajikistan Governmental Commission on damages identified the scale of damages and losses, that include 318 damaged houses in Kuhistoni Mashoh district of Sughd province. All damaged properties were inspected by the Emergency Situations Commission in Paldorak, Yarm, and Pakshif villages of Langar rural jamoat of Kuhistoni Mashoh district. Paldorak village was affected the most with 165 houses damaged. In Pakshif village 49 houses, in Yarm- 23, in Dashti Miyona -11, in Dehmanoro -18, in Rogh - 44, in Samjon - 7 and in Khudqifi Bolo -7 houses were damaged by the earthquake. All damaged houses and auxiliary structures were built in the 1970s and 80s. The damaged structures are located on hills and had weak foundations, the earthquake has damaged walls and timber structures, rendering these homes unsafe. ([IFRC, 13 Apr 2023](https://reliefweb.int/node/3952727))",
+      "summary": " On 23 March 2023, two earthquakes occurred in Tajikistan, with the first registering 5-6 magnitude in the Kuhistoni Mastchoh district and 4-5 magnitude in Rasht district. The second earthquake registered 4.8 magnitude. Three people were injured and 318 houses were damaged in the Kuhistoni Mastchoh district, with 165 of them in Paldorak village. The damaged houses were built in the 1970s and 80s and had weak foundations, resulting in damaged walls and timber structures.",
+      "metadata": {
+        "id": "51547",
+        "date_event": 1679529600000,
+        "date_changed": 1681394152000,
+        "date_created": 1681394082000,
+        "primary_country_id": 227,
+        "primary_country_name": "Tajikistan",
+        "primary_country_iso3": "tjk",
+        "primary_country_location": {
+          "lon": 71.04,
+          "lat": 38.84
+        },
+        "primary_type_id": 4628,
+        "primary_type_name": "Earthquake",
+        "countries": [
+          {
+            "href": "https://api.reliefweb.int/v1/countries/227",
+            "name": "Tajikistan",
+            "location": {
+              "lon": 71.04,
+              "lat": 38.84
+            },
+            "id": 227,
+            "shortname": "Tajikistan",
+            "iso3": "tjk",
+            "primary": true
+          }
+        ],
+        "types": [
+          {
+            "code": "EQ",
+            "name": "Earthquake",
+            "id": 4628,
+            "primary": true
+          }
+        ]
+      }
+    },
+    {
+      "original": "Kenya: Floods - Mar 2023\n\nHeavy rainfall has been affecting several parts of Kenya and Ethiopia over the last week, causing floods and severe weather-related incidents that resulted in casualties and widespread damage [...] According to media reports, in Kenya, at least 12 people died, of which seven were in Gilgil Town (Nauru County), three others in West Pokot County, one in the capital Nairobi, and another in Suswa Town (Narok County). In addition, thousands of people have been displaced (including 812 households in Marsabit County, northern Kenya), and several houses damaged. [(ECHO, 30 Mar 2023)](https://reliefweb.int/node/3948409)    \n\nOn 2 April, heavy rainfall affected Taita–Taveta County (southern Kenya), causing flash floods and resulting in casualties and damage. According to media, one person (a pregnant woman) died while two others are still missing following a flash flood event. Widespread damage was reported across the affected County and also in Narok County (south-western Kenya) due to heavy rain and floods. [(ECHO, 6 Apr 2023)](https://reliefweb.int/node/3950713)\n\nOver the past few days, heavy rainfall has affected Kisumu County (south-western Kenya), causing flash floods and resulting in displacement and damage.\nAccording to media report a total of 1,000 people have been displaced across several parts of the county. [(ECHO, 28 Apr 2023)](https://reliefweb.int/node/3956967)",
+      "summary": " In March, heavy rainfall caused floods in Kenya resulting in 12 deaths, thousands of people displaced, and several houses damaged. In April, further heavy rainfall caused flash floods in Taita–Taveta County, resulting in one death and two missing people, as well as damage in Narok County. In April, heavy rainfall in Kisumu County caused flash floods and displacement of 1,000 people.",
+      "metadata": {
+        "id": "51543",
+        "date_event": 1680134400000,
+        "date_changed": 1682938560000,
+        "date_created": 1680805059000,
+        "primary_country_id": 131,
+        "primary_country_name": "Kenya",
+        "primary_country_iso3": "ken",
+        "primary_country_location": {
+          "lon": 37.86,
+          "lat": 0.53
+        },
+        "primary_type_id": 4611,
+        "primary_type_name": "Flood",
+        "countries": [
+          {
+            "href": "https://api.reliefweb.int/v1/countries/131",
+            "name": "Kenya",
+            "location": {
+              "lon": 37.86,
+              "lat": 0.53
+            },
+            "id": 131,
+            "shortname": "Kenya",
+            "iso3": "ken",
+            "primary": true
+          }
+        ],
+        "types": [
+          {
+            "code": "FF",
+            "name": "Flash Flood",
+            "id": 4624
+          },
+          {
+            "code": "FL",
+            "name": "Flood",
+            "id": 4611,
+            "primary": true
+          }
+        ]
+      }
+    },
+    {
+      "original": "Ethiopia: Floods - Mar 2023\n\nSince the start of March, heavy rainfall has been affecting several regions of Ethiopia (particularly the Somali Region), causing widespread floods, the overflow of rivers and leading to casualties and damage. According to UN OCHA, at least 29 people have died (all in Somali Region), and 240,000 have been affected or displaced across the country. Many of the affected people are located in Somali, Oromia and Afar Region. ([ECHO, 5 Apr 2023](https://reliefweb.int/node/3950312))\n\nNew flood incidents have been reported end of March in Loka Abaya Woreda of Sidama Region displacing 2,500 people and damaging 92 hectares of crops and vegetables. There is an urgent need for transportation (alternatives to road) to move those stranded. Flash floods have also affected eight kebeles in Harawa Woreda (Fafan Zone) of the Somali Region (which has reportedly impacted about 46,900 households, destroyed over 16,800 livestock and more than 24,400 hectares of crops across 4 zones. ([OCHA, 24 Apr 2023](https://reliefweb.int/node/3955432))",
+      "summary": " In March 2023, heavy rainfall in Ethiopia caused widespread flooding, resulting in 29 deaths and displacement of 240,000 people across the country. At the end of March, 2,500 people were displaced and 92 hectares of crops were damaged in Loka Abaya Woreda of Sidama Region. In Harawa Woreda of the Somali Region, flash floods affected eight kebeles, impacting 46,900 households, destroying 16,800 livestock and 24,400 hectares of crops.",
+      "metadata": {
+        "id": "51542",
+        "date_event": 1677628800000,
+        "date_changed": 1683153454000,
+        "date_created": 1680764129000,
+        "primary_country_id": 87,
+        "primary_country_name": "Ethiopia",
+        "primary_country_iso3": "eth",
+        "primary_country_location": {
+          "lon": 39.62,
+          "lat": 8.63
+        },
+        "primary_type_id": 4611,
+        "primary_type_name": "Flood",
+        "countries": [
+          {
+            "href": "https://api.reliefweb.int/v1/countries/87",
+            "name": "Ethiopia",
+            "location": {
+              "lon": 39.62,
+              "lat": 8.63
+            },
+            "id": 87,
+            "shortname": "Ethiopia",
+            "iso3": "eth",
+            "primary": true
+          }
+        ],
+        "types": [
+          {
+            "code": "FL",
+            "name": "Flood",
+            "id": 4611,
+            "primary": true
+          }
+        ]
+      }
+    },
+    {
+      "original": "Sao Tome and Principe: Dengue Fever Outbreak - May 2022\n\nOn 13 May 2022, the Ministry of Public Health of Sao Tome-and-Principe reported the first outbreak of Dengue fever in Sao Tome-and-Principe to the WHO. The suspected cases started end March 2022, with recorded cases suffering from severe fever and clinical characteristics of Dengue fever. On 11 April 2022, the laboratory of the central hospital reported a suspected case of dengue fever to clinical officials, triggering such implementation of epidemiological and entomological surveillance protocols. On the same day, the Ayres Central Hospital in Menezes reported a positive case of dengue fever to officials at the Epidemiological Surveillance Department (DVE in Portuguese). The reported case was a 27-year-old Sao Tomean, whose place of residence is Portugal and who works on the island of Guadeloupe. He reportedly arrived on leave with his family on 26 March 2022. He started having symptoms (fever, headaches, and joint pain) on 4 April 2022. Initially treated at the Mezochi (Trindade) health centre, he was referred to the main central hospital because of persistent fever. The disease spread quickly to all the country districts and as of 26th August 2022, 980 cases of dengue fever were already reported. Ahead of the rainy season, there was a high probability to see a pick-up on the caseload and, given the health capacity, a risk of the outbreak getting out of hand without stronger early actions and preventive measures. Part of the MoH partners, the Cruz Vermelha de Sao Tome e Principe launched a DREF for anticipatory action ahead of the flooding season. ([IFRC, 19 Oct 2022](https://reliefweb.int/node/3898040))",
+      "summary": " On 13 May 2022, the Ministry of Public Health of Sao Tome-and-Principe reported the first outbreak of Dengue fever to the WHO. The disease spread quickly to all the country districts and as of 26th August 2022, 980 cases of dengue fever were already reported. The Cruz Vermelha de Sao Tome e Principe launched a DREF for anticipatory action ahead of the flooding season to prevent the outbreak from getting out of hand.",
+      "metadata": {
+        "id": "51539",
+        "date_event": 1652400000000,
+        "date_changed": 1680505366000,
+        "date_created": 1680293733000,
+        "primary_country_id": 206,
+        "primary_country_name": "Sao Tome and Principe",
+        "primary_country_iso3": "stp",
+        "primary_country_location": {
+          "lon": 6.74,
+          "lat": 0.46
+        },
+        "primary_type_id": 4642,
+        "primary_type_name": "Epidemic",
+        "countries": [
+          {
+            "href": "https://api.reliefweb.int/v1/countries/206",
+            "name": "Sao Tome and Principe",
+            "location": {
+              "lon": 6.74,
+              "lat": 0.46
+            },
+            "id": 206,
+            "shortname": "Sao Tome and Principe",
+            "iso3": "stp",
+            "primary": true
+          }
+        ],
+        "types": [
+          {
+            "code": "EP",
+            "name": "Epidemic",
+            "id": 4642,
+            "primary": true
+          }
+        ]
+      }
+    },
+    {
+      "original": "South Sudan: Measles - Dec 2022\n\nThe Ministry of Health of the Republic of South Sudan declared a measles outbreak on the 10th of Dec 2022.\nThis is the second declaration of a measles outbreak last year after the first one on 23 February 2022.\nSouth Sudan started reporting measles cases in January 2022 in two counties -Torit in Eastern Equatoria State and Maban in Upper Nile State and as of week 5 (ending 04 February 2023), 55 counties across all 10 States have reported suspected measles cases. Out of the counties reporting measles cases, outbreaks have been confirmed in 25 counties after surpassing the outbreak threshold. [Gov't South Sudan/WHO, 6 Feb 2023](https://reliefweb.int/node/3948315)\n\nData obtained from January 1, 2022, to March 19, 2023, shows that a total of 63 counties across all 10 States have reported at least one suspected measles case, with confirmed outbreaks in 36 counties.  \nTwenty-one (21) counties conducted reactive campaigns with 937,123 children vaccinated. A cumulative sum of 5,810 suspected cases have been reported; 4,137 and 1,673 in 2022 and 2023, respectively. [Gov't South Sudan/WHO, 28 Mar 2023](https://reliefweb.int/node/3948324)\n\nThe Ministry of Health, South Sudan, in partnership with Gavi, the Vaccine Alliance, UNICEF, WHO and other key partners, has launched a nationwide measles vaccination campaign. The campaign aims to vaccinate more than 2.7 million children aged 6-59 months against the highly infectious disease. [GAVI, 24 Apr 2023](https://reliefweb.int/node/3955469)",
+      "summary": " The Ministry of Health of South Sudan declared a measles outbreak on December 10, 2022. By March 19, 2023, 63 counties across all 10 States had reported at least one suspected measles case, with confirmed outbreaks in 36 counties. A nationwide measles vaccination campaign was launched in April 2023 to vaccinate more than 2.7 million children aged 6-59 months against the highly infectious disease.",
+      "metadata": {
+        "id": "51538",
+        "date_event": 1670630400000,
+        "date_changed": 1682939084000,
+        "date_created": 1680288521000,
+        "primary_country_id": 8657,
+        "primary_country_name": "South Sudan",
+        "primary_country_iso3": "ssd",
+        "primary_country_location": {
+          "lon": 30.5,
+          "lat": 6.9
+        },
+        "primary_type_id": 4642,
+        "primary_type_name": "Epidemic",
+        "countries": [
+          {
+            "href": "https://api.reliefweb.int/v1/countries/8657",
+            "name": "South Sudan",
+            "location": {
+              "lon": 30.5,
+              "lat": 6.9
+            },
+            "id": 8657,
+            "shortname": "South Sudan",
+            "iso3": "ssd",
+            "primary": true
+          }
+        ],
+        "types": [
+          {
+            "code": "EP",
+            "name": "Epidemic",
+            "id": 4642,
+            "primary": true
+          }
+        ]
+      }
+    },
+    {
+      "original": "Tanzania: Marburg Virus Disease Outbreak - Mar 2023\n\nOn 16 March 2023, the Ministry of Health (MOH) of the Republic of Tanzania announced that seven cases and five deaths of an unknown disease had been reported in Kagera region (that borders Rwanda, Uganda, and Burundi) in Bukoba rural, Maruku and Kanyengereko ward in Bulinda and Butayaibega villages. The cases were confirmed for Marburg Virus Disease (MVD) on 21 March 2023. The index case was reported to have a travel history from Goziba in Lake Victoria and developed symptoms upon returning to his village in Bukoba while the timeline for exposure and onset of symptoms remains unknown. Four other cases were from the same family as the index case. Two healthcare workers were also infected and one of them succumbed to the disease. This is the first officially declared Marburg Outbreak in Tanzania, although serological studies have found the presence of Marburg in bat populations in the region. As of 22 March 2023, a total of eight cases including five deaths (CFR 63.6%) have been reported, while another three cases are currently undergoing treatment in health facilities in the Kagera region. ([IFRC, 30 Mar 2023](https://reliefweb.int/node/3948419))\n\nA total of 17 confirmed cases and 12 deaths since the declaration of the outbreak on 13 February 2023 through 21 April 2023 have been reported. Among the 17 confirmed cases, three are survivors, 12 deaths, one is admitted and one with unknown outcome. ([IFRC, 27 Apr 2023](https://reliefweb.int/node/3956535))",
+      "summary": " On March 16th, 2023, the Ministry of Health of Tanzania announced seven cases and five deaths of an unknown disease in the Kagera region. The cases were later confirmed to be Marburg Virus Disease (MVD). As of April 21st, 2023, there have been 17 confirmed cases and 12 deaths reported, with three survivors, one admitted, and one with an unknown outcome.",
+      "metadata": {
+        "id": "51537",
+        "date_event": 1678924800000,
+        "date_changed": 1682939557000,
+        "date_created": 1680181448000,
+        "primary_country_id": 244,
+        "primary_country_name": "United Republic of Tanzania",
+        "primary_country_iso3": "tza",
+        "primary_country_location": {
+          "lon": 34.82,
+          "lat": -6.27
+        },
+        "primary_type_id": 4642,
+        "primary_type_name": "Epidemic",
+        "countries": [
+          {
+            "href": "https://api.reliefweb.int/v1/countries/244",
+            "name": "United Republic of Tanzania",
+            "location": {
+              "lon": 34.82,
+              "lat": -6.27
+            },
+            "id": 244,
+            "shortname": "Tanzania",
+            "iso3": "tza",
+            "primary": true
+          }
+        ],
+        "types": [
+          {
+            "code": "EP",
+            "name": "Epidemic",
+            "id": 4642,
+            "primary": true
+          }
+        ]
+      }
+    },
+    {
+      "original": "Ecuador: Floods and Landslides - Feb 2023\n\nOver 18-21 February, floods and landslides triggered by heavy rainfall affected Ecuador and resulted in casualties and damage. The most affected Provinces are Chimborazo, Esmeraldas, Los Ríos, Loja, Manabí, El Oro and Guayas. According to the Risk Management Secretariat, at least six people have died due to flood events (four across Chimborazo Province and two others in Esmeraldas Province in central and northern Ecuador). ([ECHO, 23 Feb 2023](https://reliefweb.int/node/3936928))\n\nFollowing the deadly landslide that occurred in Alausí Canton (Chimborazo Province, central Ecuador) on 26 March, the number of casualties increased. The Risk Management Secretariat of Ecuador (SGR) reports, as of 29 March at 2.00 UTC, 12 fatalities, 67 missing, 31 injured and 32 rescued people. In addition, 500 people have been affected as well as more than 160 houses. National authorities are conducting rescue and emergency activities and are providing help for those affected. ([ECHO, 29 Mar 2023](https://reliefweb.int/node/3948030))\n\nIn the rainy season, heavy rainfall has affected more than 58,700 people across 173 Cantons. The Guayas Province is one of the worst hit with 28,200 affected people. Other affected Provinces are Manabí, Los Ríos, Santa Elena, Cotopaxi, El Oro, Santo Domingo de Los Tsáchilas, Imbabura and Chimborazo. According to UN OCHA, 25 people died in the rainy season and 33 more following the landslide that occurred in Alausí Town (Chimborazo Province) on 26 March. In addition, 12,200 houses have been damaged displacing several people. ([ECHO, 11 Apr 2023](https://reliefweb.int/node/3951819))",
+      "summary": " In February and March of 2023, heavy rainfall in Ecuador caused floods and landslides, resulting in casualties and damage. At least 25 people have died, 33 are missing, 31 are injured, and 32 have been rescued. 58,700 people have been affected across 173 Cantons, with 28,200 in the Guayas Province alone. 12,200 houses have been damaged, displacing many people.",
+      "metadata": {
+        "id": "51536",
+        "date_event": 1676678400000,
+        "date_changed": 1681401118000,
+        "date_created": 1680090613000,
+        "primary_country_id": 81,
+        "primary_country_name": "Ecuador",
+        "primary_country_iso3": "ecu",
+        "primary_country_location": {
+          "lon": -78.43,
+          "lat": -1.16
+        },
+        "primary_type_id": 4611,
+        "primary_type_name": "Flood",
+        "countries": [
+          {
+            "href": "https://api.reliefweb.int/v1/countries/81",
+            "name": "Ecuador",
+            "location": {
+              "lon": -78.43,
+              "lat": -1.16
+            },
+            "id": 81,
+            "shortname": "Ecuador",
+            "iso3": "ecu",
+            "primary": true
+          }
+        ],
+        "types": [
+          {
+            "code": "FL",
+            "name": "Flood",
+            "id": 4611,
+            "primary": true
+          },
+          {
+            "code": "LS",
+            "name": "Land Slide",
+            "id": 4728
+          }
+        ]
+      }
+    },
+    {
+      "original": "Somalia: Floods - Mar 2023\n\nSeveral areas of Somalia received moderate rains in the week starting 12 March, with the heaviest rainfall recorded in Gedo and Bay regions, particularly in Baardheere, Wanle Wayne, Luuq and Doolow districts. According to the latest rainfall outlook for the 2023 Gu season. Partners have raised concerns over a likely deterioration of the living conditions, particularly for Internally Displaced Persons (IDPs) living in overcrowded settlements with inadequate shelter. The rains also come at a time when partners are struggling with a surge in disease outbreaks, including acute watery diarrhoea/cholera, and measles cases, which are likely to increase due to the risk of people consuming contaminated water and lack of adequate sanitation and hygiene facilities and services. ([OCHA, 23 Mar 2023](https://reliefweb.int/node/3946596))\n\nNearly 100,000 people have been affected by heavy rains and flash flooding in several areas of Somalia over the last week. [...] The worst affected district is Baardheere in Jubaland State; 21 people including six children have reportedly been killed. More than 13,000 families (about 78,000 people) have been affected; shelters for 8,945 families (about 53,600 people) were damaged or destroyed. ([OCHA, 3 Apr 2023](https://reliefweb.int/node/3949478))\n\nFloods have affected over 175,000 people in Somalia since the beginning of the rainy season, of whom 140,000 have been displaced. ([OCHA, 13 Apr 2023](https://reliefweb.int/node/3952601))",
+      "summary": " In March 2023, Somalia experienced heavy rains and flash flooding, resulting in the displacement of over 175,000 people. The worst affected district was Baardheere in Jubaland State, where 21 people, including six children, were killed. The rains have also caused a surge in disease outbreaks, including acute watery diarrhoea/cholera and measles.",
+      "metadata": {
+        "id": "51530",
+        "date_event": 1678579200000,
+        "date_changed": 1683153369000,
+        "date_created": 1679651828000,
+        "primary_country_id": 216,
+        "primary_country_name": "Somalia",
+        "primary_country_iso3": "som",
+        "primary_country_location": {
+          "lon": 47.33,
+          "lat": 5.79
+        },
+        "primary_type_id": 4611,
+        "primary_type_name": "Flood",
+        "countries": [
+          {
+            "href": "https://api.reliefweb.int/v1/countries/216",
+            "name": "Somalia",
+            "location": {
+              "lon": 47.33,
+              "lat": 5.79
+            },
+            "id": 216,
+            "shortname": "Somalia",
+            "iso3": "som",
+            "primary": true
+          }
+        ],
+        "types": [
+          {
+            "code": "FF",
+            "name": "Flash Flood",
+            "id": 4624
+          },
+          {
+            "code": "FL",
+            "name": "Flood",
+            "id": 4611,
+            "primary": true
+          }
+        ]
+      }
+    },
+    {
+      "original": "Türkiye: Floods - Mar 2023\n\nOn 14-15 March heavy rainfall affected the Provinces of Adiyaman and Sanliurfa (southern Türkiye) causing floods and resulting in casualties and damage. According to media, 14 people have died, of which 12 in Sanliurfa (hit by 111 mm of rain in 24 hours) and two others in Adiyaman (136 mm of rain in 24 hours). In addition, at least five people are still missing (three in Adiyaman and two in Sanliurfa) as reported by the Disaster and Emergency Management Presidency (AFAD) and media. Search and rescue operations conducted by national authorities are ongoing over the area. ([ECHO, 16 Mar 2023](https://reliefweb.int/node/3944005))\n\nThe damage of the flooding and what is left behind is striking in many districts of Adıyaman and Şanlıurfa, as the infrastructure facilities such as buildings, bridges and highways are demolished while some buildings can only be accessed by boat due to the river-like streets. More than 2000 homes, workplaces and vehicles are damaged, and some have been submerged in water. Despite surviving the earthquake, some homes have now been inundated with floodwaters, resulting in further displacement. ([Turkish Red Crescent Society, 04 Apr 2023](https://reliefweb.int/node/3950212/))",
+      "summary": " In March 2023, heavy rainfall caused flooding in the Provinces of Adiyaman and Sanliurfa in southern Türkiye, resulting in 14 deaths and five people missing. Search and rescue operations are ongoing, and the damage to infrastructure and displacement of people is significant.",
+      "metadata": {
+        "id": "51529",
+        "date_event": 1678838400000,
+        "date_changed": 1683151801000,
+        "date_created": 1679386139000,
+        "primary_country_id": 236,
+        "primary_country_name": "Türkiye",
+        "primary_country_iso3": "tur",
+        "primary_country_location": {
+          "lon": 35.18,
+          "lat": 39.06
+        },
+        "primary_type_id": 4611,
+        "primary_type_name": "Flood",
+        "countries": [
+          {
+            "href": "https://api.reliefweb.int/v1/countries/236",
+            "name": "Türkiye",
+            "location": {
+              "lon": 35.18,
+              "lat": 39.06
+            },
+            "id": 236,
+            "shortname": "Türkiye",
+            "iso3": "tur",
+            "primary": true
+          }
+        ],
+        "types": [
+          {
+            "code": "FL",
+            "name": "Flood",
+            "id": 4611,
+            "primary": true
+          }
+        ]
+      }
+    },
+    {
+      "original": "Paraguay: Floods - Feb 2023\n\nThe rains in the northern part of Paraguay that began in mid-February registered a maximum impact on 28 February, with more than 350 mm of rain recorded in a period of 12 hours, causing flash floods in the departments of Concepción, Alto Paraguay and Amambay.\n\nOn 27 February, a Departmental Declaration of Emergency was issued for the Department of Concepcion stating that \"the Department of Concepcion is declared in a state of emergency as a result of the heavy rains that affected the districts of San Lazaro, Horqueta, Sargento Felix Lopez, Paso Horqueta and Paso Barreto of the Department of Concepcion, causing flooding, road closures, isolation of several communities, affected homes and consequently paralyzing the activities in the areas of mining, agricultural, livestock, forestry and commercial production.\" \n\nRegarding the flood emergency situation, the Minister of the National Emergency Secretariat (SEN) mentioned during\nthe inter-institutional coordination meeting held at the Government Palace on 10 March, that this phenomenon impacts the Departments of Alto Paraguay, Amambay, Concepción, Pdte. Hayes, San Pedro and Itapuá and to date has affected almost 30,000 families across the country, evacuating several families by air, land and water, using its own means, the Air Force and the Paraguayan Navy. [...] According to the scenario presented by technicians from Meteorology and Hydrology Directorate, in the short term the number of families affected by floods could quadruple, according to the latest statistics, and there could be more than 100,000 families affected along the basins of the Paraguay River, Paraná and its affluents. There is also concern about an outbreak of mosquito-borne diseases such as dengue and chikungunya, with the Ministry of Public Health and Social Wellbeing reporting nearly 15,000 new cases on a weekly basis. ([IFRC, 18 Mar 2023](https://reliefweb.int/node/3944664))",
+      "summary": " In February 2023, heavy rains in northern Paraguay caused flash floods in the departments of Concepción, Alto Paraguay and Amambay. A Departmental Declaration of Emergency was issued for the Department of Concepcion, and the floods have affected nearly 30,000 families across the country. According to technicians from Meteorology and Hydrology Directorate, the number of families affected by floods could quadruple, and there is concern about an outbreak of mosquito-borne diseases such as dengue and chikungunya.",
+      "metadata": {
+        "id": "51528",
+        "date_event": 1676592000000,
+        "date_changed": 1679375998000,
+        "date_created": 1679375310000,
+        "primary_country_id": 186,
+        "primary_country_name": "Paraguay",
+        "primary_country_iso3": "pry",
+        "primary_country_location": {
+          "lon": -58.39,
+          "lat": -23.24
+        },
+        "primary_type_id": 4611,
+        "primary_type_name": "Flood",
+        "countries": [
+          {
+            "href": "https://api.reliefweb.int/v1/countries/186",
+            "name": "Paraguay",
+            "location": {
+              "lon": -58.39,
+              "lat": -23.24
+            },
+            "id": 186,
+            "shortname": "Paraguay",
+            "iso3": "pry",
+            "primary": true
+          }
+        ],
+        "types": [
+          {
+            "code": "FF",
+            "name": "Flash Flood",
+            "id": 4624
+          },
+          {
+            "code": "FL",
+            "name": "Flood",
+            "id": 4611,
+            "primary": true
+          }
+        ]
+      }
+    },
+    {
+      "original": "Ecuador/Peru: Earthquake - Mar 2023\n\nFollowing the 6.8 M earthquake (6.5 for Ecuadorean Authorities) that occurred on 18 March at 17:12 UTC that affected mostly the Provinces of Guayas, Azuay, Cañar y El Oro (central-southwestern Ecuador), the amount of injured people and damage has increased. In addition, the seismic event hit Tumbes Province (north-western Peru) and resulted in casualties and damage. In Ecuador, the Risk Management Secretariat of Ecuador (SGR) reports 13 fatalities (11 in El Oro Province and two in Azuay Province), 461 injured people, 89 destroyed houses and 192 damaged. In Peru, according to the National Institute of Civil Defense of Peru (INDECI), one person died, another has been injured, 140 people have been affected, and more than 50 houses have been damaged or destroyed across Tumbes Province. National authorities are still conducting the damage assessment and are providing help for those affected. ([ECHO, 20 Mar 2023](https://reliefweb.int/node/3945000))",
+      "summary": " On 18 March 2023, a 6.8 magnitude earthquake struck central-southwestern Ecuador and north-western Peru, resulting in 13 fatalities, 461 injured people, 89 destroyed houses, and 192 damaged houses in Ecuador, and 1 fatality, 1 injured person, 140 affected people, and over 50 damaged or destroyed houses in Peru. National authorities are providing help for those affected.",
+      "metadata": {
+        "id": "51526",
+        "date_event": 1679097600000,
+        "date_changed": 1681400639000,
+        "date_created": 1679315769000,
+        "primary_country_id": 81,
+        "primary_country_name": "Ecuador",
+        "primary_country_iso3": "ecu",
+        "primary_country_location": {
+          "lon": -78.43,
+          "lat": -1.16
+        },
+        "primary_type_id": 4628,
+        "primary_type_name": "Earthquake",
+        "countries": [
+          {
+            "href": "https://api.reliefweb.int/v1/countries/81",
+            "name": "Ecuador",
+            "location": {
+              "lon": -78.43,
+              "lat": -1.16
+            },
+            "id": 81,
+            "shortname": "Ecuador",
+            "iso3": "ecu",
+            "primary": true
+          },
+          {
+            "href": "https://api.reliefweb.int/v1/countries/187",
+            "name": "Peru",
+            "location": {
+              "lon": -75.31,
+              "lat": -10.15
+            },
+            "id": 187,
+            "shortname": "Peru",
+            "iso3": "per"
+          }
+        ],
+        "types": [
+          {
+            "code": "EQ",
+            "name": "Earthquake",
+            "id": 4628,
+            "primary": true
+          }
+        ]
+      }
+    },
+    {
+      "original": "Peru: Floods and Landslides - Mar 2023\n\nPiura Region (northern Peru) is currently affected by the effects of the Cyclone Yaku as well as heavy rains. Overflowing rivers have left four dead people and severe damage on 2,077 homes, 13 educational centres, 35 health establishments, 2,700 means of transportation and 4,730 irrigation canals. According to the Regional Emergency Operations Center in Piura (COER) there are 3,529 people affected by the rains. More than 580 districts of the north coast and mountains are at risk due to the torrential rains, which can cause landslides and mudslides, informed the National Institute of Civil Defense (Indeci). The cyclone Yaku is severely impacting Tumbes, Piura, and Lambayeque departments, generating floods, river overflowing and landslide. ([ECHO, 11 Mar 2023](https://reliefweb.int/node/3942420))\n\nThe number of casualties is increasing following heavy rainfall, floods and landslides that have been affecting several Departments of Peru since the beginning of March. According to UN OCHA, at least 58 people have died while the National Institute of Civil Defense of Peru (INDECI) reports more than 24,000 affected people and more than 6,400 damaged or destroyed houses. The State of Emergency has been declared in the Departments of Cajamarca, La Libertad, Lambayeque and Piura for the impact due to the huge precipitations. ([ECHO, 14  Mar 2023](https://reliefweb.int/node/3943143))\n\nOn 16 March 2023, the Peru Civil Protection (INDECI per its acronym in Spanish) published updated information on the effects of the heavy rains in the departments Piura, Tumbes and Lima. In the department of Piura, 9,253 people were affected (976 increase since the 15 March report), including 6 deaths and 8 injuries. Additionally, 3,637 homes were affected (272 increase), and 292 homes were destroyed (29 increase). In the department of Tumbes, there were 563 people affected (209 increase); 270 homes were affected and 10 were destroyed. In the department of Lima, there were 208 people affected (199 increase) and 23 homes destroyed (20 increase). ([PAHO, 16 Mar 2023](https://reliefweb.int/node/3944467/))\n\nOn 22 March 2023, the Peru Civil Protection published updated information on the effects of the heavy rains in the departments of Lambayeque, Áncash, Ayacucho, and Piura. In the department of Lambayeque, there were 3,692 people (372 increase since the 21 March report) and 1,368 homes affected (120 increase). In addition, 336 homes were destroyed (23 increase). In the department of Áncash, there were 4,691 people and 1,268 homes affected. Additionally, 100 homes and one health care facility were destroyed, and 5 health care facilities were affected. In the department of Ayacucho, 7,245 people were affected and one death was reported; additionally, 1,198 homes and 7 health care facilities were affected, with 110 homes and one health care facility destroyed. ([PAHO, 23 Mar 2023](https://reliefweb.int/node/3946682/))\n\nHeavy rainfall has been affecting most of Peru since January 2023, causing floods, rivers to overflow and triggering landslides that have resulted in casualties and damage. The most affected departments are Piura (the worst affected one), Tumbes and Lambayeque in the north and Ayacucho and Arequipa in the south. UN OCHA and the National Center for Estimation, Prevention and Disaster Risk Reduction (CENEPRED) report, as of 27 March, 71 fatalities, nearly 131,000 people in need of humanitarian assistance, around 54,000 damaged houses and 144 destroyed bridges across the country. The Government has declared the state of emergency for 1,030 districts (54% of the total of districts across the country). Humanitarian organizations are currently responding to this emergency as well as collecting more information on needs and risks. ([ECHO, 28 Mar 2023](https://reliefweb.int/node/3947561))\n\nTens of thousands of families in the northern departments of Lambayeque, Piura and Tumbes still reeling from recent flooding linked to the El Niño Costero phenomenon continue to withstand heavy rains, forecast to continue battering badly affected coastal communities. Official impact figures continue to grow, with 77 deaths and more than 15,000 homes destroyed. The humanitarian community estimates 517,000 people in need. UN and international NGO teams continue supporting the Government-led response following a request for international assistance.\n\nPreliminary findings indicate that shelter, camp coordination and assistance, and delivering assistance to vulnerable migrants and refugees are priority concerns. The floods have directly damaged the homes of some 75,900 families. Education authorities estimate that the disaster has affected educational access for 55,440 children. Social protection services also need support, as Government child protection services personnel are overstretched. Information on shelter conditions and basic needs remains scarce, and the dispersal of the affected population poses a challenge for identifying and responding to protection cases.\n\nHumanitarian access remains a significant response challenge, as the floods’ damage to infrastructure has isolated several communities. ([OCHA, 10 Apr 2023](https://reliefweb.int/node/3951561/))\n\nAs of 13 April, the National Civil Defence Institute (INDECI) reports that the floods have affected 246,813 people and left another 42,136 people homeless across the country, according to damage assessments and needs analyses (DANA) records, approximately 53 per cent of which have been processed.\n\nApproximately 517,000 people have urgent humanitarian needs, according to preliminary estimates by the National Humanitarian Network (RHN, per its Spanish acronym) as of 29 March, a number that could increase as information continues to come in from the field amid persistent heavy rains.\n\nThe floods have directly affected more than 114,900 households (about 460,000 people), most of them in the Lambayeque, Piura, and Lima regions. [...] Authorities have declared a state of emergency in 1,056 districts (54 per cent of all districts in Peru). [...] The Ministry of Economy and Finance indicated that the cost of reactivating the economy and responding to the emergency is approximately US$3.1 billion. [...] According to the Emergency Food Security Assessment (EFSA) 2022, 57 per cent of the population (around 16 million people nationwide) suffered from moderate or severe levels of food insecurity prior to the floods. At present, one out of every two people are already using coping strategies to mitigate the floods’ impact to their livelihoods. Any additional impact is likely to exacerbate their situation and cause further food insecurity. ([OCHA, 18 Apr 2023](https://reliefweb.int/node/3954029/))\n\nThe heavy rains have left a total of 65,289 people without homes, 377,190 people affected, 146,539 households affected, 99 dead and 13 missing throughout the country. Between 13 April and 24 April, there was an increase of 130,378 people impacted, according to official data (with 35.5 per cent of the damages and needs records still to be validated). ([OCHA, 27 Apr 2023](https://reliefweb.int/node/3956682/))",
+      "summary": "\n\nSince the beginning of March, Peru has been affected by heavy rainfall, floods, and landslides, resulting in casualties and damage. As of 27 April, 71 fatalities, 131,000 people in need of humanitarian assistance, 54,000 damaged houses, and 144 destroyed bridges have been reported. The most affected departments are Piura, Tumbes, Lambayeque, Ayacucho, and Arequipa. The Government has declared the state of emergency for 1,030 districts and the humanitarian community estimates 517,000 people in need. The floods have directly affected more than 114,900 households (about 460,000 people), with 65,289 people without homes, 377,190 people affected, 146,539 households affected, 99 dead and 13 missing throughout the country.",
+      "metadata": {
+        "id": "51516",
+        "date_event": 1678492800000,
+        "date_changed": 1682609048000,
+        "date_created": 1678758986000,
+        "primary_country_id": 187,
+        "primary_country_name": "Peru",
+        "primary_country_iso3": "per",
+        "primary_country_location": {
+          "lon": -75.31,
+          "lat": -10.15
+        },
+        "primary_type_id": 4611,
+        "primary_type_name": "Flood",
+        "countries": [
+          {
+            "href": "https://api.reliefweb.int/v1/countries/187",
+            "name": "Peru",
+            "location": {
+              "lon": -75.31,
+              "lat": -10.15
+            },
+            "id": 187,
+            "shortname": "Peru",
+            "iso3": "per",
+            "primary": true
+          }
+        ],
+        "types": [
+          {
+            "code": "FL",
+            "name": "Flood",
+            "id": 4611,
+            "primary": true
+          },
+          {
+            "code": "LS",
+            "name": "Land Slide",
+            "id": 4728
+          },
+          {
+            "code": "TC",
+            "name": "Tropical Cyclone",
+            "id": 4618
+          }
+        ]
+      }
+    },
+    {
+      "original": "Vanuatu: Earthquake - Mar 2023\n\nVanuatu has been affected by two destructive cyclones and a 6.6 M earthquake between 1-4 March 2023. On 7 March, Vanuatu requested assistance from the Union Civil Protection Mechanism (UCPM) for aerial capacities and vessels in support of possible evacuation, further assessment, and delivery of assistance to the people affected. ([ECHO, 8 Mar 2023](https://reliefweb.int/node/3941258))\n\nVanuatu declared a state of emergency for the whole country. The UN, NDMO and the humanitarian community are carrying out a needs assessment. Early indications indicate widespread damage and destruction to shelter, structures made from local materials (including latrines, bush kitchens, and houses), infrastructures in general, loss of crops and home gardens, and lastly water and sanitation-related needs. Port Vila and Tanna Island are the most affected areas. ([ECHO, 10 Mar 2023](https://reliefweb.int/node/3942192))\n\nThe disasters have caused widespread damage and destruction. The cost of damages is estimated at US$50 million. About 30,000 households are affected, and 5,000 people are still displaced in evacuation centres. Fifteen days after the disasters, food security, lack of drinkable water, and water-borne disease risks are a growing common concern among stakeholders. ([ECHO, 13 Mar 2023](https://reliefweb.int/node/3942727))",
+      "summary": " Vanuatu has been affected by two destructive cyclones and a 6.6 M earthquake between 1-4 March 2023. The disasters have caused widespread damage and destruction, with an estimated cost of US$50 million. About 30,000 households are affected, and 5,000 people are still displaced in evacuation centres. The UN, NDMO and the humanitarian community are carrying out a needs assessment, with food security, lack of drinkable water, and water-borne disease risks being a growing common concern.",
+      "metadata": {
+        "id": "51514",
+        "date_event": 1677801600000,
+        "date_changed": 1678775900000,
+        "date_created": 1678418755000,
+        "primary_country_id": 249,
+        "primary_country_name": "Vanuatu",
+        "primary_country_iso3": "vut",
+        "primary_country_location": {
+          "lon": 167.72,
+          "lat": -16.26
+        },
+        "primary_type_id": 4628,
+        "primary_type_name": "Earthquake",
+        "countries": [
+          {
+            "href": "https://api.reliefweb.int/v1/countries/249",
+            "name": "Vanuatu",
+            "location": {
+              "lon": 167.72,
+              "lat": -16.26
+            },
+            "id": 249,
+            "shortname": "Vanuatu",
+            "iso3": "vut",
+            "primary": true
+          }
+        ],
+        "types": [
+          {
+            "code": "EQ",
+            "name": "Earthquake",
+            "id": 4628,
+            "primary": true
+          }
+        ]
+      }
+    },
+    {
+      "original": "Bangladesh: Cox’s Bazar Camp Settlement Fire - Mar 2023\n\nIn the afternoon of 5 March 2023, a massive and devastating fire broke out in Kutupalong Balukhali refugee camps in Cox’s Bazar, Bangladesh. Flames blazed for some three hours in Camp 11, which is managed by IOM, until the Rohingya refugee Safety Unit Volunteers trained on firefighting, local fire fighters and local authorities managed to contain the fire, around 5pm. Three-wheeler Mobile Fire Fighting Units provided by UNHCR, were deployed from across the camps and helped reach the congested areas. So far, no casualties have been reported. Some 12,000 refugees were displaced, more than 2,000 shelters were destroyed or damaged, and more than 90 facilities were damaged including hospitals and learning centres. [(UNHCR, 5 Mar 2023)](https://reliefweb.int/node/3940215/)\n\nAlthough the cause of the fire incident remains unknown as no official reports have been released by the government, however, the current season, wind intensity and direction as well as the type of materials used for the settlement and density of shelters, have been key contributing factors as to why the fire had spread rapidly and engulfed its surrounding areas. Based on situation reports dated 6 March 2023, more than 3,000 households or more than 15,000 individuals have been affected, with more than 5,000 individuals displaced. More than 2,800 shelters have been damaged (2,664 fully damaged; 141 partially damaged) including their household belongings such as blankets, sleeping mats, clothing, cooking materials, mosquito nets and hygiene related items. More than 1,000 WASH infrastructures were destroyed including three water networks, four Fecal Sludge Managment (FSM) Treatment plants, one Material Recovery Facility (MRF), 153 bathing cubicles, 538 latrine doors, and 351 tube-wells with hand pumps. Moreover, three Health facilities were destroyed, including one Health Post (HP)and two Primary Health Centers (PHCs). In addition, 155 critical infrastructures such as learning centers, Women Friendly Spaces, women-led community center, child friendly space, moktubs/mosques, have been reported to be destroyed including their equipment and materials being used.  [(IFRC, 11 Mar 2023)](https://reliefweb.int/node/3942433/)\n\nAccording to the latest report, there are 15,926 people affected by the recent incident (3,691 men, 4,036 women, 4,121 boys and 4,078 girls). Out of this number, 5,274 people have been displaced from their homes. A total of 2,805 shelters have been damaged, with 2,664 of them being destroyed and 141 partially damaged. 155 facilities have been damaged, and 992 WASH facilities have been damaged. [(ISCG, 20 Apr 2023)](https://reliefweb.int/node/3954672/)",
+      "summary": " On 5 March 2023, a massive fire broke out in Kutupalong Balukhali refugee camps in Cox’s Bazar, Bangladesh. The fire was contained after three hours, with no casualties reported. However, 12,000 refugees were displaced, more than 2,000 shelters were destroyed or damaged, and more than 90 facilities were damaged including hospitals and learning centres. The cause of the fire is unknown, but the season, wind intensity and direction, type of materials used for the settlement, and density of shelters are believed to be contributing factors. According to the latest report, 15,926 people have been affected, with 5,274 displaced from their homes, 2,805 shelters damaged, 155 facilities damaged, and 992 WASH facilities damaged.",
+      "metadata": {
+        "id": "51508",
+        "date_event": 1677974400000,
+        "date_changed": 1682042139000,
+        "date_created": 1678167179000,
+        "primary_country_id": 31,
+        "primary_country_name": "Bangladesh",
+        "primary_country_iso3": "bgd",
+        "primary_country_location": {
+          "lon": 90.27,
+          "lat": 23.84
+        },
+        "primary_type_id": 5706,
+        "primary_type_name": "Fire",
+        "countries": [
+          {
+            "href": "https://api.reliefweb.int/v1/countries/31",
+            "name": "Bangladesh",
+            "location": {
+              "lon": 90.27,
+              "lat": 23.84
+            },
+            "id": 31,
+            "shortname": "Bangladesh",
+            "iso3": "bgd",
+            "primary": true
+          }
+        ],
+        "types": [
+          {
+            "code": "FR",
+            "name": "Fire",
+            "id": 5706,
+            "primary": true
+          }
+        ]
+      }
+    },
+    {
+      "original": "Tropical Cyclone Kevin - Mar 2023\n\nTropical cyclone KEVIN-23 formed on March 1, 2023, over the South Pacific Ocean between Vanuatu and Caledonia and is moving southeast over the Vanuatu Islands. On 3 March at about 06:00 UTC, the centre of the KEVIN-23 cyclone was located offshore approximately 85 km west of Port Vila with maximum sustained winds of 155 km/h and heavy rainfall. The cyclone came just a couple of days after [Tropical Cyclone JUDY-23.](https://reliefweb.int/disaster/ec-2023-000028-vut) ([UNOSAT, 3 Mar 2023](https://reliefweb.int/node/3939920))\n\nAccording to the National Disaster Management Office (NDMO), a total of 148,981 people (46% of the total population) have been affected by the cyclones at Category 3 and 4, with 29,794 households impacted, including an estimated 58,000 children under 15. The worst-affected provinces are Shefa, Penama, and Malapa. Access to safe water is a critical need as no running water is available in the main affected areas. Education and healthcare have also been severely impacted, with schools remaining closed and some healthcare facilities damaged. ([UNICEF, 4 Mar 2023](https://reliefweb.int/node/3940065))\n\nTropical cyclone KEVIN impacted Vanuatu from the north-west to the south-east since 3 to 4 March - as category 4. The whole population of Vanuatu was impacted by winds of more than 60 km/h. About 251,346 persons were impacted by cyclone winds of category 2 to 4 (more than 80% of the population). About 150,000 persons (30,000 households) were impacted by cyclone winds of category 3 to 4 that triggered a national response. ([ECHO, 6 Mar 2023](https://reliefweb.int/node/3940362/))\n\nTropical cyclones JUDY and KEVIN (both of Cat4 intensity) made landfall over Vanuatu on the 1st and 3rd March. On the 2nd of March, national authorities declared a State of Emergency in the provinces of Mera Lava, Penama, Ambrym, Paama, Shefa and Tafea, which was then extended to the entire country on the 5th of March. Strong winds and substantial amounts of rain caused major floodings, damage to houses and infrastructure, and caused power outages and communication system breakdowns. In addition, earthquakes with a magnitude of 6.6 and 5.4 occurred off the Island of Espiritu Santo in the early morning hours of 3rd March but no major impact was reported. The full extent of damages is not yet known, as initial assessments have only begun, and communication with many of most affected areas remains challenging. The Government of Vanuatu reports that 251,346 people are affected by the cyclones (about 80% of the total population), and 30,000 households.  ([OCHA, 10 Mar 2023](https://reliefweb.int/node/3942122/))\n\nAs of 13 March, there were 5,156 people (947 families) in 106 evacuation centers in Shefa and Tafaa. The distribution of shelter kits and non-food items in these centres is ongoing. According to the Vanuatu National Disaster Management Office (NDMO), 74% of the Arterial Road Network is currently accessible throughout the country. ([OCHA, 14 Mar 2023](https://reliefweb.int/node/3943066/))\n\nAs of 16 March, there are 4,293 people in evacuation centres; mainly in Shefa and Tafea provinces. NDMO and the national Food Security and Agriculture Cluster (FSAC) have begun with a “first push”, targeting 37,875 households in Priority areas 1 and 2 with food assistance on 15th of March. 66,983 households have been identified as in need. \\[...\\] 89% of Arterial Road Network is now accessible, and 81% of Vanuatu Outer Islan Airports are operational for emergency services; 67% of Vanuatu Outer Island Airports are approved for commercial services. ([OCHA, 16 Mar 2023](https://reliefweb.int/node/3943982/))\n\nAs of 20th March, 51 evacuation centres remain active hosting almost 2,000 people (476 households) in Shefa and Tafea, while over 800 people (129 households) are with host households. The “First Push” of dry rations distribution in Priority Areas 1 and 2 is ongoing, as well as distribution of food rations to Shepherd Islands with ships carrying food rations departing for Tanna Island and Tafea on the 18th March. ([OCHA, 22 Mar 2023](https://reliefweb.int/node/3945800/))\n\nThe Displacement and Evacuation Centre Management (DECM) Cluster (co-led by NDMO and IOM), reports that 41 evacuation centres (including schools, churches and halls) remain active on the island of Efate, a decrease from a peak of 51 active centres on Efate. As of 24 March, a total of 2,117 displaced persons (453 households) were staying in evacuation centres (1,305 individuals from 323 households) and with host families (812 individuals from 130 households) in identified locations in Shefa and Tafea provinces and lack adequate shelter materials to enable them to return to their homes in a safe and dignified manner. ([IOM, 28 Mar 2023](https://reliefweb.int/node/3947466/))\n\nAs of 29th March, 38 evacuation centers remain active, hosting 983 people (222 households) in Shefa and Tafea, while 812 people (130 households) are staying with host households. Over 4,000 affected households have been reached with Emergency Shelter distributions in Shefa (2960 HH) and Tafea (1156 HH) Provinces. Food Security and Agriculture Cluster (FSAC) partners are nearing completion of Priority Areas 1 and 2 across Shefa and Tafea Provinces of the “First Push” which covers all Priority Areas. ([OCHA, 29 Mar 2023](https://reliefweb.int/node/3947993/))\n\nThere are grave concerns over the increase in Leptospirosis cases, a bacterial disease, one month on from the double category 4 cyclones in Vanuatu. The country has reported 19 new cases of Leptospirosis and three deaths since the cyclone passed. The majority of cases have been in Santo and Efate islands, with a few cases in Malekula, Pentecost, Malo and Erromango. Vanuatu Red Cross is working in coordination with authorities to curb the situation with health awareness in communities across the six provinces. ([IFRC, 29 Mar 2023](https://reliefweb.int/node/3948229/))\n\nAs of April 3rd, 27 evacuation centers remain active in Efate (Shefa province). 868 people (157 households) are staying in evacuation centers, while 812 people are with host families. The coordination of the “First Push” of dry rations is ongoing in Port Vila and Tafea province. An estimated 99.8% of electrical services have been restored in the country. Although all schools in the six provinces have been instructed to re-open, a total of 299 school buildings including classrooms have been damaged in Tafea Province. Cluster partners have collectively distributed over 158,230 reliefs items to affected people. ([OCHA, 5 Apr 2023](https://reliefweb.int/node/3950297/))\n\nThe government of Vanuatu launched an early recovery plan on April 14th, with a budget of USD 28,000,000. This plan aims to address the immediate and mid-term recovery needs of the affected population. A Post Disaster Needs Assessment (PDNA) is ongoing. ([UNICEF, 29 Apr 2023](https://reliefweb.int/node/3957164/))\n### Appeals & Response Plans\n\n- [![IFRC: Vanuatu Tropical Cyclone Judy and Kevin 2023 - DREF Application (MDRVU010) - Cover preview](https://reliefweb.int/sites/default/files/styles/small/public/previews/84/d8/84d80369-c7a2-4014-a434-a5f138842bd4.png) IFRC: Vanuatu Tropical Cyclone Judy and Kevin 2023 - DREF Application (MDRVU010)](https://reliefweb.int/node/3941994)",
+      "summary": " Tropical cyclones JUDY and KEVIN (both of Cat4 intensity) made landfall over Vanuatu on the 1st and 3rd March, respectively. The cyclones caused major floodings, damage to houses and infrastructure, and caused power outages and communication system breakdowns. As of April 3rd, 27 evacuation centers remain active in Efate (Shefa province). The government of Vanuatu launched an early recovery plan on April 14th, with a budget of USD 28,000,000. The plan aims to address the immediate and mid-term recovery needs of the affected population.",
+      "metadata": {
+        "id": "51506",
+        "date_event": 1677801600000,
+        "date_changed": 1683000314000,
+        "date_created": 1677875140000,
+        "primary_country_id": 249,
+        "primary_country_name": "Vanuatu",
+        "primary_country_iso3": "vut",
+        "primary_country_location": {
+          "lon": 167.72,
+          "lat": -16.26
+        },
+        "primary_type_id": 4618,
+        "primary_type_name": "Tropical Cyclone",
+        "countries": [
+          {
+            "href": "https://api.reliefweb.int/v1/countries/215",
+            "name": "Solomon Islands",
+            "location": {
+              "lon": 159.63,
+              "lat": -8.92
+            },
+            "id": 215,
+            "shortname": "Solomon Islands",
+            "iso3": "slb"
+          },
+          {
+            "href": "https://api.reliefweb.int/v1/countries/249",
+            "name": "Vanuatu",
+            "location": {
+              "lon": 167.72,
+              "lat": -16.26
+            },
+            "id": 249,
+            "shortname": "Vanuatu",
+            "iso3": "vut",
+            "primary": true
+          }
+        ],
+        "types": [
+          {
+            "code": "TC",
+            "name": "Tropical Cyclone",
+            "id": 4618,
+            "primary": true
+          }
+        ]
+      }
+    },
+    {
+      "original": "Equatorial Guinea: Marburg Virus Disease Outbreak - Jan 2023\n\nFrom January 7th to February 6th, 2023 the Ministry of Health of Equatorial Guinea identified a cluster of deaths in two remote districts of the continental region of Equatorial Guinea (Nosrk Nsomo and Ebebiyim) where a total of 9 deaths occurred with similar symptoms related to viral hemorrhagic fever. Equatorial Guinea currently does not have the laboratory capacity to test for VHF, hence samples from those who were sick and from close contacts were sent to Gabon and Senegal. The samples sent for testing in Gabon were negative, but the out of the eight samples sent to Dakar, Senegal, one tested positive for the Marburg virus. On 13 February 2023, the Equatorial Guinea MoH officially [declared the outbreak](https://www.afro.who.int/countries/equatorial-guinea/news/equatorial-guinea-confirms-first-ever-marburg-virus-disease-outbreak). As of 17 February, 1 case is confirmed, 8 are probable (deaths from individuals with VHF symptoms that were not tested), and 16 suspect cases in isolation (2 are showing signs and symptoms). 21 additional are considered secondary contacts. There is restricted access to Kie Ntem district, with an estimated 4,235 people in quarantine. The affected district is located in the north-east of Equatorial Guinea mainland, bordering Cameroon and Gabon. Several suspected cases were identified in Cameroon, but all samples were negative for the Marburg virus. There is no notification of cases or symptoms related to Marburg on the Gabonese territory. ([IFRC, 1 March 2023](https://reliefweb.int/node/3938950))\n\nEquatorial Guinea's Ministry of Health has confirmed eight more cases of Marburg, bringing the number of confirmed cases to nine since the outbreak of the viral haemorrhagic fever was declared on 13 February. The new cases were confirmed following laboratory analysis of additional samples. So far, there are 20 probable cases and 20 deaths. The new cases have been reported from Kie Ntem in the east, Litoral in the country's west, and Centro Sur provinces, all with international borders with Cameroon and Gabon. The areas reporting cases are about 150 kilometres apart, suggesting wider transmission of the virus. ([WHO, 23 Mar 2023](https://reliefweb.int/node/3946146))\n\nTwo new confirmed cases of Marburg Virus Disease (MVD) were reported on 18 and 20 April 2023, both from Bata district which is now the epicenter of the outbreak. The last confirmed death was reported on 21 April 2023 ... As of 23 April 2023, a total of 17 confirmed cases of MVD; including 12 deaths, three survivors, one case with unknown status and one case currently admitted, have been reported in Equatorial Guinea for the ongoing outbreak. In addition, 23 probable cases have been reported. The number of affected districts remains five (Bata, Ebebiyin, Evinayong, Nsok Nsomo and Nsork) and the number of affected provinces is still four (Centro Sur, Kie Ntem, Litoral and Wele-Nzas). ([WHO, 27 Apr 2023](https://reliefweb.int/node/3956535))\n### Appeals & Response Plans\n\n- [![IFRC: Equatorial Guinea, Africa - Marburg Virus Disease Emergency Appeal (MDRGQ003) - Cover preview](https://reliefweb.int/sites/default/files/styles/small/public/previews/27/e9/27e914cc-9034-49d5-a5f9-1de09e2ab11c.png) IFRC: Equatorial Guinea, Africa - Marburg Virus Disease Emergency Appeal (MDRGQ003)](https://reliefweb.int/node/3947394)",
+      "summary": " In January 2023, the Ministry of Health of Equatorial Guinea identified a cluster of deaths in two remote districts with similar symptoms related to viral hemorrhagic fever. One sample tested positive for the Marburg virus. As of April 2023, there have been 17 confirmed cases of MVD, including 12 deaths, three survivors, one case with unknown status and one case currently admitted. In response, the IFRC has launched an emergency appeal for Equatorial Guinea.",
+      "metadata": {
+        "id": "51505",
+        "date_event": 1673049600000,
+        "date_changed": 1682588822000,
+        "date_created": 1677677785000,
+        "primary_country_id": 84,
+        "primary_country_name": "Equatorial Guinea",
+        "primary_country_iso3": "gnq",
+        "primary_country_location": {
+          "lon": 10.53,
+          "lat": 1.61
+        },
+        "primary_type_id": 4642,
+        "primary_type_name": "Epidemic",
+        "countries": [
+          {
+            "href": "https://api.reliefweb.int/v1/countries/84",
+            "name": "Equatorial Guinea",
+            "location": {
+              "lon": 10.53,
+              "lat": 1.61
+            },
+            "id": 84,
+            "shortname": "Equatorial Guinea",
+            "iso3": "gnq",
+            "primary": true
+          }
+        ],
+        "types": [
+          {
+            "code": "EP",
+            "name": "Epidemic",
+            "id": 4642,
+            "primary": true
+          }
+        ]
+      }
+    },
+    {
+      "original": "Tropical Cyclone Judy - Feb 2023\n\nTropical cyclone JUDY passed over northern and central Vanuatu, approximately 7 km east to the Capital City Port Vila (Shefa Province, central Vanuatu) in the afternoon and evening (UTC) on 28 February with maximum sustained winds up to 157 km/h (Tropical Cyclone). On 1 March at 6.00 (UTC) its centre was located approximately over the Tanna Island (Tafea Province, southern Vanuatu), with maximum sustained winds up to 165 km/h. ([ECHO, 1 Mar 2023](https://reliefweb.int/node/3938907/))    \n\nAccording to the first estimate, 100% of the population have been affected with wind below 80 km/h and about 50% with wind between 80 to 200 km/h. The main affected provinces are Shefa and Tafea. The damages are severe to extreme, and a second potential Category 3 cyclone is expected in the next 1 to 2 days. Up to 50,000 children may be affected. UNICEF Vanuatu Field Office also predicts that some schools will be affected, although all remain closed for the time being. Staff are ready to be deployed where necessary, emergency pre-positioned supplies are ready to be delivered to assist over 20,000 people. ([UNICEF, 2 Mar 2023](https://reliefweb.int/node/3939267/))\n\nOn the morning of 2 March (local time) the centre of tropical cyclone JUDY was about 245km south-east of Tanna and 150km south-east of Aneityum. JUDY's destructive winds uprooted trees and some people were evacuated. Damage assessments are ongoing in Port Vila and Vanuatu's northern islands while another storm is forecast to be on its way. Media reports, as of 2 March, around 500 evacuated people in some evacuation centres across the Capital City Port Vila and a number of damaged buildings, closed schools and several power outages across the country. There are no reports of deaths or serious injuries in Port Vila caused by cyclone JUDY, however, the islands of Erramango and Tanna were expected to be hit hard. Heavy rainfall, thunderstorms and floods were still expected over the northern islands. Some NGOs are coordinating with the government and prepositioning Non Food Items for shelter and cooking materials. In addition, tropical depression 09F (cyclone KEVIN) is forming in the Pacific. The storm is expected to move south-east bringing gale force winds to Vanuatu on 2 March and later to New Caledonia. The Fiji Meteorological Service issued a gale warning. ([ECHO, 2 Mar 2023](https://reliefweb.int/node/3939400/))\n\nAn initial assessment of the damage informed by the Vanuatu Disaster Management Office (NDMO) revealed many houses on Epi Island in Shefa Province were destroyed, with some families sheltering under beds and tables in their houses, while passed. There has been extensive damage to houses, churches, crops, and power lines, as well as flooding in low-lying areas. There is currently no confirmed figure as to the extent of damage, though it is estimated that more than 50 per cent of houses are damaged in rural Efate Island while in urban Port-Vila, at least 20 per cent of houses are damaged. Major damage is likely in Shefa –especially Port Vila, and Tafea provinces, especially Tanna Island. At least 64 per cent of the country's population is directly affected by TC Judy Category 3 and TC Kevin Category 4. In Port Vila, five evacuation centres were established and as of 5 March 2023, were occupied by more than 500 people. More people have attended centres since the cyclones passed than sheltered in place during the eventindicating the level of significant shelter damage in the wake of the cyclones. It is still unclear as to the extent of the damage for different sectors. Some initial observations have reported contamination of water sources due to flooding, as well as significant foliage and crop damage due to flooding and strong wind, especially in central Tanna. No fatalities have been reported to date, however, reports of injuries from flying debris and continuing to come in from across the country. It is reported that 22 people have been admitted to a hospital in Port Vila with injuries and the hospital has announced it is currently only accepting emergency patients. ([IFRC, 9 Mar 2023](https://reliefweb.int/node/3941994/))\n\nTropical cyclones JUDY and KEVIN (both of Cat4 intensity) made landfall over Vanuatu on the 1st and 3rd March. On the 2nd of March, national authorities declared a State of Emergency in the provinces of Mera Lava, Penama, Ambrym, Paama, Shefa and Tafea, which was then extended to the entire country on the 5th of March. Strong winds and substantial amounts of rain caused major floodings, damage to houses and infrastructure, and caused power outages and communication system breakdowns. In addition, earthquakes with a magnitude of 6.6 and 5.4 occurred off the Island of Espiritu Santo in the early morning hours of 3rd March but no major impact was reported. The full extent of damages is not yet known, as initial assessments have only begun, and communication with many of most affected areas remains challenging. The Government of Vanuatu reports that 251,346 people are affected by the cyclones (about 80% of the total population), and 30,000 households.  ([OCHA, 10 Mar 2023](https://reliefweb.int/node/3942122/))\n\nAs of 13 March, there were 5,156 people (947 families) in 106 evacuation centers in Shefa and Tafaa. The distribution of shelter kits and non-food items in these centres is ongoing. According to the Vanuatu National Disaster Management Office (NDMO), 74% of the Arterial Road Network is currently accessible throughout the country. ([OCHA, 14 Mar 2023](https://reliefweb.int/node/3943066/))\n\nAs of 16 March, there are 4,293 people in evacuation centres; mainly in Shefa and Tafea provinces. NDMO and the national Food Security and Agriculture Cluster (FSAC) have begun with a “first push”, targeting 37,875 households in Priority areas 1 and 2 with food assistance on 15th of March. 66,983 households have been identified as in need. [...] 89% of Arterial Road Network is now accessible, and 81% of Vanuatu Outer Islan Airports are operational for emergency services; 67% of Vanuatu Outer Island Airports are approved for commercial services. ([OCHA, 16 Mar 2023](https://reliefweb.int/node/3943982/))\n\nAs of 20th March, 51 evacuation centres remain active hosting almost 2,000 people (476 households) in Shefa and Tafea, while over 800 people (129 households) are with host households. The “First Push” of dry rations distribution in Priority Areas 1 and 2 is ongoing, as well as distribution of food rations to Shepherd Islands with ships carrying food rations departing for Tanna Island and Tafea on the 18th March. ([OCHA, 22 Mar 2023](https://reliefweb.int/node/3945800/))\n\nThe Displacement and Evacuation Centre Management (DECM) Cluster (co-led by NDMO and IOM), reports that 41 evacuation centres (including schools, churches and halls) remain active on the island of Efate, a decrease from a peak of 51 active centres on Efate. As of 24 March, a total of 2,117 displaced persons (453 households) were staying in evacuation centres (1,305 individuals from 323 households) and with host families (812 individuals from 130 households) in identified locations in Shefa and Tafea provinces and lack adequate shelter materials to enable them to return to their homes in a safe and dignified manner. ([IOM, 28 Mar 2023](https://reliefweb.int/node/3947466/))\n\nAs of 29th March, 38 evacuation centers remain active, hosting 983 people (222 households) in Shefa and Tafea, while 812 people (130 households) are staying with host households. Over 4,000 affected households have been reached with Emergency Shelter distributions in Shefa (2960 HH) and Tafea (1156 HH) Provinces. Food Security and Agriculture Cluster (FSAC) partners are nearing completion of Priority Areas 1 and 2 across Shefa and Tafea Provinces of the “First Push” which covers all Priority Areas. ([OCHA, 29 Mar 2023](https://reliefweb.int/node/3947993/))\n\nThere are grave concerns over the increase in Leptospirosis cases, a bacterial disease, one month on from the double category 4 cyclones in Vanuatu. The country has reported 19 new cases of Leptospirosis and three deaths since the cyclone passed. The majority of cases have been in Santo and Efate islands, with a few cases in Malekula, Pentecost, Malo and Erromango. Vanuatu Red Cross is working in coordination with authorities to curb the situation with health awareness in communities across the six provinces. ([IFRC, 29 Mar 2023](https://reliefweb.int/node/3948229/))\n\nAs of April 3rd, 27 evacuation centers remain active in Efate (Shefa province). 868 people (157 households) are staying in evacuation centers, while 812 people are with host families. The coordination of the “First Push” of dry rations is ongoing in Port Vila and Tafea province. An estimated 99.8% of electrical services have been restored in the country. Although all schools in the six provinces have been instructed to re-open, a total of 299 school buildings including classrooms have been damaged in Tafea Province. Cluster partners have collectively distributed over 158,230 reliefs items to affected people. ([OCHA, 5 Apr 2023](https://reliefweb.int/node/3950297/))\n\nThe government of Vanuatu launched an early recovery plan on April 14th, with a budget of USD 28,000,000. This plan aims to address the immediate and mid-term recovery needs of the affected population. A Post Disaster Needs Assessment (PDNA) is ongoing. ([UNICEF, 29 Apr 2023](https://reliefweb.int/node/3957164/))\n### Appeals & Response Plans\n\n- [![IFRC: Vanuatu Tropical Cyclone Judy and Kevin 2023 - DREF Application (MDRVU010) - Cover preview](https://reliefweb.int/sites/default/files/styles/small/public/previews/84/d8/84d80369-c7a2-4014-a434-a5f138842bd4.png) IFRC: Vanuatu Tropical Cyclone Judy and Kevin 2023 - DREF Application (MDRVU010)](https://reliefweb.int/node/3941994)",
+      "summary": " Tropical cyclones JUDY and KEVIN (both of Cat4 intensity) made landfall over Vanuatu on the 1st and 3rd March, respectively. The cyclones caused major floodings, damage to houses and infrastructure, and caused power outages and communication system breakdowns. The government of Vanuatu declared a State of Emergency in the provinces of Mera Lava, Penama, Ambrym, Paama, Shefa and Tafea, which was then extended to the entire country on the 5th of March. As of April 3rd, 27 evacuation centers remain active in Efate (Shefa province). The government of Vanuatu launched an early recovery plan on April 14th, with a budget of USD 28,000,000.",
+      "metadata": {
+        "id": "51504",
+        "date_event": 1677456000000,
+        "date_changed": 1683000364000,
+        "date_created": 1677654972000,
+        "primary_country_id": 249,
+        "primary_country_name": "Vanuatu",
+        "primary_country_iso3": "vut",
+        "primary_country_location": {
+          "lon": 167.72,
+          "lat": -16.26
+        },
+        "primary_type_id": 4618,
+        "primary_type_name": "Tropical Cyclone",
+        "countries": [
+          {
+            "href": "https://api.reliefweb.int/v1/countries/215",
+            "name": "Solomon Islands",
+            "location": {
+              "lon": 159.63,
+              "lat": -8.92
+            },
+            "id": 215,
+            "shortname": "Solomon Islands",
+            "iso3": "slb"
+          },
+          {
+            "href": "https://api.reliefweb.int/v1/countries/249",
+            "name": "Vanuatu",
+            "location": {
+              "lon": 167.72,
+              "lat": -16.26
+            },
+            "id": 249,
+            "shortname": "Vanuatu",
+            "iso3": "vut",
+            "primary": true
+          }
+        ],
+        "types": [
+          {
+            "code": "TC",
+            "name": "Tropical Cyclone",
+            "id": 4618,
+            "primary": true
+          }
+        ]
+      }
+    },
+    {
+      "original": "Namibia: Floods - Jan 2023\n\nHeavy rains were received in southeastern parts of Angola and northeastern parts of Namibia in the Cuvelai catchment during the 2nd week of January 2023, resulting in flooding conditions in Ondjiva and surrounding areas. First floodwaters were observed in some of the eastern flowing Cuvelai Iishanas (river plains) in the morning of Friday the 13 January 2023 and during the early hours of the 17th of January, the hydrological recording station at Shanalumono located approximately 10km southwest of Oshikango reported floodwaters reaching the central Cuvelai Iishanas (river plain) with local media reporting dozens of homes flooded in several villages including Engela and Ouhongo. Shanalumono is one of the main Iishanas (river plains) of the central Cuvelai River System on the Namibian side. According to the Namibia Hydrological Services, the water levels in the main Iishanas (river plains) south of the Angola/Namibia border are rising. On 27 January 2023, water levels at Engela station exceeded the 1m mark. Flood levels continue to increase as more rain persists in the Cuvelai catchment. The government with the support of Namibia RC has started some assistance to the affected people but given the increasing numbers of people affected and the limited support available for the affected households, on the 6 and the 7 of February 2023, the Oshana and Ohangwena regional councils issued formal requests to the NRCS to support the affected households. ([IFRC, 18 Feb 2023](https://reliefweb.int/node/3935087))",
+      "summary": " In January 2023, heavy rains in Angola and Namibia caused flooding in Ondjiva and surrounding areas. Dozens of homes were flooded in several villages, and water levels at Engela station exceeded the 1m mark. The government and Namibia RC have started providing assistance to the affected people, but the Oshana and Ohangwena regional councils have requested more support from the NRCS.",
+      "metadata": {
+        "id": "51487",
+        "date_event": 1673568000000,
+        "date_changed": 1676901571000,
+        "date_created": 1676877878000,
+        "primary_country_id": 166,
+        "primary_country_name": "Namibia",
+        "primary_country_iso3": "nam",
+        "primary_country_location": {
+          "lon": 17.29,
+          "lat": -21.2
+        },
+        "primary_type_id": 4611,
+        "primary_type_name": "Flood",
+        "countries": [
+          {
+            "href": "https://api.reliefweb.int/v1/countries/166",
+            "name": "Namibia",
+            "location": {
+              "lon": 17.29,
+              "lat": -21.2
+            },
+            "id": 166,
+            "shortname": "Namibia",
+            "iso3": "nam",
+            "primary": true
+          }
+        ],
+        "types": [
+          {
+            "code": "FL",
+            "name": "Flood",
+            "id": 4611,
+            "primary": true
+          }
+        ]
+      }
+    },
+    {
+      "original": "Tropical Cyclone Freddy - Feb 2023\n\nIntense Tropical Cyclone FREDDY, a particularly powerful and compact tropical system, will likely pass just north of La Rèunion on 20 February, and is forecasted to make landfall in Madagascar on 21 February. FREDDY represents a significant flood risk for Madagascar as soils are already saturated in central parts of the island from the impact of Cyclone Cheneso, which stalled off the west coast of the island and brought torrential rains in late January that affected over 90,000 people with 33 people killed and 20 people still missing. Currently, about 34,000 people are still homeless. At the same time, over 89,090 people have been affected by extreme weather events in Mozambique since the beginning of the rainy season. Over 15,00 people are currently displaced due to the floods in Southern Mozambique alone. ([ECHO, 17 Feb 2023](https://reliefweb.int/node/3934794))    \n\nIntense Tropical Cyclone Freddy is moving west-south-west and is expected to make landfall on the eastern coast of Madagascar, probably between Mahanoro and Manakara, on 21 February evening, likely at an intense stage [...] In Madagascar, the regions of Atsinanana, Vatovavy and Fitovinany are under yellow alert (threat), while Analanjirofo, Atsimo Atsinanana, Alaotra, Analamanga, Itasy, Vakinankaratra, Amoron'i mania, Matsiatra Ambony, Ihorombe, Menabe, Beroroha, Ankazoabo, Sakaraha, Morombe and Toliara regions are under a green alert (warning), according to Meteo Madagascar. Areas near the projected landfall of Cyclone Freddy are still struggling to recover from the impacts of cyclones Batsirai and Emnati in 2022, which made landfall in near Mananjary city on 5 February and in Manakara town on 23 February 2022, respectively, and destroyed homes, infrastructure and crops, with 874,000 people still facing severe food insecurity in the Grand Sud-Est [...] After crossing Madagascar, cyclone Freddy could emerge in the Mozambican Channel and strengthen again before making landfall in Mozambique and potentially moving on to impact Zimbabwe, after decreasing in strength. Over 3.3 million people in Madagascar (2.3 million), Mozambique (527,000) and Zimbabwe (531,000) could be impacted by wind speeds of 120km/hr during cyclone Freddy’s passage across the three countries [.] ([OCHA, 20 Feb 2023](https://reliefweb.int/node/3935561))\n\nTropical Cyclone Freddy made landfall on the eastern coast of Madagascar, near Mananjary, on 21 February. The weather system slightly weakened before landing, but still sustained average winds of 130 km per hour (km/h), and gusts of 180 km/h near the eye, causing a storm surge and ripping roofs off houses and critical infrastructure, including schools. At least four people in Madagascar have died and 11,000 have been displaced by the storm’s passage. More than 4,500 houses have been flooded or damaged (2,276 flooded and 2,267 damaged), mainly in Vatovavy Region, according to preliminary estimates from the National Bureau of Risk and Disaster Management (BNGRC). Ahead of Cyclone Freddy’s arrival, BNGRC pre-emptively evacuated 7,000 people in the coastal region who were in the storm’s path, while schools and public transportation were suspended. Cyclone Freddy followed a similar path to Cyclones Batsirai and Emnati, which made landfall near Mananjary city on 5 February and in Manakara town on 23 February 2022, respectively, affecting over 423,800 people. Since its landfall, the weakened tropical weather system has continued its trajectory inland across Madagascar, according to Meteo France. Freddy is expected to emerge in the Mozambique Channel in the evening of 22 February and will begin to gradually intensify again before landing on the coast of Mozambique on 24 February, likely between Inhambane and Beira. Freddy is expected to impact Mozambique at the stage of a strong tropical storm, bringing potentially destructive winds and heavy rains of between 100 mm/24h and 200/mm. After landfall, the system is expected to weaken as it moves inland, but could still bring significant amounts of rain that can generate flooding in Mozambique and Zimbabwe, according to Meteo France. While Cyclone Freddy is not expected to impact Malawi, authorities have warned that wet weather should be expected over most areas of the country due to an Inter Tropical Convergence Zone (ITCZ) which will oscillate in the next couple of days. ([OCHA, 22 Feb 2023](https://reliefweb.int/node/3936482))\n\nTropical Cyclone Freddy made its second landfall in **Mozambique** in Quelimane District, Zambezia Province, on 11 March. The Freddy weather system has continued to move over land as a tropical depression, with a localized centre close to the border between Mozambique and the southern tip of **Malawi**, according to Meteo France. Although the system has weakened considerably, it is still generating intense rainfall in the interior of Mozambique and southern Malawi, with extreme rainfall forecasted for the days ahead across Zambezia, Sofala and Tete provinces in Mozambique and southern Malawi, according to the latest Flood Risk Bulletin produced for and with support of the Foreign Commonwealth and Development Office (FCDO) of the United Kingdom. In **Mozambique**, Freddy has brought strong winds to Zambezia province, as well as heavy rains (above 200mm/24h) to Zambezia, Sofala, Manica, Tete and Niassa provinces. Some of these provinces received as much rain in 24 hours as they would usually experience in one month. In Zambezia province alone, over 22,000 people have sought refuge in temporary accommodation centres, 10 people have died and 14 have been injured. About 1,900 houses have been damaged (1,050) or destroyed (832), according to preliminary data from the National Institute for Disaster Management (INGD), and these figures are expected to rise ahead as further information becomes available. Basic services and public infrastructure have also been affected. In **Malawi**, the President has declared a State of Disaster in the Southern Region, particularly Blantyre City and District, Chikwawa District, Chiradzulu District, Mulanje District, Mwanza District, Neno District, Nsanje District, Phalombe District, Thyolo District, and Zomba City and District. At least 111 people have lost their lives, and at least 16 are reportedly missing following heavy rains and strong winds attributed to the Freddy weather system since 12 March, according to Malawi’s Department of Disaster Management Affairs (DoDMA). Eighty-five of those killed died due to mudslides in Cilobwe township in Blantyre district. Some 19,000 people (4,000 households) have been displaced in the hardest-hit districts (Nsanje (approximately 5,850 people), Chikwawa (5,004), Mulanje (3,659), Thyolo (2,390) Blantyre City and District (1,647), Chiradzulu (765)), while data is not yet available for Mwanza, Neno and Phalombe. Water levels in areas surrounding the Shire River have started to rise and Thuchila River is also at risk of flooding. Rainfall accumulation over southern Malawi could reach 400mm to 500mm over the space of 72 hours. The Ministry of Education temporarily suspended classes in the 10 at-risk districts on 13 and 14 March. In **Madagascar**, at least 17 people have now died due to Tropical Cyclone Freddy (7 from the first landfall on 21 February and 10 from the latest rains on 5 and 6 March), three are missing and nearly 299,000 people have affected (226,000 in the south east, and over 72,600 in the south-west). Following Freddy’s pass-by the south-west of the country on 5 and 6 March, localized floods are visible in Morombe city and its three surrounding municipalities, as well as Toliara city, where schools and other administrative buildings are still flooded, according to the findings of an aerial assessment. However, the impact of the storm was less than expected and there is almost no visible wind damage in the villages along the western coast between Morombe and Toliara and less than 5 per cent damage has been reported in the agricultural sector following rapid removal of water on crop fields and rice fields.  ([OCHA, 14 Mar 2023](https://reliefweb.int/node/3943077))\n### Appeals & Response Plans\n\n- [![Govt. Malawi: Tropical Cyclone Freddy, Emergency Response Plan - Office of The President and Cabinet Department Of Disaster Management Affairs (March, 2023) - Cover preview](https://reliefweb.int/sites/default/files/styles/small/public/previews/11/4f/114f2d17-17f8-4ddb-9254-eaebf05e48f9.png) Govt. Malawi: Tropical Cyclone Freddy, Emergency Response Plan - Office of The President and Cabinet Department Of Disaster Management Affairs (March, 2023)](https://reliefweb.int/node/3952733)\n- [![IFRC: Malawi, Africa | Tropical Storm Freddy Floods (Emergency appeal MDRMW018) - Cover preview](https://reliefweb.int/sites/default/files/styles/small/public/previews/ca/57/ca57cc3a-0606-4483-9abc-ea34971887e4.png) IFRC: Malawi, Africa | Tropical Storm Freddy Floods (Emergency appeal MDRMW018)](https://reliefweb.int/node/3945031)\n\n### Useful Links\n\n- [ Météo France La Réunion](https://meteofrance.re/fr/cyclone)",
+      "summary": " Tropical Cyclone Freddy made landfall in Madagascar on 21 February, causing destruction and displacement of over 11,000 people. It then moved inland across Madagascar and emerged in the Mozambique Channel, where it strengthened before making landfall in Mozambique and potentially Zimbabwe. In Mozambique, over 22,000 people have sought refuge in temporary accommodation centres, 10 people have died and 14 have been injured. In Malawi, 111 people have lost their lives, and at least 16 are reportedly missing due to the storm. In Madagascar, 17 people have died, three are missing and nearly 299,000 people have been affected. Appeals and response plans have been issued by the Malawi government and the International Federation of Red Cross and Red Crescent Societies.",
+      "metadata": {
+        "id": "51486",
+        "date_event": 1676592000000,
+        "date_changed": 1681399631000,
+        "date_created": 1676651842000,
+        "primary_country_id": 144,
+        "primary_country_name": "Madagascar",
+        "primary_country_iso3": "mdg",
+        "primary_country_location": {
+          "lon": 46.71,
+          "lat": -19.37
+        },
+        "primary_type_id": 4618,
+        "primary_type_name": "Tropical Cyclone",
+        "countries": [
+          {
+            "href": "https://api.reliefweb.int/v1/countries/144",
+            "name": "Madagascar",
+            "location": {
+              "lon": 46.71,
+              "lat": -19.37
+            },
+            "id": 144,
+            "shortname": "Madagascar",
+            "iso3": "mdg",
+            "primary": true
+          },
+          {
+            "href": "https://api.reliefweb.int/v1/countries/146",
+            "name": "Malawi",
+            "location": {
+              "lon": 33.74,
+              "lat": -13.22
+            },
+            "id": 146,
+            "shortname": "Malawi",
+            "iso3": "mwi"
+          },
+          {
+            "href": "https://api.reliefweb.int/v1/countries/154",
+            "name": "Mauritius",
+            "location": {
+              "lon": 57.87,
+              "lat": -20.25
+            },
+            "id": 154,
+            "shortname": "Mauritius",
+            "iso3": "mus"
+          },
+          {
+            "href": "https://api.reliefweb.int/v1/countries/164",
+            "name": "Mozambique",
+            "location": {
+              "lon": 34.75,
+              "lat": -18.09
+            },
+            "id": 164,
+            "shortname": "Mozambique",
+            "iso3": "moz"
+          },
+          {
+            "href": "https://api.reliefweb.int/v1/countries/195",
+            "name": "Réunion (France)",
+            "location": {
+              "lon": 55.5364,
+              "lat": -21.1151
+            },
+            "id": 195,
+            "shortname": "Réunion (France)",
+            "iso3": "reu"
+          },
+          {
+            "href": "https://api.reliefweb.int/v1/countries/257",
+            "name": "Zimbabwe",
+            "location": {
+              "lon": 29.94,
+              "lat": -19.19
+            },
+            "id": 257,
+            "shortname": "Zimbabwe",
+            "iso3": "zwe"
+          }
+        ],
+        "types": [
+          {
+            "code": "TC",
+            "name": "Tropical Cyclone",
+            "id": 4618,
+            "primary": true
+          }
+        ]
+      }
+    }
+  ]
+}

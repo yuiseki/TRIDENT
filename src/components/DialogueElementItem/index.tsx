@@ -9,6 +9,7 @@ import { FeatureCollection } from "geojson";
 import { getOverpassResponse } from "@/utils/getOverpassResponse";
 import osmtogeojson from "osmtogeojson";
 import { placeholders } from "@/const/placeholders";
+import * as latestSummary from "../../../public/api.reliefweb.int/latest_summary.json";
 
 export const DialogueElementItem: React.FC<{
   prevDialogueElement?: DialogueElement;
@@ -156,42 +157,50 @@ export const DialogueElementItem: React.FC<{
               </div>
             );
           })}
-          {!isResponding && dialogueIndex === 0 && (
-            <details style={{ marginTop: "25px" }}>
-              <summary>Examples</summary>
-              <ul style={{ paddingLeft: "2em" }}>
-                {placeholders.map((placeholder, placeholderIdx) => {
-                  return (
-                    <li
-                      key={`${dialogueIndex}-${placeholderIdx}`}
-                      style={{
-                        minHeight: "1em",
-                      }}
-                    >
-                      <span>{placeholder}</span>
-                      <button
-                        onClick={() => {
-                          setInputText && setInputText(placeholder);
-                        }}
-                        style={{
-                          fontSize: "0.8em",
-                          padding: "0 4px",
-                          margin: "4px 0px 4px 20px",
-                          color: "rgb(253, 254, 255)",
-                          backgroundColor: "rgba(0, 158, 219, 1)",
-                          boxShadow: "0 2px 6px 0 rgba(0, 158, 219, 0.6)",
-                          border: "2px solid rgba(0, 158, 219, 0.6)",
-                          borderRadius: "2px",
-                        }}
-                      >
-                        Ask this
-                      </button>
-                    </li>
-                  );
-                })}
-              </ul>
-            </details>
-          )}
+          {!isResponding &&
+            dialogueIndex === 0 &&
+            dialogueElement.text.length > 0 && (
+              <>
+                <details style={{ marginTop: "10px" }}>
+                  <summary>Latest summary of the world</summary>
+                  {latestSummary.summary}
+                </details>
+                <details style={{ marginTop: "10px" }}>
+                  <summary>Examples</summary>
+                  <ul style={{ paddingLeft: "2em" }}>
+                    {placeholders.map((placeholder, placeholderIdx) => {
+                      return (
+                        <li
+                          key={`${dialogueIndex}-${placeholderIdx}`}
+                          style={{
+                            minHeight: "1em",
+                          }}
+                        >
+                          <span>{placeholder}</span>
+                          <button
+                            onClick={() => {
+                              setInputText && setInputText(placeholder);
+                            }}
+                            style={{
+                              fontSize: "0.8em",
+                              padding: "0 4px",
+                              margin: "4px 0px 4px 20px",
+                              color: "rgb(253, 254, 255)",
+                              backgroundColor: "rgba(0, 158, 219, 1)",
+                              boxShadow: "0 2px 6px 0 rgba(0, 158, 219, 0.6)",
+                              border: "2px solid rgba(0, 158, 219, 0.6)",
+                              borderRadius: "2px",
+                            }}
+                          >
+                            Ask this
+                          </button>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </details>
+              </>
+            )}
           {!isResponding &&
             dialogueElement.docs &&
             0 < dialogueElement.docs.length &&

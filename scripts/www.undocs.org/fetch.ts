@@ -1,6 +1,5 @@
-import * as dotenv from "dotenv";
-
 import fs from "node:fs/promises";
+import * as dotenv from "dotenv";
 
 dotenv.config();
 
