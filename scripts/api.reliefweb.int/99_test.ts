@@ -11,7 +11,7 @@ const loadedVectorStore = await HNSWLib.load(
   new OpenAIEmbeddings()
 );
 
-const result = await loadedVectorStore.similaritySearch(
+const result = await loadedVectorStore.similaritySearchWithScore(
   "What is latest situation in Sudan?",
   4
 );

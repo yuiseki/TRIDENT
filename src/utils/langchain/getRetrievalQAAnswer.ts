@@ -13,13 +13,13 @@ export const getRetrievalQAAnswer = async (query: string) => {
   });
   const pineconeIndex = client.Index(process.env.PINECONE_INDEX || "");
 
-  // initialize vector store
+  // initialize pinecone as vector store
   const vectorStore = await PineconeStore.fromExistingIndex(
     new OpenAIEmbeddings(),
     { pineconeIndex }
   );
 
-  // initialize the LLM and chain
+  // initialize the LLM
   const model = new OpenAI({
     temperature: 0,
     maxTokens: 3000,
