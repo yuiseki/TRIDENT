@@ -162,7 +162,9 @@ export const DialogueElementItem: React.FC<{
             dialogueElement.text.length > 0 && (
               <>
                 <details style={{ marginTop: "10px" }}>
-                  <summary>Latest summary of the world</summary>
+                  <summary>
+                    Summary of ongoing disasters around the world
+                  </summary>
                   {latestSummary.summary}
                 </details>
                 <details style={{ marginTop: "10px" }}>
