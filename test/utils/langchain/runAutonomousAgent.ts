@@ -61,24 +61,25 @@ const reliefWebQATool = new ChainTool({
     "useful for when you need to ask latest humanitarian situation. Input: a question about humanitarian situation. Output: answer for the question.",
 });
 
-/**
- * TODO Tool
- */
-
-const todoTool = new ChainTool({
-  name: "TODO",
-  chain: new LLMChain({
-    llm: model,
-    prompt: PromptTemplate.fromTemplate(
-      "You are a planner who is an expert at coming up with a concise todo list for a given objective. Come up with a concise todo list for this objective: {objective}"
-    ),
-  }),
-  description:
-    "useful for when you need to come up with todo lists. Input: an objective to create a todo list for. Output: a todo list for that objective. Please be very clear what the objective is!",
-});
-
 const tools: Tool[] = [resolutionsQATool, reliefWebQATool];
 
+const agentExecutor = await initializeAgentExecutorWithOptions(tools, model, {
+  agentType: "zero-shot-react-description",
+  agentArgs: {
+    prefix: `You are an AI who performs one task based on the following objective: {objective}.`,
+    suffix: `
+{agent_scratchpad}`,
+    inputVariables: ["objective", "agent_scratchpad"],
+  },
+});
+console.log("Loaded agent.");
+
+const result = await agentExecutor.call({
+  objective: "What is the latest situation in Sudan?",
+});
+console.log(result);
+
+/*
 const agentExecutor = await initializeAgentExecutorWithOptions(tools, model, {
   agentType: "zero-shot-react-description",
   agentArgs: {
@@ -88,8 +89,9 @@ const agentExecutor = await initializeAgentExecutorWithOptions(tools, model, {
     inputVariables: ["objective", "task", "context", "agent_scratchpad"],
   },
 });
-console.log("Loaded agent.");
+*/
 
+/*
 const agentMemoryVectorStore = new MemoryVectorStore(new OpenAIEmbeddings());
 const babyAGI = BabyAGI.fromLLM({
   llm: model,
@@ -105,6 +107,7 @@ console.log(`Executing with input "${input}"...`);
 await babyAGI.call({
   objective: input,
 });
+*/
 
 /*
 // bugってる
@@ -123,4 +126,21 @@ const autogpt = AutoGPT.fromLLMAndTools(
 await autogpt.run([
   "Your Objective: Write a short, concise report for the latest situation in Sudan.",
 ]);
+*/
+
+/**
+ * TODO Tool
+ */
+/*
+const todoTool = new ChainTool({
+  name: "TODO",
+  chain: new LLMChain({
+    llm: model,
+    prompt: PromptTemplate.fromTemplate(
+      "You are a planner who is an expert at coming up with a concise todo list for a given objective. Come up with a concise todo list for this objective: {objective}"
+    ),
+  }),
+  description:
+    "useful for when you need to come up with todo lists. Input: an objective to create a todo list for. Output: a todo list for that objective. Please be very clear what the objective is!",
+});
 */

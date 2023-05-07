@@ -2,7 +2,8 @@ import { OpenAIEmbeddings } from "langchain/embeddings/openai";
 import { PineconeClient } from "@pinecone-database/pinecone";
 import { PineconeStore } from "langchain/vectorstores/pinecone";
 import { OpenAI } from "langchain/llms/openai";
-import { RetrievalQAChain } from "langchain/chains";
+import { RetrievalQAChain, loadQARefineChain } from "langchain/chains";
+import { HNSWLib } from "langchain/vectorstores/hnswlib";
 
 export const getRetrievalQAAnswer = async (query: string) => {
   // initialize the LLM
@@ -26,11 +27,26 @@ export const getRetrievalQAAnswer = async (query: string) => {
     { pineconeIndex }
   );
 
+  const situationsVectorStoreSaveDir =
+    "public/api.reliefweb.int/reports/summaries/vector_stores/";
+  const situationsVectorStore = await HNSWLib.load(
+    situationsVectorStoreSaveDir,
+    new OpenAIEmbeddings()
+  );
+
+  const situationsRetrievalQAChain = RetrievalQAChain.fromLLM(
+    model,
+    situationsVectorStore.asRetriever(4),
+    {
+      returnSourceDocuments: true,
+    }
+  );
+
   // execute chain
   let answer = undefined;
   for await (const k of [6, 4, 2]) {
     console.info("getRetrievalQAAnswer", "retrievalQAChain.retriever.k:", k);
-    const retrievalQAChain = RetrievalQAChain.fromLLM(
+    const resolutionsRetrievalQAChain = RetrievalQAChain.fromLLM(
       model,
       resolutionsVectorStore.asRetriever(k),
       {
@@ -38,7 +54,7 @@ export const getRetrievalQAAnswer = async (query: string) => {
       }
     );
     try {
-      answer = await retrievalQAChain.call({
+      answer = await resolutionsRetrievalQAChain.call({
         query: query,
       });
       console.log("getRetrievalQAAnswer", "retrievalQAChain succeeded");
@@ -54,5 +70,8 @@ export const getRetrievalQAAnswer = async (query: string) => {
       sourceDocuments: [],
     };
   }
+
+  const refineChain = loadQARefineChain(model);
+  const res = await refineChain()
   return answer;
 };
