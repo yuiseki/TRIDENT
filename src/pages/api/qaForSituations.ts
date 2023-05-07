@@ -1,6 +1,6 @@
 import { getRequestParamAsString } from "@/utils/getRequestParamAsString";
 import { isQueryStringDanger } from "@/utils/isQueryStringDanger";
-import { getRetrievalQAAnswer } from "@/utils/langchain/getRetrievalQAAnswer";
+import { qaForSituations } from "@/utils/langchain/qaForSituations";
 import type { NextApiRequest, NextApiResponse } from "next";
 
 export default async function handler(
@@ -21,7 +21,7 @@ export default async function handler(
     return;
   }
 
-  const answer = await getRetrievalQAAnswer(queryString);
+  const answer = await qaForSituations(queryString);
 
   res.status(200).json(answer);
 }

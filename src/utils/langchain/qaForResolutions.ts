@@ -4,7 +4,7 @@ import { PineconeStore } from "langchain/vectorstores/pinecone";
 import { OpenAI } from "langchain/llms/openai";
 import { RetrievalQAChain } from "langchain/chains";
 
-export const getRetrievalQAAnswer = async (query: string) => {
+export const qaForResolutions = async (query: string) => {
   // initialize the LLM
   const model = new OpenAI({
     temperature: 0,
@@ -12,7 +12,7 @@ export const getRetrievalQAAnswer = async (query: string) => {
     modelName: "text-davinci-003",
   });
 
-  // initialize pinecone
+  // initialize pinecone client
   const client = new PineconeClient();
   await client.init({
     apiKey: process.env.PINECONE_API_KEY || "",
@@ -26,8 +26,8 @@ export const getRetrievalQAAnswer = async (query: string) => {
     { pineconeIndex }
   );
 
+  let finalAnswer;
   // generate answer based on resolution
-  let answerBasedOnResolution = undefined;
   for await (const k of [4, 3, 2]) {
     console.info(
       "getRetrievalQAAnswer resolution",
@@ -42,7 +42,7 @@ export const getRetrievalQAAnswer = async (query: string) => {
       }
     );
     try {
-      answerBasedOnResolution = await resolutionsRetrievalQAChain.call({
+      finalAnswer = await resolutionsRetrievalQAChain.call({
         query: query,
       });
       console.log(
@@ -58,12 +58,12 @@ export const getRetrievalQAAnswer = async (query: string) => {
       continue;
     }
   }
-  if (answerBasedOnResolution === undefined) {
-    answerBasedOnResolution = {
+  if (finalAnswer === undefined) {
+    finalAnswer = {
       text: " Sorry, something went wrong.",
       sourceDocuments: [],
     };
   }
 
-  return answerBasedOnResolution;
+  return finalAnswer;
 };

@@ -146,7 +146,16 @@ export default function Home() {
     scrollToBottom();
     setResponding(true);
 
-    const res = await nextPostJson("/api/qa", { query: newInputText });
+    let qaPath = "/api/qaForResolutions";
+    if (
+      newInputText.toLowerCase().includes("latest") ||
+      newInputText.toLowerCase().includes("situation")
+    ) {
+      qaPath = "/api/qaForSituations";
+    }
+    const res = await nextPostJson(qaPath, {
+      query: newInputText,
+    });
     const json: { text: string; sourceDocuments: Document[] } =
       await res.json();
     const docs = json.sourceDocuments.filter(

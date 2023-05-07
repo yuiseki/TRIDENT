@@ -23,12 +23,11 @@ export const placeholders = [
   "What is the UNMISS? Describe as detail as possible.",
   "Why did the UN start mission in South Sudan?",
   "When did the UN start mission in South Sudan?",
-  "Who is the latest head of South Sudan at the UN mission?",
+  "Who is the leader of the UNMISS?",
   "What is SDGs? Why should I care about the SDGs?",
   "Does the UN take gender into account in its climate change action?",
   "Why is the UN taking gender considerations into account in climate change action?",
   "Tell me in detail about the UN's activities in Kosovo.",
-  /*
   "What is the latest situation in Ukraine?",
   "What is the latest situation in Sudan?",
   "What is the latest situation in Afghanistan?",
@@ -37,5 +36,4 @@ export const placeholders = [
   "What is the latest statement from WHO?",
   "What is the latest statement from UNICEF?",
   "What is the latest statement from UNHCR?",
-  */
 ];
