@@ -1,17 +1,9 @@
-import { BabyAGI } from "langchain/experimental/babyagi";
-import { AutoGPT } from "langchain/experimental/autogpt";
-import { MemoryVectorStore } from "langchain/vectorstores/memory";
 import { OpenAIEmbeddings } from "langchain/embeddings/openai";
 import { OpenAI } from "langchain/llms/openai";
 import { PromptTemplate } from "langchain/prompts";
-import {
-  LLMChain,
-  VectorDBQAChain,
-  loadSummarizationChain,
-} from "langchain/chains";
+import { LLMChain, VectorDBQAChain } from "langchain/chains";
 import { ChainTool, Tool } from "langchain/tools";
 import { initializeAgentExecutorWithOptions } from "langchain/agents";
-import { ChatOpenAI } from "langchain/chat_models/openai";
 
 import { PineconeClient } from "@pinecone-database/pinecone";
 import { PineconeStore } from "langchain/vectorstores/pinecone";
@@ -20,6 +12,7 @@ import { HNSWLib } from "langchain/vectorstores/hnswlib";
 import { questions } from "../../questions.js";
 
 import * as dotenv from "dotenv";
+import { loadSummarizationChainTool } from "@/utils/langchain/tools/summarization/index.js";
 dotenv.config();
 
 const model = new OpenAI({ temperature: 0 });
@@ -37,7 +30,6 @@ const resolutionsVectorStore = await PineconeStore.fromExistingIndex(
   new OpenAIEmbeddings(),
   { pineconeIndex }
 );
-
 const qaToolResolutions = new ChainTool({
   name: "qa-un-resolutions",
   chain: VectorDBQAChain.fromLLM(model, resolutionsVectorStore),
@@ -54,7 +46,6 @@ const situationsVectorStore = await HNSWLib.load(
   situationsVectorStoreSaveDir,
   new OpenAIEmbeddings()
 );
-
 const qaToolSituations = new ChainTool({
   name: "qa-latest-worlds-situation",
   chain: VectorDBQAChain.fromLLM(model, situationsVectorStore),
@@ -62,21 +53,15 @@ const qaToolSituations = new ChainTool({
     "useful for when you need to ask latest humanitarian situation. Input: a question about humanitarian situation. Output: answer for the question.",
 });
 
-/**
- * Tool for summarization
- */
-const summarizationPrompt = PromptTemplate.fromTemplate(
-  "You are a AI who always concisely summarize given text as short as possible. Summarise the following sentences in a nutshell: {text}"
-);
-const summarizationTool = new ChainTool({
-  name: "text-summarization",
-  chain: new LLMChain({ llm: model, prompt: summarizationPrompt }),
-  description:
-    "useful for when you need to summarize a long text. Input: a long text. Output: a summary of text. Only use long text!!",
-});
+// Tool for summarization
+const summarizationChainTool = loadSummarizationChainTool(model);
 
 // tools
-const tools: Tool[] = [qaToolResolutions, qaToolSituations, summarizationTool];
+const tools: Tool[] = [
+  qaToolResolutions,
+  qaToolSituations,
+  summarizationChainTool,
+];
 
 // agent executor
 const agentExecutor = await initializeAgentExecutorWithOptions(tools, model, {
@@ -86,7 +71,7 @@ const agentExecutor = await initializeAgentExecutorWithOptions(tools, model, {
     suffix: `{agent_scratchpad}`,
     inputVariables: ["question", "agent_scratchpad"],
   },
-  maxIterations: 5,
+  maxIterations: 8,
 });
 console.log("Loaded agent.");
 
