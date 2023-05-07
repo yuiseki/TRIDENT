@@ -69,10 +69,10 @@ const summarizationPrompt = PromptTemplate.fromTemplate(
   "You are a AI who always concisely summarize given text as short as possible. Summarise the following sentences in a nutshell: {text}"
 );
 const summarizationTool = new ChainTool({
-  name: "summarization",
+  name: "text-summarization",
   chain: new LLMChain({ llm: model, prompt: summarizationPrompt }),
   description:
-    "useful for when you need to summarize a text. Input: a text for summarize. Output: a summary of text. Only use long text!!",
+    "useful for when you need to summarize a long text. Input: a long text. Output: a summary of text. Only use long text!!",
 });
 
 // tools
