@@ -5,6 +5,13 @@ import { OpenAI } from "langchain/llms/openai";
 import { RetrievalQAChain } from "langchain/chains";
 
 export const getRetrievalQAAnswer = async (query: string) => {
+  // initialize the LLM
+  const model = new OpenAI({
+    temperature: 0,
+    maxTokens: 3000,
+    modelName: "text-davinci-003",
+  });
+
   // initialize pinecone
   const client = new PineconeClient();
   await client.init({
@@ -18,13 +25,6 @@ export const getRetrievalQAAnswer = async (query: string) => {
     new OpenAIEmbeddings(),
     { pineconeIndex }
   );
-
-  // initialize the LLM
-  const model = new OpenAI({
-    temperature: 0,
-    maxTokens: 3000,
-    modelName: "text-davinci-003",
-  });
 
   // execute chain
   let answer = undefined;
