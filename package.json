@@ -10,6 +10,7 @@
     "lint": "next lint",
     "site:qiita.com:fetch": "node --loader ts-node/esm ./scripts/qiita.com/fetch_and_store.ts",
     "site:qiita.com:test": "node --loader ts-node/esm ./scripts/qiita.com/test.ts",
+    "site:github.com:fetch": "node --loader ts-node/esm ./scripts/github.com/fetch_and_store.ts",
     "site:www.un.org:fetch": "node --loader ts-node/esm ./scripts/www.un.org/fetch.ts",
     "site:www.undocs.org:fetch": "node --openssl-config=./openssl.cnf --loader ts-node/esm ./scripts/www.undocs.org/fetch.ts",
     "site:www.undocs.org:store": "node --loader ts-node/esm ./scripts/www.undocs.org/store.ts",
@@ -21,7 +22,6 @@
     "site:api.reliefweb.int:01_analyze_report": "node --loader ts-node/esm ./scripts/api.reliefweb.int/01_analyze_report.ts",
     "site:api.reliefweb.int:02_store": "node --loader ts-node/esm ./scripts/api.reliefweb.int/02_store.ts",
     "site:api.reliefweb.int:99_test": "node --loader ts-node/esm ./scripts/api.reliefweb.int/99_test.ts",
-    "site:github.com:fetch": "node --loader ts-node/esm ./scripts/github.com/fetch_and_store.ts",
     "test:utils:langchain/namedEntityRecognition": "node --loader ts-node/esm ./test/utils/langchain/namedEntityRecognition.ts",
     "test:utils:langchain/analyzeOverpassResponse": "node --loader ts-node/esm ./test/utils/langchain/analyzeOverpassResponse.ts"
   },
