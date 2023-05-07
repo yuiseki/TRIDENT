@@ -2,6 +2,7 @@
   "cSpell.words": [
     "appname",
     "createdate",
+    "DBQA",
     "HNSW",
     "hnswlib",
     "KHTML",
@@ -15,6 +16,7 @@
     "UNHCR",
     "UNIFIL",
     "UNMISS",
+    "vectorstore",
     "vectorstores"
   ]
 }

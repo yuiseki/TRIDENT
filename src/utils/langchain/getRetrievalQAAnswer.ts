@@ -14,7 +14,7 @@ export const getRetrievalQAAnswer = async (query: string) => {
   const pineconeIndex = client.Index(process.env.PINECONE_INDEX || "");
 
   // initialize pinecone as vector store
-  const vectorStore = await PineconeStore.fromExistingIndex(
+  const resolutionsVectorStore = await PineconeStore.fromExistingIndex(
     new OpenAIEmbeddings(),
     { pineconeIndex }
   );
@@ -32,7 +32,7 @@ export const getRetrievalQAAnswer = async (query: string) => {
     console.info("getRetrievalQAAnswer", "retrievalQAChain.retriever.k:", k);
     const retrievalQAChain = RetrievalQAChain.fromLLM(
       model,
-      vectorStore.asRetriever(k),
+      resolutionsVectorStore.asRetriever(k),
       {
         returnSourceDocuments: true,
       }

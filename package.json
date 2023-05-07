@@ -23,7 +23,8 @@
     "site:api.reliefweb.int:02_store": "node --loader ts-node/esm ./scripts/api.reliefweb.int/02_store.ts",
     "site:api.reliefweb.int:99_test": "node --loader ts-node/esm ./scripts/api.reliefweb.int/99_test.ts",
     "test:utils:langchain/namedEntityRecognition": "node --loader ts-node/esm ./test/utils/langchain/namedEntityRecognition.ts",
-    "test:utils:langchain/analyzeOverpassResponse": "node --loader ts-node/esm ./test/utils/langchain/analyzeOverpassResponse.ts"
+    "test:utils:langchain/analyzeOverpassResponse": "node --loader ts-node/esm ./test/utils/langchain/analyzeOverpassResponse.ts",
+    "test:utils:langchain/runAutonomousAgent": "node --loader ts-node/esm ./test/utils/langchain/runAutonomousAgent.ts"
   },
   "dependencies": {
     "@dqbd/tiktoken": "^1.0.7",
