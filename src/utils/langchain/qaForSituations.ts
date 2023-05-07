@@ -6,7 +6,7 @@ import { HNSWLib } from "langchain/vectorstores/hnswlib";
 export const qaForSituations = async (query: string) => {
   const model = new OpenAI({
     temperature: 0,
-    maxTokens: 3000,
+    maxTokens: 1000,
     modelName: "text-davinci-003",
   });
 

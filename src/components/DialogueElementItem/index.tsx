@@ -223,16 +223,24 @@ export const DialogueElementItem: React.FC<{
                       >
                         <a
                           href={doc.metadata.source}
-                          title={doc.metadata.title}
+                          title={
+                            doc.metadata.title
+                              ? doc.metadata.title
+                              : doc.metadata.name
+                          }
                           target="_blank"
                         >
                           {doc.metadata.id}
                         </a>
                         {" - "}
                         <span>
-                          {new Date(
-                            doc.metadata.created_at * 1000
-                          ).toLocaleDateString()}
+                          {doc.metadata.created_at
+                            ? new Date(
+                                doc.metadata.created_at * 1000
+                              ).toLocaleDateString()
+                            : new Date(
+                                doc.metadata.date_created
+                              ).toLocaleDateString()}
                         </span>
                       </li>
                     );

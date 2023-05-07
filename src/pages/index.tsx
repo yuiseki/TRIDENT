@@ -148,8 +148,9 @@ export default function Home() {
 
     let qaPath = "/api/qaForResolutions";
     if (
-      newInputText.toLowerCase().includes("latest") ||
-      newInputText.toLowerCase().includes("situation")
+      window.location.href.includes("localhost") &&
+      (newInputText.toLowerCase().includes("latest") ||
+        newInputText.toLowerCase().includes("situation"))
     ) {
       qaPath = "/api/qaForSituations";
     }
