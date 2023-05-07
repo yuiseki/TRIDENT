@@ -1,4 +1,5 @@
 import { BabyAGI } from "langchain/experimental/babyagi";
+import { AutoGPT } from "langchain/experimental/autogpt";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
 import { OpenAIEmbeddings } from "langchain/embeddings/openai";
 import { OpenAI } from "langchain/llms/openai";
@@ -6,6 +7,7 @@ import { PromptTemplate } from "langchain/prompts";
 import { LLMChain, VectorDBQAChain } from "langchain/chains";
 import { ChainTool, Tool } from "langchain/tools";
 import { initializeAgentExecutorWithOptions } from "langchain/agents";
+import { ChatOpenAI } from "langchain/chat_models/openai";
 
 import { PineconeClient } from "@pinecone-database/pinecone";
 import { PineconeStore } from "langchain/vectorstores/pinecone";
@@ -13,6 +15,8 @@ import { PineconeStore } from "langchain/vectorstores/pinecone";
 import * as dotenv from "dotenv";
 import { HNSWLib } from "langchain/vectorstores/hnswlib";
 dotenv.config();
+
+const model = new OpenAI({ temperature: 0 });
 
 /**
  * UN Resolutions QA Tool
@@ -33,13 +37,10 @@ const resolutionsVectorStore = await PineconeStore.fromExistingIndex(
 );
 
 const resolutionsQATool = new ChainTool({
-  name: "UN Resolutions QA",
-  chain: VectorDBQAChain.fromLLM(
-    new OpenAI({ temperature: 0 }),
-    resolutionsVectorStore
-  ),
+  name: "QA for UN Resolutions",
+  chain: VectorDBQAChain.fromLLM(model, resolutionsVectorStore),
   description:
-    "UN Resolutions QA - useful for when you need to ask questions about the UN resolutions.",
+    "useful for when you need to ask questions about the UN resolutions. Input: a question about UN resolution. Output: answer for the question.",
 });
 
 /**
@@ -54,13 +55,10 @@ const reliefWebVectorStore = await HNSWLib.load(
 );
 
 const reliefWebQATool = new ChainTool({
-  name: "Latest humanitarian information QA",
-  chain: VectorDBQAChain.fromLLM(
-    new OpenAI({ temperature: 0 }),
-    reliefWebVectorStore
-  ),
+  name: "QA for latest humanitarian situation",
+  chain: VectorDBQAChain.fromLLM(model, reliefWebVectorStore),
   description:
-    "Latest humanitarian information QA - useful for when you need to ask latest humanitarian information.",
+    "useful for when you need to ask latest humanitarian situation. Input: a question about humanitarian situation. Output: answer for the question.",
 });
 
 /**
@@ -70,7 +68,7 @@ const reliefWebQATool = new ChainTool({
 const todoTool = new ChainTool({
   name: "TODO",
   chain: new LLMChain({
-    llm: new OpenAI({ temperature: 0 }),
+    llm: model,
     prompt: PromptTemplate.fromTemplate(
       "You are a planner who is an expert at coming up with a concise todo list for a given objective. Come up with a concise todo list for this objective: {objective}"
     ),
@@ -81,36 +79,48 @@ const todoTool = new ChainTool({
 
 const tools: Tool[] = [resolutionsQATool, reliefWebQATool];
 
-const agentExecutor = await initializeAgentExecutorWithOptions(
-  tools,
-  new OpenAI({ temperature: 0 }),
-  {
-    agentType: "zero-shot-react-description",
-    agentArgs: {
-      prefix: `You are an AI who performs one task based on the following objective: {objective}. Take into account these previously completed tasks: {context}.`,
-      suffix: `Question: {task}
+const agentExecutor = await initializeAgentExecutorWithOptions(tools, model, {
+  agentType: "zero-shot-react-description",
+  agentArgs: {
+    prefix: `You are an AI who performs one task based on the following objective: {objective}. Take into account these previously completed tasks: {context}.`,
+    suffix: `Your task: {task}
 {agent_scratchpad}`,
-      inputVariables: ["objective", "task", "context", "agent_scratchpad"],
-    },
-  }
-);
-
+    inputVariables: ["objective", "task", "context", "agent_scratchpad"],
+  },
+});
 console.log("Loaded agent.");
 
-const memoryVectorStore = new MemoryVectorStore(new OpenAIEmbeddings());
-
+const agentMemoryVectorStore = new MemoryVectorStore(new OpenAIEmbeddings());
 const babyAGI = BabyAGI.fromLLM({
-  llm: new OpenAI({ temperature: 0 }),
+  llm: model,
   executionChain: agentExecutor,
-  vectorstore: memoryVectorStore,
+  vectorstore: agentMemoryVectorStore,
   maxIterations: 10,
 });
 
 const input =
   "Write a short, concise report for the latest situation in Sudan.";
-
 console.log(`Executing with input "${input}"...`);
 
 await babyAGI.call({
   objective: input,
 });
+
+/*
+// bugってる
+const agentMemoryVectorStore = new MemoryVectorStore(new OpenAIEmbeddings());
+const autogpt = AutoGPT.fromLLMAndTools(
+  new ChatOpenAI({ temperature: 0 }),
+  tools,
+  {
+    memory: agentMemoryVectorStore.asRetriever(),
+    aiName: "UN-AGI",
+    aiRole: "Assistant",
+    maxIterations: 10,
+  }
+);
+
+await autogpt.run([
+  "Your Objective: Write a short, concise report for the latest situation in Sudan.",
+]);
+*/
