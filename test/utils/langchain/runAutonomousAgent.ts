@@ -22,16 +22,12 @@ const model = new OpenAI({ temperature: 0 });
 /**
  * UN Resolutions QA Tool
  */
-
-// initialize pinecone
 const client = new PineconeClient();
 await client.init({
   apiKey: process.env.PINECONE_API_KEY || "",
   environment: process.env.PINECONE_ENVIRONMENT || "",
 });
 const pineconeIndex = client.Index(process.env.PINECONE_INDEX || "");
-
-// initialize pinecone as vector store
 const resolutionsVectorStore = await PineconeStore.fromExistingIndex(
   new OpenAIEmbeddings(),
   { pineconeIndex }
@@ -39,31 +35,37 @@ const resolutionsVectorStore = await PineconeStore.fromExistingIndex(
 
 const resolutionsQATool = new ChainTool({
   name: "QA for UN Resolutions",
-  chain: VectorDBQAChain.fromLLM(model, resolutionsVectorStore),
+  chain: VectorDBQAChain.fromLLM(model, resolutionsVectorStore, {
+    returnSourceDocuments: false,
+  }),
   description:
-    "useful for when you need to ask questions about the UN resolutions. Input: a question about UN resolution. Output: answer for the question.",
+    "useful for when you need to ask about the UN resolutions. Input: a question about the UN resolution. Output: answer for the question.",
+  //returnDirect: true,
 });
 
 /**
  * ReliefWeb QA Tool
  */
-
-const reliefWebVectorStoreSaveDir =
+const situationsVectorStoreSaveDir =
   "public/api.reliefweb.int/reports/summaries/vector_stores/";
-const reliefWebVectorStore = await HNSWLib.load(
-  reliefWebVectorStoreSaveDir,
+const situationsVectorStore = await HNSWLib.load(
+  situationsVectorStoreSaveDir,
   new OpenAIEmbeddings()
 );
-
 const reliefWebQATool = new ChainTool({
   name: "QA for latest humanitarian situation",
-  chain: VectorDBQAChain.fromLLM(model, reliefWebVectorStore),
+  chain: VectorDBQAChain.fromLLM(model, situationsVectorStore, {
+    returnSourceDocuments: false,
+  }),
   description:
     "useful for when you need to ask latest humanitarian situation. Input: a question about humanitarian situation. Output: answer for the question.",
+  //returnDirect: true,
 });
 
+// tools
 const tools: Tool[] = [resolutionsQATool, reliefWebQATool];
 
+// agent executor
 const agentExecutor = await initializeAgentExecutorWithOptions(tools, model, {
   agentType: "zero-shot-react-description",
   agentArgs: {
