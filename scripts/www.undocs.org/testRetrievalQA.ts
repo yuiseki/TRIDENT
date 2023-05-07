@@ -4,15 +4,17 @@ import { placeholders } from "./../../src/const/placeholders.ts";
 
 dotenv.config();
 
-const queries = placeholders;
-
-for (const query of queries) {
+for (const query of placeholders) {
   console.log("\n\n");
   console.log("testRetrievalQA", "Q:", query);
   try {
-    const answer = await getRetrievalQAAnswer(query);
-    console.log("testRetrievalQA", "A:", answer.text);
-    console.log("testRetrievalQA", "Sources:", answer.sourceDocuments.length);
+    const answer1 = await getRetrievalQAAnswer(query);
+    console.log("testRetrievalQA resolution", "A:", answer1.text);
+    console.log(
+      "testRetrievalQA resolution",
+      "Sources:",
+      answer1.sourceDocuments.length
+    );
   } catch (error) {
     console.log("testRetrievalQA", "error !!!!!");
   }

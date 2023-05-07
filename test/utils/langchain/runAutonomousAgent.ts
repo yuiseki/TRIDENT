@@ -14,6 +14,7 @@ import { PineconeStore } from "langchain/vectorstores/pinecone";
 
 import * as dotenv from "dotenv";
 import { HNSWLib } from "langchain/vectorstores/hnswlib";
+import { placeholders } from "../../../src/const/placeholders.ts";
 dotenv.config();
 
 const model = new OpenAI({ temperature: 0 });
@@ -66,18 +67,21 @@ const tools: Tool[] = [resolutionsQATool, reliefWebQATool];
 const agentExecutor = await initializeAgentExecutorWithOptions(tools, model, {
   agentType: "zero-shot-react-description",
   agentArgs: {
-    prefix: `You are an AI who performs one task based on the following objective: {objective}.`,
+    prefix: `You are an AI who answers the following questions: {question}.`,
     suffix: `
 {agent_scratchpad}`,
-    inputVariables: ["objective", "agent_scratchpad"],
+    inputVariables: ["question", "agent_scratchpad"],
   },
 });
 console.log("Loaded agent.");
 
-const result = await agentExecutor.call({
-  objective: "What is the latest situation in Sudan?",
-});
-console.log(result);
+for await (const query of placeholders) {
+  console.log("Q:", query);
+  const result = await agentExecutor.call({
+    question: query,
+  });
+  console.log("A:", result.output);
+}
 
 /*
 const agentExecutor = await initializeAgentExecutorWithOptions(tools, model, {

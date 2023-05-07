@@ -27,6 +27,15 @@ export const placeholders = [
   "What is SDGs? Why should I care about the SDGs?",
   "Does the UN take gender into account in its climate change action?",
   "Why is the UN taking gender considerations into account in climate change action?",
-  "What is the latest situation in Sudan?",
   "Tell me in detail about the UN's activities in Kosovo.",
+  /*
+  "What is the latest situation in Ukraine?",
+  "What is the latest situation in Sudan?",
+  "What is the latest situation in Afghanistan?",
+  "What is the latest situation in Syria?",
+  "What is the latest situation in Japan?",
+  "What is the latest statement from WHO?",
+  "What is the latest statement from UNICEF?",
+  "What is the latest statement from UNHCR?",
+  */
 ];

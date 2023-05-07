@@ -2,8 +2,7 @@ import { OpenAIEmbeddings } from "langchain/embeddings/openai";
 import { PineconeClient } from "@pinecone-database/pinecone";
 import { PineconeStore } from "langchain/vectorstores/pinecone";
 import { OpenAI } from "langchain/llms/openai";
-import { RetrievalQAChain, loadQARefineChain } from "langchain/chains";
-import { HNSWLib } from "langchain/vectorstores/hnswlib";
+import { RetrievalQAChain } from "langchain/chains";
 
 export const getRetrievalQAAnswer = async (query: string) => {
   // initialize the LLM
@@ -27,25 +26,14 @@ export const getRetrievalQAAnswer = async (query: string) => {
     { pineconeIndex }
   );
 
-  const situationsVectorStoreSaveDir =
-    "public/api.reliefweb.int/reports/summaries/vector_stores/";
-  const situationsVectorStore = await HNSWLib.load(
-    situationsVectorStoreSaveDir,
-    new OpenAIEmbeddings()
-  );
-
-  const situationsRetrievalQAChain = RetrievalQAChain.fromLLM(
-    model,
-    situationsVectorStore.asRetriever(4),
-    {
-      returnSourceDocuments: true,
-    }
-  );
-
-  // execute chain
-  let answer = undefined;
-  for await (const k of [6, 4, 2]) {
-    console.info("getRetrievalQAAnswer", "retrievalQAChain.retriever.k:", k);
+  // generate answer based on resolution
+  let answerBasedOnResolution = undefined;
+  for await (const k of [4, 3, 2]) {
+    console.info(
+      "getRetrievalQAAnswer resolution",
+      "retrievalQAChain.retriever.k:",
+      k
+    );
     const resolutionsRetrievalQAChain = RetrievalQAChain.fromLLM(
       model,
       resolutionsVectorStore.asRetriever(k),
@@ -54,24 +42,28 @@ export const getRetrievalQAAnswer = async (query: string) => {
       }
     );
     try {
-      answer = await resolutionsRetrievalQAChain.call({
+      answerBasedOnResolution = await resolutionsRetrievalQAChain.call({
         query: query,
       });
-      console.log("getRetrievalQAAnswer", "retrievalQAChain succeeded");
+      console.log(
+        "getRetrievalQAAnswer resolution",
+        "retrievalQAChain succeeded"
+      );
       break;
     } catch (error) {
-      console.error("getRetrievalQAAnswer", "retrievalQAChain failed !!!!!");
+      console.error(
+        "getRetrievalQAAnswer resolution",
+        "retrievalQAChain failed !!!!!"
+      );
       continue;
     }
   }
-  if (answer === undefined) {
-    answer = {
+  if (answerBasedOnResolution === undefined) {
+    answerBasedOnResolution = {
       text: " Sorry, something went wrong.",
       sourceDocuments: [],
     };
   }
 
-  const refineChain = loadQARefineChain(model);
-  const res = await refineChain()
-  return answer;
+  return answerBasedOnResolution;
 };
