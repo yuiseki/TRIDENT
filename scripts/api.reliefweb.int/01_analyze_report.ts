@@ -195,7 +195,7 @@ try {
     // save result to file
     const recentReportsSummaryJoinedJson = {
       summary: res.text,
-      disasters: recentReportsSummaryJsonList,
+      reports: recentReportsSummaryJsonList,
     };
     await fs.mkdir(recentReportsSummaryJoinedBaseDir, {
       recursive: true,

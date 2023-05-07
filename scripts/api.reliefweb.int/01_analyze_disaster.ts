@@ -27,6 +27,8 @@ const jsonFilePathList = await readdirRecursively(baseDirPath);
 const ongoingDisastersJsonList = [];
 for await (const jsonFilePath of jsonFilePathList) {
   if (jsonFilePath.includes("summary")) {
+    console.log("delete summary", jsonFilePath);
+    await fs.rm(jsonFilePath);
     continue;
   }
   const jsonFile = await fs.readFile(jsonFilePath, "utf-8");
@@ -59,16 +61,18 @@ for await (const ongoingDisasterJson of ongoingDisastersJsonList.reverse()) {
     0,
     1
   )}/${disasterId.slice(0, 2)}/${disasterId}`;
-  const disasterSummaryPublicPath = `${disasterSummaryBaseDirPublic}/${changedUnixTime}.json`;
+  const disasterSummaryPublicChangeTimePath = `${disasterSummaryBaseDirPublic}/${changedUnixTime}.json`;
   try {
-    const alreadyExists = (await fs.lstat(disasterSummaryPublicPath)).isFile();
+    const alreadyExists = (
+      await fs.lstat(disasterSummaryPublicChangeTimePath)
+    ).isFile();
     if (alreadyExists) {
       console.log(
         "already generated summary, load:",
-        disasterSummaryPublicPath
+        disasterSummaryPublicChangeTimePath
       );
       const disasterSummaryJsonFile = await fs.readFile(
-        disasterSummaryPublicPath,
+        disasterSummaryPublicChangeTimePath,
         "utf-8"
       );
       const disasterSummaryJson = JSON.parse(disasterSummaryJsonFile);
@@ -78,7 +82,7 @@ for await (const ongoingDisasterJson of ongoingDisastersJsonList.reverse()) {
       continue;
     }
   } catch (error) {
-    console.log("generate summary for:", disasterSummaryPublicPath);
+    console.log("generate summary for:", disasterSummaryPublicChangeTimePath);
   }
 
   // main content
@@ -126,7 +130,7 @@ ${ongoingDisasterJson.fields.description}`;
       recursive: true,
     });
     await fs.writeFile(
-      disasterSummaryPublicPath,
+      disasterSummaryPublicChangeTimePath,
       JSON.stringify(disasterSummarizedJson, null, 2)
     );
     delete disasterSummarizedJson.original;
