@@ -1,0 +1,123 @@
+{
+  "original": {
+    "id": "3958665",
+    "fields": {
+      "date": {
+        "changed": "2023-05-04T14:27:58+00:00",
+        "created": "2023-05-04T14:25:21+00:00",
+        "original": "2023-05-04T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/254",
+          "name": "World",
+          "id": 254,
+          "shortname": "World",
+          "iso3": "wld",
+          "primary": true
+        }
+      ],
+      "origin": "https://www.undp.org/publications/re-envisioning-climate-change-adaptation-policy-sustain-peace-typology-analysis-naps",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/254",
+        "name": "World",
+        "id": 254,
+        "shortname": "World",
+        "iso3": "wld"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1293",
+          "longname": "United Nations Development Programme",
+          "spanish_name": "Programa de las Naciones Unidas para el Desarrollo",
+          "name": "UN Development Programme",
+          "id": 1293,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNDP",
+          "homepage": "http://www.undp.org/"
+        }
+      ],
+      "title": "Re-envisioning Climate Change Adaptation Policy to Sustain Peace - A typology & Analysis of the NAPs",
+      "body": "**Introduction - Raising Adaptation Ambition and Sustaining Peace**\n\nThough adaptation now stands high in the climate change agenda, this has not yet been adequately reflected into the delivery of sufficient international climate adaptation finance commitments over the years, meaning that developing countries and territories are paying more than ever before for their adaptation needs. Adaptation planning and policy is gaining ground, as evidenced by the number of countries and territories that have included adaptation in their Nationally Determined Contributions (NDCs) and a growing number of which are also developing and implementing National Adaptation Plans (NAPs). While this is encouraging, there are globally many contexts where climate vulnerability is juxtaposed and intersects with human and community insecurity in communities on the ground, affecting both the symptoms and causes of fragility and conflict. These considerations are often not covered explicitly in these instruments.\n\nHigh climate change vulnerability along with conflict and fragility coincide in very many places where in-situ adaptation needs are the most pressing and peacebuilding is an urgent priority too. According to the IPCC (2023), some 3.3-3.6 billion are highly vulnerable to climate and the human influence on climate is unequivocal and impacts highly heterogeneous,1 while the IEP (2022) noted the 11th decrease in peacefulness in the last fourteen years and the most significant deteriorations in the categories of: political instability, political terror scale, neighbouring country relations, refugees and Internallydisplaced persons (IDPs).2 Delivering adaptation in climate vulnerable conflict-affected and fragile contexts, where it is most needed so that it addresses the root causes of conflict and vulnerability, means targeted approaches to conflict sensitivity and leveraging peacebuilding cobenefits (see Box 1.1).3 In recent years, a lot of thinking around adaptation and peace has emerged at the project level, but yet remains today mostly anecdotal in nature. Adaptation action in conflict-affected and fragile contexts is also understudied as a topic. One study notes just 13 articles per country in a sample of 15 countries, with only Mali and Nigeria exceeding this and the other countries counting less than four articles each.4 Unfortunately, there has been little progress in elaborating climate policies which address the climate-conflict intersection5 and little examination of adaptation policy as it relates to conflict and fragility, or peacebuilding processes, strategies or financing.\n\nRedefining and raising ambition of adaptation in conflictaffected and fragile contexts inherently requires a considered approach to peace, governance and security. Programming alone will also not lead to institutionalizing of needed conflict sensitivity and peacebuilding approaches in adaptation writ-large. Adaptation policy and planning at a national level can help determine key priorities and sectors and ensure alignment with peacebuilding priorities. Consideration of regional and cross-border impacts are important too, especially where natural resources are shared across national boundaries and risks are joint and may help avoid maladaptation. However, this is still not yet the norm. Finding connections early on in vulnerability assessments can allow for the identification of gaps where peacebuilding expertise is needed and peacebuilding investments which often target natural capital too and can bolster results. Such holistic thinking also needs to inform the development of the Global Goal on Adaptation (GGA)6 and New Collective Quantified Goal (NCQG) on climate finance under the Paris Agreement.7\n\nAdaptation priority setting and financing, reflecting vulnerability which is not only bio-physical in nature but also socially constructed, in conflict-affected and fragile contexts needs to seek out peace co-benefits which reinforce primary adaptation benefits. In the same way, peacebuilding needs to be cognizant of adaptation priorities. In this regard, the practice of environmental peacebuilding, technical solutions to adaptation are an important opportunity for cooperation and to build peace.8 This analysis and typology show that understanding in the NAPs goes beyond the first-round NDCs and synergies are observed and described between adaptation and peacebuilding objectives.",
+      "url": "https://reliefweb.int/node/3958665",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/84/5c/845c4dbe-4cdd-490f-ae98-7f1bdae133cb.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/84/5c/845c4dbe-4cdd-490f-ae98-7f1bdae133cb.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/84/5c/845c4dbe-4cdd-490f-ae98-7f1bdae133cb.png",
+            "version": "2417407-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/84/5c/845c4dbe-4cdd-490f-ae98-7f1bdae133cb.png"
+          },
+          "filename": "Re-envisioning Climate Change Adaptation to Sustain Peace - UNDP.pdf",
+          "mimetype": "application/pdf",
+          "id": "2417407",
+          "filesize": "17499190",
+          "url": "https://reliefweb.int/attachments/845c4dbe-4cdd-490f-ae98-7f1bdae133cb/Re-envisioning%20Climate%20Change%20Adaptation%20to%20Sustain%20Peace%20-%20UNDP.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/world/re-envisioning-climate-change-adaptation-policy-sustain-peace-typology-analysis-naps",
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        },
+        {
+          "name": "Climate Change and Environment",
+          "id": 4588
+        },
+        {
+          "name": "Disaster Management",
+          "id": 4591
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Peacekeeping and Peacebuilding",
+          "id": 4599
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3958665,
+      "status": "published",
+      "body-html": "<p><strong>Introduction - Raising Adaptation Ambition and Sustaining Peace</strong></p>\n<p>Though adaptation now stands high in the climate change agenda, this has not yet been adequately reflected into the delivery of sufficient international climate adaptation finance commitments over the years, meaning that developing countries and territories are paying more than ever before for their adaptation needs. Adaptation planning and policy is gaining ground, as evidenced by the number of countries and territories that have included adaptation in their Nationally Determined Contributions (NDCs) and a growing number of which are also developing and implementing National Adaptation Plans (NAPs). While this is encouraging, there are globally many contexts where climate vulnerability is juxtaposed and intersects with human and community insecurity in communities on the ground, affecting both the symptoms and causes of fragility and conflict. These considerations are often not covered explicitly in these instruments.</p>\n<p>High climate change vulnerability along with conflict and fragility coincide in very many places where in-situ adaptation needs are the most pressing and peacebuilding is an urgent priority too. According to the IPCC (2023), some 3.3-3.6 billion are highly vulnerable to climate and the human influence on climate is unequivocal and impacts highly heterogeneous,1 while the IEP (2022) noted the 11th decrease in peacefulness in the last fourteen years and the most significant deteriorations in the categories of: political instability, political terror scale, neighbouring country relations, refugees and Internallydisplaced persons (IDPs).2 Delivering adaptation in climate vulnerable conflict-affected and fragile contexts, where it is most needed so that it addresses the root causes of conflict and vulnerability, means targeted approaches to conflict sensitivity and leveraging peacebuilding cobenefits (see Box 1.1).3 In recent years, a lot of thinking around adaptation and peace has emerged at the project level, but yet remains today mostly anecdotal in nature. Adaptation action in conflict-affected and fragile contexts is also understudied as a topic. One study notes just 13 articles per country in a sample of 15 countries, with only Mali and Nigeria exceeding this and the other countries counting less than four articles each.4 Unfortunately, there has been little progress in elaborating climate policies which address the climate-conflict intersection5 and little examination of adaptation policy as it relates to conflict and fragility, or peacebuilding processes, strategies or financing.</p>\n<p>Redefining and raising ambition of adaptation in conflictaffected and fragile contexts inherently requires a considered approach to peace, governance and security. Programming alone will also not lead to institutionalizing of needed conflict sensitivity and peacebuilding approaches in adaptation writ-large. Adaptation policy and planning at a national level can help determine key priorities and sectors and ensure alignment with peacebuilding priorities. Consideration of regional and cross-border impacts are important too, especially where natural resources are shared across national boundaries and risks are joint and may help avoid maladaptation. However, this is still not yet the norm. Finding connections early on in vulnerability assessments can allow for the identification of gaps where peacebuilding expertise is needed and peacebuilding investments which often target natural capital too and can bolster results. Such holistic thinking also needs to inform the development of the Global Goal on Adaptation (GGA)6 and New Collective Quantified Goal (NCQG) on climate finance under the Paris Agreement.7</p>\n<p>Adaptation priority setting and financing, reflecting vulnerability which is not only bio-physical in nature but also socially constructed, in conflict-affected and fragile contexts needs to seek out peace co-benefits which reinforce primary adaptation benefits. In the same way, peacebuilding needs to be cognizant of adaptation priorities. In this regard, the practice of environmental peacebuilding, technical solutions to adaptation are an important opportunity for cooperation and to build peace.8 This analysis and typology show that understanding in the NAPs goes beyond the first-round NDCs and synergies are observed and described between adaptation and peacebuilding objectives.</p>\n"
+    }
+  },
+  "text": "# Re-envisioning Climate Change Adaptation Policy to Sustain Peace - A typology & Analysis of the NAPs\n\n**Introduction - Raising Adaptation Ambition and Sustaining Peace**\n\nThough adaptation now stands high in the climate change agenda, this has not yet been adequately reflected into the delivery of sufficient international climate adaptation finance commitments over the years, meaning that developing countries and territories are paying more than ever before for their adaptation needs. Adaptation planning and policy is gaining ground, as evidenced by the number of countries and territories that have included adaptation in their Nationally Determined Contributions (NDCs) and a growing number of which are also developing and implementing National Adaptation Plans (NAPs). While this is encouraging, there are globally many contexts where climate vulnerability is juxtaposed and intersects with human and community insecurity in communities on the ground, affecting both the symptoms and causes of fragility and conflict. These considerations are often not covered explicitly in these instruments.\n\nHigh climate change vulnerability along with conflict and fragility coincide in very many places where in-situ adaptation needs are the most pressing and peacebuilding is an urgent priority too. According to the IPCC (2023), some 3.3-3.6 billion are highly vulnerable to climate and the human influence on climate is unequivocal and impacts highly heterogeneous,1 while the IEP (2022) noted the 11th decrease in peacefulness in the last fourteen years and the most significant deteriorations in the categories of: political instability, political terror scale, neighbouring country relations, refugees and Internallydisplaced persons (IDPs).2 Delivering adaptation in climate vulnerable conflict-affected and fragile contexts, where it is most needed so that it addresses the root causes of conflict and vulnerability, means targeted approaches to conflict sensitivity and leveraging peacebuilding cobenefits (see Box 1.1).3 In recent years, a lot of thinking around adaptation and peace has emerged at the project level, but yet remains today mostly anecdotal in nature. Adaptation action in conflict-affected and fragile contexts is also understudied as a topic. One study notes just 13 articles per country in a sample of 15 countries, with only Mali and Nigeria exceeding this and the other countries counting less than four articles each.4 Unfortunately, there has been little progress in elaborating climate policies which address the climate-conflict intersection5 and little examination of adaptation policy as it relates to conflict and fragility, or peacebuilding processes, strategies or financing.\n\nRedefining and raising ambition of adaptation in conflictaffected and fragile contexts inherently requires a considered approach to peace, governance and security. Programming alone will also not lead to institutionalizing of needed conflict sensitivity and peacebuilding approaches in adaptation writ-large. Adaptation policy and planning at a national level can help determine key priorities and sectors and ensure alignment with peacebuilding priorities. Consideration of regional and cross-border impacts are important too, especially where natural resources are shared across national boundaries and risks are joint and may help avoid maladaptation. However, this is still not yet the norm. Finding connections early on in vulnerability assessments can allow for the identification of gaps where peacebuilding expertise is needed and peacebuilding investments which often target natural capital too and can bolster results. Such holistic thinking also needs to inform the development of the Global Goal on Adaptation (GGA)6 and New Collective Quantified Goal (NCQG) on climate finance under the Paris Agreement.7\n\nAdaptation priority setting and financing, reflecting vulnerability which is not only bio-physical in nature but also socially constructed, in conflict-affected and fragile contexts needs to seek out peace co-benefits which reinforce primary adaptation benefits. In the same way, peacebuilding needs to be cognizant of adaptation priorities. In this regard, the practice of environmental peacebuilding, technical solutions to adaptation are an important opportunity for cooperation and to build peace.8 This analysis and typology show that understanding in the NAPs goes beyond the first-round NDCs and synergies are observed and described between adaptation and peacebuilding objectives.",
+  "summary": " This analysis examines the intersection of climate change adaptation and peacebuilding, and how the two can be integrated into National Adaptation Plans (NAPs). It highlights the need for a considered approach to peace, governance and security in order to redefine and raise ambition of adaptation in conflict-affected and fragile contexts. It also discusses the importance of finding connections early on in vulnerability assessments to identify gaps where peacebuilding expertise is needed, and how peacebuilding investments can bolster adaptation results. Finally, it emphasizes the need for environmental peacebuilding to create opportunities for cooperation and build peace.",
+  "metadata": {
+    "id": "3958665",
+    "name": "Re-envisioning Climate Change Adaptation Policy to Sustain Peace - A typology & Analysis of the NAPs",
+    "date_original": 1683158400000,
+    "date_changed": 1683210478000,
+    "date_created": 1683210321000,
+    "primary_country_id": 254,
+    "primary_country_name": "World",
+    "primary_country_iso3": "wld"
+  }
+}

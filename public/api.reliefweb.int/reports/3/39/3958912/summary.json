@@ -1,0 +1,161 @@
+{
+  "original": {
+    "id": "3958912",
+    "fields": {
+      "date": {
+        "changed": "2023-05-05T10:25:03+00:00",
+        "created": "2023-05-05T09:15:51+00:00",
+        "original": "2023-05-04T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/226",
+          "name": "Syrian Arab Republic",
+          "location": {
+            "lon": 38.51,
+            "lat": 35.01
+          },
+          "id": 226,
+          "shortname": "Syria",
+          "iso3": "syr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/236",
+          "name": "Türkiye",
+          "location": {
+            "lon": 35.18,
+            "lat": 39.06
+          },
+          "id": 236,
+          "shortname": "Türkiye",
+          "iso3": "tur",
+          "primary": true
+        }
+      ],
+      "origin": "https://data.unhcr.org/en/documents/details/100464",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/236",
+        "name": "Türkiye",
+        "location": {
+          "lon": 35.18,
+          "lat": 39.06
+        },
+        "id": 236,
+        "shortname": "Türkiye",
+        "iso3": "tur"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EQ",
+          "name": "Earthquake",
+          "id": 4628
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "UNHCR Türkiye Earthquake Emergency Response (04 May 2023)",
+      "body": "**RECENT HIGHLIGHTS**\n\nAs of 2 May, AFAD is using a UNHCR-donated mobile coordination center in Malatya as an information and service point for the earthquake-affected population. Here officials can verify documents and information on heavily damaged houses and flats, as well as the government's cash assistance to the affected population. \n\nfollowing developments in Syria in 20-3, UNHCR donated 23 mobile coordination centers to AFAD. These are currently stationed at AFAD crisis centers in the most affected provinces to facilitate verification of information regarding damaged buildings, complaints, applications for cash assistance, registration for tents, management and coordination.",
+      "url": "https://reliefweb.int/node/3958912",
+      "disaster": [
+        {
+          "name": "Türkiye/Syria: Earthquakes - Feb 2023",
+          "id": 51470,
+          "glide": "EQ-2023-000015-TUR",
+          "type": [
+            {
+              "code": "EQ",
+              "name": "Earthquake",
+              "id": 4628,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/6a/0e/6a0e9cfb-1acc-4907-801a-5474844a7ec1.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/6a/0e/6a0e9cfb-1acc-4907-801a-5474844a7ec1.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/6a/0e/6a0e9cfb-1acc-4907-801a-5474844a7ec1.png",
+            "version": "2417613-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/6a/0e/6a0e9cfb-1acc-4907-801a-5474844a7ec1.png"
+          },
+          "filename": "UNHCR TuÌ_rkiye Emergency Response to Earthquake 2023 05 04.pdf",
+          "mimetype": "application/pdf",
+          "id": "2417613",
+          "filesize": "1039351",
+          "url": "https://reliefweb.int/attachments/6a0e9cfb-1acc-4907-801a-5474844a7ec1/UNHCR%20Tu%C3%8C_rkiye%20Emergency%20Response%20to%20Earthquake%202023%2005%2004.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/turkiye/unhcr-turkiye-earthquake-emergency-response-04-may-2023",
+      "theme": [
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3958912,
+      "status": "published",
+      "body-html": "<p><strong>RECENT HIGHLIGHTS</strong></p>\n<p>As of 2 May, AFAD is using a UNHCR-donated mobile coordination center in Malatya as an information and service point for the earthquake-affected population. Here officials can verify documents and information on heavily damaged houses and flats, as well as the government's cash assistance to the affected population.</p>\n<p>following developments in Syria in 20-3, UNHCR donated 23 mobile coordination centers to AFAD. These are currently stationed at AFAD crisis centers in the most affected provinces to facilitate verification of information regarding damaged buildings, complaints, applications for cash assistance, registration for tents, management and coordination.</p>\n"
+    }
+  },
+  "text": "# UNHCR Türkiye Earthquake Emergency Response (04 May 2023)\n\n**RECENT HIGHLIGHTS**\n\nAs of 2 May, AFAD is using a UNHCR-donated mobile coordination center in Malatya as an information and service point for the earthquake-affected population. Here officials can verify documents and information on heavily damaged houses and flats, as well as the government's cash assistance to the affected population. \n\nfollowing developments in Syria in 20-3, UNHCR donated 23 mobile coordination centers to AFAD. These are currently stationed at AFAD crisis centers in the most affected provinces to facilitate verification of information regarding damaged buildings, complaints, applications for cash assistance, registration for tents, management and coordination.",
+  "summary": "\n\nUNHCR has donated 23 mobile coordination centers to AFAD in response to the Syria crisis in 20-3. One of these centers is currently stationed in Malatya, Turkey, to provide information and services to the earthquake-affected population, such as verifying documents and information on damaged buildings, complaints, cash assistance, registration for tents, and coordination.",
+  "metadata": {
+    "id": "3958912",
+    "name": "UNHCR Türkiye Earthquake Emergency Response (04 May 2023)",
+    "date_original": 1683158400000,
+    "date_changed": 1683282303000,
+    "date_created": 1683278151000,
+    "primary_country_id": 236,
+    "primary_country_name": "Türkiye",
+    "primary_country_iso3": "tur",
+    "primary_country_location": {
+      "lon": 35.18,
+      "lat": 39.06
+    }
+  }
+}

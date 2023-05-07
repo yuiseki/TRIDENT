@@ -1,0 +1,149 @@
+{
+  "original": {
+    "id": "3957962",
+    "fields": {
+      "date": {
+        "changed": "2023-05-03T02:20:15+00:00",
+        "created": "2023-05-03T02:19:25+00:00",
+        "original": "2023-05-02T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/48",
+          "name": "Cambodia",
+          "location": {
+            "lon": 104.92,
+            "lat": 12.46
+          },
+          "id": 48,
+          "shortname": "Cambodia",
+          "iso3": "khm",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/135",
+          "name": "Lao People's Democratic Republic (the)",
+          "location": {
+            "lon": 102.59,
+            "lat": 19.92
+          },
+          "id": 135,
+          "shortname": "Lao PDR",
+          "iso3": "lao"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/228",
+          "name": "Thailand",
+          "location": {
+            "lon": 101.02,
+            "lat": 15.13
+          },
+          "id": 228,
+          "shortname": "Thailand",
+          "iso3": "tha"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/251",
+          "name": "Viet Nam",
+          "location": {
+            "lon": 108.34,
+            "lat": 14.32
+          },
+          "id": 251,
+          "shortname": "Viet Nam",
+          "iso3": "vnm"
+        }
+      ],
+      "origin": "http://ffw.mrcmekong.org/report_dry.php#20230412-041930",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/48",
+        "name": "Cambodia",
+        "location": {
+          "lon": 104.92,
+          "lat": 12.46
+        },
+        "id": 48,
+        "shortname": "Cambodia",
+        "iso3": "khm"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "DR",
+          "name": "Drought",
+          "id": 4672
+        },
+        {
+          "code": "FF",
+          "name": "Flash Flood",
+          "id": 4624
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1321",
+          "longname": "Mekong River Commission For Sustainable Development",
+          "name": "Mekong River Commission",
+          "id": 1321,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "Mekong River Commission",
+          "homepage": "http://www.mrcmekong.org/"
+        }
+      ],
+      "title": "Weekly Dry Season Situation Report in the Lower Mekong River Basin - 25 April-01 May 2023",
+      "body": "Key Messages\n\nKey messages for this weekly report are presented below.\n\n**Rainfall and its forecast**\n\n- During April 25-May 01, rainfall was observed from Chiang Saen to Khong Chiam stations and from Kompong Cham to Neak Luong station along the Mekong River, while no rainfall at other stations.\n\n- There will be warm temperatures and below average rainfall for the next 7 days over the Mekong region from 02 to 14 May 2023.\n\n**Water level and its forecast**\n\n- The MRC’s observed water level (WL) at Jinghong showed a decreased level between 536.13 m and 535.23 during 25 Apr-01 May 2023. The outflow varied from 1,410.00 m3 /s to 810.00 m3 /s between 25 Apr and 01 May 2023.\n\n- Regardless the decreased outflow at Jinghong upstream, water level of monitoring station at Chiang Saen in Thailand went up about 0.29 m during the reporting period and stayed 0.62 m below its LTA, considered low level. WLs at the monitoring stations at Chiang Khan in Thailand increased about 0.24 m, staying 1.28 m below its LTA value, while at Vientiane in Lao PDR it decreased about 0.11 m and stayed about 1.27 m below its LTA value. The current WL at Nong Khai in Thailand was about 1.63 m lower than its LTA value, while at Paksane in Lao PDR it was about 1.42 m lower than its LTA level, which considered low water level. WLsfrom Thailand’s Nakhon Phanom to Pakse fluctuated between 0.02 m and 0.05 m. WLs at these stations are slightly staying lower than their LTA value, except water level at Savannakhet which is about 0.24 m higher than its LTA value. Water levels from the stretches of the river from Stung Treng to Kratie in Cambodia, moreover, were remaining higher than their LTA value due to contributed inflows and some rainfall from the upstream part (at Pakse and 3S area in Viet Nam). WL at Kompong Cham is about 0.36 m lower than its LTA value.\n\n- The water volume of the Tonle Sap Lake was slightly lower than its LTA during the same period from 25 Apr to 01 May 2023, considered normal.\n\n- The current water levels for most of the stations are below their LTA value, except at Luang Prabang, Savannakhet, Stung Treng, Kratie and Neak Luong. WLs at the 2 tidal stations at Tan Chau and Chau Doc fluctuated between their LTA and minimum values, during this monitoring period.\n\n- Over the next seven days, the water levels across most monitoring stations are expected to go up and down and will remain lower than their long-term average value in most stations.\n\n**Drought condition and its forecast**\n\n- During Apr 24-30, the LMB was much better than the previous weeks. However, moderately dry condition remained in some areas in the middle part covering Udon Thani, Khammuane, Chaiyaphum, Khon Kaen, Nakhon Ratchasima, Burirum, Maha Sarakham, Surin, Sakeo, Ordar Meanchey, Banteay Meanchey, Siem Reap, Pailin, and Battambang.\n\n- In May the middle and lower parts of the LMB will likely receive below average rainfall with moderate drought condition. June is forecasted to be normal where the region receives average rainfall, in general. And lastly, the LMB is mostly like really wet in July forecast except slightly below average rainfall in southern Cambodia in the lower part.",
+      "url": "https://reliefweb.int/node/3957962",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/2d/6d/2d6d22c5-2275-4a88-b069-a4c50649ddbb.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/2d/6d/2d6d22c5-2275-4a88-b069-a4c50649ddbb.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/2d/6d/2d6d22c5-2275-4a88-b069-a4c50649ddbb.png",
+            "version": "2416619-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/2d/6d/2d6d22c5-2275-4a88-b069-a4c50649ddbb.png"
+          },
+          "filename": "Weekly flood & drought situation report_25 Apr_02 May_2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2416619",
+          "filesize": "3080919",
+          "url": "https://reliefweb.int/attachments/2d6d22c5-2275-4a88-b069-a4c50649ddbb/Weekly%20flood%20%26%20drought%20situation%20report_25%20Apr_02%20May_2023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/cambodia/weekly-dry-season-situation-report-lower-mekong-river-basin-25-april-01-may-2023",
+      "id": 3957962,
+      "status": "published",
+      "body-html": "<p>Key Messages</p>\n<p>Key messages for this weekly report are presented below.</p>\n<p><strong>Rainfall and its forecast</strong></p>\n<ul>\n<li>\n<p>During April 25-May 01, rainfall was observed from Chiang Saen to Khong Chiam stations and from Kompong Cham to Neak Luong station along the Mekong River, while no rainfall at other stations.</p>\n</li>\n<li>\n<p>There will be warm temperatures and below average rainfall for the next 7 days over the Mekong region from 02 to 14 May 2023.</p>\n</li>\n</ul>\n<p><strong>Water level and its forecast</strong></p>\n<ul>\n<li>\n<p>The MRC’s observed water level (WL) at Jinghong showed a decreased level between 536.13 m and 535.23 during 25 Apr-01 May 2023. The outflow varied from 1,410.00 m3 /s to 810.00 m3 /s between 25 Apr and 01 May 2023.</p>\n</li>\n<li>\n<p>Regardless the decreased outflow at Jinghong upstream, water level of monitoring station at Chiang Saen in Thailand went up about 0.29 m during the reporting period and stayed 0.62 m below its LTA, considered low level. WLs at the monitoring stations at Chiang Khan in Thailand increased about 0.24 m, staying 1.28 m below its LTA value, while at Vientiane in Lao PDR it decreased about 0.11 m and stayed about 1.27 m below its LTA value. The current WL at Nong Khai in Thailand was about 1.63 m lower than its LTA value, while at Paksane in Lao PDR it was about 1.42 m lower than its LTA level, which considered low water level. WLsfrom Thailand’s Nakhon Phanom to Pakse fluctuated between 0.02 m and 0.05 m. WLs at these stations are slightly staying lower than their LTA value, except water level at Savannakhet which is about 0.24 m higher than its LTA value. Water levels from the stretches of the river from Stung Treng to Kratie in Cambodia, moreover, were remaining higher than their LTA value due to contributed inflows and some rainfall from the upstream part (at Pakse and 3S area in Viet Nam). WL at Kompong Cham is about 0.36 m lower than its LTA value.</p>\n</li>\n<li>\n<p>The water volume of the Tonle Sap Lake was slightly lower than its LTA during the same period from 25 Apr to 01 May 2023, considered normal.</p>\n</li>\n<li>\n<p>The current water levels for most of the stations are below their LTA value, except at Luang Prabang, Savannakhet, Stung Treng, Kratie and Neak Luong. WLs at the 2 tidal stations at Tan Chau and Chau Doc fluctuated between their LTA and minimum values, during this monitoring period.</p>\n</li>\n<li>\n<p>Over the next seven days, the water levels across most monitoring stations are expected to go up and down and will remain lower than their long-term average value in most stations.</p>\n</li>\n</ul>\n<p><strong>Drought condition and its forecast</strong></p>\n<ul>\n<li>\n<p>During Apr 24-30, the LMB was much better than the previous weeks. However, moderately dry condition remained in some areas in the middle part covering Udon Thani, Khammuane, Chaiyaphum, Khon Kaen, Nakhon Ratchasima, Burirum, Maha Sarakham, Surin, Sakeo, Ordar Meanchey, Banteay Meanchey, Siem Reap, Pailin, and Battambang.</p>\n</li>\n<li>\n<p>In May the middle and lower parts of the LMB will likely receive below average rainfall with moderate drought condition. June is forecasted to be normal where the region receives average rainfall, in general. And lastly, the LMB is mostly like really wet in July forecast except slightly below average rainfall in southern Cambodia in the lower part.</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# Weekly Dry Season Situation Report in the Lower Mekong River Basin - 25 April-01 May 2023\n\nKey Messages\n\nKey messages for this weekly report are presented below.\n\n**Rainfall and its forecast**\n\n- During April 25-May 01, rainfall was observed from Chiang Saen to Khong Chiam stations and from Kompong Cham to Neak Luong station along the Mekong River, while no rainfall at other stations.\n\n- There will be warm temperatures and below average rainfall for the next 7 days over the Mekong region from 02 to 14 May 2023.\n\n**Water level and its forecast**\n\n- The MRC’s observed water level (WL) at Jinghong showed a decreased level between 536.13 m and 535.23 during 25 Apr-01 May 2023. The outflow varied from 1,410.00 m3 /s to 810.00 m3 /s between 25 Apr and 01 May 2023.\n\n- Regardless the decreased outflow at Jinghong upstream, water level of monitoring station at Chiang Saen in Thailand went up about 0.29 m during the reporting period and stayed 0.62 m below its LTA, considered low level. WLs at the monitoring stations at Chiang Khan in Thailand increased about 0.24 m, staying 1.28 m below its LTA value, while at Vientiane in Lao PDR it decreased about 0.11 m and stayed about 1.27 m below its LTA value. The current WL at Nong Khai in Thailand was about 1.63 m lower than its LTA value, while at Paksane in Lao PDR it was about 1.42 m lower than its LTA level, which considered low water level. WLsfrom Thailand’s Nakhon Phanom to Pakse fluctuated between 0.02 m and 0.05 m. WLs at these stations are slightly staying lower than their LTA value, except water level at Savannakhet which is about 0.24 m higher than its LTA value. Water levels from the stretches of the river from Stung Treng to Kratie in Cambodia, moreover, were remaining higher than their LTA value due to contributed inflows and some rainfall from the upstream part (at Pakse and 3S area in Viet Nam). WL at Kompong Cham is about 0.36 m lower than its LTA value.\n\n- The water volume of the Tonle Sap Lake was slightly lower than its LTA during the same period from 25 Apr to 01 May 2023, considered normal.\n\n- The current water levels for most of the stations are below their LTA value, except at Luang Prabang, Savannakhet, Stung Treng, Kratie and Neak Luong. WLs at the 2 tidal stations at Tan Chau and Chau Doc fluctuated between their LTA and minimum values, during this monitoring period.\n\n- Over the next seven days, the water levels across most monitoring stations are expected to go up and down and will remain lower than their long-term average value in most stations.\n\n**Drought condition and its forecast**\n\n- During Apr 24-30, the LMB was much better than the previous weeks. However, moderately dry condition remained in some areas in the middle part covering Udon Thani, Khammuane, Chaiyaphum, Khon Kaen, Nakhon Ratchasima, Burirum, Maha Sarakham, Surin, Sakeo, Ordar Meanchey, Banteay Meanchey, Siem Reap, Pailin, and Battambang.\n\n- In May the middle and lower parts of the LMB will likely receive below average rainfall with moderate drought condition. June is forecasted to be normal where the region receives average rainfall, in general. And lastly, the LMB is mostly like really wet in July forecast except slightly below average rainfall in southern Cambodia in the lower part.",
+  "summary": " This weekly report covers the rainfall, water levels, and drought conditions in the Lower Mekong River Basin from April 25-May 1, 2023. Rainfall was observed in some areas, while water levels were mostly below their long-term average value. Drought conditions were observed in some areas in the middle part of the basin. The forecast for the next 7 days is for warm temperatures and below average rainfall, with water levels expected to remain lower than their long-term average value. June is forecasted to be normal with average rainfall, and July is expected to be wet, except for slightly below average rainfall in southern Cambodia.",
+  "metadata": {
+    "id": "3957962",
+    "name": "Weekly Dry Season Situation Report in the Lower Mekong River Basin - 25 April-01 May 2023",
+    "date_original": 1682985600000,
+    "date_changed": 1683080415000,
+    "date_created": 1683080365000,
+    "primary_country_id": 48,
+    "primary_country_name": "Cambodia",
+    "primary_country_iso3": "khm",
+    "primary_country_location": {
+      "lon": 104.92,
+      "lat": 12.46
+    }
+  }
+}

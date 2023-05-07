@@ -1,0 +1,470 @@
+{
+  "original": {
+    "id": "3954747",
+    "fields": {
+      "date": {
+        "changed": "2023-04-20T14:33:54+00:00",
+        "created": "2023-04-20T14:31:00+00:00",
+        "original": "2023-04-20T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/21",
+          "name": "Antigua and Barbuda",
+          "location": {
+            "lon": -61.79,
+            "lat": 17.28
+          },
+          "id": 21,
+          "shortname": "Antigua and Barbuda",
+          "iso3": "atg"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/22",
+          "name": "Argentina",
+          "location": {
+            "lon": -64,
+            "lat": -35.38
+          },
+          "id": 22,
+          "shortname": "Argentina",
+          "iso3": "arg"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/29",
+          "name": "Bahamas",
+          "location": {
+            "lon": -76.55,
+            "lat": 25.24
+          },
+          "id": 29,
+          "shortname": "Bahamas",
+          "iso3": "bhs"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/32",
+          "name": "Barbados",
+          "location": {
+            "lon": -59.56,
+            "lat": 13.18
+          },
+          "id": 32,
+          "shortname": "Barbados",
+          "iso3": "brb"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/35",
+          "name": "Belize",
+          "location": {
+            "lon": -88.69,
+            "lat": 17.22
+          },
+          "id": 35,
+          "shortname": "Belize",
+          "iso3": "blz"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/39",
+          "name": "Bolivia (Plurinational State of)",
+          "location": {
+            "lon": -64.27,
+            "lat": -16.97
+          },
+          "id": 39,
+          "shortname": "Bolivia",
+          "iso3": "bol"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/42",
+          "name": "Brazil",
+          "location": {
+            "lon": -51.62,
+            "lat": -9.59
+          },
+          "id": 42,
+          "shortname": "Brazil",
+          "iso3": "bra",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/57",
+          "name": "Chile",
+          "location": {
+            "lon": -72.31,
+            "lat": -37.72
+          },
+          "id": 57,
+          "shortname": "Chile",
+          "iso3": "chl"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/68",
+          "name": "Costa Rica",
+          "location": {
+            "lon": -84.19,
+            "lat": 9.97
+          },
+          "id": 68,
+          "shortname": "Costa Rica",
+          "iso3": "cri"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/71",
+          "name": "Cuba",
+          "location": {
+            "lon": -79.24,
+            "lat": 21.95
+          },
+          "id": 71,
+          "shortname": "Cuba",
+          "iso3": "cub"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/78",
+          "name": "Dominica",
+          "location": {
+            "lon": -61.36,
+            "lat": 15.44
+          },
+          "id": 78,
+          "shortname": "Dominica",
+          "iso3": "dma"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/79",
+          "name": "Dominican Republic",
+          "location": {
+            "lon": -70.11,
+            "lat": 18.85
+          },
+          "id": 79,
+          "shortname": "Dominican Rep.",
+          "iso3": "dom"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/81",
+          "name": "Ecuador",
+          "location": {
+            "lon": -78.43,
+            "lat": -1.16
+          },
+          "id": 81,
+          "shortname": "Ecuador",
+          "iso3": "ecu"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/83",
+          "name": "El Salvador",
+          "location": {
+            "lon": -88.87,
+            "lat": 13.74
+          },
+          "id": 83,
+          "shortname": "El Salvador",
+          "iso3": "slv"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/106",
+          "name": "Grenada",
+          "location": {
+            "lon": -61.68,
+            "lat": 12.11
+          },
+          "id": 106,
+          "shortname": "Grenada",
+          "iso3": "grd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/109",
+          "name": "Guatemala",
+          "location": {
+            "lon": -90.39,
+            "lat": 15.61
+          },
+          "id": 109,
+          "shortname": "Guatemala",
+          "iso3": "gtm"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/112",
+          "name": "Guyana",
+          "location": {
+            "lon": -58.97,
+            "lat": 5.62
+          },
+          "id": 112,
+          "shortname": "Guyana",
+          "iso3": "guy"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/113",
+          "name": "Haiti",
+          "location": {
+            "lon": -72.43,
+            "lat": 19.18
+          },
+          "id": 113,
+          "shortname": "Haiti",
+          "iso3": "hti"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/116",
+          "name": "Honduras",
+          "location": {
+            "lon": -86.62,
+            "lat": 14.82
+          },
+          "id": 116,
+          "shortname": "Honduras",
+          "iso3": "hnd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/127",
+          "name": "Jamaica",
+          "location": {
+            "lon": -77.32,
+            "lat": 18.15
+          },
+          "id": 127,
+          "shortname": "Jamaica",
+          "iso3": "jam"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/156",
+          "name": "Mexico",
+          "location": {
+            "lon": -102.53,
+            "lat": 23.95
+          },
+          "id": 156,
+          "shortname": "Mexico",
+          "iso3": "mex"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/173",
+          "name": "Nicaragua",
+          "location": {
+            "lon": -85.03,
+            "lat": 12.84
+          },
+          "id": 173,
+          "shortname": "Nicaragua",
+          "iso3": "nic"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/184",
+          "name": "Panama",
+          "location": {
+            "lon": -80.27,
+            "lat": 8.7
+          },
+          "id": 184,
+          "shortname": "Panama",
+          "iso3": "pan"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/186",
+          "name": "Paraguay",
+          "location": {
+            "lon": -58.39,
+            "lat": -23.24
+          },
+          "id": 186,
+          "shortname": "Paraguay",
+          "iso3": "pry"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/187",
+          "name": "Peru",
+          "location": {
+            "lon": -75.31,
+            "lat": -10.15
+          },
+          "id": 187,
+          "shortname": "Peru",
+          "iso3": "per"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/200",
+          "name": "Saint Kitts and Nevis",
+          "location": {
+            "lon": -62.75,
+            "lat": 17.33
+          },
+          "id": 200,
+          "shortname": "Saint Kitts and Nevis",
+          "iso3": "kna"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/201",
+          "name": "Saint Lucia",
+          "location": {
+            "lon": -60.97,
+            "lat": 13.9
+          },
+          "id": 201,
+          "shortname": "Saint Lucia",
+          "iso3": "lca"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/203",
+          "name": "Saint Vincent and the Grenadines",
+          "location": {
+            "lon": -61.19,
+            "lat": 13.25
+          },
+          "id": 203,
+          "shortname": "St. Vincent & Grenadines",
+          "iso3": "vct"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/221",
+          "name": "Suriname",
+          "location": {
+            "lon": -55.91,
+            "lat": 3.69
+          },
+          "id": 221,
+          "shortname": "Suriname",
+          "iso3": "sur"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/234",
+          "name": "Trinidad and Tobago",
+          "location": {
+            "lon": -61.25,
+            "lat": 10.47
+          },
+          "id": 234,
+          "shortname": "Trinidad and Tobago",
+          "iso3": "tto"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/247",
+          "name": "Uruguay",
+          "location": {
+            "lon": -56.01,
+            "lat": -32.8
+          },
+          "id": 247,
+          "shortname": "Uruguay",
+          "iso3": "ury"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/250",
+          "name": "Venezuela (Bolivarian Republic of)",
+          "location": {
+            "lon": -65.8,
+            "lat": 7.62
+          },
+          "id": 250,
+          "shortname": "Venezuela",
+          "iso3": "ven"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/254",
+          "name": "World",
+          "id": 254,
+          "shortname": "World",
+          "iso3": "wld"
+        }
+      ],
+      "origin": "https://www.unicef.org/media/139081/file/SOWC23%20LACRO%20Brief,%20English.pdf",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/42",
+        "name": "Brazil",
+        "location": {
+          "lon": -51.62,
+          "lat": -9.59
+        },
+        "id": 42,
+        "shortname": "Brazil",
+        "iso3": "bra"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1979",
+          "longname": "United Nations Children's Fund",
+          "spanish_name": "Fondo de las Naciones Unidas para la Infancia",
+          "name": "UN Children's Fund",
+          "id": 1979,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNICEF",
+          "homepage": "http://www.unicef.org"
+        }
+      ],
+      "title": "The State of the World’s Children 2023: For Every Child, Vaccination - Regional Brief: Latin America and the Caribbean",
+      "body": "**For every child, vaccination**\n\n**Immunization is one of humanity’s most remarkable success stories. It has saved countless lives. Many more lives will be saved if the goals of the Immunization Agenda 2030 are achieved. This global strategy aims for a world where “everyone, everywhere, at every age, fully benefits from vaccines for good health and well-being.”**\n\nImmunization allows children everywhere to live lives free of many forms of disability and illness. It has led to the eradication of smallpox, a disfiguring and often fatal disease that in the twentieth century alone claimed an estimated 300 million lives. There has been remarkable progress, too, in eradicating polio. The power of immunization was demonstrated again in the COVID-19 pandemic. The disease claimed 14.9 million lives – directly and indirectly – in 2020 and 2021, according to the World Health Organization (WHO), and disrupted lives around the world, especially children’s. While it has taken far too long to get COVID-19 vaccines to people living in the poorest countries, the global impact is still astounding: Already, at least two thirds of the world’s population has been immunized against COVID-19. Those vaccines have prevented an estimated 20 million deaths globally. These examples demonstrate that public demand, scientific innovations and – perhaps above all – political will can drive rapid change.\n\n**We must do more, and we must do better, now**\n\nGlobally, an estimated 67 million children missed out entirely or partially on routine immunization from 2019 to 2021. In Latin America and the Caribbean, this figure is 6.8 million children. The region has historically maintained high levels of vaccination coverage but has experienced a considerable decrease over the last few years. The onset of the COVID-19 pandemic has exacerbated this trend, and more children have missed essential vaccines. As these children pass the age when vaccines are routinely given, it will require a dedicated effort to ensure that they catch up with their vaccinations.\n\nPublic health emergencies in the region, such as Zika and chikungunya, also created more challenges and potentially diverted political attention and investments from routine immunization. The backsliding in immunization highlighted that the story of zero-dose and under-vaccinated children is overwhelmingly a story of inequities. The children who are not vaccinated are also often the children of mothers who have not been able to go to school and who are given little say in family and spending decisions. Additionally, migrant populations and people living in hard-to-reach areas have considerably more difficulties in accessing health services.\n\nThe pandemic also exposed – and exacerbated – persistent weaknesses in health systems and primary health care. Key resources were diverted to respond to the pandemic, which, along with many other factors, contributed to the backsliding in routine immunization. But even before the pandemic, far too many primary health care systems suffered from a lack of skilled health workers, limited access to essential supplies and equipment, weak capacity for collecting and using data and conducting disease surveillance, shortages at the local level of key medicines and vaccines, and barriers to using available resources efficiently and effectively. The pandemic highlighted the difficulties facing women working in health care and immunization programmes.  \n\nAlthough they form the bulk of the health workforce, women have long been under-represented in leadership roles and denied opportunities for professional advancement, and have faced the risk of gender-based violence in doing their jobs. If primary health care is to become more resilient, the needs and potential of health workers, especially women health workers, must be better recognized.\n\n**The consequences of failure**\n\nUnfortunately, the world continues to see far too many outbreaks of vaccinepreventable diseases. The consequences of failing to vaccinate children may become more severe in years to come. Climate change risks exposing new communities to infectious diseases, such as malaria, dengue and cholera and may alter seasonal disease patterns. Also of long-term concern is the rise of drug-resistant infections. Failure to immunize children sets back still further the prospects of attaining the Sustainable Development Goals (SDGs).  \n\nImmunization is key to achieving SDG 3, which aims to “ensure healthy lives and promote well-being for all at all ages.” But it is also linked to 13 of the other SDGs. In that sense, immunization is at the heart of our collective commitment to achieve a better and more sustainable future for us all.\n\n**A time for political will**\n\nMuch will have to happen if we are to protect every child against vaccine-preventable diseases. The needs are complex, even daunting. But overriding them all is one single necessity: political will. Nothing will happen unless we garner the political will – globally, nationally and locally – to protect children against vaccine-preventable diseases.\n\nThat will should be grounded in optimism. The emergence of mass immunization in the 1980s and the development of COVID-19 vaccines show we can make progress, and we can make progress quickly. Encouragingly, and despite the setbacks it caused to childhood immunization, the pandemic may also have helped lay the groundwork in some countries for faster progress.  \n\nPolitical will should also be grounded in the realization that immunizing children makes economic sense. At an average cost of about US$58 per child in low- and middle-income countries, the standard course of vaccines can contribute enormously to protecting against disease and lifelong disability.  \n\nDespite shrinking national budgets in some countries, immunization must remain a priority because it is a proven strategy for reducing future healthcare costs and supports economic growth. It generates strong returns on investment – as much as US$26 for every US$1 invested. Continued and sustainable investment in immunization as part of health budgets is essential.  \n\nBut governments and donors need to work together to improve the efficiency and effectiveness of planning, budgeting and service delivery.  \n\nNow is a time for determination.  \nNow is a time for political will.  \nNow is the time to protect the health of every child.",
+      "url": "https://reliefweb.int/node/3954747",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/2e/a8/2ea80795-ea24-4825-a394-b4d2ab454b4a.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/2e/a8/2ea80795-ea24-4825-a394-b4d2ab454b4a.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/2e/a8/2ea80795-ea24-4825-a394-b4d2ab454b4a.png",
+            "version": "2413831-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/2e/a8/2ea80795-ea24-4825-a394-b4d2ab454b4a.png"
+          },
+          "filename": "SOWC23 LACRO Brief, English.pdf",
+          "mimetype": "application/pdf",
+          "id": "2413831",
+          "filesize": "8805408",
+          "url": "https://reliefweb.int/attachments/2ea80795-ea24-4825-a394-b4d2ab454b4a/SOWC23%20LACRO%20Brief%2C%20English.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/brazil/state-worlds-children-2023-every-child-vaccination-regional-brief-latin-america-and-caribbean",
+      "theme": [
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        }
+      ],
+      "id": 3954747,
+      "status": "published",
+      "body-html": "<p><strong>For every child, vaccination</strong></p>\n<p><strong>Immunization is one of humanity’s most remarkable success stories. It has saved countless lives. Many more lives will be saved if the goals of the Immunization Agenda 2030 are achieved. This global strategy aims for a world where “everyone, everywhere, at every age, fully benefits from vaccines for good health and well-being.”</strong></p>\n<p>Immunization allows children everywhere to live lives free of many forms of disability and illness. It has led to the eradication of smallpox, a disfiguring and often fatal disease that in the twentieth century alone claimed an estimated 300 million lives. There has been remarkable progress, too, in eradicating polio. The power of immunization was demonstrated again in the COVID-19 pandemic. The disease claimed 14.9 million lives – directly and indirectly – in 2020 and 2021, according to the World Health Organization (WHO), and disrupted lives around the world, especially children’s. While it has taken far too long to get COVID-19 vaccines to people living in the poorest countries, the global impact is still astounding: Already, at least two thirds of the world’s population has been immunized against COVID-19. Those vaccines have prevented an estimated 20 million deaths globally. These examples demonstrate that public demand, scientific innovations and – perhaps above all – political will can drive rapid change.</p>\n<p><strong>We must do more, and we must do better, now</strong></p>\n<p>Globally, an estimated 67 million children missed out entirely or partially on routine immunization from 2019 to 2021. In Latin America and the Caribbean, this figure is 6.8 million children. The region has historically maintained high levels of vaccination coverage but has experienced a considerable decrease over the last few years. The onset of the COVID-19 pandemic has exacerbated this trend, and more children have missed essential vaccines. As these children pass the age when vaccines are routinely given, it will require a dedicated effort to ensure that they catch up with their vaccinations.</p>\n<p>Public health emergencies in the region, such as Zika and chikungunya, also created more challenges and potentially diverted political attention and investments from routine immunization. The backsliding in immunization highlighted that the story of zero-dose and under-vaccinated children is overwhelmingly a story of inequities. The children who are not vaccinated are also often the children of mothers who have not been able to go to school and who are given little say in family and spending decisions. Additionally, migrant populations and people living in hard-to-reach areas have considerably more difficulties in accessing health services.</p>\n<p>The pandemic also exposed – and exacerbated – persistent weaknesses in health systems and primary health care. Key resources were diverted to respond to the pandemic, which, along with many other factors, contributed to the backsliding in routine immunization. But even before the pandemic, far too many primary health care systems suffered from a lack of skilled health workers, limited access to essential supplies and equipment, weak capacity for collecting and using data and conducting disease surveillance, shortages at the local level of key medicines and vaccines, and barriers to using available resources efficiently and effectively. The pandemic highlighted the difficulties facing women working in health care and immunization programmes.</p>\n<p>Although they form the bulk of the health workforce, women have long been under-represented in leadership roles and denied opportunities for professional advancement, and have faced the risk of gender-based violence in doing their jobs. If primary health care is to become more resilient, the needs and potential of health workers, especially women health workers, must be better recognized.</p>\n<p><strong>The consequences of failure</strong></p>\n<p>Unfortunately, the world continues to see far too many outbreaks of vaccinepreventable diseases. The consequences of failing to vaccinate children may become more severe in years to come. Climate change risks exposing new communities to infectious diseases, such as malaria, dengue and cholera and may alter seasonal disease patterns. Also of long-term concern is the rise of drug-resistant infections. Failure to immunize children sets back still further the prospects of attaining the Sustainable Development Goals (SDGs).</p>\n<p>Immunization is key to achieving SDG 3, which aims to “ensure healthy lives and promote well-being for all at all ages.” But it is also linked to 13 of the other SDGs. In that sense, immunization is at the heart of our collective commitment to achieve a better and more sustainable future for us all.</p>\n<p><strong>A time for political will</strong></p>\n<p>Much will have to happen if we are to protect every child against vaccine-preventable diseases. The needs are complex, even daunting. But overriding them all is one single necessity: political will. Nothing will happen unless we garner the political will – globally, nationally and locally – to protect children against vaccine-preventable diseases.</p>\n<p>That will should be grounded in optimism. The emergence of mass immunization in the 1980s and the development of COVID-19 vaccines show we can make progress, and we can make progress quickly. Encouragingly, and despite the setbacks it caused to childhood immunization, the pandemic may also have helped lay the groundwork in some countries for faster progress.</p>\n<p>Political will should also be grounded in the realization that immunizing children makes economic sense. At an average cost of about US$58 per child in low- and middle-income countries, the standard course of vaccines can contribute enormously to protecting against disease and lifelong disability.</p>\n<p>Despite shrinking national budgets in some countries, immunization must remain a priority because it is a proven strategy for reducing future healthcare costs and supports economic growth. It generates strong returns on investment – as much as US$26 for every US$1 invested. Continued and sustainable investment in immunization as part of health budgets is essential.</p>\n<p>But governments and donors need to work together to improve the efficiency and effectiveness of planning, budgeting and service delivery.</p>\n<p>Now is a time for determination.<br />\nNow is a time for political will.<br />\nNow is the time to protect the health of every child.</p>\n"
+    }
+  },
+  "text": "# The State of the World’s Children 2023: For Every Child, Vaccination - Regional Brief: Latin America and the Caribbean\n\n**For every child, vaccination**\n\n**Immunization is one of humanity’s most remarkable success stories. It has saved countless lives. Many more lives will be saved if the goals of the Immunization Agenda 2030 are achieved. This global strategy aims for a world where “everyone, everywhere, at every age, fully benefits from vaccines for good health and well-being.”**\n\nImmunization allows children everywhere to live lives free of many forms of disability and illness. It has led to the eradication of smallpox, a disfiguring and often fatal disease that in the twentieth century alone claimed an estimated 300 million lives. There has been remarkable progress, too, in eradicating polio. The power of immunization was demonstrated again in the COVID-19 pandemic. The disease claimed 14.9 million lives – directly and indirectly – in 2020 and 2021, according to the World Health Organization (WHO), and disrupted lives around the world, especially children’s. While it has taken far too long to get COVID-19 vaccines to people living in the poorest countries, the global impact is still astounding: Already, at least two thirds of the world’s population has been immunized against COVID-19. Those vaccines have prevented an estimated 20 million deaths globally. These examples demonstrate that public demand, scientific innovations and – perhaps above all – political will can drive rapid change.\n\n**We must do more, and we must do better, now**\n\nGlobally, an estimated 67 million children missed out entirely or partially on routine immunization from 2019 to 2021. In Latin America and the Caribbean, this figure is 6.8 million children. The region has historically maintained high levels of vaccination coverage but has experienced a considerable decrease over the last few years. The onset of the COVID-19 pandemic has exacerbated this trend, and more children have missed essential vaccines. As these children pass the age when vaccines are routinely given, it will require a dedicated effort to ensure that they catch up with their vaccinations.\n\nPublic health emergencies in the region, such as Zika and chikungunya, also created more challenges and potentially diverted political attention and investments from routine immunization. The backsliding in immunization highlighted that the story of zero-dose and under-vaccinated children is overwhelmingly a story of inequities. The children who are not vaccinated are also often the children of mothers who have not been able to go to school and who are given little say in family and spending decisions. Additionally, migrant populations and people living in hard-to-reach areas have considerably more difficulties in accessing health services.\n\nThe pandemic also exposed – and exacerbated – persistent weaknesses in health systems and primary health care. Key resources were diverted to respond to the pandemic, which, along with many other factors, contributed to the backsliding in routine immunization. But even before the pandemic, far too many primary health care systems suffered from a lack of skilled health workers, limited access to essential supplies and equipment, weak capacity for collecting and using data and conducting disease surveillance, shortages at the local level of key medicines and vaccines, and barriers to using available resources efficiently and effectively. The pandemic highlighted the difficulties facing women working in health care and immunization programmes.  \n\nAlthough they form the bulk of the health workforce, women have long been under-represented in leadership roles and denied opportunities for professional advancement, and have faced the risk of gender-based violence in doing their jobs. If primary health care is to become more resilient, the needs and potential of health workers, especially women health workers, must be better recognized.\n\n**The consequences of failure**\n\nUnfortunately, the world continues to see far too many outbreaks of vaccinepreventable diseases. The consequences of failing to vaccinate children may become more severe in years to come. Climate change risks exposing new communities to infectious diseases, such as malaria, dengue and cholera and may alter seasonal disease patterns. Also of long-term concern is the rise of drug-resistant infections. Failure to immunize children sets back still further the prospects of attaining the Sustainable Development Goals (SDGs).  \n\nImmunization is key to achieving SDG 3, which aims to “ensure healthy lives and promote well-being for all at all ages.” But it is also linked to 13 of the other SDGs. In that sense, immunization is at the heart of our collective commitment to achieve a better and more sustainable future for us all.\n\n**A time for political will**\n\nMuch will have to happen if we are to protect every child against vaccine-preventable diseases. The needs are complex, even daunting. But overriding them all is one single necessity: political will. Nothing will happen unless we garner the political will – globally, nationally and locally – to protect children against vaccine-preventable diseases.\n\nThat will should be grounded in optimism. The emergence of mass immunization in the 1980s and the development of COVID-19 vaccines show we can make progress, and we can make progress quickly. Encouragingly, and despite the setbacks it caused to childhood immunization, the pandemic may also have helped lay the groundwork in some countries for faster progress.  \n\nPolitical will should also be grounded in the realization that immunizing children makes economic sense. At an average cost of about US$58 per child in low- and middle-income countries, the standard course of vaccines can contribute enormously to protecting against disease and lifelong disability.  \n\nDespite shrinking national budgets in some countries, immunization must remain a priority because it is a proven strategy for reducing future healthcare costs and supports economic growth. It generates strong returns on investment – as much as US$26 for every US$1 invested. Continued and sustainable investment in immunization as part of health budgets is essential.  \n\nBut governments and donors need to work together to improve the efficiency and effectiveness of planning, budgeting and service delivery.  \n\nNow is a time for determination.  \nNow is a time for political will.  \nNow is the time to protect the health of every child.",
+  "summary": " Immunization has saved countless lives and is essential for children to live lives free of disability and illness. The COVID-19 pandemic has highlighted the importance of immunization, but an estimated 67 million children globally have missed out on routine immunization from 2019 to 2021, including 6.8 million in Latin America and the Caribbean. The pandemic has exacerbated this trend, and inequities have been highlighted. To protect every child against vaccine-preventable diseases, political will is needed globally, nationally and locally, and immunization must remain a priority in health budgets.",
+  "metadata": {
+    "id": "3954747",
+    "name": "The State of the World’s Children 2023: For Every Child, Vaccination - Regional Brief: Latin America and the Caribbean",
+    "date_original": 1681948800000,
+    "date_changed": 1682001234000,
+    "date_created": 1682001060000,
+    "primary_country_id": 42,
+    "primary_country_name": "Brazil",
+    "primary_country_iso3": "bra",
+    "primary_country_location": {
+      "lon": -51.62,
+      "lat": -9.59
+    }
+  }
+}

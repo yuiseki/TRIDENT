@@ -1,0 +1,111 @@
+{
+  "original": {
+    "id": "3955981",
+    "fields": {
+      "date": {
+        "changed": "2023-04-26T16:20:22+00:00",
+        "created": "2023-04-25T22:54:55+00:00",
+        "original": "2023-04-25T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/116",
+          "name": "Honduras",
+          "location": {
+            "lon": -86.62,
+            "lat": 14.82
+          },
+          "id": 116,
+          "shortname": "Honduras",
+          "iso3": "hnd",
+          "primary": true
+        }
+      ],
+      "origin": "https://data.unhcr.org/en/documents/details/100261",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/116",
+        "name": "Honduras",
+        "location": {
+          "lon": -86.62,
+          "lat": 14.82
+        },
+        "id": 116,
+        "shortname": "Honduras",
+        "iso3": "hnd"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "Honduras - IDP Law - April 2023",
+      "body": "**The Law for the Prevention, Care and Protection of Internally Displaced Persons in Honduras and the work of UNHCR**\n\nIn Honduras, generalized violence has generated multiple forced displacements, mainly in urban environments. Despite the fact that the Government officially recognized forced displacement in 2013, no public policies have been adopted to respond to the persistent protection needs of displaced persons and those at risk of displacement. \n\nBetween 2004 and 2018, at least 247,090 people were internally displaced in Honduras, according to a study to profile displaced households carried out in 2018. This figure indicates that approximately 2.7 percent of the Honduran population was displaced by violence. In this scenario, in March 2019, the Inter-Institutional Commission for the Protection of Persons Displaced by Violence (CIPPDV)1 delivered to the deputies of the Justice and Human Rights Commission of the National Congress the draft Law for the Prevention, Care and Protection of Forcibly Displaced Persons. \n\nAlmost three years after its first delivery, on 21 December, 2022, the National Congress of Honduras approved the Law for the Prevention, Care and Protection of Internally Displaced Persons. The process concluded with the presidential sanction and the promulgation of the Law in the Official Gazette \"La Gaceta\" published on 20 March, 2023. This is the first legal framework adopted by the Honduran State to offer a comprehensive response to internal displacement caused by generalized violence in a context of organized crime. \n\nThe Law contemplates a series of comprehensive measures to prevent internal displacement, through early warning systems, prevention and contingency plans; humanitarian assistance and protection of affected rights, such as education, housing, abandoned or dispossessed land and property; as well as seed capital and access to justice to achieve lasting solutions. This legal framework provides for the creation of the National Forced Displacement Response System (SINARDEF) made up of three operating bodies: i) The Inter-Institutional Commission for the Protection of Forcibly Displaced Persons (CIPPDEF) - as the highest decision-making, deliberation and System-policy formulation; ii ) The Directorate for the Protection of Internally Displaced Persons (DIPPDIV) - operational area and coordination of prevention and protection measures - and; iii ) The Municipal Units for the Protection of Forcibly Displaced Persons (UMAPPDEF) -local offices to comply with the law and respond in emergency phases.    \n\nThe Law contemplates a series of comprehensive measures to prevent internal displacement, through early warning systems, prevention, and contingency plans; humanitarian assistance and protection of affected rights, such as education, housing, abandoned or dispossessed land and property; as well as seed capital and access to justice to achieve lasting solutions.",
+      "url": "https://reliefweb.int/node/3955981",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/60/0e/600eb2cb-9f93-46cc-bf02-5e40fef52935.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/60/0e/600eb2cb-9f93-46cc-bf02-5e40fef52935.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/60/0e/600eb2cb-9f93-46cc-bf02-5e40fef52935.png",
+            "version": "2414706-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/60/0e/600eb2cb-9f93-46cc-bf02-5e40fef52935.png"
+          },
+          "filename": "Honduras - IDP Law Report - April 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2414706",
+          "filesize": "976888",
+          "url": "https://reliefweb.int/attachments/600eb2cb-9f93-46cc-bf02-5e40fef52935/Honduras%20-%20IDP%20Law%20Report%20-%20April%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/honduras/honduras-idp-law-april-2023",
+      "theme": [
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        }
+      ],
+      "id": 3955981,
+      "status": "published",
+      "body-html": "<p><strong>The Law for the Prevention, Care and Protection of Internally Displaced Persons in Honduras and the work of UNHCR</strong></p>\n<p>In Honduras, generalized violence has generated multiple forced displacements, mainly in urban environments. Despite the fact that the Government officially recognized forced displacement in 2013, no public policies have been adopted to respond to the persistent protection needs of displaced persons and those at risk of displacement.</p>\n<p>Between 2004 and 2018, at least 247,090 people were internally displaced in Honduras, according to a study to profile displaced households carried out in 2018. This figure indicates that approximately 2.7 percent of the Honduran population was displaced by violence. In this scenario, in March 2019, the Inter-Institutional Commission for the Protection of Persons Displaced by Violence (CIPPDV)1 delivered to the deputies of the Justice and Human Rights Commission of the National Congress the draft Law for the Prevention, Care and Protection of Forcibly Displaced Persons.</p>\n<p>Almost three years after its first delivery, on 21 December, 2022, the National Congress of Honduras approved the Law for the Prevention, Care and Protection of Internally Displaced Persons. The process concluded with the presidential sanction and the promulgation of the Law in the Official Gazette &quot;La Gaceta&quot; published on 20 March, 2023. This is the first legal framework adopted by the Honduran State to offer a comprehensive response to internal displacement caused by generalized violence in a context of organized crime.</p>\n<p>The Law contemplates a series of comprehensive measures to prevent internal displacement, through early warning systems, prevention and contingency plans; humanitarian assistance and protection of affected rights, such as education, housing, abandoned or dispossessed land and property; as well as seed capital and access to justice to achieve lasting solutions. This legal framework provides for the creation of the National Forced Displacement Response System (SINARDEF) made up of three operating bodies: i) The Inter-Institutional Commission for the Protection of Forcibly Displaced Persons (CIPPDEF) - as the highest decision-making, deliberation and System-policy formulation; ii ) The Directorate for the Protection of Internally Displaced Persons (DIPPDIV) - operational area and coordination of prevention and protection measures - and; iii ) The Municipal Units for the Protection of Forcibly Displaced Persons (UMAPPDEF) -local offices to comply with the law and respond in emergency phases.</p>\n<p>The Law contemplates a series of comprehensive measures to prevent internal displacement, through early warning systems, prevention, and contingency plans; humanitarian assistance and protection of affected rights, such as education, housing, abandoned or dispossessed land and property; as well as seed capital and access to justice to achieve lasting solutions.</p>\n"
+    }
+  },
+  "text": "# Honduras - IDP Law - April 2023\n\n**The Law for the Prevention, Care and Protection of Internally Displaced Persons in Honduras and the work of UNHCR**\n\nIn Honduras, generalized violence has generated multiple forced displacements, mainly in urban environments. Despite the fact that the Government officially recognized forced displacement in 2013, no public policies have been adopted to respond to the persistent protection needs of displaced persons and those at risk of displacement. \n\nBetween 2004 and 2018, at least 247,090 people were internally displaced in Honduras, according to a study to profile displaced households carried out in 2018. This figure indicates that approximately 2.7 percent of the Honduran population was displaced by violence. In this scenario, in March 2019, the Inter-Institutional Commission for the Protection of Persons Displaced by Violence (CIPPDV)1 delivered to the deputies of the Justice and Human Rights Commission of the National Congress the draft Law for the Prevention, Care and Protection of Forcibly Displaced Persons. \n\nAlmost three years after its first delivery, on 21 December, 2022, the National Congress of Honduras approved the Law for the Prevention, Care and Protection of Internally Displaced Persons. The process concluded with the presidential sanction and the promulgation of the Law in the Official Gazette \"La Gaceta\" published on 20 March, 2023. This is the first legal framework adopted by the Honduran State to offer a comprehensive response to internal displacement caused by generalized violence in a context of organized crime. \n\nThe Law contemplates a series of comprehensive measures to prevent internal displacement, through early warning systems, prevention and contingency plans; humanitarian assistance and protection of affected rights, such as education, housing, abandoned or dispossessed land and property; as well as seed capital and access to justice to achieve lasting solutions. This legal framework provides for the creation of the National Forced Displacement Response System (SINARDEF) made up of three operating bodies: i) The Inter-Institutional Commission for the Protection of Forcibly Displaced Persons (CIPPDEF) - as the highest decision-making, deliberation and System-policy formulation; ii ) The Directorate for the Protection of Internally Displaced Persons (DIPPDIV) - operational area and coordination of prevention and protection measures - and; iii ) The Municipal Units for the Protection of Forcibly Displaced Persons (UMAPPDEF) -local offices to comply with the law and respond in emergency phases.    \n\nThe Law contemplates a series of comprehensive measures to prevent internal displacement, through early warning systems, prevention, and contingency plans; humanitarian assistance and protection of affected rights, such as education, housing, abandoned or dispossessed land and property; as well as seed capital and access to justice to achieve lasting solutions.",
+  "summary": " In Honduras, 247,090 people were internally displaced between 2004 and 2018 due to violence. In December 2022, the National Congress of Honduras approved the Law for the Prevention, Care and Protection of Internally Displaced Persons, which was officially promulgated in March 2023. This law provides a comprehensive response to internal displacement, including early warning systems, prevention and contingency plans, humanitarian assistance, protection of rights, seed capital, and access to justice. It also creates the National Forced Displacement Response System to oversee the implementation of the law.",
+  "metadata": {
+    "id": "3955981",
+    "name": "Honduras - IDP Law - April 2023",
+    "date_original": 1682380800000,
+    "date_changed": 1682526022000,
+    "date_created": 1682463295000,
+    "primary_country_id": 116,
+    "primary_country_name": "Honduras",
+    "primary_country_iso3": "hnd",
+    "primary_country_location": {
+      "lon": -86.62,
+      "lat": 14.82
+    }
+  }
+}

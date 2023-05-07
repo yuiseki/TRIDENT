@@ -1,0 +1,137 @@
+{
+  "original": {
+    "id": "3956566",
+    "fields": {
+      "date": {
+        "changed": "2023-04-27T10:31:26+00:00",
+        "created": "2023-04-27T10:02:41+00:00",
+        "original": "2023-04-27T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/257",
+          "name": "Zimbabwe",
+          "location": {
+            "lon": 29.94,
+            "lat": -19.19
+          },
+          "id": 257,
+          "shortname": "Zimbabwe",
+          "iso3": "zwe",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/257",
+        "name": "Zimbabwe",
+        "location": {
+          "lon": 29.94,
+          "lat": -19.19
+        },
+        "id": 257,
+        "shortname": "Zimbabwe",
+        "iso3": "zwe"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "TC",
+          "name": "Tropical Cyclone",
+          "id": 4618
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "Zimbabwe - Food Security and Markets Monitoring Report, March 2023",
+      "body": "**Situation Update**\n\nThe findings of the 2023 First Round Crop and Livestock Report shows that the total area planted under all crops marginally increased by 8% from 3,387,038 hectares in 2021/22 season to 3,674,149 hectares in 2022/23. The highest increase was reported for sunflower (206%) and finger millet (56%). The report also notes that less rainfall and cropping activities were reported in the southern parts of the country across Matabeleland South and North, Masvingo and parts of Manicaland provinces. Meanwhile northern provinces received above-normal rainfall in January and February, and some parts experienced water logging and soil leaching, which could slightly reduce potential harvest in these areas.\n\nRecent stability in the cost of the minimum expenditure basket observed over the last three months comes as a reprieve for poor and vulnerable households who struggle to meet their minimum food requirements on a daily basis.",
+      "url": "https://reliefweb.int/node/3956566",
+      "disaster": [
+        {
+          "name": "Tropical Cyclone Freddy - Feb 2023",
+          "id": 51486,
+          "glide": "TC-2023-000023-MDG",
+          "type": [
+            {
+              "code": "TC",
+              "name": "Tropical Cyclone",
+              "id": 4618,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/7a/99/7a991093-026f-46e6-ad5b-3ba3bf6f5509.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/7a/99/7a991093-026f-46e6-ad5b-3ba3bf6f5509.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/7a/99/7a991093-026f-46e6-ad5b-3ba3bf6f5509.png",
+            "version": "2415293-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/7a/99/7a991093-026f-46e6-ad5b-3ba3bf6f5509.png"
+          },
+          "filename": "WFP-0000148598.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415293",
+          "filesize": "3393345",
+          "url": "https://reliefweb.int/attachments/7a991093-026f-46e6-ad5b-3ba3bf6f5509/WFP-0000148598.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/zimbabwe/zimbabwe-food-security-and-markets-monitoring-report-march-2023",
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        }
+      ],
+      "id": 3956566,
+      "status": "published",
+      "body-html": "<p><strong>Situation Update</strong></p>\n<p>The findings of the 2023 First Round Crop and Livestock Report shows that the total area planted under all crops marginally increased by 8% from 3,387,038 hectares in 2021/22 season to 3,674,149 hectares in 2022/23. The highest increase was reported for sunflower (206%) and finger millet (56%). The report also notes that less rainfall and cropping activities were reported in the southern parts of the country across Matabeleland South and North, Masvingo and parts of Manicaland provinces. Meanwhile northern provinces received above-normal rainfall in January and February, and some parts experienced water logging and soil leaching, which could slightly reduce potential harvest in these areas.</p>\n<p>Recent stability in the cost of the minimum expenditure basket observed over the last three months comes as a reprieve for poor and vulnerable households who struggle to meet their minimum food requirements on a daily basis.</p>\n"
+    }
+  },
+  "text": "# Zimbabwe - Food Security and Markets Monitoring Report, March 2023\n\n**Situation Update**\n\nThe findings of the 2023 First Round Crop and Livestock Report shows that the total area planted under all crops marginally increased by 8% from 3,387,038 hectares in 2021/22 season to 3,674,149 hectares in 2022/23. The highest increase was reported for sunflower (206%) and finger millet (56%). The report also notes that less rainfall and cropping activities were reported in the southern parts of the country across Matabeleland South and North, Masvingo and parts of Manicaland provinces. Meanwhile northern provinces received above-normal rainfall in January and February, and some parts experienced water logging and soil leaching, which could slightly reduce potential harvest in these areas.\n\nRecent stability in the cost of the minimum expenditure basket observed over the last three months comes as a reprieve for poor and vulnerable households who struggle to meet their minimum food requirements on a daily basis.",
+  "summary": " The 2023 First Round Crop and Livestock Report found that the total area planted under all crops increased by 8% from 2021/22 season to 2022/23. Rainfall was less in the southern parts of Zimbabwe, while northern provinces experienced above-normal rainfall. This stability in the cost of the minimum expenditure basket over the last three months has been a relief for poor and vulnerable households.",
+  "metadata": {
+    "id": "3956566",
+    "name": "Zimbabwe - Food Security and Markets Monitoring Report, March 2023",
+    "date_original": 1682553600000,
+    "date_changed": 1682591486000,
+    "date_created": 1682589761000,
+    "primary_country_id": 257,
+    "primary_country_name": "Zimbabwe",
+    "primary_country_iso3": "zwe",
+    "primary_country_location": {
+      "lon": 29.94,
+      "lat": -19.19
+    }
+  }
+}

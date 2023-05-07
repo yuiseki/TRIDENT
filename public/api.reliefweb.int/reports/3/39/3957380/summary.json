@@ -1,0 +1,180 @@
+{
+  "original": {
+    "id": "3957380",
+    "fields": {
+      "date": {
+        "changed": "2023-05-01T14:06:03+00:00",
+        "created": "2023-05-01T13:20:22+00:00",
+        "original": "2023-05-01T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/187",
+          "name": "Peru",
+          "location": {
+            "lon": -75.31,
+            "lat": -10.15
+          },
+          "id": 187,
+          "shortname": "Peru",
+          "iso3": "per",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/250",
+          "name": "Venezuela (Bolivarian Republic of)",
+          "location": {
+            "lon": -65.8,
+            "lat": 7.62
+          },
+          "id": 250,
+          "shortname": "Venezuela",
+          "iso3": "ven"
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/187",
+        "name": "Peru",
+        "location": {
+          "lon": -75.31,
+          "lat": -10.15
+        },
+        "id": 187,
+        "shortname": "Peru",
+        "iso3": "per"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        },
+        {
+          "code": "LS",
+          "name": "Land Slide",
+          "id": 4728
+        },
+        {
+          "code": "TC",
+          "name": "Tropical Cyclone",
+          "id": 4618
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "WFP Peru Country Brief, March 2023",
+      "body": "**In Numbers**\n\nUSD 0.9 m delivered as cash-based transfers.\n\nUSD 4.7 m six months (April - September 2023) net funding requirements, representing 36 percent of total.\n\n15,214 people assisted* in March 2023 \n\n*Preliminary figures\n\n**Operational Updates**\n\n• WFP assists through cash-based transfers migrants from Venezuelan migrants residing in the country and in-transit migrants as part of the emergency response. WFP delivers a monthly transfer for three months adapted to family size (transfer value ranging from USD 100 to USD 350) in six inland regions on the migration route and assists in-transit migrants in the northern and southern borders and one inland area through a one-off value voucher to improve access to prepared foods and basic hygiene items. In March, WFP assisted 11,117 migrants and 125 people from local communities.\n\n• WFP launched an emergency operation in the country’s north, in four regions heavily affected by torrential rains. WFP planned to assist up to 2,000 households (7,177 beneficiaries) in Piura, Tumbes, La Libertad and Lambayeque. In March, WFP assisted 3,792 beneficiaries by delivering USD 170 to cover 50 percent of the monthly basic food basket cost.\n\n• WFP provided humanitarian logistics services to transport 916 mt of food and non-food items for nine partners, including the National Institute of Civil Defence, benefiting 262,688 people. WFP delivered 510 mt of 916 mt (56 percent) to assist the population affected by landslides caused by heavy rains in Ancash,  \nCajamarca, Ica, Lambayeque, Lima, La Libertad, Piura and Tumbes.\n\n• In March, WFP continued to provide humanitarian logistics services to support the response of the Municipality of Lima to the food emergency. WFP transported 406 mt of unsold food and delivered 538 common cooking pots to community soup kitchens known in the country as ollas comunes in 13 districts.",
+      "url": "https://reliefweb.int/node/3957380",
+      "disaster": [
+        {
+          "name": "Peru: Floods and Landslides - Mar 2023",
+          "id": 51516,
+          "glide": "FL-2023-000036-PER",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            },
+            {
+              "code": "LS",
+              "name": "Land Slide",
+              "id": 4728
+            },
+            {
+              "code": "TC",
+              "name": "Tropical Cyclone",
+              "id": 4618
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/2c/0a/2c0a471d-5bf8-4a53-be69-06ac0351edcd.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/2c/0a/2c0a471d-5bf8-4a53-be69-06ac0351edcd.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/2c/0a/2c0a471d-5bf8-4a53-be69-06ac0351edcd.png",
+            "version": "2416021-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/2c/0a/2c0a471d-5bf8-4a53-be69-06ac0351edcd.png"
+          },
+          "filename": "WFP Peru Country Brief - March 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2416021",
+          "filesize": "408145",
+          "url": "https://reliefweb.int/attachments/2c0a471d-5bf8-4a53-be69-06ac0351edcd/WFP%20Peru%20Country%20Brief%20-%20March%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/peru/wfp-peru-country-brief-march-2023",
+      "theme": [
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        }
+      ],
+      "id": 3957380,
+      "status": "published",
+      "body-html": "<p><strong>In Numbers</strong></p>\n<p>USD 0.9 m delivered as cash-based transfers.</p>\n<p>USD 4.7 m six months (April - September 2023) net funding requirements, representing 36 percent of total.</p>\n<p>15,214 people assisted* in March 2023</p>\n<p>*Preliminary figures</p>\n<p><strong>Operational Updates</strong></p>\n<p>• WFP assists through cash-based transfers migrants from Venezuelan migrants residing in the country and in-transit migrants as part of the emergency response. WFP delivers a monthly transfer for three months adapted to family size (transfer value ranging from USD 100 to USD 350) in six inland regions on the migration route and assists in-transit migrants in the northern and southern borders and one inland area through a one-off value voucher to improve access to prepared foods and basic hygiene items. In March, WFP assisted 11,117 migrants and 125 people from local communities.</p>\n<p>• WFP launched an emergency operation in the country’s north, in four regions heavily affected by torrential rains. WFP planned to assist up to 2,000 households (7,177 beneficiaries) in Piura, Tumbes, La Libertad and Lambayeque. In March, WFP assisted 3,792 beneficiaries by delivering USD 170 to cover 50 percent of the monthly basic food basket cost.</p>\n<p>• WFP provided humanitarian logistics services to transport 916 mt of food and non-food items for nine partners, including the National Institute of Civil Defence, benefiting 262,688 people. WFP delivered 510 mt of 916 mt (56 percent) to assist the population affected by landslides caused by heavy rains in Ancash,<br />\nCajamarca, Ica, Lambayeque, Lima, La Libertad, Piura and Tumbes.</p>\n<p>• In March, WFP continued to provide humanitarian logistics services to support the response of the Municipality of Lima to the food emergency. WFP transported 406 mt of unsold food and delivered 538 common cooking pots to community soup kitchens known in the country as ollas comunes in 13 districts.</p>\n"
+    }
+  },
+  "text": "# WFP Peru Country Brief, March 2023\n\n**In Numbers**\n\nUSD 0.9 m delivered as cash-based transfers.\n\nUSD 4.7 m six months (April - September 2023) net funding requirements, representing 36 percent of total.\n\n15,214 people assisted* in March 2023 \n\n*Preliminary figures\n\n**Operational Updates**\n\n• WFP assists through cash-based transfers migrants from Venezuelan migrants residing in the country and in-transit migrants as part of the emergency response. WFP delivers a monthly transfer for three months adapted to family size (transfer value ranging from USD 100 to USD 350) in six inland regions on the migration route and assists in-transit migrants in the northern and southern borders and one inland area through a one-off value voucher to improve access to prepared foods and basic hygiene items. In March, WFP assisted 11,117 migrants and 125 people from local communities.\n\n• WFP launched an emergency operation in the country’s north, in four regions heavily affected by torrential rains. WFP planned to assist up to 2,000 households (7,177 beneficiaries) in Piura, Tumbes, La Libertad and Lambayeque. In March, WFP assisted 3,792 beneficiaries by delivering USD 170 to cover 50 percent of the monthly basic food basket cost.\n\n• WFP provided humanitarian logistics services to transport 916 mt of food and non-food items for nine partners, including the National Institute of Civil Defence, benefiting 262,688 people. WFP delivered 510 mt of 916 mt (56 percent) to assist the population affected by landslides caused by heavy rains in Ancash,  \nCajamarca, Ica, Lambayeque, Lima, La Libertad, Piura and Tumbes.\n\n• In March, WFP continued to provide humanitarian logistics services to support the response of the Municipality of Lima to the food emergency. WFP transported 406 mt of unsold food and delivered 538 common cooking pots to community soup kitchens known in the country as ollas comunes in 13 districts.",
+  "summary": " In March 2023, WFP provided USD 0.9 million in cash-based transfers to 15,214 people, including Venezuelan migrants and local communities. WFP also launched an emergency operation in four regions affected by torrential rains, assisting 7,177 beneficiaries with USD 170 to cover 50 percent of the monthly basic food basket cost. Additionally, WFP provided humanitarian logistics services to transport 916 mt of food and non-food items to 262,688 people affected by landslides, and transported 406 mt of unsold food to 13 districts in Lima.",
+  "metadata": {
+    "id": "3957380",
+    "name": "WFP Peru Country Brief, March 2023",
+    "date_original": 1682899200000,
+    "date_changed": 1682949963000,
+    "date_created": 1682947222000,
+    "primary_country_id": 187,
+    "primary_country_name": "Peru",
+    "primary_country_iso3": "per",
+    "primary_country_location": {
+      "lon": -75.31,
+      "lat": -10.15
+    }
+  }
+}

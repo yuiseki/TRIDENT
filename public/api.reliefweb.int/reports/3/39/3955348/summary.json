@@ -1,0 +1,115 @@
+{
+  "original": {
+    "id": "3955348",
+    "fields": {
+      "date": {
+        "changed": "2023-04-24T08:25:15+00:00",
+        "created": "2023-04-24T07:54:50+00:00",
+        "original": "2023-04-20T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/241",
+          "name": "Ukraine",
+          "location": {
+            "lon": 31.32,
+            "lat": 49.32
+          },
+          "id": 241,
+          "shortname": "Ukraine",
+          "iso3": "ukr",
+          "primary": true
+        }
+      ],
+      "origin": "https://www.fao.org/documents/card/en/c/cc5732en",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/241",
+        "name": "Ukraine",
+        "location": {
+          "lon": 31.32,
+          "lat": 49.32
+        },
+        "id": 241,
+        "shortname": "Ukraine",
+        "iso3": "ukr"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2836",
+          "longname": "Food and Agriculture Organization of the United Nations",
+          "spanish_name": "Organización de las Naciones Unidas para la Agricultura y la Alimentación",
+          "name": "Food and Agriculture Organization of the United Nations",
+          "id": 2836,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "FAO",
+          "homepage": "http://www.fao.org"
+        }
+      ],
+      "title": "Ukraine: FAO Humanitarian response update, 20 April 2023",
+      "body": "• In 2022, to respond to gaps in grain storage capacity, following the outbreak of the war, the Food and Agriculture Organization of the United Nations (FAO) provided temporary storage solutions, covering approximately 6 million tonnes, or 30 percent of the country’s deficit, by distributing around 30 000 grain sleeves and 105 sets of supporting equipment (e.g. loaders, unloaders and bunkers). FAO also supported approximately 31 000 rural households with vegetable seeds and seed potatoes, in addition to the delivery of cash-assistance to more than 2 000 rural households in the oblasts most affected by the war.  Approximately 5 400 tonnes of winter wheat seeds were distributed to 1 508 small-scale farmers and 6 619 rural households by the end of the year.\n\n• Through its 2023 Response Programme for Ukraine, FAO requires a total of USD 205 million to assist rural households and small-scale farmers residing in front-line oblasts by distributing generators, seeds, and other agricultural production inputs to ensure that these communities can rely on their own production.\n\n• As of 20 April 2023, FAO has mobilized USD 30.5 million, leaving a gap of USD 174.5 million, which must be filled urgently to support vulnerable households in rural areas and farmers during the spring planting season.\n\n• Maintaining production capacity of the agriculture sector and facilitating marketing of agricultural products, including for exports, remains of a crucial importance to ensure the livelihoods of Ukrainian farmers, and safeguard global supplies, contributing to global food security.",
+      "url": "https://reliefweb.int/node/3955348",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/c1/37/c137c091-a4dd-469f-a68c-8d743bdf19a6.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/c1/37/c137c091-a4dd-469f-a68c-8d743bdf19a6.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/c1/37/c137c091-a4dd-469f-a68c-8d743bdf19a6.png",
+            "version": "2414229-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/c1/37/c137c091-a4dd-469f-a68c-8d743bdf19a6.png"
+          },
+          "filename": "cc5732en.pdf",
+          "mimetype": "application/pdf",
+          "id": "2414229",
+          "filesize": "281060",
+          "url": "https://reliefweb.int/attachments/c137c091-a4dd-469f-a68c-8d743bdf19a6/cc5732en.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/ukraine/ukraine-fao-humanitarian-response-update-20-april-2023",
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        }
+      ],
+      "id": 3955348,
+      "status": "published",
+      "body-html": "<p>• In 2022, to respond to gaps in grain storage capacity, following the outbreak of the war, the Food and Agriculture Organization of the United Nations (FAO) provided temporary storage solutions, covering approximately 6 million tonnes, or 30 percent of the country’s deficit, by distributing around 30 000 grain sleeves and 105 sets of supporting equipment (e.g. loaders, unloaders and bunkers). FAO also supported approximately 31 000 rural households with vegetable seeds and seed potatoes, in addition to the delivery of cash-assistance to more than 2 000 rural households in the oblasts most affected by the war.  Approximately 5 400 tonnes of winter wheat seeds were distributed to 1 508 small-scale farmers and 6 619 rural households by the end of the year.</p>\n<p>• Through its 2023 Response Programme for Ukraine, FAO requires a total of USD 205 million to assist rural households and small-scale farmers residing in front-line oblasts by distributing generators, seeds, and other agricultural production inputs to ensure that these communities can rely on their own production.</p>\n<p>• As of 20 April 2023, FAO has mobilized USD 30.5 million, leaving a gap of USD 174.5 million, which must be filled urgently to support vulnerable households in rural areas and farmers during the spring planting season.</p>\n<p>• Maintaining production capacity of the agriculture sector and facilitating marketing of agricultural products, including for exports, remains of a crucial importance to ensure the livelihoods of Ukrainian farmers, and safeguard global supplies, contributing to global food security.</p>\n"
+    }
+  },
+  "text": "# Ukraine: FAO Humanitarian response update, 20 April 2023\n\n• In 2022, to respond to gaps in grain storage capacity, following the outbreak of the war, the Food and Agriculture Organization of the United Nations (FAO) provided temporary storage solutions, covering approximately 6 million tonnes, or 30 percent of the country’s deficit, by distributing around 30 000 grain sleeves and 105 sets of supporting equipment (e.g. loaders, unloaders and bunkers). FAO also supported approximately 31 000 rural households with vegetable seeds and seed potatoes, in addition to the delivery of cash-assistance to more than 2 000 rural households in the oblasts most affected by the war.  Approximately 5 400 tonnes of winter wheat seeds were distributed to 1 508 small-scale farmers and 6 619 rural households by the end of the year.\n\n• Through its 2023 Response Programme for Ukraine, FAO requires a total of USD 205 million to assist rural households and small-scale farmers residing in front-line oblasts by distributing generators, seeds, and other agricultural production inputs to ensure that these communities can rely on their own production.\n\n• As of 20 April 2023, FAO has mobilized USD 30.5 million, leaving a gap of USD 174.5 million, which must be filled urgently to support vulnerable households in rural areas and farmers during the spring planting season.\n\n• Maintaining production capacity of the agriculture sector and facilitating marketing of agricultural products, including for exports, remains of a crucial importance to ensure the livelihoods of Ukrainian farmers, and safeguard global supplies, contributing to global food security.",
+  "summary": " In response to the war in Ukraine, the FAO provided temporary grain storage solutions, vegetable seeds, seed potatoes, and cash assistance to rural households. Through its 2023 Response Programme, the FAO requires USD 205 million to assist rural households and small-scale farmers by providing generators, seeds, and other agricultural production inputs. As of 20 April 2023, the FAO has mobilized USD 30.5 million, leaving a gap of USD 174.5 million which must be filled urgently to support vulnerable households and farmers during the spring planting season.",
+  "metadata": {
+    "id": "3955348",
+    "name": "Ukraine: FAO Humanitarian response update, 20 April 2023",
+    "date_original": 1681948800000,
+    "date_changed": 1682324715000,
+    "date_created": 1682322890000,
+    "primary_country_id": 241,
+    "primary_country_name": "Ukraine",
+    "primary_country_iso3": "ukr",
+    "primary_country_location": {
+      "lon": 31.32,
+      "lat": 49.32
+    }
+  }
+}

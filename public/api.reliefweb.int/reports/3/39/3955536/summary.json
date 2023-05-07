@@ -1,0 +1,184 @@
+{
+  "original": {
+    "id": "3955536",
+    "fields": {
+      "date": {
+        "changed": "2023-04-24T15:45:33+00:00",
+        "created": "2023-04-24T15:26:46+00:00",
+        "original": "2023-04-24T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/113",
+          "name": "Haiti",
+          "location": {
+            "lon": -72.43,
+            "lat": 19.18
+          },
+          "id": 113,
+          "shortname": "Haiti",
+          "iso3": "hti",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/113",
+        "name": "Haiti",
+        "location": {
+          "lon": -72.43,
+          "lat": 19.18
+        },
+        "id": 113,
+        "shortname": "Haiti",
+        "iso3": "hti"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EQ",
+          "name": "Earthquake",
+          "id": 4628
+        },
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1979",
+          "longname": "United Nations Children's Fund",
+          "spanish_name": "Fondo de las Naciones Unidas para la Infancia",
+          "name": "UN Children's Fund",
+          "id": 1979,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNICEF",
+          "homepage": "http://www.unicef.org"
+        }
+      ],
+      "title": "UNICEF Haiti Humanitarian Situation Report N.1: January - February 2023",
+      "body": "**Highlights**\n\n- In 2023, Haiti's economic and social context continues to be marked by political instability since the death of President Moise in 2021, continued reconstruction and recovery efforts from the 2021 earthquake, severe food insecurity, concerning malnutrition rates, growing violence resulting from unprecedented insecurity, ongoing fuel crisis and its great vulnerability to natural hazards.\n\n- Within this context, UNICEF Haiti continues to support the Government in the provision of basic services, including water, sanitation, and hygiene (WASH); education, health, nutrition, child protection and social protection services. Notably, over 153,000 people were reached with cholera kits, over 111,600 children received school supplies and textbooks, 144 households were reached with humanitarian cash transfers in Port-au-Prince areas affected by gang violence, over 160,000 have gained access to safe water, over 21,400 people were able to access health care services, while a national SMART nutrition survey is under completion. UNICEF mobilized Spotlight UN partners to finalize a new gender-based-violence shelter which will host 80 woman/girls with family members.\n\n- To respond effectively, in 2023 UNICEF requires a total of US$210.3 million to ensure life-saving humanitarian support for women and children in Haiti. At the time of reporting, the Haiti HAC 2022 had a funding gap of US$186.8 million.",
+      "url": "https://reliefweb.int/node/3955536",
+      "disaster": [
+        {
+          "name": "Haiti: Cholera Outbreak - Sep 2022",
+          "id": 51336,
+          "glide": "EP-2022-000325-HTI",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Haiti: Earthquake - Aug 2021",
+          "id": 50807,
+          "glide": "EQ-2021-000116-HTI",
+          "type": [
+            {
+              "code": "EQ",
+              "name": "Earthquake",
+              "id": 4628,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/6b/59/6b59462a-d389-4728-9f3a-2bb842f64c9b.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/6b/59/6b59462a-d389-4728-9f3a-2bb842f64c9b.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/6b/59/6b59462a-d389-4728-9f3a-2bb842f64c9b.png",
+            "version": "2414299-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/6b/59/6b59462a-d389-4728-9f3a-2bb842f64c9b.png"
+          },
+          "filename": "UNICEF Haiti Humanitarian Situation Report No. 1 - January-February 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2414299",
+          "filesize": "530423",
+          "url": "https://reliefweb.int/attachments/6b59462a-d389-4728-9f3a-2bb842f64c9b/UNICEF%20Haiti%20Humanitarian%20Situation%20Report%20No.%201%20-%20January-February%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/haiti/unicef-haiti-humanitarian-situation-report-n1-january-february-2023",
+      "theme": [
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Safety and Security",
+          "id": 4602
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3955536,
+      "status": "published",
+      "body-html": "<p><strong>Highlights</strong></p>\n<ul>\n<li>\n<p>In 2023, Haiti's economic and social context continues to be marked by political instability since the death of President Moise in 2021, continued reconstruction and recovery efforts from the 2021 earthquake, severe food insecurity, concerning malnutrition rates, growing violence resulting from unprecedented insecurity, ongoing fuel crisis and its great vulnerability to natural hazards.</p>\n</li>\n<li>\n<p>Within this context, UNICEF Haiti continues to support the Government in the provision of basic services, including water, sanitation, and hygiene (WASH); education, health, nutrition, child protection and social protection services. Notably, over 153,000 people were reached with cholera kits, over 111,600 children received school supplies and textbooks, 144 households were reached with humanitarian cash transfers in Port-au-Prince areas affected by gang violence, over 160,000 have gained access to safe water, over 21,400 people were able to access health care services, while a national SMART nutrition survey is under completion. UNICEF mobilized Spotlight UN partners to finalize a new gender-based-violence shelter which will host 80 woman/girls with family members.</p>\n</li>\n<li>\n<p>To respond effectively, in 2023 UNICEF requires a total of US$210.3 million to ensure life-saving humanitarian support for women and children in Haiti. At the time of reporting, the Haiti HAC 2022 had a funding gap of US$186.8 million.</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# UNICEF Haiti Humanitarian Situation Report N.1: January - February 2023\n\n**Highlights**\n\n- In 2023, Haiti's economic and social context continues to be marked by political instability since the death of President Moise in 2021, continued reconstruction and recovery efforts from the 2021 earthquake, severe food insecurity, concerning malnutrition rates, growing violence resulting from unprecedented insecurity, ongoing fuel crisis and its great vulnerability to natural hazards.\n\n- Within this context, UNICEF Haiti continues to support the Government in the provision of basic services, including water, sanitation, and hygiene (WASH); education, health, nutrition, child protection and social protection services. Notably, over 153,000 people were reached with cholera kits, over 111,600 children received school supplies and textbooks, 144 households were reached with humanitarian cash transfers in Port-au-Prince areas affected by gang violence, over 160,000 have gained access to safe water, over 21,400 people were able to access health care services, while a national SMART nutrition survey is under completion. UNICEF mobilized Spotlight UN partners to finalize a new gender-based-violence shelter which will host 80 woman/girls with family members.\n\n- To respond effectively, in 2023 UNICEF requires a total of US$210.3 million to ensure life-saving humanitarian support for women and children in Haiti. At the time of reporting, the Haiti HAC 2022 had a funding gap of US$186.8 million.",
+  "summary": " In 2023, Haiti is facing political instability, reconstruction and recovery efforts from the 2021 earthquake, severe food insecurity, concerning malnutrition rates, growing violence, an ongoing fuel crisis, and vulnerability to natural hazards. UNICEF is providing basic services such as WASH, education, health, nutrition, child protection, and social protection services. UNICEF requires US$210.3 million to ensure life-saving humanitarian support for women and children in Haiti, but there is a funding gap of US$186.8 million.",
+  "metadata": {
+    "id": "3955536",
+    "name": "UNICEF Haiti Humanitarian Situation Report N.1: January - February 2023",
+    "date_original": 1682294400000,
+    "date_changed": 1682351133000,
+    "date_created": 1682350006000,
+    "primary_country_id": 113,
+    "primary_country_name": "Haiti",
+    "primary_country_iso3": "hti",
+    "primary_country_location": {
+      "lon": -72.43,
+      "lat": 19.18
+    }
+  }
+}

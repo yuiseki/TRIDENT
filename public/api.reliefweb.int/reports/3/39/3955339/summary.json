@@ -1,0 +1,117 @@
+{
+  "original": {
+    "id": "3955339",
+    "fields": {
+      "date": {
+        "changed": "2023-04-24T10:58:27+00:00",
+        "created": "2023-04-24T07:28:36+00:00",
+        "original": "2023-04-24T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/168",
+          "name": "Nepal",
+          "location": {
+            "lon": 83.94,
+            "lat": 28.25
+          },
+          "id": 168,
+          "shortname": "Nepal",
+          "iso3": "npl",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/168",
+        "name": "Nepal",
+        "location": {
+          "lon": 83.94,
+          "lat": 28.25
+        },
+        "id": 168,
+        "shortname": "Nepal",
+        "iso3": "npl"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1275",
+          "longname": "World Health Organization",
+          "spanish_name": "Organización Mundial de la Salud",
+          "name": "World Health Organization",
+          "id": 1275,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WHO",
+          "homepage": "http://www.who.int/"
+        }
+      ],
+      "title": "Situation Update #157 - Coronavirus Disease 2019 (COVID-19) WHO Country Office for Nepal Reporting Date: 10 - 16 April 2023 (Epi Week 15)",
+      "body": "**HIGHLIGHTS**\n\n*(Data published in the MoHP Situation Report as of 16 April 2023 and same data published in EDCD Report as of 17 April 2023)*\n\n• Of the total RT-PCR confirmed COVID-19 cases, 98.7% (989,779) of cases have recovered, 0.01% (378) are active cases, and 1.19% (12,022) are deaths.\n\n• Among the new RT-PCR confirmed cases (378) reported this week, 55.6% (210 cases) are from Kathmandu district followed by Lalitpur district with 10.1% (38 cases). Majority of the new cases 68.5% (259) have been reported from Kathmandu Valley (Kathmandu, Lalitpur, and Bhaktapur) in Bagmati Province.",
+      "url": "https://reliefweb.int/node/3955339",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/28/d7/28d7dc5e-dcc5-4f6f-9f10-58d6bab3ce09.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/28/d7/28d7dc5e-dcc5-4f6f-9f10-58d6bab3ce09.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/28/d7/28d7dc5e-dcc5-4f6f-9f10-58d6bab3ce09.png",
+            "version": "2414225-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/28/d7/28d7dc5e-dcc5-4f6f-9f10-58d6bab3ce09.png"
+          },
+          "filename": "#157_Weekly WHO Nepal Situation Updates.pdf",
+          "mimetype": "application/pdf",
+          "id": "2414225",
+          "filesize": "2901444",
+          "url": "https://reliefweb.int/attachments/28d7dc5e-dcc5-4f6f-9f10-58d6bab3ce09/%23157_Weekly%20WHO%20Nepal%20Situation%20Updates.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/nepal/situation-update-157-coronavirus-disease-2019-covid-19-who-country-office-nepal-reporting-date-10-16-april-2023-epi-week-15",
+      "theme": [
+        {
+          "name": "Health",
+          "id": 4595
+        }
+      ],
+      "id": 3955339,
+      "status": "published",
+      "body-html": "<p><strong>HIGHLIGHTS</strong></p>\n<p><em>(Data published in the MoHP Situation Report as of 16 April 2023 and same data published in EDCD Report as of 17 April 2023)</em></p>\n<p>• Of the total RT-PCR confirmed COVID-19 cases, 98.7% (989,779) of cases have recovered, 0.01% (378) are active cases, and 1.19% (12,022) are deaths.</p>\n<p>• Among the new RT-PCR confirmed cases (378) reported this week, 55.6% (210 cases) are from Kathmandu district followed by Lalitpur district with 10.1% (38 cases). Majority of the new cases 68.5% (259) have been reported from Kathmandu Valley (Kathmandu, Lalitpur, and Bhaktapur) in Bagmati Province.</p>\n"
+    }
+  },
+  "text": "# Situation Update #157 - Coronavirus Disease 2019 (COVID-19) WHO Country Office for Nepal Reporting Date: 10 - 16 April 2023 (Epi Week 15)\n\n**HIGHLIGHTS**\n\n*(Data published in the MoHP Situation Report as of 16 April 2023 and same data published in EDCD Report as of 17 April 2023)*\n\n• Of the total RT-PCR confirmed COVID-19 cases, 98.7% (989,779) of cases have recovered, 0.01% (378) are active cases, and 1.19% (12,022) are deaths.\n\n• Among the new RT-PCR confirmed cases (378) reported this week, 55.6% (210 cases) are from Kathmandu district followed by Lalitpur district with 10.1% (38 cases). Majority of the new cases 68.5% (259) have been reported from Kathmandu Valley (Kathmandu, Lalitpur, and Bhaktapur) in Bagmati Province.",
+  "summary": " This week, there were 378 new RT-PCR confirmed cases of COVID-19 in Nepal, with the majority (210 cases) coming from Kathmandu district and 68.5% (259 cases) from the Kathmandu Valley. Of the total RT-PCR confirmed cases, 98.7% (989,779) have recovered, 0.01% (378) are active cases, and 1.19% (12,022) are deaths.",
+  "metadata": {
+    "id": "3955339",
+    "name": "Situation Update #157 - Coronavirus Disease 2019 (COVID-19) WHO Country Office for Nepal Reporting Date: 10 - 16 April 2023 (Epi Week 15)",
+    "date_original": 1682294400000,
+    "date_changed": 1682333907000,
+    "date_created": 1682321316000,
+    "primary_country_id": 168,
+    "primary_country_name": "Nepal",
+    "primary_country_iso3": "npl",
+    "primary_country_location": {
+      "lon": 83.94,
+      "lat": 28.25
+    }
+  }
+}

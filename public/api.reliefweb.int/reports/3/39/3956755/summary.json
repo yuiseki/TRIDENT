@@ -1,0 +1,125 @@
+{
+  "original": {
+    "id": "3956755",
+    "fields": {
+      "date": {
+        "changed": "2023-04-27T19:42:25+00:00",
+        "created": "2023-04-27T19:27:27+00:00",
+        "original": "2023-04-27T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/113",
+          "name": "Haiti",
+          "location": {
+            "lon": -72.43,
+            "lat": 19.18
+          },
+          "id": 113,
+          "shortname": "Haiti",
+          "iso3": "hti",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/113",
+        "name": "Haiti",
+        "location": {
+          "lon": -72.43,
+          "lat": 19.18
+        },
+        "id": 113,
+        "shortname": "Haiti",
+        "iso3": "hti"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "DR",
+          "name": "Drought",
+          "id": 4672
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "Haiti | April 2023 - Cropland change analysis in Artibonite (off-season)",
+      "body": "**KEY POINTS**\n\n- Off-season cropland losses estimated to nearly 5,000 hectares were detected by satellite imagery over the Artibonite rice plain in 2023, compared to 2018 - corresponding to the beginning of the current socio-political, economic and security crisis in Haiti.\n\n- In the department of Artibonite, the security situation has deteriorated since July 2022, due to the presence of several armed groups, whose influence mainly extends geographically in a \"triangle\" between Carrefour Bois de Chaux, Liancourt and Petite-Rivière-de-l'Artibonite, approximately.\n\n- A large proportion of crop fields located in this triangle were abandoned in 2023 (Map 1 in the PDF). This concerns more specifically the communes of Dessalines and Petite-Rivière-de-l'Artibonite.\n\n- The agricultural workforce seems to have moved to cultivate in more secure areas (communes of Desdunes and Grande Saline, where new fields have been detected), while remaining close to road axes linking the markets of L'Estère and Pont-Sondé.\n\n- Satellite imagery suggests that these fields, newly grown in 2023 in the lower Artibonite (west of RN1) were harvested early, between mid-February and early March instead of March-April usually.",
+      "url": "https://reliefweb.int/node/3956755",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/b7/d9/b7d9c422-1fb5-4766-ba16-31eb1500625b.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/b7/d9/b7d9c422-1fb5-4766-ba16-31eb1500625b.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/b7/d9/b7d9c422-1fb5-4766-ba16-31eb1500625b.png",
+            "version": "2415433-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/b7/d9/b7d9c422-1fb5-4766-ba16-31eb1500625b.png"
+          },
+          "filename": "Haiti - April 2023 - Cropland change analysis in Artibonite (off-season).pdf",
+          "mimetype": "application/pdf",
+          "id": "2415433",
+          "filesize": "7928643",
+          "url": "https://reliefweb.int/attachments/b7d9c422-1fb5-4766-ba16-31eb1500625b/Haiti%20-%20April%202023%20-%20Cropland%20change%20analysis%20in%20Artibonite%20%28off-season%29.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/haiti/haiti-april-2023-cropland-change-analysis-artibonite-season",
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        }
+      ],
+      "id": 3956755,
+      "status": "published",
+      "body-html": "<p><strong>KEY POINTS</strong></p>\n<ul>\n<li>\n<p>Off-season cropland losses estimated to nearly 5,000 hectares were detected by satellite imagery over the Artibonite rice plain in 2023, compared to 2018 - corresponding to the beginning of the current socio-political, economic and security crisis in Haiti.</p>\n</li>\n<li>\n<p>In the department of Artibonite, the security situation has deteriorated since July 2022, due to the presence of several armed groups, whose influence mainly extends geographically in a &quot;triangle&quot; between Carrefour Bois de Chaux, Liancourt and Petite-Rivière-de-l'Artibonite, approximately.</p>\n</li>\n<li>\n<p>A large proportion of crop fields located in this triangle were abandoned in 2023 (Map 1 in the PDF). This concerns more specifically the communes of Dessalines and Petite-Rivière-de-l'Artibonite.</p>\n</li>\n<li>\n<p>The agricultural workforce seems to have moved to cultivate in more secure areas (communes of Desdunes and Grande Saline, where new fields have been detected), while remaining close to road axes linking the markets of L'Estère and Pont-Sondé.</p>\n</li>\n<li>\n<p>Satellite imagery suggests that these fields, newly grown in 2023 in the lower Artibonite (west of RN1) were harvested early, between mid-February and early March instead of March-April usually.</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# Haiti | April 2023 - Cropland change analysis in Artibonite (off-season)\n\n**KEY POINTS**\n\n- Off-season cropland losses estimated to nearly 5,000 hectares were detected by satellite imagery over the Artibonite rice plain in 2023, compared to 2018 - corresponding to the beginning of the current socio-political, economic and security crisis in Haiti.\n\n- In the department of Artibonite, the security situation has deteriorated since July 2022, due to the presence of several armed groups, whose influence mainly extends geographically in a \"triangle\" between Carrefour Bois de Chaux, Liancourt and Petite-Rivière-de-l'Artibonite, approximately.\n\n- A large proportion of crop fields located in this triangle were abandoned in 2023 (Map 1 in the PDF). This concerns more specifically the communes of Dessalines and Petite-Rivière-de-l'Artibonite.\n\n- The agricultural workforce seems to have moved to cultivate in more secure areas (communes of Desdunes and Grande Saline, where new fields have been detected), while remaining close to road axes linking the markets of L'Estère and Pont-Sondé.\n\n- Satellite imagery suggests that these fields, newly grown in 2023 in the lower Artibonite (west of RN1) were harvested early, between mid-February and early March instead of March-April usually.",
+  "summary": "\n\nIn April 2023, satellite imagery revealed a loss of nearly 5,000 hectares of cropland in the Artibonite rice plain compared to 2018, corresponding to the beginning of the socio-political, economic and security crisis in Haiti. The security situation had deteriorated in the department of Artibonite due to the presence of armed groups, leading to the abandonment of crop fields in the communes of Dessalines and Petite-Rivière-de-l'Artibonite. The agricultural workforce moved to cultivate in more secure areas, such as Desdunes and Grande Saline, where new fields were detected. These fields were harvested early, between mid-February and early March, instead of the usual March-April.",
+  "metadata": {
+    "id": "3956755",
+    "name": "Haiti | April 2023 - Cropland change analysis in Artibonite (off-season)",
+    "date_original": 1682553600000,
+    "date_changed": 1682624545000,
+    "date_created": 1682623647000,
+    "primary_country_id": 113,
+    "primary_country_name": "Haiti",
+    "primary_country_iso3": "hti",
+    "primary_country_location": {
+      "lon": -72.43,
+      "lat": 19.18
+    }
+  }
+}

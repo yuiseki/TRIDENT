@@ -1,0 +1,107 @@
+{
+  "original": {
+    "id": "3958151",
+    "fields": {
+      "date": {
+        "changed": "2023-05-03T13:51:43+00:00",
+        "created": "2023-05-03T12:38:40+00:00",
+        "original": "2023-05-03T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/254",
+          "name": "World",
+          "id": 254,
+          "shortname": "World",
+          "iso3": "wld",
+          "primary": true
+        }
+      ],
+      "origin": "https://www.preventionweb.net/media/87408/download?startDownload=true",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/254",
+        "name": "World",
+        "id": 254,
+        "shortname": "World",
+        "iso3": "wld"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1006",
+          "longname": "United Nations Office for Disaster Risk Reduction",
+          "spanish_name": "Estrategia Internacional para la reducción de desastres",
+          "name": "UN Office for Disaster Risk Reduction",
+          "id": 1006,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNDRR",
+          "homepage": "https://www.undrr.org/"
+        }
+      ],
+      "title": "Evidence of positive progress on disaster risk reduction in the humanitarian-development-peace nexus: Thematic report to inform the Midterm Review of the Sendai Framework",
+      "body": "**Moving away from the myopic**\n\nThe 2022 Global Assessment Report (GAR22) warns us of the perils of taking a myopic approach to risk; risks cross boundaries (geographical, political and sectoral), have cascading impacts, and can be systemic in nature. To address this, comprehensive risk-management approaches are required; approaches which do not shy away from, but seek to grapple with, such complexity. In reality, this means broadening the way we understand and act on the complex interplay of, for example, natural hazards, climate variability and change, pandemic threats, violence and conflict, food insecurity and economic fluctuations, and political change, among others. It also means harnessing the added value of expertise across the humanitarian-development-peace (HDP) nexus.  \n\nDisaster risk reduction (DRR) is also an obvious bridge between humanitarian and development action, with DRR-related activities spanning both domains. Integration of DRR into humanitarian action – as has been pursued by UNDRR - is one entry point for advancing DRR in the HDP nexus. DRR also requires continued mainstreaming within development approaches and with climate-change action.  \n\nWe must also look at the connections yet to be made. A nascent area of work that requires redress is to connect the dots between DRR and peace work. Consideration of the potential for DRR to harness links with those seeking peace outcomes aligns with the United Nations system’s evolution towards prevention, peace, and a doubling down of efforts to better support transitions into and out of crises.  \n\nAnd yet to date, the links between DRR outcomes and conflict prevention and peacebuilding are nascent.",
+      "url": "https://reliefweb.int/node/3958151",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/4b/82/4b82b126-ee90-4b57-a719-44b2ff081e06.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/4b/82/4b82b126-ee90-4b57-a719-44b2ff081e06.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/4b/82/4b82b126-ee90-4b57-a719-44b2ff081e06.png",
+            "version": "2416808-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/4b/82/4b82b126-ee90-4b57-a719-44b2ff081e06.png"
+          },
+          "filename": "Evidence of positive progress on DRR in the HDP nexus - Thematic report to inform the MTR SF_0.pdf",
+          "mimetype": "application/pdf",
+          "id": "2416808",
+          "filesize": "1907081",
+          "url": "https://reliefweb.int/attachments/4b82b126-ee90-4b57-a719-44b2ff081e06/Evidence%20of%20positive%20progress%20on%20DRR%20in%20the%20HDP%20nexus%20-%20Thematic%20report%20to%20inform%20the%20MTR%20SF_0.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/world/evidence-positive-progress-disaster-risk-reduction-humanitarian-development-peace-nexus-thematic-report-inform-midterm-review-sendai-framework",
+      "theme": [
+        {
+          "name": "Disaster Management",
+          "id": 4591
+        },
+        {
+          "name": "Peacekeeping and Peacebuilding",
+          "id": 4599
+        },
+        {
+          "name": "Recovery and Reconstruction",
+          "id": 4601
+        }
+      ],
+      "id": 3958151,
+      "status": "published",
+      "body-html": "<p><strong>Moving away from the myopic</strong></p>\n<p>The 2022 Global Assessment Report (GAR22) warns us of the perils of taking a myopic approach to risk; risks cross boundaries (geographical, political and sectoral), have cascading impacts, and can be systemic in nature. To address this, comprehensive risk-management approaches are required; approaches which do not shy away from, but seek to grapple with, such complexity. In reality, this means broadening the way we understand and act on the complex interplay of, for example, natural hazards, climate variability and change, pandemic threats, violence and conflict, food insecurity and economic fluctuations, and political change, among others. It also means harnessing the added value of expertise across the humanitarian-development-peace (HDP) nexus.</p>\n<p>Disaster risk reduction (DRR) is also an obvious bridge between humanitarian and development action, with DRR-related activities spanning both domains. Integration of DRR into humanitarian action – as has been pursued by UNDRR - is one entry point for advancing DRR in the HDP nexus. DRR also requires continued mainstreaming within development approaches and with climate-change action.</p>\n<p>We must also look at the connections yet to be made. A nascent area of work that requires redress is to connect the dots between DRR and peace work. Consideration of the potential for DRR to harness links with those seeking peace outcomes aligns with the United Nations system’s evolution towards prevention, peace, and a doubling down of efforts to better support transitions into and out of crises.</p>\n<p>And yet to date, the links between DRR outcomes and conflict prevention and peacebuilding are nascent.</p>\n"
+    }
+  },
+  "text": "# Evidence of positive progress on disaster risk reduction in the humanitarian-development-peace nexus: Thematic report to inform the Midterm Review of the Sendai Framework\n\n**Moving away from the myopic**\n\nThe 2022 Global Assessment Report (GAR22) warns us of the perils of taking a myopic approach to risk; risks cross boundaries (geographical, political and sectoral), have cascading impacts, and can be systemic in nature. To address this, comprehensive risk-management approaches are required; approaches which do not shy away from, but seek to grapple with, such complexity. In reality, this means broadening the way we understand and act on the complex interplay of, for example, natural hazards, climate variability and change, pandemic threats, violence and conflict, food insecurity and economic fluctuations, and political change, among others. It also means harnessing the added value of expertise across the humanitarian-development-peace (HDP) nexus.  \n\nDisaster risk reduction (DRR) is also an obvious bridge between humanitarian and development action, with DRR-related activities spanning both domains. Integration of DRR into humanitarian action – as has been pursued by UNDRR - is one entry point for advancing DRR in the HDP nexus. DRR also requires continued mainstreaming within development approaches and with climate-change action.  \n\nWe must also look at the connections yet to be made. A nascent area of work that requires redress is to connect the dots between DRR and peace work. Consideration of the potential for DRR to harness links with those seeking peace outcomes aligns with the United Nations system’s evolution towards prevention, peace, and a doubling down of efforts to better support transitions into and out of crises.  \n\nAnd yet to date, the links between DRR outcomes and conflict prevention and peacebuilding are nascent.",
+  "summary": "\n\nThis report examines the need for a comprehensive risk-management approach to address the complex interplay of natural hazards, climate change, pandemic threats, violence and conflict, food insecurity, and economic fluctuations. It highlights the importance of Disaster Risk Reduction (DRR) in bridging the humanitarian-development-peace (HDP) nexus, and calls for further exploration of the potential for DRR to contribute to conflict prevention and peacebuilding.",
+  "metadata": {
+    "id": "3958151",
+    "name": "Evidence of positive progress on disaster risk reduction in the humanitarian-development-peace nexus: Thematic report to inform the Midterm Review of the Sendai Framework",
+    "date_original": 1683072000000,
+    "date_changed": 1683121903000,
+    "date_created": 1683117520000,
+    "primary_country_id": 254,
+    "primary_country_name": "World",
+    "primary_country_iso3": "wld"
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "original": {
+    "id": "3955844",
+    "fields": {
+      "date": {
+        "changed": "2023-04-25T18:19:09+00:00",
+        "created": "2023-04-25T14:58:10+00:00",
+        "original": "2023-04-13T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/216",
+          "name": "Somalia",
+          "location": {
+            "lon": 47.33,
+            "lat": 5.79
+          },
+          "id": 216,
+          "shortname": "Somalia",
+          "iso3": "som",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/216",
+        "name": "Somalia",
+        "location": {
+          "lon": 47.33,
+          "lat": 5.79
+        },
+        "id": 216,
+        "shortname": "Somalia",
+        "iso3": "som"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/15477",
+          "name": "Health Cluster",
+          "id": 15477,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "Health Cluster",
+          "homepage": "https://healthcluster.who.int/"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1275",
+          "longname": "World Health Organization",
+          "spanish_name": "Organización Mundial de la Salud",
+          "name": "World Health Organization",
+          "id": 1275,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WHO",
+          "homepage": "http://www.who.int/"
+        }
+      ],
+      "title": "Somalia: Cholera outbreak Jubaland and Southwest Week 1-14 (13.04.2023) [presentation]",
+      "body": "**Highlights: Jubaland and South west**\n\n- Overall, in Jubaland, AWD cases show a steeper increase this week compared to previous weeks.\n- There has been a steep increase in cases in week 14 in Bellet Hawa, while reporting of cases in Afmadow has decreased.\n- Outside of Kismayo, there is still little testing being performed to AWD cases at CTCs.\n- In the newly reported cases in Bellet Hawa in week 14, there is a higher proportion of children between 0-5 years old than in previous weeks.\n\n**Response & coordination**\n- State-level cholera task force coordination (WASH/UNICEF, Health/WHO) – bi weekly TWG meetings\n- Trocaire in the area with a strong operational response and capacity\n- WHO has sent supplies to most locations at risk in Jubalans\n- Intensified national-level coordination WHO and UNICEF – finalizing document with task distribution and deliverables",
+      "url": "https://reliefweb.int/node/3955844",
+      "disaster": [
+        {
+          "name": "Somalia: Cholera Outbreak - Apr 2016",
+          "id": 33516,
+          "glide": "EP-2016-000053-SOM",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/34/b1/34b1519d-e727-41db-99e7-5fa83d8ddccc.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/34/b1/34b1519d-e727-41db-99e7-5fa83d8ddccc.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/34/b1/34b1519d-e727-41db-99e7-5fa83d8ddccc.png",
+            "version": "2414566-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/34/b1/34b1519d-e727-41db-99e7-5fa83d8ddccc.png"
+          },
+          "filename": "AWD_Cholera situation update March 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2414566",
+          "filesize": "567014",
+          "url": "https://reliefweb.int/attachments/34b1519d-e727-41db-99e7-5fa83d8ddccc/AWD_Cholera%20situation%20update%20March%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/somalia/somalia-cholera-outbreak-jubaland-and-southwest-week-1-14-13042023-presentation",
+      "redirects": [
+        "https://reliefweb.int/report/somalia/cholera-outbreak-jubaland-and-southwest-week-1-14-presentation",
+        "https://reliefweb.int/report/somalia/somalia-cholera-outbreak-jubaland-and-southwest-week-1-14-presentation"
+      ],
+      "theme": [
+        {
+          "name": "Health",
+          "id": 4595
+        }
+      ],
+      "id": 3955844,
+      "status": "published",
+      "body-html": "<p><strong>Highlights: Jubaland and South west</strong></p>\n<ul>\n<li>Overall, in Jubaland, AWD cases show a steeper increase this week compared to previous weeks.</li>\n<li>There has been a steep increase in cases in week 14 in Bellet Hawa, while reporting of cases in Afmadow has decreased.</li>\n<li>Outside of Kismayo, there is still little testing being performed to AWD cases at CTCs.</li>\n<li>In the newly reported cases in Bellet Hawa in week 14, there is a higher proportion of children between 0-5 years old than in previous weeks.</li>\n</ul>\n<p><strong>Response &amp; coordination</strong></p>\n<ul>\n<li>State-level cholera task force coordination (WASH/UNICEF, Health/WHO) – bi weekly TWG meetings</li>\n<li>Trocaire in the area with a strong operational response and capacity</li>\n<li>WHO has sent supplies to most locations at risk in Jubalans</li>\n<li>Intensified national-level coordination WHO and UNICEF – finalizing document with task distribution and deliverables</li>\n</ul>\n"
+    }
+  },
+  "text": "# Somalia: Cholera outbreak Jubaland and Southwest Week 1-14 (13.04.2023) [presentation]\n\n**Highlights: Jubaland and South west**\n\n- Overall, in Jubaland, AWD cases show a steeper increase this week compared to previous weeks.\n- There has been a steep increase in cases in week 14 in Bellet Hawa, while reporting of cases in Afmadow has decreased.\n- Outside of Kismayo, there is still little testing being performed to AWD cases at CTCs.\n- In the newly reported cases in Bellet Hawa in week 14, there is a higher proportion of children between 0-5 years old than in previous weeks.\n\n**Response & coordination**\n- State-level cholera task force coordination (WASH/UNICEF, Health/WHO) – bi weekly TWG meetings\n- Trocaire in the area with a strong operational response and capacity\n- WHO has sent supplies to most locations at risk in Jubalans\n- Intensified national-level coordination WHO and UNICEF – finalizing document with task distribution and deliverables",
+  "summary": " This presentation highlights the increasing cases of AWD in Jubaland and Southwest Somalia, with a particular focus on Bellet Hawa in week 14. Response and coordination efforts include bi-weekly TWG meetings, Trocaire's operational response, WHO's supply of materials to at-risk locations, and intensified national-level coordination between WHO and UNICEF.",
+  "metadata": {
+    "id": "3955844",
+    "name": "Somalia: Cholera outbreak Jubaland and Southwest Week 1-14 (13.04.2023) [presentation]",
+    "date_original": 1681344000000,
+    "date_changed": 1682446749000,
+    "date_created": 1682434690000,
+    "primary_country_id": 216,
+    "primary_country_name": "Somalia",
+    "primary_country_iso3": "som",
+    "primary_country_location": {
+      "lon": 47.33,
+      "lat": 5.79
+    }
+  }
+}

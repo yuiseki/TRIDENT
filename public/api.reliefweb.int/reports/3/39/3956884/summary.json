@@ -1,0 +1,157 @@
+{
+  "original": {
+    "id": "3956884",
+    "fields": {
+      "date": {
+        "changed": "2023-04-28T10:22:55+00:00",
+        "created": "2023-04-28T09:18:53+00:00",
+        "original": "2023-04-28T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/226",
+          "name": "Syrian Arab Republic",
+          "location": {
+            "lon": 38.51,
+            "lat": 35.01
+          },
+          "id": 226,
+          "shortname": "Syria",
+          "iso3": "syr",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/226",
+        "name": "Syrian Arab Republic",
+        "location": {
+          "lon": 38.51,
+          "lat": 35.01
+        },
+        "id": 226,
+        "shortname": "Syria",
+        "iso3": "syr"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EQ",
+          "name": "Earthquake",
+          "id": 4628
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/8619",
+          "longname": "Protection Cluster",
+          "name": "Protection Cluster",
+          "id": 8619,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "Protection Cluster",
+          "homepage": "http://www.globalprotectioncluster.org/"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "Syria Earthquake Response: Protection Sector Update - Flash Update #14 as of 27 April 2023",
+      "body": "**NEEDS AND GAPS IN THE PROTECTION RESPONSE**\n\n- In Aleppo, the evacuation of mid-term shelters continues. There are currently 28 active shelters, including seven mid-term and 21 temporary shelters.\n\n- As temporary shelters are being closed, affected displaced populations who cannot provide the necessary documentation to prove house damage are asked to leave the shelters. In some cases, families have been allowed to stay in two rehabilitated shelters in Hanano for a short period.\n\n- As the locations for newly established mid-term shelters remain unclear, service provision is delayed.\n\n- The Protection Sector has conducted missions to two mid-term shelters so far to assess protection needs. Key findings include reports of increasing intra-family violence, particularly against women and children; trauma and psychological distress; challenges with acquiring damage-related documentation to qualify for access to mid-term shelters; and the need for capacity-building of and support to local organisations assigned to manage shelters.\n\n- In the coastal areas, it was reported that people had been evacuated from shelters on very short notice.",
+      "url": "https://reliefweb.int/node/3956884",
+      "disaster": [
+        {
+          "name": "Türkiye/Syria: Earthquakes - Feb 2023",
+          "id": 51470,
+          "glide": "EQ-2023-000015-TUR",
+          "type": [
+            {
+              "code": "EQ",
+              "name": "Earthquake",
+              "id": 4628,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/31/62/31627feb-7ac6-4c4b-a109-0319ece56819.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/31/62/31627feb-7ac6-4c4b-a109-0319ece56819.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/31/62/31627feb-7ac6-4c4b-a109-0319ece56819.png",
+            "version": "2415536-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/31/62/31627feb-7ac6-4c4b-a109-0319ece56819.png"
+          },
+          "filename": "Protection Sector Syria  Update EQ response #14  April 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415536",
+          "filesize": "507932",
+          "url": "https://reliefweb.int/attachments/31627feb-7ac6-4c4b-a109-0319ece56819/Protection%20Sector%20Syria%20%20Update%20EQ%20response%20%2314%20%20April%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/syrian-arab-republic/syria-earthquake-response-protection-sector-update-flash-update-14-27-april-2023",
+      "theme": [
+        {
+          "name": "Gender",
+          "id": 4594
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        }
+      ],
+      "id": 3956884,
+      "status": "published",
+      "body-html": "<p><strong>NEEDS AND GAPS IN THE PROTECTION RESPONSE</strong></p>\n<ul>\n<li>\n<p>In Aleppo, the evacuation of mid-term shelters continues. There are currently 28 active shelters, including seven mid-term and 21 temporary shelters.</p>\n</li>\n<li>\n<p>As temporary shelters are being closed, affected displaced populations who cannot provide the necessary documentation to prove house damage are asked to leave the shelters. In some cases, families have been allowed to stay in two rehabilitated shelters in Hanano for a short period.</p>\n</li>\n<li>\n<p>As the locations for newly established mid-term shelters remain unclear, service provision is delayed.</p>\n</li>\n<li>\n<p>The Protection Sector has conducted missions to two mid-term shelters so far to assess protection needs. Key findings include reports of increasing intra-family violence, particularly against women and children; trauma and psychological distress; challenges with acquiring damage-related documentation to qualify for access to mid-term shelters; and the need for capacity-building of and support to local organisations assigned to manage shelters.</p>\n</li>\n<li>\n<p>In the coastal areas, it was reported that people had been evacuated from shelters on very short notice.</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# Syria Earthquake Response: Protection Sector Update - Flash Update #14 as of 27 April 2023\n\n**NEEDS AND GAPS IN THE PROTECTION RESPONSE**\n\n- In Aleppo, the evacuation of mid-term shelters continues. There are currently 28 active shelters, including seven mid-term and 21 temporary shelters.\n\n- As temporary shelters are being closed, affected displaced populations who cannot provide the necessary documentation to prove house damage are asked to leave the shelters. In some cases, families have been allowed to stay in two rehabilitated shelters in Hanano for a short period.\n\n- As the locations for newly established mid-term shelters remain unclear, service provision is delayed.\n\n- The Protection Sector has conducted missions to two mid-term shelters so far to assess protection needs. Key findings include reports of increasing intra-family violence, particularly against women and children; trauma and psychological distress; challenges with acquiring damage-related documentation to qualify for access to mid-term shelters; and the need for capacity-building of and support to local organisations assigned to manage shelters.\n\n- In the coastal areas, it was reported that people had been evacuated from shelters on very short notice.",
+  "summary": "\n\nThe Protection Sector in Syria is responding to the earthquake by evacuating mid-term shelters in Aleppo and closing temporary shelters. Service provision is delayed due to unclear locations for newly established mid-term shelters. Missions to two mid-term shelters have revealed reports of increasing intra-family violence, trauma, and psychological distress. People in the coastal areas have been evacuated from shelters on very short notice.",
+  "metadata": {
+    "id": "3956884",
+    "name": "Syria Earthquake Response: Protection Sector Update - Flash Update #14 as of 27 April 2023",
+    "date_original": 1682640000000,
+    "date_changed": 1682677375000,
+    "date_created": 1682673533000,
+    "primary_country_id": 226,
+    "primary_country_name": "Syrian Arab Republic",
+    "primary_country_iso3": "syr",
+    "primary_country_location": {
+      "lon": 38.51,
+      "lat": 35.01
+    }
+  }
+}

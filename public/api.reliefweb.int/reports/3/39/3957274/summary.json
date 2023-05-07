@@ -1,0 +1,151 @@
+{
+  "original": {
+    "id": "3957274",
+    "fields": {
+      "date": {
+        "changed": "2023-04-30T21:15:40+00:00",
+        "created": "2023-04-30T16:08:02+00:00",
+        "original": "2023-04-30T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/13",
+          "name": "Afghanistan",
+          "location": {
+            "lon": 66.03,
+            "lat": 33.84
+          },
+          "id": 13,
+          "shortname": "Afghanistan",
+          "iso3": "afg",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/13",
+        "name": "Afghanistan",
+        "location": {
+          "lon": 66.03,
+          "lat": 33.84
+        },
+        "id": 13,
+        "shortname": "Afghanistan",
+        "iso3": "afg"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EQ",
+          "name": "Earthquake",
+          "id": 4628
+        },
+        {
+          "code": "FF",
+          "name": "Flash Flood",
+          "id": 4624
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        },
+        {
+          "code": "ST",
+          "name": "Severe Local Storm",
+          "id": 4656
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/13726",
+          "name": "Shelter Cluster",
+          "id": 13726,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "Shelter Cluster",
+          "homepage": "https://www.sheltercluster.org/"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "Shelter Cluster Afghanistan: Regional Monthly Update 01 - 31 March 2023",
+      "body": "**KEY HIGHLIGHTS AND CHALLENGES**\n\n- Since the beginning of year, ESNFI clusters partners have reached 242,845 (18%) individuals with multiple Emergency shelters (ES) and NFI assistance (Transitional shelter, Shelter repair or upgrade, winterization, standard ES and NFI assistance).\n\n- During the reporting period, on 21 March 2023, a magnitude 6.5 earthquake struck Badakhshan Province, Afghanistan that shocked whole part of the Eastern Region including Kunar, Nangarhar and Laghman province with 259 found to be affected. \n\n- Heavy rainfall incidents have affected 177 families in several provinces of Afghanistan : Lahgman , Khost , Kabul Herat , Balkh ,  \nKunduz , Samangan and zabul .",
+      "url": "https://reliefweb.int/node/3957274",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/95/8d/958d7f36-278e-45aa-9192-3cb831f3a8f9.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/95/8d/958d7f36-278e-45aa-9192-3cb831f3a8f9.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/95/8d/958d7f36-278e-45aa-9192-3cb831f3a8f9.png",
+            "version": "2415909-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/95/8d/958d7f36-278e-45aa-9192-3cb831f3a8f9.png"
+          },
+          "filename": "ESFI afg regional report Mar 2023 copy.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415909",
+          "filesize": "7423862",
+          "url": "https://reliefweb.int/attachments/958d7f36-278e-45aa-9192-3cb831f3a8f9/ESFI%20afg%20regional%20report%20Mar%202023%20copy.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/afghanistan/shelter-cluster-afghanistan-regional-monthly-update-01-31-march-2023",
+      "theme": [
+        {
+          "name": "Recovery and Reconstruction",
+          "id": 4601
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3957274,
+      "status": "published",
+      "body-html": "<p><strong>KEY HIGHLIGHTS AND CHALLENGES</strong></p>\n<ul>\n<li>\n<p>Since the beginning of year, ESNFI clusters partners have reached 242,845 (18%) individuals with multiple Emergency shelters (ES) and NFI assistance (Transitional shelter, Shelter repair or upgrade, winterization, standard ES and NFI assistance).</p>\n</li>\n<li>\n<p>During the reporting period, on 21 March 2023, a magnitude 6.5 earthquake struck Badakhshan Province, Afghanistan that shocked whole part of the Eastern Region including Kunar, Nangarhar and Laghman province with 259 found to be affected.</p>\n</li>\n<li>\n<p>Heavy rainfall incidents have affected 177 families in several provinces of Afghanistan : Lahgman , Khost , Kabul Herat , Balkh ,<br />\nKunduz , Samangan and zabul .</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# Shelter Cluster Afghanistan: Regional Monthly Update 01 - 31 March 2023\n\n**KEY HIGHLIGHTS AND CHALLENGES**\n\n- Since the beginning of year, ESNFI clusters partners have reached 242,845 (18%) individuals with multiple Emergency shelters (ES) and NFI assistance (Transitional shelter, Shelter repair or upgrade, winterization, standard ES and NFI assistance).\n\n- During the reporting period, on 21 March 2023, a magnitude 6.5 earthquake struck Badakhshan Province, Afghanistan that shocked whole part of the Eastern Region including Kunar, Nangarhar and Laghman province with 259 found to be affected. \n\n- Heavy rainfall incidents have affected 177 families in several provinces of Afghanistan : Lahgman , Khost , Kabul Herat , Balkh ,  \nKunduz , Samangan and zabul .",
+  "summary": "\n\nThe Shelter Cluster Afghanistan Regional Monthly Update for March 2023 reported that ESNFI clusters partners have provided emergency shelters and NFI assistance to 242,845 individuals since the beginning of the year. On 21 March, a magnitude 6.5 earthquake struck Badakhshan Province, affecting 259 people. Additionally, heavy rainfall incidents have affected 177 families in several provinces across Afghanistan.",
+  "metadata": {
+    "id": "3957274",
+    "name": "Shelter Cluster Afghanistan: Regional Monthly Update 01 - 31 March 2023",
+    "date_original": 1682812800000,
+    "date_changed": 1682889340000,
+    "date_created": 1682870882000,
+    "primary_country_id": 13,
+    "primary_country_name": "Afghanistan",
+    "primary_country_iso3": "afg",
+    "primary_country_location": {
+      "lon": 66.03,
+      "lat": 33.84
+    }
+  }
+}

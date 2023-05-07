@@ -1,0 +1,161 @@
+{
+  "original": {
+    "id": "3957344",
+    "fields": {
+      "date": {
+        "changed": "2023-05-01T10:19:18+00:00",
+        "created": "2023-05-01T09:54:21+00:00",
+        "original": "2023-05-01T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/226",
+          "name": "Syrian Arab Republic",
+          "location": {
+            "lon": 38.51,
+            "lat": 35.01
+          },
+          "id": 226,
+          "shortname": "Syria",
+          "iso3": "syr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/236",
+          "name": "Türkiye",
+          "location": {
+            "lon": 35.18,
+            "lat": 39.06
+          },
+          "id": 236,
+          "shortname": "Türkiye",
+          "iso3": "tur",
+          "primary": true
+        }
+      ],
+      "origin": "https://data.unhcr.org/en/documents/details/100343",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/236",
+        "name": "Türkiye",
+        "location": {
+          "lon": 35.18,
+          "lat": 39.06
+        },
+        "id": 236,
+        "shortname": "Türkiye",
+        "iso3": "tur"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EQ",
+          "name": "Earthquake",
+          "id": 4628
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "UNHCR Türkiye Earthquake Emergency Response (28 April 2023)",
+      "body": "**RECENT DEVELOPMENTS**\n\nThe five legal clinics in Gaziantep, Kilis, Malatya, Hatay and Sanllurfa, supported by UNHCR through a partnership with the Union of Turkish Bar Associations, have all resumed their counselling and psychosocial services for refugees and asylum-seekers.  \nThe Hatay legal clinic, which had been destroyed during the earthquake, has taken up counselling services online on 17 April. Meanwhile, options are being assessed to install containers for in-person counselling in Hatay and Malatya, where the clinic has also suffered significant structural damage.",
+      "url": "https://reliefweb.int/node/3957344",
+      "disaster": [
+        {
+          "name": "Türkiye/Syria: Earthquakes - Feb 2023",
+          "id": 51470,
+          "glide": "EQ-2023-000015-TUR",
+          "type": [
+            {
+              "code": "EQ",
+              "name": "Earthquake",
+              "id": 4628,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/c3/6c/c36c74fe-cdd0-46ca-8cc0-fe4762b067c8.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/c3/6c/c36c74fe-cdd0-46ca-8cc0-fe4762b067c8.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/c3/6c/c36c74fe-cdd0-46ca-8cc0-fe4762b067c8.png",
+            "version": "2415957-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/c3/6c/c36c74fe-cdd0-46ca-8cc0-fe4762b067c8.png"
+          },
+          "filename": "UNHCR Türkiye Emergency Response to Earthquake 2023 04 28.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415957",
+          "filesize": "875642",
+          "url": "https://reliefweb.int/attachments/c36c74fe-cdd0-46ca-8cc0-fe4762b067c8/UNHCR%20Tu%CC%88rkiye%20Emergency%20Response%20to%20Earthquake%202023%2004%2028.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/turkiye/unhcr-turkiye-earthquake-emergency-response-28-april-2023",
+      "theme": [
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3957344,
+      "status": "published",
+      "body-html": "<p><strong>RECENT DEVELOPMENTS</strong></p>\n<p>The five legal clinics in Gaziantep, Kilis, Malatya, Hatay and Sanllurfa, supported by UNHCR through a partnership with the Union of Turkish Bar Associations, have all resumed their counselling and psychosocial services for refugees and asylum-seekers.<br />\nThe Hatay legal clinic, which had been destroyed during the earthquake, has taken up counselling services online on 17 April. Meanwhile, options are being assessed to install containers for in-person counselling in Hatay and Malatya, where the clinic has also suffered significant structural damage.</p>\n"
+    }
+  },
+  "text": "# UNHCR Türkiye Earthquake Emergency Response (28 April 2023)\n\n**RECENT DEVELOPMENTS**\n\nThe five legal clinics in Gaziantep, Kilis, Malatya, Hatay and Sanllurfa, supported by UNHCR through a partnership with the Union of Turkish Bar Associations, have all resumed their counselling and psychosocial services for refugees and asylum-seekers.  \nThe Hatay legal clinic, which had been destroyed during the earthquake, has taken up counselling services online on 17 April. Meanwhile, options are being assessed to install containers for in-person counselling in Hatay and Malatya, where the clinic has also suffered significant structural damage.",
+  "summary": "\nUNHCR has resumed counselling and psychosocial services for refugees and asylum-seekers in five legal clinics in Gaziantep, Kilis, Malatya, Hatay and Sanllurfa. The Hatay legal clinic, which was destroyed during the earthquake, has resumed services online, and options are being assessed to install containers for in-person counselling in Hatay and Malatya.",
+  "metadata": {
+    "id": "3957344",
+    "name": "UNHCR Türkiye Earthquake Emergency Response (28 April 2023)",
+    "date_original": 1682899200000,
+    "date_changed": 1682936358000,
+    "date_created": 1682934861000,
+    "primary_country_id": 236,
+    "primary_country_name": "Türkiye",
+    "primary_country_iso3": "tur",
+    "primary_country_location": {
+      "lon": 35.18,
+      "lat": 39.06
+    }
+  }
+}

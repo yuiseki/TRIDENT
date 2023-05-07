@@ -1,0 +1,183 @@
+{
+  "original": {
+    "id": "3957828",
+    "fields": {
+      "date": {
+        "changed": "2023-05-02T17:56:47+00:00",
+        "created": "2023-05-02T16:47:59+00:00",
+        "original": "2023-05-02T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/249",
+          "name": "Vanuatu",
+          "location": {
+            "lon": 167.72,
+            "lat": -16.26
+          },
+          "id": 249,
+          "shortname": "Vanuatu",
+          "iso3": "vut",
+          "primary": true
+        }
+      ],
+      "origin": "https://www.etcluster.org/document/etc-vanuatu-final-situation-report7-30-april-2023",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/249",
+        "name": "Vanuatu",
+        "location": {
+          "lon": 167.72,
+          "lat": -16.26
+        },
+        "id": 249,
+        "shortname": "Vanuatu",
+        "iso3": "vut"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EQ",
+          "name": "Earthquake",
+          "id": 4628
+        },
+        {
+          "code": "TC",
+          "name": "Tropical Cyclone",
+          "id": 4618
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/13799",
+          "longname": "Emergency Telecommunications Cluster",
+          "name": "Emergency Telecommunications Cluster",
+          "id": 13799,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "ETC",
+          "homepage": "https://www.etcluster.org/"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "Vanuatu - earthquake and cyclones emergency [FINAL] ETC Situation Report #7 (Reporting period: 03/03/2023 to 22/04/2023)",
+      "body": "*The World Food Programme (WFP) led ETC in the Pacific was activated in 2016 under the structure of the Pacific Humanitarian Team (PHT) to support telecommunications preparedness in the region. The ETC in the Pacific supported the emergency response to Tropical Cyclones Judy and Kevin which hit Vanuatu on 1 and 3 March 2023, which occurred on 3 March 2023. The ETC responded from 3 March until 22 April 2023.*\n\n**Highlights**\n\n- Led by the WFP Multi Country Office (MCO) for the Pacific, the ETC delivered ICT support to Vanuatu following the impact of Tropical Cyclones Judy and Kevin (both of Category 4 intensity) which made landfall over Vanuatu on 1 and 3 March. As part of WFP’s contribution to the response, the ETC in the Pacific engaged with the Government of Vanuatu’s National Disaster Management Office (NDMO) and the Office of the Government Chief Information Office (OGCIO) to assess the situation and mobilise support to meet the ICT needs of the emergency response.\n\n- On 9 March, WFP rapidly supported and collaborated with Vanuatu government responders by deploying an ETC Officer to help assess communications and connectivity needs across the affected islands. Deployed in the initial response were three push-to-talk (PTT) satellite phones to enable voice service communications, and one Broadband Global Area Network (BGAN) terminal to provide back-up connectivity for the planned ETC assessments. On 17 March, WFP through the Pacific Humanitarian Team (PHT) brought in a second ETC Officer who arrived in Vanuatu to support assessments on communications and connectivity needs, install data connectivity terminals, and train NDMO technicians on the delivery of communications services.\n\n- On 11 and 18 April, a Starlink satellite data terminal was installed by the government with the support of the ETC at the Penama Provincial Emergency Operations Centre (PEOC) on Ambae Island and Tafea PEOC on Tanna Island. The data connectivity services enable users to communicate with the National Emergency Operations Centre (NEOC) at the NDMO headquarters in Port Vila. The system serves as a critical tool for communications between responders in emergencies.",
+      "url": "https://reliefweb.int/node/3957828",
+      "disaster": [
+        {
+          "name": "Vanuatu: Earthquake - Mar 2023",
+          "id": 51514,
+          "glide": "EQ-2023-000035-VUT",
+          "type": [
+            {
+              "code": "EQ",
+              "name": "Earthquake",
+              "id": 4628,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Tropical Cyclone Kevin - Mar 2023",
+          "id": 51506,
+          "glide": "TC-2023-000030-VUT",
+          "type": [
+            {
+              "code": "TC",
+              "name": "Tropical Cyclone",
+              "id": 4618,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Tropical Cyclone Judy - Feb 2023",
+          "id": 51504,
+          "glide": "EC-2023-000028-VUT",
+          "type": [
+            {
+              "code": "TC",
+              "name": "Tropical Cyclone",
+              "id": 4618,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/0f/ba/0fbaa9cf-8cc1-4ecf-9975-652a0674713e.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/0f/ba/0fbaa9cf-8cc1-4ecf-9975-652a0674713e.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/0f/ba/0fbaa9cf-8cc1-4ecf-9975-652a0674713e.png",
+            "version": "2416477-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/0f/ba/0fbaa9cf-8cc1-4ecf-9975-652a0674713e.png"
+          },
+          "filename": "ETC Vanuatu SitRep_Apr_FINAL 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2416477",
+          "filesize": "162321",
+          "url": "https://reliefweb.int/attachments/0fbaa9cf-8cc1-4ecf-9975-652a0674713e/ETC%20Vanuatu%20SitRep_Apr_FINAL%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/vanuatu/vanuatu-earthquake-and-cyclones-emergency-final-etc-situation-report-7-reporting-period-03032023-22042023",
+      "theme": [
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        }
+      ],
+      "id": 3957828,
+      "status": "published",
+      "body-html": "<p><em>The World Food Programme (WFP) led ETC in the Pacific was activated in 2016 under the structure of the Pacific Humanitarian Team (PHT) to support telecommunications preparedness in the region. The ETC in the Pacific supported the emergency response to Tropical Cyclones Judy and Kevin which hit Vanuatu on 1 and 3 March 2023, which occurred on 3 March 2023. The ETC responded from 3 March until 22 April 2023.</em></p>\n<p><strong>Highlights</strong></p>\n<ul>\n<li>\n<p>Led by the WFP Multi Country Office (MCO) for the Pacific, the ETC delivered ICT support to Vanuatu following the impact of Tropical Cyclones Judy and Kevin (both of Category 4 intensity) which made landfall over Vanuatu on 1 and 3 March. As part of WFP’s contribution to the response, the ETC in the Pacific engaged with the Government of Vanuatu’s National Disaster Management Office (NDMO) and the Office of the Government Chief Information Office (OGCIO) to assess the situation and mobilise support to meet the ICT needs of the emergency response.</p>\n</li>\n<li>\n<p>On 9 March, WFP rapidly supported and collaborated with Vanuatu government responders by deploying an ETC Officer to help assess communications and connectivity needs across the affected islands. Deployed in the initial response were three push-to-talk (PTT) satellite phones to enable voice service communications, and one Broadband Global Area Network (BGAN) terminal to provide back-up connectivity for the planned ETC assessments. On 17 March, WFP through the Pacific Humanitarian Team (PHT) brought in a second ETC Officer who arrived in Vanuatu to support assessments on communications and connectivity needs, install data connectivity terminals, and train NDMO technicians on the delivery of communications services.</p>\n</li>\n<li>\n<p>On 11 and 18 April, a Starlink satellite data terminal was installed by the government with the support of the ETC at the Penama Provincial Emergency Operations Centre (PEOC) on Ambae Island and Tafea PEOC on Tanna Island. The data connectivity services enable users to communicate with the National Emergency Operations Centre (NEOC) at the NDMO headquarters in Port Vila. The system serves as a critical tool for communications between responders in emergencies.</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# Vanuatu - earthquake and cyclones emergency [FINAL] ETC Situation Report #7 (Reporting period: 03/03/2023 to 22/04/2023)\n\n*The World Food Programme (WFP) led ETC in the Pacific was activated in 2016 under the structure of the Pacific Humanitarian Team (PHT) to support telecommunications preparedness in the region. The ETC in the Pacific supported the emergency response to Tropical Cyclones Judy and Kevin which hit Vanuatu on 1 and 3 March 2023, which occurred on 3 March 2023. The ETC responded from 3 March until 22 April 2023.*\n\n**Highlights**\n\n- Led by the WFP Multi Country Office (MCO) for the Pacific, the ETC delivered ICT support to Vanuatu following the impact of Tropical Cyclones Judy and Kevin (both of Category 4 intensity) which made landfall over Vanuatu on 1 and 3 March. As part of WFP’s contribution to the response, the ETC in the Pacific engaged with the Government of Vanuatu’s National Disaster Management Office (NDMO) and the Office of the Government Chief Information Office (OGCIO) to assess the situation and mobilise support to meet the ICT needs of the emergency response.\n\n- On 9 March, WFP rapidly supported and collaborated with Vanuatu government responders by deploying an ETC Officer to help assess communications and connectivity needs across the affected islands. Deployed in the initial response were three push-to-talk (PTT) satellite phones to enable voice service communications, and one Broadband Global Area Network (BGAN) terminal to provide back-up connectivity for the planned ETC assessments. On 17 March, WFP through the Pacific Humanitarian Team (PHT) brought in a second ETC Officer who arrived in Vanuatu to support assessments on communications and connectivity needs, install data connectivity terminals, and train NDMO technicians on the delivery of communications services.\n\n- On 11 and 18 April, a Starlink satellite data terminal was installed by the government with the support of the ETC at the Penama Provincial Emergency Operations Centre (PEOC) on Ambae Island and Tafea PEOC on Tanna Island. The data connectivity services enable users to communicate with the National Emergency Operations Centre (NEOC) at the NDMO headquarters in Port Vila. The system serves as a critical tool for communications between responders in emergencies.",
+  "summary": " The World Food Programme (WFP) led ETC in the Pacific was activated in 2016 to support telecommunications preparedness in the region. In response to Tropical Cyclones Judy and Kevin which hit Vanuatu on 1 and 3 March 2023, the ETC deployed an officer to assess communications and connectivity needs, provided push-to-talk (PTT) satellite phones and a Broadband Global Area Network (BGAN) terminal, and installed a Starlink satellite data terminal at the Penama Provincial Emergency Operations Centre (PEOC) and Tafea PEOC. These services enabled users to communicate with the National Emergency Operations Centre (NEOC) at the NDMO headquarters in Port Vila.",
+  "metadata": {
+    "id": "3957828",
+    "name": "Vanuatu - earthquake and cyclones emergency [FINAL] ETC Situation Report #7 (Reporting period: 03/03/2023 to 22/04/2023)",
+    "date_original": 1682985600000,
+    "date_changed": 1683050207000,
+    "date_created": 1683046079000,
+    "primary_country_id": 249,
+    "primary_country_name": "Vanuatu",
+    "primary_country_iso3": "vut",
+    "primary_country_location": {
+      "lon": 167.72,
+      "lat": -16.26
+    }
+  }
+}

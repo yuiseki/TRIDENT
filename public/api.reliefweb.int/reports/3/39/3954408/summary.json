@@ -1,0 +1,111 @@
+{
+  "original": {
+    "id": "3954408",
+    "fields": {
+      "date": {
+        "changed": "2023-04-19T16:32:28+00:00",
+        "created": "2023-04-19T16:31:29+00:00",
+        "original": "2023-04-19T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/254",
+          "name": "World",
+          "id": 254,
+          "shortname": "World",
+          "iso3": "wld",
+          "primary": true
+        }
+      ],
+      "origin": "https://www.undp.org/publications/who-picks-your-waste-evidence-based-observations-and-policy-priorities-equitable-development",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/254",
+        "name": "World",
+        "id": 254,
+        "shortname": "World",
+        "iso3": "wld"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1293",
+          "longname": "United Nations Development Programme",
+          "spanish_name": "Programa de las Naciones Unidas para el Desarrollo",
+          "name": "UN Development Programme",
+          "id": 1293,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNDP",
+          "homepage": "http://www.undp.org/"
+        }
+      ],
+      "title": "UNDP Development Future Series: Who picks (y)our waste? Evidence-based observations and policy priorities for equitable development",
+      "body": "Waste-pickers are one of the most crucial yet often ignored segments of the water, sanitation and hygiene (WASH) programming. These workers often labour in hazardous conditions under the uncertainty of informal employment but are the key to keeping the environment clean and our cities (particularly urban spaces) safe. Challenges these workers face—such as limited earning capacity, increased risk of falling into poverty and insecurities of food, income, work and livelihood— have been further accentuated by the COVID-19 pandemic. These challenges have been noted to be worse for women - who are more vulnerable to significant impacts on their health - with potential intergenerational impacts.2 This brief, drawing from broad themes of socio-economic insecurity among informal workers across developing nations, presents on-ground evidence on demographic, employment, identification, housing and social security characteristics of waste pickers from across ten states in India. It also discusses some policy directions to ensure structural transformation towards resilient and equitable development for this cohort.",
+      "url": "https://reliefweb.int/node/3954408",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/b5/7e/b57efe6a-dd57-4a6f-8da4-0a84c5525db8.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/b5/7e/b57efe6a-dd57-4a6f-8da4-0a84c5525db8.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/b5/7e/b57efe6a-dd57-4a6f-8da4-0a84c5525db8.png",
+            "version": "2413544-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/b5/7e/b57efe6a-dd57-4a6f-8da4-0a84c5525db8.png"
+          },
+          "filename": "Policy Brief - Who picks (y)our waste..pdf",
+          "mimetype": "application/pdf",
+          "id": "2413544",
+          "filesize": "473770",
+          "url": "https://reliefweb.int/attachments/b57efe6a-dd57-4a6f-8da4-0a84c5525db8/Policy%20Brief%20-%20Who%20picks%20%28y%29our%20waste..pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/world/undp-development-future-series-who-picks-your-waste-evidence-based-observations-and-policy-priorities-equitable-development",
+      "theme": [
+        {
+          "name": "Climate Change and Environment",
+          "id": 4588
+        },
+        {
+          "name": "Gender",
+          "id": 4594
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3954408,
+      "status": "published",
+      "body-html": "<p>Waste-pickers are one of the most crucial yet often ignored segments of the water, sanitation and hygiene (WASH) programming. These workers often labour in hazardous conditions under the uncertainty of informal employment but are the key to keeping the environment clean and our cities (particularly urban spaces) safe. Challenges these workers face—such as limited earning capacity, increased risk of falling into poverty and insecurities of food, income, work and livelihood— have been further accentuated by the COVID-19 pandemic. These challenges have been noted to be worse for women - who are more vulnerable to significant impacts on their health - with potential intergenerational impacts.2 This brief, drawing from broad themes of socio-economic insecurity among informal workers across developing nations, presents on-ground evidence on demographic, employment, identification, housing and social security characteristics of waste pickers from across ten states in India. It also discusses some policy directions to ensure structural transformation towards resilient and equitable development for this cohort.</p>\n"
+    }
+  },
+  "text": "# UNDP Development Future Series: Who picks (y)our waste? Evidence-based observations and policy priorities for equitable development\n\nWaste-pickers are one of the most crucial yet often ignored segments of the water, sanitation and hygiene (WASH) programming. These workers often labour in hazardous conditions under the uncertainty of informal employment but are the key to keeping the environment clean and our cities (particularly urban spaces) safe. Challenges these workers face—such as limited earning capacity, increased risk of falling into poverty and insecurities of food, income, work and livelihood— have been further accentuated by the COVID-19 pandemic. These challenges have been noted to be worse for women - who are more vulnerable to significant impacts on their health - with potential intergenerational impacts.2 This brief, drawing from broad themes of socio-economic insecurity among informal workers across developing nations, presents on-ground evidence on demographic, employment, identification, housing and social security characteristics of waste pickers from across ten states in India. It also discusses some policy directions to ensure structural transformation towards resilient and equitable development for this cohort.",
+  "summary": " This brief discusses the challenges faced by waste-pickers, particularly women, in developing nations due to the COVID-19 pandemic. It draws from evidence on demographic, employment, identification, housing and social security characteristics of waste pickers from ten states in India and provides policy directions to ensure structural transformation towards resilient and equitable development for this cohort.",
+  "metadata": {
+    "id": "3954408",
+    "name": "UNDP Development Future Series: Who picks (y)our waste? Evidence-based observations and policy priorities for equitable development",
+    "date_original": 1681862400000,
+    "date_changed": 1681921948000,
+    "date_created": 1681921889000,
+    "primary_country_id": 254,
+    "primary_country_name": "World",
+    "primary_country_iso3": "wld"
+  }
+}

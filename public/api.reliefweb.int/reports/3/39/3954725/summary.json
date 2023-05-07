@@ -1,0 +1,168 @@
+{
+  "original": {
+    "id": "3954725",
+    "fields": {
+      "date": {
+        "changed": "2023-04-20T14:02:50+00:00",
+        "created": "2023-04-20T13:46:02+00:00",
+        "original": "2023-04-20T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/31",
+          "name": "Bangladesh",
+          "location": {
+            "lon": 90.27,
+            "lat": 23.84
+          },
+          "id": 31,
+          "shortname": "Bangladesh",
+          "iso3": "bgd",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/165",
+          "name": "Myanmar",
+          "location": {
+            "lon": 96.51,
+            "lat": 21.15
+          },
+          "id": 165,
+          "shortname": "Myanmar",
+          "iso3": "mmr"
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/31",
+        "name": "Bangladesh",
+        "location": {
+          "lon": 90.27,
+          "lat": 23.84
+        },
+        "id": 31,
+        "shortname": "Bangladesh",
+        "iso3": "bgd"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "FR",
+          "name": "Fire",
+          "id": 5706
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1979",
+          "longname": "United Nations Children's Fund",
+          "spanish_name": "Fondo de las Naciones Unidas para la Infancia",
+          "name": "UN Children's Fund",
+          "id": 1979,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNICEF",
+          "homepage": "http://www.unicef.org"
+        }
+      ],
+      "title": "UNICEF Bangladesh Humanitarian Situation Report No. 63: 31 March 2023",
+      "body": "**Highlights**\n\n- During the reporting period, a devastating fire broke out in Rohingya refugee Camp 11, and 15,926 people including 8,122 children were affected, and 25 UNICEF-supported facilities were fully damaged. UNICEF has provided life[1]saving support to 8,070 people (1,440 female, 5,942 children) through a multi[1]sectoral response. Reconstruction of the fire-affected UNICEF-supported facilities is underway.\n\n- With UNICEF support, 163,132 children (77,864 girls) are receiving education based on the Myanmar Curriculum (MC)1 of their home country in Cox's Bazar Rohingya refugee Camps. A total of 9,470 children (4,779 girls) including 79 children with disabilities (35 girls) continue to receive their education in 28 schools in Bhasan Char.\n\n- In February 2023, a Stabilization Center (SC)2 , infant and young child feeding (IYCF), and Early Childhood Care and Development (ECCD) corners were established in a 20-bed hospital to treat children with severe acute malnutrition (SAM) with complications and provide nutrition counseling to mothers and children in Bhasan Char. The security situation remains unpredictable and unstable in the Rohingya refugee camps thus constraining the delivery of humanitarian services.",
+      "url": "https://reliefweb.int/node/3954725",
+      "disaster": [
+        {
+          "name": "Bangladesh: Cox’s Bazar Camp Settlement Fire - Mar 2023",
+          "id": 51508,
+          "glide": "FR-2023-000031-BGD",
+          "type": [
+            {
+              "code": "FR",
+              "name": "Fire",
+              "id": 5706,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/5b/e3/5be3e187-952b-4385-aa9b-5046b9086c44.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/5b/e3/5be3e187-952b-4385-aa9b-5046b9086c44.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/5b/e3/5be3e187-952b-4385-aa9b-5046b9086c44.png",
+            "version": "2413798-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/5b/e3/5be3e187-952b-4385-aa9b-5046b9086c44.png"
+          },
+          "filename": "UNICEF Bangladesh Humanitarian Situation Report No. 63, 31 March 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2413798",
+          "filesize": "1162053",
+          "url": "https://reliefweb.int/attachments/5be3e187-952b-4385-aa9b-5046b9086c44/UNICEF%20Bangladesh%20Humanitarian%20Situation%20Report%20No.%2063%2C%2031%20March%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/bangladesh/unicef-bangladesh-humanitarian-situation-report-no-63-31-march-2023",
+      "theme": [
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3954725,
+      "status": "published",
+      "body-html": "<p><strong>Highlights</strong></p>\n<ul>\n<li>\n<p>During the reporting period, a devastating fire broke out in Rohingya refugee Camp 11, and 15,926 people including 8,122 children were affected, and 25 UNICEF-supported facilities were fully damaged. UNICEF has provided life[1]saving support to 8,070 people (1,440 female, 5,942 children) through a multi[1]sectoral response. Reconstruction of the fire-affected UNICEF-supported facilities is underway.</p>\n</li>\n<li>\n<p>With UNICEF support, 163,132 children (77,864 girls) are receiving education based on the Myanmar Curriculum (MC)1 of their home country in Cox's Bazar Rohingya refugee Camps. A total of 9,470 children (4,779 girls) including 79 children with disabilities (35 girls) continue to receive their education in 28 schools in Bhasan Char.</p>\n</li>\n<li>\n<p>In February 2023, a Stabilization Center (SC)2 , infant and young child feeding (IYCF), and Early Childhood Care and Development (ECCD) corners were established in a 20-bed hospital to treat children with severe acute malnutrition (SAM) with complications and provide nutrition counseling to mothers and children in Bhasan Char. The security situation remains unpredictable and unstable in the Rohingya refugee camps thus constraining the delivery of humanitarian services.</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# UNICEF Bangladesh Humanitarian Situation Report No. 63: 31 March 2023\n\n**Highlights**\n\n- During the reporting period, a devastating fire broke out in Rohingya refugee Camp 11, and 15,926 people including 8,122 children were affected, and 25 UNICEF-supported facilities were fully damaged. UNICEF has provided life[1]saving support to 8,070 people (1,440 female, 5,942 children) through a multi[1]sectoral response. Reconstruction of the fire-affected UNICEF-supported facilities is underway.\n\n- With UNICEF support, 163,132 children (77,864 girls) are receiving education based on the Myanmar Curriculum (MC)1 of their home country in Cox's Bazar Rohingya refugee Camps. A total of 9,470 children (4,779 girls) including 79 children with disabilities (35 girls) continue to receive their education in 28 schools in Bhasan Char.\n\n- In February 2023, a Stabilization Center (SC)2 , infant and young child feeding (IYCF), and Early Childhood Care and Development (ECCD) corners were established in a 20-bed hospital to treat children with severe acute malnutrition (SAM) with complications and provide nutrition counseling to mothers and children in Bhasan Char. The security situation remains unpredictable and unstable in the Rohingya refugee camps thus constraining the delivery of humanitarian services.",
+  "summary": " During the reporting period, a devastating fire broke out in Rohingya refugee Camp 11, affecting 15,926 people including 8,122 children and damaging 25 UNICEF-supported facilities. UNICEF provided life-saving support to 8,070 people and reconstruction of the affected facilities is underway. With UNICEF support, 163,132 children are receiving education based on the Myanmar Curriculum in Cox's Bazar Rohingya refugee Camps and 9,470 children in 28 schools in Bhasan Char. A Stabilization Center, infant and young child feeding, and Early Childhood Care and Development corners were established in a 20-bed hospital in Bhasan Char to treat children with severe acute malnutrition and provide nutrition counseling. The security situation remains unpredictable and unstable in the Rohingya refugee camps.",
+  "metadata": {
+    "id": "3954725",
+    "name": "UNICEF Bangladesh Humanitarian Situation Report No. 63: 31 March 2023",
+    "date_original": 1681948800000,
+    "date_changed": 1681999370000,
+    "date_created": 1681998362000,
+    "primary_country_id": 31,
+    "primary_country_name": "Bangladesh",
+    "primary_country_iso3": "bgd",
+    "primary_country_location": {
+      "lon": 90.27,
+      "lat": 23.84
+    }
+  }
+}

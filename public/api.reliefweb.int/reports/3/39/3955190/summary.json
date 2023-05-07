@@ -1,0 +1,234 @@
+{
+  "original": {
+    "id": "3955190",
+    "fields": {
+      "date": {
+        "changed": "2023-04-22T21:23:36+00:00",
+        "created": "2023-04-22T15:27:14+00:00",
+        "original": "2023-04-21T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/54",
+          "name": "Central African Republic",
+          "location": {
+            "lon": 20.48,
+            "lat": 6.57
+          },
+          "id": 54,
+          "shortname": "CAR",
+          "iso3": "caf"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/55",
+          "name": "Chad",
+          "location": {
+            "lon": 18.66,
+            "lat": 15.36
+          },
+          "id": 55,
+          "shortname": "Chad",
+          "iso3": "tcd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/82",
+          "name": "Egypt",
+          "location": {
+            "lon": 29.87,
+            "lat": 26.49
+          },
+          "id": 82,
+          "shortname": "Egypt",
+          "iso3": "egy"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/85",
+          "name": "Eritrea",
+          "location": {
+            "lon": 38.58,
+            "lat": 15.68
+          },
+          "id": 85,
+          "shortname": "Eritrea",
+          "iso3": "eri"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/87",
+          "name": "Ethiopia",
+          "location": {
+            "lon": 39.62,
+            "lat": 8.63
+          },
+          "id": 87,
+          "shortname": "Ethiopia",
+          "iso3": "eth"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/140",
+          "name": "Libya",
+          "location": {
+            "lon": 18.02,
+            "lat": 27.04
+          },
+          "id": 140,
+          "shortname": "Libya",
+          "iso3": "lby"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/8657",
+          "name": "South Sudan",
+          "location": {
+            "lon": 30.5,
+            "lat": 6.9
+          },
+          "id": 8657,
+          "shortname": "South Sudan",
+          "iso3": "ssd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/220",
+          "name": "Sudan",
+          "location": {
+            "lon": 30,
+            "lat": 15
+          },
+          "id": 220,
+          "shortname": "Sudan",
+          "iso3": "sdn",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/226",
+          "name": "Syrian Arab Republic",
+          "location": {
+            "lon": 38.51,
+            "lat": 35.01
+          },
+          "id": 226,
+          "shortname": "Syria",
+          "iso3": "syr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/255",
+          "name": "Yemen",
+          "location": {
+            "lon": 47.62,
+            "lat": 15.94
+          },
+          "id": 255,
+          "shortname": "Yemen",
+          "iso3": "yem"
+        }
+      ],
+      "origin": "https://data.unhcr.org/en/documents/details/100225",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/220",
+        "name": "Sudan",
+        "location": {
+          "lon": 30,
+          "lat": 15
+        },
+        "id": 220,
+        "shortname": "Sudan",
+        "iso3": "sdn"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "Sudan Situation: External Update #1 - East and Horn of Africa, and the Great Lakes Region (20 April 2023)",
+      "body": "**Operational context**\n\n**Security and political developments**\n\nOn 15 April 2023, heavy shooting broke out between the Sudanese Armed Forces (SAF) and paramilitary Rapid Support Forces (RSF) in Khartoum affecting many parts of the city. Fighting was also reported in Merowe in the Northern State between the SAF and RSF. Intense fighting, artillery fire and shelling have since continued in Khartoum as well as Darfur. Various attempts to implement ceasefires have not been successful to date.\n\nThe UN Secretary General (UNSG) issued a [statement](https://www.un.org/sg/en/content/sg/statement/2023-04-15/statement-attributable-the-spokesperson-for-the-secretary-general-%E2%80%93-sudan%C2%A0#:~:text=15%20April%202023-,Statement%20attributable%20to%20the%20Spokesperson%20for%20the%20Secretary-General%20%E2%80%93%20on,Sudanese%20Armed%20Forces%20in%20Sudan.) condemning the outbreak of violence on 15 April, a [statement](https://www.un.org/sg/en/content/sg/statement/2023-04-16/statement-attributable-the-spokesperson-for-the-secretary-general-%E2%80%93-sudan) on 16 April asking parties to respect international law and calling for those responsible of the deaths and injuries of civilians to be brought to justice and another [statement](https://www.un.org/sg/en/content/sg/statement/2023-04-17/secretary-generals-remarks-sudan-%28-the-opening-of-the-forum-financing-for-development%29) on 17 April highlighting engagement with leaders across the region to restore peace. Regional bodies [IGAD](https://igad.int/wp-content/uploads/2023/04/Statement-of-IGAD-on-the-Unfolding-Security-Situation-in-Sudan.pdf) and the [African Union](https://www.peaceau.org/en/article/communique-adopted-by-the-peace-and-security-council-psc-of-the-african-union-au-at-its-1149th-meeting-held-on-16-april-2023-on-briefing-on-the-situation-in-sudan) have also issued statements on the situation. On 19 April, the UN Secretary General spoke with the President of Kenya and with the Chairperson of the African Union (AU) Commission.\n\nOn 17 April, in a press conference, the UN’s Special Representative of the Secretary General (SRSG) and head of UNITAMS for Sudan, reported that the conflict has led to several deaths and many injured. Tragically, [three staff from the World Food Program were killed in Darfur](https://www.wfp.org/news/statement-wfp-executive-director-developments-sudan), while two others were injured.\n\nThe UN High Commissioner for refugees has also [called for an end to the violence](https://twitter.com/FilippoGrandi/status/1647314909535916032?s=20) and [appealed](https://twitter.com/FilippoGrandi/status/1647587801792229376?s=20) for the safety all civilians and aid workers while expressing solidarity with WFP for the tragic loss of their three colleagues. \n\nThe United Nations Integrated Transition Assistance Mission in Sudan (UNITAMS) has issued several [statements](https://unitams.unmissions.org/en/srsg-volker-perthes-statement-partially-honored-cessation-hostilities-and-intensified-clashes) urging an immediate cessation to the fighting as well as the safety of civilians.\n\nOn 18 April, the UN High Commissioner for Human Rights [called for an immediate cessation to hostilities](https://www.ohchr.org/en/press-releases/2023/04/sudan-turk-urges-immediate-end-hostilities-return-talks) in Sudan and pleaded with the Sudan Armed Forces and Rapid Support Forces to return to the negotiating table. He called for prompt, thorough and independent investigations into the killings of civilians, including three staff of the UN’s World Food Programme, along with other reported violations.\n\nOn 20 April, the UNSG [attended a virtual meeting](https://news.un.org/en/story/2023/04/1135857) organized by the African Union which brought together the UN, the League of Arab States, the East African bloc IGAD, the European Union, and countries committed to bringing an end to the hostilities in Sudan. They discussed ways the international community can help end the violence and restore order inside Sudan. The UNSG further appealed for warring parties in Sudan to observe a ceasefire for at least three days so that civilians trapped in conflict zones can seek medical treatment, food and other essential supplies.\n\nThe African Union issued a [communiqué](https://peaceau.org/en/article/communique-of-the-ministerial-special-session-on-sudan-20-april-2023) following the meeting condemning the violence and calling for “an immediate and unconditional humanitarian ceasefire for a week starting from midnight East African Time on 20 April 2023, to allow for the observance of Eid al-Fitr, and pave the way for a more permanent ceasefire.”\n\nThey further demanded “the establishment of humanitarian corridors and allow for unhindered humanitarian access and evacuation of injured civilians; address urgently the rehabilitation of critical basic infrastructure, in particular, water and electricity utilities and ensure access by the civilian population to these services; respect the safety of diplomatic and humanitarian personnel; and also ensure the re-opening of all modes of transport, in particular the Khartoum International Airport.”\n\n**Staff presence and safety**\n\nUNHCR has 481 staff members currently in Sudan - 115 International Staff and 366 National Staff. Khartoum is a family duty station and there are an additional number of dependents including children. We are also particularly concerned about staff members in Darfur. All staff and dependents are accounted for.\n\nThe fighting has affected UNHCR offices and staff residences in Khartoum and Darfur, including stray bullets, mortars and looting. Many staff across the country are still sheltering in place (Khartoum and Darfur), while in other locations staff are able to operate relatively normally with precautions, including working from home and limiting movements (Gedaref, Kassala, White Nile, Blue Nile, South Kordofan, West Kordofan).",
+      "url": "https://reliefweb.int/node/3955190",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/f0/e5/f0e560bf-db88-48cd-aa51-fb4035fd11af.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/f0/e5/f0e560bf-db88-48cd-aa51-fb4035fd11af.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/f0/e5/f0e560bf-db88-48cd-aa51-fb4035fd11af.png",
+            "version": "2414096-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/f0/e5/f0e560bf-db88-48cd-aa51-fb4035fd11af.png"
+          },
+          "filename": "Sudan Situation - External Update #1 - East and Horn of Africa, and the Great Lakes Region (20 April 2023).pdf",
+          "mimetype": "application/pdf",
+          "id": "2414096",
+          "filesize": "547500",
+          "url": "https://reliefweb.int/attachments/f0e560bf-db88-48cd-aa51-fb4035fd11af/Sudan%20Situation%20-%20External%20Update%20%231%20-%20East%20and%20Horn%20of%20Africa%2C%20and%20the%20Great%20Lakes%20Region%20%2820%20April%202023%29.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/sudan/sudan-situation-external-update-1-east-and-horn-africa-and-great-lakes-region-20-april-2023",
+      "theme": [
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        },
+        {
+          "name": "Peacekeeping and Peacebuilding",
+          "id": 4599
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Safety and Security",
+          "id": 4602
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3955190,
+      "status": "published",
+      "body-html": "<p><strong>Operational context</strong></p>\n<p><strong>Security and political developments</strong></p>\n<p>On 15 April 2023, heavy shooting broke out between the Sudanese Armed Forces (SAF) and paramilitary Rapid Support Forces (RSF) in Khartoum affecting many parts of the city. Fighting was also reported in Merowe in the Northern State between the SAF and RSF. Intense fighting, artillery fire and shelling have since continued in Khartoum as well as Darfur. Various attempts to implement ceasefires have not been successful to date.</p>\n<p>The UN Secretary General (UNSG) issued a <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.un.org/sg/en/content/sg/statement/2023-04-15/statement-attributable-the-spokesperson-for-the-secretary-general-%E2%80%93-sudan%C2%A0#:~:text=15%20April%202023-,Statement%20attributable%20to%20the%20Spokesperson%20for%20the%20Secretary-General%20%E2%80%93%20on,Sudanese%20Armed%20Forces%20in%20Sudan.\">statement</a> condemning the outbreak of violence on 15 April, a <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.un.org/sg/en/content/sg/statement/2023-04-16/statement-attributable-the-spokesperson-for-the-secretary-general-%E2%80%93-sudan\">statement</a> on 16 April asking parties to respect international law and calling for those responsible of the deaths and injuries of civilians to be brought to justice and another <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.un.org/sg/en/content/sg/statement/2023-04-17/secretary-generals-remarks-sudan-%28-the-opening-of-the-forum-financing-for-development%29\">statement</a> on 17 April highlighting engagement with leaders across the region to restore peace. Regional bodies <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://igad.int/wp-content/uploads/2023/04/Statement-of-IGAD-on-the-Unfolding-Security-Situation-in-Sudan.pdf\">IGAD</a> and the <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.peaceau.org/en/article/communique-adopted-by-the-peace-and-security-council-psc-of-the-african-union-au-at-its-1149th-meeting-held-on-16-april-2023-on-briefing-on-the-situation-in-sudan\">African Union</a> have also issued statements on the situation. On 19 April, the UN Secretary General spoke with the President of Kenya and with the Chairperson of the African Union (AU) Commission.</p>\n<p>On 17 April, in a press conference, the UN’s Special Representative of the Secretary General (SRSG) and head of UNITAMS for Sudan, reported that the conflict has led to several deaths and many injured. Tragically, <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.wfp.org/news/statement-wfp-executive-director-developments-sudan\">three staff from the World Food Program were killed in Darfur</a>, while two others were injured.</p>\n<p>The UN High Commissioner for refugees has also <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://twitter.com/FilippoGrandi/status/1647314909535916032?s=20\">called for an end to the violence</a> and <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://twitter.com/FilippoGrandi/status/1647587801792229376?s=20\">appealed</a> for the safety all civilians and aid workers while expressing solidarity with WFP for the tragic loss of their three colleagues.</p>\n<p>The United Nations Integrated Transition Assistance Mission in Sudan (UNITAMS) has issued several <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://unitams.unmissions.org/en/srsg-volker-perthes-statement-partially-honored-cessation-hostilities-and-intensified-clashes\">statements</a> urging an immediate cessation to the fighting as well as the safety of civilians.</p>\n<p>On 18 April, the UN High Commissioner for Human Rights <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.ohchr.org/en/press-releases/2023/04/sudan-turk-urges-immediate-end-hostilities-return-talks\">called for an immediate cessation to hostilities</a> in Sudan and pleaded with the Sudan Armed Forces and Rapid Support Forces to return to the negotiating table. He called for prompt, thorough and independent investigations into the killings of civilians, including three staff of the UN’s World Food Programme, along with other reported violations.</p>\n<p>On 20 April, the UNSG <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://news.un.org/en/story/2023/04/1135857\">attended a virtual meeting</a> organized by the African Union which brought together the UN, the League of Arab States, the East African bloc IGAD, the European Union, and countries committed to bringing an end to the hostilities in Sudan. They discussed ways the international community can help end the violence and restore order inside Sudan. The UNSG further appealed for warring parties in Sudan to observe a ceasefire for at least three days so that civilians trapped in conflict zones can seek medical treatment, food and other essential supplies.</p>\n<p>The African Union issued a <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://peaceau.org/en/article/communique-of-the-ministerial-special-session-on-sudan-20-april-2023\">communiqué</a> following the meeting condemning the violence and calling for “an immediate and unconditional humanitarian ceasefire for a week starting from midnight East African Time on 20 April 2023, to allow for the observance of Eid al-Fitr, and pave the way for a more permanent ceasefire.”</p>\n<p>They further demanded “the establishment of humanitarian corridors and allow for unhindered humanitarian access and evacuation of injured civilians; address urgently the rehabilitation of critical basic infrastructure, in particular, water and electricity utilities and ensure access by the civilian population to these services; respect the safety of diplomatic and humanitarian personnel; and also ensure the re-opening of all modes of transport, in particular the Khartoum International Airport.”</p>\n<p><strong>Staff presence and safety</strong></p>\n<p>UNHCR has 481 staff members currently in Sudan - 115 International Staff and 366 National Staff. Khartoum is a family duty station and there are an additional number of dependents including children. We are also particularly concerned about staff members in Darfur. All staff and dependents are accounted for.</p>\n<p>The fighting has affected UNHCR offices and staff residences in Khartoum and Darfur, including stray bullets, mortars and looting. Many staff across the country are still sheltering in place (Khartoum and Darfur), while in other locations staff are able to operate relatively normally with precautions, including working from home and limiting movements (Gedaref, Kassala, White Nile, Blue Nile, South Kordofan, West Kordofan).</p>\n"
+    }
+  },
+  "text": "# Sudan Situation: External Update #1 - East and Horn of Africa, and the Great Lakes Region (20 April 2023)\n\n**Operational context**\n\n**Security and political developments**\n\nOn 15 April 2023, heavy shooting broke out between the Sudanese Armed Forces (SAF) and paramilitary Rapid Support Forces (RSF) in Khartoum affecting many parts of the city. Fighting was also reported in Merowe in the Northern State between the SAF and RSF. Intense fighting, artillery fire and shelling have since continued in Khartoum as well as Darfur. Various attempts to implement ceasefires have not been successful to date.\n\nThe UN Secretary General (UNSG) issued a [statement](https://www.un.org/sg/en/content/sg/statement/2023-04-15/statement-attributable-the-spokesperson-for-the-secretary-general-%E2%80%93-sudan%C2%A0#:~:text=15%20April%202023-,Statement%20attributable%20to%20the%20Spokesperson%20for%20the%20Secretary-General%20%E2%80%93%20on,Sudanese%20Armed%20Forces%20in%20Sudan.) condemning the outbreak of violence on 15 April, a [statement](https://www.un.org/sg/en/content/sg/statement/2023-04-16/statement-attributable-the-spokesperson-for-the-secretary-general-%E2%80%93-sudan) on 16 April asking parties to respect international law and calling for those responsible of the deaths and injuries of civilians to be brought to justice and another [statement](https://www.un.org/sg/en/content/sg/statement/2023-04-17/secretary-generals-remarks-sudan-%28-the-opening-of-the-forum-financing-for-development%29) on 17 April highlighting engagement with leaders across the region to restore peace. Regional bodies [IGAD](https://igad.int/wp-content/uploads/2023/04/Statement-of-IGAD-on-the-Unfolding-Security-Situation-in-Sudan.pdf) and the [African Union](https://www.peaceau.org/en/article/communique-adopted-by-the-peace-and-security-council-psc-of-the-african-union-au-at-its-1149th-meeting-held-on-16-april-2023-on-briefing-on-the-situation-in-sudan) have also issued statements on the situation. On 19 April, the UN Secretary General spoke with the President of Kenya and with the Chairperson of the African Union (AU) Commission.\n\nOn 17 April, in a press conference, the UN’s Special Representative of the Secretary General (SRSG) and head of UNITAMS for Sudan, reported that the conflict has led to several deaths and many injured. Tragically, [three staff from the World Food Program were killed in Darfur](https://www.wfp.org/news/statement-wfp-executive-director-developments-sudan), while two others were injured.\n\nThe UN High Commissioner for refugees has also [called for an end to the violence](https://twitter.com/FilippoGrandi/status/1647314909535916032?s=20) and [appealed](https://twitter.com/FilippoGrandi/status/1647587801792229376?s=20) for the safety all civilians and aid workers while expressing solidarity with WFP for the tragic loss of their three colleagues. \n\nThe United Nations Integrated Transition Assistance Mission in Sudan (UNITAMS) has issued several [statements](https://unitams.unmissions.org/en/srsg-volker-perthes-statement-partially-honored-cessation-hostilities-and-intensified-clashes) urging an immediate cessation to the fighting as well as the safety of civilians.\n\nOn 18 April, the UN High Commissioner for Human Rights [called for an immediate cessation to hostilities](https://www.ohchr.org/en/press-releases/2023/04/sudan-turk-urges-immediate-end-hostilities-return-talks) in Sudan and pleaded with the Sudan Armed Forces and Rapid Support Forces to return to the negotiating table. He called for prompt, thorough and independent investigations into the killings of civilians, including three staff of the UN’s World Food Programme, along with other reported violations.\n\nOn 20 April, the UNSG [attended a virtual meeting](https://news.un.org/en/story/2023/04/1135857) organized by the African Union which brought together the UN, the League of Arab States, the East African bloc IGAD, the European Union, and countries committed to bringing an end to the hostilities in Sudan. They discussed ways the international community can help end the violence and restore order inside Sudan. The UNSG further appealed for warring parties in Sudan to observe a ceasefire for at least three days so that civilians trapped in conflict zones can seek medical treatment, food and other essential supplies.\n\nThe African Union issued a [communiqué](https://peaceau.org/en/article/communique-of-the-ministerial-special-session-on-sudan-20-april-2023) following the meeting condemning the violence and calling for “an immediate and unconditional humanitarian ceasefire for a week starting from midnight East African Time on 20 April 2023, to allow for the observance of Eid al-Fitr, and pave the way for a more permanent ceasefire.”\n\nThey further demanded “the establishment of humanitarian corridors and allow for unhindered humanitarian access and evacuation of injured civilians; address urgently the rehabilitation of critical basic infrastructure, in particular, water and electricity utilities and ensure access by the civilian population to these services; respect the safety of diplomatic and humanitarian personnel; and also ensure the re-opening of all modes of transport, in particular the Khartoum International Airport.”\n\n**Staff presence and safety**\n\nUNHCR has 481 staff members currently in Sudan - 115 International Staff and 366 National Staff. Khartoum is a family duty station and there are an additional number of dependents including children. We are also particularly concerned about staff members in Darfur. All staff and dependents are accounted for.\n\nThe fighting has affected UNHCR offices and staff residences in Khartoum and Darfur, including stray bullets, mortars and looting. Many staff across the country are still sheltering in place (Khartoum and Darfur), while in other locations staff are able to operate relatively normally with precautions, including working from home and limiting movements (Gedaref, Kassala, White Nile, Blue Nile, South Kordofan, West Kordofan).",
+  "summary": " On April 15th, 2023, heavy fighting broke out between the Sudanese Armed Forces (SAF) and paramilitary Rapid Support Forces (RSF) in Khartoum and Merowe in the Northern State. The UN Secretary General (UNSG) has issued several statements condemning the violence and calling for those responsible to be brought to justice. Regional bodies IGAD and the African Union have also issued statements. The UN High Commissioner for Human Rights has called for an immediate cessation to hostilities and the UNSG has attended a virtual meeting organized by the African Union to discuss ways the international community can help end the violence. UNHCR has 481 staff members in Sudan and all are accounted for.",
+  "metadata": {
+    "id": "3955190",
+    "name": "Sudan Situation: External Update #1 - East and Horn of Africa, and the Great Lakes Region (20 April 2023)",
+    "date_original": 1682035200000,
+    "date_changed": 1682198616000,
+    "date_created": 1682177234000,
+    "primary_country_id": 220,
+    "primary_country_name": "Sudan",
+    "primary_country_iso3": "sdn",
+    "primary_country_location": {
+      "lon": 30,
+      "lat": 15
+    }
+  }
+}

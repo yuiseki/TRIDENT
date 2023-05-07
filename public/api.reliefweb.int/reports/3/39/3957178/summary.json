@@ -1,0 +1,102 @@
+{
+  "original": {
+    "id": "3957178",
+    "fields": {
+      "date": {
+        "changed": "2023-04-29T09:05:59+00:00",
+        "created": "2023-04-29T06:54:05+00:00",
+        "original": "2023-04-28T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/254",
+          "name": "World",
+          "id": 254,
+          "shortname": "World",
+          "iso3": "wld",
+          "primary": true
+        }
+      ],
+      "origin": "https://interagencystandingcommittee.org/iasc-task-force-2-accountability-affected-people/supporting-donors-responsibility-greater-accountability-people-crisis",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/254",
+        "name": "World",
+        "id": 254,
+        "shortname": "World",
+        "iso3": "wld"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1025",
+          "longname": "Inter-Agency Standing Committee",
+          "name": "Inter-Agency Standing Committee",
+          "id": 1025,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "IASC",
+          "homepage": "https://interagencystandingcommittee.org/"
+        }
+      ],
+      "title": "Supporting donors’ responsibility for greater accountability to people in crisis: Review of donor AAP commitments, requirements and recommendations",
+      "body": "ANDY FEATHERSTONE\n\n**1. Introduction to the review**\n\n*This section provides a summary of the purpose and scope of the review; it describes the purpose and\norganisation of this report.*\n\n**1.1 Introduction, purpose and scope of the review**\n\n**Introduction and purpose**\n\n1. The Inter-Agency Standing Committee (IASC) Principals have called for the commitment of donors to put in place the required incentives for the system to be more engaging and responsive to the needs of affected people. The Accountability to Affected People (AAP) Task force (TF) recognises that donors have a critical influence on the way organisations conduct their work. They have a powerful role in the drive for greater accountability to people in crisis, holding humanitarian actors to account, and incentivising course corrections based on engagement with affected people and their feedback. Donors can identify gaps, address administrative challenges and provide more predictable, systematic and flexible support for collective accountability to affected people. For this reason, the TF is developing a plan to engage with donors, working closely with the Grand Bargain (GB) Participation Revolution on the drive for greater AAP.\n\n2. This review is the first stage of this process. It recognises that many recommendations have already been made, and has compiled a synthesis of these to affirm the work already undertaken. The review also included analysis of how donors are currently referencing commitments to AAP in their grant and partnership guidelines.\n\n3. The ToR outlined three deliverables from the assignment:\n\n- Meta review of donor related recommendations – a number of published reports on the humanitarian system have referred to the role of donors in accountability practices. This would consider these to produce a meta overview of the recommendations. \n\n- Review of current donors’ practices on AAP – many donors are promoting AAP in their funding guidelines and partnership document’s, in a variety of ways and approaches. This review would produce an overview of how donors are taking account of AAP. This would include the DAC donors, UN partnership guidance and other funding like the joint disaster appeals and pooled funds. \n\n- Synthesis report and recommendations for the Task Force and IASC to take forward. The consultant will be expected to discuss a draft report with the IASC TF group/workstream before producing the final version of the report.\n\n4. A short overview of the approach and methods used for the review are provided in annex 2. A list of informants that participated in the review is provided in annex 4. A list of the evaluations which contain donor AAP recommendations is provided in annex 3 of this report.",
+      "url": "https://reliefweb.int/node/3957178",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/c4/99/c499ce63-501a-4f05-96fc-4e24703f2979.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/c4/99/c499ce63-501a-4f05-96fc-4e24703f2979.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/c4/99/c499ce63-501a-4f05-96fc-4e24703f2979.png",
+            "version": "2415796-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/c4/99/c499ce63-501a-4f05-96fc-4e24703f2979.png"
+          },
+          "filename": "Supporting donors’ responsibility for greater accountability to people in crisis, IASC Task Force 2.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415796",
+          "filesize": "895473",
+          "url": "https://reliefweb.int/attachments/c499ce63-501a-4f05-96fc-4e24703f2979/Supporting%20donors%E2%80%99%20responsibility%20for%20greater%20accountability%20to%20people%20in%20crisis%2C%20IASC%20Task%20Force%202.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/world/supporting-donors-responsibility-greater-accountability-people-crisis-review-donor-aap-commitments-requirements-and-recommendations",
+      "theme": [
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Humanitarian Financing",
+          "id": 4597
+        }
+      ],
+      "id": 3957178,
+      "status": "published",
+      "body-html": "<p>ANDY FEATHERSTONE</p>\n<p><strong>1. Introduction to the review</strong></p>\n<p><em>This section provides a summary of the purpose and scope of the review; it describes the purpose and\norganisation of this report.</em></p>\n<p><strong>1.1 Introduction, purpose and scope of the review</strong></p>\n<p><strong>Introduction and purpose</strong></p>\n<ol>\n<li>\n<p>The Inter-Agency Standing Committee (IASC) Principals have called for the commitment of donors to put in place the required incentives for the system to be more engaging and responsive to the needs of affected people. The Accountability to Affected People (AAP) Task force (TF) recognises that donors have a critical influence on the way organisations conduct their work. They have a powerful role in the drive for greater accountability to people in crisis, holding humanitarian actors to account, and incentivising course corrections based on engagement with affected people and their feedback. Donors can identify gaps, address administrative challenges and provide more predictable, systematic and flexible support for collective accountability to affected people. For this reason, the TF is developing a plan to engage with donors, working closely with the Grand Bargain (GB) Participation Revolution on the drive for greater AAP.</p>\n</li>\n<li>\n<p>This review is the first stage of this process. It recognises that many recommendations have already been made, and has compiled a synthesis of these to affirm the work already undertaken. The review also included analysis of how donors are currently referencing commitments to AAP in their grant and partnership guidelines.</p>\n</li>\n<li>\n<p>The ToR outlined three deliverables from the assignment:</p>\n</li>\n</ol>\n<ul>\n<li>\n<p>Meta review of donor related recommendations – a number of published reports on the humanitarian system have referred to the role of donors in accountability practices. This would consider these to produce a meta overview of the recommendations.</p>\n</li>\n<li>\n<p>Review of current donors’ practices on AAP – many donors are promoting AAP in their funding guidelines and partnership document’s, in a variety of ways and approaches. This review would produce an overview of how donors are taking account of AAP. This would include the DAC donors, UN partnership guidance and other funding like the joint disaster appeals and pooled funds.</p>\n</li>\n<li>\n<p>Synthesis report and recommendations for the Task Force and IASC to take forward. The consultant will be expected to discuss a draft report with the IASC TF group/workstream before producing the final version of the report.</p>\n</li>\n</ul>\n<ol start=\"4\">\n<li>A short overview of the approach and methods used for the review are provided in annex 2. A list of informants that participated in the review is provided in annex 4. A list of the evaluations which contain donor AAP recommendations is provided in annex 3 of this report.</li>\n</ol>\n"
+    }
+  },
+  "text": "# Supporting donors’ responsibility for greater accountability to people in crisis: Review of donor AAP commitments, requirements and recommendations\n\nANDY FEATHERSTONE\n\n**1. Introduction to the review**\n\n*This section provides a summary of the purpose and scope of the review; it describes the purpose and\norganisation of this report.*\n\n**1.1 Introduction, purpose and scope of the review**\n\n**Introduction and purpose**\n\n1. The Inter-Agency Standing Committee (IASC) Principals have called for the commitment of donors to put in place the required incentives for the system to be more engaging and responsive to the needs of affected people. The Accountability to Affected People (AAP) Task force (TF) recognises that donors have a critical influence on the way organisations conduct their work. They have a powerful role in the drive for greater accountability to people in crisis, holding humanitarian actors to account, and incentivising course corrections based on engagement with affected people and their feedback. Donors can identify gaps, address administrative challenges and provide more predictable, systematic and flexible support for collective accountability to affected people. For this reason, the TF is developing a plan to engage with donors, working closely with the Grand Bargain (GB) Participation Revolution on the drive for greater AAP.\n\n2. This review is the first stage of this process. It recognises that many recommendations have already been made, and has compiled a synthesis of these to affirm the work already undertaken. The review also included analysis of how donors are currently referencing commitments to AAP in their grant and partnership guidelines.\n\n3. The ToR outlined three deliverables from the assignment:\n\n- Meta review of donor related recommendations – a number of published reports on the humanitarian system have referred to the role of donors in accountability practices. This would consider these to produce a meta overview of the recommendations. \n\n- Review of current donors’ practices on AAP – many donors are promoting AAP in their funding guidelines and partnership document’s, in a variety of ways and approaches. This review would produce an overview of how donors are taking account of AAP. This would include the DAC donors, UN partnership guidance and other funding like the joint disaster appeals and pooled funds. \n\n- Synthesis report and recommendations for the Task Force and IASC to take forward. The consultant will be expected to discuss a draft report with the IASC TF group/workstream before producing the final version of the report.\n\n4. A short overview of the approach and methods used for the review are provided in annex 2. A list of informants that participated in the review is provided in annex 4. A list of the evaluations which contain donor AAP recommendations is provided in annex 3 of this report.",
+  "summary": " This review was conducted to assess the role of donors in the drive for greater accountability to people in crisis. It synthesized existing recommendations and analyzed how donors are currently referencing commitments to Accountability to Affected People (AAP) in their grant and partnership guidelines. The review included a meta review of donor related recommendations, a review of current donors' practices on AAP, and a synthesis report and recommendations for the Inter-Agency Standing Committee (IASC) Task Force and IASC to take forward.",
+  "metadata": {
+    "id": "3957178",
+    "name": "Supporting donors’ responsibility for greater accountability to people in crisis: Review of donor AAP commitments, requirements and recommendations",
+    "date_original": 1682640000000,
+    "date_changed": 1682759159000,
+    "date_created": 1682751245000,
+    "primary_country_id": 254,
+    "primary_country_name": "World",
+    "primary_country_iso3": "wld"
+  }
+}

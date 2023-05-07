@@ -1,0 +1,209 @@
+{
+  "original": {
+    "id": "3954028",
+    "fields": {
+      "date": {
+        "changed": "2023-04-18T18:03:15+00:00",
+        "created": "2023-04-18T17:26:07+00:00",
+        "original": "2023-04-18T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/226",
+          "name": "Syrian Arab Republic",
+          "location": {
+            "lon": 38.51,
+            "lat": 35.01
+          },
+          "id": 226,
+          "shortname": "Syria",
+          "iso3": "syr",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/226",
+        "name": "Syrian Arab Republic",
+        "location": {
+          "lon": 38.51,
+          "lat": 35.01
+        },
+        "id": 226,
+        "shortname": "Syria",
+        "iso3": "syr"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EQ",
+          "name": "Earthquake",
+          "id": 4628
+        },
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        },
+        {
+          "code": "FF",
+          "name": "Flash Flood",
+          "id": 4624
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1979",
+          "longname": "United Nations Children's Fund",
+          "spanish_name": "Fondo de las Naciones Unidas para la Infancia",
+          "name": "UN Children's Fund",
+          "id": 1979,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNICEF",
+          "homepage": "http://www.unicef.org"
+        }
+      ],
+      "title": "UNICEF Syria Humanitarian Situation Report No. 8 (Earthquake): 29 March - 11 April 2023",
+      "body": "**Highlights**\n\n- UNICEF and partner’s emergency response is being strengthened through harnessing the invaluable support of 5,370 young volunteers, including 2,705 adolescent girls and young women, who despite themselves being affected by the earthquakes are eager to get involved as strategic partners in helping other earthquake affected children, peers and families.\n\n- UNICEF and partners reached an additional 64,129 people (119,729 people to date) with social behaviour change messages, including lifesaving messages on cholera prevention.\n\n- UNICEF and partners reached an additional 126,422 children, adolescents and caregivers (257,292 people to date) with psychosocial support, mental health and psychological first aid.\n\n- Cash response for affected families in Lattakia has been initiated, bringing the total number of people reached with UNICEF cash assistance in the whole of Syria to 88,721. In Hama, a new survey found that 50 per cent of families used the cash assistance for house repairs and rent.\n\n\n**Situation Overview & Humanitarian Needs**\n\nAccording to local and government sources, approximately 6,000 people have reportedly been killed and more than 12,000 injured across Syria as a result of the multiple earthquakes that hit parts of Syria and Türkiye on 6 February. More than 8.8 million people in Syria, including 3.7 million children and pregnant and lactating women, have been affected and many are now in urgent need of water, shelter, food and emergency medical and psychosocial assistance. Due to pre-existing gender inequalities, women and girls face additional risks which require specific attention in the humanitarian response.\n\nSince the first earthquake on 6 February, 97,400 households have been displaced in Syria. Movements of affected populations remain highly fluid. The Camp Coordination and Camp Management Cluster estimates that there are now over 2.6 million people who are internally displaced in northwest (NW) Syria, which includes those who were displaced prior to the earthquakes as well as those who have been newly displaced.\n\nWith over 10,600 buildings damaged or destroyed by the earthquakes to varying degrees in NW Syria, shelter and rubble removal remain priorities to support communities in returning to some sense of normalcy. Concerns remain regarding the vulnerability of populations in informal sites which are susceptible to high levels of damage from floods and heavy rains/winds, putting children at further risk from the elements.",
+      "url": "https://reliefweb.int/node/3954028",
+      "disaster": [
+        {
+          "name": "Syria: Floods - Feb 2023",
+          "id": 51492,
+          "glide": "FL-2023-000042-SYR",
+          "type": [
+            {
+              "code": "FF",
+              "name": "Flash Flood",
+              "id": 4624
+            },
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            }
+          ],
+          "status": "alert"
+        },
+        {
+          "name": "Türkiye/Syria: Earthquakes - Feb 2023",
+          "id": 51470,
+          "glide": "EQ-2023-000015-TUR",
+          "type": [
+            {
+              "code": "EQ",
+              "name": "Earthquake",
+              "id": 4628,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Syria: Cholera Outbreak - Sep 2022",
+          "id": 51310,
+          "glide": "EP-2022-000310-SYR",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/3d/bb/3dbbd8aa-26cb-4759-9f61-2de91f437705.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/3d/bb/3dbbd8aa-26cb-4759-9f61-2de91f437705.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/3d/bb/3dbbd8aa-26cb-4759-9f61-2de91f437705.png",
+            "version": "2413185-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/3d/bb/3dbbd8aa-26cb-4759-9f61-2de91f437705.png"
+          },
+          "filename": "UNICEF Syria Humanitarian Situation Report No. 8 (Earthquake) - 29 March-11 April 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2413185",
+          "filesize": "453996",
+          "url": "https://reliefweb.int/attachments/3dbbd8aa-26cb-4759-9f61-2de91f437705/UNICEF%20Syria%20Humanitarian%20Situation%20Report%20No.%208%20%28Earthquake%29%20-%2029%20March-11%20April%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/syrian-arab-republic/unicef-syria-humanitarian-situation-report-no-8-earthquake-29-march-11-april-2023",
+      "theme": [
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3954028,
+      "status": "published",
+      "body-html": "<p><strong>Highlights</strong></p>\n<ul>\n<li>\n<p>UNICEF and partner’s emergency response is being strengthened through harnessing the invaluable support of 5,370 young volunteers, including 2,705 adolescent girls and young women, who despite themselves being affected by the earthquakes are eager to get involved as strategic partners in helping other earthquake affected children, peers and families.</p>\n</li>\n<li>\n<p>UNICEF and partners reached an additional 64,129 people (119,729 people to date) with social behaviour change messages, including lifesaving messages on cholera prevention.</p>\n</li>\n<li>\n<p>UNICEF and partners reached an additional 126,422 children, adolescents and caregivers (257,292 people to date) with psychosocial support, mental health and psychological first aid.</p>\n</li>\n<li>\n<p>Cash response for affected families in Lattakia has been initiated, bringing the total number of people reached with UNICEF cash assistance in the whole of Syria to 88,721. In Hama, a new survey found that 50 per cent of families used the cash assistance for house repairs and rent.</p>\n</li>\n</ul>\n<p><strong>Situation Overview &amp; Humanitarian Needs</strong></p>\n<p>According to local and government sources, approximately 6,000 people have reportedly been killed and more than 12,000 injured across Syria as a result of the multiple earthquakes that hit parts of Syria and Türkiye on 6 February. More than 8.8 million people in Syria, including 3.7 million children and pregnant and lactating women, have been affected and many are now in urgent need of water, shelter, food and emergency medical and psychosocial assistance. Due to pre-existing gender inequalities, women and girls face additional risks which require specific attention in the humanitarian response.</p>\n<p>Since the first earthquake on 6 February, 97,400 households have been displaced in Syria. Movements of affected populations remain highly fluid. The Camp Coordination and Camp Management Cluster estimates that there are now over 2.6 million people who are internally displaced in northwest (NW) Syria, which includes those who were displaced prior to the earthquakes as well as those who have been newly displaced.</p>\n<p>With over 10,600 buildings damaged or destroyed by the earthquakes to varying degrees in NW Syria, shelter and rubble removal remain priorities to support communities in returning to some sense of normalcy. Concerns remain regarding the vulnerability of populations in informal sites which are susceptible to high levels of damage from floods and heavy rains/winds, putting children at further risk from the elements.</p>\n"
+    }
+  },
+  "text": "# UNICEF Syria Humanitarian Situation Report No. 8 (Earthquake): 29 March - 11 April 2023\n\n**Highlights**\n\n- UNICEF and partner’s emergency response is being strengthened through harnessing the invaluable support of 5,370 young volunteers, including 2,705 adolescent girls and young women, who despite themselves being affected by the earthquakes are eager to get involved as strategic partners in helping other earthquake affected children, peers and families.\n\n- UNICEF and partners reached an additional 64,129 people (119,729 people to date) with social behaviour change messages, including lifesaving messages on cholera prevention.\n\n- UNICEF and partners reached an additional 126,422 children, adolescents and caregivers (257,292 people to date) with psychosocial support, mental health and psychological first aid.\n\n- Cash response for affected families in Lattakia has been initiated, bringing the total number of people reached with UNICEF cash assistance in the whole of Syria to 88,721. In Hama, a new survey found that 50 per cent of families used the cash assistance for house repairs and rent.\n\n\n**Situation Overview & Humanitarian Needs**\n\nAccording to local and government sources, approximately 6,000 people have reportedly been killed and more than 12,000 injured across Syria as a result of the multiple earthquakes that hit parts of Syria and Türkiye on 6 February. More than 8.8 million people in Syria, including 3.7 million children and pregnant and lactating women, have been affected and many are now in urgent need of water, shelter, food and emergency medical and psychosocial assistance. Due to pre-existing gender inequalities, women and girls face additional risks which require specific attention in the humanitarian response.\n\nSince the first earthquake on 6 February, 97,400 households have been displaced in Syria. Movements of affected populations remain highly fluid. The Camp Coordination and Camp Management Cluster estimates that there are now over 2.6 million people who are internally displaced in northwest (NW) Syria, which includes those who were displaced prior to the earthquakes as well as those who have been newly displaced.\n\nWith over 10,600 buildings damaged or destroyed by the earthquakes to varying degrees in NW Syria, shelter and rubble removal remain priorities to support communities in returning to some sense of normalcy. Concerns remain regarding the vulnerability of populations in informal sites which are susceptible to high levels of damage from floods and heavy rains/winds, putting children at further risk from the elements.",
+  "summary": " UNICEF and partners are responding to the multiple earthquakes that have hit parts of Syria and Turkey, resulting in 6,000 deaths and 12,000 injuries. 8.8 million people, including 3.7 million children, are affected and in need of water, shelter, food, and emergency medical and psychosocial assistance. 97,400 households have been displaced, and 10,600 buildings have been damaged or destroyed. UNICEF and partners are providing social behavior change messages, psychosocial support, mental health and psychological first aid, and cash assistance to affected families.",
+  "metadata": {
+    "id": "3954028",
+    "name": "UNICEF Syria Humanitarian Situation Report No. 8 (Earthquake): 29 March - 11 April 2023",
+    "date_original": 1681776000000,
+    "date_changed": 1681840995000,
+    "date_created": 1681838767000,
+    "primary_country_id": 226,
+    "primary_country_name": "Syrian Arab Republic",
+    "primary_country_iso3": "syr",
+    "primary_country_location": {
+      "lon": 38.51,
+      "lat": 35.01
+    }
+  }
+}

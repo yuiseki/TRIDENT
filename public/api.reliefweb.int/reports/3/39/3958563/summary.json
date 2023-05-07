@@ -1,0 +1,129 @@
+{
+  "original": {
+    "id": "3958563",
+    "fields": {
+      "date": {
+        "changed": "2023-05-04T10:43:35+00:00",
+        "created": "2023-05-04T10:33:19+00:00",
+        "original": "2023-05-04T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/180",
+          "name": "occupied Palestinian territory",
+          "location": {
+            "lon": 35.2332,
+            "lat": 31.9522
+          },
+          "id": 180,
+          "shortname": "oPt",
+          "iso3": "pse",
+          "primary": true
+        }
+      ],
+      "origin": "https://healthclusteropt.org/pages/3/situation-reports#20230503-231115",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/180",
+        "name": "occupied Palestinian territory",
+        "location": {
+          "lon": 35.2332,
+          "lat": 31.9522
+        },
+        "id": 180,
+        "shortname": "oPt",
+        "iso3": "pse"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/15477",
+          "name": "Health Cluster",
+          "id": 15477,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "Health Cluster",
+          "homepage": "https://healthcluster.who.int/"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1275",
+          "longname": "World Health Organization",
+          "spanish_name": "Organización Mundial de la Salud",
+          "name": "World Health Organization",
+          "id": 1275,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WHO",
+          "homepage": "http://www.who.int/"
+        }
+      ],
+      "title": "occupied Palestinian territory: Health Cluster Bulletin (March 2023)",
+      "body": "**HRP Requirements and Progress** Projects\n\n1.1 M Targeted\n\n$46.2 M Funding requested\n\n1.6 M Need Assistance\n\n380 K Reached\n\n$7.1 M Funding received",
+      "url": "https://reliefweb.int/node/3958563",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/92/c0/92c0640d-7184-44f7-93a7-744293aa0a12.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/92/c0/92c0640d-7184-44f7-93a7-744293aa0a12.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/92/c0/92c0640d-7184-44f7-93a7-744293aa0a12.png",
+            "version": "2417294-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/92/c0/92c0640d-7184-44f7-93a7-744293aa0a12.png"
+          },
+          "filename": "6452e8706b1fd.pdf",
+          "mimetype": "application/pdf",
+          "id": "2417294",
+          "filesize": "1046480",
+          "url": "https://reliefweb.int/attachments/92c0640d-7184-44f7-93a7-744293aa0a12/6452e8706b1fd.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/occupied-palestinian-territory/occupied-palestinian-territory-health-cluster-bulletin-march-2023",
+      "theme": [
+        {
+          "name": "Health",
+          "id": 4595
+        }
+      ],
+      "id": 3958563,
+      "status": "published",
+      "body-html": "<p><strong>HRP Requirements and Progress</strong> Projects</p>\n<p>1.1 M Targeted</p>\n<p>$46.2 M Funding requested</p>\n<p>1.6 M Need Assistance</p>\n<p>380 K Reached</p>\n<p>$7.1 M Funding received</p>\n"
+    }
+  },
+  "text": "# occupied Palestinian territory: Health Cluster Bulletin (March 2023)\n\n**HRP Requirements and Progress** Projects\n\n1.1 M Targeted\n\n$46.2 M Funding requested\n\n1.6 M Need Assistance\n\n380 K Reached\n\n$7.1 M Funding received",
+  "summary": " This Health Cluster Bulletin from March 2023 outlines the Humanitarian Response Plan (HRP) requirements and progress for the occupied Palestinian territory. A total of 1.1 million people are targeted, with $46.2 million requested in funding. Of those, 1.6 million need assistance, and 380,000 have been reached with $7.1 million received in funding.",
+  "metadata": {
+    "id": "3958563",
+    "name": "occupied Palestinian territory: Health Cluster Bulletin (March 2023)",
+    "date_original": 1683158400000,
+    "date_changed": 1683197015000,
+    "date_created": 1683196399000,
+    "primary_country_id": 180,
+    "primary_country_name": "occupied Palestinian territory",
+    "primary_country_iso3": "pse",
+    "primary_country_location": {
+      "lon": 35.2332,
+      "lat": 31.9522
+    }
+  }
+}

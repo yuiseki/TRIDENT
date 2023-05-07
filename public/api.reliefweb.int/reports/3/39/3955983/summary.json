@@ -1,0 +1,228 @@
+{
+  "original": {
+    "id": "3955983",
+    "fields": {
+      "date": {
+        "changed": "2023-04-26T00:25:17+00:00",
+        "created": "2023-04-25T23:21:40+00:00",
+        "original": "2023-04-24T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/64",
+          "name": "Colombia",
+          "location": {
+            "lon": -73.07,
+            "lat": 3.9
+          },
+          "id": 64,
+          "shortname": "Colombia",
+          "iso3": "col"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/113",
+          "name": "Haiti",
+          "location": {
+            "lon": -72.43,
+            "lat": 19.18
+          },
+          "id": 113,
+          "shortname": "Haiti",
+          "iso3": "hti"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/187",
+          "name": "Peru",
+          "location": {
+            "lon": -75.31,
+            "lat": -10.15
+          },
+          "id": 187,
+          "shortname": "Peru",
+          "iso3": "per",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/250",
+          "name": "Venezuela (Bolivarian Republic of)",
+          "location": {
+            "lon": -65.8,
+            "lat": 7.62
+          },
+          "id": 250,
+          "shortname": "Venezuela",
+          "iso3": "ven"
+        }
+      ],
+      "ocha_product": [
+        {
+          "name": "Situation Report",
+          "id": 12345
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/187",
+        "name": "Peru",
+        "location": {
+          "lon": -75.31,
+          "lat": -10.15
+        },
+        "id": 187,
+        "shortname": "Peru",
+        "iso3": "per"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        },
+        {
+          "code": "LS",
+          "name": "Land Slide",
+          "id": 4728
+        },
+        {
+          "code": "TC",
+          "name": "Tropical Cyclone",
+          "id": 4618
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1503",
+          "longname": "United Nations Office for the Coordination of Humanitarian Affairs",
+          "spanish_name": "Oficina de Coordinación de Asuntos Humanitarios",
+          "name": "UN Office for the Coordination of Humanitarian Affairs",
+          "id": 1503,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "OCHA",
+          "disclaimer": "To learn more about OCHA's activities, please visit https://www.unocha.org/.",
+          "homepage": "http://www.unocha.org/"
+        }
+      ],
+      "title": "Latin America & The Caribbean Weekly Situation Update (As of 24 April 2023)",
+      "body": "**PERU: FLOODING** \n\n**KEY FIGURES** \n\n $6.9M CERF ALLOCATION APPROVED TO ASSIST 247,000 PEOPLE AFFECTED BY FLOODS \n\nAs Peru's northern coasts continue reeling from the effects of heavy flooding and landslides at the beginning of the year, the UN Central Emergency Response Fund (CERF) has approved a US$6.9 million allocation for urgent response actions to assist 247,000 people in need. The intense rains and flooding have affected 377,190 people, damaged 146,539 homes, left 65,289 without homes and caused 99 deaths. \n\nNumbers continue to rise as information from the field arrives amid access constraints due to flood damage to roads and bridges – between 13 and 24 April, official figures for affected people grew by 130,378, with 35.5 per cent of all damage assessments and needs analysis records still pending processing. \n\nDespite the notable expansion of humanitarian response, there are reports of affected populations yet to be assisted. A United Nations Disaster Assessment and Coordination (UNDAC) team and a Joint Environment Unit (JEU) expert have deployed to Lambayeque, Piura, and Tumbes, the three most affected departments. \n\nThere are still urgent needs related to food, safe water, health services, hygiene, education, and protection. The floods have severely disrupted the provision of basic public services. The risk of vector-borne and contamination-related diseases has risen in marginalized urban and rural populations throughout the northern coast. Several areas of Piura and Lambayeque no longer have regular access to potable water supply. \n\nLivelihoods have been severely affected, with official figures recording 55,811 hectares of damaged crops and 37,010 hectares lost, as well as the loss of 58,831 breeding animals, which are the main sources of income and food for rural populations in these areas.　　\n\n**HAITI: HUMANITARIAN RESPONSE** \n\n**KEY FIGURES** \n\n 70 PEOPLE KILLED IN VIOLENT CLASHES FROM 14-19 APRIL \n\nFollowing the launch of the US$719.9 million Humanitarian Response Plan for 2023 that is targeting 3.2 million people out of the 5.2 million assessed as in need (or nearly half of Haiti’s population), security and humanitarian conditions in the densely-populated commune of Cité Soleil in the capital of Port-au-Prince have reached alarming levels due to rampant gang violence. 　　\n\nThese clashes are impeding the population, including vulnerable women and children, from freely moving and accessing goods and services, while also resulting in the closure of schools and health centres in the area. Nearly half of the Port-au-Prince Metropolitan Area’s fifty or so hospitals are in areas under gang control or influence, including the Haitian State Teaching Hospital (HUEH), one of Haiti’s largest health centres. With no way of guaranteeing staff or patient safety amid the violence, many health centres have had to close their doors. \n\nThe violent confrontations between rival groups, which have claimed at least 70 lives between 14 and 19 April, come as Cité Soleil continues to suffer high levels of food insecurity, in addition to being one of the epicentres of the cholera outbreak that began in October 2022. Moreover, driving rains in recent weeks have led to worsening sanitary and living conditions. \n\n**COLOMBIA: HUMANITARIAN RESPONSE** \n\n**KEY FIGURES** \n\n29K PEOPLE AFFECTED BY MASS DISPLACEMENT OR CONFINEMENT SO FAR IN 2023　　\n\n78K PEOPLE AFFECTED BY CLIMATE-RELATED DISASTERS SO FAR IN 2023　　\n\nHumanitarians continue to respond to needs brought about by the 42 displacement, confinement and disaster emergencies reported so far in 2023. Per official data, the first quarter of 2023 saw a decrease in the number of people affected and incidents related to mass displacement and confinement compared to the same period in the previous year. However, there were still at least 29,000 people affected by mass displacement and confinement, and about one million were affected by mobility restrictions in the Antioquia and Córdoba departments during a mining-related strike, a situation that also affected humanitarian operations. 　　\n\nThere are concerns over the high rate of individual displacements due to threats, targeted killings and attempted recruitment. Most displacement emergencies are along the Pacific coast, in departments along the border with Venezuela, and southern Bolívar, while threats and targeted killings persist in departments like Putumayo, Amazonas, Huila, Tolima, and southern Cesar. Moreover, humanitarian personnel have faced detentions, intimidations, attacks on medical missions, vehicle theft, and restrictions on access to goods, services, and mobility. 　　\n\nRecords show that multiple climate-related disasters also affected 78,000 people in the first quarter of 2023, down 33 per cent from the same period in 2022. Despite this decrease, these effects rendered 17,500 more people homeless than in the first quarter of 2022, an increase of 29 per cent.　　\n\n**VENEZUELA: HUMANITARIAN RESPONSE** \n\n**KEY FIGURES**   \n\n365K PEOPLE REACHED WITH ASSISTANCE IN JANUARY AND FEBRUARY 2023 \n\nBetween January and February 2023, humanitarians reached 365,000 people in 24 Venezuelan states. To date, in 2023, US$64.8 million have been received for humanitarian assistance in the country. The clusters that reached the most people were Health (320,000)  Water, Sanitation and Hygiene (WASH) (138,000) and Protection (97,000).    \n\nData reported by partners during the first two months of the year shows a similar trend to the same period in 2022. Some sectors report a significant increase in people reached during the reporting months, which can be attributed to organizations initiating activities at the beginning of the year.    \n\nWithin the framework of the 2022 Central Emergency Response Fund (CERF) allocation of US$8 million, OCHA established an interagency mechanism to ensure coordination and activity monitoring, together with projects funded by the second allocation of the Venezuela Humanitarian Fund (VHF) in 11 prioritized municipalities across the states of Amazonas, Apure, and Sucre.    \n\nThe Humanitarian Response Plan 2022/2023 was updated with this year's requirements, totaling US$720 million to reach 5.2 million people through 196 projects presented by 138 partners. The plan emphasizes the importance of improving coordination with local institutions and authorities and highlights the need for preparedness and response to sudden emergencies.",
+      "url": "https://reliefweb.int/node/3955983",
+      "disaster": [
+        {
+          "name": "Peru: Floods and Landslides - Mar 2023",
+          "id": 51516,
+          "glide": "FL-2023-000036-PER",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            },
+            {
+              "code": "LS",
+              "name": "Land Slide",
+              "id": 4728
+            },
+            {
+              "code": "TC",
+              "name": "Tropical Cyclone",
+              "id": 4618
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Haiti: Cholera Outbreak - Sep 2022",
+          "id": 51336,
+          "glide": "EP-2022-000325-HTI",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/27/d2/27d2c92c-955f-4b14-b808-caefcb4456ec.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/27/d2/27d2c92c-955f-4b14-b808-caefcb4456ec.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/27/d2/27d2c92c-955f-4b14-b808-caefcb4456ec.png",
+            "version": "2414710-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/27/d2/27d2c92c-955f-4b14-b808-caefcb4456ec.png"
+          },
+          "filename": "2023-04-24 Weekly Situation Update (as of 24 April).pdf",
+          "mimetype": "application/pdf",
+          "id": "2414710",
+          "filesize": "440503",
+          "url": "https://reliefweb.int/attachments/27d2c92c-955f-4b14-b808-caefcb4456ec/2023-04-24%20Weekly%20Situation%20Update%20%28as%20of%2024%20April%29.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/peru/latin-america-caribbean-weekly-situation-update-24-april-2023",
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3955983,
+      "status": "published",
+      "body-html": "<p><strong>PERU: FLOODING</strong></p>\n<p><strong>KEY FIGURES</strong></p>\n<p>$6.9M CERF ALLOCATION APPROVED TO ASSIST 247,000 PEOPLE AFFECTED BY FLOODS</p>\n<p>As Peru's northern coasts continue reeling from the effects of heavy flooding and landslides at the beginning of the year, the UN Central Emergency Response Fund (CERF) has approved a US$6.9 million allocation for urgent response actions to assist 247,000 people in need. The intense rains and flooding have affected 377,190 people, damaged 146,539 homes, left 65,289 without homes and caused 99 deaths.</p>\n<p>Numbers continue to rise as information from the field arrives amid access constraints due to flood damage to roads and bridges – between 13 and 24 April, official figures for affected people grew by 130,378, with 35.5 per cent of all damage assessments and needs analysis records still pending processing.</p>\n<p>Despite the notable expansion of humanitarian response, there are reports of affected populations yet to be assisted. A United Nations Disaster Assessment and Coordination (UNDAC) team and a Joint Environment Unit (JEU) expert have deployed to Lambayeque, Piura, and Tumbes, the three most affected departments.</p>\n<p>There are still urgent needs related to food, safe water, health services, hygiene, education, and protection. The floods have severely disrupted the provision of basic public services. The risk of vector-borne and contamination-related diseases has risen in marginalized urban and rural populations throughout the northern coast. Several areas of Piura and Lambayeque no longer have regular access to potable water supply.</p>\n<p>Livelihoods have been severely affected, with official figures recording 55,811 hectares of damaged crops and 37,010 hectares lost, as well as the loss of 58,831 breeding animals, which are the main sources of income and food for rural populations in these areas.　　</p>\n<p><strong>HAITI: HUMANITARIAN RESPONSE</strong></p>\n<p><strong>KEY FIGURES</strong></p>\n<p>70 PEOPLE KILLED IN VIOLENT CLASHES FROM 14-19 APRIL</p>\n<p>Following the launch of the US$719.9 million Humanitarian Response Plan for 2023 that is targeting 3.2 million people out of the 5.2 million assessed as in need (or nearly half of Haiti’s population), security and humanitarian conditions in the densely-populated commune of Cité Soleil in the capital of Port-au-Prince have reached alarming levels due to rampant gang violence. 　　</p>\n<p>These clashes are impeding the population, including vulnerable women and children, from freely moving and accessing goods and services, while also resulting in the closure of schools and health centres in the area. Nearly half of the Port-au-Prince Metropolitan Area’s fifty or so hospitals are in areas under gang control or influence, including the Haitian State Teaching Hospital (HUEH), one of Haiti’s largest health centres. With no way of guaranteeing staff or patient safety amid the violence, many health centres have had to close their doors.</p>\n<p>The violent confrontations between rival groups, which have claimed at least 70 lives between 14 and 19 April, come as Cité Soleil continues to suffer high levels of food insecurity, in addition to being one of the epicentres of the cholera outbreak that began in October 2022. Moreover, driving rains in recent weeks have led to worsening sanitary and living conditions.</p>\n<p><strong>COLOMBIA: HUMANITARIAN RESPONSE</strong></p>\n<p><strong>KEY FIGURES</strong></p>\n<p>29K PEOPLE AFFECTED BY MASS DISPLACEMENT OR CONFINEMENT SO FAR IN 2023　　</p>\n<p>78K PEOPLE AFFECTED BY CLIMATE-RELATED DISASTERS SO FAR IN 2023　　</p>\n<p>Humanitarians continue to respond to needs brought about by the 42 displacement, confinement and disaster emergencies reported so far in 2023. Per official data, the first quarter of 2023 saw a decrease in the number of people affected and incidents related to mass displacement and confinement compared to the same period in the previous year. However, there were still at least 29,000 people affected by mass displacement and confinement, and about one million were affected by mobility restrictions in the Antioquia and Córdoba departments during a mining-related strike, a situation that also affected humanitarian operations. 　　</p>\n<p>There are concerns over the high rate of individual displacements due to threats, targeted killings and attempted recruitment. Most displacement emergencies are along the Pacific coast, in departments along the border with Venezuela, and southern Bolívar, while threats and targeted killings persist in departments like Putumayo, Amazonas, Huila, Tolima, and southern Cesar. Moreover, humanitarian personnel have faced detentions, intimidations, attacks on medical missions, vehicle theft, and restrictions on access to goods, services, and mobility. 　　</p>\n<p>Records show that multiple climate-related disasters also affected 78,000 people in the first quarter of 2023, down 33 per cent from the same period in 2022. Despite this decrease, these effects rendered 17,500 more people homeless than in the first quarter of 2022, an increase of 29 per cent.　　</p>\n<p><strong>VENEZUELA: HUMANITARIAN RESPONSE</strong></p>\n<p><strong>KEY FIGURES</strong></p>\n<p>365K PEOPLE REACHED WITH ASSISTANCE IN JANUARY AND FEBRUARY 2023</p>\n<p>Between January and February 2023, humanitarians reached 365,000 people in 24 Venezuelan states. To date, in 2023, US$64.8 million have been received for humanitarian assistance in the country. The clusters that reached the most people were Health (320,000)  Water, Sanitation and Hygiene (WASH) (138,000) and Protection (97,000).</p>\n<p>Data reported by partners during the first two months of the year shows a similar trend to the same period in 2022. Some sectors report a significant increase in people reached during the reporting months, which can be attributed to organizations initiating activities at the beginning of the year.</p>\n<p>Within the framework of the 2022 Central Emergency Response Fund (CERF) allocation of US$8 million, OCHA established an interagency mechanism to ensure coordination and activity monitoring, together with projects funded by the second allocation of the Venezuela Humanitarian Fund (VHF) in 11 prioritized municipalities across the states of Amazonas, Apure, and Sucre.</p>\n<p>The Humanitarian Response Plan 2022/2023 was updated with this year's requirements, totaling US$720 million to reach 5.2 million people through 196 projects presented by 138 partners. The plan emphasizes the importance of improving coordination with local institutions and authorities and highlights the need for preparedness and response to sudden emergencies.</p>\n"
+    }
+  },
+  "text": "# Latin America & The Caribbean Weekly Situation Update (As of 24 April 2023)\n\n**PERU: FLOODING** \n\n**KEY FIGURES** \n\n $6.9M CERF ALLOCATION APPROVED TO ASSIST 247,000 PEOPLE AFFECTED BY FLOODS \n\nAs Peru's northern coasts continue reeling from the effects of heavy flooding and landslides at the beginning of the year, the UN Central Emergency Response Fund (CERF) has approved a US$6.9 million allocation for urgent response actions to assist 247,000 people in need. The intense rains and flooding have affected 377,190 people, damaged 146,539 homes, left 65,289 without homes and caused 99 deaths. \n\nNumbers continue to rise as information from the field arrives amid access constraints due to flood damage to roads and bridges – between 13 and 24 April, official figures for affected people grew by 130,378, with 35.5 per cent of all damage assessments and needs analysis records still pending processing. \n\nDespite the notable expansion of humanitarian response, there are reports of affected populations yet to be assisted. A United Nations Disaster Assessment and Coordination (UNDAC) team and a Joint Environment Unit (JEU) expert have deployed to Lambayeque, Piura, and Tumbes, the three most affected departments. \n\nThere are still urgent needs related to food, safe water, health services, hygiene, education, and protection. The floods have severely disrupted the provision of basic public services. The risk of vector-borne and contamination-related diseases has risen in marginalized urban and rural populations throughout the northern coast. Several areas of Piura and Lambayeque no longer have regular access to potable water supply. \n\nLivelihoods have been severely affected, with official figures recording 55,811 hectares of damaged crops and 37,010 hectares lost, as well as the loss of 58,831 breeding animals, which are the main sources of income and food for rural populations in these areas.　　\n\n**HAITI: HUMANITARIAN RESPONSE** \n\n**KEY FIGURES** \n\n 70 PEOPLE KILLED IN VIOLENT CLASHES FROM 14-19 APRIL \n\nFollowing the launch of the US$719.9 million Humanitarian Response Plan for 2023 that is targeting 3.2 million people out of the 5.2 million assessed as in need (or nearly half of Haiti’s population), security and humanitarian conditions in the densely-populated commune of Cité Soleil in the capital of Port-au-Prince have reached alarming levels due to rampant gang violence. 　　\n\nThese clashes are impeding the population, including vulnerable women and children, from freely moving and accessing goods and services, while also resulting in the closure of schools and health centres in the area. Nearly half of the Port-au-Prince Metropolitan Area’s fifty or so hospitals are in areas under gang control or influence, including the Haitian State Teaching Hospital (HUEH), one of Haiti’s largest health centres. With no way of guaranteeing staff or patient safety amid the violence, many health centres have had to close their doors. \n\nThe violent confrontations between rival groups, which have claimed at least 70 lives between 14 and 19 April, come as Cité Soleil continues to suffer high levels of food insecurity, in addition to being one of the epicentres of the cholera outbreak that began in October 2022. Moreover, driving rains in recent weeks have led to worsening sanitary and living conditions. \n\n**COLOMBIA: HUMANITARIAN RESPONSE** \n\n**KEY FIGURES** \n\n29K PEOPLE AFFECTED BY MASS DISPLACEMENT OR CONFINEMENT SO FAR IN 2023　　\n\n78K PEOPLE AFFECTED BY CLIMATE-RELATED DISASTERS SO FAR IN 2023　　\n\nHumanitarians continue to respond to needs brought about by the 42 displacement, confinement and disaster emergencies reported so far in 2023. Per official data, the first quarter of 2023 saw a decrease in the number of people affected and incidents related to mass displacement and confinement compared to the same period in the previous year. However, there were still at least 29,000 people affected by mass displacement and confinement, and about one million were affected by mobility restrictions in the Antioquia and Córdoba departments during a mining-related strike, a situation that also affected humanitarian operations. 　　\n\nThere are concerns over the high rate of individual displacements due to threats, targeted killings and attempted recruitment. Most displacement emergencies are along the Pacific coast, in departments along the border with Venezuela, and southern Bolívar, while threats and targeted killings persist in departments like Putumayo, Amazonas, Huila, Tolima, and southern Cesar. Moreover, humanitarian personnel have faced detentions, intimidations, attacks on medical missions, vehicle theft, and restrictions on access to goods, services, and mobility. 　　\n\nRecords show that multiple climate-related disasters also affected 78,000 people in the first quarter of 2023, down 33 per cent from the same period in 2022. Despite this decrease, these effects rendered 17,500 more people homeless than in the first quarter of 2022, an increase of 29 per cent.　　\n\n**VENEZUELA: HUMANITARIAN RESPONSE** \n\n**KEY FIGURES**   \n\n365K PEOPLE REACHED WITH ASSISTANCE IN JANUARY AND FEBRUARY 2023 \n\nBetween January and February 2023, humanitarians reached 365,000 people in 24 Venezuelan states. To date, in 2023, US$64.8 million have been received for humanitarian assistance in the country. The clusters that reached the most people were Health (320,000)  Water, Sanitation and Hygiene (WASH) (138,000) and Protection (97,000).    \n\nData reported by partners during the first two months of the year shows a similar trend to the same period in 2022. Some sectors report a significant increase in people reached during the reporting months, which can be attributed to organizations initiating activities at the beginning of the year.    \n\nWithin the framework of the 2022 Central Emergency Response Fund (CERF) allocation of US$8 million, OCHA established an interagency mechanism to ensure coordination and activity monitoring, together with projects funded by the second allocation of the Venezuela Humanitarian Fund (VHF) in 11 prioritized municipalities across the states of Amazonas, Apure, and Sucre.    \n\nThe Humanitarian Response Plan 2022/2023 was updated with this year's requirements, totaling US$720 million to reach 5.2 million people through 196 projects presented by 138 partners. The plan emphasizes the importance of improving coordination with local institutions and authorities and highlights the need for preparedness and response to sudden emergencies.",
+  "summary": " In Peru, flooding has affected 377,190 people, damaged 146,539 homes, left 65,289 without homes and caused 99 deaths. In Haiti, 70 people have been killed in violent clashes from 14-19 April, and in Colombia, 29,000 people have been affected by mass displacement or confinement and 78,000 people have been affected by climate-related disasters so far in 2023. In Venezuela, 365,000 people have been reached with assistance in January and February 2023, and the Humanitarian Response Plan 2022/2023 requires US$720 million to reach 5.2 million people. The UN Central Emergency Response Fund (CERF) has approved a US$6.9 million allocation for urgent response actions to assist 247,000 people in need in Peru.",
+  "metadata": {
+    "id": "3955983",
+    "name": "Latin America & The Caribbean Weekly Situation Update (As of 24 April 2023)",
+    "date_original": 1682294400000,
+    "date_changed": 1682468717000,
+    "date_created": 1682464900000,
+    "primary_country_id": 187,
+    "primary_country_name": "Peru",
+    "primary_country_iso3": "per",
+    "primary_country_location": {
+      "lon": -75.31,
+      "lat": -10.15
+    }
+  }
+}

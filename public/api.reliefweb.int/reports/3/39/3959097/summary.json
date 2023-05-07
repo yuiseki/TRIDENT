@@ -1,0 +1,454 @@
+{
+  "original": {
+    "id": "3959097",
+    "fields": {
+      "date": {
+        "changed": "2023-05-05T17:12:41+00:00",
+        "created": "2023-05-05T13:45:23+00:00",
+        "original": "2023-05-05T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/13",
+          "name": "Afghanistan",
+          "location": {
+            "lon": 66.03,
+            "lat": 33.84
+          },
+          "id": 13,
+          "shortname": "Afghanistan",
+          "iso3": "afg",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/46",
+          "name": "Burkina Faso",
+          "location": {
+            "lon": -1.57,
+            "lat": 12.28
+          },
+          "id": 46,
+          "shortname": "Burkina Faso",
+          "iso3": "bfa"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/49",
+          "name": "Cameroon",
+          "location": {
+            "lon": 12.21,
+            "lat": 4.81
+          },
+          "id": 49,
+          "shortname": "Cameroon",
+          "iso3": "cmr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/55",
+          "name": "Chad",
+          "location": {
+            "lon": 18.66,
+            "lat": 15.36
+          },
+          "id": 55,
+          "shortname": "Chad",
+          "iso3": "tcd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/64",
+          "name": "Colombia",
+          "location": {
+            "lon": -73.07,
+            "lat": 3.9
+          },
+          "id": 64,
+          "shortname": "Colombia",
+          "iso3": "col"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/75",
+          "name": "Democratic Republic of the Congo",
+          "location": {
+            "lon": 21.7587,
+            "lat": -4.03833
+          },
+          "id": 75,
+          "shortname": "DR Congo",
+          "iso3": "cod"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/87",
+          "name": "Ethiopia",
+          "location": {
+            "lon": 39.62,
+            "lat": 8.63
+          },
+          "id": 87,
+          "shortname": "Ethiopia",
+          "iso3": "eth"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/109",
+          "name": "Guatemala",
+          "location": {
+            "lon": -90.39,
+            "lat": 15.61
+          },
+          "id": 109,
+          "shortname": "Guatemala",
+          "iso3": "gtm"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/113",
+          "name": "Haiti",
+          "location": {
+            "lon": -72.43,
+            "lat": 19.18
+          },
+          "id": 113,
+          "shortname": "Haiti",
+          "iso3": "hti"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/116",
+          "name": "Honduras",
+          "location": {
+            "lon": -86.62,
+            "lat": 14.82
+          },
+          "id": 116,
+          "shortname": "Honduras",
+          "iso3": "hnd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/122",
+          "name": "Iraq",
+          "location": {
+            "lon": 43.4,
+            "lat": 33.05
+          },
+          "id": 122,
+          "shortname": "Iraq",
+          "iso3": "irq"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/140",
+          "name": "Libya",
+          "location": {
+            "lon": 18.02,
+            "lat": 27.04
+          },
+          "id": 140,
+          "shortname": "Libya",
+          "iso3": "lby"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/146",
+          "name": "Malawi",
+          "location": {
+            "lon": 33.74,
+            "lat": -13.22
+          },
+          "id": 146,
+          "shortname": "Malawi",
+          "iso3": "mwi"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/149",
+          "name": "Mali",
+          "location": {
+            "lon": -1.25,
+            "lat": 17.35
+          },
+          "id": 149,
+          "shortname": "Mali",
+          "iso3": "mli"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/164",
+          "name": "Mozambique",
+          "location": {
+            "lon": 34.75,
+            "lat": -18.09
+          },
+          "id": 164,
+          "shortname": "Mozambique",
+          "iso3": "moz"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/165",
+          "name": "Myanmar",
+          "location": {
+            "lon": 96.51,
+            "lat": 21.15
+          },
+          "id": 165,
+          "shortname": "Myanmar",
+          "iso3": "mmr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/174",
+          "name": "Niger",
+          "location": {
+            "lon": 9.4,
+            "lat": 17.43
+          },
+          "id": 174,
+          "shortname": "Niger",
+          "iso3": "ner"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/175",
+          "name": "Nigeria",
+          "location": {
+            "lon": 8.11,
+            "lat": 9.59
+          },
+          "id": 175,
+          "shortname": "Nigeria",
+          "iso3": "nga"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/180",
+          "name": "occupied Palestinian territory",
+          "location": {
+            "lon": 35.2332,
+            "lat": 31.9522
+          },
+          "id": 180,
+          "shortname": "oPt",
+          "iso3": "pse"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/182",
+          "name": "Pakistan",
+          "location": {
+            "lon": 69.39,
+            "lat": 29.97
+          },
+          "id": 182,
+          "shortname": "Pakistan",
+          "iso3": "pak"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/216",
+          "name": "Somalia",
+          "location": {
+            "lon": 47.33,
+            "lat": 5.79
+          },
+          "id": 216,
+          "shortname": "Somalia",
+          "iso3": "som"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/8657",
+          "name": "South Sudan",
+          "location": {
+            "lon": 30.5,
+            "lat": 6.9
+          },
+          "id": 8657,
+          "shortname": "South Sudan",
+          "iso3": "ssd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/226",
+          "name": "Syrian Arab Republic",
+          "location": {
+            "lon": 38.51,
+            "lat": 35.01
+          },
+          "id": 226,
+          "shortname": "Syria",
+          "iso3": "syr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/236",
+          "name": "Türkiye",
+          "location": {
+            "lon": 35.18,
+            "lat": 39.06
+          },
+          "id": 236,
+          "shortname": "Türkiye",
+          "iso3": "tur"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/241",
+          "name": "Ukraine",
+          "location": {
+            "lon": 31.32,
+            "lat": 49.32
+          },
+          "id": 241,
+          "shortname": "Ukraine",
+          "iso3": "ukr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/250",
+          "name": "Venezuela (Bolivarian Republic of)",
+          "location": {
+            "lon": -65.8,
+            "lat": 7.62
+          },
+          "id": 250,
+          "shortname": "Venezuela",
+          "iso3": "ven"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/255",
+          "name": "Yemen",
+          "location": {
+            "lon": 47.62,
+            "lat": 15.94
+          },
+          "id": 255,
+          "shortname": "Yemen",
+          "iso3": "yem"
+        }
+      ],
+      "origin": "https://www.globalprotectioncluster.org/index.php/publications/1339/reports/global-protection-update/global-protection-update-protection-during",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/13",
+        "name": "Afghanistan",
+        "location": {
+          "lon": 66.03,
+          "lat": 33.84
+        },
+        "id": 13,
+        "shortname": "Afghanistan",
+        "iso3": "afg"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EQ",
+          "name": "Earthquake",
+          "id": 4628
+        },
+        {
+          "code": "TC",
+          "name": "Tropical Cyclone",
+          "id": 4618
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/8619",
+          "longname": "Protection Cluster",
+          "name": "Protection Cluster",
+          "id": 8619,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "Protection Cluster",
+          "homepage": "http://www.globalprotectioncluster.org/"
+        }
+      ],
+      "title": "Global Protection Update (March 2023): Protection During Elections - The Right of Internally Displaced Persons to Participate in Elections",
+      "body": "Conflicts, combined with climate shocks, political crises and rising food and energy prices, will make 2023 a year of vast humanitarian needs. Violence continues to grow with no signs of deceleration across several countries where Protection Clusters are active.\n\nThis Global Protection Update, covering the first quarter of 2023, provides a country-by-country news update, explores emerging protection trends and tracks the risks faced by vulnerable populations in crises.\n\nAccording to the Global Protection Cluster’s Global Protection Risks Tracker, in the first quarter of 2023, 13 Protection Cluster operations (50%) reported a combined severity of 15 protection risks as high or very high.\n\nThe population in the majority of the territory of Afghanistan, Burkina Faso, Cameroon, DR Congo, Mali, Mozambique, Myanmar, Niger, South Sudan, oPt, Syria and Ukraine is extensively exposed to simultaneous sources of harm directly related to human actions.\n\nSimilarly, in these countries the population faces serious barriers in accessing protection services.\n\nThis Update also places a thematic focus on protection during elections. Around the world, internally displaced persons face several obstacles in exercising their right to public and political participation, including a lack of information and documentation, insecurity hampering return of IDPs to their areas of origin, legal and administrative issues.\n\nProtection Clusters and partners are working together, across sectors and with governments and authorities, identifying protection risks related to the public and political participation of IDPs, elaborating guidance and recommendations aimed at supporting IDP participation, and revising strategic advocacy approaches. The Global Protection Update provides examples from Nigeria, Somalia and DR Congo aimed at highlighting the challenges faced by IDPs in participating in elections, and the measures undertaken by Protection Clusters to support their enfranchisement and prospects for durable solutions.",
+      "url": "https://reliefweb.int/node/3959097",
+      "disaster": [
+        {
+          "name": "Tropical Cyclone Freddy - Feb 2023",
+          "id": 51486,
+          "glide": "TC-2023-000023-MDG",
+          "type": [
+            {
+              "code": "TC",
+              "name": "Tropical Cyclone",
+              "id": 4618,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Türkiye/Syria: Earthquakes - Feb 2023",
+          "id": 51470,
+          "glide": "EQ-2023-000015-TUR",
+          "type": [
+            {
+              "code": "EQ",
+              "name": "Earthquake",
+              "id": 4628,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/66/a4/66a4e5eb-8a88-46dc-96bd-3ff0131d1da1.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/66/a4/66a4e5eb-8a88-46dc-96bd-3ff0131d1da1.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/66/a4/66a4e5eb-8a88-46dc-96bd-3ff0131d1da1.png",
+            "version": "2417791-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/66/a4/66a4e5eb-8a88-46dc-96bd-3ff0131d1da1.png"
+          },
+          "filename": "gpc_protection_update_elections49.pdf",
+          "mimetype": "application/pdf",
+          "id": "2417791",
+          "filesize": "1397366",
+          "url": "https://reliefweb.int/attachments/66a4e5eb-8a88-46dc-96bd-3ff0131d1da1/gpc_protection_update_elections49.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/afghanistan/global-protection-update-march-2023-protection-during-elections-right-internally-displaced-persons-participate-elections",
+      "redirects": [
+        "https://reliefweb.int/report/world/global-protection-update-protection-during-elections-march-2023",
+        "https://reliefweb.int/report/afghanistan/global-protection-update-protection-during-elections-march-2023"
+      ],
+      "theme": [
+        {
+          "name": "Gender",
+          "id": 4594
+        },
+        {
+          "name": "Peacekeeping and Peacebuilding",
+          "id": 4599
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Safety and Security",
+          "id": 4602
+        }
+      ],
+      "id": 3959097,
+      "status": "published",
+      "body-html": "<p>Conflicts, combined with climate shocks, political crises and rising food and energy prices, will make 2023 a year of vast humanitarian needs. Violence continues to grow with no signs of deceleration across several countries where Protection Clusters are active.</p>\n<p>This Global Protection Update, covering the first quarter of 2023, provides a country-by-country news update, explores emerging protection trends and tracks the risks faced by vulnerable populations in crises.</p>\n<p>According to the Global Protection Cluster’s Global Protection Risks Tracker, in the first quarter of 2023, 13 Protection Cluster operations (50%) reported a combined severity of 15 protection risks as high or very high.</p>\n<p>The population in the majority of the territory of Afghanistan, Burkina Faso, Cameroon, DR Congo, Mali, Mozambique, Myanmar, Niger, South Sudan, oPt, Syria and Ukraine is extensively exposed to simultaneous sources of harm directly related to human actions.</p>\n<p>Similarly, in these countries the population faces serious barriers in accessing protection services.</p>\n<p>This Update also places a thematic focus on protection during elections. Around the world, internally displaced persons face several obstacles in exercising their right to public and political participation, including a lack of information and documentation, insecurity hampering return of IDPs to their areas of origin, legal and administrative issues.</p>\n<p>Protection Clusters and partners are working together, across sectors and with governments and authorities, identifying protection risks related to the public and political participation of IDPs, elaborating guidance and recommendations aimed at supporting IDP participation, and revising strategic advocacy approaches. The Global Protection Update provides examples from Nigeria, Somalia and DR Congo aimed at highlighting the challenges faced by IDPs in participating in elections, and the measures undertaken by Protection Clusters to support their enfranchisement and prospects for durable solutions.</p>\n"
+    }
+  },
+  "text": "# Global Protection Update (March 2023): Protection During Elections - The Right of Internally Displaced Persons to Participate in Elections\n\nConflicts, combined with climate shocks, political crises and rising food and energy prices, will make 2023 a year of vast humanitarian needs. Violence continues to grow with no signs of deceleration across several countries where Protection Clusters are active.\n\nThis Global Protection Update, covering the first quarter of 2023, provides a country-by-country news update, explores emerging protection trends and tracks the risks faced by vulnerable populations in crises.\n\nAccording to the Global Protection Cluster’s Global Protection Risks Tracker, in the first quarter of 2023, 13 Protection Cluster operations (50%) reported a combined severity of 15 protection risks as high or very high.\n\nThe population in the majority of the territory of Afghanistan, Burkina Faso, Cameroon, DR Congo, Mali, Mozambique, Myanmar, Niger, South Sudan, oPt, Syria and Ukraine is extensively exposed to simultaneous sources of harm directly related to human actions.\n\nSimilarly, in these countries the population faces serious barriers in accessing protection services.\n\nThis Update also places a thematic focus on protection during elections. Around the world, internally displaced persons face several obstacles in exercising their right to public and political participation, including a lack of information and documentation, insecurity hampering return of IDPs to their areas of origin, legal and administrative issues.\n\nProtection Clusters and partners are working together, across sectors and with governments and authorities, identifying protection risks related to the public and political participation of IDPs, elaborating guidance and recommendations aimed at supporting IDP participation, and revising strategic advocacy approaches. The Global Protection Update provides examples from Nigeria, Somalia and DR Congo aimed at highlighting the challenges faced by IDPs in participating in elections, and the measures undertaken by Protection Clusters to support their enfranchisement and prospects for durable solutions.",
+  "summary": " This Global Protection Update provides a country-by-country news update and explores emerging protection trends in the first quarter of 2023. It also focuses on the right of internally displaced persons to participate in elections, highlighting the challenges they face and the measures Protection Clusters are taking to support their enfranchisement.",
+  "metadata": {
+    "id": "3959097",
+    "name": "Global Protection Update (March 2023): Protection During Elections - The Right of Internally Displaced Persons to Participate in Elections",
+    "date_original": 1683244800000,
+    "date_changed": 1683306761000,
+    "date_created": 1683294323000,
+    "primary_country_id": 13,
+    "primary_country_name": "Afghanistan",
+    "primary_country_iso3": "afg",
+    "primary_country_location": {
+      "lon": 66.03,
+      "lat": 33.84
+    }
+  }
+}

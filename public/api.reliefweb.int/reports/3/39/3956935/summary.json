@@ -1,0 +1,129 @@
+{
+  "original": {
+    "id": "3956935",
+    "fields": {
+      "date": {
+        "changed": "2023-04-28T12:20:52+00:00",
+        "created": "2023-04-28T11:55:59+00:00",
+        "original": "2023-04-28T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/220",
+          "name": "Sudan",
+          "location": {
+            "lon": 30,
+            "lat": 15
+          },
+          "id": 220,
+          "shortname": "Sudan",
+          "iso3": "sdn",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/220",
+        "name": "Sudan",
+        "location": {
+          "lon": 30,
+          "lat": 15
+        },
+        "id": 220,
+        "shortname": "Sudan",
+        "iso3": "sdn"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1979",
+          "longname": "United Nations Children's Fund",
+          "spanish_name": "Fondo de las Naciones Unidas para la Infancia",
+          "name": "UN Children's Fund",
+          "id": 1979,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNICEF",
+          "homepage": "http://www.unicef.org"
+        }
+      ],
+      "title": "UNICEF Sudan Humanitarian Situation Report No.1 (SAF-RSF Clashes), 25 April 2023",
+      "body": "**Highlights:**\n\n- The perilous security situation across the country makes it very difficult to collect and verify information, but while fighting continues, children will continue to pay the price. At least 9 children have reportedly been killed in the fighting, and more than 50 children have reportedly been injured as hostilities continue in Khartoum, the Darfurs and North Kordofan.\n\n- UNICEF calls on all parties to refrain from attacking civilian infrastructure on which children depend - such as water and sanitation systems, health facilities and schools.\n\n- Out of 34 hospitals in the city, 16 have become non-functional while others have compromised functionality.\n\n- The fighting has disrupted critical, life-saving care for an estimated 50,000 severely acutely malnourished children. These vulnerable children need ongoing, round-the-clock care, which is being put at risk by the escalating violence.\n\n- Safe access to, and provision of food, water, hygiene, and other essential supplies is constrained across most of Sudan with the situation worsening day by day. In some areas the price of basic commodities such as bottled water, food staples, fuel for cooking and for cars has risen by 40 - 60 percent, sometimes more.\n\n- The fighting has compromised the central cold chain in Sudan, including millions of lifesaving vaccines and vital medication, including insulin doses for children. Electricity supporting the central cold chain remains unstable with only 2 days' worth of fuel remaining for the back-up generator. On 27 April, the EPI office in South Darfur was attacked; cold chain equipment, vehicles, records and assets have been either looted or destroyed. It is estimated half of the vaccines have been lost.\n\n- All schools and educational institutions in Sudan are closed, severely impacting the well-being of children.\n\n- International aid agency staff have largely been evacuated from Khartoum and Darfur; national staff are being relocated away from hotspots. Critical UN staff remain in Port Sudan where a hub has been established to lead humanitarian operations in the country.",
+      "url": "https://reliefweb.int/node/3956935",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/ec/27/ec2768d2-7596-4700-87f7-9fe4fa2f2e43.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/ec/27/ec2768d2-7596-4700-87f7-9fe4fa2f2e43.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/ec/27/ec2768d2-7596-4700-87f7-9fe4fa2f2e43.png",
+            "version": "2415578-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/ec/27/ec2768d2-7596-4700-87f7-9fe4fa2f2e43.png"
+          },
+          "filename": "UNICEF Sudan Humanitarian Situation Report No. 1 (SAF_RSF Clashes) 25 April 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415578",
+          "filesize": "405370",
+          "url": "https://reliefweb.int/attachments/ec2768d2-7596-4700-87f7-9fe4fa2f2e43/UNICEF%20Sudan%20Humanitarian%20Situation%20Report%20No.%201%20%28SAF_RSF%20Clashes%29%2025%20April%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/sudan/unicef-sudan-humanitarian-situation-report-no1-saf-rsf-clashes-25-april-2023",
+      "redirects": [
+        "https://reliefweb.int/report/sudan/unicef-sudan-humanitarian-situation-report-no1-safrsf-clashes-25-april-2023"
+      ],
+      "theme": [
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3956935,
+      "status": "published",
+      "body-html": "<p><strong>Highlights:</strong></p>\n<ul>\n<li>\n<p>The perilous security situation across the country makes it very difficult to collect and verify information, but while fighting continues, children will continue to pay the price. At least 9 children have reportedly been killed in the fighting, and more than 50 children have reportedly been injured as hostilities continue in Khartoum, the Darfurs and North Kordofan.</p>\n</li>\n<li>\n<p>UNICEF calls on all parties to refrain from attacking civilian infrastructure on which children depend - such as water and sanitation systems, health facilities and schools.</p>\n</li>\n<li>\n<p>Out of 34 hospitals in the city, 16 have become non-functional while others have compromised functionality.</p>\n</li>\n<li>\n<p>The fighting has disrupted critical, life-saving care for an estimated 50,000 severely acutely malnourished children. These vulnerable children need ongoing, round-the-clock care, which is being put at risk by the escalating violence.</p>\n</li>\n<li>\n<p>Safe access to, and provision of food, water, hygiene, and other essential supplies is constrained across most of Sudan with the situation worsening day by day. In some areas the price of basic commodities such as bottled water, food staples, fuel for cooking and for cars has risen by 40 - 60 percent, sometimes more.</p>\n</li>\n<li>\n<p>The fighting has compromised the central cold chain in Sudan, including millions of lifesaving vaccines and vital medication, including insulin doses for children. Electricity supporting the central cold chain remains unstable with only 2 days' worth of fuel remaining for the back-up generator. On 27 April, the EPI office in South Darfur was attacked; cold chain equipment, vehicles, records and assets have been either looted or destroyed. It is estimated half of the vaccines have been lost.</p>\n</li>\n<li>\n<p>All schools and educational institutions in Sudan are closed, severely impacting the well-being of children.</p>\n</li>\n<li>\n<p>International aid agency staff have largely been evacuated from Khartoum and Darfur; national staff are being relocated away from hotspots. Critical UN staff remain in Port Sudan where a hub has been established to lead humanitarian operations in the country.</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# UNICEF Sudan Humanitarian Situation Report No.1 (SAF-RSF Clashes), 25 April 2023\n\n**Highlights:**\n\n- The perilous security situation across the country makes it very difficult to collect and verify information, but while fighting continues, children will continue to pay the price. At least 9 children have reportedly been killed in the fighting, and more than 50 children have reportedly been injured as hostilities continue in Khartoum, the Darfurs and North Kordofan.\n\n- UNICEF calls on all parties to refrain from attacking civilian infrastructure on which children depend - such as water and sanitation systems, health facilities and schools.\n\n- Out of 34 hospitals in the city, 16 have become non-functional while others have compromised functionality.\n\n- The fighting has disrupted critical, life-saving care for an estimated 50,000 severely acutely malnourished children. These vulnerable children need ongoing, round-the-clock care, which is being put at risk by the escalating violence.\n\n- Safe access to, and provision of food, water, hygiene, and other essential supplies is constrained across most of Sudan with the situation worsening day by day. In some areas the price of basic commodities such as bottled water, food staples, fuel for cooking and for cars has risen by 40 - 60 percent, sometimes more.\n\n- The fighting has compromised the central cold chain in Sudan, including millions of lifesaving vaccines and vital medication, including insulin doses for children. Electricity supporting the central cold chain remains unstable with only 2 days' worth of fuel remaining for the back-up generator. On 27 April, the EPI office in South Darfur was attacked; cold chain equipment, vehicles, records and assets have been either looted or destroyed. It is estimated half of the vaccines have been lost.\n\n- All schools and educational institutions in Sudan are closed, severely impacting the well-being of children.\n\n- International aid agency staff have largely been evacuated from Khartoum and Darfur; national staff are being relocated away from hotspots. Critical UN staff remain in Port Sudan where a hub has been established to lead humanitarian operations in the country.",
+  "summary": " This UNICEF report highlights the dire humanitarian situation in Sudan due to ongoing fighting. At least 9 children have been killed and 50 injured, and 16 of 34 hospitals in the city have become non-functional. The fighting has disrupted critical care for 50,000 severely malnourished children, and access to food, water, hygiene, and other essential supplies is constrained. Schools and educational institutions are closed, and international aid agency staff have largely been evacuated. UN staff remain in Port Sudan to lead humanitarian operations.",
+  "metadata": {
+    "id": "3956935",
+    "name": "UNICEF Sudan Humanitarian Situation Report No.1 (SAF-RSF Clashes), 25 April 2023",
+    "date_original": 1682640000000,
+    "date_changed": 1682684452000,
+    "date_created": 1682682959000,
+    "primary_country_id": 220,
+    "primary_country_name": "Sudan",
+    "primary_country_iso3": "sdn",
+    "primary_country_location": {
+      "lon": 30,
+      "lat": 15
+    }
+  }
+}

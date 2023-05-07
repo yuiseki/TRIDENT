@@ -1,0 +1,142 @@
+{
+  "original": {
+    "id": "3956412",
+    "fields": {
+      "date": {
+        "changed": "2023-05-05T09:26:40+00:00",
+        "created": "2023-04-26T20:41:07+00:00",
+        "original": "2023-04-26T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/241",
+          "name": "Ukraine",
+          "location": {
+            "lon": 31.32,
+            "lat": 49.32
+          },
+          "id": 241,
+          "shortname": "Ukraine",
+          "iso3": "ukr",
+          "primary": true
+        }
+      ],
+      "origin": "https://reporting.unhcr.org/document/4729",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/241",
+        "name": "Ukraine",
+        "location": {
+          "lon": 31.32,
+          "lat": 49.32
+        },
+        "id": 241,
+        "shortname": "Ukraine",
+        "iso3": "ukr"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "Ukraine Emergency: UNHCR Operational Response, Delivery Updates (19 April 2023) [EN/UK]",
+      "body": "**OPERATIONAL CONTEXT:**\n\n• Hospitals and health workers have been impacted by shelling in areas along the front lines . On 10 April, a hospital in the city of Kherson was damaged after being hit. On 7 April, at least two health workers were reportedly injured after an ambulance on call came under shelling in Beryslav town, in an area under Ukrainian control in Khersonska oblast.\n\n• As of 18 April, OHCHR recorded 22,904 civilian casualties since Russia's invasion of Ukraine: 8,534 killed and 14,370 injured. This includes 765 civilian casualties recorded in March 2023.\n\n• On 13 April, the IAEA Director General stated that dependence of Ukraine’s Zaporizhzhia Nuclear Power Plant on a single functioning power line for external electricity poses a major risk to nuclear safety and security amid signs of continued military activity in the southern region.\n\n• Significant numbers of air and missile strikes continued. A missile strike on Sloviansk killed at least eight civilians on 14 April. The Ministry of Defence of Ukraine informed that the threat from Russia of launching further missile and air strikes across Ukraine remains high and noted that the fiercest battles are fought for Bakhmut and Mar’yinka",
+      "url": "https://reliefweb.int/node/3956412",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/cb/cf/cbcf3ea8-32dc-4a57-a731-7e4e9d4d7d01.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/cb/cf/cbcf3ea8-32dc-4a57-a731-7e4e9d4d7d01.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/cb/cf/cbcf3ea8-32dc-4a57-a731-7e4e9d4d7d01.png",
+            "version": "2415160-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/cb/cf/cbcf3ea8-32dc-4a57-a731-7e4e9d4d7d01.png"
+          },
+          "filename": "UNHCR Ukraine Weekly Update_19 April 2023.pdf",
+          "description": "English version",
+          "mimetype": "application/pdf",
+          "id": "2415160",
+          "filesize": "1508363",
+          "url": "https://reliefweb.int/attachments/cbcf3ea8-32dc-4a57-a731-7e4e9d4d7d01/UNHCR%20Ukraine%20Weekly%20Update_19%20April%202023.pdf"
+        },
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/28/82/28822b56-d582-4073-b7b7-249fb2838cf7.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/28/82/28822b56-d582-4073-b7b7-249fb2838cf7.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/28/82/28822b56-d582-4073-b7b7-249fb2838cf7.png",
+            "version": "2417627-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/28/82/28822b56-d582-4073-b7b7-249fb2838cf7.png"
+          },
+          "filename": "UNHCR Ukraine Weekly Update_19 April 2023.pdf",
+          "description": "Ukrainian version",
+          "mimetype": "application/pdf",
+          "id": "2417627",
+          "filesize": "1655427",
+          "url": "https://reliefweb.int/attachments/28822b56-d582-4073-b7b7-249fb2838cf7/UNHCR%20Ukraine%20Weekly%20Update_19%20April%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/ukraine/ukraine-emergency-unhcr-operational-response-delivery-updates-19-april-2023-enuk",
+      "redirects": [
+        "https://reliefweb.int/report/ukraine/ukraine-emergency-unhcr-operational-response-delivery-updates-19-april-2023"
+      ],
+      "theme": [
+        {
+          "name": "Camp Coordination and Camp Management",
+          "id": 49458
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        }
+      ],
+      "id": 3956412,
+      "status": "published",
+      "body-html": "<p><strong>OPERATIONAL CONTEXT:</strong></p>\n<p>• Hospitals and health workers have been impacted by shelling in areas along the front lines . On 10 April, a hospital in the city of Kherson was damaged after being hit. On 7 April, at least two health workers were reportedly injured after an ambulance on call came under shelling in Beryslav town, in an area under Ukrainian control in Khersonska oblast.</p>\n<p>• As of 18 April, OHCHR recorded 22,904 civilian casualties since Russia's invasion of Ukraine: 8,534 killed and 14,370 injured. This includes 765 civilian casualties recorded in March 2023.</p>\n<p>• On 13 April, the IAEA Director General stated that dependence of Ukraine’s Zaporizhzhia Nuclear Power Plant on a single functioning power line for external electricity poses a major risk to nuclear safety and security amid signs of continued military activity in the southern region.</p>\n<p>• Significant numbers of air and missile strikes continued. A missile strike on Sloviansk killed at least eight civilians on 14 April. The Ministry of Defence of Ukraine informed that the threat from Russia of launching further missile and air strikes across Ukraine remains high and noted that the fiercest battles are fought for Bakhmut and Mar’yinka</p>\n"
+    }
+  },
+  "text": "# Ukraine Emergency: UNHCR Operational Response, Delivery Updates (19 April 2023) [EN/UK]\n\n**OPERATIONAL CONTEXT:**\n\n• Hospitals and health workers have been impacted by shelling in areas along the front lines . On 10 April, a hospital in the city of Kherson was damaged after being hit. On 7 April, at least two health workers were reportedly injured after an ambulance on call came under shelling in Beryslav town, in an area under Ukrainian control in Khersonska oblast.\n\n• As of 18 April, OHCHR recorded 22,904 civilian casualties since Russia's invasion of Ukraine: 8,534 killed and 14,370 injured. This includes 765 civilian casualties recorded in March 2023.\n\n• On 13 April, the IAEA Director General stated that dependence of Ukraine’s Zaporizhzhia Nuclear Power Plant on a single functioning power line for external electricity poses a major risk to nuclear safety and security amid signs of continued military activity in the southern region.\n\n• Significant numbers of air and missile strikes continued. A missile strike on Sloviansk killed at least eight civilians on 14 April. The Ministry of Defence of Ukraine informed that the threat from Russia of launching further missile and air strikes across Ukraine remains high and noted that the fiercest battles are fought for Bakhmut and Mar’yinka",
+  "summary": " The UNHCR is responding to the emergency in Ukraine, where shelling has damaged hospitals and injured health workers. As of April 18, there have been 22,904 civilian casualties since Russia's invasion, including 765 in March. The IAEA Director General has warned of a major risk to nuclear safety and security due to the dependence of Ukraine’s Zaporizhzhia Nuclear Power Plant on a single functioning power line. Air and missile strikes continue, with a missile strike on Sloviansk killing at least eight civilians on April 14. The Ministry of Defence of Ukraine has noted that the fiercest battles are fought for Bakhmut and Mar’yinka.",
+  "metadata": {
+    "id": "3956412",
+    "name": "Ukraine Emergency: UNHCR Operational Response, Delivery Updates (19 April 2023) [EN/UK]",
+    "date_original": 1682467200000,
+    "date_changed": 1683278800000,
+    "date_created": 1682541667000,
+    "primary_country_id": 241,
+    "primary_country_name": "Ukraine",
+    "primary_country_iso3": "ukr",
+    "primary_country_location": {
+      "lon": 31.32,
+      "lat": 49.32
+    }
+  }
+}

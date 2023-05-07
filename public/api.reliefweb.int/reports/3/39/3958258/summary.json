@@ -1,0 +1,177 @@
+{
+  "original": {
+    "id": "3958258",
+    "fields": {
+      "date": {
+        "changed": "2023-05-04T15:36:58+00:00",
+        "created": "2023-05-03T16:31:46+00:00",
+        "original": "2023-05-03T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/241",
+          "name": "Ukraine",
+          "location": {
+            "lon": 31.32,
+            "lat": 49.32
+          },
+          "id": 241,
+          "shortname": "Ukraine",
+          "iso3": "ukr",
+          "primary": true
+        }
+      ],
+      "ocha_product": [
+        {
+          "name": "Flash Update",
+          "id": 14471
+        }
+      ],
+      "origin": "https://reports.unocha.org/en/country/ukraine/",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/241",
+        "name": "Ukraine",
+        "location": {
+          "lon": 31.32,
+          "lat": 49.32
+        },
+        "id": 241,
+        "shortname": "Ukraine",
+        "iso3": "ukr"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        },
+        {
+          "code": "ru",
+          "name": "Russian",
+          "id": 10906
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1503",
+          "longname": "United Nations Office for the Coordination of Humanitarian Affairs",
+          "spanish_name": "Oficina de Coordinación de Asuntos Humanitarios",
+          "name": "UN Office for the Coordination of Humanitarian Affairs",
+          "id": 1503,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "OCHA",
+          "disclaimer": "To learn more about OCHA's activities, please visit https://www.unocha.org/.",
+          "homepage": "http://www.unocha.org/"
+        }
+      ],
+      "title": "Ukraine: Deterioration of the humanitarian situation in Donetska oblast - Flash Update #3: Marinka, Vuhledar and Kurakhove (3 May 2023) [EN/RU/UK]",
+      "body": "**HIGHLIGHTS**\n\n- A grave humanitarian crisis is rapidly unfolding in the area surrounding Marinka, in Donetska oblast, where approximately 5,000 civilians – according to humanitarians on the ground – are enduring heavy ground fighting and hostilities that have dramatically escalated over the past two months.\n\n- This has also affected the humanitarian situation in the neighbouring Kurakhove and Vuhledar communities – home to another 24,000 civilians – both due to the direct impact of the hostilities and the pressure over the limited services and resources, as people fleeing other parts of Donetska oblast also take refuge in these areas.\n\n- Widespread destruction decimated access to food, water, electricity, gas, health care and other essential services, forcing people to rely heavily on humanitarian aid and the support from volunteer groups to survive.\n\n- There is also an urgent need for increased support with shelter kits and other critical household items, as many civilians are living in damaged homes across the three hromadas, according to local organizations.\n\n- Humanitarians are striving to complement the assistance provided by authorities and volunteer groups, despite immense challenges imposed by the security situation. To date in 2023, the UN and partners sent 13 truckloads of humanitarian aid targeting about 15,000 people in need in these three communities.\n\n**SITUATION OVERVIEW**\n\nA grave humanitarian crisis is rapidly unfolding in areas neighbouring the town of Marinka, in Donetska oblast, where approximately 5,000 civilians are enduring heavy ground fighting and hostilities that have dramatically escalated over the over the past couple of months. Marinka, along with Avdiivka and Bakhmut in Donetska oblast, has experienced the most intense military operations in eastern Ukraine in 2023, according to military experts and think tanks. This has also affected the humanitarian situation in the neighbouring Kurakhove and Vuhledar communities – home to another 24,000 civilians – both due to the direct impact of the hostilities and the pressure over the limited services and resources, as people fleeing other parts of Donetska oblast also take refuge in these areas, particularly Kurakhove.\n\nMarinka Town – located just a few kilometres west of Donetsk city – has reportedly been completely destroyed, forcing local authorities and law enforcement, in November 2022, to evacuate all remaining civilians from a population of 9,000 people before February 2022. Across the 18 settlements that make up the Marinska hromada, humanitarians on the ground estimate that just 65,000 civilians, including over 400 children, remain – out of a pre-war population of 40,000 people. These villages, including Krasnohorivka, Maksymilianivka, Oleksandropil, and Paraskoviivka, are exposed to frequent shelling and access to electricity, gas or piped water is limited, despite efforts from the services providers to repair damages caused by repeated attacks. In Krasnohorivka, for example, no electricity, water or gas was available at the end of April, according to local authorities. According to a rapid assessment carried out by the NGO REACH and information provided by Ukrainian authorities, in addition to the large-scale destruction of homes and other vital civilian infrastructure, including schools, the war disrupted markets and other essential services, forcing people to heavily rely on humanitarian aid and the support from volunteer groups to survive.\n\nThe situation is also dire in Vuhledar Town and across the other four settlements that form the Vuhledarska hromada, about 25 kilometres south-west of Marinka. Approximately 1,100 civilians – out of the pre-war population of 26,000 people – have limited to no access to food – as shops and markets are not functional – as well as water, electricity, gas, health care and other essential services. Although most of the civilians there are older people, there remain about 30 children in the hromada at the end of April, according to information provided by local authorities to the NGO REACH. The destruction left many living in damaged homes, and there is an urgent need for increased support with shelter kits and other critical household items, according to local organizations. Humanitarian access to the area, however, is becoming more and more restricted and unpredictable and the lack of telecommunications, including phone or internet coverage, increases challenges imposed on civilians and humanitarians providing assistance, as confirmed by REACH.\n\nAlthough the situation in Kurakhove, 10 kilometres west of Marinka, is slightly better, shelling and hostilities have also impacted essential services, and left a path of destruction of homes, markets, hospitals, schools, and other civilian infrastructure. Kurakhivska hromada, despite the high insecurity and proximity to the front line, also hosts nearly 6,000 internally displaced people, and civilians also come to Kurakhove town for health care, and to access markets and other vital services. In total, nearly 23,000 people, including 1,300 children, remain in one of the 28 villages and towns of the hromada, according to the local authorities. Similar to the neighbouring Marinka and Vuhledar, people in Kurakhove are also living in damaged homes and need support with emergency repairs. Most of the town has no gas supply, but does have a relatively stable electricity supply, provided by a coal-fired power plant, ensure heating and cooking options, in addition to the use of solid fuel stoves for cooking and heating in winter, according to REACH. Drinking water is limited in the town while emergency medical services remain available. According to information gathered by REACH, the local ambulatory and the central hospital are well-supplied and fully functional, thanks to continued support from local and international humanitarian partners. Humanitarian needs also include food assistance and psychological support, especially for children.",
+      "url": "https://reliefweb.int/node/3958258",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/e9/7a/e97ac779-f1ae-4678-8bf5-8879fcf97d6e.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/e9/7a/e97ac779-f1ae-4678-8bf5-8879fcf97d6e.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/e9/7a/e97ac779-f1ae-4678-8bf5-8879fcf97d6e.png",
+            "version": "2417439-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/e9/7a/e97ac779-f1ae-4678-8bf5-8879fcf97d6e.png"
+          },
+          "filename": "Situation Report - UKRAINE HUMANITARIAN RESPONSE - KEY ACHIEVEMENTS IN 2022 - 10 Feb 2023.pdf",
+          "description": "English version",
+          "mimetype": "application/pdf",
+          "id": "2417439",
+          "filesize": "506598",
+          "url": "https://reliefweb.int/attachments/e97ac779-f1ae-4678-8bf5-8879fcf97d6e/Situation%20Report%20-%20UKRAINE%20HUMANITARIAN%20RESPONSE%20-%20KEY%20ACHIEVEMENTS%20IN%202022%20-%2010%20Feb%202023.pdf"
+        },
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/a0/e1/a0e11b69-aa6e-49a4-acbc-ad4362825ba6.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/a0/e1/a0e11b69-aa6e-49a4-acbc-ad4362825ba6.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/a0/e1/a0e11b69-aa6e-49a4-acbc-ad4362825ba6.png",
+            "version": "2416972-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/a0/e1/a0e11b69-aa6e-49a4-acbc-ad4362825ba6.png"
+          },
+          "filename": "Ukraine - Deterioration of the humanitarian situation in Donetska oblast - Flash Update #3 - Marinka, Vuhledar and Kurakhove (3 May 2023) [UK].pdf",
+          "description": "Ukrainian version",
+          "mimetype": "application/pdf",
+          "id": "2416972",
+          "filesize": "519534",
+          "url": "https://reliefweb.int/attachments/a0e11b69-aa6e-49a4-acbc-ad4362825ba6/Ukraine%20-%20Deterioration%20of%20the%20humanitarian%20situation%20in%20Donetska%20oblast%20-%20Flash%20Update%20%233%20-%20Marinka%2C%20Vuhledar%20and%20Kurakhove%20%283%20May%202023%29%20%5BUK%5D.pdf"
+        },
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/76/ba/76bab834-21fc-46b7-a4e8-5fe63946da70.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/76/ba/76bab834-21fc-46b7-a4e8-5fe63946da70.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/76/ba/76bab834-21fc-46b7-a4e8-5fe63946da70.png",
+            "version": "2417449-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/76/ba/76bab834-21fc-46b7-a4e8-5fe63946da70.png"
+          },
+          "filename": "Экспресс-отчёт - УКРАИНА_ РЕЗУЛЬТАТЫ ГУМАНИТАРНОГО РЕАГИРОВАНИЯ,  2022 - 10 февр. 2023.pdf",
+          "description": "Russian version",
+          "mimetype": "application/pdf",
+          "id": "2417449",
+          "filesize": "518683",
+          "url": "https://reliefweb.int/attachments/76bab834-21fc-46b7-a4e8-5fe63946da70/%D0%AD%D0%BA%D1%81%D0%BF%D1%80%D0%B5%D1%81%D1%81-%D0%BE%D1%82%D1%87%D0%B5%CC%88%D1%82%20-%20%D0%A3%D0%9A%D0%A0%D0%90%D0%98%D0%9D%D0%90_%20%D0%A0%D0%95%D0%97%D0%A3%D0%9B%D0%AC%D0%A2%D0%90%D0%A2%D0%AB%20%D0%93%D0%A3%D0%9C%D0%90%D0%9D%D0%98%D0%A2%D0%90%D0%A0%D0%9D%D0%9E%D0%93%D0%9E%20%D0%A0%D0%95%D0%90%D0%93%D0%98%D0%A0%D0%9E%D0%92%D0%90%D0%9D%D0%98%D0%AF%2C%20%202022%20-%2010%20%D1%84%D0%B5%D0%B2%D1%80.%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/ukraine/ukraine-deterioration-humanitarian-situation-donetska-oblast-flash-update-3-marinka-vuhledar-and-kurakhove-3-may-2023-enruuk",
+      "redirects": [
+        "https://reliefweb.int/report/ukraine/ukraine-deterioration-humanitarian-situation-donetska-oblast-flash-update-3-marinka-vuhledar-and-kurakhove-3-may-2023-enuk"
+      ],
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3958258,
+      "status": "published",
+      "body-html": "<p><strong>HIGHLIGHTS</strong></p>\n<ul>\n<li>\n<p>A grave humanitarian crisis is rapidly unfolding in the area surrounding Marinka, in Donetska oblast, where approximately 5,000 civilians – according to humanitarians on the ground – are enduring heavy ground fighting and hostilities that have dramatically escalated over the past two months.</p>\n</li>\n<li>\n<p>This has also affected the humanitarian situation in the neighbouring Kurakhove and Vuhledar communities – home to another 24,000 civilians – both due to the direct impact of the hostilities and the pressure over the limited services and resources, as people fleeing other parts of Donetska oblast also take refuge in these areas.</p>\n</li>\n<li>\n<p>Widespread destruction decimated access to food, water, electricity, gas, health care and other essential services, forcing people to rely heavily on humanitarian aid and the support from volunteer groups to survive.</p>\n</li>\n<li>\n<p>There is also an urgent need for increased support with shelter kits and other critical household items, as many civilians are living in damaged homes across the three hromadas, according to local organizations.</p>\n</li>\n<li>\n<p>Humanitarians are striving to complement the assistance provided by authorities and volunteer groups, despite immense challenges imposed by the security situation. To date in 2023, the UN and partners sent 13 truckloads of humanitarian aid targeting about 15,000 people in need in these three communities.</p>\n</li>\n</ul>\n<p><strong>SITUATION OVERVIEW</strong></p>\n<p>A grave humanitarian crisis is rapidly unfolding in areas neighbouring the town of Marinka, in Donetska oblast, where approximately 5,000 civilians are enduring heavy ground fighting and hostilities that have dramatically escalated over the over the past couple of months. Marinka, along with Avdiivka and Bakhmut in Donetska oblast, has experienced the most intense military operations in eastern Ukraine in 2023, according to military experts and think tanks. This has also affected the humanitarian situation in the neighbouring Kurakhove and Vuhledar communities – home to another 24,000 civilians – both due to the direct impact of the hostilities and the pressure over the limited services and resources, as people fleeing other parts of Donetska oblast also take refuge in these areas, particularly Kurakhove.</p>\n<p>Marinka Town – located just a few kilometres west of Donetsk city – has reportedly been completely destroyed, forcing local authorities and law enforcement, in November 2022, to evacuate all remaining civilians from a population of 9,000 people before February 2022. Across the 18 settlements that make up the Marinska hromada, humanitarians on the ground estimate that just 65,000 civilians, including over 400 children, remain – out of a pre-war population of 40,000 people. These villages, including Krasnohorivka, Maksymilianivka, Oleksandropil, and Paraskoviivka, are exposed to frequent shelling and access to electricity, gas or piped water is limited, despite efforts from the services providers to repair damages caused by repeated attacks. In Krasnohorivka, for example, no electricity, water or gas was available at the end of April, according to local authorities. According to a rapid assessment carried out by the NGO REACH and information provided by Ukrainian authorities, in addition to the large-scale destruction of homes and other vital civilian infrastructure, including schools, the war disrupted markets and other essential services, forcing people to heavily rely on humanitarian aid and the support from volunteer groups to survive.</p>\n<p>The situation is also dire in Vuhledar Town and across the other four settlements that form the Vuhledarska hromada, about 25 kilometres south-west of Marinka. Approximately 1,100 civilians – out of the pre-war population of 26,000 people – have limited to no access to food – as shops and markets are not functional – as well as water, electricity, gas, health care and other essential services. Although most of the civilians there are older people, there remain about 30 children in the hromada at the end of April, according to information provided by local authorities to the NGO REACH. The destruction left many living in damaged homes, and there is an urgent need for increased support with shelter kits and other critical household items, according to local organizations. Humanitarian access to the area, however, is becoming more and more restricted and unpredictable and the lack of telecommunications, including phone or internet coverage, increases challenges imposed on civilians and humanitarians providing assistance, as confirmed by REACH.</p>\n<p>Although the situation in Kurakhove, 10 kilometres west of Marinka, is slightly better, shelling and hostilities have also impacted essential services, and left a path of destruction of homes, markets, hospitals, schools, and other civilian infrastructure. Kurakhivska hromada, despite the high insecurity and proximity to the front line, also hosts nearly 6,000 internally displaced people, and civilians also come to Kurakhove town for health care, and to access markets and other vital services. In total, nearly 23,000 people, including 1,300 children, remain in one of the 28 villages and towns of the hromada, according to the local authorities. Similar to the neighbouring Marinka and Vuhledar, people in Kurakhove are also living in damaged homes and need support with emergency repairs. Most of the town has no gas supply, but does have a relatively stable electricity supply, provided by a coal-fired power plant, ensure heating and cooking options, in addition to the use of solid fuel stoves for cooking and heating in winter, according to REACH. Drinking water is limited in the town while emergency medical services remain available. According to information gathered by REACH, the local ambulatory and the central hospital are well-supplied and fully functional, thanks to continued support from local and international humanitarian partners. Humanitarian needs also include food assistance and psychological support, especially for children.</p>\n"
+    }
+  },
+  "text": "# Ukraine: Deterioration of the humanitarian situation in Donetska oblast - Flash Update #3: Marinka, Vuhledar and Kurakhove (3 May 2023) [EN/RU/UK]\n\n**HIGHLIGHTS**\n\n- A grave humanitarian crisis is rapidly unfolding in the area surrounding Marinka, in Donetska oblast, where approximately 5,000 civilians – according to humanitarians on the ground – are enduring heavy ground fighting and hostilities that have dramatically escalated over the past two months.\n\n- This has also affected the humanitarian situation in the neighbouring Kurakhove and Vuhledar communities – home to another 24,000 civilians – both due to the direct impact of the hostilities and the pressure over the limited services and resources, as people fleeing other parts of Donetska oblast also take refuge in these areas.\n\n- Widespread destruction decimated access to food, water, electricity, gas, health care and other essential services, forcing people to rely heavily on humanitarian aid and the support from volunteer groups to survive.\n\n- There is also an urgent need for increased support with shelter kits and other critical household items, as many civilians are living in damaged homes across the three hromadas, according to local organizations.\n\n- Humanitarians are striving to complement the assistance provided by authorities and volunteer groups, despite immense challenges imposed by the security situation. To date in 2023, the UN and partners sent 13 truckloads of humanitarian aid targeting about 15,000 people in need in these three communities.\n\n**SITUATION OVERVIEW**\n\nA grave humanitarian crisis is rapidly unfolding in areas neighbouring the town of Marinka, in Donetska oblast, where approximately 5,000 civilians are enduring heavy ground fighting and hostilities that have dramatically escalated over the over the past couple of months. Marinka, along with Avdiivka and Bakhmut in Donetska oblast, has experienced the most intense military operations in eastern Ukraine in 2023, according to military experts and think tanks. This has also affected the humanitarian situation in the neighbouring Kurakhove and Vuhledar communities – home to another 24,000 civilians – both due to the direct impact of the hostilities and the pressure over the limited services and resources, as people fleeing other parts of Donetska oblast also take refuge in these areas, particularly Kurakhove.\n\nMarinka Town – located just a few kilometres west of Donetsk city – has reportedly been completely destroyed, forcing local authorities and law enforcement, in November 2022, to evacuate all remaining civilians from a population of 9,000 people before February 2022. Across the 18 settlements that make up the Marinska hromada, humanitarians on the ground estimate that just 65,000 civilians, including over 400 children, remain – out of a pre-war population of 40,000 people. These villages, including Krasnohorivka, Maksymilianivka, Oleksandropil, and Paraskoviivka, are exposed to frequent shelling and access to electricity, gas or piped water is limited, despite efforts from the services providers to repair damages caused by repeated attacks. In Krasnohorivka, for example, no electricity, water or gas was available at the end of April, according to local authorities. According to a rapid assessment carried out by the NGO REACH and information provided by Ukrainian authorities, in addition to the large-scale destruction of homes and other vital civilian infrastructure, including schools, the war disrupted markets and other essential services, forcing people to heavily rely on humanitarian aid and the support from volunteer groups to survive.\n\nThe situation is also dire in Vuhledar Town and across the other four settlements that form the Vuhledarska hromada, about 25 kilometres south-west of Marinka. Approximately 1,100 civilians – out of the pre-war population of 26,000 people – have limited to no access to food – as shops and markets are not functional – as well as water, electricity, gas, health care and other essential services. Although most of the civilians there are older people, there remain about 30 children in the hromada at the end of April, according to information provided by local authorities to the NGO REACH. The destruction left many living in damaged homes, and there is an urgent need for increased support with shelter kits and other critical household items, according to local organizations. Humanitarian access to the area, however, is becoming more and more restricted and unpredictable and the lack of telecommunications, including phone or internet coverage, increases challenges imposed on civilians and humanitarians providing assistance, as confirmed by REACH.\n\nAlthough the situation in Kurakhove, 10 kilometres west of Marinka, is slightly better, shelling and hostilities have also impacted essential services, and left a path of destruction of homes, markets, hospitals, schools, and other civilian infrastructure. Kurakhivska hromada, despite the high insecurity and proximity to the front line, also hosts nearly 6,000 internally displaced people, and civilians also come to Kurakhove town for health care, and to access markets and other vital services. In total, nearly 23,000 people, including 1,300 children, remain in one of the 28 villages and towns of the hromada, according to the local authorities. Similar to the neighbouring Marinka and Vuhledar, people in Kurakhove are also living in damaged homes and need support with emergency repairs. Most of the town has no gas supply, but does have a relatively stable electricity supply, provided by a coal-fired power plant, ensure heating and cooking options, in addition to the use of solid fuel stoves for cooking and heating in winter, according to REACH. Drinking water is limited in the town while emergency medical services remain available. According to information gathered by REACH, the local ambulatory and the central hospital are well-supplied and fully functional, thanks to continued support from local and international humanitarian partners. Humanitarian needs also include food assistance and psychological support, especially for children.",
+  "summary": "\n\nA grave humanitarian crisis is unfolding in the area surrounding Marinka, in Donetska oblast, where approximately 5,000 civilians are enduring heavy ground fighting and hostilities. This has also affected the neighbouring Kurakhove and Vuhledar communities, home to another 24,000 civilians, due to the direct impact of the hostilities and the pressure over the limited services and resources. Widespread destruction has decimated access to food, water, electricity, gas, health care and other essential services, forcing people to rely heavily on humanitarian aid and the support from volunteer groups to survive. Humanitarians are striving to complement the assistance provided by authorities and volunteer groups, despite immense challenges imposed by the security situation.",
+  "metadata": {
+    "id": "3958258",
+    "name": "Ukraine: Deterioration of the humanitarian situation in Donetska oblast - Flash Update #3: Marinka, Vuhledar and Kurakhove (3 May 2023) [EN/RU/UK]",
+    "date_original": 1683072000000,
+    "date_changed": 1683214618000,
+    "date_created": 1683131506000,
+    "primary_country_id": 241,
+    "primary_country_name": "Ukraine",
+    "primary_country_iso3": "ukr",
+    "primary_country_location": {
+      "lon": 31.32,
+      "lat": 49.32
+    }
+  }
+}

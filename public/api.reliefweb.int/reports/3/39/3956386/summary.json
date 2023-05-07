@@ -1,0 +1,111 @@
+{
+  "original": {
+    "id": "3956386",
+    "fields": {
+      "date": {
+        "changed": "2023-04-26T19:31:25+00:00",
+        "created": "2023-04-26T19:11:24+00:00",
+        "original": "2023-04-26T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/244",
+          "name": "United Republic of Tanzania",
+          "location": {
+            "lon": 34.82,
+            "lat": -6.27
+          },
+          "id": 244,
+          "shortname": "Tanzania",
+          "iso3": "tza",
+          "primary": true
+        }
+      ],
+      "origin": "https://www.undp.org/publications/inclusive-insurance-and-risk-financing-united-republic-tanzania",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/244",
+        "name": "United Republic of Tanzania",
+        "location": {
+          "lon": 34.82,
+          "lat": -6.27
+        },
+        "id": 244,
+        "shortname": "Tanzania",
+        "iso3": "tza"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1293",
+          "longname": "United Nations Development Programme",
+          "spanish_name": "Programa de las Naciones Unidas para el Desarrollo",
+          "name": "UN Development Programme",
+          "id": 1293,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNDP",
+          "homepage": "http://www.undp.org/"
+        }
+      ],
+      "title": "Inclusive insurance and risk financing in the United Republic of Tanzania: Snapshot and way forward 2023",
+      "body": "**Why this report?**\n\nThis report summarizes the key findings of an inclusive insurance and disaster risk finance country diagnostic carried out by the UNDP’s Insurance and Risk Finance Facility (IRFF) and UNDP Tanzania. The objective of this summary report is to present a high-level overview of the following information:\n\n1. **Key risks,** especially climate risks\n\n2. The current state of **inclusive insurance**\n\n3. **The current state** of disaster risk finance\n\n4. **Recommendations to advance** inclusive insurance, disaster risk finance and overall development in the United Republic of Tanzania\n\nThis summary is intended to serve as a starting point for discussion and collaborative action planning on inclusive insurance and disaster risk finance between UNDP and key stakeholders, including insurance sector actors, government agencies and other development sector actors.\n\n**IRFF goals**\n\n**Impacts:** Reduced vulnerability, enhanced resilience of countries and communities, and strengthened prospects for sustainable development. \n\n**Outcomes:** Country and community long-term resilience improved by development and delivery of integrated insurance, risk finance and investment solutions, from products, tools and services all the way leading to market transformation.\n\n**Contact IRFF for questions:** If you wish to discuss the findings and recommendations of this report, reach out to: irff@undp.org.\n\n**Key messages**\n\n1. **Risks:** Floods, drought, earthquakes, disease outbreak and marine accidents.\n\n2. **Inclusive insurance:** Government and regulatory bodies have been supporting inclusive insurance growth since the country’s first microinsurance regulations were put in place in 2013, and the current Insurance Sub-sector Action Plan contains several targets aimed at inclusion. At least five insurance companies offer microinsurance products, with over 77,000 of these policies sold in 2021.\n\n3. **Disaster risk finance:** The Disaster Management Department (DMD) is responsible for coordinating disaster preparedness and response, including mobilizing funds and resources. The Government shoulders the costs of disasters, through budget reallocations as well as the National Disaster Management Fund, which is funded by a combination of public and donor funds. No sovereign risk transfer solutions or contingent credit mechanisms are in place and public assets are uninsured. \n\n4. **Key recommendations include:** Enhance market-based research and development activities for inclusive insurance; assist the Tanzania Insurance Regulatory Authority (TIRA) to continually enhance the enabling environment for inclusive insurance; build industry capacity to innovate client-centric products and form effective partnerships; develop risk information and modelling systems for disaster risk; develop a comprehensive disaster risk financing strategy; and support next steps to adopt sovereign risk transfer solutions.",
+      "url": "https://reliefweb.int/node/3956386",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/2f/be/2fbe4ed4-ab1c-4f35-a125-6a228786c245.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/2f/be/2fbe4ed4-ab1c-4f35-a125-6a228786c245.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/2f/be/2fbe4ed4-ab1c-4f35-a125-6a228786c245.png",
+            "version": "2415119-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/2f/be/2fbe4ed4-ab1c-4f35-a125-6a228786c245.png"
+          },
+          "filename": "Inclusive insurance and risk financing in the United Republic of Tanzania - Snapshot and way forward 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415119",
+          "filesize": "435788",
+          "url": "https://reliefweb.int/attachments/2fbe4ed4-ab1c-4f35-a125-6a228786c245/Inclusive%20insurance%20and%20risk%20financing%20in%20the%20United%20Republic%20of%20Tanzania%20-%20Snapshot%20and%20way%20forward%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/united-republic-tanzania/inclusive-insurance-and-risk-financing-united-republic-tanzania-snapshot-and-way-forward-2023",
+      "theme": [
+        {
+          "name": "Disaster Management",
+          "id": 4591
+        }
+      ],
+      "id": 3956386,
+      "status": "published",
+      "body-html": "<p><strong>Why this report?</strong></p>\n<p>This report summarizes the key findings of an inclusive insurance and disaster risk finance country diagnostic carried out by the UNDP’s Insurance and Risk Finance Facility (IRFF) and UNDP Tanzania. The objective of this summary report is to present a high-level overview of the following information:</p>\n<ol>\n<li>\n<p><strong>Key risks,</strong> especially climate risks</p>\n</li>\n<li>\n<p>The current state of <strong>inclusive insurance</strong></p>\n</li>\n<li>\n<p><strong>The current state</strong> of disaster risk finance</p>\n</li>\n<li>\n<p><strong>Recommendations to advance</strong> inclusive insurance, disaster risk finance and overall development in the United Republic of Tanzania</p>\n</li>\n</ol>\n<p>This summary is intended to serve as a starting point for discussion and collaborative action planning on inclusive insurance and disaster risk finance between UNDP and key stakeholders, including insurance sector actors, government agencies and other development sector actors.</p>\n<p><strong>IRFF goals</strong></p>\n<p><strong>Impacts:</strong> Reduced vulnerability, enhanced resilience of countries and communities, and strengthened prospects for sustainable development.</p>\n<p><strong>Outcomes:</strong> Country and community long-term resilience improved by development and delivery of integrated insurance, risk finance and investment solutions, from products, tools and services all the way leading to market transformation.</p>\n<p><strong>Contact IRFF for questions:</strong> If you wish to discuss the findings and recommendations of this report, reach out to: <a href=\"mailto:irff@undp.org\">irff@undp.org</a>.</p>\n<p><strong>Key messages</strong></p>\n<ol>\n<li>\n<p><strong>Risks:</strong> Floods, drought, earthquakes, disease outbreak and marine accidents.</p>\n</li>\n<li>\n<p><strong>Inclusive insurance:</strong> Government and regulatory bodies have been supporting inclusive insurance growth since the country’s first microinsurance regulations were put in place in 2013, and the current Insurance Sub-sector Action Plan contains several targets aimed at inclusion. At least five insurance companies offer microinsurance products, with over 77,000 of these policies sold in 2021.</p>\n</li>\n<li>\n<p><strong>Disaster risk finance:</strong> The Disaster Management Department (DMD) is responsible for coordinating disaster preparedness and response, including mobilizing funds and resources. The Government shoulders the costs of disasters, through budget reallocations as well as the National Disaster Management Fund, which is funded by a combination of public and donor funds. No sovereign risk transfer solutions or contingent credit mechanisms are in place and public assets are uninsured.</p>\n</li>\n<li>\n<p><strong>Key recommendations include:</strong> Enhance market-based research and development activities for inclusive insurance; assist the Tanzania Insurance Regulatory Authority (TIRA) to continually enhance the enabling environment for inclusive insurance; build industry capacity to innovate client-centric products and form effective partnerships; develop risk information and modelling systems for disaster risk; develop a comprehensive disaster risk financing strategy; and support next steps to adopt sovereign risk transfer solutions.</p>\n</li>\n</ol>\n"
+    }
+  },
+  "text": "# Inclusive insurance and risk financing in the United Republic of Tanzania: Snapshot and way forward 2023\n\n**Why this report?**\n\nThis report summarizes the key findings of an inclusive insurance and disaster risk finance country diagnostic carried out by the UNDP’s Insurance and Risk Finance Facility (IRFF) and UNDP Tanzania. The objective of this summary report is to present a high-level overview of the following information:\n\n1. **Key risks,** especially climate risks\n\n2. The current state of **inclusive insurance**\n\n3. **The current state** of disaster risk finance\n\n4. **Recommendations to advance** inclusive insurance, disaster risk finance and overall development in the United Republic of Tanzania\n\nThis summary is intended to serve as a starting point for discussion and collaborative action planning on inclusive insurance and disaster risk finance between UNDP and key stakeholders, including insurance sector actors, government agencies and other development sector actors.\n\n**IRFF goals**\n\n**Impacts:** Reduced vulnerability, enhanced resilience of countries and communities, and strengthened prospects for sustainable development. \n\n**Outcomes:** Country and community long-term resilience improved by development and delivery of integrated insurance, risk finance and investment solutions, from products, tools and services all the way leading to market transformation.\n\n**Contact IRFF for questions:** If you wish to discuss the findings and recommendations of this report, reach out to: irff@undp.org.\n\n**Key messages**\n\n1. **Risks:** Floods, drought, earthquakes, disease outbreak and marine accidents.\n\n2. **Inclusive insurance:** Government and regulatory bodies have been supporting inclusive insurance growth since the country’s first microinsurance regulations were put in place in 2013, and the current Insurance Sub-sector Action Plan contains several targets aimed at inclusion. At least five insurance companies offer microinsurance products, with over 77,000 of these policies sold in 2021.\n\n3. **Disaster risk finance:** The Disaster Management Department (DMD) is responsible for coordinating disaster preparedness and response, including mobilizing funds and resources. The Government shoulders the costs of disasters, through budget reallocations as well as the National Disaster Management Fund, which is funded by a combination of public and donor funds. No sovereign risk transfer solutions or contingent credit mechanisms are in place and public assets are uninsured. \n\n4. **Key recommendations include:** Enhance market-based research and development activities for inclusive insurance; assist the Tanzania Insurance Regulatory Authority (TIRA) to continually enhance the enabling environment for inclusive insurance; build industry capacity to innovate client-centric products and form effective partnerships; develop risk information and modelling systems for disaster risk; develop a comprehensive disaster risk financing strategy; and support next steps to adopt sovereign risk transfer solutions.",
+  "summary": " This report provides an overview of the risks, current state of inclusive insurance and disaster risk finance, and recommendations to advance these areas in the United Republic of Tanzania. Risks include floods, drought, earthquakes, disease outbreak and marine accidents. Inclusive insurance is supported by government and regulatory bodies, with at least five insurance companies offering microinsurance products. Disaster risk finance is coordinated by the Disaster Management Department, with the Government shouldering the costs of disasters. Recommendations include enhancing market-based research and development activities for inclusive insurance, assisting the Tanzania Insurance Regulatory Authority to enhance the enabling environment, building industry capacity, developing risk information and modelling systems, and developing a comprehensive disaster risk financing strategy.",
+  "metadata": {
+    "id": "3956386",
+    "name": "Inclusive insurance and risk financing in the United Republic of Tanzania: Snapshot and way forward 2023",
+    "date_original": 1682467200000,
+    "date_changed": 1682537485000,
+    "date_created": 1682536284000,
+    "primary_country_id": 244,
+    "primary_country_name": "United Republic of Tanzania",
+    "primary_country_iso3": "tza",
+    "primary_country_location": {
+      "lon": 34.82,
+      "lat": -6.27
+    }
+  }
+}

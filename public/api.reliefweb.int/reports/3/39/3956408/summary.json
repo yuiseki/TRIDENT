@@ -1,0 +1,185 @@
+{
+  "original": {
+    "id": "3956408",
+    "fields": {
+      "date": {
+        "changed": "2023-04-26T20:31:52+00:00",
+        "created": "2023-04-26T20:31:32+00:00",
+        "original": "2023-04-26T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/33",
+          "name": "Belarus",
+          "location": {
+            "lon": 28.05,
+            "lat": 53.54
+          },
+          "id": 33,
+          "shortname": "Belarus",
+          "iso3": "blr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/45",
+          "name": "Bulgaria",
+          "location": {
+            "lon": 25.23,
+            "lat": 42.76
+          },
+          "id": 45,
+          "shortname": "Bulgaria",
+          "iso3": "bgr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/117",
+          "name": "Hungary",
+          "location": {
+            "lon": 19.5,
+            "lat": 47.06
+          },
+          "id": 117,
+          "shortname": "Hungary",
+          "iso3": "hun"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/158",
+          "name": "Moldova",
+          "location": {
+            "lon": 28.57,
+            "lat": 47.19
+          },
+          "id": 158,
+          "shortname": "Moldova",
+          "iso3": "mda"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/190",
+          "name": "Poland",
+          "location": {
+            "lon": 19.3,
+            "lat": 52.12
+          },
+          "id": 190,
+          "shortname": "Poland",
+          "iso3": "pol",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/213",
+          "name": "Slovakia",
+          "location": {
+            "lon": 19.49,
+            "lat": 48.71
+          },
+          "id": 213,
+          "shortname": "Slovakia",
+          "iso3": "svk"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/241",
+          "name": "Ukraine",
+          "location": {
+            "lon": 31.32,
+            "lat": 49.32
+          },
+          "id": 241,
+          "shortname": "Ukraine",
+          "iso3": "ukr"
+        }
+      ],
+      "origin": "https://reporting.unhcr.org/document/4725",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/190",
+        "name": "Poland",
+        "location": {
+          "lon": 19.3,
+          "lat": 52.12
+        },
+        "id": 190,
+        "shortname": "Poland",
+        "iso3": "pol"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "Displacement Patterns, Protection Risks and Needs of Refugees from Ukraine - Regional Protection Analysis # 2",
+      "body": "**Context**\n\nThe war in Ukraine has caused millions of people to flee, with over 4.9 million registering for temporary or equivalent national protection schemes in Europe.  \n\nSince the onset of the crisis, UNHCR has been closely monitoring the protection situation of refugees from Ukraine and has conducted studies on the implementation of the Temporary Protection Directive (TPD), alongside establishing protection monitoring systems in countries neighboring Ukraine.  \n\nA revised protection monitoring questionnaire was used to complete 17,708 interviews in Hungary, Moldova, Poland, Romania, and Slovakia between October 2022 and mid-February 2023. This report analyses this data, alongside results of focus group discussions with refugee communities and data from other exercises conducted by UNHCR and partners (border monitoring data, intentions surveys, Multi Sector Needs Assessments). The results are intended to provide an update on the results of UNHCR’s 2022 protection monitoring report on the situation of refugees from Ukraine, as well as a partial update of UNHCR’s report ‘The Implementation of the Temporary Protection Directive: Six Months On’.",
+      "url": "https://reliefweb.int/node/3956408",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/cf/0b/cf0b3f3f-9740-40f9-b43e-118ce097f367.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/cf/0b/cf0b3f3f-9740-40f9-b43e-118ce097f367.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/cf/0b/cf0b3f3f-9740-40f9-b43e-118ce097f367.png",
+            "version": "2415151-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/cf/0b/cf0b3f3f-9740-40f9-b43e-118ce097f367.png"
+          },
+          "filename": "Protection monitoring regional analysis 2__April 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415151",
+          "filesize": "3484811",
+          "url": "https://reliefweb.int/attachments/cf0b3f3f-9740-40f9-b43e-118ce097f367/Protection%20monitoring%20regional%20analysis%202__April%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/poland/displacement-patterns-protection-risks-and-needs-refugees-ukraine-regional-protection-analysis-2",
+      "theme": [
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        }
+      ],
+      "id": 3956408,
+      "status": "published",
+      "body-html": "<p><strong>Context</strong></p>\n<p>The war in Ukraine has caused millions of people to flee, with over 4.9 million registering for temporary or equivalent national protection schemes in Europe.</p>\n<p>Since the onset of the crisis, UNHCR has been closely monitoring the protection situation of refugees from Ukraine and has conducted studies on the implementation of the Temporary Protection Directive (TPD), alongside establishing protection monitoring systems in countries neighboring Ukraine.</p>\n<p>A revised protection monitoring questionnaire was used to complete 17,708 interviews in Hungary, Moldova, Poland, Romania, and Slovakia between October 2022 and mid-February 2023. This report analyses this data, alongside results of focus group discussions with refugee communities and data from other exercises conducted by UNHCR and partners (border monitoring data, intentions surveys, Multi Sector Needs Assessments). The results are intended to provide an update on the results of UNHCR’s 2022 protection monitoring report on the situation of refugees from Ukraine, as well as a partial update of UNHCR’s report ‘The Implementation of the Temporary Protection Directive: Six Months On’.</p>\n"
+    }
+  },
+  "text": "# Displacement Patterns, Protection Risks and Needs of Refugees from Ukraine - Regional Protection Analysis # 2\n\n**Context**\n\nThe war in Ukraine has caused millions of people to flee, with over 4.9 million registering for temporary or equivalent national protection schemes in Europe.  \n\nSince the onset of the crisis, UNHCR has been closely monitoring the protection situation of refugees from Ukraine and has conducted studies on the implementation of the Temporary Protection Directive (TPD), alongside establishing protection monitoring systems in countries neighboring Ukraine.  \n\nA revised protection monitoring questionnaire was used to complete 17,708 interviews in Hungary, Moldova, Poland, Romania, and Slovakia between October 2022 and mid-February 2023. This report analyses this data, alongside results of focus group discussions with refugee communities and data from other exercises conducted by UNHCR and partners (border monitoring data, intentions surveys, Multi Sector Needs Assessments). The results are intended to provide an update on the results of UNHCR’s 2022 protection monitoring report on the situation of refugees from Ukraine, as well as a partial update of UNHCR’s report ‘The Implementation of the Temporary Protection Directive: Six Months On’.",
+  "summary": " This report provides an update on the protection situation of refugees from Ukraine, based on data from 17,708 interviews conducted in Hungary, Moldova, Poland, Romania, and Slovakia between October 2022 and mid-February 2023. The data is supplemented by results from focus group discussions with refugee communities and other exercises conducted by UNHCR and partners. The report is intended to provide an update on the results of UNHCR’s 2022 protection monitoring report on the situation of refugees from Ukraine, as well as a partial update of UNHCR’s report ‘The Implementation of the Temporary Protection Directive: Six Months On’.",
+  "metadata": {
+    "id": "3956408",
+    "name": "Displacement Patterns, Protection Risks and Needs of Refugees from Ukraine - Regional Protection Analysis # 2",
+    "date_original": 1682467200000,
+    "date_changed": 1682541112000,
+    "date_created": 1682541092000,
+    "primary_country_id": 190,
+    "primary_country_name": "Poland",
+    "primary_country_iso3": "pol",
+    "primary_country_location": {
+      "lon": 19.3,
+      "lat": 52.12
+    }
+  }
+}

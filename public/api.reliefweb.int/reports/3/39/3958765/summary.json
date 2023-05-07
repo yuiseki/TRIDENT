@@ -1,0 +1,196 @@
+{
+  "original": {
+    "id": "3958765",
+    "fields": {
+      "date": {
+        "changed": "2023-05-04T19:23:42+00:00",
+        "created": "2023-05-04T19:22:58+00:00",
+        "original": "2023-05-04T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/187",
+          "name": "Peru",
+          "location": {
+            "lon": -75.31,
+            "lat": -10.15
+          },
+          "id": 187,
+          "shortname": "Peru",
+          "iso3": "per",
+          "primary": true
+        }
+      ],
+      "ocha_product": [
+        {
+          "name": "Situation Report",
+          "id": 12345
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/187",
+        "name": "Peru",
+        "location": {
+          "lon": -75.31,
+          "lat": -10.15
+        },
+        "id": 187,
+        "shortname": "Peru",
+        "iso3": "per"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        },
+        {
+          "code": "LS",
+          "name": "Land Slide",
+          "id": 4728
+        },
+        {
+          "code": "TC",
+          "name": "Tropical Cyclone",
+          "id": 4618
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1503",
+          "longname": "United Nations Office for the Coordination of Humanitarian Affairs",
+          "spanish_name": "Oficina de Coordinación de Asuntos Humanitarios",
+          "name": "UN Office for the Coordination of Humanitarian Affairs",
+          "id": 1503,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "OCHA",
+          "disclaimer": "To learn more about OCHA's activities, please visit https://www.unocha.org/.",
+          "homepage": "http://www.unocha.org/"
+        }
+      ],
+      "title": "Peru: Flooding - Situation Report No. 05 (as of 3 May 2023)",
+      "body": "*This report is prepared by the Office for the Coordination of Humanitarian Affairs (OCHA), in collaboration with the Office of the Resident Coordinator, the agencies, funds and programs of the United Nations System, information from member organisations of the National Humanitarian Network (NHN) and information provided by the Government of Peru. It covers the period from 20 April to 2 May 2023.*\n\n**Highlights**\n\n- With 70.5 per cent of damage assessments and needs evaluations processed, official figures for the rainy season indicate that there are 522,200 people in need (counted as 79,552 people left without homes and 442,648 people affected). The flooding has also destroyed or rendered uninhabitable almost 30,000 homes; as such, the real number of people affected is expected to continue climbing in the coming days. \n\n- The National Civil Defence Institute (INDECI) reports having assisted 67,882 people as of 30 April. \n\n- The National Humanitarian Network's (RHN) Shelter sector estimates that there are 2,757 people (or 787 families) in shelters and spontaneous settlements across Lambayeque, Lima, Piura, La Libertad, Ancash and Tumbes. \n\n- The United States' National Oceanic and Atmospheric Administration's (NOAA) Climate Prediction Center forecasts that the next few weeks could see an increase in the likelihood of heavy rains for northern Peru, which could affect emergency response operations. \n\n**SITUATION OVERVIEW** \n\n- Rains, floods and landslides have severely affected northern and central Peruvian coastal departments, in particular Lambayeque, Lima, Piura and Tumbes, resulting in a dire humanitarian situation. This situation has led to loss of life and severe damage to homes, livelihoods, roads and disruption of basic services. \n\n- Torrential rains have affected at least 522,200 people, according to official damage assessment and needs analysis records, 70 per cent of which have been processed. The UN Disaster Assessment and Coordination (UNDAC) teams led by OCHA in the three most affected regions report that although local level damage assessments have picked up some pace, there is still a need to strengthen impact analysis, particularly in terms of livelihoods and the disruption or reduction in the quality of public services.\n\n- Almost two months after its onset, the main needs remain food, access to safe water, sanitation, health services (especially for protection from vector-borne diseases), protection and livelihoods.\n\n- INDECI reports reaching 67,882 people with assistance as of 30 April, indicating that the gap of people with humanitarian needs still to be addressed is in the hundreds of thousands of people. \n\n- The UNDAC teams' main activities in Tumbes, Piura and Lambayeque were successfully completed with the establishment of regional humanitarian coordination platforms in each region, with support from INDECI and the Peruvian Foreign Ministry, as well as defining their presence in the Government's response coordination mechanisms.",
+      "url": "https://reliefweb.int/node/3958765",
+      "disaster": [
+        {
+          "name": "Peru: Floods and Landslides - Mar 2023",
+          "id": 51516,
+          "glide": "FL-2023-000036-PER",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            },
+            {
+              "code": "LS",
+              "name": "Land Slide",
+              "id": 4728
+            },
+            {
+              "code": "TC",
+              "name": "Tropical Cyclone",
+              "id": 4618
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/06/ee/06eebfff-c429-4731-9056-3a143baa7a83.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/06/ee/06eebfff-c429-4731-9056-3a143baa7a83.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/06/ee/06eebfff-c429-4731-9056-3a143baa7a83.png",
+            "version": "2417490-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/06/ee/06eebfff-c429-4731-9056-3a143baa7a83.png"
+          },
+          "filename": "2023-05-04 PE SITREP 5 (Eng).pdf",
+          "mimetype": "application/pdf",
+          "id": "2417490",
+          "filesize": "2310973",
+          "url": "https://reliefweb.int/attachments/06eebfff-c429-4731-9056-3a143baa7a83/2023-05-04%20PE%20SITREP%205%20%28Eng%29.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/peru/peru-flooding-situation-report-no-05-3-may-2023",
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        },
+        {
+          "name": "Camp Coordination and Camp Management",
+          "id": 49458
+        },
+        {
+          "name": "Climate Change and Environment",
+          "id": 4588
+        },
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Recovery and Reconstruction",
+          "id": 4601
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3958765,
+      "status": "published",
+      "body-html": "<p><em>This report is prepared by the Office for the Coordination of Humanitarian Affairs (OCHA), in collaboration with the Office of the Resident Coordinator, the agencies, funds and programs of the United Nations System, information from member organisations of the National Humanitarian Network (NHN) and information provided by the Government of Peru. It covers the period from 20 April to 2 May 2023.</em></p>\n<p><strong>Highlights</strong></p>\n<ul>\n<li>\n<p>With 70.5 per cent of damage assessments and needs evaluations processed, official figures for the rainy season indicate that there are 522,200 people in need (counted as 79,552 people left without homes and 442,648 people affected). The flooding has also destroyed or rendered uninhabitable almost 30,000 homes; as such, the real number of people affected is expected to continue climbing in the coming days.</p>\n</li>\n<li>\n<p>The National Civil Defence Institute (INDECI) reports having assisted 67,882 people as of 30 April.</p>\n</li>\n<li>\n<p>The National Humanitarian Network's (RHN) Shelter sector estimates that there are 2,757 people (or 787 families) in shelters and spontaneous settlements across Lambayeque, Lima, Piura, La Libertad, Ancash and Tumbes.</p>\n</li>\n<li>\n<p>The United States' National Oceanic and Atmospheric Administration's (NOAA) Climate Prediction Center forecasts that the next few weeks could see an increase in the likelihood of heavy rains for northern Peru, which could affect emergency response operations.</p>\n</li>\n</ul>\n<p><strong>SITUATION OVERVIEW</strong></p>\n<ul>\n<li>\n<p>Rains, floods and landslides have severely affected northern and central Peruvian coastal departments, in particular Lambayeque, Lima, Piura and Tumbes, resulting in a dire humanitarian situation. This situation has led to loss of life and severe damage to homes, livelihoods, roads and disruption of basic services.</p>\n</li>\n<li>\n<p>Torrential rains have affected at least 522,200 people, according to official damage assessment and needs analysis records, 70 per cent of which have been processed. The UN Disaster Assessment and Coordination (UNDAC) teams led by OCHA in the three most affected regions report that although local level damage assessments have picked up some pace, there is still a need to strengthen impact analysis, particularly in terms of livelihoods and the disruption or reduction in the quality of public services.</p>\n</li>\n<li>\n<p>Almost two months after its onset, the main needs remain food, access to safe water, sanitation, health services (especially for protection from vector-borne diseases), protection and livelihoods.</p>\n</li>\n<li>\n<p>INDECI reports reaching 67,882 people with assistance as of 30 April, indicating that the gap of people with humanitarian needs still to be addressed is in the hundreds of thousands of people.</p>\n</li>\n<li>\n<p>The UNDAC teams' main activities in Tumbes, Piura and Lambayeque were successfully completed with the establishment of regional humanitarian coordination platforms in each region, with support from INDECI and the Peruvian Foreign Ministry, as well as defining their presence in the Government's response coordination mechanisms.</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# Peru: Flooding - Situation Report No. 05 (as of 3 May 2023)\n\n*This report is prepared by the Office for the Coordination of Humanitarian Affairs (OCHA), in collaboration with the Office of the Resident Coordinator, the agencies, funds and programs of the United Nations System, information from member organisations of the National Humanitarian Network (NHN) and information provided by the Government of Peru. It covers the period from 20 April to 2 May 2023.*\n\n**Highlights**\n\n- With 70.5 per cent of damage assessments and needs evaluations processed, official figures for the rainy season indicate that there are 522,200 people in need (counted as 79,552 people left without homes and 442,648 people affected). The flooding has also destroyed or rendered uninhabitable almost 30,000 homes; as such, the real number of people affected is expected to continue climbing in the coming days. \n\n- The National Civil Defence Institute (INDECI) reports having assisted 67,882 people as of 30 April. \n\n- The National Humanitarian Network's (RHN) Shelter sector estimates that there are 2,757 people (or 787 families) in shelters and spontaneous settlements across Lambayeque, Lima, Piura, La Libertad, Ancash and Tumbes. \n\n- The United States' National Oceanic and Atmospheric Administration's (NOAA) Climate Prediction Center forecasts that the next few weeks could see an increase in the likelihood of heavy rains for northern Peru, which could affect emergency response operations. \n\n**SITUATION OVERVIEW** \n\n- Rains, floods and landslides have severely affected northern and central Peruvian coastal departments, in particular Lambayeque, Lima, Piura and Tumbes, resulting in a dire humanitarian situation. This situation has led to loss of life and severe damage to homes, livelihoods, roads and disruption of basic services. \n\n- Torrential rains have affected at least 522,200 people, according to official damage assessment and needs analysis records, 70 per cent of which have been processed. The UN Disaster Assessment and Coordination (UNDAC) teams led by OCHA in the three most affected regions report that although local level damage assessments have picked up some pace, there is still a need to strengthen impact analysis, particularly in terms of livelihoods and the disruption or reduction in the quality of public services.\n\n- Almost two months after its onset, the main needs remain food, access to safe water, sanitation, health services (especially for protection from vector-borne diseases), protection and livelihoods.\n\n- INDECI reports reaching 67,882 people with assistance as of 30 April, indicating that the gap of people with humanitarian needs still to be addressed is in the hundreds of thousands of people. \n\n- The UNDAC teams' main activities in Tumbes, Piura and Lambayeque were successfully completed with the establishment of regional humanitarian coordination platforms in each region, with support from INDECI and the Peruvian Foreign Ministry, as well as defining their presence in the Government's response coordination mechanisms.",
+  "summary": "\n\nTorrential rains, floods and landslides have severely affected northern and central Peruvian coastal departments, resulting in a dire humanitarian situation. Official figures indicate that 522,200 people are in need of assistance, with almost 30,000 homes destroyed or rendered uninhabitable. The National Civil Defence Institute (INDECI) has assisted 67,882 people as of 30 April, and the National Humanitarian Network's (RHN) Shelter sector estimates that there are 2,757 people in shelters and spontaneous settlements. The United States' National Oceanic and Atmospheric Administration's (NOAA) Climate Prediction Center forecasts that the next few weeks could see an increase in the likelihood of heavy rains for northern Peru. The main needs remain food, access to safe water, sanitation, health services, protection and livelihoods.",
+  "metadata": {
+    "id": "3958765",
+    "name": "Peru: Flooding - Situation Report No. 05 (as of 3 May 2023)",
+    "date_original": 1683158400000,
+    "date_changed": 1683228222000,
+    "date_created": 1683228178000,
+    "primary_country_id": 187,
+    "primary_country_name": "Peru",
+    "primary_country_iso3": "per",
+    "primary_country_location": {
+      "lon": -75.31,
+      "lat": -10.15
+    }
+  }
+}

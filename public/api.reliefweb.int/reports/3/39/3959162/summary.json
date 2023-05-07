@@ -1,0 +1,180 @@
+{
+  "original": {
+    "id": "3959162",
+    "fields": {
+      "date": {
+        "changed": "2023-05-05T16:30:35+00:00",
+        "created": "2023-05-05T16:11:49+00:00",
+        "original": "2023-05-05T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/226",
+          "name": "Syrian Arab Republic",
+          "location": {
+            "lon": 38.51,
+            "lat": 35.01
+          },
+          "id": 226,
+          "shortname": "Syria",
+          "iso3": "syr",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/226",
+        "name": "Syrian Arab Republic",
+        "location": {
+          "lon": 38.51,
+          "lat": 35.01
+        },
+        "id": 226,
+        "shortname": "Syria",
+        "iso3": "syr"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EQ",
+          "name": "Earthquake",
+          "id": 4628
+        },
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1979",
+          "longname": "United Nations Children's Fund",
+          "spanish_name": "Fondo de las Naciones Unidas para la Infancia",
+          "name": "UN Children's Fund",
+          "id": 1979,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNICEF",
+          "homepage": "http://www.unicef.org"
+        }
+      ],
+      "title": "UNICEF Syria Humanitarian Situation Report No. 9 (Earthquake): 12 April - 2 May 2023",
+      "body": "**Highlights**\n\n• UNICEF and partners supported 140,286 children (70,272 girls and 70,014 boys) to access formal or non-formal education in a safe and gender sensitive environment to date, including early learning, selflearning and remedial classes. Prefabricated classrooms with gender sensitive WASH prefabs have been installed to ensure the continuity of the provision of formal education in areas where schools are unable to reopen due to damages or use as shelters.\n\n• UNICEF continued to provide life-saving WASH services, reaching an additional 183,658 people including 51,280 girls, 47,348 boys, 44,755 women and 40,275 men with sufficient quantity and quality of water for drinking and domestic needs. This brings the cumulative reach to 765,794 beneficiaries.\n\n• UNICEF implementing partners provided mental health and psychosocial support (MHPSS) services to a total of 12,639 children and caregivers (6,111 girls, 4,629 boys, 1,622 women and 277 men). These interventions included psychological first aid, recreational activities, structured psychosocial support interventions that support children in getting a sense of stability and routine, after getting displaced and, having to leave the comfort of their homes.\n\n• The Immediate Response Plan is 45 per cent funded, with US$78.1 million received. Nutrition, health and education remain significantly underfunded\n\n**Funding Overview and Partnerships**\n\nTo meet the life-saving needs of nearly 3 million earthquake-affected children in Syria, UNICEF is appealing for US$172.7 million to implement its Immediate Response Plan for the Earthquake, which is part of the Inter-Agency Flash Appeal and will inform the revision of the 2023 Syria Humanitarian Action for Children (HAC).\n\nThe Immediate Response Plan is 45 per cent funded, with US$78.1 million received. Nutrition, health and education remain significantly underfunded.  \n\nOf the funds received, US$50.7 million (65 per cent) are from UNICEF core resources, UNICEF National Committees, UNICEF country offices with structured private sector fundraising activities and UNICEF’s global giving online platform.  \n\nThe remaining US$27.4 million from public sector partners including the governments of Australia, Japan, Slovakia and New Zealand, the UN Central Emergency Response Fund (CERF) Rapid Response, USAID’s Bureau for Humanitarian Assistance (BHA), the United Kingdom Foreign, Commonwealth and Development Office (FCDO), the Swedish International Development Cooperation Agency (Sida), the Global Partnership for Education (GPE) Accelerated Funding Grant and the European Civil Protection and Humanitarian Aid Operations (ECHO).The governments of the State of Kuwait and France, the CERF Underfunded Emergencies, Syria Humanitarian Fund and UNICEF National Committees have also pledged additional support. UNICEF expresses its sincere gratitude to all private and public sector partners for their critical support to the earthquake response.  \n\nUNICEF urges all partners to the earthquake response to ensure flexible, sustained and predictable resources is provided to the ongoing humanitarian response, promote a child-focused recovery and ensure children’s needs are prioritized within funding allocations, recognizing that children are among those most vulnerable. There must be investment in a long-term recovery and building back better, more resilient, and more inclusive of the most marginalized. Neither humanitarian exemptions nor funding should be time-bound or earthquake specific.",
+      "url": "https://reliefweb.int/node/3959162",
+      "disaster": [
+        {
+          "name": "Türkiye/Syria: Earthquakes - Feb 2023",
+          "id": 51470,
+          "glide": "EQ-2023-000015-TUR",
+          "type": [
+            {
+              "code": "EQ",
+              "name": "Earthquake",
+              "id": 4628,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Syria: Cholera Outbreak - Sep 2022",
+          "id": 51310,
+          "glide": "EP-2022-000310-SYR",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/c4/8f/c48f648d-b3b5-409d-8499-1695e47bb3e4.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/c4/8f/c48f648d-b3b5-409d-8499-1695e47bb3e4.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/c4/8f/c48f648d-b3b5-409d-8499-1695e47bb3e4.png",
+            "version": "2417841-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/c4/8f/c48f648d-b3b5-409d-8499-1695e47bb3e4.png"
+          },
+          "filename": "UNICEF Syria Humanitarian Situation Report No. 9 (Earthquake) - 12 April - 02 May 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2417841",
+          "filesize": "498599",
+          "url": "https://reliefweb.int/attachments/c48f648d-b3b5-409d-8499-1695e47bb3e4/UNICEF%20Syria%20Humanitarian%20Situation%20Report%20No.%209%20%28Earthquake%29%20-%2012%20April%20-%2002%20May%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/syrian-arab-republic/unicef-syria-humanitarian-situation-report-no-9-earthquake-12-april-2-may-2023",
+      "theme": [
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3959162,
+      "status": "published",
+      "body-html": "<p><strong>Highlights</strong></p>\n<p>• UNICEF and partners supported 140,286 children (70,272 girls and 70,014 boys) to access formal or non-formal education in a safe and gender sensitive environment to date, including early learning, selflearning and remedial classes. Prefabricated classrooms with gender sensitive WASH prefabs have been installed to ensure the continuity of the provision of formal education in areas where schools are unable to reopen due to damages or use as shelters.</p>\n<p>• UNICEF continued to provide life-saving WASH services, reaching an additional 183,658 people including 51,280 girls, 47,348 boys, 44,755 women and 40,275 men with sufficient quantity and quality of water for drinking and domestic needs. This brings the cumulative reach to 765,794 beneficiaries.</p>\n<p>• UNICEF implementing partners provided mental health and psychosocial support (MHPSS) services to a total of 12,639 children and caregivers (6,111 girls, 4,629 boys, 1,622 women and 277 men). These interventions included psychological first aid, recreational activities, structured psychosocial support interventions that support children in getting a sense of stability and routine, after getting displaced and, having to leave the comfort of their homes.</p>\n<p>• The Immediate Response Plan is 45 per cent funded, with US$78.1 million received. Nutrition, health and education remain significantly underfunded</p>\n<p><strong>Funding Overview and Partnerships</strong></p>\n<p>To meet the life-saving needs of nearly 3 million earthquake-affected children in Syria, UNICEF is appealing for US$172.7 million to implement its Immediate Response Plan for the Earthquake, which is part of the Inter-Agency Flash Appeal and will inform the revision of the 2023 Syria Humanitarian Action for Children (HAC).</p>\n<p>The Immediate Response Plan is 45 per cent funded, with US$78.1 million received. Nutrition, health and education remain significantly underfunded.</p>\n<p>Of the funds received, US$50.7 million (65 per cent) are from UNICEF core resources, UNICEF National Committees, UNICEF country offices with structured private sector fundraising activities and UNICEF’s global giving online platform.</p>\n<p>The remaining US$27.4 million from public sector partners including the governments of Australia, Japan, Slovakia and New Zealand, the UN Central Emergency Response Fund (CERF) Rapid Response, USAID’s Bureau for Humanitarian Assistance (BHA), the United Kingdom Foreign, Commonwealth and Development Office (FCDO), the Swedish International Development Cooperation Agency (Sida), the Global Partnership for Education (GPE) Accelerated Funding Grant and the European Civil Protection and Humanitarian Aid Operations (ECHO).The governments of the State of Kuwait and France, the CERF Underfunded Emergencies, Syria Humanitarian Fund and UNICEF National Committees have also pledged additional support. UNICEF expresses its sincere gratitude to all private and public sector partners for their critical support to the earthquake response.</p>\n<p>UNICEF urges all partners to the earthquake response to ensure flexible, sustained and predictable resources is provided to the ongoing humanitarian response, promote a child-focused recovery and ensure children’s needs are prioritized within funding allocations, recognizing that children are among those most vulnerable. There must be investment in a long-term recovery and building back better, more resilient, and more inclusive of the most marginalized. Neither humanitarian exemptions nor funding should be time-bound or earthquake specific.</p>\n"
+    }
+  },
+  "text": "# UNICEF Syria Humanitarian Situation Report No. 9 (Earthquake): 12 April - 2 May 2023\n\n**Highlights**\n\n• UNICEF and partners supported 140,286 children (70,272 girls and 70,014 boys) to access formal or non-formal education in a safe and gender sensitive environment to date, including early learning, selflearning and remedial classes. Prefabricated classrooms with gender sensitive WASH prefabs have been installed to ensure the continuity of the provision of formal education in areas where schools are unable to reopen due to damages or use as shelters.\n\n• UNICEF continued to provide life-saving WASH services, reaching an additional 183,658 people including 51,280 girls, 47,348 boys, 44,755 women and 40,275 men with sufficient quantity and quality of water for drinking and domestic needs. This brings the cumulative reach to 765,794 beneficiaries.\n\n• UNICEF implementing partners provided mental health and psychosocial support (MHPSS) services to a total of 12,639 children and caregivers (6,111 girls, 4,629 boys, 1,622 women and 277 men). These interventions included psychological first aid, recreational activities, structured psychosocial support interventions that support children in getting a sense of stability and routine, after getting displaced and, having to leave the comfort of their homes.\n\n• The Immediate Response Plan is 45 per cent funded, with US$78.1 million received. Nutrition, health and education remain significantly underfunded\n\n**Funding Overview and Partnerships**\n\nTo meet the life-saving needs of nearly 3 million earthquake-affected children in Syria, UNICEF is appealing for US$172.7 million to implement its Immediate Response Plan for the Earthquake, which is part of the Inter-Agency Flash Appeal and will inform the revision of the 2023 Syria Humanitarian Action for Children (HAC).\n\nThe Immediate Response Plan is 45 per cent funded, with US$78.1 million received. Nutrition, health and education remain significantly underfunded.  \n\nOf the funds received, US$50.7 million (65 per cent) are from UNICEF core resources, UNICEF National Committees, UNICEF country offices with structured private sector fundraising activities and UNICEF’s global giving online platform.  \n\nThe remaining US$27.4 million from public sector partners including the governments of Australia, Japan, Slovakia and New Zealand, the UN Central Emergency Response Fund (CERF) Rapid Response, USAID’s Bureau for Humanitarian Assistance (BHA), the United Kingdom Foreign, Commonwealth and Development Office (FCDO), the Swedish International Development Cooperation Agency (Sida), the Global Partnership for Education (GPE) Accelerated Funding Grant and the European Civil Protection and Humanitarian Aid Operations (ECHO).The governments of the State of Kuwait and France, the CERF Underfunded Emergencies, Syria Humanitarian Fund and UNICEF National Committees have also pledged additional support. UNICEF expresses its sincere gratitude to all private and public sector partners for their critical support to the earthquake response.  \n\nUNICEF urges all partners to the earthquake response to ensure flexible, sustained and predictable resources is provided to the ongoing humanitarian response, promote a child-focused recovery and ensure children’s needs are prioritized within funding allocations, recognizing that children are among those most vulnerable. There must be investment in a long-term recovery and building back better, more resilient, and more inclusive of the most marginalized. Neither humanitarian exemptions nor funding should be time-bound or earthquake specific.",
+  "summary": "\n\nUNICEF and partners have provided support to 140,286 children in Syria to access formal or non-formal education in a safe and gender sensitive environment. Additionally, UNICEF has provided life-saving WASH services to 765,794 beneficiaries and mental health and psychosocial support services to 12,639 children and caregivers. UNICEF is appealing for US$172.7 million to implement its Immediate Response Plan for the Earthquake, which is 45% funded with US$78.1 million received. UNICEF expresses its gratitude to private and public sector partners for their support and urges all partners to ensure flexible, sustained and predictable resources are provided to the ongoing humanitarian response.",
+  "metadata": {
+    "id": "3959162",
+    "name": "UNICEF Syria Humanitarian Situation Report No. 9 (Earthquake): 12 April - 2 May 2023",
+    "date_original": 1683244800000,
+    "date_changed": 1683304235000,
+    "date_created": 1683303109000,
+    "primary_country_id": 226,
+    "primary_country_name": "Syrian Arab Republic",
+    "primary_country_iso3": "syr",
+    "primary_country_location": {
+      "lon": 38.51,
+      "lat": 35.01
+    }
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "original": {
+    "id": "3954727",
+    "fields": {
+      "date": {
+        "changed": "2023-04-20T14:03:55+00:00",
+        "created": "2023-04-20T13:53:49+00:00",
+        "original": "2023-04-20T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/144",
+          "name": "Madagascar",
+          "location": {
+            "lon": 46.71,
+            "lat": -19.37
+          },
+          "id": 144,
+          "shortname": "Madagascar",
+          "iso3": "mdg",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/144",
+        "name": "Madagascar",
+        "location": {
+          "lon": 46.71,
+          "lat": -19.37
+        },
+        "id": 144,
+        "shortname": "Madagascar",
+        "iso3": "mdg"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "DR",
+          "name": "Drought",
+          "id": 4672
+        },
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        },
+        {
+          "code": "LS",
+          "name": "Land Slide",
+          "id": 4728
+        },
+        {
+          "code": "TC",
+          "name": "Tropical Cyclone",
+          "id": 4618
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1979",
+          "longname": "United Nations Children's Fund",
+          "spanish_name": "Fondo de las Naciones Unidas para la Infancia",
+          "name": "UN Children's Fund",
+          "id": 1979,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNICEF",
+          "homepage": "http://www.unicef.org"
+        }
+      ],
+      "title": "UNICEF Madagascar Humanitarian Situation Report (Cyclone FREDDY & CHENESO): 31 March 2023",
+      "body": "**Highlights**\n\n- Between January 19 and March 03, 2023, two cyclones - Cheneso and Freddy -- made landfall on the north, southeast and southwest coasts of Madagascar, with wind speeds approaching 200 kilometers. Heavy rains created widespread flooding. Freddy hit the country twice, first in southeast and then in west on its way back from Mozambique.\n\n- Result assessments indicate that 90,000 people were directly impacted by Cheneso and 187,400 by Freddy, including 88,000 displaced, 47 killed and 20 missing. Roads, schools, health centers and homes across several regions were damaged and destroyed.\n\n- UNICEF has provided emergency water and sanitation services to 21,200 people with 10,800 women and 10,400 men including 5400 girls and 5200 boys.\n\n- The cyclones hit regions already experiencing alarming levels of malnutrition due to the ongoing recovery from the 2022 cyclones in the southeast, and vulnerability in drought-prone areas in the south. In the southeast, the nutritional situation is worse than forecast in the last IPC, with two districts in critic phase (global acute malnutrition above 15%). UNICEF has treated 5,577 girls and 5,358 boys for severe acute malnutrition and 28,100 children (14,300 girls and 13,800 boys) have received preventive nutrition services.\n\n- 142,700 people was supported by UNICEF during the reporting period.\n\n- UNICEF Madagascar launched a US$ 41.12 million appeal for 2023 to meet the most urgent humanitarian needs of children and women. As of 31 March 2023, 27% had been received.\n\n- Parallel crises in the south (drought) and the COVID response (vaccination) remain of concern and require continued attention.",
+      "url": "https://reliefweb.int/node/3954727",
+      "disaster": [
+        {
+          "name": "Tropical Cyclone Freddy - Feb 2023",
+          "id": 51486,
+          "glide": "TC-2023-000023-MDG",
+          "type": [
+            {
+              "code": "TC",
+              "name": "Tropical Cyclone",
+              "id": 4618,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Tropical Cyclone Cheneso - Jan 2023",
+          "id": 51450,
+          "glide": "TC-2023-000012-MDG",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611
+            },
+            {
+              "code": "LS",
+              "name": "Land Slide",
+              "id": 4728
+            },
+            {
+              "code": "TC",
+              "name": "Tropical Cyclone",
+              "id": 4618,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Madagascar: Drought - 2018-2023",
+          "id": 46459,
+          "glide": "DR-2018-000141-MDG",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/63/12/631294e2-9cd4-4616-ac18-3f947cf1a62e.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/63/12/631294e2-9cd4-4616-ac18-3f947cf1a62e.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/63/12/631294e2-9cd4-4616-ac18-3f947cf1a62e.png",
+            "version": "2413802-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/63/12/631294e2-9cd4-4616-ac18-3f947cf1a62e.png"
+          },
+          "filename": "UNICEF Madagascar Humanitarian Situation Report (Cyclone FREDDY & CHENESO), 31 March 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2413802",
+          "filesize": "738767",
+          "url": "https://reliefweb.int/attachments/631294e2-9cd4-4616-ac18-3f947cf1a62e/UNICEF%20Madagascar%20Humanitarian%20Situation%20Report%20%28Cyclone%20FREDDY%20%26%20CHENESO%29%2C%2031%20March%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/madagascar/unicef-madagascar-humanitarian-situation-report-cyclone-freddy-cheneso-31-march-2023",
+      "theme": [
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3954727,
+      "status": "published",
+      "body-html": "<p><strong>Highlights</strong></p>\n<ul>\n<li>\n<p>Between January 19 and March 03, 2023, two cyclones - Cheneso and Freddy -- made landfall on the north, southeast and southwest coasts of Madagascar, with wind speeds approaching 200 kilometers. Heavy rains created widespread flooding. Freddy hit the country twice, first in southeast and then in west on its way back from Mozambique.</p>\n</li>\n<li>\n<p>Result assessments indicate that 90,000 people were directly impacted by Cheneso and 187,400 by Freddy, including 88,000 displaced, 47 killed and 20 missing. Roads, schools, health centers and homes across several regions were damaged and destroyed.</p>\n</li>\n<li>\n<p>UNICEF has provided emergency water and sanitation services to 21,200 people with 10,800 women and 10,400 men including 5400 girls and 5200 boys.</p>\n</li>\n<li>\n<p>The cyclones hit regions already experiencing alarming levels of malnutrition due to the ongoing recovery from the 2022 cyclones in the southeast, and vulnerability in drought-prone areas in the south. In the southeast, the nutritional situation is worse than forecast in the last IPC, with two districts in critic phase (global acute malnutrition above 15%). UNICEF has treated 5,577 girls and 5,358 boys for severe acute malnutrition and 28,100 children (14,300 girls and 13,800 boys) have received preventive nutrition services.</p>\n</li>\n<li>\n<p>142,700 people was supported by UNICEF during the reporting period.</p>\n</li>\n<li>\n<p>UNICEF Madagascar launched a US$ 41.12 million appeal for 2023 to meet the most urgent humanitarian needs of children and women. As of 31 March 2023, 27% had been received.</p>\n</li>\n<li>\n<p>Parallel crises in the south (drought) and the COVID response (vaccination) remain of concern and require continued attention.</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# UNICEF Madagascar Humanitarian Situation Report (Cyclone FREDDY & CHENESO): 31 March 2023\n\n**Highlights**\n\n- Between January 19 and March 03, 2023, two cyclones - Cheneso and Freddy -- made landfall on the north, southeast and southwest coasts of Madagascar, with wind speeds approaching 200 kilometers. Heavy rains created widespread flooding. Freddy hit the country twice, first in southeast and then in west on its way back from Mozambique.\n\n- Result assessments indicate that 90,000 people were directly impacted by Cheneso and 187,400 by Freddy, including 88,000 displaced, 47 killed and 20 missing. Roads, schools, health centers and homes across several regions were damaged and destroyed.\n\n- UNICEF has provided emergency water and sanitation services to 21,200 people with 10,800 women and 10,400 men including 5400 girls and 5200 boys.\n\n- The cyclones hit regions already experiencing alarming levels of malnutrition due to the ongoing recovery from the 2022 cyclones in the southeast, and vulnerability in drought-prone areas in the south. In the southeast, the nutritional situation is worse than forecast in the last IPC, with two districts in critic phase (global acute malnutrition above 15%). UNICEF has treated 5,577 girls and 5,358 boys for severe acute malnutrition and 28,100 children (14,300 girls and 13,800 boys) have received preventive nutrition services.\n\n- 142,700 people was supported by UNICEF during the reporting period.\n\n- UNICEF Madagascar launched a US$ 41.12 million appeal for 2023 to meet the most urgent humanitarian needs of children and women. As of 31 March 2023, 27% had been received.\n\n- Parallel crises in the south (drought) and the COVID response (vaccination) remain of concern and require continued attention.",
+  "summary": " Two cyclones, Cheneso and Freddy, hit Madagascar between January 19 and March 03, 2023, causing widespread flooding and destruction. 90,000 people were directly impacted by Cheneso and 187,400 by Freddy, including 88,000 displaced, 47 killed and 20 missing. UNICEF provided emergency water and sanitation services to 21,200 people, and treated 5,577 girls and 5,358 boys for severe acute malnutrition. UNICEF launched a US$ 41.12 million appeal for 2023 to meet the most urgent humanitarian needs of children and women, and as of 31 March 2023, 27% had been received. Parallel crises in the south (drought) and the COVID response (vaccination) remain of concern.",
+  "metadata": {
+    "id": "3954727",
+    "name": "UNICEF Madagascar Humanitarian Situation Report (Cyclone FREDDY & CHENESO): 31 March 2023",
+    "date_original": 1681948800000,
+    "date_changed": 1681999435000,
+    "date_created": 1681998829000,
+    "primary_country_id": 144,
+    "primary_country_name": "Madagascar",
+    "primary_country_iso3": "mdg",
+    "primary_country_location": {
+      "lon": 46.71,
+      "lat": -19.37
+    }
+  }
+}

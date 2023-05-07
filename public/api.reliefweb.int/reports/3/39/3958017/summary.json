@@ -1,0 +1,190 @@
+{
+  "original": {
+    "id": "3958017",
+    "fields": {
+      "date": {
+        "changed": "2023-05-03T06:58:49+00:00",
+        "created": "2023-05-03T06:55:50+00:00",
+        "original": "2023-05-03T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/54",
+          "name": "Central African Republic",
+          "location": {
+            "lon": 20.48,
+            "lat": 6.57
+          },
+          "id": 54,
+          "shortname": "CAR",
+          "iso3": "caf"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/55",
+          "name": "Chad",
+          "location": {
+            "lon": 18.66,
+            "lat": 15.36
+          },
+          "id": 55,
+          "shortname": "Chad",
+          "iso3": "tcd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/82",
+          "name": "Egypt",
+          "location": {
+            "lon": 29.87,
+            "lat": 26.49
+          },
+          "id": 82,
+          "shortname": "Egypt",
+          "iso3": "egy"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/87",
+          "name": "Ethiopia",
+          "location": {
+            "lon": 39.62,
+            "lat": 8.63
+          },
+          "id": 87,
+          "shortname": "Ethiopia",
+          "iso3": "eth"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/8657",
+          "name": "South Sudan",
+          "location": {
+            "lon": 30.5,
+            "lat": 6.9
+          },
+          "id": 8657,
+          "shortname": "South Sudan",
+          "iso3": "ssd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/220",
+          "name": "Sudan",
+          "location": {
+            "lon": 30,
+            "lat": 15
+          },
+          "id": 220,
+          "shortname": "Sudan",
+          "iso3": "sdn",
+          "primary": true
+        }
+      ],
+      "origin": "https://data.unhcr.org/en/documents/details/100409",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/220",
+        "name": "Sudan",
+        "location": {
+          "lon": 30,
+          "lat": 15
+        },
+        "id": 220,
+        "shortname": "Sudan",
+        "iso3": "sdn"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "Sudan Situation - UNHCR External Update #4 - 2 May 2023",
+      "body": "**Operational Context**\n\nClashes between the Sudanese Armed Forces (SAF) and the Rapid Support Forces (RSF) continued for the 17th consecutive day on 1 May.\n\nOn 1 May, UN High Commissioner for Refugees Filippo Grandi [tweeted](https://twitter.com/FilippoGrandi/status/1652559173060526085) that UNHCR, with governments and partners, is preparing for the possibility that over 800,000 people may flee the fighting in Sudan for neighbouring countries.\n\nOn 2 May, in a press briefing in Geneva on 2 May, UNHCR [informed](https://www.unhcr.org/news/unhcr-partners-scale-relief-efforts-cross-border-movements-sudan-increase) that the agency and partners are scalingup relief efforts as cross-border movements from Sudan increase, with an estimated 100,000 refugee and refugee returnee arrivals already.\n\nOn 1 May, Executive Director Cindy McCain [announced](https://news.un.org/en/story/2023/05/1136222) that the World Food Programme (WFP) has lifted the temporary suspension of operations in Sudan. Food distribution is expected to commence in the states of Gedaref, Jazirah, Kassala, and White Nile in the coming days. \n\nThe Civil Aviation Authority announced that Sudan’s airspace would remain closed until 13 May with the exception of aid and evacuation flights. \n\nOn 1 May, UN Secretary-General António Guterres [announced](https://www.un.org/sg/en/content/sg/personnel-appointments/2023-05-01/ms-clementine-nkweta-salami-of-cameroon-deputy-special-representative-the-united-nations-integrated-transition-assistance-mission-sudan-and-resident-and) the appointment of Clementine Nkweta-Salami of Cameroon as his Deputy Special Representative for Sudan with the United Nations Integrated Transition Assistance Mission in Sudan (UNITAMS). She will also serve as the UN Resident Coordinator and Humanitarian Coordinator in Sudan succeeding Ms. Khardiata Lo N’Diaye of Senegal. Ms. Nkweta-Salami is currently the UNHCR Director of the Regional Bureau for the East, Horn and Great Lakes Regions of Africa.\n\nOn 30 April, the Spokesperson for the UN Secretary-General [announced](https://www.un.org/sg/en/content/sg/statement/2023-04-30/statement-attributable-the-spokesperson-for-the-secretary-general-sudan%C2%A0-%C2%A0%C2%A0) that in light of the rapidly deteriorating humanitarian crisis in Sudan, the Secretary-General was sending the Emergency Relief Coordinator and Under Secretary-General for Humanitarian Affairs, Martin Griffiths, to the region immediately.",
+      "url": "https://reliefweb.int/node/3958017",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/3a/da/3adacdc9-65dc-46d3-b74c-ed1753a81e2e.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/3a/da/3adacdc9-65dc-46d3-b74c-ed1753a81e2e.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/3a/da/3adacdc9-65dc-46d3-b74c-ed1753a81e2e.png",
+            "version": "2416693-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/3a/da/3adacdc9-65dc-46d3-b74c-ed1753a81e2e.png"
+          },
+          "filename": "Sudan Situation - UNHCR External Update #4 - 2 May 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2416693",
+          "filesize": "406603",
+          "url": "https://reliefweb.int/attachments/3adacdc9-65dc-46d3-b74c-ed1753a81e2e/Sudan%20Situation%20-%20UNHCR%20External%20Update%20%234%20-%202%20May%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/sudan/sudan-situation-unhcr-external-update-4-2-may-2023",
+      "theme": [
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        },
+        {
+          "name": "Peacekeeping and Peacebuilding",
+          "id": 4599
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Safety and Security",
+          "id": 4602
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3958017,
+      "status": "published",
+      "body-html": "<p><strong>Operational Context</strong></p>\n<p>Clashes between the Sudanese Armed Forces (SAF) and the Rapid Support Forces (RSF) continued for the 17th consecutive day on 1 May.</p>\n<p>On 1 May, UN High Commissioner for Refugees Filippo Grandi <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://twitter.com/FilippoGrandi/status/1652559173060526085\">tweeted</a> that UNHCR, with governments and partners, is preparing for the possibility that over 800,000 people may flee the fighting in Sudan for neighbouring countries.</p>\n<p>On 2 May, in a press briefing in Geneva on 2 May, UNHCR <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.unhcr.org/news/unhcr-partners-scale-relief-efforts-cross-border-movements-sudan-increase\">informed</a> that the agency and partners are scalingup relief efforts as cross-border movements from Sudan increase, with an estimated 100,000 refugee and refugee returnee arrivals already.</p>\n<p>On 1 May, Executive Director Cindy McCain <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://news.un.org/en/story/2023/05/1136222\">announced</a> that the World Food Programme (WFP) has lifted the temporary suspension of operations in Sudan. Food distribution is expected to commence in the states of Gedaref, Jazirah, Kassala, and White Nile in the coming days.</p>\n<p>The Civil Aviation Authority announced that Sudan’s airspace would remain closed until 13 May with the exception of aid and evacuation flights.</p>\n<p>On 1 May, UN Secretary-General António Guterres <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.un.org/sg/en/content/sg/personnel-appointments/2023-05-01/ms-clementine-nkweta-salami-of-cameroon-deputy-special-representative-the-united-nations-integrated-transition-assistance-mission-sudan-and-resident-and\">announced</a> the appointment of Clementine Nkweta-Salami of Cameroon as his Deputy Special Representative for Sudan with the United Nations Integrated Transition Assistance Mission in Sudan (UNITAMS). She will also serve as the UN Resident Coordinator and Humanitarian Coordinator in Sudan succeeding Ms. Khardiata Lo N’Diaye of Senegal. Ms. Nkweta-Salami is currently the UNHCR Director of the Regional Bureau for the East, Horn and Great Lakes Regions of Africa.</p>\n<p>On 30 April, the Spokesperson for the UN Secretary-General <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.un.org/sg/en/content/sg/statement/2023-04-30/statement-attributable-the-spokesperson-for-the-secretary-general-sudan%C2%A0-%C2%A0%C2%A0\">announced</a> that in light of the rapidly deteriorating humanitarian crisis in Sudan, the Secretary-General was sending the Emergency Relief Coordinator and Under Secretary-General for Humanitarian Affairs, Martin Griffiths, to the region immediately.</p>\n"
+    }
+  },
+  "text": "# Sudan Situation - UNHCR External Update #4 - 2 May 2023\n\n**Operational Context**\n\nClashes between the Sudanese Armed Forces (SAF) and the Rapid Support Forces (RSF) continued for the 17th consecutive day on 1 May.\n\nOn 1 May, UN High Commissioner for Refugees Filippo Grandi [tweeted](https://twitter.com/FilippoGrandi/status/1652559173060526085) that UNHCR, with governments and partners, is preparing for the possibility that over 800,000 people may flee the fighting in Sudan for neighbouring countries.\n\nOn 2 May, in a press briefing in Geneva on 2 May, UNHCR [informed](https://www.unhcr.org/news/unhcr-partners-scale-relief-efforts-cross-border-movements-sudan-increase) that the agency and partners are scalingup relief efforts as cross-border movements from Sudan increase, with an estimated 100,000 refugee and refugee returnee arrivals already.\n\nOn 1 May, Executive Director Cindy McCain [announced](https://news.un.org/en/story/2023/05/1136222) that the World Food Programme (WFP) has lifted the temporary suspension of operations in Sudan. Food distribution is expected to commence in the states of Gedaref, Jazirah, Kassala, and White Nile in the coming days. \n\nThe Civil Aviation Authority announced that Sudan’s airspace would remain closed until 13 May with the exception of aid and evacuation flights. \n\nOn 1 May, UN Secretary-General António Guterres [announced](https://www.un.org/sg/en/content/sg/personnel-appointments/2023-05-01/ms-clementine-nkweta-salami-of-cameroon-deputy-special-representative-the-united-nations-integrated-transition-assistance-mission-sudan-and-resident-and) the appointment of Clementine Nkweta-Salami of Cameroon as his Deputy Special Representative for Sudan with the United Nations Integrated Transition Assistance Mission in Sudan (UNITAMS). She will also serve as the UN Resident Coordinator and Humanitarian Coordinator in Sudan succeeding Ms. Khardiata Lo N’Diaye of Senegal. Ms. Nkweta-Salami is currently the UNHCR Director of the Regional Bureau for the East, Horn and Great Lakes Regions of Africa.\n\nOn 30 April, the Spokesperson for the UN Secretary-General [announced](https://www.un.org/sg/en/content/sg/statement/2023-04-30/statement-attributable-the-spokesperson-for-the-secretary-general-sudan%C2%A0-%C2%A0%C2%A0) that in light of the rapidly deteriorating humanitarian crisis in Sudan, the Secretary-General was sending the Emergency Relief Coordinator and Under Secretary-General for Humanitarian Affairs, Martin Griffiths, to the region immediately.",
+  "summary": " Clashes between the Sudanese Armed Forces (SAF) and the Rapid Support Forces (RSF) have been ongoing for 17 days, prompting the UN High Commissioner for Refugees to prepare for the possibility of over 800,000 people fleeing the fighting. UNHCR and partners are scaling up relief efforts as cross-border movements from Sudan increase, with an estimated 100,000 refugee and refugee returnee arrivals already. The World Food Programme has lifted the temporary suspension of operations in Sudan, and the Civil Aviation Authority has announced that Sudan’s airspace will remain closed until 13 May with the exception of aid and evacuation flights. The UN Secretary-General has appointed Clementine Nkweta-Salami of Cameroon as his Deputy Special Representative for Sudan with the United Nations Integrated Transition Assistance Mission in Sudan (UNITAMS). The UN Emergency Relief Coordinator and Under Secretary-General for Humanitarian Affairs, Martin Griffiths, has been sent to the region.",
+  "metadata": {
+    "id": "3958017",
+    "name": "Sudan Situation - UNHCR External Update #4 - 2 May 2023",
+    "date_original": 1683072000000,
+    "date_changed": 1683097129000,
+    "date_created": 1683096950000,
+    "primary_country_id": 220,
+    "primary_country_name": "Sudan",
+    "primary_country_iso3": "sdn",
+    "primary_country_location": {
+      "lon": 30,
+      "lat": 15
+    }
+  }
+}

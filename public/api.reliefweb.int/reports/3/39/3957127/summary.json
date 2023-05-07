@@ -1,0 +1,230 @@
+{
+  "original": {
+    "id": "3957127",
+    "fields": {
+      "date": {
+        "changed": "2023-04-28T20:43:17+00:00",
+        "created": "2023-04-28T20:40:35+00:00",
+        "original": "2023-04-28T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/24",
+          "name": "Aruba (The Netherlands)",
+          "location": {
+            "lon": -69.98,
+            "lat": 12.52
+          },
+          "id": 24,
+          "shortname": "Aruba (The Netherlands)",
+          "iso3": "abw"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/35",
+          "name": "Belize",
+          "location": {
+            "lon": -88.69,
+            "lat": 17.22
+          },
+          "id": 35,
+          "shortname": "Belize",
+          "iso3": "blz"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/71",
+          "name": "Cuba",
+          "location": {
+            "lon": -79.24,
+            "lat": 21.95
+          },
+          "id": 71,
+          "shortname": "Cuba",
+          "iso3": "cub"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/14893",
+          "name": "Curaçao (The Netherlands)",
+          "location": {
+            "lon": -68.98,
+            "lat": 12.15
+          },
+          "id": 14893,
+          "shortname": "Curaçao (The Netherlands)",
+          "iso3": "cuw"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/112",
+          "name": "Guyana",
+          "location": {
+            "lon": -58.97,
+            "lat": 5.62
+          },
+          "id": 112,
+          "shortname": "Guyana",
+          "iso3": "guy"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/173",
+          "name": "Nicaragua",
+          "location": {
+            "lon": -85.03,
+            "lat": 12.84
+          },
+          "id": 173,
+          "shortname": "Nicaragua",
+          "iso3": "nic"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/184",
+          "name": "Panama",
+          "location": {
+            "lon": -80.27,
+            "lat": 8.7
+          },
+          "id": 184,
+          "shortname": "Panama",
+          "iso3": "pan",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/221",
+          "name": "Suriname",
+          "location": {
+            "lon": -55.91,
+            "lat": 3.69
+          },
+          "id": 221,
+          "shortname": "Suriname",
+          "iso3": "sur"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/234",
+          "name": "Trinidad and Tobago",
+          "location": {
+            "lon": -61.25,
+            "lat": 10.47
+          },
+          "id": 234,
+          "shortname": "Trinidad and Tobago",
+          "iso3": "tto"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/250",
+          "name": "Venezuela (Bolivarian Republic of)",
+          "location": {
+            "lon": -65.8,
+            "lat": 7.62
+          },
+          "id": 250,
+          "shortname": "Venezuela",
+          "iso3": "ven"
+        }
+      ],
+      "origin": "https://data.unhcr.org/en/documents/details/100331",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/184",
+        "name": "Panama",
+        "location": {
+          "lon": -80.27,
+          "lat": 8.7
+        },
+        "id": 184,
+        "shortname": "Panama",
+        "iso3": "pan"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "Panama Multi-Country Office: Monthly Operational Update (March 2023)",
+      "body": "In countries under UNHCR Multi-Country Office in Panama, people UNHCR protects continue to be at risk of detention, trafficking, and gender-based violence (GBV).\n\nDuring the launch of the Refugee and Migrants Response Plan (RMRP), the Aruban Prime Minister highlighted the difficulties Aruba faces in addressing the current mixed movements and stated the country has limited capacity to host a large number of refugees and migrants. Nevertheless, the Government is working on its migration policy to enhance labour opportunities for these groups.\n\nAmnesty International, Refugee Work Netherlands, and Human Rights Defense Curaçao (HRDC) wrote to the parliaments of Curaçao, Aruba, Saint Maarten and The Netherlands requesting respect for the human rights of refugees and migrants in detention, as well as better reception conditions and shelters for people waiting for a decision of the authorities on their legal status.\n\nIn Belize, the Cabinet agreed to visa restrictions on Haitians entering Belize and increased entry requirements for Jamaican nationals, despite these being CARICOM member countries. The Prime Minister clarified that the measures for Jamaicans still need implementing.\n\nThe U.S. Assistant Secretary of State announced that some 10,000 Cubans had successfully used the parole program to enter that country regularly. The number of those attempting to enter through dangerous and irregular routes has decreased. Nearly 3,000 Cubans have been returned to their country through 50 bilateral operations as of March.\n\nGuyana’s Minister of Foreign Affairs attended the 2023 International Conference in Solidarity with Venezuelan Refugees and Migrants and their Host Countries and Communities, calling for a concerted response to Venezuelan displacement in the region. The Minister indicated that Guyana continues to offer regularization services to this group and is working on a strategy to include them in the labour market.\n\nThe UN Group of Human Rights Experts on Nicaragua (GHREN) released a report on the government's widespread human rights violations. The GHREN highlighted that Nicaragua’s actions amount to crimes against humanity since they are committed against civilians for political reasons.\n\nIn Panama, the President sanctioned the law that creates the Ministry of Women. At the same time, the Ministry of Labour (MITRADEL) updated regulations on six types of work permits, including a humanitarian protection permit targeting refugees, asylum-seekers, or victims of trafficking. Also, MITRADEL is including a work permit for stateless persons for the first time.\n\nIn Suriname, following February’s protests in Paramaribo, on 24 March, hundreds of protesters gathered to demand the President’s resignation due to poor administration and the government’s decision to eliminate national subsidies.\n\nIn Trinidad and Tobago, after the release of the US 2022 Country Report on Human Rights Practices, attorneys are calling on the Government to adopt international standards to address alleged human rights violations towards refugees and migrants in the islands.",
+      "url": "https://reliefweb.int/node/3957127",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/91/a8/91a892ad-759e-4094-bf06-e7c5ea322729.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/91/a8/91a892ad-759e-4094-bf06-e7c5ea322729.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/91/a8/91a892ad-759e-4094-bf06-e7c5ea322729.png",
+            "version": "2415752-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/91/a8/91a892ad-759e-4094-bf06-e7c5ea322729.png"
+          },
+          "filename": "MCO Monthly Update - March 2023 UNHCR.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415752",
+          "filesize": "945284",
+          "url": "https://reliefweb.int/attachments/91a892ad-759e-4094-bf06-e7c5ea322729/MCO%20Monthly%20Update%20-%20March%202023%20UNHCR.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/panama/panama-multi-country-office-monthly-operational-update-march-2023",
+      "theme": [
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Recovery and Reconstruction",
+          "id": 4601
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        }
+      ],
+      "id": 3957127,
+      "status": "published",
+      "body-html": "<p>In countries under UNHCR Multi-Country Office in Panama, people UNHCR protects continue to be at risk of detention, trafficking, and gender-based violence (GBV).</p>\n<p>During the launch of the Refugee and Migrants Response Plan (RMRP), the Aruban Prime Minister highlighted the difficulties Aruba faces in addressing the current mixed movements and stated the country has limited capacity to host a large number of refugees and migrants. Nevertheless, the Government is working on its migration policy to enhance labour opportunities for these groups.</p>\n<p>Amnesty International, Refugee Work Netherlands, and Human Rights Defense Curaçao (HRDC) wrote to the parliaments of Curaçao, Aruba, Saint Maarten and The Netherlands requesting respect for the human rights of refugees and migrants in detention, as well as better reception conditions and shelters for people waiting for a decision of the authorities on their legal status.</p>\n<p>In Belize, the Cabinet agreed to visa restrictions on Haitians entering Belize and increased entry requirements for Jamaican nationals, despite these being CARICOM member countries. The Prime Minister clarified that the measures for Jamaicans still need implementing.</p>\n<p>The U.S. Assistant Secretary of State announced that some 10,000 Cubans had successfully used the parole program to enter that country regularly. The number of those attempting to enter through dangerous and irregular routes has decreased. Nearly 3,000 Cubans have been returned to their country through 50 bilateral operations as of March.</p>\n<p>Guyana’s Minister of Foreign Affairs attended the 2023 International Conference in Solidarity with Venezuelan Refugees and Migrants and their Host Countries and Communities, calling for a concerted response to Venezuelan displacement in the region. The Minister indicated that Guyana continues to offer regularization services to this group and is working on a strategy to include them in the labour market.</p>\n<p>The UN Group of Human Rights Experts on Nicaragua (GHREN) released a report on the government's widespread human rights violations. The GHREN highlighted that Nicaragua’s actions amount to crimes against humanity since they are committed against civilians for political reasons.</p>\n<p>In Panama, the President sanctioned the law that creates the Ministry of Women. At the same time, the Ministry of Labour (MITRADEL) updated regulations on six types of work permits, including a humanitarian protection permit targeting refugees, asylum-seekers, or victims of trafficking. Also, MITRADEL is including a work permit for stateless persons for the first time.</p>\n<p>In Suriname, following February’s protests in Paramaribo, on 24 March, hundreds of protesters gathered to demand the President’s resignation due to poor administration and the government’s decision to eliminate national subsidies.</p>\n<p>In Trinidad and Tobago, after the release of the US 2022 Country Report on Human Rights Practices, attorneys are calling on the Government to adopt international standards to address alleged human rights violations towards refugees and migrants in the islands.</p>\n"
+    }
+  },
+  "text": "# Panama Multi-Country Office: Monthly Operational Update (March 2023)\n\nIn countries under UNHCR Multi-Country Office in Panama, people UNHCR protects continue to be at risk of detention, trafficking, and gender-based violence (GBV).\n\nDuring the launch of the Refugee and Migrants Response Plan (RMRP), the Aruban Prime Minister highlighted the difficulties Aruba faces in addressing the current mixed movements and stated the country has limited capacity to host a large number of refugees and migrants. Nevertheless, the Government is working on its migration policy to enhance labour opportunities for these groups.\n\nAmnesty International, Refugee Work Netherlands, and Human Rights Defense Curaçao (HRDC) wrote to the parliaments of Curaçao, Aruba, Saint Maarten and The Netherlands requesting respect for the human rights of refugees and migrants in detention, as well as better reception conditions and shelters for people waiting for a decision of the authorities on their legal status.\n\nIn Belize, the Cabinet agreed to visa restrictions on Haitians entering Belize and increased entry requirements for Jamaican nationals, despite these being CARICOM member countries. The Prime Minister clarified that the measures for Jamaicans still need implementing.\n\nThe U.S. Assistant Secretary of State announced that some 10,000 Cubans had successfully used the parole program to enter that country regularly. The number of those attempting to enter through dangerous and irregular routes has decreased. Nearly 3,000 Cubans have been returned to their country through 50 bilateral operations as of March.\n\nGuyana’s Minister of Foreign Affairs attended the 2023 International Conference in Solidarity with Venezuelan Refugees and Migrants and their Host Countries and Communities, calling for a concerted response to Venezuelan displacement in the region. The Minister indicated that Guyana continues to offer regularization services to this group and is working on a strategy to include them in the labour market.\n\nThe UN Group of Human Rights Experts on Nicaragua (GHREN) released a report on the government's widespread human rights violations. The GHREN highlighted that Nicaragua’s actions amount to crimes against humanity since they are committed against civilians for political reasons.\n\nIn Panama, the President sanctioned the law that creates the Ministry of Women. At the same time, the Ministry of Labour (MITRADEL) updated regulations on six types of work permits, including a humanitarian protection permit targeting refugees, asylum-seekers, or victims of trafficking. Also, MITRADEL is including a work permit for stateless persons for the first time.\n\nIn Suriname, following February’s protests in Paramaribo, on 24 March, hundreds of protesters gathered to demand the President’s resignation due to poor administration and the government’s decision to eliminate national subsidies.\n\nIn Trinidad and Tobago, after the release of the US 2022 Country Report on Human Rights Practices, attorneys are calling on the Government to adopt international standards to address alleged human rights violations towards refugees and migrants in the islands.",
+  "summary": " In March 2023, countries under the UNHCR Multi-Country Office in Panama faced risks of detention, trafficking, and gender-based violence. The Aruban Prime Minister highlighted the difficulties in addressing mixed movements, while Amnesty International, Refugee Work Netherlands, and Human Rights Defense Curaçao (HRDC) wrote to the parliaments of Curaçao, Aruba, Saint Maarten and The Netherlands requesting respect for the human rights of refugees and migrants. Belize agreed to visa restrictions on Haitians and increased entry requirements for Jamaicans, while the U.S. Assistant Secretary of State announced that 10,000 Cubans had successfully used the parole program to enter the country. Guyana’s Minister of Foreign Affairs attended the 2023 International Conference in Solidarity with Venezuelan Refugees and Migrants, while Nicaragua was accused of widespread human rights violations. In Panama, the President sanctioned the law that creates the Ministry of Women, while in Suriname, hundreds of protesters gathered to demand the President’s resignation. In Trinidad and Tobago, attorneys called on the Government to adopt international standards to address alleged human rights violations towards refugees and migrants.",
+  "metadata": {
+    "id": "3957127",
+    "name": "Panama Multi-Country Office: Monthly Operational Update (March 2023)",
+    "date_original": 1682640000000,
+    "date_changed": 1682714597000,
+    "date_created": 1682714435000,
+    "primary_country_id": 184,
+    "primary_country_name": "Panama",
+    "primary_country_iso3": "pan",
+    "primary_country_location": {
+      "lon": -80.27,
+      "lat": 8.7
+    }
+  }
+}

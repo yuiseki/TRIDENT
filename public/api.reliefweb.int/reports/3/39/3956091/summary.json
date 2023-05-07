@@ -1,0 +1,182 @@
+{
+  "original": {
+    "id": "3956091",
+    "fields": {
+      "date": {
+        "changed": "2023-04-26T11:42:13+00:00",
+        "created": "2023-04-26T07:50:41+00:00",
+        "original": "2023-04-25T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/87",
+          "name": "Ethiopia",
+          "location": {
+            "lon": 39.62,
+            "lat": 8.63
+          },
+          "id": 87,
+          "shortname": "Ethiopia",
+          "iso3": "eth",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/87",
+        "name": "Ethiopia",
+        "location": {
+          "lon": 39.62,
+          "lat": 8.63
+        },
+        "id": 87,
+        "shortname": "Ethiopia",
+        "iso3": "eth"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "DR",
+          "name": "Drought",
+          "id": 4672
+        },
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/15477",
+          "name": "Health Cluster",
+          "id": 15477,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "Health Cluster",
+          "homepage": "https://healthcluster.who.int/"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1275",
+          "longname": "World Health Organization",
+          "spanish_name": "Organización Mundial de la Salud",
+          "name": "World Health Organization",
+          "id": 1275,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WHO",
+          "homepage": "http://www.who.int/"
+        }
+      ],
+      "title": "Health response and preparedness in Oromia Region (25 April 2023)",
+      "body": "Oromia Region is facing multiple health related challenges induced by drought and floods, including outbreaks of measles and cholera. Health cluster partners are responding to ongoing public health threats, with support from OCHA, which facilitated the transport into difficult-to-reach areas in West Wollega Zone of measles vaccines for a vaccination campaign.\n\n**Measles:**\n\n• As of 20 April 2023, and since the start of the year, 1,274 measles cases including 18 deaths were reported in 149 kebeles in Oromia Region (1.4% fatality rate). Children under five account for the majority of cases.\n\n• In some areas, routine immunization was interrupted for the last two years due to limited access and insecurity.\n\n• From 10-14 April 2023, the West Wollega Zonal Health Office with support from health cluster partners like Action Against Hunger, World Vision, the Red Cross and Project Hope, vaccinated 47,000 children under 5 years against measles (98% of the targeted number) in Kondala and Begi woredas. The children also received Vitamin A supplementation.\n\n• To address a shortage of drugs to treat children for measles, OCHA and WHO successfully advocated for the allocation of drugs to the West Wollega Zonal Health Office by the Regional Health Bureau.\n\n• Several samples of suspected measles cases were sent for laboratory testing in Bale Zone. To respond to a potential measles outbreak, health authorities and humanitarian partners strengthened disease surveillance in the area and commenced a sensitization campaign.\n\n**Cholera:**\n\n• As of 22 April 2023, 3,860 cholera cases were reported in Oromia Region. This is one of the longest cholera outbreaks recorded in Ethiopia, with first cases reported in August 2022. Worst affected areas are 18 woredas in Bale, East Bale, Guji, West Arsi, and Borena zones. In Borena and Guji zones alone, 217 active cases were reported between 15 and 22 April 2023. The cholera outbreak has been rapidly expanding to other regions, including SNNP.  \nWithin Oromia, new cholera cases are being reported from Teltele woreda.\n\n• WHO successfully delivered one truck of cholera drugs and other supplies in Guji Zone to treat 400 cholera patients.\n\n• The alarming increase in cholera cases is attributed to security and access constraints to affected areas, compounded by contamination of water sources following the onset of rainy season. Root causes are poor quality drinking water supply and poor hygiene practices, with communities practicing open defecation. Drastic measures to improve access to water, sanitation and hygiene (WASH) are required to prevent annual recurring cholera outbreaks.\n\n• A total of 1.9 million doses of oral cholera vaccine (OCV) arrived in Ethiopia to support the ongoing cholera outbreak response in Oromia and Somalia regions. So far, the OCV campaign was conducted in Goro and Berbere woredas in Bale Zone, reaching 99.8% of the target population. An additional 12 woredas in Oromia and 3 woredas in Somali are included in the OCV vaccination campaign.\n\n• There is urgent need to map available supplies to facilitate integrated response, especially for health, WASH, and nutrition. Health authorities and partners are encouraged to prioritize cholera response, to prevent further spreading of this highly infectious disease.\n\n**Floods:**\n\n• To provide essential health services to 19,000 people displaced due to flash floods in Borena Zone, the Ethiopia Humanitarian Fund (EHF) started consultations with partners including the health cluster to support Rapid Response Mechanism interventions. OCHA is in the process of finalizing the assessments to specify the response.\n\n**Drought Impact:**\n\n• From 6-11 April 2023, a multi-sectoral drought impact assessment was conducted in West Hararghe Zone, where over 72,000 households (440,000 people) in 9 woredas were identified as critically in need of assistance.",
+      "url": "https://reliefweb.int/node/3956091",
+      "disaster": [
+        {
+          "name": "Ethiopia: Floods - Mar 2023",
+          "id": 51542,
+          "glide": "FL-2023-000052-ETH",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Ethiopia: Cholera Outbreak - Sep 2022",
+          "id": 51337,
+          "glide": "EP-2022-000323-ETH",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Ethiopia: Drought - 2015-2023",
+          "id": 23121,
+          "glide": "DR-2015-000109-ETH",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/e5/11/e5119cdd-f5f5-41aa-b716-659e5ba22d18.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/e5/11/e5119cdd-f5f5-41aa-b716-659e5ba22d18.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/e5/11/e5119cdd-f5f5-41aa-b716-659e5ba22d18.png",
+            "version": "2414837-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/e5/11/e5119cdd-f5f5-41aa-b716-659e5ba22d18.png"
+          },
+          "filename": "Health response and preparedness  in Oromia Region 25 April 23 Final.pdf",
+          "mimetype": "application/pdf",
+          "id": "2414837",
+          "filesize": "174491",
+          "url": "https://reliefweb.int/attachments/e5119cdd-f5f5-41aa-b716-659e5ba22d18/Health%20response%20and%20preparedness%20%20in%20Oromia%20Region%2025%20April%2023%20Final.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/ethiopia/health-response-and-preparedness-oromia-region-25-april-2023",
+      "theme": [
+        {
+          "name": "Health",
+          "id": 4595
+        }
+      ],
+      "id": 3956091,
+      "status": "published",
+      "body-html": "<p>Oromia Region is facing multiple health related challenges induced by drought and floods, including outbreaks of measles and cholera. Health cluster partners are responding to ongoing public health threats, with support from OCHA, which facilitated the transport into difficult-to-reach areas in West Wollega Zone of measles vaccines for a vaccination campaign.</p>\n<p><strong>Measles:</strong></p>\n<p>• As of 20 April 2023, and since the start of the year, 1,274 measles cases including 18 deaths were reported in 149 kebeles in Oromia Region (1.4% fatality rate). Children under five account for the majority of cases.</p>\n<p>• In some areas, routine immunization was interrupted for the last two years due to limited access and insecurity.</p>\n<p>• From 10-14 April 2023, the West Wollega Zonal Health Office with support from health cluster partners like Action Against Hunger, World Vision, the Red Cross and Project Hope, vaccinated 47,000 children under 5 years against measles (98% of the targeted number) in Kondala and Begi woredas. The children also received Vitamin A supplementation.</p>\n<p>• To address a shortage of drugs to treat children for measles, OCHA and WHO successfully advocated for the allocation of drugs to the West Wollega Zonal Health Office by the Regional Health Bureau.</p>\n<p>• Several samples of suspected measles cases were sent for laboratory testing in Bale Zone. To respond to a potential measles outbreak, health authorities and humanitarian partners strengthened disease surveillance in the area and commenced a sensitization campaign.</p>\n<p><strong>Cholera:</strong></p>\n<p>• As of 22 April 2023, 3,860 cholera cases were reported in Oromia Region. This is one of the longest cholera outbreaks recorded in Ethiopia, with first cases reported in August 2022. Worst affected areas are 18 woredas in Bale, East Bale, Guji, West Arsi, and Borena zones. In Borena and Guji zones alone, 217 active cases were reported between 15 and 22 April 2023. The cholera outbreak has been rapidly expanding to other regions, including SNNP.<br />\nWithin Oromia, new cholera cases are being reported from Teltele woreda.</p>\n<p>• WHO successfully delivered one truck of cholera drugs and other supplies in Guji Zone to treat 400 cholera patients.</p>\n<p>• The alarming increase in cholera cases is attributed to security and access constraints to affected areas, compounded by contamination of water sources following the onset of rainy season. Root causes are poor quality drinking water supply and poor hygiene practices, with communities practicing open defecation. Drastic measures to improve access to water, sanitation and hygiene (WASH) are required to prevent annual recurring cholera outbreaks.</p>\n<p>• A total of 1.9 million doses of oral cholera vaccine (OCV) arrived in Ethiopia to support the ongoing cholera outbreak response in Oromia and Somalia regions. So far, the OCV campaign was conducted in Goro and Berbere woredas in Bale Zone, reaching 99.8% of the target population. An additional 12 woredas in Oromia and 3 woredas in Somali are included in the OCV vaccination campaign.</p>\n<p>• There is urgent need to map available supplies to facilitate integrated response, especially for health, WASH, and nutrition. Health authorities and partners are encouraged to prioritize cholera response, to prevent further spreading of this highly infectious disease.</p>\n<p><strong>Floods:</strong></p>\n<p>• To provide essential health services to 19,000 people displaced due to flash floods in Borena Zone, the Ethiopia Humanitarian Fund (EHF) started consultations with partners including the health cluster to support Rapid Response Mechanism interventions. OCHA is in the process of finalizing the assessments to specify the response.</p>\n<p><strong>Drought Impact:</strong></p>\n<p>• From 6-11 April 2023, a multi-sectoral drought impact assessment was conducted in West Hararghe Zone, where over 72,000 households (440,000 people) in 9 woredas were identified as critically in need of assistance.</p>\n"
+    }
+  },
+  "text": "# Health response and preparedness in Oromia Region (25 April 2023)\n\nOromia Region is facing multiple health related challenges induced by drought and floods, including outbreaks of measles and cholera. Health cluster partners are responding to ongoing public health threats, with support from OCHA, which facilitated the transport into difficult-to-reach areas in West Wollega Zone of measles vaccines for a vaccination campaign.\n\n**Measles:**\n\n• As of 20 April 2023, and since the start of the year, 1,274 measles cases including 18 deaths were reported in 149 kebeles in Oromia Region (1.4% fatality rate). Children under five account for the majority of cases.\n\n• In some areas, routine immunization was interrupted for the last two years due to limited access and insecurity.\n\n• From 10-14 April 2023, the West Wollega Zonal Health Office with support from health cluster partners like Action Against Hunger, World Vision, the Red Cross and Project Hope, vaccinated 47,000 children under 5 years against measles (98% of the targeted number) in Kondala and Begi woredas. The children also received Vitamin A supplementation.\n\n• To address a shortage of drugs to treat children for measles, OCHA and WHO successfully advocated for the allocation of drugs to the West Wollega Zonal Health Office by the Regional Health Bureau.\n\n• Several samples of suspected measles cases were sent for laboratory testing in Bale Zone. To respond to a potential measles outbreak, health authorities and humanitarian partners strengthened disease surveillance in the area and commenced a sensitization campaign.\n\n**Cholera:**\n\n• As of 22 April 2023, 3,860 cholera cases were reported in Oromia Region. This is one of the longest cholera outbreaks recorded in Ethiopia, with first cases reported in August 2022. Worst affected areas are 18 woredas in Bale, East Bale, Guji, West Arsi, and Borena zones. In Borena and Guji zones alone, 217 active cases were reported between 15 and 22 April 2023. The cholera outbreak has been rapidly expanding to other regions, including SNNP.  \nWithin Oromia, new cholera cases are being reported from Teltele woreda.\n\n• WHO successfully delivered one truck of cholera drugs and other supplies in Guji Zone to treat 400 cholera patients.\n\n• The alarming increase in cholera cases is attributed to security and access constraints to affected areas, compounded by contamination of water sources following the onset of rainy season. Root causes are poor quality drinking water supply and poor hygiene practices, with communities practicing open defecation. Drastic measures to improve access to water, sanitation and hygiene (WASH) are required to prevent annual recurring cholera outbreaks.\n\n• A total of 1.9 million doses of oral cholera vaccine (OCV) arrived in Ethiopia to support the ongoing cholera outbreak response in Oromia and Somalia regions. So far, the OCV campaign was conducted in Goro and Berbere woredas in Bale Zone, reaching 99.8% of the target population. An additional 12 woredas in Oromia and 3 woredas in Somali are included in the OCV vaccination campaign.\n\n• There is urgent need to map available supplies to facilitate integrated response, especially for health, WASH, and nutrition. Health authorities and partners are encouraged to prioritize cholera response, to prevent further spreading of this highly infectious disease.\n\n**Floods:**\n\n• To provide essential health services to 19,000 people displaced due to flash floods in Borena Zone, the Ethiopia Humanitarian Fund (EHF) started consultations with partners including the health cluster to support Rapid Response Mechanism interventions. OCHA is in the process of finalizing the assessments to specify the response.\n\n**Drought Impact:**\n\n• From 6-11 April 2023, a multi-sectoral drought impact assessment was conducted in West Hararghe Zone, where over 72,000 households (440,000 people) in 9 woredas were identified as critically in need of assistance.",
+  "summary": " Oromia Region is facing multiple health related challenges due to drought and floods, including outbreaks of measles and cholera. Health cluster partners are responding to the public health threats with support from OCHA, including a measles vaccination campaign in West Wollega Zone and the delivery of cholera drugs and supplies to Guji Zone. The Ethiopia Humanitarian Fund is also providing essential health services to 19,000 people displaced by flash floods in Borena Zone. A multi-sectoral drought impact assessment was conducted in West Hararghe Zone, identifying over 72,000 households in need of assistance.",
+  "metadata": {
+    "id": "3956091",
+    "name": "Health response and preparedness in Oromia Region (25 April 2023)",
+    "date_original": 1682380800000,
+    "date_changed": 1682509333000,
+    "date_created": 1682495441000,
+    "primary_country_id": 87,
+    "primary_country_name": "Ethiopia",
+    "primary_country_iso3": "eth",
+    "primary_country_location": {
+      "lon": 39.62,
+      "lat": 8.63
+    }
+  }
+}

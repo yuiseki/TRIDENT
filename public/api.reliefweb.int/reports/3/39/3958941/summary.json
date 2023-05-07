@@ -1,0 +1,199 @@
+{
+  "original": {
+    "id": "3958941",
+    "fields": {
+      "date": {
+        "changed": "2023-05-05T13:03:04+00:00",
+        "created": "2023-05-05T09:37:04+00:00",
+        "original": "2023-05-05T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/85",
+          "name": "Eritrea",
+          "location": {
+            "lon": 38.58,
+            "lat": 15.68
+          },
+          "id": 85,
+          "shortname": "Eritrea",
+          "iso3": "eri"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/87",
+          "name": "Ethiopia",
+          "location": {
+            "lon": 39.62,
+            "lat": 8.63
+          },
+          "id": 87,
+          "shortname": "Ethiopia",
+          "iso3": "eth",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/102",
+          "name": "Ghana",
+          "location": {
+            "lon": -1.19,
+            "lat": 7.28
+          },
+          "id": 102,
+          "shortname": "Ghana",
+          "iso3": "gha"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/216",
+          "name": "Somalia",
+          "location": {
+            "lon": 47.33,
+            "lat": 5.79
+          },
+          "id": 216,
+          "shortname": "Somalia",
+          "iso3": "som"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/220",
+          "name": "Sudan",
+          "location": {
+            "lon": 30,
+            "lat": 15
+          },
+          "id": 220,
+          "shortname": "Sudan",
+          "iso3": "sdn"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/226",
+          "name": "Syrian Arab Republic",
+          "location": {
+            "lon": 38.51,
+            "lat": 35.01
+          },
+          "id": 226,
+          "shortname": "Syria",
+          "iso3": "syr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/245",
+          "name": "United States of America",
+          "location": {
+            "lon": -97.92,
+            "lat": 39.38
+          },
+          "id": 245,
+          "shortname": "USA",
+          "iso3": "usa"
+        }
+      ],
+      "ocha_product": [
+        {
+          "name": "Flash Update",
+          "id": 14471
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/87",
+        "name": "Ethiopia",
+        "location": {
+          "lon": 39.62,
+          "lat": 8.63
+        },
+        "id": 87,
+        "shortname": "Ethiopia",
+        "iso3": "eth"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1503",
+          "longname": "United Nations Office for the Coordination of Humanitarian Affairs",
+          "spanish_name": "Oficina de Coordinación de Asuntos Humanitarios",
+          "name": "UN Office for the Coordination of Humanitarian Affairs",
+          "id": 1503,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "OCHA",
+          "disclaimer": "To learn more about OCHA's activities, please visit https://www.unocha.org/.",
+          "homepage": "http://www.unocha.org/"
+        }
+      ],
+      "title": "Flash Update #2: The Impact of the Situation in Sudan on Ethiopia (As of 5 May 2023)",
+      "body": "**Highlights**\n\n• Some 1,113 people, over half of them Ethiopians, arrived in Metema on 4 May.\n\n• Foreign nationals and Ethiopian returnees with the right travel documents are leaving border areas to other destinations.\n\n• Health services, along with response to other primary needs require scaling up to avoid worsening of the situation.\n\n• An appeal of US$76.9m has been made for Ethiopia as part of the regional Refugee Response Plan for the situation in Sudan.\n\n**Situation Overview**\n\nBorder crossings in Metema, West Gondar Zone continue with currently over 1,000 daily arrivals as the situation in Sudan marks 3 weeks on 5 May. Ethiopians remain at the top of the list of arrivals. Out of the 1,113 arrivals on 4 May, Ethiopians recorded more than 50 per cent while other nationalities included Sudanese, Eritreans, Somalians, Americans, Syrians, Ghanaians and others in descending numerical order. As numbers are on the rise, with a total of more than 12,000 people having arrived since 21 April via Metema, most foreign nationals, after securing relevant visas, have left the border area and gone to either their respective countries/destinations or to settle in Ethiopia. Similarly, Ethiopian returnees are also moving to their places of origin within the country. The majority of those who remain at the border, however, require emergency humanitarian assistance.\n\n**Needs and Response**\n\nPrimary needs remain to include hot food, drinking water and latrines, emergency shelter, adequate health and protection services. Findings of a health partners rapid health assessment in Metema on 29 and 30 April has revealed limitations in required health services. Currently, essential and life-saving drugs and medicines in health facilities are lacking. There are also limitations in referral services to hospitals, and mental health and psychosocial support (MHPSS) at border entry points. Scaling up the health emergency interventions against identified needs is essential to avoid worsening of the situation and prevent communicable and non-communicable diseases.",
+      "url": "https://reliefweb.int/node/3958941",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/a6/90/a6904b63-8182-4ea7-a6dc-58fd96e73e81.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/a6/90/a6904b63-8182-4ea7-a6dc-58fd96e73e81.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/a6/90/a6904b63-8182-4ea7-a6dc-58fd96e73e81.png",
+            "version": "2417651-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/a6/90/a6904b63-8182-4ea7-a6dc-58fd96e73e81.png"
+          },
+          "filename": "Flash Update 2 Impact of the Sudan Sitatuion in Ethiopia Final.pdf",
+          "mimetype": "application/pdf",
+          "id": "2417651",
+          "filesize": "380926",
+          "url": "https://reliefweb.int/attachments/a6904b63-8182-4ea7-a6dc-58fd96e73e81/Flash%20Update%202%20Impact%20of%20the%20Sudan%20Sitatuion%20in%20Ethiopia%20Final.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/ethiopia/flash-update-2-impact-situation-sudan-ethiopia-5-may-2023",
+      "theme": [
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3958941,
+      "status": "published",
+      "body-html": "<p><strong>Highlights</strong></p>\n<p>• Some 1,113 people, over half of them Ethiopians, arrived in Metema on 4 May.</p>\n<p>• Foreign nationals and Ethiopian returnees with the right travel documents are leaving border areas to other destinations.</p>\n<p>• Health services, along with response to other primary needs require scaling up to avoid worsening of the situation.</p>\n<p>• An appeal of US$76.9m has been made for Ethiopia as part of the regional Refugee Response Plan for the situation in Sudan.</p>\n<p><strong>Situation Overview</strong></p>\n<p>Border crossings in Metema, West Gondar Zone continue with currently over 1,000 daily arrivals as the situation in Sudan marks 3 weeks on 5 May. Ethiopians remain at the top of the list of arrivals. Out of the 1,113 arrivals on 4 May, Ethiopians recorded more than 50 per cent while other nationalities included Sudanese, Eritreans, Somalians, Americans, Syrians, Ghanaians and others in descending numerical order. As numbers are on the rise, with a total of more than 12,000 people having arrived since 21 April via Metema, most foreign nationals, after securing relevant visas, have left the border area and gone to either their respective countries/destinations or to settle in Ethiopia. Similarly, Ethiopian returnees are also moving to their places of origin within the country. The majority of those who remain at the border, however, require emergency humanitarian assistance.</p>\n<p><strong>Needs and Response</strong></p>\n<p>Primary needs remain to include hot food, drinking water and latrines, emergency shelter, adequate health and protection services. Findings of a health partners rapid health assessment in Metema on 29 and 30 April has revealed limitations in required health services. Currently, essential and life-saving drugs and medicines in health facilities are lacking. There are also limitations in referral services to hospitals, and mental health and psychosocial support (MHPSS) at border entry points. Scaling up the health emergency interventions against identified needs is essential to avoid worsening of the situation and prevent communicable and non-communicable diseases.</p>\n"
+    }
+  },
+  "text": "# Flash Update #2: The Impact of the Situation in Sudan on Ethiopia (As of 5 May 2023)\n\n**Highlights**\n\n• Some 1,113 people, over half of them Ethiopians, arrived in Metema on 4 May.\n\n• Foreign nationals and Ethiopian returnees with the right travel documents are leaving border areas to other destinations.\n\n• Health services, along with response to other primary needs require scaling up to avoid worsening of the situation.\n\n• An appeal of US$76.9m has been made for Ethiopia as part of the regional Refugee Response Plan for the situation in Sudan.\n\n**Situation Overview**\n\nBorder crossings in Metema, West Gondar Zone continue with currently over 1,000 daily arrivals as the situation in Sudan marks 3 weeks on 5 May. Ethiopians remain at the top of the list of arrivals. Out of the 1,113 arrivals on 4 May, Ethiopians recorded more than 50 per cent while other nationalities included Sudanese, Eritreans, Somalians, Americans, Syrians, Ghanaians and others in descending numerical order. As numbers are on the rise, with a total of more than 12,000 people having arrived since 21 April via Metema, most foreign nationals, after securing relevant visas, have left the border area and gone to either their respective countries/destinations or to settle in Ethiopia. Similarly, Ethiopian returnees are also moving to their places of origin within the country. The majority of those who remain at the border, however, require emergency humanitarian assistance.\n\n**Needs and Response**\n\nPrimary needs remain to include hot food, drinking water and latrines, emergency shelter, adequate health and protection services. Findings of a health partners rapid health assessment in Metema on 29 and 30 April has revealed limitations in required health services. Currently, essential and life-saving drugs and medicines in health facilities are lacking. There are also limitations in referral services to hospitals, and mental health and psychosocial support (MHPSS) at border entry points. Scaling up the health emergency interventions against identified needs is essential to avoid worsening of the situation and prevent communicable and non-communicable diseases.",
+  "summary": " As of 5 May 2023, over 12,000 people have arrived in Metema, West Gondar Zone, from Sudan, with over half of them being Ethiopians. Foreign nationals and Ethiopian returnees are leaving the border area to other destinations, while those who remain require emergency humanitarian assistance. An appeal of US$76.9m has been made for Ethiopia as part of the regional Refugee Response Plan for the situation in Sudan, and health services need to be scaled up to prevent communicable and non-communicable diseases.",
+  "metadata": {
+    "id": "3958941",
+    "name": "Flash Update #2: The Impact of the Situation in Sudan on Ethiopia (As of 5 May 2023)",
+    "date_original": 1683244800000,
+    "date_changed": 1683291784000,
+    "date_created": 1683279424000,
+    "primary_country_id": 87,
+    "primary_country_name": "Ethiopia",
+    "primary_country_iso3": "eth",
+    "primary_country_location": {
+      "lon": 39.62,
+      "lat": 8.63
+    }
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "original": {
+    "id": "3954302",
+    "fields": {
+      "date": {
+        "changed": "2023-04-19T12:35:59+00:00",
+        "created": "2023-04-19T11:49:02+00:00",
+        "original": "2023-04-19T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/216",
+          "name": "Somalia",
+          "location": {
+            "lon": 47.33,
+            "lat": 5.79
+          },
+          "id": 216,
+          "shortname": "Somalia",
+          "iso3": "som",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/216",
+        "name": "Somalia",
+        "location": {
+          "lon": 47.33,
+          "lat": 5.79
+        },
+        "id": 216,
+        "shortname": "Somalia",
+        "iso3": "som"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "DR",
+          "name": "Drought",
+          "id": 4672
+        },
+        {
+          "code": "FF",
+          "name": "Flash Flood",
+          "id": 4624
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2836",
+          "longname": "Food and Agriculture Organization of the United Nations",
+          "spanish_name": "Organización de las Naciones Unidas para la Agricultura y la Alimentación",
+          "name": "Food and Agriculture Organization of the United Nations",
+          "id": 2836,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "FAO",
+          "homepage": "http://www.fao.org"
+        }
+      ],
+      "title": "Somalia Weekly Weather Forecast - Valid From 19th to 25th April 2023",
+      "body": "**Moderate to heavy rainfall is expected over several areas in southern Somalia with light rainfall in isolated areas in the northwest and dry conditions in central and northeastern regions**\n\n**Weather Review for 11th to 18th April 2023**\n\nSeveral parts of the country received light to moderate rains over the last week with forty three (43) stations recording at least 1 mm of rainfall (Table 1). The stations that received at least 50 mm of cumulative rainfall in the last week were Salaxley (54 mm), Hargeisa (59 mm), and Dooxaguban (63 mm) in Woqooyi Galbeed region and Gacan-libah (67 mm) in Togdheer region.  \nRelatively moderate rains were also observed at Balli Dhiddin (40 mm) in Bari region, Jowhar (41 mm) in Middle Shabelle region, Sheikh (41 mm) and Gatiiley (44 mm) in Togdheer region, and Mogadishu (45.5 mm). The rains over Gatiiley (44 mm/day), Mogadishu (45.5 mm/day) and Hargeisa (59 mm/ day) were the most intense. Although cumulatively light,  \nDollow (28.9 mm) recorded the best temporal distribution of rain having received light rains in five (5) days during the past one week.\n\n**Weather Forecast for 19th to 25th April 2023**\n\nAccording to the weekly forecast, several areas in southern Somalia are expected to receive moderate (above 50 mm) to heavy (above 100 mm) cumulative rainfall during the forecast period (Map 1). The spatial variation of the cumulative rainfall amounts is as follows:  \nHeavy rainfall of between 100 mm and 150 mm is expected in some areas of southern Somalia including Ceel Waaq district and eastern parts of Bardheere district in Gedo region, eastern parts of Diinsoor district in Bay region, northern parts of Saakow district, southern parts of Buáale district and northern parts of Jilib district in Middle Juba region, and western parts of Jamaame district, southeastern parts of Afmadow district, north parts of Kismaayo and most parts of Badhaadhe district in Lower Juba region. Very heavy isolated rainfall of above 150 mm is likely in some of the above areas particularly over the eastern parts of Bardheere district in Gedo region and southeastern parts of Bu’aale district in Middle Juba region.  \nModerate rainfall of between 50 mm and 100 mm is expected over Middle Juba region, several areas in central and southern Gedo, eastern, southern and western Lower Juba region, central and western parts of Bay region, western and eastern coastal parts of Lower Shabelle region, and southwestern parts of Middle Shabelle region.  \nLight rains of less than 50 mm are expected over Afmadow district in Lower Juba region, Belet Xaawo, Garbahaarey, Luuq and Dollow districts in Gedo region, several parts of Lower Shabelle, Middle Shabelle, and Bay regions, Rab Dhuure and Waajid districts, western parts of Xudur district and southern parts of Tayeeglow district in Bakool region, Bulo Burti district in Hiraan region, southern parts of Ceel Buur district, northern parts of Ceel Dheer district and the coastal strips of Galgaduud region and southern Mudug region. Similar moderate rains are also expected over northern parts of Hargeisa district Woqooyi Galbeed region, Sheikh district and northern parts of Owdweyne and Burco districts in Togdheer region.  \nDry conditions are expected in central and northern parts of the country including Bari, Nugaal and Sool regions, several areas in Awdal, Sanaag, central and southern parts of Togdheer region, northern and southern parts of Woqooyi Galbeed region, and vast non-coastal parts of Mudug region.  \nModerate temperatures of between 24°C and 28°C are expected in north and eastern parts of the country with cold conditions (temperatures less than 20°C ) likely very isolated areas in northern Sanaag and Bari regions. Moderate temperatures of between 28°C and 32°C are expected over central and southern Somalia.",
+      "url": "https://reliefweb.int/node/3954302",
+      "disaster": [
+        {
+          "name": "Somalia: Floods - Mar 2023",
+          "id": 51530,
+          "glide": "FF-2023-000044-SOM",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            },
+            {
+              "code": "FF",
+              "name": "Flash Flood",
+              "id": 4624
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Somalia: Drought - 2015-2023",
+          "id": 23101,
+          "glide": "DR-2015-000134-SOM",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/2e/77/2e7710be-532e-4b00-84d3-e7b344a496eb.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/2e/77/2e7710be-532e-4b00-84d3-e7b344a496eb.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/2e/77/2e7710be-532e-4b00-84d3-e7b344a496eb.png",
+            "version": "2413470-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/2e/77/2e7710be-532e-4b00-84d3-e7b344a496eb.png"
+          },
+          "filename": "Somalia_Rainfall_Forecast_19_April_2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2413470",
+          "filesize": "1515986",
+          "url": "https://reliefweb.int/attachments/2e7710be-532e-4b00-84d3-e7b344a496eb/Somalia_Rainfall_Forecast_19_April_2023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/somalia/somalia-weekly-weather-forecast-valid-19th-25th-april-2023",
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        }
+      ],
+      "id": 3954302,
+      "status": "published",
+      "body-html": "<p><strong>Moderate to heavy rainfall is expected over several areas in southern Somalia with light rainfall in isolated areas in the northwest and dry conditions in central and northeastern regions</strong></p>\n<p><strong>Weather Review for 11th to 18th April 2023</strong></p>\n<p>Several parts of the country received light to moderate rains over the last week with forty three (43) stations recording at least 1 mm of rainfall (Table 1). The stations that received at least 50 mm of cumulative rainfall in the last week were Salaxley (54 mm), Hargeisa (59 mm), and Dooxaguban (63 mm) in Woqooyi Galbeed region and Gacan-libah (67 mm) in Togdheer region.<br />\nRelatively moderate rains were also observed at Balli Dhiddin (40 mm) in Bari region, Jowhar (41 mm) in Middle Shabelle region, Sheikh (41 mm) and Gatiiley (44 mm) in Togdheer region, and Mogadishu (45.5 mm). The rains over Gatiiley (44 mm/day), Mogadishu (45.5 mm/day) and Hargeisa (59 mm/ day) were the most intense. Although cumulatively light,<br />\nDollow (28.9 mm) recorded the best temporal distribution of rain having received light rains in five (5) days during the past one week.</p>\n<p><strong>Weather Forecast for 19th to 25th April 2023</strong></p>\n<p>According to the weekly forecast, several areas in southern Somalia are expected to receive moderate (above 50 mm) to heavy (above 100 mm) cumulative rainfall during the forecast period (Map 1). The spatial variation of the cumulative rainfall amounts is as follows:<br />\nHeavy rainfall of between 100 mm and 150 mm is expected in some areas of southern Somalia including Ceel Waaq district and eastern parts of Bardheere district in Gedo region, eastern parts of Diinsoor district in Bay region, northern parts of Saakow district, southern parts of Buáale district and northern parts of Jilib district in Middle Juba region, and western parts of Jamaame district, southeastern parts of Afmadow district, north parts of Kismaayo and most parts of Badhaadhe district in Lower Juba region. Very heavy isolated rainfall of above 150 mm is likely in some of the above areas particularly over the eastern parts of Bardheere district in Gedo region and southeastern parts of Bu’aale district in Middle Juba region.<br />\nModerate rainfall of between 50 mm and 100 mm is expected over Middle Juba region, several areas in central and southern Gedo, eastern, southern and western Lower Juba region, central and western parts of Bay region, western and eastern coastal parts of Lower Shabelle region, and southwestern parts of Middle Shabelle region.<br />\nLight rains of less than 50 mm are expected over Afmadow district in Lower Juba region, Belet Xaawo, Garbahaarey, Luuq and Dollow districts in Gedo region, several parts of Lower Shabelle, Middle Shabelle, and Bay regions, Rab Dhuure and Waajid districts, western parts of Xudur district and southern parts of Tayeeglow district in Bakool region, Bulo Burti district in Hiraan region, southern parts of Ceel Buur district, northern parts of Ceel Dheer district and the coastal strips of Galgaduud region and southern Mudug region. Similar moderate rains are also expected over northern parts of Hargeisa district Woqooyi Galbeed region, Sheikh district and northern parts of Owdweyne and Burco districts in Togdheer region.<br />\nDry conditions are expected in central and northern parts of the country including Bari, Nugaal and Sool regions, several areas in Awdal, Sanaag, central and southern parts of Togdheer region, northern and southern parts of Woqooyi Galbeed region, and vast non-coastal parts of Mudug region.<br />\nModerate temperatures of between 24°C and 28°C are expected in north and eastern parts of the country with cold conditions (temperatures less than 20°C ) likely very isolated areas in northern Sanaag and Bari regions. Moderate temperatures of between 28°C and 32°C are expected over central and southern Somalia.</p>\n"
+    }
+  },
+  "text": "# Somalia Weekly Weather Forecast - Valid From 19th to 25th April 2023\n\n**Moderate to heavy rainfall is expected over several areas in southern Somalia with light rainfall in isolated areas in the northwest and dry conditions in central and northeastern regions**\n\n**Weather Review for 11th to 18th April 2023**\n\nSeveral parts of the country received light to moderate rains over the last week with forty three (43) stations recording at least 1 mm of rainfall (Table 1). The stations that received at least 50 mm of cumulative rainfall in the last week were Salaxley (54 mm), Hargeisa (59 mm), and Dooxaguban (63 mm) in Woqooyi Galbeed region and Gacan-libah (67 mm) in Togdheer region.  \nRelatively moderate rains were also observed at Balli Dhiddin (40 mm) in Bari region, Jowhar (41 mm) in Middle Shabelle region, Sheikh (41 mm) and Gatiiley (44 mm) in Togdheer region, and Mogadishu (45.5 mm). The rains over Gatiiley (44 mm/day), Mogadishu (45.5 mm/day) and Hargeisa (59 mm/ day) were the most intense. Although cumulatively light,  \nDollow (28.9 mm) recorded the best temporal distribution of rain having received light rains in five (5) days during the past one week.\n\n**Weather Forecast for 19th to 25th April 2023**\n\nAccording to the weekly forecast, several areas in southern Somalia are expected to receive moderate (above 50 mm) to heavy (above 100 mm) cumulative rainfall during the forecast period (Map 1). The spatial variation of the cumulative rainfall amounts is as follows:  \nHeavy rainfall of between 100 mm and 150 mm is expected in some areas of southern Somalia including Ceel Waaq district and eastern parts of Bardheere district in Gedo region, eastern parts of Diinsoor district in Bay region, northern parts of Saakow district, southern parts of Buáale district and northern parts of Jilib district in Middle Juba region, and western parts of Jamaame district, southeastern parts of Afmadow district, north parts of Kismaayo and most parts of Badhaadhe district in Lower Juba region. Very heavy isolated rainfall of above 150 mm is likely in some of the above areas particularly over the eastern parts of Bardheere district in Gedo region and southeastern parts of Bu’aale district in Middle Juba region.  \nModerate rainfall of between 50 mm and 100 mm is expected over Middle Juba region, several areas in central and southern Gedo, eastern, southern and western Lower Juba region, central and western parts of Bay region, western and eastern coastal parts of Lower Shabelle region, and southwestern parts of Middle Shabelle region.  \nLight rains of less than 50 mm are expected over Afmadow district in Lower Juba region, Belet Xaawo, Garbahaarey, Luuq and Dollow districts in Gedo region, several parts of Lower Shabelle, Middle Shabelle, and Bay regions, Rab Dhuure and Waajid districts, western parts of Xudur district and southern parts of Tayeeglow district in Bakool region, Bulo Burti district in Hiraan region, southern parts of Ceel Buur district, northern parts of Ceel Dheer district and the coastal strips of Galgaduud region and southern Mudug region. Similar moderate rains are also expected over northern parts of Hargeisa district Woqooyi Galbeed region, Sheikh district and northern parts of Owdweyne and Burco districts in Togdheer region.  \nDry conditions are expected in central and northern parts of the country including Bari, Nugaal and Sool regions, several areas in Awdal, Sanaag, central and southern parts of Togdheer region, northern and southern parts of Woqooyi Galbeed region, and vast non-coastal parts of Mudug region.  \nModerate temperatures of between 24°C and 28°C are expected in north and eastern parts of the country with cold conditions (temperatures less than 20°C ) likely very isolated areas in northern Sanaag and Bari regions. Moderate temperatures of between 28°C and 32°C are expected over central and southern Somalia.",
+  "summary": " This week, Somalia is expecting moderate to heavy rainfall in the south, light rainfall in the northwest, and dry conditions in the central and northeastern regions. Last week, 43 stations recorded at least 1 mm of rainfall, with the most intense rains observed in Gatiiley (44 mm/day), Mogadishu (45.5 mm/day) and Hargeisa (59 mm/day). This week, heavy rainfall of between 100 mm and 150 mm is expected in some areas of southern Somalia, while moderate rainfall of between 50 mm and 100 mm is expected over Middle Juba region, several areas in central and southern Gedo, eastern, southern and western Lower Juba region, central and western parts of Bay region, western and eastern coastal parts of Lower Shabelle region, and southwestern parts of Middle Shabelle region. Dry conditions are expected in central and northern parts of the country, while moderate temperatures of between 24°C and 28°C are expected in north and eastern parts of the country.",
+  "metadata": {
+    "id": "3954302",
+    "name": "Somalia Weekly Weather Forecast - Valid From 19th to 25th April 2023",
+    "date_original": 1681862400000,
+    "date_changed": 1681907759000,
+    "date_created": 1681904942000,
+    "primary_country_id": 216,
+    "primary_country_name": "Somalia",
+    "primary_country_iso3": "som",
+    "primary_country_location": {
+      "lon": 47.33,
+      "lat": 5.79
+    }
+  }
+}

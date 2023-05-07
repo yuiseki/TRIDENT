@@ -1,0 +1,149 @@
+{
+  "original": {
+    "id": "3957317",
+    "fields": {
+      "date": {
+        "changed": "2023-05-01T06:27:00+00:00",
+        "created": "2023-05-01T05:49:46+00:00",
+        "original": "2023-05-01T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/13",
+          "name": "Afghanistan",
+          "location": {
+            "lon": 66.03,
+            "lat": 33.84
+          },
+          "id": 13,
+          "shortname": "Afghanistan",
+          "iso3": "afg"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/121",
+          "name": "Iran (Islamic Republic of)",
+          "location": {
+            "lon": 54.3,
+            "lat": 32.57
+          },
+          "id": 121,
+          "shortname": "Iran",
+          "iso3": "irn",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/122",
+          "name": "Iraq",
+          "location": {
+            "lon": 43.4,
+            "lat": 33.05
+          },
+          "id": 122,
+          "shortname": "Iraq",
+          "iso3": "irq"
+        }
+      ],
+      "origin": "https://data.unhcr.org/en/documents/details/100339",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/121",
+        "name": "Iran (Islamic Republic of)",
+        "location": {
+          "lon": 54.3,
+          "lat": 32.57
+        },
+        "id": 121,
+        "shortname": "Iran",
+        "iso3": "irn"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "UNHCR Iran Factsheet, January-March 2023",
+      "body": "The Islamic Republic of Iran is host to one of the largest and most protracted urban refugee situations in the world and has provided asylum to refugees for over four decades. In addition to the hundreds of thousands who crossed the border in 2021 and 2022 using both regular and irregular means, the country has been host to millions of Afghans.  \n\nIn March, UNHCR launched the 2023 Afghanistan Situation Regional Refugee Response Plan (RRP), to support host governments to address humanitarian needs. It aims to ensure that no one is left behind and that the needs of Afghans and their host communities can be met. For Iran, the RRP targets 3.3 million Afghans of varying status (both refugees and asylumseekers) and the host community.  \n\nMeanwhile, Iranian borders remain officially closed, but Afghans continued making their way to Iran informally through unofficial border crossing points.  \n\nAccording to evolving estimates by the Government of Iran, over 1,000,000 Afghans fled to Iran since January 2021.  \n\nSustained international humanitarian support remains needed to help the Government of Iran maintain its inclusive refugee policies.",
+      "url": "https://reliefweb.int/node/3957317",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/58/23/5823f843-8683-46c4-b420-4b899a7d647a.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/58/23/5823f843-8683-46c4-b420-4b899a7d647a.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/58/23/5823f843-8683-46c4-b420-4b899a7d647a.png",
+            "version": "2415936-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/58/23/5823f843-8683-46c4-b420-4b899a7d647a.png"
+          },
+          "filename": "UNHCR quarterly factsheet IRAN_Jan-Mar_2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415936",
+          "filesize": "311615",
+          "url": "https://reliefweb.int/attachments/5823f843-8683-46c4-b420-4b899a7d647a/UNHCR%20quarterly%20factsheet%20IRAN_Jan-Mar_2023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/iran-islamic-republic/unhcr-iran-factsheet-january-march-2023",
+      "theme": [
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        }
+      ],
+      "id": 3957317,
+      "status": "published",
+      "body-html": "<p>The Islamic Republic of Iran is host to one of the largest and most protracted urban refugee situations in the world and has provided asylum to refugees for over four decades. In addition to the hundreds of thousands who crossed the border in 2021 and 2022 using both regular and irregular means, the country has been host to millions of Afghans.</p>\n<p>In March, UNHCR launched the 2023 Afghanistan Situation Regional Refugee Response Plan (RRP), to support host governments to address humanitarian needs. It aims to ensure that no one is left behind and that the needs of Afghans and their host communities can be met. For Iran, the RRP targets 3.3 million Afghans of varying status (both refugees and asylumseekers) and the host community.</p>\n<p>Meanwhile, Iranian borders remain officially closed, but Afghans continued making their way to Iran informally through unofficial border crossing points.</p>\n<p>According to evolving estimates by the Government of Iran, over 1,000,000 Afghans fled to Iran since January 2021.</p>\n<p>Sustained international humanitarian support remains needed to help the Government of Iran maintain its inclusive refugee policies.</p>\n"
+    }
+  },
+  "text": "# UNHCR Iran Factsheet, January-March 2023\n\nThe Islamic Republic of Iran is host to one of the largest and most protracted urban refugee situations in the world and has provided asylum to refugees for over four decades. In addition to the hundreds of thousands who crossed the border in 2021 and 2022 using both regular and irregular means, the country has been host to millions of Afghans.  \n\nIn March, UNHCR launched the 2023 Afghanistan Situation Regional Refugee Response Plan (RRP), to support host governments to address humanitarian needs. It aims to ensure that no one is left behind and that the needs of Afghans and their host communities can be met. For Iran, the RRP targets 3.3 million Afghans of varying status (both refugees and asylumseekers) and the host community.  \n\nMeanwhile, Iranian borders remain officially closed, but Afghans continued making their way to Iran informally through unofficial border crossing points.  \n\nAccording to evolving estimates by the Government of Iran, over 1,000,000 Afghans fled to Iran since January 2021.  \n\nSustained international humanitarian support remains needed to help the Government of Iran maintain its inclusive refugee policies.",
+  "summary": " The Islamic Republic of Iran has been providing asylum to refugees for over four decades and is currently host to one of the largest and most protracted urban refugee situations in the world. In March, UNHCR launched the 2023 Afghanistan Situation Regional Refugee Response Plan (RRP) to support host governments and ensure the needs of Afghans and their host communities can be met. Iranian borders remain closed, but Afghans continue to make their way to Iran informally. Over 1,000,000 Afghans have fled to Iran since January 2021, and sustained international humanitarian support is needed to help the Government of Iran maintain its inclusive refugee policies.",
+  "metadata": {
+    "id": "3957317",
+    "name": "UNHCR Iran Factsheet, January-March 2023",
+    "date_original": 1682899200000,
+    "date_changed": 1682922420000,
+    "date_created": 1682920186000,
+    "primary_country_id": 121,
+    "primary_country_name": "Iran (Islamic Republic of)",
+    "primary_country_iso3": "irn",
+    "primary_country_location": {
+      "lon": 54.3,
+      "lat": 32.57
+    }
+  }
+}

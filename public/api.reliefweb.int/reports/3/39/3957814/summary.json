@@ -1,0 +1,229 @@
+{
+  "original": {
+    "id": "3957814",
+    "fields": {
+      "date": {
+        "changed": "2023-05-02T17:53:35+00:00",
+        "created": "2023-05-02T16:21:13+00:00",
+        "original": "2023-04-11T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/137",
+          "name": "Lebanon",
+          "location": {
+            "lon": 35.89,
+            "lat": 33.92
+          },
+          "id": 137,
+          "shortname": "Lebanon",
+          "iso3": "lbn",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/180",
+          "name": "occupied Palestinian territory",
+          "location": {
+            "lon": 35.2332,
+            "lat": 31.9522
+          },
+          "id": 180,
+          "shortname": "oPt",
+          "iso3": "pse"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/226",
+          "name": "Syrian Arab Republic",
+          "location": {
+            "lon": 38.51,
+            "lat": 35.01
+          },
+          "id": 226,
+          "shortname": "Syria",
+          "iso3": "syr"
+        }
+      ],
+      "ocha_product": [
+        {
+          "name": "Humanitarian Needs Overview",
+          "id": 20471
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/137",
+        "name": "Lebanon",
+        "location": {
+          "lon": 35.89,
+          "lat": 33.92
+        },
+        "id": 137,
+        "shortname": "Lebanon",
+        "iso3": "lbn"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        },
+        {
+          "code": "AC",
+          "name": "Technological Disaster",
+          "id": 4620
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1503",
+          "longname": "United Nations Office for the Coordination of Humanitarian Affairs",
+          "spanish_name": "Oficina de Coordinación de Asuntos Humanitarios",
+          "name": "UN Office for the Coordination of Humanitarian Affairs",
+          "id": 1503,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "OCHA",
+          "disclaimer": "To learn more about OCHA's activities, please visit https://www.unocha.org/.",
+          "homepage": "http://www.unocha.org/"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/35196",
+          "longname": "United Nations Resident and Humanitarian Coordinator in Lebanon",
+          "name": "UN Resident and Humanitarian Coordinator in Lebanon",
+          "id": 35196,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UN RC/HC Lebanon",
+          "homepage": "https://lebanon.un.org/en/about/about-the-resident-coordinator-office"
+        }
+      ],
+      "title": "Escalating needs in Lebanon | A 2023 overview",
+      "body": "**Joint Needs and Situation**\n\nThis document is produced in collaboration with and on behalf of the Lebanon Humanitarian Country Team (HCT) and humanitarian partners working in Lebanon. It provides a shared understanding of the impact of the multi-layered crisis in Lebanon on the population, the systems and services and the operational space of the aid community in the country. It outlines an analysis of the most pressing humanitarian and stabilization1 needs in the country, and the estimated number of people who need humanitarian assistance.\n\nThe document aims to provide as consolidated as possible an analysis of the situation to inform coordinated, efficient and accountable humanitarian and stabilization response planning for 2023.\n\nThe analysis covers the period from April 2022 to January 2023. Severity analysis and people in need estimations specifically are based on primary data collected through the Multi-Sectoral Needs Assessment, Vulnerability Assessment of Syrian Refugees in Lebanon – both conducted in the second half of 2022, and a number of other data sources (see Part IV: Technical Annexes). Figures and findings reflected in this document are based on independent analysis of the United Nations and humanitarian partners, built on information available to them. Many of the figures provided in this document are best possible estimates, based on sometimes incomplete and partial data sets, using the methodologies for data collection and triangulation of information which were available at the time.\n\nThe designation employed and the presentation of material in the report do not imply the expression of any opinion whatsoever on the part of the Secretariat of the United Nations concerning the legal status of any country, territory, city or are or of its authorities, or concerning the delimitation of its frontiers or boundaries.\n\n*The UN characterizes the flight of civilians from Syria as a refugee movement and considers that these Syrians are seeking international protection and are likely to meet the refugee definition. The Government of Lebanon considers that it is being subject to a situation of mass influx. It refers to individuals who fled from Syria into its territory after March 2011 as temporarily displaced individuals and reserves its sovereign right to determine their status according to Lebanese laws and regulations.*\n\n\n*This document – in line with the Lebanon Crisis Response Plan - uses the following terminologies to refer to persons who have fled from and cannot currently return to Syria:*  \n*“persons displaced from Syria” (which can, depending on context, include Palestinian refugees from Syria as well as registered and unregistered Syrian nationals);*  \n*“displaced Syrians” (referring to Syrian nationals, including those born in Lebanon to displaced Syrian parents); “persons registered as refugees by UNHCR” and;*  \n*“Palestinian refugees in Lebanon” (referring to 180,000 PRL living in 12 camps and 156 gatherings) and; “Palestinian refugees from Syria” (referring to 31,400 PRS across Lebanon).*",
+      "url": "https://reliefweb.int/node/3957814",
+      "disaster": [
+        {
+          "name": "Lebanon: Cholera Outbreak - Oct 2022",
+          "id": 51351,
+          "glide": "EP-2022-000334-LBN",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Lebanon: Beirut Port Explosions - Aug 2020",
+          "id": 50384,
+          "glide": "OT-2020-000177-LBN",
+          "type": [
+            {
+              "code": "AC",
+              "name": "Technological Disaster",
+              "id": 4620,
+              "primary": true
+            }
+          ],
+          "status": "past"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/77/6a/776ae72b-ff5c-40a6-99c6-fb5f1003b65b.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/77/6a/776ae72b-ff5c-40a6-99c6-fb5f1003b65b.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/77/6a/776ae72b-ff5c-40a6-99c6-fb5f1003b65b.png",
+            "version": "2416471-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/77/6a/776ae72b-ff5c-40a6-99c6-fb5f1003b65b.png"
+          },
+          "filename": "Escalating_Needs_Lebanon.pdf",
+          "mimetype": "application/pdf",
+          "id": "2416471",
+          "filesize": "12333668",
+          "url": "https://reliefweb.int/attachments/776ae72b-ff5c-40a6-99c6-fb5f1003b65b/Escalating_Needs_Lebanon.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/lebanon/escalating-needs-lebanon-2023-overview",
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Gender",
+          "id": 4594
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Recovery and Reconstruction",
+          "id": 4601
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3957814,
+      "status": "published",
+      "body-html": "<p><strong>Joint Needs and Situation</strong></p>\n<p>This document is produced in collaboration with and on behalf of the Lebanon Humanitarian Country Team (HCT) and humanitarian partners working in Lebanon. It provides a shared understanding of the impact of the multi-layered crisis in Lebanon on the population, the systems and services and the operational space of the aid community in the country. It outlines an analysis of the most pressing humanitarian and stabilization1 needs in the country, and the estimated number of people who need humanitarian assistance.</p>\n<p>The document aims to provide as consolidated as possible an analysis of the situation to inform coordinated, efficient and accountable humanitarian and stabilization response planning for 2023.</p>\n<p>The analysis covers the period from April 2022 to January 2023. Severity analysis and people in need estimations specifically are based on primary data collected through the Multi-Sectoral Needs Assessment, Vulnerability Assessment of Syrian Refugees in Lebanon – both conducted in the second half of 2022, and a number of other data sources (see Part IV: Technical Annexes). Figures and findings reflected in this document are based on independent analysis of the United Nations and humanitarian partners, built on information available to them. Many of the figures provided in this document are best possible estimates, based on sometimes incomplete and partial data sets, using the methodologies for data collection and triangulation of information which were available at the time.</p>\n<p>The designation employed and the presentation of material in the report do not imply the expression of any opinion whatsoever on the part of the Secretariat of the United Nations concerning the legal status of any country, territory, city or are or of its authorities, or concerning the delimitation of its frontiers or boundaries.</p>\n<p><em>The UN characterizes the flight of civilians from Syria as a refugee movement and considers that these Syrians are seeking international protection and are likely to meet the refugee definition. The Government of Lebanon considers that it is being subject to a situation of mass influx. It refers to individuals who fled from Syria into its territory after March 2011 as temporarily displaced individuals and reserves its sovereign right to determine their status according to Lebanese laws and regulations.</em></p>\n<p><em>This document – in line with the Lebanon Crisis Response Plan - uses the following terminologies to refer to persons who have fled from and cannot currently return to Syria:</em><br />\n<em>“persons displaced from Syria” (which can, depending on context, include Palestinian refugees from Syria as well as registered and unregistered Syrian nationals);</em><br />\n<em>“displaced Syrians” (referring to Syrian nationals, including those born in Lebanon to displaced Syrian parents); “persons registered as refugees by UNHCR” and;</em><br />\n<em>“Palestinian refugees in Lebanon” (referring to 180,000 PRL living in 12 camps and 156 gatherings) and; “Palestinian refugees from Syria” (referring to 31,400 PRS across Lebanon).</em></p>\n"
+    }
+  },
+  "text": "# Escalating needs in Lebanon | A 2023 overview\n\n**Joint Needs and Situation**\n\nThis document is produced in collaboration with and on behalf of the Lebanon Humanitarian Country Team (HCT) and humanitarian partners working in Lebanon. It provides a shared understanding of the impact of the multi-layered crisis in Lebanon on the population, the systems and services and the operational space of the aid community in the country. It outlines an analysis of the most pressing humanitarian and stabilization1 needs in the country, and the estimated number of people who need humanitarian assistance.\n\nThe document aims to provide as consolidated as possible an analysis of the situation to inform coordinated, efficient and accountable humanitarian and stabilization response planning for 2023.\n\nThe analysis covers the period from April 2022 to January 2023. Severity analysis and people in need estimations specifically are based on primary data collected through the Multi-Sectoral Needs Assessment, Vulnerability Assessment of Syrian Refugees in Lebanon – both conducted in the second half of 2022, and a number of other data sources (see Part IV: Technical Annexes). Figures and findings reflected in this document are based on independent analysis of the United Nations and humanitarian partners, built on information available to them. Many of the figures provided in this document are best possible estimates, based on sometimes incomplete and partial data sets, using the methodologies for data collection and triangulation of information which were available at the time.\n\nThe designation employed and the presentation of material in the report do not imply the expression of any opinion whatsoever on the part of the Secretariat of the United Nations concerning the legal status of any country, territory, city or are or of its authorities, or concerning the delimitation of its frontiers or boundaries.\n\n*The UN characterizes the flight of civilians from Syria as a refugee movement and considers that these Syrians are seeking international protection and are likely to meet the refugee definition. The Government of Lebanon considers that it is being subject to a situation of mass influx. It refers to individuals who fled from Syria into its territory after March 2011 as temporarily displaced individuals and reserves its sovereign right to determine their status according to Lebanese laws and regulations.*\n\n\n*This document – in line with the Lebanon Crisis Response Plan - uses the following terminologies to refer to persons who have fled from and cannot currently return to Syria:*  \n*“persons displaced from Syria” (which can, depending on context, include Palestinian refugees from Syria as well as registered and unregistered Syrian nationals);*  \n*“displaced Syrians” (referring to Syrian nationals, including those born in Lebanon to displaced Syrian parents); “persons registered as refugees by UNHCR” and;*  \n*“Palestinian refugees in Lebanon” (referring to 180,000 PRL living in 12 camps and 156 gatherings) and; “Palestinian refugees from Syria” (referring to 31,400 PRS across Lebanon).*",
+  "summary": " This document provides an overview of the escalating needs in Lebanon in 2023, produced in collaboration with the Lebanon Humanitarian Country Team and humanitarian partners. It outlines an analysis of the most pressing humanitarian and stabilization needs in the country, and the estimated number of people who need humanitarian assistance. The analysis covers the period from April 2022 to January 2023 and is based on primary data collected through the Multi-Sectoral Needs Assessment and Vulnerability Assessment of Syrian Refugees in Lebanon. The document uses the terms “persons displaced from Syria”, “displaced Syrians”, “persons registered as refugees by UNHCR”, “Palestinian refugees in Lebanon”, and “Palestinian refugees from Syria” to refer to those affected by the crisis.",
+  "metadata": {
+    "id": "3957814",
+    "name": "Escalating needs in Lebanon | A 2023 overview",
+    "date_original": 1681171200000,
+    "date_changed": 1683050015000,
+    "date_created": 1683044473000,
+    "primary_country_id": 137,
+    "primary_country_name": "Lebanon",
+    "primary_country_iso3": "lbn",
+    "primary_country_location": {
+      "lon": 35.89,
+      "lat": 33.92
+    }
+  }
+}

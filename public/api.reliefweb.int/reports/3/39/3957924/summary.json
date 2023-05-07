@@ -1,0 +1,216 @@
+{
+  "original": {
+    "id": "3957924",
+    "fields": {
+      "date": {
+        "changed": "2023-05-02T23:39:42+00:00",
+        "created": "2023-05-02T23:35:59+00:00",
+        "original": "2023-05-02T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/13",
+          "name": "Afghanistan",
+          "location": {
+            "lon": 66.03,
+            "lat": 33.84
+          },
+          "id": 13,
+          "shortname": "Afghanistan",
+          "iso3": "afg",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/31",
+          "name": "Bangladesh",
+          "location": {
+            "lon": 90.27,
+            "lat": 23.84
+          },
+          "id": 31,
+          "shortname": "Bangladesh",
+          "iso3": "bgd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/38",
+          "name": "Bhutan",
+          "location": {
+            "lon": 90.43,
+            "lat": 27.42
+          },
+          "id": 38,
+          "shortname": "Bhutan",
+          "iso3": "btn"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/119",
+          "name": "India",
+          "location": {
+            "lon": 79.28,
+            "lat": 22.76
+          },
+          "id": 119,
+          "shortname": "India",
+          "iso3": "ind"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/148",
+          "name": "Maldives",
+          "location": {
+            "lon": 73.25,
+            "lat": 3.22
+          },
+          "id": 148,
+          "shortname": "Maldives",
+          "iso3": "mdv"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/168",
+          "name": "Nepal",
+          "location": {
+            "lon": 83.94,
+            "lat": 28.25
+          },
+          "id": 168,
+          "shortname": "Nepal",
+          "iso3": "npl"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/182",
+          "name": "Pakistan",
+          "location": {
+            "lon": 69.39,
+            "lat": 29.97
+          },
+          "id": 182,
+          "shortname": "Pakistan",
+          "iso3": "pak"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/219",
+          "name": "Sri Lanka",
+          "location": {
+            "lon": 80.7,
+            "lat": 7.61
+          },
+          "id": 219,
+          "shortname": "Sri Lanka",
+          "iso3": "lka"
+        }
+      ],
+      "origin": "https://data.unicef.org/resources/a-profile-of-child-marriage-in-south-asia/",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/13",
+        "name": "Afghanistan",
+        "location": {
+          "lon": 66.03,
+          "lat": 33.84
+        },
+        "id": 13,
+        "shortname": "Afghanistan",
+        "iso3": "afg"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1979",
+          "longname": "United Nations Children's Fund",
+          "spanish_name": "Fondo de las Naciones Unidas para la Infancia",
+          "name": "UN Children's Fund",
+          "id": 1979,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNICEF",
+          "homepage": "http://www.unicef.org"
+        }
+      ],
+      "title": "A Profile of Child Marriage in South Asia",
+      "body": "South Asia is the region with the highest number of child brides, accounting for 45 per cent of the global total. Recent decades have seen remarkable progress in reducing child marriage in this region. Still, the combined impact of the COVID-19 pandemic, economic shocks, conflict and climate change threatens to erode these hard-won gains. Reaching the global SDG target to end child marriage by 2030 will only be possible if progress to eliminate this harmful practice is accelerated. \n\n**Key facts**\n\nAround one in four young women in South Asia were first married or in union before their 18th birthday. The region is home to around 290 million child brides, accounting for 45 per cent of the global total.\n\nLevels of child marriage vary considerably across the region, from over 50 per cent in Bangladesh to 2 per cent in the Maldives. Within countries there is further disparity: In Afghanistan, for example, there is a tenfold difference in prevalence across provinces.\n\nChild marriage is less common among boys in the region, though it does occur. In Nepal, nearly 1 in 10 young men were married in childhood.\n\nChild brides in South Asia are more likely to live in poor households, have less education and reside in rural areas.\n\nThree in four child brides in the region give birth while they are still adolescents; over a third give birth before they turn 18.\n\nThe vast majority of child brides in South Asia are out of school. In many places, marriage and schooling are viewed as incompatible.\n\nIn some countries in South Asia, child brides are more likely to report that wife-beating is justified, and to experience such violence themselves.\n\nSouth Asia leads the world in progress on reducing child marriage. Still, acceleration is required to meet the target of eliminating child marriage by 2030; compared to the last decade, the rate of decline would need to be seven times faster.    \n\n**South Asia is home to around 290 million child brides, accounting for 45 per cent of the global total**",
+      "url": "https://reliefweb.int/node/3957924",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/24/f7/24f7b2f2-ec92-4b87-818b-f2d13535aef7.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/24/f7/24f7b2f2-ec92-4b87-818b-f2d13535aef7.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/24/f7/24f7b2f2-ec92-4b87-818b-f2d13535aef7.png",
+            "version": "2416589-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/24/f7/24f7b2f2-ec92-4b87-818b-f2d13535aef7.png"
+          },
+          "filename": "Profile_of_child_marriage_in_South_Asia.pdf",
+          "description": "Full Report",
+          "mimetype": "application/pdf",
+          "id": "2416589",
+          "filesize": "554506",
+          "url": "https://reliefweb.int/attachments/24f7b2f2-ec92-4b87-818b-f2d13535aef7/Profile_of_child_marriage_in_South_Asia.pdf"
+        },
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/98/cf/98cf8bc4-891e-4efc-843a-f5f5a775466d.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/98/cf/98cf8bc4-891e-4efc-843a-f5f5a775466d.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/98/cf/98cf8bc4-891e-4efc-843a-f5f5a775466d.png",
+            "version": "2416591-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/98/cf/98cf8bc4-891e-4efc-843a-f5f5a775466d.png"
+          },
+          "filename": "A Profile of Child Marriage in South Asia - UNICEF DATA.pdf",
+          "description": "Press Release",
+          "mimetype": "application/pdf",
+          "id": "2416591",
+          "filesize": "2751796",
+          "url": "https://reliefweb.int/attachments/98cf8bc4-891e-4efc-843a-f5f5a775466d/A%20Profile%20of%20Child%20Marriage%20in%20South%20Asia%20-%20UNICEF%20DATA.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/afghanistan/profile-child-marriage-south-asia",
+      "theme": [
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Gender",
+          "id": 4594
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        }
+      ],
+      "id": 3957924,
+      "status": "published",
+      "body-html": "<p>South Asia is the region with the highest number of child brides, accounting for 45 per cent of the global total. Recent decades have seen remarkable progress in reducing child marriage in this region. Still, the combined impact of the COVID-19 pandemic, economic shocks, conflict and climate change threatens to erode these hard-won gains. Reaching the global SDG target to end child marriage by 2030 will only be possible if progress to eliminate this harmful practice is accelerated.</p>\n<p><strong>Key facts</strong></p>\n<p>Around one in four young women in South Asia were first married or in union before their 18th birthday. The region is home to around 290 million child brides, accounting for 45 per cent of the global total.</p>\n<p>Levels of child marriage vary considerably across the region, from over 50 per cent in Bangladesh to 2 per cent in the Maldives. Within countries there is further disparity: In Afghanistan, for example, there is a tenfold difference in prevalence across provinces.</p>\n<p>Child marriage is less common among boys in the region, though it does occur. In Nepal, nearly 1 in 10 young men were married in childhood.</p>\n<p>Child brides in South Asia are more likely to live in poor households, have less education and reside in rural areas.</p>\n<p>Three in four child brides in the region give birth while they are still adolescents; over a third give birth before they turn 18.</p>\n<p>The vast majority of child brides in South Asia are out of school. In many places, marriage and schooling are viewed as incompatible.</p>\n<p>In some countries in South Asia, child brides are more likely to report that wife-beating is justified, and to experience such violence themselves.</p>\n<p>South Asia leads the world in progress on reducing child marriage. Still, acceleration is required to meet the target of eliminating child marriage by 2030; compared to the last decade, the rate of decline would need to be seven times faster.</p>\n<p><strong>South Asia is home to around 290 million child brides, accounting for 45 per cent of the global total</strong></p>\n"
+    }
+  },
+  "text": "# A Profile of Child Marriage in South Asia\n\nSouth Asia is the region with the highest number of child brides, accounting for 45 per cent of the global total. Recent decades have seen remarkable progress in reducing child marriage in this region. Still, the combined impact of the COVID-19 pandemic, economic shocks, conflict and climate change threatens to erode these hard-won gains. Reaching the global SDG target to end child marriage by 2030 will only be possible if progress to eliminate this harmful practice is accelerated. \n\n**Key facts**\n\nAround one in four young women in South Asia were first married or in union before their 18th birthday. The region is home to around 290 million child brides, accounting for 45 per cent of the global total.\n\nLevels of child marriage vary considerably across the region, from over 50 per cent in Bangladesh to 2 per cent in the Maldives. Within countries there is further disparity: In Afghanistan, for example, there is a tenfold difference in prevalence across provinces.\n\nChild marriage is less common among boys in the region, though it does occur. In Nepal, nearly 1 in 10 young men were married in childhood.\n\nChild brides in South Asia are more likely to live in poor households, have less education and reside in rural areas.\n\nThree in four child brides in the region give birth while they are still adolescents; over a third give birth before they turn 18.\n\nThe vast majority of child brides in South Asia are out of school. In many places, marriage and schooling are viewed as incompatible.\n\nIn some countries in South Asia, child brides are more likely to report that wife-beating is justified, and to experience such violence themselves.\n\nSouth Asia leads the world in progress on reducing child marriage. Still, acceleration is required to meet the target of eliminating child marriage by 2030; compared to the last decade, the rate of decline would need to be seven times faster.    \n\n**South Asia is home to around 290 million child brides, accounting for 45 per cent of the global total**",
+  "summary": " South Asia has the highest number of child brides in the world, accounting for 45% of the global total. Despite progress in reducing child marriage in recent decades, the combined impact of the COVID-19 pandemic, economic shocks, conflict and climate change threatens to erode these gains. Acceleration is needed to meet the global SDG target of eliminating child marriage by 2030.",
+  "metadata": {
+    "id": "3957924",
+    "name": "A Profile of Child Marriage in South Asia",
+    "date_original": 1682985600000,
+    "date_changed": 1683070782000,
+    "date_created": 1683070559000,
+    "primary_country_id": 13,
+    "primary_country_name": "Afghanistan",
+    "primary_country_iso3": "afg",
+    "primary_country_location": {
+      "lon": 66.03,
+      "lat": 33.84
+    }
+  }
+}

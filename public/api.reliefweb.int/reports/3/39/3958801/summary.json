@@ -1,0 +1,164 @@
+{
+  "original": {
+    "id": "3958801",
+    "fields": {
+      "date": {
+        "changed": "2023-05-05T00:39:21+00:00",
+        "created": "2023-05-05T00:33:10+00:00",
+        "original": "2023-05-05T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/13",
+          "name": "Afghanistan",
+          "location": {
+            "lon": 66.03,
+            "lat": 33.84
+          },
+          "id": 13,
+          "shortname": "Afghanistan",
+          "iso3": "afg",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/13",
+        "name": "Afghanistan",
+        "location": {
+          "lon": 66.03,
+          "lat": 33.84
+        },
+        "id": 13,
+        "shortname": "Afghanistan",
+        "iso3": "afg"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EQ",
+          "name": "Earthquake",
+          "id": 4628
+        },
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        },
+        {
+          "code": "FF",
+          "name": "Flash Flood",
+          "id": 4624
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1979",
+          "longname": "United Nations Children's Fund",
+          "spanish_name": "Fondo de las Naciones Unidas para la Infancia",
+          "name": "UN Children's Fund",
+          "id": 1979,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNICEF",
+          "homepage": "http://www.unicef.org"
+        }
+      ],
+      "title": "UNICEF Afghanistan Humanitarian Situation Report No. 3: March 2023",
+      "body": "**Highlights**\n\n- In March, Afghanistan experienced flooding in multiple parts of the country and a 6.5-magnitude earthquake in the north and eastern regions.\n\n- As the weather warms, acute watery diarrhoea (AWD) cases increased. Urgent funding is needed for emergency health and water, sanitation, and hygiene (WASH) activities to prevent the spread of AWD/Cholera.\n\n- Although schools reopened in March, the ban on secondary education for girls remained, with no indication on whether it may be lifted.\n\n- Despite an increasingly challenging operational environment for protection, life-saving case management services continued. Over 7,800 extremely vulnerable children benefited from these services, including 3,158 children provided with family tracing and reunification and alternative care services.\n\n- To support households with adolescent girls (12-17 years) to continue formal institutional learning and meet basic education needs, UNICEF completed registration of 24,502 households in Nuristan and 62,603 households in Jawzjan for cash transfers.\n\n**Situation in numbers**\n\n28.3 M People in need of humanitarian assistance (HNO 2023)\n\n15.2 M children in need of humanitarian assistance (HNO 2023)\n\n875 K Severely acutely malnourished children under the age of five years expected to need SAM treatment (HNO 2023)\n\n17.6 M people will need humanitarian health assistance (HNO 2023).\n\n**Funding Overview and Partnerships**\n\nAs of 31 March 2023, the UNICEF Afghanistan Humanitarian Action for Children (HAC) appeal for 2023 is 22.4 per cent funded. This includes flexible emergency funding from both public and private partners, which will enable UNICEF to utilise resources to respond to rising and sudden needs. UNICEF is grateful to the Government of Japan and JICA, the Governments of Sweden and Canada, the State of Kuwait, and the extensive family of national committees for UNICEF for contributions received in March. Further, UNICEF extends special thanks to the Governments of Australia, Belgium, Canada, Denmark, Germany, Japan, the Netherlands, Norway, Sweden, Switzerland, USA, and UK, as well as private sector partners for contributing flexible resources. As an extraordinary measure, an internal loan of US$ 5 million was provided to prevent a pipeline break in life-saving nutrition supplies for the treatment of children suffering from severe wasting. UNICEF will continue to partner with donors to ensure sufficient resources are mobilised to address the needs of children and communities in Afghanistan. Urgent and critical funding gaps threaten to affect UNICEF’s ability to reach the most vulnerable children and families with lifesaving interventions, especially in the health; water, sanitation, and hygiene; nutrition; and social protection sectors.\n\n**Situation Overview & Humanitarian Needs**\n\nAfghanistan is highly prone to natural hazards, such as earthquakes, floods, avalanches, landslides, and drought. The frequency and intensity of these hazards are exacerbated by the effects of climate change and increasing humanitarian needs.\n\nOn the 23 March, a 6.5 magnitude earthquake was felt in Badakhshan, Takhar, Panjshir, Parwan, Kabul, Laghman, Nangarhar, and Kunar Provinces. According to the United States Geological Survey, the epicentre registered 40 kilometres (24 miles) southeast of Jurm in the northeast region at 187.6 kilometres(116 miles) deep. Due to the depth of the earthquake, the damage was relatively minimal. Interagency needs assessments indicated that 178 houses in Laghman, 51 in Nangarhar and 5 in Kunar were damaged. In the Eastern Region, there were two deaths and 39 injured in Laghman, 7 injured in Nangarhar and 7 injured in Kunar. In the Northern Region in Takhar Province, 193 houses were destroyed, one person was killed, and four others were injured. In Badakhshan Province, there was one death, 11 were injured and 50 houses were reported damaged. In the Central Region, 75 houses in Parwan and 95 houses in Panjshir provinces were affected. \n\nIn the same week, parts of Afghanistan were affected by heavy rain and flash floods. Floods were reported in Zari District in Balkh Province, which affected 15 villages and an estimated 200 households. More than 600 hectares of farmland was reportedly destroyed. The main road between Herat and Kandahar was blocked due to the severe flooding in Zari District. Floods were also reported in Khoram Sarbagh and Hazrat Sultan Districts in Samangan Province, resulting in 100 hectares of farmland destroyed. In Qalat District, Zabul Province, 25 households were affected by flooding. Heavy rain and snow were also reported in Panshir, Paktika, Paktia, Khost, and Ghazni.\n\nAs floods increased and the weather warmed, acute watery diarrhoea (AWD) cases increased. Since January 2023, 31,400 AWD with dehydration cases and 13 deaths were reported. In March, 12,074 new cases of AWD were reported. Helmand, Zabul, Baghlan, and Jawzjan Provinces are the worst affected. According to WHO weekly reports, by the end of March, the national epi curve showed an increasing trend in the number of AWD with dehydration cases for four consecutive weeks. \n\nAlthough schools opened in March after the winter break, the ban on secondary education for girls remained. There is still no indication on whether this ban will be lifted. UNICEF continues to monitor the situation through continuous engagement with de facto authorities (DfA), UNICEF staff, technical extenders, and partners.\n\nThe December 2022 ban on NGO women humanitarian workers continued to pose challenges. Protection and genderrelated activities are the most affected. Exemptions in the health and education sectors, and some regional variations in implementation of the ban, have allowed women to continue working across the humanitarian response, however, with considerable conditionalities. Conditionalities include a strict adherence to mahram (male chaperone) and dress code, gender segregation in vehicles, and segregated workstations and distribution points by gender, for both NGO staff and community members accessing services.\n\nOn 4 March 2023, the de facto Acting Minister of Public Health issued a letter to World Health Organization (WHO) and other health and nutrition actors, including UNICEF, informing that all mobile health and nutrition teams (MHNTs) must cease to function within one month. The letter also informed that fixed health posts and sites should be established in the underserved areas where MHNTs operate. This was particularly concerning since MHNTs play a key role in preparedness and response to health emergencies, and they provide basic healthcare to people in remote and previously inaccessible areas. MHNTs can also be quickly repurposed to serve areas affected by acute health and nutrition needs. Following extensive negotiation between the Ministry, WHO, UNICEF and the Health and Nutrition Clusters, the DfA agreed to let MHNTs continue operating for another month until the end of April. A task committee was formed to create a detailed plan on MHNT transition to fixed sites.",
+      "url": "https://reliefweb.int/node/3958801",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/09/eb/09ebb8f9-77a9-403f-9148-8ec8a3b4143c.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/09/eb/09ebb8f9-77a9-403f-9148-8ec8a3b4143c.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/09/eb/09ebb8f9-77a9-403f-9148-8ec8a3b4143c.png",
+            "version": "2417524-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/09/eb/09ebb8f9-77a9-403f-9148-8ec8a3b4143c.png"
+          },
+          "filename": "UNICEF Afghanistan Humanitarian Situation Report No. 3, March 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2417524",
+          "filesize": "653907",
+          "url": "https://reliefweb.int/attachments/09ebb8f9-77a9-403f-9148-8ec8a3b4143c/UNICEF%20Afghanistan%20Humanitarian%20Situation%20Report%20No.%203%2C%20March%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/afghanistan/unicef-afghanistan-humanitarian-situation-report-no-3-march-2023",
+      "theme": [
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Gender",
+          "id": 4594
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Safety and Security",
+          "id": 4602
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3958801,
+      "status": "published",
+      "body-html": "<p><strong>Highlights</strong></p>\n<ul>\n<li>\n<p>In March, Afghanistan experienced flooding in multiple parts of the country and a 6.5-magnitude earthquake in the north and eastern regions.</p>\n</li>\n<li>\n<p>As the weather warms, acute watery diarrhoea (AWD) cases increased. Urgent funding is needed for emergency health and water, sanitation, and hygiene (WASH) activities to prevent the spread of AWD/Cholera.</p>\n</li>\n<li>\n<p>Although schools reopened in March, the ban on secondary education for girls remained, with no indication on whether it may be lifted.</p>\n</li>\n<li>\n<p>Despite an increasingly challenging operational environment for protection, life-saving case management services continued. Over 7,800 extremely vulnerable children benefited from these services, including 3,158 children provided with family tracing and reunification and alternative care services.</p>\n</li>\n<li>\n<p>To support households with adolescent girls (12-17 years) to continue formal institutional learning and meet basic education needs, UNICEF completed registration of 24,502 households in Nuristan and 62,603 households in Jawzjan for cash transfers.</p>\n</li>\n</ul>\n<p><strong>Situation in numbers</strong></p>\n<p>28.3 M People in need of humanitarian assistance (HNO 2023)</p>\n<p>15.2 M children in need of humanitarian assistance (HNO 2023)</p>\n<p>875 K Severely acutely malnourished children under the age of five years expected to need SAM treatment (HNO 2023)</p>\n<p>17.6 M people will need humanitarian health assistance (HNO 2023).</p>\n<p><strong>Funding Overview and Partnerships</strong></p>\n<p>As of 31 March 2023, the UNICEF Afghanistan Humanitarian Action for Children (HAC) appeal for 2023 is 22.4 per cent funded. This includes flexible emergency funding from both public and private partners, which will enable UNICEF to utilise resources to respond to rising and sudden needs. UNICEF is grateful to the Government of Japan and JICA, the Governments of Sweden and Canada, the State of Kuwait, and the extensive family of national committees for UNICEF for contributions received in March. Further, UNICEF extends special thanks to the Governments of Australia, Belgium, Canada, Denmark, Germany, Japan, the Netherlands, Norway, Sweden, Switzerland, USA, and UK, as well as private sector partners for contributing flexible resources. As an extraordinary measure, an internal loan of US$ 5 million was provided to prevent a pipeline break in life-saving nutrition supplies for the treatment of children suffering from severe wasting. UNICEF will continue to partner with donors to ensure sufficient resources are mobilised to address the needs of children and communities in Afghanistan. Urgent and critical funding gaps threaten to affect UNICEF’s ability to reach the most vulnerable children and families with lifesaving interventions, especially in the health; water, sanitation, and hygiene; nutrition; and social protection sectors.</p>\n<p><strong>Situation Overview &amp; Humanitarian Needs</strong></p>\n<p>Afghanistan is highly prone to natural hazards, such as earthquakes, floods, avalanches, landslides, and drought. The frequency and intensity of these hazards are exacerbated by the effects of climate change and increasing humanitarian needs.</p>\n<p>On the 23 March, a 6.5 magnitude earthquake was felt in Badakhshan, Takhar, Panjshir, Parwan, Kabul, Laghman, Nangarhar, and Kunar Provinces. According to the United States Geological Survey, the epicentre registered 40 kilometres (24 miles) southeast of Jurm in the northeast region at 187.6 kilometres(116 miles) deep. Due to the depth of the earthquake, the damage was relatively minimal. Interagency needs assessments indicated that 178 houses in Laghman, 51 in Nangarhar and 5 in Kunar were damaged. In the Eastern Region, there were two deaths and 39 injured in Laghman, 7 injured in Nangarhar and 7 injured in Kunar. In the Northern Region in Takhar Province, 193 houses were destroyed, one person was killed, and four others were injured. In Badakhshan Province, there was one death, 11 were injured and 50 houses were reported damaged. In the Central Region, 75 houses in Parwan and 95 houses in Panjshir provinces were affected.</p>\n<p>In the same week, parts of Afghanistan were affected by heavy rain and flash floods. Floods were reported in Zari District in Balkh Province, which affected 15 villages and an estimated 200 households. More than 600 hectares of farmland was reportedly destroyed. The main road between Herat and Kandahar was blocked due to the severe flooding in Zari District. Floods were also reported in Khoram Sarbagh and Hazrat Sultan Districts in Samangan Province, resulting in 100 hectares of farmland destroyed. In Qalat District, Zabul Province, 25 households were affected by flooding. Heavy rain and snow were also reported in Panshir, Paktika, Paktia, Khost, and Ghazni.</p>\n<p>As floods increased and the weather warmed, acute watery diarrhoea (AWD) cases increased. Since January 2023, 31,400 AWD with dehydration cases and 13 deaths were reported. In March, 12,074 new cases of AWD were reported. Helmand, Zabul, Baghlan, and Jawzjan Provinces are the worst affected. According to WHO weekly reports, by the end of March, the national epi curve showed an increasing trend in the number of AWD with dehydration cases for four consecutive weeks.</p>\n<p>Although schools opened in March after the winter break, the ban on secondary education for girls remained. There is still no indication on whether this ban will be lifted. UNICEF continues to monitor the situation through continuous engagement with de facto authorities (DfA), UNICEF staff, technical extenders, and partners.</p>\n<p>The December 2022 ban on NGO women humanitarian workers continued to pose challenges. Protection and genderrelated activities are the most affected. Exemptions in the health and education sectors, and some regional variations in implementation of the ban, have allowed women to continue working across the humanitarian response, however, with considerable conditionalities. Conditionalities include a strict adherence to mahram (male chaperone) and dress code, gender segregation in vehicles, and segregated workstations and distribution points by gender, for both NGO staff and community members accessing services.</p>\n<p>On 4 March 2023, the de facto Acting Minister of Public Health issued a letter to World Health Organization (WHO) and other health and nutrition actors, including UNICEF, informing that all mobile health and nutrition teams (MHNTs) must cease to function within one month. The letter also informed that fixed health posts and sites should be established in the underserved areas where MHNTs operate. This was particularly concerning since MHNTs play a key role in preparedness and response to health emergencies, and they provide basic healthcare to people in remote and previously inaccessible areas. MHNTs can also be quickly repurposed to serve areas affected by acute health and nutrition needs. Following extensive negotiation between the Ministry, WHO, UNICEF and the Health and Nutrition Clusters, the DfA agreed to let MHNTs continue operating for another month until the end of April. A task committee was formed to create a detailed plan on MHNT transition to fixed sites.</p>\n"
+    }
+  },
+  "text": "# UNICEF Afghanistan Humanitarian Situation Report No. 3: March 2023\n\n**Highlights**\n\n- In March, Afghanistan experienced flooding in multiple parts of the country and a 6.5-magnitude earthquake in the north and eastern regions.\n\n- As the weather warms, acute watery diarrhoea (AWD) cases increased. Urgent funding is needed for emergency health and water, sanitation, and hygiene (WASH) activities to prevent the spread of AWD/Cholera.\n\n- Although schools reopened in March, the ban on secondary education for girls remained, with no indication on whether it may be lifted.\n\n- Despite an increasingly challenging operational environment for protection, life-saving case management services continued. Over 7,800 extremely vulnerable children benefited from these services, including 3,158 children provided with family tracing and reunification and alternative care services.\n\n- To support households with adolescent girls (12-17 years) to continue formal institutional learning and meet basic education needs, UNICEF completed registration of 24,502 households in Nuristan and 62,603 households in Jawzjan for cash transfers.\n\n**Situation in numbers**\n\n28.3 M People in need of humanitarian assistance (HNO 2023)\n\n15.2 M children in need of humanitarian assistance (HNO 2023)\n\n875 K Severely acutely malnourished children under the age of five years expected to need SAM treatment (HNO 2023)\n\n17.6 M people will need humanitarian health assistance (HNO 2023).\n\n**Funding Overview and Partnerships**\n\nAs of 31 March 2023, the UNICEF Afghanistan Humanitarian Action for Children (HAC) appeal for 2023 is 22.4 per cent funded. This includes flexible emergency funding from both public and private partners, which will enable UNICEF to utilise resources to respond to rising and sudden needs. UNICEF is grateful to the Government of Japan and JICA, the Governments of Sweden and Canada, the State of Kuwait, and the extensive family of national committees for UNICEF for contributions received in March. Further, UNICEF extends special thanks to the Governments of Australia, Belgium, Canada, Denmark, Germany, Japan, the Netherlands, Norway, Sweden, Switzerland, USA, and UK, as well as private sector partners for contributing flexible resources. As an extraordinary measure, an internal loan of US$ 5 million was provided to prevent a pipeline break in life-saving nutrition supplies for the treatment of children suffering from severe wasting. UNICEF will continue to partner with donors to ensure sufficient resources are mobilised to address the needs of children and communities in Afghanistan. Urgent and critical funding gaps threaten to affect UNICEF’s ability to reach the most vulnerable children and families with lifesaving interventions, especially in the health; water, sanitation, and hygiene; nutrition; and social protection sectors.\n\n**Situation Overview & Humanitarian Needs**\n\nAfghanistan is highly prone to natural hazards, such as earthquakes, floods, avalanches, landslides, and drought. The frequency and intensity of these hazards are exacerbated by the effects of climate change and increasing humanitarian needs.\n\nOn the 23 March, a 6.5 magnitude earthquake was felt in Badakhshan, Takhar, Panjshir, Parwan, Kabul, Laghman, Nangarhar, and Kunar Provinces. According to the United States Geological Survey, the epicentre registered 40 kilometres (24 miles) southeast of Jurm in the northeast region at 187.6 kilometres(116 miles) deep. Due to the depth of the earthquake, the damage was relatively minimal. Interagency needs assessments indicated that 178 houses in Laghman, 51 in Nangarhar and 5 in Kunar were damaged. In the Eastern Region, there were two deaths and 39 injured in Laghman, 7 injured in Nangarhar and 7 injured in Kunar. In the Northern Region in Takhar Province, 193 houses were destroyed, one person was killed, and four others were injured. In Badakhshan Province, there was one death, 11 were injured and 50 houses were reported damaged. In the Central Region, 75 houses in Parwan and 95 houses in Panjshir provinces were affected. \n\nIn the same week, parts of Afghanistan were affected by heavy rain and flash floods. Floods were reported in Zari District in Balkh Province, which affected 15 villages and an estimated 200 households. More than 600 hectares of farmland was reportedly destroyed. The main road between Herat and Kandahar was blocked due to the severe flooding in Zari District. Floods were also reported in Khoram Sarbagh and Hazrat Sultan Districts in Samangan Province, resulting in 100 hectares of farmland destroyed. In Qalat District, Zabul Province, 25 households were affected by flooding. Heavy rain and snow were also reported in Panshir, Paktika, Paktia, Khost, and Ghazni.\n\nAs floods increased and the weather warmed, acute watery diarrhoea (AWD) cases increased. Since January 2023, 31,400 AWD with dehydration cases and 13 deaths were reported. In March, 12,074 new cases of AWD were reported. Helmand, Zabul, Baghlan, and Jawzjan Provinces are the worst affected. According to WHO weekly reports, by the end of March, the national epi curve showed an increasing trend in the number of AWD with dehydration cases for four consecutive weeks. \n\nAlthough schools opened in March after the winter break, the ban on secondary education for girls remained. There is still no indication on whether this ban will be lifted. UNICEF continues to monitor the situation through continuous engagement with de facto authorities (DfA), UNICEF staff, technical extenders, and partners.\n\nThe December 2022 ban on NGO women humanitarian workers continued to pose challenges. Protection and genderrelated activities are the most affected. Exemptions in the health and education sectors, and some regional variations in implementation of the ban, have allowed women to continue working across the humanitarian response, however, with considerable conditionalities. Conditionalities include a strict adherence to mahram (male chaperone) and dress code, gender segregation in vehicles, and segregated workstations and distribution points by gender, for both NGO staff and community members accessing services.\n\nOn 4 March 2023, the de facto Acting Minister of Public Health issued a letter to World Health Organization (WHO) and other health and nutrition actors, including UNICEF, informing that all mobile health and nutrition teams (MHNTs) must cease to function within one month. The letter also informed that fixed health posts and sites should be established in the underserved areas where MHNTs operate. This was particularly concerning since MHNTs play a key role in preparedness and response to health emergencies, and they provide basic healthcare to people in remote and previously inaccessible areas. MHNTs can also be quickly repurposed to serve areas affected by acute health and nutrition needs. Following extensive negotiation between the Ministry, WHO, UNICEF and the Health and Nutrition Clusters, the DfA agreed to let MHNTs continue operating for another month until the end of April. A task committee was formed to create a detailed plan on MHNT transition to fixed sites.",
+  "summary": " In March 2023, Afghanistan experienced flooding, an earthquake, and an increase in acute watery diarrhoea (AWD) cases. Schools reopened, but the ban on secondary education for girls remained. UNICEF provided emergency health and water, sanitation, and hygiene (WASH) activities, family tracing and reunification services, and cash transfers to support households with adolescent girls. 28.3 million people and 15.2 million children are in need of humanitarian assistance, and the UNICEF Afghanistan Humanitarian Action for Children (HAC) appeal for 2023 is 22.4 per cent funded. The ban on NGO women humanitarian workers continued to pose challenges, and the de facto Acting Minister of Public Health issued a letter to cease mobile health and nutrition teams (MHNTs).",
+  "metadata": {
+    "id": "3958801",
+    "name": "UNICEF Afghanistan Humanitarian Situation Report No. 3: March 2023",
+    "date_original": 1683244800000,
+    "date_changed": 1683247161000,
+    "date_created": 1683246790000,
+    "primary_country_id": 13,
+    "primary_country_name": "Afghanistan",
+    "primary_country_iso3": "afg",
+    "primary_country_location": {
+      "lon": 66.03,
+      "lat": 33.84
+    }
+  }
+}

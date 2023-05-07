@@ -1,0 +1,114 @@
+{
+  "original": {
+    "id": "3958217",
+    "fields": {
+      "date": {
+        "changed": "2023-05-03T17:18:16+00:00",
+        "created": "2023-05-03T14:29:51+00:00",
+        "original": "2023-05-03T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/254",
+          "name": "World",
+          "id": 254,
+          "shortname": "World",
+          "iso3": "wld",
+          "primary": true
+        }
+      ],
+      "origin": "https://www.who.int/publications/i/item/WHO-WHE-SPP-2023.1",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/254",
+        "name": "World",
+        "id": 254,
+        "shortname": "World",
+        "iso3": "wld"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1275",
+          "longname": "World Health Organization",
+          "spanish_name": "Organización Mundial de la Salud",
+          "name": "World Health Organization",
+          "id": 1275,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WHO",
+          "homepage": "http://www.who.int/"
+        }
+      ],
+      "title": "Strategic preparedness and response plan: April 2023–April 2025 - From emergency response to long-term COVID-19 disease management: Sustaining gains made during the COVID-19 pandemic, 3 May 2023",
+      "body": "**WHO issues updated COVID-19 Global Strategic Preparedness, Readiness and Response Plan 2023-2025**\n\n*Geneva, 3 May 2023* -- WHO today issued an updated COVID-19 Global Strategic Preparedness, Readiness and Response Plan (SPRP) 2023-2025. This is WHO's fourth strategic plan for COVID-19.\n\nThe document is a guide for countries on how to manage COVID-19 over the next two years in the transition from an emergency phase to a longer-term, sustained response.\n\nAlthough we are in a much stronger position in facing the COVID-19 pandemic, the virus is here to stay and countries need to manage it alongside other infectious diseases.\n\nThe International Health Regulations Emergency Committee on COVID-19 meets for the 15th time tomorrow, 4 May 2023, to advise the WHO Director-General on whether the pandemic is still a public health emergency of international concern: the SPRP 2023-25 will be useful in guiding countries in managing COVID-19, whether or not the pandemic remains a public health emergency of international concern.\n\nExcerpt from the plan:\n\nFrom emergency response to long-term COVID-19 disease management: sustaining gains made during the COVID-19 pandemic\n\n**Overview**\n\nAs the COVID-19 pandemic enters its fourth year, surveillance has declined dramatically.  While weekly reported cases and deaths are at the lowest level since the pandemic began, millions continue to be infected or re-infected with SARS-CoV-2 and thousands of people are dying each week. At this pivotal moment, WHO has updated its Strategic Preparedness and Response plan for 2023-2025. The updated two-year strategy builds on the objectives of the 2022 SPRP and supports countries as they are working to transition their critical emergency response activities to longer-term sustained COVID-19 disease prevention, control and management.",
+      "url": "https://reliefweb.int/node/3958217",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/d4/b5/d4b5a8b9-33ac-48e8-9e06-36899ee8e84b.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/d4/b5/d4b5a8b9-33ac-48e8-9e06-36899ee8e84b.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/d4/b5/d4b5a8b9-33ac-48e8-9e06-36899ee8e84b.png",
+            "version": "2416852-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/d4/b5/d4b5a8b9-33ac-48e8-9e06-36899ee8e84b.png"
+          },
+          "filename": "WHO-WHE-SPP-2023.1-eng.pdf",
+          "mimetype": "application/pdf",
+          "id": "2416852",
+          "filesize": "9485218",
+          "url": "https://reliefweb.int/attachments/d4b5a8b9-33ac-48e8-9e06-36899ee8e84b/WHO-WHE-SPP-2023.1-eng.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/world/strategic-preparedness-and-response-plan-april-2023-april-2025-emergency-response-long-term-covid-19-disease-management-sustaining-gains-made-during-covid-19-pandemic-3-may-2023",
+      "theme": [
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Disaster Management",
+          "id": 4591
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        }
+      ],
+      "id": 3958217,
+      "status": "published",
+      "body-html": "<p><strong>WHO issues updated COVID-19 Global Strategic Preparedness, Readiness and Response Plan 2023-2025</strong></p>\n<p><em>Geneva, 3 May 2023</em> -- WHO today issued an updated COVID-19 Global Strategic Preparedness, Readiness and Response Plan (SPRP) 2023-2025. This is WHO's fourth strategic plan for COVID-19.</p>\n<p>The document is a guide for countries on how to manage COVID-19 over the next two years in the transition from an emergency phase to a longer-term, sustained response.</p>\n<p>Although we are in a much stronger position in facing the COVID-19 pandemic, the virus is here to stay and countries need to manage it alongside other infectious diseases.</p>\n<p>The International Health Regulations Emergency Committee on COVID-19 meets for the 15th time tomorrow, 4 May 2023, to advise the WHO Director-General on whether the pandemic is still a public health emergency of international concern: the SPRP 2023-25 will be useful in guiding countries in managing COVID-19, whether or not the pandemic remains a public health emergency of international concern.</p>\n<p>Excerpt from the plan:</p>\n<p>From emergency response to long-term COVID-19 disease management: sustaining gains made during the COVID-19 pandemic</p>\n<p><strong>Overview</strong></p>\n<p>As the COVID-19 pandemic enters its fourth year, surveillance has declined dramatically.  While weekly reported cases and deaths are at the lowest level since the pandemic began, millions continue to be infected or re-infected with SARS-CoV-2 and thousands of people are dying each week. At this pivotal moment, WHO has updated its Strategic Preparedness and Response plan for 2023-2025. The updated two-year strategy builds on the objectives of the 2022 SPRP and supports countries as they are working to transition their critical emergency response activities to longer-term sustained COVID-19 disease prevention, control and management.</p>\n"
+    }
+  },
+  "text": "# Strategic preparedness and response plan: April 2023–April 2025 - From emergency response to long-term COVID-19 disease management: Sustaining gains made during the COVID-19 pandemic, 3 May 2023\n\n**WHO issues updated COVID-19 Global Strategic Preparedness, Readiness and Response Plan 2023-2025**\n\n*Geneva, 3 May 2023* -- WHO today issued an updated COVID-19 Global Strategic Preparedness, Readiness and Response Plan (SPRP) 2023-2025. This is WHO's fourth strategic plan for COVID-19.\n\nThe document is a guide for countries on how to manage COVID-19 over the next two years in the transition from an emergency phase to a longer-term, sustained response.\n\nAlthough we are in a much stronger position in facing the COVID-19 pandemic, the virus is here to stay and countries need to manage it alongside other infectious diseases.\n\nThe International Health Regulations Emergency Committee on COVID-19 meets for the 15th time tomorrow, 4 May 2023, to advise the WHO Director-General on whether the pandemic is still a public health emergency of international concern: the SPRP 2023-25 will be useful in guiding countries in managing COVID-19, whether or not the pandemic remains a public health emergency of international concern.\n\nExcerpt from the plan:\n\nFrom emergency response to long-term COVID-19 disease management: sustaining gains made during the COVID-19 pandemic\n\n**Overview**\n\nAs the COVID-19 pandemic enters its fourth year, surveillance has declined dramatically.  While weekly reported cases and deaths are at the lowest level since the pandemic began, millions continue to be infected or re-infected with SARS-CoV-2 and thousands of people are dying each week. At this pivotal moment, WHO has updated its Strategic Preparedness and Response plan for 2023-2025. The updated two-year strategy builds on the objectives of the 2022 SPRP and supports countries as they are working to transition their critical emergency response activities to longer-term sustained COVID-19 disease prevention, control and management.",
+  "summary": " WHO has released an updated two-year COVID-19 Global Strategic Preparedness, Readiness and Response Plan (SPRP) 2023-2025 to guide countries in transitioning from an emergency phase to a longer-term, sustained response. The plan focuses on sustaining gains made during the pandemic, such as surveillance, and preventing, controlling, and managing the virus. The International Health Regulations Emergency Committee on COVID-19 will meet to advise the WHO Director-General on whether the pandemic is still a public health emergency of international concern.",
+  "metadata": {
+    "id": "3958217",
+    "name": "Strategic preparedness and response plan: April 2023–April 2025 - From emergency response to long-term COVID-19 disease management: Sustaining gains made during the COVID-19 pandemic, 3 May 2023",
+    "date_original": 1683072000000,
+    "date_changed": 1683134296000,
+    "date_created": 1683124191000,
+    "primary_country_id": 254,
+    "primary_country_name": "World",
+    "primary_country_iso3": "wld"
+  }
+}

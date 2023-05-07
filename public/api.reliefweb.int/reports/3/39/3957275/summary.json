@@ -1,0 +1,148 @@
+{
+  "original": {
+    "id": "3957275",
+    "fields": {
+      "date": {
+        "changed": "2023-04-30T21:15:34+00:00",
+        "created": "2023-04-30T17:28:10+00:00",
+        "original": "2023-04-30T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/13",
+          "name": "Afghanistan",
+          "location": {
+            "lon": 66.03,
+            "lat": 33.84
+          },
+          "id": 13,
+          "shortname": "Afghanistan",
+          "iso3": "afg",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/13",
+        "name": "Afghanistan",
+        "location": {
+          "lon": 66.03,
+          "lat": 33.84
+        },
+        "id": 13,
+        "shortname": "Afghanistan",
+        "iso3": "afg"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/15477",
+          "name": "Health Cluster",
+          "id": 15477,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "Health Cluster",
+          "homepage": "https://healthcluster.who.int/"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1275",
+          "longname": "World Health Organization",
+          "spanish_name": "Organización Mundial de la Salud",
+          "name": "World Health Organization",
+          "id": 1275,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WHO",
+          "homepage": "http://www.who.int/"
+        }
+      ],
+      "title": "Afghanistan Health Cluster Bulletin, March 2023",
+      "body": "**HIGHLIGHTS**\n\nAs of 31 March, 210,576 confirmed cases and 7,883 deaths of COVID-19 were reported. The recovery rate was 91.5% with 3.7% case fatality rate.  \n\nThe leading causes of morbidity among all age groups were Acute Respiratory Infection (ARI) and Acute Diarrheal Disease (ADD) across the country.  \n\nWHO distributed 636 different types of emergency medical kits (15 IEHK, 60 TESK, 64 IARH, 397 Cholera, 100 PED-SAM) which will benefit around 112,100 people in 34 provinces in the next three months.  \n\nUNFPA and its implementing partners delivered lifesaving Reproductive, Maternal, Neonatal, Child, and Adolescent Health (RMNCAH) services through 114 Mobile Health and Nutrition Teams (MHNTs), 8 Basic Health Centers (BHCs), 3 Zero Point Health Facilities, and 1 Transition Center in 24 provinces of the country.  \n\nINTERSOS is present in three provinces (Kandahar,  \nZabul, and Kabul) providing an integrated health, nutrition, and protection services using community needs-based approach.  \n\nOCCD supported health, nutrition, and trauma care services in 16 provinces through 50 fixed health facilities, 34 MHNTs and two first aid trauma centers in central, north-eastern, southern and western regions.",
+      "url": "https://reliefweb.int/node/3957275",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/c2/0e/c20ed016-a830-45b8-8655-b542a9faecda.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/c2/0e/c20ed016-a830-45b8-8655-b542a9faecda.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/c2/0e/c20ed016-a830-45b8-8655-b542a9faecda.png",
+            "version": "2415911-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/c2/0e/c20ed016-a830-45b8-8655-b542a9faecda.png"
+          },
+          "filename": "Afghanistan Health Cluster Bulletin - March 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415911",
+          "filesize": "4314997",
+          "url": "https://reliefweb.int/attachments/c20ed016-a830-45b8-8655-b542a9faecda/Afghanistan%20Health%20Cluster%20Bulletin%20-%20March%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/afghanistan/afghanistan-health-cluster-bulletin-march-2023",
+      "theme": [
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Recovery and Reconstruction",
+          "id": 4601
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3957275,
+      "status": "published",
+      "body-html": "<p><strong>HIGHLIGHTS</strong></p>\n<p>As of 31 March, 210,576 confirmed cases and 7,883 deaths of COVID-19 were reported. The recovery rate was 91.5% with 3.7% case fatality rate.</p>\n<p>The leading causes of morbidity among all age groups were Acute Respiratory Infection (ARI) and Acute Diarrheal Disease (ADD) across the country.</p>\n<p>WHO distributed 636 different types of emergency medical kits (15 IEHK, 60 TESK, 64 IARH, 397 Cholera, 100 PED-SAM) which will benefit around 112,100 people in 34 provinces in the next three months.</p>\n<p>UNFPA and its implementing partners delivered lifesaving Reproductive, Maternal, Neonatal, Child, and Adolescent Health (RMNCAH) services through 114 Mobile Health and Nutrition Teams (MHNTs), 8 Basic Health Centers (BHCs), 3 Zero Point Health Facilities, and 1 Transition Center in 24 provinces of the country.</p>\n<p>INTERSOS is present in three provinces (Kandahar,<br />\nZabul, and Kabul) providing an integrated health, nutrition, and protection services using community needs-based approach.</p>\n<p>OCCD supported health, nutrition, and trauma care services in 16 provinces through 50 fixed health facilities, 34 MHNTs and two first aid trauma centers in central, north-eastern, southern and western regions.</p>\n"
+    }
+  },
+  "text": "# Afghanistan Health Cluster Bulletin, March 2023\n\n**HIGHLIGHTS**\n\nAs of 31 March, 210,576 confirmed cases and 7,883 deaths of COVID-19 were reported. The recovery rate was 91.5% with 3.7% case fatality rate.  \n\nThe leading causes of morbidity among all age groups were Acute Respiratory Infection (ARI) and Acute Diarrheal Disease (ADD) across the country.  \n\nWHO distributed 636 different types of emergency medical kits (15 IEHK, 60 TESK, 64 IARH, 397 Cholera, 100 PED-SAM) which will benefit around 112,100 people in 34 provinces in the next three months.  \n\nUNFPA and its implementing partners delivered lifesaving Reproductive, Maternal, Neonatal, Child, and Adolescent Health (RMNCAH) services through 114 Mobile Health and Nutrition Teams (MHNTs), 8 Basic Health Centers (BHCs), 3 Zero Point Health Facilities, and 1 Transition Center in 24 provinces of the country.  \n\nINTERSOS is present in three provinces (Kandahar,  \nZabul, and Kabul) providing an integrated health, nutrition, and protection services using community needs-based approach.  \n\nOCCD supported health, nutrition, and trauma care services in 16 provinces through 50 fixed health facilities, 34 MHNTs and two first aid trauma centers in central, north-eastern, southern and western regions.",
+  "summary": "\n\nAs of March 31, 2021, 210,576 confirmed cases and 7,883 deaths of COVID-19 have been reported in Afghanistan, with a 91.5% recovery rate and 3.7% case fatality rate. Acute Respiratory Infection (ARI) and Acute Diarrheal Disease (ADD) are the leading causes of morbidity among all age groups. WHO has distributed 636 different types of emergency medical kits to benefit 112,100 people in 34 provinces over the next three months. UNFPA and its partners have delivered RMNCAH services through 114 Mobile Health and Nutrition Teams, 8 Basic Health Centers, 3 Zero Point Health Facilities, and 1 Transition Center in 24 provinces. INTERSOS is present in three provinces providing integrated health, nutrition, and protection services. OCCD has supported health, nutrition, and trauma care services in 16 provinces through 50 fixed health facilities, 34 MHNTs, and two first aid trauma centers.",
+  "metadata": {
+    "id": "3957275",
+    "name": "Afghanistan Health Cluster Bulletin, March 2023",
+    "date_original": 1682812800000,
+    "date_changed": 1682889334000,
+    "date_created": 1682875690000,
+    "primary_country_id": 13,
+    "primary_country_name": "Afghanistan",
+    "primary_country_iso3": "afg",
+    "primary_country_location": {
+      "lon": 66.03,
+      "lat": 33.84
+    }
+  }
+}

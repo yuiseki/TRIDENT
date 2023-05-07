@@ -1,0 +1,177 @@
+{
+  "original": {
+    "id": "3958595",
+    "fields": {
+      "date": {
+        "changed": "2023-05-04T12:49:42+00:00",
+        "created": "2023-05-04T11:43:02+00:00",
+        "original": "2023-05-03T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/85",
+          "name": "Eritrea",
+          "location": {
+            "lon": 38.58,
+            "lat": 15.68
+          },
+          "id": 85,
+          "shortname": "Eritrea",
+          "iso3": "eri"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/87",
+          "name": "Ethiopia",
+          "location": {
+            "lon": 39.62,
+            "lat": 8.63
+          },
+          "id": 87,
+          "shortname": "Ethiopia",
+          "iso3": "eth",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/216",
+          "name": "Somalia",
+          "location": {
+            "lon": 47.33,
+            "lat": 5.79
+          },
+          "id": 216,
+          "shortname": "Somalia",
+          "iso3": "som"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/220",
+          "name": "Sudan",
+          "location": {
+            "lon": 30,
+            "lat": 15
+          },
+          "id": 220,
+          "shortname": "Sudan",
+          "iso3": "sdn"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/236",
+          "name": "Türkiye",
+          "location": {
+            "lon": 35.18,
+            "lat": 39.06
+          },
+          "id": 236,
+          "shortname": "Türkiye",
+          "iso3": "tur"
+        }
+      ],
+      "ocha_product": [
+        {
+          "name": "Flash Update",
+          "id": 14471
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/87",
+        "name": "Ethiopia",
+        "location": {
+          "lon": 39.62,
+          "lat": 8.63
+        },
+        "id": 87,
+        "shortname": "Ethiopia",
+        "iso3": "eth"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1503",
+          "longname": "United Nations Office for the Coordination of Humanitarian Affairs",
+          "spanish_name": "Oficina de Coordinación de Asuntos Humanitarios",
+          "name": "UN Office for the Coordination of Humanitarian Affairs",
+          "id": 1503,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "OCHA",
+          "disclaimer": "To learn more about OCHA's activities, please visit https://www.unocha.org/.",
+          "homepage": "http://www.unocha.org/"
+        }
+      ],
+      "title": "Flash Update #1: The Impact of the Situation in Sudan on Ethiopia (As of 3 May 2023)",
+      "body": "**Highlights**\n\n- Over 11,000 people crossed into Ethiopia due to the ongoing situation in Sudan as of 3 May.\n\n- Partners are providing basic humanitarian aid including emergency health services, drinking water, sleeping mats, high energy biscuits, and transportation.\n\n- Primary needs include food, drinking water and latrines, emergency shelter, adequate health and protection services.\n\n**Situation Overview**\n\nAn influx of more than an estimated 11,000 people (IOM, 2 May) displaced from the ongoing situation in Sudan that started on 15 April, have been arriving in Ethiopia via the border town of Metema in West Gondar Zone of Amhara Region since 21 April. Of the total arrivals recorded, the largest group are Ethiopian nationals (37 per cent), followed by Sudanese (17 per cent), Turkish (14 per cent) and Eritrean (10 per cent) nationals (IOM). As a note, nationality is self-reported. Nineteen per cent of arrivals as of May 2 are minors.  \n\nWith an Incident Command Post (ICP) established at the zonal level in West Gondar on 28 April, collective humanitarian relief to returning Ethiopians, refugees and other nationalities is most urgent.",
+      "url": "https://reliefweb.int/node/3958595",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/50/7c/507cd9fc-2cf6-484a-8e0f-fca84d786c2b.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/50/7c/507cd9fc-2cf6-484a-8e0f-fca84d786c2b.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/50/7c/507cd9fc-2cf6-484a-8e0f-fca84d786c2b.png",
+            "version": "2417335-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/50/7c/507cd9fc-2cf6-484a-8e0f-fca84d786c2b.png"
+          },
+          "filename": "Flash Update #1 - The Impact of the Situation in Sudan in Ethiopia.pdf",
+          "mimetype": "application/pdf",
+          "id": "2417335",
+          "filesize": "260194",
+          "url": "https://reliefweb.int/attachments/507cd9fc-2cf6-484a-8e0f-fca84d786c2b/Flash%20Update%20%231%20-%20The%20Impact%20of%20the%20Situation%20in%20Sudan%20in%20Ethiopia.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/ethiopia/flash-update-1-impact-situation-sudan-ethiopia-3-may-2023",
+      "theme": [
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3958595,
+      "status": "published",
+      "body-html": "<p><strong>Highlights</strong></p>\n<ul>\n<li>\n<p>Over 11,000 people crossed into Ethiopia due to the ongoing situation in Sudan as of 3 May.</p>\n</li>\n<li>\n<p>Partners are providing basic humanitarian aid including emergency health services, drinking water, sleeping mats, high energy biscuits, and transportation.</p>\n</li>\n<li>\n<p>Primary needs include food, drinking water and latrines, emergency shelter, adequate health and protection services.</p>\n</li>\n</ul>\n<p><strong>Situation Overview</strong></p>\n<p>An influx of more than an estimated 11,000 people (IOM, 2 May) displaced from the ongoing situation in Sudan that started on 15 April, have been arriving in Ethiopia via the border town of Metema in West Gondar Zone of Amhara Region since 21 April. Of the total arrivals recorded, the largest group are Ethiopian nationals (37 per cent), followed by Sudanese (17 per cent), Turkish (14 per cent) and Eritrean (10 per cent) nationals (IOM). As a note, nationality is self-reported. Nineteen per cent of arrivals as of May 2 are minors.</p>\n<p>With an Incident Command Post (ICP) established at the zonal level in West Gondar on 28 April, collective humanitarian relief to returning Ethiopians, refugees and other nationalities is most urgent.</p>\n"
+    }
+  },
+  "text": "# Flash Update #1: The Impact of the Situation in Sudan on Ethiopia (As of 3 May 2023)\n\n**Highlights**\n\n- Over 11,000 people crossed into Ethiopia due to the ongoing situation in Sudan as of 3 May.\n\n- Partners are providing basic humanitarian aid including emergency health services, drinking water, sleeping mats, high energy biscuits, and transportation.\n\n- Primary needs include food, drinking water and latrines, emergency shelter, adequate health and protection services.\n\n**Situation Overview**\n\nAn influx of more than an estimated 11,000 people (IOM, 2 May) displaced from the ongoing situation in Sudan that started on 15 April, have been arriving in Ethiopia via the border town of Metema in West Gondar Zone of Amhara Region since 21 April. Of the total arrivals recorded, the largest group are Ethiopian nationals (37 per cent), followed by Sudanese (17 per cent), Turkish (14 per cent) and Eritrean (10 per cent) nationals (IOM). As a note, nationality is self-reported. Nineteen per cent of arrivals as of May 2 are minors.  \n\nWith an Incident Command Post (ICP) established at the zonal level in West Gondar on 28 April, collective humanitarian relief to returning Ethiopians, refugees and other nationalities is most urgent.",
+  "summary": " As of 3 May 2023, over 11,000 people have crossed into Ethiopia due to the ongoing situation in Sudan. Partners are providing basic humanitarian aid including emergency health services, drinking water, sleeping mats, high energy biscuits, and transportation. Primary needs include food, drinking water and latrines, emergency shelter, and adequate health and protection services. An Incident Command Post (ICP) has been established in West Gondar to provide collective humanitarian relief to returning Ethiopians, refugees, and other nationalities.",
+  "metadata": {
+    "id": "3958595",
+    "name": "Flash Update #1: The Impact of the Situation in Sudan on Ethiopia (As of 3 May 2023)",
+    "date_original": 1683072000000,
+    "date_changed": 1683204582000,
+    "date_created": 1683200582000,
+    "primary_country_id": 87,
+    "primary_country_name": "Ethiopia",
+    "primary_country_iso3": "eth",
+    "primary_country_location": {
+      "lon": 39.62,
+      "lat": 8.63
+    }
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "original": {
+    "id": "3956908",
+    "fields": {
+      "date": {
+        "changed": "2023-04-28T12:23:37+00:00",
+        "created": "2023-04-28T10:17:16+00:00",
+        "original": "2023-04-28T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/216",
+          "name": "Somalia",
+          "location": {
+            "lon": 47.33,
+            "lat": 5.79
+          },
+          "id": 216,
+          "shortname": "Somalia",
+          "iso3": "som",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/216",
+        "name": "Somalia",
+        "location": {
+          "lon": 47.33,
+          "lat": 5.79
+        },
+        "id": 216,
+        "shortname": "Somalia",
+        "iso3": "som"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "DR",
+          "name": "Drought",
+          "id": 4672
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "WFP Somalia: Situation Report on Laas Caanood Response",
+      "body": "**SITUATION OVERVIEW**\n\nConflict in Laas Caanood has resulted in forced displacement and the loss of lives and livelihoods. Urgent relief assistance is needed to respond to the increasing humanitarian needs. According to UNHCR, more than 100,000 people have fled to the Somali Region of Ethiopia, while some 150-200,000 people have been internally displaced within the region/district and towards the neighboring regions in Somaliland and Puntland.\n\n**WFP RAPID FOOD SECURITY ASSESSMENT RESULTS**\n\nIn March, WFP conducted a rapid food security assessment in the Sool Region of Somalia to capture the current food security situation of the conflict-affected population. The assessment focused on the food security of the affected population (food availability, access, consumption), and levels of lifesaving needs in the areas affected by the conflict. The assessment utilized qualitative data collection methods, including secondary data reviews, field observations, focus group discussions, and key informant interviews with local authorities, health workers, community leaders, farmers, traders, and humanitarian actors. Field assessment teams conducted 54 key informant interviews and 24 focus group discussions across 8 districts.\n\nThe survey findings indicate that food security among the conflict-affected population has deteriorated with more than 100,000 conflict-affected people in urgent need of humanitarian food and nutrition assistance. Communities from Garowe and Buuhoodle districts reported the highest number of food insecure people with more than 26,000 and 18,000 people requiring food assistance, respectively.  \nLivelihood systems have been disrupted and communities are grappling with the effects of multiple shocks such as the loss of livestock from the ongoing drought and now the conflict which has also hindered access to markets for communities to sell their livestock.\n\nAs a result, households’ food consumption gaps have increased, and are adopting negative coping strategies such as selling productive assets, reducing the number of meals consumed per day, and borrowing food or money. The internally displaced persons (IDPs) reported spending a high proportion of their income (≥ 65%) on food due to rising food prices.\n\nMarkets remained accessible and food access remained largely stable. However, a few areas within the Laas Caanood district have reported intermittent closures of markets and shops. Prices of most commodities in parts of Laas Caanood exhibited high volatility, especially local cereal prices. \n\nNine out of ten households experienced loss of food stocks due to the conflict. This shock must be considered against the backdrop of the ongoing multi-year drought which had already resulted in poor-quality livestock with low market value and dwindling purchasing power of the affected community.\n\nThe impact of food stock loss could exacerbate food insecurity for pastoralist IDPs who are unable to purchase sufficient food regardless of food and market accessibility. To reduce expenses for non-food items, most IDP households resorted to discontinuation of children’s school attendance and deprioritization of healthcare and nutrition to be able to secure food. The critical needs of displaced groups are improved food security, nutrition, livelihood recovery, education, WASH, health, and shelter.",
+      "url": "https://reliefweb.int/node/3956908",
+      "disaster": [
+        {
+          "name": "Somalia: Drought - 2015-2023",
+          "id": 23101,
+          "glide": "DR-2015-000134-SOM",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/83/05/830526df-4d29-42ea-bb38-c60f08df8b3f.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/83/05/830526df-4d29-42ea-bb38-c60f08df8b3f.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/83/05/830526df-4d29-42ea-bb38-c60f08df8b3f.png",
+            "version": "2415552-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/83/05/830526df-4d29-42ea-bb38-c60f08df8b3f.png"
+          },
+          "filename": "202304 WFP Somalia Laas Caanood External Sitrep.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415552",
+          "filesize": "135808",
+          "url": "https://reliefweb.int/attachments/830526df-4d29-42ea-bb38-c60f08df8b3f/202304%20WFP%20Somalia%20Laas%20Caanood%20External%20Sitrep.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/somalia/wfp-somalia-situation-report-laas-caanood-response",
+      "theme": [
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        }
+      ],
+      "id": 3956908,
+      "status": "published",
+      "body-html": "<p><strong>SITUATION OVERVIEW</strong></p>\n<p>Conflict in Laas Caanood has resulted in forced displacement and the loss of lives and livelihoods. Urgent relief assistance is needed to respond to the increasing humanitarian needs. According to UNHCR, more than 100,000 people have fled to the Somali Region of Ethiopia, while some 150-200,000 people have been internally displaced within the region/district and towards the neighboring regions in Somaliland and Puntland.</p>\n<p><strong>WFP RAPID FOOD SECURITY ASSESSMENT RESULTS</strong></p>\n<p>In March, WFP conducted a rapid food security assessment in the Sool Region of Somalia to capture the current food security situation of the conflict-affected population. The assessment focused on the food security of the affected population (food availability, access, consumption), and levels of lifesaving needs in the areas affected by the conflict. The assessment utilized qualitative data collection methods, including secondary data reviews, field observations, focus group discussions, and key informant interviews with local authorities, health workers, community leaders, farmers, traders, and humanitarian actors. Field assessment teams conducted 54 key informant interviews and 24 focus group discussions across 8 districts.</p>\n<p>The survey findings indicate that food security among the conflict-affected population has deteriorated with more than 100,000 conflict-affected people in urgent need of humanitarian food and nutrition assistance. Communities from Garowe and Buuhoodle districts reported the highest number of food insecure people with more than 26,000 and 18,000 people requiring food assistance, respectively.<br />\nLivelihood systems have been disrupted and communities are grappling with the effects of multiple shocks such as the loss of livestock from the ongoing drought and now the conflict which has also hindered access to markets for communities to sell their livestock.</p>\n<p>As a result, households’ food consumption gaps have increased, and are adopting negative coping strategies such as selling productive assets, reducing the number of meals consumed per day, and borrowing food or money. The internally displaced persons (IDPs) reported spending a high proportion of their income (≥ 65%) on food due to rising food prices.</p>\n<p>Markets remained accessible and food access remained largely stable. However, a few areas within the Laas Caanood district have reported intermittent closures of markets and shops. Prices of most commodities in parts of Laas Caanood exhibited high volatility, especially local cereal prices.</p>\n<p>Nine out of ten households experienced loss of food stocks due to the conflict. This shock must be considered against the backdrop of the ongoing multi-year drought which had already resulted in poor-quality livestock with low market value and dwindling purchasing power of the affected community.</p>\n<p>The impact of food stock loss could exacerbate food insecurity for pastoralist IDPs who are unable to purchase sufficient food regardless of food and market accessibility. To reduce expenses for non-food items, most IDP households resorted to discontinuation of children’s school attendance and deprioritization of healthcare and nutrition to be able to secure food. The critical needs of displaced groups are improved food security, nutrition, livelihood recovery, education, WASH, health, and shelter.</p>\n"
+    }
+  },
+  "text": "# WFP Somalia: Situation Report on Laas Caanood Response\n\n**SITUATION OVERVIEW**\n\nConflict in Laas Caanood has resulted in forced displacement and the loss of lives and livelihoods. Urgent relief assistance is needed to respond to the increasing humanitarian needs. According to UNHCR, more than 100,000 people have fled to the Somali Region of Ethiopia, while some 150-200,000 people have been internally displaced within the region/district and towards the neighboring regions in Somaliland and Puntland.\n\n**WFP RAPID FOOD SECURITY ASSESSMENT RESULTS**\n\nIn March, WFP conducted a rapid food security assessment in the Sool Region of Somalia to capture the current food security situation of the conflict-affected population. The assessment focused on the food security of the affected population (food availability, access, consumption), and levels of lifesaving needs in the areas affected by the conflict. The assessment utilized qualitative data collection methods, including secondary data reviews, field observations, focus group discussions, and key informant interviews with local authorities, health workers, community leaders, farmers, traders, and humanitarian actors. Field assessment teams conducted 54 key informant interviews and 24 focus group discussions across 8 districts.\n\nThe survey findings indicate that food security among the conflict-affected population has deteriorated with more than 100,000 conflict-affected people in urgent need of humanitarian food and nutrition assistance. Communities from Garowe and Buuhoodle districts reported the highest number of food insecure people with more than 26,000 and 18,000 people requiring food assistance, respectively.  \nLivelihood systems have been disrupted and communities are grappling with the effects of multiple shocks such as the loss of livestock from the ongoing drought and now the conflict which has also hindered access to markets for communities to sell their livestock.\n\nAs a result, households’ food consumption gaps have increased, and are adopting negative coping strategies such as selling productive assets, reducing the number of meals consumed per day, and borrowing food or money. The internally displaced persons (IDPs) reported spending a high proportion of their income (≥ 65%) on food due to rising food prices.\n\nMarkets remained accessible and food access remained largely stable. However, a few areas within the Laas Caanood district have reported intermittent closures of markets and shops. Prices of most commodities in parts of Laas Caanood exhibited high volatility, especially local cereal prices. \n\nNine out of ten households experienced loss of food stocks due to the conflict. This shock must be considered against the backdrop of the ongoing multi-year drought which had already resulted in poor-quality livestock with low market value and dwindling purchasing power of the affected community.\n\nThe impact of food stock loss could exacerbate food insecurity for pastoralist IDPs who are unable to purchase sufficient food regardless of food and market accessibility. To reduce expenses for non-food items, most IDP households resorted to discontinuation of children’s school attendance and deprioritization of healthcare and nutrition to be able to secure food. The critical needs of displaced groups are improved food security, nutrition, livelihood recovery, education, WASH, health, and shelter.",
+  "summary": "\n\nConflict in Laas Caanood, Somalia has caused displacement and loss of lives and livelihoods, resulting in urgent relief assistance needs. WFP conducted a rapid food security assessment in the Sool Region of Somalia to capture the current food security situation of the conflict-affected population. The assessment found that food security among the conflict-affected population has deteriorated, with more than 100,000 people in urgent need of humanitarian food and nutrition assistance. Livelihood systems have been disrupted, and households are adopting negative coping strategies such as selling productive assets and reducing the number of meals consumed per day. Markets remain accessible, but food prices have increased. The impact of food stock loss could exacerbate food insecurity for pastoralist IDPs. Critical needs of displaced groups include improved food security, nutrition, livelihood recovery, education, WASH, health, and shelter.",
+  "metadata": {
+    "id": "3956908",
+    "name": "WFP Somalia: Situation Report on Laas Caanood Response",
+    "date_original": 1682640000000,
+    "date_changed": 1682684617000,
+    "date_created": 1682677036000,
+    "primary_country_id": 216,
+    "primary_country_name": "Somalia",
+    "primary_country_iso3": "som",
+    "primary_country_location": {
+      "lon": 47.33,
+      "lat": 5.79
+    }
+  }
+}

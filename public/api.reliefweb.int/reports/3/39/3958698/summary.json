@@ -1,0 +1,106 @@
+{
+  "original": {
+    "id": "3958698",
+    "fields": {
+      "date": {
+        "changed": "2023-05-04T15:38:06+00:00",
+        "created": "2023-05-04T15:36:05+00:00",
+        "original": "2023-05-04T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/254",
+          "name": "World",
+          "id": 254,
+          "shortname": "World",
+          "iso3": "wld",
+          "primary": true
+        }
+      ],
+      "origin": "https://www.who.int/publications/m/item/weekly-epidemiological-update-on-covid-19---4-may-2023",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/254",
+        "name": "World",
+        "id": 254,
+        "shortname": "World",
+        "iso3": "wld"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1275",
+          "longname": "World Health Organization",
+          "spanish_name": "Organización Mundial de la Salud",
+          "name": "World Health Organization",
+          "id": 1275,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WHO",
+          "homepage": "http://www.who.int/"
+        }
+      ],
+      "title": "Coronavirus Disease (COVID-19): Weekly Epidemiological Update (4 May 2023)",
+      "body": "**Global overview**  \n**Data as of 30 April 2023**\n\nGlobally, nearly 2.8 million new cases and over 17 000 deaths were reported in the last 28 days (3 to 30 April 2023), a decrease of 17% and 30%, respectively, compared to the previous 28 days (6 March to 2 April 2023) (Figure 1, Table 1 in the PDF). The picture is mixed at the regional level, with increases in reported cases and deaths seen in the South-East Asia, Eastern Mediterranean, and Western Pacific regions, and decreases in other regions. As of 30 April 2023, over 765 million confirmed cases and over 6.9 million deaths have been reported globally.\n\nReported COVID-19 cases are underestimates as shown by prevalence surveys. This is partly due to the reductions in testing and delays in reporting in many countries. Data presented in this report are therefore incomplete and should be interpreted with caution. Additionally, data from previous weeks are continuously being updated to incorporate retrospective changes in reported COVID-19 cases and deaths made by countries.\n\nWe present changes in epidemiological trends using a 28-day interval. This wider time window helps to account for delays in reporting, smooth out weekly fluctuations in case numbers, and continue to provide a clear picture of where the pandemic is accelerating or decelerating. Disaggregated data are still accessible on the [WHO COVID-19 dashboard](https://covid19.who.int/), where the full dataset is available for download.\n\nAt the regional level, the number of newly reported 28-day cases increased across three of the six WHO regions: the Eastern Mediterranean Region (+8%), the Western Pacific Region (+15%), and the South-East Asia Region (+454%); while cases decreased in three WHO regions: the African Region (-49%), the European Region (-37%), and the Region of the Americas (-34%). The number of newly reported 28-day deaths decreased across four regions: the Western Pacific Region (-56%), the European Region (-44%), the African Region (-33%), and the Region of the Americas (-21%); while deaths increased in two WHO regions: the Eastern Mediterranean Region (+61%), and the South-East Asia Region (+317%).\n\nAt the country level, the highest numbers of new 28-day cases were reported from the United States of America (392 480 new cases; -37%), the Republic of Korea (330 509 new cases; +22%), Japan (251 158 new cases; +24%), India (222 784 new cases; +540%), and France (197 190 new cases; +2%). The highest numbers of new 28-day deaths were reported from the United States of America (5263 new deaths; -29%), Brazil (1255 new deaths; +30%), the Russian Federation (993 new deaths; -2%), France (871 new deaths; +39%), and the Islamic Republic of Iran (762 new deaths; +82%).",
+      "url": "https://reliefweb.int/node/3958698",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/41/6c/416c74fe-7d5d-4ff8-9134-9549e73d1367.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/41/6c/416c74fe-7d5d-4ff8-9134-9549e73d1367.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/41/6c/416c74fe-7d5d-4ff8-9134-9549e73d1367.png",
+            "version": "2417447-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/41/6c/416c74fe-7d5d-4ff8-9134-9549e73d1367.png"
+          },
+          "filename": "Coronavirus Disease (COVID-19) - Weekly Epidemiological Update (4 May 2023).pdf",
+          "mimetype": "application/pdf",
+          "id": "2417447",
+          "filesize": "1004682",
+          "url": "https://reliefweb.int/attachments/416c74fe-7d5d-4ff8-9134-9549e73d1367/Coronavirus%20Disease%20%28COVID-19%29%20-%20Weekly%20Epidemiological%20Update%20%284%20May%202023%29.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/world/coronavirus-disease-covid-19-weekly-epidemiological-update-4-may-2023",
+      "theme": [
+        {
+          "name": "Health",
+          "id": 4595
+        }
+      ],
+      "id": 3958698,
+      "status": "published",
+      "body-html": "<p><strong>Global overview</strong><br />\n<strong>Data as of 30 April 2023</strong></p>\n<p>Globally, nearly 2.8 million new cases and over 17 000 deaths were reported in the last 28 days (3 to 30 April 2023), a decrease of 17% and 30%, respectively, compared to the previous 28 days (6 March to 2 April 2023) (Figure 1, Table 1 in the PDF). The picture is mixed at the regional level, with increases in reported cases and deaths seen in the South-East Asia, Eastern Mediterranean, and Western Pacific regions, and decreases in other regions. As of 30 April 2023, over 765 million confirmed cases and over 6.9 million deaths have been reported globally.</p>\n<p>Reported COVID-19 cases are underestimates as shown by prevalence surveys. This is partly due to the reductions in testing and delays in reporting in many countries. Data presented in this report are therefore incomplete and should be interpreted with caution. Additionally, data from previous weeks are continuously being updated to incorporate retrospective changes in reported COVID-19 cases and deaths made by countries.</p>\n<p>We present changes in epidemiological trends using a 28-day interval. This wider time window helps to account for delays in reporting, smooth out weekly fluctuations in case numbers, and continue to provide a clear picture of where the pandemic is accelerating or decelerating. Disaggregated data are still accessible on the <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://covid19.who.int/\">WHO COVID-19 dashboard</a>, where the full dataset is available for download.</p>\n<p>At the regional level, the number of newly reported 28-day cases increased across three of the six WHO regions: the Eastern Mediterranean Region (+8%), the Western Pacific Region (+15%), and the South-East Asia Region (+454%); while cases decreased in three WHO regions: the African Region (-49%), the European Region (-37%), and the Region of the Americas (-34%). The number of newly reported 28-day deaths decreased across four regions: the Western Pacific Region (-56%), the European Region (-44%), the African Region (-33%), and the Region of the Americas (-21%); while deaths increased in two WHO regions: the Eastern Mediterranean Region (+61%), and the South-East Asia Region (+317%).</p>\n<p>At the country level, the highest numbers of new 28-day cases were reported from the United States of America (392 480 new cases; -37%), the Republic of Korea (330 509 new cases; +22%), Japan (251 158 new cases; +24%), India (222 784 new cases; +540%), and France (197 190 new cases; +2%). The highest numbers of new 28-day deaths were reported from the United States of America (5263 new deaths; -29%), Brazil (1255 new deaths; +30%), the Russian Federation (993 new deaths; -2%), France (871 new deaths; +39%), and the Islamic Republic of Iran (762 new deaths; +82%).</p>\n"
+    }
+  },
+  "text": "# Coronavirus Disease (COVID-19): Weekly Epidemiological Update (4 May 2023)\n\n**Global overview**  \n**Data as of 30 April 2023**\n\nGlobally, nearly 2.8 million new cases and over 17 000 deaths were reported in the last 28 days (3 to 30 April 2023), a decrease of 17% and 30%, respectively, compared to the previous 28 days (6 March to 2 April 2023) (Figure 1, Table 1 in the PDF). The picture is mixed at the regional level, with increases in reported cases and deaths seen in the South-East Asia, Eastern Mediterranean, and Western Pacific regions, and decreases in other regions. As of 30 April 2023, over 765 million confirmed cases and over 6.9 million deaths have been reported globally.\n\nReported COVID-19 cases are underestimates as shown by prevalence surveys. This is partly due to the reductions in testing and delays in reporting in many countries. Data presented in this report are therefore incomplete and should be interpreted with caution. Additionally, data from previous weeks are continuously being updated to incorporate retrospective changes in reported COVID-19 cases and deaths made by countries.\n\nWe present changes in epidemiological trends using a 28-day interval. This wider time window helps to account for delays in reporting, smooth out weekly fluctuations in case numbers, and continue to provide a clear picture of where the pandemic is accelerating or decelerating. Disaggregated data are still accessible on the [WHO COVID-19 dashboard](https://covid19.who.int/), where the full dataset is available for download.\n\nAt the regional level, the number of newly reported 28-day cases increased across three of the six WHO regions: the Eastern Mediterranean Region (+8%), the Western Pacific Region (+15%), and the South-East Asia Region (+454%); while cases decreased in three WHO regions: the African Region (-49%), the European Region (-37%), and the Region of the Americas (-34%). The number of newly reported 28-day deaths decreased across four regions: the Western Pacific Region (-56%), the European Region (-44%), the African Region (-33%), and the Region of the Americas (-21%); while deaths increased in two WHO regions: the Eastern Mediterranean Region (+61%), and the South-East Asia Region (+317%).\n\nAt the country level, the highest numbers of new 28-day cases were reported from the United States of America (392 480 new cases; -37%), the Republic of Korea (330 509 new cases; +22%), Japan (251 158 new cases; +24%), India (222 784 new cases; +540%), and France (197 190 new cases; +2%). The highest numbers of new 28-day deaths were reported from the United States of America (5263 new deaths; -29%), Brazil (1255 new deaths; +30%), the Russian Federation (993 new deaths; -2%), France (871 new deaths; +39%), and the Islamic Republic of Iran (762 new deaths; +82%).",
+  "summary": "\n\nGlobally, there has been a decrease in reported cases and deaths of 17% and 30%, respectively, compared to the previous 28 days. However, there are increases in reported cases and deaths in the South-East Asia, Eastern Mediterranean, and Western Pacific regions. As of 30 April 2023, over 765 million confirmed cases and over 6.9 million deaths have been reported globally. The highest numbers of new 28-day cases were reported from the United States of America, the Republic of Korea, Japan, India, and France. The highest numbers of new 28-day deaths were reported from the United States of America, Brazil, the Russian Federation, France, and the Islamic Republic of Iran.",
+  "metadata": {
+    "id": "3958698",
+    "name": "Coronavirus Disease (COVID-19): Weekly Epidemiological Update (4 May 2023)",
+    "date_original": 1683158400000,
+    "date_changed": 1683214686000,
+    "date_created": 1683214565000,
+    "primary_country_id": 254,
+    "primary_country_name": "World",
+    "primary_country_iso3": "wld"
+  }
+}

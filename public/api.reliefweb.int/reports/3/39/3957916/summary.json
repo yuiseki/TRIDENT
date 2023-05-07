@@ -1,0 +1,620 @@
+{
+  "original": {
+    "id": "3957916",
+    "fields": {
+      "date": {
+        "changed": "2023-05-02T21:54:50+00:00",
+        "created": "2023-05-02T21:54:26+00:00",
+        "original": "2023-04-24T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/13",
+          "name": "Afghanistan",
+          "location": {
+            "lon": 66.03,
+            "lat": 33.84
+          },
+          "id": 13,
+          "shortname": "Afghanistan",
+          "iso3": "afg"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/22",
+          "name": "Argentina",
+          "location": {
+            "lon": -64,
+            "lat": -35.38
+          },
+          "id": 22,
+          "shortname": "Argentina",
+          "iso3": "arg"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/31",
+          "name": "Bangladesh",
+          "location": {
+            "lon": 90.27,
+            "lat": 23.84
+          },
+          "id": 31,
+          "shortname": "Bangladesh",
+          "iso3": "bgd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/46",
+          "name": "Burkina Faso",
+          "location": {
+            "lon": -1.57,
+            "lat": 12.28
+          },
+          "id": 46,
+          "shortname": "Burkina Faso",
+          "iso3": "bfa"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/49",
+          "name": "Cameroon",
+          "location": {
+            "lon": 12.21,
+            "lat": 4.81
+          },
+          "id": 49,
+          "shortname": "Cameroon",
+          "iso3": "cmr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/54",
+          "name": "Central African Republic",
+          "location": {
+            "lon": 20.48,
+            "lat": 6.57
+          },
+          "id": 54,
+          "shortname": "CAR",
+          "iso3": "caf"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/55",
+          "name": "Chad",
+          "location": {
+            "lon": 18.66,
+            "lat": 15.36
+          },
+          "id": 55,
+          "shortname": "Chad",
+          "iso3": "tcd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/75",
+          "name": "Democratic Republic of the Congo",
+          "location": {
+            "lon": 21.7587,
+            "lat": -4.03833
+          },
+          "id": 75,
+          "shortname": "DR Congo",
+          "iso3": "cod"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/82",
+          "name": "Egypt",
+          "location": {
+            "lon": 29.87,
+            "lat": 26.49
+          },
+          "id": 82,
+          "shortname": "Egypt",
+          "iso3": "egy"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/87",
+          "name": "Ethiopia",
+          "location": {
+            "lon": 39.62,
+            "lat": 8.63
+          },
+          "id": 87,
+          "shortname": "Ethiopia",
+          "iso3": "eth"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/102",
+          "name": "Ghana",
+          "location": {
+            "lon": -1.19,
+            "lat": 7.28
+          },
+          "id": 102,
+          "shortname": "Ghana",
+          "iso3": "gha"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/110",
+          "name": "Guinea",
+          "location": {
+            "lon": -11.03,
+            "lat": 10.79
+          },
+          "id": 110,
+          "shortname": "Guinea",
+          "iso3": "gin"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/111",
+          "name": "Guinea-Bissau",
+          "location": {
+            "lon": -14.96,
+            "lat": 12.03
+          },
+          "id": 111,
+          "shortname": "Guinea-Bissau",
+          "iso3": "gnb"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/117",
+          "name": "Hungary",
+          "location": {
+            "lon": 19.5,
+            "lat": 47.06
+          },
+          "id": 117,
+          "shortname": "Hungary",
+          "iso3": "hun"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/120",
+          "name": "Indonesia",
+          "location": {
+            "lon": 117.37,
+            "lat": -2.28
+          },
+          "id": 120,
+          "shortname": "Indonesia",
+          "iso3": "idn"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/121",
+          "name": "Iran (Islamic Republic of)",
+          "location": {
+            "lon": 54.3,
+            "lat": 32.57
+          },
+          "id": 121,
+          "shortname": "Iran",
+          "iso3": "irn"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/131",
+          "name": "Kenya",
+          "location": {
+            "lon": 37.86,
+            "lat": 0.53
+          },
+          "id": 131,
+          "shortname": "Kenya",
+          "iso3": "ken"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/137",
+          "name": "Lebanon",
+          "location": {
+            "lon": 35.89,
+            "lat": 33.92
+          },
+          "id": 137,
+          "shortname": "Lebanon",
+          "iso3": "lbn"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/139",
+          "name": "Liberia",
+          "location": {
+            "lon": -9.31,
+            "lat": 6.45
+          },
+          "id": 139,
+          "shortname": "Liberia",
+          "iso3": "lbr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/149",
+          "name": "Mali",
+          "location": {
+            "lon": -1.25,
+            "lat": 17.35
+          },
+          "id": 149,
+          "shortname": "Mali",
+          "iso3": "mli"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/165",
+          "name": "Myanmar",
+          "location": {
+            "lon": 96.51,
+            "lat": 21.15
+          },
+          "id": 165,
+          "shortname": "Myanmar",
+          "iso3": "mmr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/174",
+          "name": "Niger",
+          "location": {
+            "lon": 9.4,
+            "lat": 17.43
+          },
+          "id": 174,
+          "shortname": "Niger",
+          "iso3": "ner"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/175",
+          "name": "Nigeria",
+          "location": {
+            "lon": 8.11,
+            "lat": 9.59
+          },
+          "id": 175,
+          "shortname": "Nigeria",
+          "iso3": "nga"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/182",
+          "name": "Pakistan",
+          "location": {
+            "lon": 69.39,
+            "lat": 29.97
+          },
+          "id": 182,
+          "shortname": "Pakistan",
+          "iso3": "pak"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/188",
+          "name": "Philippines",
+          "location": {
+            "lon": 122.88,
+            "lat": 11.74
+          },
+          "id": 188,
+          "shortname": "Philippines",
+          "iso3": "phl"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/191",
+          "name": "Portugal",
+          "location": {
+            "lon": -8.56,
+            "lat": 39.6
+          },
+          "id": 191,
+          "shortname": "Portugal",
+          "iso3": "prt"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/198",
+          "name": "Rwanda",
+          "location": {
+            "lon": 29.92,
+            "lat": -1.87
+          },
+          "id": 198,
+          "shortname": "Rwanda",
+          "iso3": "rwa"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/211",
+          "name": "Sierra Leone",
+          "location": {
+            "lon": -11.79,
+            "lat": 8.56
+          },
+          "id": 211,
+          "shortname": "Sierra Leone",
+          "iso3": "sle"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/216",
+          "name": "Somalia",
+          "location": {
+            "lon": 47.33,
+            "lat": 5.79
+          },
+          "id": 216,
+          "shortname": "Somalia",
+          "iso3": "som"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/8657",
+          "name": "South Sudan",
+          "location": {
+            "lon": 30.5,
+            "lat": 6.9
+          },
+          "id": 8657,
+          "shortname": "South Sudan",
+          "iso3": "ssd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/219",
+          "name": "Sri Lanka",
+          "location": {
+            "lon": 80.7,
+            "lat": 7.61
+          },
+          "id": 219,
+          "shortname": "Sri Lanka",
+          "iso3": "lka"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/220",
+          "name": "Sudan",
+          "location": {
+            "lon": 30,
+            "lat": 15
+          },
+          "id": 220,
+          "shortname": "Sudan",
+          "iso3": "sdn"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/221",
+          "name": "Suriname",
+          "location": {
+            "lon": -55.91,
+            "lat": 3.69
+          },
+          "id": 221,
+          "shortname": "Suriname",
+          "iso3": "sur"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/231",
+          "name": "Togo",
+          "location": {
+            "lon": 1.04,
+            "lat": 8.77
+          },
+          "id": 231,
+          "shortname": "Togo",
+          "iso3": "tgo"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/236",
+          "name": "Türkiye",
+          "location": {
+            "lon": 35.18,
+            "lat": 39.06
+          },
+          "id": 236,
+          "shortname": "Türkiye",
+          "iso3": "tur"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/240",
+          "name": "Uganda",
+          "location": {
+            "lon": 32.39,
+            "lat": 1.28
+          },
+          "id": 240,
+          "shortname": "Uganda",
+          "iso3": "uga"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/241",
+          "name": "Ukraine",
+          "location": {
+            "lon": 31.32,
+            "lat": 49.32
+          },
+          "id": 241,
+          "shortname": "Ukraine",
+          "iso3": "ukr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/254",
+          "name": "World",
+          "id": 254,
+          "shortname": "World",
+          "iso3": "wld",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/257",
+          "name": "Zimbabwe",
+          "location": {
+            "lon": 29.94,
+            "lat": -19.19
+          },
+          "id": 257,
+          "shortname": "Zimbabwe",
+          "iso3": "zwe"
+        }
+      ],
+      "origin": "https://www.worldbank.org/en/topic/agriculture/brief/food-security-update",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/254",
+        "name": "World",
+        "id": 254,
+        "shortname": "World",
+        "iso3": "wld"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "DR",
+          "name": "Drought",
+          "id": 4672
+        },
+        {
+          "code": "FF",
+          "name": "Flash Flood",
+          "id": 4624
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        },
+        {
+          "code": "OT",
+          "name": "Other",
+          "id": 5042
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1220",
+          "longname": "The World Bank Group",
+          "spanish_name": "Banco Mundial",
+          "name": "World Bank",
+          "id": 1220,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "World Bank",
+          "homepage": "http://www.worldbank.org"
+        }
+      ],
+      "title": "Food Security Update (April 20, 2023)",
+      "body": "Latest Update – April 24, 2023\n\nDomestic food price inflation remains high around the world. Information from the latest month between December 2022 and March 2023 for which food price inflation data are available shows high inflation in almost all low- and middle-income countries, with inflation levels greater than 5% in 70.6% of low-income countries, 90.9% of lower-middle-income countries, and 87.0% of upper-middle-income countries and many experiencing double-digit inflation. In addition, 84.2% of high-income countries are experiencing high food price inflation. The most-affected countries are in Africa, North America, Latin America, South Asia, Europe, and Central Asia.\n\nThe agricultural, cereal, and export price indices closed 3%, 2% and, 8% higher respectively compared to two weeks ago. The increase in export price index was driven by a rise in coffee prices which increased by 11%. Among the cereals, maize prices closed 4% higher, wheat prices closed 1% lower, while rice prices closed at the same level compared to two weeks ago. On a year-on-year basis, maize and wheat prices are 14% and 36% lower, respectively, while rice prices are 16% higher. Compared to January 2021, maize and wheat prices are 31% and 6% higher respectively, while rice prices are 4% lower (See “pink sheet” data for agricultural commodity and food commodity prices indices, updated monthly.)\n\nAccording to a recent report from the FAO, the benchmark index of international food commodity prices declined for the 12th consecutive month in March 2023. The FAO Food Price Index averaged 126.9 points in March 2023 — 2.1% lower than in February 2023 and 20.5% lower than its peak in March 2022. The index, which tracks monthly changes in international commodity prices, indicated that a combination of factors, including ample supplies, subdued import demand, and extension of the Black Sea Grain Initiative, contributed to the decrease. In 2019, prior to COVID-19, the FAO Food Price Index stood at 95.1 points.\n\nA recent blog from the International Food Policy Research Institute (IFPRI) discusses developments in biofuel production, provides arguments for and against the policies that support and promote it, and considers alternative mechanisms that could mitigate the impacts of such policies on food prices. The blog suggests that, despite criticism expressed during previous price spikes, biofuel policies will continue to increase in popularity. Given ongoing concerns regarding Russia's invasion of Ukraine, the blog suggests that it is important to verify the contribution of biofuels to mitigation of climate change and develop greater flexibility when markets are tight, and prices are high. In addition, development of waste products and crop residues as feedstock for biofuels would allow for all the benefits associated with biofuel mandates without increasing competition for food use. Although this is technically feasible, such feedstocks remain costlier than food crops, and more research must be conducted to increase commercialization of waste and crop residue.\n\nThe National Oceanic and Atmospheric Association (NOAA) Climate Prediction Center has issued an El Niño Watch as part of its April 2023 El Niño Southern Oscillation (ENSO) Outlook. The watch was issued in response to enabling conditions in the development of El Niño within the next six months. Currently, the world is still in an ENSO-neutral phase, in which neither El Niño nor La Nina is present. However, NOAA indicates that there is a 62% chance that El Niño will develop sometime between May and July, and more than an 80% chance of El Niño developing by the fall. The likely return of the El Niño weather phenomenon, exacerbated by global climate change, could increase the odds of record-breaking average global temperatures in 2023 or 2024.\n\nFollowing Russia’s invasion of Ukraine, trade-related policies imposed by countries have surged. The global food crisis has been partially made worse by the growing number of food trade restrictions put in place by countries with a goal of increasing domestic supply and reducing prices. As of March 13, 2023, 23 countries have implemented 29 food export bans, and ten have implemented 14 export-limiting measures.\n\nAccording to the Global Report on Food Crisis 2022 Mid-year Update, up to 205 million people are expected to face acute food insecurity and to be in need of urgent assistance in 45 countries.",
+      "url": "https://reliefweb.int/node/3957916",
+      "disaster": [
+        {
+          "name": "Pakistan: Floods - Jul 2022",
+          "id": 51234,
+          "glide": "FL-2022-000254-PAK",
+          "type": [
+            {
+              "code": "FF",
+              "name": "Flash Flood",
+              "id": 4624
+            },
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Sri Lanka: Food Security Crisis - Apr 2022",
+          "id": 51202,
+          "glide": "CE-2022-000199-LKA",
+          "type": [
+            {
+              "code": "OT",
+              "name": "Other",
+              "id": 5042,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Ethiopia: Drought - 2015-2023",
+          "id": 23121,
+          "glide": "DR-2015-000109-ETH",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Somalia: Drought - 2015-2023",
+          "id": 23101,
+          "glide": "DR-2015-000134-SOM",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Kenya: Drought - 2014-2023",
+          "id": 15360,
+          "glide": "DR-2014-000131-KEN",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/ea/db/eadb8ea0-ceb5-40ee-822c-817addb71ea6.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/ea/db/eadb8ea0-ceb5-40ee-822c-817addb71ea6.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/ea/db/eadb8ea0-ceb5-40ee-822c-817addb71ea6.png",
+            "version": "2416581-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/ea/db/eadb8ea0-ceb5-40ee-822c-817addb71ea6.png"
+          },
+          "filename": "Food-Security-Update-LXXXIII-April-20-2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2416581",
+          "filesize": "937019",
+          "url": "https://reliefweb.int/attachments/eadb8ea0-ceb5-40ee-822c-817addb71ea6/Food-Security-Update-LXXXIII-April-20-2023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/world/food-security-update-april-20-2023",
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        }
+      ],
+      "id": 3957916,
+      "status": "published",
+      "body-html": "<p>Latest Update – April 24, 2023</p>\n<p>Domestic food price inflation remains high around the world. Information from the latest month between December 2022 and March 2023 for which food price inflation data are available shows high inflation in almost all low- and middle-income countries, with inflation levels greater than 5% in 70.6% of low-income countries, 90.9% of lower-middle-income countries, and 87.0% of upper-middle-income countries and many experiencing double-digit inflation. In addition, 84.2% of high-income countries are experiencing high food price inflation. The most-affected countries are in Africa, North America, Latin America, South Asia, Europe, and Central Asia.</p>\n<p>The agricultural, cereal, and export price indices closed 3%, 2% and, 8% higher respectively compared to two weeks ago. The increase in export price index was driven by a rise in coffee prices which increased by 11%. Among the cereals, maize prices closed 4% higher, wheat prices closed 1% lower, while rice prices closed at the same level compared to two weeks ago. On a year-on-year basis, maize and wheat prices are 14% and 36% lower, respectively, while rice prices are 16% higher. Compared to January 2021, maize and wheat prices are 31% and 6% higher respectively, while rice prices are 4% lower (See “pink sheet” data for agricultural commodity and food commodity prices indices, updated monthly.)</p>\n<p>According to a recent report from the FAO, the benchmark index of international food commodity prices declined for the 12th consecutive month in March 2023. The FAO Food Price Index averaged 126.9 points in March 2023 — 2.1% lower than in February 2023 and 20.5% lower than its peak in March 2022. The index, which tracks monthly changes in international commodity prices, indicated that a combination of factors, including ample supplies, subdued import demand, and extension of the Black Sea Grain Initiative, contributed to the decrease. In 2019, prior to COVID-19, the FAO Food Price Index stood at 95.1 points.</p>\n<p>A recent blog from the International Food Policy Research Institute (IFPRI) discusses developments in biofuel production, provides arguments for and against the policies that support and promote it, and considers alternative mechanisms that could mitigate the impacts of such policies on food prices. The blog suggests that, despite criticism expressed during previous price spikes, biofuel policies will continue to increase in popularity. Given ongoing concerns regarding Russia's invasion of Ukraine, the blog suggests that it is important to verify the contribution of biofuels to mitigation of climate change and develop greater flexibility when markets are tight, and prices are high. In addition, development of waste products and crop residues as feedstock for biofuels would allow for all the benefits associated with biofuel mandates without increasing competition for food use. Although this is technically feasible, such feedstocks remain costlier than food crops, and more research must be conducted to increase commercialization of waste and crop residue.</p>\n<p>The National Oceanic and Atmospheric Association (NOAA) Climate Prediction Center has issued an El Niño Watch as part of its April 2023 El Niño Southern Oscillation (ENSO) Outlook. The watch was issued in response to enabling conditions in the development of El Niño within the next six months. Currently, the world is still in an ENSO-neutral phase, in which neither El Niño nor La Nina is present. However, NOAA indicates that there is a 62% chance that El Niño will develop sometime between May and July, and more than an 80% chance of El Niño developing by the fall. The likely return of the El Niño weather phenomenon, exacerbated by global climate change, could increase the odds of record-breaking average global temperatures in 2023 or 2024.</p>\n<p>Following Russia’s invasion of Ukraine, trade-related policies imposed by countries have surged. The global food crisis has been partially made worse by the growing number of food trade restrictions put in place by countries with a goal of increasing domestic supply and reducing prices. As of March 13, 2023, 23 countries have implemented 29 food export bans, and ten have implemented 14 export-limiting measures.</p>\n<p>According to the Global Report on Food Crisis 2022 Mid-year Update, up to 205 million people are expected to face acute food insecurity and to be in need of urgent assistance in 45 countries.</p>\n"
+    }
+  },
+  "text": "# Food Security Update (April 20, 2023)\n\nLatest Update – April 24, 2023\n\nDomestic food price inflation remains high around the world. Information from the latest month between December 2022 and March 2023 for which food price inflation data are available shows high inflation in almost all low- and middle-income countries, with inflation levels greater than 5% in 70.6% of low-income countries, 90.9% of lower-middle-income countries, and 87.0% of upper-middle-income countries and many experiencing double-digit inflation. In addition, 84.2% of high-income countries are experiencing high food price inflation. The most-affected countries are in Africa, North America, Latin America, South Asia, Europe, and Central Asia.\n\nThe agricultural, cereal, and export price indices closed 3%, 2% and, 8% higher respectively compared to two weeks ago. The increase in export price index was driven by a rise in coffee prices which increased by 11%. Among the cereals, maize prices closed 4% higher, wheat prices closed 1% lower, while rice prices closed at the same level compared to two weeks ago. On a year-on-year basis, maize and wheat prices are 14% and 36% lower, respectively, while rice prices are 16% higher. Compared to January 2021, maize and wheat prices are 31% and 6% higher respectively, while rice prices are 4% lower (See “pink sheet” data for agricultural commodity and food commodity prices indices, updated monthly.)\n\nAccording to a recent report from the FAO, the benchmark index of international food commodity prices declined for the 12th consecutive month in March 2023. The FAO Food Price Index averaged 126.9 points in March 2023 — 2.1% lower than in February 2023 and 20.5% lower than its peak in March 2022. The index, which tracks monthly changes in international commodity prices, indicated that a combination of factors, including ample supplies, subdued import demand, and extension of the Black Sea Grain Initiative, contributed to the decrease. In 2019, prior to COVID-19, the FAO Food Price Index stood at 95.1 points.\n\nA recent blog from the International Food Policy Research Institute (IFPRI) discusses developments in biofuel production, provides arguments for and against the policies that support and promote it, and considers alternative mechanisms that could mitigate the impacts of such policies on food prices. The blog suggests that, despite criticism expressed during previous price spikes, biofuel policies will continue to increase in popularity. Given ongoing concerns regarding Russia's invasion of Ukraine, the blog suggests that it is important to verify the contribution of biofuels to mitigation of climate change and develop greater flexibility when markets are tight, and prices are high. In addition, development of waste products and crop residues as feedstock for biofuels would allow for all the benefits associated with biofuel mandates without increasing competition for food use. Although this is technically feasible, such feedstocks remain costlier than food crops, and more research must be conducted to increase commercialization of waste and crop residue.\n\nThe National Oceanic and Atmospheric Association (NOAA) Climate Prediction Center has issued an El Niño Watch as part of its April 2023 El Niño Southern Oscillation (ENSO) Outlook. The watch was issued in response to enabling conditions in the development of El Niño within the next six months. Currently, the world is still in an ENSO-neutral phase, in which neither El Niño nor La Nina is present. However, NOAA indicates that there is a 62% chance that El Niño will develop sometime between May and July, and more than an 80% chance of El Niño developing by the fall. The likely return of the El Niño weather phenomenon, exacerbated by global climate change, could increase the odds of record-breaking average global temperatures in 2023 or 2024.\n\nFollowing Russia’s invasion of Ukraine, trade-related policies imposed by countries have surged. The global food crisis has been partially made worse by the growing number of food trade restrictions put in place by countries with a goal of increasing domestic supply and reducing prices. As of March 13, 2023, 23 countries have implemented 29 food export bans, and ten have implemented 14 export-limiting measures.\n\nAccording to the Global Report on Food Crisis 2022 Mid-year Update, up to 205 million people are expected to face acute food insecurity and to be in need of urgent assistance in 45 countries.",
+  "summary": " Food price inflation remains high around the world, with the most-affected countries being in Africa, North America, Latin America, South Asia, Europe, and Central Asia. The FAO Food Price Index declined for the 12th consecutive month in March 2023, and the NOAA Climate Prediction Center has issued an El Niño Watch. Trade-related policies imposed by countries have surged, and up to 205 million people are expected to face acute food insecurity in 45 countries.",
+  "metadata": {
+    "id": "3957916",
+    "name": "Food Security Update (April 20, 2023)",
+    "date_original": 1682294400000,
+    "date_changed": 1683064490000,
+    "date_created": 1683064466000,
+    "primary_country_id": 254,
+    "primary_country_name": "World",
+    "primary_country_iso3": "wld"
+  }
+}

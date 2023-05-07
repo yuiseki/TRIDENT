@@ -1,0 +1,214 @@
+{
+  "original": {
+    "id": "3958103",
+    "fields": {
+      "date": {
+        "changed": "2023-05-03T12:05:08+00:00",
+        "created": "2023-05-03T10:47:32+00:00",
+        "original": "2023-05-03T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/77",
+          "name": "Djibouti",
+          "location": {
+            "lon": 42.58,
+            "lat": 11.75
+          },
+          "id": 77,
+          "shortname": "Djibouti",
+          "iso3": "dji"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/87",
+          "name": "Ethiopia",
+          "location": {
+            "lon": 39.62,
+            "lat": 8.63
+          },
+          "id": 87,
+          "shortname": "Ethiopia",
+          "iso3": "eth",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/131",
+          "name": "Kenya",
+          "location": {
+            "lon": 37.86,
+            "lat": 0.53
+          },
+          "id": 131,
+          "shortname": "Kenya",
+          "iso3": "ken"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/216",
+          "name": "Somalia",
+          "location": {
+            "lon": 47.33,
+            "lat": 5.79
+          },
+          "id": 216,
+          "shortname": "Somalia",
+          "iso3": "som"
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/87",
+        "name": "Ethiopia",
+        "location": {
+          "lon": 39.62,
+          "lat": 8.63
+        },
+        "id": 87,
+        "shortname": "Ethiopia",
+        "iso3": "eth"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "DR",
+          "name": "Drought",
+          "id": 4672
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1255",
+          "longname": "International Organization for Migration",
+          "spanish_name": "Organización Internacional para las Migraciones",
+          "name": "International Organization for Migration",
+          "id": 1255,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "IOM",
+          "homepage": "http://www.iom.int/"
+        }
+      ],
+      "title": "IOM East and Horn of Africa Drought Response - Situation Report (1 - 31 March 2023)",
+      "body": "**SITUATION OVERVIEW**\n\nDespite a good start to the March to June 2023 rainy season from a drought perspective—although some heavy downpours resulted in flooding and additional displacements—the overall performance of the rainy season remains unclear.\n\nEven in a best-case scenario, the road to recovery after at least five failed rainy seasons will be long, with millions of people having lost their livelihoods as a result of drought and displacement. While famine has so far been averted through sustained and scaled-up assistance, the humanitarian situation remains extremely dire, including as a result of interlinked clusters of crises such as emergency levels of malnutrition, disease outbreaks and violent conflict leading to the destruction of assets and infrastructure. These dire and complex conditions are expected to further drive multi-sectoral humanitarian needs of the drought affected population in the region well into 2023, thus requiring urgent funding and a further strengthened response.\n\n**IOM RESPONSE**\n\nSince January 2022, IOM has scaled up its drought response significantly in Somalia and Ethiopia, reaching more than 3.5 million people. Kenya and Djibouti are yet to commence largescale operations due to funding constraints, although Kenya continued its Displacement Tracking Matrix (DTM) activities and is planning new WASH and cash assistance interventions.\n\nIOM reached almost 1.9 million people in March, a 19% increase from February (see details by sector in this report). The regional scale-up since January 2022 includes more than a doubling in the number of people reached with health assistance (including a five-fold increase in malnutrition screenings), a fivefold increase in the number of people reached by Camp Coordination and Camp Management (CCCM), a tenfold increase in WASH assistance—mainly through durable water provision, and the start up of shelter/Non-Food Item (NFI) assistance now covering more than 340,000 people.",
+      "url": "https://reliefweb.int/node/3958103",
+      "disaster": [
+        {
+          "name": "Ethiopia: Drought - 2015-2023",
+          "id": 23121,
+          "glide": "DR-2015-000109-ETH",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Somalia: Drought - 2015-2023",
+          "id": 23101,
+          "glide": "DR-2015-000134-SOM",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Kenya: Drought - 2014-2023",
+          "id": 15360,
+          "glide": "DR-2014-000131-KEN",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/47/84/4784de93-023c-4d6f-9a38-8717604112bf.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/47/84/4784de93-023c-4d6f-9a38-8717604112bf.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/47/84/4784de93-023c-4d6f-9a38-8717604112bf.png",
+            "version": "2416767-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/47/84/4784de93-023c-4d6f-9a38-8717604112bf.png"
+          },
+          "filename": "IOM HoA Drought Sitrep Mar23.pdf",
+          "mimetype": "application/pdf",
+          "id": "2416767",
+          "filesize": "1314157",
+          "url": "https://reliefweb.int/attachments/4784de93-023c-4d6f-9a38-8717604112bf/IOM%20HoA%20Drought%20Sitrep%20Mar23.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/ethiopia/iom-east-and-horn-africa-drought-response-situation-report-1-31-march-2023",
+      "theme": [
+        {
+          "name": "Camp Coordination and Camp Management",
+          "id": 49458
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3958103,
+      "status": "published",
+      "body-html": "<p><strong>SITUATION OVERVIEW</strong></p>\n<p>Despite a good start to the March to June 2023 rainy season from a drought perspective—although some heavy downpours resulted in flooding and additional displacements—the overall performance of the rainy season remains unclear.</p>\n<p>Even in a best-case scenario, the road to recovery after at least five failed rainy seasons will be long, with millions of people having lost their livelihoods as a result of drought and displacement. While famine has so far been averted through sustained and scaled-up assistance, the humanitarian situation remains extremely dire, including as a result of interlinked clusters of crises such as emergency levels of malnutrition, disease outbreaks and violent conflict leading to the destruction of assets and infrastructure. These dire and complex conditions are expected to further drive multi-sectoral humanitarian needs of the drought affected population in the region well into 2023, thus requiring urgent funding and a further strengthened response.</p>\n<p><strong>IOM RESPONSE</strong></p>\n<p>Since January 2022, IOM has scaled up its drought response significantly in Somalia and Ethiopia, reaching more than 3.5 million people. Kenya and Djibouti are yet to commence largescale operations due to funding constraints, although Kenya continued its Displacement Tracking Matrix (DTM) activities and is planning new WASH and cash assistance interventions.</p>\n<p>IOM reached almost 1.9 million people in March, a 19% increase from February (see details by sector in this report). The regional scale-up since January 2022 includes more than a doubling in the number of people reached with health assistance (including a five-fold increase in malnutrition screenings), a fivefold increase in the number of people reached by Camp Coordination and Camp Management (CCCM), a tenfold increase in WASH assistance—mainly through durable water provision, and the start up of shelter/Non-Food Item (NFI) assistance now covering more than 340,000 people.</p>\n"
+    }
+  },
+  "text": "# IOM East and Horn of Africa Drought Response - Situation Report (1 - 31 March 2023)\n\n**SITUATION OVERVIEW**\n\nDespite a good start to the March to June 2023 rainy season from a drought perspective—although some heavy downpours resulted in flooding and additional displacements—the overall performance of the rainy season remains unclear.\n\nEven in a best-case scenario, the road to recovery after at least five failed rainy seasons will be long, with millions of people having lost their livelihoods as a result of drought and displacement. While famine has so far been averted through sustained and scaled-up assistance, the humanitarian situation remains extremely dire, including as a result of interlinked clusters of crises such as emergency levels of malnutrition, disease outbreaks and violent conflict leading to the destruction of assets and infrastructure. These dire and complex conditions are expected to further drive multi-sectoral humanitarian needs of the drought affected population in the region well into 2023, thus requiring urgent funding and a further strengthened response.\n\n**IOM RESPONSE**\n\nSince January 2022, IOM has scaled up its drought response significantly in Somalia and Ethiopia, reaching more than 3.5 million people. Kenya and Djibouti are yet to commence largescale operations due to funding constraints, although Kenya continued its Displacement Tracking Matrix (DTM) activities and is planning new WASH and cash assistance interventions.\n\nIOM reached almost 1.9 million people in March, a 19% increase from February (see details by sector in this report). The regional scale-up since January 2022 includes more than a doubling in the number of people reached with health assistance (including a five-fold increase in malnutrition screenings), a fivefold increase in the number of people reached by Camp Coordination and Camp Management (CCCM), a tenfold increase in WASH assistance—mainly through durable water provision, and the start up of shelter/Non-Food Item (NFI) assistance now covering more than 340,000 people.",
+  "summary": "\n\nThe IOM has scaled up its drought response significantly in Somalia and Ethiopia since January 2022, reaching more than 3.5 million people. Despite a good start to the March to June 2023 rainy season, the overall performance remains unclear and the humanitarian situation remains dire. IOM has provided assistance to almost 1.9 million people in March, including health assistance, Camp Coordination and Camp Management (CCCM), WASH assistance, and shelter/Non-Food Item (NFI) assistance.",
+  "metadata": {
+    "id": "3958103",
+    "name": "IOM East and Horn of Africa Drought Response - Situation Report (1 - 31 March 2023)",
+    "date_original": 1683072000000,
+    "date_changed": 1683115508000,
+    "date_created": 1683110852000,
+    "primary_country_id": 87,
+    "primary_country_name": "Ethiopia",
+    "primary_country_iso3": "eth",
+    "primary_country_location": {
+      "lon": 39.62,
+      "lat": 8.63
+    }
+  }
+}

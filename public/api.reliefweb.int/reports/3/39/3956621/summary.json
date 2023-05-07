@@ -1,0 +1,141 @@
+{
+  "original": {
+    "id": "3956621",
+    "fields": {
+      "date": {
+        "changed": "2023-04-27T13:31:27+00:00",
+        "created": "2023-04-27T12:33:27+00:00",
+        "original": "2023-04-27T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/226",
+          "name": "Syrian Arab Republic",
+          "location": {
+            "lon": 38.51,
+            "lat": 35.01
+          },
+          "id": 226,
+          "shortname": "Syria",
+          "iso3": "syr",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/226",
+        "name": "Syrian Arab Republic",
+        "location": {
+          "lon": 38.51,
+          "lat": 35.01
+        },
+        "id": 226,
+        "shortname": "Syria",
+        "iso3": "syr"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EQ",
+          "name": "Earthquake",
+          "id": 4628
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "Syria: UNHCR Operational Update, January - March 2023",
+      "body": "The Syria crisis entered its thirteenth year in March 2023. The UN estimates that [15.3 million](https://reliefweb.int/report/syrian-arab-republic/syrian-arab-republic-2023-humanitarian-needs-overview-december-2022) people need humanitarian assistance across the country, a 5 per cent increase from 2022.\n\nThe 6 February earthquakes further exacerbated the situation in Syria, and UNHCR is responding to this new emergency. An estimated [8.8 million](https://reliefweb.int/report/syrian-arab-republic/flash-appeal-syrian-arab-republic-earthquake-february-may-2023) people in Syria were affected by the earthquakes.\n\nUNHCR also continues to provide protection and assistance to refugees, asylum-seekers, internally displaced people, returnees, stateless people, and host community members based on identified needs and vulnerabilities.",
+      "url": "https://reliefweb.int/node/3956621",
+      "disaster": [
+        {
+          "name": "Türkiye/Syria: Earthquakes - Feb 2023",
+          "id": 51470,
+          "glide": "EQ-2023-000015-TUR",
+          "type": [
+            {
+              "code": "EQ",
+              "name": "Earthquake",
+              "id": 4628,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/36/49/36497394-871a-45fb-b1f7-1e76745ef8f5.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/36/49/36497394-871a-45fb-b1f7-1e76745ef8f5.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/36/49/36497394-871a-45fb-b1f7-1e76745ef8f5.png",
+            "version": "2415339-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/36/49/36497394-871a-45fb-b1f7-1e76745ef8f5.png"
+          },
+          "filename": "UNHCR Operational Update - March 2023 - final.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415339",
+          "filesize": "737883",
+          "url": "https://reliefweb.int/attachments/36497394-871a-45fb-b1f7-1e76745ef8f5/UNHCR%20Operational%20Update%20-%20March%202023%20-%20final.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/syrian-arab-republic/syria-unhcr-operational-update-january-march-2023",
+      "theme": [
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        }
+      ],
+      "id": 3956621,
+      "status": "published",
+      "body-html": "<p>The Syria crisis entered its thirteenth year in March 2023. The UN estimates that <a href=\"https://reliefweb.int/report/syrian-arab-republic/syrian-arab-republic-2023-humanitarian-needs-overview-december-2022\">15.3 million</a> people need humanitarian assistance across the country, a 5 per cent increase from 2022.</p>\n<p>The 6 February earthquakes further exacerbated the situation in Syria, and UNHCR is responding to this new emergency. An estimated <a href=\"https://reliefweb.int/report/syrian-arab-republic/flash-appeal-syrian-arab-republic-earthquake-february-may-2023\">8.8 million</a> people in Syria were affected by the earthquakes.</p>\n<p>UNHCR also continues to provide protection and assistance to refugees, asylum-seekers, internally displaced people, returnees, stateless people, and host community members based on identified needs and vulnerabilities.</p>\n"
+    }
+  },
+  "text": "# Syria: UNHCR Operational Update, January - March 2023\n\nThe Syria crisis entered its thirteenth year in March 2023. The UN estimates that [15.3 million](https://reliefweb.int/report/syrian-arab-republic/syrian-arab-republic-2023-humanitarian-needs-overview-december-2022) people need humanitarian assistance across the country, a 5 per cent increase from 2022.\n\nThe 6 February earthquakes further exacerbated the situation in Syria, and UNHCR is responding to this new emergency. An estimated [8.8 million](https://reliefweb.int/report/syrian-arab-republic/flash-appeal-syrian-arab-republic-earthquake-february-may-2023) people in Syria were affected by the earthquakes.\n\nUNHCR also continues to provide protection and assistance to refugees, asylum-seekers, internally displaced people, returnees, stateless people, and host community members based on identified needs and vulnerabilities.",
+  "summary": " The Syria crisis entered its thirteenth year in March 2023, with an estimated 15.3 million people in need of humanitarian assistance. The 6 February earthquakes further exacerbated the situation, affecting 8.8 million people. UNHCR is responding to this new emergency and continuing to provide protection and assistance to refugees, asylum-seekers, internally displaced people, returnees, stateless people, and host community members.",
+  "metadata": {
+    "id": "3956621",
+    "name": "Syria: UNHCR Operational Update, January - March 2023",
+    "date_original": 1682553600000,
+    "date_changed": 1682602287000,
+    "date_created": 1682598807000,
+    "primary_country_id": 226,
+    "primary_country_name": "Syrian Arab Republic",
+    "primary_country_iso3": "syr",
+    "primary_country_location": {
+      "lon": 38.51,
+      "lat": 35.01
+    }
+  }
+}

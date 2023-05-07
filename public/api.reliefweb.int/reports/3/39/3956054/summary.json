@@ -1,0 +1,129 @@
+{
+  "original": {
+    "id": "3956054",
+    "fields": {
+      "date": {
+        "changed": "2023-04-26T06:31:55+00:00",
+        "created": "2023-04-26T05:31:07+00:00",
+        "original": "2023-04-26T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/135",
+          "name": "Lao People's Democratic Republic (the)",
+          "location": {
+            "lon": 102.59,
+            "lat": 19.92
+          },
+          "id": 135,
+          "shortname": "Lao PDR",
+          "iso3": "lao",
+          "primary": true
+        }
+      ],
+      "origin": "https://logcluster.org/document/lao-pdr-preparedness-quarterly-update-january-march-2023",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/135",
+        "name": "Lao People's Democratic Republic (the)",
+        "location": {
+          "lon": 102.59,
+          "lat": 19.92
+        },
+        "id": 135,
+        "shortname": "Lao PDR",
+        "iso3": "lao"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/3594",
+          "name": "Logistics Cluster",
+          "id": 3594,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "Logistics Cluster",
+          "homepage": "http://www.logcluster.org/"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "Lao PDR Preparedness - Quarterly Update, January - March 2023",
+      "body": "**Highlights**\n\n• In February, a consultative meeting was held with the Food and Drug Department, Ministry of Health, as part of the Ministry of Labour and Social Welfare of Laos (MoLSW)’s ongoing initiative to map relevant national and international actors on importation and customs clearance of humanitarian relief items and streamline relevant mechanisms and processes.\n\n• In March, MoLSW, with support from the World Food Programme (WFP) and the Global Logistics Cluster Field-Based Preparedness Project (FBPP), conducted a biannual National Logistics Preparedness Working Group (NLPWG) Meeting to discuss progress, challenges, and actions implemented by relevant stakeholders in relations to the National Logistics Preparedness Action Plan as well as key logistics preparedness priorities in 2023",
+      "url": "https://reliefweb.int/node/3956054",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/c0/3f/c03f0c15-588e-4c83-8653-bcd1f3628c95.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/c0/3f/c03f0c15-588e-4c83-8653-bcd1f3628c95.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/c0/3f/c03f0c15-588e-4c83-8653-bcd1f3628c95.png",
+            "version": "2414802-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/c0/3f/c03f0c15-588e-4c83-8653-bcd1f3628c95.png"
+          },
+          "filename": "Logistics Cluster_Preparedness_Quarterly Report_Laos_Q12023_final.pdf",
+          "mimetype": "application/pdf",
+          "id": "2414802",
+          "filesize": "317015",
+          "url": "https://reliefweb.int/attachments/c03f0c15-588e-4c83-8653-bcd1f3628c95/Logistics%20Cluster_Preparedness_Quarterly%20Report_Laos_Q12023_final.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/lao-peoples-democratic-republic/lao-pdr-preparedness-quarterly-update-january-march-2023",
+      "redirects": [
+        "https://reliefweb.int/report/lao-peoples-democratic-republic/lao-peoples-democratic-republic-preparedness-quarterly-update-january-march-2023"
+      ],
+      "theme": [
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Disaster Management",
+          "id": 4591
+        }
+      ],
+      "id": 3956054,
+      "status": "published",
+      "body-html": "<p><strong>Highlights</strong></p>\n<p>• In February, a consultative meeting was held with the Food and Drug Department, Ministry of Health, as part of the Ministry of Labour and Social Welfare of Laos (MoLSW)’s ongoing initiative to map relevant national and international actors on importation and customs clearance of humanitarian relief items and streamline relevant mechanisms and processes.</p>\n<p>• In March, MoLSW, with support from the World Food Programme (WFP) and the Global Logistics Cluster Field-Based Preparedness Project (FBPP), conducted a biannual National Logistics Preparedness Working Group (NLPWG) Meeting to discuss progress, challenges, and actions implemented by relevant stakeholders in relations to the National Logistics Preparedness Action Plan as well as key logistics preparedness priorities in 2023</p>\n"
+    }
+  },
+  "text": "# Lao PDR Preparedness - Quarterly Update, January - March 2023\n\n**Highlights**\n\n• In February, a consultative meeting was held with the Food and Drug Department, Ministry of Health, as part of the Ministry of Labour and Social Welfare of Laos (MoLSW)’s ongoing initiative to map relevant national and international actors on importation and customs clearance of humanitarian relief items and streamline relevant mechanisms and processes.\n\n• In March, MoLSW, with support from the World Food Programme (WFP) and the Global Logistics Cluster Field-Based Preparedness Project (FBPP), conducted a biannual National Logistics Preparedness Working Group (NLPWG) Meeting to discuss progress, challenges, and actions implemented by relevant stakeholders in relations to the National Logistics Preparedness Action Plan as well as key logistics preparedness priorities in 2023",
+  "summary": " In January-March 2023, the Ministry of Labour and Social Welfare of Laos (MoLSW) held a consultative meeting with the Food and Drug Department, Ministry of Health, and conducted a biannual National Logistics Preparedness Working Group (NLPWG) Meeting with support from the World Food Programme (WFP) and the Global Logistics Cluster Field-Based Preparedness Project (FBPP). These meetings were part of an ongoing initiative to map relevant national and international actors on importation and customs clearance of humanitarian relief items and streamline relevant mechanisms and processes, as well as discuss progress, challenges, and actions implemented by relevant stakeholders in relation to the National Logistics Preparedness Action Plan and key logistics preparedness priorities in 2023.",
+  "metadata": {
+    "id": "3956054",
+    "name": "Lao PDR Preparedness - Quarterly Update, January - March 2023",
+    "date_original": 1682467200000,
+    "date_changed": 1682490715000,
+    "date_created": 1682487067000,
+    "primary_country_id": 135,
+    "primary_country_name": "Lao People's Democratic Republic (the)",
+    "primary_country_iso3": "lao",
+    "primary_country_location": {
+      "lon": 102.59,
+      "lat": 19.92
+    }
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "original": {
+    "id": "3955697",
+    "fields": {
+      "date": {
+        "changed": "2023-04-26T07:45:01+00:00",
+        "created": "2023-04-25T09:16:11+00:00",
+        "original": "2023-04-25T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/15",
+          "name": "Albania",
+          "location": {
+            "lon": 20.16,
+            "lat": 40.64
+          },
+          "id": 15,
+          "shortname": "Albania",
+          "iso3": "alb"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/40",
+          "name": "Bosnia and Herzegovina",
+          "location": {
+            "lon": 17.79,
+            "lat": 44.17
+          },
+          "id": 40,
+          "shortname": "Bosnia and Herzegovina",
+          "iso3": "bih"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/161",
+          "name": "Montenegro",
+          "location": {
+            "lon": 19.25,
+            "lat": 42.79
+          },
+          "id": 161,
+          "shortname": "Montenegro",
+          "iso3": "mne"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/209",
+          "name": "Serbia",
+          "location": {
+            "lon": 20.8,
+            "lat": 44.23
+          },
+          "id": 209,
+          "shortname": "Serbia",
+          "iso3": "srb",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/229",
+          "name": "the Republic of North Macedonia",
+          "location": {
+            "lon": 21.7,
+            "lat": 41.6
+          },
+          "id": 229,
+          "shortname": "North Macedonia",
+          "iso3": "mkd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/241",
+          "name": "Ukraine",
+          "location": {
+            "lon": 31.32,
+            "lat": 49.32
+          },
+          "id": 241,
+          "shortname": "Ukraine",
+          "iso3": "ukr"
+        }
+      ],
+      "origin": "https://www.worldbank.org/en/news/press-release/2023/04/25/western-balkans-show-resilience-despite-slowing-growth-and-continued-price-rises",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/209",
+        "name": "Serbia",
+        "location": {
+          "lon": 20.8,
+          "lat": 44.23
+        },
+        "id": 209,
+        "shortname": "Serbia",
+        "iso3": "srb"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1220",
+          "longname": "The World Bank Group",
+          "spanish_name": "Banco Mundial",
+          "name": "World Bank",
+          "id": 1220,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "World Bank",
+          "homepage": "http://www.worldbank.org"
+        }
+      ],
+      "title": "Western Balkans Regular Economic Report No.23 (Spring 2023): Testing Resilience [EN/SQ/RS]",
+      "body": "**Western Balkans Show Resilience Despite Slowing Growth and Continued Price Rises**\n\n**VIENNA, April 25, 2023**—The economies of Albania, Bosnia & Herzegovina, Kosovo, Montenegro, North Macedonia, and Serbia have surpassed pre-pandemic levels despite fallout from Russia’s invasion of Ukraine, higher energy and food prices, unfavorable weather conditions, tightening financial conditions, and significant uncertainty, according to the latest Western Balkans Regular Economic Report released today.\n\nThe outlook for the Western Balkans remains subdued, with GDP growth expected to moderate to 2.6 percent in 2023, mainly driven by private consumption, exports, and, for some countries, by public investment, the report says.\n\nThe region now faces the challenges of rebuilding buffers to prepare for future shocks, and in undertaking supply-side reforms to lay the foundations for more sustainable and greener growth, the report says.\n\n“*The Western Balkans have shown remarkable resilience despite significant economic headwinds*,” said **Xiaoqing Yu**, **World Bank Country Director for the Western Balkans**. “*To continue weathering the storm presented by multiple economic shocks, countries can achieve high returns by pursuing reforms that boost productivity over the medium term, such as accelerating regional integration, increasing levels of market competition, attracting higher quality investments, and addressing barriers that limit labor force participation, especially among women*.”\n\nInflation surged to a two-decade high in 2022 in the Western Balkans, and price pressures remain elevated in early 2023, the report says. In most countries of the Western Balkans, consumer price inflation peaked in late 2022 driven by energy and food price increases and now shows signs of easing, with external drivers now dissipating due to slowing global growth. However, inflationary pressures remain entrenched requiring further monetary policy tightening.\n\nThese higher prices have affected low-income households especially severely, which, together with weaker economic growth, resulted in a much slower pace of poverty reduction despite some benefit from universal government support programs to mitigate the energy crisis. Potential constraints going forward include lower external demand, which could negatively affect income from exports and limit remittances, and tighter fiscal space, which continues to constrain the support that can be provided to households, according to the report.\n\n“*The poorest households spend a much higher proportion of their income on energy and food, the two items in the consumption basket with the highest price increase*,” said** Sanja Madzarevic-Sujster, World Bank Senior Economist and a lead author of the report**. “*This means that the increases in the actual cost of living faced by poor people in the Western Balkans are much higher than official consumer price inflation figures suggest. To design effective policies to protect the less well-off and promote economic growth, it is important to consider the variability of inflation rates across different household types*.”\n\nDespite employment growth, the rate of job creation lost strength across all the Western Balkan countries in the second half of 2022, the report says. Employment contracted the most in agriculture and public administration, while industry and services also observed a slowdown. The employment rate reached a historic high of 47 percent in September 2022, after which it began to decline.\n\nIn the medium term, the outlook for the Western Balkans remains positive, though reforms are needed to accelerate the green transition and to address key structural challenges.\n\n**“***The ongoing energy crisis has highlighted the need to accelerate the green transition across Europe, including in the Western Balkans*,” said **Richard Record, World Bank Lead Economist, and a lead author of the report**. “*A key starting point is to accelerate the move toward carbon pricing and to increase the use of environmental fiscal measures that incentivize households and firms to shift toward lower carbon intensity*.”\n\nOne area of investment with the potential for significant economic returns for the Western Balkans is in energy efficiency, the report adds. Even moderate improvements in firms’ energy efficiency would render substantial savings in energy-related greenhouse gas emissions, improve firms’ profits, have large social benefits, and help shield against future electricity and gas price shocks.\n\n**Contacts:**\n\n*Belgrade*: Gordana Filipovic, [gfilipovic@worldbankgroup.org](https://reliefweb.int/mailto:gfilipovic@worldbankgroup.org) \n\n*Pristina*: Lundrim Aliu, [laliu1@worldbank.org](https://reliefweb.int/mailto:laliu1@worldbank.org) \n\n*Skopje*: Anita Bozinovska, [abozinovska@worldbank.org](https://reliefweb.int/mailto:abozinovska@worldbank.org) \n\n*Sarajevo*: Jasmina Hadzic, [jhadzic@worldbank.org](https://reliefweb.int/mailto:jhadzic@worldbank.org) \n\n*Tirana*: Ana Gjokutaj, [agjokutaj@worldbank.org](https://reliefweb.int/mailto:agjokutaj@worldbank.org)\n\n*Washington*: Christopher Walsh, [cwalsh@worldbankgroup.org](https://reliefweb.int/mailto:cwalsh@worldbankgroup.org)",
+      "url": "https://reliefweb.int/node/3955697",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/23/68/23685355-3469-4c64-94da-17efeedfbbfd.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/23/68/23685355-3469-4c64-94da-17efeedfbbfd.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/23/68/23685355-3469-4c64-94da-17efeedfbbfd.png",
+            "version": "2414455-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/23/68/23685355-3469-4c64-94da-17efeedfbbfd.png"
+          },
+          "filename": "P179478085f70601a0aac3035c4560691ca.pdf",
+          "description": "English version",
+          "mimetype": "application/pdf",
+          "id": "2414455",
+          "filesize": "2127751",
+          "url": "https://reliefweb.int/attachments/23685355-3469-4c64-94da-17efeedfbbfd/P179478085f70601a0aac3035c4560691ca.pdf"
+        },
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/19/8d/198d1c07-0889-4f69-90ed-bcd42923ab01.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/19/8d/198d1c07-0889-4f69-90ed-bcd42923ab01.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/19/8d/198d1c07-0889-4f69-90ed-bcd42923ab01.png",
+            "version": "2414637-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/19/8d/198d1c07-0889-4f69-90ed-bcd42923ab01.png"
+          },
+          "filename": "SR.pdf",
+          "description": "Press Release - Serbian version",
+          "mimetype": "application/pdf",
+          "id": "2414637",
+          "filesize": "8552685",
+          "url": "https://reliefweb.int/attachments/198d1c07-0889-4f69-90ed-bcd42923ab01/SR.pdf"
+        },
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/0a/81/0a81463c-7a57-481a-9cfc-fca5e50b7ff8.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/0a/81/0a81463c-7a57-481a-9cfc-fca5e50b7ff8.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/0a/81/0a81463c-7a57-481a-9cfc-fca5e50b7ff8.png",
+            "version": "2414639-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/0a/81/0a81463c-7a57-481a-9cfc-fca5e50b7ff8.png"
+          },
+          "filename": "SQ.pdf",
+          "description": "Press Release - Albanian version",
+          "mimetype": "application/pdf",
+          "id": "2414639",
+          "filesize": "9123791",
+          "url": "https://reliefweb.int/attachments/0a81463c-7a57-481a-9cfc-fca5e50b7ff8/SQ.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/serbia/western-balkans-regular-economic-report-no23-spring-2023-testing-resilience-ensqrs",
+      "redirects": [
+        "https://reliefweb.int/report/serbia/western-balkans-regular-economic-report-no23-spring-2023-testing-resilience",
+        "https://reliefweb.int/report/serbia/western-balkans-regular-economic-report-no23-spring-2023-testing-resilience-enarsq"
+      ],
+      "theme": [
+        {
+          "name": "Recovery and Reconstruction",
+          "id": 4601
+        }
+      ],
+      "id": 3955697,
+      "status": "published",
+      "body-html": "<p><strong>Western Balkans Show Resilience Despite Slowing Growth and Continued Price Rises</strong></p>\n<p><strong>VIENNA, April 25, 2023</strong>—The economies of Albania, Bosnia &amp; Herzegovina, Kosovo, Montenegro, North Macedonia, and Serbia have surpassed pre-pandemic levels despite fallout from Russia’s invasion of Ukraine, higher energy and food prices, unfavorable weather conditions, tightening financial conditions, and significant uncertainty, according to the latest Western Balkans Regular Economic Report released today.</p>\n<p>The outlook for the Western Balkans remains subdued, with GDP growth expected to moderate to 2.6 percent in 2023, mainly driven by private consumption, exports, and, for some countries, by public investment, the report says.</p>\n<p>The region now faces the challenges of rebuilding buffers to prepare for future shocks, and in undertaking supply-side reforms to lay the foundations for more sustainable and greener growth, the report says.</p>\n<p>“<em>The Western Balkans have shown remarkable resilience despite significant economic headwinds</em>,” said <strong>Xiaoqing Yu</strong>, <strong>World Bank Country Director for the Western Balkans</strong>. “<em>To continue weathering the storm presented by multiple economic shocks, countries can achieve high returns by pursuing reforms that boost productivity over the medium term, such as accelerating regional integration, increasing levels of market competition, attracting higher quality investments, and addressing barriers that limit labor force participation, especially among women</em>.”</p>\n<p>Inflation surged to a two-decade high in 2022 in the Western Balkans, and price pressures remain elevated in early 2023, the report says. In most countries of the Western Balkans, consumer price inflation peaked in late 2022 driven by energy and food price increases and now shows signs of easing, with external drivers now dissipating due to slowing global growth. However, inflationary pressures remain entrenched requiring further monetary policy tightening.</p>\n<p>These higher prices have affected low-income households especially severely, which, together with weaker economic growth, resulted in a much slower pace of poverty reduction despite some benefit from universal government support programs to mitigate the energy crisis. Potential constraints going forward include lower external demand, which could negatively affect income from exports and limit remittances, and tighter fiscal space, which continues to constrain the support that can be provided to households, according to the report.</p>\n<p>“<em>The poorest households spend a much higher proportion of their income on energy and food, the two items in the consumption basket with the highest price increase</em>,” said** Sanja Madzarevic-Sujster, World Bank Senior Economist and a lead author of the report**. “<em>This means that the increases in the actual cost of living faced by poor people in the Western Balkans are much higher than official consumer price inflation figures suggest. To design effective policies to protect the less well-off and promote economic growth, it is important to consider the variability of inflation rates across different household types</em>.”</p>\n<p>Despite employment growth, the rate of job creation lost strength across all the Western Balkan countries in the second half of 2022, the report says. Employment contracted the most in agriculture and public administration, while industry and services also observed a slowdown. The employment rate reached a historic high of 47 percent in September 2022, after which it began to decline.</p>\n<p>In the medium term, the outlook for the Western Balkans remains positive, though reforms are needed to accelerate the green transition and to address key structural challenges.</p>\n<p>**“**<em>The ongoing energy crisis has highlighted the need to accelerate the green transition across Europe, including in the Western Balkans</em>,” said <strong>Richard Record, World Bank Lead Economist, and a lead author of the report</strong>. “<em>A key starting point is to accelerate the move toward carbon pricing and to increase the use of environmental fiscal measures that incentivize households and firms to shift toward lower carbon intensity</em>.”</p>\n<p>One area of investment with the potential for significant economic returns for the Western Balkans is in energy efficiency, the report adds. Even moderate improvements in firms’ energy efficiency would render substantial savings in energy-related greenhouse gas emissions, improve firms’ profits, have large social benefits, and help shield against future electricity and gas price shocks.</p>\n<p><strong>Contacts:</strong></p>\n<p><em>Belgrade</em>: Gordana Filipovic, <a href=\"https://reliefweb.int/mailto:gfilipovic@worldbankgroup.org\">gfilipovic@worldbankgroup.org</a></p>\n<p><em>Pristina</em>: Lundrim Aliu, <a href=\"https://reliefweb.int/mailto:laliu1@worldbank.org\">laliu1@worldbank.org</a></p>\n<p><em>Skopje</em>: Anita Bozinovska, <a href=\"https://reliefweb.int/mailto:abozinovska@worldbank.org\">abozinovska@worldbank.org</a></p>\n<p><em>Sarajevo</em>: Jasmina Hadzic, <a href=\"https://reliefweb.int/mailto:jhadzic@worldbank.org\">jhadzic@worldbank.org</a></p>\n<p><em>Tirana</em>: Ana Gjokutaj, <a href=\"https://reliefweb.int/mailto:agjokutaj@worldbank.org\">agjokutaj@worldbank.org</a></p>\n<p><em>Washington</em>: Christopher Walsh, <a href=\"https://reliefweb.int/mailto:cwalsh@worldbankgroup.org\">cwalsh@worldbankgroup.org</a></p>\n"
+    }
+  },
+  "text": "# Western Balkans Regular Economic Report No.23 (Spring 2023): Testing Resilience [EN/SQ/RS]\n\n**Western Balkans Show Resilience Despite Slowing Growth and Continued Price Rises**\n\n**VIENNA, April 25, 2023**—The economies of Albania, Bosnia & Herzegovina, Kosovo, Montenegro, North Macedonia, and Serbia have surpassed pre-pandemic levels despite fallout from Russia’s invasion of Ukraine, higher energy and food prices, unfavorable weather conditions, tightening financial conditions, and significant uncertainty, according to the latest Western Balkans Regular Economic Report released today.\n\nThe outlook for the Western Balkans remains subdued, with GDP growth expected to moderate to 2.6 percent in 2023, mainly driven by private consumption, exports, and, for some countries, by public investment, the report says.\n\nThe region now faces the challenges of rebuilding buffers to prepare for future shocks, and in undertaking supply-side reforms to lay the foundations for more sustainable and greener growth, the report says.\n\n“*The Western Balkans have shown remarkable resilience despite significant economic headwinds*,” said **Xiaoqing Yu**, **World Bank Country Director for the Western Balkans**. “*To continue weathering the storm presented by multiple economic shocks, countries can achieve high returns by pursuing reforms that boost productivity over the medium term, such as accelerating regional integration, increasing levels of market competition, attracting higher quality investments, and addressing barriers that limit labor force participation, especially among women*.”\n\nInflation surged to a two-decade high in 2022 in the Western Balkans, and price pressures remain elevated in early 2023, the report says. In most countries of the Western Balkans, consumer price inflation peaked in late 2022 driven by energy and food price increases and now shows signs of easing, with external drivers now dissipating due to slowing global growth. However, inflationary pressures remain entrenched requiring further monetary policy tightening.\n\nThese higher prices have affected low-income households especially severely, which, together with weaker economic growth, resulted in a much slower pace of poverty reduction despite some benefit from universal government support programs to mitigate the energy crisis. Potential constraints going forward include lower external demand, which could negatively affect income from exports and limit remittances, and tighter fiscal space, which continues to constrain the support that can be provided to households, according to the report.\n\n“*The poorest households spend a much higher proportion of their income on energy and food, the two items in the consumption basket with the highest price increase*,” said** Sanja Madzarevic-Sujster, World Bank Senior Economist and a lead author of the report**. “*This means that the increases in the actual cost of living faced by poor people in the Western Balkans are much higher than official consumer price inflation figures suggest. To design effective policies to protect the less well-off and promote economic growth, it is important to consider the variability of inflation rates across different household types*.”\n\nDespite employment growth, the rate of job creation lost strength across all the Western Balkan countries in the second half of 2022, the report says. Employment contracted the most in agriculture and public administration, while industry and services also observed a slowdown. The employment rate reached a historic high of 47 percent in September 2022, after which it began to decline.\n\nIn the medium term, the outlook for the Western Balkans remains positive, though reforms are needed to accelerate the green transition and to address key structural challenges.\n\n**“***The ongoing energy crisis has highlighted the need to accelerate the green transition across Europe, including in the Western Balkans*,” said **Richard Record, World Bank Lead Economist, and a lead author of the report**. “*A key starting point is to accelerate the move toward carbon pricing and to increase the use of environmental fiscal measures that incentivize households and firms to shift toward lower carbon intensity*.”\n\nOne area of investment with the potential for significant economic returns for the Western Balkans is in energy efficiency, the report adds. Even moderate improvements in firms’ energy efficiency would render substantial savings in energy-related greenhouse gas emissions, improve firms’ profits, have large social benefits, and help shield against future electricity and gas price shocks.\n\n**Contacts:**\n\n*Belgrade*: Gordana Filipovic, [gfilipovic@worldbankgroup.org](https://reliefweb.int/mailto:gfilipovic@worldbankgroup.org) \n\n*Pristina*: Lundrim Aliu, [laliu1@worldbank.org](https://reliefweb.int/mailto:laliu1@worldbank.org) \n\n*Skopje*: Anita Bozinovska, [abozinovska@worldbank.org](https://reliefweb.int/mailto:abozinovska@worldbank.org) \n\n*Sarajevo*: Jasmina Hadzic, [jhadzic@worldbank.org](https://reliefweb.int/mailto:jhadzic@worldbank.org) \n\n*Tirana*: Ana Gjokutaj, [agjokutaj@worldbank.org](https://reliefweb.int/mailto:agjokutaj@worldbank.org)\n\n*Washington*: Christopher Walsh, [cwalsh@worldbankgroup.org](https://reliefweb.int/mailto:cwalsh@worldbankgroup.org)",
+  "summary": " The economies of Albania, Bosnia & Herzegovina, Kosovo, Montenegro, North Macedonia, and Serbia have surpassed pre-pandemic levels despite multiple economic shocks, according to the latest Western Balkans Regular Economic Report. GDP growth is expected to moderate to 2.6 percent in 2023, driven by private consumption, exports, and public investment. Inflation has surged to a two-decade high, and price pressures remain elevated, affecting low-income households severely. Employment growth has slowed, and the outlook for the Western Balkans remains positive, though reforms are needed to accelerate the green transition and to address key structural challenges.",
+  "metadata": {
+    "id": "3955697",
+    "name": "Western Balkans Regular Economic Report No.23 (Spring 2023): Testing Resilience [EN/SQ/RS]",
+    "date_original": 1682380800000,
+    "date_changed": 1682495101000,
+    "date_created": 1682414171000,
+    "primary_country_id": 209,
+    "primary_country_name": "Serbia",
+    "primary_country_iso3": "srb",
+    "primary_country_location": {
+      "lon": 20.8,
+      "lat": 44.23
+    }
+  }
+}

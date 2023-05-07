@@ -1,0 +1,157 @@
+{
+  "original": {
+    "id": "3958404",
+    "fields": {
+      "date": {
+        "changed": "2023-05-04T04:47:07+00:00",
+        "created": "2023-05-04T04:45:31+00:00",
+        "original": "2023-04-30T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/13",
+          "name": "Afghanistan",
+          "location": {
+            "lon": 66.03,
+            "lat": 33.84
+          },
+          "id": 13,
+          "shortname": "Afghanistan",
+          "iso3": "afg",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/13",
+        "name": "Afghanistan",
+        "location": {
+          "lon": 66.03,
+          "lat": 33.84
+        },
+        "id": 13,
+        "shortname": "Afghanistan",
+        "iso3": "afg"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "DR",
+          "name": "Drought",
+          "id": 4672
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "WFP Afghanistan: Situation Report, 30 April 2023",
+      "body": "**In Numbers**\n\nNearly 20 million people are projected to be acutely food-insecure between November 2022 and March 2023, including more than 6 million people in Integrated Food Security Phase Classification (IPC) Phase 4 (Emergency)\n\n4 million people are acutely malnourished, including 3.2 million children under 5\n\n28.3 million people – two-thirds of Afghanistan’s population – require multi-sectoral humanitarian assistance in 2023\n\n**Highlights** \n\n• In April, WFP has reached more than 9.2 million people with emergency food, nutrition, and livelihood assistance. Between January and March, WFP has reached more than 14 million people. \n\n• In May, WFP will cut emergency assistance to 4 million people for the second month in a row due to severe funding constraints. Since the beginning of April, a total of 8 million people have been cut from emergency food assistance due to persistent funding shortfalls. \n\n• Ration sizes remain reduced for IPC 4 households due to funding constraints, from 75 to 50 percent of the 2,100 kcal daily energy intake. \n\n**Situation Update** \n\n• On 4 April 2023, the de facto authorities extended their directive to restrict women from working for the United Nations. This is the latest reduction in women’s rights in the country, following restrictions on females’ work for NGOs and access to secondary and tertiary education. \n\n• WFP, UN and NGO partners are negotiating with de facto authorities at the national, provincial, and local levels to enable female national and NGO staff to work, and female beneficiaries to continue to safely access humanitarian distributions. \n\n• Afghanistan is at the highest risk of famine in a quarter of a century, as nearly 20 million people are acutely food-insecure (IPC3+). More than 6.1 million people are on the brink of famine-like conditions in IPC Phase 4 (Emergency), according to preliminary projections for November 2022 – March 2023. \n\n• Afghanistan is among the countries with the highest prevalence of insufficient food consumption. Hunger is primarily driven by the economic crisis that has gripped Afghanistan since August 2021, compounded by decades of conflict, climate shocks, and severe restrictions on the rights of women and girls to work and pursue higher education. \n\n• Afghanistan is the fourth most at-risk country for humanitarian crises and disasters. As it enters the third consecutive year of drought, the country is the eighth most vulnerable to climate change and the least prepared to adapt.",
+      "url": "https://reliefweb.int/node/3958404",
+      "disaster": [
+        {
+          "name": "Afghanistan: Drought - 2021-2023",
+          "id": 50620,
+          "glide": "DR-2021-000022-AFG",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/66/f6/66f673fe-3375-4a58-b67b-ee2525190d01.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/66/f6/66f673fe-3375-4a58-b67b-ee2525190d01.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/66/f6/66f673fe-3375-4a58-b67b-ee2525190d01.png",
+            "version": "2417072-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/66/f6/66f673fe-3375-4a58-b67b-ee2525190d01.png"
+          },
+          "filename": "External SitRep_30 April 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2417072",
+          "filesize": "266328",
+          "url": "https://reliefweb.int/attachments/66f673fe-3375-4a58-b67b-ee2525190d01/External%20SitRep_30%20April%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/afghanistan/wfp-afghanistan-situation-report-30-april-2023",
+      "theme": [
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Gender",
+          "id": 4594
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        },
+        {
+          "name": "Recovery and Reconstruction",
+          "id": 4601
+        },
+        {
+          "name": "Safety and Security",
+          "id": 4602
+        }
+      ],
+      "id": 3958404,
+      "status": "published",
+      "body-html": "<p><strong>In Numbers</strong></p>\n<p>Nearly 20 million people are projected to be acutely food-insecure between November 2022 and March 2023, including more than 6 million people in Integrated Food Security Phase Classification (IPC) Phase 4 (Emergency)</p>\n<p>4 million people are acutely malnourished, including 3.2 million children under 5</p>\n<p>28.3 million people – two-thirds of Afghanistan’s population – require multi-sectoral humanitarian assistance in 2023</p>\n<p><strong>Highlights</strong></p>\n<p>• In April, WFP has reached more than 9.2 million people with emergency food, nutrition, and livelihood assistance. Between January and March, WFP has reached more than 14 million people.</p>\n<p>• In May, WFP will cut emergency assistance to 4 million people for the second month in a row due to severe funding constraints. Since the beginning of April, a total of 8 million people have been cut from emergency food assistance due to persistent funding shortfalls.</p>\n<p>• Ration sizes remain reduced for IPC 4 households due to funding constraints, from 75 to 50 percent of the 2,100 kcal daily energy intake.</p>\n<p><strong>Situation Update</strong></p>\n<p>• On 4 April 2023, the de facto authorities extended their directive to restrict women from working for the United Nations. This is the latest reduction in women’s rights in the country, following restrictions on females’ work for NGOs and access to secondary and tertiary education.</p>\n<p>• WFP, UN and NGO partners are negotiating with de facto authorities at the national, provincial, and local levels to enable female national and NGO staff to work, and female beneficiaries to continue to safely access humanitarian distributions.</p>\n<p>• Afghanistan is at the highest risk of famine in a quarter of a century, as nearly 20 million people are acutely food-insecure (IPC3+). More than 6.1 million people are on the brink of famine-like conditions in IPC Phase 4 (Emergency), according to preliminary projections for November 2022 – March 2023.</p>\n<p>• Afghanistan is among the countries with the highest prevalence of insufficient food consumption. Hunger is primarily driven by the economic crisis that has gripped Afghanistan since August 2021, compounded by decades of conflict, climate shocks, and severe restrictions on the rights of women and girls to work and pursue higher education.</p>\n<p>• Afghanistan is the fourth most at-risk country for humanitarian crises and disasters. As it enters the third consecutive year of drought, the country is the eighth most vulnerable to climate change and the least prepared to adapt.</p>\n"
+    }
+  },
+  "text": "# WFP Afghanistan: Situation Report, 30 April 2023\n\n**In Numbers**\n\nNearly 20 million people are projected to be acutely food-insecure between November 2022 and March 2023, including more than 6 million people in Integrated Food Security Phase Classification (IPC) Phase 4 (Emergency)\n\n4 million people are acutely malnourished, including 3.2 million children under 5\n\n28.3 million people – two-thirds of Afghanistan’s population – require multi-sectoral humanitarian assistance in 2023\n\n**Highlights** \n\n• In April, WFP has reached more than 9.2 million people with emergency food, nutrition, and livelihood assistance. Between January and March, WFP has reached more than 14 million people. \n\n• In May, WFP will cut emergency assistance to 4 million people for the second month in a row due to severe funding constraints. Since the beginning of April, a total of 8 million people have been cut from emergency food assistance due to persistent funding shortfalls. \n\n• Ration sizes remain reduced for IPC 4 households due to funding constraints, from 75 to 50 percent of the 2,100 kcal daily energy intake. \n\n**Situation Update** \n\n• On 4 April 2023, the de facto authorities extended their directive to restrict women from working for the United Nations. This is the latest reduction in women’s rights in the country, following restrictions on females’ work for NGOs and access to secondary and tertiary education. \n\n• WFP, UN and NGO partners are negotiating with de facto authorities at the national, provincial, and local levels to enable female national and NGO staff to work, and female beneficiaries to continue to safely access humanitarian distributions. \n\n• Afghanistan is at the highest risk of famine in a quarter of a century, as nearly 20 million people are acutely food-insecure (IPC3+). More than 6.1 million people are on the brink of famine-like conditions in IPC Phase 4 (Emergency), according to preliminary projections for November 2022 – March 2023. \n\n• Afghanistan is among the countries with the highest prevalence of insufficient food consumption. Hunger is primarily driven by the economic crisis that has gripped Afghanistan since August 2021, compounded by decades of conflict, climate shocks, and severe restrictions on the rights of women and girls to work and pursue higher education. \n\n• Afghanistan is the fourth most at-risk country for humanitarian crises and disasters. As it enters the third consecutive year of drought, the country is the eighth most vulnerable to climate change and the least prepared to adapt.",
+  "summary": " In April 2023, the World Food Programme (WFP) reached 9.2 million people in Afghanistan with emergency food, nutrition, and livelihood assistance. However, due to severe funding constraints, 8 million people have been cut from emergency food assistance since April. Nearly 20 million people are projected to be acutely food-insecure between November 2022 and March 2023, including more than 6 million people in Integrated Food Security Phase Classification (IPC) Phase 4 (Emergency). Additionally, 4 million people are acutely malnourished, including 3.2 million children under 5. The economic crisis, compounded by decades of conflict, climate shocks, and severe restrictions on the rights of women and girls to work and pursue higher education, has caused the highest risk of famine in a quarter of a century.",
+  "metadata": {
+    "id": "3958404",
+    "name": "WFP Afghanistan: Situation Report, 30 April 2023",
+    "date_original": 1682812800000,
+    "date_changed": 1683175627000,
+    "date_created": 1683175531000,
+    "primary_country_id": 13,
+    "primary_country_name": "Afghanistan",
+    "primary_country_iso3": "afg",
+    "primary_country_location": {
+      "lon": 66.03,
+      "lat": 33.84
+    }
+  }
+}

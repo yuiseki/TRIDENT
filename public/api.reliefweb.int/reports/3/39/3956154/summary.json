@@ -1,0 +1,212 @@
+{
+  "original": {
+    "id": "3956154",
+    "fields": {
+      "date": {
+        "changed": "2023-04-26T11:46:10+00:00",
+        "created": "2023-04-26T10:04:11+00:00",
+        "original": "2023-04-25T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/54",
+          "name": "Central African Republic",
+          "location": {
+            "lon": 20.48,
+            "lat": 6.57
+          },
+          "id": 54,
+          "shortname": "CAR",
+          "iso3": "caf"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/55",
+          "name": "Chad",
+          "location": {
+            "lon": 18.66,
+            "lat": 15.36
+          },
+          "id": 55,
+          "shortname": "Chad",
+          "iso3": "tcd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/82",
+          "name": "Egypt",
+          "location": {
+            "lon": 29.87,
+            "lat": 26.49
+          },
+          "id": 82,
+          "shortname": "Egypt",
+          "iso3": "egy"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/87",
+          "name": "Ethiopia",
+          "location": {
+            "lon": 39.62,
+            "lat": 8.63
+          },
+          "id": 87,
+          "shortname": "Ethiopia",
+          "iso3": "eth"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/140",
+          "name": "Libya",
+          "location": {
+            "lon": 18.02,
+            "lat": 27.04
+          },
+          "id": 140,
+          "shortname": "Libya",
+          "iso3": "lby"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/8657",
+          "name": "South Sudan",
+          "location": {
+            "lon": 30.5,
+            "lat": 6.9
+          },
+          "id": 8657,
+          "shortname": "South Sudan",
+          "iso3": "ssd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/220",
+          "name": "Sudan",
+          "location": {
+            "lon": 30,
+            "lat": 15
+          },
+          "id": 220,
+          "shortname": "Sudan",
+          "iso3": "sdn",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/255",
+          "name": "Yemen",
+          "location": {
+            "lon": 47.62,
+            "lat": 15.94
+          },
+          "id": 255,
+          "shortname": "Yemen",
+          "iso3": "yem"
+        }
+      ],
+      "origin": "https://data.unhcr.org/en/documents/details/100270",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/220",
+        "name": "Sudan",
+        "location": {
+          "lon": 30,
+          "lat": 15
+        },
+        "id": 220,
+        "shortname": "Sudan",
+        "iso3": "sdn"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "Sudan Situation - UNHCR External Update #2 - 25 April 2023",
+      "body": "**Operational Context**\n\n Since 15 April 2023, fighting between the Sudanese Armed Forces (SAF) and paramilitary Rapid Support Forces (RSF) has continued in Khartoum, with clashes in Darfur and several other locations in Sudan. On 23 April, OCHA reported that at least 427 people have been killed and over 3,700 injured due to the recent conflict.  \n\nThere are also reports of several deaths and injuries among refugees and internally displaced persons (IDPs).  \nAt least five humanitarian workers have been killed since the start of the hostilities.  \n\nOn 24 April, OCHA issued a statement saying they are deeply concerned about the humanitarian impact of the fighting. There are reports of acute shortages of food, water, medicines and fuel, and limited access to communications and electricity. The price of essential items – as well as transport – are skyrocketing. There have been additional reports of looting of humanitarian supplies and warehouses. OCHA and partners continue to call on the parties to respect humanitarian personnel and assets.  \n\nOn 24 April, US Secretary of State Antony Blinken announced that the warring factions in Sudan had agreed to a ceasefire, “starting at midnight on 24 April, to last for 72 hours.”",
+      "url": "https://reliefweb.int/node/3956154",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/07/00/07005cec-7e9a-4986-9677-0a4ea2015019.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/07/00/07005cec-7e9a-4986-9677-0a4ea2015019.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/07/00/07005cec-7e9a-4986-9677-0a4ea2015019.png",
+            "version": "2414907-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/07/00/07005cec-7e9a-4986-9677-0a4ea2015019.png"
+          },
+          "filename": "Sudan Situation - UNHCR External Update #2 - 25 April 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2414907",
+          "filesize": "746550",
+          "url": "https://reliefweb.int/attachments/07005cec-7e9a-4986-9677-0a4ea2015019/Sudan%20Situation%20-%20UNHCR%20External%20Update%20%232%20-%2025%20April%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/sudan/sudan-situation-unhcr-external-update-2-25-april-2023",
+      "theme": [
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        },
+        {
+          "name": "Peacekeeping and Peacebuilding",
+          "id": 4599
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Safety and Security",
+          "id": 4602
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3956154,
+      "status": "published",
+      "body-html": "<p><strong>Operational Context</strong></p>\n<p>Since 15 April 2023, fighting between the Sudanese Armed Forces (SAF) and paramilitary Rapid Support Forces (RSF) has continued in Khartoum, with clashes in Darfur and several other locations in Sudan. On 23 April, OCHA reported that at least 427 people have been killed and over 3,700 injured due to the recent conflict.</p>\n<p>There are also reports of several deaths and injuries among refugees and internally displaced persons (IDPs).<br />\nAt least five humanitarian workers have been killed since the start of the hostilities.</p>\n<p>On 24 April, OCHA issued a statement saying they are deeply concerned about the humanitarian impact of the fighting. There are reports of acute shortages of food, water, medicines and fuel, and limited access to communications and electricity. The price of essential items – as well as transport – are skyrocketing. There have been additional reports of looting of humanitarian supplies and warehouses. OCHA and partners continue to call on the parties to respect humanitarian personnel and assets.</p>\n<p>On 24 April, US Secretary of State Antony Blinken announced that the warring factions in Sudan had agreed to a ceasefire, “starting at midnight on 24 April, to last for 72 hours.”</p>\n"
+    }
+  },
+  "text": "# Sudan Situation - UNHCR External Update #2 - 25 April 2023\n\n**Operational Context**\n\n Since 15 April 2023, fighting between the Sudanese Armed Forces (SAF) and paramilitary Rapid Support Forces (RSF) has continued in Khartoum, with clashes in Darfur and several other locations in Sudan. On 23 April, OCHA reported that at least 427 people have been killed and over 3,700 injured due to the recent conflict.  \n\nThere are also reports of several deaths and injuries among refugees and internally displaced persons (IDPs).  \nAt least five humanitarian workers have been killed since the start of the hostilities.  \n\nOn 24 April, OCHA issued a statement saying they are deeply concerned about the humanitarian impact of the fighting. There are reports of acute shortages of food, water, medicines and fuel, and limited access to communications and electricity. The price of essential items – as well as transport – are skyrocketing. There have been additional reports of looting of humanitarian supplies and warehouses. OCHA and partners continue to call on the parties to respect humanitarian personnel and assets.  \n\nOn 24 April, US Secretary of State Antony Blinken announced that the warring factions in Sudan had agreed to a ceasefire, “starting at midnight on 24 April, to last for 72 hours.”",
+  "summary": " Fighting between the Sudanese Armed Forces (SAF) and paramilitary Rapid Support Forces (RSF) has been ongoing since 15 April 2023, resulting in at least 427 deaths and over 3,700 injuries. There are also reports of deaths and injuries among refugees and IDPs, as well as looting of humanitarian supplies and warehouses. On 24 April, US Secretary of State Antony Blinken announced a 72-hour ceasefire between the warring factions, starting at midnight on 24 April.",
+  "metadata": {
+    "id": "3956154",
+    "name": "Sudan Situation - UNHCR External Update #2 - 25 April 2023",
+    "date_original": 1682380800000,
+    "date_changed": 1682509570000,
+    "date_created": 1682503451000,
+    "primary_country_id": 220,
+    "primary_country_name": "Sudan",
+    "primary_country_iso3": "sdn",
+    "primary_country_location": {
+      "lon": 30,
+      "lat": 15
+    }
+  }
+}

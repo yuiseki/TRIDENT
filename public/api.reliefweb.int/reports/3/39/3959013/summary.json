@@ -1,0 +1,181 @@
+{
+  "original": {
+    "id": "3959013",
+    "fields": {
+      "date": {
+        "changed": "2023-05-05T12:13:18+00:00",
+        "created": "2023-05-05T11:41:10+00:00",
+        "original": "2023-05-05T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/131",
+          "name": "Kenya",
+          "location": {
+            "lon": 37.86,
+            "lat": 0.53
+          },
+          "id": 131,
+          "shortname": "Kenya",
+          "iso3": "ken",
+          "primary": true
+        }
+      ],
+      "origin": "https://logcluster.org/document/kenya-quarterly-update-january-march-2023",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/131",
+        "name": "Kenya",
+        "location": {
+          "lon": 37.86,
+          "lat": 0.53
+        },
+        "id": 131,
+        "shortname": "Kenya",
+        "iso3": "ken"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "DR",
+          "name": "Drought",
+          "id": 4672
+        },
+        {
+          "code": "FF",
+          "name": "Flash Flood",
+          "id": 4624
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/3594",
+          "name": "Logistics Cluster",
+          "id": 3594,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "Logistics Cluster",
+          "homepage": "http://www.logcluster.org/"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "Kenya Quarterly Update, (January – March 2023)",
+      "body": "**Highlights**\n\n- Annual Preparedness Meeting convened by Global Logistics Cluster on 24 to 26 January2023, in Rome, Italy.\n\n- Validation and finalization of capacity needs mapping reports by county executives in Tana River and Garissa Counties.\n\n- County logistics preparedness action plans for Garissa and Tana River were formulated through multi-stakeholder participation.\n\n\n\n**Background**\n\nKenya  continues  to  be  exposed  to  a  broad  range  of  hazards,  both  man-made  and  natural.  Whilst  the  most  common disasters  are  hydrometeorological  (floods  and  drought),  others  may  occur, such  as  geomorphic  and  geo-tectonic, technological,  and  epidemic  disasters.  Their  magnitude  and  frequency,  aggravated  by  climate  and  man-made  factors, have become more severe in the recent past, strongly impacting lives and livelihoods. The drought situation across the country continued to worsen, with the latest food security assessment report indicating that more than 4.5million people are in urgent need of food assistance. \n\nThe Government of Kenya and other stakeholders have been scaling up emergency response activities in the form of food and cash transfers across the worst affected arid and semi-arid areas. The Field-Based Preparedness Project(FBPP)is  centered  on  strengthening  national  supply  chain  resilience,  enhancing coordination between  stakeholders, and  promoting  a  common  methodology  towards  logistics  preparedness. \n\nThe core concept  of logistics  preparedness  is  to support  local  and  international  actors before  an  emergency occurs.  This  is  best achieved by working together to identify and address systemic challenges in local supply chain systems in a sustainable way driven by national governments and actors. Globally, the project promotes a common framework. At the national level, this framework is tailored to each country’s unique operational context. \n\nIn Q1 2023, the focus has been on project resocialization targeting new county executives across the two counties and designing the logistics preparedness road maps to guide project interventions over the short, medium, and long terms. Given  the  challenges  experienced  in  2022  resulting  from  election  events  and causing delays  in the reconstitution  of Government departments, the pace over the past quarter has been accelerated to recover the project implementation timelines.",
+      "url": "https://reliefweb.int/node/3959013",
+      "disaster": [
+        {
+          "name": "Kenya: Floods - Mar 2023",
+          "id": 51543,
+          "glide": "FF-2023-000051-KEN",
+          "type": [
+            {
+              "code": "FF",
+              "name": "Flash Flood",
+              "id": 4624
+            },
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Kenya: Drought - 2014-2023",
+          "id": 15360,
+          "glide": "DR-2014-000131-KEN",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/d8/0b/d80b90df-8c95-42a1-8f21-7b760d5f8549.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/d8/0b/d80b90df-8c95-42a1-8f21-7b760d5f8549.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/d8/0b/d80b90df-8c95-42a1-8f21-7b760d5f8549.png",
+            "version": "2417719-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/d8/0b/d80b90df-8c95-42a1-8f21-7b760d5f8549.png"
+          },
+          "filename": "KEN FBPP Quarterly Report_March 2023 Final.pdf",
+          "mimetype": "application/pdf",
+          "id": "2417719",
+          "filesize": "201800",
+          "url": "https://reliefweb.int/attachments/d80b90df-8c95-42a1-8f21-7b760d5f8549/KEN%20FBPP%20Quarterly%20Report_March%202023%20Final.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/kenya/kenya-quarterly-update-january-march-2023",
+      "redirects": [
+        "https://reliefweb.int/report/kenya/kenya-quarterly-update-january-march2023"
+      ],
+      "theme": [
+        {
+          "name": "Disaster Management",
+          "id": 4591
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        }
+      ],
+      "id": 3959013,
+      "status": "published",
+      "body-html": "<p><strong>Highlights</strong></p>\n<ul>\n<li>\n<p>Annual Preparedness Meeting convened by Global Logistics Cluster on 24 to 26 January2023, in Rome, Italy.</p>\n</li>\n<li>\n<p>Validation and finalization of capacity needs mapping reports by county executives in Tana River and Garissa Counties.</p>\n</li>\n<li>\n<p>County logistics preparedness action plans for Garissa and Tana River were formulated through multi-stakeholder participation.</p>\n</li>\n</ul>\n<p><strong>Background</strong></p>\n<p>Kenya  continues  to  be  exposed  to  a  broad  range  of  hazards,  both  man-made  and  natural.  Whilst  the  most  common disasters  are  hydrometeorological  (floods  and  drought),  others  may  occur, such  as  geomorphic  and  geo-tectonic, technological,  and  epidemic  disasters.  Their  magnitude  and  frequency,  aggravated  by  climate  and  man-made  factors, have become more severe in the recent past, strongly impacting lives and livelihoods. The drought situation across the country continued to worsen, with the latest food security assessment report indicating that more than 4.5million people are in urgent need of food assistance.</p>\n<p>The Government of Kenya and other stakeholders have been scaling up emergency response activities in the form of food and cash transfers across the worst affected arid and semi-arid areas. The Field-Based Preparedness Project(FBPP)is  centered  on  strengthening  national  supply  chain  resilience,  enhancing coordination between  stakeholders, and  promoting  a  common  methodology  towards  logistics  preparedness.</p>\n<p>The core concept  of logistics  preparedness  is  to support  local  and  international  actors before  an  emergency occurs.  This  is  best achieved by working together to identify and address systemic challenges in local supply chain systems in a sustainable way driven by national governments and actors. Globally, the project promotes a common framework. At the national level, this framework is tailored to each country’s unique operational context.</p>\n<p>In Q1 2023, the focus has been on project resocialization targeting new county executives across the two counties and designing the logistics preparedness road maps to guide project interventions over the short, medium, and long terms. Given  the  challenges  experienced  in  2022  resulting  from  election  events  and causing delays  in the reconstitution  of Government departments, the pace over the past quarter has been accelerated to recover the project implementation timelines.</p>\n"
+    }
+  },
+  "text": "# Kenya Quarterly Update, (January – March 2023)\n\n**Highlights**\n\n- Annual Preparedness Meeting convened by Global Logistics Cluster on 24 to 26 January2023, in Rome, Italy.\n\n- Validation and finalization of capacity needs mapping reports by county executives in Tana River and Garissa Counties.\n\n- County logistics preparedness action plans for Garissa and Tana River were formulated through multi-stakeholder participation.\n\n\n\n**Background**\n\nKenya  continues  to  be  exposed  to  a  broad  range  of  hazards,  both  man-made  and  natural.  Whilst  the  most  common disasters  are  hydrometeorological  (floods  and  drought),  others  may  occur, such  as  geomorphic  and  geo-tectonic, technological,  and  epidemic  disasters.  Their  magnitude  and  frequency,  aggravated  by  climate  and  man-made  factors, have become more severe in the recent past, strongly impacting lives and livelihoods. The drought situation across the country continued to worsen, with the latest food security assessment report indicating that more than 4.5million people are in urgent need of food assistance. \n\nThe Government of Kenya and other stakeholders have been scaling up emergency response activities in the form of food and cash transfers across the worst affected arid and semi-arid areas. The Field-Based Preparedness Project(FBPP)is  centered  on  strengthening  national  supply  chain  resilience,  enhancing coordination between  stakeholders, and  promoting  a  common  methodology  towards  logistics  preparedness. \n\nThe core concept  of logistics  preparedness  is  to support  local  and  international  actors before  an  emergency occurs.  This  is  best achieved by working together to identify and address systemic challenges in local supply chain systems in a sustainable way driven by national governments and actors. Globally, the project promotes a common framework. At the national level, this framework is tailored to each country’s unique operational context. \n\nIn Q1 2023, the focus has been on project resocialization targeting new county executives across the two counties and designing the logistics preparedness road maps to guide project interventions over the short, medium, and long terms. Given  the  challenges  experienced  in  2022  resulting  from  election  events  and causing delays  in the reconstitution  of Government departments, the pace over the past quarter has been accelerated to recover the project implementation timelines.",
+  "summary": " In Q1 2023, Kenya has been exposed to a range of natural and man-made disasters, including drought, floods, and epidemics. The Field-Based Preparedness Project is working to strengthen national supply chain resilience and promote a common methodology towards logistics preparedness. During this quarter, the focus has been on project resocialization targeting new county executives and designing logistics preparedness road maps.",
+  "metadata": {
+    "id": "3959013",
+    "name": "Kenya Quarterly Update, (January – March 2023)",
+    "date_original": 1683244800000,
+    "date_changed": 1683288798000,
+    "date_created": 1683286870000,
+    "primary_country_id": 131,
+    "primary_country_name": "Kenya",
+    "primary_country_iso3": "ken",
+    "primary_country_location": {
+      "lon": 37.86,
+      "lat": 0.53
+    }
+  }
+}

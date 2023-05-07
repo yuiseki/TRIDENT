@@ -1,0 +1,133 @@
+{
+  "original": {
+    "id": "3957313",
+    "fields": {
+      "date": {
+        "changed": "2023-05-01T03:39:35+00:00",
+        "created": "2023-05-01T03:38:56+00:00",
+        "original": "2023-05-01T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/168",
+          "name": "Nepal",
+          "location": {
+            "lon": 83.94,
+            "lat": 28.25
+          },
+          "id": 168,
+          "shortname": "Nepal",
+          "iso3": "npl",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/168",
+        "name": "Nepal",
+        "location": {
+          "lon": 83.94,
+          "lat": 28.25
+        },
+        "id": 168,
+        "shortname": "Nepal",
+        "iso3": "npl"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1275",
+          "longname": "World Health Organization",
+          "spanish_name": "Organización Mundial de la Salud",
+          "name": "World Health Organization",
+          "id": 1275,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WHO",
+          "homepage": "http://www.who.int/"
+        }
+      ],
+      "title": "Focused COVID-19 Media Monitoring, Nepal (May 1, 2023) [EN/NE]",
+      "body": "**RECURRING THEME(S)**\n\n• 60 new coronavirus cases have been confirmed in the last 24 hours. Currently, there are 328 active cases in the country.",
+      "url": "https://reliefweb.int/node/3957313",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/9e/4c/9e4cf525-c36b-4ef7-8f3b-f63adf50124f.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/9e/4c/9e4cf525-c36b-4ef7-8f3b-f63adf50124f.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/9e/4c/9e4cf525-c36b-4ef7-8f3b-f63adf50124f.png",
+            "version": "2415932-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/9e/4c/9e4cf525-c36b-4ef7-8f3b-f63adf50124f.png"
+          },
+          "filename": "Focused COVID-19 and Health Media Monitoring_Nepal_(English)_1st May.pdf",
+          "description": "English version",
+          "mimetype": "application/pdf",
+          "id": "2415932",
+          "filesize": "342680",
+          "url": "https://reliefweb.int/attachments/9e4cf525-c36b-4ef7-8f3b-f63adf50124f/Focused%20COVID-19%20and%20Health%20Media%20Monitoring_Nepal_%28English%29_1st%20May.pdf"
+        },
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/01/cc/01ccb2f3-f675-4019-b101-885ff9b1a5ed.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/01/cc/01ccb2f3-f675-4019-b101-885ff9b1a5ed.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/01/cc/01ccb2f3-f675-4019-b101-885ff9b1a5ed.png",
+            "version": "2415934-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/01/cc/01ccb2f3-f675-4019-b101-885ff9b1a5ed.png"
+          },
+          "filename": "Focused COVID-19 and Health Media Monitoring_Nepal_(Nepali)_1st May.pdf",
+          "description": "Nepali version",
+          "mimetype": "application/pdf",
+          "id": "2415934",
+          "filesize": "348951",
+          "url": "https://reliefweb.int/attachments/01ccb2f3-f675-4019-b101-885ff9b1a5ed/Focused%20COVID-19%20and%20Health%20Media%20Monitoring_Nepal_%28Nepali%29_1st%20May.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/nepal/focused-covid-19-media-monitoring-nepal-may-1-2023-enne",
+      "theme": [
+        {
+          "name": "Health",
+          "id": 4595
+        }
+      ],
+      "id": 3957313,
+      "status": "published",
+      "body-html": "<p><strong>RECURRING THEME(S)</strong></p>\n<p>• 60 new coronavirus cases have been confirmed in the last 24 hours. Currently, there are 328 active cases in the country.</p>\n"
+    }
+  },
+  "text": "# Focused COVID-19 Media Monitoring, Nepal (May 1, 2023) [EN/NE]\n\n**RECURRING THEME(S)**\n\n• 60 new coronavirus cases have been confirmed in the last 24 hours. Currently, there are 328 active cases in the country.",
+  "summary": "\n\nIn Nepal, 60 new coronavirus cases have been reported in the last 24 hours, bringing the total number of active cases to 328.",
+  "metadata": {
+    "id": "3957313",
+    "name": "Focused COVID-19 Media Monitoring, Nepal (May 1, 2023) [EN/NE]",
+    "date_original": 1682899200000,
+    "date_changed": 1682912375000,
+    "date_created": 1682912336000,
+    "primary_country_id": 168,
+    "primary_country_name": "Nepal",
+    "primary_country_iso3": "npl",
+    "primary_country_location": {
+      "lon": 83.94,
+      "lat": 28.25
+    }
+  }
+}

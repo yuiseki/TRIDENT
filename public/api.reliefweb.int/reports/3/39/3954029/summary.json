@@ -1,0 +1,191 @@
+{
+  "original": {
+    "id": "3954029",
+    "fields": {
+      "date": {
+        "changed": "2023-04-18T18:01:06+00:00",
+        "created": "2023-04-18T17:30:15+00:00",
+        "original": "2023-04-18T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/187",
+          "name": "Peru",
+          "location": {
+            "lon": -75.31,
+            "lat": -10.15
+          },
+          "id": 187,
+          "shortname": "Peru",
+          "iso3": "per",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/250",
+          "name": "Venezuela (Bolivarian Republic of)",
+          "location": {
+            "lon": -65.8,
+            "lat": 7.62
+          },
+          "id": 250,
+          "shortname": "Venezuela",
+          "iso3": "ven"
+        }
+      ],
+      "ocha_product": [
+        {
+          "name": "Situation Report",
+          "id": 12345
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/187",
+        "name": "Peru",
+        "location": {
+          "lon": -75.31,
+          "lat": -10.15
+        },
+        "id": 187,
+        "shortname": "Peru",
+        "iso3": "per"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        },
+        {
+          "code": "LS",
+          "name": "Land Slide",
+          "id": 4728
+        },
+        {
+          "code": "TC",
+          "name": "Tropical Cyclone",
+          "id": 4618
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1503",
+          "longname": "United Nations Office for the Coordination of Humanitarian Affairs",
+          "spanish_name": "Oficina de Coordinación de Asuntos Humanitarios",
+          "name": "UN Office for the Coordination of Humanitarian Affairs",
+          "id": 1503,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "OCHA",
+          "disclaimer": "To learn more about OCHA's activities, please visit https://www.unocha.org/.",
+          "homepage": "http://www.unocha.org/"
+        }
+      ],
+      "title": "Peru: Flooding and Landslides Situation Report No. 03 - English Summary (As of 13 April 2023)",
+      "body": "*This report is prepared by the Office for the Coordination of Humanitarian Affairs (OCHA), in collaboration with the Office of the Resident Coordinator, agencies, funds, and programs of the United Nations System, information from member organizations of the National Humanitarian Network (NHN), and official information from the Peruvian Government. This report covers the period between 31 March to 13 April 2023.*\n\n**HIGHLIGHTS**\n\n- As of 13 April, the National Civil Defence Institute (INDECI) reports that the floods have affected 246,813 people and left another 42,136 people homeless across the country, according to damage assessments and needs analyses (DANA) records, approximately 53 per cent of which have been processed.\n\n- Approximately 517,000 people have urgent humanitarian needs, according to preliminary estimates by the National Humanitarian Network (RHN, per its Spanish acronym) as of 29 March, a number that could increase as information continues to come in from the field amid persistent heavy rains.\n\n- The floods have directly affected more than 114,900 households (about 460,000 people), most of them in the Lambayeque, Piura, and Lima regions.\n\n- More than 80 per cent of the 1.5 million Venezuelan migrants and refugees in Peru are located in Piura, La Libertad, Lambayeque, Tumbes, and Lima, where their migrant/refugee status often limits their access to basic services.\n\n- Access continues to be a challenge for humanitarian response due to road infrastructure damage.\n\n- Authorities have declared a state of emergency in 1,056 districts (54 per cent of all districts in Peru).\n\n**SITUATION OVERVIEW**\n\n- Authorities have declared a state of emergency in 1,056 districts (54 per cent of all districts in Peru).\n\n- With DANA records processing through the National Disaster Prevention and Assistance Information System (SINPAD) at 53 per cent, authorities continue quantifying the damage, impact and affected populations. Official figures are likely to increase as processing continues.\n\n- As of 29 March, the RHN and the Government’s preliminary calculations based on official figures and vulnerability studies indicate that some 517,000 people will have urgent humanitarian needs. The RHN is currently conducting a second analysis based on sectoral analyses and data collected in the field to estimate or project the populations in need.\n\n- The Ministry of Economy and Finance indicated that the cost of reactivating the economy and responding to the emergency is approximately US$3.1 billion. The Executive Branch is set to include an article in a supplementary credit bill submitted to Congress to prevent disaster-affected municipalities from receiving insufficient funding throughout the year.\n\n- According to the Emergency Food Security Assessment (EFSA) 2022, 57 per cent of the population (around 16 million people nationwide) suffered from moderate or severe levels of food insecurity prior to the floods. At present, one out of every two people are already using coping strategies to mitigate the floods’ impact to their livelihoods. Any additional impact is likely to exacerbate their situation and cause further food insecurity.\n\n**NEEDS AND CONSTRAINTS SUMMARY**\n\nModerate to extreme rainfall has caused rivers to overflow, triggering floods, mudslides and waterlogging that have become a sources of dengue transmission. Delivering drinking water and hygiene kits is a priority for affected areas, as these communities are still at risk of acute respiratory infections (ARI), acute diarrhoeal diseases (ADE), dengue, and leptospirosis and malaria outbreaks.\n\nThe lack of personnel in the field is causing delays in identifying and responding to affected populations. Response teams are partnering with local protection services and social programs to raise awareness on protection issues in coordination forums. Official and unofficial shelters need to reinforce protection measures, especially for migrants and refugees.\n\nEstimates indicate that the partial or total destruction of education centres is affecting 89,000 children and more than 5,800 teachers. Humanitarian partners, including UNICEF, IOM, World Vision, Save the Children, RET, CARE, Plan International, ADRA and the Disaster Prevention Studies Centre (PREDES) NGO, continue to coordinate and support the Ministry of Education in verifying damage and needs in affected areas, especially in Tumbes, Piura, Lambayeque, La Libertad, Ancash and areas of Metropolitan Lima.\n\nTo support the Government, OCHA deployed teams in Lambayeque, Piura and Tumbes to facilitate regional coordination with local humanitarian partners and authorities. Humanitarian partners are providing hot meals, food kits and food assistance through emergency cash transfers in coordination with INDECI and local governments in Piura, Tumbes, Lambayeque and La Libertad.\n\nFor more detailed information on humanitarian response activities by affected area, please visit the 345W dashboard here: https://bit.ly/3MYp7Tb\n\nFor more detailed information on sector response, please refer to the original Spanish report available at: https://bit.ly/3KO1N7D",
+      "url": "https://reliefweb.int/node/3954029",
+      "disaster": [
+        {
+          "name": "Peru: Floods and Landslides - Mar 2023",
+          "id": 51516,
+          "glide": "FL-2023-000036-PER",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            },
+            {
+              "code": "LS",
+              "name": "Land Slide",
+              "id": 4728
+            },
+            {
+              "code": "TC",
+              "name": "Tropical Cyclone",
+              "id": 4618
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/7d/a9/7da992f8-7722-452a-8cd5-db5311eaa69b.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/7d/a9/7da992f8-7722-452a-8cd5-db5311eaa69b.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/7d/a9/7da992f8-7722-452a-8cd5-db5311eaa69b.png",
+            "version": "2413187-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/7d/a9/7da992f8-7722-452a-8cd5-db5311eaa69b.png"
+          },
+          "filename": "Peru OCHA Situation Report_No 3 (ENG).pdf",
+          "mimetype": "application/pdf",
+          "id": "2413187",
+          "filesize": "380424",
+          "url": "https://reliefweb.int/attachments/7da992f8-7722-452a-8cd5-db5311eaa69b/Peru%20OCHA%20Situation%20Report_No%203%20%28ENG%29.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/peru/peru-flooding-and-landslides-situation-report-no-03-english-summary-13-april-2023",
+      "theme": [
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3954029,
+      "status": "published",
+      "body-html": "<p><em>This report is prepared by the Office for the Coordination of Humanitarian Affairs (OCHA), in collaboration with the Office of the Resident Coordinator, agencies, funds, and programs of the United Nations System, information from member organizations of the National Humanitarian Network (NHN), and official information from the Peruvian Government. This report covers the period between 31 March to 13 April 2023.</em></p>\n<p><strong>HIGHLIGHTS</strong></p>\n<ul>\n<li>\n<p>As of 13 April, the National Civil Defence Institute (INDECI) reports that the floods have affected 246,813 people and left another 42,136 people homeless across the country, according to damage assessments and needs analyses (DANA) records, approximately 53 per cent of which have been processed.</p>\n</li>\n<li>\n<p>Approximately 517,000 people have urgent humanitarian needs, according to preliminary estimates by the National Humanitarian Network (RHN, per its Spanish acronym) as of 29 March, a number that could increase as information continues to come in from the field amid persistent heavy rains.</p>\n</li>\n<li>\n<p>The floods have directly affected more than 114,900 households (about 460,000 people), most of them in the Lambayeque, Piura, and Lima regions.</p>\n</li>\n<li>\n<p>More than 80 per cent of the 1.5 million Venezuelan migrants and refugees in Peru are located in Piura, La Libertad, Lambayeque, Tumbes, and Lima, where their migrant/refugee status often limits their access to basic services.</p>\n</li>\n<li>\n<p>Access continues to be a challenge for humanitarian response due to road infrastructure damage.</p>\n</li>\n<li>\n<p>Authorities have declared a state of emergency in 1,056 districts (54 per cent of all districts in Peru).</p>\n</li>\n</ul>\n<p><strong>SITUATION OVERVIEW</strong></p>\n<ul>\n<li>\n<p>Authorities have declared a state of emergency in 1,056 districts (54 per cent of all districts in Peru).</p>\n</li>\n<li>\n<p>With DANA records processing through the National Disaster Prevention and Assistance Information System (SINPAD) at 53 per cent, authorities continue quantifying the damage, impact and affected populations. Official figures are likely to increase as processing continues.</p>\n</li>\n<li>\n<p>As of 29 March, the RHN and the Government’s preliminary calculations based on official figures and vulnerability studies indicate that some 517,000 people will have urgent humanitarian needs. The RHN is currently conducting a second analysis based on sectoral analyses and data collected in the field to estimate or project the populations in need.</p>\n</li>\n<li>\n<p>The Ministry of Economy and Finance indicated that the cost of reactivating the economy and responding to the emergency is approximately US$3.1 billion. The Executive Branch is set to include an article in a supplementary credit bill submitted to Congress to prevent disaster-affected municipalities from receiving insufficient funding throughout the year.</p>\n</li>\n<li>\n<p>According to the Emergency Food Security Assessment (EFSA) 2022, 57 per cent of the population (around 16 million people nationwide) suffered from moderate or severe levels of food insecurity prior to the floods. At present, one out of every two people are already using coping strategies to mitigate the floods’ impact to their livelihoods. Any additional impact is likely to exacerbate their situation and cause further food insecurity.</p>\n</li>\n</ul>\n<p><strong>NEEDS AND CONSTRAINTS SUMMARY</strong></p>\n<p>Moderate to extreme rainfall has caused rivers to overflow, triggering floods, mudslides and waterlogging that have become a sources of dengue transmission. Delivering drinking water and hygiene kits is a priority for affected areas, as these communities are still at risk of acute respiratory infections (ARI), acute diarrhoeal diseases (ADE), dengue, and leptospirosis and malaria outbreaks.</p>\n<p>The lack of personnel in the field is causing delays in identifying and responding to affected populations. Response teams are partnering with local protection services and social programs to raise awareness on protection issues in coordination forums. Official and unofficial shelters need to reinforce protection measures, especially for migrants and refugees.</p>\n<p>Estimates indicate that the partial or total destruction of education centres is affecting 89,000 children and more than 5,800 teachers. Humanitarian partners, including UNICEF, IOM, World Vision, Save the Children, RET, CARE, Plan International, ADRA and the Disaster Prevention Studies Centre (PREDES) NGO, continue to coordinate and support the Ministry of Education in verifying damage and needs in affected areas, especially in Tumbes, Piura, Lambayeque, La Libertad, Ancash and areas of Metropolitan Lima.</p>\n<p>To support the Government, OCHA deployed teams in Lambayeque, Piura and Tumbes to facilitate regional coordination with local humanitarian partners and authorities. Humanitarian partners are providing hot meals, food kits and food assistance through emergency cash transfers in coordination with INDECI and local governments in Piura, Tumbes, Lambayeque and La Libertad.</p>\n<p>For more detailed information on humanitarian response activities by affected area, please visit the 345W dashboard here: <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://bit.ly/3MYp7Tb\">https://bit.ly/3MYp7Tb</a></p>\n<p>For more detailed information on sector response, please refer to the original Spanish report available at: <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://bit.ly/3KO1N7D\">https://bit.ly/3KO1N7D</a></p>\n"
+    }
+  },
+  "text": "# Peru: Flooding and Landslides Situation Report No. 03 - English Summary (As of 13 April 2023)\n\n*This report is prepared by the Office for the Coordination of Humanitarian Affairs (OCHA), in collaboration with the Office of the Resident Coordinator, agencies, funds, and programs of the United Nations System, information from member organizations of the National Humanitarian Network (NHN), and official information from the Peruvian Government. This report covers the period between 31 March to 13 April 2023.*\n\n**HIGHLIGHTS**\n\n- As of 13 April, the National Civil Defence Institute (INDECI) reports that the floods have affected 246,813 people and left another 42,136 people homeless across the country, according to damage assessments and needs analyses (DANA) records, approximately 53 per cent of which have been processed.\n\n- Approximately 517,000 people have urgent humanitarian needs, according to preliminary estimates by the National Humanitarian Network (RHN, per its Spanish acronym) as of 29 March, a number that could increase as information continues to come in from the field amid persistent heavy rains.\n\n- The floods have directly affected more than 114,900 households (about 460,000 people), most of them in the Lambayeque, Piura, and Lima regions.\n\n- More than 80 per cent of the 1.5 million Venezuelan migrants and refugees in Peru are located in Piura, La Libertad, Lambayeque, Tumbes, and Lima, where their migrant/refugee status often limits their access to basic services.\n\n- Access continues to be a challenge for humanitarian response due to road infrastructure damage.\n\n- Authorities have declared a state of emergency in 1,056 districts (54 per cent of all districts in Peru).\n\n**SITUATION OVERVIEW**\n\n- Authorities have declared a state of emergency in 1,056 districts (54 per cent of all districts in Peru).\n\n- With DANA records processing through the National Disaster Prevention and Assistance Information System (SINPAD) at 53 per cent, authorities continue quantifying the damage, impact and affected populations. Official figures are likely to increase as processing continues.\n\n- As of 29 March, the RHN and the Government’s preliminary calculations based on official figures and vulnerability studies indicate that some 517,000 people will have urgent humanitarian needs. The RHN is currently conducting a second analysis based on sectoral analyses and data collected in the field to estimate or project the populations in need.\n\n- The Ministry of Economy and Finance indicated that the cost of reactivating the economy and responding to the emergency is approximately US$3.1 billion. The Executive Branch is set to include an article in a supplementary credit bill submitted to Congress to prevent disaster-affected municipalities from receiving insufficient funding throughout the year.\n\n- According to the Emergency Food Security Assessment (EFSA) 2022, 57 per cent of the population (around 16 million people nationwide) suffered from moderate or severe levels of food insecurity prior to the floods. At present, one out of every two people are already using coping strategies to mitigate the floods’ impact to their livelihoods. Any additional impact is likely to exacerbate their situation and cause further food insecurity.\n\n**NEEDS AND CONSTRAINTS SUMMARY**\n\nModerate to extreme rainfall has caused rivers to overflow, triggering floods, mudslides and waterlogging that have become a sources of dengue transmission. Delivering drinking water and hygiene kits is a priority for affected areas, as these communities are still at risk of acute respiratory infections (ARI), acute diarrhoeal diseases (ADE), dengue, and leptospirosis and malaria outbreaks.\n\nThe lack of personnel in the field is causing delays in identifying and responding to affected populations. Response teams are partnering with local protection services and social programs to raise awareness on protection issues in coordination forums. Official and unofficial shelters need to reinforce protection measures, especially for migrants and refugees.\n\nEstimates indicate that the partial or total destruction of education centres is affecting 89,000 children and more than 5,800 teachers. Humanitarian partners, including UNICEF, IOM, World Vision, Save the Children, RET, CARE, Plan International, ADRA and the Disaster Prevention Studies Centre (PREDES) NGO, continue to coordinate and support the Ministry of Education in verifying damage and needs in affected areas, especially in Tumbes, Piura, Lambayeque, La Libertad, Ancash and areas of Metropolitan Lima.\n\nTo support the Government, OCHA deployed teams in Lambayeque, Piura and Tumbes to facilitate regional coordination with local humanitarian partners and authorities. Humanitarian partners are providing hot meals, food kits and food assistance through emergency cash transfers in coordination with INDECI and local governments in Piura, Tumbes, Lambayeque and La Libertad.\n\nFor more detailed information on humanitarian response activities by affected area, please visit the 345W dashboard here: https://bit.ly/3MYp7Tb\n\nFor more detailed information on sector response, please refer to the original Spanish report available at: https://bit.ly/3KO1N7D",
+  "summary": "\n\nHeavy rains in Peru have caused flooding, landslides, and mudslides, affecting 246,813 people and leaving 42,136 homeless. Approximately 517,000 people have urgent humanitarian needs, and 1,056 districts have been declared a state of emergency. Access to humanitarian response is a challenge due to road infrastructure damage, and the cost of reactivating the economy and responding to the emergency is estimated at US$3.1 billion. Humanitarian partners are providing hot meals, food kits, and emergency cash transfers to affected areas.",
+  "metadata": {
+    "id": "3954029",
+    "name": "Peru: Flooding and Landslides Situation Report No. 03 - English Summary (As of 13 April 2023)",
+    "date_original": 1681776000000,
+    "date_changed": 1681840866000,
+    "date_created": 1681839015000,
+    "primary_country_id": 187,
+    "primary_country_name": "Peru",
+    "primary_country_iso3": "per",
+    "primary_country_location": {
+      "lon": -75.31,
+      "lat": -10.15
+    }
+  }
+}

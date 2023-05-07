@@ -1,0 +1,371 @@
+{
+  "original": {
+    "id": "3954752",
+    "fields": {
+      "date": {
+        "changed": "2023-04-20T14:47:42+00:00",
+        "created": "2023-04-20T14:45:46+00:00",
+        "original": "2023-04-20T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/19",
+          "name": "Angola",
+          "location": {
+            "lon": 17.91,
+            "lat": -12.1
+          },
+          "id": 19,
+          "shortname": "Angola",
+          "iso3": "ago"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/41",
+          "name": "Botswana",
+          "location": {
+            "lon": 24.32,
+            "lat": -22.21
+          },
+          "id": 41,
+          "shortname": "Botswana",
+          "iso3": "bwa"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/47",
+          "name": "Burundi",
+          "location": {
+            "lon": 29.89,
+            "lat": -3.53
+          },
+          "id": 47,
+          "shortname": "Burundi",
+          "iso3": "bdi"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/65",
+          "name": "Comoros",
+          "location": {
+            "lon": 43.68,
+            "lat": -11.89
+          },
+          "id": 65,
+          "shortname": "Comoros",
+          "iso3": "com"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/85",
+          "name": "Eritrea",
+          "location": {
+            "lon": 38.58,
+            "lat": 15.68
+          },
+          "id": 85,
+          "shortname": "Eritrea",
+          "iso3": "eri"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/223",
+          "name": "Eswatini",
+          "location": {
+            "lon": 31.5,
+            "lat": -26.56
+          },
+          "id": 223,
+          "shortname": "Eswatini",
+          "iso3": "swz"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/87",
+          "name": "Ethiopia",
+          "location": {
+            "lon": 39.62,
+            "lat": 8.63
+          },
+          "id": 87,
+          "shortname": "Ethiopia",
+          "iso3": "eth",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/131",
+          "name": "Kenya",
+          "location": {
+            "lon": 37.86,
+            "lat": 0.53
+          },
+          "id": 131,
+          "shortname": "Kenya",
+          "iso3": "ken"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/138",
+          "name": "Lesotho",
+          "location": {
+            "lon": 28.24,
+            "lat": -29.58
+          },
+          "id": 138,
+          "shortname": "Lesotho",
+          "iso3": "lso"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/144",
+          "name": "Madagascar",
+          "location": {
+            "lon": 46.71,
+            "lat": -19.37
+          },
+          "id": 144,
+          "shortname": "Madagascar",
+          "iso3": "mdg"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/146",
+          "name": "Malawi",
+          "location": {
+            "lon": 33.74,
+            "lat": -13.22
+          },
+          "id": 146,
+          "shortname": "Malawi",
+          "iso3": "mwi"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/154",
+          "name": "Mauritius",
+          "location": {
+            "lon": 57.87,
+            "lat": -20.25
+          },
+          "id": 154,
+          "shortname": "Mauritius",
+          "iso3": "mus"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/164",
+          "name": "Mozambique",
+          "location": {
+            "lon": 34.75,
+            "lat": -18.09
+          },
+          "id": 164,
+          "shortname": "Mozambique",
+          "iso3": "moz"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/166",
+          "name": "Namibia",
+          "location": {
+            "lon": 17.29,
+            "lat": -21.2
+          },
+          "id": 166,
+          "shortname": "Namibia",
+          "iso3": "nam"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/198",
+          "name": "Rwanda",
+          "location": {
+            "lon": 29.92,
+            "lat": -1.87
+          },
+          "id": 198,
+          "shortname": "Rwanda",
+          "iso3": "rwa"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/210",
+          "name": "Seychelles",
+          "location": {
+            "lon": 52.23,
+            "lat": -6.35
+          },
+          "id": 210,
+          "shortname": "Seychelles",
+          "iso3": "syc"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/216",
+          "name": "Somalia",
+          "location": {
+            "lon": 47.33,
+            "lat": 5.79
+          },
+          "id": 216,
+          "shortname": "Somalia",
+          "iso3": "som"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/217",
+          "name": "South Africa",
+          "location": {
+            "lon": 23.91,
+            "lat": -28.38
+          },
+          "id": 217,
+          "shortname": "South Africa",
+          "iso3": "zaf"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/8657",
+          "name": "South Sudan",
+          "location": {
+            "lon": 30.5,
+            "lat": 6.9
+          },
+          "id": 8657,
+          "shortname": "South Sudan",
+          "iso3": "ssd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/240",
+          "name": "Uganda",
+          "location": {
+            "lon": 32.39,
+            "lat": 1.28
+          },
+          "id": 240,
+          "shortname": "Uganda",
+          "iso3": "uga"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/244",
+          "name": "United Republic of Tanzania",
+          "location": {
+            "lon": 34.82,
+            "lat": -6.27
+          },
+          "id": 244,
+          "shortname": "Tanzania",
+          "iso3": "tza"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/254",
+          "name": "World",
+          "id": 254,
+          "shortname": "World",
+          "iso3": "wld"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/256",
+          "name": "Zambia",
+          "location": {
+            "lon": 27.43,
+            "lat": -14
+          },
+          "id": 256,
+          "shortname": "Zambia",
+          "iso3": "zmb"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/257",
+          "name": "Zimbabwe",
+          "location": {
+            "lon": 29.94,
+            "lat": -19.19
+          },
+          "id": 257,
+          "shortname": "Zimbabwe",
+          "iso3": "zwe"
+        }
+      ],
+      "origin": "https://www.unicef.org/media/139221/file/SOWC23%20English%20%E2%80%93%20ESARO%20Brief.pdf",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/87",
+        "name": "Ethiopia",
+        "location": {
+          "lon": 39.62,
+          "lat": 8.63
+        },
+        "id": 87,
+        "shortname": "Ethiopia",
+        "iso3": "eth"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1979",
+          "longname": "United Nations Children's Fund",
+          "spanish_name": "Fondo de las Naciones Unidas para la Infancia",
+          "name": "UN Children's Fund",
+          "id": 1979,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNICEF",
+          "homepage": "http://www.unicef.org"
+        }
+      ],
+      "title": "The State of the World’s Children 2023: For Every Child, Vaccination - Regional Brief: Eastern and Southern Africa",
+      "body": "**For every child, vaccination***\n\n**Immunization is one of humanity’s most remarkable success stories. It has saved countless lives. Many more lives will be saved if the goals of the Immunization Agenda 2030 are achieved. This global strategy aims for a world where “everyone, everywhere, at every age, fully benefits from vaccines for good health and well-being.”**\n\nImmunization allows children everywhere to live lives free of many forms of disability and illness. It has led to the eradication of smallpox, a disfiguring and often fatal disease that in the twentieth century alone claimed an estimated 300 million lives. There has been remarkable progress, too, towards eradicating polio. The power of immunization was demonstrated again in the COVID-19 pandemic. The disease claimed 14.9 million lives – directly and indirectly – in 2020 and 2021, according to the World Health Organization (WHO), and disrupted lives around the world, especially children’s. While it has taken far too long to get COVID-19 vaccines to people living in the poorest countries, the global impact is still astounding: Already, at least two thirds of the world’s population has been immunized against COVID-19. Those vaccines have prevented an estimated 20 million deaths globally. These examples demonstrate that public demand, scientific innovations and – perhaps above all – political will can drive rapid change. \n\n**We must do more, and we must do better, now**\n\nGlobally, an estimated 67 million children missed out entirely or partially on routine immunization from 2019 to 2021. In Eastern and Southern Africa, this figure is 12 million children. As these children pass the age when vaccines are routinely given, it will require a dedicated effort to ensure that they catch up with their vaccinations.  \nThe backsliding in immunization highlighted that the story of zero-dose and under-vaccinated children is overwhelmingly a story of inequities. The children who are not vaccinated are also often the children of mothers who have not been able to go to school and who are given little say in family and spending decisions.\n\nThe pandemic also exposed – and exacerbated – persistent weaknesses in health systems and primary health care. Key resources were diverted to respond to the pandemic, which, along with many other factors, contributed to the backsliding in routine immunization. But even before the pandemic, far too many primary health-care systems suffered from a lack of skilled health workers, limited access to essential supplies and equipment, weak capacity for collecting and using data and conducting disease surveillance, shortages at the local level of key medicines and vaccines, and barriers to using available resources efficiently and effectively. The pandemic highlighted the difficulties facing women working in health care and immunization programmes.  \n\nAlthough they form the bulk of the health workforce, women have long been under-represented in leadership roles and denied opportunities for professional advancement, and have faced the risk of gender-based violence in doing their jobs. If primary health care is to become more resilient, the needs and potential of health workers, especially women health workers, must be better recognized.\n\n**The consequences of failure**\n\nUnfortunately, the world continues to see far too many outbreaks of vaccinepreventable diseases. The consequences of failing to vaccinate children may become more severe in years to come. Climate change risks exposing new communities to infectious diseases, such as malaria, dengue and cholera and may alter seasonal disease patterns. Also of long-term concern is the rise of drug-resistant infections. Failure to immunize children sets back still further the prospects of attaining the Sustainable Development Goals (SDGs).  \n\nImmunization is key to achieving SDG 3, which aims to “ensure healthy lives and promote well-being for all at all ages.” But it is also linked to 13 of the other SDGs. In that sense, immunization is at the heart of our collective commitment to achieve a better and more sustainable future for us all.\n\n**A time for political will**\n\nMuch will have to happen if we are to protect every child against vaccinepreventable diseases. The needs are complex, even daunting. But overriding them all is one single necessity: political will. Nothing will happen unless we garner the political will – globally, nationally and locally – to protect children against vaccine-preventable diseases.  \nThat will should be grounded in optimism. The emergence of mass immunization in the 1980s and the development of COVID-19 vaccines show we can make progress, and we can make progress quickly. Encouragingly, and despite the setbacks it caused to childhood immunization, the pandemic may also have helped lay the groundwork in some countries for faster progress.  \n\nPolitical will should also be grounded in the realization that immunizing children makes economic sense. At an average cost of about US$58 per child in low- and middle-income countries, the standard course of vaccines can contribute enormously to protecting against disease and lifelong disability.  \n\nDespite shrinking national budgets in some countries, immunization must remain a priority because it is a proven strategy for reducing future healthcare costs and supports economic growth. It generates strong returns on investment – as much as US$26 for every US$1 invested. Continued and sustainable investment in immunization as part of health budgets is essential.  \n\nBut governments and donors need to work together to improve the efficiency and effectiveness of planning, budgeting and service delivery.\n\nNow is a time for determination.  \nNow is a time for political will.  \nNow is the time to protect the health of every child.",
+      "url": "https://reliefweb.int/node/3954752",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/41/ee/41eedab3-dd33-48d0-aca5-ae6dc370fcac.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/41/ee/41eedab3-dd33-48d0-aca5-ae6dc370fcac.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/41/ee/41eedab3-dd33-48d0-aca5-ae6dc370fcac.png",
+            "version": "2413837-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/41/ee/41eedab3-dd33-48d0-aca5-ae6dc370fcac.png"
+          },
+          "filename": "SOWC23 English – ESARO Brief.pdf",
+          "mimetype": "application/pdf",
+          "id": "2413837",
+          "filesize": "12363720",
+          "url": "https://reliefweb.int/attachments/41eedab3-dd33-48d0-aca5-ae6dc370fcac/SOWC23%20English%20%E2%80%93%20ESARO%20Brief.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/ethiopia/state-worlds-children-2023-every-child-vaccination-regional-brief-eastern-and-southern-africa",
+      "theme": [
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        }
+      ],
+      "id": 3954752,
+      "status": "published",
+      "body-html": "<p><strong>For every child, vaccination</strong>*</p>\n<p><strong>Immunization is one of humanity’s most remarkable success stories. It has saved countless lives. Many more lives will be saved if the goals of the Immunization Agenda 2030 are achieved. This global strategy aims for a world where “everyone, everywhere, at every age, fully benefits from vaccines for good health and well-being.”</strong></p>\n<p>Immunization allows children everywhere to live lives free of many forms of disability and illness. It has led to the eradication of smallpox, a disfiguring and often fatal disease that in the twentieth century alone claimed an estimated 300 million lives. There has been remarkable progress, too, towards eradicating polio. The power of immunization was demonstrated again in the COVID-19 pandemic. The disease claimed 14.9 million lives – directly and indirectly – in 2020 and 2021, according to the World Health Organization (WHO), and disrupted lives around the world, especially children’s. While it has taken far too long to get COVID-19 vaccines to people living in the poorest countries, the global impact is still astounding: Already, at least two thirds of the world’s population has been immunized against COVID-19. Those vaccines have prevented an estimated 20 million deaths globally. These examples demonstrate that public demand, scientific innovations and – perhaps above all – political will can drive rapid change.</p>\n<p><strong>We must do more, and we must do better, now</strong></p>\n<p>Globally, an estimated 67 million children missed out entirely or partially on routine immunization from 2019 to 2021. In Eastern and Southern Africa, this figure is 12 million children. As these children pass the age when vaccines are routinely given, it will require a dedicated effort to ensure that they catch up with their vaccinations.<br />\nThe backsliding in immunization highlighted that the story of zero-dose and under-vaccinated children is overwhelmingly a story of inequities. The children who are not vaccinated are also often the children of mothers who have not been able to go to school and who are given little say in family and spending decisions.</p>\n<p>The pandemic also exposed – and exacerbated – persistent weaknesses in health systems and primary health care. Key resources were diverted to respond to the pandemic, which, along with many other factors, contributed to the backsliding in routine immunization. But even before the pandemic, far too many primary health-care systems suffered from a lack of skilled health workers, limited access to essential supplies and equipment, weak capacity for collecting and using data and conducting disease surveillance, shortages at the local level of key medicines and vaccines, and barriers to using available resources efficiently and effectively. The pandemic highlighted the difficulties facing women working in health care and immunization programmes.</p>\n<p>Although they form the bulk of the health workforce, women have long been under-represented in leadership roles and denied opportunities for professional advancement, and have faced the risk of gender-based violence in doing their jobs. If primary health care is to become more resilient, the needs and potential of health workers, especially women health workers, must be better recognized.</p>\n<p><strong>The consequences of failure</strong></p>\n<p>Unfortunately, the world continues to see far too many outbreaks of vaccinepreventable diseases. The consequences of failing to vaccinate children may become more severe in years to come. Climate change risks exposing new communities to infectious diseases, such as malaria, dengue and cholera and may alter seasonal disease patterns. Also of long-term concern is the rise of drug-resistant infections. Failure to immunize children sets back still further the prospects of attaining the Sustainable Development Goals (SDGs).</p>\n<p>Immunization is key to achieving SDG 3, which aims to “ensure healthy lives and promote well-being for all at all ages.” But it is also linked to 13 of the other SDGs. In that sense, immunization is at the heart of our collective commitment to achieve a better and more sustainable future for us all.</p>\n<p><strong>A time for political will</strong></p>\n<p>Much will have to happen if we are to protect every child against vaccinepreventable diseases. The needs are complex, even daunting. But overriding them all is one single necessity: political will. Nothing will happen unless we garner the political will – globally, nationally and locally – to protect children against vaccine-preventable diseases.<br />\nThat will should be grounded in optimism. The emergence of mass immunization in the 1980s and the development of COVID-19 vaccines show we can make progress, and we can make progress quickly. Encouragingly, and despite the setbacks it caused to childhood immunization, the pandemic may also have helped lay the groundwork in some countries for faster progress.</p>\n<p>Political will should also be grounded in the realization that immunizing children makes economic sense. At an average cost of about US$58 per child in low- and middle-income countries, the standard course of vaccines can contribute enormously to protecting against disease and lifelong disability.</p>\n<p>Despite shrinking national budgets in some countries, immunization must remain a priority because it is a proven strategy for reducing future healthcare costs and supports economic growth. It generates strong returns on investment – as much as US$26 for every US$1 invested. Continued and sustainable investment in immunization as part of health budgets is essential.</p>\n<p>But governments and donors need to work together to improve the efficiency and effectiveness of planning, budgeting and service delivery.</p>\n<p>Now is a time for determination.<br />\nNow is a time for political will.<br />\nNow is the time to protect the health of every child.</p>\n"
+    }
+  },
+  "text": "# The State of the World’s Children 2023: For Every Child, Vaccination - Regional Brief: Eastern and Southern Africa\n\n**For every child, vaccination***\n\n**Immunization is one of humanity’s most remarkable success stories. It has saved countless lives. Many more lives will be saved if the goals of the Immunization Agenda 2030 are achieved. This global strategy aims for a world where “everyone, everywhere, at every age, fully benefits from vaccines for good health and well-being.”**\n\nImmunization allows children everywhere to live lives free of many forms of disability and illness. It has led to the eradication of smallpox, a disfiguring and often fatal disease that in the twentieth century alone claimed an estimated 300 million lives. There has been remarkable progress, too, towards eradicating polio. The power of immunization was demonstrated again in the COVID-19 pandemic. The disease claimed 14.9 million lives – directly and indirectly – in 2020 and 2021, according to the World Health Organization (WHO), and disrupted lives around the world, especially children’s. While it has taken far too long to get COVID-19 vaccines to people living in the poorest countries, the global impact is still astounding: Already, at least two thirds of the world’s population has been immunized against COVID-19. Those vaccines have prevented an estimated 20 million deaths globally. These examples demonstrate that public demand, scientific innovations and – perhaps above all – political will can drive rapid change. \n\n**We must do more, and we must do better, now**\n\nGlobally, an estimated 67 million children missed out entirely or partially on routine immunization from 2019 to 2021. In Eastern and Southern Africa, this figure is 12 million children. As these children pass the age when vaccines are routinely given, it will require a dedicated effort to ensure that they catch up with their vaccinations.  \nThe backsliding in immunization highlighted that the story of zero-dose and under-vaccinated children is overwhelmingly a story of inequities. The children who are not vaccinated are also often the children of mothers who have not been able to go to school and who are given little say in family and spending decisions.\n\nThe pandemic also exposed – and exacerbated – persistent weaknesses in health systems and primary health care. Key resources were diverted to respond to the pandemic, which, along with many other factors, contributed to the backsliding in routine immunization. But even before the pandemic, far too many primary health-care systems suffered from a lack of skilled health workers, limited access to essential supplies and equipment, weak capacity for collecting and using data and conducting disease surveillance, shortages at the local level of key medicines and vaccines, and barriers to using available resources efficiently and effectively. The pandemic highlighted the difficulties facing women working in health care and immunization programmes.  \n\nAlthough they form the bulk of the health workforce, women have long been under-represented in leadership roles and denied opportunities for professional advancement, and have faced the risk of gender-based violence in doing their jobs. If primary health care is to become more resilient, the needs and potential of health workers, especially women health workers, must be better recognized.\n\n**The consequences of failure**\n\nUnfortunately, the world continues to see far too many outbreaks of vaccinepreventable diseases. The consequences of failing to vaccinate children may become more severe in years to come. Climate change risks exposing new communities to infectious diseases, such as malaria, dengue and cholera and may alter seasonal disease patterns. Also of long-term concern is the rise of drug-resistant infections. Failure to immunize children sets back still further the prospects of attaining the Sustainable Development Goals (SDGs).  \n\nImmunization is key to achieving SDG 3, which aims to “ensure healthy lives and promote well-being for all at all ages.” But it is also linked to 13 of the other SDGs. In that sense, immunization is at the heart of our collective commitment to achieve a better and more sustainable future for us all.\n\n**A time for political will**\n\nMuch will have to happen if we are to protect every child against vaccinepreventable diseases. The needs are complex, even daunting. But overriding them all is one single necessity: political will. Nothing will happen unless we garner the political will – globally, nationally and locally – to protect children against vaccine-preventable diseases.  \nThat will should be grounded in optimism. The emergence of mass immunization in the 1980s and the development of COVID-19 vaccines show we can make progress, and we can make progress quickly. Encouragingly, and despite the setbacks it caused to childhood immunization, the pandemic may also have helped lay the groundwork in some countries for faster progress.  \n\nPolitical will should also be grounded in the realization that immunizing children makes economic sense. At an average cost of about US$58 per child in low- and middle-income countries, the standard course of vaccines can contribute enormously to protecting against disease and lifelong disability.  \n\nDespite shrinking national budgets in some countries, immunization must remain a priority because it is a proven strategy for reducing future healthcare costs and supports economic growth. It generates strong returns on investment – as much as US$26 for every US$1 invested. Continued and sustainable investment in immunization as part of health budgets is essential.  \n\nBut governments and donors need to work together to improve the efficiency and effectiveness of planning, budgeting and service delivery.\n\nNow is a time for determination.  \nNow is a time for political will.  \nNow is the time to protect the health of every child.",
+  "summary": " Immunization has saved countless lives and has led to the eradication of smallpox. The power of immunization was demonstrated again in the COVID-19 pandemic, with two thirds of the world's population immunized against it. However, an estimated 67 million children globally and 12 million in Eastern and Southern Africa have missed out on routine immunization. To ensure these children catch up with their vaccinations, political will is needed to prioritize immunization and invest in health budgets. This will help to reduce future healthcare costs and support economic growth.",
+  "metadata": {
+    "id": "3954752",
+    "name": "The State of the World’s Children 2023: For Every Child, Vaccination - Regional Brief: Eastern and Southern Africa",
+    "date_original": 1681948800000,
+    "date_changed": 1682002062000,
+    "date_created": 1682001946000,
+    "primary_country_id": 87,
+    "primary_country_name": "Ethiopia",
+    "primary_country_iso3": "eth",
+    "primary_country_location": {
+      "lon": 39.62,
+      "lat": 8.63
+    }
+  }
+}

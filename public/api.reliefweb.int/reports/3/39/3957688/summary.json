@@ -1,0 +1,138 @@
+{
+  "original": {
+    "id": "3957688",
+    "fields": {
+      "date": {
+        "changed": "2023-05-02T18:04:23+00:00",
+        "created": "2023-05-02T12:28:49+00:00",
+        "original": "2023-05-02T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/180",
+          "name": "occupied Palestinian territory",
+          "location": {
+            "lon": 35.2332,
+            "lat": 31.9522
+          },
+          "id": 180,
+          "shortname": "oPt",
+          "iso3": "pse",
+          "primary": true
+        }
+      ],
+      "origin": "https://unsco.unmissions.org/sites/default/files/unsco_ahlc_report_-_may_2023.pdf",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/180",
+        "name": "occupied Palestinian territory",
+        "location": {
+          "lon": 35.2332,
+          "lat": 31.9522
+        },
+        "id": 180,
+        "shortname": "oPt",
+        "iso3": "pse"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1428",
+          "longname": "United Nations Special Coordinator for the Middle East Peace Process",
+          "name": "UN Special Coordinator for the Middle East Peace Process",
+          "id": 1428,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNSCO",
+          "homepage": "https://unsco.unmissions.org/"
+        }
+      ],
+      "title": "Office of the United Nations Special Coordinator for the Middle East Peace Process - Report to the Ad Hoc Liaison Committee, 3 May 2023",
+      "body": "UN report: Failure of an immediate strategic shift risks a serious reversal in the Palestinian state-building project\n\nTuesday, 2 May 2023, Jerusalem – A newly published United Nations report calls for a strategic shift by Israeli and Palestinian leaders, and the international community to reverse the current unsustainable trajectory that is eroding Palestinian institutional, economic, and development gains made in the nearly three decades since the signing of the Oslo II Accords.\n\nAt the September 2022 Ad Hoc Liaison Committee (AHLC) meeting, the United Nations Special Coordinator for the Middle East Peace Process (UNSCO) put forward four strategic elements of a policy package, which if implemented, would support the Palestinian Authority in facing unprecedented challenges and better link economic steps to a political horizon. These elements included: (i) addressing the continuing drivers of conflict and instability; (ii) strengthening Palestinian institutions and addressing the challenge of Palestinian governance; (iii) improving access, movement, and trade and thereby creating space for the Palestinian economy to grow; and (iv) better aligning the framework of economic and administrative relationships with the economic transformations of the past decades. Regrettably, little progress has been made in these areas.\n\nThis report, issued by UNSCO for the upcoming meeting of the AHLC in Brussels on 3 May 2023, provides an update on developments in the aforementioned areas, identifies necessary immediate steps to address challenges, and reiterates the urgency of a strategic shift in approach by the parties and the international community.\n\nUnited Nations Special Coordinator for the Middle East Peace Process, Tor Wennesland, stated that “failure to act across these strategic areas risks a serious reversal in the Palestinian state-building project, furthering institutional erosion of the PA and deepening insecurity across the Occupied Palestinian Territory.” He added that “the current negative trends, including worsening violence, alongside the absence of a peace process, not only contribute to a pervasive sense of pessimism regarding a political solution to the conflict and negatively impact the Palestinian economy, but they also undermine efforts to strengthen the PA and create space for the Palestinian economy to grow.”\n\nThe report notes that despite partial and limited implementation of reform measures and commitments from previous AHLC meetings the fiscal situation of the PA has not improved. “In the context of declining donor support and global trends that have increased commodity costs, and given the current debt levels and budget deficit, further PA reforms, while still necessary, are unlikely to be sufficient to address the crisis and put the PA on more sustainable fiscal footing”, the report adds.\n\nThese fiscal pressures risk severely undermining service delivery for Palestinians, particularly in health, education, and social support, which is essential for livelihoods, development, and stability.\n\nUN Special Coordinator Wennesland warned that, with the declining donor support, the ability of UN agencies to keep pace with growing needs, in support of the PA, is threatened. “Given current demographic trends, needs are expected to increase exponentially in the medium term, making immediate investment in basic service delivery necessary,” he added.\n\nThe pressures on the PA and Palestinian economy resulting from Israeli restrictions on movement and access need to be relieved and the two sides need to engage in real efforts to address imbalances in their economic and administrative relationship, in order to promote economic growth and strengthen governance and the fiscal health of the PA. The report specifically calls on Israel to further ease restrictions on the movement of goods in and out of Gaza to maximize their positive effect on the Palestinian economy.\n\nThe report calls for a coherent package of steps to reverse negative trends and conflict drivers, including heightened violence, settlement advancement and settler-related violence, strengthen the Palestinian Authority and open space for the Palestinian economy to grow, alongside and as an integral part of efforts to restore a political horizon toward achieving the vision of two States.\n\nNote to Editors: The Ad Hoc Liaison Committee (AHLC) serves as the principal policy-level coordination mechanism for development assistance to the OPT. The AHLC is chaired by Norway and co-sponsored by the EU and the US. In addition, the United Nations participates together with the World Bank and the International Monetary Fund (IMF). The AHLC seeks to promote dialogue between donors, the Palestinian Authority and the Government of Israel.",
+      "url": "https://reliefweb.int/node/3957688",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/be/d6/bed6cf99-3461-4bef-8146-ad3bfb8d4a54.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/be/d6/bed6cf99-3461-4bef-8146-ad3bfb8d4a54.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/be/d6/bed6cf99-3461-4bef-8146-ad3bfb8d4a54.png",
+            "version": "2416331-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/be/d6/bed6cf99-3461-4bef-8146-ad3bfb8d4a54.png"
+          },
+          "filename": "unsco_ahlc_report_-_may_2023.pdf",
+          "description": "Full Report",
+          "mimetype": "application/pdf",
+          "id": "2416331",
+          "filesize": "492493",
+          "url": "https://reliefweb.int/attachments/bed6cf99-3461-4bef-8146-ad3bfb8d4a54/unsco_ahlc_report_-_may_2023.pdf"
+        },
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/9a/9d/9a9d3070-ba39-4289-88bd-c95e7c700a33.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/9a/9d/9a9d3070-ba39-4289-88bd-c95e7c700a33.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/9a/9d/9a9d3070-ba39-4289-88bd-c95e7c700a33.png",
+            "version": "2416514-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/9a/9d/9a9d3070-ba39-4289-88bd-c95e7c700a33.png"
+          },
+          "filename": "press_release_-_unsco_report_to_ahlc_-_may_2023.pdf",
+          "description": "Press Release",
+          "mimetype": "application/pdf",
+          "id": "2416514",
+          "filesize": "88046",
+          "url": "https://reliefweb.int/attachments/9a9d3070-ba39-4289-88bd-c95e7c700a33/press_release_-_unsco_report_to_ahlc_-_may_2023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/occupied-palestinian-territory/office-united-nations-special-coordinator-middle-east-peace-process-report-ad-hoc-liaison-committee-3-may-2023",
+      "theme": [
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Peacekeeping and Peacebuilding",
+          "id": 4599
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        }
+      ],
+      "id": 3957688,
+      "status": "published",
+      "body-html": "<p>UN report: Failure of an immediate strategic shift risks a serious reversal in the Palestinian state-building project</p>\n<p>Tuesday, 2 May 2023, Jerusalem – A newly published United Nations report calls for a strategic shift by Israeli and Palestinian leaders, and the international community to reverse the current unsustainable trajectory that is eroding Palestinian institutional, economic, and development gains made in the nearly three decades since the signing of the Oslo II Accords.</p>\n<p>At the September 2022 Ad Hoc Liaison Committee (AHLC) meeting, the United Nations Special Coordinator for the Middle East Peace Process (UNSCO) put forward four strategic elements of a policy package, which if implemented, would support the Palestinian Authority in facing unprecedented challenges and better link economic steps to a political horizon. These elements included: (i) addressing the continuing drivers of conflict and instability; (ii) strengthening Palestinian institutions and addressing the challenge of Palestinian governance; (iii) improving access, movement, and trade and thereby creating space for the Palestinian economy to grow; and (iv) better aligning the framework of economic and administrative relationships with the economic transformations of the past decades. Regrettably, little progress has been made in these areas.</p>\n<p>This report, issued by UNSCO for the upcoming meeting of the AHLC in Brussels on 3 May 2023, provides an update on developments in the aforementioned areas, identifies necessary immediate steps to address challenges, and reiterates the urgency of a strategic shift in approach by the parties and the international community.</p>\n<p>United Nations Special Coordinator for the Middle East Peace Process, Tor Wennesland, stated that “failure to act across these strategic areas risks a serious reversal in the Palestinian state-building project, furthering institutional erosion of the PA and deepening insecurity across the Occupied Palestinian Territory.” He added that “the current negative trends, including worsening violence, alongside the absence of a peace process, not only contribute to a pervasive sense of pessimism regarding a political solution to the conflict and negatively impact the Palestinian economy, but they also undermine efforts to strengthen the PA and create space for the Palestinian economy to grow.”</p>\n<p>The report notes that despite partial and limited implementation of reform measures and commitments from previous AHLC meetings the fiscal situation of the PA has not improved. “In the context of declining donor support and global trends that have increased commodity costs, and given the current debt levels and budget deficit, further PA reforms, while still necessary, are unlikely to be sufficient to address the crisis and put the PA on more sustainable fiscal footing”, the report adds.</p>\n<p>These fiscal pressures risk severely undermining service delivery for Palestinians, particularly in health, education, and social support, which is essential for livelihoods, development, and stability.</p>\n<p>UN Special Coordinator Wennesland warned that, with the declining donor support, the ability of UN agencies to keep pace with growing needs, in support of the PA, is threatened. “Given current demographic trends, needs are expected to increase exponentially in the medium term, making immediate investment in basic service delivery necessary,” he added.</p>\n<p>The pressures on the PA and Palestinian economy resulting from Israeli restrictions on movement and access need to be relieved and the two sides need to engage in real efforts to address imbalances in their economic and administrative relationship, in order to promote economic growth and strengthen governance and the fiscal health of the PA. The report specifically calls on Israel to further ease restrictions on the movement of goods in and out of Gaza to maximize their positive effect on the Palestinian economy.</p>\n<p>The report calls for a coherent package of steps to reverse negative trends and conflict drivers, including heightened violence, settlement advancement and settler-related violence, strengthen the Palestinian Authority and open space for the Palestinian economy to grow, alongside and as an integral part of efforts to restore a political horizon toward achieving the vision of two States.</p>\n<p>Note to Editors: The Ad Hoc Liaison Committee (AHLC) serves as the principal policy-level coordination mechanism for development assistance to the OPT. The AHLC is chaired by Norway and co-sponsored by the EU and the US. In addition, the United Nations participates together with the World Bank and the International Monetary Fund (IMF). The AHLC seeks to promote dialogue between donors, the Palestinian Authority and the Government of Israel.</p>\n"
+    }
+  },
+  "text": "# Office of the United Nations Special Coordinator for the Middle East Peace Process - Report to the Ad Hoc Liaison Committee, 3 May 2023\n\nUN report: Failure of an immediate strategic shift risks a serious reversal in the Palestinian state-building project\n\nTuesday, 2 May 2023, Jerusalem – A newly published United Nations report calls for a strategic shift by Israeli and Palestinian leaders, and the international community to reverse the current unsustainable trajectory that is eroding Palestinian institutional, economic, and development gains made in the nearly three decades since the signing of the Oslo II Accords.\n\nAt the September 2022 Ad Hoc Liaison Committee (AHLC) meeting, the United Nations Special Coordinator for the Middle East Peace Process (UNSCO) put forward four strategic elements of a policy package, which if implemented, would support the Palestinian Authority in facing unprecedented challenges and better link economic steps to a political horizon. These elements included: (i) addressing the continuing drivers of conflict and instability; (ii) strengthening Palestinian institutions and addressing the challenge of Palestinian governance; (iii) improving access, movement, and trade and thereby creating space for the Palestinian economy to grow; and (iv) better aligning the framework of economic and administrative relationships with the economic transformations of the past decades. Regrettably, little progress has been made in these areas.\n\nThis report, issued by UNSCO for the upcoming meeting of the AHLC in Brussels on 3 May 2023, provides an update on developments in the aforementioned areas, identifies necessary immediate steps to address challenges, and reiterates the urgency of a strategic shift in approach by the parties and the international community.\n\nUnited Nations Special Coordinator for the Middle East Peace Process, Tor Wennesland, stated that “failure to act across these strategic areas risks a serious reversal in the Palestinian state-building project, furthering institutional erosion of the PA and deepening insecurity across the Occupied Palestinian Territory.” He added that “the current negative trends, including worsening violence, alongside the absence of a peace process, not only contribute to a pervasive sense of pessimism regarding a political solution to the conflict and negatively impact the Palestinian economy, but they also undermine efforts to strengthen the PA and create space for the Palestinian economy to grow.”\n\nThe report notes that despite partial and limited implementation of reform measures and commitments from previous AHLC meetings the fiscal situation of the PA has not improved. “In the context of declining donor support and global trends that have increased commodity costs, and given the current debt levels and budget deficit, further PA reforms, while still necessary, are unlikely to be sufficient to address the crisis and put the PA on more sustainable fiscal footing”, the report adds.\n\nThese fiscal pressures risk severely undermining service delivery for Palestinians, particularly in health, education, and social support, which is essential for livelihoods, development, and stability.\n\nUN Special Coordinator Wennesland warned that, with the declining donor support, the ability of UN agencies to keep pace with growing needs, in support of the PA, is threatened. “Given current demographic trends, needs are expected to increase exponentially in the medium term, making immediate investment in basic service delivery necessary,” he added.\n\nThe pressures on the PA and Palestinian economy resulting from Israeli restrictions on movement and access need to be relieved and the two sides need to engage in real efforts to address imbalances in their economic and administrative relationship, in order to promote economic growth and strengthen governance and the fiscal health of the PA. The report specifically calls on Israel to further ease restrictions on the movement of goods in and out of Gaza to maximize their positive effect on the Palestinian economy.\n\nThe report calls for a coherent package of steps to reverse negative trends and conflict drivers, including heightened violence, settlement advancement and settler-related violence, strengthen the Palestinian Authority and open space for the Palestinian economy to grow, alongside and as an integral part of efforts to restore a political horizon toward achieving the vision of two States.\n\nNote to Editors: The Ad Hoc Liaison Committee (AHLC) serves as the principal policy-level coordination mechanism for development assistance to the OPT. The AHLC is chaired by Norway and co-sponsored by the EU and the US. In addition, the United Nations participates together with the World Bank and the International Monetary Fund (IMF). The AHLC seeks to promote dialogue between donors, the Palestinian Authority and the Government of Israel.",
+  "summary": " The United Nations Special Coordinator for the Middle East Peace Process has issued a report for the upcoming Ad Hoc Liaison Committee meeting in Brussels, calling for a strategic shift by Israeli and Palestinian leaders, and the international community to reverse the current unsustainable trajectory that is eroding Palestinian institutional, economic, and development gains. The report identifies necessary immediate steps to address challenges, and reiterates the urgency of a strategic shift in approach by the parties and the international community. It calls for a coherent package of steps to reverse negative trends and conflict drivers, strengthen the Palestinian Authority and open space for the Palestinian economy to grow, alongside and as an integral part of efforts to restore a political horizon toward achieving the vision of two States.",
+  "metadata": {
+    "id": "3957688",
+    "name": "Office of the United Nations Special Coordinator for the Middle East Peace Process - Report to the Ad Hoc Liaison Committee, 3 May 2023",
+    "date_original": 1682985600000,
+    "date_changed": 1683050663000,
+    "date_created": 1683030529000,
+    "primary_country_id": 180,
+    "primary_country_name": "occupied Palestinian territory",
+    "primary_country_iso3": "pse",
+    "primary_country_location": {
+      "lon": 35.2332,
+      "lat": 31.9522
+    }
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "original": {
+    "id": "3957214",
+    "fields": {
+      "date": {
+        "changed": "2023-05-02T12:59:05+00:00",
+        "created": "2023-04-29T15:31:57+00:00",
+        "original": "2023-04-29T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/226",
+          "name": "Syrian Arab Republic",
+          "location": {
+            "lon": 38.51,
+            "lat": 35.01
+          },
+          "id": 226,
+          "shortname": "Syria",
+          "iso3": "syr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/236",
+          "name": "Türkiye",
+          "location": {
+            "lon": 35.18,
+            "lat": 39.06
+          },
+          "id": 236,
+          "shortname": "Türkiye",
+          "iso3": "tur",
+          "primary": true
+        }
+      ],
+      "ocha_product": [
+        {
+          "name": "Situation Report",
+          "id": 12345
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/236",
+        "name": "Türkiye",
+        "location": {
+          "lon": 35.18,
+          "lat": 39.06
+        },
+        "id": 236,
+        "shortname": "Türkiye",
+        "iso3": "tur"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EQ",
+          "name": "Earthquake",
+          "id": 4628
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1503",
+          "longname": "United Nations Office for the Coordination of Humanitarian Affairs",
+          "spanish_name": "Oficina de Coordinación de Asuntos Humanitarios",
+          "name": "UN Office for the Coordination of Humanitarian Affairs",
+          "id": 1503,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "OCHA",
+          "disclaimer": "To learn more about OCHA's activities, please visit https://www.unocha.org/.",
+          "homepage": "http://www.unocha.org/"
+        }
+      ],
+      "title": "Türkiye: 2023 Earthquakes Situation Report No. 16, as of 27 April 2023 [EN/TR]",
+      "body": "*This report is produced by the OCHA mission in Türkiye in collaboration with humanitarian partners and covers the humanitarian situation and earthquake response in Türkiye. It covers the period from 21 to 27 April 2023.*\n\n**HIGHLIGHTS**\n\n-   A major storm affected 300 households in Pazarcık, injuring about 45 people and damaging shelter and possessions, including some recently provided to earthquake-affected people.\n    \n-   Partners plan to increase cash and voucher assistance in several sectors to address an evolution in needs and conditions.\n    \n-   Food distribution is being reviewed as some partners plan to end provision of cooked meals.\n    \n-   There is a continued inadequacy of water, sanitation and hygiene support in informal settlements.\n\n9.1M affected people\n\n5.2M targeted for humanitarian assistance\n\n3M people having to relocate from their homes\n\n1.6M people staying in informal settlements\n\n50K people killed\n\n107K people  injured\n\n**SITUATION OVERVIEW**\n\nPeople who were forced to relocate after the earthquakes are showing interest in returning to their areas of origin. This is partly attributed to the pace of the development of formal settlements housing people in containers (“container cities”). Some 20 per cent of people who temporarily relocated to cities outside the earthquake-affected provinces are returning, according to the Ministry of Interior. Financial constraints and the high cost of living in the hosting provinces may be possible factors for those returning. Rents rose 47 per cent in Gaziantep Province and 25 per cent in Hatay Province between February and April (the national average where data is available is 16 per cent).1 The United Nations High Commissioner for Refugees (UNHCR) has observed an increase in returns of refugees to the affected provinces as well, for similar reasons. To meet the needs of the returning population, authorities are attempting to strengthen shelter capacity through temporary accommodation.\n\nA heavy storm hit Pazarcık district in Kahramanmaraş on 20 April, affecting vulnerable earthquake-affected people. Tents and containers sheltering earthquake-affected people in both informal and formal settlements were blown away and damaged, exposing some of the affected families to harsh weather conditions. An observation visit to the affected neighborhoods on 21 April conducted by humanitarian partners found unconfirmed reports that 1 child died and at least 44 people were injured during the storms, and about 300 families were affected. Some privately donated containers used for shelter were heavily damaged. Humanitarian actors, alongside the Disaster and Emergency Management Presidency (AFAD) have responded: all families affected by the storm and subsequent flooding received tents and blankets from partners in informal settlements, and AFAD provided tents in formal settlements. Other needs remain, including hygiene kits, vector control (primarily for mosquitos), detergents and lice treatment. On 25 April, a partner reported plans to provide hygiene kits with lice shampoo. Heavy rain and cold temperatures are forecast for the weekend of 29 April.\n\nClose to 70,000 Syrians were issued authorizations to temporarily exit to Syria after the earthquake according to authorities, mainly to check on family and attend funerals. UNHCR estimates that as of 20 April, some 16,000 Syrians have returned to Türkiye.\n\nTraining and sensitization on Protection from Sexual Exploitation and Abuse (PSEA) and Accountability to Affected Populations (PSEA) is scaling up. Information has been shared regarding consolidated PSEA Network messaging and training materials that are now available to United Nations members, and uploaded to ReliefWeb for access by others. Distribution of the materials is encouraged. The PSEA Coordinator is exploring opportunities for a localized and sustainable PSEA initiative for the earthquakes response, focused on capacity building, with an emphasis on reaching new aid providers.\n\nWomen and girls continue to have unaddressed, sector-specific needs. These include the need for: women- and children-only spaces; early recovery support for activities linked to care work; support addressing violence against women (supporting government interventions, case management centres, referrals and women’s shelters); resumption of cooking; support for family reunification; safety and wide accessibility for women and girls to water, sanitation and hygiene, shelter and education services and facilities; addressing health and hygiene issues and sexual and reproductive health services; gender responsive design of relocation settlements; and access to menstrual products, shampoo, hair removal and underwear in different sizes. Gender-responsive assessments are being promoted as a key measure in addressing the observed exclusion of women and girls from receiving appropriate assistance in some informal settlements in rural areas (including both general and gender-specific assistance). In parallel, the Women Empowerment in Humanitarian Action Working Group and the Information Management Working Group held a seminar on Gender- Responsive Assessments in Humanitarian Action on 13 April, attended by 155 people from civil society organizations and UN agencies, to strengthen gender-responsive needs assessments in the Türkiye earthquakes response.\n\nThe Flash Appeal for US$1 billion to assist 5.2 million people affected by the earthquakes is 30.2 per cent funded, receiving $303.6 million as of 27 April 2023, including $10 million allocated by the Central Emergency Response Fund.\n\nThe response to the earthquakes in Türkiye continues to be led by the Government of Türkiye in coordination with AFAD and with support from the Turkish Red Crescent (TRC). The international humanitarian community continues to support the government in providing immediate assistance to the affected population, including through the direct contribution of in-kind relief items for onward distribution. In a collaborative effort, humanitarian partners are mobilizing emergency teams and relief operations, delivering relief items such as food, medical supplies, shelter, hygiene and dignity kits and WASH assistance, among other essential needs.",
+      "url": "https://reliefweb.int/node/3957214",
+      "disaster": [
+        {
+          "name": "Türkiye: Floods - Mar 2023",
+          "id": 51529,
+          "glide": "FL-2023-000040-TUR",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Türkiye/Syria: Earthquakes - Feb 2023",
+          "id": 51470,
+          "glide": "EQ-2023-000015-TUR",
+          "type": [
+            {
+              "code": "EQ",
+              "name": "Earthquake",
+              "id": 4628,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/3d/0f/3d0f543f-be08-4104-a482-b65ff2963cf0.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/3d/0f/3d0f543f-be08-4104-a482-b65ff2963cf0.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/3d/0f/3d0f543f-be08-4104-a482-b65ff2963cf0.png",
+            "version": "2415825-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/3d/0f/3d0f543f-be08-4104-a482-b65ff2963cf0.png"
+          },
+          "filename": "SitRep #16 27 April cleared.pdf",
+          "description": "English version",
+          "mimetype": "application/pdf",
+          "id": "2415825",
+          "filesize": "495504",
+          "url": "https://reliefweb.int/attachments/3d0f543f-be08-4104-a482-b65ff2963cf0/SitRep%20%2316%2027%20April%20cleared.pdf"
+        },
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/5f/4c/5f4cc00c-e4cf-47f7-816d-3f37c275c1f8.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/5f/4c/5f4cc00c-e4cf-47f7-816d-3f37c275c1f8.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/5f/4c/5f4cc00c-e4cf-47f7-816d-3f37c275c1f8.png",
+            "version": "2416363-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/5f/4c/5f4cc00c-e4cf-47f7-816d-3f37c275c1f8.png"
+          },
+          "filename": "SitRep #16 27 April FINAL TR.pdf",
+          "description": "Turkish version",
+          "mimetype": "application/pdf",
+          "id": "2416363",
+          "filesize": "484621",
+          "url": "https://reliefweb.int/attachments/5f4cc00c-e4cf-47f7-816d-3f37c275c1f8/SitRep%20%2316%2027%20April%20FINAL%20TR.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/turkiye/turkiye-2023-earthquakes-situation-report-no-16-27-april-2023-entr",
+      "redirects": [
+        "https://reliefweb.int/report/turkiye/turkiye-2023-earthquakes-situation-report-no-16-27-april-2023"
+      ],
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        },
+        {
+          "name": "Camp Coordination and Camp Management",
+          "id": 49458
+        },
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Recovery and Reconstruction",
+          "id": 4601
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3957214,
+      "status": "published",
+      "body-html": "<p><em>This report is produced by the OCHA mission in Türkiye in collaboration with humanitarian partners and covers the humanitarian situation and earthquake response in Türkiye. It covers the period from 21 to 27 April 2023.</em></p>\n<p><strong>HIGHLIGHTS</strong></p>\n<ul>\n<li>\n<p>A major storm affected 300 households in Pazarcık, injuring about 45 people and damaging shelter and possessions, including some recently provided to earthquake-affected people.</p>\n</li>\n<li>\n<p>Partners plan to increase cash and voucher assistance in several sectors to address an evolution in needs and conditions.</p>\n</li>\n<li>\n<p>Food distribution is being reviewed as some partners plan to end provision of cooked meals.</p>\n</li>\n<li>\n<p>There is a continued inadequacy of water, sanitation and hygiene support in informal settlements.</p>\n</li>\n</ul>\n<p>9.1M affected people</p>\n<p>5.2M targeted for humanitarian assistance</p>\n<p>3M people having to relocate from their homes</p>\n<p>1.6M people staying in informal settlements</p>\n<p>50K people killed</p>\n<p>107K people  injured</p>\n<p><strong>SITUATION OVERVIEW</strong></p>\n<p>People who were forced to relocate after the earthquakes are showing interest in returning to their areas of origin. This is partly attributed to the pace of the development of formal settlements housing people in containers (“container cities”). Some 20 per cent of people who temporarily relocated to cities outside the earthquake-affected provinces are returning, according to the Ministry of Interior. Financial constraints and the high cost of living in the hosting provinces may be possible factors for those returning. Rents rose 47 per cent in Gaziantep Province and 25 per cent in Hatay Province between February and April (the national average where data is available is 16 per cent).1 The United Nations High Commissioner for Refugees (UNHCR) has observed an increase in returns of refugees to the affected provinces as well, for similar reasons. To meet the needs of the returning population, authorities are attempting to strengthen shelter capacity through temporary accommodation.</p>\n<p>A heavy storm hit Pazarcık district in Kahramanmaraş on 20 April, affecting vulnerable earthquake-affected people. Tents and containers sheltering earthquake-affected people in both informal and formal settlements were blown away and damaged, exposing some of the affected families to harsh weather conditions. An observation visit to the affected neighborhoods on 21 April conducted by humanitarian partners found unconfirmed reports that 1 child died and at least 44 people were injured during the storms, and about 300 families were affected. Some privately donated containers used for shelter were heavily damaged. Humanitarian actors, alongside the Disaster and Emergency Management Presidency (AFAD) have responded: all families affected by the storm and subsequent flooding received tents and blankets from partners in informal settlements, and AFAD provided tents in formal settlements. Other needs remain, including hygiene kits, vector control (primarily for mosquitos), detergents and lice treatment. On 25 April, a partner reported plans to provide hygiene kits with lice shampoo. Heavy rain and cold temperatures are forecast for the weekend of 29 April.</p>\n<p>Close to 70,000 Syrians were issued authorizations to temporarily exit to Syria after the earthquake according to authorities, mainly to check on family and attend funerals. UNHCR estimates that as of 20 April, some 16,000 Syrians have returned to Türkiye.</p>\n<p>Training and sensitization on Protection from Sexual Exploitation and Abuse (PSEA) and Accountability to Affected Populations (PSEA) is scaling up. Information has been shared regarding consolidated PSEA Network messaging and training materials that are now available to United Nations members, and uploaded to ReliefWeb for access by others. Distribution of the materials is encouraged. The PSEA Coordinator is exploring opportunities for a localized and sustainable PSEA initiative for the earthquakes response, focused on capacity building, with an emphasis on reaching new aid providers.</p>\n<p>Women and girls continue to have unaddressed, sector-specific needs. These include the need for: women- and children-only spaces; early recovery support for activities linked to care work; support addressing violence against women (supporting government interventions, case management centres, referrals and women’s shelters); resumption of cooking; support for family reunification; safety and wide accessibility for women and girls to water, sanitation and hygiene, shelter and education services and facilities; addressing health and hygiene issues and sexual and reproductive health services; gender responsive design of relocation settlements; and access to menstrual products, shampoo, hair removal and underwear in different sizes. Gender-responsive assessments are being promoted as a key measure in addressing the observed exclusion of women and girls from receiving appropriate assistance in some informal settlements in rural areas (including both general and gender-specific assistance). In parallel, the Women Empowerment in Humanitarian Action Working Group and the Information Management Working Group held a seminar on Gender- Responsive Assessments in Humanitarian Action on 13 April, attended by 155 people from civil society organizations and UN agencies, to strengthen gender-responsive needs assessments in the Türkiye earthquakes response.</p>\n<p>The Flash Appeal for US$1 billion to assist 5.2 million people affected by the earthquakes is 30.2 per cent funded, receiving $303.6 million as of 27 April 2023, including $10 million allocated by the Central Emergency Response Fund.</p>\n<p>The response to the earthquakes in Türkiye continues to be led by the Government of Türkiye in coordination with AFAD and with support from the Turkish Red Crescent (TRC). The international humanitarian community continues to support the government in providing immediate assistance to the affected population, including through the direct contribution of in-kind relief items for onward distribution. In a collaborative effort, humanitarian partners are mobilizing emergency teams and relief operations, delivering relief items such as food, medical supplies, shelter, hygiene and dignity kits and WASH assistance, among other essential needs.</p>\n"
+    }
+  },
+  "text": "# Türkiye: 2023 Earthquakes Situation Report No. 16, as of 27 April 2023 [EN/TR]\n\n*This report is produced by the OCHA mission in Türkiye in collaboration with humanitarian partners and covers the humanitarian situation and earthquake response in Türkiye. It covers the period from 21 to 27 April 2023.*\n\n**HIGHLIGHTS**\n\n-   A major storm affected 300 households in Pazarcık, injuring about 45 people and damaging shelter and possessions, including some recently provided to earthquake-affected people.\n    \n-   Partners plan to increase cash and voucher assistance in several sectors to address an evolution in needs and conditions.\n    \n-   Food distribution is being reviewed as some partners plan to end provision of cooked meals.\n    \n-   There is a continued inadequacy of water, sanitation and hygiene support in informal settlements.\n\n9.1M affected people\n\n5.2M targeted for humanitarian assistance\n\n3M people having to relocate from their homes\n\n1.6M people staying in informal settlements\n\n50K people killed\n\n107K people  injured\n\n**SITUATION OVERVIEW**\n\nPeople who were forced to relocate after the earthquakes are showing interest in returning to their areas of origin. This is partly attributed to the pace of the development of formal settlements housing people in containers (“container cities”). Some 20 per cent of people who temporarily relocated to cities outside the earthquake-affected provinces are returning, according to the Ministry of Interior. Financial constraints and the high cost of living in the hosting provinces may be possible factors for those returning. Rents rose 47 per cent in Gaziantep Province and 25 per cent in Hatay Province between February and April (the national average where data is available is 16 per cent).1 The United Nations High Commissioner for Refugees (UNHCR) has observed an increase in returns of refugees to the affected provinces as well, for similar reasons. To meet the needs of the returning population, authorities are attempting to strengthen shelter capacity through temporary accommodation.\n\nA heavy storm hit Pazarcık district in Kahramanmaraş on 20 April, affecting vulnerable earthquake-affected people. Tents and containers sheltering earthquake-affected people in both informal and formal settlements were blown away and damaged, exposing some of the affected families to harsh weather conditions. An observation visit to the affected neighborhoods on 21 April conducted by humanitarian partners found unconfirmed reports that 1 child died and at least 44 people were injured during the storms, and about 300 families were affected. Some privately donated containers used for shelter were heavily damaged. Humanitarian actors, alongside the Disaster and Emergency Management Presidency (AFAD) have responded: all families affected by the storm and subsequent flooding received tents and blankets from partners in informal settlements, and AFAD provided tents in formal settlements. Other needs remain, including hygiene kits, vector control (primarily for mosquitos), detergents and lice treatment. On 25 April, a partner reported plans to provide hygiene kits with lice shampoo. Heavy rain and cold temperatures are forecast for the weekend of 29 April.\n\nClose to 70,000 Syrians were issued authorizations to temporarily exit to Syria after the earthquake according to authorities, mainly to check on family and attend funerals. UNHCR estimates that as of 20 April, some 16,000 Syrians have returned to Türkiye.\n\nTraining and sensitization on Protection from Sexual Exploitation and Abuse (PSEA) and Accountability to Affected Populations (PSEA) is scaling up. Information has been shared regarding consolidated PSEA Network messaging and training materials that are now available to United Nations members, and uploaded to ReliefWeb for access by others. Distribution of the materials is encouraged. The PSEA Coordinator is exploring opportunities for a localized and sustainable PSEA initiative for the earthquakes response, focused on capacity building, with an emphasis on reaching new aid providers.\n\nWomen and girls continue to have unaddressed, sector-specific needs. These include the need for: women- and children-only spaces; early recovery support for activities linked to care work; support addressing violence against women (supporting government interventions, case management centres, referrals and women’s shelters); resumption of cooking; support for family reunification; safety and wide accessibility for women and girls to water, sanitation and hygiene, shelter and education services and facilities; addressing health and hygiene issues and sexual and reproductive health services; gender responsive design of relocation settlements; and access to menstrual products, shampoo, hair removal and underwear in different sizes. Gender-responsive assessments are being promoted as a key measure in addressing the observed exclusion of women and girls from receiving appropriate assistance in some informal settlements in rural areas (including both general and gender-specific assistance). In parallel, the Women Empowerment in Humanitarian Action Working Group and the Information Management Working Group held a seminar on Gender- Responsive Assessments in Humanitarian Action on 13 April, attended by 155 people from civil society organizations and UN agencies, to strengthen gender-responsive needs assessments in the Türkiye earthquakes response.\n\nThe Flash Appeal for US$1 billion to assist 5.2 million people affected by the earthquakes is 30.2 per cent funded, receiving $303.6 million as of 27 April 2023, including $10 million allocated by the Central Emergency Response Fund.\n\nThe response to the earthquakes in Türkiye continues to be led by the Government of Türkiye in coordination with AFAD and with support from the Turkish Red Crescent (TRC). The international humanitarian community continues to support the government in providing immediate assistance to the affected population, including through the direct contribution of in-kind relief items for onward distribution. In a collaborative effort, humanitarian partners are mobilizing emergency teams and relief operations, delivering relief items such as food, medical supplies, shelter, hygiene and dignity kits and WASH assistance, among other essential needs.",
+  "summary": " This report covers the humanitarian situation and response to the earthquakes in Türkiye from 21 to 27 April 2023. 9.1 million people have been affected, with 5.2 million targeted for humanitarian assistance, 3 million people having to relocate from their homes, and 1.6 million people staying in informal settlements. 50,000 people have been killed and 107,000 people injured. A major storm affected 300 households in Pazarcık, injuring about 45 people and damaging shelter and possessions. Partners plan to increase cash and voucher assistance in several sectors to address an evolution in needs and conditions. The Flash Appeal for US$1 billion to assist 5.2 million people affected by the earthquakes is 30.2 per cent funded. The response to the earthquakes is being led by the Government of Türkiye in coordination with AFAD and with support from the Turkish Red Crescent (TRC).",
+  "metadata": {
+    "id": "3957214",
+    "name": "Türkiye: 2023 Earthquakes Situation Report No. 16, as of 27 April 2023 [EN/TR]",
+    "date_original": 1682726400000,
+    "date_changed": 1683032345000,
+    "date_created": 1682782317000,
+    "primary_country_id": 236,
+    "primary_country_name": "Türkiye",
+    "primary_country_iso3": "tur",
+    "primary_country_location": {
+      "lon": 35.18,
+      "lat": 39.06
+    }
+  }
+}

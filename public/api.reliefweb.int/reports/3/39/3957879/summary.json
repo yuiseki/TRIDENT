@@ -1,0 +1,148 @@
+{
+  "original": {
+    "id": "3957879",
+    "fields": {
+      "date": {
+        "changed": "2023-05-02T18:52:48+00:00",
+        "created": "2023-05-02T18:52:29+00:00",
+        "original": "2023-05-02T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/182",
+          "name": "Pakistan",
+          "location": {
+            "lon": 69.39,
+            "lat": 29.97
+          },
+          "id": 182,
+          "shortname": "Pakistan",
+          "iso3": "pak",
+          "primary": true
+        }
+      ],
+      "origin": "https://www.worldbank.org/en/news/press-release/2023/05/02/the-silent-deep-human-capital-crisis-facing-pakistan-the-country-needs-to-substantially-increase-its-investments-in-huma",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/182",
+        "name": "Pakistan",
+        "location": {
+          "lon": 69.39,
+          "lat": 29.97
+        },
+        "id": 182,
+        "shortname": "Pakistan",
+        "iso3": "pak"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "FF",
+          "name": "Flash Flood",
+          "id": 4624
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1220",
+          "longname": "The World Bank Group",
+          "spanish_name": "Banco Mundial",
+          "name": "World Bank",
+          "id": 1220,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "World Bank",
+          "homepage": "http://www.worldbank.org"
+        }
+      ],
+      "title": "Pakistan – Human Capital Review: Building Capabilities Throughout Life",
+      "body": "**The Silent, Deep Human Capital Crisis Facing Pakistan: The Country Needs to Substantially Increase its Investments in Human Development**\n\nISLAMABAD, May 2, 2023—The World Bank’s report, Pakistan Human Capital Review (HCR), Building Capabilities Throughout Life, underlines the need for Pakistan to significantly increase investments in human capital to address the severe gaps it faces in education and health outcomes particularly.\n\nWhile the country has reached middle-income status and made significant progress in reducing poverty over the past two decades, low human capital outcomes limit Pakistan’s further progress, capping its growth and development prospects.\n\n“Strong human capital is essential for sustainable economic growth, to prepare the workforce for the more highly skilled jobs of the future, and to compete effectively in the global economy,” said Mamta Murthi, the World Bank’s Vice President for Human Development. “Investing in human capital can also build resilience and adaptive capacity to withstand the effects of climate change, while developing the skills and ingenuity needed for a green and inclusive economy and to reduce inequality”.\n\nThrough an analysis of new and existing data, the report documents and quantifies Pakistan’s human capital crisis. Its Human Capital Index (HCI) of 0.41 means that a baby born in Pakistan today will only be 41% as productive as they could be if they enjoyed complete education and full health. The country’s HCI is lower than the South Asian average of 0.48, Bangladesh’s 0.46 and Nepal’s 0.49. Indeed, Pakistan’s human capital outcomes are more comparable to Sub-Saharan Africa’s, which has an average HCI of 0.40. Another facet of Pakistan’s human capital crisis is its low utilization due largely to low female labor force participation.\n\n“With over 20 million school-age children out of school, high levels of child malnutrition, and low empowerment of women, Pakistan’s human capital challenges are among the most serious in the world—it is a human capital crisis that is profound, silent and with far reaching negative effects on the potential of the country and its people,” said Najy Benhassine, the World Bank’s Country Director for Pakistan. “The Human Capital Review shows that Pakistan can realize sub­stantial economic growth by bringing its popula­tion growth rate under control, investing significantly more in the supply and quality of health and education, and bringing women to the labor force.”\n\nThe report provides a wide-ranging assessment of the key challenges and opportunities for Pakistan to improve its human development outcomes, while underscoring the need for a long-term commitment and sustained human capital investments.\n\nThe HCR puts forward several recommendations for Pakistan to boost its human capital, including the need for long-term planning that goes beyond the tenure of any government and political cycle; making family planning a priority across all human development initiatives; investing more smartly in people and developing avenues for them to deploy their human capital more productively; making child malnutrition a national priority; and introducing measures to reduce out-of-school children and improve learning outcomes.\n\n“Pakistan needs a healthy, skilled, and resilient population to ensure high economic growth that is both sustainable and inclusive,” said Lire Ersado, the lead author of the report and World Bank’s Human Development Practice Leader for Pakistan. “With the right policies and invest­ments, the growing working-age population can become healthier, more educated, more skilled, and more productive—and can earn more if the economy generates more and better jobs.”\n\nContacts\n\nIslamabad   \nMariam Sara Altaf   \nExternal Affairs Officer   \nmariamaltaf@worldbank.org\n\nWashington   \nDiana Chung   \nSenior External Affairs Officer   \ndchung1@worldbank.org",
+      "url": "https://reliefweb.int/node/3957879",
+      "disaster": [
+        {
+          "name": "Pakistan: Floods - Jul 2022",
+          "id": 51234,
+          "glide": "FL-2022-000254-PAK",
+          "type": [
+            {
+              "code": "FF",
+              "name": "Flash Flood",
+              "id": 4624
+            },
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/69/23/6923d0f3-8639-411b-b381-1f6316a09033.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/69/23/6923d0f3-8639-411b-b381-1f6316a09033.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/69/23/6923d0f3-8639-411b-b381-1f6316a09033.png",
+            "version": "2416539-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/69/23/6923d0f3-8639-411b-b381-1f6316a09033.png"
+          },
+          "filename": "P17562600e33df0360ab03081ce82e55c92.pdf",
+          "mimetype": "application/pdf",
+          "id": "2416539",
+          "filesize": "20255564",
+          "url": "https://reliefweb.int/attachments/6923d0f3-8639-411b-b381-1f6316a09033/P17562600e33df0360ab03081ce82e55c92.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/pakistan/pakistan-human-capital-review-building-capabilities-throughout-life",
+      "theme": [
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        }
+      ],
+      "id": 3957879,
+      "status": "published",
+      "body-html": "<p><strong>The Silent, Deep Human Capital Crisis Facing Pakistan: The Country Needs to Substantially Increase its Investments in Human Development</strong></p>\n<p>ISLAMABAD, May 2, 2023—The World Bank’s report, Pakistan Human Capital Review (HCR), Building Capabilities Throughout Life, underlines the need for Pakistan to significantly increase investments in human capital to address the severe gaps it faces in education and health outcomes particularly.</p>\n<p>While the country has reached middle-income status and made significant progress in reducing poverty over the past two decades, low human capital outcomes limit Pakistan’s further progress, capping its growth and development prospects.</p>\n<p>“Strong human capital is essential for sustainable economic growth, to prepare the workforce for the more highly skilled jobs of the future, and to compete effectively in the global economy,” said Mamta Murthi, the World Bank’s Vice President for Human Development. “Investing in human capital can also build resilience and adaptive capacity to withstand the effects of climate change, while developing the skills and ingenuity needed for a green and inclusive economy and to reduce inequality”.</p>\n<p>Through an analysis of new and existing data, the report documents and quantifies Pakistan’s human capital crisis. Its Human Capital Index (HCI) of 0.41 means that a baby born in Pakistan today will only be 41% as productive as they could be if they enjoyed complete education and full health. The country’s HCI is lower than the South Asian average of 0.48, Bangladesh’s 0.46 and Nepal’s 0.49. Indeed, Pakistan’s human capital outcomes are more comparable to Sub-Saharan Africa’s, which has an average HCI of 0.40. Another facet of Pakistan’s human capital crisis is its low utilization due largely to low female labor force participation.</p>\n<p>“With over 20 million school-age children out of school, high levels of child malnutrition, and low empowerment of women, Pakistan’s human capital challenges are among the most serious in the world—it is a human capital crisis that is profound, silent and with far reaching negative effects on the potential of the country and its people,” said Najy Benhassine, the World Bank’s Country Director for Pakistan. “The Human Capital Review shows that Pakistan can realize sub­stantial economic growth by bringing its popula­tion growth rate under control, investing significantly more in the supply and quality of health and education, and bringing women to the labor force.”</p>\n<p>The report provides a wide-ranging assessment of the key challenges and opportunities for Pakistan to improve its human development outcomes, while underscoring the need for a long-term commitment and sustained human capital investments.</p>\n<p>The HCR puts forward several recommendations for Pakistan to boost its human capital, including the need for long-term planning that goes beyond the tenure of any government and political cycle; making family planning a priority across all human development initiatives; investing more smartly in people and developing avenues for them to deploy their human capital more productively; making child malnutrition a national priority; and introducing measures to reduce out-of-school children and improve learning outcomes.</p>\n<p>“Pakistan needs a healthy, skilled, and resilient population to ensure high economic growth that is both sustainable and inclusive,” said Lire Ersado, the lead author of the report and World Bank’s Human Development Practice Leader for Pakistan. “With the right policies and invest­ments, the growing working-age population can become healthier, more educated, more skilled, and more productive—and can earn more if the economy generates more and better jobs.”</p>\n<p>Contacts</p>\n<p>Islamabad<br />\nMariam Sara Altaf<br />\nExternal Affairs Officer<br />\n<a href=\"mailto:mariamaltaf@worldbank.org\">mariamaltaf@worldbank.org</a></p>\n<p>Washington<br />\nDiana Chung<br />\nSenior External Affairs Officer<br />\n<a href=\"mailto:dchung1@worldbank.org\">dchung1@worldbank.org</a></p>\n"
+    }
+  },
+  "text": "# Pakistan – Human Capital Review: Building Capabilities Throughout Life\n\n**The Silent, Deep Human Capital Crisis Facing Pakistan: The Country Needs to Substantially Increase its Investments in Human Development**\n\nISLAMABAD, May 2, 2023—The World Bank’s report, Pakistan Human Capital Review (HCR), Building Capabilities Throughout Life, underlines the need for Pakistan to significantly increase investments in human capital to address the severe gaps it faces in education and health outcomes particularly.\n\nWhile the country has reached middle-income status and made significant progress in reducing poverty over the past two decades, low human capital outcomes limit Pakistan’s further progress, capping its growth and development prospects.\n\n“Strong human capital is essential for sustainable economic growth, to prepare the workforce for the more highly skilled jobs of the future, and to compete effectively in the global economy,” said Mamta Murthi, the World Bank’s Vice President for Human Development. “Investing in human capital can also build resilience and adaptive capacity to withstand the effects of climate change, while developing the skills and ingenuity needed for a green and inclusive economy and to reduce inequality”.\n\nThrough an analysis of new and existing data, the report documents and quantifies Pakistan’s human capital crisis. Its Human Capital Index (HCI) of 0.41 means that a baby born in Pakistan today will only be 41% as productive as they could be if they enjoyed complete education and full health. The country’s HCI is lower than the South Asian average of 0.48, Bangladesh’s 0.46 and Nepal’s 0.49. Indeed, Pakistan’s human capital outcomes are more comparable to Sub-Saharan Africa’s, which has an average HCI of 0.40. Another facet of Pakistan’s human capital crisis is its low utilization due largely to low female labor force participation.\n\n“With over 20 million school-age children out of school, high levels of child malnutrition, and low empowerment of women, Pakistan’s human capital challenges are among the most serious in the world—it is a human capital crisis that is profound, silent and with far reaching negative effects on the potential of the country and its people,” said Najy Benhassine, the World Bank’s Country Director for Pakistan. “The Human Capital Review shows that Pakistan can realize sub­stantial economic growth by bringing its popula­tion growth rate under control, investing significantly more in the supply and quality of health and education, and bringing women to the labor force.”\n\nThe report provides a wide-ranging assessment of the key challenges and opportunities for Pakistan to improve its human development outcomes, while underscoring the need for a long-term commitment and sustained human capital investments.\n\nThe HCR puts forward several recommendations for Pakistan to boost its human capital, including the need for long-term planning that goes beyond the tenure of any government and political cycle; making family planning a priority across all human development initiatives; investing more smartly in people and developing avenues for them to deploy their human capital more productively; making child malnutrition a national priority; and introducing measures to reduce out-of-school children and improve learning outcomes.\n\n“Pakistan needs a healthy, skilled, and resilient population to ensure high economic growth that is both sustainable and inclusive,” said Lire Ersado, the lead author of the report and World Bank’s Human Development Practice Leader for Pakistan. “With the right policies and invest­ments, the growing working-age population can become healthier, more educated, more skilled, and more productive—and can earn more if the economy generates more and better jobs.”\n\nContacts\n\nIslamabad   \nMariam Sara Altaf   \nExternal Affairs Officer   \nmariamaltaf@worldbank.org\n\nWashington   \nDiana Chung   \nSenior External Affairs Officer   \ndchung1@worldbank.org",
+  "summary": " The World Bank's Pakistan Human Capital Review report highlights the need for Pakistan to increase investments in human capital to address the severe gaps in education and health outcomes. The report documents and quantifies the country's human capital crisis, with a Human Capital Index of 0.41, and outlines recommendations for Pakistan to boost its human capital, such as long-term planning, investing in people, and reducing out-of-school children.",
+  "metadata": {
+    "id": "3957879",
+    "name": "Pakistan – Human Capital Review: Building Capabilities Throughout Life",
+    "date_original": 1682985600000,
+    "date_changed": 1683053568000,
+    "date_created": 1683053549000,
+    "primary_country_id": 182,
+    "primary_country_name": "Pakistan",
+    "primary_country_iso3": "pak",
+    "primary_country_location": {
+      "lon": 69.39,
+      "lat": 29.97
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "original": {
+    "id": "3955766",
+    "fields": {
+      "date": {
+        "changed": "2023-04-25T14:04:42+00:00",
+        "created": "2023-04-25T12:14:30+00:00",
+        "original": "2023-04-25T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/255",
+          "name": "Yemen",
+          "location": {
+            "lon": 47.62,
+            "lat": 15.94
+          },
+          "id": 255,
+          "shortname": "Yemen",
+          "iso3": "yem",
+          "primary": true
+        }
+      ],
+      "origin": "https://sheltercluster.org/yemen/documents/shelter-cluster-factsheet-q1-2023",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/255",
+        "name": "Yemen",
+        "location": {
+          "lon": 47.62,
+          "lat": 15.94
+        },
+        "id": 255,
+        "shortname": "Yemen",
+        "iso3": "yem"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/13726",
+          "name": "Shelter Cluster",
+          "id": 13726,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "Shelter Cluster",
+          "homepage": "https://www.sheltercluster.org/"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "Shelter Cluster Factsheet for Q1 2023 (January - March 2023)",
+      "body": "**SITUATION & UPDATES**\n\n- Rainy season has started in Yemen resulting to flooding, which has so far impacted 8,000 IDP and host families mainly in IDP sites. Flooding caused  displacements, damage to properties and public infrastructure, as well as the loss of crops and livestocks.\n- The Cluster was allocated $1.35 million through the Yemen Humanitarain Fund (YHF) to support its Flood Preparedness and Response against its $26 Million requirements. \n- A joint CCCM and Shelter Cluster Coordination Team visited Al Durahimi, in Al Hudaydah Governorate, a return area.  Approxmaitely 500 IDP families returned and are in urgent need of rehabilitation/reconstruction and livelihood support.\n\n**ACHIEVEMENTS**\n\n- The Cluster received 11% ($28 million) of its 2023 funding requirements ($250 million) and has so far reached 164,000 IDPs, returnees, and vulnerable host with various shelter assistance including community-driven flood mitigation, Non-Food Items (NFIs), emergency shelter, transitional shelter and support for shelter maintenance, which improved the living conditions and mitigated protection risks. \n- The Cluster developed its Flood Preparedness and Response plan to respond to the most vulnerable IDPs inside and outside sites prioritized in high risk flood hazards areas. The Cluster requires approximately US 26 million to reach its targets of  56,000 households/392,000 individuals.\n- The Cluster Coordination Performance Monitoring (CCPM) exercise is concluded. The final action plan will be published on the cluster webpage and will be regularly monitored throughout the year. \n- The Cluster conducted two information management refresher sessions for more than thirty cluster partners in Aden and Marib governvorate to improve the overall information management as well as  reporting using the Activity Info Tool. \n\n**GAPS / CHALLENGES:**\n- Lack of funding to support longer-term shelter solutions for protracted situation and returnees. \n- Eviction threats are rising in IDP hosting sites while some vulnerable families in rental accommodation are returning to IDPs due to unaffordable rent .",
+      "url": "https://reliefweb.int/node/3955766",
+      "disaster": [
+        {
+          "name": "Yemen: Floods - Jun 2022",
+          "id": 51253,
+          "glide": "FL-2022-000265-YEM",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            }
+          ],
+          "status": "past"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/83/d0/83d01be2-51bd-4d34-9c9c-61aee7da2f1b.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/83/d0/83d01be2-51bd-4d34-9c9c-61aee7da2f1b.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/83/d0/83d01be2-51bd-4d34-9c9c-61aee7da2f1b.png",
+            "version": "2414512-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/83/d0/83d01be2-51bd-4d34-9c9c-61aee7da2f1b.png"
+          },
+          "filename": "Shelter Cluster Factsheet for Q1 2023 v1.3.pdf",
+          "mimetype": "application/pdf",
+          "id": "2414512",
+          "filesize": "247199",
+          "url": "https://reliefweb.int/attachments/83d01be2-51bd-4d34-9c9c-61aee7da2f1b/Shelter%20Cluster%20Factsheet%20for%20Q1%202023%20v1.3.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/yemen/shelter-cluster-factsheet-q1-2023-january-march-2023",
+      "theme": [
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        }
+      ],
+      "id": 3955766,
+      "status": "published",
+      "body-html": "<p><strong>SITUATION &amp; UPDATES</strong></p>\n<ul>\n<li>Rainy season has started in Yemen resulting to flooding, which has so far impacted 8,000 IDP and host families mainly in IDP sites. Flooding caused  displacements, damage to properties and public infrastructure, as well as the loss of crops and livestocks.</li>\n<li>The Cluster was allocated $1.35 million through the Yemen Humanitarain Fund (YHF) to support its Flood Preparedness and Response against its $26 Million requirements.</li>\n<li>A joint CCCM and Shelter Cluster Coordination Team visited Al Durahimi, in Al Hudaydah Governorate, a return area.  Approxmaitely 500 IDP families returned and are in urgent need of rehabilitation/reconstruction and livelihood support.</li>\n</ul>\n<p><strong>ACHIEVEMENTS</strong></p>\n<ul>\n<li>The Cluster received 11% ($28 million) of its 2023 funding requirements ($250 million) and has so far reached 164,000 IDPs, returnees, and vulnerable host with various shelter assistance including community-driven flood mitigation, Non-Food Items (NFIs), emergency shelter, transitional shelter and support for shelter maintenance, which improved the living conditions and mitigated protection risks.</li>\n<li>The Cluster developed its Flood Preparedness and Response plan to respond to the most vulnerable IDPs inside and outside sites prioritized in high risk flood hazards areas. The Cluster requires approximately US 26 million to reach its targets of  56,000 households/392,000 individuals.</li>\n<li>The Cluster Coordination Performance Monitoring (CCPM) exercise is concluded. The final action plan will be published on the cluster webpage and will be regularly monitored throughout the year.</li>\n<li>The Cluster conducted two information management refresher sessions for more than thirty cluster partners in Aden and Marib governvorate to improve the overall information management as well as  reporting using the Activity Info Tool.</li>\n</ul>\n<p><strong>GAPS / CHALLENGES:</strong></p>\n<ul>\n<li>Lack of funding to support longer-term shelter solutions for protracted situation and returnees.</li>\n<li>Eviction threats are rising in IDP hosting sites while some vulnerable families in rental accommodation are returning to IDPs due to unaffordable rent .</li>\n</ul>\n"
+    }
+  },
+  "text": "# Shelter Cluster Factsheet for Q1 2023 (January - March 2023)\n\n**SITUATION & UPDATES**\n\n- Rainy season has started in Yemen resulting to flooding, which has so far impacted 8,000 IDP and host families mainly in IDP sites. Flooding caused  displacements, damage to properties and public infrastructure, as well as the loss of crops and livestocks.\n- The Cluster was allocated $1.35 million through the Yemen Humanitarain Fund (YHF) to support its Flood Preparedness and Response against its $26 Million requirements. \n- A joint CCCM and Shelter Cluster Coordination Team visited Al Durahimi, in Al Hudaydah Governorate, a return area.  Approxmaitely 500 IDP families returned and are in urgent need of rehabilitation/reconstruction and livelihood support.\n\n**ACHIEVEMENTS**\n\n- The Cluster received 11% ($28 million) of its 2023 funding requirements ($250 million) and has so far reached 164,000 IDPs, returnees, and vulnerable host with various shelter assistance including community-driven flood mitigation, Non-Food Items (NFIs), emergency shelter, transitional shelter and support for shelter maintenance, which improved the living conditions and mitigated protection risks. \n- The Cluster developed its Flood Preparedness and Response plan to respond to the most vulnerable IDPs inside and outside sites prioritized in high risk flood hazards areas. The Cluster requires approximately US 26 million to reach its targets of  56,000 households/392,000 individuals.\n- The Cluster Coordination Performance Monitoring (CCPM) exercise is concluded. The final action plan will be published on the cluster webpage and will be regularly monitored throughout the year. \n- The Cluster conducted two information management refresher sessions for more than thirty cluster partners in Aden and Marib governvorate to improve the overall information management as well as  reporting using the Activity Info Tool. \n\n**GAPS / CHALLENGES:**\n- Lack of funding to support longer-term shelter solutions for protracted situation and returnees. \n- Eviction threats are rising in IDP hosting sites while some vulnerable families in rental accommodation are returning to IDPs due to unaffordable rent .",
+  "summary": " The Shelter Cluster in Yemen has received 11% of its 2023 funding requirements and has so far reached 164,000 IDPs, returnees, and vulnerable host with various shelter assistance. The Cluster has developed a Flood Preparedness and Response plan to respond to the most vulnerable IDPs and conducted two information management refresher sessions. However, there is a lack of funding to support longer-term shelter solutions and eviction threats are rising in IDP hosting sites.",
+  "metadata": {
+    "id": "3955766",
+    "name": "Shelter Cluster Factsheet for Q1 2023 (January - March 2023)",
+    "date_original": 1682380800000,
+    "date_changed": 1682431482000,
+    "date_created": 1682424870000,
+    "primary_country_id": 255,
+    "primary_country_name": "Yemen",
+    "primary_country_iso3": "yem",
+    "primary_country_location": {
+      "lon": 47.62,
+      "lat": 15.94
+    }
+  }
+}

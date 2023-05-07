@@ -1,0 +1,134 @@
+{
+  "original": {
+    "id": "3956572",
+    "fields": {
+      "date": {
+        "changed": "2023-04-27T11:24:23+00:00",
+        "created": "2023-04-27T10:17:23+00:00",
+        "original": "2023-04-27T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/165",
+          "name": "Myanmar",
+          "location": {
+            "lon": 96.51,
+            "lat": 21.15
+          },
+          "id": 165,
+          "shortname": "Myanmar",
+          "iso3": "mmr",
+          "primary": true
+        }
+      ],
+      "origin": "https://data.unhcr.org/en/documents/details/100301",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/165",
+        "name": "Myanmar",
+        "location": {
+          "lon": 96.51,
+          "lat": 21.15
+        },
+        "id": 165,
+        "shortname": "Myanmar",
+        "iso3": "mmr"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "UNHCR Myanmar Operational Update, January-March 2023",
+      "body": "**KEY HIGHLIGHTS**\n\n95,000 people received core relief items comprising kitchen sets, blankets and sleeping mats, ensuring their basic needs were met.\n\n11,500 people received shelter support for safe and dignified living conditions while in displacement.\n\n8,300 people with specific needs benefited from cash assistance to meet their basic needs.\n\n**POPULATION OF CONCERN 1.8 M**\n\nInternally displaced people (IDP) living in Rakhine, Chin, Kachin,  Shan, Kayin, Kayah and Mon States, and Bago (East), Tanintharyi, Sagaing and Magway Regions (as of 31 March 2023). According to UN sources, an estimated 1,4 million people have been displaced due to the resumption and intensification of clashes between the Tatmadaw and ethnic armed organizations (EAOs) and/or People’s Defense Forces (PDF) after 1 February 2021. 630,000 Estimated Rohingya in Rakhine State, of which some 147,000 are living in displacement camps as well as among the host community since 2012.",
+      "url": "https://reliefweb.int/node/3956572",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/ae/0b/ae0b4e44-ff22-4186-bf54-b6cabdca1961.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/ae/0b/ae0b4e44-ff22-4186-bf54-b6cabdca1961.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/ae/0b/ae0b4e44-ff22-4186-bf54-b6cabdca1961.png",
+            "version": "2415297-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/ae/0b/ae0b4e44-ff22-4186-bf54-b6cabdca1961.png"
+          },
+          "filename": "UNHCR Myanmar Operational Update January-March 2023 .pdf",
+          "mimetype": "application/pdf",
+          "id": "2415297",
+          "filesize": "764935",
+          "url": "https://reliefweb.int/attachments/ae0b4e44-ff22-4186-bf54-b6cabdca1961/UNHCR%20Myanmar%20Operational%20Update%20January-March%202023%20.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/myanmar/unhcr-myanmar-operational-update-january-march-2023",
+      "theme": [
+        {
+          "name": "Camp Coordination and Camp Management",
+          "id": 49458
+        },
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3956572,
+      "status": "published",
+      "body-html": "<p><strong>KEY HIGHLIGHTS</strong></p>\n<p>95,000 people received core relief items comprising kitchen sets, blankets and sleeping mats, ensuring their basic needs were met.</p>\n<p>11,500 people received shelter support for safe and dignified living conditions while in displacement.</p>\n<p>8,300 people with specific needs benefited from cash assistance to meet their basic needs.</p>\n<p><strong>POPULATION OF CONCERN 1.8 M</strong></p>\n<p>Internally displaced people (IDP) living in Rakhine, Chin, Kachin,  Shan, Kayin, Kayah and Mon States, and Bago (East), Tanintharyi, Sagaing and Magway Regions (as of 31 March 2023). According to UN sources, an estimated 1,4 million people have been displaced due to the resumption and intensification of clashes between the Tatmadaw and ethnic armed organizations (EAOs) and/or People’s Defense Forces (PDF) after 1 February 2021. 630,000 Estimated Rohingya in Rakhine State, of which some 147,000 are living in displacement camps as well as among the host community since 2012.</p>\n"
+    }
+  },
+  "text": "# UNHCR Myanmar Operational Update, January-March 2023\n\n**KEY HIGHLIGHTS**\n\n95,000 people received core relief items comprising kitchen sets, blankets and sleeping mats, ensuring their basic needs were met.\n\n11,500 people received shelter support for safe and dignified living conditions while in displacement.\n\n8,300 people with specific needs benefited from cash assistance to meet their basic needs.\n\n**POPULATION OF CONCERN 1.8 M**\n\nInternally displaced people (IDP) living in Rakhine, Chin, Kachin,  Shan, Kayin, Kayah and Mon States, and Bago (East), Tanintharyi, Sagaing and Magway Regions (as of 31 March 2023). According to UN sources, an estimated 1,4 million people have been displaced due to the resumption and intensification of clashes between the Tatmadaw and ethnic armed organizations (EAOs) and/or People’s Defense Forces (PDF) after 1 February 2021. 630,000 Estimated Rohingya in Rakhine State, of which some 147,000 are living in displacement camps as well as among the host community since 2012.",
+  "summary": " During the period of January-March 2023, UNHCR Myanmar provided core relief items, shelter support, and cash assistance to 1.8 million internally displaced people in Rakhine, Chin, Kachin, Shan, Kayin, Kayah and Mon States, and Bago (East), Tanintharyi, Sagaing and Magway Regions. Of these, 95,000 people received core relief items, 11,500 people received shelter support, and 8,300 people with specific needs benefited from cash assistance. An estimated 1.4 million people have been displaced due to the resumption and intensification of clashes between the Tatmadaw and ethnic armed organizations (EAOs) and/or People’s Defense Forces (PDF) since February 2021, with 630,000 of these being Rohingya in Rakhine State, of which some 147,000 are living in displacement camps as well as among the host community since 2012.",
+  "metadata": {
+    "id": "3956572",
+    "name": "UNHCR Myanmar Operational Update, January-March 2023",
+    "date_original": 1682553600000,
+    "date_changed": 1682594663000,
+    "date_created": 1682590643000,
+    "primary_country_id": 165,
+    "primary_country_name": "Myanmar",
+    "primary_country_iso3": "mmr",
+    "primary_country_location": {
+      "lon": 96.51,
+      "lat": 21.15
+    }
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "original": {
+    "id": "3946933",
+    "fields": {
+      "date": {
+        "changed": "2023-05-02T15:07:35+00:00",
+        "created": "2023-05-02T00:00:00+00:00",
+        "original": "2023-05-02T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/54",
+          "name": "Central African Republic",
+          "location": {
+            "lon": 20.48,
+            "lat": 6.57
+          },
+          "id": 54,
+          "shortname": "CAR",
+          "iso3": "caf",
+          "primary": true
+        }
+      ],
+      "ocha_product": [
+        {
+          "name": "Situation Report",
+          "id": 12345
+        }
+      ],
+      "origin": "https://reports.unocha.org/en/country/car/",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/54",
+        "name": "Central African Republic",
+        "location": {
+          "lon": 20.48,
+          "lat": 6.57
+        },
+        "id": 54,
+        "shortname": "CAR",
+        "iso3": "caf"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1503",
+          "longname": "United Nations Office for the Coordination of Humanitarian Affairs",
+          "spanish_name": "Oficina de Coordinación de Asuntos Humanitarios",
+          "name": "UN Office for the Coordination of Humanitarian Affairs",
+          "id": 1503,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "OCHA",
+          "disclaimer": "To learn more about OCHA's activities, please visit https://www.unocha.org/.",
+          "homepage": "http://www.unocha.org/"
+        }
+      ],
+      "title": "Central African Republic: Situation Report, 2 May 2023",
+      "body": "**HIGHLIGHTS**\n\nIn 2023, the humanitarian community in CAR plans to assist 2.4 million most vulnerable people. US$ 465 million is required.\n\nHumanitarian actors provided life-saving assistance to 1.9 million people in 2022, representing 93 per cent of the Humanitarian Response Plan target\n\nWith 50 per cent of the population not eating enough,  \nCAR has one of the highest proportions of critically food-insecure people in the world.\n\nAfter several years of displacement, humanitarian and development actors are helping internally displaced persons and refugees to resume a normal life.\n\n**BACKGROUND**\n\n**Limitless generosity**\n\nEven if this Friday afternoon, marked by children playing in the street, street vendors and the horns of motorbike taxis looking for passengers seems quite ordinary for many Bangassou residents, it is not the case for Hawa Abakar. At 36 with a slim figure and a pensive face, she’s undoubtely wondering when will her journey end in this town where she found refuge.  \n\nHawa and her family were forced to leave their home in Zemio, 250 km from Bangassou in the south-east of the Central African Republic, following an attack on the town by armed groups a year ago, and found refuge in Bangassou in the Mbomou Prefecture. \"To increase our chances of survival, my husband and I separated, each going in the opposite way with two of our children as we have four. My husband headed to the Democratic Republic of Congo border area and I went to Bangassou. It was the most painful time of my life because I didn't know if my husband and our two children who left with him had survived\" she says.  \n\nEach year, violence against civilians forces thousands of Central Africans fearing for their lives to displacement to survive the conflict that continues to devastate the country, particularly in rural areas. One in five Central Africans is currently either an internally displaced person (IDP) or a refugee in neighboring countries.  \n\nIn 2022, almost three-quarters of the IDPs were living with host families. This was the case for Hawa, who on her arrival in Bangassou was welcomed by Kadidia, a former IDP she met in the town's mosque. \"Kadidia became our family. She welcomed me and my children and shares what she has with us. We are fed and housed,\" explains Hawa.\n\n**The new 2023 Humanitarian Response Plan for the Central African Republic**\n\nDue to the underlying socio-political crisis, a large portion of the population of the Central African Republic continues to face a humanitarian crisis with severe humanitarian needs, particularly in areas outside of urban centers, with violence against civilians and insecurity continuing to push Central Africans into displacement. More than one in five Central Africans are currently displaced either within the country or in neighboring countries. People's access to basic services such as health and education, as well as to livelihoods including agriculture, continues to be severely limited as a result of insecurity.\n\nIn this context, the protection and well-being of Central Africans remains at risk. In 2023, 3.4 million people, or 56 per cent of the population, will need humanitarian assistance and protection.\n\nGiven the scale of humanitarian needs and the anticipated risks, the humanitarian community in CAR, through the [Humanitarian Response Plan](https://reliefweb.int/report/central-african-republic/republique-centrafricaine-plan-de-reponse-humanitaire-2023-janvier-2023?_gl=1*14w706c*_ga*MjM4MjUyODM0LjE2NzM2MzY5OTE.*_ga_E60ZNX2F68*MTY3NTk0MTM0MS4zMy4wLjE2NzU5NDEzNDEuNjAuMC4w), aims to assist 2.4 million people in 2023 with vital multi-sectoral assistance. To that end, US$ 465 million is required. Extraordinary donor support in 2023 will be needed more than ever, in an environment where the risks of economic recession and new crises around the world will strain on available resources.\n\nIn 2022, humanitarians demonstrated flexibility and adaptability over operating environment challenges, and deployed to respond to a variety of new crises including in several landlocked areas, particularly in the north of the country. 1.8 million people received life-saving multisectoral assistance, or 93 per cent of the 2022 Humanitarian Response Plan target.\n\nThe response strategy in 2023 will be based on a multisectoral response to various types of needs, localization to strengthen the response by national and local actors, accountability to ensure the response is in line with expectations of those in need, and the nexus to establish a link between the emergency response and assistance to support the return of displaced persons. The humanitarian community will seek to establish a certain balance in the distribution of resources among sectors, for a better response in view of different nature of needs.\n\nFor more information, see the 2023 [Humanitarian Response Plan](https://reliefweb.int/report/central-african-republic/republique-centrafricaine-plan-de-reponse-humanitaire-2023-janvier-2023?_gl=1*14w706c*_ga*MjM4MjUyODM0LjE2NzM2MzY5OTE.*_ga_E60ZNX2F68*MTY3NTk0MTM0MS4zMy4wLjE2NzU5NDEzNDEuNjAuMC4w) for the Central African Republic.",
+      "url": "https://reliefweb.int/node/3946933",
+      "disaster": [
+        {
+          "name": "Central African Republic: Floods - Jul 2022",
+          "id": 51303,
+          "glide": "FL-2022-000321-CAF",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            }
+          ],
+          "status": "past"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/1b/a2/1ba2efab-0bea-41b5-9b90-a87953d93ae2.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/1b/a2/1ba2efab-0bea-41b5-9b90-a87953d93ae2.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/1b/a2/1ba2efab-0bea-41b5-9b90-a87953d93ae2.png",
+            "version": "2416415-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/1b/a2/1ba2efab-0bea-41b5-9b90-a87953d93ae2.png"
+          },
+          "filename": "Situation Report - Central African Republic - 25 Mar 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2416415",
+          "filesize": "26971884",
+          "url": "https://reliefweb.int/attachments/1ba2efab-0bea-41b5-9b90-a87953d93ae2/Situation%20Report%20-%20Central%20African%20Republic%20-%2025%20Mar%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/central-african-republic/central-african-republic-situation-report-2-may-2023",
+      "redirects": [
+        "https://reliefweb.int/report/central-african-republic/central-african-republic-situation-report-25-march-2023",
+        "https://reliefweb.int/report/central-african-republic/central-african-republic-situation-report-4-april-2023",
+        "https://reliefweb.int/report/central-african-republic/central-african-republic-situation-report-12-april-2023",
+        "https://reliefweb.int/report/central-african-republic/central-african-republic-situation-report-13-april-2023",
+        "https://reliefweb.int/report/central-african-republic/central-african-republic-situation-report-18-april-2023",
+        "https://reliefweb.int/report/central-african-republic/central-african-republic-situation-report-27-april-2023"
+      ],
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        },
+        {
+          "name": "Camp Coordination and Camp Management",
+          "id": 49458
+        },
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Disaster Management",
+          "id": 4591
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        },
+        {
+          "name": "Mine Action",
+          "id": 12033
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Safety and Security",
+          "id": 4602
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3946933,
+      "status": "published",
+      "body-html": "<p><strong>HIGHLIGHTS</strong></p>\n<p>In 2023, the humanitarian community in CAR plans to assist 2.4 million most vulnerable people. US$ 465 million is required.</p>\n<p>Humanitarian actors provided life-saving assistance to 1.9 million people in 2022, representing 93 per cent of the Humanitarian Response Plan target</p>\n<p>With 50 per cent of the population not eating enough,<br />\nCAR has one of the highest proportions of critically food-insecure people in the world.</p>\n<p>After several years of displacement, humanitarian and development actors are helping internally displaced persons and refugees to resume a normal life.</p>\n<p><strong>BACKGROUND</strong></p>\n<p><strong>Limitless generosity</strong></p>\n<p>Even if this Friday afternoon, marked by children playing in the street, street vendors and the horns of motorbike taxis looking for passengers seems quite ordinary for many Bangassou residents, it is not the case for Hawa Abakar. At 36 with a slim figure and a pensive face, she’s undoubtely wondering when will her journey end in this town where she found refuge.</p>\n<p>Hawa and her family were forced to leave their home in Zemio, 250 km from Bangassou in the south-east of the Central African Republic, following an attack on the town by armed groups a year ago, and found refuge in Bangassou in the Mbomou Prefecture. &quot;To increase our chances of survival, my husband and I separated, each going in the opposite way with two of our children as we have four. My husband headed to the Democratic Republic of Congo border area and I went to Bangassou. It was the most painful time of my life because I didn't know if my husband and our two children who left with him had survived&quot; she says.</p>\n<p>Each year, violence against civilians forces thousands of Central Africans fearing for their lives to displacement to survive the conflict that continues to devastate the country, particularly in rural areas. One in five Central Africans is currently either an internally displaced person (IDP) or a refugee in neighboring countries.</p>\n<p>In 2022, almost three-quarters of the IDPs were living with host families. This was the case for Hawa, who on her arrival in Bangassou was welcomed by Kadidia, a former IDP she met in the town's mosque. &quot;Kadidia became our family. She welcomed me and my children and shares what she has with us. We are fed and housed,&quot; explains Hawa.</p>\n<p><strong>The new 2023 Humanitarian Response Plan for the Central African Republic</strong></p>\n<p>Due to the underlying socio-political crisis, a large portion of the population of the Central African Republic continues to face a humanitarian crisis with severe humanitarian needs, particularly in areas outside of urban centers, with violence against civilians and insecurity continuing to push Central Africans into displacement. More than one in five Central Africans are currently displaced either within the country or in neighboring countries. People's access to basic services such as health and education, as well as to livelihoods including agriculture, continues to be severely limited as a result of insecurity.</p>\n<p>In this context, the protection and well-being of Central Africans remains at risk. In 2023, 3.4 million people, or 56 per cent of the population, will need humanitarian assistance and protection.</p>\n<p>Given the scale of humanitarian needs and the anticipated risks, the humanitarian community in CAR, through the <a href=\"https://reliefweb.int/report/central-african-republic/republique-centrafricaine-plan-de-reponse-humanitaire-2023-janvier-2023?_gl=1*14w706c*_ga*MjM4MjUyODM0LjE2NzM2MzY5OTE.*_ga_E60ZNX2F68*MTY3NTk0MTM0MS4zMy4wLjE2NzU5NDEzNDEuNjAuMC4w\">Humanitarian Response Plan</a>, aims to assist 2.4 million people in 2023 with vital multi-sectoral assistance. To that end, US$ 465 million is required. Extraordinary donor support in 2023 will be needed more than ever, in an environment where the risks of economic recession and new crises around the world will strain on available resources.</p>\n<p>In 2022, humanitarians demonstrated flexibility and adaptability over operating environment challenges, and deployed to respond to a variety of new crises including in several landlocked areas, particularly in the north of the country. 1.8 million people received life-saving multisectoral assistance, or 93 per cent of the 2022 Humanitarian Response Plan target.</p>\n<p>The response strategy in 2023 will be based on a multisectoral response to various types of needs, localization to strengthen the response by national and local actors, accountability to ensure the response is in line with expectations of those in need, and the nexus to establish a link between the emergency response and assistance to support the return of displaced persons. The humanitarian community will seek to establish a certain balance in the distribution of resources among sectors, for a better response in view of different nature of needs.</p>\n<p>For more information, see the 2023 <a href=\"https://reliefweb.int/report/central-african-republic/republique-centrafricaine-plan-de-reponse-humanitaire-2023-janvier-2023?_gl=1*14w706c*_ga*MjM4MjUyODM0LjE2NzM2MzY5OTE.*_ga_E60ZNX2F68*MTY3NTk0MTM0MS4zMy4wLjE2NzU5NDEzNDEuNjAuMC4w\">Humanitarian Response Plan</a> for the Central African Republic.</p>\n"
+    }
+  },
+  "text": "# Central African Republic: Situation Report, 2 May 2023\n\n**HIGHLIGHTS**\n\nIn 2023, the humanitarian community in CAR plans to assist 2.4 million most vulnerable people. US$ 465 million is required.\n\nHumanitarian actors provided life-saving assistance to 1.9 million people in 2022, representing 93 per cent of the Humanitarian Response Plan target\n\nWith 50 per cent of the population not eating enough,  \nCAR has one of the highest proportions of critically food-insecure people in the world.\n\nAfter several years of displacement, humanitarian and development actors are helping internally displaced persons and refugees to resume a normal life.\n\n**BACKGROUND**\n\n**Limitless generosity**\n\nEven if this Friday afternoon, marked by children playing in the street, street vendors and the horns of motorbike taxis looking for passengers seems quite ordinary for many Bangassou residents, it is not the case for Hawa Abakar. At 36 with a slim figure and a pensive face, she’s undoubtely wondering when will her journey end in this town where she found refuge.  \n\nHawa and her family were forced to leave their home in Zemio, 250 km from Bangassou in the south-east of the Central African Republic, following an attack on the town by armed groups a year ago, and found refuge in Bangassou in the Mbomou Prefecture. \"To increase our chances of survival, my husband and I separated, each going in the opposite way with two of our children as we have four. My husband headed to the Democratic Republic of Congo border area and I went to Bangassou. It was the most painful time of my life because I didn't know if my husband and our two children who left with him had survived\" she says.  \n\nEach year, violence against civilians forces thousands of Central Africans fearing for their lives to displacement to survive the conflict that continues to devastate the country, particularly in rural areas. One in five Central Africans is currently either an internally displaced person (IDP) or a refugee in neighboring countries.  \n\nIn 2022, almost three-quarters of the IDPs were living with host families. This was the case for Hawa, who on her arrival in Bangassou was welcomed by Kadidia, a former IDP she met in the town's mosque. \"Kadidia became our family. She welcomed me and my children and shares what she has with us. We are fed and housed,\" explains Hawa.\n\n**The new 2023 Humanitarian Response Plan for the Central African Republic**\n\nDue to the underlying socio-political crisis, a large portion of the population of the Central African Republic continues to face a humanitarian crisis with severe humanitarian needs, particularly in areas outside of urban centers, with violence against civilians and insecurity continuing to push Central Africans into displacement. More than one in five Central Africans are currently displaced either within the country or in neighboring countries. People's access to basic services such as health and education, as well as to livelihoods including agriculture, continues to be severely limited as a result of insecurity.\n\nIn this context, the protection and well-being of Central Africans remains at risk. In 2023, 3.4 million people, or 56 per cent of the population, will need humanitarian assistance and protection.\n\nGiven the scale of humanitarian needs and the anticipated risks, the humanitarian community in CAR, through the [Humanitarian Response Plan](https://reliefweb.int/report/central-african-republic/republique-centrafricaine-plan-de-reponse-humanitaire-2023-janvier-2023?_gl=1*14w706c*_ga*MjM4MjUyODM0LjE2NzM2MzY5OTE.*_ga_E60ZNX2F68*MTY3NTk0MTM0MS4zMy4wLjE2NzU5NDEzNDEuNjAuMC4w), aims to assist 2.4 million people in 2023 with vital multi-sectoral assistance. To that end, US$ 465 million is required. Extraordinary donor support in 2023 will be needed more than ever, in an environment where the risks of economic recession and new crises around the world will strain on available resources.\n\nIn 2022, humanitarians demonstrated flexibility and adaptability over operating environment challenges, and deployed to respond to a variety of new crises including in several landlocked areas, particularly in the north of the country. 1.8 million people received life-saving multisectoral assistance, or 93 per cent of the 2022 Humanitarian Response Plan target.\n\nThe response strategy in 2023 will be based on a multisectoral response to various types of needs, localization to strengthen the response by national and local actors, accountability to ensure the response is in line with expectations of those in need, and the nexus to establish a link between the emergency response and assistance to support the return of displaced persons. The humanitarian community will seek to establish a certain balance in the distribution of resources among sectors, for a better response in view of different nature of needs.\n\nFor more information, see the 2023 [Humanitarian Response Plan](https://reliefweb.int/report/central-african-republic/republique-centrafricaine-plan-de-reponse-humanitaire-2023-janvier-2023?_gl=1*14w706c*_ga*MjM4MjUyODM0LjE2NzM2MzY5OTE.*_ga_E60ZNX2F68*MTY3NTk0MTM0MS4zMy4wLjE2NzU5NDEzNDEuNjAuMC4w) for the Central African Republic.",
+  "summary": " In 2023, the humanitarian community in the Central African Republic (CAR) plans to assist 2.4 million of the most vulnerable people, requiring US$ 465 million. In 2022, 1.9 million people were provided with life-saving assistance, representing 93% of the Humanitarian Response Plan target. CAR has one of the highest proportions of critically food-insecure people in the world, and humanitarian and development actors are helping internally displaced persons and refugees to resume a normal life. The 2023 Humanitarian Response Plan aims to provide multi-sectoral assistance to those in need, with a focus on localization, accountability, and the nexus between emergency response and assistance.",
+  "metadata": {
+    "id": "3946933",
+    "name": "Central African Republic: Situation Report, 2 May 2023",
+    "date_original": 1682985600000,
+    "date_changed": 1683040055000,
+    "date_created": 1682985600000,
+    "primary_country_id": 54,
+    "primary_country_name": "Central African Republic",
+    "primary_country_iso3": "caf",
+    "primary_country_location": {
+      "lon": 20.48,
+      "lat": 6.57
+    }
+  }
+}

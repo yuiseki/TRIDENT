@@ -1,0 +1,186 @@
+{
+  "original": {
+    "id": "3956380",
+    "fields": {
+      "date": {
+        "changed": "2023-04-26T19:00:47+00:00",
+        "created": "2023-04-26T19:00:21+00:00",
+        "original": "2023-04-26T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/47",
+          "name": "Burundi",
+          "location": {
+            "lon": 29.89,
+            "lat": -3.53
+          },
+          "id": 47,
+          "shortname": "Burundi",
+          "iso3": "bdi"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/75",
+          "name": "Democratic Republic of the Congo",
+          "location": {
+            "lon": 21.7587,
+            "lat": -4.03833
+          },
+          "id": 75,
+          "shortname": "DR Congo",
+          "iso3": "cod"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/85",
+          "name": "Eritrea",
+          "location": {
+            "lon": 38.58,
+            "lat": 15.68
+          },
+          "id": 85,
+          "shortname": "Eritrea",
+          "iso3": "eri"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/198",
+          "name": "Rwanda",
+          "location": {
+            "lon": 29.92,
+            "lat": -1.87
+          },
+          "id": 198,
+          "shortname": "Rwanda",
+          "iso3": "rwa",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/220",
+          "name": "Sudan",
+          "location": {
+            "lon": 30,
+            "lat": 15
+          },
+          "id": 220,
+          "shortname": "Sudan",
+          "iso3": "sdn"
+        }
+      ],
+      "origin": "https://reporting.unhcr.org/document/4711",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/198",
+        "name": "Rwanda",
+        "location": {
+          "lon": 29.92,
+          "lat": -1.87
+        },
+        "id": 198,
+        "shortname": "Rwanda",
+        "iso3": "rwa"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "UNHCR Operational Update Rwanda, March 2023",
+      "body": "The 13th evacuation flight from Libya to the ETM Centre in Rwanda took place on the 9th of March. In total 150 asylum seekers were received in Rwanda bringing the current population of the ETM to 674 individuals.  \n\nDue to the ongoing conflict in the North-eastern part of the DRC, since November 2022, UNHCR has received 5,876 asylum seekers from DRC in Rwanda.  \n\nUNHCR hosted a field mission for the heads of the United Nations agencies in Rwanda, to the Kirehe District and Mahama Refugee Camp to showcase the situation of refugees and host communities in the district.",
+      "url": "https://reliefweb.int/node/3956380",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/bd/20/bd203eb8-d037-46cb-861b-3c9e467cbc7d.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/bd/20/bd203eb8-d037-46cb-861b-3c9e467cbc7d.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/bd/20/bd203eb8-d037-46cb-861b-3c9e467cbc7d.png",
+            "version": "2415117-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/bd/20/bd203eb8-d037-46cb-861b-3c9e467cbc7d.png"
+          },
+          "filename": "UNHCR Rwanda Operational Update - March 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415117",
+          "filesize": "2970605",
+          "url": "https://reliefweb.int/attachments/bd203eb8-d037-46cb-861b-3c9e467cbc7d/UNHCR%20Rwanda%20Operational%20Update%20-%20March%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/rwanda/unhcr-operational-update-rwanda-march-2023",
+      "theme": [
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Recovery and Reconstruction",
+          "id": 4601
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3956380,
+      "status": "published",
+      "body-html": "<p>The 13th evacuation flight from Libya to the ETM Centre in Rwanda took place on the 9th of March. In total 150 asylum seekers were received in Rwanda bringing the current population of the ETM to 674 individuals.</p>\n<p>Due to the ongoing conflict in the North-eastern part of the DRC, since November 2022, UNHCR has received 5,876 asylum seekers from DRC in Rwanda.</p>\n<p>UNHCR hosted a field mission for the heads of the United Nations agencies in Rwanda, to the Kirehe District and Mahama Refugee Camp to showcase the situation of refugees and host communities in the district.</p>\n"
+    }
+  },
+  "text": "# UNHCR Operational Update Rwanda, March 2023\n\nThe 13th evacuation flight from Libya to the ETM Centre in Rwanda took place on the 9th of March. In total 150 asylum seekers were received in Rwanda bringing the current population of the ETM to 674 individuals.  \n\nDue to the ongoing conflict in the North-eastern part of the DRC, since November 2022, UNHCR has received 5,876 asylum seekers from DRC in Rwanda.  \n\nUNHCR hosted a field mission for the heads of the United Nations agencies in Rwanda, to the Kirehe District and Mahama Refugee Camp to showcase the situation of refugees and host communities in the district.",
+  "summary": " On March 9th, 150 asylum seekers were received in Rwanda, bringing the total population of the ETM Centre to 674 individuals. Since November 2022, UNHCR has received 5,876 asylum seekers from the DRC due to the ongoing conflict in the North-eastern part of the country. A field mission was hosted by UNHCR for the heads of the United Nations agencies in Rwanda to the Kirehe District and Mahama Refugee Camp to showcase the situation of refugees and host communities in the district.",
+  "metadata": {
+    "id": "3956380",
+    "name": "UNHCR Operational Update Rwanda, March 2023",
+    "date_original": 1682467200000,
+    "date_changed": 1682535647000,
+    "date_created": 1682535621000,
+    "primary_country_id": 198,
+    "primary_country_name": "Rwanda",
+    "primary_country_iso3": "rwa",
+    "primary_country_location": {
+      "lon": 29.92,
+      "lat": -1.87
+    }
+  }
+}

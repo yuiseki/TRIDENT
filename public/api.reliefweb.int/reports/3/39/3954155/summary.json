@@ -1,0 +1,337 @@
+{
+  "original": {
+    "id": "3954155",
+    "fields": {
+      "date": {
+        "changed": "2023-04-19T07:04:06+00:00",
+        "created": "2023-04-19T06:52:35+00:00",
+        "original": "2023-04-19T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/13",
+          "name": "Afghanistan",
+          "location": {
+            "lon": 66.03,
+            "lat": 33.84
+          },
+          "id": 13,
+          "shortname": "Afghanistan",
+          "iso3": "afg",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/25",
+          "name": "Australia",
+          "location": {
+            "lon": 134.49,
+            "lat": -25.73
+          },
+          "id": 25,
+          "shortname": "Australia",
+          "iso3": "aus"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/31",
+          "name": "Bangladesh",
+          "location": {
+            "lon": 90.27,
+            "lat": 23.84
+          },
+          "id": 31,
+          "shortname": "Bangladesh",
+          "iso3": "bgd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/58",
+          "name": "China",
+          "location": {
+            "lon": 101.9,
+            "lat": 35.49
+          },
+          "id": 58,
+          "shortname": "China",
+          "iso3": "chn"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/119",
+          "name": "India",
+          "location": {
+            "lon": 79.28,
+            "lat": 22.76
+          },
+          "id": 119,
+          "shortname": "India",
+          "iso3": "ind"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/120",
+          "name": "Indonesia",
+          "location": {
+            "lon": 117.37,
+            "lat": -2.28
+          },
+          "id": 120,
+          "shortname": "Indonesia",
+          "iso3": "idn"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/121",
+          "name": "Iran (Islamic Republic of)",
+          "location": {
+            "lon": 54.3,
+            "lat": 32.57
+          },
+          "id": 121,
+          "shortname": "Iran",
+          "iso3": "irn"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/130",
+          "name": "Kazakhstan",
+          "location": {
+            "lon": 67.3,
+            "lat": 48.16
+          },
+          "id": 130,
+          "shortname": "Kazakhstan",
+          "iso3": "kaz"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/134",
+          "name": "Kyrgyzstan",
+          "location": {
+            "lon": 74.56,
+            "lat": 41.47
+          },
+          "id": 134,
+          "shortname": "Kyrgyzstan",
+          "iso3": "kgz"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/147",
+          "name": "Malaysia",
+          "location": {
+            "lon": 108.71,
+            "lat": 3.2
+          },
+          "id": 147,
+          "shortname": "Malaysia",
+          "iso3": "mys"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/165",
+          "name": "Myanmar",
+          "location": {
+            "lon": 96.51,
+            "lat": 21.15
+          },
+          "id": 165,
+          "shortname": "Myanmar",
+          "iso3": "mmr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/168",
+          "name": "Nepal",
+          "location": {
+            "lon": 83.94,
+            "lat": 28.25
+          },
+          "id": 168,
+          "shortname": "Nepal",
+          "iso3": "npl"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/182",
+          "name": "Pakistan",
+          "location": {
+            "lon": 69.39,
+            "lat": 29.97
+          },
+          "id": 182,
+          "shortname": "Pakistan",
+          "iso3": "pak"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/188",
+          "name": "Philippines",
+          "location": {
+            "lon": 122.88,
+            "lat": 11.74
+          },
+          "id": 188,
+          "shortname": "Philippines",
+          "iso3": "phl"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/219",
+          "name": "Sri Lanka",
+          "location": {
+            "lon": 80.7,
+            "lat": 7.61
+          },
+          "id": 219,
+          "shortname": "Sri Lanka",
+          "iso3": "lka"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/227",
+          "name": "Tajikistan",
+          "location": {
+            "lon": 71.04,
+            "lat": 38.84
+          },
+          "id": 227,
+          "shortname": "Tajikistan",
+          "iso3": "tjk"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/228",
+          "name": "Thailand",
+          "location": {
+            "lon": 101.02,
+            "lat": 15.13
+          },
+          "id": 228,
+          "shortname": "Thailand",
+          "iso3": "tha"
+        }
+      ],
+      "origin": "https://data.unhcr.org/en/documents/details/100166",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/13",
+        "name": "Afghanistan",
+        "location": {
+          "lon": 66.03,
+          "lat": 33.84
+        },
+        "id": 13,
+        "shortname": "Afghanistan",
+        "iso3": "afg"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        },
+        {
+          "code": "FF",
+          "name": "Flash Flood",
+          "id": 4624
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "UNHCR Regional Bureau for Asia and Pacific (RBAP): 2022 Cash-Based Interventions in the Region",
+      "body": "**In 2022, UNHCR delivered USD 977M to10M people in more than 100 countries**\n\n**In 2022, 17 out of 18 operations in Asia and the Pacific used cash assistance**\n\n**Almost 68 per cent of households in the region indicate a preference for cash assistance and only 4 per cent in kind**\n\n**OVERVIEW**\n\nUNHCR in the Asia and the Pacific region is working to expand the use and quality of cash-based interventions (CBIs) to better support protection and solution outcomes – in line with UNHCR’s Policy on CBIs (2022 – 2026).\n\nCash transfers are a crucial tool for providing much-needed assistance in contexts of insecurity and fragility and other complex and protracted situations. They play an important role in mainstreaming protection principles, supporting social and economic initiatives, and improving living conditions for displaced people, returnees, and host communities.\n\nIn recent years, cash assistance has surpassed in-kind aid to become the primary mode of protection delivery for UNHCR.2 CBIs have gained widespread popularity due to their effectiveness, efficiency, and ability to promote self-reliance among recipients. However, sustaining and scaling up these interventions requires predictable and flexible donor support to address the growing needs and challenges faced by vulnerable populations, most of whom are not covered by national social protection systems or safety nets.\n\n**WHY CBI?**\n\nTogether with in-kind assistance and the services set up for people forced to flee, cash transfers represent an integral component of a broad and integrated network of activities and services delivered by UNHCR and partners. The benefits of expanding and strengthening CBIs in the region to provide protection and solutions are many. Where people can access functioning markets, CBIs are an efficient and effective way of delivering much-needed support in a simple, sustainable and accountable manner that promotes social protection, social cohesion and self-reliance while also restoring the dignity of displaced families via the power of choice.\n\nUNHCR has made considerable and targeted efforts to further expand the implementation of CBIs in recent years. In 2022, 17 out of 18 operations in Asia and the Pacific implemented cash assistance. By mainstreaming cash assistance across sectors, UNHCR and partners have been able to support various programmes, including shelter, health, energy, education and food. Cash is mainly used as multi-purpose assistance to support basic needs. It remains the preferred modality of assistance: in 2022, monitoring showed that almost 68 per cent of households indicated a preference for cash assistance, 28 per cent liked a mixed approach and the remaining four per cent in kind assistance.",
+      "url": "https://reliefweb.int/node/3954155",
+      "disaster": [
+        {
+          "name": "Pakistan: Floods - Jul 2022",
+          "id": 51234,
+          "glide": "FL-2022-000254-PAK",
+          "type": [
+            {
+              "code": "FF",
+              "name": "Flash Flood",
+              "id": 4624
+            },
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/c8/33/c833e0f6-6906-40d7-b9e2-783f0549ea5b.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/c8/33/c833e0f6-6906-40d7-b9e2-783f0549ea5b.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/c8/33/c833e0f6-6906-40d7-b9e2-783f0549ea5b.png",
+            "version": "2413338-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/c8/33/c833e0f6-6906-40d7-b9e2-783f0549ea5b.png"
+          },
+          "filename": "UNHCR RBAP CBI in the Region 2022.pdf",
+          "mimetype": "application/pdf",
+          "id": "2413338",
+          "filesize": "569789",
+          "url": "https://reliefweb.int/attachments/c833e0f6-6906-40d7-b9e2-783f0549ea5b/UNHCR%20RBAP%20CBI%20in%20the%20Region%202022.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/afghanistan/unhcr-regional-bureau-asia-and-pacific-rbap-2022-cash-based-interventions-region",
+      "theme": [
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        }
+      ],
+      "id": 3954155,
+      "status": "published",
+      "body-html": "<p><strong>In 2022, UNHCR delivered USD 977M to10M people in more than 100 countries</strong></p>\n<p><strong>In 2022, 17 out of 18 operations in Asia and the Pacific used cash assistance</strong></p>\n<p><strong>Almost 68 per cent of households in the region indicate a preference for cash assistance and only 4 per cent in kind</strong></p>\n<p><strong>OVERVIEW</strong></p>\n<p>UNHCR in the Asia and the Pacific region is working to expand the use and quality of cash-based interventions (CBIs) to better support protection and solution outcomes – in line with UNHCR’s Policy on CBIs (2022 – 2026).</p>\n<p>Cash transfers are a crucial tool for providing much-needed assistance in contexts of insecurity and fragility and other complex and protracted situations. They play an important role in mainstreaming protection principles, supporting social and economic initiatives, and improving living conditions for displaced people, returnees, and host communities.</p>\n<p>In recent years, cash assistance has surpassed in-kind aid to become the primary mode of protection delivery for UNHCR.2 CBIs have gained widespread popularity due to their effectiveness, efficiency, and ability to promote self-reliance among recipients. However, sustaining and scaling up these interventions requires predictable and flexible donor support to address the growing needs and challenges faced by vulnerable populations, most of whom are not covered by national social protection systems or safety nets.</p>\n<p><strong>WHY CBI?</strong></p>\n<p>Together with in-kind assistance and the services set up for people forced to flee, cash transfers represent an integral component of a broad and integrated network of activities and services delivered by UNHCR and partners. The benefits of expanding and strengthening CBIs in the region to provide protection and solutions are many. Where people can access functioning markets, CBIs are an efficient and effective way of delivering much-needed support in a simple, sustainable and accountable manner that promotes social protection, social cohesion and self-reliance while also restoring the dignity of displaced families via the power of choice.</p>\n<p>UNHCR has made considerable and targeted efforts to further expand the implementation of CBIs in recent years. In 2022, 17 out of 18 operations in Asia and the Pacific implemented cash assistance. By mainstreaming cash assistance across sectors, UNHCR and partners have been able to support various programmes, including shelter, health, energy, education and food. Cash is mainly used as multi-purpose assistance to support basic needs. It remains the preferred modality of assistance: in 2022, monitoring showed that almost 68 per cent of households indicated a preference for cash assistance, 28 per cent liked a mixed approach and the remaining four per cent in kind assistance.</p>\n"
+    }
+  },
+  "text": "# UNHCR Regional Bureau for Asia and Pacific (RBAP): 2022 Cash-Based Interventions in the Region\n\n**In 2022, UNHCR delivered USD 977M to10M people in more than 100 countries**\n\n**In 2022, 17 out of 18 operations in Asia and the Pacific used cash assistance**\n\n**Almost 68 per cent of households in the region indicate a preference for cash assistance and only 4 per cent in kind**\n\n**OVERVIEW**\n\nUNHCR in the Asia and the Pacific region is working to expand the use and quality of cash-based interventions (CBIs) to better support protection and solution outcomes – in line with UNHCR’s Policy on CBIs (2022 – 2026).\n\nCash transfers are a crucial tool for providing much-needed assistance in contexts of insecurity and fragility and other complex and protracted situations. They play an important role in mainstreaming protection principles, supporting social and economic initiatives, and improving living conditions for displaced people, returnees, and host communities.\n\nIn recent years, cash assistance has surpassed in-kind aid to become the primary mode of protection delivery for UNHCR.2 CBIs have gained widespread popularity due to their effectiveness, efficiency, and ability to promote self-reliance among recipients. However, sustaining and scaling up these interventions requires predictable and flexible donor support to address the growing needs and challenges faced by vulnerable populations, most of whom are not covered by national social protection systems or safety nets.\n\n**WHY CBI?**\n\nTogether with in-kind assistance and the services set up for people forced to flee, cash transfers represent an integral component of a broad and integrated network of activities and services delivered by UNHCR and partners. The benefits of expanding and strengthening CBIs in the region to provide protection and solutions are many. Where people can access functioning markets, CBIs are an efficient and effective way of delivering much-needed support in a simple, sustainable and accountable manner that promotes social protection, social cohesion and self-reliance while also restoring the dignity of displaced families via the power of choice.\n\nUNHCR has made considerable and targeted efforts to further expand the implementation of CBIs in recent years. In 2022, 17 out of 18 operations in Asia and the Pacific implemented cash assistance. By mainstreaming cash assistance across sectors, UNHCR and partners have been able to support various programmes, including shelter, health, energy, education and food. Cash is mainly used as multi-purpose assistance to support basic needs. It remains the preferred modality of assistance: in 2022, monitoring showed that almost 68 per cent of households indicated a preference for cash assistance, 28 per cent liked a mixed approach and the remaining four per cent in kind assistance.",
+  "summary": " In 2022, UNHCR delivered USD 977M to 10M people in more than 100 countries in the Asia and Pacific region, with 17 out of 18 operations using cash assistance. Cash transfers are an effective and efficient way of providing much-needed assistance in contexts of insecurity and fragility, and they promote self-reliance among recipients. Almost 68 per cent of households in the region indicated a preference for cash assistance, and it remains the preferred modality of assistance.",
+  "metadata": {
+    "id": "3954155",
+    "name": "UNHCR Regional Bureau for Asia and Pacific (RBAP): 2022 Cash-Based Interventions in the Region",
+    "date_original": 1681862400000,
+    "date_changed": 1681887846000,
+    "date_created": 1681887155000,
+    "primary_country_id": 13,
+    "primary_country_name": "Afghanistan",
+    "primary_country_iso3": "afg",
+    "primary_country_location": {
+      "lon": 66.03,
+      "lat": 33.84
+    }
+  }
+}

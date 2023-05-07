@@ -1,0 +1,122 @@
+{
+  "original": {
+    "id": "3954914",
+    "fields": {
+      "date": {
+        "changed": "2023-04-21T00:09:01+00:00",
+        "created": "2023-04-20T23:49:26+00:00",
+        "original": "2023-04-20T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/184",
+          "name": "Panama",
+          "location": {
+            "lon": -80.27,
+            "lat": 8.7
+          },
+          "id": 184,
+          "shortname": "Panama",
+          "iso3": "pan",
+          "primary": true
+        }
+      ],
+      "origin": "https://data.unhcr.org/en/documents/details/100220",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/184",
+        "name": "Panama",
+        "location": {
+          "lon": -80.27,
+          "lat": 8.7
+        },
+        "id": 184,
+        "shortname": "Panama",
+        "iso3": "pan"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "UNHCR Panama Mixed Movements, Darién and Chiriquí (March 2023)",
+      "body": "**Context**\n\nOn 1 March, following the Government’s orders to halt the transportation services from Darien to Chiriquí due to the two traffic accidents that occurred in February involving refugees and migrants, the National Migration Service (SNM) announced the resumption of the bus transfers. \n\nAfter assessing the country’s situation, the Human Rights Committee published its findings on Panama’s implementation of the International Covenant on Civil and Political Rights. Among other topics, the Committee expressed its concern regarding alleged reports of killings, disappearances, sexual violence, trafficking, robberies, intimidation, and threats by criminal groups in Darien, further heightening the risks faced by refugees, asylum-seekers, and migrants crossing the jungle. Although the Government has not released a public statement regarding these findings, the Minister of Government indicated that Panama is aware of its pending commitments related to human rights matters and aims to address them, acknowledging the key role of the Committee for this task. \n\nAs of March 2023, nearly 87,400 people entered irregularly through Darien, six times more than those who arrived during the same period in 2022. The latest UNHCR monthly protection monitoring exercise4 shows that three out of ten interviewed left their country of origin due to threats or directed attacks against them or their families. Around 35 per cent fled due to fear of violence and general insecurity in their country.",
+      "url": "https://reliefweb.int/node/3954914",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/95/73/95739708-d092-4c5e-8f16-e47220a04d89.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/95/73/95739708-d092-4c5e-8f16-e47220a04d89.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/95/73/95739708-d092-4c5e-8f16-e47220a04d89.png",
+            "version": "2413906-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/95/73/95739708-d092-4c5e-8f16-e47220a04d89.png"
+          },
+          "filename": "Mixed Movements Darien and Chiriqui - March 2023 - UNHCR.pdf",
+          "mimetype": "application/pdf",
+          "id": "2413906",
+          "filesize": "730066",
+          "url": "https://reliefweb.int/attachments/95739708-d092-4c5e-8f16-e47220a04d89/Mixed%20Movements%20Darien%20and%20Chiriqui%20-%20March%202023%20-%20UNHCR.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/panama/unhcr-panama-mixed-movements-darien-and-chiriqui-march-2023",
+      "redirects": [
+        "https://reliefweb.int/report/panama/unhcr-mixed-movements-darien-and-chiriqui-march-2023"
+      ],
+      "theme": [
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        }
+      ],
+      "id": 3954914,
+      "status": "published",
+      "body-html": "<p><strong>Context</strong></p>\n<p>On 1 March, following the Government’s orders to halt the transportation services from Darien to Chiriquí due to the two traffic accidents that occurred in February involving refugees and migrants, the National Migration Service (SNM) announced the resumption of the bus transfers.</p>\n<p>After assessing the country’s situation, the Human Rights Committee published its findings on Panama’s implementation of the International Covenant on Civil and Political Rights. Among other topics, the Committee expressed its concern regarding alleged reports of killings, disappearances, sexual violence, trafficking, robberies, intimidation, and threats by criminal groups in Darien, further heightening the risks faced by refugees, asylum-seekers, and migrants crossing the jungle. Although the Government has not released a public statement regarding these findings, the Minister of Government indicated that Panama is aware of its pending commitments related to human rights matters and aims to address them, acknowledging the key role of the Committee for this task.</p>\n<p>As of March 2023, nearly 87,400 people entered irregularly through Darien, six times more than those who arrived during the same period in 2022. The latest UNHCR monthly protection monitoring exercise4 shows that three out of ten interviewed left their country of origin due to threats or directed attacks against them or their families. Around 35 per cent fled due to fear of violence and general insecurity in their country.</p>\n"
+    }
+  },
+  "text": "# UNHCR Panama Mixed Movements, Darién and Chiriquí (March 2023)\n\n**Context**\n\nOn 1 March, following the Government’s orders to halt the transportation services from Darien to Chiriquí due to the two traffic accidents that occurred in February involving refugees and migrants, the National Migration Service (SNM) announced the resumption of the bus transfers. \n\nAfter assessing the country’s situation, the Human Rights Committee published its findings on Panama’s implementation of the International Covenant on Civil and Political Rights. Among other topics, the Committee expressed its concern regarding alleged reports of killings, disappearances, sexual violence, trafficking, robberies, intimidation, and threats by criminal groups in Darien, further heightening the risks faced by refugees, asylum-seekers, and migrants crossing the jungle. Although the Government has not released a public statement regarding these findings, the Minister of Government indicated that Panama is aware of its pending commitments related to human rights matters and aims to address them, acknowledging the key role of the Committee for this task. \n\nAs of March 2023, nearly 87,400 people entered irregularly through Darien, six times more than those who arrived during the same period in 2022. The latest UNHCR monthly protection monitoring exercise4 shows that three out of ten interviewed left their country of origin due to threats or directed attacks against them or their families. Around 35 per cent fled due to fear of violence and general insecurity in their country.",
+  "summary": " In March 2023, the National Migration Service in Panama resumed bus transfers from Darien to Chiriquí following two traffic accidents involving refugees and migrants. The Human Rights Committee expressed concern regarding reports of killings, disappearances, sexual violence, and other crimes in Darien, and the Minister of Government indicated that Panama is aware of its pending commitments related to human rights matters. As of March 2023, 87,400 people had entered irregularly through Darien, and the UNHCR's monthly protection monitoring exercise showed that three out of ten interviewed left their country of origin due to threats or directed attacks against them or their families.",
+  "metadata": {
+    "id": "3954914",
+    "name": "UNHCR Panama Mixed Movements, Darién and Chiriquí (March 2023)",
+    "date_original": 1681948800000,
+    "date_changed": 1682035741000,
+    "date_created": 1682034566000,
+    "primary_country_id": 184,
+    "primary_country_name": "Panama",
+    "primary_country_iso3": "pan",
+    "primary_country_location": {
+      "lon": -80.27,
+      "lat": 8.7
+    }
+  }
+}

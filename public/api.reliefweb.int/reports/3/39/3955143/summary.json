@@ -1,0 +1,379 @@
+{
+  "original": {
+    "id": "3955143",
+    "fields": {
+      "date": {
+        "changed": "2023-04-22T01:15:03+00:00",
+        "created": "2023-04-21T22:57:59+00:00",
+        "original": "2023-04-21T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/17",
+          "name": "American Samoa",
+          "location": {
+            "lon": -170.71,
+            "lat": -14.3
+          },
+          "id": 17,
+          "shortname": "American Samoa",
+          "iso3": "asm"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/67",
+          "name": "Cook Islands",
+          "location": {
+            "lon": -159.77,
+            "lat": -21.23
+          },
+          "id": 67,
+          "shortname": "Cook Islands",
+          "iso3": "cok"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/90",
+          "name": "Fiji",
+          "location": {
+            "lon": 178.065,
+            "lat": -17.71
+          },
+          "id": 90,
+          "shortname": "Fiji",
+          "iso3": "fji",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/94",
+          "name": "French Polynesia (France)",
+          "location": {
+            "lon": -146.42,
+            "lat": -14.85
+          },
+          "id": 94,
+          "shortname": "French Polynesia (France)",
+          "iso3": "pyf"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/108",
+          "name": "Guam",
+          "location": {
+            "lon": 144.78,
+            "lat": 13.44
+          },
+          "id": 108,
+          "shortname": "Guam",
+          "iso3": "gum"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/132",
+          "name": "Kiribati",
+          "location": {
+            "lon": -157.37,
+            "lat": 1.84
+          },
+          "id": 132,
+          "shortname": "Kiribati",
+          "iso3": "kir"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/151",
+          "name": "Marshall Islands",
+          "location": {
+            "lon": 168.55,
+            "lat": 8.43
+          },
+          "id": 151,
+          "shortname": "Marshall Islands",
+          "iso3": "mhl"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/157",
+          "name": "Micronesia (Federated States of)",
+          "location": {
+            "lon": 160.4,
+            "lat": 6.08
+          },
+          "id": 157,
+          "shortname": "Micronesia",
+          "iso3": "fsm"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/167",
+          "name": "Nauru",
+          "location": {
+            "lon": 166.92,
+            "lat": -0.53
+          },
+          "id": 167,
+          "shortname": "Nauru",
+          "iso3": "nru"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/171",
+          "name": "New Caledonia (France)",
+          "location": {
+            "lon": 165.72,
+            "lat": -21.32
+          },
+          "id": 171,
+          "shortname": "New Caledonia (France)",
+          "iso3": "ncl"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/172",
+          "name": "New Zealand",
+          "location": {
+            "lon": 171.78,
+            "lat": -41.84
+          },
+          "id": 172,
+          "shortname": "New Zealand",
+          "iso3": "nzl"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/176",
+          "name": "Niue (New Zealand)",
+          "location": {
+            "lon": -169.86,
+            "lat": -19.05
+          },
+          "id": 176,
+          "shortname": "Niue (New Zealand)",
+          "iso3": "niu"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/178",
+          "name": "Northern Mariana Islands (The United States of America)",
+          "location": {
+            "lon": 145.68,
+            "lat": 15.09
+          },
+          "id": 178,
+          "shortname": "Northern Mariana Islands (The United States of America)",
+          "iso3": "mnp"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/183",
+          "name": "Palau",
+          "location": {
+            "lon": 134.58,
+            "lat": 7.52
+          },
+          "id": 183,
+          "shortname": "Palau",
+          "iso3": "plw"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/185",
+          "name": "Papua New Guinea",
+          "location": {
+            "lon": 145.24,
+            "lat": -6.48
+          },
+          "id": 185,
+          "shortname": "PNG",
+          "iso3": "png"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/189",
+          "name": "Pitcairn Islands",
+          "location": {
+            "lon": -128.32,
+            "lat": -24.36
+          },
+          "id": 189,
+          "shortname": "Pitcairn Islands",
+          "iso3": "pcn"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/204",
+          "name": "Samoa",
+          "location": {
+            "lon": -172.16,
+            "lat": -13.76
+          },
+          "id": 204,
+          "shortname": "Samoa",
+          "iso3": "wsm"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/215",
+          "name": "Solomon Islands",
+          "location": {
+            "lon": 159.63,
+            "lat": -8.92
+          },
+          "id": 215,
+          "shortname": "Solomon Islands",
+          "iso3": "slb"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/232",
+          "name": "Tokelau",
+          "location": {
+            "lon": -171.25,
+            "lat": -9.38
+          },
+          "id": 232,
+          "shortname": "Tokelau",
+          "iso3": "tkl"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/233",
+          "name": "Tonga",
+          "location": {
+            "lon": -174.83,
+            "lat": -20.39
+          },
+          "id": 233,
+          "shortname": "Tonga",
+          "iso3": "ton"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/239",
+          "name": "Tuvalu",
+          "location": {
+            "lon": 178.69,
+            "lat": -7.47
+          },
+          "id": 239,
+          "shortname": "Tuvalu",
+          "iso3": "tuv"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/249",
+          "name": "Vanuatu",
+          "location": {
+            "lon": 167.72,
+            "lat": -16.26
+          },
+          "id": 249,
+          "shortname": "Vanuatu",
+          "iso3": "vut"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/252",
+          "name": "Wallis and Futuna (France)",
+          "location": {
+            "lon": -176.17,
+            "lat": -13.28
+          },
+          "id": 252,
+          "shortname": "Wallis and Futuna (France)",
+          "iso3": "wlf"
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/90",
+        "name": "Fiji",
+        "location": {
+          "lon": 178.065,
+          "lat": -17.71
+        },
+        "id": 90,
+        "shortname": "Fiji",
+        "iso3": "fji"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        },
+        {
+          "code": "fr",
+          "name": "French",
+          "id": 268
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1275",
+          "longname": "World Health Organization",
+          "spanish_name": "Organización Mundial de la Salud",
+          "name": "World Health Organization",
+          "id": 1275,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WHO",
+          "homepage": "http://www.who.int/"
+        }
+      ],
+      "title": "Pacific Syndromic Surveillance System Weekly Bulletin / Système de Surveillance Syndromique dans le Pacifique - Bulletin Hebdomadaire: W15 2023 (Apr 10 - Apr 16)",
+      "body": "**Alerts :**  \n\n- AFR: W&F ( 1 Varicella), Samoa (1 case)  \n\n- COVID-19 : Cook Islands, RMI,CNMI, FSM, Niue, Palau and Cook Islands  \n\n- Influenza like Illness (ILI): Niue.  \n\n- Diarrhoea: FSM",
+      "url": "https://reliefweb.int/node/3955143",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/24/60/246012af-fedd-4e51-bb52-8d0c09c44fba.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/24/60/246012af-fedd-4e51-bb52-8d0c09c44fba.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/24/60/246012af-fedd-4e51-bb52-8d0c09c44fba.png",
+            "version": "2414044-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/24/60/246012af-fedd-4e51-bb52-8d0c09c44fba.png"
+          },
+          "filename": "PSSS Weekly Bulletin - W15 2023 (Apr 10-Apr 16).pdf",
+          "description": "Pacific Syndromic Surveillance (PSSS) report",
+          "mimetype": "application/pdf",
+          "id": "2414044",
+          "filesize": "513215",
+          "url": "https://reliefweb.int/attachments/246012af-fedd-4e51-bb52-8d0c09c44fba/PSSS%20Weekly%20Bulletin%20-%20W15%202023%20%28Apr%2010-Apr%2016%29.pdf"
+        },
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/80/ad/80ad1bab-cc0d-4613-ac0c-328b30a89c02.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/80/ad/80ad1bab-cc0d-4613-ac0c-328b30a89c02.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/80/ad/80ad1bab-cc0d-4613-ac0c-328b30a89c02.png",
+            "version": "2414048-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/80/ad/80ad1bab-cc0d-4613-ac0c-328b30a89c02.png"
+          },
+          "filename": "[pacnet] Pacific Syndromic Surveillance Report for W15 2023 _ 10-16 April.pdf",
+          "mimetype": "application/pdf",
+          "id": "2414048",
+          "filesize": "69040",
+          "url": "https://reliefweb.int/attachments/80ad1bab-cc0d-4613-ac0c-328b30a89c02/%5Bpacnet%5D%20Pacific%20Syndromic%20Surveillance%20Report%20for%20W15%202023%20_%2010-16%20April.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/fiji/pacific-syndromic-surveillance-system-weekly-bulletin-systeme-de-surveillance-syndromique-dans-le-pacifique-bulletin-hebdomadaire-w15-2023-apr-10-apr-16",
+      "theme": [
+        {
+          "name": "Health",
+          "id": 4595
+        }
+      ],
+      "id": 3955143,
+      "status": "published",
+      "body-html": "<p><strong>Alerts :</strong></p>\n<ul>\n<li>\n<p>AFR: W&amp;F ( 1 Varicella), Samoa (1 case)</p>\n</li>\n<li>\n<p>COVID-19 : Cook Islands, RMI,CNMI, FSM, Niue, Palau and Cook Islands</p>\n</li>\n<li>\n<p>Influenza like Illness (ILI): Niue.</p>\n</li>\n<li>\n<p>Diarrhoea: FSM</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# Pacific Syndromic Surveillance System Weekly Bulletin / Système de Surveillance Syndromique dans le Pacifique - Bulletin Hebdomadaire: W15 2023 (Apr 10 - Apr 16)\n\n**Alerts :**  \n\n- AFR: W&F ( 1 Varicella), Samoa (1 case)  \n\n- COVID-19 : Cook Islands, RMI,CNMI, FSM, Niue, Palau and Cook Islands  \n\n- Influenza like Illness (ILI): Niue.  \n\n- Diarrhoea: FSM",
+  "summary": " This weekly bulletin provides an update on the Pacific Syndromic Surveillance System for the week of April 10th to April 16th, 2023. Alerts include Varicella in W&F, Samoa, and COVID-19 in Cook Islands, RMI, CNMI, FSM, Niue, Palau and Cook Islands. Additionally, Influenza-like Illness (ILI) was reported in Niue and Diarrhoea in FSM.",
+  "metadata": {
+    "id": "3955143",
+    "name": "Pacific Syndromic Surveillance System Weekly Bulletin / Système de Surveillance Syndromique dans le Pacifique - Bulletin Hebdomadaire: W15 2023 (Apr 10 - Apr 16)",
+    "date_original": 1682035200000,
+    "date_changed": 1682126103000,
+    "date_created": 1682117879000,
+    "primary_country_id": 90,
+    "primary_country_name": "Fiji",
+    "primary_country_iso3": "fji",
+    "primary_country_location": {
+      "lon": 178.065,
+      "lat": -17.71
+    }
+  }
+}

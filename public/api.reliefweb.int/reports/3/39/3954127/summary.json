@@ -1,0 +1,133 @@
+{
+  "original": {
+    "id": "3954127",
+    "fields": {
+      "date": {
+        "changed": "2023-04-19T03:26:31+00:00",
+        "created": "2023-04-19T03:25:41+00:00",
+        "original": "2023-04-19T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/168",
+          "name": "Nepal",
+          "location": {
+            "lon": 83.94,
+            "lat": 28.25
+          },
+          "id": 168,
+          "shortname": "Nepal",
+          "iso3": "npl",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/168",
+        "name": "Nepal",
+        "location": {
+          "lon": 83.94,
+          "lat": 28.25
+        },
+        "id": 168,
+        "shortname": "Nepal",
+        "iso3": "npl"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1275",
+          "longname": "World Health Organization",
+          "spanish_name": "Organización Mundial de la Salud",
+          "name": "World Health Organization",
+          "id": 1275,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WHO",
+          "homepage": "http://www.who.int/"
+        }
+      ],
+      "title": "Focused COVID-19 Media Monitoring, Nepal (April 19, 2023) [EN/NE]",
+      "body": "**RECURRING THEME(S)**\n\n• 171 new coronavirus cases have been confirmed in the last 24 hours. Currently, there are 397 active cases in the country.\n\n• President Ramchandra Poudel has been admitted to the hospital due to chest infection.",
+      "url": "https://reliefweb.int/node/3954127",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/60/82/608258a7-9084-4df2-ba52-9db9ccf5603d.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/60/82/608258a7-9084-4df2-ba52-9db9ccf5603d.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/60/82/608258a7-9084-4df2-ba52-9db9ccf5603d.png",
+            "version": "2413291-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/60/82/608258a7-9084-4df2-ba52-9db9ccf5603d.png"
+          },
+          "filename": "Focused COVID-19 and Health Media Monitoring_Nepal_(English)_19th April.pdf",
+          "description": "English version",
+          "mimetype": "application/pdf",
+          "id": "2413291",
+          "filesize": "339919",
+          "url": "https://reliefweb.int/attachments/608258a7-9084-4df2-ba52-9db9ccf5603d/Focused%20COVID-19%20and%20Health%20Media%20Monitoring_Nepal_%28English%29_19th%20April.pdf"
+        },
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/5d/f2/5df2f7ec-644d-4f9e-b4df-da8a47139baf.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/5d/f2/5df2f7ec-644d-4f9e-b4df-da8a47139baf.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/5d/f2/5df2f7ec-644d-4f9e-b4df-da8a47139baf.png",
+            "version": "2413293-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/5d/f2/5df2f7ec-644d-4f9e-b4df-da8a47139baf.png"
+          },
+          "filename": "Focused COVID-19 and Health Media Monitoring_Nepal_(Nepali)_19th April.pdf",
+          "description": "Nepali version",
+          "mimetype": "application/pdf",
+          "id": "2413293",
+          "filesize": "389305",
+          "url": "https://reliefweb.int/attachments/5df2f7ec-644d-4f9e-b4df-da8a47139baf/Focused%20COVID-19%20and%20Health%20Media%20Monitoring_Nepal_%28Nepali%29_19th%20April.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/nepal/focused-covid-19-media-monitoring-nepal-april-19-2023-enne",
+      "theme": [
+        {
+          "name": "Health",
+          "id": 4595
+        }
+      ],
+      "id": 3954127,
+      "status": "published",
+      "body-html": "<p><strong>RECURRING THEME(S)</strong></p>\n<p>• 171 new coronavirus cases have been confirmed in the last 24 hours. Currently, there are 397 active cases in the country.</p>\n<p>• President Ramchandra Poudel has been admitted to the hospital due to chest infection.</p>\n"
+    }
+  },
+  "text": "# Focused COVID-19 Media Monitoring, Nepal (April 19, 2023) [EN/NE]\n\n**RECURRING THEME(S)**\n\n• 171 new coronavirus cases have been confirmed in the last 24 hours. Currently, there are 397 active cases in the country.\n\n• President Ramchandra Poudel has been admitted to the hospital due to chest infection.",
+  "summary": "\n\nIn Nepal, 171 new coronavirus cases have been confirmed in the last 24 hours, bringing the total number of active cases to 397. President Ramchandra Poudel has been admitted to the hospital due to chest infection.",
+  "metadata": {
+    "id": "3954127",
+    "name": "Focused COVID-19 Media Monitoring, Nepal (April 19, 2023) [EN/NE]",
+    "date_original": 1681862400000,
+    "date_changed": 1681874791000,
+    "date_created": 1681874741000,
+    "primary_country_id": 168,
+    "primary_country_name": "Nepal",
+    "primary_country_iso3": "npl",
+    "primary_country_location": {
+      "lon": 83.94,
+      "lat": 28.25
+    }
+  }
+}

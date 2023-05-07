@@ -1,0 +1,143 @@
+{
+  "original": {
+    "id": "3957601",
+    "fields": {
+      "date": {
+        "changed": "2023-05-02T12:07:36+00:00",
+        "created": "2023-05-02T09:40:19+00:00",
+        "original": "2023-05-02T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/8657",
+          "name": "South Sudan",
+          "location": {
+            "lon": 30.5,
+            "lat": 6.9
+          },
+          "id": 8657,
+          "shortname": "South Sudan",
+          "iso3": "ssd",
+          "primary": true
+        }
+      ],
+      "origin": "https://www.globalprotectioncluster.org/index.php/publications/1337/reports/protection-monitoring-report/pc-ssd-gokjak-protection-situation-april",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/8657",
+        "name": "South Sudan",
+        "location": {
+          "lon": 30.5,
+          "lat": 6.9
+        },
+        "id": 8657,
+        "shortname": "South Sudan",
+        "iso3": "ssd"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/8619",
+          "longname": "Protection Cluster",
+          "name": "Protection Cluster",
+          "id": 8619,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "Protection Cluster",
+          "homepage": "http://www.globalprotectioncluster.org/"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "Protection Cluster Upper Nile/Jonglei - Internal displacement in Gokjak, Piji/Canal county (April 2023)",
+      "body": "**BACKGROUND**\n\nThe conflict in Jonglei state that erupted in December 2022 and escalated in early 2023, has displaced an\nestimated 20,000 people to Malakal town, Canal/Pigi, Baliet, and Ulang counties due to fear of loss of lives\nand reports of abductions. The conflict mainly transpired in the Northern Jonglei counties of Akobo, Nyirol,\nand Uror where civilians fleeing the areas are visibly traumatized due to unconfirmed reports of deaths,\ninjuries, extortion, looting and heavy damage of public and private infrastructures, and conflicted-related\nsexual violence. GBV incidents and family separations have been widespread and the number of\nunaccompanied or separated children is on the rise.\n\n**CURRENT SITUATION**\n\nGokjak is a spontaneous site in Mareng Payam (Piji/Canal County, Jonglei state). The site is located along\nthe Sobat River and is approximately one and a half-hour boat drive from Malakal town. The IDPs started\nfleeing to the site in December 2022 and according to the RRC and community leaders, there is a total\npopulation of 2,123HH (roughly 16,884 individuals). During their assessment, protection teams could only\nconfirm some 3,000 individuals, however, it was noted that some IDPs were not present during the\nassessment as they were looking for food in locations nearby. IDPs expect more people to join them in\nGokjak as the situation in their places of origin remains volatile. There is no static humanitarian presence\nin the area with only health partners conducting mobile response. The area where the IDPs have settled\nwas given to them by the local authorities for them to construct shelters and cultivate freely, this was\nconfirmed by the Payam administrator, the RRC and the IDPs. However, all IDPs reported that they lack\ntools to undertake farming activities. The majority of the population are women, children, elderly and\npersons living with disabilities and are extremely vulnerable. Most of the men remained behind to protect\ntheir properties, others were killed, and many others are missing. The IDPs left their cattle behind in order\nto mitigate any risks of inter-communal violence in Gokjak. Currently, the area is not militarized and there\nare three policemen present at the location to ensure security, law, and order.",
+      "url": "https://reliefweb.int/node/3957601",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/45/64/45649db0-1ca6-43a2-ba8b-99b0c46da4f1.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/45/64/45649db0-1ca6-43a2-ba8b-99b0c46da4f1.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/45/64/45649db0-1ca6-43a2-ba8b-99b0c46da4f1.png",
+            "version": "2416255-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/45/64/45649db0-1ca6-43a2-ba8b-99b0c46da4f1.png"
+          },
+          "filename": "pc_ssd_gokjak_protection_situation_-_april_2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2416255",
+          "filesize": "411290",
+          "url": "https://reliefweb.int/attachments/45649db0-1ca6-43a2-ba8b-99b0c46da4f1/pc_ssd_gokjak_protection_situation_-_april_2023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/south-sudan/protection-cluster-upper-nilejonglei-internal-displacement-gokjak-pijicanal-county-april-2023",
+      "theme": [
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3957601,
+      "status": "published",
+      "body-html": "<p><strong>BACKGROUND</strong></p>\n<p>The conflict in Jonglei state that erupted in December 2022 and escalated in early 2023, has displaced an\nestimated 20,000 people to Malakal town, Canal/Pigi, Baliet, and Ulang counties due to fear of loss of lives\nand reports of abductions. The conflict mainly transpired in the Northern Jonglei counties of Akobo, Nyirol,\nand Uror where civilians fleeing the areas are visibly traumatized due to unconfirmed reports of deaths,\ninjuries, extortion, looting and heavy damage of public and private infrastructures, and conflicted-related\nsexual violence. GBV incidents and family separations have been widespread and the number of\nunaccompanied or separated children is on the rise.</p>\n<p><strong>CURRENT SITUATION</strong></p>\n<p>Gokjak is a spontaneous site in Mareng Payam (Piji/Canal County, Jonglei state). The site is located along\nthe Sobat River and is approximately one and a half-hour boat drive from Malakal town. The IDPs started\nfleeing to the site in December 2022 and according to the RRC and community leaders, there is a total\npopulation of 2,123HH (roughly 16,884 individuals). During their assessment, protection teams could only\nconfirm some 3,000 individuals, however, it was noted that some IDPs were not present during the\nassessment as they were looking for food in locations nearby. IDPs expect more people to join them in\nGokjak as the situation in their places of origin remains volatile. There is no static humanitarian presence\nin the area with only health partners conducting mobile response. The area where the IDPs have settled\nwas given to them by the local authorities for them to construct shelters and cultivate freely, this was\nconfirmed by the Payam administrator, the RRC and the IDPs. However, all IDPs reported that they lack\ntools to undertake farming activities. The majority of the population are women, children, elderly and\npersons living with disabilities and are extremely vulnerable. Most of the men remained behind to protect\ntheir properties, others were killed, and many others are missing. The IDPs left their cattle behind in order\nto mitigate any risks of inter-communal violence in Gokjak. Currently, the area is not militarized and there\nare three policemen present at the location to ensure security, law, and order.</p>\n"
+    }
+  },
+  "text": "# Protection Cluster Upper Nile/Jonglei - Internal displacement in Gokjak, Piji/Canal county (April 2023)\n\n**BACKGROUND**\n\nThe conflict in Jonglei state that erupted in December 2022 and escalated in early 2023, has displaced an\nestimated 20,000 people to Malakal town, Canal/Pigi, Baliet, and Ulang counties due to fear of loss of lives\nand reports of abductions. The conflict mainly transpired in the Northern Jonglei counties of Akobo, Nyirol,\nand Uror where civilians fleeing the areas are visibly traumatized due to unconfirmed reports of deaths,\ninjuries, extortion, looting and heavy damage of public and private infrastructures, and conflicted-related\nsexual violence. GBV incidents and family separations have been widespread and the number of\nunaccompanied or separated children is on the rise.\n\n**CURRENT SITUATION**\n\nGokjak is a spontaneous site in Mareng Payam (Piji/Canal County, Jonglei state). The site is located along\nthe Sobat River and is approximately one and a half-hour boat drive from Malakal town. The IDPs started\nfleeing to the site in December 2022 and according to the RRC and community leaders, there is a total\npopulation of 2,123HH (roughly 16,884 individuals). During their assessment, protection teams could only\nconfirm some 3,000 individuals, however, it was noted that some IDPs were not present during the\nassessment as they were looking for food in locations nearby. IDPs expect more people to join them in\nGokjak as the situation in their places of origin remains volatile. There is no static humanitarian presence\nin the area with only health partners conducting mobile response. The area where the IDPs have settled\nwas given to them by the local authorities for them to construct shelters and cultivate freely, this was\nconfirmed by the Payam administrator, the RRC and the IDPs. However, all IDPs reported that they lack\ntools to undertake farming activities. The majority of the population are women, children, elderly and\npersons living with disabilities and are extremely vulnerable. Most of the men remained behind to protect\ntheir properties, others were killed, and many others are missing. The IDPs left their cattle behind in order\nto mitigate any risks of inter-communal violence in Gokjak. Currently, the area is not militarized and there\nare three policemen present at the location to ensure security, law, and order.",
+  "summary": "\n\nIn December 2022, conflict in Jonglei state escalated and displaced an estimated 20,000 people to Malakal town, Canal/Pigi, Baliet, and Ulang counties. Gokjak, a spontaneous site in Mareng Payam (Piji/Canal County, Jonglei state), is home to 2,123 households (roughly 16,884 individuals). The majority of the population are women, children, elderly and persons living with disabilities. The local authorities have given the IDPs the area to construct shelters and cultivate, but they lack the tools to do so. There are three policemen present to ensure security, law, and order.",
+  "metadata": {
+    "id": "3957601",
+    "name": "Protection Cluster Upper Nile/Jonglei - Internal displacement in Gokjak, Piji/Canal county (April 2023)",
+    "date_original": 1682985600000,
+    "date_changed": 1683029256000,
+    "date_created": 1683020419000,
+    "primary_country_id": 8657,
+    "primary_country_name": "South Sudan",
+    "primary_country_iso3": "ssd",
+    "primary_country_location": {
+      "lon": 30.5,
+      "lat": 6.9
+    }
+  }
+}

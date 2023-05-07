@@ -1,0 +1,279 @@
+{
+  "original": {
+    "id": "3958957",
+    "fields": {
+      "date": {
+        "changed": "2023-05-05T13:07:30+00:00",
+        "created": "2023-05-05T10:01:28+00:00",
+        "original": "2023-04-30T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/47",
+          "name": "Burundi",
+          "location": {
+            "lon": 29.89,
+            "lat": -3.53
+          },
+          "id": 47,
+          "shortname": "Burundi",
+          "iso3": "bdi"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/77",
+          "name": "Djibouti",
+          "location": {
+            "lon": 42.58,
+            "lat": 11.75
+          },
+          "id": 77,
+          "shortname": "Djibouti",
+          "iso3": "dji"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/87",
+          "name": "Ethiopia",
+          "location": {
+            "lon": 39.62,
+            "lat": 8.63
+          },
+          "id": 87,
+          "shortname": "Ethiopia",
+          "iso3": "eth",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/131",
+          "name": "Kenya",
+          "location": {
+            "lon": 37.86,
+            "lat": 0.53
+          },
+          "id": 131,
+          "shortname": "Kenya",
+          "iso3": "ken"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/198",
+          "name": "Rwanda",
+          "location": {
+            "lon": 29.92,
+            "lat": -1.87
+          },
+          "id": 198,
+          "shortname": "Rwanda",
+          "iso3": "rwa"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/216",
+          "name": "Somalia",
+          "location": {
+            "lon": 47.33,
+            "lat": 5.79
+          },
+          "id": 216,
+          "shortname": "Somalia",
+          "iso3": "som"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/8657",
+          "name": "South Sudan",
+          "location": {
+            "lon": 30.5,
+            "lat": 6.9
+          },
+          "id": 8657,
+          "shortname": "South Sudan",
+          "iso3": "ssd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/220",
+          "name": "Sudan",
+          "location": {
+            "lon": 30,
+            "lat": 15
+          },
+          "id": 220,
+          "shortname": "Sudan",
+          "iso3": "sdn"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/240",
+          "name": "Uganda",
+          "location": {
+            "lon": 32.39,
+            "lat": 1.28
+          },
+          "id": 240,
+          "shortname": "Uganda",
+          "iso3": "uga"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/244",
+          "name": "United Republic of Tanzania",
+          "location": {
+            "lon": 34.82,
+            "lat": -6.27
+          },
+          "id": 244,
+          "shortname": "Tanzania",
+          "iso3": "tza"
+        }
+      ],
+      "origin": "https://docs.wfp.org/api/documents/WFP-0000148789/download/",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/87",
+        "name": "Ethiopia",
+        "location": {
+          "lon": 39.62,
+          "lat": 8.63
+        },
+        "id": 87,
+        "shortname": "Ethiopia",
+        "iso3": "eth"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "DR",
+          "name": "Drought",
+          "id": 4672
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "WFP Regional Bureau for Eastern Africa: Market and Trade Update – 2023 Q1 Joint Procurement and RAM (April 2023)",
+      "body": "**Highlights**\n\n• Despite the recent harvests in key producing and sourcing countries for the region (Rwanda, South Africa, Tanzania, and Uganda), below-average rainfall coupled with rising production and transport costs impacted on the amount of available produce for domestic consumption and export.  \nAccordingly, wholesale prices of maize and beans remained high in the first quarter of the year and are likely to remain above average until the next harvest in mid-2023.\n\n• Besides the reduced availability driving prices high, significant loss of livelihoods following the drought continue to exacerbate food insecurity in the Arid and Semi-Arid Lands (ASALs) of Kenya, southern Ethiopia, and Somalia. Across most ASALs counties, the maize price remained elevated throughout the first quarter of 2023 at more than double the long-term average.\n\n• As of March 2023, cereal prices across all WFP monitored markets in Burundi, Ethiopia, Rwanda,  \nSudan, and South Sudan increased by more than 50 percent compared to the five-year average. A few markets in Djibouti, Somalia and Uganda saw a moderate to high price increase (from 11 to 50 percent above the five years average price).\n\n• Below-average harvests and increased cost production also affected beans prices across the region.  \nBetween March 2022-2023, beans prices almost tripled in Burundi (up 172 percent) and almost doubled in South Sudan (up 99.2 percent).\n\n• In the first quarter of the year, many local currencies across Eastern Africa continued to lose their value against the U.S. dollar (USD), with South Sudan and Ethiopia recording the highest depreciation of the local currency against the USD in the parallel market (down 47.5 and 33 percent, respectively).\n\n• Crude oil prices continued to record a declining trend; however, average fuel prices across the region remained high in the first quarter of the year. As of March 2023, average pump prices stood at USD 1.4/L, 39.7 percent higher than the same month last year. Due to shortages, petrol prices continued to soar in Burundi (up 68.8 percent between March 2022-2023). Pump prices in Ethiopia remained unchanged in the first quarter of 2023 at ETB 61.3/L; however, they almost doubled compared to a year ago (up 93.1 percent as of March 2023).\n\n• The cost of living across Eastern Africa continued to be significantly higher than one year ago, with the annual inflation rate across the region averaging at 17.6 percent in March 2023. Ethiopia,  \nBurundi, and Rwanda, continued to record double-digit annual inflation throughout the first quarter of the year, which stood at 34.2, 32.6 and 31 percent respectively in March 2023.\n\n• Soaring food prices continued to push up the cost of living for households, with food inflation averaging at 25.2 percent in Eastern Africa in March 2023. Rwanda, Burundi, Ethiopia, Uganda, and Kenya continued to record double-digit food inflation throughout first quarter of the year. Between January and February 2023, food inflation continued to be extremely high in Sudan, recording among highest double food inflation rates in the region (at 58.7 and 53.9 percent, respectively).\n\n• In the first quarter of the year, the average per capita monthly price of a local food basket was stable across Eastern Africa but higher than the same quarter a year ago. As of March 2023, the average per capita monthly price of a local food basket reached USD 18.2 across the Region – representing a 41.6 percent increase from the same month last year. Burundi, South Sudan, and Rwanda recorded the highest increases compared a year ago (up 80.7, 78.9 and 72.6 percent, respectively). Somalia,  \nSouth Sudan, and Sudan recorded the most expensive food baskets in the region (USD 29.6, 22.8 and USD 21.8, respectively).",
+      "url": "https://reliefweb.int/node/3958957",
+      "disaster": [
+        {
+          "name": "Djibouti: Drought - Mar 2022",
+          "id": 51197,
+          "glide": "DR-2022-000238-DJI",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Ethiopia: Drought - 2015-2023",
+          "id": 23121,
+          "glide": "DR-2015-000109-ETH",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Somalia: Drought - 2015-2023",
+          "id": 23101,
+          "glide": "DR-2015-000134-SOM",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Kenya: Drought - 2014-2023",
+          "id": 15360,
+          "glide": "DR-2014-000131-KEN",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/e8/0b/e80b59d6-da72-4eff-ba4e-da9437878488.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/e8/0b/e80b59d6-da72-4eff-ba4e-da9437878488.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/e8/0b/e80b59d6-da72-4eff-ba4e-da9437878488.png",
+            "version": "2417669-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/e8/0b/e80b59d6-da72-4eff-ba4e-da9437878488.png"
+          },
+          "filename": "WFP-0000148789.pdf",
+          "mimetype": "application/pdf",
+          "id": "2417669",
+          "filesize": "1144519",
+          "url": "https://reliefweb.int/attachments/e80b59d6-da72-4eff-ba4e-da9437878488/WFP-0000148789.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/ethiopia/wfp-regional-bureau-eastern-africa-market-and-trade-update-2023-q1-joint-procurement-and-ram-april-2023",
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        }
+      ],
+      "id": 3958957,
+      "status": "published",
+      "body-html": "<p><strong>Highlights</strong></p>\n<p>• Despite the recent harvests in key producing and sourcing countries for the region (Rwanda, South Africa, Tanzania, and Uganda), below-average rainfall coupled with rising production and transport costs impacted on the amount of available produce for domestic consumption and export.<br />\nAccordingly, wholesale prices of maize and beans remained high in the first quarter of the year and are likely to remain above average until the next harvest in mid-2023.</p>\n<p>• Besides the reduced availability driving prices high, significant loss of livelihoods following the drought continue to exacerbate food insecurity in the Arid and Semi-Arid Lands (ASALs) of Kenya, southern Ethiopia, and Somalia. Across most ASALs counties, the maize price remained elevated throughout the first quarter of 2023 at more than double the long-term average.</p>\n<p>• As of March 2023, cereal prices across all WFP monitored markets in Burundi, Ethiopia, Rwanda,<br />\nSudan, and South Sudan increased by more than 50 percent compared to the five-year average. A few markets in Djibouti, Somalia and Uganda saw a moderate to high price increase (from 11 to 50 percent above the five years average price).</p>\n<p>• Below-average harvests and increased cost production also affected beans prices across the region.<br />\nBetween March 2022-2023, beans prices almost tripled in Burundi (up 172 percent) and almost doubled in South Sudan (up 99.2 percent).</p>\n<p>• In the first quarter of the year, many local currencies across Eastern Africa continued to lose their value against the U.S. dollar (USD), with South Sudan and Ethiopia recording the highest depreciation of the local currency against the USD in the parallel market (down 47.5 and 33 percent, respectively).</p>\n<p>• Crude oil prices continued to record a declining trend; however, average fuel prices across the region remained high in the first quarter of the year. As of March 2023, average pump prices stood at USD 1.4/L, 39.7 percent higher than the same month last year. Due to shortages, petrol prices continued to soar in Burundi (up 68.8 percent between March 2022-2023). Pump prices in Ethiopia remained unchanged in the first quarter of 2023 at ETB 61.3/L; however, they almost doubled compared to a year ago (up 93.1 percent as of March 2023).</p>\n<p>• The cost of living across Eastern Africa continued to be significantly higher than one year ago, with the annual inflation rate across the region averaging at 17.6 percent in March 2023. Ethiopia,<br />\nBurundi, and Rwanda, continued to record double-digit annual inflation throughout the first quarter of the year, which stood at 34.2, 32.6 and 31 percent respectively in March 2023.</p>\n<p>• Soaring food prices continued to push up the cost of living for households, with food inflation averaging at 25.2 percent in Eastern Africa in March 2023. Rwanda, Burundi, Ethiopia, Uganda, and Kenya continued to record double-digit food inflation throughout first quarter of the year. Between January and February 2023, food inflation continued to be extremely high in Sudan, recording among highest double food inflation rates in the region (at 58.7 and 53.9 percent, respectively).</p>\n<p>• In the first quarter of the year, the average per capita monthly price of a local food basket was stable across Eastern Africa but higher than the same quarter a year ago. As of March 2023, the average per capita monthly price of a local food basket reached USD 18.2 across the Region – representing a 41.6 percent increase from the same month last year. Burundi, South Sudan, and Rwanda recorded the highest increases compared a year ago (up 80.7, 78.9 and 72.6 percent, respectively). Somalia,<br />\nSouth Sudan, and Sudan recorded the most expensive food baskets in the region (USD 29.6, 22.8 and USD 21.8, respectively).</p>\n"
+    }
+  },
+  "text": "# WFP Regional Bureau for Eastern Africa: Market and Trade Update – 2023 Q1 Joint Procurement and RAM (April 2023)\n\n**Highlights**\n\n• Despite the recent harvests in key producing and sourcing countries for the region (Rwanda, South Africa, Tanzania, and Uganda), below-average rainfall coupled with rising production and transport costs impacted on the amount of available produce for domestic consumption and export.  \nAccordingly, wholesale prices of maize and beans remained high in the first quarter of the year and are likely to remain above average until the next harvest in mid-2023.\n\n• Besides the reduced availability driving prices high, significant loss of livelihoods following the drought continue to exacerbate food insecurity in the Arid and Semi-Arid Lands (ASALs) of Kenya, southern Ethiopia, and Somalia. Across most ASALs counties, the maize price remained elevated throughout the first quarter of 2023 at more than double the long-term average.\n\n• As of March 2023, cereal prices across all WFP monitored markets in Burundi, Ethiopia, Rwanda,  \nSudan, and South Sudan increased by more than 50 percent compared to the five-year average. A few markets in Djibouti, Somalia and Uganda saw a moderate to high price increase (from 11 to 50 percent above the five years average price).\n\n• Below-average harvests and increased cost production also affected beans prices across the region.  \nBetween March 2022-2023, beans prices almost tripled in Burundi (up 172 percent) and almost doubled in South Sudan (up 99.2 percent).\n\n• In the first quarter of the year, many local currencies across Eastern Africa continued to lose their value against the U.S. dollar (USD), with South Sudan and Ethiopia recording the highest depreciation of the local currency against the USD in the parallel market (down 47.5 and 33 percent, respectively).\n\n• Crude oil prices continued to record a declining trend; however, average fuel prices across the region remained high in the first quarter of the year. As of March 2023, average pump prices stood at USD 1.4/L, 39.7 percent higher than the same month last year. Due to shortages, petrol prices continued to soar in Burundi (up 68.8 percent between March 2022-2023). Pump prices in Ethiopia remained unchanged in the first quarter of 2023 at ETB 61.3/L; however, they almost doubled compared to a year ago (up 93.1 percent as of March 2023).\n\n• The cost of living across Eastern Africa continued to be significantly higher than one year ago, with the annual inflation rate across the region averaging at 17.6 percent in March 2023. Ethiopia,  \nBurundi, and Rwanda, continued to record double-digit annual inflation throughout the first quarter of the year, which stood at 34.2, 32.6 and 31 percent respectively in March 2023.\n\n• Soaring food prices continued to push up the cost of living for households, with food inflation averaging at 25.2 percent in Eastern Africa in March 2023. Rwanda, Burundi, Ethiopia, Uganda, and Kenya continued to record double-digit food inflation throughout first quarter of the year. Between January and February 2023, food inflation continued to be extremely high in Sudan, recording among highest double food inflation rates in the region (at 58.7 and 53.9 percent, respectively).\n\n• In the first quarter of the year, the average per capita monthly price of a local food basket was stable across Eastern Africa but higher than the same quarter a year ago. As of March 2023, the average per capita monthly price of a local food basket reached USD 18.2 across the Region – representing a 41.6 percent increase from the same month last year. Burundi, South Sudan, and Rwanda recorded the highest increases compared a year ago (up 80.7, 78.9 and 72.6 percent, respectively). Somalia,  \nSouth Sudan, and Sudan recorded the most expensive food baskets in the region (USD 29.6, 22.8 and USD 21.8, respectively).",
+  "summary": " In the first quarter of 2023, below-average rainfall and rising production and transport costs have caused a reduced availability of produce for domestic consumption and export, resulting in high wholesale prices of maize and beans. Food insecurity in the Arid and Semi-Arid Lands (ASALs) of Kenya, southern Ethiopia, and Somalia has been exacerbated by the drought. Cereal prices across all WFP monitored markets in Burundi, Ethiopia, Rwanda, Sudan, and South Sudan increased by more than 50 percent compared to the five-year average. Beans prices have almost tripled in Burundi and almost doubled in South Sudan. Local currencies across Eastern Africa have lost their value against the U.S. dollar, and fuel prices have remained high. The cost of living and food inflation have also been significantly higher than one year ago, with the average per capita monthly price of a local food basket reaching USD 18.2 across the Region.",
+  "metadata": {
+    "id": "3958957",
+    "name": "WFP Regional Bureau for Eastern Africa: Market and Trade Update – 2023 Q1 Joint Procurement and RAM (April 2023)",
+    "date_original": 1682812800000,
+    "date_changed": 1683292050000,
+    "date_created": 1683280888000,
+    "primary_country_id": 87,
+    "primary_country_name": "Ethiopia",
+    "primary_country_iso3": "eth",
+    "primary_country_location": {
+      "lon": 39.62,
+      "lat": 8.63
+    }
+  }
+}

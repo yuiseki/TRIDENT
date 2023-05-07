@@ -1,0 +1,411 @@
+{
+  "original": {
+    "id": "3956342",
+    "fields": {
+      "date": {
+        "changed": "2023-04-26T17:10:24+00:00",
+        "created": "2023-04-26T17:00:00+00:00",
+        "original": "2023-04-26T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/36",
+          "name": "Benin",
+          "location": {
+            "lon": 2.43,
+            "lat": 10.34
+          },
+          "id": 36,
+          "shortname": "Benin",
+          "iso3": "ben",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/46",
+          "name": "Burkina Faso",
+          "location": {
+            "lon": -1.57,
+            "lat": 12.28
+          },
+          "id": 46,
+          "shortname": "Burkina Faso",
+          "iso3": "bfa"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/52",
+          "name": "Cabo Verde",
+          "location": {
+            "lon": -23.97,
+            "lat": 15.98
+          },
+          "id": 52,
+          "shortname": "Cabo Verde",
+          "iso3": "cpv"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/49",
+          "name": "Cameroon",
+          "location": {
+            "lon": 12.21,
+            "lat": 4.81
+          },
+          "id": 49,
+          "shortname": "Cameroon",
+          "iso3": "cmr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/54",
+          "name": "Central African Republic",
+          "location": {
+            "lon": 20.48,
+            "lat": 6.57
+          },
+          "id": 54,
+          "shortname": "CAR",
+          "iso3": "caf"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/55",
+          "name": "Chad",
+          "location": {
+            "lon": 18.66,
+            "lat": 15.36
+          },
+          "id": 55,
+          "shortname": "Chad",
+          "iso3": "tcd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/69",
+          "name": "Côte d'Ivoire",
+          "location": {
+            "lon": -5.38,
+            "lat": 7.81
+          },
+          "id": 69,
+          "shortname": "Côte d'Ivoire",
+          "iso3": "civ"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/84",
+          "name": "Equatorial Guinea",
+          "location": {
+            "lon": 10.53,
+            "lat": 1.61
+          },
+          "id": 84,
+          "shortname": "Equatorial Guinea",
+          "iso3": "gnq"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/96",
+          "name": "Gabon",
+          "location": {
+            "lon": 11.8,
+            "lat": -0.59
+          },
+          "id": 96,
+          "shortname": "Gabon",
+          "iso3": "gab"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/102",
+          "name": "Ghana",
+          "location": {
+            "lon": -1.19,
+            "lat": 7.28
+          },
+          "id": 102,
+          "shortname": "Ghana",
+          "iso3": "gha"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/110",
+          "name": "Guinea",
+          "location": {
+            "lon": -11.03,
+            "lat": 10.79
+          },
+          "id": 110,
+          "shortname": "Guinea",
+          "iso3": "gin"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/139",
+          "name": "Liberia",
+          "location": {
+            "lon": -9.31,
+            "lat": 6.45
+          },
+          "id": 139,
+          "shortname": "Liberia",
+          "iso3": "lbr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/140",
+          "name": "Libya",
+          "location": {
+            "lon": 18.02,
+            "lat": 27.04
+          },
+          "id": 140,
+          "shortname": "Libya",
+          "iso3": "lby"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/149",
+          "name": "Mali",
+          "location": {
+            "lon": -1.25,
+            "lat": 17.35
+          },
+          "id": 149,
+          "shortname": "Mali",
+          "iso3": "mli"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/153",
+          "name": "Mauritania",
+          "location": {
+            "lon": -10.53,
+            "lat": 19.76
+          },
+          "id": 153,
+          "shortname": "Mauritania",
+          "iso3": "mrt"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/174",
+          "name": "Niger",
+          "location": {
+            "lon": 9.4,
+            "lat": 17.43
+          },
+          "id": 174,
+          "shortname": "Niger",
+          "iso3": "ner"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/175",
+          "name": "Nigeria",
+          "location": {
+            "lon": 8.11,
+            "lat": 9.59
+          },
+          "id": 175,
+          "shortname": "Nigeria",
+          "iso3": "nga"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/206",
+          "name": "Sao Tome and Principe",
+          "location": {
+            "lon": 6.74,
+            "lat": 0.46
+          },
+          "id": 206,
+          "shortname": "Sao Tome and Principe",
+          "iso3": "stp"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/220",
+          "name": "Sudan",
+          "location": {
+            "lon": 30,
+            "lat": 15
+          },
+          "id": 220,
+          "shortname": "Sudan",
+          "iso3": "sdn"
+        }
+      ],
+      "origin": "https://data.unhcr.org/en/documents/details/100294",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/36",
+        "name": "Benin",
+        "location": {
+          "lon": 2.43,
+          "lat": 10.34
+        },
+        "id": 36,
+        "shortname": "Benin",
+        "iso3": "ben"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        },
+        {
+          "code": "FF",
+          "name": "Flash Flood",
+          "id": 4624
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "UNHCR Regional Operational Update - West and Central Africa Operational Update (October - December 2022)",
+      "body": "**Highlights**\n\nAs of December 2022, and since the Emergency Transit Center was launched in 2017, 5,096 refugees, have left Niger to third countries under resettlement or through complementary pathways.\n\nThe 16 Days of Activism campaign, calling for the elimination of violence against women, took place from 25 November to 10 December across the region.\n\nThe voluntary repatriation exercise for Ivorians linked to the cessation of their refugee status, was completed in December 2022, bringing the total number of returnees to 316,000.",
+      "url": "https://reliefweb.int/node/3956342",
+      "disaster": [
+        {
+          "name": "Chad: Floods - Jul 2022",
+          "id": 51286,
+          "glide": "FL-2022-000287-TCD",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Nigeria: Floods - Jun 2022",
+          "id": 51265,
+          "glide": "FL-2022-000271-NGA",
+          "type": [
+            {
+              "code": "FF",
+              "name": "Flash Flood",
+              "id": 4624
+            },
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Cameroon: Cholera Outbreak - Jul 2018",
+          "id": 46464,
+          "glide": "EP-2018-000142-CMR",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/e5/29/e529e9c7-5aaf-4117-99ff-bcdf86339dd0.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/e5/29/e529e9c7-5aaf-4117-99ff-bcdf86339dd0.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/e5/29/e529e9c7-5aaf-4117-99ff-bcdf86339dd0.png",
+            "version": "2415063-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/e5/29/e529e9c7-5aaf-4117-99ff-bcdf86339dd0.png"
+          },
+          "filename": "WCA Regional Operational Update October-December 2022.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415063",
+          "filesize": "874013",
+          "url": "https://reliefweb.int/attachments/e529e9c7-5aaf-4117-99ff-bcdf86339dd0/WCA%20Regional%20Operational%20Update%20October-December%202022.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/benin/unhcr-regional-operational-update-west-and-central-africa-operational-update-october-december-2022",
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        },
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Gender",
+          "id": 4594
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3956342,
+      "status": "published",
+      "body-html": "<p><strong>Highlights</strong></p>\n<p>As of December 2022, and since the Emergency Transit Center was launched in 2017, 5,096 refugees, have left Niger to third countries under resettlement or through complementary pathways.</p>\n<p>The 16 Days of Activism campaign, calling for the elimination of violence against women, took place from 25 November to 10 December across the region.</p>\n<p>The voluntary repatriation exercise for Ivorians linked to the cessation of their refugee status, was completed in December 2022, bringing the total number of returnees to 316,000.</p>\n"
+    }
+  },
+  "text": "# UNHCR Regional Operational Update - West and Central Africa Operational Update (October - December 2022)\n\n**Highlights**\n\nAs of December 2022, and since the Emergency Transit Center was launched in 2017, 5,096 refugees, have left Niger to third countries under resettlement or through complementary pathways.\n\nThe 16 Days of Activism campaign, calling for the elimination of violence against women, took place from 25 November to 10 December across the region.\n\nThe voluntary repatriation exercise for Ivorians linked to the cessation of their refugee status, was completed in December 2022, bringing the total number of returnees to 316,000.",
+  "summary": "\n\nThe UNHCR Regional Operational Update for West and Central Africa for October-December 2022 highlights the successful resettlement of 5,096 refugees from Niger to third countries, the 16 Days of Activism campaign to eliminate violence against women, and the voluntary repatriation of 316,000 Ivorians linked to the cessation of their refugee status.",
+  "metadata": {
+    "id": "3956342",
+    "name": "UNHCR Regional Operational Update - West and Central Africa Operational Update (October - December 2022)",
+    "date_original": 1682467200000,
+    "date_changed": 1682529024000,
+    "date_created": 1682528400000,
+    "primary_country_id": 36,
+    "primary_country_name": "Benin",
+    "primary_country_iso3": "ben",
+    "primary_country_location": {
+      "lon": 2.43,
+      "lat": 10.34
+    }
+  }
+}

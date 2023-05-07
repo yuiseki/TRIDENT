@@ -1,0 +1,144 @@
+{
+  "original": {
+    "id": "3957927",
+    "fields": {
+      "date": {
+        "changed": "2023-05-03T00:15:57+00:00",
+        "created": "2023-05-02T23:54:09+00:00",
+        "original": "2023-05-02T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/55",
+          "name": "Chad",
+          "location": {
+            "lon": 18.66,
+            "lat": 15.36
+          },
+          "id": 55,
+          "shortname": "Chad",
+          "iso3": "tcd",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/220",
+          "name": "Sudan",
+          "location": {
+            "lon": 30,
+            "lat": 15
+          },
+          "id": 220,
+          "shortname": "Sudan",
+          "iso3": "sdn"
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/55",
+        "name": "Chad",
+        "location": {
+          "lon": 18.66,
+          "lat": 15.36
+        },
+        "id": 55,
+        "shortname": "Chad",
+        "iso3": "tcd"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1979",
+          "longname": "United Nations Children's Fund",
+          "spanish_name": "Fondo de las Naciones Unidas para la Infancia",
+          "name": "UN Children's Fund",
+          "id": 1979,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNICEF",
+          "homepage": "http://www.unicef.org"
+        }
+      ],
+      "title": "UNICEF Chad Humanitarian Flash Update No. 3: 02 May 2023",
+      "body": "**HUMANITARIAN OVERVIEW**\n\n- According to UNHCR, as of 1st of May around 30,000 people have fled to Tchad: 3,000 to Wadi Fira province; 21,000 to Ouaddaï province; and 6,000 to Sila province. \n\n- UNHCR in Tchad projects an influx of 100,000 people (Sudanese refugees and Chadian returnees) by the end of the month. \n\n- Currently, the refugees are entering into Chad through 25 entry points. \n\n**HUMANITARIAN RESPONSE**\n\n- The response is led by UNHCR and the “Commission Nationale d’Accueil de Reinsertion des Refugies et des Rapatries” (CNARR). \n\n- A Country Contingency Plan to cover the needs of 100,000 people (Sudanese refugees and Chadian returnees) for six months for a total requirement of $107 million is under validation. \n\n- On the 1st of May, UNHCR had counted 21,298 refugees and pre-registred 4,269 refugees. \n\n- Since the beginning of the crisis a total of 22 separated children have been identified. The INGO Hebrew Immigrant Aid Society (HIAS) is providing protection services to them.\n\n**UNICEF's RESPONSE**\n\n- UNICEF and its partner Premiere Urgence Internationale (PUI) distributed NFI kits to the 960 most vulnerable households\n\n- UNICEF is ensuring the treatment and the quality control of water while UNHCR/IRC are doing water trucking to Koufroun and Midjekilte (Ouaddai). UNICEF will distribute 3,024 bottles of bleach to hard-to-reach areas. UNICEF signed a contract with a local entrepreneur to dig 3 boreholes in Koufroun, Midjeguelta and Dize Berté villages to cover the needs of 1,500 people (hosts and refugees).\n\n- 100 cartons of RUTF, 14 cartons of Amoxicillin and monitoring tools have been provided to health centers to ensure the treatment of children suffering from severe acute malnutrition (SAM). As of 2 May, Medecins Sans Frontieres (MSF) already managed 43 SAM cases.\n\n- UNICEF signed an agreement with the Croix Rouge Tchadienne (CRT) ensuring the deployment of CRT personnel to provide protection services to vulnerable children and their families. 100 cartons of RUTF, 14 cartons of Amoxicillin and monitoring tools have been provided to health centers to ensure the treatment of children suffering from severe acute malnutrition (SAM). As of 2 May, Medecins Sans Frontieres (MSF) already managed 43 SAM cases.\n\n- UNICEF provided essential drugs, medical materials and kits to cover the primary health needs of 60,000 people for three months. Measles cases have been confirmed amongst refugees children and MSF started vaccination in Koufroun,  \nMidjeguelta and Dize Berté.\n\n- The agreement with the CRT will also allow communication activities promoting positive behaviors and peace building/social cohesion. Complaint and feedback mechanisms will be put in place to take into account the needs of affected people.",
+      "url": "https://reliefweb.int/node/3957927",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/d6/58/d658749d-8e01-4bf0-858d-53fd1dcda860.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/d6/58/d658749d-8e01-4bf0-858d-53fd1dcda860.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/d6/58/d658749d-8e01-4bf0-858d-53fd1dcda860.png",
+            "version": "2416597-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/d6/58/d658749d-8e01-4bf0-858d-53fd1dcda860.png"
+          },
+          "filename": "UNICEF Chad Humanitarian Flash Update No. 3 - 02 May 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2416597",
+          "filesize": "942711",
+          "url": "https://reliefweb.int/attachments/d658749d-8e01-4bf0-858d-53fd1dcda860/UNICEF%20Chad%20Humanitarian%20Flash%20Update%20No.%203%20-%2002%20May%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/chad/unicef-chad-humanitarian-flash-update-no-3-02-may-2023",
+      "theme": [
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3957927,
+      "status": "published",
+      "body-html": "<p><strong>HUMANITARIAN OVERVIEW</strong></p>\n<ul>\n<li>\n<p>According to UNHCR, as of 1st of May around 30,000 people have fled to Tchad: 3,000 to Wadi Fira province; 21,000 to Ouaddaï province; and 6,000 to Sila province.</p>\n</li>\n<li>\n<p>UNHCR in Tchad projects an influx of 100,000 people (Sudanese refugees and Chadian returnees) by the end of the month.</p>\n</li>\n<li>\n<p>Currently, the refugees are entering into Chad through 25 entry points.</p>\n</li>\n</ul>\n<p><strong>HUMANITARIAN RESPONSE</strong></p>\n<ul>\n<li>\n<p>The response is led by UNHCR and the “Commission Nationale d’Accueil de Reinsertion des Refugies et des Rapatries” (CNARR).</p>\n</li>\n<li>\n<p>A Country Contingency Plan to cover the needs of 100,000 people (Sudanese refugees and Chadian returnees) for six months for a total requirement of $107 million is under validation.</p>\n</li>\n<li>\n<p>On the 1st of May, UNHCR had counted 21,298 refugees and pre-registred 4,269 refugees.</p>\n</li>\n<li>\n<p>Since the beginning of the crisis a total of 22 separated children have been identified. The INGO Hebrew Immigrant Aid Society (HIAS) is providing protection services to them.</p>\n</li>\n</ul>\n<p><strong>UNICEF's RESPONSE</strong></p>\n<ul>\n<li>\n<p>UNICEF and its partner Premiere Urgence Internationale (PUI) distributed NFI kits to the 960 most vulnerable households</p>\n</li>\n<li>\n<p>UNICEF is ensuring the treatment and the quality control of water while UNHCR/IRC are doing water trucking to Koufroun and Midjekilte (Ouaddai). UNICEF will distribute 3,024 bottles of bleach to hard-to-reach areas. UNICEF signed a contract with a local entrepreneur to dig 3 boreholes in Koufroun, Midjeguelta and Dize Berté villages to cover the needs of 1,500 people (hosts and refugees).</p>\n</li>\n<li>\n<p>100 cartons of RUTF, 14 cartons of Amoxicillin and monitoring tools have been provided to health centers to ensure the treatment of children suffering from severe acute malnutrition (SAM). As of 2 May, Medecins Sans Frontieres (MSF) already managed 43 SAM cases.</p>\n</li>\n<li>\n<p>UNICEF signed an agreement with the Croix Rouge Tchadienne (CRT) ensuring the deployment of CRT personnel to provide protection services to vulnerable children and their families. 100 cartons of RUTF, 14 cartons of Amoxicillin and monitoring tools have been provided to health centers to ensure the treatment of children suffering from severe acute malnutrition (SAM). As of 2 May, Medecins Sans Frontieres (MSF) already managed 43 SAM cases.</p>\n</li>\n<li>\n<p>UNICEF provided essential drugs, medical materials and kits to cover the primary health needs of 60,000 people for three months. Measles cases have been confirmed amongst refugees children and MSF started vaccination in Koufroun,<br />\nMidjeguelta and Dize Berté.</p>\n</li>\n<li>\n<p>The agreement with the CRT will also allow communication activities promoting positive behaviors and peace building/social cohesion. Complaint and feedback mechanisms will be put in place to take into account the needs of affected people.</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# UNICEF Chad Humanitarian Flash Update No. 3: 02 May 2023\n\n**HUMANITARIAN OVERVIEW**\n\n- According to UNHCR, as of 1st of May around 30,000 people have fled to Tchad: 3,000 to Wadi Fira province; 21,000 to Ouaddaï province; and 6,000 to Sila province. \n\n- UNHCR in Tchad projects an influx of 100,000 people (Sudanese refugees and Chadian returnees) by the end of the month. \n\n- Currently, the refugees are entering into Chad through 25 entry points. \n\n**HUMANITARIAN RESPONSE**\n\n- The response is led by UNHCR and the “Commission Nationale d’Accueil de Reinsertion des Refugies et des Rapatries” (CNARR). \n\n- A Country Contingency Plan to cover the needs of 100,000 people (Sudanese refugees and Chadian returnees) for six months for a total requirement of $107 million is under validation. \n\n- On the 1st of May, UNHCR had counted 21,298 refugees and pre-registred 4,269 refugees. \n\n- Since the beginning of the crisis a total of 22 separated children have been identified. The INGO Hebrew Immigrant Aid Society (HIAS) is providing protection services to them.\n\n**UNICEF's RESPONSE**\n\n- UNICEF and its partner Premiere Urgence Internationale (PUI) distributed NFI kits to the 960 most vulnerable households\n\n- UNICEF is ensuring the treatment and the quality control of water while UNHCR/IRC are doing water trucking to Koufroun and Midjekilte (Ouaddai). UNICEF will distribute 3,024 bottles of bleach to hard-to-reach areas. UNICEF signed a contract with a local entrepreneur to dig 3 boreholes in Koufroun, Midjeguelta and Dize Berté villages to cover the needs of 1,500 people (hosts and refugees).\n\n- 100 cartons of RUTF, 14 cartons of Amoxicillin and monitoring tools have been provided to health centers to ensure the treatment of children suffering from severe acute malnutrition (SAM). As of 2 May, Medecins Sans Frontieres (MSF) already managed 43 SAM cases.\n\n- UNICEF signed an agreement with the Croix Rouge Tchadienne (CRT) ensuring the deployment of CRT personnel to provide protection services to vulnerable children and their families. 100 cartons of RUTF, 14 cartons of Amoxicillin and monitoring tools have been provided to health centers to ensure the treatment of children suffering from severe acute malnutrition (SAM). As of 2 May, Medecins Sans Frontieres (MSF) already managed 43 SAM cases.\n\n- UNICEF provided essential drugs, medical materials and kits to cover the primary health needs of 60,000 people for three months. Measles cases have been confirmed amongst refugees children and MSF started vaccination in Koufroun,  \nMidjeguelta and Dize Berté.\n\n- The agreement with the CRT will also allow communication activities promoting positive behaviors and peace building/social cohesion. Complaint and feedback mechanisms will be put in place to take into account the needs of affected people.",
+  "summary": " \nUNICEF is responding to the influx of 30,000 people to Chad, with a projected influx of 100,000 by the end of the month. UNHCR and CNARR are leading the response, with UNICEF providing NFI kits, water, medical supplies, and protection services. UNICEF has also signed an agreement with the CRT to provide communication activities and complaint and feedback mechanisms.",
+  "metadata": {
+    "id": "3957927",
+    "name": "UNICEF Chad Humanitarian Flash Update No. 3: 02 May 2023",
+    "date_original": 1682985600000,
+    "date_changed": 1683072957000,
+    "date_created": 1683071649000,
+    "primary_country_id": 55,
+    "primary_country_name": "Chad",
+    "primary_country_iso3": "tcd",
+    "primary_country_location": {
+      "lon": 18.66,
+      "lat": 15.36
+    }
+  }
+}

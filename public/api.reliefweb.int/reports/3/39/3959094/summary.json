@@ -1,0 +1,185 @@
+{
+  "original": {
+    "id": "3959094",
+    "fields": {
+      "date": {
+        "changed": "2023-05-05T14:09:16+00:00",
+        "created": "2023-05-05T13:39:50+00:00",
+        "original": "2023-05-05T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/54",
+          "name": "Central African Republic",
+          "location": {
+            "lon": 20.48,
+            "lat": 6.57
+          },
+          "id": 54,
+          "shortname": "CAR",
+          "iso3": "caf"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/55",
+          "name": "Chad",
+          "location": {
+            "lon": 18.66,
+            "lat": 15.36
+          },
+          "id": 55,
+          "shortname": "Chad",
+          "iso3": "tcd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/82",
+          "name": "Egypt",
+          "location": {
+            "lon": 29.87,
+            "lat": 26.49
+          },
+          "id": 82,
+          "shortname": "Egypt",
+          "iso3": "egy"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/87",
+          "name": "Ethiopia",
+          "location": {
+            "lon": 39.62,
+            "lat": 8.63
+          },
+          "id": 87,
+          "shortname": "Ethiopia",
+          "iso3": "eth"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/8657",
+          "name": "South Sudan",
+          "location": {
+            "lon": 30.5,
+            "lat": 6.9
+          },
+          "id": 8657,
+          "shortname": "South Sudan",
+          "iso3": "ssd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/220",
+          "name": "Sudan",
+          "location": {
+            "lon": 30,
+            "lat": 15
+          },
+          "id": 220,
+          "shortname": "Sudan",
+          "iso3": "sdn",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/220",
+        "name": "Sudan",
+        "location": {
+          "lon": 30,
+          "lat": 15
+        },
+        "id": 220,
+        "shortname": "Sudan",
+        "iso3": "sdn"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1979",
+          "longname": "United Nations Children's Fund",
+          "spanish_name": "Fondo de las Naciones Unidas para la Infancia",
+          "name": "UN Children's Fund",
+          "id": 1979,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNICEF",
+          "homepage": "http://www.unicef.org"
+        }
+      ],
+      "title": "UNICEF response to Sudan crisis \"chapeau\": 04 May 2023",
+      "body": "Following weeks of tension between the Sudanese Armed Forces (SAF) and the Rapid Support Forces (RSF), heavy fighting broke out in Khartoum on 15 April 2023 and extended throughout Sudan. The ongoing conflict is pushing already vulnerable children and women deeper into hardship. Thousands of families are fleeing Khartoum and other cities, with many seeking refuge in neighbouring countries.  \n\n**Immediate humanitarian needs**\n\nThe fighting is severely exacerbating the already fragile humanitarian situation in the country.  \n\nHumanitarian needs had already reached record levels before hostilities broke, with 15.8 million people in need of humanitarian assistance, including more than 8.5 million children.  \n\nAs of 2 May, at least 550 people have been killed and 4,926 wounded across Sudan according to Federal Ministry of Health figures. Over a hundred children have reportedly been killed and nearly two thousand injured across Khartoum, the Darfurs and North Kordofan, with increasing reports of gender-based violence (GBV) against girls and women. The security situation, however, seriously hinders the ability of UNICEF and partners to collect and verify information.  \nSafe access and provision of essential supplies is severely constrained across many parts of Sudan.  \n\nHouseholds are running low on food, fuel and cash, while prices of basic commodities have risen by 40 – 60 per cent in some areas. This increases the risk of malnutrition among children, water borne diseases, displacement and exposure to violence including GBV.\n\nThe safety and wellbeing of humanitarian workers and assets remain of grave concern. Five aid workers, including four UN staff members, have been killed. Humanitarian premises have come under attack and looted, including UNICEF supplies and properties.  \n\nSudan already had one of the highest malnutrition rates in the world. The fighting has disrupted lifesaving treatment services to about 50,000 children with Severe Acute Malnutrition (SAM), including 1,700 children with medical complications. Access to health care is severely disrupted. Only 16 per cent of health facilities in Khartoum are currently operating as normal.  \n\nFighting has compromised the central cold chain, including millions of lifesaving vaccines and vital medication such as insulin, with electricity supply unstable and limited access to fuel for running generators. Vaccines and cold chain equipment in West and South Darfur have been destroyed.  \n\nAccess to safe drinking water remains a major challenge in conflict-affected areas, increasing the risk of water-borne diseases such as cholera. Several neighbourhoods in Khartoum face severe shortage of water due to power outage, lack of fuel and damage to water systems.  \n\nSchools and educational institutions in conflict affected areas are mostly closed. Out of school children are bound to increase in number and at greater risk of physical and mental threats, including recruitment into armed groups. The learning crisis is deepening as a result, with nearly 7 million school-age children already out of school before the conflict, one in three girls and one in four boys, with girls less likely to return to school.",
+      "url": "https://reliefweb.int/node/3959094",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/5f/e6/5fe6244d-b6c8-4f82-a268-7f934ee50ba5.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/5f/e6/5fe6244d-b6c8-4f82-a268-7f934ee50ba5.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/5f/e6/5fe6244d-b6c8-4f82-a268-7f934ee50ba5.png",
+            "version": "2417789-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/5f/e6/5fe6244d-b6c8-4f82-a268-7f934ee50ba5.png"
+          },
+          "filename": "UNICEF response to Sudan crisis chapeau - 04 May 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2417789",
+          "filesize": "11092778",
+          "url": "https://reliefweb.int/attachments/5fe6244d-b6c8-4f82-a268-7f934ee50ba5/UNICEF%20response%20to%20Sudan%20crisis%20chapeau%20-%2004%20May%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/sudan/unicef-response-sudan-crisis-chapeau-04-may-2023",
+      "theme": [
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Safety and Security",
+          "id": 4602
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3959094,
+      "status": "published",
+      "body-html": "<p>Following weeks of tension between the Sudanese Armed Forces (SAF) and the Rapid Support Forces (RSF), heavy fighting broke out in Khartoum on 15 April 2023 and extended throughout Sudan. The ongoing conflict is pushing already vulnerable children and women deeper into hardship. Thousands of families are fleeing Khartoum and other cities, with many seeking refuge in neighbouring countries.</p>\n<p><strong>Immediate humanitarian needs</strong></p>\n<p>The fighting is severely exacerbating the already fragile humanitarian situation in the country.</p>\n<p>Humanitarian needs had already reached record levels before hostilities broke, with 15.8 million people in need of humanitarian assistance, including more than 8.5 million children.</p>\n<p>As of 2 May, at least 550 people have been killed and 4,926 wounded across Sudan according to Federal Ministry of Health figures. Over a hundred children have reportedly been killed and nearly two thousand injured across Khartoum, the Darfurs and North Kordofan, with increasing reports of gender-based violence (GBV) against girls and women. The security situation, however, seriously hinders the ability of UNICEF and partners to collect and verify information.<br />\nSafe access and provision of essential supplies is severely constrained across many parts of Sudan.</p>\n<p>Households are running low on food, fuel and cash, while prices of basic commodities have risen by 40 – 60 per cent in some areas. This increases the risk of malnutrition among children, water borne diseases, displacement and exposure to violence including GBV.</p>\n<p>The safety and wellbeing of humanitarian workers and assets remain of grave concern. Five aid workers, including four UN staff members, have been killed. Humanitarian premises have come under attack and looted, including UNICEF supplies and properties.</p>\n<p>Sudan already had one of the highest malnutrition rates in the world. The fighting has disrupted lifesaving treatment services to about 50,000 children with Severe Acute Malnutrition (SAM), including 1,700 children with medical complications. Access to health care is severely disrupted. Only 16 per cent of health facilities in Khartoum are currently operating as normal.</p>\n<p>Fighting has compromised the central cold chain, including millions of lifesaving vaccines and vital medication such as insulin, with electricity supply unstable and limited access to fuel for running generators. Vaccines and cold chain equipment in West and South Darfur have been destroyed.</p>\n<p>Access to safe drinking water remains a major challenge in conflict-affected areas, increasing the risk of water-borne diseases such as cholera. Several neighbourhoods in Khartoum face severe shortage of water due to power outage, lack of fuel and damage to water systems.</p>\n<p>Schools and educational institutions in conflict affected areas are mostly closed. Out of school children are bound to increase in number and at greater risk of physical and mental threats, including recruitment into armed groups. The learning crisis is deepening as a result, with nearly 7 million school-age children already out of school before the conflict, one in three girls and one in four boys, with girls less likely to return to school.</p>\n"
+    }
+  },
+  "text": "# UNICEF response to Sudan crisis \"chapeau\": 04 May 2023\n\nFollowing weeks of tension between the Sudanese Armed Forces (SAF) and the Rapid Support Forces (RSF), heavy fighting broke out in Khartoum on 15 April 2023 and extended throughout Sudan. The ongoing conflict is pushing already vulnerable children and women deeper into hardship. Thousands of families are fleeing Khartoum and other cities, with many seeking refuge in neighbouring countries.  \n\n**Immediate humanitarian needs**\n\nThe fighting is severely exacerbating the already fragile humanitarian situation in the country.  \n\nHumanitarian needs had already reached record levels before hostilities broke, with 15.8 million people in need of humanitarian assistance, including more than 8.5 million children.  \n\nAs of 2 May, at least 550 people have been killed and 4,926 wounded across Sudan according to Federal Ministry of Health figures. Over a hundred children have reportedly been killed and nearly two thousand injured across Khartoum, the Darfurs and North Kordofan, with increasing reports of gender-based violence (GBV) against girls and women. The security situation, however, seriously hinders the ability of UNICEF and partners to collect and verify information.  \nSafe access and provision of essential supplies is severely constrained across many parts of Sudan.  \n\nHouseholds are running low on food, fuel and cash, while prices of basic commodities have risen by 40 – 60 per cent in some areas. This increases the risk of malnutrition among children, water borne diseases, displacement and exposure to violence including GBV.\n\nThe safety and wellbeing of humanitarian workers and assets remain of grave concern. Five aid workers, including four UN staff members, have been killed. Humanitarian premises have come under attack and looted, including UNICEF supplies and properties.  \n\nSudan already had one of the highest malnutrition rates in the world. The fighting has disrupted lifesaving treatment services to about 50,000 children with Severe Acute Malnutrition (SAM), including 1,700 children with medical complications. Access to health care is severely disrupted. Only 16 per cent of health facilities in Khartoum are currently operating as normal.  \n\nFighting has compromised the central cold chain, including millions of lifesaving vaccines and vital medication such as insulin, with electricity supply unstable and limited access to fuel for running generators. Vaccines and cold chain equipment in West and South Darfur have been destroyed.  \n\nAccess to safe drinking water remains a major challenge in conflict-affected areas, increasing the risk of water-borne diseases such as cholera. Several neighbourhoods in Khartoum face severe shortage of water due to power outage, lack of fuel and damage to water systems.  \n\nSchools and educational institutions in conflict affected areas are mostly closed. Out of school children are bound to increase in number and at greater risk of physical and mental threats, including recruitment into armed groups. The learning crisis is deepening as a result, with nearly 7 million school-age children already out of school before the conflict, one in three girls and one in four boys, with girls less likely to return to school.",
+  "summary": " Following weeks of tension between the Sudanese Armed Forces (SAF) and the Rapid Support Forces (RSF), heavy fighting broke out in Khartoum on 15 April 2023 and extended throughout Sudan. This has exacerbated the already fragile humanitarian situation in the country, with 15.8 million people in need of assistance, including 8.5 million children. At least 550 people have been killed and 4,926 wounded, with over a hundred children killed and nearly two thousand injured. Access to essential supplies is severely constrained, and households are running low on food, fuel and cash. Five aid workers, including four UN staff members, have been killed. Vaccines and cold chain equipment have been destroyed, and access to safe drinking water is a major challenge. Schools and educational institutions are mostly closed, with 7 million school-age children already out of school before the conflict. UNICEF is responding to the crisis by providing humanitarian assistance and advocating for the safety and wellbeing of humanitarian workers and assets.",
+  "metadata": {
+    "id": "3959094",
+    "name": "UNICEF response to Sudan crisis \"chapeau\": 04 May 2023",
+    "date_original": 1683244800000,
+    "date_changed": 1683295756000,
+    "date_created": 1683293990000,
+    "primary_country_id": 220,
+    "primary_country_name": "Sudan",
+    "primary_country_iso3": "sdn",
+    "primary_country_location": {
+      "lon": 30,
+      "lat": 15
+    }
+  }
+}

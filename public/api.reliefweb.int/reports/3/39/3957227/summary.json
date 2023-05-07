@@ -1,0 +1,137 @@
+{
+  "original": {
+    "id": "3957227",
+    "fields": {
+      "date": {
+        "changed": "2023-04-30T08:01:34+00:00",
+        "created": "2023-04-30T02:35:52+00:00",
+        "original": "2023-04-28T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/54",
+          "name": "Central African Republic",
+          "location": {
+            "lon": 20.48,
+            "lat": 6.57
+          },
+          "id": 54,
+          "shortname": "CAR",
+          "iso3": "caf",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/220",
+          "name": "Sudan",
+          "location": {
+            "lon": 30,
+            "lat": 15
+          },
+          "id": 220,
+          "shortname": "Sudan",
+          "iso3": "sdn"
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/54",
+        "name": "Central African Republic",
+        "location": {
+          "lon": 20.48,
+          "lat": 6.57
+        },
+        "id": 54,
+        "shortname": "CAR",
+        "iso3": "caf"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1979",
+          "longname": "United Nations Children's Fund",
+          "spanish_name": "Fondo de las Naciones Unidas para la Infancia",
+          "name": "UN Children's Fund",
+          "id": 1979,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNICEF",
+          "homepage": "http://www.unicef.org"
+        }
+      ],
+      "title": "UNICEF Central African Republic Flash Update No. 1 (Impact of Sudan Crisis) as of 28 April 2023",
+      "body": "**OVERVIEW**\n\n- On 15 April, fighting erupted in Sudan between the Sudanese army and the Rapid Support Forces (RSF), sparking a humanitarian crisis with thousands fleeing their homes and seeking refuge in neighbouring countries.\n\n- According to UN estimates, since the conflict began, close to 12,600 persons have sought refuge in the Central African Republic, living in spontaneous settlements in Am Dafock in the Vakaga Prefecture along the northern border of the Central African Republic.\n\n- The dynamics of new arrivals are rapidly changing, and local authorities are discussing the possibility of relocation to Birao.\n\n**HUMANITARIAN SITUATION**\n\n- According to the 2023 Humanitarian Needs Overview released in November 2022, about 120,000 people are in need of humanitarian assistance and protection in the northern region. Acute food insecurity is also widespread in the said region and prices of food are increasing in the area.\n\n- The situation in the upcoming months is expected to worsen with expected floods and road closures due to the rainy season, leading to a potential surge in and spread of diseases such as cholera and an increase in food insecurity.\n\n- The situation is impacting the already very fragile host communities. The region is home to 17,600 internal displaced, with ongoing conflict in some parts of the territory.\n\n**HUMANITARIAN RESPONSE**\n\n- The humanitarian country team met on 24 April. UNHCR with support from OCHA is coordinating the response.\n\n- On 28 April, an interagency mission was deployed to the northern part of the country to assess the needs and have a proper estimation of the refugee population.\n\n- Based on several scenarios the humanitarian country team is expecting an influx of up to 50,000 people.",
+      "url": "https://reliefweb.int/node/3957227",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/e9/56/e9560de3-c3aa-45ea-a233-2c2c6a4cd0e0.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/e9/56/e9560de3-c3aa-45ea-a233-2c2c6a4cd0e0.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/e9/56/e9560de3-c3aa-45ea-a233-2c2c6a4cd0e0.png",
+            "version": "2415837-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/e9/56/e9560de3-c3aa-45ea-a233-2c2c6a4cd0e0.png"
+          },
+          "filename": "UNICEF Central Africa Republic Flash Update No. 1 (Impact of the Crisis in Sudan) - 28 April 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415837",
+          "filesize": "437089",
+          "url": "https://reliefweb.int/attachments/e9560de3-c3aa-45ea-a233-2c2c6a4cd0e0/UNICEF%20Central%20Africa%20Republic%20Flash%20Update%20No.%201%20%28Impact%20of%20the%20Crisis%20in%20Sudan%29%20-%2028%20April%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/central-african-republic/unicef-central-african-republic-flash-update-no-1-impact-sudan-crisis-28-april-2023",
+      "theme": [
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3957227,
+      "status": "published",
+      "body-html": "<p><strong>OVERVIEW</strong></p>\n<ul>\n<li>\n<p>On 15 April, fighting erupted in Sudan between the Sudanese army and the Rapid Support Forces (RSF), sparking a humanitarian crisis with thousands fleeing their homes and seeking refuge in neighbouring countries.</p>\n</li>\n<li>\n<p>According to UN estimates, since the conflict began, close to 12,600 persons have sought refuge in the Central African Republic, living in spontaneous settlements in Am Dafock in the Vakaga Prefecture along the northern border of the Central African Republic.</p>\n</li>\n<li>\n<p>The dynamics of new arrivals are rapidly changing, and local authorities are discussing the possibility of relocation to Birao.</p>\n</li>\n</ul>\n<p><strong>HUMANITARIAN SITUATION</strong></p>\n<ul>\n<li>\n<p>According to the 2023 Humanitarian Needs Overview released in November 2022, about 120,000 people are in need of humanitarian assistance and protection in the northern region. Acute food insecurity is also widespread in the said region and prices of food are increasing in the area.</p>\n</li>\n<li>\n<p>The situation in the upcoming months is expected to worsen with expected floods and road closures due to the rainy season, leading to a potential surge in and spread of diseases such as cholera and an increase in food insecurity.</p>\n</li>\n<li>\n<p>The situation is impacting the already very fragile host communities. The region is home to 17,600 internal displaced, with ongoing conflict in some parts of the territory.</p>\n</li>\n</ul>\n<p><strong>HUMANITARIAN RESPONSE</strong></p>\n<ul>\n<li>\n<p>The humanitarian country team met on 24 April. UNHCR with support from OCHA is coordinating the response.</p>\n</li>\n<li>\n<p>On 28 April, an interagency mission was deployed to the northern part of the country to assess the needs and have a proper estimation of the refugee population.</p>\n</li>\n<li>\n<p>Based on several scenarios the humanitarian country team is expecting an influx of up to 50,000 people.</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# UNICEF Central African Republic Flash Update No. 1 (Impact of Sudan Crisis) as of 28 April 2023\n\n**OVERVIEW**\n\n- On 15 April, fighting erupted in Sudan between the Sudanese army and the Rapid Support Forces (RSF), sparking a humanitarian crisis with thousands fleeing their homes and seeking refuge in neighbouring countries.\n\n- According to UN estimates, since the conflict began, close to 12,600 persons have sought refuge in the Central African Republic, living in spontaneous settlements in Am Dafock in the Vakaga Prefecture along the northern border of the Central African Republic.\n\n- The dynamics of new arrivals are rapidly changing, and local authorities are discussing the possibility of relocation to Birao.\n\n**HUMANITARIAN SITUATION**\n\n- According to the 2023 Humanitarian Needs Overview released in November 2022, about 120,000 people are in need of humanitarian assistance and protection in the northern region. Acute food insecurity is also widespread in the said region and prices of food are increasing in the area.\n\n- The situation in the upcoming months is expected to worsen with expected floods and road closures due to the rainy season, leading to a potential surge in and spread of diseases such as cholera and an increase in food insecurity.\n\n- The situation is impacting the already very fragile host communities. The region is home to 17,600 internal displaced, with ongoing conflict in some parts of the territory.\n\n**HUMANITARIAN RESPONSE**\n\n- The humanitarian country team met on 24 April. UNHCR with support from OCHA is coordinating the response.\n\n- On 28 April, an interagency mission was deployed to the northern part of the country to assess the needs and have a proper estimation of the refugee population.\n\n- Based on several scenarios the humanitarian country team is expecting an influx of up to 50,000 people.",
+  "summary": "\n\nFighting in Sudan has caused thousands of people to flee their homes and seek refuge in the Central African Republic. According to estimates, 12,600 people have arrived in the country, and the dynamics of new arrivals are rapidly changing. The Humanitarian Needs Overview estimates that 120,000 people in the northern region are in need of assistance and protection, and the situation is expected to worsen with the rainy season. The humanitarian country team met on 24 April and an interagency mission was deployed to the northern part of the country to assess the needs. It is estimated that up to 50,000 people may arrive in the Central African Republic.",
+  "metadata": {
+    "id": "3957227",
+    "name": "UNICEF Central African Republic Flash Update No. 1 (Impact of Sudan Crisis) as of 28 April 2023",
+    "date_original": 1682640000000,
+    "date_changed": 1682841694000,
+    "date_created": 1682822152000,
+    "primary_country_id": 54,
+    "primary_country_name": "Central African Republic",
+    "primary_country_iso3": "caf",
+    "primary_country_location": {
+      "lon": 20.48,
+      "lat": 6.57
+    }
+  }
+}

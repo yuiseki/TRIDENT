@@ -1,0 +1,219 @@
+{
+  "original": {
+    "id": "3956037",
+    "fields": {
+      "date": {
+        "changed": "2023-04-26T04:45:54+00:00",
+        "created": "2023-04-26T04:06:22+00:00",
+        "original": "2023-04-26T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/216",
+          "name": "Somalia",
+          "location": {
+            "lon": 47.33,
+            "lat": 5.79
+          },
+          "id": 216,
+          "shortname": "Somalia",
+          "iso3": "som",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/216",
+        "name": "Somalia",
+        "location": {
+          "lon": 47.33,
+          "lat": 5.79
+        },
+        "id": 216,
+        "shortname": "Somalia",
+        "iso3": "som"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "DR",
+          "name": "Drought",
+          "id": 4672
+        },
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        },
+        {
+          "code": "FF",
+          "name": "Flash Flood",
+          "id": 4624
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1979",
+          "longname": "United Nations Children's Fund",
+          "spanish_name": "Fondo de las Naciones Unidas para la Infancia",
+          "name": "UN Children's Fund",
+          "id": 1979,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNICEF",
+          "homepage": "http://www.unicef.org"
+        }
+      ],
+      "title": "UNICEF Somalia Humanitarian Situation Report No. 3: 31 March 2023",
+      "body": "**Highlights**\n\n- Somalia is experiencing a dire humanitarian crisis. Between April and June 2023, approximately 8.3 million people, about half the country’s population, are expected to face Crisis or worse (IPC Phase 3 or above). Among these, 2.7 million people are expected to be in Emergency (IPC Phase 4) and 727,000 in Catastrophe (IPC Phase 5).\n\n- Several areas of Somalia received moderate rains in the week starting 12 March. According to OCHA, over 175,000 people have been affected by flash floods, of whom more than 130,000 people have been displaced.\n\n- In 2023, 822,000 people fled their homes across the country due to the worsening drought, floods, and conflicts.\n\n- Cholera continues to pose a public health threat to children in Somalia. In 2023, 3,428 cases of cholera and 14 deaths (case fatality rate 0.41 per cent) have been reported from 27 of the 74 drought-affected districts.\n\n- In 2023, UNICEF has supported 387,081 people (60.6 per cent children) with emergency water supply while 533,313 children and women received lifesaving health care and 139,149 children (77,020 girls) have been treated for severe acute wasting. Emergency education reached 18,182 children while 74,071 children and their care givers were provided with psychosocial support services.\n\n**Situation in Numbers**\n\n5,100,000 children in need of humanitarian assistance (HNO 2023)\n\n8,250,000 people in need (HNO 2023) \n\n3,860,000 Internally Displaced People (HNO 2023)\n\n**Funding Overview and Partnership** \n\nTo support humanitarian action in 2023, including providing integrated lifesaving health, nutrition, WASH, education, and child protection interventions, UNICEF appeals for US$272.3 million. Currently, the funding gap stands at 80 per cent and discussions are continuing with different donors towards new contributions and/or reprogramming of existing grants. In addition to the funding received in 2023, funds and supplies that were carried over from 2022 have also supported the results achieved so far. However, UNICEF requires timely and flexible funding to scale up the ongoing humanitarian response. Specifically, in order to reach the flood-affected population with an integrated humanitarian response, UNICEF requires US$27.2 million. The Cholera/AWD response plan of UNICEF has a 70 percent funding shortfall of US$5.8 million. To urgently scale up emergency WASH lifesaving support to 3 million people out of the 8 million people projected to in need of WASH services in 2023, UNICEF WASH program requires US$70 million. The funds will enable the targeted 3 million people to access sufficient quantity and quality of emergency water for drinking and domestic needs; 300,000 people to access appropriate sanitation services; and 12.5 million people to be reached with critical WASH supplies including through supporting the nine Regional Supply Hubs (RSH).  \n\nFurthermore, long-term, flexible, and timely donor support is critical to sustain lifesaving response activities and to contribute towards humanitarian and development interventions to maintain children’s development despite various shocks and stresses. \n\n**Situation Overview & Humanitarian Needs** \n\nWith the worst drought in more than 40 years, high levels of conflict and insecurity, heightened political tensions, and a faltering economy, Somalia is currently experiencing a worsened humanitarian crisis. The humanitarian situation is worsening due to climate change, which increases the frequency and severity of extreme weather occurrences like floods. Since the beginning of March 2023, nearly 175,000 people have been affected by heavy rains and flash flooding in several areas of Somalia. The flooding has come when Somalia has been experiencing the impact another episode of drought that has displaced more than 1.4 million Somalis and killed 3.8 million livestock since mid-2021. According to OCHA, the most flood-affected areas are Baardheere district in Gedo Region, Jubaland State, and Baidoa district in Bay Region, Southwest State.\n\nCholera continued to pose a public health threat in Somalia. As of 26 March, 3,428 cases of acute watery diarrhea/cholera and 14 associated deaths (case fatality rate 0.4 per cent) were reported from 27 districts. Of the 3,428 cases, 55 per cent were children under 5 years. The districts reporting the highest number of cases include Kismayo (659), Belethawo (639), Afgoye (384), and Afmadow (357). The number of AWD/Cholera cases increased twofold in 2023 compared to the same reporting period in 2022. This increase is directly linked to the spread of cholera in new districts and the high proportion of the displaced population. Furthermore, since January 2023, the country has recorded 3,317 suspected measles cases, of which 71 per cent were children under five. The number of suspected measles cases decreased by half compared to last year's report2 , primarily due to an increase in the number of children who were vaccinated against measles during last year's nationwide measles vaccination campaigns and ongoing efforts to vaccinate children in the IDP campaigns through outreach services. \n\nIn 2023, out of the total 822,000 people forcefully displaced, 245,000 left their homes due to the worsening drought in the country, 429,000 due to conflicts, 133,000 due to floods, and the rest due to other causes3 . The security situation of the country remains volatile; the government offensive against non-state actors has resumed following a short respite coinciding with the Ramadan season. Conflict and displacement are expected to expand across large swaths of territory across four states: Galmudug, Hirshabelle, Southwest, and Jubaland. \n\nFurthermore, in an entirely separate instance of conflict, residents of Laas Canood continue to experience the negative impact of fighting. Since 6 February 2023, an estimated 154,000 to 203,000 individuals were displaced communities hosted largely by their relatives in Talex, Xudun, Boame, Buhoodle, Burtinle, Garowe. Most displaced people are temporarily settled in Kalabayd town. UNICEF participated in a joint assessment and observed that most government institutions in Kalabayd town such as schools, police station, Quranic schools are residence for the displaced, disrupting children’s learning. The displaced population has access to water from on-going water trucking supported by UNICEF while sanitation facilities, hygiene promotion, shelter, food and health and nutrition remain critical needs. \n\nIn addition to acute instances conflict, chronic access constraints continue to take a toll on the humanitarian response and the wellbeing of civilian populations The combined effects of drought, insecurity, and conflict and the resulting poor accessibility have exacerbated the already precarious protection situation of children. In 2023, 4.8 million children are out of school across Somalia, while 3.5 million require emergency child protection services.  \n\nUNICEF and partners are scaling up their responses across all sectors to meet the rapidly growing needs of the drought, flood and Cholera affected populations in the country. The country's worsening humanitarian situation also calls for scaling up humanitarian assistance to prevent severe water shortages, extreme food insecurity, and deteriorating nutrition outcomes, including the risk of famine. Despite the challenging operating environment, UNICEF and partners continue to deliver services across Somalia.",
+      "url": "https://reliefweb.int/node/3956037",
+      "disaster": [
+        {
+          "name": "Somalia: Floods - Mar 2023",
+          "id": 51530,
+          "glide": "FF-2023-000044-SOM",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            },
+            {
+              "code": "FF",
+              "name": "Flash Flood",
+              "id": 4624
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Somalia: Measles Outbreak - Dec 2016",
+          "id": 38824,
+          "glide": "EP-2016-000131-SOM",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Somalia: Cholera Outbreak - Apr 2016",
+          "id": 33516,
+          "glide": "EP-2016-000053-SOM",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Somalia: Drought - 2015-2023",
+          "id": 23101,
+          "glide": "DR-2015-000134-SOM",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/b5/75/b5757baf-5f84-4b38-8f94-0d24a286e18f.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/b5/75/b5757baf-5f84-4b38-8f94-0d24a286e18f.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/b5/75/b5757baf-5f84-4b38-8f94-0d24a286e18f.png",
+            "version": "2414776-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/b5/75/b5757baf-5f84-4b38-8f94-0d24a286e18f.png"
+          },
+          "filename": "UNICEF Somalia Humanitarian Situation Report No. 3, 31 March 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2414776",
+          "filesize": "409611",
+          "url": "https://reliefweb.int/attachments/b5757baf-5f84-4b38-8f94-0d24a286e18f/UNICEF%20Somalia%20Humanitarian%20Situation%20Report%20No.%203%2C%2031%20March%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/somalia/unicef-somalia-humanitarian-situation-report-no-3-31-march-2023",
+      "theme": [
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3956037,
+      "status": "published",
+      "body-html": "<p><strong>Highlights</strong></p>\n<ul>\n<li>\n<p>Somalia is experiencing a dire humanitarian crisis. Between April and June 2023, approximately 8.3 million people, about half the country’s population, are expected to face Crisis or worse (IPC Phase 3 or above). Among these, 2.7 million people are expected to be in Emergency (IPC Phase 4) and 727,000 in Catastrophe (IPC Phase 5).</p>\n</li>\n<li>\n<p>Several areas of Somalia received moderate rains in the week starting 12 March. According to OCHA, over 175,000 people have been affected by flash floods, of whom more than 130,000 people have been displaced.</p>\n</li>\n<li>\n<p>In 2023, 822,000 people fled their homes across the country due to the worsening drought, floods, and conflicts.</p>\n</li>\n<li>\n<p>Cholera continues to pose a public health threat to children in Somalia. In 2023, 3,428 cases of cholera and 14 deaths (case fatality rate 0.41 per cent) have been reported from 27 of the 74 drought-affected districts.</p>\n</li>\n<li>\n<p>In 2023, UNICEF has supported 387,081 people (60.6 per cent children) with emergency water supply while 533,313 children and women received lifesaving health care and 139,149 children (77,020 girls) have been treated for severe acute wasting. Emergency education reached 18,182 children while 74,071 children and their care givers were provided with psychosocial support services.</p>\n</li>\n</ul>\n<p><strong>Situation in Numbers</strong></p>\n<p>5,100,000 children in need of humanitarian assistance (HNO 2023)</p>\n<p>8,250,000 people in need (HNO 2023)</p>\n<p>3,860,000 Internally Displaced People (HNO 2023)</p>\n<p><strong>Funding Overview and Partnership</strong></p>\n<p>To support humanitarian action in 2023, including providing integrated lifesaving health, nutrition, WASH, education, and child protection interventions, UNICEF appeals for US$272.3 million. Currently, the funding gap stands at 80 per cent and discussions are continuing with different donors towards new contributions and/or reprogramming of existing grants. In addition to the funding received in 2023, funds and supplies that were carried over from 2022 have also supported the results achieved so far. However, UNICEF requires timely and flexible funding to scale up the ongoing humanitarian response. Specifically, in order to reach the flood-affected population with an integrated humanitarian response, UNICEF requires US$27.2 million. The Cholera/AWD response plan of UNICEF has a 70 percent funding shortfall of US$5.8 million. To urgently scale up emergency WASH lifesaving support to 3 million people out of the 8 million people projected to in need of WASH services in 2023, UNICEF WASH program requires US$70 million. The funds will enable the targeted 3 million people to access sufficient quantity and quality of emergency water for drinking and domestic needs; 300,000 people to access appropriate sanitation services; and 12.5 million people to be reached with critical WASH supplies including through supporting the nine Regional Supply Hubs (RSH).</p>\n<p>Furthermore, long-term, flexible, and timely donor support is critical to sustain lifesaving response activities and to contribute towards humanitarian and development interventions to maintain children’s development despite various shocks and stresses.</p>\n<p><strong>Situation Overview &amp; Humanitarian Needs</strong></p>\n<p>With the worst drought in more than 40 years, high levels of conflict and insecurity, heightened political tensions, and a faltering economy, Somalia is currently experiencing a worsened humanitarian crisis. The humanitarian situation is worsening due to climate change, which increases the frequency and severity of extreme weather occurrences like floods. Since the beginning of March 2023, nearly 175,000 people have been affected by heavy rains and flash flooding in several areas of Somalia. The flooding has come when Somalia has been experiencing the impact another episode of drought that has displaced more than 1.4 million Somalis and killed 3.8 million livestock since mid-2021. According to OCHA, the most flood-affected areas are Baardheere district in Gedo Region, Jubaland State, and Baidoa district in Bay Region, Southwest State.</p>\n<p>Cholera continued to pose a public health threat in Somalia. As of 26 March, 3,428 cases of acute watery diarrhea/cholera and 14 associated deaths (case fatality rate 0.4 per cent) were reported from 27 districts. Of the 3,428 cases, 55 per cent were children under 5 years. The districts reporting the highest number of cases include Kismayo (659), Belethawo (639), Afgoye (384), and Afmadow (357). The number of AWD/Cholera cases increased twofold in 2023 compared to the same reporting period in 2022. This increase is directly linked to the spread of cholera in new districts and the high proportion of the displaced population. Furthermore, since January 2023, the country has recorded 3,317 suspected measles cases, of which 71 per cent were children under five. The number of suspected measles cases decreased by half compared to last year's report2 , primarily due to an increase in the number of children who were vaccinated against measles during last year's nationwide measles vaccination campaigns and ongoing efforts to vaccinate children in the IDP campaigns through outreach services.</p>\n<p>In 2023, out of the total 822,000 people forcefully displaced, 245,000 left their homes due to the worsening drought in the country, 429,000 due to conflicts, 133,000 due to floods, and the rest due to other causes3 . The security situation of the country remains volatile; the government offensive against non-state actors has resumed following a short respite coinciding with the Ramadan season. Conflict and displacement are expected to expand across large swaths of territory across four states: Galmudug, Hirshabelle, Southwest, and Jubaland.</p>\n<p>Furthermore, in an entirely separate instance of conflict, residents of Laas Canood continue to experience the negative impact of fighting. Since 6 February 2023, an estimated 154,000 to 203,000 individuals were displaced communities hosted largely by their relatives in Talex, Xudun, Boame, Buhoodle, Burtinle, Garowe. Most displaced people are temporarily settled in Kalabayd town. UNICEF participated in a joint assessment and observed that most government institutions in Kalabayd town such as schools, police station, Quranic schools are residence for the displaced, disrupting children’s learning. The displaced population has access to water from on-going water trucking supported by UNICEF while sanitation facilities, hygiene promotion, shelter, food and health and nutrition remain critical needs.</p>\n<p>In addition to acute instances conflict, chronic access constraints continue to take a toll on the humanitarian response and the wellbeing of civilian populations The combined effects of drought, insecurity, and conflict and the resulting poor accessibility have exacerbated the already precarious protection situation of children. In 2023, 4.8 million children are out of school across Somalia, while 3.5 million require emergency child protection services.</p>\n<p>UNICEF and partners are scaling up their responses across all sectors to meet the rapidly growing needs of the drought, flood and Cholera affected populations in the country. The country's worsening humanitarian situation also calls for scaling up humanitarian assistance to prevent severe water shortages, extreme food insecurity, and deteriorating nutrition outcomes, including the risk of famine. Despite the challenging operating environment, UNICEF and partners continue to deliver services across Somalia.</p>\n"
+    }
+  },
+  "text": "# UNICEF Somalia Humanitarian Situation Report No. 3: 31 March 2023\n\n**Highlights**\n\n- Somalia is experiencing a dire humanitarian crisis. Between April and June 2023, approximately 8.3 million people, about half the country’s population, are expected to face Crisis or worse (IPC Phase 3 or above). Among these, 2.7 million people are expected to be in Emergency (IPC Phase 4) and 727,000 in Catastrophe (IPC Phase 5).\n\n- Several areas of Somalia received moderate rains in the week starting 12 March. According to OCHA, over 175,000 people have been affected by flash floods, of whom more than 130,000 people have been displaced.\n\n- In 2023, 822,000 people fled their homes across the country due to the worsening drought, floods, and conflicts.\n\n- Cholera continues to pose a public health threat to children in Somalia. In 2023, 3,428 cases of cholera and 14 deaths (case fatality rate 0.41 per cent) have been reported from 27 of the 74 drought-affected districts.\n\n- In 2023, UNICEF has supported 387,081 people (60.6 per cent children) with emergency water supply while 533,313 children and women received lifesaving health care and 139,149 children (77,020 girls) have been treated for severe acute wasting. Emergency education reached 18,182 children while 74,071 children and their care givers were provided with psychosocial support services.\n\n**Situation in Numbers**\n\n5,100,000 children in need of humanitarian assistance (HNO 2023)\n\n8,250,000 people in need (HNO 2023) \n\n3,860,000 Internally Displaced People (HNO 2023)\n\n**Funding Overview and Partnership** \n\nTo support humanitarian action in 2023, including providing integrated lifesaving health, nutrition, WASH, education, and child protection interventions, UNICEF appeals for US$272.3 million. Currently, the funding gap stands at 80 per cent and discussions are continuing with different donors towards new contributions and/or reprogramming of existing grants. In addition to the funding received in 2023, funds and supplies that were carried over from 2022 have also supported the results achieved so far. However, UNICEF requires timely and flexible funding to scale up the ongoing humanitarian response. Specifically, in order to reach the flood-affected population with an integrated humanitarian response, UNICEF requires US$27.2 million. The Cholera/AWD response plan of UNICEF has a 70 percent funding shortfall of US$5.8 million. To urgently scale up emergency WASH lifesaving support to 3 million people out of the 8 million people projected to in need of WASH services in 2023, UNICEF WASH program requires US$70 million. The funds will enable the targeted 3 million people to access sufficient quantity and quality of emergency water for drinking and domestic needs; 300,000 people to access appropriate sanitation services; and 12.5 million people to be reached with critical WASH supplies including through supporting the nine Regional Supply Hubs (RSH).  \n\nFurthermore, long-term, flexible, and timely donor support is critical to sustain lifesaving response activities and to contribute towards humanitarian and development interventions to maintain children’s development despite various shocks and stresses. \n\n**Situation Overview & Humanitarian Needs** \n\nWith the worst drought in more than 40 years, high levels of conflict and insecurity, heightened political tensions, and a faltering economy, Somalia is currently experiencing a worsened humanitarian crisis. The humanitarian situation is worsening due to climate change, which increases the frequency and severity of extreme weather occurrences like floods. Since the beginning of March 2023, nearly 175,000 people have been affected by heavy rains and flash flooding in several areas of Somalia. The flooding has come when Somalia has been experiencing the impact another episode of drought that has displaced more than 1.4 million Somalis and killed 3.8 million livestock since mid-2021. According to OCHA, the most flood-affected areas are Baardheere district in Gedo Region, Jubaland State, and Baidoa district in Bay Region, Southwest State.\n\nCholera continued to pose a public health threat in Somalia. As of 26 March, 3,428 cases of acute watery diarrhea/cholera and 14 associated deaths (case fatality rate 0.4 per cent) were reported from 27 districts. Of the 3,428 cases, 55 per cent were children under 5 years. The districts reporting the highest number of cases include Kismayo (659), Belethawo (639), Afgoye (384), and Afmadow (357). The number of AWD/Cholera cases increased twofold in 2023 compared to the same reporting period in 2022. This increase is directly linked to the spread of cholera in new districts and the high proportion of the displaced population. Furthermore, since January 2023, the country has recorded 3,317 suspected measles cases, of which 71 per cent were children under five. The number of suspected measles cases decreased by half compared to last year's report2 , primarily due to an increase in the number of children who were vaccinated against measles during last year's nationwide measles vaccination campaigns and ongoing efforts to vaccinate children in the IDP campaigns through outreach services. \n\nIn 2023, out of the total 822,000 people forcefully displaced, 245,000 left their homes due to the worsening drought in the country, 429,000 due to conflicts, 133,000 due to floods, and the rest due to other causes3 . The security situation of the country remains volatile; the government offensive against non-state actors has resumed following a short respite coinciding with the Ramadan season. Conflict and displacement are expected to expand across large swaths of territory across four states: Galmudug, Hirshabelle, Southwest, and Jubaland. \n\nFurthermore, in an entirely separate instance of conflict, residents of Laas Canood continue to experience the negative impact of fighting. Since 6 February 2023, an estimated 154,000 to 203,000 individuals were displaced communities hosted largely by their relatives in Talex, Xudun, Boame, Buhoodle, Burtinle, Garowe. Most displaced people are temporarily settled in Kalabayd town. UNICEF participated in a joint assessment and observed that most government institutions in Kalabayd town such as schools, police station, Quranic schools are residence for the displaced, disrupting children’s learning. The displaced population has access to water from on-going water trucking supported by UNICEF while sanitation facilities, hygiene promotion, shelter, food and health and nutrition remain critical needs. \n\nIn addition to acute instances conflict, chronic access constraints continue to take a toll on the humanitarian response and the wellbeing of civilian populations The combined effects of drought, insecurity, and conflict and the resulting poor accessibility have exacerbated the already precarious protection situation of children. In 2023, 4.8 million children are out of school across Somalia, while 3.5 million require emergency child protection services.  \n\nUNICEF and partners are scaling up their responses across all sectors to meet the rapidly growing needs of the drought, flood and Cholera affected populations in the country. The country's worsening humanitarian situation also calls for scaling up humanitarian assistance to prevent severe water shortages, extreme food insecurity, and deteriorating nutrition outcomes, including the risk of famine. Despite the challenging operating environment, UNICEF and partners continue to deliver services across Somalia.",
+  "summary": " Somalia is facing a dire humanitarian crisis due to drought, floods, and conflicts. Approximately 8.3 million people, about half the country’s population, are expected to face Crisis or worse (IPC Phase 3 or above). UNICEF is appealing for US$272.3 million to support humanitarian action in 2023, including providing integrated lifesaving health, nutrition, WASH, education, and child protection interventions. There is a 70 percent funding shortfall of US$5.8 million for the Cholera/AWD response plan. In addition to the funding received in 2023, funds and supplies that were carried over from 2022 have also supported the results achieved so far. The security situation of the country remains volatile, with an estimated 154,000 to 203,000 individuals displaced due to conflict. UNICEF and partners are scaling up their responses across all sectors to meet the rapidly growing needs of the drought, flood and Cholera affected populations in the country.",
+  "metadata": {
+    "id": "3956037",
+    "name": "UNICEF Somalia Humanitarian Situation Report No. 3: 31 March 2023",
+    "date_original": 1682467200000,
+    "date_changed": 1682484354000,
+    "date_created": 1682481982000,
+    "primary_country_id": 216,
+    "primary_country_name": "Somalia",
+    "primary_country_iso3": "som",
+    "primary_country_location": {
+      "lon": 47.33,
+      "lat": 5.79
+    }
+  }
+}

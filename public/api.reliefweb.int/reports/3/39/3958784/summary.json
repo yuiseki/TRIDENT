@@ -1,0 +1,141 @@
+{
+  "original": {
+    "id": "3958784",
+    "fields": {
+      "date": {
+        "changed": "2023-05-05T00:08:56+00:00",
+        "created": "2023-05-04T21:52:24+00:00",
+        "original": "2023-05-04T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/84",
+          "name": "Equatorial Guinea",
+          "location": {
+            "lon": 10.53,
+            "lat": 1.61
+          },
+          "id": 84,
+          "shortname": "Equatorial Guinea",
+          "iso3": "gnq",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/84",
+        "name": "Equatorial Guinea",
+        "location": {
+          "lon": 10.53,
+          "lat": 1.61
+        },
+        "id": 84,
+        "shortname": "Equatorial Guinea",
+        "iso3": "gnq"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1979",
+          "longname": "United Nations Children's Fund",
+          "spanish_name": "Fondo de las Naciones Unidas para la Infancia",
+          "name": "UN Children's Fund",
+          "id": 1979,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNICEF",
+          "homepage": "http://www.unicef.org"
+        }
+      ],
+      "title": "UNICEF Equatorial Guinea: Marburg Virus Disease - MVD Situation Report #2 - Period Covered: 1-30 April 2023",
+      "body": "**Highlights**\n\n- On 13 February 2023, the Minister of Health and Social Welfare of Equatorial Guinea declared an\noutbreak of Marburg Virus Disease (MVD).\n\n- The disease began in two villages namely Ngum-Esatop and Evusoc Mokomo, in the district of NsokNsomo, the province of Kie-Ntem.\n\n- Since the beginning of the outbreak, 17 cases have been confirmed (4 children) including 12 deaths\namong the confirmed cases (3 children), 4 survivors (1 child) and one unknown. A total of 5 health\nworkers (2 deaths and 3 survivors) have been confirmed cases since the beginning of the outbreak.\n\n- No active case since 26 April.\n\n- UNICEF, in collaboration with the Government of Equatorial Guinea, WHO, and other partners\nhave continued implementing the response plan.\n\n**Epidemiological situation (as of 30 April 2023)**\n\n17 Confirmed cases  \n12 Deaths among confirmed cases  \n4 Provinces affected  \n0 Active cases (since April 26)",
+      "url": "https://reliefweb.int/node/3958784",
+      "disaster": [
+        {
+          "name": "Equatorial Guinea: Marburg Virus Disease Outbreak - Jan 2023",
+          "id": 51505,
+          "glide": "EP-2023-000027-GNQ",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/43/14/43147dcf-4dfb-4466-b335-f3bdd508fa0c.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/43/14/43147dcf-4dfb-4466-b335-f3bdd508fa0c.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/43/14/43147dcf-4dfb-4466-b335-f3bdd508fa0c.png",
+            "version": "2417514-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/43/14/43147dcf-4dfb-4466-b335-f3bdd508fa0c.png"
+          },
+          "filename": "UNICEF Equatorial Guinea Humanitarian Situation Report No. 2 (Marburg Virus Disease), 30 April 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2417514",
+          "filesize": "591117",
+          "url": "https://reliefweb.int/attachments/43147dcf-4dfb-4466-b335-f3bdd508fa0c/UNICEF%20Equatorial%20Guinea%20Humanitarian%20Situation%20Report%20No.%202%20%28Marburg%20Virus%20Disease%29%2C%2030%20April%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/equatorial-guinea/unicef-equatorial-guinea-marburg-virus-disease-mvd-situation-report-2-period-covered-1-30-april-2023",
+      "theme": [
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3958784,
+      "status": "published",
+      "body-html": "<p><strong>Highlights</strong></p>\n<ul>\n<li>\n<p>On 13 February 2023, the Minister of Health and Social Welfare of Equatorial Guinea declared an\noutbreak of Marburg Virus Disease (MVD).</p>\n</li>\n<li>\n<p>The disease began in two villages namely Ngum-Esatop and Evusoc Mokomo, in the district of NsokNsomo, the province of Kie-Ntem.</p>\n</li>\n<li>\n<p>Since the beginning of the outbreak, 17 cases have been confirmed (4 children) including 12 deaths\namong the confirmed cases (3 children), 4 survivors (1 child) and one unknown. A total of 5 health\nworkers (2 deaths and 3 survivors) have been confirmed cases since the beginning of the outbreak.</p>\n</li>\n<li>\n<p>No active case since 26 April.</p>\n</li>\n<li>\n<p>UNICEF, in collaboration with the Government of Equatorial Guinea, WHO, and other partners\nhave continued implementing the response plan.</p>\n</li>\n</ul>\n<p><strong>Epidemiological situation (as of 30 April 2023)</strong></p>\n<p>17 Confirmed cases<br />\n12 Deaths among confirmed cases<br />\n4 Provinces affected<br />\n0 Active cases (since April 26)</p>\n"
+    }
+  },
+  "text": "# UNICEF Equatorial Guinea: Marburg Virus Disease - MVD Situation Report #2 - Period Covered: 1-30 April 2023\n\n**Highlights**\n\n- On 13 February 2023, the Minister of Health and Social Welfare of Equatorial Guinea declared an\noutbreak of Marburg Virus Disease (MVD).\n\n- The disease began in two villages namely Ngum-Esatop and Evusoc Mokomo, in the district of NsokNsomo, the province of Kie-Ntem.\n\n- Since the beginning of the outbreak, 17 cases have been confirmed (4 children) including 12 deaths\namong the confirmed cases (3 children), 4 survivors (1 child) and one unknown. A total of 5 health\nworkers (2 deaths and 3 survivors) have been confirmed cases since the beginning of the outbreak.\n\n- No active case since 26 April.\n\n- UNICEF, in collaboration with the Government of Equatorial Guinea, WHO, and other partners\nhave continued implementing the response plan.\n\n**Epidemiological situation (as of 30 April 2023)**\n\n17 Confirmed cases  \n12 Deaths among confirmed cases  \n4 Provinces affected  \n0 Active cases (since April 26)",
+  "summary": " On February 13, 2023, the Minister of Health and Social Welfare of Equatorial Guinea declared an outbreak of Marburg Virus Disease (MVD). Since then, 17 cases have been confirmed, including 12 deaths, 4 survivors, and one unknown. 5 health workers have also been confirmed cases. As of April 30, 2023, there have been no active cases since April 26. UNICEF, in collaboration with the Government of Equatorial Guinea, WHO, and other partners have continued implementing the response plan. 4 provinces have been affected.",
+  "metadata": {
+    "id": "3958784",
+    "name": "UNICEF Equatorial Guinea: Marburg Virus Disease - MVD Situation Report #2 - Period Covered: 1-30 April 2023",
+    "date_original": 1683158400000,
+    "date_changed": 1683245336000,
+    "date_created": 1683237144000,
+    "primary_country_id": 84,
+    "primary_country_name": "Equatorial Guinea",
+    "primary_country_iso3": "gnq",
+    "primary_country_location": {
+      "lon": 10.53,
+      "lat": 1.61
+    }
+  }
+}

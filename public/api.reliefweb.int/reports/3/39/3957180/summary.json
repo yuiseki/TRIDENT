@@ -1,0 +1,214 @@
+{
+  "original": {
+    "id": "3957180",
+    "fields": {
+      "date": {
+        "changed": "2023-04-29T14:17:34+00:00",
+        "created": "2023-04-29T08:21:00+00:00",
+        "original": "2023-04-29T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/164",
+          "name": "Mozambique",
+          "location": {
+            "lon": 34.75,
+            "lat": -18.09
+          },
+          "id": 164,
+          "shortname": "Mozambique",
+          "iso3": "moz",
+          "primary": true
+        }
+      ],
+      "ocha_product": [
+        {
+          "name": "Situation Report",
+          "id": 12345
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/164",
+        "name": "Mozambique",
+        "location": {
+          "lon": 34.75,
+          "lat": -18.09
+        },
+        "id": 164,
+        "shortname": "Mozambique",
+        "iso3": "moz"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        },
+        {
+          "code": "TC",
+          "name": "Tropical Cyclone",
+          "id": 4618
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1503",
+          "longname": "United Nations Office for the Coordination of Humanitarian Affairs",
+          "spanish_name": "Oficina de Coordinación de Asuntos Humanitarios",
+          "name": "UN Office for the Coordination of Humanitarian Affairs",
+          "id": 1503,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "OCHA",
+          "disclaimer": "To learn more about OCHA's activities, please visit https://www.unocha.org/.",
+          "homepage": "http://www.unocha.org/"
+        }
+      ],
+      "title": "Mozambique: Tropical Cyclone Freddy, Floods and Cholera - Situation Report No.3",
+      "body": "This report is produced by OCHA Mozambique in collaboration with humanitarian partners. It covers the period until 28 April 2023.\n\n**HIGHLIGHTS**\n\n Close to 400,000 people have had some form of assistance, with about 197,000 people receiving direct humanitarian assistance.\n\n With humanitarian supplies at a quarter of what is required, it is challenging to sustain and scale up the response.\n\n In the worse affected districts, under 20 per cent of the people targeted have received direct humanitarian assistance.\n\n The second short cycle planting season, starting in May, providing an opportunity for people to resume their livelihoods by September. However, only a quarter of the needed agriculture supplies are available.\n\n The cholera outbreak continues to spread geographically. As of 27 April, 28,958 cases were reported across ten provinces. A third of the needed cholera supplies are in place.\n\n The Cholera, Cyclone and Floods Response Plan was launched to support 815,000 people affected by the triple crisis, with a financial requirement of U$138 million.\n\n**1.1M** Number of people affected\n\n**28.9K** Cumulative number of cholera cases\n\n**815K** People targeted for humanitarian assistance\n\n**385K** People reached with some form of humanitarian assistance\n\n**197K** People reached with direct humanitarian assistance \n\n**SITUATION OVERVIEW**\n\nMore than a million people were affected by cholera, Cyclone Freddy, and floods in Mozambique’s provinces of Gaza,  \nInhambane, Manica, Maputo, Sofala, Tete, Niassa and Zambezia. An estimated 132,000 homes were destroyed, potentially displacing 640,000 people. Over a thousand schools and an estimated 5,000 kilometres of road were damaged. According to the IOM’s Displacement Tracking Matrix (DTM), 37,967 people (11,750 families) remain displaced across 19 active accommodation centres/temporary displacement locations in Inhambane, Niassa and Tete as of 25 April. Food Security and Livelihoods, Shelter, and Non-Food Items (NFIs), Water Sanitation and Hygiene (WASH), Health and Protection remain critical areas of intervention.\n\nAs of 28 April, some 385,930 people have been reached with some form of assistance by over 40 humanitarian partners working across eight provinces and 80 districts. About 197,000 people have been reached with direct humanitarian assistance. In Zambezia province, the most affected by the triple threat of Freddy, floods, and cholera, some 190,000 people have been reached with humanitarian assistance out of a total caseload of 501,975 people. The latest information on the response, including the 5Ws response dashboard by district can be found here: https://response.reliefweb.int/mozambique.\n\nAn analysis was recently conducted on the severity of needs at the district level, considering the following criteria: (i)  \nIPC Acute Food Insecurity classification, (ii) impact of Cyclone Freddy and Floods, (iii) malnutrition rates and (iv) cholera caseloads. The results of the analysis indicated the following severity mapping distribution among the 1.1 million people affected:\n\n**Severity 4:** 790k people in 10 districts in Sofala, Tete and Zambezia.\n\n**Severity 3:** 182k people in 15 districts in Inhambane, Sofala,  \nTete and Zambezia.\n\n**Severity 2:** 149k people in 47 districts in Inhambane,  \nNiassa, Sofala, Tete, Zambezia.\n\n**Severity 1:** 4k people in seven districts in Niassa.\n\nAcross the 10 most vulnerable districts in the provinces of Sofala (Caia, Cheringoma), Tete (Cidade de Tete, Doa,  \nMutarara) and Zambezia (Cidade de Quelimane, Inhassunge, Maganja da costa, Namacurra, Nicoadala), approximately 78,767 people, equivalent to 17 per cent of the targeted population in these districts, have received direct humanitarian assistance.\n\nAs of 26 April, health authorities have reported 28,958 cumulative cases of cholera in 10 provinces of the country, with 129 deaths. In the past 24 hours, 143 new cases were registered. Cabo Delgado (district of Namuno with 42 cases) and Nampula (district of Memba with 22 and Cidade de Nampula with 124 cases) are the current hotspots of the cholera outbreak, both reporting additional number of affected districts and cases in the past week. To address this concern, humanitarian partners developed and rolled out cholera community kits to support the response at the household levels in the newly affected districts in both provinces. Phase I of the cholera vaccination campaign launched on 27 February reached approximately 719,240 people in the provinces of Niassa, Zambezia, Sofala and Gaza, with Niassa having the highest number of people reached (566,202). Phase II was launched on 30 March and covered 1,277,539 million people in Zambezia, Manica and Sofala, with Sofala having the most coverage (556,889), followed by Zambezia with (410,629).\n\nThere is a rise in food insecurity in Mozambique, with an estimated 3.15 million people experiencing severe acute food insecurity - i.e., IPC Phase 3 and above. A total 133,979 hectares of land were either damaged or lost.\n\nThe Cholera, Cyclone and Floods Response Plan was launched to support 815,000 people affected by the triple crisis, with a financial requirement of U$138 million. The new humanitarian needs are outstripping the capacity of humanitarian organizations to respond. Without immediate additional resources, humanitarian partners will be forced to make impossible choices, and hundreds of thousands of people may not receive the assistance they need to survive. Urgent contributions are sought to support people affected by cholera, Cyclone and Floods. Some sectors are urgently seeking funding to replenish loans that enabled the response at the outset of the emergency",
+      "url": "https://reliefweb.int/node/3957180",
+      "disaster": [
+        {
+          "name": "Tropical Cyclone Freddy - Feb 2023",
+          "id": 51486,
+          "glide": "TC-2023-000023-MDG",
+          "type": [
+            {
+              "code": "TC",
+              "name": "Tropical Cyclone",
+              "id": 4618,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Mozambique: Floods - Feb 2023",
+          "id": 51479,
+          "glide": "FL-2023-000018-MOZ",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Mozambique: Cholera Outbreak - Dec 2022",
+          "id": 51453,
+          "glide": "EP-2023-000006-MOZ",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/6c/62/6c629fdc-447f-4bdf-b9d1-fad0bd2bf669.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/6c/62/6c629fdc-447f-4bdf-b9d1-fad0bd2bf669.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/6c/62/6c629fdc-447f-4bdf-b9d1-fad0bd2bf669.png",
+            "version": "2415798-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/6c/62/6c629fdc-447f-4bdf-b9d1-fad0bd2bf669.png"
+          },
+          "filename": "20230428_Situation_report_no3_FINAL.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415798",
+          "filesize": "979158",
+          "url": "https://reliefweb.int/attachments/6c629fdc-447f-4bdf-b9d1-fad0bd2bf669/20230428_Situation_report_no3_FINAL.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/mozambique/mozambique-tropical-cyclone-freddy-floods-and-cholera-situation-report-no3",
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        },
+        {
+          "name": "Camp Coordination and Camp Management",
+          "id": 49458
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Gender",
+          "id": 4594
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3957180,
+      "status": "published",
+      "body-html": "<p>This report is produced by OCHA Mozambique in collaboration with humanitarian partners. It covers the period until 28 April 2023.</p>\n<p><strong>HIGHLIGHTS</strong></p>\n<p> Close to 400,000 people have had some form of assistance, with about 197,000 people receiving direct humanitarian assistance.</p>\n<p> With humanitarian supplies at a quarter of what is required, it is challenging to sustain and scale up the response.</p>\n<p> In the worse affected districts, under 20 per cent of the people targeted have received direct humanitarian assistance.</p>\n<p> The second short cycle planting season, starting in May, providing an opportunity for people to resume their livelihoods by September. However, only a quarter of the needed agriculture supplies are available.</p>\n<p> The cholera outbreak continues to spread geographically. As of 27 April, 28,958 cases were reported across ten provinces. A third of the needed cholera supplies are in place.</p>\n<p> The Cholera, Cyclone and Floods Response Plan was launched to support 815,000 people affected by the triple crisis, with a financial requirement of U$138 million.</p>\n<p><strong>1.1M</strong> Number of people affected</p>\n<p><strong>28.9K</strong> Cumulative number of cholera cases</p>\n<p><strong>815K</strong> People targeted for humanitarian assistance</p>\n<p><strong>385K</strong> People reached with some form of humanitarian assistance</p>\n<p><strong>197K</strong> People reached with direct humanitarian assistance</p>\n<p><strong>SITUATION OVERVIEW</strong></p>\n<p>More than a million people were affected by cholera, Cyclone Freddy, and floods in Mozambique’s provinces of Gaza,<br />\nInhambane, Manica, Maputo, Sofala, Tete, Niassa and Zambezia. An estimated 132,000 homes were destroyed, potentially displacing 640,000 people. Over a thousand schools and an estimated 5,000 kilometres of road were damaged. According to the IOM’s Displacement Tracking Matrix (DTM), 37,967 people (11,750 families) remain displaced across 19 active accommodation centres/temporary displacement locations in Inhambane, Niassa and Tete as of 25 April. Food Security and Livelihoods, Shelter, and Non-Food Items (NFIs), Water Sanitation and Hygiene (WASH), Health and Protection remain critical areas of intervention.</p>\n<p>As of 28 April, some 385,930 people have been reached with some form of assistance by over 40 humanitarian partners working across eight provinces and 80 districts. About 197,000 people have been reached with direct humanitarian assistance. In Zambezia province, the most affected by the triple threat of Freddy, floods, and cholera, some 190,000 people have been reached with humanitarian assistance out of a total caseload of 501,975 people. The latest information on the response, including the 5Ws response dashboard by district can be found here: <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://response.reliefweb.int/mozambique\">https://response.reliefweb.int/mozambique</a>.</p>\n<p>An analysis was recently conducted on the severity of needs at the district level, considering the following criteria: (i)<br />\nIPC Acute Food Insecurity classification, (ii) impact of Cyclone Freddy and Floods, (iii) malnutrition rates and (iv) cholera caseloads. The results of the analysis indicated the following severity mapping distribution among the 1.1 million people affected:</p>\n<p><strong>Severity 4:</strong> 790k people in 10 districts in Sofala, Tete and Zambezia.</p>\n<p><strong>Severity 3:</strong> 182k people in 15 districts in Inhambane, Sofala,<br />\nTete and Zambezia.</p>\n<p><strong>Severity 2:</strong> 149k people in 47 districts in Inhambane,<br />\nNiassa, Sofala, Tete, Zambezia.</p>\n<p><strong>Severity 1:</strong> 4k people in seven districts in Niassa.</p>\n<p>Across the 10 most vulnerable districts in the provinces of Sofala (Caia, Cheringoma), Tete (Cidade de Tete, Doa,<br />\nMutarara) and Zambezia (Cidade de Quelimane, Inhassunge, Maganja da costa, Namacurra, Nicoadala), approximately 78,767 people, equivalent to 17 per cent of the targeted population in these districts, have received direct humanitarian assistance.</p>\n<p>As of 26 April, health authorities have reported 28,958 cumulative cases of cholera in 10 provinces of the country, with 129 deaths. In the past 24 hours, 143 new cases were registered. Cabo Delgado (district of Namuno with 42 cases) and Nampula (district of Memba with 22 and Cidade de Nampula with 124 cases) are the current hotspots of the cholera outbreak, both reporting additional number of affected districts and cases in the past week. To address this concern, humanitarian partners developed and rolled out cholera community kits to support the response at the household levels in the newly affected districts in both provinces. Phase I of the cholera vaccination campaign launched on 27 February reached approximately 719,240 people in the provinces of Niassa, Zambezia, Sofala and Gaza, with Niassa having the highest number of people reached (566,202). Phase II was launched on 30 March and covered 1,277,539 million people in Zambezia, Manica and Sofala, with Sofala having the most coverage (556,889), followed by Zambezia with (410,629).</p>\n<p>There is a rise in food insecurity in Mozambique, with an estimated 3.15 million people experiencing severe acute food insecurity - i.e., IPC Phase 3 and above. A total 133,979 hectares of land were either damaged or lost.</p>\n<p>The Cholera, Cyclone and Floods Response Plan was launched to support 815,000 people affected by the triple crisis, with a financial requirement of U$138 million. The new humanitarian needs are outstripping the capacity of humanitarian organizations to respond. Without immediate additional resources, humanitarian partners will be forced to make impossible choices, and hundreds of thousands of people may not receive the assistance they need to survive. Urgent contributions are sought to support people affected by cholera, Cyclone and Floods. Some sectors are urgently seeking funding to replenish loans that enabled the response at the outset of the emergency</p>\n"
+    }
+  },
+  "text": "# Mozambique: Tropical Cyclone Freddy, Floods and Cholera - Situation Report No.3\n\nThis report is produced by OCHA Mozambique in collaboration with humanitarian partners. It covers the period until 28 April 2023.\n\n**HIGHLIGHTS**\n\n Close to 400,000 people have had some form of assistance, with about 197,000 people receiving direct humanitarian assistance.\n\n With humanitarian supplies at a quarter of what is required, it is challenging to sustain and scale up the response.\n\n In the worse affected districts, under 20 per cent of the people targeted have received direct humanitarian assistance.\n\n The second short cycle planting season, starting in May, providing an opportunity for people to resume their livelihoods by September. However, only a quarter of the needed agriculture supplies are available.\n\n The cholera outbreak continues to spread geographically. As of 27 April, 28,958 cases were reported across ten provinces. A third of the needed cholera supplies are in place.\n\n The Cholera, Cyclone and Floods Response Plan was launched to support 815,000 people affected by the triple crisis, with a financial requirement of U$138 million.\n\n**1.1M** Number of people affected\n\n**28.9K** Cumulative number of cholera cases\n\n**815K** People targeted for humanitarian assistance\n\n**385K** People reached with some form of humanitarian assistance\n\n**197K** People reached with direct humanitarian assistance \n\n**SITUATION OVERVIEW**\n\nMore than a million people were affected by cholera, Cyclone Freddy, and floods in Mozambique’s provinces of Gaza,  \nInhambane, Manica, Maputo, Sofala, Tete, Niassa and Zambezia. An estimated 132,000 homes were destroyed, potentially displacing 640,000 people. Over a thousand schools and an estimated 5,000 kilometres of road were damaged. According to the IOM’s Displacement Tracking Matrix (DTM), 37,967 people (11,750 families) remain displaced across 19 active accommodation centres/temporary displacement locations in Inhambane, Niassa and Tete as of 25 April. Food Security and Livelihoods, Shelter, and Non-Food Items (NFIs), Water Sanitation and Hygiene (WASH), Health and Protection remain critical areas of intervention.\n\nAs of 28 April, some 385,930 people have been reached with some form of assistance by over 40 humanitarian partners working across eight provinces and 80 districts. About 197,000 people have been reached with direct humanitarian assistance. In Zambezia province, the most affected by the triple threat of Freddy, floods, and cholera, some 190,000 people have been reached with humanitarian assistance out of a total caseload of 501,975 people. The latest information on the response, including the 5Ws response dashboard by district can be found here: https://response.reliefweb.int/mozambique.\n\nAn analysis was recently conducted on the severity of needs at the district level, considering the following criteria: (i)  \nIPC Acute Food Insecurity classification, (ii) impact of Cyclone Freddy and Floods, (iii) malnutrition rates and (iv) cholera caseloads. The results of the analysis indicated the following severity mapping distribution among the 1.1 million people affected:\n\n**Severity 4:** 790k people in 10 districts in Sofala, Tete and Zambezia.\n\n**Severity 3:** 182k people in 15 districts in Inhambane, Sofala,  \nTete and Zambezia.\n\n**Severity 2:** 149k people in 47 districts in Inhambane,  \nNiassa, Sofala, Tete, Zambezia.\n\n**Severity 1:** 4k people in seven districts in Niassa.\n\nAcross the 10 most vulnerable districts in the provinces of Sofala (Caia, Cheringoma), Tete (Cidade de Tete, Doa,  \nMutarara) and Zambezia (Cidade de Quelimane, Inhassunge, Maganja da costa, Namacurra, Nicoadala), approximately 78,767 people, equivalent to 17 per cent of the targeted population in these districts, have received direct humanitarian assistance.\n\nAs of 26 April, health authorities have reported 28,958 cumulative cases of cholera in 10 provinces of the country, with 129 deaths. In the past 24 hours, 143 new cases were registered. Cabo Delgado (district of Namuno with 42 cases) and Nampula (district of Memba with 22 and Cidade de Nampula with 124 cases) are the current hotspots of the cholera outbreak, both reporting additional number of affected districts and cases in the past week. To address this concern, humanitarian partners developed and rolled out cholera community kits to support the response at the household levels in the newly affected districts in both provinces. Phase I of the cholera vaccination campaign launched on 27 February reached approximately 719,240 people in the provinces of Niassa, Zambezia, Sofala and Gaza, with Niassa having the highest number of people reached (566,202). Phase II was launched on 30 March and covered 1,277,539 million people in Zambezia, Manica and Sofala, with Sofala having the most coverage (556,889), followed by Zambezia with (410,629).\n\nThere is a rise in food insecurity in Mozambique, with an estimated 3.15 million people experiencing severe acute food insecurity - i.e., IPC Phase 3 and above. A total 133,979 hectares of land were either damaged or lost.\n\nThe Cholera, Cyclone and Floods Response Plan was launched to support 815,000 people affected by the triple crisis, with a financial requirement of U$138 million. The new humanitarian needs are outstripping the capacity of humanitarian organizations to respond. Without immediate additional resources, humanitarian partners will be forced to make impossible choices, and hundreds of thousands of people may not receive the assistance they need to survive. Urgent contributions are sought to support people affected by cholera, Cyclone and Floods. Some sectors are urgently seeking funding to replenish loans that enabled the response at the outset of the emergency",
+  "summary": "\n\nThis report covers the period until 28 April 2023 and provides an overview of the situation in Mozambique following the triple crisis of Cyclone Freddy, floods, and cholera. Over 1 million people have been affected, with 385,930 people receiving some form of assistance and 197,000 people receiving direct humanitarian assistance. The Cholera, Cyclone and Floods Response Plan was launched to support 815,000 people affected by the triple crisis, with a financial requirement of U$138 million. Urgent contributions are sought to support people affected by cholera, Cyclone and Floods.",
+  "metadata": {
+    "id": "3957180",
+    "name": "Mozambique: Tropical Cyclone Freddy, Floods and Cholera - Situation Report No.3",
+    "date_original": 1682726400000,
+    "date_changed": 1682777854000,
+    "date_created": 1682756460000,
+    "primary_country_id": 164,
+    "primary_country_name": "Mozambique",
+    "primary_country_iso3": "moz",
+    "primary_country_location": {
+      "lon": 34.75,
+      "lat": -18.09
+    }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "original": {
+    "id": "3954935",
+    "fields": {
+      "date": {
+        "changed": "2023-04-21T03:22:56+00:00",
+        "created": "2023-04-21T03:20:08+00:00",
+        "original": "2023-04-21T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/168",
+          "name": "Nepal",
+          "location": {
+            "lon": 83.94,
+            "lat": 28.25
+          },
+          "id": 168,
+          "shortname": "Nepal",
+          "iso3": "npl",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/168",
+        "name": "Nepal",
+        "location": {
+          "lon": 83.94,
+          "lat": 28.25
+        },
+        "id": 168,
+        "shortname": "Nepal",
+        "iso3": "npl"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1275",
+          "longname": "World Health Organization",
+          "spanish_name": "Organización Mundial de la Salud",
+          "name": "World Health Organization",
+          "id": 1275,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WHO",
+          "homepage": "http://www.who.int/"
+        }
+      ],
+      "title": "Focused COVID-19 Media Monitoring, Nepal (April 21, 2023) [EN/NE]",
+      "body": "**RECURRING THEME(S)**\n\n• 103 new coronavirus cases have been confirmed in the last 24 hours. Currently, there are 397 active cases in the\ncountry.\n\n• Health condition of President Ramchandra Paudel, who is being treated in New Delhi, India, is improving.",
+      "url": "https://reliefweb.int/node/3954935",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/5e/85/5e8558bc-05cb-4caa-8497-24dba40336e7.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/5e/85/5e8558bc-05cb-4caa-8497-24dba40336e7.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/5e/85/5e8558bc-05cb-4caa-8497-24dba40336e7.png",
+            "version": "2413922-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/5e/85/5e8558bc-05cb-4caa-8497-24dba40336e7.png"
+          },
+          "filename": "Focused COVID-19 and Health Media Monitoring_Nepal_(English)_21st April.pdf",
+          "description": "English version",
+          "mimetype": "application/pdf",
+          "id": "2413922",
+          "filesize": "366842",
+          "url": "https://reliefweb.int/attachments/5e8558bc-05cb-4caa-8497-24dba40336e7/Focused%20COVID-19%20and%20Health%20Media%20Monitoring_Nepal_%28English%29_21st%20April.pdf"
+        },
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/00/df/00df8014-a89f-4d88-a26b-8d4ab6cb1db2.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/00/df/00df8014-a89f-4d88-a26b-8d4ab6cb1db2.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/00/df/00df8014-a89f-4d88-a26b-8d4ab6cb1db2.png",
+            "version": "2413924-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/00/df/00df8014-a89f-4d88-a26b-8d4ab6cb1db2.png"
+          },
+          "filename": "Focused COVID-19 and Health Media Monitoring_Nepal_(Nepali)_21th April.pdf",
+          "description": "Nepali version",
+          "mimetype": "application/pdf",
+          "id": "2413924",
+          "filesize": "335592",
+          "url": "https://reliefweb.int/attachments/00df8014-a89f-4d88-a26b-8d4ab6cb1db2/Focused%20COVID-19%20and%20Health%20Media%20Monitoring_Nepal_%28Nepali%29_21th%20April.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/nepal/focused-covid-19-media-monitoring-nepal-april-21-2023-enne",
+      "theme": [
+        {
+          "name": "Health",
+          "id": 4595
+        }
+      ],
+      "id": 3954935,
+      "status": "published",
+      "body-html": "<p><strong>RECURRING THEME(S)</strong></p>\n<p>• 103 new coronavirus cases have been confirmed in the last 24 hours. Currently, there are 397 active cases in the\ncountry.</p>\n<p>• Health condition of President Ramchandra Paudel, who is being treated in New Delhi, India, is improving.</p>\n"
+    }
+  },
+  "text": "# Focused COVID-19 Media Monitoring, Nepal (April 21, 2023) [EN/NE]\n\n**RECURRING THEME(S)**\n\n• 103 new coronavirus cases have been confirmed in the last 24 hours. Currently, there are 397 active cases in the\ncountry.\n\n• Health condition of President Ramchandra Paudel, who is being treated in New Delhi, India, is improving.",
+  "summary": "\n\nIn Nepal, 103 new coronavirus cases have been confirmed in the last 24 hours, bringing the total number of active cases to 397. Additionally, the health condition of President Ramchandra Paudel, who is being treated in New Delhi, India, is improving.",
+  "metadata": {
+    "id": "3954935",
+    "name": "Focused COVID-19 Media Monitoring, Nepal (April 21, 2023) [EN/NE]",
+    "date_original": 1682035200000,
+    "date_changed": 1682047376000,
+    "date_created": 1682047208000,
+    "primary_country_id": 168,
+    "primary_country_name": "Nepal",
+    "primary_country_iso3": "npl",
+    "primary_country_location": {
+      "lon": 83.94,
+      "lat": 28.25
+    }
+  }
+}

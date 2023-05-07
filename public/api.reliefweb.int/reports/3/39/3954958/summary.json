@@ -1,0 +1,178 @@
+{
+  "original": {
+    "id": "3954958",
+    "fields": {
+      "date": {
+        "changed": "2023-04-21T09:50:31+00:00",
+        "created": "2023-04-21T08:44:27+00:00",
+        "original": "2023-04-21T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/13",
+          "name": "Afghanistan",
+          "location": {
+            "lon": 66.03,
+            "lat": 33.84
+          },
+          "id": 13,
+          "shortname": "Afghanistan",
+          "iso3": "afg"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/182",
+          "name": "Pakistan",
+          "location": {
+            "lon": 69.39,
+            "lat": 29.97
+          },
+          "id": 182,
+          "shortname": "Pakistan",
+          "iso3": "pak",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/182",
+        "name": "Pakistan",
+        "location": {
+          "lon": 69.39,
+          "lat": 29.97
+        },
+        "id": 182,
+        "shortname": "Pakistan",
+        "iso3": "pak"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "FF",
+          "name": "Flash Flood",
+          "id": 4624
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/12989",
+          "name": "Education Cluster",
+          "id": 12989,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "Education Cluster",
+          "homepage": "https://www.educationcluster.net/"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2865",
+          "longname": "Save the Children Alliance",
+          "spanish_name": "Save the Children",
+          "name": "Save the Children",
+          "id": 2865,
+          "type": {
+            "name": "Non-governmental Organization",
+            "id": 274
+          },
+          "shortname": "Save the Children",
+          "homepage": "https://www.savethechildren.net/"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1979",
+          "longname": "United Nations Children's Fund",
+          "spanish_name": "Fondo de las Naciones Unidas para la Infancia",
+          "name": "UN Children's Fund",
+          "id": 1979,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNICEF",
+          "homepage": "http://www.unicef.org"
+        }
+      ],
+      "title": "Pakistan: Education Sector Working Group (EIE) Bulletin March 2023",
+      "body": "**Highlights**\n\n• Education Sector partners have reached over 292,328 children and adults (43.6% girls and women) out of 700,000 planned targets for education assistance under the Floods Response plan (FRP). Funding for the education emergency response stands at 28 million (69%) of total ask of $40.6m\n\n• There continues to be an urgent need to sustain and scale up access to learning through the establishment of TLCs/TSS, including through prefabricated classrooms, renting buildings, and repairing classrooms\n\n• Over 41,000 children in KP and Balochistan have been supported so far under ECW MYRP through formal and non-formal education services\n\n• RRP partners are contributing to refugee education in refugee villages and hosting communities for over 129,000 children.",
+      "url": "https://reliefweb.int/node/3954958",
+      "disaster": [
+        {
+          "name": "Pakistan: Floods - Jul 2022",
+          "id": 51234,
+          "glide": "FL-2022-000254-PAK",
+          "type": [
+            {
+              "code": "FF",
+              "name": "Flash Flood",
+              "id": 4624
+            },
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/3a/65/3a65a1e3-f940-4786-a15a-d730457329d0.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/3a/65/3a65a1e3-f940-4786-a15a-d730457329d0.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/3a/65/3a65a1e3-f940-4786-a15a-d730457329d0.png",
+            "version": "2413933-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/3a/65/3a65a1e3-f940-4786-a15a-d730457329d0.png"
+          },
+          "filename": "Bulletin ESWG 1st QTR2023 VF.pdf",
+          "mimetype": "application/pdf",
+          "id": "2413933",
+          "filesize": "1327565",
+          "url": "https://reliefweb.int/attachments/3a65a1e3-f940-4786-a15a-d730457329d0/Bulletin%20ESWG%201st%20QTR2023%20VF.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/pakistan/pakistan-education-sector-working-group-eie-bulletin-march-2023",
+      "theme": [
+        {
+          "name": "Education",
+          "id": 4592
+        }
+      ],
+      "id": 3954958,
+      "status": "published",
+      "body-html": "<p><strong>Highlights</strong></p>\n<p>• Education Sector partners have reached over 292,328 children and adults (43.6% girls and women) out of 700,000 planned targets for education assistance under the Floods Response plan (FRP). Funding for the education emergency response stands at 28 million (69%) of total ask of $40.6m</p>\n<p>• There continues to be an urgent need to sustain and scale up access to learning through the establishment of TLCs/TSS, including through prefabricated classrooms, renting buildings, and repairing classrooms</p>\n<p>• Over 41,000 children in KP and Balochistan have been supported so far under ECW MYRP through formal and non-formal education services</p>\n<p>• RRP partners are contributing to refugee education in refugee villages and hosting communities for over 129,000 children.</p>\n"
+    }
+  },
+  "text": "# Pakistan: Education Sector Working Group (EIE) Bulletin March 2023\n\n**Highlights**\n\n• Education Sector partners have reached over 292,328 children and adults (43.6% girls and women) out of 700,000 planned targets for education assistance under the Floods Response plan (FRP). Funding for the education emergency response stands at 28 million (69%) of total ask of $40.6m\n\n• There continues to be an urgent need to sustain and scale up access to learning through the establishment of TLCs/TSS, including through prefabricated classrooms, renting buildings, and repairing classrooms\n\n• Over 41,000 children in KP and Balochistan have been supported so far under ECW MYRP through formal and non-formal education services\n\n• RRP partners are contributing to refugee education in refugee villages and hosting communities for over 129,000 children.",
+  "summary": " The Education Sector Working Group in Pakistan has reached 43.6% of its target of 700,000 people with education assistance under the Floods Response Plan. Funding for the emergency response stands at 28 million of the total ask of $40.6m. There is an urgent need to sustain and scale up access to learning, and over 41,000 children in KP and Balochistan have been supported so far. RRP partners are contributing to refugee education in refugee villages and hosting communities for over 129,000 children.",
+  "metadata": {
+    "id": "3954958",
+    "name": "Pakistan: Education Sector Working Group (EIE) Bulletin March 2023",
+    "date_original": 1682035200000,
+    "date_changed": 1682070631000,
+    "date_created": 1682066667000,
+    "primary_country_id": 182,
+    "primary_country_name": "Pakistan",
+    "primary_country_iso3": "pak",
+    "primary_country_location": {
+      "lon": 69.39,
+      "lat": 29.97
+    }
+  }
+}

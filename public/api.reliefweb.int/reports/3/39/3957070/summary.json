@@ -1,0 +1,130 @@
+{
+  "original": {
+    "id": "3957070",
+    "fields": {
+      "date": {
+        "changed": "2023-04-28T16:20:00+00:00",
+        "created": "2023-04-28T15:47:02+00:00",
+        "original": "2023-04-28T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/49",
+          "name": "Cameroon",
+          "location": {
+            "lon": 12.21,
+            "lat": 4.81
+          },
+          "id": 49,
+          "shortname": "Cameroon",
+          "iso3": "cmr",
+          "primary": true
+        }
+      ],
+      "origin": "https://www.samuelhall.org/publications/iom-labour-market-survey-in-north-west-south-west-regions-of-cameroon-for-the-humanitarian-development-peace-nexus",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/49",
+        "name": "Cameroon",
+        "location": {
+          "lon": 12.21,
+          "lat": 4.81
+        },
+        "id": 49,
+        "shortname": "Cameroon",
+        "iso3": "cmr"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1255",
+          "longname": "International Organization for Migration",
+          "spanish_name": "Organización Internacional para las Migraciones",
+          "name": "International Organization for Migration",
+          "id": 1255,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "IOM",
+          "homepage": "http://www.iom.int/"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/15275",
+          "name": "Samuel Hall",
+          "id": 15275,
+          "type": {
+            "name": "Academic and Research Institution",
+            "id": 270
+          },
+          "shortname": "Samuel Hall",
+          "homepage": "http://www.samuelhall.org/"
+        }
+      ],
+      "title": "Labour Market Survey in NorthWest, South-West Regions of Cameroon for the Humanitarian Development Peace Nexus",
+      "body": "The International Organisation for Migration commissioned Samuel Hall to produce a Labour Market Assessment (LMA) in the North-West and South-West regions of Cameroon, with the financial support of the Government of Japan. The LMA assesses the needs and challenges of the demand-side (employers) and supply-side (employees and job seekers), in addition to labour market intermediaries in the region, in the context of the Anglophone crisis, to ensure that interventions offered to vulnerable persons and returnees effectively create sustainable livelihoods and youth engagement opportunities. It also aims to facilitate wider discussions around conflict-sensitive approaches to NWSW peacebuilding programming, the humanitarian-development-peace nexus (HDPN), social cohesion, and key criteria for durable solutions.",
+      "url": "https://reliefweb.int/node/3957070",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/6b/54/6b54708e-0a7e-4cd6-bba0-b306747be2e5.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/6b/54/6b54708e-0a7e-4cd6-bba0-b306747be2e5.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/6b/54/6b54708e-0a7e-4cd6-bba0-b306747be2e5.png",
+            "version": "2415664-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/6b/54/6b54708e-0a7e-4cd6-bba0-b306747be2e5.png"
+          },
+          "filename": "IOM+Cameroon+-+LMA+-+Final+Report+clean+190422_acknow.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415664",
+          "filesize": "2455199",
+          "url": "https://reliefweb.int/attachments/6b54708e-0a7e-4cd6-bba0-b306747be2e5/IOM%2BCameroon%2B-%2BLMA%2B-%2BFinal%2BReport%2Bclean%2B190422_acknow.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/cameroon/labour-market-survey-northwest-south-west-regions-cameroon-humanitarian-development-peace-nexus",
+      "theme": [
+        {
+          "name": "Peacekeeping and Peacebuilding",
+          "id": 4599
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Recovery and Reconstruction",
+          "id": 4601
+        }
+      ],
+      "id": 3957070,
+      "status": "published",
+      "body-html": "<p>The International Organisation for Migration commissioned Samuel Hall to produce a Labour Market Assessment (LMA) in the North-West and South-West regions of Cameroon, with the financial support of the Government of Japan. The LMA assesses the needs and challenges of the demand-side (employers) and supply-side (employees and job seekers), in addition to labour market intermediaries in the region, in the context of the Anglophone crisis, to ensure that interventions offered to vulnerable persons and returnees effectively create sustainable livelihoods and youth engagement opportunities. It also aims to facilitate wider discussions around conflict-sensitive approaches to NWSW peacebuilding programming, the humanitarian-development-peace nexus (HDPN), social cohesion, and key criteria for durable solutions.</p>\n"
+    }
+  },
+  "text": "# Labour Market Survey in NorthWest, South-West Regions of Cameroon for the Humanitarian Development Peace Nexus\n\nThe International Organisation for Migration commissioned Samuel Hall to produce a Labour Market Assessment (LMA) in the North-West and South-West regions of Cameroon, with the financial support of the Government of Japan. The LMA assesses the needs and challenges of the demand-side (employers) and supply-side (employees and job seekers), in addition to labour market intermediaries in the region, in the context of the Anglophone crisis, to ensure that interventions offered to vulnerable persons and returnees effectively create sustainable livelihoods and youth engagement opportunities. It also aims to facilitate wider discussions around conflict-sensitive approaches to NWSW peacebuilding programming, the humanitarian-development-peace nexus (HDPN), social cohesion, and key criteria for durable solutions.",
+  "summary": " The International Organisation for Migration, with the support of the Government of Japan, commissioned Samuel Hall to conduct a Labour Market Assessment in the North-West and South-West regions of Cameroon. The assessment aims to identify the needs and challenges of employers, employees, job seekers, and labour market intermediaries in the region, in the context of the Anglophone crisis, to ensure that interventions offered to vulnerable persons and returnees create sustainable livelihoods and youth engagement opportunities. It also seeks to facilitate discussions around conflict-sensitive approaches to peacebuilding programming, the humanitarian-development-peace nexus, social cohesion, and criteria for durable solutions.",
+  "metadata": {
+    "id": "3957070",
+    "name": "Labour Market Survey in NorthWest, South-West Regions of Cameroon for the Humanitarian Development Peace Nexus",
+    "date_original": 1682640000000,
+    "date_changed": 1682698800000,
+    "date_created": 1682696822000,
+    "primary_country_id": 49,
+    "primary_country_name": "Cameroon",
+    "primary_country_iso3": "cmr",
+    "primary_country_location": {
+      "lon": 12.21,
+      "lat": 4.81
+    }
+  }
+}

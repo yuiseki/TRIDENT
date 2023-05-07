@@ -1,0 +1,123 @@
+{
+  "original": {
+    "id": "3957777",
+    "fields": {
+      "date": {
+        "changed": "2023-05-02T15:18:35+00:00",
+        "created": "2023-05-02T15:16:56+00:00",
+        "original": "2023-05-02T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/254",
+          "name": "World",
+          "id": 254,
+          "shortname": "World",
+          "iso3": "wld",
+          "primary": true
+        }
+      ],
+      "origin": "https://www.preventionweb.net/publication/designing-inclusive-accessible-early-warning-systems-good-practices-and-entry-points",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/254",
+        "name": "World",
+        "id": 254,
+        "shortname": "World",
+        "iso3": "wld"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/4029",
+          "spanish_name": "Facilidad Global para la Reducción y la Recuperación de Desastres",
+          "name": "Global Facility for Disaster Reduction and Recovery",
+          "id": 4029,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "GFDRR",
+          "homepage": "http://gfdrr.org"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2049",
+          "longname": "University College London",
+          "name": "University College London",
+          "id": 2049,
+          "type": {
+            "name": "Academic and Research Institution",
+            "id": 270
+          },
+          "shortname": "UCL",
+          "homepage": "http://www.ucl.ac.uk/"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1220",
+          "longname": "The World Bank Group",
+          "spanish_name": "Banco Mundial",
+          "name": "World Bank",
+          "id": 1220,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "World Bank",
+          "homepage": "http://www.worldbank.org"
+        }
+      ],
+      "title": "Designing Inclusive, Accessible Early Warning Systems: Good Practices and Entry Points",
+      "body": "This report presents key lessons and areas of good practice from specific examples, along with recommendations and entry points for inclusive, accessible early warning systems (EWS). It is aimed at development practitioners, especially World Bank staff, working with communities and governments to provide evidence-based approaches to enhance inclusion of different social groups in EWS, depending on the local context. It is not intended to be a comprehensive overview of a robust, effective EWS, but rather to high lighten try points for the inclusivity components of multi-hazard impact-based EWS. The report builds on the premise that adopting pragmatic, contextually tailored approaches to design and implementation of EWS produces better, more effective and inclusive outcomes and reaches more-diverse populations than one-size-fits-all models.\n\nThe report concludes with the below overarching recommendations. Inclusive, accessible EWS have characteristics that are consistent across the case studies presented in the report. They:\n\n- Are long-term social processes.\n\n- Use multiple channels, modes, and messages that are clear, transparent, consistent, and credible.\n\n- Are relevant to everyone, covering a range of timeframes and geographic coverage.\n\n- Connect all governance levels, including local, national, and international.\n\n- Require including the needs of different social groups to respond to multiple hazards, sequences, and cascading events.\n\n- Extend beyond warning dissemination to include damage prevention, mitigation actions, and response conditions to ensure capacity to act.\n\n- Facilitate early and anticipatory action, which also reduces inequalities and inequities regardless of the hazard.",
+      "url": "https://reliefweb.int/node/3957777",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/ba/63/ba63055f-8d44-4f3f-bfcd-16f1b982c6a4.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/ba/63/ba63055f-8d44-4f3f-bfcd-16f1b982c6a4.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/ba/63/ba63055f-8d44-4f3f-bfcd-16f1b982c6a4.png",
+            "version": "2416423-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/ba/63/ba63055f-8d44-4f3f-bfcd-16f1b982c6a4.png"
+          },
+          "filename": "P1765160197f400b80947e0af8c48049151.pdf",
+          "mimetype": "application/pdf",
+          "id": "2416423",
+          "filesize": "6962392",
+          "url": "https://reliefweb.int/attachments/ba63055f-8d44-4f3f-bfcd-16f1b982c6a4/P1765160197f400b80947e0af8c48049151.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/world/designing-inclusive-accessible-early-warning-systems-good-practices-and-entry-points",
+      "theme": [
+        {
+          "name": "Disaster Management",
+          "id": 4591
+        }
+      ],
+      "id": 3957777,
+      "status": "published",
+      "body-html": "<p>This report presents key lessons and areas of good practice from specific examples, along with recommendations and entry points for inclusive, accessible early warning systems (EWS). It is aimed at development practitioners, especially World Bank staff, working with communities and governments to provide evidence-based approaches to enhance inclusion of different social groups in EWS, depending on the local context. It is not intended to be a comprehensive overview of a robust, effective EWS, but rather to high lighten try points for the inclusivity components of multi-hazard impact-based EWS. The report builds on the premise that adopting pragmatic, contextually tailored approaches to design and implementation of EWS produces better, more effective and inclusive outcomes and reaches more-diverse populations than one-size-fits-all models.</p>\n<p>The report concludes with the below overarching recommendations. Inclusive, accessible EWS have characteristics that are consistent across the case studies presented in the report. They:</p>\n<ul>\n<li>\n<p>Are long-term social processes.</p>\n</li>\n<li>\n<p>Use multiple channels, modes, and messages that are clear, transparent, consistent, and credible.</p>\n</li>\n<li>\n<p>Are relevant to everyone, covering a range of timeframes and geographic coverage.</p>\n</li>\n<li>\n<p>Connect all governance levels, including local, national, and international.</p>\n</li>\n<li>\n<p>Require including the needs of different social groups to respond to multiple hazards, sequences, and cascading events.</p>\n</li>\n<li>\n<p>Extend beyond warning dissemination to include damage prevention, mitigation actions, and response conditions to ensure capacity to act.</p>\n</li>\n<li>\n<p>Facilitate early and anticipatory action, which also reduces inequalities and inequities regardless of the hazard.</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# Designing Inclusive, Accessible Early Warning Systems: Good Practices and Entry Points\n\nThis report presents key lessons and areas of good practice from specific examples, along with recommendations and entry points for inclusive, accessible early warning systems (EWS). It is aimed at development practitioners, especially World Bank staff, working with communities and governments to provide evidence-based approaches to enhance inclusion of different social groups in EWS, depending on the local context. It is not intended to be a comprehensive overview of a robust, effective EWS, but rather to high lighten try points for the inclusivity components of multi-hazard impact-based EWS. The report builds on the premise that adopting pragmatic, contextually tailored approaches to design and implementation of EWS produces better, more effective and inclusive outcomes and reaches more-diverse populations than one-size-fits-all models.\n\nThe report concludes with the below overarching recommendations. Inclusive, accessible EWS have characteristics that are consistent across the case studies presented in the report. They:\n\n- Are long-term social processes.\n\n- Use multiple channels, modes, and messages that are clear, transparent, consistent, and credible.\n\n- Are relevant to everyone, covering a range of timeframes and geographic coverage.\n\n- Connect all governance levels, including local, national, and international.\n\n- Require including the needs of different social groups to respond to multiple hazards, sequences, and cascading events.\n\n- Extend beyond warning dissemination to include damage prevention, mitigation actions, and response conditions to ensure capacity to act.\n\n- Facilitate early and anticipatory action, which also reduces inequalities and inequities regardless of the hazard.",
+  "summary": " This report provides key lessons and areas of good practice for designing inclusive and accessible early warning systems (EWS). It is aimed at development practitioners, especially World Bank staff, and provides evidence-based approaches to enhance inclusion of different social groups in EWS. The report outlines characteristics of inclusive, accessible EWS, such as being long-term social processes, using multiple channels, modes, and messages, being relevant to everyone, connecting all governance levels, and extending beyond warning dissemination. It also recommends early and anticipatory action to reduce inequalities and inequities.",
+  "metadata": {
+    "id": "3957777",
+    "name": "Designing Inclusive, Accessible Early Warning Systems: Good Practices and Entry Points",
+    "date_original": 1682985600000,
+    "date_changed": 1683040715000,
+    "date_created": 1683040616000,
+    "primary_country_id": 254,
+    "primary_country_name": "World",
+    "primary_country_iso3": "wld"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "original": {
+    "id": "3955683",
+    "fields": {
+      "date": {
+        "changed": "2023-04-25T11:24:09+00:00",
+        "created": "2023-04-25T08:08:35+00:00",
+        "original": "2023-04-25T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/226",
+          "name": "Syrian Arab Republic",
+          "location": {
+            "lon": 38.51,
+            "lat": 35.01
+          },
+          "id": 226,
+          "shortname": "Syria",
+          "iso3": "syr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/236",
+          "name": "Türkiye",
+          "location": {
+            "lon": 35.18,
+            "lat": 39.06
+          },
+          "id": 236,
+          "shortname": "Türkiye",
+          "iso3": "tur",
+          "primary": true
+        }
+      ],
+      "origin": "https://data.unhcr.org/en/documents/details/100243",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/236",
+        "name": "Türkiye",
+        "location": {
+          "lon": 35.18,
+          "lat": 39.06
+        },
+        "id": 236,
+        "shortname": "Türkiye",
+        "iso3": "tur"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EQ",
+          "name": "Earthquake",
+          "id": 4628
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "UNHCR Türkiye Earthquake Emergency Response (20 April 2023)",
+      "body": "RECENT DEVELOPMENTS\n\nSome 20 per cent of people who had temporarily relocated to cities outside the earthquake-affected provinces are returning, according to the Turkish Ministry of Interior on 14 April. Financial constraints and the high cost of living in the hosting provinces may be possible deciding factors for those returning.  \n\nUNHCR has observed an increase in returns of refugees to the affected provinces as well, for similar reasons. To meet the needs of the returning population, authorities are strengthening shelter capacity through temporary accommodation, efforts to remove debris in affected provinces is expected to be completed by 21 April, except in Hatay",
+      "url": "https://reliefweb.int/node/3955683",
+      "disaster": [
+        {
+          "name": "Türkiye/Syria: Earthquakes - Feb 2023",
+          "id": 51470,
+          "glide": "EQ-2023-000015-TUR",
+          "type": [
+            {
+              "code": "EQ",
+              "name": "Earthquake",
+              "id": 4628,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/5b/23/5b23dd63-8e34-44d0-805d-2ed435e1f53b.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/5b/23/5b23dd63-8e34-44d0-805d-2ed435e1f53b.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/5b/23/5b23dd63-8e34-44d0-805d-2ed435e1f53b.png",
+            "version": "2414435-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/5b/23/5b23dd63-8e34-44d0-805d-2ed435e1f53b.png"
+          },
+          "filename": "UNHCR Türkiye Emergency Response to Earthquake 2023 04 20.pdf",
+          "mimetype": "application/pdf",
+          "id": "2414435",
+          "filesize": "154738",
+          "url": "https://reliefweb.int/attachments/5b23dd63-8e34-44d0-805d-2ed435e1f53b/UNHCR%20Tu%CC%88rkiye%20Emergency%20Response%20to%20Earthquake%202023%2004%2020.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/turkiye/unhcr-turkiye-earthquake-emergency-response-20-april-2023",
+      "theme": [
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3955683,
+      "status": "published",
+      "body-html": "<p>RECENT DEVELOPMENTS</p>\n<p>Some 20 per cent of people who had temporarily relocated to cities outside the earthquake-affected provinces are returning, according to the Turkish Ministry of Interior on 14 April. Financial constraints and the high cost of living in the hosting provinces may be possible deciding factors for those returning.</p>\n<p>UNHCR has observed an increase in returns of refugees to the affected provinces as well, for similar reasons. To meet the needs of the returning population, authorities are strengthening shelter capacity through temporary accommodation, efforts to remove debris in affected provinces is expected to be completed by 21 April, except in Hatay</p>\n"
+    }
+  },
+  "text": "# UNHCR Türkiye Earthquake Emergency Response (20 April 2023)\n\nRECENT DEVELOPMENTS\n\nSome 20 per cent of people who had temporarily relocated to cities outside the earthquake-affected provinces are returning, according to the Turkish Ministry of Interior on 14 April. Financial constraints and the high cost of living in the hosting provinces may be possible deciding factors for those returning.  \n\nUNHCR has observed an increase in returns of refugees to the affected provinces as well, for similar reasons. To meet the needs of the returning population, authorities are strengthening shelter capacity through temporary accommodation, efforts to remove debris in affected provinces is expected to be completed by 21 April, except in Hatay",
+  "summary": "\n\nThe Turkish Ministry of Interior reported that 20% of people who had relocated due to the earthquake are returning, likely due to financial constraints. UNHCR has also observed an increase in refugees returning to the affected provinces for similar reasons. To meet the needs of the returning population, authorities are strengthening shelter capacity and debris removal is expected to be completed by 21 April, except in Hatay.",
+  "metadata": {
+    "id": "3955683",
+    "name": "UNHCR Türkiye Earthquake Emergency Response (20 April 2023)",
+    "date_original": 1682380800000,
+    "date_changed": 1682421849000,
+    "date_created": 1682410115000,
+    "primary_country_id": 236,
+    "primary_country_name": "Türkiye",
+    "primary_country_iso3": "tur",
+    "primary_country_location": {
+      "lon": 35.18,
+      "lat": 39.06
+    }
+  }
+}

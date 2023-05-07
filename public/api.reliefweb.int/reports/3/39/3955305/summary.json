@@ -1,0 +1,118 @@
+{
+  "original": {
+    "id": "3955305",
+    "fields": {
+      "date": {
+        "changed": "2023-04-24T06:12:30+00:00",
+        "created": "2023-04-24T05:36:57+00:00",
+        "original": "2023-04-24T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/255",
+          "name": "Yemen",
+          "location": {
+            "lon": 47.62,
+            "lat": 15.94
+          },
+          "id": 255,
+          "shortname": "Yemen",
+          "iso3": "yem",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/255",
+        "name": "Yemen",
+        "location": {
+          "lon": 47.62,
+          "lat": 15.94
+        },
+        "id": 255,
+        "shortname": "Yemen",
+        "iso3": "yem"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "WFP Yemen Situation Report #3, March 2023",
+      "body": "**In Numbers**\n\n7.3 million people assisted by WFP in Yemen in March\n\n17 million people food insecure\n\n6.1 million people in IPC Phase 4 (Emergency)\n\n3.5 million people acutely malnourished\n\n**Highlights**\n\n- WFP data show that the food security situation in Yemen remained stable for the third consecutive month.\n\n- WFP in March signed an agreement with the Sana’a-based authorities (SBA) paving the way for the start of the Food Security and Livelihoods Assessment in SBA-controlled areas.\n\n- The WFP Yemen 2022 Annual Country Report was released on 31 March, noting Yemen as WFP’s second-largest operation globally with 15.3 million people assisted.\n\n**SITUATION UPDATE**\n\n**Food Security Situation:**\n\n- According to the latest **[WFP food security data](https://reliefweb.int/node/3949370/)** released in March, the prevalence of inadequate food consumption in Yemen remained stable in February for the third consecutive month. Close to half of Yemeni households (49 percent nationwide) reported inadequate food consumption, with rates at critically high levels in 17of 22 governorates.\n\n- As of February, the cost of the minimum food basket has increased by 12 percent in areas under the internationally recognized Government of Yemen (IRG, south operational area) over the past year. In areas under the Sana’a-based authorities (SBA, north operational area), food prices have decreased by 3 percent.\n\n**Security Situation:**\n\n- While hostilities remain at reduced levels since the expiration of the UN-brokered truce agreement on 02 October 2022, hostilities escalated in late March between IRG and SBA forces in several governorates.\n\n- No airstrikes or cross-border aerial attacks have been reported since the truce started on 02 April 2022",
+      "url": "https://reliefweb.int/node/3955305",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/27/17/2717dff1-de02-4392-8530-2b69639b5745.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/27/17/2717dff1-de02-4392-8530-2b69639b5745.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/27/17/2717dff1-de02-4392-8530-2b69639b5745.png",
+            "version": "2414221-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/27/17/2717dff1-de02-4392-8530-2b69639b5745.png"
+          },
+          "filename": "2023 03 WFP Yemen External Situation Report March.pdf",
+          "mimetype": "application/pdf",
+          "id": "2414221",
+          "filesize": "633794",
+          "url": "https://reliefweb.int/attachments/2717dff1-de02-4392-8530-2b69639b5745/2023%2003%20WFP%20Yemen%20External%20Situation%20Report%20March.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/yemen/wfp-yemen-situation-report-3-march-2023",
+      "theme": [
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        }
+      ],
+      "id": 3955305,
+      "status": "published",
+      "body-html": "<p><strong>In Numbers</strong></p>\n<p>7.3 million people assisted by WFP in Yemen in March</p>\n<p>17 million people food insecure</p>\n<p>6.1 million people in IPC Phase 4 (Emergency)</p>\n<p>3.5 million people acutely malnourished</p>\n<p><strong>Highlights</strong></p>\n<ul>\n<li>\n<p>WFP data show that the food security situation in Yemen remained stable for the third consecutive month.</p>\n</li>\n<li>\n<p>WFP in March signed an agreement with the Sana’a-based authorities (SBA) paving the way for the start of the Food Security and Livelihoods Assessment in SBA-controlled areas.</p>\n</li>\n<li>\n<p>The WFP Yemen 2022 Annual Country Report was released on 31 March, noting Yemen as WFP’s second-largest operation globally with 15.3 million people assisted.</p>\n</li>\n</ul>\n<p><strong>SITUATION UPDATE</strong></p>\n<p><strong>Food Security Situation:</strong></p>\n<ul>\n<li>\n<p>According to the latest <strong><a href=\"https://reliefweb.int/node/3949370/\">WFP food security data</a></strong> released in March, the prevalence of inadequate food consumption in Yemen remained stable in February for the third consecutive month. Close to half of Yemeni households (49 percent nationwide) reported inadequate food consumption, with rates at critically high levels in 17of 22 governorates.</p>\n</li>\n<li>\n<p>As of February, the cost of the minimum food basket has increased by 12 percent in areas under the internationally recognized Government of Yemen (IRG, south operational area) over the past year. In areas under the Sana’a-based authorities (SBA, north operational area), food prices have decreased by 3 percent.</p>\n</li>\n</ul>\n<p><strong>Security Situation:</strong></p>\n<ul>\n<li>\n<p>While hostilities remain at reduced levels since the expiration of the UN-brokered truce agreement on 02 October 2022, hostilities escalated in late March between IRG and SBA forces in several governorates.</p>\n</li>\n<li>\n<p>No airstrikes or cross-border aerial attacks have been reported since the truce started on 02 April 2022</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# WFP Yemen Situation Report #3, March 2023\n\n**In Numbers**\n\n7.3 million people assisted by WFP in Yemen in March\n\n17 million people food insecure\n\n6.1 million people in IPC Phase 4 (Emergency)\n\n3.5 million people acutely malnourished\n\n**Highlights**\n\n- WFP data show that the food security situation in Yemen remained stable for the third consecutive month.\n\n- WFP in March signed an agreement with the Sana’a-based authorities (SBA) paving the way for the start of the Food Security and Livelihoods Assessment in SBA-controlled areas.\n\n- The WFP Yemen 2022 Annual Country Report was released on 31 March, noting Yemen as WFP’s second-largest operation globally with 15.3 million people assisted.\n\n**SITUATION UPDATE**\n\n**Food Security Situation:**\n\n- According to the latest **[WFP food security data](https://reliefweb.int/node/3949370/)** released in March, the prevalence of inadequate food consumption in Yemen remained stable in February for the third consecutive month. Close to half of Yemeni households (49 percent nationwide) reported inadequate food consumption, with rates at critically high levels in 17of 22 governorates.\n\n- As of February, the cost of the minimum food basket has increased by 12 percent in areas under the internationally recognized Government of Yemen (IRG, south operational area) over the past year. In areas under the Sana’a-based authorities (SBA, north operational area), food prices have decreased by 3 percent.\n\n**Security Situation:**\n\n- While hostilities remain at reduced levels since the expiration of the UN-brokered truce agreement on 02 October 2022, hostilities escalated in late March between IRG and SBA forces in several governorates.\n\n- No airstrikes or cross-border aerial attacks have been reported since the truce started on 02 April 2022",
+  "summary": " In March 2023, WFP provided assistance to 7.3 million people in Yemen, 17 million of whom were food insecure and 6.1 million in IPC Phase 4 (Emergency). Food security data showed that the prevalence of inadequate food consumption remained stable for the third consecutive month, with food prices increasing in the south and decreasing in the north. Hostilities between IRG and SBA forces escalated in late March, but no airstrikes or cross-border aerial attacks have been reported since the truce started in April 2022.",
+  "metadata": {
+    "id": "3955305",
+    "name": "WFP Yemen Situation Report #3, March 2023",
+    "date_original": 1682294400000,
+    "date_changed": 1682316750000,
+    "date_created": 1682314617000,
+    "primary_country_id": 255,
+    "primary_country_name": "Yemen",
+    "primary_country_iso3": "yem",
+    "primary_country_location": {
+      "lon": 47.62,
+      "lat": 15.94
+    }
+  }
+}

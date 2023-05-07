@@ -1,0 +1,126 @@
+{
+  "original": {
+    "id": "3956053",
+    "fields": {
+      "date": {
+        "changed": "2023-04-26T05:29:15+00:00",
+        "created": "2023-04-26T05:28:49+00:00",
+        "original": "2023-04-26T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/227",
+          "name": "Tajikistan",
+          "location": {
+            "lon": 71.04,
+            "lat": 38.84
+          },
+          "id": 227,
+          "shortname": "Tajikistan",
+          "iso3": "tjk",
+          "primary": true
+        }
+      ],
+      "origin": "https://logcluster.org/document/tajikistan-preparedness-quarterly-update-january-march-2023",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/227",
+        "name": "Tajikistan",
+        "location": {
+          "lon": 71.04,
+          "lat": 38.84
+        },
+        "id": 227,
+        "shortname": "Tajikistan",
+        "iso3": "tjk"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/3594",
+          "name": "Logistics Cluster",
+          "id": 3594,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "Logistics Cluster",
+          "homepage": "http://www.logcluster.org/"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "Tajikistan Preparedness - Quarterly Update, January - March 2023",
+      "body": "**Highlights**\n\n• In February 2023, the Committee of Emergency Situations and Civil Defense (CoES) under the Government of Tajikistan, with the support of the United Nations World Food Programme (WFP) and the Global Logistics Cluster’s Field-Based Preparedness Project (FBPP), organised a National Logistics Preparedness Working Group (NLPWG) workshop to finalise the draft national logistics preparedness action plan and develop a national logistics information sharing portal.\n\n• The Preparedness Officer participated in the Logistics Cluster’s Preparedness Design Workshop in Rome, Italy, in January 2023 to share the FBPP experience in supporting locally-led logistics preparedness and contribute to the Logistics Cluster’s Preparedness Roadmap.\n\n• The pilot versions ofthe Logistics Information Exchange Platform (LogIE) and STOCK of Humanitarian Organisations Logistics Mapping (STOCKHOLM) with Tajikistan’s logistics data were showcased at the NLPWG workshop in February as potential features of the national logistics information sharing portal, to obtain feedback from the NLPWG members to improve the platform further.",
+      "url": "https://reliefweb.int/node/3956053",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/28/b1/28b1130c-c933-4b78-8fdd-a28300b24120.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/28/b1/28b1130c-c933-4b78-8fdd-a28300b24120.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/28/b1/28b1130c-c933-4b78-8fdd-a28300b24120.png",
+            "version": "2414800-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/28/b1/28b1130c-c933-4b78-8fdd-a28300b24120.png"
+          },
+          "filename": "Logistics Cluster_Preparedness_Quarterly Update_Tajikistan_Q12023_Final.pdf",
+          "mimetype": "application/pdf",
+          "id": "2414800",
+          "filesize": "466018",
+          "url": "https://reliefweb.int/attachments/28b1130c-c933-4b78-8fdd-a28300b24120/Logistics%20Cluster_Preparedness_Quarterly%20Update_Tajikistan_Q12023_Final.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/tajikistan/tajikistan-preparedness-quarterly-update-january-march-2023",
+      "theme": [
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Disaster Management",
+          "id": 4591
+        }
+      ],
+      "id": 3956053,
+      "status": "published",
+      "body-html": "<p><strong>Highlights</strong></p>\n<p>• In February 2023, the Committee of Emergency Situations and Civil Defense (CoES) under the Government of Tajikistan, with the support of the United Nations World Food Programme (WFP) and the Global Logistics Cluster’s Field-Based Preparedness Project (FBPP), organised a National Logistics Preparedness Working Group (NLPWG) workshop to finalise the draft national logistics preparedness action plan and develop a national logistics information sharing portal.</p>\n<p>• The Preparedness Officer participated in the Logistics Cluster’s Preparedness Design Workshop in Rome, Italy, in January 2023 to share the FBPP experience in supporting locally-led logistics preparedness and contribute to the Logistics Cluster’s Preparedness Roadmap.</p>\n<p>• The pilot versions ofthe Logistics Information Exchange Platform (LogIE) and STOCK of Humanitarian Organisations Logistics Mapping (STOCKHOLM) with Tajikistan’s logistics data were showcased at the NLPWG workshop in February as potential features of the national logistics information sharing portal, to obtain feedback from the NLPWG members to improve the platform further.</p>\n"
+    }
+  },
+  "text": "# Tajikistan Preparedness - Quarterly Update, January - March 2023\n\n**Highlights**\n\n• In February 2023, the Committee of Emergency Situations and Civil Defense (CoES) under the Government of Tajikistan, with the support of the United Nations World Food Programme (WFP) and the Global Logistics Cluster’s Field-Based Preparedness Project (FBPP), organised a National Logistics Preparedness Working Group (NLPWG) workshop to finalise the draft national logistics preparedness action plan and develop a national logistics information sharing portal.\n\n• The Preparedness Officer participated in the Logistics Cluster’s Preparedness Design Workshop in Rome, Italy, in January 2023 to share the FBPP experience in supporting locally-led logistics preparedness and contribute to the Logistics Cluster’s Preparedness Roadmap.\n\n• The pilot versions ofthe Logistics Information Exchange Platform (LogIE) and STOCK of Humanitarian Organisations Logistics Mapping (STOCKHOLM) with Tajikistan’s logistics data were showcased at the NLPWG workshop in February as potential features of the national logistics information sharing portal, to obtain feedback from the NLPWG members to improve the platform further.",
+  "summary": " In January and February 2023, the Government of Tajikistan, with the support of the United Nations World Food Programme and the Global Logistics Cluster’s Field-Based Preparedness Project, organised a National Logistics Preparedness Working Group workshop to finalise the draft national logistics preparedness action plan and develop a national logistics information sharing portal. The Preparedness Officer also participated in a Preparedness Design Workshop in Rome, Italy, and showcased the Logistics Information Exchange Platform and STOCK of Humanitarian Organisations Logistics Mapping with Tajikistan’s logistics data at the NLPWG workshop to obtain feedback.",
+  "metadata": {
+    "id": "3956053",
+    "name": "Tajikistan Preparedness - Quarterly Update, January - March 2023",
+    "date_original": 1682467200000,
+    "date_changed": 1682486955000,
+    "date_created": 1682486929000,
+    "primary_country_id": 227,
+    "primary_country_name": "Tajikistan",
+    "primary_country_iso3": "tjk",
+    "primary_country_location": {
+      "lon": 71.04,
+      "lat": 38.84
+    }
+  }
+}

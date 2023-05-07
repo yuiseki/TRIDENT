@@ -1,0 +1,133 @@
+{
+  "original": {
+    "id": "3957393",
+    "fields": {
+      "date": {
+        "changed": "2023-05-01T16:23:46+00:00",
+        "created": "2023-05-01T14:52:12+00:00",
+        "original": "2023-05-01T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/196",
+          "name": "Romania",
+          "location": {
+            "lon": 24.9668,
+            "lat": 45.9432
+          },
+          "id": 196,
+          "shortname": "Romania",
+          "iso3": "rou",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/241",
+          "name": "Ukraine",
+          "location": {
+            "lon": 31.32,
+            "lat": 49.32
+          },
+          "id": 241,
+          "shortname": "Ukraine",
+          "iso3": "ukr"
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/196",
+        "name": "Romania",
+        "location": {
+          "lon": 24.9668,
+          "lat": 45.9432
+        },
+        "id": 196,
+        "shortname": "Romania",
+        "iso3": "rou"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "UNHCR Romania: Ukraine Refugee Situation Update, Update #44, 28 April 2023",
+      "body": "**Key figures**\n\n129,438 refugees granted temporary protection in Romania (as of 23 April 2023)\n\n101,341 refugees in Romania (as of 17 April 2023)\n\n18,984 refugees supported with cash assistance in 2023. 43,129 refugees supported in 2022.\n\n28,348 refugees provided with protection counselling services and legal support in 2023. 65,000 refugees assisted since 2022.\n\n1,140 refugees supported with livelihoods & employment services in 2023. \n\n**Highlight**\n\nOn 26 April, a new Government Decision established conditions and mechanisms for providing assistance to the refugees from Ukraine granted temporary protection in Romania. Through this programme, from 1 May Romanian authorities will provide each refugee family with 2,000 RON and single refugees with 750 RON per month to cover accommodation expenses. In addition, each refugee will receive 600 RON per month to cover food expenses. In the first month, the assistance will be granted without any condition other than having Temporary Protection in Romania. However, for subsequent three months it will be subject to registration for employment through the national employment agency (ANOFM) and enrolment of children in any of a variety of schools or educational programs. From the fifth month until the end of 2023, refugees will be eligible to receive funds for accommodation expenses only if they are employed and the children are enrolled into schools. Elderly people (above 65 years), persons with disability, care givers of children (below two years), and care givers of children with disability (below three years) have been exempted from employment and/or school enrolment requirements.\n\n**Response**\n\nTo support the most vulnerable refugees from Ukraine to transition to the new system, UNHCR is planning to assist 35,000 refugees with one instalment of multipurpose cash assistance (568 RON per person). Cash assistance provided by UNHCR is meant to support vulnerable refugees, such as persons with specific needs, during the transitional period in which they will be able to access the new assistance programme set up by authorities. The financial assistance to be provided by UNHCR has been discussed and agreed with other relevant actors within the Cash Working Group, as well as the Basic Needs Working Group of the Inter-Agency coordination platform. UNHCR has started to prepare this one-off cash assistance launching a verification process intended to ascertain the presence in the country of refugees already enrolled in UNHCR’s cash programmes.\n\nUNHCR is raising awareness among refugee communities on the new government-supported programme. Over the past weeks, UNHCR and its partner CNRR organized two focus group discussions with 50 refugees in Baia Mare and Suceava respectively. During the discussions, refugees expressed potential challenges relating to the new programme particularly about potential rejection to open accounts with Romanian banks. UNHCR and partners are also providing counselling services in person and through hotlines and disseminating information through a dedicated Telegram channel. Through this platform, UNHCR disseminated inter alia, a governmental brochure explaining the new system. In 2023, a total of 28,348 refugees have been assisted with various protection services and legal support.\n\nOn 19 April, UNHCR together with HEKS/EPER conducted a workshop for 16 refugees from Ukraine seeking start-up business in Romania.The workshop focused on how to prepare a business plan and apply for the start-up grants currently available through partners. Furthermore, UNHCR through partners continued to provide career coaching and counselling as well as language classes and trainings to refugees. So far in 2023, over 1,100 refugees have been assisted with livelihoods and employment services.\n\nDuring the last two weeks, UNHCR together with Sensiblu Foundation conducted five socialisation discussions focused on prevention of and response to gender-based violence in Bucharest, Suceava, Cluj, Galati and Constanta with the participation of nearly 170 refugee women, girls and boys. The discussion covered several topics, including mental health and abuse, issues among teenagers, gender equality, harassment and abuse in social media and in schools, and challenges accessing the labour market for women.\n\nThis week, UNHCR in Galați distributed core-relief items (CRIs) to 600 Ukrainian refugees living in Năvodari, Constanța county. In 2023, UNHCR distributed 190,000 CRIs such as clothes, blankets, hygiene kits, cooking pots, water, etc.",
+      "url": "https://reliefweb.int/node/3957393",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/c7/1d/c71d86d2-44bf-46ff-a27a-f58fcdf77e1f.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/c7/1d/c71d86d2-44bf-46ff-a27a-f58fcdf77e1f.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/c7/1d/c71d86d2-44bf-46ff-a27a-f58fcdf77e1f.png",
+            "version": "2416027-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/c7/1d/c71d86d2-44bf-46ff-a27a-f58fcdf77e1f.png"
+          },
+          "filename": "UNHCR Romania _ Ukraine Refugee Situation Update _ 28 April 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2416027",
+          "filesize": "189247",
+          "url": "https://reliefweb.int/attachments/c71d86d2-44bf-46ff-a27a-f58fcdf77e1f/UNHCR%20Romania%20_%20Ukraine%20Refugee%20Situation%20Update%20_%2028%20April%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/romania/unhcr-romania-ukraine-refugee-situation-update-update-44-28-april-2023",
+      "theme": [
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        }
+      ],
+      "id": 3957393,
+      "status": "published",
+      "body-html": "<p><strong>Key figures</strong></p>\n<p>129,438 refugees granted temporary protection in Romania (as of 23 April 2023)</p>\n<p>101,341 refugees in Romania (as of 17 April 2023)</p>\n<p>18,984 refugees supported with cash assistance in 2023. 43,129 refugees supported in 2022.</p>\n<p>28,348 refugees provided with protection counselling services and legal support in 2023. 65,000 refugees assisted since 2022.</p>\n<p>1,140 refugees supported with livelihoods &amp; employment services in 2023.</p>\n<p><strong>Highlight</strong></p>\n<p>On 26 April, a new Government Decision established conditions and mechanisms for providing assistance to the refugees from Ukraine granted temporary protection in Romania. Through this programme, from 1 May Romanian authorities will provide each refugee family with 2,000 RON and single refugees with 750 RON per month to cover accommodation expenses. In addition, each refugee will receive 600 RON per month to cover food expenses. In the first month, the assistance will be granted without any condition other than having Temporary Protection in Romania. However, for subsequent three months it will be subject to registration for employment through the national employment agency (ANOFM) and enrolment of children in any of a variety of schools or educational programs. From the fifth month until the end of 2023, refugees will be eligible to receive funds for accommodation expenses only if they are employed and the children are enrolled into schools. Elderly people (above 65 years), persons with disability, care givers of children (below two years), and care givers of children with disability (below three years) have been exempted from employment and/or school enrolment requirements.</p>\n<p><strong>Response</strong></p>\n<p>To support the most vulnerable refugees from Ukraine to transition to the new system, UNHCR is planning to assist 35,000 refugees with one instalment of multipurpose cash assistance (568 RON per person). Cash assistance provided by UNHCR is meant to support vulnerable refugees, such as persons with specific needs, during the transitional period in which they will be able to access the new assistance programme set up by authorities. The financial assistance to be provided by UNHCR has been discussed and agreed with other relevant actors within the Cash Working Group, as well as the Basic Needs Working Group of the Inter-Agency coordination platform. UNHCR has started to prepare this one-off cash assistance launching a verification process intended to ascertain the presence in the country of refugees already enrolled in UNHCR’s cash programmes.</p>\n<p>UNHCR is raising awareness among refugee communities on the new government-supported programme. Over the past weeks, UNHCR and its partner CNRR organized two focus group discussions with 50 refugees in Baia Mare and Suceava respectively. During the discussions, refugees expressed potential challenges relating to the new programme particularly about potential rejection to open accounts with Romanian banks. UNHCR and partners are also providing counselling services in person and through hotlines and disseminating information through a dedicated Telegram channel. Through this platform, UNHCR disseminated inter alia, a governmental brochure explaining the new system. In 2023, a total of 28,348 refugees have been assisted with various protection services and legal support.</p>\n<p>On 19 April, UNHCR together with HEKS/EPER conducted a workshop for 16 refugees from Ukraine seeking start-up business in Romania.The workshop focused on how to prepare a business plan and apply for the start-up grants currently available through partners. Furthermore, UNHCR through partners continued to provide career coaching and counselling as well as language classes and trainings to refugees. So far in 2023, over 1,100 refugees have been assisted with livelihoods and employment services.</p>\n<p>During the last two weeks, UNHCR together with Sensiblu Foundation conducted five socialisation discussions focused on prevention of and response to gender-based violence in Bucharest, Suceava, Cluj, Galati and Constanta with the participation of nearly 170 refugee women, girls and boys. The discussion covered several topics, including mental health and abuse, issues among teenagers, gender equality, harassment and abuse in social media and in schools, and challenges accessing the labour market for women.</p>\n<p>This week, UNHCR in Galați distributed core-relief items (CRIs) to 600 Ukrainian refugees living in Năvodari, Constanța county. In 2023, UNHCR distributed 190,000 CRIs such as clothes, blankets, hygiene kits, cooking pots, water, etc.</p>\n"
+    }
+  },
+  "text": "# UNHCR Romania: Ukraine Refugee Situation Update, Update #44, 28 April 2023\n\n**Key figures**\n\n129,438 refugees granted temporary protection in Romania (as of 23 April 2023)\n\n101,341 refugees in Romania (as of 17 April 2023)\n\n18,984 refugees supported with cash assistance in 2023. 43,129 refugees supported in 2022.\n\n28,348 refugees provided with protection counselling services and legal support in 2023. 65,000 refugees assisted since 2022.\n\n1,140 refugees supported with livelihoods & employment services in 2023. \n\n**Highlight**\n\nOn 26 April, a new Government Decision established conditions and mechanisms for providing assistance to the refugees from Ukraine granted temporary protection in Romania. Through this programme, from 1 May Romanian authorities will provide each refugee family with 2,000 RON and single refugees with 750 RON per month to cover accommodation expenses. In addition, each refugee will receive 600 RON per month to cover food expenses. In the first month, the assistance will be granted without any condition other than having Temporary Protection in Romania. However, for subsequent three months it will be subject to registration for employment through the national employment agency (ANOFM) and enrolment of children in any of a variety of schools or educational programs. From the fifth month until the end of 2023, refugees will be eligible to receive funds for accommodation expenses only if they are employed and the children are enrolled into schools. Elderly people (above 65 years), persons with disability, care givers of children (below two years), and care givers of children with disability (below three years) have been exempted from employment and/or school enrolment requirements.\n\n**Response**\n\nTo support the most vulnerable refugees from Ukraine to transition to the new system, UNHCR is planning to assist 35,000 refugees with one instalment of multipurpose cash assistance (568 RON per person). Cash assistance provided by UNHCR is meant to support vulnerable refugees, such as persons with specific needs, during the transitional period in which they will be able to access the new assistance programme set up by authorities. The financial assistance to be provided by UNHCR has been discussed and agreed with other relevant actors within the Cash Working Group, as well as the Basic Needs Working Group of the Inter-Agency coordination platform. UNHCR has started to prepare this one-off cash assistance launching a verification process intended to ascertain the presence in the country of refugees already enrolled in UNHCR’s cash programmes.\n\nUNHCR is raising awareness among refugee communities on the new government-supported programme. Over the past weeks, UNHCR and its partner CNRR organized two focus group discussions with 50 refugees in Baia Mare and Suceava respectively. During the discussions, refugees expressed potential challenges relating to the new programme particularly about potential rejection to open accounts with Romanian banks. UNHCR and partners are also providing counselling services in person and through hotlines and disseminating information through a dedicated Telegram channel. Through this platform, UNHCR disseminated inter alia, a governmental brochure explaining the new system. In 2023, a total of 28,348 refugees have been assisted with various protection services and legal support.\n\nOn 19 April, UNHCR together with HEKS/EPER conducted a workshop for 16 refugees from Ukraine seeking start-up business in Romania.The workshop focused on how to prepare a business plan and apply for the start-up grants currently available through partners. Furthermore, UNHCR through partners continued to provide career coaching and counselling as well as language classes and trainings to refugees. So far in 2023, over 1,100 refugees have been assisted with livelihoods and employment services.\n\nDuring the last two weeks, UNHCR together with Sensiblu Foundation conducted five socialisation discussions focused on prevention of and response to gender-based violence in Bucharest, Suceava, Cluj, Galati and Constanta with the participation of nearly 170 refugee women, girls and boys. The discussion covered several topics, including mental health and abuse, issues among teenagers, gender equality, harassment and abuse in social media and in schools, and challenges accessing the labour market for women.\n\nThis week, UNHCR in Galați distributed core-relief items (CRIs) to 600 Ukrainian refugees living in Năvodari, Constanța county. In 2023, UNHCR distributed 190,000 CRIs such as clothes, blankets, hygiene kits, cooking pots, water, etc.",
+  "summary": "\n\nAs of April 2023, 129,438 refugees from Ukraine have been granted temporary protection in Romania, with 101,341 refugees currently in the country. The Romanian government has established a programme to provide refugees with monthly cash assistance to cover accommodation and food expenses, with exemptions for elderly people, persons with disabilities, and care givers of children. UNHCR is providing additional assistance to 35,000 refugees, as well as career coaching, language classes, and trainings. They are also raising awareness of the new programme and providing protection services and legal support to 28,348 refugees. In addition, UNHCR has distributed 190,000 core-relief items to refugees in Romania.",
+  "metadata": {
+    "id": "3957393",
+    "name": "UNHCR Romania: Ukraine Refugee Situation Update, Update #44, 28 April 2023",
+    "date_original": 1682899200000,
+    "date_changed": 1682958226000,
+    "date_created": 1682952732000,
+    "primary_country_id": 196,
+    "primary_country_name": "Romania",
+    "primary_country_iso3": "rou",
+    "primary_country_location": {
+      "lon": 24.9668,
+      "lat": 45.9432
+    }
+  }
+}

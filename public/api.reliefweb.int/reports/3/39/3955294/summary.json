@@ -1,0 +1,133 @@
+{
+  "original": {
+    "id": "3955294",
+    "fields": {
+      "date": {
+        "changed": "2023-04-24T04:48:56+00:00",
+        "created": "2023-04-24T03:38:24+00:00",
+        "original": "2023-04-24T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/168",
+          "name": "Nepal",
+          "location": {
+            "lon": 83.94,
+            "lat": 28.25
+          },
+          "id": 168,
+          "shortname": "Nepal",
+          "iso3": "npl",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/168",
+        "name": "Nepal",
+        "location": {
+          "lon": 83.94,
+          "lat": 28.25
+        },
+        "id": 168,
+        "shortname": "Nepal",
+        "iso3": "npl"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1275",
+          "longname": "World Health Organization",
+          "spanish_name": "Organización Mundial de la Salud",
+          "name": "World Health Organization",
+          "id": 1275,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WHO",
+          "homepage": "http://www.who.int/"
+        }
+      ],
+      "title": "Focused COVID-19 Media Monitoring, Nepal (April 24, 2023) [EN/NE]",
+      "body": "**Emerging Theme(s):**\n\n-   The government is launching a week-long immunization campaign from April 24 targeting those children who are deprived of immunization.\n\n**Recurring Theme(s):**\n\n-   81 new coronavirus cases have been confirmed in the last 24 hours. Currently, there are 370 active cases in the country.\n-   The health condition of President Ramchandra Paudel, who is receiving treatment in New Delhi, India, has improved gradually.",
+      "url": "https://reliefweb.int/node/3955294",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/e5/bd/e5bda66a-bb38-4a9e-b6fd-2efc45c6ac3f.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/e5/bd/e5bda66a-bb38-4a9e-b6fd-2efc45c6ac3f.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/e5/bd/e5bda66a-bb38-4a9e-b6fd-2efc45c6ac3f.png",
+            "version": "2414213-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/e5/bd/e5bda66a-bb38-4a9e-b6fd-2efc45c6ac3f.png"
+          },
+          "filename": "Focused COVID-19 and Health Media Monitoring_Nepal_(English)_24th April.pdf",
+          "description": "English version",
+          "mimetype": "application/pdf",
+          "id": "2414213",
+          "filesize": "317520",
+          "url": "https://reliefweb.int/attachments/e5bda66a-bb38-4a9e-b6fd-2efc45c6ac3f/Focused%20COVID-19%20and%20Health%20Media%20Monitoring_Nepal_%28English%29_24th%20April.pdf"
+        },
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/51/11/51117d5e-d256-4e18-93b3-06c8b61f3a8e.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/51/11/51117d5e-d256-4e18-93b3-06c8b61f3a8e.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/51/11/51117d5e-d256-4e18-93b3-06c8b61f3a8e.png",
+            "version": "2414215-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/51/11/51117d5e-d256-4e18-93b3-06c8b61f3a8e.png"
+          },
+          "filename": "Focused COVID-19 and Health Media Monitoring Nepal (Nepali)-24th April.pdf",
+          "description": "Nepali version",
+          "mimetype": "application/pdf",
+          "id": "2414215",
+          "filesize": "415027",
+          "url": "https://reliefweb.int/attachments/51117d5e-d256-4e18-93b3-06c8b61f3a8e/Focused%20COVID-19%20and%20Health%20Media%20Monitoring%20Nepal%20%28Nepali%29-24th%20April.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/nepal/focused-covid-19-media-monitoring-nepal-april-24-2023-enne",
+      "theme": [
+        {
+          "name": "Health",
+          "id": 4595
+        }
+      ],
+      "id": 3955294,
+      "status": "published",
+      "body-html": "<p><strong>Emerging Theme(s):</strong></p>\n<ul>\n<li>The government is launching a week-long immunization campaign from April 24 targeting those children who are deprived of immunization.</li>\n</ul>\n<p><strong>Recurring Theme(s):</strong></p>\n<ul>\n<li>81 new coronavirus cases have been confirmed in the last 24 hours. Currently, there are 370 active cases in the country.</li>\n<li>The health condition of President Ramchandra Paudel, who is receiving treatment in New Delhi, India, has improved gradually.</li>\n</ul>\n"
+    }
+  },
+  "text": "# Focused COVID-19 Media Monitoring, Nepal (April 24, 2023) [EN/NE]\n\n**Emerging Theme(s):**\n\n-   The government is launching a week-long immunization campaign from April 24 targeting those children who are deprived of immunization.\n\n**Recurring Theme(s):**\n\n-   81 new coronavirus cases have been confirmed in the last 24 hours. Currently, there are 370 active cases in the country.\n-   The health condition of President Ramchandra Paudel, who is receiving treatment in New Delhi, India, has improved gradually.",
+  "summary": " The Nepalese government is launching a week-long immunization campaign targeting deprived children, while 81 new coronavirus cases have been confirmed in the last 24 hours. There are currently 370 active cases in the country, and the health condition of President Ramchandra Paudel, who is receiving treatment in India, has improved gradually.",
+  "metadata": {
+    "id": "3955294",
+    "name": "Focused COVID-19 Media Monitoring, Nepal (April 24, 2023) [EN/NE]",
+    "date_original": 1682294400000,
+    "date_changed": 1682311736000,
+    "date_created": 1682307504000,
+    "primary_country_id": 168,
+    "primary_country_name": "Nepal",
+    "primary_country_iso3": "npl",
+    "primary_country_location": {
+      "lon": 83.94,
+      "lat": 28.25
+    }
+  }
+}

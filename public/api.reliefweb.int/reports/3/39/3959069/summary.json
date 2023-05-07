@@ -1,0 +1,141 @@
+{
+  "original": {
+    "id": "3959069",
+    "fields": {
+      "date": {
+        "changed": "2023-05-05T14:05:36+00:00",
+        "created": "2023-05-05T12:51:47+00:00",
+        "original": "2023-05-05T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/46",
+          "name": "Burkina Faso",
+          "location": {
+            "lon": -1.57,
+            "lat": 12.28
+          },
+          "id": 46,
+          "shortname": "Burkina Faso",
+          "iso3": "bfa",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/46",
+        "name": "Burkina Faso",
+        "location": {
+          "lon": -1.57,
+          "lat": 12.28
+        },
+        "id": 46,
+        "shortname": "Burkina Faso",
+        "iso3": "bfa"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1979",
+          "longname": "United Nations Children's Fund",
+          "spanish_name": "Fondo de las Naciones Unidas para la Infancia",
+          "name": "UN Children's Fund",
+          "id": 1979,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNICEF",
+          "homepage": "http://www.unicef.org"
+        }
+      ],
+      "title": "UNICEF Burkina Faso Humanitarian Situation Report No. 3: March 2023",
+      "body": "**Highlights**\n\n·UNICEF provided access to safe water for drinking, cooking, and personal hygiene to 37,501 people, including 22,077 children, in the Est, Nord, Sahel and Centre-Nord regions. UNICEF supported the distribution of safe water to 202 households, which benefited approximately 1,415 people, including 827 children.\n\n·27,563 children under 5 years of age were treated for malaria, diarrhea and pneumonia at the community level in the most affected by humanitarian crisis.\n\n·19,011 children aged 0-59 months were vaccinated in the Sahel and Est regions, including 12,019 children vaccinated against measles.\n\n·267 mothers and newborns were visited at home by community-based health workers (CBHWs) in Titao health district (an area where access to vulnerable populations is limited because of security crisis)\n\n·7,562 new children suffering from severe wasting were treated, including 929 children at community level with simplified approaches.",
+      "url": "https://reliefweb.int/node/3959069",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/80/aa/80aab007-16b8-4f54-b902-c32d49d4aa95.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/80/aa/80aab007-16b8-4f54-b902-c32d49d4aa95.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/80/aa/80aab007-16b8-4f54-b902-c32d49d4aa95.png",
+            "version": "2417770-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/80/aa/80aab007-16b8-4f54-b902-c32d49d4aa95.png"
+          },
+          "filename": "UNICEF Burkina Faso Humanitarian Situation Report No. 3 - March 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2417770",
+          "filesize": "3337638",
+          "url": "https://reliefweb.int/attachments/80aab007-16b8-4f54-b902-c32d49d4aa95/UNICEF%20Burkina%20Faso%20Humanitarian%20Situation%20Report%20No.%203%20-%20March%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/burkina-faso/unicef-burkina-faso-humanitarian-situation-report-no-3-march-2023",
+      "theme": [
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3959069,
+      "status": "published",
+      "body-html": "<p><strong>Highlights</strong></p>\n<p>·UNICEF provided access to safe water for drinking, cooking, and personal hygiene to 37,501 people, including 22,077 children, in the Est, Nord, Sahel and Centre-Nord regions. UNICEF supported the distribution of safe water to 202 households, which benefited approximately 1,415 people, including 827 children.</p>\n<p>·27,563 children under 5 years of age were treated for malaria, diarrhea and pneumonia at the community level in the most affected by humanitarian crisis.</p>\n<p>·19,011 children aged 0-59 months were vaccinated in the Sahel and Est regions, including 12,019 children vaccinated against measles.</p>\n<p>·267 mothers and newborns were visited at home by community-based health workers (CBHWs) in Titao health district (an area where access to vulnerable populations is limited because of security crisis)</p>\n<p>·7,562 new children suffering from severe wasting were treated, including 929 children at community level with simplified approaches.</p>\n"
+    }
+  },
+  "text": "# UNICEF Burkina Faso Humanitarian Situation Report No. 3: March 2023\n\n**Highlights**\n\n·UNICEF provided access to safe water for drinking, cooking, and personal hygiene to 37,501 people, including 22,077 children, in the Est, Nord, Sahel and Centre-Nord regions. UNICEF supported the distribution of safe water to 202 households, which benefited approximately 1,415 people, including 827 children.\n\n·27,563 children under 5 years of age were treated for malaria, diarrhea and pneumonia at the community level in the most affected by humanitarian crisis.\n\n·19,011 children aged 0-59 months were vaccinated in the Sahel and Est regions, including 12,019 children vaccinated against measles.\n\n·267 mothers and newborns were visited at home by community-based health workers (CBHWs) in Titao health district (an area where access to vulnerable populations is limited because of security crisis)\n\n·7,562 new children suffering from severe wasting were treated, including 929 children at community level with simplified approaches.",
+  "summary": " UNICEF provided access to safe water, treated 27,563 children under 5 for malaria, diarrhea and pneumonia, vaccinated 19,011 children aged 0-59 months against measles, and visited 267 mothers and newborns at home in Titao health district. Additionally, 7,562 new children suffering from severe wasting were treated, including 929 children at community level with simplified approaches.",
+  "metadata": {
+    "id": "3959069",
+    "name": "UNICEF Burkina Faso Humanitarian Situation Report No. 3: March 2023",
+    "date_original": 1683244800000,
+    "date_changed": 1683295536000,
+    "date_created": 1683291107000,
+    "primary_country_id": 46,
+    "primary_country_name": "Burkina Faso",
+    "primary_country_iso3": "bfa",
+    "primary_country_location": {
+      "lon": -1.57,
+      "lat": 12.28
+    }
+  }
+}

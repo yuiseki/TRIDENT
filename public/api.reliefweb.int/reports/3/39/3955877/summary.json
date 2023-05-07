@@ -1,0 +1,144 @@
+{
+  "original": {
+    "id": "3955877",
+    "fields": {
+      "date": {
+        "changed": "2023-04-25T18:31:40+00:00",
+        "created": "2023-04-25T15:41:45+00:00",
+        "original": "2023-04-25T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/8657",
+          "name": "South Sudan",
+          "location": {
+            "lon": 30.5,
+            "lat": 6.9
+          },
+          "id": 8657,
+          "shortname": "South Sudan",
+          "iso3": "ssd",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/220",
+          "name": "Sudan",
+          "location": {
+            "lon": 30,
+            "lat": 15
+          },
+          "id": 220,
+          "shortname": "Sudan",
+          "iso3": "sdn"
+        }
+      ],
+      "ocha_product": [
+        {
+          "name": "Flash Update",
+          "id": 14471
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/8657",
+        "name": "South Sudan",
+        "location": {
+          "lon": 30.5,
+          "lat": 6.9
+        },
+        "id": 8657,
+        "shortname": "South Sudan",
+        "iso3": "ssd"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1503",
+          "longname": "United Nations Office for the Coordination of Humanitarian Affairs",
+          "spanish_name": "Oficina de Coordinación de Asuntos Humanitarios",
+          "name": "UN Office for the Coordination of Humanitarian Affairs",
+          "id": 1503,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "OCHA",
+          "disclaimer": "To learn more about OCHA's activities, please visit https://www.unocha.org/.",
+          "homepage": "http://www.unocha.org/"
+        }
+      ],
+      "title": "Impact of Sudan Crisis on South Sudan Flash Update No. 1 (As of 25 April 2023)",
+      "body": "**HIGHLIGHTS**\n\n-   Fighting between the Sudanese Armed Forces (SAF) and the Rapid Support Forces (RSF) entered its tenth consecutive day on 25 April. The death toll from the conflict continues to rise.\n    \n-   The Sudan clashes are likely to affect the humanitarian situation in South Sudan as civilians are fleeing to Chad, Egypt and South Sudan – possibly increasing the number of refugees and South Sudanese returnees.\n    \n-   According to IOM/Displacement Tracking Matrix (DTM) and UNHCR figures, cumulatively, nearly 4,000 people have been registered moving from Sudan to South Sudan as of 24 April.\n    \n-   Humanitarian partners in South Sudan are scaling up their presence in key response areas and preparing an emergency response to address the needs of the most vulnerable people.\n\n**SITUATION OVERVIEW**\n\nClashes between the Sudanese Armed Forces (SAF) and the Rapid Support Forces (RSF) erupted in Khartoum, Sudan on 15 April 2023. Despite high-level calls for a ceasefire, clashes between the warring parties have continued as of 24 April.\n\nThe death toll from the conflict continues to rise, with over 427 people killed and over 3,700 injured as of 23 April according to WHO reports. To date, five humanitarian workers have been killed, according to the information available. Offices and assets of international and humanitarian organizations have been looted, compromising humanitarian action in key areas of the country. Acute shortages of food, water, medicines and fuel and limited access to communications and electricity continue to be reported. Several humanitarian organizations have evacuated or relocated their staff from locations where operations are not feasible currently due to insecurity. Efforts are ongoing to respond wherever and whenever feasible. Increased internal displacement is being reported in multiple locations across Khartoum State and other areas in Sudan. Affected civilians are also fleeing to Chad, Egypt and South Sudan.\n\n**HUMANITARIAN SITUATION / RESPONSE IN SOUTH SUDAN**\n\nSince the fighting erupted in Sudan on 15 April, people started arriving in South Sudan in small groups. As of 24 April, IOM/DTM and UNHCR teams have recorded nearly 4,000 individuals arriving from various neighbourhoods in Sudan to South Sudan through Renk (Upper Nile), Aweil (Northern Bahr el Ghazal) and Rotriak (Unity). Six refugee returnee households comprising 16 people arrived at the Majokyithiou entry point on 24 April. Their properties were reportedly looted at gunpoint. A Sudanese refugee household comprising six people also arrived at Majokyithiou from El Obeid. Humanitarian teams in Renk and partner organizations are verifying the numbers and working on criteria for determining vulnerabilities, as they observe more arrivals of vulnerable people, including women and children travelling alone. The new arrivals are in need of food and health screenings. There is a critical need to set up telecommunications.",
+      "url": "https://reliefweb.int/node/3955877",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/d0/eb/d0eb7610-dc0f-454b-80e9-3d4af481bf45.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/d0/eb/d0eb7610-dc0f-454b-80e9-3d4af481bf45.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/d0/eb/d0eb7610-dc0f-454b-80e9-3d4af481bf45.png",
+            "version": "2414643-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/d0/eb/d0eb7610-dc0f-454b-80e9-3d4af481bf45.png"
+          },
+          "filename": "Flash_Impact Sudan Fighting FINAL 25 April 2023 .pdf",
+          "mimetype": "application/pdf",
+          "id": "2414643",
+          "filesize": "319118",
+          "url": "https://reliefweb.int/attachments/d0eb7610-dc0f-454b-80e9-3d4af481bf45/Flash_Impact%20Sudan%20Fighting%20FINAL%2025%20April%202023%20.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/south-sudan/impact-sudan-crisis-south-sudan-flash-update-no-1-25-april-2023",
+      "theme": [
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Safety and Security",
+          "id": 4602
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3955877,
+      "status": "published",
+      "body-html": "<p><strong>HIGHLIGHTS</strong></p>\n<ul>\n<li>\n<p>Fighting between the Sudanese Armed Forces (SAF) and the Rapid Support Forces (RSF) entered its tenth consecutive day on 25 April. The death toll from the conflict continues to rise.</p>\n</li>\n<li>\n<p>The Sudan clashes are likely to affect the humanitarian situation in South Sudan as civilians are fleeing to Chad, Egypt and South Sudan – possibly increasing the number of refugees and South Sudanese returnees.</p>\n</li>\n<li>\n<p>According to IOM/Displacement Tracking Matrix (DTM) and UNHCR figures, cumulatively, nearly 4,000 people have been registered moving from Sudan to South Sudan as of 24 April.</p>\n</li>\n<li>\n<p>Humanitarian partners in South Sudan are scaling up their presence in key response areas and preparing an emergency response to address the needs of the most vulnerable people.</p>\n</li>\n</ul>\n<p><strong>SITUATION OVERVIEW</strong></p>\n<p>Clashes between the Sudanese Armed Forces (SAF) and the Rapid Support Forces (RSF) erupted in Khartoum, Sudan on 15 April 2023. Despite high-level calls for a ceasefire, clashes between the warring parties have continued as of 24 April.</p>\n<p>The death toll from the conflict continues to rise, with over 427 people killed and over 3,700 injured as of 23 April according to WHO reports. To date, five humanitarian workers have been killed, according to the information available. Offices and assets of international and humanitarian organizations have been looted, compromising humanitarian action in key areas of the country. Acute shortages of food, water, medicines and fuel and limited access to communications and electricity continue to be reported. Several humanitarian organizations have evacuated or relocated their staff from locations where operations are not feasible currently due to insecurity. Efforts are ongoing to respond wherever and whenever feasible. Increased internal displacement is being reported in multiple locations across Khartoum State and other areas in Sudan. Affected civilians are also fleeing to Chad, Egypt and South Sudan.</p>\n<p><strong>HUMANITARIAN SITUATION / RESPONSE IN SOUTH SUDAN</strong></p>\n<p>Since the fighting erupted in Sudan on 15 April, people started arriving in South Sudan in small groups. As of 24 April, IOM/DTM and UNHCR teams have recorded nearly 4,000 individuals arriving from various neighbourhoods in Sudan to South Sudan through Renk (Upper Nile), Aweil (Northern Bahr el Ghazal) and Rotriak (Unity). Six refugee returnee households comprising 16 people arrived at the Majokyithiou entry point on 24 April. Their properties were reportedly looted at gunpoint. A Sudanese refugee household comprising six people also arrived at Majokyithiou from El Obeid. Humanitarian teams in Renk and partner organizations are verifying the numbers and working on criteria for determining vulnerabilities, as they observe more arrivals of vulnerable people, including women and children travelling alone. The new arrivals are in need of food and health screenings. There is a critical need to set up telecommunications.</p>\n"
+    }
+  },
+  "text": "# Impact of Sudan Crisis on South Sudan Flash Update No. 1 (As of 25 April 2023)\n\n**HIGHLIGHTS**\n\n-   Fighting between the Sudanese Armed Forces (SAF) and the Rapid Support Forces (RSF) entered its tenth consecutive day on 25 April. The death toll from the conflict continues to rise.\n    \n-   The Sudan clashes are likely to affect the humanitarian situation in South Sudan as civilians are fleeing to Chad, Egypt and South Sudan – possibly increasing the number of refugees and South Sudanese returnees.\n    \n-   According to IOM/Displacement Tracking Matrix (DTM) and UNHCR figures, cumulatively, nearly 4,000 people have been registered moving from Sudan to South Sudan as of 24 April.\n    \n-   Humanitarian partners in South Sudan are scaling up their presence in key response areas and preparing an emergency response to address the needs of the most vulnerable people.\n\n**SITUATION OVERVIEW**\n\nClashes between the Sudanese Armed Forces (SAF) and the Rapid Support Forces (RSF) erupted in Khartoum, Sudan on 15 April 2023. Despite high-level calls for a ceasefire, clashes between the warring parties have continued as of 24 April.\n\nThe death toll from the conflict continues to rise, with over 427 people killed and over 3,700 injured as of 23 April according to WHO reports. To date, five humanitarian workers have been killed, according to the information available. Offices and assets of international and humanitarian organizations have been looted, compromising humanitarian action in key areas of the country. Acute shortages of food, water, medicines and fuel and limited access to communications and electricity continue to be reported. Several humanitarian organizations have evacuated or relocated their staff from locations where operations are not feasible currently due to insecurity. Efforts are ongoing to respond wherever and whenever feasible. Increased internal displacement is being reported in multiple locations across Khartoum State and other areas in Sudan. Affected civilians are also fleeing to Chad, Egypt and South Sudan.\n\n**HUMANITARIAN SITUATION / RESPONSE IN SOUTH SUDAN**\n\nSince the fighting erupted in Sudan on 15 April, people started arriving in South Sudan in small groups. As of 24 April, IOM/DTM and UNHCR teams have recorded nearly 4,000 individuals arriving from various neighbourhoods in Sudan to South Sudan through Renk (Upper Nile), Aweil (Northern Bahr el Ghazal) and Rotriak (Unity). Six refugee returnee households comprising 16 people arrived at the Majokyithiou entry point on 24 April. Their properties were reportedly looted at gunpoint. A Sudanese refugee household comprising six people also arrived at Majokyithiou from El Obeid. Humanitarian teams in Renk and partner organizations are verifying the numbers and working on criteria for determining vulnerabilities, as they observe more arrivals of vulnerable people, including women and children travelling alone. The new arrivals are in need of food and health screenings. There is a critical need to set up telecommunications.",
+  "summary": "\n\nFighting between the Sudanese Armed Forces (SAF) and the Rapid Support Forces (RSF) has been ongoing since April 15th, 2023, resulting in over 427 deaths and 3,700 injuries. Civilians are fleeing to Chad, Egypt and South Sudan, with nearly 4,000 people registered moving from Sudan to South Sudan as of 24 April. Humanitarian partners in South Sudan are scaling up their presence in key response areas and preparing an emergency response to address the needs of the most vulnerable people. The new arrivals are in need of food and health screenings.",
+  "metadata": {
+    "id": "3955877",
+    "name": "Impact of Sudan Crisis on South Sudan Flash Update No. 1 (As of 25 April 2023)",
+    "date_original": 1682380800000,
+    "date_changed": 1682447500000,
+    "date_created": 1682437305000,
+    "primary_country_id": 8657,
+    "primary_country_name": "South Sudan",
+    "primary_country_iso3": "ssd",
+    "primary_country_location": {
+      "lon": 30.5,
+      "lat": 6.9
+    }
+  }
+}

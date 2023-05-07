@@ -1,0 +1,123 @@
+{
+  "original": {
+    "id": "3957832",
+    "fields": {
+      "date": {
+        "changed": "2023-05-02T16:57:28+00:00",
+        "created": "2023-05-02T16:55:53+00:00",
+        "original": "2023-05-02T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/120",
+          "name": "Indonesia",
+          "location": {
+            "lon": 117.37,
+            "lat": -2.28
+          },
+          "id": 120,
+          "shortname": "Indonesia",
+          "iso3": "idn",
+          "primary": true
+        }
+      ],
+      "origin": "https://www.preventionweb.net/publication/indonesia-country-climate-and-development-report",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/120",
+        "name": "Indonesia",
+        "location": {
+          "lon": 117.37,
+          "lat": -2.28
+        },
+        "id": 120,
+        "shortname": "Indonesia",
+        "iso3": "idn"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1220",
+          "longname": "The World Bank Group",
+          "spanish_name": "Banco Mundial",
+          "name": "World Bank",
+          "id": 1220,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "World Bank",
+          "homepage": "http://www.worldbank.org"
+        }
+      ],
+      "title": "Indonesia: Country Climate and Development Report (April 2023)",
+      "body": "Climate challenges in Indonesia are intertwined with the country’s growth and development trajectories. Chapter 1 of Indonesia’s Country Climate and Development Report (CCDR) takes a historical look at climate and development challenges in Indonesia to: (i) present a baseline for the future low-carbon and climate-resilient journey; and (ii) develop a framework to illustrate climate-growth dynamics. The framework is centered around Indonesia’s abundant supply of carbon-intensive natural resources–land and energy–matched by high demand for those resources in parts of the economy that drive growth–agriculture, urban expansion, industry, transportation, and trade. The resulting emissions have direct and indirect costs. They erode climate resilience and increase costs from climate shocks. Rising carbon content in the economy also imposes sunk costs for the low-carbon transition. Although these challenges are known, and efforts are being made to tackle them, the framework aims to link these economy-wide issues to the ongoing and future reforms that are discussed later in the CCDR.  \n\nIndonesia has made important commitments to meet its climate and development targets. Ongoing efforts are starting to pay dividends in slowing greenhouse gas (GHG) emissions, maintaining growth, and strengthening economic and social resilience. The transition involves trade-offs between climate actions and near-term development priorities‒especially as Indonesia’s strong track record of growth and poverty reduction was thanks in part to its natural resource endowments‒including coal, oil, forests, and peatlands. Indonesia has set out a new path in its Long-Term Strategy for Low Carbon and Climate Resilience (LTS-LCCR) 2050 to sustain and potentially accelerate its economic transformation from a middle- to high-income country. As stated in the Low Carbon Development Initiative (LCDI), Indonesia is looking for ways to “maintain economic and social growth through development activities with low GHG emissions and minimizing the exploitation of natural resources” (Bappenas 2021).  \nThe CCDR does not take a position on Indonesia’s climate commitments.  \n\nIndonesia has been clear in its Enhanced Nationally Determined Contribution (NDC) (Republic of Indonesia 2022) and its LTS-LCCR (Republic of Indonesia 2021) on the emissions reductions it intends to achieve with and without international support.1 Similarly, Indonesia has set out clear development goals, as per its national medium-term and long-term development plans (Rencana Pembangunan Jangka Menengah Nasional: RPJMN and Rencana Pembangunan Jangka Panjang Nasional: RPJPN), toward achieving high-income status by 2045. New medium- and long-term plans are now under development‒with the mainstreaming of climate measures a priority. In line with this policy focus, the intent of the CCDR is to assess how Indonesia can achieve its climate goals while maximizing its development outcomes.",
+      "url": "https://reliefweb.int/node/3957832",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/9e/2f/9e2faad6-05e3-40d8-9bd0-948a821faf66.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/9e/2f/9e2faad6-05e3-40d8-9bd0-948a821faf66.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/9e/2f/9e2faad6-05e3-40d8-9bd0-948a821faf66.png",
+            "version": "2416481-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/9e/2f/9e2faad6-05e3-40d8-9bd0-948a821faf66.png"
+          },
+          "filename": "P17724501e40e50940a6ae035cd74193a44.pdf",
+          "mimetype": "application/pdf",
+          "id": "2416481",
+          "filesize": "19808087",
+          "url": "https://reliefweb.int/attachments/9e2faad6-05e3-40d8-9bd0-948a821faf66/P17724501e40e50940a6ae035cd74193a44.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/indonesia/indonesia-country-climate-and-development-report-april-2023",
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        },
+        {
+          "name": "Climate Change and Environment",
+          "id": 4588
+        },
+        {
+          "name": "Disaster Management",
+          "id": 4591
+        },
+        {
+          "name": "Recovery and Reconstruction",
+          "id": 4601
+        }
+      ],
+      "id": 3957832,
+      "status": "published",
+      "body-html": "<p>Climate challenges in Indonesia are intertwined with the country’s growth and development trajectories. Chapter 1 of Indonesia’s Country Climate and Development Report (CCDR) takes a historical look at climate and development challenges in Indonesia to: (i) present a baseline for the future low-carbon and climate-resilient journey; and (ii) develop a framework to illustrate climate-growth dynamics. The framework is centered around Indonesia’s abundant supply of carbon-intensive natural resources–land and energy–matched by high demand for those resources in parts of the economy that drive growth–agriculture, urban expansion, industry, transportation, and trade. The resulting emissions have direct and indirect costs. They erode climate resilience and increase costs from climate shocks. Rising carbon content in the economy also imposes sunk costs for the low-carbon transition. Although these challenges are known, and efforts are being made to tackle them, the framework aims to link these economy-wide issues to the ongoing and future reforms that are discussed later in the CCDR.</p>\n<p>Indonesia has made important commitments to meet its climate and development targets. Ongoing efforts are starting to pay dividends in slowing greenhouse gas (GHG) emissions, maintaining growth, and strengthening economic and social resilience. The transition involves trade-offs between climate actions and near-term development priorities‒especially as Indonesia’s strong track record of growth and poverty reduction was thanks in part to its natural resource endowments‒including coal, oil, forests, and peatlands. Indonesia has set out a new path in its Long-Term Strategy for Low Carbon and Climate Resilience (LTS-LCCR) 2050 to sustain and potentially accelerate its economic transformation from a middle- to high-income country. As stated in the Low Carbon Development Initiative (LCDI), Indonesia is looking for ways to “maintain economic and social growth through development activities with low GHG emissions and minimizing the exploitation of natural resources” (Bappenas 2021).<br />\nThe CCDR does not take a position on Indonesia’s climate commitments.</p>\n<p>Indonesia has been clear in its Enhanced Nationally Determined Contribution (NDC) (Republic of Indonesia 2022) and its LTS-LCCR (Republic of Indonesia 2021) on the emissions reductions it intends to achieve with and without international support.1 Similarly, Indonesia has set out clear development goals, as per its national medium-term and long-term development plans (Rencana Pembangunan Jangka Menengah Nasional: RPJMN and Rencana Pembangunan Jangka Panjang Nasional: RPJPN), toward achieving high-income status by 2045. New medium- and long-term plans are now under development‒with the mainstreaming of climate measures a priority. In line with this policy focus, the intent of the CCDR is to assess how Indonesia can achieve its climate goals while maximizing its development outcomes.</p>\n"
+    }
+  },
+  "text": "# Indonesia: Country Climate and Development Report (April 2023)\n\nClimate challenges in Indonesia are intertwined with the country’s growth and development trajectories. Chapter 1 of Indonesia’s Country Climate and Development Report (CCDR) takes a historical look at climate and development challenges in Indonesia to: (i) present a baseline for the future low-carbon and climate-resilient journey; and (ii) develop a framework to illustrate climate-growth dynamics. The framework is centered around Indonesia’s abundant supply of carbon-intensive natural resources–land and energy–matched by high demand for those resources in parts of the economy that drive growth–agriculture, urban expansion, industry, transportation, and trade. The resulting emissions have direct and indirect costs. They erode climate resilience and increase costs from climate shocks. Rising carbon content in the economy also imposes sunk costs for the low-carbon transition. Although these challenges are known, and efforts are being made to tackle them, the framework aims to link these economy-wide issues to the ongoing and future reforms that are discussed later in the CCDR.  \n\nIndonesia has made important commitments to meet its climate and development targets. Ongoing efforts are starting to pay dividends in slowing greenhouse gas (GHG) emissions, maintaining growth, and strengthening economic and social resilience. The transition involves trade-offs between climate actions and near-term development priorities‒especially as Indonesia’s strong track record of growth and poverty reduction was thanks in part to its natural resource endowments‒including coal, oil, forests, and peatlands. Indonesia has set out a new path in its Long-Term Strategy for Low Carbon and Climate Resilience (LTS-LCCR) 2050 to sustain and potentially accelerate its economic transformation from a middle- to high-income country. As stated in the Low Carbon Development Initiative (LCDI), Indonesia is looking for ways to “maintain economic and social growth through development activities with low GHG emissions and minimizing the exploitation of natural resources” (Bappenas 2021).  \nThe CCDR does not take a position on Indonesia’s climate commitments.  \n\nIndonesia has been clear in its Enhanced Nationally Determined Contribution (NDC) (Republic of Indonesia 2022) and its LTS-LCCR (Republic of Indonesia 2021) on the emissions reductions it intends to achieve with and without international support.1 Similarly, Indonesia has set out clear development goals, as per its national medium-term and long-term development plans (Rencana Pembangunan Jangka Menengah Nasional: RPJMN and Rencana Pembangunan Jangka Panjang Nasional: RPJPN), toward achieving high-income status by 2045. New medium- and long-term plans are now under development‒with the mainstreaming of climate measures a priority. In line with this policy focus, the intent of the CCDR is to assess how Indonesia can achieve its climate goals while maximizing its development outcomes.",
+  "summary": " Indonesia's Country Climate and Development Report (CCDR) takes a historical look at climate and development challenges in the country to create a framework to illustrate climate-growth dynamics. Indonesia has made commitments to meet its climate and development targets, and is looking for ways to maintain economic and social growth with low GHG emissions. The CCDR does not take a position on Indonesia's climate commitments, but aims to assess how the country can achieve its climate goals while maximizing its development outcomes.",
+  "metadata": {
+    "id": "3957832",
+    "name": "Indonesia: Country Climate and Development Report (April 2023)",
+    "date_original": 1682985600000,
+    "date_changed": 1683046648000,
+    "date_created": 1683046553000,
+    "primary_country_id": 120,
+    "primary_country_name": "Indonesia",
+    "primary_country_iso3": "idn",
+    "primary_country_location": {
+      "lon": 117.37,
+      "lat": -2.28
+    }
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "original": {
+    "id": "3955959",
+    "fields": {
+      "date": {
+        "changed": "2023-04-25T19:51:31+00:00",
+        "created": "2023-04-25T19:13:07+00:00",
+        "original": "2023-04-25T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/64",
+          "name": "Colombia",
+          "location": {
+            "lon": -73.07,
+            "lat": 3.9
+          },
+          "id": 64,
+          "shortname": "Colombia",
+          "iso3": "col",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/64",
+        "name": "Colombia",
+        "location": {
+          "lon": -73.07,
+          "lat": 3.9
+        },
+        "id": 64,
+        "shortname": "Colombia",
+        "iso3": "col"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "VO",
+          "name": "Volcano",
+          "id": 4615
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1979",
+          "longname": "United Nations Children's Fund",
+          "spanish_name": "Fondo de las Naciones Unidas para la Infancia",
+          "name": "UN Children's Fund",
+          "id": 1979,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNICEF",
+          "homepage": "http://www.unicef.org"
+        }
+      ],
+      "title": "UNICEF Colombia Humanitarian Flash Note No. 1 (Nevado del Ruiz Volcano) for 22 April 2023.",
+      "body": "**Situation Overview**\n\n-   On March 30, the Colombian Geological Service (SGC) and the National Unit for Disaster Risk Management (UNGRD in Spanish) increased the activity level of the Nevado del Ruiz volcano to orange, indicating a stronger probability, than in the last decade, that in days or weeks to come it is more likely to erupt.\n    \n-   The National Unit for Disaster Risk Management (UNGRD in Spanish) activated risk management committees in 5 departments: Tolima, Caldas, Risaralda, Quindío, and Cundinamarca. The volcano's area of threat covers 22 municipalities in the above-mentioned departments, potentially affecting 57,000 people, of which an estimated 17,000 children and adolescents, 14,000 of them located in municipal capitals and 42,000 in dispersed rural zones.\n    \n-   The UNGRD requested the local governments of the areas at greatest risk to carry out the preventive evacuation of 2,500 families3. To date, the departments of Tolima,4 Caldas,5 and Risaralda6 have declared a public emergency.\n    \n-   On April 5, a meeting of the Humanitarian Country Team met with the UNGRD. Support from the international cooperation was requested for preparedness and response actions in the face of the threat of the volcano's activation.\n    \n-   The Colombian Institute of Family Welfare (ICBF in Spanish) has prepareda contingency plan, making available high-nutritional food stocks, 5 Mobile Units teams as well as additional personnel for the municipalities at risk.\n    \n-   The Ministry of Education identified 60 educational institutions located in the municipalities at risk and 55,000 students that could be affected. On April 5,10 it provided guidance to the Education Secretariats to activate the Comprehensive School Risk Management Committees (GIRE in Spanish), and stated that, as of Monday, April 10, 1,247 students from 54 schools in the departments of Tolima and Caldas, as well as Manizales, which are located in risk areas, would begin remote schooling from their homes. Measures to guaranteethe implementation of the school feeding program have been put in place.\n    \n-   The Ministry of Housing, City and Territory issued an information circular regarding the WASH sector measures to be implemented in the event of the possible eruption of the Nevado del Ruiz volcano.",
+      "url": "https://reliefweb.int/node/3955959",
+      "disaster": [
+        {
+          "name": "Colombia: Nevado del Ruiz Volcano - Apr 2023",
+          "id": 51550,
+          "glide": "VO-2023-000059-COL",
+          "type": [
+            {
+              "code": "VO",
+              "name": "Volcano",
+              "id": 4615,
+              "primary": true
+            }
+          ],
+          "status": "alert"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/94/11/941191fe-2f1c-48dc-8611-ad6f55d6db9f.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/94/11/941191fe-2f1c-48dc-8611-ad6f55d6db9f.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/94/11/941191fe-2f1c-48dc-8611-ad6f55d6db9f.png",
+            "version": "2414688-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/94/11/941191fe-2f1c-48dc-8611-ad6f55d6db9f.png"
+          },
+          "filename": "UNICEF Colombia Humanitarian Flash Note No. 1 (Nevado del Ruiz Volcano) - 22 April 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2414688",
+          "filesize": "464756",
+          "url": "https://reliefweb.int/attachments/941191fe-2f1c-48dc-8611-ad6f55d6db9f/UNICEF%20Colombia%20Humanitarian%20Flash%20Note%20No.%201%20%28Nevado%20del%20Ruiz%20Volcano%29%20-%2022%20April%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/colombia/unicef-colombia-humanitarian-flash-note-no-1-nevado-del-ruiz-volcano-22-april-2023",
+      "theme": [
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3955959,
+      "status": "published",
+      "body-html": "<p><strong>Situation Overview</strong></p>\n<ul>\n<li>\n<p>On March 30, the Colombian Geological Service (SGC) and the National Unit for Disaster Risk Management (UNGRD in Spanish) increased the activity level of the Nevado del Ruiz volcano to orange, indicating a stronger probability, than in the last decade, that in days or weeks to come it is more likely to erupt.</p>\n</li>\n<li>\n<p>The National Unit for Disaster Risk Management (UNGRD in Spanish) activated risk management committees in 5 departments: Tolima, Caldas, Risaralda, Quindío, and Cundinamarca. The volcano's area of threat covers 22 municipalities in the above-mentioned departments, potentially affecting 57,000 people, of which an estimated 17,000 children and adolescents, 14,000 of them located in municipal capitals and 42,000 in dispersed rural zones.</p>\n</li>\n<li>\n<p>The UNGRD requested the local governments of the areas at greatest risk to carry out the preventive evacuation of 2,500 families3. To date, the departments of Tolima,4 Caldas,5 and Risaralda6 have declared a public emergency.</p>\n</li>\n<li>\n<p>On April 5, a meeting of the Humanitarian Country Team met with the UNGRD. Support from the international cooperation was requested for preparedness and response actions in the face of the threat of the volcano's activation.</p>\n</li>\n<li>\n<p>The Colombian Institute of Family Welfare (ICBF in Spanish) has prepareda contingency plan, making available high-nutritional food stocks, 5 Mobile Units teams as well as additional personnel for the municipalities at risk.</p>\n</li>\n<li>\n<p>The Ministry of Education identified 60 educational institutions located in the municipalities at risk and 55,000 students that could be affected. On April 5,10 it provided guidance to the Education Secretariats to activate the Comprehensive School Risk Management Committees (GIRE in Spanish), and stated that, as of Monday, April 10, 1,247 students from 54 schools in the departments of Tolima and Caldas, as well as Manizales, which are located in risk areas, would begin remote schooling from their homes. Measures to guaranteethe implementation of the school feeding program have been put in place.</p>\n</li>\n<li>\n<p>The Ministry of Housing, City and Territory issued an information circular regarding the WASH sector measures to be implemented in the event of the possible eruption of the Nevado del Ruiz volcano.</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# UNICEF Colombia Humanitarian Flash Note No. 1 (Nevado del Ruiz Volcano) for 22 April 2023.\n\n**Situation Overview**\n\n-   On March 30, the Colombian Geological Service (SGC) and the National Unit for Disaster Risk Management (UNGRD in Spanish) increased the activity level of the Nevado del Ruiz volcano to orange, indicating a stronger probability, than in the last decade, that in days or weeks to come it is more likely to erupt.\n    \n-   The National Unit for Disaster Risk Management (UNGRD in Spanish) activated risk management committees in 5 departments: Tolima, Caldas, Risaralda, Quindío, and Cundinamarca. The volcano's area of threat covers 22 municipalities in the above-mentioned departments, potentially affecting 57,000 people, of which an estimated 17,000 children and adolescents, 14,000 of them located in municipal capitals and 42,000 in dispersed rural zones.\n    \n-   The UNGRD requested the local governments of the areas at greatest risk to carry out the preventive evacuation of 2,500 families3. To date, the departments of Tolima,4 Caldas,5 and Risaralda6 have declared a public emergency.\n    \n-   On April 5, a meeting of the Humanitarian Country Team met with the UNGRD. Support from the international cooperation was requested for preparedness and response actions in the face of the threat of the volcano's activation.\n    \n-   The Colombian Institute of Family Welfare (ICBF in Spanish) has prepareda contingency plan, making available high-nutritional food stocks, 5 Mobile Units teams as well as additional personnel for the municipalities at risk.\n    \n-   The Ministry of Education identified 60 educational institutions located in the municipalities at risk and 55,000 students that could be affected. On April 5,10 it provided guidance to the Education Secretariats to activate the Comprehensive School Risk Management Committees (GIRE in Spanish), and stated that, as of Monday, April 10, 1,247 students from 54 schools in the departments of Tolima and Caldas, as well as Manizales, which are located in risk areas, would begin remote schooling from their homes. Measures to guaranteethe implementation of the school feeding program have been put in place.\n    \n-   The Ministry of Housing, City and Territory issued an information circular regarding the WASH sector measures to be implemented in the event of the possible eruption of the Nevado del Ruiz volcano.",
+  "summary": " The Nevado del Ruiz volcano in Colombia has been upgraded to orange activity level, indicating a higher probability of eruption in the near future. This could potentially affect 57,000 people, including 17,000 children and adolescents. The UNGRD has requested the local governments to evacuate 2,500 families, and the ICBF has prepared a contingency plan with food stocks and Mobile Units teams. The Ministry of Education has identified 60 educational institutions and 55,000 students that could be affected, and the Ministry of Housing, City and Territory has issued an information circular regarding WASH sector measures.",
+  "metadata": {
+    "id": "3955959",
+    "name": "UNICEF Colombia Humanitarian Flash Note No. 1 (Nevado del Ruiz Volcano) for 22 April 2023.",
+    "date_original": 1682380800000,
+    "date_changed": 1682452291000,
+    "date_created": 1682449987000,
+    "primary_country_id": 64,
+    "primary_country_name": "Colombia",
+    "primary_country_iso3": "col",
+    "primary_country_location": {
+      "lon": -73.07,
+      "lat": 3.9
+    }
+  }
+}

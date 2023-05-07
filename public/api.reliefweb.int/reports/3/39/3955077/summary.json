@@ -1,0 +1,169 @@
+{
+  "original": {
+    "id": "3955077",
+    "fields": {
+      "date": {
+        "changed": "2023-04-21T17:01:56+00:00",
+        "created": "2023-04-21T17:01:18+00:00",
+        "original": "2023-04-21T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/236",
+          "name": "Türkiye",
+          "location": {
+            "lon": 35.18,
+            "lat": 39.06
+          },
+          "id": 236,
+          "shortname": "Türkiye",
+          "iso3": "tur",
+          "primary": true
+        }
+      ],
+      "origin": "https://www.who.int/europe/publications/i/item/WHO-EURO-2023-7145-46911-69105",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/236",
+        "name": "Türkiye",
+        "location": {
+          "lon": 35.18,
+          "lat": 39.06
+        },
+        "id": 236,
+        "shortname": "Türkiye",
+        "iso3": "tur"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EQ",
+          "name": "Earthquake",
+          "id": 4628
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1275",
+          "longname": "World Health Organization",
+          "spanish_name": "Organización Mundial de la Salud",
+          "name": "World Health Organization",
+          "id": 1275,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WHO",
+          "homepage": "http://www.who.int/"
+        }
+      ],
+      "title": "Türkiye earthquake: External situation report no. 7: 3 - 16 April 2023",
+      "body": "**Overview**\n\nMore than two months after the devastating earthquakes that struck the Kahramanmaraş province in Türkiye on 6 February and 20 February, a state of emergency remains in place for the 11 provinces directly affected by the earthquakes where 50 339 people lost their lives, including more than 6800 foreign nationals, mainly Syrians. \n\nTo date, there have been more than 22 500 aftershocks, and nearly 307 000 buildings and 893 000 independent units were damaged throughout the region. On 3 April, the AFAD declared six additional provinces, Bingöl, Kayseri, Mardin, Tunceli, Niğde and Batman, as “disaster areas affecting general life” due to the presence of moderately and heavily damaged buildings identified in a recent earthquake damage assessment.",
+      "url": "https://reliefweb.int/node/3955077",
+      "disaster": [
+        {
+          "name": "Türkiye: Floods - Mar 2023",
+          "id": 51529,
+          "glide": "FL-2023-000040-TUR",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Türkiye/Syria: Earthquakes - Feb 2023",
+          "id": 51470,
+          "glide": "EQ-2023-000015-TUR",
+          "type": [
+            {
+              "code": "EQ",
+              "name": "Earthquake",
+              "id": 4628,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/c1/07/c107588d-2eda-4997-83d5-637b69967773.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/c1/07/c107588d-2eda-4997-83d5-637b69967773.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/c1/07/c107588d-2eda-4997-83d5-637b69967773.png",
+            "version": "2413987-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/c1/07/c107588d-2eda-4997-83d5-637b69967773.png"
+          },
+          "filename": "WHO-EURO-2023-7145-46911-69105-eng.pdf",
+          "mimetype": "application/pdf",
+          "id": "2413987",
+          "filesize": "932136",
+          "url": "https://reliefweb.int/attachments/c107588d-2eda-4997-83d5-637b69967773/WHO-EURO-2023-7145-46911-69105-eng.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/turkiye/turkiye-earthquake-external-situation-report-no-7-3-16-april-2023",
+      "theme": [
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3955077,
+      "status": "published",
+      "body-html": "<p><strong>Overview</strong></p>\n<p>More than two months after the devastating earthquakes that struck the Kahramanmaraş province in Türkiye on 6 February and 20 February, a state of emergency remains in place for the 11 provinces directly affected by the earthquakes where 50 339 people lost their lives, including more than 6800 foreign nationals, mainly Syrians.</p>\n<p>To date, there have been more than 22 500 aftershocks, and nearly 307 000 buildings and 893 000 independent units were damaged throughout the region. On 3 April, the AFAD declared six additional provinces, Bingöl, Kayseri, Mardin, Tunceli, Niğde and Batman, as “disaster areas affecting general life” due to the presence of moderately and heavily damaged buildings identified in a recent earthquake damage assessment.</p>\n"
+    }
+  },
+  "text": "# Türkiye earthquake: External situation report no. 7: 3 - 16 April 2023\n\n**Overview**\n\nMore than two months after the devastating earthquakes that struck the Kahramanmaraş province in Türkiye on 6 February and 20 February, a state of emergency remains in place for the 11 provinces directly affected by the earthquakes where 50 339 people lost their lives, including more than 6800 foreign nationals, mainly Syrians. \n\nTo date, there have been more than 22 500 aftershocks, and nearly 307 000 buildings and 893 000 independent units were damaged throughout the region. On 3 April, the AFAD declared six additional provinces, Bingöl, Kayseri, Mardin, Tunceli, Niğde and Batman, as “disaster areas affecting general life” due to the presence of moderately and heavily damaged buildings identified in a recent earthquake damage assessment.",
+  "summary": "\n\nTürkiye has been in a state of emergency since February, when two devastating earthquakes struck the Kahramanmaraş province, resulting in 50,339 deaths and extensive damage to 307,000 buildings and 893,000 independent units. 22,500 aftershocks have occurred since then, and six additional provinces have been declared disaster areas due to the presence of moderately and heavily damaged buildings.",
+  "metadata": {
+    "id": "3955077",
+    "name": "Türkiye earthquake: External situation report no. 7: 3 - 16 April 2023",
+    "date_original": 1682035200000,
+    "date_changed": 1682096516000,
+    "date_created": 1682096478000,
+    "primary_country_id": 236,
+    "primary_country_name": "Türkiye",
+    "primary_country_iso3": "tur",
+    "primary_country_location": {
+      "lon": 35.18,
+      "lat": 39.06
+    }
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "original": {
+    "id": "3956682",
+    "fields": {
+      "date": {
+        "changed": "2023-04-27T16:02:02+00:00",
+        "created": "2023-04-27T15:11:58+00:00",
+        "original": "2023-04-27T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/187",
+          "name": "Peru",
+          "location": {
+            "lon": -75.31,
+            "lat": -10.15
+          },
+          "id": 187,
+          "shortname": "Peru",
+          "iso3": "per",
+          "primary": true
+        }
+      ],
+      "ocha_product": [
+        {
+          "name": "Situation Report",
+          "id": 12345
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/187",
+        "name": "Peru",
+        "location": {
+          "lon": -75.31,
+          "lat": -10.15
+        },
+        "id": 187,
+        "shortname": "Peru",
+        "iso3": "per"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        },
+        {
+          "code": "LS",
+          "name": "Land Slide",
+          "id": 4728
+        },
+        {
+          "code": "TC",
+          "name": "Tropical Cyclone",
+          "id": 4618
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1503",
+          "longname": "United Nations Office for the Coordination of Humanitarian Affairs",
+          "spanish_name": "Oficina de Coordinación de Asuntos Humanitarios",
+          "name": "UN Office for the Coordination of Humanitarian Affairs",
+          "id": 1503,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "OCHA",
+          "disclaimer": "To learn more about OCHA's activities, please visit https://www.unocha.org/.",
+          "homepage": "http://www.unocha.org/"
+        }
+      ],
+      "title": "Peru: Flooding Situation Report No. 04 (as of 24 April 2023)",
+      "body": "This summary report is based on the Spanish version prepared by the Office for the Coordination of Humanitarian Affairs (OCHA), in collaboration with the Office of the Resident Coordinator, the agencies, funds and programs of the United Nations System, information from member organisations of the National Humanitarian Network (NHN) and information provided by the Government of Peru. It covers the period from April 13 to 24, 2023. \n\n**HIGHLIGHTS**\n\n- The heavy rains have left a total of 65,289 people without homes, 377,190 people affected, 146,539 households affected, 99 dead and 13 missing throughout the country.\n\n- Between 13 April and 24 April, there was an increase of 130,378 people impacted, according to official data (with 35.5 per cent of the damages and needs records still to be validated).\n\n- OCHA has deployed the United Nations Disaster Assessment and Coordination Team (UNDAC) and an expert from the Joint Environmental Emergency Unit (JEU) to Lambayeque, Piura and Tumbes. Regional Humanitarian Networks (RHR) have been established in each of the three regions to coordinate international cooperation and humanitarian NGOs.\n\n- Despite notable progress in the humanitarian response, there are reports that aid has not reached all affected populations. The UNDAC team has documented an urgent need for food, safe water, health services, hygiene, education and protection. \n\nThe UN Central Emergency Response Fund (CERF) has approved an allocation of US$6.9 million for the implementation of urgent interventions to assist 247,000 people in need.",
+      "url": "https://reliefweb.int/node/3956682",
+      "disaster": [
+        {
+          "name": "Peru: Floods and Landslides - Mar 2023",
+          "id": 51516,
+          "glide": "FL-2023-000036-PER",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            },
+            {
+              "code": "LS",
+              "name": "Land Slide",
+              "id": 4728
+            },
+            {
+              "code": "TC",
+              "name": "Tropical Cyclone",
+              "id": 4618
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/68/e2/68e2edfe-a23c-4d1c-9443-5e982a918b56.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/68/e2/68e2edfe-a23c-4d1c-9443-5e982a918b56.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/68/e2/68e2edfe-a23c-4d1c-9443-5e982a918b56.png",
+            "version": "2415392-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/68/e2/68e2edfe-a23c-4d1c-9443-5e982a918b56.png"
+          },
+          "filename": "Peru - Flooding Situation Report No. 04 (as of 24 April 2023).pdf",
+          "mimetype": "application/pdf",
+          "id": "2415392",
+          "filesize": "514485",
+          "url": "https://reliefweb.int/attachments/68e2edfe-a23c-4d1c-9443-5e982a918b56/Peru%20-%20Flooding%20Situation%20Report%20No.%2004%20%28as%20of%2024%20April%202023%29.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/peru/peru-flooding-situation-report-no-04-24-april-2023",
+      "theme": [
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3956682,
+      "status": "published",
+      "body-html": "<p>This summary report is based on the Spanish version prepared by the Office for the Coordination of Humanitarian Affairs (OCHA), in collaboration with the Office of the Resident Coordinator, the agencies, funds and programs of the United Nations System, information from member organisations of the National Humanitarian Network (NHN) and information provided by the Government of Peru. It covers the period from April 13 to 24, 2023.</p>\n<p><strong>HIGHLIGHTS</strong></p>\n<ul>\n<li>\n<p>The heavy rains have left a total of 65,289 people without homes, 377,190 people affected, 146,539 households affected, 99 dead and 13 missing throughout the country.</p>\n</li>\n<li>\n<p>Between 13 April and 24 April, there was an increase of 130,378 people impacted, according to official data (with 35.5 per cent of the damages and needs records still to be validated).</p>\n</li>\n<li>\n<p>OCHA has deployed the United Nations Disaster Assessment and Coordination Team (UNDAC) and an expert from the Joint Environmental Emergency Unit (JEU) to Lambayeque, Piura and Tumbes. Regional Humanitarian Networks (RHR) have been established in each of the three regions to coordinate international cooperation and humanitarian NGOs.</p>\n</li>\n<li>\n<p>Despite notable progress in the humanitarian response, there are reports that aid has not reached all affected populations. The UNDAC team has documented an urgent need for food, safe water, health services, hygiene, education and protection.</p>\n</li>\n</ul>\n<p>The UN Central Emergency Response Fund (CERF) has approved an allocation of US$6.9 million for the implementation of urgent interventions to assist 247,000 people in need.</p>\n"
+    }
+  },
+  "text": "# Peru: Flooding Situation Report No. 04 (as of 24 April 2023)\n\nThis summary report is based on the Spanish version prepared by the Office for the Coordination of Humanitarian Affairs (OCHA), in collaboration with the Office of the Resident Coordinator, the agencies, funds and programs of the United Nations System, information from member organisations of the National Humanitarian Network (NHN) and information provided by the Government of Peru. It covers the period from April 13 to 24, 2023. \n\n**HIGHLIGHTS**\n\n- The heavy rains have left a total of 65,289 people without homes, 377,190 people affected, 146,539 households affected, 99 dead and 13 missing throughout the country.\n\n- Between 13 April and 24 April, there was an increase of 130,378 people impacted, according to official data (with 35.5 per cent of the damages and needs records still to be validated).\n\n- OCHA has deployed the United Nations Disaster Assessment and Coordination Team (UNDAC) and an expert from the Joint Environmental Emergency Unit (JEU) to Lambayeque, Piura and Tumbes. Regional Humanitarian Networks (RHR) have been established in each of the three regions to coordinate international cooperation and humanitarian NGOs.\n\n- Despite notable progress in the humanitarian response, there are reports that aid has not reached all affected populations. The UNDAC team has documented an urgent need for food, safe water, health services, hygiene, education and protection. \n\nThe UN Central Emergency Response Fund (CERF) has approved an allocation of US$6.9 million for the implementation of urgent interventions to assist 247,000 people in need.",
+  "summary": " This report covers the period from April 13 to 24, 2023 in Peru, where heavy rains have caused 65,289 people to be without homes, 377,190 people affected, 146,539 households affected, 99 dead and 13 missing. The UN has deployed teams to Lambayeque, Piura and Tumbes to coordinate international cooperation and humanitarian NGOs, and the UN Central Emergency Response Fund (CERF) has approved an allocation of US$6.9 million to assist 247,000 people in need.",
+  "metadata": {
+    "id": "3956682",
+    "name": "Peru: Flooding Situation Report No. 04 (as of 24 April 2023)",
+    "date_original": 1682553600000,
+    "date_changed": 1682611322000,
+    "date_created": 1682608318000,
+    "primary_country_id": 187,
+    "primary_country_name": "Peru",
+    "primary_country_iso3": "per",
+    "primary_country_location": {
+      "lon": -75.31,
+      "lat": -10.15
+    }
+  }
+}

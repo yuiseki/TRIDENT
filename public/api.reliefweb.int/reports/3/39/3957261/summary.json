@@ -1,0 +1,148 @@
+{
+  "original": {
+    "id": "3957261",
+    "fields": {
+      "date": {
+        "changed": "2023-04-30T19:27:28+00:00",
+        "created": "2023-04-30T12:18:19+00:00",
+        "original": "2023-04-27T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/55",
+          "name": "Chad",
+          "location": {
+            "lon": 18.66,
+            "lat": 15.36
+          },
+          "id": 55,
+          "shortname": "Chad",
+          "iso3": "tcd",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/220",
+          "name": "Sudan",
+          "location": {
+            "lon": 30,
+            "lat": 15
+          },
+          "id": 220,
+          "shortname": "Sudan",
+          "iso3": "sdn"
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/55",
+        "name": "Chad",
+        "location": {
+          "lon": 18.66,
+          "lat": 15.36
+        },
+        "id": 55,
+        "shortname": "Chad",
+        "iso3": "tcd"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1979",
+          "longname": "United Nations Children's Fund",
+          "spanish_name": "Fondo de las Naciones Unidas para la Infancia",
+          "name": "UN Children's Fund",
+          "id": 1979,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNICEF",
+          "homepage": "http://www.unicef.org"
+        }
+      ],
+      "title": "UNICEF Chad Humanitarian Flash Update No. 2: 27 April 2023",
+      "body": "**OVERVIEW**\n\n- According to UNHCR, since the conflict began, an estimated 10,000 to 20,000 people have sought refuge in Chad through 27 entry points along the Southeast border. They are currently hosted in 7 villages.\n\n- The Prime Minister convened the humanitarian community on 25 April and asked for the support of humanitarian actors. The same day, the Commission Nationale d'Accueil de Réinsertion des Réfugiés et des\nRapatriés (CNARR) and UNHCR organised a coordination meeting.\n\n- The health district of Adre in Ouaddaï province has notified and confirmed 4 cases of measles amongst the refugee’s population.\n\n**UNICEF’s RESPONSE**\n\nA UNICEF mission is currently in Koufroun and will supervise the distribution of 500 NFI kits (500 household) through our NGO partner, Premiere Urgence International (PUI), on 28 April.  \n\nWater trucking is organized by UNHCR/IRC while UNICEF ensured the treatment and control of water quality (residual chlorine). A total 3,024 bottles (252 packs) of 1 litre of bleach will be distributed to refugees once UNHCR registration is completed, allowing water treatment for 1,000 households for 3 months. UNICEF is signing contracts with local entrepreneurs to dig 3 boreholes in Koufroun, Midjeguelta and Dize Berté villages for 1,500 people (hosts and refugees).\n\n100 cartons of RUTF, 14 cartons of Amoxicillin and monitoring tools have been released to ensure the treatment of children suffering from severe acute malnutrition (SAM). As of 27 April, 17 SAM cases are being treated in collaboration with PUI.\n\nAn agreement with the National Chadian Red Cross (CRT) has been initiated to ensure the deployment of CRT to provide protection services to vulnerable children and their families.\n\nUNICEF provided essential drugs, medical materials and kits to support existing health services in responding to the needs of both host and refugees population.\n\nThe agreement with the CRT will also allow communication activities promoting positive behaviors and peace building/social cohesion. Complaint and feedback mechanisms will be put in place to take into account the needs of affected people.",
+      "url": "https://reliefweb.int/node/3957261",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/00/fa/00fa9a36-3a83-410c-a675-d918734db31c.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/00/fa/00fa9a36-3a83-410c-a675-d918734db31c.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/00/fa/00fa9a36-3a83-410c-a675-d918734db31c.png",
+            "version": "2415887-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/00/fa/00fa9a36-3a83-410c-a675-d918734db31c.png"
+          },
+          "filename": "UNICEF Chad Humanitarian Flash Update No. 2 - 27 April 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415887",
+          "filesize": "1593496",
+          "url": "https://reliefweb.int/attachments/00fa9a36-3a83-410c-a675-d918734db31c/UNICEF%20Chad%20Humanitarian%20Flash%20Update%20No.%202%20-%2027%20April%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/chad/unicef-chad-humanitarian-flash-update-no-2-27-april-2023",
+      "theme": [
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3957261,
+      "status": "published",
+      "body-html": "<p><strong>OVERVIEW</strong></p>\n<ul>\n<li>\n<p>According to UNHCR, since the conflict began, an estimated 10,000 to 20,000 people have sought refuge in Chad through 27 entry points along the Southeast border. They are currently hosted in 7 villages.</p>\n</li>\n<li>\n<p>The Prime Minister convened the humanitarian community on 25 April and asked for the support of humanitarian actors. The same day, the Commission Nationale d'Accueil de Réinsertion des Réfugiés et des\nRapatriés (CNARR) and UNHCR organised a coordination meeting.</p>\n</li>\n<li>\n<p>The health district of Adre in Ouaddaï province has notified and confirmed 4 cases of measles amongst the refugee’s population.</p>\n</li>\n</ul>\n<p><strong>UNICEF’s RESPONSE</strong></p>\n<p>A UNICEF mission is currently in Koufroun and will supervise the distribution of 500 NFI kits (500 household) through our NGO partner, Premiere Urgence International (PUI), on 28 April.</p>\n<p>Water trucking is organized by UNHCR/IRC while UNICEF ensured the treatment and control of water quality (residual chlorine). A total 3,024 bottles (252 packs) of 1 litre of bleach will be distributed to refugees once UNHCR registration is completed, allowing water treatment for 1,000 households for 3 months. UNICEF is signing contracts with local entrepreneurs to dig 3 boreholes in Koufroun, Midjeguelta and Dize Berté villages for 1,500 people (hosts and refugees).</p>\n<p>100 cartons of RUTF, 14 cartons of Amoxicillin and monitoring tools have been released to ensure the treatment of children suffering from severe acute malnutrition (SAM). As of 27 April, 17 SAM cases are being treated in collaboration with PUI.</p>\n<p>An agreement with the National Chadian Red Cross (CRT) has been initiated to ensure the deployment of CRT to provide protection services to vulnerable children and their families.</p>\n<p>UNICEF provided essential drugs, medical materials and kits to support existing health services in responding to the needs of both host and refugees population.</p>\n<p>The agreement with the CRT will also allow communication activities promoting positive behaviors and peace building/social cohesion. Complaint and feedback mechanisms will be put in place to take into account the needs of affected people.</p>\n"
+    }
+  },
+  "text": "# UNICEF Chad Humanitarian Flash Update No. 2: 27 April 2023\n\n**OVERVIEW**\n\n- According to UNHCR, since the conflict began, an estimated 10,000 to 20,000 people have sought refuge in Chad through 27 entry points along the Southeast border. They are currently hosted in 7 villages.\n\n- The Prime Minister convened the humanitarian community on 25 April and asked for the support of humanitarian actors. The same day, the Commission Nationale d'Accueil de Réinsertion des Réfugiés et des\nRapatriés (CNARR) and UNHCR organised a coordination meeting.\n\n- The health district of Adre in Ouaddaï province has notified and confirmed 4 cases of measles amongst the refugee’s population.\n\n**UNICEF’s RESPONSE**\n\nA UNICEF mission is currently in Koufroun and will supervise the distribution of 500 NFI kits (500 household) through our NGO partner, Premiere Urgence International (PUI), on 28 April.  \n\nWater trucking is organized by UNHCR/IRC while UNICEF ensured the treatment and control of water quality (residual chlorine). A total 3,024 bottles (252 packs) of 1 litre of bleach will be distributed to refugees once UNHCR registration is completed, allowing water treatment for 1,000 households for 3 months. UNICEF is signing contracts with local entrepreneurs to dig 3 boreholes in Koufroun, Midjeguelta and Dize Berté villages for 1,500 people (hosts and refugees).\n\n100 cartons of RUTF, 14 cartons of Amoxicillin and monitoring tools have been released to ensure the treatment of children suffering from severe acute malnutrition (SAM). As of 27 April, 17 SAM cases are being treated in collaboration with PUI.\n\nAn agreement with the National Chadian Red Cross (CRT) has been initiated to ensure the deployment of CRT to provide protection services to vulnerable children and their families.\n\nUNICEF provided essential drugs, medical materials and kits to support existing health services in responding to the needs of both host and refugees population.\n\nThe agreement with the CRT will also allow communication activities promoting positive behaviors and peace building/social cohesion. Complaint and feedback mechanisms will be put in place to take into account the needs of affected people.",
+  "summary": "\n\nUNICEF is responding to the conflict in Chad by providing 500 NFI kits, 3,024 bottles of bleach, 100 cartons of RUTF, 14 cartons of Amoxicillin, and medical materials and kits to support existing health services. An agreement with the National Chadian Red Cross (CRT) has been initiated to ensure the deployment of CRT to provide protection services to vulnerable children and their families, as well as communication activities promoting positive behaviors and peace building/social cohesion. As of 27 April, 17 cases of severe acute malnutrition (SAM) are being treated in collaboration with PUI.",
+  "metadata": {
+    "id": "3957261",
+    "name": "UNICEF Chad Humanitarian Flash Update No. 2: 27 April 2023",
+    "date_original": 1682553600000,
+    "date_changed": 1682882848000,
+    "date_created": 1682857099000,
+    "primary_country_id": 55,
+    "primary_country_name": "Chad",
+    "primary_country_iso3": "tcd",
+    "primary_country_location": {
+      "lon": 18.66,
+      "lat": 15.36
+    }
+  }
+}

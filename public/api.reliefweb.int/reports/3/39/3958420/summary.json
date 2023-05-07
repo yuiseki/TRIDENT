@@ -1,0 +1,146 @@
+{
+  "original": {
+    "id": "3958420",
+    "fields": {
+      "date": {
+        "changed": "2023-05-04T07:14:23+00:00",
+        "created": "2023-05-04T06:54:20+00:00",
+        "original": "2023-05-04T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/216",
+          "name": "Somalia",
+          "location": {
+            "lon": 47.33,
+            "lat": 5.79
+          },
+          "id": 216,
+          "shortname": "Somalia",
+          "iso3": "som",
+          "primary": true
+        }
+      ],
+      "origin": "https://data.unhcr.org/en/documents/details/100422",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/216",
+        "name": "Somalia",
+        "location": {
+          "lon": 47.33,
+          "lat": 5.79
+        },
+        "id": 216,
+        "shortname": "Somalia",
+        "iso3": "som"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "DR",
+          "name": "Drought",
+          "id": 4672
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "UNHCR Somalia Drought Response Factsheet (January - April 2023)",
+      "body": "**CONTEXT**\n\nDue to five consecutive poor rainy seasons, high food prices, and rise in conflict and displacement, Somalia has been on the edge of famine for months. Despite slightly better rainfall forecast for the 2023 Gu season, which runs from April to June, the climate emergency persists. According to the January 2023 [integrated food security phase classification (IPC) analysis,](https://reliefweb.int/node/3955796/) three population groups are at risk of famine between April and June 2023: agropastoral communities in Burhakaba district, Bay region, and internally displaced persons (IDP) in Mogadishu and Baidoa settlements. The drought has disproportionately affected women, children, persons with disabilities, and those from minority and marginalized groups. \n\n**ACHIEVEMENTS**\n\nUNHCR, with authorities and partners, delivered life-saving protection assistance to vulnerable IDPs, refugees, asylum seekers, returnees, and vulnerable host communities. UNHCR helped to improve inter-agency drought response coordination through its leadership in the Protection, Shelter, Camp Coordination and Camp Management (CCCM) clusters.\n\nThe UNHCR-led [PRMN data](http://prmn-somalia.unhcr.org/) continued to provide up-to-date information on internal displacement caused by the drought and informed the wider humanitarian response. Working closely with the World Food Programme (WFP), UNHCR piloted a fast-track food referral system in Baidoa and completed the biometric enrollment of 2,500 IDP HHs in Beletweyne to improve accountability and ensure prioritization of humanitarian assistance to reach at-risk people. Protection desks continued to serve as entry points to specialized services across 13 districts, including Baidoa and Galkayo. Moreover, UNHCR continued to put protection at the center of its response using tools such as the vulnerability assessment to identify and respond to persons with specific needs in need of assistance. Cash assistance for multipurpose use, including dignity kit, shelter, and CRI, were implemented to fulfill protection and the basic needs of the drought-stricken population. Other drought response activities included strengthening of self-governance system and participation in IDP sites by forming camp management committees, site repair and maintenance work employing cash for work scheme, and installation of street solar lights to better protect women and children and improve security.",
+      "url": "https://reliefweb.int/node/3958420",
+      "disaster": [
+        {
+          "name": "Somalia: Drought - 2015-2023",
+          "id": 23101,
+          "glide": "DR-2015-000134-SOM",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/45/75/45750b49-9975-4fbd-903e-c669d385e30d.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/45/75/45750b49-9975-4fbd-903e-c669d385e30d.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/45/75/45750b49-9975-4fbd-903e-c669d385e30d.png",
+            "version": "2417086-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/45/75/45750b49-9975-4fbd-903e-c669d385e30d.png"
+          },
+          "filename": "UNHCR Somalia Drought Response Factsheet.pdf",
+          "mimetype": "application/pdf",
+          "id": "2417086",
+          "filesize": "261306",
+          "url": "https://reliefweb.int/attachments/45750b49-9975-4fbd-903e-c669d385e30d/UNHCR%20Somalia%20Drought%20Response%20Factsheet.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/somalia/unhcr-somalia-drought-response-factsheet-january-april-2023",
+      "theme": [
+        {
+          "name": "Camp Coordination and Camp Management",
+          "id": 49458
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        }
+      ],
+      "id": 3958420,
+      "status": "published",
+      "body-html": "<p><strong>CONTEXT</strong></p>\n<p>Due to five consecutive poor rainy seasons, high food prices, and rise in conflict and displacement, Somalia has been on the edge of famine for months. Despite slightly better rainfall forecast for the 2023 Gu season, which runs from April to June, the climate emergency persists. According to the January 2023 <a href=\"https://reliefweb.int/node/3955796/\">integrated food security phase classification (IPC) analysis,</a> three population groups are at risk of famine between April and June 2023: agropastoral communities in Burhakaba district, Bay region, and internally displaced persons (IDP) in Mogadishu and Baidoa settlements. The drought has disproportionately affected women, children, persons with disabilities, and those from minority and marginalized groups.</p>\n<p><strong>ACHIEVEMENTS</strong></p>\n<p>UNHCR, with authorities and partners, delivered life-saving protection assistance to vulnerable IDPs, refugees, asylum seekers, returnees, and vulnerable host communities. UNHCR helped to improve inter-agency drought response coordination through its leadership in the Protection, Shelter, Camp Coordination and Camp Management (CCCM) clusters.</p>\n<p>The UNHCR-led <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"http://prmn-somalia.unhcr.org/\">PRMN data</a> continued to provide up-to-date information on internal displacement caused by the drought and informed the wider humanitarian response. Working closely with the World Food Programme (WFP), UNHCR piloted a fast-track food referral system in Baidoa and completed the biometric enrollment of 2,500 IDP HHs in Beletweyne to improve accountability and ensure prioritization of humanitarian assistance to reach at-risk people. Protection desks continued to serve as entry points to specialized services across 13 districts, including Baidoa and Galkayo. Moreover, UNHCR continued to put protection at the center of its response using tools such as the vulnerability assessment to identify and respond to persons with specific needs in need of assistance. Cash assistance for multipurpose use, including dignity kit, shelter, and CRI, were implemented to fulfill protection and the basic needs of the drought-stricken population. Other drought response activities included strengthening of self-governance system and participation in IDP sites by forming camp management committees, site repair and maintenance work employing cash for work scheme, and installation of street solar lights to better protect women and children and improve security.</p>\n"
+    }
+  },
+  "text": "# UNHCR Somalia Drought Response Factsheet (January - April 2023)\n\n**CONTEXT**\n\nDue to five consecutive poor rainy seasons, high food prices, and rise in conflict and displacement, Somalia has been on the edge of famine for months. Despite slightly better rainfall forecast for the 2023 Gu season, which runs from April to June, the climate emergency persists. According to the January 2023 [integrated food security phase classification (IPC) analysis,](https://reliefweb.int/node/3955796/) three population groups are at risk of famine between April and June 2023: agropastoral communities in Burhakaba district, Bay region, and internally displaced persons (IDP) in Mogadishu and Baidoa settlements. The drought has disproportionately affected women, children, persons with disabilities, and those from minority and marginalized groups. \n\n**ACHIEVEMENTS**\n\nUNHCR, with authorities and partners, delivered life-saving protection assistance to vulnerable IDPs, refugees, asylum seekers, returnees, and vulnerable host communities. UNHCR helped to improve inter-agency drought response coordination through its leadership in the Protection, Shelter, Camp Coordination and Camp Management (CCCM) clusters.\n\nThe UNHCR-led [PRMN data](http://prmn-somalia.unhcr.org/) continued to provide up-to-date information on internal displacement caused by the drought and informed the wider humanitarian response. Working closely with the World Food Programme (WFP), UNHCR piloted a fast-track food referral system in Baidoa and completed the biometric enrollment of 2,500 IDP HHs in Beletweyne to improve accountability and ensure prioritization of humanitarian assistance to reach at-risk people. Protection desks continued to serve as entry points to specialized services across 13 districts, including Baidoa and Galkayo. Moreover, UNHCR continued to put protection at the center of its response using tools such as the vulnerability assessment to identify and respond to persons with specific needs in need of assistance. Cash assistance for multipurpose use, including dignity kit, shelter, and CRI, were implemented to fulfill protection and the basic needs of the drought-stricken population. Other drought response activities included strengthening of self-governance system and participation in IDP sites by forming camp management committees, site repair and maintenance work employing cash for work scheme, and installation of street solar lights to better protect women and children and improve security.",
+  "summary": "\nDue to five consecutive poor rainy seasons, Somalia is on the edge of famine. UNHCR, with authorities and partners, is delivering life-saving protection assistance to vulnerable IDPs, refugees, asylum seekers, returnees, and vulnerable host communities. UNHCR is also improving inter-agency drought response coordination, providing up-to-date information on internal displacement, piloting a fast-track food referral system, and providing cash assistance for multipurpose use. Other activities include strengthening self-governance systems, employing cash for work schemes, and installing street solar lights.",
+  "metadata": {
+    "id": "3958420",
+    "name": "UNHCR Somalia Drought Response Factsheet (January - April 2023)",
+    "date_original": 1683158400000,
+    "date_changed": 1683184463000,
+    "date_created": 1683183260000,
+    "primary_country_id": 216,
+    "primary_country_name": "Somalia",
+    "primary_country_iso3": "som",
+    "primary_country_location": {
+      "lon": 47.33,
+      "lat": 5.79
+    }
+  }
+}

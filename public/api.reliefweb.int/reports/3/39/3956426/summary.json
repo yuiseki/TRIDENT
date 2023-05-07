@@ -1,0 +1,119 @@
+{
+  "original": {
+    "id": "3956426",
+    "fields": {
+      "date": {
+        "changed": "2023-04-28T04:25:07+00:00",
+        "created": "2023-04-27T00:15:53+00:00",
+        "original": "2023-04-27T00:00:00+00:00"
+      },
+      "image": {
+        "copyright": "UNICEF/UN0551725/Dejongh",
+        "filename": "UN0551725.jpg",
+        "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/images/reports/e3/29/e3291cb2-86c2-45a7-8a50-fa48df9f6bce.jpg",
+        "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/images/reports/e3/29/e3291cb2-86c2-45a7-8a50-fa48df9f6bce.jpg",
+        "width": "770",
+        "mimetype": "image/jpeg",
+        "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/images/reports/e3/29/e3291cb2-86c2-45a7-8a50-fa48df9f6bce.jpg",
+        "id": "1616118",
+        "filesize": "61395",
+        "url": "https://reliefweb.int/sites/default/files/images/reports/e3/29/e3291cb2-86c2-45a7-8a50-fa48df9f6bce.jpg",
+        "height": "513"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/254",
+          "name": "World",
+          "id": 254,
+          "shortname": "World",
+          "iso3": "wld",
+          "primary": true
+        }
+      ],
+      "origin": "https://www.unicef.org/press-releases/90-cent-adolescent-girls-and-young-women-low-income-countries-are-offline-unicef",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/254",
+        "name": "World",
+        "id": 254,
+        "shortname": "World",
+        "iso3": "wld"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1979",
+          "longname": "United Nations Children's Fund",
+          "spanish_name": "Fondo de las Naciones Unidas para la Infancia",
+          "name": "UN Children's Fund",
+          "id": 1979,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNICEF",
+          "homepage": "http://www.unicef.org"
+        }
+      ],
+      "title": "Bridging the Gender Digital Divide: Challenges and an Urgent Call for Action for Equitable Digital Skills Development",
+      "body": "**90 per cent of adolescent girls and young women in low-income countries are offline - UNICEF**\n\n***On International Day of Girls in ICT, new analysis warns that girls**** ***are being left behind in an increasingly connected world.***\n\n**NEW YORK, 27 April 2023** – Around 90 per cent of adolescent girls and young women do not use the internet in low-income countries, while their male peers are twice as likely to be online, according to a new UNICEF analysis issued on International Day of Girls in ICT.\n\n\"Closing the digital divide between girls and boys is about more than just having access to the internet and technology. It's about empowering girls to become innovators, creators, and leaders,\" said UNICEF Director of Education Robert Jenkins. \"If we want to tackle gender gaps in the labour market, especially in Science, Technology, Engineering and Math fields, we must start now by helping young people, especially girls, gain digital skills.\"\n\nThe report – *Bridging the Digital Divide: Challenges and an Urgent Call for Action for Equitable Digital Skills Development* – takes a close look at the gender digital divide among young people aged 15-24 years by analysing available data on internet use, mobile phone ownership, and digital skills in mostly low-, lower-middle-, and some middle-income economies. Though more gender-disaggregated data is needed to better monitor, understand, and work toward digital inclusion, the report finds that girls are being left behind in an increasingly digital and connected world.\n\nWhile advancing access to the internet is important, it is insufficient for digital skills training. For example, in most countries analysed, the share of youth with access to the internet at home is much higher than that of youth with digital skills.\n\nGirls are the least likely to have the opportunities to develop the skills needed for 21st\\-century learning and employment, according to the report. On average across 32 countries and territories, girls are 35 per cent less likely than their male peers to have digital skills, including simple activities like copying or pasting files or folders, sending emails, or transferring files.\n\nThe root barriers are far deeper than a lack of access to the internet, according to the report. The findings suggest that educational and family environments play a critical role in the gender digital divide. For example, even within the same home, girls are far less likely than boys to access and be able to make full use of the internet and digital technologies. Among 41 countries and territories included in the analysis, households are much more likely to provide mobile phones for boys than girls.\n\nBarriers to accessing opportunities to higher learning and the labour market, pervasive discriminatory gender norms and stereotypes, and concerns over online safety may further restrict girls' digital inclusion and skills development.\n\nThe report also argues that even when girls have equitable access to gain foundational reading and math skills – and perform on par or better than their male peers – it does not always translate to digital skills. To break the barriers holding girls back, they need early exposure and access to technology, digital and life skills training, and efforts that address harmful gender stereotypes, especially within families, and online violence.\n\nUNICEF is calling on governments and partners to close the gender divide and ensure that girls have the opportunities to succeed in a digital world. Some of the recommendations include:\n\n-   **Teach** digital skills equally to girls and boys in and out of school, including community programmes.\n-   **Protect** girls' safety online through virtual safe spaces, policies and laws, and education.\n-   **Promote** girls' access to peer learning, mentoring, internships and job shadowing in the digital/STEM world.\n\n###\n\n**Notes to editors:**\n\n*\\* The report focuses on the gender digital divide among youth aged 15-24 years. For simplicity, the press release shortens the age grouping of \"adolescent girls and young women\" and \"adolescent boys and young men\" to \"girls\" and \"boys\".*\n\n*The analysis presented in this report draws upon data from *[*MICS*](https://mics.unicef.org/)* and *[*DHS*](https://dhsprogram.com/)*, with the findings on digital skills specifically relying on data collected through the mass media and ICT module in MICS6.*\n\n**Media contacts**\n\nSara Alhattab\n\nUNICEF New York\n\nTel: +1 917 957 6536\n\nEmail: [salhattab@unicef.org](https://reliefweb.int/mailto:salhattab@unicef.org)",
+      "url": "https://reliefweb.int/node/3956426",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/80/ef/80ef86f7-ede8-4c69-8f44-b73598a5ae84.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/80/ef/80ef86f7-ede8-4c69-8f44-b73598a5ae84.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/80/ef/80ef86f7-ede8-4c69-8f44-b73598a5ae84.png",
+            "version": "2415179-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/80/ef/80ef86f7-ede8-4c69-8f44-b73598a5ae84.png"
+          },
+          "filename": "Bridging-the-Gender-Digital-Divide.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415179",
+          "filesize": "16726465",
+          "url": "https://reliefweb.int/attachments/80ef86f7-ede8-4c69-8f44-b73598a5ae84/Bridging-the-Gender-Digital-Divide.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/world/bridging-gender-digital-divide-challenges-and-urgent-call-action-equitable-digital-skills-development",
+      "redirects": [
+        "https://reliefweb.int/report/nepal/bridging-gender-digital-divide-challenges-and-urgent-call-action-equitable-digital-skills-development"
+      ],
+      "theme": [
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Gender",
+          "id": 4594
+        }
+      ],
+      "id": 3956426,
+      "status": "published",
+      "body-html": "<p><strong>90 per cent of adolescent girls and young women in low-income countries are offline - UNICEF</strong></p>\n<p><em><strong>On International Day of Girls in ICT, new analysis warns that girls</strong></em>* <em><strong>are being left behind in an increasingly connected world.</strong></em></p>\n<p><strong>NEW YORK, 27 April 2023</strong> – Around 90 per cent of adolescent girls and young women do not use the internet in low-income countries, while their male peers are twice as likely to be online, according to a new UNICEF analysis issued on International Day of Girls in ICT.</p>\n<p>&quot;Closing the digital divide between girls and boys is about more than just having access to the internet and technology. It's about empowering girls to become innovators, creators, and leaders,&quot; said UNICEF Director of Education Robert Jenkins. &quot;If we want to tackle gender gaps in the labour market, especially in Science, Technology, Engineering and Math fields, we must start now by helping young people, especially girls, gain digital skills.&quot;</p>\n<p>The report – <em>Bridging the Digital Divide: Challenges and an Urgent Call for Action for Equitable Digital Skills Development</em> – takes a close look at the gender digital divide among young people aged 15-24 years by analysing available data on internet use, mobile phone ownership, and digital skills in mostly low-, lower-middle-, and some middle-income economies. Though more gender-disaggregated data is needed to better monitor, understand, and work toward digital inclusion, the report finds that girls are being left behind in an increasingly digital and connected world.</p>\n<p>While advancing access to the internet is important, it is insufficient for digital skills training. For example, in most countries analysed, the share of youth with access to the internet at home is much higher than that of youth with digital skills.</p>\n<p>Girls are the least likely to have the opportunities to develop the skills needed for 21st-century learning and employment, according to the report. On average across 32 countries and territories, girls are 35 per cent less likely than their male peers to have digital skills, including simple activities like copying or pasting files or folders, sending emails, or transferring files.</p>\n<p>The root barriers are far deeper than a lack of access to the internet, according to the report. The findings suggest that educational and family environments play a critical role in the gender digital divide. For example, even within the same home, girls are far less likely than boys to access and be able to make full use of the internet and digital technologies. Among 41 countries and territories included in the analysis, households are much more likely to provide mobile phones for boys than girls.</p>\n<p>Barriers to accessing opportunities to higher learning and the labour market, pervasive discriminatory gender norms and stereotypes, and concerns over online safety may further restrict girls' digital inclusion and skills development.</p>\n<p>The report also argues that even when girls have equitable access to gain foundational reading and math skills – and perform on par or better than their male peers – it does not always translate to digital skills. To break the barriers holding girls back, they need early exposure and access to technology, digital and life skills training, and efforts that address harmful gender stereotypes, especially within families, and online violence.</p>\n<p>UNICEF is calling on governments and partners to close the gender divide and ensure that girls have the opportunities to succeed in a digital world. Some of the recommendations include:</p>\n<ul>\n<li>\n<strong>Teach</strong> digital skills equally to girls and boys in and out of school, including community programmes.</li>\n<li>\n<strong>Protect</strong> girls' safety online through virtual safe spaces, policies and laws, and education.</li>\n<li>\n<strong>Promote</strong> girls' access to peer learning, mentoring, internships and job shadowing in the digital/STEM world.</li>\n</ul>\n<h3></h3>\n<p><strong>Notes to editors:</strong></p>\n<p><em>* The report focuses on the gender digital divide among youth aged 15-24 years. For simplicity, the press release shortens the age grouping of &quot;adolescent girls and young women&quot; and &quot;adolescent boys and young men&quot; to &quot;girls&quot; and &quot;boys&quot;.</em></p>\n<p><em>The analysis presented in this report draws upon data from <em><a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://mics.unicef.org/\"><em>MICS</em></a></em> and <em><a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://dhsprogram.com/\"><em>DHS</em></a></em>, with the findings on digital skills specifically relying on data collected through the mass media and ICT module in MICS6.</em></p>\n<p><strong>Media contacts</strong></p>\n<p>Sara Alhattab</p>\n<p>UNICEF New York</p>\n<p>Tel: +1 917 957 6536</p>\n<p>Email: <a href=\"https://reliefweb.int/mailto:salhattab@unicef.org\">salhattab@unicef.org</a></p>\n"
+    }
+  },
+  "text": "# Bridging the Gender Digital Divide: Challenges and an Urgent Call for Action for Equitable Digital Skills Development\n\n**90 per cent of adolescent girls and young women in low-income countries are offline - UNICEF**\n\n***On International Day of Girls in ICT, new analysis warns that girls**** ***are being left behind in an increasingly connected world.***\n\n**NEW YORK, 27 April 2023** – Around 90 per cent of adolescent girls and young women do not use the internet in low-income countries, while their male peers are twice as likely to be online, according to a new UNICEF analysis issued on International Day of Girls in ICT.\n\n\"Closing the digital divide between girls and boys is about more than just having access to the internet and technology. It's about empowering girls to become innovators, creators, and leaders,\" said UNICEF Director of Education Robert Jenkins. \"If we want to tackle gender gaps in the labour market, especially in Science, Technology, Engineering and Math fields, we must start now by helping young people, especially girls, gain digital skills.\"\n\nThe report – *Bridging the Digital Divide: Challenges and an Urgent Call for Action for Equitable Digital Skills Development* – takes a close look at the gender digital divide among young people aged 15-24 years by analysing available data on internet use, mobile phone ownership, and digital skills in mostly low-, lower-middle-, and some middle-income economies. Though more gender-disaggregated data is needed to better monitor, understand, and work toward digital inclusion, the report finds that girls are being left behind in an increasingly digital and connected world.\n\nWhile advancing access to the internet is important, it is insufficient for digital skills training. For example, in most countries analysed, the share of youth with access to the internet at home is much higher than that of youth with digital skills.\n\nGirls are the least likely to have the opportunities to develop the skills needed for 21st\\-century learning and employment, according to the report. On average across 32 countries and territories, girls are 35 per cent less likely than their male peers to have digital skills, including simple activities like copying or pasting files or folders, sending emails, or transferring files.\n\nThe root barriers are far deeper than a lack of access to the internet, according to the report. The findings suggest that educational and family environments play a critical role in the gender digital divide. For example, even within the same home, girls are far less likely than boys to access and be able to make full use of the internet and digital technologies. Among 41 countries and territories included in the analysis, households are much more likely to provide mobile phones for boys than girls.\n\nBarriers to accessing opportunities to higher learning and the labour market, pervasive discriminatory gender norms and stereotypes, and concerns over online safety may further restrict girls' digital inclusion and skills development.\n\nThe report also argues that even when girls have equitable access to gain foundational reading and math skills – and perform on par or better than their male peers – it does not always translate to digital skills. To break the barriers holding girls back, they need early exposure and access to technology, digital and life skills training, and efforts that address harmful gender stereotypes, especially within families, and online violence.\n\nUNICEF is calling on governments and partners to close the gender divide and ensure that girls have the opportunities to succeed in a digital world. Some of the recommendations include:\n\n-   **Teach** digital skills equally to girls and boys in and out of school, including community programmes.\n-   **Protect** girls' safety online through virtual safe spaces, policies and laws, and education.\n-   **Promote** girls' access to peer learning, mentoring, internships and job shadowing in the digital/STEM world.\n\n###\n\n**Notes to editors:**\n\n*\\* The report focuses on the gender digital divide among youth aged 15-24 years. For simplicity, the press release shortens the age grouping of \"adolescent girls and young women\" and \"adolescent boys and young men\" to \"girls\" and \"boys\".*\n\n*The analysis presented in this report draws upon data from *[*MICS*](https://mics.unicef.org/)* and *[*DHS*](https://dhsprogram.com/)*, with the findings on digital skills specifically relying on data collected through the mass media and ICT module in MICS6.*\n\n**Media contacts**\n\nSara Alhattab\n\nUNICEF New York\n\nTel: +1 917 957 6536\n\nEmail: [salhattab@unicef.org](https://reliefweb.int/mailto:salhattab@unicef.org)",
+  "summary": " On International Day of Girls in ICT, UNICEF released a report that found that 90% of adolescent girls and young women in low-income countries are not using the internet, while their male peers are twice as likely to be online. The report highlights the need to empower girls to become innovators, creators, and leaders by providing them with digital skills. It also calls for governments and partners to close the gender divide and ensure that girls have the opportunities to succeed in a digital world, such as teaching digital skills equally to girls and boys, protecting girls' safety online, and promoting girls' access to peer learning and mentoring.",
+  "metadata": {
+    "id": "3956426",
+    "name": "Bridging the Gender Digital Divide: Challenges and an Urgent Call for Action for Equitable Digital Skills Development",
+    "date_original": 1682553600000,
+    "date_changed": 1682655907000,
+    "date_created": 1682554553000,
+    "primary_country_id": 254,
+    "primary_country_name": "World",
+    "primary_country_iso3": "wld"
+  }
+}

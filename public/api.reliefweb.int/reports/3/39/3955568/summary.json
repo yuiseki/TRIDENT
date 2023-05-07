@@ -1,0 +1,125 @@
+{
+  "original": {
+    "id": "3955568",
+    "fields": {
+      "date": {
+        "changed": "2023-04-24T16:58:01+00:00",
+        "created": "2023-04-24T16:42:40+00:00",
+        "original": "2023-04-24T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/196",
+          "name": "Romania",
+          "location": {
+            "lon": 24.9668,
+            "lat": 45.9432
+          },
+          "id": 196,
+          "shortname": "Romania",
+          "iso3": "rou",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/241",
+          "name": "Ukraine",
+          "location": {
+            "lon": 31.32,
+            "lat": 49.32
+          },
+          "id": 241,
+          "shortname": "Ukraine",
+          "iso3": "ukr"
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/196",
+        "name": "Romania",
+        "location": {
+          "lon": 24.9668,
+          "lat": 45.9432
+        },
+        "id": 196,
+        "shortname": "Romania",
+        "iso3": "rou"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "UNHCR Romania: Ukraine Refugee Situation Update, Update #43, 21 April 2023",
+      "body": "**Key figures**\n\n128,618 refugees granted temporary protection in Romania (as of 16 April 2023) 101,341 refugees in Romania (as of 16 April 2023) 17,484 refugees supported with cash assistance in 2023. 43,129 refugees supported in 2022. 25,247 refugees provided with protection counselling services and legal support in 2023. 65,000 refugees assisted since 2022. 1,072 refugees supported with fasttrack transfers from Moldova to Romania in 2023 and 14,636 in 2022.\n\n**Highlights:**\n\n-   To support refugees during the upcoming change of the government support programme for refugees, this week, the Inter-Agency coordination platform and relevant working groups (WGs) identified gaps and needs of refugees from Ukraine in Romania.  The new programme is scheduled to commence on 1 May as the ongoing 50/20 programme sponsoring accommodation and food through landlords ends in April. The WGs on [Cash Assistance](https://data.unhcr.org/en/working-group/362?sv=54&geo=10782) (co-led by UNHCR-IFRC-Save the Children), [Protection](https://data.unhcr.org/en/working-group/358?sv=54&geo=10782) (led by UNHCR), [Livelihoods and Socio-Economic Inclusion](https://data.unhcr.org/en/working-group/405?sv=54&geo=10782) (co-led by UNHCR and IOM), and [Basic Needs](https://data.unhcr.org/en/working-group/361?sv=54&geo=10782) (co-led by UNHCR and UNICEF) held consultations among members to support refugees from Ukraine during the transitional period. Key identified priorities in the response include: i) provision of information desks in main hubs and cities hosting refugees; ii) increased support for refugees with specific needs to ensure access to assistance; iii) enhanced engagement with municipalities to ensure access to information and benefits for refugees; iv) enhanced counselling and support through hotlines for refugees. The cash WG is further considering the viability of a one-off assistance to bridge the housing and other needs' gap. UN Agencies are also liaising with authorities to ensure that the implementation of the new support system includes safeguards for particularly vulnerable persons and is accessible to all.",
+      "url": "https://reliefweb.int/node/3955568",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/c3/32/c33299ce-d8f2-48a2-b380-9c8acad2adc4.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/c3/32/c33299ce-d8f2-48a2-b380-9c8acad2adc4.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/c3/32/c33299ce-d8f2-48a2-b380-9c8acad2adc4.png",
+            "version": "2414320-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/c3/32/c33299ce-d8f2-48a2-b380-9c8acad2adc4.png"
+          },
+          "filename": "UNHCR Romania _ Ukraine Refugee Situation Update _ 21 April 2023_.pdf",
+          "mimetype": "application/pdf",
+          "id": "2414320",
+          "filesize": "191907",
+          "url": "https://reliefweb.int/attachments/c33299ce-d8f2-48a2-b380-9c8acad2adc4/UNHCR%20Romania%20_%20Ukraine%20Refugee%20Situation%20Update%20_%2021%20April%202023_.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/romania/unhcr-romania-ukraine-refugee-situation-update-update-43-21-april-2023",
+      "theme": [
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        }
+      ],
+      "id": 3955568,
+      "status": "published",
+      "body-html": "<p><strong>Key figures</strong></p>\n<p>128,618 refugees granted temporary protection in Romania (as of 16 April 2023) 101,341 refugees in Romania (as of 16 April 2023) 17,484 refugees supported with cash assistance in 2023. 43,129 refugees supported in 2022. 25,247 refugees provided with protection counselling services and legal support in 2023. 65,000 refugees assisted since 2022. 1,072 refugees supported with fasttrack transfers from Moldova to Romania in 2023 and 14,636 in 2022.</p>\n<p><strong>Highlights:</strong></p>\n<ul>\n<li>To support refugees during the upcoming change of the government support programme for refugees, this week, the Inter-Agency coordination platform and relevant working groups (WGs) identified gaps and needs of refugees from Ukraine in Romania.  The new programme is scheduled to commence on 1 May as the ongoing 50/20 programme sponsoring accommodation and food through landlords ends in April. The WGs on <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://data.unhcr.org/en/working-group/362?sv=54&amp;geo=10782\">Cash Assistance</a> (co-led by UNHCR-IFRC-Save the Children), <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://data.unhcr.org/en/working-group/358?sv=54&amp;geo=10782\">Protection</a> (led by UNHCR), <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://data.unhcr.org/en/working-group/405?sv=54&amp;geo=10782\">Livelihoods and Socio-Economic Inclusion</a> (co-led by UNHCR and IOM), and <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://data.unhcr.org/en/working-group/361?sv=54&amp;geo=10782\">Basic Needs</a> (co-led by UNHCR and UNICEF) held consultations among members to support refugees from Ukraine during the transitional period. Key identified priorities in the response include: i) provision of information desks in main hubs and cities hosting refugees; ii) increased support for refugees with specific needs to ensure access to assistance; iii) enhanced engagement with municipalities to ensure access to information and benefits for refugees; iv) enhanced counselling and support through hotlines for refugees. The cash WG is further considering the viability of a one-off assistance to bridge the housing and other needs' gap. UN Agencies are also liaising with authorities to ensure that the implementation of the new support system includes safeguards for particularly vulnerable persons and is accessible to all.</li>\n</ul>\n"
+    }
+  },
+  "text": "# UNHCR Romania: Ukraine Refugee Situation Update, Update #43, 21 April 2023\n\n**Key figures**\n\n128,618 refugees granted temporary protection in Romania (as of 16 April 2023) 101,341 refugees in Romania (as of 16 April 2023) 17,484 refugees supported with cash assistance in 2023. 43,129 refugees supported in 2022. 25,247 refugees provided with protection counselling services and legal support in 2023. 65,000 refugees assisted since 2022. 1,072 refugees supported with fasttrack transfers from Moldova to Romania in 2023 and 14,636 in 2022.\n\n**Highlights:**\n\n-   To support refugees during the upcoming change of the government support programme for refugees, this week, the Inter-Agency coordination platform and relevant working groups (WGs) identified gaps and needs of refugees from Ukraine in Romania.  The new programme is scheduled to commence on 1 May as the ongoing 50/20 programme sponsoring accommodation and food through landlords ends in April. The WGs on [Cash Assistance](https://data.unhcr.org/en/working-group/362?sv=54&geo=10782) (co-led by UNHCR-IFRC-Save the Children), [Protection](https://data.unhcr.org/en/working-group/358?sv=54&geo=10782) (led by UNHCR), [Livelihoods and Socio-Economic Inclusion](https://data.unhcr.org/en/working-group/405?sv=54&geo=10782) (co-led by UNHCR and IOM), and [Basic Needs](https://data.unhcr.org/en/working-group/361?sv=54&geo=10782) (co-led by UNHCR and UNICEF) held consultations among members to support refugees from Ukraine during the transitional period. Key identified priorities in the response include: i) provision of information desks in main hubs and cities hosting refugees; ii) increased support for refugees with specific needs to ensure access to assistance; iii) enhanced engagement with municipalities to ensure access to information and benefits for refugees; iv) enhanced counselling and support through hotlines for refugees. The cash WG is further considering the viability of a one-off assistance to bridge the housing and other needs' gap. UN Agencies are also liaising with authorities to ensure that the implementation of the new support system includes safeguards for particularly vulnerable persons and is accessible to all.",
+  "summary": "\n\nUNHCR Romania is providing support to refugees from Ukraine in Romania during a transitional period. Key priorities include providing information desks, increased support for refugees with specific needs, enhanced engagement with municipalities, and enhanced counselling and support. The cash working group is considering a one-off assistance to bridge the housing and other needs' gap. UN Agencies are also liaising with authorities to ensure that the new support system is accessible to all. As of 16 April 2023, 128,618 refugees have been granted temporary protection in Romania, with 101,341 refugees in Romania and 65,000 refugees assisted since 2022.",
+  "metadata": {
+    "id": "3955568",
+    "name": "UNHCR Romania: Ukraine Refugee Situation Update, Update #43, 21 April 2023",
+    "date_original": 1682294400000,
+    "date_changed": 1682355481000,
+    "date_created": 1682354560000,
+    "primary_country_id": 196,
+    "primary_country_name": "Romania",
+    "primary_country_iso3": "rou",
+    "primary_country_location": {
+      "lon": 24.9668,
+      "lat": 45.9432
+    }
+  }
+}

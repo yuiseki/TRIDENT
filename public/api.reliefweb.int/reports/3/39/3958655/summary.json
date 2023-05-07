@@ -1,0 +1,149 @@
+{
+  "original": {
+    "id": "3958655",
+    "fields": {
+      "date": {
+        "changed": "2023-05-04T14:13:16+00:00",
+        "created": "2023-05-04T13:52:52+00:00",
+        "original": "2023-05-04T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/226",
+          "name": "Syrian Arab Republic",
+          "location": {
+            "lon": 38.51,
+            "lat": 35.01
+          },
+          "id": 226,
+          "shortname": "Syria",
+          "iso3": "syr",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/226",
+        "name": "Syrian Arab Republic",
+        "location": {
+          "lon": 38.51,
+          "lat": 35.01
+        },
+        "id": 226,
+        "shortname": "Syria",
+        "iso3": "syr"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EQ",
+          "name": "Earthquake",
+          "id": 4628
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "Earthquake Emergency Response in The Whole of Syria, Two-Month Progress Report",
+      "body": "**Context**\n\nAs the Syria crisis enters its 13th year, the scale, severity, and complexity of needs across the country remain overwhelming. Almost 15 million people are in need of humanitarian assistance and an estimated 8.8 million people have been affected by the 6 February earthquakes. \n\nTwo months after the earthquakes, UNHCR is transitioning to a longer-term response to address the needs of affected populations and help them rebuild their lives and livelihoods. This includes ongoing provision of protection services, shelter assistance and repairs, and support for income-generation activities. \n\n**UNHCR Response**\n\nSince the onset of the emergency, UNHCR and its partners, with the support of local actors, have been providing core relief items and shelter support to thousands of vulnerable families staying at collective shelters and reception centres hosted by local communities. UNHCR has also been providing psychosocial support, child protection, and legal assistance.\n\nIn Syria, UNHCR is leading the Protection and Shelter/NFI Sectors and working in close coordination with other sectors to effectively assist families affected by the earthquakes.  \n\nIn north-west Syria, UNHCR is providing direct assistance through its partners and leads the Protection, Shelter/NFI and Camp Coordination and Camp Management (CCCM) clusters in close partnership with the Humanitarian Liaison Group, local and international NGOs, and the Whole of Syria coordination structure",
+      "url": "https://reliefweb.int/node/3958655",
+      "disaster": [
+        {
+          "name": "Türkiye/Syria: Earthquakes - Feb 2023",
+          "id": 51470,
+          "glide": "EQ-2023-000015-TUR",
+          "type": [
+            {
+              "code": "EQ",
+              "name": "Earthquake",
+              "id": 4628,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/82/c6/82c6901c-c41a-4e83-9eab-171014edb942.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/82/c6/82c6901c-c41a-4e83-9eab-171014edb942.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/82/c6/82c6901c-c41a-4e83-9eab-171014edb942.png",
+            "version": "2417396-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/82/c6/82c6901c-c41a-4e83-9eab-171014edb942.png"
+          },
+          "filename": "UNHCR Whole of Syria Earthquake Emergency Response - Two-month report .pdf",
+          "mimetype": "application/pdf",
+          "id": "2417396",
+          "filesize": "1000266",
+          "url": "https://reliefweb.int/attachments/82c6901c-c41a-4e83-9eab-171014edb942/UNHCR%20Whole%20of%20Syria%20Earthquake%20Emergency%20Response%20-%20Two-month%20report%20.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/syrian-arab-republic/earthquake-emergency-response-whole-syria-two-month-progress-report",
+      "theme": [
+        {
+          "name": "Camp Coordination and Camp Management",
+          "id": 49458
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Recovery and Reconstruction",
+          "id": 4601
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        }
+      ],
+      "id": 3958655,
+      "status": "published",
+      "body-html": "<p><strong>Context</strong></p>\n<p>As the Syria crisis enters its 13th year, the scale, severity, and complexity of needs across the country remain overwhelming. Almost 15 million people are in need of humanitarian assistance and an estimated 8.8 million people have been affected by the 6 February earthquakes.</p>\n<p>Two months after the earthquakes, UNHCR is transitioning to a longer-term response to address the needs of affected populations and help them rebuild their lives and livelihoods. This includes ongoing provision of protection services, shelter assistance and repairs, and support for income-generation activities.</p>\n<p><strong>UNHCR Response</strong></p>\n<p>Since the onset of the emergency, UNHCR and its partners, with the support of local actors, have been providing core relief items and shelter support to thousands of vulnerable families staying at collective shelters and reception centres hosted by local communities. UNHCR has also been providing psychosocial support, child protection, and legal assistance.</p>\n<p>In Syria, UNHCR is leading the Protection and Shelter/NFI Sectors and working in close coordination with other sectors to effectively assist families affected by the earthquakes.</p>\n<p>In north-west Syria, UNHCR is providing direct assistance through its partners and leads the Protection, Shelter/NFI and Camp Coordination and Camp Management (CCCM) clusters in close partnership with the Humanitarian Liaison Group, local and international NGOs, and the Whole of Syria coordination structure</p>\n"
+    }
+  },
+  "text": "# Earthquake Emergency Response in The Whole of Syria, Two-Month Progress Report\n\n**Context**\n\nAs the Syria crisis enters its 13th year, the scale, severity, and complexity of needs across the country remain overwhelming. Almost 15 million people are in need of humanitarian assistance and an estimated 8.8 million people have been affected by the 6 February earthquakes. \n\nTwo months after the earthquakes, UNHCR is transitioning to a longer-term response to address the needs of affected populations and help them rebuild their lives and livelihoods. This includes ongoing provision of protection services, shelter assistance and repairs, and support for income-generation activities. \n\n**UNHCR Response**\n\nSince the onset of the emergency, UNHCR and its partners, with the support of local actors, have been providing core relief items and shelter support to thousands of vulnerable families staying at collective shelters and reception centres hosted by local communities. UNHCR has also been providing psychosocial support, child protection, and legal assistance.\n\nIn Syria, UNHCR is leading the Protection and Shelter/NFI Sectors and working in close coordination with other sectors to effectively assist families affected by the earthquakes.  \n\nIn north-west Syria, UNHCR is providing direct assistance through its partners and leads the Protection, Shelter/NFI and Camp Coordination and Camp Management (CCCM) clusters in close partnership with the Humanitarian Liaison Group, local and international NGOs, and the Whole of Syria coordination structure",
+  "summary": "\n\nThe Syria crisis has been ongoing for 13 years, with 8.8 million people affected by the 6 February earthquakes. UNHCR is transitioning to a longer-term response to address the needs of affected populations, providing core relief items, shelter support, psychosocial support, child protection, and legal assistance. UNHCR is leading the Protection and Shelter/NFI Sectors and working in close coordination with other sectors to effectively assist families affected by the earthquakes in north-west Syria.",
+  "metadata": {
+    "id": "3958655",
+    "name": "Earthquake Emergency Response in The Whole of Syria, Two-Month Progress Report",
+    "date_original": 1683158400000,
+    "date_changed": 1683209596000,
+    "date_created": 1683208372000,
+    "primary_country_id": 226,
+    "primary_country_name": "Syrian Arab Republic",
+    "primary_country_iso3": "syr",
+    "primary_country_location": {
+      "lon": 38.51,
+      "lat": 35.01
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "original": {
+    "id": "3956639",
+    "fields": {
+      "date": {
+        "changed": "2023-04-27T14:04:58+00:00",
+        "created": "2023-04-27T13:38:56+00:00",
+        "original": "2023-04-27T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/254",
+          "name": "World",
+          "id": 254,
+          "shortname": "World",
+          "iso3": "wld",
+          "primary": true
+        }
+      ],
+      "origin": "https://www.who.int/publications/m/item/multi-country-outbreak-of-mpox--external-situation-report-21---27-april-2023",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/254",
+        "name": "World",
+        "id": 254,
+        "shortname": "World",
+        "iso3": "wld"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1275",
+          "longname": "World Health Organization",
+          "spanish_name": "Organización Mundial de la Salud",
+          "name": "World Health Organization",
+          "id": 1275,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WHO",
+          "homepage": "http://www.who.int/"
+        }
+      ],
+      "title": "Multi-country outbreak of mpox (monkeypox) - External Situation Report 21, published 27 April 2023",
+      "body": "**Highlights**\n\n- Since the last situation report published on 13 April 2023, 183 new mpox cases (0.2% increase in total cases) and 14 new related deaths have been reported to WHO.\n\n- Globally, the number of mpox cases reported weekly continues to decline; however, the Western Pacific Region reported an increase in cases (n = 62) in the last three weeks compared to the three weeks prior (n = 46), driven by an outbreak of mpox affecting mainly men in Japan, the Republic of Korea and China, with sustained local transmission.\n\n- The report also highlights the mpox situation in the Eastern Mediterranean region.\n\n- Recent studies have estimated the incubation period for mpox during the current multi-country outbreak to be six to nine days. This situation report provides detailed information on the topic.\n\n- WHO continues to work with Member States to control and interrupt sustained person-to-person transmission of mpox, through risk communication and community engagement activities including on social media. This report highlights social media products developed and disseminated by WHO through various channels since the beginning of the outbreak",
+      "url": "https://reliefweb.int/node/3956639",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/7e/49/7e4999cc-366d-4053-95c6-33c77b5f8a45.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/7e/49/7e4999cc-366d-4053-95c6-33c77b5f8a45.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/7e/49/7e4999cc-366d-4053-95c6-33c77b5f8a45.png",
+            "version": "2415352-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/7e/49/7e4999cc-366d-4053-95c6-33c77b5f8a45.png"
+          },
+          "filename": "20230427_mpox_external-sitrep-21 (1).pdf",
+          "mimetype": "application/pdf",
+          "id": "2415352",
+          "filesize": "1747747",
+          "url": "https://reliefweb.int/attachments/7e4999cc-366d-4053-95c6-33c77b5f8a45/20230427_mpox_external-sitrep-21%20%281%29.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/world/multi-country-outbreak-mpox-monkeypox-external-situation-report-21-published-27-april-2023",
+      "theme": [
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "HIV/Aids",
+          "id": 4596
+        }
+      ],
+      "id": 3956639,
+      "status": "published",
+      "body-html": "<p><strong>Highlights</strong></p>\n<ul>\n<li>\n<p>Since the last situation report published on 13 April 2023, 183 new mpox cases (0.2% increase in total cases) and 14 new related deaths have been reported to WHO.</p>\n</li>\n<li>\n<p>Globally, the number of mpox cases reported weekly continues to decline; however, the Western Pacific Region reported an increase in cases (n = 62) in the last three weeks compared to the three weeks prior (n = 46), driven by an outbreak of mpox affecting mainly men in Japan, the Republic of Korea and China, with sustained local transmission.</p>\n</li>\n<li>\n<p>The report also highlights the mpox situation in the Eastern Mediterranean region.</p>\n</li>\n<li>\n<p>Recent studies have estimated the incubation period for mpox during the current multi-country outbreak to be six to nine days. This situation report provides detailed information on the topic.</p>\n</li>\n<li>\n<p>WHO continues to work with Member States to control and interrupt sustained person-to-person transmission of mpox, through risk communication and community engagement activities including on social media. This report highlights social media products developed and disseminated by WHO through various channels since the beginning of the outbreak</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# Multi-country outbreak of mpox (monkeypox) - External Situation Report 21, published 27 April 2023\n\n**Highlights**\n\n- Since the last situation report published on 13 April 2023, 183 new mpox cases (0.2% increase in total cases) and 14 new related deaths have been reported to WHO.\n\n- Globally, the number of mpox cases reported weekly continues to decline; however, the Western Pacific Region reported an increase in cases (n = 62) in the last three weeks compared to the three weeks prior (n = 46), driven by an outbreak of mpox affecting mainly men in Japan, the Republic of Korea and China, with sustained local transmission.\n\n- The report also highlights the mpox situation in the Eastern Mediterranean region.\n\n- Recent studies have estimated the incubation period for mpox during the current multi-country outbreak to be six to nine days. This situation report provides detailed information on the topic.\n\n- WHO continues to work with Member States to control and interrupt sustained person-to-person transmission of mpox, through risk communication and community engagement activities including on social media. This report highlights social media products developed and disseminated by WHO through various channels since the beginning of the outbreak",
+  "summary": " This external situation report published on 27 April 2023 provides an update on the global multi-country outbreak of mpox (monkeypox). Since the last report, 183 new cases and 14 new related deaths have been reported to WHO. The Western Pacific Region reported an increase in cases in the last three weeks compared to the three weeks prior, and the Eastern Mediterranean region is also highlighted. The incubation period for mpox is estimated to be six to nine days, and WHO is working with Member States to control and interrupt sustained person-to-person transmission of mpox through risk communication and community engagement activities, including on social media.",
+  "metadata": {
+    "id": "3956639",
+    "name": "Multi-country outbreak of mpox (monkeypox) - External Situation Report 21, published 27 April 2023",
+    "date_original": 1682553600000,
+    "date_changed": 1682604298000,
+    "date_created": 1682602736000,
+    "primary_country_id": 254,
+    "primary_country_name": "World",
+    "primary_country_iso3": "wld"
+  }
+}

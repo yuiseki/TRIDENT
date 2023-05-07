@@ -1,0 +1,117 @@
+{
+  "original": {
+    "id": "3954912",
+    "fields": {
+      "date": {
+        "changed": "2023-04-21T01:21:48+00:00",
+        "created": "2023-04-20T23:24:49+00:00",
+        "original": "2023-04-10T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/188",
+          "name": "Philippines",
+          "location": {
+            "lon": 122.88,
+            "lat": 11.74
+          },
+          "id": 188,
+          "shortname": "Philippines",
+          "iso3": "phl",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/188",
+        "name": "Philippines",
+        "location": {
+          "lon": 122.88,
+          "lat": 11.74
+        },
+        "id": 188,
+        "shortname": "Philippines",
+        "iso3": "phl"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1275",
+          "longname": "World Health Organization",
+          "spanish_name": "Organización Mundial de la Salud",
+          "name": "World Health Organization",
+          "id": 1275,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WHO",
+          "homepage": "http://www.who.int/"
+        }
+      ],
+      "title": "Philippines Coronavirus disease (COVID-19) Situation Report #125, 10 Apr 2023",
+      "body": "**COVID-19 cases**\n\nFrom 27 Feb - 9 Apr 2023, the number of reported COVID-19 cases has been in an increasing trend; 3 - 9 Apr, 1,944 (1.7 cases per 100,000 population); 27 Mar - 2 Apr, 1,721 (1.5 cases per 100,000 population); 20 - 26 Mar 2023, 1,298 (1.2 cases per 100,000 population); 13 - 19 Mar, 1,170 (1.0 case per 100,000 population); 6 - 12 Mar, 983 cases were reported (0.9 case per 100,000 population); and 27 Feb - 5 Mar, 913 cases (0.8 case per 100,000 population).\n\nFrom 3 - 9 Apr, the three regions with hightest reported case counts were, National Capital Region reporting 642 cases, Region IV-A: CALABARZON reporting 204 cases, and Region XI: Davao Region reporting 193 cases.",
+      "url": "https://reliefweb.int/node/3954912",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/94/23/9423e2ea-285b-49f8-847d-25302a0a36ac.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/94/23/9423e2ea-285b-49f8-847d-25302a0a36ac.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/94/23/9423e2ea-285b-49f8-847d-25302a0a36ac.png",
+            "version": "2413904-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/94/23/9423e2ea-285b-49f8-847d-25302a0a36ac.png"
+          },
+          "filename": "WHO PHL COVID-19 Situation Report #125.pdf",
+          "mimetype": "application/pdf",
+          "id": "2413904",
+          "filesize": "5269271",
+          "url": "https://reliefweb.int/attachments/9423e2ea-285b-49f8-847d-25302a0a36ac/WHO%20PHL%20COVID-19%20Situation%20Report%20%23125.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/philippines/philippines-coronavirus-disease-covid-19-situation-report-125-10-apr-2023",
+      "theme": [
+        {
+          "name": "Health",
+          "id": 4595
+        }
+      ],
+      "id": 3954912,
+      "status": "published",
+      "body-html": "<p><strong>COVID-19 cases</strong></p>\n<p>From 27 Feb - 9 Apr 2023, the number of reported COVID-19 cases has been in an increasing trend; 3 - 9 Apr, 1,944 (1.7 cases per 100,000 population); 27 Mar - 2 Apr, 1,721 (1.5 cases per 100,000 population); 20 - 26 Mar 2023, 1,298 (1.2 cases per 100,000 population); 13 - 19 Mar, 1,170 (1.0 case per 100,000 population); 6 - 12 Mar, 983 cases were reported (0.9 case per 100,000 population); and 27 Feb - 5 Mar, 913 cases (0.8 case per 100,000 population).</p>\n<p>From 3 - 9 Apr, the three regions with hightest reported case counts were, National Capital Region reporting 642 cases, Region IV-A: CALABARZON reporting 204 cases, and Region XI: Davao Region reporting 193 cases.</p>\n"
+    }
+  },
+  "text": "# Philippines Coronavirus disease (COVID-19) Situation Report #125, 10 Apr 2023\n\n**COVID-19 cases**\n\nFrom 27 Feb - 9 Apr 2023, the number of reported COVID-19 cases has been in an increasing trend; 3 - 9 Apr, 1,944 (1.7 cases per 100,000 population); 27 Mar - 2 Apr, 1,721 (1.5 cases per 100,000 population); 20 - 26 Mar 2023, 1,298 (1.2 cases per 100,000 population); 13 - 19 Mar, 1,170 (1.0 case per 100,000 population); 6 - 12 Mar, 983 cases were reported (0.9 case per 100,000 population); and 27 Feb - 5 Mar, 913 cases (0.8 case per 100,000 population).\n\nFrom 3 - 9 Apr, the three regions with hightest reported case counts were, National Capital Region reporting 642 cases, Region IV-A: CALABARZON reporting 204 cases, and Region XI: Davao Region reporting 193 cases.",
+  "summary": " The number of reported COVID-19 cases in the Philippines has been increasing from 27 Feb - 9 Apr 2023, with 1,944 cases reported in the last week (1.7 cases per 100,000 population). The three regions with the highest reported case counts were the National Capital Region (642 cases), Region IV-A: CALABARZON (204 cases), and Region XI: Davao Region (193 cases).",
+  "metadata": {
+    "id": "3954912",
+    "name": "Philippines Coronavirus disease (COVID-19) Situation Report #125, 10 Apr 2023",
+    "date_original": 1681084800000,
+    "date_changed": 1682040108000,
+    "date_created": 1682033089000,
+    "primary_country_id": 188,
+    "primary_country_name": "Philippines",
+    "primary_country_iso3": "phl",
+    "primary_country_location": {
+      "lon": 122.88,
+      "lat": 11.74
+    }
+  }
+}

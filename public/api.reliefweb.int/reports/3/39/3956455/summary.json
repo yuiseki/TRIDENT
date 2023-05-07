@@ -1,0 +1,133 @@
+{
+  "original": {
+    "id": "3956455",
+    "fields": {
+      "date": {
+        "changed": "2023-04-27T03:24:26+00:00",
+        "created": "2023-04-27T03:21:56+00:00",
+        "original": "2023-04-27T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/168",
+          "name": "Nepal",
+          "location": {
+            "lon": 83.94,
+            "lat": 28.25
+          },
+          "id": 168,
+          "shortname": "Nepal",
+          "iso3": "npl",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/168",
+        "name": "Nepal",
+        "location": {
+          "lon": 83.94,
+          "lat": 28.25
+        },
+        "id": 168,
+        "shortname": "Nepal",
+        "iso3": "npl"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1275",
+          "longname": "World Health Organization",
+          "spanish_name": "Organización Mundial de la Salud",
+          "name": "World Health Organization",
+          "id": 1275,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WHO",
+          "homepage": "http://www.who.int/"
+        }
+      ],
+      "title": "Focused COVID-19 Media Monitoring, Nepal (April 27, 2023) [EN/NE]",
+      "body": "**EMERGING THEME(S**)\n\n- The Ministry of Health and Population has instructed all hospitals to reserve 10% of beds for poor, helpless, and abandoned patients.\n \n\n**RECURRING THEME(S)**\n\n- 82 new coronavirus cases have been confirmed in the last 24 hours. Currently, there are 361 active cases in the country.\n\n- With the increasing COVID-19 infections, the number of people taking booster doses of the vaccine against the infection is also increasing.",
+      "url": "https://reliefweb.int/node/3956455",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/66/54/6654852f-3640-4424-baba-847a0a0c0d84.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/66/54/6654852f-3640-4424-baba-847a0a0c0d84.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/66/54/6654852f-3640-4424-baba-847a0a0c0d84.png",
+            "version": "2415210-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/66/54/6654852f-3640-4424-baba-847a0a0c0d84.png"
+          },
+          "filename": "Focused COVID-19 and Health Media Monitoring_Nepal_(English)_27th April.pdf",
+          "description": "English version",
+          "mimetype": "application/pdf",
+          "id": "2415210",
+          "filesize": "341069",
+          "url": "https://reliefweb.int/attachments/6654852f-3640-4424-baba-847a0a0c0d84/Focused%20COVID-19%20and%20Health%20Media%20Monitoring_Nepal_%28English%29_27th%20April.pdf"
+        },
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/65/3f/653f5384-d2bf-4509-9614-4ab9777592d4.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/65/3f/653f5384-d2bf-4509-9614-4ab9777592d4.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/65/3f/653f5384-d2bf-4509-9614-4ab9777592d4.png",
+            "version": "2415212-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/65/3f/653f5384-d2bf-4509-9614-4ab9777592d4.png"
+          },
+          "filename": "Focused-COVID-19-and-Health-Media-Monitoring_Nepal_(Nepali)-27th April.pdf",
+          "description": "Nepali version",
+          "mimetype": "application/pdf",
+          "id": "2415212",
+          "filesize": "341062",
+          "url": "https://reliefweb.int/attachments/653f5384-d2bf-4509-9614-4ab9777592d4/Focused-COVID-19-and-Health-Media-Monitoring_Nepal_%28Nepali%29-27th%20April.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/nepal/focused-covid-19-media-monitoring-nepal-april-27-2023-enne",
+      "theme": [
+        {
+          "name": "Health",
+          "id": 4595
+        }
+      ],
+      "id": 3956455,
+      "status": "published",
+      "body-html": "<p><strong>EMERGING THEME(S</strong>)</p>\n<ul>\n<li>The Ministry of Health and Population has instructed all hospitals to reserve 10% of beds for poor, helpless, and abandoned patients.</li>\n</ul>\n<p><strong>RECURRING THEME(S)</strong></p>\n<ul>\n<li>\n<p>82 new coronavirus cases have been confirmed in the last 24 hours. Currently, there are 361 active cases in the country.</p>\n</li>\n<li>\n<p>With the increasing COVID-19 infections, the number of people taking booster doses of the vaccine against the infection is also increasing.</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# Focused COVID-19 Media Monitoring, Nepal (April 27, 2023) [EN/NE]\n\n**EMERGING THEME(S**)\n\n- The Ministry of Health and Population has instructed all hospitals to reserve 10% of beds for poor, helpless, and abandoned patients.\n \n\n**RECURRING THEME(S)**\n\n- 82 new coronavirus cases have been confirmed in the last 24 hours. Currently, there are 361 active cases in the country.\n\n- With the increasing COVID-19 infections, the number of people taking booster doses of the vaccine against the infection is also increasing.",
+  "summary": " The Ministry of Health and Population in Nepal has instructed hospitals to reserve 10% of beds for poor, helpless, and abandoned patients. In the last 24 hours, 82 new coronavirus cases have been confirmed, bringing the total number of active cases to 361. As the number of infections rises, more people are taking booster doses of the vaccine against the virus.",
+  "metadata": {
+    "id": "3956455",
+    "name": "Focused COVID-19 Media Monitoring, Nepal (April 27, 2023) [EN/NE]",
+    "date_original": 1682553600000,
+    "date_changed": 1682565866000,
+    "date_created": 1682565716000,
+    "primary_country_id": 168,
+    "primary_country_name": "Nepal",
+    "primary_country_iso3": "npl",
+    "primary_country_location": {
+      "lon": 83.94,
+      "lat": 28.25
+    }
+  }
+}

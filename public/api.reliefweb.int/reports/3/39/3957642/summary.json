@@ -1,0 +1,158 @@
+{
+  "original": {
+    "id": "3957642",
+    "fields": {
+      "date": {
+        "changed": "2023-05-02T14:58:19+00:00",
+        "created": "2023-05-02T10:53:29+00:00",
+        "original": "2023-04-29T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/8657",
+          "name": "South Sudan",
+          "location": {
+            "lon": 30.5,
+            "lat": 6.9
+          },
+          "id": 8657,
+          "shortname": "South Sudan",
+          "iso3": "ssd",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/220",
+          "name": "Sudan",
+          "location": {
+            "lon": 30,
+            "lat": 15
+          },
+          "id": 220,
+          "shortname": "Sudan",
+          "iso3": "sdn"
+        }
+      ],
+      "origin": "https://data.unhcr.org/en/documents/details/100379",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/8657",
+        "name": "South Sudan",
+        "location": {
+          "lon": 30.5,
+          "lat": 6.9
+        },
+        "id": 8657,
+        "shortname": "South Sudan",
+        "iso3": "ssd"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "Sudan Situation: UNHCR Emergency Response in South Sudan (29 April 2023)",
+      "body": "Over 16,600 arrivals registered as of 28 April\n\n*Nearly 88% of current arrivals are South Sudanese refugees fleeing from Sudan returning to their homeland. The figures only capture those who approached UNHCR and partners for humanitarian assistance/registration and are likely to be significantly lower than total actual returns.* \n\nUNHCR is rapidly scaling up to assist people seeking safety in South Sudan following the outbreak of violence in Sudan.  \nAfter two weeks of fighting, the conflict looks set to persist and trigger further displacement both within and outside the country. UNHCR is working closely with partners and governments to respond to the needs of the newly arrived while preparing a joint response plan. \n\nSudan hosts over 800,000 South Sudanese refugees, a quarter of whom are in Khartoum and caught up in the fighting. To date, the majority of new arrivals have been South Sudanese returnees and the majority have crossed via the Joda border crossing in Renk, Upper Nile state. UNHCR is extremely concerned about the humanitarian impact of a large unplanned influx of returnees on an already dire humanitarian situation in South Sudan. \n\nMost of those returning are expected to go back to parts of the country that are already extremely fragile as a result of conflict, climate change, and food insecurity. In addition, the northern states of South Sudan are dependent on Sudan for the provision of basic goods and food and in just two weeks there have been sharp increases in the prices of food and other basic goods.\n\n**Current Situation**\n\nUNHCR and partners are planning for the estimated arrival of 180,000 returnees and 60,000 refugees. It is expected that the returnees will arrive first, mainly through Upper Nile state, as well as Western and Northern Bahr el Ghazal states. The pattern of refugee arrivals will be determined in large parts by the evolving nature of the conflicts, refugees are likely to arrive first from Khartoum and Darfur, with a possible outflow at a later point from the Kordofans and White Nile states of Sudan. Restrictions of movements inside Sudan are reported which may be preventing those fleeing from reaching the border.\n\nUNHCR team deployed to Joda and Renk from the start of the crisis in Sudan. They observed that the first families to arrive were those with sufficient means to pay for transportation from Khartoum. However, since the start of the week, the UNHCR team has noted a greater percentage of vulnerable individuals arriving at the border. \n\nArrivals in Renk are increasing daily and all signs concur that far greater numbers are on their way, including reports received from UNHCR in Sudan’s White Nile State that some 60,000 people, Sudanese and South Sudanese, have arrived from Khartoum, waiting to see how the conflict evolves to decide whether to return to the Sudanese capital or move to South Sudan. It is likely that those arriving on foot will be more vulnerable and have greater needs than the early arrivals.\n\nIn such a fluid context, numbers are extremely difficult to predict. However, the Government of South Sudan and humanitarian partners are planning for the return of an estimated 180,000 South Sudanese and the arrival of up to 60,000 refugees in the next three months.  \n\nIt is expected that, at first, the returnees will arrive mainly through Upper Nile state, but this pattern could change depending on the dynamics of the conflict, which will also influence refugee arrivals, which are expected to be largely from South Kordofan, Darfur and Blue Nile states of Sudan.",
+      "url": "https://reliefweb.int/node/3957642",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/39/61/39610fb7-b868-4836-b87c-52b1c15ba81a.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/39/61/39610fb7-b868-4836-b87c-52b1c15ba81a.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/39/61/39610fb7-b868-4836-b87c-52b1c15ba81a.png",
+            "version": "2416283-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/39/61/39610fb7-b868-4836-b87c-52b1c15ba81a.png"
+          },
+          "filename": "UNHCR External Update 1-Sudan Situation Emegency Response 29 Aprill 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2416283",
+          "filesize": "822558",
+          "url": "https://reliefweb.int/attachments/39610fb7-b868-4836-b87c-52b1c15ba81a/UNHCR%20External%20Update%201-Sudan%20Situation%20Emegency%20Response%2029%20Aprill%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/south-sudan/sudan-situation-unhcr-emergency-response-south-sudan-29-april-2023",
+      "redirects": [
+        "https://reliefweb.int/report/south-sudan/sudan-situation-unhcr-emergency-response-south-sudan"
+      ],
+      "theme": [
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3957642,
+      "headline": {
+        "summary": "Nearly 88% of arrivals are South Sudanese refugees returning home. The figures only capture those who approached UNHCR and partners for help; total actual returns are likely to be much higher.",
+        "image": {
+          "copyright": "UNHCR/Charlotte Hallqvist ",
+          "filename": "image1170x530cropped (28) (1).jpg",
+          "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/images/reports/44/c2/44c201c1-ae23-4d96-a09a-c9e7e1605eb3.jpg",
+          "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/images/reports/44/c2/44c201c1-ae23-4d96-a09a-c9e7e1605eb3.jpg",
+          "width": "1170",
+          "mimetype": "image/jpeg",
+          "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/images/reports/44/c2/44c201c1-ae23-4d96-a09a-c9e7e1605eb3.jpg",
+          "id": "1616150",
+          "filesize": "138990",
+          "url": "https://reliefweb.int/sites/default/files/images/reports/44/c2/44c201c1-ae23-4d96-a09a-c9e7e1605eb3.jpg",
+          "height": "530"
+        },
+        "title": "UNHCR rapidly scaling up to assist people seeking safety in South Sudan following Sudan violence"
+      },
+      "status": "published",
+      "body-html": "<p>Over 16,600 arrivals registered as of 28 April</p>\n<p><em>Nearly 88% of current arrivals are South Sudanese refugees fleeing from Sudan returning to their homeland. The figures only capture those who approached UNHCR and partners for humanitarian assistance/registration and are likely to be significantly lower than total actual returns.</em></p>\n<p>UNHCR is rapidly scaling up to assist people seeking safety in South Sudan following the outbreak of violence in Sudan.<br />\nAfter two weeks of fighting, the conflict looks set to persist and trigger further displacement both within and outside the country. UNHCR is working closely with partners and governments to respond to the needs of the newly arrived while preparing a joint response plan.</p>\n<p>Sudan hosts over 800,000 South Sudanese refugees, a quarter of whom are in Khartoum and caught up in the fighting. To date, the majority of new arrivals have been South Sudanese returnees and the majority have crossed via the Joda border crossing in Renk, Upper Nile state. UNHCR is extremely concerned about the humanitarian impact of a large unplanned influx of returnees on an already dire humanitarian situation in South Sudan.</p>\n<p>Most of those returning are expected to go back to parts of the country that are already extremely fragile as a result of conflict, climate change, and food insecurity. In addition, the northern states of South Sudan are dependent on Sudan for the provision of basic goods and food and in just two weeks there have been sharp increases in the prices of food and other basic goods.</p>\n<p><strong>Current Situation</strong></p>\n<p>UNHCR and partners are planning for the estimated arrival of 180,000 returnees and 60,000 refugees. It is expected that the returnees will arrive first, mainly through Upper Nile state, as well as Western and Northern Bahr el Ghazal states. The pattern of refugee arrivals will be determined in large parts by the evolving nature of the conflicts, refugees are likely to arrive first from Khartoum and Darfur, with a possible outflow at a later point from the Kordofans and White Nile states of Sudan. Restrictions of movements inside Sudan are reported which may be preventing those fleeing from reaching the border.</p>\n<p>UNHCR team deployed to Joda and Renk from the start of the crisis in Sudan. They observed that the first families to arrive were those with sufficient means to pay for transportation from Khartoum. However, since the start of the week, the UNHCR team has noted a greater percentage of vulnerable individuals arriving at the border.</p>\n<p>Arrivals in Renk are increasing daily and all signs concur that far greater numbers are on their way, including reports received from UNHCR in Sudan’s White Nile State that some 60,000 people, Sudanese and South Sudanese, have arrived from Khartoum, waiting to see how the conflict evolves to decide whether to return to the Sudanese capital or move to South Sudan. It is likely that those arriving on foot will be more vulnerable and have greater needs than the early arrivals.</p>\n<p>In such a fluid context, numbers are extremely difficult to predict. However, the Government of South Sudan and humanitarian partners are planning for the return of an estimated 180,000 South Sudanese and the arrival of up to 60,000 refugees in the next three months.</p>\n<p>It is expected that, at first, the returnees will arrive mainly through Upper Nile state, but this pattern could change depending on the dynamics of the conflict, which will also influence refugee arrivals, which are expected to be largely from South Kordofan, Darfur and Blue Nile states of Sudan.</p>\n"
+    }
+  },
+  "text": "# Sudan Situation: UNHCR Emergency Response in South Sudan (29 April 2023)\n\nOver 16,600 arrivals registered as of 28 April\n\n*Nearly 88% of current arrivals are South Sudanese refugees fleeing from Sudan returning to their homeland. The figures only capture those who approached UNHCR and partners for humanitarian assistance/registration and are likely to be significantly lower than total actual returns.* \n\nUNHCR is rapidly scaling up to assist people seeking safety in South Sudan following the outbreak of violence in Sudan.  \nAfter two weeks of fighting, the conflict looks set to persist and trigger further displacement both within and outside the country. UNHCR is working closely with partners and governments to respond to the needs of the newly arrived while preparing a joint response plan. \n\nSudan hosts over 800,000 South Sudanese refugees, a quarter of whom are in Khartoum and caught up in the fighting. To date, the majority of new arrivals have been South Sudanese returnees and the majority have crossed via the Joda border crossing in Renk, Upper Nile state. UNHCR is extremely concerned about the humanitarian impact of a large unplanned influx of returnees on an already dire humanitarian situation in South Sudan. \n\nMost of those returning are expected to go back to parts of the country that are already extremely fragile as a result of conflict, climate change, and food insecurity. In addition, the northern states of South Sudan are dependent on Sudan for the provision of basic goods and food and in just two weeks there have been sharp increases in the prices of food and other basic goods.\n\n**Current Situation**\n\nUNHCR and partners are planning for the estimated arrival of 180,000 returnees and 60,000 refugees. It is expected that the returnees will arrive first, mainly through Upper Nile state, as well as Western and Northern Bahr el Ghazal states. The pattern of refugee arrivals will be determined in large parts by the evolving nature of the conflicts, refugees are likely to arrive first from Khartoum and Darfur, with a possible outflow at a later point from the Kordofans and White Nile states of Sudan. Restrictions of movements inside Sudan are reported which may be preventing those fleeing from reaching the border.\n\nUNHCR team deployed to Joda and Renk from the start of the crisis in Sudan. They observed that the first families to arrive were those with sufficient means to pay for transportation from Khartoum. However, since the start of the week, the UNHCR team has noted a greater percentage of vulnerable individuals arriving at the border. \n\nArrivals in Renk are increasing daily and all signs concur that far greater numbers are on their way, including reports received from UNHCR in Sudan’s White Nile State that some 60,000 people, Sudanese and South Sudanese, have arrived from Khartoum, waiting to see how the conflict evolves to decide whether to return to the Sudanese capital or move to South Sudan. It is likely that those arriving on foot will be more vulnerable and have greater needs than the early arrivals.\n\nIn such a fluid context, numbers are extremely difficult to predict. However, the Government of South Sudan and humanitarian partners are planning for the return of an estimated 180,000 South Sudanese and the arrival of up to 60,000 refugees in the next three months.  \n\nIt is expected that, at first, the returnees will arrive mainly through Upper Nile state, but this pattern could change depending on the dynamics of the conflict, which will also influence refugee arrivals, which are expected to be largely from South Kordofan, Darfur and Blue Nile states of Sudan.",
+  "summary": "\n\nUNHCR is responding to the displacement of South Sudanese refugees from Sudan due to violence. Over 16,600 arrivals have been registered so far, with the majority being South Sudanese returnees. The Government of South Sudan and humanitarian partners are planning for the return of an estimated 180,000 South Sudanese and the arrival of up to 60,000 refugees in the next three months. UNHCR is working closely with partners and governments to respond to the needs of the newly arrived while preparing a joint response plan.",
+  "metadata": {
+    "id": "3957642",
+    "name": "Sudan Situation: UNHCR Emergency Response in South Sudan (29 April 2023)",
+    "date_original": 1682726400000,
+    "date_changed": 1683039499000,
+    "date_created": 1683024809000,
+    "primary_country_id": 8657,
+    "primary_country_name": "South Sudan",
+    "primary_country_iso3": "ssd",
+    "primary_country_location": {
+      "lon": 30.5,
+      "lat": 6.9
+    }
+  }
+}

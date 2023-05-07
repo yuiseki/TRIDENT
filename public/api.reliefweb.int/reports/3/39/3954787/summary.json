@@ -1,0 +1,110 @@
+{
+  "original": {
+    "id": "3954787",
+    "fields": {
+      "date": {
+        "changed": "2023-04-20T16:03:48+00:00",
+        "created": "2023-04-20T15:59:50+00:00",
+        "original": "2023-04-20T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/254",
+          "name": "World",
+          "id": 254,
+          "shortname": "World",
+          "iso3": "wld",
+          "primary": true
+        }
+      ],
+      "origin": "https://www.preventionweb.net/publication/after-big-droughts-come-big-cities-does-drought-drive-urbanization",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/254",
+        "name": "World",
+        "id": 254,
+        "shortname": "World",
+        "iso3": "wld"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "DR",
+          "name": "Drought",
+          "id": 4672
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1220",
+          "longname": "The World Bank Group",
+          "spanish_name": "Banco Mundial",
+          "name": "World Bank",
+          "id": 1220,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "World Bank",
+          "homepage": "http://www.worldbank.org"
+        }
+      ],
+      "title": "Policy Research Working Paper 10408: After Big Droughts Come Big Cities - Does Drought Drive Urbanization?",
+      "body": "*Vladimir Chlouba, Megha Mukim, and Esha D. Zaveri*\n\n**Abstract**\n\nThe Policy Research Working Paper Series disseminates the findings of work in progress to encourage the exchange of ideas about development issues. An objective of the series is to get the findings out quickly, even if the presentations are less than fully polished. The papers carry the names of the authors and should be cited accordingly. \n\nThe findings, interpretations, and conclusions expressed in this paper are entirely those of the authors. They do not necessarily represent the views of the International Bank for Reconstruction and Development/World Bank and its affiliated organizations, or those of the Executive Directors of the World Bank or the governments they represent.  \n\nPolicy Research Working Paper 10408 Existing research points to a possible link between slow-onset symptoms of climate change and migration. It is also known that rates of urbanization are fastest in some of the world’s poorest countries, which are incidentally also at greater risk of climate-induced migration. These separate findings suggest that slow-onset climate phenomena such as droughts have likely become a key driver of urbanization across much of the developing world. While intuitive, this link has not been convincingly established by extant research. This study examines the climate-urbanization nexus by constructing a novel measure of urban growth that uses remotely sensed information from the World Settlement Footprint dataset. Relying on panel data that cover the entire globe between 1985 and 2014, the paper shows that drought leads to faster urban growth. The results indicate that a hypothetical drought lasting 12 months is associated with a 27 percent increase in the average annual increment of built-up area. \n\nThe paper leverages novel data from several Sahelian cities to illustrate that much of this growth takes the form of non-infill development that extends outward from previously built-up localities.",
+      "url": "https://reliefweb.int/node/3954787",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/96/74/96745a57-e3df-4315-88b4-cd98ad8f7c26.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/96/74/96745a57-e3df-4315-88b4-cd98ad8f7c26.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/96/74/96745a57-e3df-4315-88b4-cd98ad8f7c26.png",
+            "version": "2413852-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/96/74/96745a57-e3df-4315-88b4-cd98ad8f7c26.png"
+          },
+          "filename": "IDU0233f5aa1021c7042440a9ae0da34cc4b0caf.pdf",
+          "mimetype": "application/pdf",
+          "id": "2413852",
+          "filesize": "12503702",
+          "url": "https://reliefweb.int/attachments/96745a57-e3df-4315-88b4-cd98ad8f7c26/IDU0233f5aa1021c7042440a9ae0da34cc4b0caf.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/world/policy-research-working-paper-10408-after-big-droughts-come-big-cities-does-drought-drive-urbanization",
+      "theme": [
+        {
+          "name": "Climate Change and Environment",
+          "id": 4588
+        },
+        {
+          "name": "Disaster Management",
+          "id": 4591
+        }
+      ],
+      "id": 3954787,
+      "status": "published",
+      "body-html": "<p><em>Vladimir Chlouba, Megha Mukim, and Esha D. Zaveri</em></p>\n<p><strong>Abstract</strong></p>\n<p>The Policy Research Working Paper Series disseminates the findings of work in progress to encourage the exchange of ideas about development issues. An objective of the series is to get the findings out quickly, even if the presentations are less than fully polished. The papers carry the names of the authors and should be cited accordingly.</p>\n<p>The findings, interpretations, and conclusions expressed in this paper are entirely those of the authors. They do not necessarily represent the views of the International Bank for Reconstruction and Development/World Bank and its affiliated organizations, or those of the Executive Directors of the World Bank or the governments they represent.</p>\n<p>Policy Research Working Paper 10408 Existing research points to a possible link between slow-onset symptoms of climate change and migration. It is also known that rates of urbanization are fastest in some of the world’s poorest countries, which are incidentally also at greater risk of climate-induced migration. These separate findings suggest that slow-onset climate phenomena such as droughts have likely become a key driver of urbanization across much of the developing world. While intuitive, this link has not been convincingly established by extant research. This study examines the climate-urbanization nexus by constructing a novel measure of urban growth that uses remotely sensed information from the World Settlement Footprint dataset. Relying on panel data that cover the entire globe between 1985 and 2014, the paper shows that drought leads to faster urban growth. The results indicate that a hypothetical drought lasting 12 months is associated with a 27 percent increase in the average annual increment of built-up area.</p>\n<p>The paper leverages novel data from several Sahelian cities to illustrate that much of this growth takes the form of non-infill development that extends outward from previously built-up localities.</p>\n"
+    }
+  },
+  "text": "# Policy Research Working Paper 10408: After Big Droughts Come Big Cities - Does Drought Drive Urbanization?\n\n*Vladimir Chlouba, Megha Mukim, and Esha D. Zaveri*\n\n**Abstract**\n\nThe Policy Research Working Paper Series disseminates the findings of work in progress to encourage the exchange of ideas about development issues. An objective of the series is to get the findings out quickly, even if the presentations are less than fully polished. The papers carry the names of the authors and should be cited accordingly. \n\nThe findings, interpretations, and conclusions expressed in this paper are entirely those of the authors. They do not necessarily represent the views of the International Bank for Reconstruction and Development/World Bank and its affiliated organizations, or those of the Executive Directors of the World Bank or the governments they represent.  \n\nPolicy Research Working Paper 10408 Existing research points to a possible link between slow-onset symptoms of climate change and migration. It is also known that rates of urbanization are fastest in some of the world’s poorest countries, which are incidentally also at greater risk of climate-induced migration. These separate findings suggest that slow-onset climate phenomena such as droughts have likely become a key driver of urbanization across much of the developing world. While intuitive, this link has not been convincingly established by extant research. This study examines the climate-urbanization nexus by constructing a novel measure of urban growth that uses remotely sensed information from the World Settlement Footprint dataset. Relying on panel data that cover the entire globe between 1985 and 2014, the paper shows that drought leads to faster urban growth. The results indicate that a hypothetical drought lasting 12 months is associated with a 27 percent increase in the average annual increment of built-up area. \n\nThe paper leverages novel data from several Sahelian cities to illustrate that much of this growth takes the form of non-infill development that extends outward from previously built-up localities.",
+  "summary": " This Policy Research Working Paper examines the link between slow-onset climate phenomena such as droughts and urbanization. Using panel data from 1985-2014, the paper shows that drought leads to faster urban growth, with a hypothetical drought lasting 12 months associated with a 27 percent increase in the average annual increment of built-up area. The paper also uses data from several Sahelian cities to illustrate that much of this growth takes the form of non-infill development.",
+  "metadata": {
+    "id": "3954787",
+    "name": "Policy Research Working Paper 10408: After Big Droughts Come Big Cities - Does Drought Drive Urbanization?",
+    "date_original": 1681948800000,
+    "date_changed": 1682006628000,
+    "date_created": 1682006390000,
+    "primary_country_id": 254,
+    "primary_country_name": "World",
+    "primary_country_iso3": "wld"
+  }
+}

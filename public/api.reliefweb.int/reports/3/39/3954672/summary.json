@@ -1,0 +1,168 @@
+{
+  "original": {
+    "id": "3954672",
+    "fields": {
+      "date": {
+        "changed": "2023-04-20T13:14:21+00:00",
+        "created": "2023-04-20T12:09:52+00:00",
+        "original": "2023-04-20T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/31",
+          "name": "Bangladesh",
+          "location": {
+            "lon": 90.27,
+            "lat": 23.84
+          },
+          "id": 31,
+          "shortname": "Bangladesh",
+          "iso3": "bgd",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/165",
+          "name": "Myanmar",
+          "location": {
+            "lon": 96.51,
+            "lat": 21.15
+          },
+          "id": 165,
+          "shortname": "Myanmar",
+          "iso3": "mmr"
+        }
+      ],
+      "origin": "https://www.humanitarianresponse.info/en/operations/bangladesh/document/bangladesh-humanitarian-response-fire-rohingya-refugee-camp-11-impact",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/31",
+        "name": "Bangladesh",
+        "location": {
+          "lon": 90.27,
+          "lat": 23.84
+        },
+        "id": 31,
+        "shortname": "Bangladesh",
+        "iso3": "bgd"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "FR",
+          "name": "Fire",
+          "id": 5706
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/43864",
+          "longname": "Inter Sector Coordination Group",
+          "name": "Inter Sector Coordination Group",
+          "id": 43864,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "ISCG",
+          "homepage": "https://www.humanitarianresponse.info/en/operations/bangladesh"
+        }
+      ],
+      "title": "Cox’s Bazar, Bangladesh: Humanitarian Response to the Fire in Rohingya Refugee Camp 11 (20 April 2023)",
+      "body": "**Background**\n\nOn 5 March 2023, a devastating fire broke out in Rohingya refugee Camp 11 located in Cox's Bazar,\nBangladesh. The fire, which started in the afternoon around 2:50 pm, burned for three hours before local\nfirefighters and authorities could bring it under control by 5 pm. The Refugee Relief and Repatriation\nCommissioner (RRRC) took charge, and humanitarian partners immediately arrived at the scene to assess\nthe damage and coordinate an effective response. The Rohingya Community Volunteers were the first\nresponders to the fire, and they are still aiding the affected camps alongside other responders. No fatalities\nhave been reported thus far.",
+      "url": "https://reliefweb.int/node/3954672",
+      "disaster": [
+        {
+          "name": "Bangladesh: Cox’s Bazar Camp Settlement Fire - Mar 2023",
+          "id": 51508,
+          "glide": "FR-2023-000031-BGD",
+          "type": [
+            {
+              "code": "FR",
+              "name": "Fire",
+              "id": 5706,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/fe/48/fe48b838-38fc-41c8-b070-6a9ce612c43f.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/fe/48/fe48b838-38fc-41c8-b070-6a9ce612c43f.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/fe/48/fe48b838-38fc-41c8-b070-6a9ce612c43f.png",
+            "version": "2413780-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/fe/48/fe48b838-38fc-41c8-b070-6a9ce612c43f.png"
+          },
+          "filename": "20230420_impact_and_response_report_on_the_fire_in_rohingya_refugee_camp_11.pdf",
+          "mimetype": "application/pdf",
+          "id": "2413780",
+          "filesize": "747806",
+          "url": "https://reliefweb.int/attachments/fe48b838-38fc-41c8-b070-6a9ce612c43f/20230420_impact_and_response_report_on_the_fire_in_rohingya_refugee_camp_11.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/bangladesh/coxs-bazar-bangladesh-humanitarian-response-fire-rohingya-refugee-camp-11-20-april-2023",
+      "theme": [
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3954672,
+      "status": "published",
+      "body-html": "<p><strong>Background</strong></p>\n<p>On 5 March 2023, a devastating fire broke out in Rohingya refugee Camp 11 located in Cox's Bazar,\nBangladesh. The fire, which started in the afternoon around 2:50 pm, burned for three hours before local\nfirefighters and authorities could bring it under control by 5 pm. The Refugee Relief and Repatriation\nCommissioner (RRRC) took charge, and humanitarian partners immediately arrived at the scene to assess\nthe damage and coordinate an effective response. The Rohingya Community Volunteers were the first\nresponders to the fire, and they are still aiding the affected camps alongside other responders. No fatalities\nhave been reported thus far.</p>\n"
+    }
+  },
+  "text": "# Cox’s Bazar, Bangladesh: Humanitarian Response to the Fire in Rohingya Refugee Camp 11 (20 April 2023)\n\n**Background**\n\nOn 5 March 2023, a devastating fire broke out in Rohingya refugee Camp 11 located in Cox's Bazar,\nBangladesh. The fire, which started in the afternoon around 2:50 pm, burned for three hours before local\nfirefighters and authorities could bring it under control by 5 pm. The Refugee Relief and Repatriation\nCommissioner (RRRC) took charge, and humanitarian partners immediately arrived at the scene to assess\nthe damage and coordinate an effective response. The Rohingya Community Volunteers were the first\nresponders to the fire, and they are still aiding the affected camps alongside other responders. No fatalities\nhave been reported thus far.",
+  "summary": " On 5 March 2023, a fire broke out in Rohingya refugee Camp 11 in Cox's Bazar, Bangladesh. The fire was brought under control by 5 pm, and the Refugee Relief and Repatriation Commissioner (RRRC) took charge. Humanitarian partners and Rohingya Community Volunteers arrived to assess the damage and coordinate an effective response. No fatalities have been reported.",
+  "metadata": {
+    "id": "3954672",
+    "name": "Cox’s Bazar, Bangladesh: Humanitarian Response to the Fire in Rohingya Refugee Camp 11 (20 April 2023)",
+    "date_original": 1681948800000,
+    "date_changed": 1681996461000,
+    "date_created": 1681992592000,
+    "primary_country_id": 31,
+    "primary_country_name": "Bangladesh",
+    "primary_country_iso3": "bgd",
+    "primary_country_location": {
+      "lon": 90.27,
+      "lat": 23.84
+    }
+  }
+}

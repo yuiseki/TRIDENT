@@ -1,0 +1,203 @@
+{
+  "original": {
+    "id": "3955637",
+    "fields": {
+      "date": {
+        "changed": "2023-04-27T03:27:06+00:00",
+        "created": "2023-04-25T03:12:34+00:00",
+        "original": "2023-04-20T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/31",
+          "name": "Bangladesh",
+          "location": {
+            "lon": 90.27,
+            "lat": 23.84
+          },
+          "id": 31,
+          "shortname": "Bangladesh",
+          "iso3": "bgd",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/119",
+          "name": "India",
+          "location": {
+            "lon": 79.28,
+            "lat": 22.76
+          },
+          "id": 119,
+          "shortname": "India",
+          "iso3": "ind"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/120",
+          "name": "Indonesia",
+          "location": {
+            "lon": 117.37,
+            "lat": -2.28
+          },
+          "id": 120,
+          "shortname": "Indonesia",
+          "iso3": "idn"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/239",
+          "name": "Tuvalu",
+          "location": {
+            "lon": 178.69,
+            "lat": -7.47
+          },
+          "id": 239,
+          "shortname": "Tuvalu",
+          "iso3": "tuv"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/251",
+          "name": "Viet Nam",
+          "location": {
+            "lon": 108.34,
+            "lat": 14.32
+          },
+          "id": 251,
+          "shortname": "Viet Nam",
+          "iso3": "vnm"
+        }
+      ],
+      "origin": "http://collections.unu.edu/view/UNU:9110#viewMetadata",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/31",
+        "name": "Bangladesh",
+        "location": {
+          "lon": 90.27,
+          "lat": 23.84
+        },
+        "id": 31,
+        "shortname": "Bangladesh",
+        "iso3": "bgd"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "DR",
+          "name": "Drought",
+          "id": 4672
+        },
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        },
+        {
+          "code": "LS",
+          "name": "Land Slide",
+          "id": 4728
+        },
+        {
+          "code": "TC",
+          "name": "Tropical Cyclone",
+          "id": 4618
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1820",
+          "longname": "United Nations Educational, Scientific and Cultural Organization",
+          "spanish_name": "Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura",
+          "name": "UN Educational, Scientific and Cultural Organization",
+          "id": 1820,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNESCO",
+          "homepage": "http://www.unesco.org"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1029",
+          "longname": "United Nations University",
+          "spanish_name": "Universidad de las Naciones Unidas",
+          "name": "United Nations University",
+          "id": 1029,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNU",
+          "homepage": "https://unu.edu/"
+        }
+      ],
+      "title": "Asia-Pacific regional synthesis: climate change, displacement and the right to education",
+      "body": "**Abstract**\n\nThis regional synthesis report aims to guide policymakers through providing operational policy recommendations on how to ensure education is protected in Asia and the Pacific in the face of climate change and displacement from a human rights-based approach. The report is one of four being developed and will contribute to the global initiative on climate change and displacement and the right to education – launched by UNESCO in 2020 – by informing the development of a Global Report with global policy recommendations.\n\n**Introduction**\n\nThe impact of climate change on human movement was first identified in the 1990s (IPCC, 1990; 1992). More than two decades later, the IPCC’s 2014 report offers empirical evidence on how major extreme weather events have already resulted in ‘significant population displacement’ (Adger, et al. 2014, p. 758), thus drawing attention to changes in the incidence of extreme events that amplify the challenges and risks of such displacement.  \n\nThe past few years have witnessed an increasing trend supporting this warning. An average of 25.3 million new displacements have been brought on each year by sudden-onset disasters since the data became available in 2008 (IDMC, 2020). It is worth noting that this global figure is likely an underestimate, as it does not include the people forced to flee their homes due to slowonset adverse effects of climate change.  \n\nFrom 2008 to 2020, the Asia-Pacific region accounted for 80 per cent of the total global new displacements related to disasters, becoming the world’s most climate-vulnerable region in both slow-onset and sudden-onset events (du Parc, 2020; IDMC, 2021; MMC, 2021). In 2021, Asia and the Pacific still accounted for 80 per cent of the world’s new disaster displacements, and China, the Philippines, India, and Viet Nam had the highest numbers of displaced persons per country (IDMC, 2022). On a per capita basis, however, Pacific small island states experienced some of the highest levels of displacement (IOM, 2021). In 2015, Tropical Cyclone Pam displaced more than 50 per cent of the population of Tuvalu and about a quarter of the population of Vanuatu.  \n\nPopulation growth and rapid urbanization, including in highly hazard-prone urban areas, are heightening the vulnerability of people in the region (IDMC, 2020). East Asia and the Pacific have had an average annual urbanization rate of 3 per cent, higher than any other region (Baker and Gadgil, 2017). Rapid and often unplanned urbanization increases the risk of disaster displacement by concentrating people in areas exposed to hazards. In South and East Asia, the exposure and risk are expected to rise due to the increasing numbers of people living in low-lying coastal cities and delta regions (UNDRR, 2019). The regional coastal population is predicted to double in Bangladesh, India, the Philippines, and Viet Nam by 2060 (IFRC, 2018). While sudden-onset disasters generate increased need for humanitarian assistance and disaster response, slow-onset processes can generate a shift in geopolitical stability that impacts food security, water scarcity, economic migration, and forced displacement. Perhaps the most evident example is the growing population in informal settlements and entrenched poverty. The World Bank data shows that, as of 2018, about 47 per cent of the urban population in Bangladesh reside in densely populated slums prone to flooding and lacking basic infrastructure, increasing displacement risk. \n\nClimate change is expected to aggravate these phenomena and have significant impacts on forms of displacement and migration that threaten global security and human rights (Adger, et al. 2014). Such impacts are now widely recognized by the international community and backed by empirical evidence. As is asserted in the 2022 IPCC Working Group II Summary for Policymakers, Section B.1.7, ‘Climate change is contributing to humanitarian crises where climate hazards interact with high vulnerability (high confidence). Climate and weather extremes are increasingly driving displacement in all regions (high confidence)’, and ‘through displacement and involuntary migration from extreme weather and climate events, climate change has generated and perpetuated vulnerability (medium confidence)’.\n\nAs a response to these growing risks, UNESCO launched a global initiative in 2020 to advocate for the education rights of climate-displaced persons (hereafter CDPs). The right to education is one of the most direct but frequently compromised dimensions throughout people’s displacement (UNESCO, 2020). Disasters, for example, can destroy or damage school infrastructure, thus preventing students from attending school, in addition to forcing migration or displacement from school districts. Moving – within and across borders – often involves learning disruption, limited access to quality education, or increased drop-out due to a variety of barriers. Inclusive, principled responses, which account for the specific needs and conditions of the most vulnerable, are essential to ensure the education rights of all affected persons.  \n\nThe present report synthesizes the results from five selected countries in Asia and the Pacific, namely Bangladesh, India, Indonesia, Tuvalu, and Viet Nam, with a view to advocating for CDPs’ right to education. The goal is to provide evidence-informed recommendations to build national education systems that are resilient to the impacts of climate change and ready to ensure the minimum learning disruption for all ages during the inevitable displacements. To this end, the research is guided by the question: To what extent does climate change, particularly climate displacement, threaten the right to education in the selected countries in Asia and the Pacific, and how to overcome existing barriers? \n \nThe next chapter elucidates the background of this report and turns to study objectives and methods of each country case. Chapter 3 offers an overview of the climate displacement situation in the region. Chapter 4 presents the education systems and status on the right to education of the studied countries. Chapter 5 presents the main findings across the country cases where five displacement scenarios vis-à-vis their implications for the right to education are explored. Policy recommendations for each scenario are explored in the same chapter.",
+      "url": "https://reliefweb.int/node/3955637",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/8b/44/8b440d0d-50f8-4deb-baf0-d70444311115.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/8b/44/8b440d0d-50f8-4deb-baf0-d70444311115.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/8b/44/8b440d0d-50f8-4deb-baf0-d70444311115.png",
+            "version": "2414381-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/8b/44/8b440d0d-50f8-4deb-baf0-d70444311115.png"
+          },
+          "filename": "385187eng.pdf",
+          "mimetype": "application/pdf",
+          "id": "2414381",
+          "filesize": "7407142",
+          "url": "https://reliefweb.int/attachments/8b440d0d-50f8-4deb-baf0-d70444311115/385187eng.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/bangladesh/asia-pacific-regional-synthesis-climate-change-displacement-and-right-education",
+      "theme": [
+        {
+          "name": "Climate Change and Environment",
+          "id": 4588
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        }
+      ],
+      "id": 3955637,
+      "status": "published",
+      "body-html": "<p><strong>Abstract</strong></p>\n<p>This regional synthesis report aims to guide policymakers through providing operational policy recommendations on how to ensure education is protected in Asia and the Pacific in the face of climate change and displacement from a human rights-based approach. The report is one of four being developed and will contribute to the global initiative on climate change and displacement and the right to education – launched by UNESCO in 2020 – by informing the development of a Global Report with global policy recommendations.</p>\n<p><strong>Introduction</strong></p>\n<p>The impact of climate change on human movement was first identified in the 1990s (IPCC, 1990; 1992). More than two decades later, the IPCC’s 2014 report offers empirical evidence on how major extreme weather events have already resulted in ‘significant population displacement’ (Adger, et al. 2014, p. 758), thus drawing attention to changes in the incidence of extreme events that amplify the challenges and risks of such displacement.</p>\n<p>The past few years have witnessed an increasing trend supporting this warning. An average of 25.3 million new displacements have been brought on each year by sudden-onset disasters since the data became available in 2008 (IDMC, 2020). It is worth noting that this global figure is likely an underestimate, as it does not include the people forced to flee their homes due to slowonset adverse effects of climate change.</p>\n<p>From 2008 to 2020, the Asia-Pacific region accounted for 80 per cent of the total global new displacements related to disasters, becoming the world’s most climate-vulnerable region in both slow-onset and sudden-onset events (du Parc, 2020; IDMC, 2021; MMC, 2021). In 2021, Asia and the Pacific still accounted for 80 per cent of the world’s new disaster displacements, and China, the Philippines, India, and Viet Nam had the highest numbers of displaced persons per country (IDMC, 2022). On a per capita basis, however, Pacific small island states experienced some of the highest levels of displacement (IOM, 2021). In 2015, Tropical Cyclone Pam displaced more than 50 per cent of the population of Tuvalu and about a quarter of the population of Vanuatu.</p>\n<p>Population growth and rapid urbanization, including in highly hazard-prone urban areas, are heightening the vulnerability of people in the region (IDMC, 2020). East Asia and the Pacific have had an average annual urbanization rate of 3 per cent, higher than any other region (Baker and Gadgil, 2017). Rapid and often unplanned urbanization increases the risk of disaster displacement by concentrating people in areas exposed to hazards. In South and East Asia, the exposure and risk are expected to rise due to the increasing numbers of people living in low-lying coastal cities and delta regions (UNDRR, 2019). The regional coastal population is predicted to double in Bangladesh, India, the Philippines, and Viet Nam by 2060 (IFRC, 2018). While sudden-onset disasters generate increased need for humanitarian assistance and disaster response, slow-onset processes can generate a shift in geopolitical stability that impacts food security, water scarcity, economic migration, and forced displacement. Perhaps the most evident example is the growing population in informal settlements and entrenched poverty. The World Bank data shows that, as of 2018, about 47 per cent of the urban population in Bangladesh reside in densely populated slums prone to flooding and lacking basic infrastructure, increasing displacement risk.</p>\n<p>Climate change is expected to aggravate these phenomena and have significant impacts on forms of displacement and migration that threaten global security and human rights (Adger, et al. 2014). Such impacts are now widely recognized by the international community and backed by empirical evidence. As is asserted in the 2022 IPCC Working Group II Summary for Policymakers, Section B.1.7, ‘Climate change is contributing to humanitarian crises where climate hazards interact with high vulnerability (high confidence). Climate and weather extremes are increasingly driving displacement in all regions (high confidence)’, and ‘through displacement and involuntary migration from extreme weather and climate events, climate change has generated and perpetuated vulnerability (medium confidence)’.</p>\n<p>As a response to these growing risks, UNESCO launched a global initiative in 2020 to advocate for the education rights of climate-displaced persons (hereafter CDPs). The right to education is one of the most direct but frequently compromised dimensions throughout people’s displacement (UNESCO, 2020). Disasters, for example, can destroy or damage school infrastructure, thus preventing students from attending school, in addition to forcing migration or displacement from school districts. Moving – within and across borders – often involves learning disruption, limited access to quality education, or increased drop-out due to a variety of barriers. Inclusive, principled responses, which account for the specific needs and conditions of the most vulnerable, are essential to ensure the education rights of all affected persons.</p>\n<p>The present report synthesizes the results from five selected countries in Asia and the Pacific, namely Bangladesh, India, Indonesia, Tuvalu, and Viet Nam, with a view to advocating for CDPs’ right to education. The goal is to provide evidence-informed recommendations to build national education systems that are resilient to the impacts of climate change and ready to ensure the minimum learning disruption for all ages during the inevitable displacements. To this end, the research is guided by the question: To what extent does climate change, particularly climate displacement, threaten the right to education in the selected countries in Asia and the Pacific, and how to overcome existing barriers?</p>\n<p>The next chapter elucidates the background of this report and turns to study objectives and methods of each country case. Chapter 3 offers an overview of the climate displacement situation in the region. Chapter 4 presents the education systems and status on the right to education of the studied countries. Chapter 5 presents the main findings across the country cases where five displacement scenarios vis-à-vis their implications for the right to education are explored. Policy recommendations for each scenario are explored in the same chapter.</p>\n"
+    }
+  },
+  "text": "# Asia-Pacific regional synthesis: climate change, displacement and the right to education\n\n**Abstract**\n\nThis regional synthesis report aims to guide policymakers through providing operational policy recommendations on how to ensure education is protected in Asia and the Pacific in the face of climate change and displacement from a human rights-based approach. The report is one of four being developed and will contribute to the global initiative on climate change and displacement and the right to education – launched by UNESCO in 2020 – by informing the development of a Global Report with global policy recommendations.\n\n**Introduction**\n\nThe impact of climate change on human movement was first identified in the 1990s (IPCC, 1990; 1992). More than two decades later, the IPCC’s 2014 report offers empirical evidence on how major extreme weather events have already resulted in ‘significant population displacement’ (Adger, et al. 2014, p. 758), thus drawing attention to changes in the incidence of extreme events that amplify the challenges and risks of such displacement.  \n\nThe past few years have witnessed an increasing trend supporting this warning. An average of 25.3 million new displacements have been brought on each year by sudden-onset disasters since the data became available in 2008 (IDMC, 2020). It is worth noting that this global figure is likely an underestimate, as it does not include the people forced to flee their homes due to slowonset adverse effects of climate change.  \n\nFrom 2008 to 2020, the Asia-Pacific region accounted for 80 per cent of the total global new displacements related to disasters, becoming the world’s most climate-vulnerable region in both slow-onset and sudden-onset events (du Parc, 2020; IDMC, 2021; MMC, 2021). In 2021, Asia and the Pacific still accounted for 80 per cent of the world’s new disaster displacements, and China, the Philippines, India, and Viet Nam had the highest numbers of displaced persons per country (IDMC, 2022). On a per capita basis, however, Pacific small island states experienced some of the highest levels of displacement (IOM, 2021). In 2015, Tropical Cyclone Pam displaced more than 50 per cent of the population of Tuvalu and about a quarter of the population of Vanuatu.  \n\nPopulation growth and rapid urbanization, including in highly hazard-prone urban areas, are heightening the vulnerability of people in the region (IDMC, 2020). East Asia and the Pacific have had an average annual urbanization rate of 3 per cent, higher than any other region (Baker and Gadgil, 2017). Rapid and often unplanned urbanization increases the risk of disaster displacement by concentrating people in areas exposed to hazards. In South and East Asia, the exposure and risk are expected to rise due to the increasing numbers of people living in low-lying coastal cities and delta regions (UNDRR, 2019). The regional coastal population is predicted to double in Bangladesh, India, the Philippines, and Viet Nam by 2060 (IFRC, 2018). While sudden-onset disasters generate increased need for humanitarian assistance and disaster response, slow-onset processes can generate a shift in geopolitical stability that impacts food security, water scarcity, economic migration, and forced displacement. Perhaps the most evident example is the growing population in informal settlements and entrenched poverty. The World Bank data shows that, as of 2018, about 47 per cent of the urban population in Bangladesh reside in densely populated slums prone to flooding and lacking basic infrastructure, increasing displacement risk. \n\nClimate change is expected to aggravate these phenomena and have significant impacts on forms of displacement and migration that threaten global security and human rights (Adger, et al. 2014). Such impacts are now widely recognized by the international community and backed by empirical evidence. As is asserted in the 2022 IPCC Working Group II Summary for Policymakers, Section B.1.7, ‘Climate change is contributing to humanitarian crises where climate hazards interact with high vulnerability (high confidence). Climate and weather extremes are increasingly driving displacement in all regions (high confidence)’, and ‘through displacement and involuntary migration from extreme weather and climate events, climate change has generated and perpetuated vulnerability (medium confidence)’.\n\nAs a response to these growing risks, UNESCO launched a global initiative in 2020 to advocate for the education rights of climate-displaced persons (hereafter CDPs). The right to education is one of the most direct but frequently compromised dimensions throughout people’s displacement (UNESCO, 2020). Disasters, for example, can destroy or damage school infrastructure, thus preventing students from attending school, in addition to forcing migration or displacement from school districts. Moving – within and across borders – often involves learning disruption, limited access to quality education, or increased drop-out due to a variety of barriers. Inclusive, principled responses, which account for the specific needs and conditions of the most vulnerable, are essential to ensure the education rights of all affected persons.  \n\nThe present report synthesizes the results from five selected countries in Asia and the Pacific, namely Bangladesh, India, Indonesia, Tuvalu, and Viet Nam, with a view to advocating for CDPs’ right to education. The goal is to provide evidence-informed recommendations to build national education systems that are resilient to the impacts of climate change and ready to ensure the minimum learning disruption for all ages during the inevitable displacements. To this end, the research is guided by the question: To what extent does climate change, particularly climate displacement, threaten the right to education in the selected countries in Asia and the Pacific, and how to overcome existing barriers? \n \nThe next chapter elucidates the background of this report and turns to study objectives and methods of each country case. Chapter 3 offers an overview of the climate displacement situation in the region. Chapter 4 presents the education systems and status on the right to education of the studied countries. Chapter 5 presents the main findings across the country cases where five displacement scenarios vis-à-vis their implications for the right to education are explored. Policy recommendations for each scenario are explored in the same chapter.",
+  "summary": " This regional synthesis report provides operational policy recommendations on how to ensure education is protected in Asia and the Pacific in the face of climate change and displacement from a human rights-based approach. It focuses on five countries in the region (Bangladesh, India, Indonesia, Tuvalu, and Viet Nam) and explores five displacement scenarios and their implications for the right to education. The report aims to inform the development of a Global Report with global policy recommendations.",
+  "metadata": {
+    "id": "3955637",
+    "name": "Asia-Pacific regional synthesis: climate change, displacement and the right to education",
+    "date_original": 1681948800000,
+    "date_changed": 1682566026000,
+    "date_created": 1682392354000,
+    "primary_country_id": 31,
+    "primary_country_name": "Bangladesh",
+    "primary_country_iso3": "bgd",
+    "primary_country_location": {
+      "lon": 90.27,
+      "lat": 23.84
+    }
+  }
+}

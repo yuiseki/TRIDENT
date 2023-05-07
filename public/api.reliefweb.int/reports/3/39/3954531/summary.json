@@ -1,0 +1,133 @@
+{
+  "original": {
+    "id": "3954531",
+    "fields": {
+      "date": {
+        "changed": "2023-04-20T03:53:43+00:00",
+        "created": "2023-04-20T03:29:59+00:00",
+        "original": "2023-04-20T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/168",
+          "name": "Nepal",
+          "location": {
+            "lon": 83.94,
+            "lat": 28.25
+          },
+          "id": 168,
+          "shortname": "Nepal",
+          "iso3": "npl",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/168",
+        "name": "Nepal",
+        "location": {
+          "lon": 83.94,
+          "lat": 28.25
+        },
+        "id": 168,
+        "shortname": "Nepal",
+        "iso3": "npl"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1275",
+          "longname": "World Health Organization",
+          "spanish_name": "Organización Mundial de la Salud",
+          "name": "World Health Organization",
+          "id": 1275,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WHO",
+          "homepage": "http://www.who.int/"
+        }
+      ],
+      "title": "Focused COVID-19 Media Monitoring, Nepal (April 20, 2023) [EN/NE]",
+      "body": "**Recurring Theme(s):**\n\n-   108 new coronavirus cases have been confirmed in the last 24 hours. Currently, there are 386 active cases in the country.\n-   The Ministry of Health and Population has requested for a mandatory isolation for seven days in case of COVID-19 infection.",
+      "url": "https://reliefweb.int/node/3954531",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/a5/f4/a5f407f3-3be4-45cc-a48a-b3047901784b.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/a5/f4/a5f407f3-3be4-45cc-a48a-b3047901784b.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/a5/f4/a5f407f3-3be4-45cc-a48a-b3047901784b.png",
+            "version": "2413671-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/a5/f4/a5f407f3-3be4-45cc-a48a-b3047901784b.png"
+          },
+          "filename": "Focused COVID-19 and Health Media Monitoring_Nepal_(English)_20th April.pdf",
+          "description": "English version",
+          "mimetype": "application/pdf",
+          "id": "2413671",
+          "filesize": "342619",
+          "url": "https://reliefweb.int/attachments/a5f407f3-3be4-45cc-a48a-b3047901784b/Focused%20COVID-19%20and%20Health%20Media%20Monitoring_Nepal_%28English%29_20th%20April.pdf"
+        },
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/eb/f7/ebf7d858-6e64-4fb9-bdc7-8d7e76f7a1f6.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/eb/f7/ebf7d858-6e64-4fb9-bdc7-8d7e76f7a1f6.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/eb/f7/ebf7d858-6e64-4fb9-bdc7-8d7e76f7a1f6.png",
+            "version": "2413673-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/eb/f7/ebf7d858-6e64-4fb9-bdc7-8d7e76f7a1f6.png"
+          },
+          "filename": "Focused COVID-19 and Health Media Monitoring_Nepal_(Nepali)_20th April.pdf",
+          "description": "Nepali version",
+          "mimetype": "application/pdf",
+          "id": "2413673",
+          "filesize": "334994",
+          "url": "https://reliefweb.int/attachments/ebf7d858-6e64-4fb9-bdc7-8d7e76f7a1f6/Focused%20COVID-19%20and%20Health%20Media%20Monitoring_Nepal_%28Nepali%29_20th%20April.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/nepal/focused-covid-19-media-monitoring-nepal-april-20-2023-enne",
+      "theme": [
+        {
+          "name": "Health",
+          "id": 4595
+        }
+      ],
+      "id": 3954531,
+      "status": "published",
+      "body-html": "<p><strong>Recurring Theme(s):</strong></p>\n<ul>\n<li>108 new coronavirus cases have been confirmed in the last 24 hours. Currently, there are 386 active cases in the country.</li>\n<li>The Ministry of Health and Population has requested for a mandatory isolation for seven days in case of COVID-19 infection.</li>\n</ul>\n"
+    }
+  },
+  "text": "# Focused COVID-19 Media Monitoring, Nepal (April 20, 2023) [EN/NE]\n\n**Recurring Theme(s):**\n\n-   108 new coronavirus cases have been confirmed in the last 24 hours. Currently, there are 386 active cases in the country.\n-   The Ministry of Health and Population has requested for a mandatory isolation for seven days in case of COVID-19 infection.",
+  "summary": " In Nepal, 108 new coronavirus cases have been confirmed in the last 24 hours, bringing the total number of active cases to 386. The Ministry of Health and Population has requested for a mandatory isolation period of seven days for those infected with COVID-19.",
+  "metadata": {
+    "id": "3954531",
+    "name": "Focused COVID-19 Media Monitoring, Nepal (April 20, 2023) [EN/NE]",
+    "date_original": 1681948800000,
+    "date_changed": 1681962823000,
+    "date_created": 1681961399000,
+    "primary_country_id": 168,
+    "primary_country_name": "Nepal",
+    "primary_country_iso3": "npl",
+    "primary_country_location": {
+      "lon": 83.94,
+      "lat": 28.25
+    }
+  }
+}

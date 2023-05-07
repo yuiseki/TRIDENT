@@ -1,0 +1,119 @@
+{
+  "original": {
+    "id": "3956385",
+    "fields": {
+      "date": {
+        "changed": "2023-04-26T19:27:57+00:00",
+        "created": "2023-04-26T19:25:54+00:00",
+        "original": "2023-04-26T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/75",
+          "name": "Democratic Republic of the Congo",
+          "location": {
+            "lon": 21.7587,
+            "lat": -4.03833
+          },
+          "id": 75,
+          "shortname": "DR Congo",
+          "iso3": "cod",
+          "primary": true
+        }
+      ],
+      "origin": "https://reporting.unhcr.org/document/4716",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/75",
+        "name": "Democratic Republic of the Congo",
+        "location": {
+          "lon": 21.7587,
+          "lat": -4.03833
+        },
+        "id": 75,
+        "shortname": "DR Congo",
+        "iso3": "cod"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "Democratic Republic of the Congo: Emergency Update (13 - 26 March 2023)",
+      "body": "**OVERVIEW**\n\nIn the eastern provinces of North Kivu and Ituri in DRC, violent clashes between government led forces and nonstate armed groups, including M23, are generating protracted displacement. More than 881,000 people have been displaced since the resurgence of violence in Rutshuru and Masisi territories in March 2022.  \nSpontaneous displacement sites have been established in many locations around North Kivu’s provincial capital of Goma. Many have also fled to South Kivu Province. Elsewhere in the provinces, populations in locations such as Beni (North Kivu) and Bunia (Ituri) are facing escalating violence and incidents of human rights violations at the hands of armed groups. The humanitarian response is being scaled up to address urgent needs of the displaced.",
+      "url": "https://reliefweb.int/node/3956385",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/e6/5e/e65e8a6c-91e0-465f-b815-19394f38e9ea.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/e6/5e/e65e8a6c-91e0-465f-b815-19394f38e9ea.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/e6/5e/e65e8a6c-91e0-465f-b815-19394f38e9ea.png",
+            "version": "2415127-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/e6/5e/e65e8a6c-91e0-465f-b815-19394f38e9ea.png"
+          },
+          "filename": "DRC L2 Emergency Update 13-26 March 2023 (1).pdf",
+          "mimetype": "application/pdf",
+          "id": "2415127",
+          "filesize": "539792",
+          "url": "https://reliefweb.int/attachments/e65e8a6c-91e0-465f-b815-19394f38e9ea/DRC%20L2%20Emergency%20Update%2013-26%20March%202023%20%281%29.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/democratic-republic-congo/democratic-republic-congo-emergency-update-13-26-march-2023",
+      "theme": [
+        {
+          "name": "Camp Coordination and Camp Management",
+          "id": 49458
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        }
+      ],
+      "id": 3956385,
+      "status": "published",
+      "body-html": "<p><strong>OVERVIEW</strong></p>\n<p>In the eastern provinces of North Kivu and Ituri in DRC, violent clashes between government led forces and nonstate armed groups, including M23, are generating protracted displacement. More than 881,000 people have been displaced since the resurgence of violence in Rutshuru and Masisi territories in March 2022.<br />\nSpontaneous displacement sites have been established in many locations around North Kivu’s provincial capital of Goma. Many have also fled to South Kivu Province. Elsewhere in the provinces, populations in locations such as Beni (North Kivu) and Bunia (Ituri) are facing escalating violence and incidents of human rights violations at the hands of armed groups. The humanitarian response is being scaled up to address urgent needs of the displaced.</p>\n"
+    }
+  },
+  "text": "# Democratic Republic of the Congo: Emergency Update (13 - 26 March 2023)\n\n**OVERVIEW**\n\nIn the eastern provinces of North Kivu and Ituri in DRC, violent clashes between government led forces and nonstate armed groups, including M23, are generating protracted displacement. More than 881,000 people have been displaced since the resurgence of violence in Rutshuru and Masisi territories in March 2022.  \nSpontaneous displacement sites have been established in many locations around North Kivu’s provincial capital of Goma. Many have also fled to South Kivu Province. Elsewhere in the provinces, populations in locations such as Beni (North Kivu) and Bunia (Ituri) are facing escalating violence and incidents of human rights violations at the hands of armed groups. The humanitarian response is being scaled up to address urgent needs of the displaced.",
+  "summary": "\n\nViolent clashes between government forces and nonstate armed groups in the eastern provinces of North Kivu and Ituri in the Democratic Republic of the Congo have caused over 881,000 people to be displaced since March 2022. Many have fled to Goma and South Kivu Province, while others in locations such as Beni and Bunia are facing escalating violence and human rights violations. The humanitarian response is being scaled up to address the urgent needs of the displaced.",
+  "metadata": {
+    "id": "3956385",
+    "name": "Democratic Republic of the Congo: Emergency Update (13 - 26 March 2023)",
+    "date_original": 1682467200000,
+    "date_changed": 1682537277000,
+    "date_created": 1682537154000,
+    "primary_country_id": 75,
+    "primary_country_name": "Democratic Republic of the Congo",
+    "primary_country_iso3": "cod",
+    "primary_country_location": {
+      "lon": 21.7587,
+      "lat": -4.03833
+    }
+  }
+}

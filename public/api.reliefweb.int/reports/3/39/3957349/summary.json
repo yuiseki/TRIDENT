@@ -1,0 +1,308 @@
+{
+  "original": {
+    "id": "3957349",
+    "fields": {
+      "date": {
+        "changed": "2023-05-01T10:10:48+00:00",
+        "created": "2023-05-01T10:00:22+00:00",
+        "original": "2023-05-01T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/13",
+          "name": "Afghanistan",
+          "location": {
+            "lon": 66.03,
+            "lat": 33.84
+          },
+          "id": 13,
+          "shortname": "Afghanistan",
+          "iso3": "afg"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/31",
+          "name": "Bangladesh",
+          "location": {
+            "lon": 90.27,
+            "lat": 23.84
+          },
+          "id": 31,
+          "shortname": "Bangladesh",
+          "iso3": "bgd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/51",
+          "name": "Canary Islands (Spain)",
+          "location": {
+            "lon": -16.6291,
+            "lat": 28.2916
+          },
+          "id": 51,
+          "shortname": "Canary Islands (Spain)",
+          "iso3": "cai"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/72",
+          "name": "Cyprus",
+          "location": {
+            "lon": 33.22,
+            "lat": 35.05
+          },
+          "id": 72,
+          "shortname": "Cyprus",
+          "iso3": "cyp"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/82",
+          "name": "Egypt",
+          "location": {
+            "lon": 29.87,
+            "lat": 26.49
+          },
+          "id": 82,
+          "shortname": "Egypt",
+          "iso3": "egy"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/85",
+          "name": "Eritrea",
+          "location": {
+            "lon": 38.58,
+            "lat": 15.68
+          },
+          "id": 85,
+          "shortname": "Eritrea",
+          "iso3": "eri"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/104",
+          "name": "Greece",
+          "location": {
+            "lon": 23.83,
+            "lat": 38.59
+          },
+          "id": 104,
+          "shortname": "Greece",
+          "iso3": "grc"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/121",
+          "name": "Iran (Islamic Republic of)",
+          "location": {
+            "lon": 54.3,
+            "lat": 32.57
+          },
+          "id": 121,
+          "shortname": "Iran",
+          "iso3": "irn"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/122",
+          "name": "Iraq",
+          "location": {
+            "lon": 43.4,
+            "lat": 33.05
+          },
+          "id": 122,
+          "shortname": "Iraq",
+          "iso3": "irq"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/126",
+          "name": "Italy",
+          "location": {
+            "lon": 12.65,
+            "lat": 42.5
+          },
+          "id": 126,
+          "shortname": "Italy",
+          "iso3": "ita"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/137",
+          "name": "Lebanon",
+          "location": {
+            "lon": 35.89,
+            "lat": 33.92
+          },
+          "id": 137,
+          "shortname": "Lebanon",
+          "iso3": "lbn"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/140",
+          "name": "Libya",
+          "location": {
+            "lon": 18.02,
+            "lat": 27.04
+          },
+          "id": 140,
+          "shortname": "Libya",
+          "iso3": "lby"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/150",
+          "name": "Malta",
+          "location": {
+            "lon": 14.44,
+            "lat": 35.89
+          },
+          "id": 150,
+          "shortname": "Malta",
+          "iso3": "mlt"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/218",
+          "name": "Spain",
+          "location": {
+            "lon": -3.28,
+            "lat": 40.3
+          },
+          "id": 218,
+          "shortname": "Spain",
+          "iso3": "esp"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/220",
+          "name": "Sudan",
+          "location": {
+            "lon": 30,
+            "lat": 15
+          },
+          "id": 220,
+          "shortname": "Sudan",
+          "iso3": "sdn"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/226",
+          "name": "Syrian Arab Republic",
+          "location": {
+            "lon": 38.51,
+            "lat": 35.01
+          },
+          "id": 226,
+          "shortname": "Syria",
+          "iso3": "syr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/235",
+          "name": "Tunisia",
+          "location": {
+            "lon": 9.56,
+            "lat": 34.11
+          },
+          "id": 235,
+          "shortname": "Tunisia",
+          "iso3": "tun"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/236",
+          "name": "Türkiye",
+          "location": {
+            "lon": 35.18,
+            "lat": 39.06
+          },
+          "id": 236,
+          "shortname": "Türkiye",
+          "iso3": "tur"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/241",
+          "name": "Ukraine",
+          "location": {
+            "lon": 31.32,
+            "lat": 49.32
+          },
+          "id": 241,
+          "shortname": "Ukraine",
+          "iso3": "ukr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/254",
+          "name": "World",
+          "id": 254,
+          "shortname": "World",
+          "iso3": "wld",
+          "primary": true
+        }
+      ],
+      "origin": "https://data.unhcr.org/en/documents/details/100346",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/254",
+        "name": "World",
+        "id": 254,
+        "shortname": "World",
+        "iso3": "wld"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "UNHCR Europe situations: Data and trends - Arrivals and displaced populations (February 2023)",
+      "body": "The war in Ukraine triggered a major increase in humanitarian needs due to mass internal displacement and refugee outflows. As of 28 February 2023, 8,105,809 refugees from Ukraine were recorded across Europe, while 4,882,737 registered for Temporary Protection or similar national protection schemes. Within Ukraine, 5.4 million people were internally displaced as of end of January.\n\nOn February 2023, UNHCR published its third report of intentions surveys with refugees from Ukraine, as well as the first report of surveys with IDPs within Ukraine. The vast majority of refugees and IDPs –77% and 79%– want to return home one day, however, only 12% of both refugees and IDPs plan to do so in the next three months. The analysis shows that in addition to the specific circumstances in their places of origin, refugees’ intentions are also influenced by the level of access to basic services and rights in host countries and by their specific socio-demographic characteristics, with intentions to return in next three months being more likely among older persons, those with spouse or children still in Ukraine and those facing inclusion challenges in host countries. While the main enabling factor for return is an end to the war and the related safety risks, respondents reported that having adequate access to electricity and water, health, housing and livelihoods in Ukraine will also significantly influence their decisions.",
+      "url": "https://reliefweb.int/node/3957349",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/c2/88/c2880505-9014-4925-893d-bd23613dd9a3.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/c2/88/c2880505-9014-4925-893d-bd23613dd9a3.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/c2/88/c2880505-9014-4925-893d-bd23613dd9a3.png",
+            "version": "2415971-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/c2/88/c2880505-9014-4925-893d-bd23613dd9a3.png"
+          },
+          "filename": "20230228_RBE Europe Situations and Data Trends.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415971",
+          "filesize": "1509137",
+          "url": "https://reliefweb.int/attachments/c2880505-9014-4925-893d-bd23613dd9a3/20230228_RBE%20Europe%20Situations%20and%20Data%20Trends.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/world/unhcr-europe-situations-data-and-trends-arrivals-and-displaced-populations-february-2023",
+      "theme": [
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        }
+      ],
+      "id": 3957349,
+      "status": "published",
+      "body-html": "<p>The war in Ukraine triggered a major increase in humanitarian needs due to mass internal displacement and refugee outflows. As of 28 February 2023, 8,105,809 refugees from Ukraine were recorded across Europe, while 4,882,737 registered for Temporary Protection or similar national protection schemes. Within Ukraine, 5.4 million people were internally displaced as of end of January.</p>\n<p>On February 2023, UNHCR published its third report of intentions surveys with refugees from Ukraine, as well as the first report of surveys with IDPs within Ukraine. The vast majority of refugees and IDPs –77% and 79%– want to return home one day, however, only 12% of both refugees and IDPs plan to do so in the next three months. The analysis shows that in addition to the specific circumstances in their places of origin, refugees’ intentions are also influenced by the level of access to basic services and rights in host countries and by their specific socio-demographic characteristics, with intentions to return in next three months being more likely among older persons, those with spouse or children still in Ukraine and those facing inclusion challenges in host countries. While the main enabling factor for return is an end to the war and the related safety risks, respondents reported that having adequate access to electricity and water, health, housing and livelihoods in Ukraine will also significantly influence their decisions.</p>\n"
+    }
+  },
+  "text": "# UNHCR Europe situations: Data and trends - Arrivals and displaced populations (February 2023)\n\nThe war in Ukraine triggered a major increase in humanitarian needs due to mass internal displacement and refugee outflows. As of 28 February 2023, 8,105,809 refugees from Ukraine were recorded across Europe, while 4,882,737 registered for Temporary Protection or similar national protection schemes. Within Ukraine, 5.4 million people were internally displaced as of end of January.\n\nOn February 2023, UNHCR published its third report of intentions surveys with refugees from Ukraine, as well as the first report of surveys with IDPs within Ukraine. The vast majority of refugees and IDPs –77% and 79%– want to return home one day, however, only 12% of both refugees and IDPs plan to do so in the next three months. The analysis shows that in addition to the specific circumstances in their places of origin, refugees’ intentions are also influenced by the level of access to basic services and rights in host countries and by their specific socio-demographic characteristics, with intentions to return in next three months being more likely among older persons, those with spouse or children still in Ukraine and those facing inclusion challenges in host countries. While the main enabling factor for return is an end to the war and the related safety risks, respondents reported that having adequate access to electricity and water, health, housing and livelihoods in Ukraine will also significantly influence their decisions.",
+  "summary": " As of February 2023, 8.1 million refugees from Ukraine were recorded across Europe, while 4.9 million registered for Temporary Protection or similar national protection schemes. Within Ukraine, 5.4 million people were internally displaced. UNHCR published its third report of intentions surveys with refugees from Ukraine, as well as the first report of surveys with IDPs within Ukraine. The majority of refugees and IDPs want to return home one day, however, only 12% of both refugees and IDPs plan to do so in the next three months. Factors influencing their decisions include access to basic services and rights in host countries, socio-demographic characteristics, and an end to the war and related safety risks.",
+  "metadata": {
+    "id": "3957349",
+    "name": "UNHCR Europe situations: Data and trends - Arrivals and displaced populations (February 2023)",
+    "date_original": 1682899200000,
+    "date_changed": 1682935848000,
+    "date_created": 1682935222000,
+    "primary_country_id": 254,
+    "primary_country_name": "World",
+    "primary_country_iso3": "wld"
+  }
+}

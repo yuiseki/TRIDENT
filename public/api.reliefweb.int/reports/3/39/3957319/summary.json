@@ -1,0 +1,201 @@
+{
+  "original": {
+    "id": "3957319",
+    "fields": {
+      "date": {
+        "changed": "2023-05-01T06:32:50+00:00",
+        "created": "2023-05-01T06:18:18+00:00",
+        "original": "2023-05-01T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/82",
+          "name": "Egypt",
+          "location": {
+            "lon": 29.87,
+            "lat": 26.49
+          },
+          "id": 82,
+          "shortname": "Egypt",
+          "iso3": "egy"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/122",
+          "name": "Iraq",
+          "location": {
+            "lon": 43.4,
+            "lat": 33.05
+          },
+          "id": 122,
+          "shortname": "Iraq",
+          "iso3": "irq"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/129",
+          "name": "Jordan",
+          "location": {
+            "lon": 36.44,
+            "lat": 31.01
+          },
+          "id": 129,
+          "shortname": "Jordan",
+          "iso3": "jor"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/137",
+          "name": "Lebanon",
+          "location": {
+            "lon": 35.89,
+            "lat": 33.92
+          },
+          "id": 137,
+          "shortname": "Lebanon",
+          "iso3": "lbn"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/226",
+          "name": "Syrian Arab Republic",
+          "location": {
+            "lon": 38.51,
+            "lat": 35.01
+          },
+          "id": 226,
+          "shortname": "Syria",
+          "iso3": "syr",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/236",
+          "name": "Türkiye",
+          "location": {
+            "lon": 35.18,
+            "lat": 39.06
+          },
+          "id": 236,
+          "shortname": "Türkiye",
+          "iso3": "tur"
+        }
+      ],
+      "origin": "https://data.unhcr.org/en/documents/details/100340",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/226",
+        "name": "Syrian Arab Republic",
+        "location": {
+          "lon": 38.51,
+          "lat": 35.01
+        },
+        "id": 226,
+        "shortname": "Syria",
+        "iso3": "syr"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EQ",
+          "name": "Earthquake",
+          "id": 4628
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "Syria: UNHCR Operational Update, March 2023",
+      "body": "The Syria crisis entered its thirteenth year in March 2023. The UN estimates that 15.3 million people need humanitarian assistance across the country, a 5 per cent increase from 2022.\n\nThe 6 February earthquakes further exacerbated the situation in Syria, and UNHCR is responding to this new emergency. An estimated 8.8 million people in Syria were affected by the earthquakes.\n\nUNHCR also continues to provide protection and assistance to refugees, asylum-seekers, internally displaced people, returnees, stateless people, and host community members based on identified needs and vulnerabilities.",
+      "url": "https://reliefweb.int/node/3957319",
+      "disaster": [
+        {
+          "name": "Türkiye/Syria: Earthquakes - Feb 2023",
+          "id": 51470,
+          "glide": "EQ-2023-000015-TUR",
+          "type": [
+            {
+              "code": "EQ",
+              "name": "Earthquake",
+              "id": 4628,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/ae/d0/aed0331e-dcaf-4d0b-b05e-1c3108369131.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/ae/d0/aed0331e-dcaf-4d0b-b05e-1c3108369131.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/ae/d0/aed0331e-dcaf-4d0b-b05e-1c3108369131.png",
+            "version": "2415940-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/ae/d0/aed0331e-dcaf-4d0b-b05e-1c3108369131.png"
+          },
+          "filename": "UNHCR Operational Update - March 2023 - final.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415940",
+          "filesize": "737883",
+          "url": "https://reliefweb.int/attachments/aed0331e-dcaf-4d0b-b05e-1c3108369131/UNHCR%20Operational%20Update%20-%20March%202023%20-%20final.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/syrian-arab-republic/syria-unhcr-operational-update-march-2023",
+      "theme": [
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Recovery and Reconstruction",
+          "id": 4601
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        }
+      ],
+      "id": 3957319,
+      "status": "published",
+      "body-html": "<p>The Syria crisis entered its thirteenth year in March 2023. The UN estimates that 15.3 million people need humanitarian assistance across the country, a 5 per cent increase from 2022.</p>\n<p>The 6 February earthquakes further exacerbated the situation in Syria, and UNHCR is responding to this new emergency. An estimated 8.8 million people in Syria were affected by the earthquakes.</p>\n<p>UNHCR also continues to provide protection and assistance to refugees, asylum-seekers, internally displaced people, returnees, stateless people, and host community members based on identified needs and vulnerabilities.</p>\n"
+    }
+  },
+  "text": "# Syria: UNHCR Operational Update, March 2023\n\nThe Syria crisis entered its thirteenth year in March 2023. The UN estimates that 15.3 million people need humanitarian assistance across the country, a 5 per cent increase from 2022.\n\nThe 6 February earthquakes further exacerbated the situation in Syria, and UNHCR is responding to this new emergency. An estimated 8.8 million people in Syria were affected by the earthquakes.\n\nUNHCR also continues to provide protection and assistance to refugees, asylum-seekers, internally displaced people, returnees, stateless people, and host community members based on identified needs and vulnerabilities.",
+  "summary": " The Syria crisis has been ongoing for 13 years, with 15.3 million people in need of humanitarian assistance. The 6 February earthquakes have further exacerbated the situation, with 8.8 million people affected. UNHCR is responding to the new emergency and providing protection and assistance to refugees, asylum-seekers, internally displaced people, returnees, stateless people, and host community members.",
+  "metadata": {
+    "id": "3957319",
+    "name": "Syria: UNHCR Operational Update, March 2023",
+    "date_original": 1682899200000,
+    "date_changed": 1682922770000,
+    "date_created": 1682921898000,
+    "primary_country_id": 226,
+    "primary_country_name": "Syrian Arab Republic",
+    "primary_country_iso3": "syr",
+    "primary_country_location": {
+      "lon": 38.51,
+      "lat": 35.01
+    }
+  }
+}

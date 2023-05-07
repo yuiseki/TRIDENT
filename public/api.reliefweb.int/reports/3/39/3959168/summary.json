@@ -1,0 +1,148 @@
+{
+  "original": {
+    "id": "3959168",
+    "fields": {
+      "date": {
+        "changed": "2023-05-05T16:30:10+00:00",
+        "created": "2023-05-05T16:28:27+00:00",
+        "original": "2023-05-05T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/151",
+          "name": "Marshall Islands",
+          "location": {
+            "lon": 168.55,
+            "lat": 8.43
+          },
+          "id": 151,
+          "shortname": "Marshall Islands",
+          "iso3": "mhl",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/157",
+          "name": "Micronesia (Federated States of)",
+          "location": {
+            "lon": 160.4,
+            "lat": 6.08
+          },
+          "id": 157,
+          "shortname": "Micronesia",
+          "iso3": "fsm"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/249",
+          "name": "Vanuatu",
+          "location": {
+            "lon": 167.72,
+            "lat": -16.26
+          },
+          "id": 249,
+          "shortname": "Vanuatu",
+          "iso3": "vut"
+        }
+      ],
+      "origin": "https://logcluster.org/document/pacific-operation-overview-january-march-2023",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/151",
+        "name": "Marshall Islands",
+        "location": {
+          "lon": 168.55,
+          "lat": 8.43
+        },
+        "id": 151,
+        "shortname": "Marshall Islands",
+        "iso3": "mhl"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/3594",
+          "name": "Logistics Cluster",
+          "id": 3594,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "Logistics Cluster",
+          "homepage": "http://www.logcluster.org/"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "Pacific: Operation Overview, January - March, 2023",
+      "body": "**Background**\n\nThe Pacific is one of the world’s most disaster-prone regions, with Pacific Island Countries ranked among the most vulnerable to natural disasters due to rising sea levels and increasingly severe weather patterns caused by climate change.  \nThe core functions of the Pacific Logistics Cluster (PLC) are to support the national coordination mechanisms, provide timely information management and technical support where needed, and facilitate access to common logistics services, such as air transport for cargo for urgently required humanitarian cargo when national response capacity is exceeded.\n\n**Operational Highlights**\n\n• Federated States of Micronesia: In February, PLC conducted a mission to the Federated States of Micronesia to strengthen the relationship with partners on the ground and present the support available at the regional level.\n\n• Republic of the Marshall Islands: In March, the Logistics Capacity Assessment (LCA) was conducted in the Republic of the Marshall Islands. The information is now being reviewed and consolidated and will be published on the Logistics Cluster’s LCA website in the coming weeks.\n\n• Vanuatu Emergency Response:\n\no The island nation of Vanuatu declared a State of Emergency (SOE) on 5th March 2023 for the whole country after it had experienced two cyclones and an earthquake. Strong winds and substantial rains caused major flooding, damage to infrastructure, and caused power outages and communication system breakdowns across the country. Restoring energy/power, communication systems, transport systems, and shelter were priorities during the first weeks of the response.\n\no As of 10th March 2023, the National Disaster Management Office (NDMO) in Port Vila reported that some 251,346 people (about 80% of the population) and 30,000 households in all six provinces in Vanuatu had been exposed to the impacts of the cyclones.\n\no The PLC deployed two staff members to Vanuatu during the onset emergency to support onground logistics coordination and information management led by the Vanuatu NDMO. The team was embedded in the Logistics Section under the NDMO and supported NDMO in drafting distribution plans for the outer islands.\n\no Two Mobile Storage Units (MSUs), dispatched before the emergency response for preparedness, arrived in Port Vila on 13th March 2023 to support the current NDMO’s response efforts.",
+      "url": "https://reliefweb.int/node/3959168",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/ab/a2/aba2e31e-9861-4135-98f9-8aaf2113d4b8.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/ab/a2/aba2e31e-9861-4135-98f9-8aaf2113d4b8.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/ab/a2/aba2e31e-9861-4135-98f9-8aaf2113d4b8.png",
+            "version": "2417845-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/ab/a2/aba2e31e-9861-4135-98f9-8aaf2113d4b8.png"
+          },
+          "filename": "Pacific Logistics Cluster_OperationOverview_Q1_2023_final.pdf",
+          "mimetype": "application/pdf",
+          "id": "2417845",
+          "filesize": "297060",
+          "url": "https://reliefweb.int/attachments/aba2e31e-9861-4135-98f9-8aaf2113d4b8/Pacific%20Logistics%20Cluster_OperationOverview_Q1_2023_final.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/marshall-islands/pacific-operation-overview-january-march-2023",
+      "theme": [
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        }
+      ],
+      "id": 3959168,
+      "status": "published",
+      "body-html": "<p><strong>Background</strong></p>\n<p>The Pacific is one of the world’s most disaster-prone regions, with Pacific Island Countries ranked among the most vulnerable to natural disasters due to rising sea levels and increasingly severe weather patterns caused by climate change.<br />\nThe core functions of the Pacific Logistics Cluster (PLC) are to support the national coordination mechanisms, provide timely information management and technical support where needed, and facilitate access to common logistics services, such as air transport for cargo for urgently required humanitarian cargo when national response capacity is exceeded.</p>\n<p><strong>Operational Highlights</strong></p>\n<p>• Federated States of Micronesia: In February, PLC conducted a mission to the Federated States of Micronesia to strengthen the relationship with partners on the ground and present the support available at the regional level.</p>\n<p>• Republic of the Marshall Islands: In March, the Logistics Capacity Assessment (LCA) was conducted in the Republic of the Marshall Islands. The information is now being reviewed and consolidated and will be published on the Logistics Cluster’s LCA website in the coming weeks.</p>\n<p>• Vanuatu Emergency Response:</p>\n<p>o The island nation of Vanuatu declared a State of Emergency (SOE) on 5th March 2023 for the whole country after it had experienced two cyclones and an earthquake. Strong winds and substantial rains caused major flooding, damage to infrastructure, and caused power outages and communication system breakdowns across the country. Restoring energy/power, communication systems, transport systems, and shelter were priorities during the first weeks of the response.</p>\n<p>o As of 10th March 2023, the National Disaster Management Office (NDMO) in Port Vila reported that some 251,346 people (about 80% of the population) and 30,000 households in all six provinces in Vanuatu had been exposed to the impacts of the cyclones.</p>\n<p>o The PLC deployed two staff members to Vanuatu during the onset emergency to support onground logistics coordination and information management led by the Vanuatu NDMO. The team was embedded in the Logistics Section under the NDMO and supported NDMO in drafting distribution plans for the outer islands.</p>\n<p>o Two Mobile Storage Units (MSUs), dispatched before the emergency response for preparedness, arrived in Port Vila on 13th March 2023 to support the current NDMO’s response efforts.</p>\n"
+    }
+  },
+  "text": "# Pacific: Operation Overview, January - March, 2023\n\n**Background**\n\nThe Pacific is one of the world’s most disaster-prone regions, with Pacific Island Countries ranked among the most vulnerable to natural disasters due to rising sea levels and increasingly severe weather patterns caused by climate change.  \nThe core functions of the Pacific Logistics Cluster (PLC) are to support the national coordination mechanisms, provide timely information management and technical support where needed, and facilitate access to common logistics services, such as air transport for cargo for urgently required humanitarian cargo when national response capacity is exceeded.\n\n**Operational Highlights**\n\n• Federated States of Micronesia: In February, PLC conducted a mission to the Federated States of Micronesia to strengthen the relationship with partners on the ground and present the support available at the regional level.\n\n• Republic of the Marshall Islands: In March, the Logistics Capacity Assessment (LCA) was conducted in the Republic of the Marshall Islands. The information is now being reviewed and consolidated and will be published on the Logistics Cluster’s LCA website in the coming weeks.\n\n• Vanuatu Emergency Response:\n\no The island nation of Vanuatu declared a State of Emergency (SOE) on 5th March 2023 for the whole country after it had experienced two cyclones and an earthquake. Strong winds and substantial rains caused major flooding, damage to infrastructure, and caused power outages and communication system breakdowns across the country. Restoring energy/power, communication systems, transport systems, and shelter were priorities during the first weeks of the response.\n\no As of 10th March 2023, the National Disaster Management Office (NDMO) in Port Vila reported that some 251,346 people (about 80% of the population) and 30,000 households in all six provinces in Vanuatu had been exposed to the impacts of the cyclones.\n\no The PLC deployed two staff members to Vanuatu during the onset emergency to support onground logistics coordination and information management led by the Vanuatu NDMO. The team was embedded in the Logistics Section under the NDMO and supported NDMO in drafting distribution plans for the outer islands.\n\no Two Mobile Storage Units (MSUs), dispatched before the emergency response for preparedness, arrived in Port Vila on 13th March 2023 to support the current NDMO’s response efforts.",
+  "summary": " The Pacific Logistics Cluster (PLC) is working to support the national coordination mechanisms in the Pacific region, which is highly prone to natural disasters due to climate change. In January and March of 2023, the PLC conducted a mission to the Federated States of Micronesia and conducted a Logistics Capacity Assessment in the Republic of the Marshall Islands. In March, Vanuatu declared a State of Emergency due to two cyclones and an earthquake, and the PLC deployed two staff members to support the National Disaster Management Office (NDMO) in Port Vila. Two Mobile Storage Units (MSUs) were dispatched to Port Vila to support the NDMO's response efforts.",
+  "metadata": {
+    "id": "3959168",
+    "name": "Pacific: Operation Overview, January - March, 2023",
+    "date_original": 1683244800000,
+    "date_changed": 1683304210000,
+    "date_created": 1683304107000,
+    "primary_country_id": 151,
+    "primary_country_name": "Marshall Islands",
+    "primary_country_iso3": "mhl",
+    "primary_country_location": {
+      "lon": 168.55,
+      "lat": 8.43
+    }
+  }
+}

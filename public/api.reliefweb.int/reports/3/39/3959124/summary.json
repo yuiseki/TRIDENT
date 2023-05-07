@@ -1,0 +1,127 @@
+{
+  "original": {
+    "id": "3959124",
+    "fields": {
+      "date": {
+        "changed": "2023-05-05T16:38:22+00:00",
+        "created": "2023-05-05T14:48:17+00:00",
+        "original": "2023-04-30T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/241",
+          "name": "Ukraine",
+          "location": {
+            "lon": 31.32,
+            "lat": 49.32
+          },
+          "id": 241,
+          "shortname": "Ukraine",
+          "iso3": "ukr",
+          "primary": true
+        }
+      ],
+      "origin": "https://etcluster.org/document/etc-ukraine-sitrep-april-2023",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/241",
+        "name": "Ukraine",
+        "location": {
+          "lon": 31.32,
+          "lat": 49.32
+        },
+        "id": 241,
+        "shortname": "Ukraine",
+        "iso3": "ukr"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/13799",
+          "longname": "Emergency Telecommunications Cluster",
+          "name": "Emergency Telecommunications Cluster",
+          "id": 13799,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "ETC",
+          "homepage": "https://www.etcluster.org/"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "Ukraine ETC Situation Report #22 (Reporting period: 01/04/2023 to 30/04/2023)",
+      "body": "_The Emergency Telecommunications Cluster (ETC) was activated in Ukraine on 3 March 2022 following the escalation of armed conflict between Ukraine and the Russian Federation. ETC SitReps are distributed every month._\n\n**HIGHLIGHTS**\n\n· The ETC finalized the service agreement with the Ukraine Broadcast and Radio Telecommunications Concern (BRT) to expand the VHF radio network in Kyiv, Dnipro, Lviv, Kharkiv, and Luch.\n\n· The ETC started working on Remote Site on Vehicle (RSoV) project - a pilot mobile VHF radio solution for UN armored vehicles on mission in high-risk areas. After modifying a Starlink kit with a local telecommunications company, the ETC was assisted by a vehicle workshop to install and configure telecommunications equipment in the armored vehicle. The communication tests with the Remote Security Operations Centre (RSOC) for both Starlink connectivity and radio signal showed very good results. The team continues testing and tuning the power bank setup.\n\n· The ETC conducted a survey on 28 April for UN agencies to propose time slots for security communications training sessions. The survey will be ongoing in May to plan further VHF radio trainings in Kyiv, Dnipro, Odesa and Lviv.\n\n**Overview**\n\nThe International Organisation for Migration (IOM) reports that 5.4 million people are internally displaced in Ukraine due to the conflict as of 23 January 2023, and the Office of the United Nations High Commissioner for Refugees (UNHCR) estimates the total number of Ukrainian refugees recorded across Europe at over 8.2 million as of 25 April 2023.\n\n**Impact on telecommunications**\n\nThe continued attacks on national infrastructure across Ukraine have led to significant damage to national telecommunications infrastructure, resulting in severe communications blackouts across the country. Disruption to electrical power supplies supporting telecommunications equipment impacts on ETC services.\n\nSeveral reports have been received of severe disruptions to satellite telephony services in areas close to the frontlines. The ETC is exploring solutions to provide responders deploying on frontline missions with services and equipment.",
+      "url": "https://reliefweb.int/node/3959124",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/bc/30/bc306a66-149f-4852-a625-f34981ca6d0f.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/bc/30/bc306a66-149f-4852-a625-f34981ca6d0f.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/bc/30/bc306a66-149f-4852-a625-f34981ca6d0f.png",
+            "version": "2417807-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/bc/30/bc306a66-149f-4852-a625-f34981ca6d0f.png"
+          },
+          "filename": "ETC Ukraine SitRep - 2023-04-30-#22_0.pdf",
+          "mimetype": "application/pdf",
+          "id": "2417807",
+          "filesize": "266346",
+          "url": "https://reliefweb.int/attachments/bc306a66-149f-4852-a625-f34981ca6d0f/ETC%20Ukraine%20SitRep%20-%202023-04-30-%2322_0.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/ukraine/ukraine-etc-situation-report-22-reporting-period-01042023-30042023",
+      "theme": [
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        }
+      ],
+      "id": 3959124,
+      "status": "published",
+      "body-html": "<p><em>The Emergency Telecommunications Cluster (ETC) was activated in Ukraine on 3 March 2022 following the escalation of armed conflict between Ukraine and the Russian Federation. ETC SitReps are distributed every month.</em></p>\n<p><strong>HIGHLIGHTS</strong></p>\n<p>· The ETC finalized the service agreement with the Ukraine Broadcast and Radio Telecommunications Concern (BRT) to expand the VHF radio network in Kyiv, Dnipro, Lviv, Kharkiv, and Luch.</p>\n<p>· The ETC started working on Remote Site on Vehicle (RSoV) project - a pilot mobile VHF radio solution for UN armored vehicles on mission in high-risk areas. After modifying a Starlink kit with a local telecommunications company, the ETC was assisted by a vehicle workshop to install and configure telecommunications equipment in the armored vehicle. The communication tests with the Remote Security Operations Centre (RSOC) for both Starlink connectivity and radio signal showed very good results. The team continues testing and tuning the power bank setup.</p>\n<p>· The ETC conducted a survey on 28 April for UN agencies to propose time slots for security communications training sessions. The survey will be ongoing in May to plan further VHF radio trainings in Kyiv, Dnipro, Odesa and Lviv.</p>\n<p><strong>Overview</strong></p>\n<p>The International Organisation for Migration (IOM) reports that 5.4 million people are internally displaced in Ukraine due to the conflict as of 23 January 2023, and the Office of the United Nations High Commissioner for Refugees (UNHCR) estimates the total number of Ukrainian refugees recorded across Europe at over 8.2 million as of 25 April 2023.</p>\n<p><strong>Impact on telecommunications</strong></p>\n<p>The continued attacks on national infrastructure across Ukraine have led to significant damage to national telecommunications infrastructure, resulting in severe communications blackouts across the country. Disruption to electrical power supplies supporting telecommunications equipment impacts on ETC services.</p>\n<p>Several reports have been received of severe disruptions to satellite telephony services in areas close to the frontlines. The ETC is exploring solutions to provide responders deploying on frontline missions with services and equipment.</p>\n"
+    }
+  },
+  "text": "# Ukraine ETC Situation Report #22 (Reporting period: 01/04/2023 to 30/04/2023)\n\n_The Emergency Telecommunications Cluster (ETC) was activated in Ukraine on 3 March 2022 following the escalation of armed conflict between Ukraine and the Russian Federation. ETC SitReps are distributed every month._\n\n**HIGHLIGHTS**\n\n· The ETC finalized the service agreement with the Ukraine Broadcast and Radio Telecommunications Concern (BRT) to expand the VHF radio network in Kyiv, Dnipro, Lviv, Kharkiv, and Luch.\n\n· The ETC started working on Remote Site on Vehicle (RSoV) project - a pilot mobile VHF radio solution for UN armored vehicles on mission in high-risk areas. After modifying a Starlink kit with a local telecommunications company, the ETC was assisted by a vehicle workshop to install and configure telecommunications equipment in the armored vehicle. The communication tests with the Remote Security Operations Centre (RSOC) for both Starlink connectivity and radio signal showed very good results. The team continues testing and tuning the power bank setup.\n\n· The ETC conducted a survey on 28 April for UN agencies to propose time slots for security communications training sessions. The survey will be ongoing in May to plan further VHF radio trainings in Kyiv, Dnipro, Odesa and Lviv.\n\n**Overview**\n\nThe International Organisation for Migration (IOM) reports that 5.4 million people are internally displaced in Ukraine due to the conflict as of 23 January 2023, and the Office of the United Nations High Commissioner for Refugees (UNHCR) estimates the total number of Ukrainian refugees recorded across Europe at over 8.2 million as of 25 April 2023.\n\n**Impact on telecommunications**\n\nThe continued attacks on national infrastructure across Ukraine have led to significant damage to national telecommunications infrastructure, resulting in severe communications blackouts across the country. Disruption to electrical power supplies supporting telecommunications equipment impacts on ETC services.\n\nSeveral reports have been received of severe disruptions to satellite telephony services in areas close to the frontlines. The ETC is exploring solutions to provide responders deploying on frontline missions with services and equipment.",
+  "summary": " The Emergency Telecommunications Cluster (ETC) was activated in Ukraine in March 2022 due to the armed conflict between Ukraine and the Russian Federation. During the reporting period of April 2023, the ETC finalized a service agreement with the Ukraine Broadcast and Radio Telecommunications Concern (BRT) to expand the VHF radio network in five cities, started working on a Remote Site on Vehicle (RSoV) project, and conducted a survey to propose time slots for security communications training sessions. The conflict has led to 5.4 million internally displaced people and 8.2 million refugees, and has caused severe damage to national telecommunications infrastructure. The ETC is exploring solutions to provide responders with services and equipment.",
+  "metadata": {
+    "id": "3959124",
+    "name": "Ukraine ETC Situation Report #22 (Reporting period: 01/04/2023 to 30/04/2023)",
+    "date_original": 1682812800000,
+    "date_changed": 1683304702000,
+    "date_created": 1683298097000,
+    "primary_country_id": 241,
+    "primary_country_name": "Ukraine",
+    "primary_country_iso3": "ukr",
+    "primary_country_location": {
+      "lon": 31.32,
+      "lat": 49.32
+    }
+  }
+}

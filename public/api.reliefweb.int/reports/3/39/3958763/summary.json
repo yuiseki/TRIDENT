@@ -1,0 +1,164 @@
+{
+  "original": {
+    "id": "3958763",
+    "fields": {
+      "date": {
+        "changed": "2023-05-04T19:31:25+00:00",
+        "created": "2023-05-04T19:01:54+00:00",
+        "original": "2023-05-04T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/236",
+          "name": "Türkiye",
+          "location": {
+            "lon": 35.18,
+            "lat": 39.06
+          },
+          "id": 236,
+          "shortname": "Türkiye",
+          "iso3": "tur",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/236",
+        "name": "Türkiye",
+        "location": {
+          "lon": 35.18,
+          "lat": 39.06
+        },
+        "id": 236,
+        "shortname": "Türkiye",
+        "iso3": "tur"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EQ",
+          "name": "Earthquake",
+          "id": 4628
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1979",
+          "longname": "United Nations Children's Fund",
+          "spanish_name": "Fondo de las Naciones Unidas para la Infancia",
+          "name": "UN Children's Fund",
+          "id": 1979,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNICEF",
+          "homepage": "http://www.unicef.org"
+        }
+      ],
+      "title": "UNICEF Türkiye Humanitarian Situation Report No. 10 (Earthquake), 18-25 April 2023",
+      "body": "**Highlights** \n\n• Around 2.4 million people live in formal sites and informal settlements (1.6 million people in informal settlements and nearly 800,000 in formal sites).  \nThe key needs in informal sites continue to be access to adequate water and sanitation, information on available services and social protection schemes. Limited support for people with disabilities, like accessible facilities, is a key concern. There are some movements of population for other self-resettlement opportunities, acknowledging some movements of population for other self-resettlement opportunities. i \n\n• To date, 1,914 unaccompanied children have been identified, of whom 1,880 have been reunified with their families or are in long-term alternative care; and family tracing continues for 34 children to reunify them with their families. ii \n\n• UNICEF has cumulatively reached 212,730 children and caregivers with mental health and psychosocial support and psychological first aid through the trained social workers of the Ministry of Family and Social Services and as well as through Non- Government Organization partners.\n\n• The first 200,000 doses of Measles, Mumps and Rubella vaccine arrived and were delivered to the Ministry of Health; the number of doses can cover at least 170,000 children.\n\n• UNICEF is leading the WASH sector group. Cumulatively, WASH sector partners have reached 2.41 million people with WASH assistance. Main highlights include the delivery of 2,851,472 litres of potable water for drinking and personal hygiene use and 3,401,490 litres of water for sanitation purposes, and provision of hygiene kits to 654,689 households. iv\n\n• UNICEF has a funding gap of over US$ 87 million (44%) against a funding requirement of US$ 196 million to reach 3 million people, including 1.5 million children. While there are needs across all sectors, the humanitarian cash transfer intervention is the most significantly underfunded.",
+      "url": "https://reliefweb.int/node/3958763",
+      "disaster": [
+        {
+          "name": "Türkiye/Syria: Earthquakes - Feb 2023",
+          "id": 51470,
+          "glide": "EQ-2023-000015-TUR",
+          "type": [
+            {
+              "code": "EQ",
+              "name": "Earthquake",
+              "id": 4628,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/ea/8d/ea8ddebb-c71e-43b8-b88b-efe49c3f1f0a.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/ea/8d/ea8ddebb-c71e-43b8-b88b-efe49c3f1f0a.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/ea/8d/ea8ddebb-c71e-43b8-b88b-efe49c3f1f0a.png",
+            "version": "2417488-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/ea/8d/ea8ddebb-c71e-43b8-b88b-efe49c3f1f0a.png"
+          },
+          "filename": "UNICEF Turkiye Humanitarian Situation Report No. 10 (Earthquake) - 18-25 April 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2417488",
+          "filesize": "478261",
+          "url": "https://reliefweb.int/attachments/ea8ddebb-c71e-43b8-b88b-efe49c3f1f0a/UNICEF%20Turkiye%20Humanitarian%20Situation%20Report%20No.%2010%20%28Earthquake%29%20-%2018-25%20April%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/turkiye/unicef-turkiye-humanitarian-situation-report-no-10-earthquake-18-25-april-2023",
+      "redirects": [
+        "https://reliefweb.int/report/turkiye/unicef-turkiye-humanitarian-situation-report-no-9-earthquake-18-25-april-2023"
+      ],
+      "theme": [
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3958763,
+      "status": "published",
+      "body-html": "<p><strong>Highlights</strong></p>\n<p>• Around 2.4 million people live in formal sites and informal settlements (1.6 million people in informal settlements and nearly 800,000 in formal sites).<br />\nThe key needs in informal sites continue to be access to adequate water and sanitation, information on available services and social protection schemes. Limited support for people with disabilities, like accessible facilities, is a key concern. There are some movements of population for other self-resettlement opportunities, acknowledging some movements of population for other self-resettlement opportunities. i</p>\n<p>• To date, 1,914 unaccompanied children have been identified, of whom 1,880 have been reunified with their families or are in long-term alternative care; and family tracing continues for 34 children to reunify them with their families. ii</p>\n<p>• UNICEF has cumulatively reached 212,730 children and caregivers with mental health and psychosocial support and psychological first aid through the trained social workers of the Ministry of Family and Social Services and as well as through Non- Government Organization partners.</p>\n<p>• The first 200,000 doses of Measles, Mumps and Rubella vaccine arrived and were delivered to the Ministry of Health; the number of doses can cover at least 170,000 children.</p>\n<p>• UNICEF is leading the WASH sector group. Cumulatively, WASH sector partners have reached 2.41 million people with WASH assistance. Main highlights include the delivery of 2,851,472 litres of potable water for drinking and personal hygiene use and 3,401,490 litres of water for sanitation purposes, and provision of hygiene kits to 654,689 households. iv</p>\n<p>• UNICEF has a funding gap of over US$ 87 million (44%) against a funding requirement of US$ 196 million to reach 3 million people, including 1.5 million children. While there are needs across all sectors, the humanitarian cash transfer intervention is the most significantly underfunded.</p>\n"
+    }
+  },
+  "text": "# UNICEF Türkiye Humanitarian Situation Report No. 10 (Earthquake), 18-25 April 2023\n\n**Highlights** \n\n• Around 2.4 million people live in formal sites and informal settlements (1.6 million people in informal settlements and nearly 800,000 in formal sites).  \nThe key needs in informal sites continue to be access to adequate water and sanitation, information on available services and social protection schemes. Limited support for people with disabilities, like accessible facilities, is a key concern. There are some movements of population for other self-resettlement opportunities, acknowledging some movements of population for other self-resettlement opportunities. i \n\n• To date, 1,914 unaccompanied children have been identified, of whom 1,880 have been reunified with their families or are in long-term alternative care; and family tracing continues for 34 children to reunify them with their families. ii \n\n• UNICEF has cumulatively reached 212,730 children and caregivers with mental health and psychosocial support and psychological first aid through the trained social workers of the Ministry of Family and Social Services and as well as through Non- Government Organization partners.\n\n• The first 200,000 doses of Measles, Mumps and Rubella vaccine arrived and were delivered to the Ministry of Health; the number of doses can cover at least 170,000 children.\n\n• UNICEF is leading the WASH sector group. Cumulatively, WASH sector partners have reached 2.41 million people with WASH assistance. Main highlights include the delivery of 2,851,472 litres of potable water for drinking and personal hygiene use and 3,401,490 litres of water for sanitation purposes, and provision of hygiene kits to 654,689 households. iv\n\n• UNICEF has a funding gap of over US$ 87 million (44%) against a funding requirement of US$ 196 million to reach 3 million people, including 1.5 million children. While there are needs across all sectors, the humanitarian cash transfer intervention is the most significantly underfunded.",
+  "summary": " This UNICEF Türkiye Humanitarian Situation Report No. 10 covers the period of 18-25 April 2023, following an earthquake. It highlights that 2.4 million people are living in formal sites and informal settlements, with key needs being access to adequate water and sanitation, information on available services and social protection schemes. To date, 1,914 unaccompanied children have been identified, of whom 1,880 have been reunified with their families or are in long-term alternative care. UNICEF has cumulatively reached 212,730 children and caregivers with mental health and psychosocial support and psychological first aid. The first 200,000 doses of Measles, Mumps and Rubella vaccine have been delivered to the Ministry of Health, and UNICEF is leading the WASH sector group, having cumulatively reached 2.41 million people with WASH assistance. There is a funding gap of over US$ 87 million (44%) against a funding requirement of US$ 196 million to reach 3 million people, including 1.5 million children.",
+  "metadata": {
+    "id": "3958763",
+    "name": "UNICEF Türkiye Humanitarian Situation Report No. 10 (Earthquake), 18-25 April 2023",
+    "date_original": 1683158400000,
+    "date_changed": 1683228685000,
+    "date_created": 1683226914000,
+    "primary_country_id": 236,
+    "primary_country_name": "Türkiye",
+    "primary_country_iso3": "tur",
+    "primary_country_location": {
+      "lon": 35.18,
+      "lat": 39.06
+    }
+  }
+}

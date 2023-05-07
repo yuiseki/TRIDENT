@@ -1,0 +1,111 @@
+{
+  "original": {
+    "id": "3956883",
+    "fields": {
+      "date": {
+        "changed": "2023-04-28T13:47:26+00:00",
+        "created": "2023-04-28T09:19:19+00:00",
+        "original": "2023-04-28T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/254",
+          "name": "World",
+          "id": 254,
+          "shortname": "World",
+          "iso3": "wld",
+          "primary": true
+        }
+      ],
+      "origin": "https://apps.who.int/iris/handle/10665/367321",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/254",
+        "name": "World",
+        "id": 254,
+        "shortname": "World",
+        "iso3": "wld"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        },
+        {
+          "code": "fr",
+          "name": "French",
+          "id": 268
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1275",
+          "longname": "World Health Organization",
+          "spanish_name": "Organización Mundial de la Salud",
+          "name": "World Health Organization",
+          "id": 1275,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WHO",
+          "homepage": "http://www.who.int/"
+        }
+      ],
+      "title": "Weekly Epidemiological Record (WER), 28 April 2023, Vol. 98, No. 17, pp. 175–184 [EN/FR]",
+      "body": "**Contents**\n\n175 WHO’s Health Emergencies Programme: acute emergencies monthly summary – March 2023\n\n181 Performance of acute flaccid paralysis (AFP) surveillance and incidence of poliomyelitis, 2023\n\n**Sommaire**\n\n175 Programme OMS de gestion des situations d’urgence sanitaire: résumé mensuel des situations d’urgence aiguë – mars 2023\n\n181 Fonctionnement de la surveillance de la paralysie flasque aiguë (PFA) et incidence de la poliomyélite, 2023",
+      "url": "https://reliefweb.int/node/3956883",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/fd/35/fd352608-0c43-4ae1-83cf-46d410c91174.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/fd/35/fd352608-0c43-4ae1-83cf-46d410c91174.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/fd/35/fd352608-0c43-4ae1-83cf-46d410c91174.png",
+            "version": "2415538-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/fd/35/fd352608-0c43-4ae1-83cf-46d410c91174.png"
+          },
+          "filename": "WER9817-eng-fre.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415538",
+          "filesize": "288301",
+          "url": "https://reliefweb.int/attachments/fd352608-0c43-4ae1-83cf-46d410c91174/WER9817-eng-fre.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/world/weekly-epidemiological-record-wer-28-april-2023-vol-98-no-17-pp-175-184-enfr",
+      "theme": [
+        {
+          "name": "Health",
+          "id": 4595
+        }
+      ],
+      "id": 3956883,
+      "status": "published",
+      "body-html": "<p><strong>Contents</strong></p>\n<p>175 WHO’s Health Emergencies Programme: acute emergencies monthly summary – March 2023</p>\n<p>181 Performance of acute flaccid paralysis (AFP) surveillance and incidence of poliomyelitis, 2023</p>\n<p><strong>Sommaire</strong></p>\n<p>175 Programme OMS de gestion des situations d’urgence sanitaire: résumé mensuel des situations d’urgence aiguë – mars 2023</p>\n<p>181 Fonctionnement de la surveillance de la paralysie flasque aiguë (PFA) et incidence de la poliomyélite, 2023</p>\n"
+    }
+  },
+  "text": "# Weekly Epidemiological Record (WER), 28 April 2023, Vol. 98, No. 17, pp. 175–184 [EN/FR]\n\n**Contents**\n\n175 WHO’s Health Emergencies Programme: acute emergencies monthly summary – March 2023\n\n181 Performance of acute flaccid paralysis (AFP) surveillance and incidence of poliomyelitis, 2023\n\n**Sommaire**\n\n175 Programme OMS de gestion des situations d’urgence sanitaire: résumé mensuel des situations d’urgence aiguë – mars 2023\n\n181 Fonctionnement de la surveillance de la paralysie flasque aiguë (PFA) et incidence de la poliomyélite, 2023",
+  "summary": " The Weekly Epidemiological Record (WER) for April 28, 2023, Vol. 98, No. 17, contains two articles: one on the WHO's Health Emergencies Programme monthly summary for March 2023, and one on the performance of acute flaccid paralysis (AFP) surveillance and incidence of poliomyelitis in 2023.",
+  "metadata": {
+    "id": "3956883",
+    "name": "Weekly Epidemiological Record (WER), 28 April 2023, Vol. 98, No. 17, pp. 175–184 [EN/FR]",
+    "date_original": 1682640000000,
+    "date_changed": 1682689646000,
+    "date_created": 1682673559000,
+    "primary_country_id": 254,
+    "primary_country_name": "World",
+    "primary_country_iso3": "wld"
+  }
+}

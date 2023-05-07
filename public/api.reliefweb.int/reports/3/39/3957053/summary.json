@@ -1,0 +1,143 @@
+{
+  "original": {
+    "id": "3957053",
+    "fields": {
+      "date": {
+        "changed": "2023-04-28T17:22:56+00:00",
+        "created": "2023-04-28T15:21:08+00:00",
+        "original": "2023-04-28T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/38",
+          "name": "Bhutan",
+          "location": {
+            "lon": 90.43,
+            "lat": 27.42
+          },
+          "id": 38,
+          "shortname": "Bhutan",
+          "iso3": "btn"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/122",
+          "name": "Iraq",
+          "location": {
+            "lon": 43.4,
+            "lat": 33.05
+          },
+          "id": 122,
+          "shortname": "Iraq",
+          "iso3": "irq"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/137",
+          "name": "Lebanon",
+          "location": {
+            "lon": 35.89,
+            "lat": 33.92
+          },
+          "id": 137,
+          "shortname": "Lebanon",
+          "iso3": "lbn"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/240",
+          "name": "Uganda",
+          "location": {
+            "lon": 32.39,
+            "lat": 1.28
+          },
+          "id": 240,
+          "shortname": "Uganda",
+          "iso3": "uga"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/254",
+          "name": "World",
+          "id": 254,
+          "shortname": "World",
+          "iso3": "wld",
+          "primary": true
+        }
+      ],
+      "origin": "https://www.undp.org/publications/new-approach-ending-gender-based-violence-lessons-integrating-prevention-and-responses-four-undp-sectoral-development-projects",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/254",
+        "name": "World",
+        "id": 254,
+        "shortname": "World",
+        "iso3": "wld"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1293",
+          "longname": "United Nations Development Programme",
+          "spanish_name": "Programa de las Naciones Unidas para el Desarrollo",
+          "name": "UN Development Programme",
+          "id": 1293,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNDP",
+          "homepage": "http://www.undp.org/"
+        }
+      ],
+      "title": "A New Approach to Ending Gender-Based Violence: Lessons on Integrating Prevention and Responses in Four UNDP Sectoral Development Projects",
+      "body": "**Executive Summary**\n\nIntegrating prevention and responses to gender-based violence (GBV) in diverse development projects and programming could accelerate progress on multiple development challenges faced across the globe. Such efforts could build on partnerships between GBV prevention experts and other development actors that typically do not focus on this issue. There are opportunities to integrate GBV response and prevention activities in sectoral programmes on the environment, social cohesion, livelihoods, broader governance and more. Integrated GBV actions retain the safety and ethical principles of GBV interventions and build on the evidence-based core components of effective GBV prevention.1 \n\nThe UNDP programme “Ending Gender-based Violence and Achieving the Sustainable Development Goals,” in partnership with the Republic of Korea, supported four projects to pilot approaches to integrating actions to address GBV into large sectoral projects addressing a variety of development goals, including economic empowerment and strengthened livelihoods (SDGs 1 and 8), environmental restoration (SDG 13), quality education (SDG 4), and child and family safety (SDG 16). The pilots were relatively small, with budget allocations of between US $200,000 and $400,000 and usually only one UNDP staff position. They lasted three to four years. \n\nThis report discusses learning from them, aiming to:    \n• Describe various approaches to integration and their outcomes     \n• Discuss lessons learned about GBV integration     \n• Make evidence-informed and practical recommendations for the ways forward \n\n**What is a collaborative GBV integration approach?**\n\nA GBV integration approach seeks to weave ethical, effective actions and approaches to addressing GBV throughout a sectoral project or programme, recognizing that GBV risk and protective factors intersect with the development challenge being addressed by the broader project. A comprehensive integration approach means that GBV is taken up across and within all aspects of a project, so that all partners and team members: (a) understand how GBV relates to and impacts the development focus of the broader project, (b) acknowledge the importance and added value of addressing GBV within the broader project, and (c) support the inclusion of GBV experts and ethical, safe and effective actions to prevent and sustainably address GBV across the project. \n\n**GBV integration pilot projects**\n\nUNDP piloted a GBV integration approach in four different projects:    \n• In Lebanon, GBV actions were integrated into a women’s economic empowerment and participation project. It included the incorporation of GBV indicators in the project framework; referrals for GBV survivors; adaptation of an evidence-based primary prevention intervention that engaged women, men and municipal officials; and Gender Equality Cafes as community dialogue spaces.     \n• In Iraq, a project integrated GBV actions into work on livelihoods strengthening and recovery, including through referrals for GBV survivors, and the adaptation of an evidence-based primary prevention intervention that engaged women, men and community leaders or influencers.     \n• In Uganda, UNDP integrated GBV actions into a wetlands restoration, community resilience and alternative livelihoods project, including through strengthening the capacities of the project team, bolstering referral services in project areas, developing a GBV risk mitigation plan and integrating GBV into a grievance mechanism.    \n• In Bhutan, UNDP collaborated with multiple partners to pilot a GBV primary prevention intervention that engaged adolescents and their caregivers (parents and teachers) to find the best fit for integration going forward. \n\nEvaluations of each pilot project were encouraging, confirming promising positive effects for participants, including improved attitudes and practices related to gender equality, better relationships within couples, greater commitments to positive parenting, enhanced awareness of GBV and how or where to seek help, and an expanded willingness to take actions against GBV. \n\n**Lessons learned and recommendations from pilot project experiences**\n\nPilot project challenges and successes have provided valuable lessons that future initiatives can consider when embarking on a GBV integration approach. \n\nA key lesson is that GBV integration is not a linear or singular process with a clear recipe or one-size fits-all approach. Yet a set of core principles and processes does influence success, as discussed in this report. Four strategies seem to show particular promise in addressing multiple common obstacles and challenges: advocacy; coordination; rigorous monitoring, evaluation and learning; and transformative capacity-strengthening. \n\nAn enabling environment for ethical, safe and effective GBV integration is essential to success. This depends on initial advocacy and capacity-strengthening and transformation for the project team, including both UNDP and partner organization staff. Also critical is addressing project structures, systems and activity approaches to ensure alignment with best practices for addressing GBV.  \n\nGlobal team inputs as well as a cohort approach involving a set of pilot projects were central elements. The global team provided technical guidance, collaborative troubleshooting and advocacy support, and facilitated opportunities for ongoing knowledge exchange and capacity-strengthening across the pilots. \n\nThe lessons learned fall under three levels:   \n• The foundation for GBV integration: project partner and team buy-in and support      \n• The structure for GBV integration: GBV-responsive sectoral project structures and approaches      \n• Growing GBV integration: GBV prevention actions and interventions \n\nThis structure stems from an overarching lesson learned about the layers of support and committed action needed to ethically and effectively address GBV in an integrative way, particularly in sectors that do not usually consider or address intersections with GBV. While many want to focus only on the third level of implementing actions and interventions to address GBV in communities, project experiences showed that this was not always successful, such as when the sectoral project structure and approach exacerbated GBV risks, reinforced problematic social norms or did not factor in GBV risk mitigation and survivor-centred referrals. Neither GBV prevention and response actions nor a GBV-responsive project structure and approach are likely to be ethically and effectively implemented without the project team’s buy-in, support and committed action.",
+      "url": "https://reliefweb.int/node/3957053",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/88/da/88da3edf-8584-4e52-af04-d1831c1bd352.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/88/da/88da3edf-8584-4e52-af04-d1831c1bd352.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/88/da/88da3edf-8584-4e52-af04-d1831c1bd352.png",
+            "version": "2415655-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/88/da/88da3edf-8584-4e52-af04-d1831c1bd352.png"
+          },
+          "filename": "Integration of GBV Lessons Learned GBV and the SDGs.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415655",
+          "filesize": "5342349",
+          "url": "https://reliefweb.int/attachments/88da3edf-8584-4e52-af04-d1831c1bd352/Integration%20of%20GBV%20Lessons%20Learned%20GBV%20and%20the%20SDGs.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/world/new-approach-ending-gender-based-violence-lessons-integrating-prevention-and-responses-four-undp-sectoral-development-projects",
+      "theme": [
+        {
+          "name": "Gender",
+          "id": 4594
+        }
+      ],
+      "id": 3957053,
+      "status": "published",
+      "body-html": "<p><strong>Executive Summary</strong></p>\n<p>Integrating prevention and responses to gender-based violence (GBV) in diverse development projects and programming could accelerate progress on multiple development challenges faced across the globe. Such efforts could build on partnerships between GBV prevention experts and other development actors that typically do not focus on this issue. There are opportunities to integrate GBV response and prevention activities in sectoral programmes on the environment, social cohesion, livelihoods, broader governance and more. Integrated GBV actions retain the safety and ethical principles of GBV interventions and build on the evidence-based core components of effective GBV prevention.1</p>\n<p>The UNDP programme “Ending Gender-based Violence and Achieving the Sustainable Development Goals,” in partnership with the Republic of Korea, supported four projects to pilot approaches to integrating actions to address GBV into large sectoral projects addressing a variety of development goals, including economic empowerment and strengthened livelihoods (SDGs 1 and 8), environmental restoration (SDG 13), quality education (SDG 4), and child and family safety (SDG 16). The pilots were relatively small, with budget allocations of between US $200,000 and $400,000 and usually only one UNDP staff position. They lasted three to four years.</p>\n<p>This report discusses learning from them, aiming to:<br />\n• Describe various approaches to integration and their outcomes<br />\n• Discuss lessons learned about GBV integration<br />\n• Make evidence-informed and practical recommendations for the ways forward</p>\n<p><strong>What is a collaborative GBV integration approach?</strong></p>\n<p>A GBV integration approach seeks to weave ethical, effective actions and approaches to addressing GBV throughout a sectoral project or programme, recognizing that GBV risk and protective factors intersect with the development challenge being addressed by the broader project. A comprehensive integration approach means that GBV is taken up across and within all aspects of a project, so that all partners and team members: (a) understand how GBV relates to and impacts the development focus of the broader project, (b) acknowledge the importance and added value of addressing GBV within the broader project, and (c) support the inclusion of GBV experts and ethical, safe and effective actions to prevent and sustainably address GBV across the project.</p>\n<p><strong>GBV integration pilot projects</strong></p>\n<p>UNDP piloted a GBV integration approach in four different projects:<br />\n• In Lebanon, GBV actions were integrated into a women’s economic empowerment and participation project. It included the incorporation of GBV indicators in the project framework; referrals for GBV survivors; adaptation of an evidence-based primary prevention intervention that engaged women, men and municipal officials; and Gender Equality Cafes as community dialogue spaces.<br />\n• In Iraq, a project integrated GBV actions into work on livelihoods strengthening and recovery, including through referrals for GBV survivors, and the adaptation of an evidence-based primary prevention intervention that engaged women, men and community leaders or influencers.<br />\n• In Uganda, UNDP integrated GBV actions into a wetlands restoration, community resilience and alternative livelihoods project, including through strengthening the capacities of the project team, bolstering referral services in project areas, developing a GBV risk mitigation plan and integrating GBV into a grievance mechanism.<br />\n• In Bhutan, UNDP collaborated with multiple partners to pilot a GBV primary prevention intervention that engaged adolescents and their caregivers (parents and teachers) to find the best fit for integration going forward.</p>\n<p>Evaluations of each pilot project were encouraging, confirming promising positive effects for participants, including improved attitudes and practices related to gender equality, better relationships within couples, greater commitments to positive parenting, enhanced awareness of GBV and how or where to seek help, and an expanded willingness to take actions against GBV.</p>\n<p><strong>Lessons learned and recommendations from pilot project experiences</strong></p>\n<p>Pilot project challenges and successes have provided valuable lessons that future initiatives can consider when embarking on a GBV integration approach.</p>\n<p>A key lesson is that GBV integration is not a linear or singular process with a clear recipe or one-size fits-all approach. Yet a set of core principles and processes does influence success, as discussed in this report. Four strategies seem to show particular promise in addressing multiple common obstacles and challenges: advocacy; coordination; rigorous monitoring, evaluation and learning; and transformative capacity-strengthening.</p>\n<p>An enabling environment for ethical, safe and effective GBV integration is essential to success. This depends on initial advocacy and capacity-strengthening and transformation for the project team, including both UNDP and partner organization staff. Also critical is addressing project structures, systems and activity approaches to ensure alignment with best practices for addressing GBV.</p>\n<p>Global team inputs as well as a cohort approach involving a set of pilot projects were central elements. The global team provided technical guidance, collaborative troubleshooting and advocacy support, and facilitated opportunities for ongoing knowledge exchange and capacity-strengthening across the pilots.</p>\n<p>The lessons learned fall under three levels:<br />\n• The foundation for GBV integration: project partner and team buy-in and support<br />\n• The structure for GBV integration: GBV-responsive sectoral project structures and approaches<br />\n• Growing GBV integration: GBV prevention actions and interventions</p>\n<p>This structure stems from an overarching lesson learned about the layers of support and committed action needed to ethically and effectively address GBV in an integrative way, particularly in sectors that do not usually consider or address intersections with GBV. While many want to focus only on the third level of implementing actions and interventions to address GBV in communities, project experiences showed that this was not always successful, such as when the sectoral project structure and approach exacerbated GBV risks, reinforced problematic social norms or did not factor in GBV risk mitigation and survivor-centred referrals. Neither GBV prevention and response actions nor a GBV-responsive project structure and approach are likely to be ethically and effectively implemented without the project team’s buy-in, support and committed action.</p>\n"
+    }
+  },
+  "text": "# A New Approach to Ending Gender-Based Violence: Lessons on Integrating Prevention and Responses in Four UNDP Sectoral Development Projects\n\n**Executive Summary**\n\nIntegrating prevention and responses to gender-based violence (GBV) in diverse development projects and programming could accelerate progress on multiple development challenges faced across the globe. Such efforts could build on partnerships between GBV prevention experts and other development actors that typically do not focus on this issue. There are opportunities to integrate GBV response and prevention activities in sectoral programmes on the environment, social cohesion, livelihoods, broader governance and more. Integrated GBV actions retain the safety and ethical principles of GBV interventions and build on the evidence-based core components of effective GBV prevention.1 \n\nThe UNDP programme “Ending Gender-based Violence and Achieving the Sustainable Development Goals,” in partnership with the Republic of Korea, supported four projects to pilot approaches to integrating actions to address GBV into large sectoral projects addressing a variety of development goals, including economic empowerment and strengthened livelihoods (SDGs 1 and 8), environmental restoration (SDG 13), quality education (SDG 4), and child and family safety (SDG 16). The pilots were relatively small, with budget allocations of between US $200,000 and $400,000 and usually only one UNDP staff position. They lasted three to four years. \n\nThis report discusses learning from them, aiming to:    \n• Describe various approaches to integration and their outcomes     \n• Discuss lessons learned about GBV integration     \n• Make evidence-informed and practical recommendations for the ways forward \n\n**What is a collaborative GBV integration approach?**\n\nA GBV integration approach seeks to weave ethical, effective actions and approaches to addressing GBV throughout a sectoral project or programme, recognizing that GBV risk and protective factors intersect with the development challenge being addressed by the broader project. A comprehensive integration approach means that GBV is taken up across and within all aspects of a project, so that all partners and team members: (a) understand how GBV relates to and impacts the development focus of the broader project, (b) acknowledge the importance and added value of addressing GBV within the broader project, and (c) support the inclusion of GBV experts and ethical, safe and effective actions to prevent and sustainably address GBV across the project. \n\n**GBV integration pilot projects**\n\nUNDP piloted a GBV integration approach in four different projects:    \n• In Lebanon, GBV actions were integrated into a women’s economic empowerment and participation project. It included the incorporation of GBV indicators in the project framework; referrals for GBV survivors; adaptation of an evidence-based primary prevention intervention that engaged women, men and municipal officials; and Gender Equality Cafes as community dialogue spaces.     \n• In Iraq, a project integrated GBV actions into work on livelihoods strengthening and recovery, including through referrals for GBV survivors, and the adaptation of an evidence-based primary prevention intervention that engaged women, men and community leaders or influencers.     \n• In Uganda, UNDP integrated GBV actions into a wetlands restoration, community resilience and alternative livelihoods project, including through strengthening the capacities of the project team, bolstering referral services in project areas, developing a GBV risk mitigation plan and integrating GBV into a grievance mechanism.    \n• In Bhutan, UNDP collaborated with multiple partners to pilot a GBV primary prevention intervention that engaged adolescents and their caregivers (parents and teachers) to find the best fit for integration going forward. \n\nEvaluations of each pilot project were encouraging, confirming promising positive effects for participants, including improved attitudes and practices related to gender equality, better relationships within couples, greater commitments to positive parenting, enhanced awareness of GBV and how or where to seek help, and an expanded willingness to take actions against GBV. \n\n**Lessons learned and recommendations from pilot project experiences**\n\nPilot project challenges and successes have provided valuable lessons that future initiatives can consider when embarking on a GBV integration approach. \n\nA key lesson is that GBV integration is not a linear or singular process with a clear recipe or one-size fits-all approach. Yet a set of core principles and processes does influence success, as discussed in this report. Four strategies seem to show particular promise in addressing multiple common obstacles and challenges: advocacy; coordination; rigorous monitoring, evaluation and learning; and transformative capacity-strengthening. \n\nAn enabling environment for ethical, safe and effective GBV integration is essential to success. This depends on initial advocacy and capacity-strengthening and transformation for the project team, including both UNDP and partner organization staff. Also critical is addressing project structures, systems and activity approaches to ensure alignment with best practices for addressing GBV.  \n\nGlobal team inputs as well as a cohort approach involving a set of pilot projects were central elements. The global team provided technical guidance, collaborative troubleshooting and advocacy support, and facilitated opportunities for ongoing knowledge exchange and capacity-strengthening across the pilots. \n\nThe lessons learned fall under three levels:   \n• The foundation for GBV integration: project partner and team buy-in and support      \n• The structure for GBV integration: GBV-responsive sectoral project structures and approaches      \n• Growing GBV integration: GBV prevention actions and interventions \n\nThis structure stems from an overarching lesson learned about the layers of support and committed action needed to ethically and effectively address GBV in an integrative way, particularly in sectors that do not usually consider or address intersections with GBV. While many want to focus only on the third level of implementing actions and interventions to address GBV in communities, project experiences showed that this was not always successful, such as when the sectoral project structure and approach exacerbated GBV risks, reinforced problematic social norms or did not factor in GBV risk mitigation and survivor-centred referrals. Neither GBV prevention and response actions nor a GBV-responsive project structure and approach are likely to be ethically and effectively implemented without the project team’s buy-in, support and committed action.",
+  "summary": "\n\nThis report discusses the UNDP programme \"Ending Gender-Based Violence and Achieving the Sustainable Development Goals,\" which piloted approaches to integrating actions to address GBV into large sectoral projects addressing a variety of development goals. It outlines the lessons learned from the four pilot projects, including the need for advocacy, coordination, monitoring, evaluation and learning, and capacity-strengthening. It also highlights the importance of an enabling environment for ethical, safe and effective GBV integration, and the need for project partner and team buy-in and support.",
+  "metadata": {
+    "id": "3957053",
+    "name": "A New Approach to Ending Gender-Based Violence: Lessons on Integrating Prevention and Responses in Four UNDP Sectoral Development Projects",
+    "date_original": 1682640000000,
+    "date_changed": 1682702576000,
+    "date_created": 1682695268000,
+    "primary_country_id": 254,
+    "primary_country_name": "World",
+    "primary_country_iso3": "wld"
+  }
+}

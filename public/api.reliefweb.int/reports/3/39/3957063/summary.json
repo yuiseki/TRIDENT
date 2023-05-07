@@ -1,0 +1,122 @@
+{
+  "original": {
+    "id": "3957063",
+    "fields": {
+      "date": {
+        "changed": "2023-04-28T16:07:45+00:00",
+        "created": "2023-04-28T15:33:15+00:00",
+        "original": "2023-04-28T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/75",
+          "name": "Democratic Republic of the Congo",
+          "location": {
+            "lon": 21.7587,
+            "lat": -4.03833
+          },
+          "id": 75,
+          "shortname": "DR Congo",
+          "iso3": "cod",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/75",
+        "name": "Democratic Republic of the Congo",
+        "location": {
+          "lon": 21.7587,
+          "lat": -4.03833
+        },
+        "id": 75,
+        "shortname": "DR Congo",
+        "iso3": "cod"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "Humanitarian Emergency in North Kivu, Ituri and South Kivu in 2023 - Flash Report (26 April 2023)",
+      "body": "**HUMANITARIAN NEEDS**\n\nSince February, violence and conflict in eastern DRC has increased, forcing more waves of people from their homes in search of safety. In Ituri, North Kivu and South Kivu, between 5.6 and 6 million people are now internally displaced according to UN estimates.1 \n\nAcross the three provinces 6.1 million people were already projected to be experiencing high levels of food insecurity and in need of urgent food assistance, with 1.3 million in emergency conditions.2 A revision of the food insecurity rates is currently underway in light of the escalation of conflict, displacement and the sharp and worrying degradation of food accessibility. \n\nAn explosion of intercommunity violence is the latest in a long series of attacks between the Cooperative for the Development of the Congo (CODECO) and Zaire militias in Ituri. \n\nCatastrophic conditions for displaced populations, cut off from fields and crops and restricted in their movement, are reported by Médecins Sans Frontières. There are shortages of food, nutritional inputs and basic medicines.  \n\nMalnutrition is rising, even amongst adults, as the majority of displaced people are barely eating one meal a day.  \n\nFood prices have markedly increased in the last year in Goma (+77%) and Bukavu (+100%) due to the ongoing conflict which has severed major supply lines.3 This drives food insecurity further and makes people vulnerable to recruitment into armed groups.  \nHumanitarian assistance is desperately needed to stop hunger in its tracks.",
+      "url": "https://reliefweb.int/node/3957063",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/26/ee/26ee5ff7-1db5-429a-b76a-55428b0df878.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/26/ee/26ee5ff7-1db5-429a-b76a-55428b0df878.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/26/ee/26ee5ff7-1db5-429a-b76a-55428b0df878.png",
+            "version": "2415659-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/26/ee/26ee5ff7-1db5-429a-b76a-55428b0df878.png"
+          },
+          "filename": "WFP DRC - Humanitarian Emergency in North Kivu, Ituri and South Kivu - 26 April 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415659",
+          "filesize": "399854",
+          "url": "https://reliefweb.int/attachments/26ee5ff7-1db5-429a-b76a-55428b0df878/WFP%20DRC%20-%20Humanitarian%20Emergency%20in%20North%20Kivu%2C%20Ituri%20and%20South%20Kivu%20-%2026%20April%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/democratic-republic-congo/humanitarian-emergency-north-kivu-ituri-and-south-kivu-2023-flash-report-26-april-2023",
+      "theme": [
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        }
+      ],
+      "id": 3957063,
+      "status": "published",
+      "body-html": "<p><strong>HUMANITARIAN NEEDS</strong></p>\n<p>Since February, violence and conflict in eastern DRC has increased, forcing more waves of people from their homes in search of safety. In Ituri, North Kivu and South Kivu, between 5.6 and 6 million people are now internally displaced according to UN estimates.1</p>\n<p>Across the three provinces 6.1 million people were already projected to be experiencing high levels of food insecurity and in need of urgent food assistance, with 1.3 million in emergency conditions.2 A revision of the food insecurity rates is currently underway in light of the escalation of conflict, displacement and the sharp and worrying degradation of food accessibility.</p>\n<p>An explosion of intercommunity violence is the latest in a long series of attacks between the Cooperative for the Development of the Congo (CODECO) and Zaire militias in Ituri.</p>\n<p>Catastrophic conditions for displaced populations, cut off from fields and crops and restricted in their movement, are reported by Médecins Sans Frontières. There are shortages of food, nutritional inputs and basic medicines.</p>\n<p>Malnutrition is rising, even amongst adults, as the majority of displaced people are barely eating one meal a day.</p>\n<p>Food prices have markedly increased in the last year in Goma (+77%) and Bukavu (+100%) due to the ongoing conflict which has severed major supply lines.3 This drives food insecurity further and makes people vulnerable to recruitment into armed groups.<br />\nHumanitarian assistance is desperately needed to stop hunger in its tracks.</p>\n"
+    }
+  },
+  "text": "# Humanitarian Emergency in North Kivu, Ituri and South Kivu in 2023 - Flash Report (26 April 2023)\n\n**HUMANITARIAN NEEDS**\n\nSince February, violence and conflict in eastern DRC has increased, forcing more waves of people from their homes in search of safety. In Ituri, North Kivu and South Kivu, between 5.6 and 6 million people are now internally displaced according to UN estimates.1 \n\nAcross the three provinces 6.1 million people were already projected to be experiencing high levels of food insecurity and in need of urgent food assistance, with 1.3 million in emergency conditions.2 A revision of the food insecurity rates is currently underway in light of the escalation of conflict, displacement and the sharp and worrying degradation of food accessibility. \n\nAn explosion of intercommunity violence is the latest in a long series of attacks between the Cooperative for the Development of the Congo (CODECO) and Zaire militias in Ituri. \n\nCatastrophic conditions for displaced populations, cut off from fields and crops and restricted in their movement, are reported by Médecins Sans Frontières. There are shortages of food, nutritional inputs and basic medicines.  \n\nMalnutrition is rising, even amongst adults, as the majority of displaced people are barely eating one meal a day.  \n\nFood prices have markedly increased in the last year in Goma (+77%) and Bukavu (+100%) due to the ongoing conflict which has severed major supply lines.3 This drives food insecurity further and makes people vulnerable to recruitment into armed groups.  \nHumanitarian assistance is desperately needed to stop hunger in its tracks.",
+  "summary": "\n\nViolence and conflict in eastern DRC has caused 6 million people to be internally displaced, with 6.1 million people already projected to be experiencing high levels of food insecurity. Intercommunity violence between the Cooperative for the Development of the Congo (CODECO) and Zaire militias in Ituri has caused catastrophic conditions for displaced populations, with shortages of food, nutritional inputs and basic medicines. Malnutrition is rising, and food prices have increased significantly due to the conflict. Humanitarian assistance is urgently needed to prevent further hunger.",
+  "metadata": {
+    "id": "3957063",
+    "name": "Humanitarian Emergency in North Kivu, Ituri and South Kivu in 2023 - Flash Report (26 April 2023)",
+    "date_original": 1682640000000,
+    "date_changed": 1682698065000,
+    "date_created": 1682695995000,
+    "primary_country_id": 75,
+    "primary_country_name": "Democratic Republic of the Congo",
+    "primary_country_iso3": "cod",
+    "primary_country_location": {
+      "lon": 21.7587,
+      "lat": -4.03833
+    }
+  }
+}

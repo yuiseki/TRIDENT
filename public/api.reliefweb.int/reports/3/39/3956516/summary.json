@@ -1,0 +1,142 @@
+{
+  "original": {
+    "id": "3956516",
+    "fields": {
+      "date": {
+        "changed": "2023-04-27T10:27:10+00:00",
+        "created": "2023-04-27T08:09:06+00:00",
+        "original": "2023-04-27T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/216",
+          "name": "Somalia",
+          "location": {
+            "lon": 47.33,
+            "lat": 5.79
+          },
+          "id": 216,
+          "shortname": "Somalia",
+          "iso3": "som",
+          "primary": true
+        }
+      ],
+      "origin": "https://docs.wfp.org/api/documents/WFP-0000148597/download/",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/216",
+        "name": "Somalia",
+        "location": {
+          "lon": 47.33,
+          "lat": 5.79
+        },
+        "id": 216,
+        "shortname": "Somalia",
+        "iso3": "som"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "DR",
+          "name": "Drought",
+          "id": 4672
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "Somalia - Joint Markets and Supply Chain Update: 16 - 22 April 2023",
+      "body": "**KEY HIGHLIGHTS**\n\nPrices: Compared to the previous week, prices of most food and non-food items remained relatively stable in most states except in Puntland, where prices exhibited mixed trends (mostly decreases).\n\nLocal cereal (red sorghum & white maize) prices declined significantly in Puntland (10-14%) compared to the previous week due to increased supply by traders besides slight easing of transportation as fuel prices declined slightly.  \nSimilarly, prices of imported food items declined (4-11%) in Puntland due to bulk restocking by retailers ahead of the Eid festival season.\n\nA significant decline in camel milk prices was recorded in Puntland (15%) and Southwest (9%), attributable to slightly increased milk availability due to improved water supply and slowly replenishing pasture due to ongoing Gu rains.\n\nLabor wage rates remained relatively stable in all states across the country compared to the previous week. Fuel (diesel) prices remained relatively stable in most states except in Puntland, where the prices slightly declined (by 4%) due to increased supplies.\n\nAvailability: There was sufficient supplies of essential food items in the markets tracked throughout Somalia to satisfy the demand at the moment. The majority of the stores had ample supplies of necessary sustenance items.\n\nSupply Resilience: Most parts of the Somalia regions had good supply chain resilience except in the areas affected by crisis or localized heavy rains. Most merchants had restocked to meet the expected increased demand for commodities as Ramadhan season comes to an end with festivity, to prevent any supply chain inefficiencies.\n\nTrade logistics: Trade and commodity transportation into Somalia was robust, with most of the roads being accessible and transportation services were running smoothly. In Jubaland, the route between Luuq and Mogadishu is still not accessible as a result of heavy rains making it difficult for traders and transporters to take commodities to the market.  \nParts of the country continues to receive light to moderate rains.\n\nFood Items Assortment. In all markets monitored, a broad range of food items available for the consumers to choose from. Milk, meat, and fish products, as well as fresh fruits and vegetables, were readily available.\n\n**IMPLICATIONS ON FOOD SECURITY**\n\n• In Galmudug, Southwest, and Puntland, price drops in camel milk will increase its affordability to marketdependent households, improving protein-rich food intake, especially among children.\n\n• Despite relatively higher prices reported in Puntland, declining food prices may increase the purchasing power of market-dependent households, and households will be able to purchase increased volumes of food during the festive week.",
+      "url": "https://reliefweb.int/node/3956516",
+      "disaster": [
+        {
+          "name": "Somalia: Drought - 2015-2023",
+          "id": 23101,
+          "glide": "DR-2015-000134-SOM",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/f0/78/f078a870-1d70-4e85-8a9b-c621cef07a06.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/f0/78/f078a870-1d70-4e85-8a9b-c621cef07a06.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/f0/78/f078a870-1d70-4e85-8a9b-c621cef07a06.png",
+            "version": "2415262-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/f0/78/f078a870-1d70-4e85-8a9b-c621cef07a06.png"
+          },
+          "filename": "WFP-0000148597.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415262",
+          "filesize": "615432",
+          "url": "https://reliefweb.int/attachments/f078a870-1d70-4e85-8a9b-c621cef07a06/WFP-0000148597.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/somalia/somalia-joint-markets-and-supply-chain-update-16-22-april-2023",
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        }
+      ],
+      "id": 3956516,
+      "status": "published",
+      "body-html": "<p><strong>KEY HIGHLIGHTS</strong></p>\n<p>Prices: Compared to the previous week, prices of most food and non-food items remained relatively stable in most states except in Puntland, where prices exhibited mixed trends (mostly decreases).</p>\n<p>Local cereal (red sorghum &amp; white maize) prices declined significantly in Puntland (10-14%) compared to the previous week due to increased supply by traders besides slight easing of transportation as fuel prices declined slightly.<br />\nSimilarly, prices of imported food items declined (4-11%) in Puntland due to bulk restocking by retailers ahead of the Eid festival season.</p>\n<p>A significant decline in camel milk prices was recorded in Puntland (15%) and Southwest (9%), attributable to slightly increased milk availability due to improved water supply and slowly replenishing pasture due to ongoing Gu rains.</p>\n<p>Labor wage rates remained relatively stable in all states across the country compared to the previous week. Fuel (diesel) prices remained relatively stable in most states except in Puntland, where the prices slightly declined (by 4%) due to increased supplies.</p>\n<p>Availability: There was sufficient supplies of essential food items in the markets tracked throughout Somalia to satisfy the demand at the moment. The majority of the stores had ample supplies of necessary sustenance items.</p>\n<p>Supply Resilience: Most parts of the Somalia regions had good supply chain resilience except in the areas affected by crisis or localized heavy rains. Most merchants had restocked to meet the expected increased demand for commodities as Ramadhan season comes to an end with festivity, to prevent any supply chain inefficiencies.</p>\n<p>Trade logistics: Trade and commodity transportation into Somalia was robust, with most of the roads being accessible and transportation services were running smoothly. In Jubaland, the route between Luuq and Mogadishu is still not accessible as a result of heavy rains making it difficult for traders and transporters to take commodities to the market.<br />\nParts of the country continues to receive light to moderate rains.</p>\n<p>Food Items Assortment. In all markets monitored, a broad range of food items available for the consumers to choose from. Milk, meat, and fish products, as well as fresh fruits and vegetables, were readily available.</p>\n<p><strong>IMPLICATIONS ON FOOD SECURITY</strong></p>\n<p>• In Galmudug, Southwest, and Puntland, price drops in camel milk will increase its affordability to marketdependent households, improving protein-rich food intake, especially among children.</p>\n<p>• Despite relatively higher prices reported in Puntland, declining food prices may increase the purchasing power of market-dependent households, and households will be able to purchase increased volumes of food during the festive week.</p>\n"
+    }
+  },
+  "text": "# Somalia - Joint Markets and Supply Chain Update: 16 - 22 April 2023\n\n**KEY HIGHLIGHTS**\n\nPrices: Compared to the previous week, prices of most food and non-food items remained relatively stable in most states except in Puntland, where prices exhibited mixed trends (mostly decreases).\n\nLocal cereal (red sorghum & white maize) prices declined significantly in Puntland (10-14%) compared to the previous week due to increased supply by traders besides slight easing of transportation as fuel prices declined slightly.  \nSimilarly, prices of imported food items declined (4-11%) in Puntland due to bulk restocking by retailers ahead of the Eid festival season.\n\nA significant decline in camel milk prices was recorded in Puntland (15%) and Southwest (9%), attributable to slightly increased milk availability due to improved water supply and slowly replenishing pasture due to ongoing Gu rains.\n\nLabor wage rates remained relatively stable in all states across the country compared to the previous week. Fuel (diesel) prices remained relatively stable in most states except in Puntland, where the prices slightly declined (by 4%) due to increased supplies.\n\nAvailability: There was sufficient supplies of essential food items in the markets tracked throughout Somalia to satisfy the demand at the moment. The majority of the stores had ample supplies of necessary sustenance items.\n\nSupply Resilience: Most parts of the Somalia regions had good supply chain resilience except in the areas affected by crisis or localized heavy rains. Most merchants had restocked to meet the expected increased demand for commodities as Ramadhan season comes to an end with festivity, to prevent any supply chain inefficiencies.\n\nTrade logistics: Trade and commodity transportation into Somalia was robust, with most of the roads being accessible and transportation services were running smoothly. In Jubaland, the route between Luuq and Mogadishu is still not accessible as a result of heavy rains making it difficult for traders and transporters to take commodities to the market.  \nParts of the country continues to receive light to moderate rains.\n\nFood Items Assortment. In all markets monitored, a broad range of food items available for the consumers to choose from. Milk, meat, and fish products, as well as fresh fruits and vegetables, were readily available.\n\n**IMPLICATIONS ON FOOD SECURITY**\n\n• In Galmudug, Southwest, and Puntland, price drops in camel milk will increase its affordability to marketdependent households, improving protein-rich food intake, especially among children.\n\n• Despite relatively higher prices reported in Puntland, declining food prices may increase the purchasing power of market-dependent households, and households will be able to purchase increased volumes of food during the festive week.",
+  "summary": " This report provides an update on the joint markets and supply chain in Somalia from April 16-22, 2023. Prices of most food and non-food items remained stable in most states, except in Puntland, where prices exhibited mixed trends. Prices of local cereal and imported food items declined in Puntland due to increased supply. Camel milk prices declined in Puntland and Southwest due to improved water supply and replenishing pasture. Labor wage rates and fuel prices remained relatively stable. There was sufficient supply of essential food items in the markets and supply chain resilience was good, except in areas affected by crisis or localized heavy rains. Trade and commodity transportation into Somalia was robust, with most roads being accessible. Food items assortment was broad and milk, meat, fish, fruits, and vegetables were readily available. Price drops in camel milk will increase its affordability to market-dependent households, improving protein-rich food intake, especially among children.",
+  "metadata": {
+    "id": "3956516",
+    "name": "Somalia - Joint Markets and Supply Chain Update: 16 - 22 April 2023",
+    "date_original": 1682553600000,
+    "date_changed": 1682591230000,
+    "date_created": 1682582946000,
+    "primary_country_id": 216,
+    "primary_country_name": "Somalia",
+    "primary_country_iso3": "som",
+    "primary_country_location": {
+      "lon": 47.33,
+      "lat": 5.79
+    }
+  }
+}

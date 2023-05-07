@@ -1,0 +1,153 @@
+{
+  "original": {
+    "id": "3959266",
+    "fields": {
+      "status": "published",
+      "date": {
+        "changed": "2023-05-05T22:47:04+00:00",
+        "created": "2023-05-05T22:34:44+00:00",
+        "original": "2023-05-05T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/54",
+          "name": "Central African Republic",
+          "location": {
+            "lon": 20.48,
+            "lat": 6.57
+          },
+          "id": 54,
+          "shortname": "CAR",
+          "iso3": "caf",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/220",
+          "name": "Sudan",
+          "location": {
+            "lon": 30,
+            "lat": 15
+          },
+          "id": 220,
+          "shortname": "Sudan",
+          "iso3": "sdn"
+        }
+      ],
+      "ocha_product": [
+        {
+          "name": "Flash Update",
+          "id": 14471
+        }
+      ],
+      "origin": "https://reports.unocha.org/en/country/car/",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/54",
+        "name": "Central African Republic",
+        "location": {
+          "lon": 20.48,
+          "lat": 6.57
+        },
+        "id": 54,
+        "shortname": "CAR",
+        "iso3": "caf"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1503",
+          "longname": "United Nations Office for the Coordination of Humanitarian Affairs",
+          "spanish_name": "Oficina de Coordinación de Asuntos Humanitarios",
+          "name": "UN Office for the Coordination of Humanitarian Affairs",
+          "id": 1503,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "OCHA",
+          "disclaimer": "To learn more about OCHA's activities, please visit https://www.unocha.org/.",
+          "homepage": "http://www.unocha.org/"
+        }
+      ],
+      "title": "Impact of Sudan crisis in the Central African Republic (Flash Update 5 May 2023)",
+      "body": "**HIGLIGHTS**  \n\n- 9,700 people, including Central African returnees have preventively fled from Sudan to Am-Dafock in CAR.\n\n- Humanitarians are speeding up the stock prepositioning plan ahead of the rainy season, while providing emergency assistance.\n\n- Senior humanitarian and Government officials travelled to Am-Dafock to reassess the situation.\n\n**SITUATION OVERVIEW**  \n\nAs a result of insecurity along the border area, traffic between Sudan and the Central African Republic (CAR) has been severely disrupted, causing a sharp increase in the price of basic commodities. Sudan supplies several towns in CAR, particularly Birao in the Vakaga Prefecture and Ndélé in the Bamingui-Bangoran Prefecture. During the rainy season from April to October, access is very challenged and supplies largely depend on Sudan. For some items, prices have doubled. A 50-kg bag of sugar, which sold for XAF 40,000 before the conflict is now worth XAF 80,000 in Birao. A small bowl of millet that used to cost XAF 500 is now worth XAF 1,000.\n\nThe northern region of CAR was already experiencing acute food insecurity, a situation that is [projected](https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1156015/?iso3=CAF) to reach one of its most severe stages by August if an adequate response is not forthcoming. According to the [2023 Humanitarian Needs Overview](https://reliefweb.int/report/central-african-republic/republique-centrafricaine-apercu-des-besoins-humanitaires-novembre-2022?_gl=1*mbedfs*_ga*MTQyNjMwMzE1Mi4xNjQxMjQ2OTUy*_ga_E60ZNX2F68*MTY4MzMyNTk1My4xMS4wLjE2ODMzMjU5NTMuNjAuMC4w) released in November 2022, about 120,000 people are in need of humanitarian assistance and protection in northern CAR.\n\nApproximately 9,700 people, including 3,460 Central African returnees have preventively crossed the border from Sudan and are living in host families and spontaneous settlements in Am-Dafock, CAR. Their number is expected to increase as registration is underway, including consolidation of lists between Government partners and the United Nations High Commissioner for Refugees (UNHCR). Some people continue pendular movements between their homes in Sudan and Am-Dafock in CAR. The Humanitarian Coordinator, the Minister of Interior and Public Security, and United Nations Agencies' senior officials travelled to Am-Dafock on 4 May to better undestand the dynamics of the situation in the border region and related humanitarian needs, including protection, ongoing response and gaps.\n\nAm-Dafock is in a flood-prone area and with the rainy season coming this month, access will be extremely limited. The humanitarian community is working hard to ensure that those in need receive required assistance in a timely manner, including in adapting logistical arrangements.\n\n**HUMANITARIAN RESPONSE**\n\nOn 4 May, 4,6 tons of emergency air cargo left the capital Bangui to Birao to scale up the humanitarian response. The cargo, which complements a pre-existent stock prepositioned in Birao, was transported by the United Nations Humanitarian Air Service (UNHAS) and included medicines, water supplies, emergency shelters and essential non-food items from the World Health Organization (WHO), the United Nations Children’s Fund (UNICEF), the United Nations High Commissioner for Refugees (UNHCR), the International Organization for Migration (IOM) and the United Nations Population Fund (UNFPA). The emergency air cargo is part of a stock prepositioning plan that humanitarian actors implement each year in the northern CAR where access is extremely limited during the rainy season that begins later in May. This year, the process has been speeded up in response to the humanitarian needs arose from the ongoing conflict in Sudan, and is continuing through the road with other supplies, including food.\n\nInternational Medical Corps (IMC) continues to provide emergency medical, nutritional and mental health response to the most vulnerable. To contain the increase in medical consultations, an international organization reinforced the stock of medicines at the local health center. The organization also installed two drinking water tanks with 30,000 liters capacity and repaired a water drilling system. Currently, the most pressing needs include emergency shelter, essential household items, food, latrines and relocation away from the border, to mitigate some protection challenges.\n\nAccording to the [UNHCR’s Regional Refugee Response Plan](https://reporting.unhcr.org/files/2023-05/Final%20Sudan%20RRP%20summary%20-%204%20May%202023.pdf) (RRP), US$ 35.4 million are required to respond to preliminary needs of 25,000 people coming from Sudan, including 15,000 returnees, for six months. The RRP will cover in its first phase the most urgent needs at entry points including protection, namely pre-registration, protection and border monitoring, advocacy and training to preserve the humanitarian and civilian character of asylum, identification of and assistance to people with specific needs, including unaccompanied children, older persons and pregnant women; hot meals and food distribution; emergency and community shelters; mobile clinics, medical consultations, psychosocial support, nutrition screening, treatment and prevention of malnutrition; emergency education services, including child-friendly spaces, school supply support, advocacy for school registration and exams; provision of drinking water, latrines, hygiene and sanitation; and distribution of core relief items. In its second phase, the RRP will consist of relocating asylum-seekers away from the border to mitigate protection risks, and implementing protection and assistance activities.\n\nOn a flexible basis, [Canada announced](https://www.canada.ca/en/global-affairs/news/2023/05/canada-provides-humanitarian-assistance-funding-for-sudan-and-neighbouring-countries.html) a US$ 10 million grant to allow partners in CAR to adapt and scale-up the humanitarian response as the situation evolves. The funding will help people meet their basic needs, including by providing food assistance, protection, water, sanitation and hygiene services and health services.\n\n**BACKGROUND ON HUMANITARIAN NEEDS IN CAR**\n\nHumanitarian needs were already severe in CAR with 3.4 million people - 56 per cent of the population - in need of assistance and protection. The [2023 Humanitarian Response Plan](https://reliefweb.int/report/central-african-republic/republique-centrafricaine-plan-de-reponse-humanitaire-2023-janvier-2023?_gl=1*90zq1p*_ga*MTQyNjMwMzE1Mi4xNjQxMjQ2OTUy*_ga_E60ZNX2F68*MTY4MzMyNTk1My4xMS4wLjE2ODMzMjU5NTMuNjAuMC4w), which aims to assist 2.4 million of the most vulnerable Central Africans, is only [22% funded](https://fts.unocha.org/appeals/1130/clusters?_gl=1*90zq1p*_ga*MTQyNjMwMzE1Mi4xNjQxMjQ2OTUy*_ga_E60ZNX2F68*MTY4MzMyNTk1My4xMS4wLjE2ODMzMjU5NTMuNjAuMC4w). The capacity to absorb additional needs is very limited.",
+      "url": "https://reliefweb.int/node/3959266",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/ec/e9/ece9c064-7be6-41e5-bbfc-9f8e0bdf75c3.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/ec/e9/ece9c064-7be6-41e5-bbfc-9f8e0bdf75c3.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/ec/e9/ece9c064-7be6-41e5-bbfc-9f8e0bdf75c3.png",
+            "version": "2417934-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/ec/e9/ece9c064-7be6-41e5-bbfc-9f8e0bdf75c3.png"
+          },
+          "filename": "Flash Update - Central African Republic - 2 May 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2417934",
+          "filesize": "388143",
+          "url": "https://reliefweb.int/attachments/ece9c064-7be6-41e5-bbfc-9f8e0bdf75c3/Flash%20Update%20-%20Central%20African%20Republic%20-%202%20May%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/central-african-republic/impact-sudan-crisis-central-african-republic-flash-update-5-may-2023",
+      "theme": [
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3959266,
+      "body-html": "<p><strong>HIGLIGHTS</strong></p>\n<ul>\n<li>\n<p>9,700 people, including Central African returnees have preventively fled from Sudan to Am-Dafock in CAR.</p>\n</li>\n<li>\n<p>Humanitarians are speeding up the stock prepositioning plan ahead of the rainy season, while providing emergency assistance.</p>\n</li>\n<li>\n<p>Senior humanitarian and Government officials travelled to Am-Dafock to reassess the situation.</p>\n</li>\n</ul>\n<p><strong>SITUATION OVERVIEW</strong></p>\n<p>As a result of insecurity along the border area, traffic between Sudan and the Central African Republic (CAR) has been severely disrupted, causing a sharp increase in the price of basic commodities. Sudan supplies several towns in CAR, particularly Birao in the Vakaga Prefecture and Ndélé in the Bamingui-Bangoran Prefecture. During the rainy season from April to October, access is very challenged and supplies largely depend on Sudan. For some items, prices have doubled. A 50-kg bag of sugar, which sold for XAF 40,000 before the conflict is now worth XAF 80,000 in Birao. A small bowl of millet that used to cost XAF 500 is now worth XAF 1,000.</p>\n<p>The northern region of CAR was already experiencing acute food insecurity, a situation that is <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1156015/?iso3=CAF\">projected</a> to reach one of its most severe stages by August if an adequate response is not forthcoming. According to the <a href=\"https://reliefweb.int/report/central-african-republic/republique-centrafricaine-apercu-des-besoins-humanitaires-novembre-2022?_gl=1*mbedfs*_ga*MTQyNjMwMzE1Mi4xNjQxMjQ2OTUy*_ga_E60ZNX2F68*MTY4MzMyNTk1My4xMS4wLjE2ODMzMjU5NTMuNjAuMC4w\">2023 Humanitarian Needs Overview</a> released in November 2022, about 120,000 people are in need of humanitarian assistance and protection in northern CAR.</p>\n<p>Approximately 9,700 people, including 3,460 Central African returnees have preventively crossed the border from Sudan and are living in host families and spontaneous settlements in Am-Dafock, CAR. Their number is expected to increase as registration is underway, including consolidation of lists between Government partners and the United Nations High Commissioner for Refugees (UNHCR). Some people continue pendular movements between their homes in Sudan and Am-Dafock in CAR. The Humanitarian Coordinator, the Minister of Interior and Public Security, and United Nations Agencies' senior officials travelled to Am-Dafock on 4 May to better undestand the dynamics of the situation in the border region and related humanitarian needs, including protection, ongoing response and gaps.</p>\n<p>Am-Dafock is in a flood-prone area and with the rainy season coming this month, access will be extremely limited. The humanitarian community is working hard to ensure that those in need receive required assistance in a timely manner, including in adapting logistical arrangements.</p>\n<p><strong>HUMANITARIAN RESPONSE</strong></p>\n<p>On 4 May, 4,6 tons of emergency air cargo left the capital Bangui to Birao to scale up the humanitarian response. The cargo, which complements a pre-existent stock prepositioned in Birao, was transported by the United Nations Humanitarian Air Service (UNHAS) and included medicines, water supplies, emergency shelters and essential non-food items from the World Health Organization (WHO), the United Nations Children’s Fund (UNICEF), the United Nations High Commissioner for Refugees (UNHCR), the International Organization for Migration (IOM) and the United Nations Population Fund (UNFPA). The emergency air cargo is part of a stock prepositioning plan that humanitarian actors implement each year in the northern CAR where access is extremely limited during the rainy season that begins later in May. This year, the process has been speeded up in response to the humanitarian needs arose from the ongoing conflict in Sudan, and is continuing through the road with other supplies, including food.</p>\n<p>International Medical Corps (IMC) continues to provide emergency medical, nutritional and mental health response to the most vulnerable. To contain the increase in medical consultations, an international organization reinforced the stock of medicines at the local health center. The organization also installed two drinking water tanks with 30,000 liters capacity and repaired a water drilling system. Currently, the most pressing needs include emergency shelter, essential household items, food, latrines and relocation away from the border, to mitigate some protection challenges.</p>\n<p>According to the <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://reporting.unhcr.org/files/2023-05/Final%20Sudan%20RRP%20summary%20-%204%20May%202023.pdf\">UNHCR’s Regional Refugee Response Plan</a> (RRP), US$ 35.4 million are required to respond to preliminary needs of 25,000 people coming from Sudan, including 15,000 returnees, for six months. The RRP will cover in its first phase the most urgent needs at entry points including protection, namely pre-registration, protection and border monitoring, advocacy and training to preserve the humanitarian and civilian character of asylum, identification of and assistance to people with specific needs, including unaccompanied children, older persons and pregnant women; hot meals and food distribution; emergency and community shelters; mobile clinics, medical consultations, psychosocial support, nutrition screening, treatment and prevention of malnutrition; emergency education services, including child-friendly spaces, school supply support, advocacy for school registration and exams; provision of drinking water, latrines, hygiene and sanitation; and distribution of core relief items. In its second phase, the RRP will consist of relocating asylum-seekers away from the border to mitigate protection risks, and implementing protection and assistance activities.</p>\n<p>On a flexible basis, <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.canada.ca/en/global-affairs/news/2023/05/canada-provides-humanitarian-assistance-funding-for-sudan-and-neighbouring-countries.html\">Canada announced</a> a US$ 10 million grant to allow partners in CAR to adapt and scale-up the humanitarian response as the situation evolves. The funding will help people meet their basic needs, including by providing food assistance, protection, water, sanitation and hygiene services and health services.</p>\n<p><strong>BACKGROUND ON HUMANITARIAN NEEDS IN CAR</strong></p>\n<p>Humanitarian needs were already severe in CAR with 3.4 million people - 56 per cent of the population - in need of assistance and protection. The <a href=\"https://reliefweb.int/report/central-african-republic/republique-centrafricaine-plan-de-reponse-humanitaire-2023-janvier-2023?_gl=1*90zq1p*_ga*MTQyNjMwMzE1Mi4xNjQxMjQ2OTUy*_ga_E60ZNX2F68*MTY4MzMyNTk1My4xMS4wLjE2ODMzMjU5NTMuNjAuMC4w\">2023 Humanitarian Response Plan</a>, which aims to assist 2.4 million of the most vulnerable Central Africans, is only <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://fts.unocha.org/appeals/1130/clusters?_gl=1*90zq1p*_ga*MTQyNjMwMzE1Mi4xNjQxMjQ2OTUy*_ga_E60ZNX2F68*MTY4MzMyNTk1My4xMS4wLjE2ODMzMjU5NTMuNjAuMC4w\">22% funded</a>. The capacity to absorb additional needs is very limited.</p>\n"
+    }
+  },
+  "text": "# Impact of Sudan crisis in the Central African Republic (Flash Update 5 May 2023)\n\n**HIGLIGHTS**  \n\n- 9,700 people, including Central African returnees have preventively fled from Sudan to Am-Dafock in CAR.\n\n- Humanitarians are speeding up the stock prepositioning plan ahead of the rainy season, while providing emergency assistance.\n\n- Senior humanitarian and Government officials travelled to Am-Dafock to reassess the situation.\n\n**SITUATION OVERVIEW**  \n\nAs a result of insecurity along the border area, traffic between Sudan and the Central African Republic (CAR) has been severely disrupted, causing a sharp increase in the price of basic commodities. Sudan supplies several towns in CAR, particularly Birao in the Vakaga Prefecture and Ndélé in the Bamingui-Bangoran Prefecture. During the rainy season from April to October, access is very challenged and supplies largely depend on Sudan. For some items, prices have doubled. A 50-kg bag of sugar, which sold for XAF 40,000 before the conflict is now worth XAF 80,000 in Birao. A small bowl of millet that used to cost XAF 500 is now worth XAF 1,000.\n\nThe northern region of CAR was already experiencing acute food insecurity, a situation that is [projected](https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1156015/?iso3=CAF) to reach one of its most severe stages by August if an adequate response is not forthcoming. According to the [2023 Humanitarian Needs Overview](https://reliefweb.int/report/central-african-republic/republique-centrafricaine-apercu-des-besoins-humanitaires-novembre-2022?_gl=1*mbedfs*_ga*MTQyNjMwMzE1Mi4xNjQxMjQ2OTUy*_ga_E60ZNX2F68*MTY4MzMyNTk1My4xMS4wLjE2ODMzMjU5NTMuNjAuMC4w) released in November 2022, about 120,000 people are in need of humanitarian assistance and protection in northern CAR.\n\nApproximately 9,700 people, including 3,460 Central African returnees have preventively crossed the border from Sudan and are living in host families and spontaneous settlements in Am-Dafock, CAR. Their number is expected to increase as registration is underway, including consolidation of lists between Government partners and the United Nations High Commissioner for Refugees (UNHCR). Some people continue pendular movements between their homes in Sudan and Am-Dafock in CAR. The Humanitarian Coordinator, the Minister of Interior and Public Security, and United Nations Agencies' senior officials travelled to Am-Dafock on 4 May to better undestand the dynamics of the situation in the border region and related humanitarian needs, including protection, ongoing response and gaps.\n\nAm-Dafock is in a flood-prone area and with the rainy season coming this month, access will be extremely limited. The humanitarian community is working hard to ensure that those in need receive required assistance in a timely manner, including in adapting logistical arrangements.\n\n**HUMANITARIAN RESPONSE**\n\nOn 4 May, 4,6 tons of emergency air cargo left the capital Bangui to Birao to scale up the humanitarian response. The cargo, which complements a pre-existent stock prepositioned in Birao, was transported by the United Nations Humanitarian Air Service (UNHAS) and included medicines, water supplies, emergency shelters and essential non-food items from the World Health Organization (WHO), the United Nations Children’s Fund (UNICEF), the United Nations High Commissioner for Refugees (UNHCR), the International Organization for Migration (IOM) and the United Nations Population Fund (UNFPA). The emergency air cargo is part of a stock prepositioning plan that humanitarian actors implement each year in the northern CAR where access is extremely limited during the rainy season that begins later in May. This year, the process has been speeded up in response to the humanitarian needs arose from the ongoing conflict in Sudan, and is continuing through the road with other supplies, including food.\n\nInternational Medical Corps (IMC) continues to provide emergency medical, nutritional and mental health response to the most vulnerable. To contain the increase in medical consultations, an international organization reinforced the stock of medicines at the local health center. The organization also installed two drinking water tanks with 30,000 liters capacity and repaired a water drilling system. Currently, the most pressing needs include emergency shelter, essential household items, food, latrines and relocation away from the border, to mitigate some protection challenges.\n\nAccording to the [UNHCR’s Regional Refugee Response Plan](https://reporting.unhcr.org/files/2023-05/Final%20Sudan%20RRP%20summary%20-%204%20May%202023.pdf) (RRP), US$ 35.4 million are required to respond to preliminary needs of 25,000 people coming from Sudan, including 15,000 returnees, for six months. The RRP will cover in its first phase the most urgent needs at entry points including protection, namely pre-registration, protection and border monitoring, advocacy and training to preserve the humanitarian and civilian character of asylum, identification of and assistance to people with specific needs, including unaccompanied children, older persons and pregnant women; hot meals and food distribution; emergency and community shelters; mobile clinics, medical consultations, psychosocial support, nutrition screening, treatment and prevention of malnutrition; emergency education services, including child-friendly spaces, school supply support, advocacy for school registration and exams; provision of drinking water, latrines, hygiene and sanitation; and distribution of core relief items. In its second phase, the RRP will consist of relocating asylum-seekers away from the border to mitigate protection risks, and implementing protection and assistance activities.\n\nOn a flexible basis, [Canada announced](https://www.canada.ca/en/global-affairs/news/2023/05/canada-provides-humanitarian-assistance-funding-for-sudan-and-neighbouring-countries.html) a US$ 10 million grant to allow partners in CAR to adapt and scale-up the humanitarian response as the situation evolves. The funding will help people meet their basic needs, including by providing food assistance, protection, water, sanitation and hygiene services and health services.\n\n**BACKGROUND ON HUMANITARIAN NEEDS IN CAR**\n\nHumanitarian needs were already severe in CAR with 3.4 million people - 56 per cent of the population - in need of assistance and protection. The [2023 Humanitarian Response Plan](https://reliefweb.int/report/central-african-republic/republique-centrafricaine-plan-de-reponse-humanitaire-2023-janvier-2023?_gl=1*90zq1p*_ga*MTQyNjMwMzE1Mi4xNjQxMjQ2OTUy*_ga_E60ZNX2F68*MTY4MzMyNTk1My4xMS4wLjE2ODMzMjU5NTMuNjAuMC4w), which aims to assist 2.4 million of the most vulnerable Central Africans, is only [22% funded](https://fts.unocha.org/appeals/1130/clusters?_gl=1*90zq1p*_ga*MTQyNjMwMzE1Mi4xNjQxMjQ2OTUy*_ga_E60ZNX2F68*MTY4MzMyNTk1My4xMS4wLjE2ODMzMjU5NTMuNjAuMC4w). The capacity to absorb additional needs is very limited.",
+  "summary": " Due to insecurity along the Sudan-Central African Republic (CAR) border, traffic has been disrupted and prices of basic commodities have doubled. As a result, 9,700 people, including 3,460 Central African returnees, have fled to Am-Dafock in CAR. Humanitarian actors are prepositioning stocks ahead of the rainy season and providing emergency assistance. The UN Humanitarian Response Plan for CAR is only 22% funded, leaving the capacity to absorb additional needs very limited.",
+  "metadata": {
+    "id": "3959266",
+    "name": "Impact of Sudan crisis in the Central African Republic (Flash Update 5 May 2023)",
+    "date_original": 1683244800000,
+    "date_changed": 1683326824000,
+    "date_created": 1683326084000,
+    "primary_country_id": 54,
+    "primary_country_name": "Central African Republic",
+    "primary_country_iso3": "caf",
+    "primary_country_location": {
+      "lon": 20.48,
+      "lat": 6.57
+    }
+  }
+}

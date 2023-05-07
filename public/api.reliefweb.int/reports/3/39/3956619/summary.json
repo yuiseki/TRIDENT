@@ -1,0 +1,179 @@
+{
+  "original": {
+    "id": "3956619",
+    "fields": {
+      "date": {
+        "changed": "2023-04-27T12:39:34+00:00",
+        "created": "2023-04-27T12:30:40+00:00",
+        "original": "2023-04-27T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/164",
+          "name": "Mozambique",
+          "location": {
+            "lon": 34.75,
+            "lat": -18.09
+          },
+          "id": 164,
+          "shortname": "Mozambique",
+          "iso3": "moz",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/164",
+        "name": "Mozambique",
+        "location": {
+          "lon": 34.75,
+          "lat": -18.09
+        },
+        "id": 164,
+        "shortname": "Mozambique",
+        "iso3": "moz"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        },
+        {
+          "code": "TC",
+          "name": "Tropical Cyclone",
+          "id": 4618
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "WFP Mozambique: Cyclone Freddy External Situation Report #11 (20 April 2023 )",
+      "body": "**Highlights**\n\n- WFP has provided food and nutrition assistance to over 118,000 people in 5 of the 8 provinces affected by Cyclone Freddy.\n\n- A comprehensive package of multi-modal logistics and transport services is being provided by WFP to humanitarian partners to respond to Cyclone Freddy and provide assistance in hard-to-reach areas.\n\n- 16 flights have been facilitated by WFP for humanitarian partners to deliver critically needed assistance and medical supplies to Quelimane,  \nZambezia province.\n\n- WFP is supporting the health services for moderate acute malnutrition treatment for children under-five and pregnant and breastfeeding women in 5 of the 8 provinces most affected by Cyclone Freddy (Niassa, Zambezia, Sofala, Tete and Inhambane).\n\n- WFP continues to support people affected by Cyclone Freddy with in-kind food distributions in Tete and Sofala.\n\n**Situation Update**\n\n• As of 18 April, over 27,000 cases of cholera have been detected, and over 120 deaths have been reported. The worst affected province is Zambezia, with over 12,000 cases and 34 deaths reported.\n\n• The cholera outbreak has affected a total of 10 provinces (Niassa, Tete,  \nSofala, Manica, Gaza, Inhambane,  \nZambezia, Cabo Delgado, Nampula,  \nMaputo). The government has vaccinated over 1.2 million people.",
+      "url": "https://reliefweb.int/node/3956619",
+      "disaster": [
+        {
+          "name": "Tropical Cyclone Freddy - Feb 2023",
+          "id": 51486,
+          "glide": "TC-2023-000023-MDG",
+          "type": [
+            {
+              "code": "TC",
+              "name": "Tropical Cyclone",
+              "id": 4618,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Mozambique: Floods - Feb 2023",
+          "id": 51479,
+          "glide": "FL-2023-000018-MOZ",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Mozambique: Cholera Outbreak - Dec 2022",
+          "id": 51453,
+          "glide": "EP-2023-000006-MOZ",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/8e/fe/8efee8f5-14b5-4269-9189-9a7d9e83cc83.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/8e/fe/8efee8f5-14b5-4269-9189-9a7d9e83cc83.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/8e/fe/8efee8f5-14b5-4269-9189-9a7d9e83cc83.png",
+            "version": "2415335-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/8e/fe/8efee8f5-14b5-4269-9189-9a7d9e83cc83.png"
+          },
+          "filename": "WFP Mozambique External Situation Report #11 - Tropical Cyclone Freddy - 20 April 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415335",
+          "filesize": "519549",
+          "url": "https://reliefweb.int/attachments/8efee8f5-14b5-4269-9189-9a7d9e83cc83/WFP%20Mozambique%20External%20Situation%20Report%20%2311%20-%20Tropical%20Cyclone%20Freddy%20-%2020%20April%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/mozambique/wfp-mozambique-cyclone-freddy-external-situation-report-11-20-april-2023",
+      "theme": [
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3956619,
+      "status": "published",
+      "body-html": "<p><strong>Highlights</strong></p>\n<ul>\n<li>\n<p>WFP has provided food and nutrition assistance to over 118,000 people in 5 of the 8 provinces affected by Cyclone Freddy.</p>\n</li>\n<li>\n<p>A comprehensive package of multi-modal logistics and transport services is being provided by WFP to humanitarian partners to respond to Cyclone Freddy and provide assistance in hard-to-reach areas.</p>\n</li>\n<li>\n<p>16 flights have been facilitated by WFP for humanitarian partners to deliver critically needed assistance and medical supplies to Quelimane,<br />\nZambezia province.</p>\n</li>\n<li>\n<p>WFP is supporting the health services for moderate acute malnutrition treatment for children under-five and pregnant and breastfeeding women in 5 of the 8 provinces most affected by Cyclone Freddy (Niassa, Zambezia, Sofala, Tete and Inhambane).</p>\n</li>\n<li>\n<p>WFP continues to support people affected by Cyclone Freddy with in-kind food distributions in Tete and Sofala.</p>\n</li>\n</ul>\n<p><strong>Situation Update</strong></p>\n<p>• As of 18 April, over 27,000 cases of cholera have been detected, and over 120 deaths have been reported. The worst affected province is Zambezia, with over 12,000 cases and 34 deaths reported.</p>\n<p>• The cholera outbreak has affected a total of 10 provinces (Niassa, Tete,<br />\nSofala, Manica, Gaza, Inhambane,<br />\nZambezia, Cabo Delgado, Nampula,<br />\nMaputo). The government has vaccinated over 1.2 million people.</p>\n"
+    }
+  },
+  "text": "# WFP Mozambique: Cyclone Freddy External Situation Report #11 (20 April 2023 )\n\n**Highlights**\n\n- WFP has provided food and nutrition assistance to over 118,000 people in 5 of the 8 provinces affected by Cyclone Freddy.\n\n- A comprehensive package of multi-modal logistics and transport services is being provided by WFP to humanitarian partners to respond to Cyclone Freddy and provide assistance in hard-to-reach areas.\n\n- 16 flights have been facilitated by WFP for humanitarian partners to deliver critically needed assistance and medical supplies to Quelimane,  \nZambezia province.\n\n- WFP is supporting the health services for moderate acute malnutrition treatment for children under-five and pregnant and breastfeeding women in 5 of the 8 provinces most affected by Cyclone Freddy (Niassa, Zambezia, Sofala, Tete and Inhambane).\n\n- WFP continues to support people affected by Cyclone Freddy with in-kind food distributions in Tete and Sofala.\n\n**Situation Update**\n\n• As of 18 April, over 27,000 cases of cholera have been detected, and over 120 deaths have been reported. The worst affected province is Zambezia, with over 12,000 cases and 34 deaths reported.\n\n• The cholera outbreak has affected a total of 10 provinces (Niassa, Tete,  \nSofala, Manica, Gaza, Inhambane,  \nZambezia, Cabo Delgado, Nampula,  \nMaputo). The government has vaccinated over 1.2 million people.",
+  "summary": " WFP has provided food and nutrition assistance to over 118,000 people in 5 of the 8 provinces affected by Cyclone Freddy. WFP is providing multi-modal logistics and transport services to deliver assistance to hard-to-reach areas, and is supporting health services for moderate acute malnutrition treatment. In addition, WFP is supporting people affected by Cyclone Freddy with in-kind food distributions in Tete and Sofala. As of 18 April, over 27,000 cases of cholera have been detected, and over 120 deaths have been reported, with the worst affected province being Zambezia. The government has vaccinated over 1.2 million people.",
+  "metadata": {
+    "id": "3956619",
+    "name": "WFP Mozambique: Cyclone Freddy External Situation Report #11 (20 April 2023 )",
+    "date_original": 1682553600000,
+    "date_changed": 1682599174000,
+    "date_created": 1682598640000,
+    "primary_country_id": 164,
+    "primary_country_name": "Mozambique",
+    "primary_country_iso3": "moz",
+    "primary_country_location": {
+      "lon": 34.75,
+      "lat": -18.09
+    }
+  }
+}

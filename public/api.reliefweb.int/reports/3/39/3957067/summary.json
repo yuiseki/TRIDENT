@@ -1,0 +1,148 @@
+{
+  "original": {
+    "id": "3957067",
+    "fields": {
+      "date": {
+        "changed": "2023-04-28T16:10:46+00:00",
+        "created": "2023-04-28T15:39:18+00:00",
+        "original": "2023-04-28T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/19",
+          "name": "Angola",
+          "location": {
+            "lon": 17.91,
+            "lat": -12.1
+          },
+          "id": 19,
+          "shortname": "Angola",
+          "iso3": "ago",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/75",
+          "name": "Democratic Republic of the Congo",
+          "location": {
+            "lon": 21.7587,
+            "lat": -4.03833
+          },
+          "id": 75,
+          "shortname": "DR Congo",
+          "iso3": "cod"
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/19",
+        "name": "Angola",
+        "location": {
+          "lon": 17.91,
+          "lat": -12.1
+        },
+        "id": 19,
+        "shortname": "Angola",
+        "iso3": "ago"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "DR",
+          "name": "Drought",
+          "id": 4672
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "WFP Angola Country Brief, March 2023",
+      "body": "**In Numbers** \n\n1.58 million people in acute food insecurity in southwestern Angola \n\nUS$ 5.7 million six-month (April – September 2023) funding shortfall \n\n13,186 people received assistance in March 2023, including commodity vouchers, nutrition supplements, and school meals \n\n21.4 MT of Ready-to-Use Supplementary Food distribution\n\n**Operational Updates** \n\n**Crisis Response** \n\n**Drought Response in Huila and Cunene provinces** \n\n- In March, 35,357 children aged 6-59 months were screened in Huila, Cunene and Namibe provinces for Community Management of Acute Malnutrition. Additionally, a total of 2,462 children were admitted to the WFP programme. During the screening and distribution of the Ready-to-Use Supplementary Food (RUSF), community health agents worked to sensitize the communities about preventing malnutrition.\n\n- In Huila province, 946 families of malnourished children received approximately 106 MT of commodity food vouchers from retailers (maize meal, pulses, vegetable oil, and salt).\n\n- WFP started the distributions of take-home rations in January and is planned for three months. Some 7,330 beneficiaries received take-home rations in Chibia, Gambos, and Chicomba municipalities in Huila province, while 2,060 primary school children received hot meals in Humpata municipality. \n\n**Refugee Assistance in Lunda Norte province** \n\n- Some 6,458 refugees received assistance from WFP in March. 5,814 refugees received unconditional assistance (food distribution) while 644 received conditional support (food assistance for assets).\n\n- WFP conducted training on seed banking, training of Contour bands to collect rainy wated and training on animal husbandry (how to prepare extra food for goats). The beneficiaries of this training were the 125 families of refugees residing in the Lovua Settlement (Lunda Norte Province).",
+      "url": "https://reliefweb.int/node/3957067",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/87/29/872920c5-840b-440e-91b5-1c678acf4b1f.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/87/29/872920c5-840b-440e-91b5-1c678acf4b1f.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/87/29/872920c5-840b-440e-91b5-1c678acf4b1f.png",
+            "version": "2415662-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/87/29/872920c5-840b-440e-91b5-1c678acf4b1f.png"
+          },
+          "filename": "WFP Angola Country Brief - March 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415662",
+          "filesize": "378700",
+          "url": "https://reliefweb.int/attachments/872920c5-840b-440e-91b5-1c678acf4b1f/WFP%20Angola%20Country%20Brief%20-%20March%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/angola/wfp-angola-country-brief-march-2023",
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        },
+        {
+          "name": "Recovery and Reconstruction",
+          "id": 4601
+        }
+      ],
+      "id": 3957067,
+      "status": "published",
+      "body-html": "<p><strong>In Numbers</strong></p>\n<p>1.58 million people in acute food insecurity in southwestern Angola</p>\n<p>US$ 5.7 million six-month (April – September 2023) funding shortfall</p>\n<p>13,186 people received assistance in March 2023, including commodity vouchers, nutrition supplements, and school meals</p>\n<p>21.4 MT of Ready-to-Use Supplementary Food distribution</p>\n<p><strong>Operational Updates</strong></p>\n<p><strong>Crisis Response</strong></p>\n<p><strong>Drought Response in Huila and Cunene provinces</strong></p>\n<ul>\n<li>\n<p>In March, 35,357 children aged 6-59 months were screened in Huila, Cunene and Namibe provinces for Community Management of Acute Malnutrition. Additionally, a total of 2,462 children were admitted to the WFP programme. During the screening and distribution of the Ready-to-Use Supplementary Food (RUSF), community health agents worked to sensitize the communities about preventing malnutrition.</p>\n</li>\n<li>\n<p>In Huila province, 946 families of malnourished children received approximately 106 MT of commodity food vouchers from retailers (maize meal, pulses, vegetable oil, and salt).</p>\n</li>\n<li>\n<p>WFP started the distributions of take-home rations in January and is planned for three months. Some 7,330 beneficiaries received take-home rations in Chibia, Gambos, and Chicomba municipalities in Huila province, while 2,060 primary school children received hot meals in Humpata municipality.</p>\n</li>\n</ul>\n<p><strong>Refugee Assistance in Lunda Norte province</strong></p>\n<ul>\n<li>\n<p>Some 6,458 refugees received assistance from WFP in March. 5,814 refugees received unconditional assistance (food distribution) while 644 received conditional support (food assistance for assets).</p>\n</li>\n<li>\n<p>WFP conducted training on seed banking, training of Contour bands to collect rainy wated and training on animal husbandry (how to prepare extra food for goats). The beneficiaries of this training were the 125 families of refugees residing in the Lovua Settlement (Lunda Norte Province).</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# WFP Angola Country Brief, March 2023\n\n**In Numbers** \n\n1.58 million people in acute food insecurity in southwestern Angola \n\nUS$ 5.7 million six-month (April – September 2023) funding shortfall \n\n13,186 people received assistance in March 2023, including commodity vouchers, nutrition supplements, and school meals \n\n21.4 MT of Ready-to-Use Supplementary Food distribution\n\n**Operational Updates** \n\n**Crisis Response** \n\n**Drought Response in Huila and Cunene provinces** \n\n- In March, 35,357 children aged 6-59 months were screened in Huila, Cunene and Namibe provinces for Community Management of Acute Malnutrition. Additionally, a total of 2,462 children were admitted to the WFP programme. During the screening and distribution of the Ready-to-Use Supplementary Food (RUSF), community health agents worked to sensitize the communities about preventing malnutrition.\n\n- In Huila province, 946 families of malnourished children received approximately 106 MT of commodity food vouchers from retailers (maize meal, pulses, vegetable oil, and salt).\n\n- WFP started the distributions of take-home rations in January and is planned for three months. Some 7,330 beneficiaries received take-home rations in Chibia, Gambos, and Chicomba municipalities in Huila province, while 2,060 primary school children received hot meals in Humpata municipality. \n\n**Refugee Assistance in Lunda Norte province** \n\n- Some 6,458 refugees received assistance from WFP in March. 5,814 refugees received unconditional assistance (food distribution) while 644 received conditional support (food assistance for assets).\n\n- WFP conducted training on seed banking, training of Contour bands to collect rainy wated and training on animal husbandry (how to prepare extra food for goats). The beneficiaries of this training were the 125 families of refugees residing in the Lovua Settlement (Lunda Norte Province).",
+  "summary": " In March 2023, 1.58 million people in southwestern Angola were in acute food insecurity. WFP provided assistance to 13,186 people, including commodity vouchers, nutrition supplements, and school meals. Additionally, 21.4 MT of Ready-to-Use Supplementary Food was distributed. In Huila and Cunene provinces, 35,357 children were screened for Community Management of Acute Malnutrition and 946 families of malnourished children received commodity food vouchers. In Lunda Norte province, 6,458 refugees received assistance from WFP, including food distribution and training on seed banking, collecting rainwater, and animal husbandry.",
+  "metadata": {
+    "id": "3957067",
+    "name": "WFP Angola Country Brief, March 2023",
+    "date_original": 1682640000000,
+    "date_changed": 1682698246000,
+    "date_created": 1682696358000,
+    "primary_country_id": 19,
+    "primary_country_name": "Angola",
+    "primary_country_iso3": "ago",
+    "primary_country_location": {
+      "lon": 17.91,
+      "lat": -12.1
+    }
+  }
+}

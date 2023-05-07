@@ -1,0 +1,102 @@
+{
+  "original": {
+    "id": "3956007",
+    "fields": {
+      "date": {
+        "changed": "2023-04-26T03:20:09+00:00",
+        "created": "2023-04-26T01:23:53+00:00",
+        "original": "2023-04-17T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/254",
+          "name": "World",
+          "id": 254,
+          "shortname": "World",
+          "iso3": "wld",
+          "primary": true
+        }
+      ],
+      "origin": "https://www.unwomen.org/en/digital-library/publications/2023/04/technology-facilitated-violence-against-women-taking-stock-of-evidence-and-data-collection",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/254",
+        "name": "World",
+        "id": 254,
+        "shortname": "World",
+        "iso3": "wld"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/4512",
+          "spanish_name": "ONU para la Igualdad de Género y el Empoderamiento de la Mujer (ONU Mujeres)",
+          "name": "UN Women",
+          "id": 4512,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UN Women",
+          "homepage": "http://www.unwomen.org/en"
+        }
+      ],
+      "title": "Technology-facilitated violence against women: Taking stock of evidence and data collection",
+      "body": "The digital revolution and the uptake of online information and communications technologies have both positive and negative gendered impacts. On the one hand, online spaces and digital tools can facilitate access to essential information and services, unleashing educational and employment opportunities for women and girls. But on the other hand, for those who are online and do have access, a growing body of evidence sheds light on the ways in which the digital revolution has exacerbated existing, and even created new, forms of gendered inequalities and oppression, including technology-facilitated violence against women.\n\nDespite a growing evidence base and accelerated efforts to develop fit-for-purpose quantitative and qualitative research and data collection methods, significant gaps remain in our understanding of the scale and particular manifestations of technology-facilitated violence against women, including how women who face intersecting forms of discrimination experience or resist it.\n\nBased on a scoping study, this paper offers a landscape scan highlighting what is known about technology-facilitated violence against women, who is currently generating this knowledge, and how the evidence is being produced. The paper also highlights some of the related methodological, ethical, and sociopolitical challenges to collecting data on technology-facilitated violence against women. As a way forward, actions for strengthening knowledge generation and data collection are proposed, including recommendations on methods and further research.",
+      "url": "https://reliefweb.int/node/3956007",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/f9/ab/f9abb530-81a3-4a29-ae6e-bb32a563c169.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/f9/ab/f9abb530-81a3-4a29-ae6e-bb32a563c169.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/f9/ab/f9abb530-81a3-4a29-ae6e-bb32a563c169.png",
+            "version": "2414740-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/f9/ab/f9abb530-81a3-4a29-ae6e-bb32a563c169.png"
+          },
+          "filename": "Technology-facilitated-violence-against-women-Taking-stock-of-evidence-and-data-collection-en.pdf",
+          "mimetype": "application/pdf",
+          "id": "2414740",
+          "filesize": "791910",
+          "url": "https://reliefweb.int/attachments/f9abb530-81a3-4a29-ae6e-bb32a563c169/Technology-facilitated-violence-against-women-Taking-stock-of-evidence-and-data-collection-en.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/world/technology-facilitated-violence-against-women-taking-stock-evidence-and-data-collection",
+      "theme": [
+        {
+          "name": "Gender",
+          "id": 4594
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        }
+      ],
+      "id": 3956007,
+      "status": "published",
+      "body-html": "<p>The digital revolution and the uptake of online information and communications technologies have both positive and negative gendered impacts. On the one hand, online spaces and digital tools can facilitate access to essential information and services, unleashing educational and employment opportunities for women and girls. But on the other hand, for those who are online and do have access, a growing body of evidence sheds light on the ways in which the digital revolution has exacerbated existing, and even created new, forms of gendered inequalities and oppression, including technology-facilitated violence against women.</p>\n<p>Despite a growing evidence base and accelerated efforts to develop fit-for-purpose quantitative and qualitative research and data collection methods, significant gaps remain in our understanding of the scale and particular manifestations of technology-facilitated violence against women, including how women who face intersecting forms of discrimination experience or resist it.</p>\n<p>Based on a scoping study, this paper offers a landscape scan highlighting what is known about technology-facilitated violence against women, who is currently generating this knowledge, and how the evidence is being produced. The paper also highlights some of the related methodological, ethical, and sociopolitical challenges to collecting data on technology-facilitated violence against women. As a way forward, actions for strengthening knowledge generation and data collection are proposed, including recommendations on methods and further research.</p>\n"
+    }
+  },
+  "text": "# Technology-facilitated violence against women: Taking stock of evidence and data collection\n\nThe digital revolution and the uptake of online information and communications technologies have both positive and negative gendered impacts. On the one hand, online spaces and digital tools can facilitate access to essential information and services, unleashing educational and employment opportunities for women and girls. But on the other hand, for those who are online and do have access, a growing body of evidence sheds light on the ways in which the digital revolution has exacerbated existing, and even created new, forms of gendered inequalities and oppression, including technology-facilitated violence against women.\n\nDespite a growing evidence base and accelerated efforts to develop fit-for-purpose quantitative and qualitative research and data collection methods, significant gaps remain in our understanding of the scale and particular manifestations of technology-facilitated violence against women, including how women who face intersecting forms of discrimination experience or resist it.\n\nBased on a scoping study, this paper offers a landscape scan highlighting what is known about technology-facilitated violence against women, who is currently generating this knowledge, and how the evidence is being produced. The paper also highlights some of the related methodological, ethical, and sociopolitical challenges to collecting data on technology-facilitated violence against women. As a way forward, actions for strengthening knowledge generation and data collection are proposed, including recommendations on methods and further research.",
+  "summary": " This paper examines the evidence and data collection related to technology-facilitated violence against women. It highlights the positive and negative gendered impacts of the digital revolution, and the gaps in our understanding of the scale and manifestations of technology-facilitated violence against women. The paper also outlines the methodological, ethical, and sociopolitical challenges to collecting data on technology-facilitated violence against women, and proposes actions for strengthening knowledge generation and data collection.",
+  "metadata": {
+    "id": "3956007",
+    "name": "Technology-facilitated violence against women: Taking stock of evidence and data collection",
+    "date_original": 1681689600000,
+    "date_changed": 1682479209000,
+    "date_created": 1682472233000,
+    "primary_country_id": 254,
+    "primary_country_name": "World",
+    "primary_country_iso3": "wld"
+  }
+}

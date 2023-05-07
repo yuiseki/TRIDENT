@@ -1,0 +1,151 @@
+{
+  "original": {
+    "id": "3958080",
+    "fields": {
+      "date": {
+        "changed": "2023-05-05T12:02:45+00:00",
+        "created": "2023-05-03T09:37:45+00:00",
+        "original": "2023-05-03T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/241",
+          "name": "Ukraine",
+          "location": {
+            "lon": 31.32,
+            "lat": 49.32
+          },
+          "id": 241,
+          "shortname": "Ukraine",
+          "iso3": "ukr",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/241",
+        "name": "Ukraine",
+        "location": {
+          "lon": 31.32,
+          "lat": 49.32
+        },
+        "id": 241,
+        "shortname": "Ukraine",
+        "iso3": "ukr"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/15477",
+          "name": "Health Cluster",
+          "id": 15477,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "Health Cluster",
+          "homepage": "https://healthcluster.who.int/"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1275",
+          "longname": "World Health Organization",
+          "spanish_name": "Organización Mundial de la Salud",
+          "name": "World Health Organization",
+          "id": 1275,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WHO",
+          "homepage": "http://www.who.int/"
+        }
+      ],
+      "title": "Ukraine: Health Cluster Bulletin #1 (January - February 2023) [EN/UK]",
+      "body": "**SITUATION UPATE**\n\nHeavy fighting continues in the eastern and southern parts of the country, with civilians being killed and injured on both sides of the front line. On 14 January, a ballistic missile hit a residential building in Dnipro in one of the deadliest attacks in Ukraine since the conflict began in February of last year. Since 24 February, the UN Human Rights Office (UN OHCHR) recorded 18 657 civilian casualties in the country: 7110 killed and 11 547 injured.\n\nWith one year passing of the fullscale conflict, the health system in Ukraine remains resilient and overall access to health services remains relatively high. Nevertheless, the conflict has eroded access to health care services and medicines in the country, particularly for people living in regions closer to the front line, areas partially controlled by the Government of Ukraine, and for the internally displaced.\n\nIt is estimated that 17.6 million people are in need of humanitarian aid in 2023 of which 14.6 million in need of health assistance. According to the REACH multi-sectoral needs assessment (MSNA), both access to medicines and to health care are reported as one of the highestranking selfreported needs among Ukrainians.\n\n7.8 Million of the most vulnerable people in Ukraine will be targeted by the health humanitarian response.",
+      "url": "https://reliefweb.int/node/3958080",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/64/86/648614c2-e767-4d93-b2eb-d920ef765390.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/64/86/648614c2-e767-4d93-b2eb-d920ef765390.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/64/86/648614c2-e767-4d93-b2eb-d920ef765390.png",
+            "version": "2416749-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/64/86/648614c2-e767-4d93-b2eb-d920ef765390.png"
+          },
+          "filename": "HC bulletin_Jan - Feb _ 2023.pdf",
+          "description": "English version",
+          "mimetype": "application/pdf",
+          "id": "2416749",
+          "filesize": "1574192",
+          "url": "https://reliefweb.int/attachments/648614c2-e767-4d93-b2eb-d920ef765390/HC%20bulletin_Jan%20-%20Feb%20_%202023.pdf"
+        },
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/4d/a2/4da27cb1-3c26-463b-a42b-051dce512cef.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/4d/a2/4da27cb1-3c26-463b-a42b-051dce512cef.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/4d/a2/4da27cb1-3c26-463b-a42b-051dce512cef.png",
+            "version": "2417732-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/4d/a2/4da27cb1-3c26-463b-a42b-051dce512cef.png"
+          },
+          "filename": "HC bulletin_Jan - Feb UKR.pdf",
+          "description": "Ukrainian version",
+          "mimetype": "application/pdf",
+          "id": "2417732",
+          "filesize": "1802408",
+          "url": "https://reliefweb.int/attachments/4da27cb1-3c26-463b-a42b-051dce512cef/HC%20bulletin_Jan%20-%20Feb%20UKR.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/ukraine/ukraine-health-cluster-bulletin-1-january-february-2023-enuk",
+      "redirects": [
+        "https://reliefweb.int/report/ukraine/ukraine-health-cluster-bulletin-1-january-february-2023"
+      ],
+      "theme": [
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        }
+      ],
+      "id": 3958080,
+      "status": "published",
+      "body-html": "<p><strong>SITUATION UPATE</strong></p>\n<p>Heavy fighting continues in the eastern and southern parts of the country, with civilians being killed and injured on both sides of the front line. On 14 January, a ballistic missile hit a residential building in Dnipro in one of the deadliest attacks in Ukraine since the conflict began in February of last year. Since 24 February, the UN Human Rights Office (UN OHCHR) recorded 18 657 civilian casualties in the country: 7110 killed and 11 547 injured.</p>\n<p>With one year passing of the fullscale conflict, the health system in Ukraine remains resilient and overall access to health services remains relatively high. Nevertheless, the conflict has eroded access to health care services and medicines in the country, particularly for people living in regions closer to the front line, areas partially controlled by the Government of Ukraine, and for the internally displaced.</p>\n<p>It is estimated that 17.6 million people are in need of humanitarian aid in 2023 of which 14.6 million in need of health assistance. According to the REACH multi-sectoral needs assessment (MSNA), both access to medicines and to health care are reported as one of the highestranking selfreported needs among Ukrainians.</p>\n<p>7.8 Million of the most vulnerable people in Ukraine will be targeted by the health humanitarian response.</p>\n"
+    }
+  },
+  "text": "# Ukraine: Health Cluster Bulletin #1 (January - February 2023) [EN/UK]\n\n**SITUATION UPATE**\n\nHeavy fighting continues in the eastern and southern parts of the country, with civilians being killed and injured on both sides of the front line. On 14 January, a ballistic missile hit a residential building in Dnipro in one of the deadliest attacks in Ukraine since the conflict began in February of last year. Since 24 February, the UN Human Rights Office (UN OHCHR) recorded 18 657 civilian casualties in the country: 7110 killed and 11 547 injured.\n\nWith one year passing of the fullscale conflict, the health system in Ukraine remains resilient and overall access to health services remains relatively high. Nevertheless, the conflict has eroded access to health care services and medicines in the country, particularly for people living in regions closer to the front line, areas partially controlled by the Government of Ukraine, and for the internally displaced.\n\nIt is estimated that 17.6 million people are in need of humanitarian aid in 2023 of which 14.6 million in need of health assistance. According to the REACH multi-sectoral needs assessment (MSNA), both access to medicines and to health care are reported as one of the highestranking selfreported needs among Ukrainians.\n\n7.8 Million of the most vulnerable people in Ukraine will be targeted by the health humanitarian response.",
+  "summary": "\n\nHeavy fighting continues in Ukraine, resulting in 18,657 civilian casualties since February of last year. The conflict has eroded access to health care services and medicines, particularly for those living in regions closer to the front line. 17.6 million people are in need of humanitarian aid, with 14.6 million in need of health assistance. 7.8 million of the most vulnerable people in Ukraine will be targeted by the health humanitarian response.",
+  "metadata": {
+    "id": "3958080",
+    "name": "Ukraine: Health Cluster Bulletin #1 (January - February 2023) [EN/UK]",
+    "date_original": 1683072000000,
+    "date_changed": 1683288165000,
+    "date_created": 1683106665000,
+    "primary_country_id": 241,
+    "primary_country_name": "Ukraine",
+    "primary_country_iso3": "ukr",
+    "primary_country_location": {
+      "lon": 31.32,
+      "lat": 49.32
+    }
+  }
+}

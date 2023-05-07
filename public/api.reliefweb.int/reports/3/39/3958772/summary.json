@@ -1,0 +1,215 @@
+{
+  "original": {
+    "id": "3958772",
+    "fields": {
+      "date": {
+        "changed": "2023-05-04T20:57:58+00:00",
+        "created": "2023-05-04T20:37:41+00:00",
+        "original": "2023-05-04T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/226",
+          "name": "Syrian Arab Republic",
+          "location": {
+            "lon": 38.51,
+            "lat": 35.01
+          },
+          "id": 226,
+          "shortname": "Syria",
+          "iso3": "syr",
+          "primary": true
+        }
+      ],
+      "vulnerable_groups": [
+        {
+          "name": "Aged Persons",
+          "id": 6870
+        },
+        {
+          "name": "Children",
+          "id": 6871
+        },
+        {
+          "name": "IDPs",
+          "id": 6872
+        },
+        {
+          "name": "Women",
+          "id": 6875
+        }
+      ],
+      "ocha_product": [
+        {
+          "name": "Situation Report",
+          "id": 12345
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/226",
+        "name": "Syrian Arab Republic",
+        "location": {
+          "lon": 38.51,
+          "lat": 35.01
+        },
+        "id": 226,
+        "shortname": "Syria",
+        "iso3": "syr"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EQ",
+          "name": "Earthquake",
+          "id": 4628
+        },
+        {
+          "code": "FF",
+          "name": "Flash Flood",
+          "id": 4624
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1503",
+          "longname": "United Nations Office for the Coordination of Humanitarian Affairs",
+          "spanish_name": "Oficina de Coordinación de Asuntos Humanitarios",
+          "name": "UN Office for the Coordination of Humanitarian Affairs",
+          "id": 1503,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "OCHA",
+          "disclaimer": "To learn more about OCHA's activities, please visit https://www.unocha.org/.",
+          "homepage": "http://www.unocha.org/"
+        }
+      ],
+      "title": "Humanitarian Update Syrian Arab Republic - Issue 10 | March 2023",
+      "body": "HIGHLIGHTS \n\nP.01 UN continues to assist earthquake-affected people in Syria \n\nP.02 UN extends support to flood-impacted population in north-east Syria \n\nP.03 Earthquake undermines Syria’s economic outlook, compounding dire socio-economic conditions, and internal displacement \n\n- Impact of the earthquakes on employment and the labour market in Syria \n\nP.04 Briefing to the security council on the humanitarian situation in Syria \n\n- Half of Syria's popultion faces hunger \n\nP.05 (RC/HC a.i.), El-Mostafa Benlamlih statement on the Aleppo International Airport strikes \n\n- Inter-sectoral assessment mission to Ash-Sheikh Maqsoud \n\nP.06 Earthquakes impact on Southern region \n\nP.07 Impact of low level of Euphrates river and rainfall on farmers \n\n- Alternative water supply to Al-Hasakeh \n\nQ.08 Population movements \n\n- Weather conditions impact Homs and Hama \n\n- ''Axed and burned'', impact of deforestation in Syria",
+      "url": "https://reliefweb.int/node/3958772",
+      "disaster": [
+        {
+          "name": "Syria: Floods - Feb 2023",
+          "id": 51492,
+          "glide": "FL-2023-000042-SYR",
+          "type": [
+            {
+              "code": "FF",
+              "name": "Flash Flood",
+              "id": 4624
+            },
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            }
+          ],
+          "status": "alert"
+        },
+        {
+          "name": "Türkiye/Syria: Earthquakes - Feb 2023",
+          "id": 51470,
+          "glide": "EQ-2023-000015-TUR",
+          "type": [
+            {
+              "code": "EQ",
+              "name": "Earthquake",
+              "id": 4628,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/f1/55/f155ec28-5580-473b-99db-e5fb0af617f6.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/f1/55/f155ec28-5580-473b-99db-e5fb0af617f6.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/f1/55/f155ec28-5580-473b-99db-e5fb0af617f6.png",
+            "version": "2417498-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/f1/55/f155ec28-5580-473b-99db-e5fb0af617f6.png"
+          },
+          "filename": "Syria Humanitarian Update_issue10_020523 - En.pdf",
+          "mimetype": "application/pdf",
+          "id": "2417498",
+          "filesize": "1884578",
+          "url": "https://reliefweb.int/attachments/f155ec28-5580-473b-99db-e5fb0af617f6/Syria%20Humanitarian%20Update_issue10_020523%20-%20En.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/syrian-arab-republic/humanitarian-update-syrian-arab-republic-issue-10-march-2023",
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        },
+        {
+          "name": "Camp Coordination and Camp Management",
+          "id": 49458
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3958772,
+      "status": "published",
+      "body-html": "<p>HIGHLIGHTS</p>\n<p>P.01 UN continues to assist earthquake-affected people in Syria</p>\n<p>P.02 UN extends support to flood-impacted population in north-east Syria</p>\n<p>P.03 Earthquake undermines Syria’s economic outlook, compounding dire socio-economic conditions, and internal displacement</p>\n<ul>\n<li>Impact of the earthquakes on employment and the labour market in Syria</li>\n</ul>\n<p>P.04 Briefing to the security council on the humanitarian situation in Syria</p>\n<ul>\n<li>Half of Syria's popultion faces hunger</li>\n</ul>\n<p>P.05 (RC/HC a.i.), El-Mostafa Benlamlih statement on the Aleppo International Airport strikes</p>\n<ul>\n<li>Inter-sectoral assessment mission to Ash-Sheikh Maqsoud</li>\n</ul>\n<p>P.06 Earthquakes impact on Southern region</p>\n<p>P.07 Impact of low level of Euphrates river and rainfall on farmers</p>\n<ul>\n<li>Alternative water supply to Al-Hasakeh</li>\n</ul>\n<p>Q.08 Population movements</p>\n<ul>\n<li>\n<p>Weather conditions impact Homs and Hama</p>\n</li>\n<li>\n<p>''Axed and burned'', impact of deforestation in Syria</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# Humanitarian Update Syrian Arab Republic - Issue 10 | March 2023\n\nHIGHLIGHTS \n\nP.01 UN continues to assist earthquake-affected people in Syria \n\nP.02 UN extends support to flood-impacted population in north-east Syria \n\nP.03 Earthquake undermines Syria’s economic outlook, compounding dire socio-economic conditions, and internal displacement \n\n- Impact of the earthquakes on employment and the labour market in Syria \n\nP.04 Briefing to the security council on the humanitarian situation in Syria \n\n- Half of Syria's popultion faces hunger \n\nP.05 (RC/HC a.i.), El-Mostafa Benlamlih statement on the Aleppo International Airport strikes \n\n- Inter-sectoral assessment mission to Ash-Sheikh Maqsoud \n\nP.06 Earthquakes impact on Southern region \n\nP.07 Impact of low level of Euphrates river and rainfall on farmers \n\n- Alternative water supply to Al-Hasakeh \n\nQ.08 Population movements \n\n- Weather conditions impact Homs and Hama \n\n- ''Axed and burned'', impact of deforestation in Syria",
+  "summary": " This issue of the Humanitarian Update for the Syrian Arab Republic highlights the ongoing assistance provided by the UN to those affected by earthquakes and floods in the region. It also outlines the dire socio-economic conditions and internal displacement caused by the earthquakes, as well as the impact of the Aleppo International Airport strikes and the low level of the Euphrates river and rainfall on farmers. Additionally, it discusses the population movements and the impact of deforestation in Syria.",
+  "metadata": {
+    "id": "3958772",
+    "name": "Humanitarian Update Syrian Arab Republic - Issue 10 | March 2023",
+    "date_original": 1683158400000,
+    "date_changed": 1683233878000,
+    "date_created": 1683232661000,
+    "primary_country_id": 226,
+    "primary_country_name": "Syrian Arab Republic",
+    "primary_country_iso3": "syr",
+    "primary_country_location": {
+      "lon": 38.51,
+      "lat": 35.01
+    }
+  }
+}

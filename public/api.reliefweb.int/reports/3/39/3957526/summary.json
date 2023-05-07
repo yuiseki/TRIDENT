@@ -1,0 +1,145 @@
+{
+  "original": {
+    "id": "3957526",
+    "fields": {
+      "date": {
+        "changed": "2023-05-02T04:25:50+00:00",
+        "created": "2023-05-02T04:21:38+00:00",
+        "original": "2023-04-27T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/185",
+          "name": "Papua New Guinea",
+          "location": {
+            "lon": 145.24,
+            "lat": -6.48
+          },
+          "id": 185,
+          "shortname": "PNG",
+          "iso3": "png",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/185",
+        "name": "Papua New Guinea",
+        "location": {
+          "lon": 145.24,
+          "lat": -6.48
+        },
+        "id": 185,
+        "shortname": "PNG",
+        "iso3": "png"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "DR",
+          "name": "Drought",
+          "id": 4672
+        },
+        {
+          "code": "EQ",
+          "name": "Earthquake",
+          "id": 4628
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/12048",
+          "longname": "United Nations Country Team in Papua New Guinea",
+          "name": "UN Country Team in Papua New Guinea",
+          "id": 12048,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNCT PNG",
+          "homepage": "https://papuanewguinea.un.org/en"
+        }
+      ],
+      "title": "Papua New Guinea: Disaster Management Team Humanitarian Update No. 05 (Updated as of 27th April 2023)",
+      "body": "**Highlands Election-Related Violence** \n\nTribal fighting between Aiyala and Nomali tribes erupted on 24 April 2023 in Porgera, Enga province allegedly due to unmet peace agreement commitments and following the withdrawal of the PNG Defense Force (PNGDF) the previous day. Two people, one male and one female, have reportedly been killed and several houses were burned down. The situation remains tense prompting the redeployment of the PNGDF there.\n\n**Clusters' Response** (measured in cumulative persons):\n\nIDPs reached by clusters \n\n- CCCM/Shelter/NFI - 11,854\n\n- Food Security - 8,779 \n\n- WASH - 6,445\n\nGeneral population reached by clusters \n\n- Health - 70,000 \n\n- Nutrition - 66,566 \n\n- Education - 10,000 \n\n- Gender-Based Violence - 2,850 \n\n- Sexual & Reproductive Health - 2,126\n\n**M7.0 Chambri Lake Earthquake**\n\nOn 3 April 2023, a 7.0-magnitude earthquake occurred at a depth of 62.6 km in a location 98 km SSW of Wewak, East Sepik province. A rapid assessment organized by the provincial authorities revealed 8 deaths, 11 injuries and 876 damaged or destroyed houses. Only minor damage to schools was reported and telecommunications services continued to operate. The affected population was able to recover quickly and return to normal activities with some concern over contaminated water from open sources. \n\nThe provincial administration is able to manage the response and committed USD 141,000 (PGK 500,000) in relief. Humanitarian partners have also responded with prepositioned stocks.\n\n**Drought Watch**\n\nAccording to the National Weather Service, the rainfall forecast for May, June and July shows a decline in rainfall intensities from above normal to normal rainfall conditions, tending towards below normal rainfall thereafter across the whole country which is consistent with our regular dry season.\n\nDrought risk status for April 2023 shows continued severe drought status for East New Britain, West New Britain and West Sepik provinces whilst Central, Enga, Hela, Jiwaka and Morobe provinces shows severe drought status for this month. We expect these drying conditions to become prevalent across many provinces as we head into the dry season proper.\n\nThe National Disaster Centre has conducted drought assessment missions to the most-affected provinces and will share the results.",
+      "url": "https://reliefweb.int/node/3957526",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/a4/de/a4def8ea-0ee7-4cd7-9fda-d1e6df0969c6.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/a4/de/a4def8ea-0ee7-4cd7-9fda-d1e6df0969c6.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/a4/de/a4def8ea-0ee7-4cd7-9fda-d1e6df0969c6.png",
+            "version": "2416231-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/a4/de/a4def8ea-0ee7-4cd7-9fda-d1e6df0969c6.png"
+          },
+          "filename": "PNG DMT Humanitarian Update No. 5  20230427.pdf",
+          "mimetype": "application/pdf",
+          "id": "2416231",
+          "filesize": "3051418",
+          "url": "https://reliefweb.int/attachments/a4def8ea-0ee7-4cd7-9fda-d1e6df0969c6/PNG%20DMT%20Humanitarian%20Update%20No.%205%20%2020230427.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/papua-new-guinea/papua-new-guinea-disaster-management-team-humanitarian-update-no-05-updated-27th-april-2023",
+      "theme": [
+        {
+          "name": "Camp Coordination and Camp Management",
+          "id": 49458
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3957526,
+      "status": "published",
+      "body-html": "<p><strong>Highlands Election-Related Violence</strong></p>\n<p>Tribal fighting between Aiyala and Nomali tribes erupted on 24 April 2023 in Porgera, Enga province allegedly due to unmet peace agreement commitments and following the withdrawal of the PNG Defense Force (PNGDF) the previous day. Two people, one male and one female, have reportedly been killed and several houses were burned down. The situation remains tense prompting the redeployment of the PNGDF there.</p>\n<p><strong>Clusters' Response</strong> (measured in cumulative persons):</p>\n<p>IDPs reached by clusters</p>\n<ul>\n<li>\n<p>CCCM/Shelter/NFI - 11,854</p>\n</li>\n<li>\n<p>Food Security - 8,779</p>\n</li>\n<li>\n<p>WASH - 6,445</p>\n</li>\n</ul>\n<p>General population reached by clusters</p>\n<ul>\n<li>\n<p>Health - 70,000</p>\n</li>\n<li>\n<p>Nutrition - 66,566</p>\n</li>\n<li>\n<p>Education - 10,000</p>\n</li>\n<li>\n<p>Gender-Based Violence - 2,850</p>\n</li>\n<li>\n<p>Sexual &amp; Reproductive Health - 2,126</p>\n</li>\n</ul>\n<p><strong>M7.0 Chambri Lake Earthquake</strong></p>\n<p>On 3 April 2023, a 7.0-magnitude earthquake occurred at a depth of 62.6 km in a location 98 km SSW of Wewak, East Sepik province. A rapid assessment organized by the provincial authorities revealed 8 deaths, 11 injuries and 876 damaged or destroyed houses. Only minor damage to schools was reported and telecommunications services continued to operate. The affected population was able to recover quickly and return to normal activities with some concern over contaminated water from open sources.</p>\n<p>The provincial administration is able to manage the response and committed USD 141,000 (PGK 500,000) in relief. Humanitarian partners have also responded with prepositioned stocks.</p>\n<p><strong>Drought Watch</strong></p>\n<p>According to the National Weather Service, the rainfall forecast for May, June and July shows a decline in rainfall intensities from above normal to normal rainfall conditions, tending towards below normal rainfall thereafter across the whole country which is consistent with our regular dry season.</p>\n<p>Drought risk status for April 2023 shows continued severe drought status for East New Britain, West New Britain and West Sepik provinces whilst Central, Enga, Hela, Jiwaka and Morobe provinces shows severe drought status for this month. We expect these drying conditions to become prevalent across many provinces as we head into the dry season proper.</p>\n<p>The National Disaster Centre has conducted drought assessment missions to the most-affected provinces and will share the results.</p>\n"
+    }
+  },
+  "text": "# Papua New Guinea: Disaster Management Team Humanitarian Update No. 05 (Updated as of 27th April 2023)\n\n**Highlands Election-Related Violence** \n\nTribal fighting between Aiyala and Nomali tribes erupted on 24 April 2023 in Porgera, Enga province allegedly due to unmet peace agreement commitments and following the withdrawal of the PNG Defense Force (PNGDF) the previous day. Two people, one male and one female, have reportedly been killed and several houses were burned down. The situation remains tense prompting the redeployment of the PNGDF there.\n\n**Clusters' Response** (measured in cumulative persons):\n\nIDPs reached by clusters \n\n- CCCM/Shelter/NFI - 11,854\n\n- Food Security - 8,779 \n\n- WASH - 6,445\n\nGeneral population reached by clusters \n\n- Health - 70,000 \n\n- Nutrition - 66,566 \n\n- Education - 10,000 \n\n- Gender-Based Violence - 2,850 \n\n- Sexual & Reproductive Health - 2,126\n\n**M7.0 Chambri Lake Earthquake**\n\nOn 3 April 2023, a 7.0-magnitude earthquake occurred at a depth of 62.6 km in a location 98 km SSW of Wewak, East Sepik province. A rapid assessment organized by the provincial authorities revealed 8 deaths, 11 injuries and 876 damaged or destroyed houses. Only minor damage to schools was reported and telecommunications services continued to operate. The affected population was able to recover quickly and return to normal activities with some concern over contaminated water from open sources. \n\nThe provincial administration is able to manage the response and committed USD 141,000 (PGK 500,000) in relief. Humanitarian partners have also responded with prepositioned stocks.\n\n**Drought Watch**\n\nAccording to the National Weather Service, the rainfall forecast for May, June and July shows a decline in rainfall intensities from above normal to normal rainfall conditions, tending towards below normal rainfall thereafter across the whole country which is consistent with our regular dry season.\n\nDrought risk status for April 2023 shows continued severe drought status for East New Britain, West New Britain and West Sepik provinces whilst Central, Enga, Hela, Jiwaka and Morobe provinces shows severe drought status for this month. We expect these drying conditions to become prevalent across many provinces as we head into the dry season proper.\n\nThe National Disaster Centre has conducted drought assessment missions to the most-affected provinces and will share the results.",
+  "summary": " In Papua New Guinea, tribal fighting between Aiyala and Nomali tribes has resulted in two deaths and several houses burned down. Humanitarian partners have responded to the violence and an earthquake that occurred in East Sepik province, providing aid to 11,854 IDPs and 70,000 general population. Drought risk status is severe in East New Britain, West New Britain and West Sepik provinces, and the National Disaster Centre has conducted drought assessment missions to the most-affected provinces.",
+  "metadata": {
+    "id": "3957526",
+    "name": "Papua New Guinea: Disaster Management Team Humanitarian Update No. 05 (Updated as of 27th April 2023)",
+    "date_original": 1682553600000,
+    "date_changed": 1683001550000,
+    "date_created": 1683001298000,
+    "primary_country_id": 185,
+    "primary_country_name": "Papua New Guinea",
+    "primary_country_iso3": "png",
+    "primary_country_location": {
+      "lon": 145.24,
+      "lat": -6.48
+    }
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "original": {
+    "id": "3957328",
+    "fields": {
+      "date": {
+        "changed": "2023-05-01T07:36:10+00:00",
+        "created": "2023-05-01T07:28:11+00:00",
+        "original": "2023-05-01T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/180",
+          "name": "occupied Palestinian territory",
+          "location": {
+            "lon": 35.2332,
+            "lat": 31.9522
+          },
+          "id": 180,
+          "shortname": "oPt",
+          "iso3": "pse"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/226",
+          "name": "Syrian Arab Republic",
+          "location": {
+            "lon": 38.51,
+            "lat": 35.01
+          },
+          "id": 226,
+          "shortname": "Syria",
+          "iso3": "syr",
+          "primary": true
+        }
+      ],
+      "origin": "https://www.unrwa.org/resources/reports/unrwa-syria-earthquake-response-situation-report-25-27-april-2023",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/226",
+        "name": "Syrian Arab Republic",
+        "location": {
+          "lon": 38.51,
+          "lat": 35.01
+        },
+        "id": 226,
+        "shortname": "Syria",
+        "iso3": "syr"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EQ",
+          "name": "Earthquake",
+          "id": 4628
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1484",
+          "longname": "United Nations Relief and Works Agency for Palestine Refugees in the Near East",
+          "name": "UN Relief and Works Agency for Palestine Refugees in the Near East",
+          "id": 1484,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNRWA",
+          "homepage": "http://www.unrwa.org/"
+        }
+      ],
+      "title": "UNRWA Syria earthquake response Situation report #25 - 27 April 2023",
+      "body": "**Situation Overview**\n\nDuring the last two weeks, a team from UNRWA’s Infrastructure and Camp Improvement Programme (ICIP) and Relief and Social Services Programmes (RSSP) have continued to visit families that have been directly impacted by the earthquakes, and whose houses have been damaged to assess their situation. 443 families were visited in Aleppo city and in Neirab Camp. The number of families that have approached UNRWA for support to either rent accommodation or to repair their homes reached 600 in Aleppo and 900 in Neirab Camp.\n \nTo date, the Engineering Syndicate, a body mandated by the Syrian government to assess earthquake damage working closely with UNRWA has identified 1,076 Palestine refugee homes that have been affected by the earthquake in Aleppo, Latakia and Hama governorates, of which 15% (166) were severely, 29% (309) partially and 56% (601) had minor damage. The majority of damaged buildings were in Aleppo governorate (75%), 23% in Latakia and 2% in Hama.\n \nIn addition to refugee homes, the earthquake also damaged 11 UNRWA installations, including health centres and schools. UNRWA has launched tenders to appoint contractors to repair some of these installations, with works expected to get underway during the summer period. \n \nUNRWA in Syria requires urgent funding support to repair and rehabilitate refugee shelters and installations damaged by the earthquake, in addition to providing critical cash assistance, education, health, mental health and psychosocial support services to affected refugees. UNRWA is also working with other UN agencies to update the Syria Humanitarian Response Plan to include postearthquake response needs as well as Syria Early Recovery Needs Assessment (SERNA).\n \nThe agency carried out a brief household level survey in the earthquake affected areas during the month of March 2023, to assess the most critical needs. The findings are summarised in Annex 1. The report will be shared with partners.",
+      "url": "https://reliefweb.int/node/3957328",
+      "disaster": [
+        {
+          "name": "Türkiye/Syria: Earthquakes - Feb 2023",
+          "id": 51470,
+          "glide": "EQ-2023-000015-TUR",
+          "type": [
+            {
+              "code": "EQ",
+              "name": "Earthquake",
+              "id": 4628,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/85/cb/85cb4ce5-13ac-4317-8afa-92111ce062d5.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/85/cb/85cb4ce5-13ac-4317-8afa-92111ce062d5.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/85/cb/85cb4ce5-13ac-4317-8afa-92111ce062d5.png",
+            "version": "2415950-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/85/cb/85cb4ce5-13ac-4317-8afa-92111ce062d5.png"
+          },
+          "filename": "unrwa_earthquake_response_sitrep_number_25-eng-27_april_2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415950",
+          "filesize": "926218",
+          "url": "https://reliefweb.int/attachments/85cb4ce5-13ac-4317-8afa-92111ce062d5/unrwa_earthquake_response_sitrep_number_25-eng-27_april_2023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/syrian-arab-republic/unrwa-syria-earthquake-response-situation-report-25-27-april-2023",
+      "theme": [
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        }
+      ],
+      "id": 3957328,
+      "status": "published",
+      "body-html": "<p><strong>Situation Overview</strong></p>\n<p>During the last two weeks, a team from UNRWA’s Infrastructure and Camp Improvement Programme (ICIP) and Relief and Social Services Programmes (RSSP) have continued to visit families that have been directly impacted by the earthquakes, and whose houses have been damaged to assess their situation. 443 families were visited in Aleppo city and in Neirab Camp. The number of families that have approached UNRWA for support to either rent accommodation or to repair their homes reached 600 in Aleppo and 900 in Neirab Camp.</p>\n<p>To date, the Engineering Syndicate, a body mandated by the Syrian government to assess earthquake damage working closely with UNRWA has identified 1,076 Palestine refugee homes that have been affected by the earthquake in Aleppo, Latakia and Hama governorates, of which 15% (166) were severely, 29% (309) partially and 56% (601) had minor damage. The majority of damaged buildings were in Aleppo governorate (75%), 23% in Latakia and 2% in Hama.</p>\n<p>In addition to refugee homes, the earthquake also damaged 11 UNRWA installations, including health centres and schools. UNRWA has launched tenders to appoint contractors to repair some of these installations, with works expected to get underway during the summer period.</p>\n<p>UNRWA in Syria requires urgent funding support to repair and rehabilitate refugee shelters and installations damaged by the earthquake, in addition to providing critical cash assistance, education, health, mental health and psychosocial support services to affected refugees. UNRWA is also working with other UN agencies to update the Syria Humanitarian Response Plan to include postearthquake response needs as well as Syria Early Recovery Needs Assessment (SERNA).</p>\n<p>The agency carried out a brief household level survey in the earthquake affected areas during the month of March 2023, to assess the most critical needs. The findings are summarised in Annex 1. The report will be shared with partners.</p>\n"
+    }
+  },
+  "text": "# UNRWA Syria earthquake response Situation report #25 - 27 April 2023\n\n**Situation Overview**\n\nDuring the last two weeks, a team from UNRWA’s Infrastructure and Camp Improvement Programme (ICIP) and Relief and Social Services Programmes (RSSP) have continued to visit families that have been directly impacted by the earthquakes, and whose houses have been damaged to assess their situation. 443 families were visited in Aleppo city and in Neirab Camp. The number of families that have approached UNRWA for support to either rent accommodation or to repair their homes reached 600 in Aleppo and 900 in Neirab Camp.\n \nTo date, the Engineering Syndicate, a body mandated by the Syrian government to assess earthquake damage working closely with UNRWA has identified 1,076 Palestine refugee homes that have been affected by the earthquake in Aleppo, Latakia and Hama governorates, of which 15% (166) were severely, 29% (309) partially and 56% (601) had minor damage. The majority of damaged buildings were in Aleppo governorate (75%), 23% in Latakia and 2% in Hama.\n \nIn addition to refugee homes, the earthquake also damaged 11 UNRWA installations, including health centres and schools. UNRWA has launched tenders to appoint contractors to repair some of these installations, with works expected to get underway during the summer period. \n \nUNRWA in Syria requires urgent funding support to repair and rehabilitate refugee shelters and installations damaged by the earthquake, in addition to providing critical cash assistance, education, health, mental health and psychosocial support services to affected refugees. UNRWA is also working with other UN agencies to update the Syria Humanitarian Response Plan to include postearthquake response needs as well as Syria Early Recovery Needs Assessment (SERNA).\n \nThe agency carried out a brief household level survey in the earthquake affected areas during the month of March 2023, to assess the most critical needs. The findings are summarised in Annex 1. The report will be shared with partners.",
+  "summary": " UNRWA has been visiting families affected by the earthquakes in Aleppo city and Neirab Camp to assess their situation. 1,076 Palestine refugee homes have been identified as damaged, with 11 UNRWA installations also affected. UNRWA is in need of urgent funding to repair and rehabilitate refugee shelters and installations, as well as providing cash assistance, education, health, mental health and psychosocial support services. A brief household level survey was conducted in March 2023 to assess the most critical needs, the findings of which are summarised in Annex 1.",
+  "metadata": {
+    "id": "3957328",
+    "name": "UNRWA Syria earthquake response Situation report #25 - 27 April 2023",
+    "date_original": 1682899200000,
+    "date_changed": 1682926570000,
+    "date_created": 1682926091000,
+    "primary_country_id": 226,
+    "primary_country_name": "Syrian Arab Republic",
+    "primary_country_iso3": "syr",
+    "primary_country_location": {
+      "lon": 38.51,
+      "lat": 35.01
+    }
+  }
+}

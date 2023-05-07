@@ -1,0 +1,303 @@
+{
+  "original": {
+    "id": "3958311",
+    "fields": {
+      "date": {
+        "changed": "2023-05-03T19:36:47+00:00",
+        "created": "2023-05-03T19:34:15+00:00",
+        "original": "2023-05-03T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/42",
+          "name": "Brazil",
+          "location": {
+            "lon": -51.62,
+            "lat": -9.59
+          },
+          "id": 42,
+          "shortname": "Brazil",
+          "iso3": "bra",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/50",
+          "name": "Canada",
+          "location": {
+            "lon": -105.75,
+            "lat": 59.59
+          },
+          "id": 50,
+          "shortname": "Canada",
+          "iso3": "can"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/57",
+          "name": "Chile",
+          "location": {
+            "lon": -72.31,
+            "lat": -37.72
+          },
+          "id": 57,
+          "shortname": "Chile",
+          "iso3": "chl"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/64",
+          "name": "Colombia",
+          "location": {
+            "lon": -73.07,
+            "lat": 3.9
+          },
+          "id": 64,
+          "shortname": "Colombia",
+          "iso3": "col"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/79",
+          "name": "Dominican Republic",
+          "location": {
+            "lon": -70.11,
+            "lat": 18.85
+          },
+          "id": 79,
+          "shortname": "Dominican Rep.",
+          "iso3": "dom"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/81",
+          "name": "Ecuador",
+          "location": {
+            "lon": -78.43,
+            "lat": -1.16
+          },
+          "id": 81,
+          "shortname": "Ecuador",
+          "iso3": "ecu"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/83",
+          "name": "El Salvador",
+          "location": {
+            "lon": -88.87,
+            "lat": 13.74
+          },
+          "id": 83,
+          "shortname": "El Salvador",
+          "iso3": "slv"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/109",
+          "name": "Guatemala",
+          "location": {
+            "lon": -90.39,
+            "lat": 15.61
+          },
+          "id": 109,
+          "shortname": "Guatemala",
+          "iso3": "gtm"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/113",
+          "name": "Haiti",
+          "location": {
+            "lon": -72.43,
+            "lat": 19.18
+          },
+          "id": 113,
+          "shortname": "Haiti",
+          "iso3": "hti"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/116",
+          "name": "Honduras",
+          "location": {
+            "lon": -86.62,
+            "lat": 14.82
+          },
+          "id": 116,
+          "shortname": "Honduras",
+          "iso3": "hnd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/156",
+          "name": "Mexico",
+          "location": {
+            "lon": -102.53,
+            "lat": 23.95
+          },
+          "id": 156,
+          "shortname": "Mexico",
+          "iso3": "mex"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/173",
+          "name": "Nicaragua",
+          "location": {
+            "lon": -85.03,
+            "lat": 12.84
+          },
+          "id": 173,
+          "shortname": "Nicaragua",
+          "iso3": "nic"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/184",
+          "name": "Panama",
+          "location": {
+            "lon": -80.27,
+            "lat": 8.7
+          },
+          "id": 184,
+          "shortname": "Panama",
+          "iso3": "pan"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/187",
+          "name": "Peru",
+          "location": {
+            "lon": -75.31,
+            "lat": -10.15
+          },
+          "id": 187,
+          "shortname": "Peru",
+          "iso3": "per"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/241",
+          "name": "Ukraine",
+          "location": {
+            "lon": 31.32,
+            "lat": 49.32
+          },
+          "id": 241,
+          "shortname": "Ukraine",
+          "iso3": "ukr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/250",
+          "name": "Venezuela (Bolivarian Republic of)",
+          "location": {
+            "lon": -65.8,
+            "lat": 7.62
+          },
+          "id": 250,
+          "shortname": "Venezuela",
+          "iso3": "ven"
+        }
+      ],
+      "origin": "https://data.unhcr.org/en/documents/details/100419",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/42",
+        "name": "Brazil",
+        "location": {
+          "lon": -51.62,
+          "lat": -9.59
+        },
+        "id": 42,
+        "shortname": "Brazil",
+        "iso3": "bra"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "UNHCR Americas Operational Update, April 2022",
+      "body": "**HIGHLIGHTS**\n\nIn the context of the International Conference in Solidarity with Venezuelan Refugees and Migrants and their Host Countries and Communities co-hosted by the Government of Canada and the European Union, together with UNHCR and IOM, on 16 and 17 March in Brussels, UNHCR and IOM urged in a joint statement for increased international support for refugees and migrants from Venezuela and the communities in Latin America and the Caribbean that host them. To date, over 7.24 million have left their homes, of which more than 6 million are in the Americas, according to Inter-Agency Coordination Platform for Refugees and Migrants from Venezuela (R4V). Over 211,000 have been recognized as refugees, and over a million have submitted asylum claims worldwide.  \n\nOn 23 January, the U.N. Secretary General reiterated the “urgent need for the deployment of an international specialized armed force” to Haiti and called on governments to consider halting deportations as the country’s situation spirals. The recommendations were issued as part of a report on the U.N. Integrated Oce in Haiti. Earlier in November 2022, UNHCR issued a statement on non-return to Haiti. The Haiti Humanitarian Needs Overview released on 17 March cited a figure of 5.2 million people in need of up from 4.9 million last year. The Ibero-American Summit of Heads of State held on 25 March in the Dominican Republic emphasized the importance of subregional, regional, and international eorts to facilitate a dialogue among all parties in Haiti. UNHCR and its partners are also monitoring the situation of Haitians temporarily residing in countries in the region or engaging in mixed movements, in order to ensure their access to protection or temporary stay arrangements and to prevent forced returns and potential situations of refoulement.  \nThe Law for the Prevention, Protection, and Assistance of Internally Displaced Persons in Honduras was sanctioned by the President of Honduras, Xiomara Castro, and will come into force on 19 April. This legal framework is the result of a long advocacy process and constitutes a national milestone in the protection of the fundamental rights of thousands of Hondurans impacted by generalized violence. UNHCR published a joint press release with OHCHR, ICRC and NRC praising this historic decision by the President of Honduras.  \n\nUNHCR expressed serious concern by the arbitrary deprivation of the Nicaraguan nationality of over 300 people and called on Nicaragua to respect its international obligations to ensure the enjoyment of the right to nationality and to take measures to prevent and eradicate statelessness. The prevailing political and security situation in Nicaragua continues to drive population outflows, mainly into neighbouring Costa Rica. In 2022, Costa Rica hosted 270,636 forcibly displaced persons, of which 83 per cent were Nicaraguans. The situation is also pushing the small refugee population in Nicaragua to depart (some 300 people mainly from Central American countries). Mexico remained the second largest recipient country of Nicaraguan asylum claims with close to 31,000 asylum applications, 8,971 new claims registered in 2022.  \n\nIn Panama, from January to March 2023, over 87,000 people entered irregularly through Darién, six times more than those who arrived during the same period in 2022. Authorities estimate that by the end of the year, some 400,000 people will have crossed the Darién during 2023. The government has asked all relevant actors for their cooperation in finding durable solutions and mechanisms to discourage irregular entries.  \n\nDue to the militarization of the border between Chile and Peru, an estimated 4,150 people UNHCR serves tried to cross the border after being stranded in Tacna city or at the border. The primary basic needs identified by displaced populations remain food/ water, WASH, and shelter.  \n\nUNHCR and partners have deployed eorts in this border area: Since February, UNHCR and partner HIAS have provided 1,223 orientations, distributed 609 hygiene kits 1,688 litres of drinkable water, and 351 blankets. IFRC provided medical care.",
+      "url": "https://reliefweb.int/node/3958311",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/ab/82/ab82bf3b-e7e1-4f39-9321-551bde86c333.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/ab/82/ab82bf3b-e7e1-4f39-9321-551bde86c333.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/ab/82/ab82bf3b-e7e1-4f39-9321-551bde86c333.png",
+            "version": "2416992-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/ab/82/ab82bf3b-e7e1-4f39-9321-551bde86c333.png"
+          },
+          "filename": "Americas Operational Update April_2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2416992",
+          "filesize": "1736311",
+          "url": "https://reliefweb.int/attachments/ab82bf3b-e7e1-4f39-9321-551bde86c333/Americas%20Operational%20Update%20April_2023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/brazil/unhcr-americas-operational-update-april-2022",
+      "theme": [
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3958311,
+      "status": "published",
+      "body-html": "<p><strong>HIGHLIGHTS</strong></p>\n<p>In the context of the International Conference in Solidarity with Venezuelan Refugees and Migrants and their Host Countries and Communities co-hosted by the Government of Canada and the European Union, together with UNHCR and IOM, on 16 and 17 March in Brussels, UNHCR and IOM urged in a joint statement for increased international support for refugees and migrants from Venezuela and the communities in Latin America and the Caribbean that host them. To date, over 7.24 million have left their homes, of which more than 6 million are in the Americas, according to Inter-Agency Coordination Platform for Refugees and Migrants from Venezuela (R4V). Over 211,000 have been recognized as refugees, and over a million have submitted asylum claims worldwide.</p>\n<p>On 23 January, the U.N. Secretary General reiterated the “urgent need for the deployment of an international specialized armed force” to Haiti and called on governments to consider halting deportations as the country’s situation spirals. The recommendations were issued as part of a report on the U.N. Integrated Oce in Haiti. Earlier in November 2022, UNHCR issued a statement on non-return to Haiti. The Haiti Humanitarian Needs Overview released on 17 March cited a figure of 5.2 million people in need of up from 4.9 million last year. The Ibero-American Summit of Heads of State held on 25 March in the Dominican Republic emphasized the importance of subregional, regional, and international eorts to facilitate a dialogue among all parties in Haiti. UNHCR and its partners are also monitoring the situation of Haitians temporarily residing in countries in the region or engaging in mixed movements, in order to ensure their access to protection or temporary stay arrangements and to prevent forced returns and potential situations of refoulement.<br />\nThe Law for the Prevention, Protection, and Assistance of Internally Displaced Persons in Honduras was sanctioned by the President of Honduras, Xiomara Castro, and will come into force on 19 April. This legal framework is the result of a long advocacy process and constitutes a national milestone in the protection of the fundamental rights of thousands of Hondurans impacted by generalized violence. UNHCR published a joint press release with OHCHR, ICRC and NRC praising this historic decision by the President of Honduras.</p>\n<p>UNHCR expressed serious concern by the arbitrary deprivation of the Nicaraguan nationality of over 300 people and called on Nicaragua to respect its international obligations to ensure the enjoyment of the right to nationality and to take measures to prevent and eradicate statelessness. The prevailing political and security situation in Nicaragua continues to drive population outflows, mainly into neighbouring Costa Rica. In 2022, Costa Rica hosted 270,636 forcibly displaced persons, of which 83 per cent were Nicaraguans. The situation is also pushing the small refugee population in Nicaragua to depart (some 300 people mainly from Central American countries). Mexico remained the second largest recipient country of Nicaraguan asylum claims with close to 31,000 asylum applications, 8,971 new claims registered in 2022.</p>\n<p>In Panama, from January to March 2023, over 87,000 people entered irregularly through Darién, six times more than those who arrived during the same period in 2022. Authorities estimate that by the end of the year, some 400,000 people will have crossed the Darién during 2023. The government has asked all relevant actors for their cooperation in finding durable solutions and mechanisms to discourage irregular entries.</p>\n<p>Due to the militarization of the border between Chile and Peru, an estimated 4,150 people UNHCR serves tried to cross the border after being stranded in Tacna city or at the border. The primary basic needs identified by displaced populations remain food/ water, WASH, and shelter.</p>\n<p>UNHCR and partners have deployed eorts in this border area: Since February, UNHCR and partner HIAS have provided 1,223 orientations, distributed 609 hygiene kits 1,688 litres of drinkable water, and 351 blankets. IFRC provided medical care.</p>\n"
+    }
+  },
+  "text": "# UNHCR Americas Operational Update, April 2022\n\n**HIGHLIGHTS**\n\nIn the context of the International Conference in Solidarity with Venezuelan Refugees and Migrants and their Host Countries and Communities co-hosted by the Government of Canada and the European Union, together with UNHCR and IOM, on 16 and 17 March in Brussels, UNHCR and IOM urged in a joint statement for increased international support for refugees and migrants from Venezuela and the communities in Latin America and the Caribbean that host them. To date, over 7.24 million have left their homes, of which more than 6 million are in the Americas, according to Inter-Agency Coordination Platform for Refugees and Migrants from Venezuela (R4V). Over 211,000 have been recognized as refugees, and over a million have submitted asylum claims worldwide.  \n\nOn 23 January, the U.N. Secretary General reiterated the “urgent need for the deployment of an international specialized armed force” to Haiti and called on governments to consider halting deportations as the country’s situation spirals. The recommendations were issued as part of a report on the U.N. Integrated Oce in Haiti. Earlier in November 2022, UNHCR issued a statement on non-return to Haiti. The Haiti Humanitarian Needs Overview released on 17 March cited a figure of 5.2 million people in need of up from 4.9 million last year. The Ibero-American Summit of Heads of State held on 25 March in the Dominican Republic emphasized the importance of subregional, regional, and international eorts to facilitate a dialogue among all parties in Haiti. UNHCR and its partners are also monitoring the situation of Haitians temporarily residing in countries in the region or engaging in mixed movements, in order to ensure their access to protection or temporary stay arrangements and to prevent forced returns and potential situations of refoulement.  \nThe Law for the Prevention, Protection, and Assistance of Internally Displaced Persons in Honduras was sanctioned by the President of Honduras, Xiomara Castro, and will come into force on 19 April. This legal framework is the result of a long advocacy process and constitutes a national milestone in the protection of the fundamental rights of thousands of Hondurans impacted by generalized violence. UNHCR published a joint press release with OHCHR, ICRC and NRC praising this historic decision by the President of Honduras.  \n\nUNHCR expressed serious concern by the arbitrary deprivation of the Nicaraguan nationality of over 300 people and called on Nicaragua to respect its international obligations to ensure the enjoyment of the right to nationality and to take measures to prevent and eradicate statelessness. The prevailing political and security situation in Nicaragua continues to drive population outflows, mainly into neighbouring Costa Rica. In 2022, Costa Rica hosted 270,636 forcibly displaced persons, of which 83 per cent were Nicaraguans. The situation is also pushing the small refugee population in Nicaragua to depart (some 300 people mainly from Central American countries). Mexico remained the second largest recipient country of Nicaraguan asylum claims with close to 31,000 asylum applications, 8,971 new claims registered in 2022.  \n\nIn Panama, from January to March 2023, over 87,000 people entered irregularly through Darién, six times more than those who arrived during the same period in 2022. Authorities estimate that by the end of the year, some 400,000 people will have crossed the Darién during 2023. The government has asked all relevant actors for their cooperation in finding durable solutions and mechanisms to discourage irregular entries.  \n\nDue to the militarization of the border between Chile and Peru, an estimated 4,150 people UNHCR serves tried to cross the border after being stranded in Tacna city or at the border. The primary basic needs identified by displaced populations remain food/ water, WASH, and shelter.  \n\nUNHCR and partners have deployed eorts in this border area: Since February, UNHCR and partner HIAS have provided 1,223 orientations, distributed 609 hygiene kits 1,688 litres of drinkable water, and 351 blankets. IFRC provided medical care.",
+  "summary": " In April 2022, UNHCR and IOM urged for increased international support for refugees and migrants from Venezuela and the communities in Latin America and the Caribbean that host them. The U.N. Secretary General called for the deployment of an international specialized armed force to Haiti and for governments to consider halting deportations. The Law for the Prevention, Protection, and Assistance of Internally Displaced Persons in Honduras was sanctioned and will come into force on 19 April. UNHCR expressed serious concern by the arbitrary deprivation of the Nicaraguan nationality of over 300 people. In Panama, over 87,000 people entered irregularly through Darién from January to March 2023. Due to the militarization of the border between Chile and Peru, UNHCR and partners have deployed efforts to provide basic needs to displaced populations.",
+  "metadata": {
+    "id": "3958311",
+    "name": "UNHCR Americas Operational Update, April 2022",
+    "date_original": 1683072000000,
+    "date_changed": 1683142607000,
+    "date_created": 1683142455000,
+    "primary_country_id": 42,
+    "primary_country_name": "Brazil",
+    "primary_country_iso3": "bra",
+    "primary_country_location": {
+      "lon": -51.62,
+      "lat": -9.59
+    }
+  }
+}

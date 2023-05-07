@@ -1,0 +1,111 @@
+{
+  "original": {
+    "id": "3958112",
+    "fields": {
+      "date": {
+        "changed": "2023-05-03T11:44:53+00:00",
+        "created": "2023-05-03T11:12:28+00:00",
+        "original": "2023-05-03T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/254",
+          "name": "World",
+          "id": 254,
+          "shortname": "World",
+          "iso3": "wld",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/254",
+        "name": "World",
+        "id": 254,
+        "shortname": "World",
+        "iso3": "wld"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2836",
+          "longname": "Food and Agriculture Organization of the United Nations",
+          "spanish_name": "Organización de las Naciones Unidas para la Agricultura y la Alimentación",
+          "name": "Food and Agriculture Organization of the United Nations",
+          "id": 2836,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "FAO",
+          "homepage": "http://www.fao.org"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1293",
+          "longname": "United Nations Development Programme",
+          "spanish_name": "Programa de las Naciones Unidas para el Desarrollo",
+          "name": "UN Development Programme",
+          "id": 1293,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNDP",
+          "homepage": "http://www.undp.org/"
+        }
+      ],
+      "title": "Private sector mapping, outreach, and engagement in climate-responsive agrifood systems",
+      "body": "*Agrifood companies and relevant private sector actors are key partners in meeting the global agenda for addressing climate change. The SCALA programme recognizes the unique role of the private sector in spurring innovation and investment for transformative climate action in the agriculture and land use sectors.*\n\n*This guidance note illustrates three broad intervention areas. These interventions are crucial to addressing barriers to private sector engagement (PSE) in climate action such as a perceived gap in the alignment of public and private sector objectives, a limited understanding of climate risks and business opportunities, insufficient incentives, and a lack opportunities and investable ideas that are of adequate scale which offer risk adjusted returns for their investment.*",
+      "url": "https://reliefweb.int/node/3958112",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/46/1a/461a9358-03f2-4162-81c0-f86cfa737c02.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/46/1a/461a9358-03f2-4162-81c0-f86cfa737c02.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/46/1a/461a9358-03f2-4162-81c0-f86cfa737c02.png",
+            "version": "2416773-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/46/1a/461a9358-03f2-4162-81c0-f86cfa737c02.png"
+          },
+          "filename": "Private sector mapping, outreach, and engagement in climate-responsive.pdf",
+          "mimetype": "application/pdf",
+          "id": "2416773",
+          "filesize": "1901820",
+          "url": "https://reliefweb.int/attachments/461a9358-03f2-4162-81c0-f86cfa737c02/Private%20sector%20mapping%2C%20outreach%2C%20and%20engagement%20in%20climate-responsive.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/world/private-sector-mapping-outreach-and-engagement-climate-responsive-agrifood-systems",
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        }
+      ],
+      "id": 3958112,
+      "status": "published",
+      "body-html": "<p><em>Agrifood companies and relevant private sector actors are key partners in meeting the global agenda for addressing climate change. The SCALA programme recognizes the unique role of the private sector in spurring innovation and investment for transformative climate action in the agriculture and land use sectors.</em></p>\n<p><em>This guidance note illustrates three broad intervention areas. These interventions are crucial to addressing barriers to private sector engagement (PSE) in climate action such as a perceived gap in the alignment of public and private sector objectives, a limited understanding of climate risks and business opportunities, insufficient incentives, and a lack opportunities and investable ideas that are of adequate scale which offer risk adjusted returns for their investment.</em></p>\n"
+    }
+  },
+  "text": "# Private sector mapping, outreach, and engagement in climate-responsive agrifood systems\n\n*Agrifood companies and relevant private sector actors are key partners in meeting the global agenda for addressing climate change. The SCALA programme recognizes the unique role of the private sector in spurring innovation and investment for transformative climate action in the agriculture and land use sectors.*\n\n*This guidance note illustrates three broad intervention areas. These interventions are crucial to addressing barriers to private sector engagement (PSE) in climate action such as a perceived gap in the alignment of public and private sector objectives, a limited understanding of climate risks and business opportunities, insufficient incentives, and a lack opportunities and investable ideas that are of adequate scale which offer risk adjusted returns for their investment.*",
+  "summary": " The SCALA programme recognizes the important role of the private sector in driving innovation and investment for climate action in the agrifood sector. This guidance note outlines three intervention areas to address barriers to private sector engagement in climate action, such as misalignment of public and private sector objectives, limited understanding of climate risks and business opportunities, and lack of investable ideas with adequate scale and risk-adjusted returns.",
+  "metadata": {
+    "id": "3958112",
+    "name": "Private sector mapping, outreach, and engagement in climate-responsive agrifood systems",
+    "date_original": 1683072000000,
+    "date_changed": 1683114293000,
+    "date_created": 1683112348000,
+    "primary_country_id": 254,
+    "primary_country_name": "World",
+    "primary_country_iso3": "wld"
+  }
+}

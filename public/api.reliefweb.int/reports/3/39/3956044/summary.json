@@ -1,0 +1,195 @@
+{
+  "original": {
+    "id": "3956044",
+    "fields": {
+      "date": {
+        "changed": "2023-04-26T06:14:24+00:00",
+        "created": "2023-04-26T04:57:46+00:00",
+        "original": "2023-04-26T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/164",
+          "name": "Mozambique",
+          "location": {
+            "lon": 34.75,
+            "lat": -18.09
+          },
+          "id": 164,
+          "shortname": "Mozambique",
+          "iso3": "moz",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/164",
+        "name": "Mozambique",
+        "location": {
+          "lon": 34.75,
+          "lat": -18.09
+        },
+        "id": 164,
+        "shortname": "Mozambique",
+        "iso3": "moz"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        },
+        {
+          "code": "TC",
+          "name": "Tropical Cyclone",
+          "id": 4618
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1979",
+          "longname": "United Nations Children's Fund",
+          "spanish_name": "Fondo de las Naciones Unidas para la Infancia",
+          "name": "UN Children's Fund",
+          "id": 1979,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNICEF",
+          "homepage": "http://www.unicef.org"
+        }
+      ],
+      "title": "UNICEF Mozambique Humanitarian Situation Report No. 3: 31 March 2023",
+      "body": "**Highlights**\n\n- Over 1 million people in five provinces were affected by the second landfall of Cyclone Freddy \n\n- The cholera outbreak deteriorated significantly with post-Cyclone in Zambezia province representing over 40% of total cases \n\n- UNICEF provided medicine kits, mosquito in response to cholera and Cyclone Freddy benefiting over 30,000 people \n\n- Over 16,000 children affected by Cyclone Freddy received leaner kits provided by UNICEF \n\n- Nearly 300,000 people received critical WASH supplies, in the Zambezia, Tete, Niassa and Sofala \n\n- UNICEF supported 25 radio spots and hourly messages reaching over 1,250,000 people in Zambezia province \n\n- 63 technical staff and social mobilisers in five provinces were trained on the case area targeted intervention (CATI) approach to cholera prevention and response\n\n**Situation in Numbers**\n\n524,659 children displaced in need of humanitarian assistance (IOM November 2022)\n\n2,000,000 people in need (OCHA February 2023)\n\n1,028,743 Internally displaced people (IOM November 2022)\n\n302,000 People in hard-to-reach areas (OCHA November 2022)\n\n**Funding Overview and Partnerships**\n\nThe UNICEF Mozambique Humanitarian Action for Children appeal outlines the need for US$113.1 million to sustain the provision of life-saving services for over one million children and families in Mozambique affected by multiple shocks. UNICEF carried over approximately $17.5 million raised in 2022 and has received about $15.2 million from the governments of Canada, Japan, United States, German, United Kingdom, Switzerland, EU in addition to allocations of UNICEF’s internal flexible Global Humanitarian Thematic Funds thus far in 2023. However, the increasing needs due to cholera and rainy season floods place even more importance on identifying additional flexible resources. UNICEF Mozambique has utilized core resources and existing flexible funds to meet urgent requirements. UNICEF Mozambique developed an additional response plan that outlines the response to cholera, floods and Cyclone Freddy and has identified the needs for an additional $89.1 million. As of the end of March, UNICEF had received $3.4 million for cholera and Freddy response leaving a funding gap of $85.7M (96%).\n\n**Situation Overview & Humanitarian Needs**\n\nThe month of March was marked by the second landfall of Cyclone Freddy through Namacurra district in Zambezia province on 11 March, followed by subsequent heavy rains and severe flooding affecting three additional provinces: Sofala, Tete and Niassa. Over one million people in five provinces were affected by the Cyclone and related flooding of whom 73.7 per cent were in Zambezia. During and immediately after the storm, people sought shelter in accommodation centres, mainly schools. In total, over 184,000 people were temporarily displaced. Infrastructure damage included 98 health facilities, six water supply systems, and 250 water points were affected and nearly 967 km of road was damaged. In addition, over 2,850 classrooms were destroyed affecting nearly 328,000 students and 5,551 teachers. The main roads linking Zambezia, and in particular to the capital city of Quelimane, were blocked both from the north and the south for several days. Access by road is still challenging in some districts and localities. Power lines were destroyed which left a number of districts without power for seven to more than 30 days impacting the provision of other services including as water supply pumps and cold chain equipment at health facilities. Over 134,000 hectares of crops were lost, impacting the food security in the 2022/2023 harvesting season.\n\nAs a result of Cyclone Freddy and related floods, the cholera situation in the country deteriorated significantly with the declaration of an outbreak in Quelimane city which recorded 9,082 cases. Of these, over 3,200 were hospitalized and 30 people died (by 31 March). Four additional districts in Zambezia Province and Pemba City in Cabo Delgado Province also confirmed a cholera outbreak. As of 31 March 2023, Pemba City had recorded a total of 173 cholera cases, with one reported death and the total cumulative cases of cholera in the country were 21,482—43 per cent of the cases are from Zambezia, 95 deaths and lethality rate of 0.4%.\n\nIn Cabo Delgado province, there was a relative reduction in the number of conflict-related incidents during March 2023. The reporting period also saw a relative reduction in new displacements, while return movements continued. Between 1 and 28 March, a total of 12,753 people were reportedly on the move in Cabo Delgado, of which 61.4 per cent were individuals arriving in northern districts of return, primarily in Mocimboa da Praia District.",
+      "url": "https://reliefweb.int/node/3956044",
+      "disaster": [
+        {
+          "name": "Tropical Cyclone Freddy - Feb 2023",
+          "id": 51486,
+          "glide": "TC-2023-000023-MDG",
+          "type": [
+            {
+              "code": "TC",
+              "name": "Tropical Cyclone",
+              "id": 4618,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Mozambique: Floods - Feb 2023",
+          "id": 51479,
+          "glide": "FL-2023-000018-MOZ",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Mozambique: Cholera Outbreak - Dec 2022",
+          "id": 51453,
+          "glide": "EP-2023-000006-MOZ",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/16/33/16331d8e-18ed-43c0-b685-1f610a98d331.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/16/33/16331d8e-18ed-43c0-b685-1f610a98d331.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/16/33/16331d8e-18ed-43c0-b685-1f610a98d331.png",
+            "version": "2414784-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/16/33/16331d8e-18ed-43c0-b685-1f610a98d331.png"
+          },
+          "filename": "UNICEF Mozambique Humanitarian Situation Report No. 3, 31 March 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2414784",
+          "filesize": "793867",
+          "url": "https://reliefweb.int/attachments/16331d8e-18ed-43c0-b685-1f610a98d331/UNICEF%20Mozambique%20Humanitarian%20Situation%20Report%20No.%203%2C%2031%20March%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/mozambique/unicef-mozambique-humanitarian-situation-report-no-3-31-march-2023",
+      "theme": [
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3956044,
+      "status": "published",
+      "body-html": "<p><strong>Highlights</strong></p>\n<ul>\n<li>\n<p>Over 1 million people in five provinces were affected by the second landfall of Cyclone Freddy</p>\n</li>\n<li>\n<p>The cholera outbreak deteriorated significantly with post-Cyclone in Zambezia province representing over 40% of total cases</p>\n</li>\n<li>\n<p>UNICEF provided medicine kits, mosquito in response to cholera and Cyclone Freddy benefiting over 30,000 people</p>\n</li>\n<li>\n<p>Over 16,000 children affected by Cyclone Freddy received leaner kits provided by UNICEF</p>\n</li>\n<li>\n<p>Nearly 300,000 people received critical WASH supplies, in the Zambezia, Tete, Niassa and Sofala</p>\n</li>\n<li>\n<p>UNICEF supported 25 radio spots and hourly messages reaching over 1,250,000 people in Zambezia province</p>\n</li>\n<li>\n<p>63 technical staff and social mobilisers in five provinces were trained on the case area targeted intervention (CATI) approach to cholera prevention and response</p>\n</li>\n</ul>\n<p><strong>Situation in Numbers</strong></p>\n<p>524,659 children displaced in need of humanitarian assistance (IOM November 2022)</p>\n<p>2,000,000 people in need (OCHA February 2023)</p>\n<p>1,028,743 Internally displaced people (IOM November 2022)</p>\n<p>302,000 People in hard-to-reach areas (OCHA November 2022)</p>\n<p><strong>Funding Overview and Partnerships</strong></p>\n<p>The UNICEF Mozambique Humanitarian Action for Children appeal outlines the need for US$113.1 million to sustain the provision of life-saving services for over one million children and families in Mozambique affected by multiple shocks. UNICEF carried over approximately $17.5 million raised in 2022 and has received about $15.2 million from the governments of Canada, Japan, United States, German, United Kingdom, Switzerland, EU in addition to allocations of UNICEF’s internal flexible Global Humanitarian Thematic Funds thus far in 2023. However, the increasing needs due to cholera and rainy season floods place even more importance on identifying additional flexible resources. UNICEF Mozambique has utilized core resources and existing flexible funds to meet urgent requirements. UNICEF Mozambique developed an additional response plan that outlines the response to cholera, floods and Cyclone Freddy and has identified the needs for an additional $89.1 million. As of the end of March, UNICEF had received $3.4 million for cholera and Freddy response leaving a funding gap of $85.7M (96%).</p>\n<p><strong>Situation Overview &amp; Humanitarian Needs</strong></p>\n<p>The month of March was marked by the second landfall of Cyclone Freddy through Namacurra district in Zambezia province on 11 March, followed by subsequent heavy rains and severe flooding affecting three additional provinces: Sofala, Tete and Niassa. Over one million people in five provinces were affected by the Cyclone and related flooding of whom 73.7 per cent were in Zambezia. During and immediately after the storm, people sought shelter in accommodation centres, mainly schools. In total, over 184,000 people were temporarily displaced. Infrastructure damage included 98 health facilities, six water supply systems, and 250 water points were affected and nearly 967 km of road was damaged. In addition, over 2,850 classrooms were destroyed affecting nearly 328,000 students and 5,551 teachers. The main roads linking Zambezia, and in particular to the capital city of Quelimane, were blocked both from the north and the south for several days. Access by road is still challenging in some districts and localities. Power lines were destroyed which left a number of districts without power for seven to more than 30 days impacting the provision of other services including as water supply pumps and cold chain equipment at health facilities. Over 134,000 hectares of crops were lost, impacting the food security in the 2022/2023 harvesting season.</p>\n<p>As a result of Cyclone Freddy and related floods, the cholera situation in the country deteriorated significantly with the declaration of an outbreak in Quelimane city which recorded 9,082 cases. Of these, over 3,200 were hospitalized and 30 people died (by 31 March). Four additional districts in Zambezia Province and Pemba City in Cabo Delgado Province also confirmed a cholera outbreak. As of 31 March 2023, Pemba City had recorded a total of 173 cholera cases, with one reported death and the total cumulative cases of cholera in the country were 21,482—43 per cent of the cases are from Zambezia, 95 deaths and lethality rate of 0.4%.</p>\n<p>In Cabo Delgado province, there was a relative reduction in the number of conflict-related incidents during March 2023. The reporting period also saw a relative reduction in new displacements, while return movements continued. Between 1 and 28 March, a total of 12,753 people were reportedly on the move in Cabo Delgado, of which 61.4 per cent were individuals arriving in northern districts of return, primarily in Mocimboa da Praia District.</p>\n"
+    }
+  },
+  "text": "# UNICEF Mozambique Humanitarian Situation Report No. 3: 31 March 2023\n\n**Highlights**\n\n- Over 1 million people in five provinces were affected by the second landfall of Cyclone Freddy \n\n- The cholera outbreak deteriorated significantly with post-Cyclone in Zambezia province representing over 40% of total cases \n\n- UNICEF provided medicine kits, mosquito in response to cholera and Cyclone Freddy benefiting over 30,000 people \n\n- Over 16,000 children affected by Cyclone Freddy received leaner kits provided by UNICEF \n\n- Nearly 300,000 people received critical WASH supplies, in the Zambezia, Tete, Niassa and Sofala \n\n- UNICEF supported 25 radio spots and hourly messages reaching over 1,250,000 people in Zambezia province \n\n- 63 technical staff and social mobilisers in five provinces were trained on the case area targeted intervention (CATI) approach to cholera prevention and response\n\n**Situation in Numbers**\n\n524,659 children displaced in need of humanitarian assistance (IOM November 2022)\n\n2,000,000 people in need (OCHA February 2023)\n\n1,028,743 Internally displaced people (IOM November 2022)\n\n302,000 People in hard-to-reach areas (OCHA November 2022)\n\n**Funding Overview and Partnerships**\n\nThe UNICEF Mozambique Humanitarian Action for Children appeal outlines the need for US$113.1 million to sustain the provision of life-saving services for over one million children and families in Mozambique affected by multiple shocks. UNICEF carried over approximately $17.5 million raised in 2022 and has received about $15.2 million from the governments of Canada, Japan, United States, German, United Kingdom, Switzerland, EU in addition to allocations of UNICEF’s internal flexible Global Humanitarian Thematic Funds thus far in 2023. However, the increasing needs due to cholera and rainy season floods place even more importance on identifying additional flexible resources. UNICEF Mozambique has utilized core resources and existing flexible funds to meet urgent requirements. UNICEF Mozambique developed an additional response plan that outlines the response to cholera, floods and Cyclone Freddy and has identified the needs for an additional $89.1 million. As of the end of March, UNICEF had received $3.4 million for cholera and Freddy response leaving a funding gap of $85.7M (96%).\n\n**Situation Overview & Humanitarian Needs**\n\nThe month of March was marked by the second landfall of Cyclone Freddy through Namacurra district in Zambezia province on 11 March, followed by subsequent heavy rains and severe flooding affecting three additional provinces: Sofala, Tete and Niassa. Over one million people in five provinces were affected by the Cyclone and related flooding of whom 73.7 per cent were in Zambezia. During and immediately after the storm, people sought shelter in accommodation centres, mainly schools. In total, over 184,000 people were temporarily displaced. Infrastructure damage included 98 health facilities, six water supply systems, and 250 water points were affected and nearly 967 km of road was damaged. In addition, over 2,850 classrooms were destroyed affecting nearly 328,000 students and 5,551 teachers. The main roads linking Zambezia, and in particular to the capital city of Quelimane, were blocked both from the north and the south for several days. Access by road is still challenging in some districts and localities. Power lines were destroyed which left a number of districts without power for seven to more than 30 days impacting the provision of other services including as water supply pumps and cold chain equipment at health facilities. Over 134,000 hectares of crops were lost, impacting the food security in the 2022/2023 harvesting season.\n\nAs a result of Cyclone Freddy and related floods, the cholera situation in the country deteriorated significantly with the declaration of an outbreak in Quelimane city which recorded 9,082 cases. Of these, over 3,200 were hospitalized and 30 people died (by 31 March). Four additional districts in Zambezia Province and Pemba City in Cabo Delgado Province also confirmed a cholera outbreak. As of 31 March 2023, Pemba City had recorded a total of 173 cholera cases, with one reported death and the total cumulative cases of cholera in the country were 21,482—43 per cent of the cases are from Zambezia, 95 deaths and lethality rate of 0.4%.\n\nIn Cabo Delgado province, there was a relative reduction in the number of conflict-related incidents during March 2023. The reporting period also saw a relative reduction in new displacements, while return movements continued. Between 1 and 28 March, a total of 12,753 people were reportedly on the move in Cabo Delgado, of which 61.4 per cent were individuals arriving in northern districts of return, primarily in Mocimboa da Praia District.",
+  "summary": " In March 2023, Cyclone Freddy and subsequent flooding affected over 1 million people in five provinces in Mozambique. UNICEF provided medicine kits, mosquito nets, and leaner kits to over 30,000 people, and WASH supplies to nearly 300,000 people. UNICEF also trained 63 technical staff and social mobilisers in five provinces on the case area targeted intervention (CATI) approach to cholera prevention and response. Additionally, a cholera outbreak was declared in Quelimane city with 9,082 cases, 3,200 hospitalizations, and 30 deaths. In Cabo Delgado province, there was a relative reduction in the number of conflict-related incidents and new displacements, while return movements continued. UNICEF is appealing for US$113.1 million to sustain the provision of life-saving services for over one million children and families in Mozambique affected by multiple shocks.",
+  "metadata": {
+    "id": "3956044",
+    "name": "UNICEF Mozambique Humanitarian Situation Report No. 3: 31 March 2023",
+    "date_original": 1682467200000,
+    "date_changed": 1682489664000,
+    "date_created": 1682485066000,
+    "primary_country_id": 164,
+    "primary_country_name": "Mozambique",
+    "primary_country_iso3": "moz",
+    "primary_country_location": {
+      "lon": 34.75,
+      "lat": -18.09
+    }
+  }
+}

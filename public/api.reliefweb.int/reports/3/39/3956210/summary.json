@@ -1,0 +1,117 @@
+{
+  "original": {
+    "id": "3956210",
+    "fields": {
+      "date": {
+        "changed": "2023-04-26T12:12:08+00:00",
+        "created": "2023-04-26T11:42:10+00:00",
+        "original": "2023-04-26T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/87",
+          "name": "Ethiopia",
+          "location": {
+            "lon": 39.62,
+            "lat": 8.63
+          },
+          "id": 87,
+          "shortname": "Ethiopia",
+          "iso3": "eth",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/87",
+        "name": "Ethiopia",
+        "location": {
+          "lon": 39.62,
+          "lat": 8.63
+        },
+        "id": 87,
+        "shortname": "Ethiopia",
+        "iso3": "eth"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/4512",
+          "spanish_name": "ONU para la Igualdad de Género y el Empoderamiento de la Mujer (ONU Mujeres)",
+          "name": "UN Women",
+          "id": 4512,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UN Women",
+          "homepage": "http://www.unwomen.org/en"
+        }
+      ],
+      "title": "Humanitarian Gender Alert - Women, peace and security and humanitarian action in context of Ethiopia (April 2023 - Issue 3)",
+      "body": "**Introduction**\n\nThe purpose of the quarterly published Gender Alert is to highlight gender specific impact of the multiple crisis in Ethiopia. This issue focuses on women’s engagement in peace and security. It is a snapshot on the situation in Ethiopia when it comes to women participating in peace related processes.  \nEthiopia signed a peace deal on 2 November 2022, after a two-year conflict in the northern part of the country, which had a devastating impact especially on women and girls.  \nBesides the conflict in the northern part of the country, a few other regions are not stable. There is potential risk of other larger scale conflict and humanitarian crisis.  \nAlthough the conflicts affect women the most, women are underrepresented and even absent in number of peace processes and institutional frameworks. Women’s participation in the peace processes is essential to ensure sustainable peace. There are various mechanisms of en-suring more women engagement in peace and security, as active participants as well as beneficiaries. For this to happen there is a need to have a robust gender sensitive institutional set up. It is in that context that UN Women and partners have been working with the Government of Ethiopia to develop the first ever National Action Plan (NAP) for Resolution 1325 – Women, Peace and Security. The leadership and ownership of the process by the Ministry for Women and Social Affairs (MoWSA) and the Ministry of Peace (MoP) is most important. In addition, the role of women’s movement is paramount to ensure participatory NAP process.",
+      "url": "https://reliefweb.int/node/3956210",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/e9/e8/e9e83eef-8045-4913-bc57-08b255cac96f.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/e9/e8/e9e83eef-8045-4913-bc57-08b255cac96f.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/e9/e8/e9e83eef-8045-4913-bc57-08b255cac96f.png",
+            "version": "2414962-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/e9/e8/e9e83eef-8045-4913-bc57-08b255cac96f.png"
+          },
+          "filename": "Humanitarian Gender Alert_April_2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2414962",
+          "filesize": "2740401",
+          "url": "https://reliefweb.int/attachments/e9e83eef-8045-4913-bc57-08b255cac96f/Humanitarian%20Gender%20Alert_April_2023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/ethiopia/humanitarian-gender-alert-women-peace-and-security-and-humanitarian-action-context-ethiopia-april-2023-issue-3",
+      "theme": [
+        {
+          "name": "Gender",
+          "id": 4594
+        },
+        {
+          "name": "Peacekeeping and Peacebuilding",
+          "id": 4599
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        }
+      ],
+      "id": 3956210,
+      "status": "published",
+      "body-html": "<p><strong>Introduction</strong></p>\n<p>The purpose of the quarterly published Gender Alert is to highlight gender specific impact of the multiple crisis in Ethiopia. This issue focuses on women’s engagement in peace and security. It is a snapshot on the situation in Ethiopia when it comes to women participating in peace related processes.<br />\nEthiopia signed a peace deal on 2 November 2022, after a two-year conflict in the northern part of the country, which had a devastating impact especially on women and girls.<br />\nBesides the conflict in the northern part of the country, a few other regions are not stable. There is potential risk of other larger scale conflict and humanitarian crisis.<br />\nAlthough the conflicts affect women the most, women are underrepresented and even absent in number of peace processes and institutional frameworks. Women’s participation in the peace processes is essential to ensure sustainable peace. There are various mechanisms of en-suring more women engagement in peace and security, as active participants as well as beneficiaries. For this to happen there is a need to have a robust gender sensitive institutional set up. It is in that context that UN Women and partners have been working with the Government of Ethiopia to develop the first ever National Action Plan (NAP) for Resolution 1325 – Women, Peace and Security. The leadership and ownership of the process by the Ministry for Women and Social Affairs (MoWSA) and the Ministry of Peace (MoP) is most important. In addition, the role of women’s movement is paramount to ensure participatory NAP process.</p>\n"
+    }
+  },
+  "text": "# Humanitarian Gender Alert - Women, peace and security and humanitarian action in context of Ethiopia (April 2023 - Issue 3)\n\n**Introduction**\n\nThe purpose of the quarterly published Gender Alert is to highlight gender specific impact of the multiple crisis in Ethiopia. This issue focuses on women’s engagement in peace and security. It is a snapshot on the situation in Ethiopia when it comes to women participating in peace related processes.  \nEthiopia signed a peace deal on 2 November 2022, after a two-year conflict in the northern part of the country, which had a devastating impact especially on women and girls.  \nBesides the conflict in the northern part of the country, a few other regions are not stable. There is potential risk of other larger scale conflict and humanitarian crisis.  \nAlthough the conflicts affect women the most, women are underrepresented and even absent in number of peace processes and institutional frameworks. Women’s participation in the peace processes is essential to ensure sustainable peace. There are various mechanisms of en-suring more women engagement in peace and security, as active participants as well as beneficiaries. For this to happen there is a need to have a robust gender sensitive institutional set up. It is in that context that UN Women and partners have been working with the Government of Ethiopia to develop the first ever National Action Plan (NAP) for Resolution 1325 – Women, Peace and Security. The leadership and ownership of the process by the Ministry for Women and Social Affairs (MoWSA) and the Ministry of Peace (MoP) is most important. In addition, the role of women’s movement is paramount to ensure participatory NAP process.",
+  "summary": " This Gender Alert focuses on the impact of multiple crises in Ethiopia on women, and their underrepresentation in peace processes and institutional frameworks. It highlights the need for a robust gender-sensitive institutional set-up to ensure more women's engagement in peace and security. UN Women and partners are working with the Government of Ethiopia to develop a National Action Plan for Resolution 1325, with the leadership and ownership of the process by the Ministry for Women and Social Affairs and the Ministry of Peace. The role of women's movement is also paramount.",
+  "metadata": {
+    "id": "3956210",
+    "name": "Humanitarian Gender Alert - Women, peace and security and humanitarian action in context of Ethiopia (April 2023 - Issue 3)",
+    "date_original": 1682467200000,
+    "date_changed": 1682511128000,
+    "date_created": 1682509330000,
+    "primary_country_id": 87,
+    "primary_country_name": "Ethiopia",
+    "primary_country_iso3": "eth",
+    "primary_country_location": {
+      "lon": 39.62,
+      "lat": 8.63
+    }
+  }
+}

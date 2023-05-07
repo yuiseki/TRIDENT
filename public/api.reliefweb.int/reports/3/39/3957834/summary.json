@@ -1,0 +1,175 @@
+{
+  "original": {
+    "id": "3957834",
+    "fields": {
+      "date": {
+        "changed": "2023-05-02T18:31:05+00:00",
+        "created": "2023-05-02T17:14:54+00:00",
+        "original": "2023-05-02T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/55",
+          "name": "Chad",
+          "location": {
+            "lon": 18.66,
+            "lat": 15.36
+          },
+          "id": 55,
+          "shortname": "Chad",
+          "iso3": "tcd",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/220",
+          "name": "Sudan",
+          "location": {
+            "lon": 30,
+            "lat": 15
+          },
+          "id": 220,
+          "shortname": "Sudan",
+          "iso3": "sdn"
+        }
+      ],
+      "ocha_product": [
+        {
+          "name": "Other",
+          "id": 12353
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/55",
+        "name": "Chad",
+        "location": {
+          "lon": 18.66,
+          "lat": 15.36
+        },
+        "id": 55,
+        "shortname": "Chad",
+        "iso3": "tcd"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1503",
+          "longname": "United Nations Office for the Coordination of Humanitarian Affairs",
+          "spanish_name": "Oficina de Coordinación de Asuntos Humanitarios",
+          "name": "UN Office for the Coordination of Humanitarian Affairs",
+          "id": 1503,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "OCHA",
+          "disclaimer": "To learn more about OCHA's activities, please visit https://www.unocha.org/.",
+          "homepage": "http://www.unocha.org/"
+        }
+      ],
+      "title": "Chad Humanitarian Update April 2023",
+      "body": "**New refugee influx into Chad as a result of Sudan crisis**\n\nAs a result of the conflict which broke out in Khartoum and across Sudan on 15 April thousands of people have fled across the Sudanese border into Chad as fierce fighting continues between the army and the paramilitary Rapid Support Forces (RSF). As the violence spread to several locations in the Darfur region about 30 000 people are estimated to have already crossed from Sudan into Chadian territory, although given the current dynamics in Sudan humanitarian partners expect these numbers to rise. According to initial assessment new arrivals, mainly women and children, live in precarious conditions along the border, sleeping in makeshift shelters under trees. The most critical needs are shelter and non-food items, especially mosquito nets and blankets, as well as specific protection activities to address the urgent needs of children at risk and women along with food, water, sanitation, and hygiene (WASH). UNHCR is working closely with the Chadian authorities to coordinate the emergency response. In the Sila, Ouaddai and Wadi Fira Provinces, the price of basic foodstuffs has risen sharply and there are fears of food shortages, as these provinces are heavily dependent on Sudan for their food supplies. \n\nSeveral agencies have already begun to provide initial support with the resources currently available under the overall coordination of UNHCR and the government, although additional funding is urgently needed to meet people's most urgent needs.\n\n**Launch of 2023 Humanitarian Response Plan**\n\nOn 12 April the Humanitarian Coordinator and the Government of Chad launched the 2023 Humanitarian Response Plan which requires funding of USD 674.1 million to reach 4.4 million people with humanitarian assistance in Chad.  \nThe plan has three strategic objectives aimed at strengthening the emergency response to the immediate needs of crisis-affected populations, reducing the impact of shocks, and establishing a framework for linking humanitarian assistance with development programmes to achieve joint results in operationalising the humanitarian- development-peace nexus.\n\nFood insecurity and malnutrition, the effects of climate change, health emergencies, forced population displacement and intercommunal and armed conflict continue to pose serious humanitarian challenges in Chad, according to the Humanitarian Needs Overview (HNO) 2023 which was released on 23 March and upon which the HRP is based.  \nThe HNO estimates that 6.9 million people are in need of humanitarian assistance, more than a third of the Chadian population, compared to 6.1 million in 2022. More than 5.3 million people are currently food insecure in Chad, of which 1.5 million could become acutely food insecure during the lean season (June-September), according to the projections of the Cadre Harmonisé, an early warning tool for the risks of worsening of the food security situation in vulnerable areas.\n\nThese populations are expected to experience significant food deficits, with malnutrition rates rising above the emergency threshold.\n\nThe situation of children remains of particular concern. The 2022 National Nutrition Survey shows that 1.7 million children under five are acutely malnourished, of which 412 028 are severely malnourished. In addition, protracted insecurity disproportionately affects children, especially those facing multiple displacements which undermines the protective environment children need and makes them vulnerable to sexual abuse, early and forced marriage, family separation and enforced disappearance.\n\nOf the 6.9 million people in need of assistance to, more than one million are in a situation of displacement, having been forced to flee their homes because of violence. Chad currently hosts some 577 000 refugees and more than 381 000 internally displaced persons. In addition, more than 1.3 million people were affected by floods in 2022.\n\nViolence against civilians remains a concern, and intercommunal conflicts over access to natural resources continue to cause internal displacement and loss of livelihoods.\n\nThis complex humanitarian situation described in the HNO 2023 requires a comprehensive response, however, underfunding and access remain major constraints for humanitarian operations.\n\n**Return plan for displaced persons from 2022 floods**\n\nIn April 2023, the national authorities announced their intention to close the sites for displaced persons in N'Djamena following the 2022 floods. More than 20 sites had been set up during the floods to provide shelter for more than 200 000 people and with an end to assistance last December many were able to return home. Verifications carried out by humanitarian actors and the General Directorate of National Solidarity led to the identification of 9 remaining sites. As of 31 March, registration at the 7 sites counted 45 314 people or 10 660 households that remained displaced. An estimated further 50 000 people remain to be registered in the two sites not yet covered. Following the decision to close the sites, the humanitarian community was called upon by the national authorities to accompany the return of the affected population with a return assistance package.  \nA return plan for the return of the remaining displaced was drawn up by humanitarian partners in response to a request from the national authorities, which was approved by the Humanitarian Country Team (HCT) on 11 April 2023, with the assistance starting on 20 April. The plan provides for cash assistance of approximately XAF 80!000 and food and shelter assistance for approximately 100 000 people.\n\nThe HCT has had approved funding for part of the assistance from the Central Emergency Response Fund (CERF) which was granted to Chad in March 2023. This assistance will cover both N'Djamena and Lake Chad and is currently being finalised.\n\nAs a reminder, in 2022, Chad experienced its heaviest rainfall since the early 1960s, triggering a humanitarian and environmental crisis that led the Chadian government to declare a state of emergency on 19 October 2022. Of the country's 23 provinces, 19 were affected by the floods, which affected an estimated 1.3 million people, destroyed more than 350 000 hectares of crops, 20 000 head of livestock, 80 000 houses and a significant number of schools, health centres and public utility infrastructure. The city of N'Djamena was affected by the rising Chari River, which reached its peak flood level of 8.14 metres, the highest level in a decade and more than a metre higher than the record level recorded in 1961.\n\n**Humanitarian Country Team (HCT) Resource Mobilisation Strategy 2023**\n\nIn order to respond to the needs of vulnerable populations as set out in the 2023 HRP the Humanitarian Advocacy Group in Chad has developed a strategy to launch innovative initiatives to mobilise the necessary financial resources. The strategy was adopted by the HCT for Chad at its retreat on 28 March.\n\nThe humanitarian situation in Chad suffers from a lack of international attention and visibility, while the humanitarian response is chronically underfunded. Between 2019 and 2021, funding for the Chad HRP gradually decreased from 58.2% to 33.9%, with the exception of 2022, when Chad was funded at 60.6% (compared to 56% globally) due to the flood and food crisis which resulted in four CERF allocations totalling US$33 million.\n\nThe 2023 resource mobilisation strategy is structured around four strategic objectives:\n\n(i) maintaining the commitment of existing major donors and diversifying the donor pool, (ii) maintaining or increasing the use of pooled funding sources, (iii) increasing collaboration with other types of funding, particularly in the areas of the Humanitarian-Development-Peace Nexus (HDP) and climate, and (iv) increasing the visibility of the humanitarian situation in Chad to support resource mobilisation. These objectives aim to improve the mobilisation of financial resources) and help maximise predictable income while taking advantage of spontaneous or crisis-driven funding opportunities.\n\nFor further information, please contact :\n\nDieudonne Bamouni, Chef de bureau, dieudonneb@un.org Tél : +235 68 85 10 00 Fragkiska Megaloudi, Public Information Officer, fragkiska.megaloudi@un.org, Tél : +235 68 00 08 41 For more information, please visit : https:// humanitarianaction.info/plan/1141; https:// response.reliefweb.int/chad To be added or deleted from this Sit Rep mailing list, please e-mail : ocha-chad@un.org",
+      "url": "https://reliefweb.int/node/3957834",
+      "disaster": [
+        {
+          "name": "Chad: Floods - Jul 2022",
+          "id": 51286,
+          "glide": "FL-2022-000287-TCD",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/dd/01/dd01a447-fab7-4fe2-8ad0-feb89f2f7590.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/dd/01/dd01a447-fab7-4fe2-8ad0-feb89f2f7590.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/dd/01/dd01a447-fab7-4fe2-8ad0-feb89f2f7590.png",
+            "version": "2416529-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/dd/01/dd01a447-fab7-4fe2-8ad0-feb89f2f7590.png"
+          },
+          "filename": "TCD_STR_Humanitarian update_20230430.pdf",
+          "mimetype": "application/pdf",
+          "id": "2416529",
+          "filesize": "4348549",
+          "url": "https://reliefweb.int/attachments/dd01a447-fab7-4fe2-8ad0-feb89f2f7590/TCD_STR_Humanitarian%20update_20230430.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/chad/chad-humanitarian-update-april-2023",
+      "theme": [
+        {
+          "name": "Climate Change and Environment",
+          "id": 4588
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Recovery and Reconstruction",
+          "id": 4601
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3957834,
+      "status": "published",
+      "body-html": "<p><strong>New refugee influx into Chad as a result of Sudan crisis</strong></p>\n<p>As a result of the conflict which broke out in Khartoum and across Sudan on 15 April thousands of people have fled across the Sudanese border into Chad as fierce fighting continues between the army and the paramilitary Rapid Support Forces (RSF). As the violence spread to several locations in the Darfur region about 30 000 people are estimated to have already crossed from Sudan into Chadian territory, although given the current dynamics in Sudan humanitarian partners expect these numbers to rise. According to initial assessment new arrivals, mainly women and children, live in precarious conditions along the border, sleeping in makeshift shelters under trees. The most critical needs are shelter and non-food items, especially mosquito nets and blankets, as well as specific protection activities to address the urgent needs of children at risk and women along with food, water, sanitation, and hygiene (WASH). UNHCR is working closely with the Chadian authorities to coordinate the emergency response. In the Sila, Ouaddai and Wadi Fira Provinces, the price of basic foodstuffs has risen sharply and there are fears of food shortages, as these provinces are heavily dependent on Sudan for their food supplies.</p>\n<p>Several agencies have already begun to provide initial support with the resources currently available under the overall coordination of UNHCR and the government, although additional funding is urgently needed to meet people's most urgent needs.</p>\n<p><strong>Launch of 2023 Humanitarian Response Plan</strong></p>\n<p>On 12 April the Humanitarian Coordinator and the Government of Chad launched the 2023 Humanitarian Response Plan which requires funding of USD 674.1 million to reach 4.4 million people with humanitarian assistance in Chad.<br />\nThe plan has three strategic objectives aimed at strengthening the emergency response to the immediate needs of crisis-affected populations, reducing the impact of shocks, and establishing a framework for linking humanitarian assistance with development programmes to achieve joint results in operationalising the humanitarian- development-peace nexus.</p>\n<p>Food insecurity and malnutrition, the effects of climate change, health emergencies, forced population displacement and intercommunal and armed conflict continue to pose serious humanitarian challenges in Chad, according to the Humanitarian Needs Overview (HNO) 2023 which was released on 23 March and upon which the HRP is based.<br />\nThe HNO estimates that 6.9 million people are in need of humanitarian assistance, more than a third of the Chadian population, compared to 6.1 million in 2022. More than 5.3 million people are currently food insecure in Chad, of which 1.5 million could become acutely food insecure during the lean season (June-September), according to the projections of the Cadre Harmonisé, an early warning tool for the risks of worsening of the food security situation in vulnerable areas.</p>\n<p>These populations are expected to experience significant food deficits, with malnutrition rates rising above the emergency threshold.</p>\n<p>The situation of children remains of particular concern. The 2022 National Nutrition Survey shows that 1.7 million children under five are acutely malnourished, of which 412 028 are severely malnourished. In addition, protracted insecurity disproportionately affects children, especially those facing multiple displacements which undermines the protective environment children need and makes them vulnerable to sexual abuse, early and forced marriage, family separation and enforced disappearance.</p>\n<p>Of the 6.9 million people in need of assistance to, more than one million are in a situation of displacement, having been forced to flee their homes because of violence. Chad currently hosts some 577 000 refugees and more than 381 000 internally displaced persons. In addition, more than 1.3 million people were affected by floods in 2022.</p>\n<p>Violence against civilians remains a concern, and intercommunal conflicts over access to natural resources continue to cause internal displacement and loss of livelihoods.</p>\n<p>This complex humanitarian situation described in the HNO 2023 requires a comprehensive response, however, underfunding and access remain major constraints for humanitarian operations.</p>\n<p><strong>Return plan for displaced persons from 2022 floods</strong></p>\n<p>In April 2023, the national authorities announced their intention to close the sites for displaced persons in N'Djamena following the 2022 floods. More than 20 sites had been set up during the floods to provide shelter for more than 200 000 people and with an end to assistance last December many were able to return home. Verifications carried out by humanitarian actors and the General Directorate of National Solidarity led to the identification of 9 remaining sites. As of 31 March, registration at the 7 sites counted 45 314 people or 10 660 households that remained displaced. An estimated further 50 000 people remain to be registered in the two sites not yet covered. Following the decision to close the sites, the humanitarian community was called upon by the national authorities to accompany the return of the affected population with a return assistance package.<br />\nA return plan for the return of the remaining displaced was drawn up by humanitarian partners in response to a request from the national authorities, which was approved by the Humanitarian Country Team (HCT) on 11 April 2023, with the assistance starting on 20 April. The plan provides for cash assistance of approximately XAF 80!000 and food and shelter assistance for approximately 100 000 people.</p>\n<p>The HCT has had approved funding for part of the assistance from the Central Emergency Response Fund (CERF) which was granted to Chad in March 2023. This assistance will cover both N'Djamena and Lake Chad and is currently being finalised.</p>\n<p>As a reminder, in 2022, Chad experienced its heaviest rainfall since the early 1960s, triggering a humanitarian and environmental crisis that led the Chadian government to declare a state of emergency on 19 October 2022. Of the country's 23 provinces, 19 were affected by the floods, which affected an estimated 1.3 million people, destroyed more than 350 000 hectares of crops, 20 000 head of livestock, 80 000 houses and a significant number of schools, health centres and public utility infrastructure. The city of N'Djamena was affected by the rising Chari River, which reached its peak flood level of 8.14 metres, the highest level in a decade and more than a metre higher than the record level recorded in 1961.</p>\n<p><strong>Humanitarian Country Team (HCT) Resource Mobilisation Strategy 2023</strong></p>\n<p>In order to respond to the needs of vulnerable populations as set out in the 2023 HRP the Humanitarian Advocacy Group in Chad has developed a strategy to launch innovative initiatives to mobilise the necessary financial resources. The strategy was adopted by the HCT for Chad at its retreat on 28 March.</p>\n<p>The humanitarian situation in Chad suffers from a lack of international attention and visibility, while the humanitarian response is chronically underfunded. Between 2019 and 2021, funding for the Chad HRP gradually decreased from 58.2% to 33.9%, with the exception of 2022, when Chad was funded at 60.6% (compared to 56% globally) due to the flood and food crisis which resulted in four CERF allocations totalling US$33 million.</p>\n<p>The 2023 resource mobilisation strategy is structured around four strategic objectives:</p>\n<p>(i) maintaining the commitment of existing major donors and diversifying the donor pool, (ii) maintaining or increasing the use of pooled funding sources, (iii) increasing collaboration with other types of funding, particularly in the areas of the Humanitarian-Development-Peace Nexus (HDP) and climate, and (iv) increasing the visibility of the humanitarian situation in Chad to support resource mobilisation. These objectives aim to improve the mobilisation of financial resources) and help maximise predictable income while taking advantage of spontaneous or crisis-driven funding opportunities.</p>\n<p>For further information, please contact :</p>\n<p>Dieudonne Bamouni, Chef de bureau, <a href=\"mailto:dieudonneb@un.org\">dieudonneb@un.org</a> Tél : +235 68 85 10 00 Fragkiska Megaloudi, Public Information Officer, <a href=\"mailto:fragkiska.megaloudi@un.org\">fragkiska.megaloudi@un.org</a>, Tél : +235 68 00 08 41 For more information, please visit : https:// humanitarianaction.info/plan/1141; https:// response.reliefweb.int/chad To be added or deleted from this Sit Rep mailing list, please e-mail : <a href=\"mailto:ocha-chad@un.org\">ocha-chad@un.org</a></p>\n"
+    }
+  },
+  "text": "# Chad Humanitarian Update April 2023\n\n**New refugee influx into Chad as a result of Sudan crisis**\n\nAs a result of the conflict which broke out in Khartoum and across Sudan on 15 April thousands of people have fled across the Sudanese border into Chad as fierce fighting continues between the army and the paramilitary Rapid Support Forces (RSF). As the violence spread to several locations in the Darfur region about 30 000 people are estimated to have already crossed from Sudan into Chadian territory, although given the current dynamics in Sudan humanitarian partners expect these numbers to rise. According to initial assessment new arrivals, mainly women and children, live in precarious conditions along the border, sleeping in makeshift shelters under trees. The most critical needs are shelter and non-food items, especially mosquito nets and blankets, as well as specific protection activities to address the urgent needs of children at risk and women along with food, water, sanitation, and hygiene (WASH). UNHCR is working closely with the Chadian authorities to coordinate the emergency response. In the Sila, Ouaddai and Wadi Fira Provinces, the price of basic foodstuffs has risen sharply and there are fears of food shortages, as these provinces are heavily dependent on Sudan for their food supplies. \n\nSeveral agencies have already begun to provide initial support with the resources currently available under the overall coordination of UNHCR and the government, although additional funding is urgently needed to meet people's most urgent needs.\n\n**Launch of 2023 Humanitarian Response Plan**\n\nOn 12 April the Humanitarian Coordinator and the Government of Chad launched the 2023 Humanitarian Response Plan which requires funding of USD 674.1 million to reach 4.4 million people with humanitarian assistance in Chad.  \nThe plan has three strategic objectives aimed at strengthening the emergency response to the immediate needs of crisis-affected populations, reducing the impact of shocks, and establishing a framework for linking humanitarian assistance with development programmes to achieve joint results in operationalising the humanitarian- development-peace nexus.\n\nFood insecurity and malnutrition, the effects of climate change, health emergencies, forced population displacement and intercommunal and armed conflict continue to pose serious humanitarian challenges in Chad, according to the Humanitarian Needs Overview (HNO) 2023 which was released on 23 March and upon which the HRP is based.  \nThe HNO estimates that 6.9 million people are in need of humanitarian assistance, more than a third of the Chadian population, compared to 6.1 million in 2022. More than 5.3 million people are currently food insecure in Chad, of which 1.5 million could become acutely food insecure during the lean season (June-September), according to the projections of the Cadre Harmonisé, an early warning tool for the risks of worsening of the food security situation in vulnerable areas.\n\nThese populations are expected to experience significant food deficits, with malnutrition rates rising above the emergency threshold.\n\nThe situation of children remains of particular concern. The 2022 National Nutrition Survey shows that 1.7 million children under five are acutely malnourished, of which 412 028 are severely malnourished. In addition, protracted insecurity disproportionately affects children, especially those facing multiple displacements which undermines the protective environment children need and makes them vulnerable to sexual abuse, early and forced marriage, family separation and enforced disappearance.\n\nOf the 6.9 million people in need of assistance to, more than one million are in a situation of displacement, having been forced to flee their homes because of violence. Chad currently hosts some 577 000 refugees and more than 381 000 internally displaced persons. In addition, more than 1.3 million people were affected by floods in 2022.\n\nViolence against civilians remains a concern, and intercommunal conflicts over access to natural resources continue to cause internal displacement and loss of livelihoods.\n\nThis complex humanitarian situation described in the HNO 2023 requires a comprehensive response, however, underfunding and access remain major constraints for humanitarian operations.\n\n**Return plan for displaced persons from 2022 floods**\n\nIn April 2023, the national authorities announced their intention to close the sites for displaced persons in N'Djamena following the 2022 floods. More than 20 sites had been set up during the floods to provide shelter for more than 200 000 people and with an end to assistance last December many were able to return home. Verifications carried out by humanitarian actors and the General Directorate of National Solidarity led to the identification of 9 remaining sites. As of 31 March, registration at the 7 sites counted 45 314 people or 10 660 households that remained displaced. An estimated further 50 000 people remain to be registered in the two sites not yet covered. Following the decision to close the sites, the humanitarian community was called upon by the national authorities to accompany the return of the affected population with a return assistance package.  \nA return plan for the return of the remaining displaced was drawn up by humanitarian partners in response to a request from the national authorities, which was approved by the Humanitarian Country Team (HCT) on 11 April 2023, with the assistance starting on 20 April. The plan provides for cash assistance of approximately XAF 80!000 and food and shelter assistance for approximately 100 000 people.\n\nThe HCT has had approved funding for part of the assistance from the Central Emergency Response Fund (CERF) which was granted to Chad in March 2023. This assistance will cover both N'Djamena and Lake Chad and is currently being finalised.\n\nAs a reminder, in 2022, Chad experienced its heaviest rainfall since the early 1960s, triggering a humanitarian and environmental crisis that led the Chadian government to declare a state of emergency on 19 October 2022. Of the country's 23 provinces, 19 were affected by the floods, which affected an estimated 1.3 million people, destroyed more than 350 000 hectares of crops, 20 000 head of livestock, 80 000 houses and a significant number of schools, health centres and public utility infrastructure. The city of N'Djamena was affected by the rising Chari River, which reached its peak flood level of 8.14 metres, the highest level in a decade and more than a metre higher than the record level recorded in 1961.\n\n**Humanitarian Country Team (HCT) Resource Mobilisation Strategy 2023**\n\nIn order to respond to the needs of vulnerable populations as set out in the 2023 HRP the Humanitarian Advocacy Group in Chad has developed a strategy to launch innovative initiatives to mobilise the necessary financial resources. The strategy was adopted by the HCT for Chad at its retreat on 28 March.\n\nThe humanitarian situation in Chad suffers from a lack of international attention and visibility, while the humanitarian response is chronically underfunded. Between 2019 and 2021, funding for the Chad HRP gradually decreased from 58.2% to 33.9%, with the exception of 2022, when Chad was funded at 60.6% (compared to 56% globally) due to the flood and food crisis which resulted in four CERF allocations totalling US$33 million.\n\nThe 2023 resource mobilisation strategy is structured around four strategic objectives:\n\n(i) maintaining the commitment of existing major donors and diversifying the donor pool, (ii) maintaining or increasing the use of pooled funding sources, (iii) increasing collaboration with other types of funding, particularly in the areas of the Humanitarian-Development-Peace Nexus (HDP) and climate, and (iv) increasing the visibility of the humanitarian situation in Chad to support resource mobilisation. These objectives aim to improve the mobilisation of financial resources) and help maximise predictable income while taking advantage of spontaneous or crisis-driven funding opportunities.\n\nFor further information, please contact :\n\nDieudonne Bamouni, Chef de bureau, dieudonneb@un.org Tél : +235 68 85 10 00 Fragkiska Megaloudi, Public Information Officer, fragkiska.megaloudi@un.org, Tél : +235 68 00 08 41 For more information, please visit : https:// humanitarianaction.info/plan/1141; https:// response.reliefweb.int/chad To be added or deleted from this Sit Rep mailing list, please e-mail : ocha-chad@un.org",
+  "summary": " In April 2023, thousands of people have fled from Sudan into Chad due to conflict, and the Humanitarian Response Plan requires USD 674.1 million to reach 4.4 million people in need of assistance. The plan has three strategic objectives to strengthen the emergency response, reduce the impact of shocks, and establish a framework for linking humanitarian assistance with development programmes. In addition, the national authorities have announced their intention to close the sites for displaced persons in N'Djamena following the 2022 floods, and the Humanitarian Country Team (HCT) has developed a strategy to launch innovative initiatives to mobilise the necessary financial resources.",
+  "metadata": {
+    "id": "3957834",
+    "name": "Chad Humanitarian Update April 2023",
+    "date_original": 1682985600000,
+    "date_changed": 1683052265000,
+    "date_created": 1683047694000,
+    "primary_country_id": 55,
+    "primary_country_name": "Chad",
+    "primary_country_iso3": "tcd",
+    "primary_country_location": {
+      "lon": 18.66,
+      "lat": 15.36
+    }
+  }
+}

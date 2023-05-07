@@ -1,0 +1,122 @@
+{
+  "original": {
+    "id": "3959165",
+    "fields": {
+      "date": {
+        "changed": "2023-05-05T16:30:46+00:00",
+        "created": "2023-05-05T16:21:05+00:00",
+        "original": "2023-05-05T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/220",
+          "name": "Sudan",
+          "location": {
+            "lon": 30,
+            "lat": 15
+          },
+          "id": 220,
+          "shortname": "Sudan",
+          "iso3": "sdn",
+          "primary": true
+        }
+      ],
+      "origin": "https://logcluster.org/document/sudan-importation-and-customs-processes-impacct-wg-bulletin-1-5-may-2023",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/220",
+        "name": "Sudan",
+        "location": {
+          "lon": 30,
+          "lat": 15
+        },
+        "id": 220,
+        "shortname": "Sudan",
+        "iso3": "sdn"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/3594",
+          "name": "Logistics Cluster",
+          "id": 3594,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "Logistics Cluster",
+          "homepage": "http://www.logcluster.org/"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "Sudan - Importation and Customs Processes, IMPACCT WG, bulletin 1, 5 May 2023",
+      "body": "**SUDAN**\n\nCustoms stations in Sudan are not working, including the Head Quarter , the airport and Suba Dry Port in Khartoum state. The functioning Customs stations are as follows (Official source - 28 April 2023):\n\n1-Port Sudan seaports at the Red Sea.\n\n2-Argeen land Crossing at the border with Eygpt.\n\n3-Galabat land Crossing at the border with Ethiopia.\n\nAt least two Customs stations in Darfour region have been attacked, destroyed, and looted.\n\nAs for the Asycuda system, the Data Centre has not been damaged and the IT team is ready to resume work at any moment in case things get better.\n\nThe banking system in the country is not functional except two Bandak applications provided by Khartoum Bank for money transfers and electricty purchases.",
+      "url": "https://reliefweb.int/node/3959165",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/2d/60/2d6056be-aca0-444e-994c-4d45a8e95761.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/2d/60/2d6056be-aca0-444e-994c-4d45a8e95761.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/2d/60/2d6056be-aca0-444e-994c-4d45a8e95761.png",
+            "version": "2417843-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/2d/60/2d6056be-aca0-444e-994c-4d45a8e95761.png"
+          },
+          "filename": "Sudan _ Bulletin n° 1 on CIQPs _ 5 May 2023 for Publication (1).pdf",
+          "mimetype": "application/pdf",
+          "id": "2417843",
+          "filesize": "245364",
+          "url": "https://reliefweb.int/attachments/2d6056be-aca0-444e-994c-4d45a8e95761/Sudan%20_%20Bulletin%20n%C2%B0%201%20on%20CIQPs%20_%205%20May%202023%20for%20Publication%20%281%29.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/sudan/sudan-importation-and-customs-processes-impacct-wg-bulletin-1-5-may-2023",
+      "theme": [
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        }
+      ],
+      "id": 3959165,
+      "status": "published",
+      "body-html": "<p><strong>SUDAN</strong></p>\n<p>Customs stations in Sudan are not working, including the Head Quarter , the airport and Suba Dry Port in Khartoum state. The functioning Customs stations are as follows (Official source - 28 April 2023):</p>\n<p>1-Port Sudan seaports at the Red Sea.</p>\n<p>2-Argeen land Crossing at the border with Eygpt.</p>\n<p>3-Galabat land Crossing at the border with Ethiopia.</p>\n<p>At least two Customs stations in Darfour region have been attacked, destroyed, and looted.</p>\n<p>As for the Asycuda system, the Data Centre has not been damaged and the IT team is ready to resume work at any moment in case things get better.</p>\n<p>The banking system in the country is not functional except two Bandak applications provided by Khartoum Bank for money transfers and electricty purchases.</p>\n"
+    }
+  },
+  "text": "# Sudan - Importation and Customs Processes, IMPACCT WG, bulletin 1, 5 May 2023\n\n**SUDAN**\n\nCustoms stations in Sudan are not working, including the Head Quarter , the airport and Suba Dry Port in Khartoum state. The functioning Customs stations are as follows (Official source - 28 April 2023):\n\n1-Port Sudan seaports at the Red Sea.\n\n2-Argeen land Crossing at the border with Eygpt.\n\n3-Galabat land Crossing at the border with Ethiopia.\n\nAt least two Customs stations in Darfour region have been attacked, destroyed, and looted.\n\nAs for the Asycuda system, the Data Centre has not been damaged and the IT team is ready to resume work at any moment in case things get better.\n\nThe banking system in the country is not functional except two Bandak applications provided by Khartoum Bank for money transfers and electricty purchases.",
+  "summary": "\n\nSudan is currently facing issues with its customs stations, including the Head Quarter, airport, and Suba Dry Port in Khartoum state. The functioning Customs stations are Port Sudan seaports at the Red Sea, Argeen land Crossing at the border with Eygpt, and Galabat land Crossing at the border with Ethiopia. Additionally, two Customs stations in Darfour region have been attacked, destroyed, and looted. The Data Centre for the Asycuda system has not been damaged and the IT team is ready to resume work. The banking system is not functional except for two Bandak applications provided by Khartoum Bank.",
+  "metadata": {
+    "id": "3959165",
+    "name": "Sudan - Importation and Customs Processes, IMPACCT WG, bulletin 1, 5 May 2023",
+    "date_original": 1683244800000,
+    "date_changed": 1683304246000,
+    "date_created": 1683303665000,
+    "primary_country_id": 220,
+    "primary_country_name": "Sudan",
+    "primary_country_iso3": "sdn",
+    "primary_country_location": {
+      "lon": 30,
+      "lat": 15
+    }
+  }
+}

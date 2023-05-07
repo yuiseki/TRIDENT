@@ -1,0 +1,130 @@
+{
+  "original": {
+    "id": "3958679",
+    "fields": {
+      "date": {
+        "changed": "2023-05-04T16:17:14+00:00",
+        "created": "2023-05-04T15:07:31+00:00",
+        "original": "2023-05-04T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/98",
+          "name": "Gambia",
+          "location": {
+            "lon": -15.91,
+            "lat": 13.44
+          },
+          "id": 98,
+          "shortname": "Gambia",
+          "iso3": "gmb",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/98",
+        "name": "Gambia",
+        "location": {
+          "lon": -15.91,
+          "lat": 13.44
+        },
+        "id": 98,
+        "shortname": "Gambia",
+        "iso3": "gmb"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "WFP The Gambia Country Brief, March 2023",
+      "body": "**In Numbers**\n\nUSD 702,177 cash-based transfers made \n\nUSD 5.1 million six-month (April – September 2023) net funding requirements \n\n131,233 people assisted in February and March 2023\n\n**Operational Updates** \n\n**School feeding** \n\n- Following the increase in the number of beneficiary schools supported by the Global Agriculture and Food Security Program, Climate Adaptation Fund- GAFSP project (GAFSP) (from 87 to 149 schools), WFP is now covering 332 schools, assisting 124,675 children (53 percent girls). The cash-based transfer and local procurement models continue to expand in the local communities. \n\n**Preparedness for the lean/rainy season 2023** \n\n- WFP is in the process of procuring and transporting food commodities locally (rice and beans), regionally, and internationally (vegetable oil, salt, corn soya blend) for the prevention and treatment of malnutrition and disaster response/safety net food assistance that will take place during the lean season. WFP is also working with the National Disaster Management Agency, the National Nutrition Agency, and the National Social Protection Secretariat to support the Government-led coordination of preparedness efforts for the lean season response which will support the national social protection system. \n\n**Resilience** \n\n- WFP received a payout from the African Risk Capacity Limited (ARC Ltd) weather insurance for the failed planting in some regions of The Gambia due to the prolonged dry spell during the 2022 rainy season. This was the first payout from ARC to WFP Gambia since 2019. WFP utilised the payout for food assistance through cash transfers to 1,093 households (6,558 people), with each household receiving GMD 8,100 (approx. USD130) to cater for their food needs for three months.\n\n- In February 2023, WFP, in partnership with Africa GreenTec Senegal, supported the women fish mongers with a “Cooltainer” to preserve fish and reduce losses. The Cooltainer is a mobile cold storage solution for sustainable agriculture and food preservation that is a solar-powered, walk-in refrigerator and can store and preserve fruits, vegetables, fish, and other perishable items. The Cooltainer has a storage capacity of 120 crates which allows for convenient storage and distribution expected to support the fish cold chain. The National Project Technical Coordination Committee for the Rural Integrated Climate Adaptation and Resilience Building Project (RICAR) was launched in March 2023. \n\n- The committee shall oversee the programme execution and overall technical guidance aligned with WFP and the Adaptation Fund regulations.\n\n- A cross-border study tour in Senegal was concluded by WFP Gambia and key stakeholders including the Central Bank of The Gambia on micro weather index insurance. The study tour gave the participants a chance to learn practical examples from key stakeholders in the micro-insurance sector for a critical understanding of the policies and legal frameworks guiding the delivery of the Weather Index Insurance Mechanisms.",
+      "url": "https://reliefweb.int/node/3958679",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/30/fb/30fb3aed-22d0-4b87-bbbf-2f2e95621928.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/30/fb/30fb3aed-22d0-4b87-bbbf-2f2e95621928.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/30/fb/30fb3aed-22d0-4b87-bbbf-2f2e95621928.png",
+            "version": "2417437-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/30/fb/30fb3aed-22d0-4b87-bbbf-2f2e95621928.png"
+          },
+          "filename": "WFP THE GAMBIA COUNTRY BRIEF March 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2417437",
+          "filesize": "268878",
+          "url": "https://reliefweb.int/attachments/30fb3aed-22d0-4b87-bbbf-2f2e95621928/WFP%20THE%20GAMBIA%20COUNTRY%20BRIEF%20March%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/gambia/wfp-gambia-country-brief-march-2023",
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Disaster Management",
+          "id": 4591
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        }
+      ],
+      "id": 3958679,
+      "status": "published",
+      "body-html": "<p><strong>In Numbers</strong></p>\n<p>USD 702,177 cash-based transfers made</p>\n<p>USD 5.1 million six-month (April – September 2023) net funding requirements</p>\n<p>131,233 people assisted in February and March 2023</p>\n<p><strong>Operational Updates</strong></p>\n<p><strong>School feeding</strong></p>\n<ul>\n<li>Following the increase in the number of beneficiary schools supported by the Global Agriculture and Food Security Program, Climate Adaptation Fund- GAFSP project (GAFSP) (from 87 to 149 schools), WFP is now covering 332 schools, assisting 124,675 children (53 percent girls). The cash-based transfer and local procurement models continue to expand in the local communities.</li>\n</ul>\n<p><strong>Preparedness for the lean/rainy season 2023</strong></p>\n<ul>\n<li>WFP is in the process of procuring and transporting food commodities locally (rice and beans), regionally, and internationally (vegetable oil, salt, corn soya blend) for the prevention and treatment of malnutrition and disaster response/safety net food assistance that will take place during the lean season. WFP is also working with the National Disaster Management Agency, the National Nutrition Agency, and the National Social Protection Secretariat to support the Government-led coordination of preparedness efforts for the lean season response which will support the national social protection system.</li>\n</ul>\n<p><strong>Resilience</strong></p>\n<ul>\n<li>\n<p>WFP received a payout from the African Risk Capacity Limited (ARC Ltd) weather insurance for the failed planting in some regions of The Gambia due to the prolonged dry spell during the 2022 rainy season. This was the first payout from ARC to WFP Gambia since 2019. WFP utilised the payout for food assistance through cash transfers to 1,093 households (6,558 people), with each household receiving GMD 8,100 (approx. USD130) to cater for their food needs for three months.</p>\n</li>\n<li>\n<p>In February 2023, WFP, in partnership with Africa GreenTec Senegal, supported the women fish mongers with a “Cooltainer” to preserve fish and reduce losses. The Cooltainer is a mobile cold storage solution for sustainable agriculture and food preservation that is a solar-powered, walk-in refrigerator and can store and preserve fruits, vegetables, fish, and other perishable items. The Cooltainer has a storage capacity of 120 crates which allows for convenient storage and distribution expected to support the fish cold chain. The National Project Technical Coordination Committee for the Rural Integrated Climate Adaptation and Resilience Building Project (RICAR) was launched in March 2023.</p>\n</li>\n<li>\n<p>The committee shall oversee the programme execution and overall technical guidance aligned with WFP and the Adaptation Fund regulations.</p>\n</li>\n<li>\n<p>A cross-border study tour in Senegal was concluded by WFP Gambia and key stakeholders including the Central Bank of The Gambia on micro weather index insurance. The study tour gave the participants a chance to learn practical examples from key stakeholders in the micro-insurance sector for a critical understanding of the policies and legal frameworks guiding the delivery of the Weather Index Insurance Mechanisms.</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# WFP The Gambia Country Brief, March 2023\n\n**In Numbers**\n\nUSD 702,177 cash-based transfers made \n\nUSD 5.1 million six-month (April – September 2023) net funding requirements \n\n131,233 people assisted in February and March 2023\n\n**Operational Updates** \n\n**School feeding** \n\n- Following the increase in the number of beneficiary schools supported by the Global Agriculture and Food Security Program, Climate Adaptation Fund- GAFSP project (GAFSP) (from 87 to 149 schools), WFP is now covering 332 schools, assisting 124,675 children (53 percent girls). The cash-based transfer and local procurement models continue to expand in the local communities. \n\n**Preparedness for the lean/rainy season 2023** \n\n- WFP is in the process of procuring and transporting food commodities locally (rice and beans), regionally, and internationally (vegetable oil, salt, corn soya blend) for the prevention and treatment of malnutrition and disaster response/safety net food assistance that will take place during the lean season. WFP is also working with the National Disaster Management Agency, the National Nutrition Agency, and the National Social Protection Secretariat to support the Government-led coordination of preparedness efforts for the lean season response which will support the national social protection system. \n\n**Resilience** \n\n- WFP received a payout from the African Risk Capacity Limited (ARC Ltd) weather insurance for the failed planting in some regions of The Gambia due to the prolonged dry spell during the 2022 rainy season. This was the first payout from ARC to WFP Gambia since 2019. WFP utilised the payout for food assistance through cash transfers to 1,093 households (6,558 people), with each household receiving GMD 8,100 (approx. USD130) to cater for their food needs for three months.\n\n- In February 2023, WFP, in partnership with Africa GreenTec Senegal, supported the women fish mongers with a “Cooltainer” to preserve fish and reduce losses. The Cooltainer is a mobile cold storage solution for sustainable agriculture and food preservation that is a solar-powered, walk-in refrigerator and can store and preserve fruits, vegetables, fish, and other perishable items. The Cooltainer has a storage capacity of 120 crates which allows for convenient storage and distribution expected to support the fish cold chain. The National Project Technical Coordination Committee for the Rural Integrated Climate Adaptation and Resilience Building Project (RICAR) was launched in March 2023. \n\n- The committee shall oversee the programme execution and overall technical guidance aligned with WFP and the Adaptation Fund regulations.\n\n- A cross-border study tour in Senegal was concluded by WFP Gambia and key stakeholders including the Central Bank of The Gambia on micro weather index insurance. The study tour gave the participants a chance to learn practical examples from key stakeholders in the micro-insurance sector for a critical understanding of the policies and legal frameworks guiding the delivery of the Weather Index Insurance Mechanisms.",
+  "summary": " In March 2023, the World Food Programme (WFP) in The Gambia provided cash-based transfers to 702,177 people and assisted 131,233 people in February and March. WFP is expanding its cash-based transfer and local procurement models in local communities, procuring and transporting food commodities for the prevention and treatment of malnutrition and disaster response/safety net food assistance during the lean season. WFP also received a payout from the African Risk Capacity Limited (ARC Ltd) weather insurance for the failed planting in some regions of The Gambia due to the prolonged dry spell during the 2022 rainy season. The payout was used to provide food assistance to 1,093 households. Additionally, WFP supported the women fish mongers with a “Cooltainer” to preserve fish and reduce losses. A cross-border study tour in Senegal was concluded by WFP Gambia and key stakeholders to learn practical examples from key stakeholders in the micro-insurance sector for a critical understanding of the policies and legal frameworks guiding the delivery of the Weather Index Insurance Mechanisms.",
+  "metadata": {
+    "id": "3958679",
+    "name": "WFP The Gambia Country Brief, March 2023",
+    "date_original": 1683158400000,
+    "date_changed": 1683217034000,
+    "date_created": 1683212851000,
+    "primary_country_id": 98,
+    "primary_country_name": "Gambia",
+    "primary_country_iso3": "gmb",
+    "primary_country_location": {
+      "lon": -15.91,
+      "lat": 13.44
+    }
+  }
+}

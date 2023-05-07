@@ -1,0 +1,139 @@
+{
+  "original": {
+    "id": "3957926",
+    "fields": {
+      "date": {
+        "changed": "2023-05-02T23:45:30+00:00",
+        "created": "2023-05-02T23:42:53+00:00",
+        "original": "2023-05-02T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/119",
+          "name": "India",
+          "location": {
+            "lon": 79.28,
+            "lat": 22.76
+          },
+          "id": 119,
+          "shortname": "India",
+          "iso3": "ind",
+          "primary": true
+        }
+      ],
+      "origin": "https://data.unicef.org/resources/ending-child-marriage-a-profile-of-progress-in-india-2023/",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/119",
+        "name": "India",
+        "location": {
+          "lon": 79.28,
+          "lat": 22.76
+        },
+        "id": 119,
+        "shortname": "India",
+        "iso3": "ind"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1979",
+          "longname": "United Nations Children's Fund",
+          "spanish_name": "Fondo de las Naciones Unidas para la Infancia",
+          "name": "UN Children's Fund",
+          "id": 1979,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNICEF",
+          "homepage": "http://www.unicef.org"
+        }
+      ],
+      "title": "Ending Child Marriage: A profile of progress in India (2023 update)",
+      "body": "India has made remarkable progress toward ending child marriage, though this country remains home to the largest number of child brides worldwide. Despite advancements on many fronts, the rate of decline is not sufficient to reach the target of eliminating the practice by 2030, as set out in the Sustainable Development Goals. \n\n**Key facts**\n\nOne in three of the world’s child brides live in India. Child brides include girls under 18 who are already married, as well as women of all ages who first married in childhood.\n\nOver half of the girls and women in India who married in childhood live in five states: Uttar Pradesh, Bihar, West Bengal, Maharashtra and Madhya Pradesh. Uttar Pradesh is home to the largest number.\n\nNearly one in four young women in India (23 per cent) were married or in union before their 18th birthday.\n\nThe prevalence of child marriage varies across states and union territories in India. At least 40 per cent of young women were married before turning 18 in West Bengal, Bihar and Tripura, compared to 1 per cent in Lakshadweep.\n\nA girl’s risk of child marriage depends on certain background characteristics. Girls who live in rural areas or come from poorer households are at greater risk, and a higher proportion of child brides are found among those with little or no education.\n\nThe majority of young women who married in childhood gave birth as adolescents.\n\nChild brides face challenges in continuing their education. Fewer than 2 in 10 married girls remain in school.\n\nThe practice of child marriage is less common today than in previous generations. Evidence shows accelerating progress over the last 15 years.\n\nIndia’s progress is strong compared to other countries in South Asia. Nonetheless, if child marriage is to be eliminated by 2030, additional efforts will be required.",
+      "url": "https://reliefweb.int/node/3957926",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/cb/e4/cbe471a0-1f5c-4e3c-aa7e-a0694aaa3794.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/cb/e4/cbe471a0-1f5c-4e3c-aa7e-a0694aaa3794.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/cb/e4/cbe471a0-1f5c-4e3c-aa7e-a0694aaa3794.png",
+            "version": "2416593-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/cb/e4/cbe471a0-1f5c-4e3c-aa7e-a0694aaa3794.png"
+          },
+          "filename": "Ending_Child_Marriage-profile_of_progress_in_India_2023.pdf",
+          "description": "Full Report",
+          "mimetype": "application/pdf",
+          "id": "2416593",
+          "filesize": "765060",
+          "url": "https://reliefweb.int/attachments/cbe471a0-1f5c-4e3c-aa7e-a0694aaa3794/Ending_Child_Marriage-profile_of_progress_in_India_2023.pdf"
+        },
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/2e/6d/2e6d9a10-14af-433f-a210-ad09e28ca210.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/2e/6d/2e6d9a10-14af-433f-a210-ad09e28ca210.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/2e/6d/2e6d9a10-14af-433f-a210-ad09e28ca210.png",
+            "version": "2416595-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/2e/6d/2e6d9a10-14af-433f-a210-ad09e28ca210.png"
+          },
+          "filename": "Ending Child Marriage_ A profile of progress in India - UNICEF DATA.pdf",
+          "description": "Press Release",
+          "mimetype": "application/pdf",
+          "id": "2416595",
+          "filesize": "2252046",
+          "url": "https://reliefweb.int/attachments/2e6d9a10-14af-433f-a210-ad09e28ca210/Ending%20Child%20Marriage_%20A%20profile%20of%20progress%20in%20India%20-%20UNICEF%20DATA.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/india/ending-child-marriage-profile-progress-india-2023-update",
+      "theme": [
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Gender",
+          "id": 4594
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        }
+      ],
+      "id": 3957926,
+      "status": "published",
+      "body-html": "<p>India has made remarkable progress toward ending child marriage, though this country remains home to the largest number of child brides worldwide. Despite advancements on many fronts, the rate of decline is not sufficient to reach the target of eliminating the practice by 2030, as set out in the Sustainable Development Goals.</p>\n<p><strong>Key facts</strong></p>\n<p>One in three of the world’s child brides live in India. Child brides include girls under 18 who are already married, as well as women of all ages who first married in childhood.</p>\n<p>Over half of the girls and women in India who married in childhood live in five states: Uttar Pradesh, Bihar, West Bengal, Maharashtra and Madhya Pradesh. Uttar Pradesh is home to the largest number.</p>\n<p>Nearly one in four young women in India (23 per cent) were married or in union before their 18th birthday.</p>\n<p>The prevalence of child marriage varies across states and union territories in India. At least 40 per cent of young women were married before turning 18 in West Bengal, Bihar and Tripura, compared to 1 per cent in Lakshadweep.</p>\n<p>A girl’s risk of child marriage depends on certain background characteristics. Girls who live in rural areas or come from poorer households are at greater risk, and a higher proportion of child brides are found among those with little or no education.</p>\n<p>The majority of young women who married in childhood gave birth as adolescents.</p>\n<p>Child brides face challenges in continuing their education. Fewer than 2 in 10 married girls remain in school.</p>\n<p>The practice of child marriage is less common today than in previous generations. Evidence shows accelerating progress over the last 15 years.</p>\n<p>India’s progress is strong compared to other countries in South Asia. Nonetheless, if child marriage is to be eliminated by 2030, additional efforts will be required.</p>\n"
+    }
+  },
+  "text": "# Ending Child Marriage: A profile of progress in India (2023 update)\n\nIndia has made remarkable progress toward ending child marriage, though this country remains home to the largest number of child brides worldwide. Despite advancements on many fronts, the rate of decline is not sufficient to reach the target of eliminating the practice by 2030, as set out in the Sustainable Development Goals. \n\n**Key facts**\n\nOne in three of the world’s child brides live in India. Child brides include girls under 18 who are already married, as well as women of all ages who first married in childhood.\n\nOver half of the girls and women in India who married in childhood live in five states: Uttar Pradesh, Bihar, West Bengal, Maharashtra and Madhya Pradesh. Uttar Pradesh is home to the largest number.\n\nNearly one in four young women in India (23 per cent) were married or in union before their 18th birthday.\n\nThe prevalence of child marriage varies across states and union territories in India. At least 40 per cent of young women were married before turning 18 in West Bengal, Bihar and Tripura, compared to 1 per cent in Lakshadweep.\n\nA girl’s risk of child marriage depends on certain background characteristics. Girls who live in rural areas or come from poorer households are at greater risk, and a higher proportion of child brides are found among those with little or no education.\n\nThe majority of young women who married in childhood gave birth as adolescents.\n\nChild brides face challenges in continuing their education. Fewer than 2 in 10 married girls remain in school.\n\nThe practice of child marriage is less common today than in previous generations. Evidence shows accelerating progress over the last 15 years.\n\nIndia’s progress is strong compared to other countries in South Asia. Nonetheless, if child marriage is to be eliminated by 2030, additional efforts will be required.",
+  "summary": " India has made progress in reducing the rate of child marriage, but it still has the highest number of child brides in the world. The prevalence of child marriage varies across states and union territories, and girls from rural areas and poorer households are more likely to be married before 18. Fewer than 2 in 10 married girls remain in school, and progress has been accelerating over the last 15 years. India is making progress compared to other countries in South Asia, but additional efforts are needed to reach the goal of eliminating child marriage by 2030.",
+  "metadata": {
+    "id": "3957926",
+    "name": "Ending Child Marriage: A profile of progress in India (2023 update)",
+    "date_original": 1682985600000,
+    "date_changed": 1683071130000,
+    "date_created": 1683070973000,
+    "primary_country_id": 119,
+    "primary_country_name": "India",
+    "primary_country_iso3": "ind",
+    "primary_country_location": {
+      "lon": 79.28,
+      "lat": 22.76
+    }
+  }
+}

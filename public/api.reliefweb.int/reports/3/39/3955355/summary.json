@@ -1,0 +1,174 @@
+{
+  "original": {
+    "id": "3955355",
+    "fields": {
+      "date": {
+        "changed": "2023-04-24T11:07:22+00:00",
+        "created": "2023-04-24T08:35:41+00:00",
+        "original": "2023-04-24T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/216",
+          "name": "Somalia",
+          "location": {
+            "lon": 47.33,
+            "lat": 5.79
+          },
+          "id": 216,
+          "shortname": "Somalia",
+          "iso3": "som",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/216",
+        "name": "Somalia",
+        "location": {
+          "lon": 47.33,
+          "lat": 5.79
+        },
+        "id": 216,
+        "shortname": "Somalia",
+        "iso3": "som"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "DR",
+          "name": "Drought",
+          "id": 4672
+        },
+        {
+          "code": "FF",
+          "name": "Flash Flood",
+          "id": 4624
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "WFP Somalia: Famine Prevention Response Situation Report (March 2023)",
+      "body": "**KEY HIGHLIGHTS**\n\nWFP reached 3.5 million people with life-saving humanitarian food assistance in March, including 3.4 million people who received cash-based transfers or in -kind support under general food assistance and another 142,000 vulnerable drought-affected people served under an expansion of the national safety net. \n\nAgainst predicted shortfalls in resource availability, WFP will prioritize and scale down humanitarian food assistance coverage starting in April. \n\nWFP reached 888,000 people with nutrition support in March, including children under five and pregnant and lactating women. Nutrition prevention coverage increased by 30 percent compared to the past month. \n\nWFP reached 27,000 people with first line assistance in Adan Yaabal, a district made newly accessible following government-led military operations. \n\n**OPERATIONAL CONTEXT**\n\nFollowing five consecutive failed rainy seasons, the ongoing drought is about to become the longest in Somalia’s history. Almost four million livestock have died, recent cereal harvests were between 32 and 75 percent below long-term averages, and the prices of key food staples continue to increase. The drought is compounded by other climate shocks, coupled with conflict and instability that exacerbate the hunger crisis.  \n\nAccording to the latest Food Security Integrated Phase Classification (IPC) assessment results released in February, 6.5 million people are projected to face Crisislevel or worse food between April and June 2023, with 223,000 people likely to face Catastrophic hunger if the next rainy season fails and humanitarian assistance cannot reach those most in need. People living in new IDP sites in Baidoa and Mogadishu and in rural settlements in Buurhakaba district are projected to face a risk of famine should rainfall be inadequate, and humanitarian assistance fail to reach those in need. 1.8 million children under five years are estimated to suffer from acute malnutrition in 2023, while 478,000 of them are likely to be facing life-threatening severe malnutrition.  \n\nClimate crisis has driven huge numbers of people from their homes, over half of the three million displacements since January 2021 was caused by the drought, and the rest largely attributable to conflict. Internally displaced people (IDPs) are some of the most vulnerable in Somalia.  \n\nEarly seasonal climate forecasts indicate a 50 percent likelihood of a potential onset of a sixth below-average rainy season from March–June 2023. This combined with high food prices and political instability may result in persistently poor household food, nutrition, and income outcomes, and continued high levels of humanitarian need across the country.",
+      "url": "https://reliefweb.int/node/3955355",
+      "disaster": [
+        {
+          "name": "Somalia: Floods - Mar 2023",
+          "id": 51530,
+          "glide": "FF-2023-000044-SOM",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            },
+            {
+              "code": "FF",
+              "name": "Flash Flood",
+              "id": 4624
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Somalia: Drought - 2015-2023",
+          "id": 23101,
+          "glide": "DR-2015-000134-SOM",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/bf/e8/bfe81de5-40b4-468e-ab9c-560a16e4d129.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/bf/e8/bfe81de5-40b4-468e-ab9c-560a16e4d129.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/bf/e8/bfe81de5-40b4-468e-ab9c-560a16e4d129.png",
+            "version": "2414235-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/bf/e8/bfe81de5-40b4-468e-ab9c-560a16e4d129.png"
+          },
+          "filename": "WFP Somalia Famine Prevention Sitrep March 2022.pdf",
+          "mimetype": "application/pdf",
+          "id": "2414235",
+          "filesize": "814933",
+          "url": "https://reliefweb.int/attachments/bfe81de5-40b4-468e-ab9c-560a16e4d129/WFP%20Somalia%20Famine%20Prevention%20Sitrep%20March%202022.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/somalia/wfp-somalia-famine-prevention-response-situation-report-march-2023",
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        }
+      ],
+      "id": 3955355,
+      "status": "published",
+      "body-html": "<p><strong>KEY HIGHLIGHTS</strong></p>\n<p>WFP reached 3.5 million people with life-saving humanitarian food assistance in March, including 3.4 million people who received cash-based transfers or in -kind support under general food assistance and another 142,000 vulnerable drought-affected people served under an expansion of the national safety net.</p>\n<p>Against predicted shortfalls in resource availability, WFP will prioritize and scale down humanitarian food assistance coverage starting in April.</p>\n<p>WFP reached 888,000 people with nutrition support in March, including children under five and pregnant and lactating women. Nutrition prevention coverage increased by 30 percent compared to the past month.</p>\n<p>WFP reached 27,000 people with first line assistance in Adan Yaabal, a district made newly accessible following government-led military operations.</p>\n<p><strong>OPERATIONAL CONTEXT</strong></p>\n<p>Following five consecutive failed rainy seasons, the ongoing drought is about to become the longest in Somalia’s history. Almost four million livestock have died, recent cereal harvests were between 32 and 75 percent below long-term averages, and the prices of key food staples continue to increase. The drought is compounded by other climate shocks, coupled with conflict and instability that exacerbate the hunger crisis.</p>\n<p>According to the latest Food Security Integrated Phase Classification (IPC) assessment results released in February, 6.5 million people are projected to face Crisislevel or worse food between April and June 2023, with 223,000 people likely to face Catastrophic hunger if the next rainy season fails and humanitarian assistance cannot reach those most in need. People living in new IDP sites in Baidoa and Mogadishu and in rural settlements in Buurhakaba district are projected to face a risk of famine should rainfall be inadequate, and humanitarian assistance fail to reach those in need. 1.8 million children under five years are estimated to suffer from acute malnutrition in 2023, while 478,000 of them are likely to be facing life-threatening severe malnutrition.</p>\n<p>Climate crisis has driven huge numbers of people from their homes, over half of the three million displacements since January 2021 was caused by the drought, and the rest largely attributable to conflict. Internally displaced people (IDPs) are some of the most vulnerable in Somalia.</p>\n<p>Early seasonal climate forecasts indicate a 50 percent likelihood of a potential onset of a sixth below-average rainy season from March–June 2023. This combined with high food prices and political instability may result in persistently poor household food, nutrition, and income outcomes, and continued high levels of humanitarian need across the country.</p>\n"
+    }
+  },
+  "text": "# WFP Somalia: Famine Prevention Response Situation Report (March 2023)\n\n**KEY HIGHLIGHTS**\n\nWFP reached 3.5 million people with life-saving humanitarian food assistance in March, including 3.4 million people who received cash-based transfers or in -kind support under general food assistance and another 142,000 vulnerable drought-affected people served under an expansion of the national safety net. \n\nAgainst predicted shortfalls in resource availability, WFP will prioritize and scale down humanitarian food assistance coverage starting in April. \n\nWFP reached 888,000 people with nutrition support in March, including children under five and pregnant and lactating women. Nutrition prevention coverage increased by 30 percent compared to the past month. \n\nWFP reached 27,000 people with first line assistance in Adan Yaabal, a district made newly accessible following government-led military operations. \n\n**OPERATIONAL CONTEXT**\n\nFollowing five consecutive failed rainy seasons, the ongoing drought is about to become the longest in Somalia’s history. Almost four million livestock have died, recent cereal harvests were between 32 and 75 percent below long-term averages, and the prices of key food staples continue to increase. The drought is compounded by other climate shocks, coupled with conflict and instability that exacerbate the hunger crisis.  \n\nAccording to the latest Food Security Integrated Phase Classification (IPC) assessment results released in February, 6.5 million people are projected to face Crisislevel or worse food between April and June 2023, with 223,000 people likely to face Catastrophic hunger if the next rainy season fails and humanitarian assistance cannot reach those most in need. People living in new IDP sites in Baidoa and Mogadishu and in rural settlements in Buurhakaba district are projected to face a risk of famine should rainfall be inadequate, and humanitarian assistance fail to reach those in need. 1.8 million children under five years are estimated to suffer from acute malnutrition in 2023, while 478,000 of them are likely to be facing life-threatening severe malnutrition.  \n\nClimate crisis has driven huge numbers of people from their homes, over half of the three million displacements since January 2021 was caused by the drought, and the rest largely attributable to conflict. Internally displaced people (IDPs) are some of the most vulnerable in Somalia.  \n\nEarly seasonal climate forecasts indicate a 50 percent likelihood of a potential onset of a sixth below-average rainy season from March–June 2023. This combined with high food prices and political instability may result in persistently poor household food, nutrition, and income outcomes, and continued high levels of humanitarian need across the country.",
+  "summary": " In March 2023, WFP provided life-saving humanitarian food assistance to 3.5 million people in Somalia, including 3.4 million people who received cash-based transfers or in-kind support and 142,000 vulnerable drought-affected people. Nutrition support was provided to 888,000 people, including children under five and pregnant and lactating women. 27,000 people were reached with first line assistance in Adan Yaabal, a district made newly accessible following government-led military operations. The ongoing drought is about to become the longest in Somalia’s history, with 6.5 million people projected to face Crisis-level or worse food insecurity between April and June 2023. 1.8 million children under five years are estimated to suffer from acute malnutrition in 2023, while 478,000 of them are likely to be facing life-threatening severe malnutrition. Early seasonal climate forecasts indicate a 50 percent likelihood of a potential onset of a sixth below-average rainy season from March–June 2023.",
+  "metadata": {
+    "id": "3955355",
+    "name": "WFP Somalia: Famine Prevention Response Situation Report (March 2023)",
+    "date_original": 1682294400000,
+    "date_changed": 1682334442000,
+    "date_created": 1682325341000,
+    "primary_country_id": 216,
+    "primary_country_name": "Somalia",
+    "primary_country_iso3": "som",
+    "primary_country_location": {
+      "lon": 47.33,
+      "lat": 5.79
+    }
+  }
+}

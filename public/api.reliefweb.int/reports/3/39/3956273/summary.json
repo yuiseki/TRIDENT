@@ -1,0 +1,202 @@
+{
+  "original": {
+    "id": "3956273",
+    "fields": {
+      "date": {
+        "changed": "2023-04-26T14:26:43+00:00",
+        "created": "2023-04-26T14:25:14+00:00",
+        "original": "2023-04-26T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/87",
+          "name": "Ethiopia",
+          "location": {
+            "lon": 39.62,
+            "lat": 8.63
+          },
+          "id": 87,
+          "shortname": "Ethiopia",
+          "iso3": "eth"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/216",
+          "name": "Somalia",
+          "location": {
+            "lon": 47.33,
+            "lat": 5.79
+          },
+          "id": 216,
+          "shortname": "Somalia",
+          "iso3": "som",
+          "primary": true
+        }
+      ],
+      "origin": "https://reporting.unhcr.org/document/4694",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/216",
+        "name": "Somalia",
+        "location": {
+          "lon": 47.33,
+          "lat": 5.79
+        },
+        "id": 216,
+        "shortname": "Somalia",
+        "iso3": "som"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "DR",
+          "name": "Drought",
+          "id": 4672
+        },
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "East and Horn of Africa, and the Great Lakes Region - External Update #2: Las Caanood Situation - Emergency Response in Somalia and Ethiopia (19 April 2023)",
+      "body": "**SOMALIA**\n\nThe general security situation in Las Caanood reportedly remains tense. According to the National Displacement and Refugee Agency (NDRA), there are 154,230 people displaced from Las Caanood town, Sool region, due to the fighting that erupted on 6 February 2023. The newly displaced persons are in 74 locations in Sool, Togdheer and Sanaag regions. No returns have been reported so far.\n\n**Operational response**\n\nSomaliland: UNHCR’s partner, Norwegian Refugee Council (NRC) has set-up two protection helpdesks in Widh-Widh and Yagori IDP sites in Sool region to identify and support serious protection incidents. At each helpdesk, there is one paralegal and two community-based paralegals/case workers who will undertake protection response and referral services. NRC also established a protection helpdesk at the 18 May IDP site in Burao. NRC has started the necessary community mobilization and engagement processes at site level.  \nIn Kalabaydh, UNHCR’s partner conducted outreach activities, visiting some 300 IDP families displaced from Adhicadeeye, Samakab, and Gumays. The new arrivals were in need of emergency shelter, WASH facilities, and protection support.",
+      "url": "https://reliefweb.int/node/3956273",
+      "disaster": [
+        {
+          "name": "Somalia: Measles Outbreak - Dec 2016",
+          "id": 38824,
+          "glide": "EP-2016-000131-SOM",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Ethiopia: Drought - 2015-2023",
+          "id": 23121,
+          "glide": "DR-2015-000109-ETH",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Somalia: Drought - 2015-2023",
+          "id": 23101,
+          "glide": "DR-2015-000134-SOM",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/49/a8/49a8b3a7-e6ac-4076-9ae6-e2a2971df08a.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/49/a8/49a8b3a7-e6ac-4076-9ae6-e2a2971df08a.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/49/a8/49a8b3a7-e6ac-4076-9ae6-e2a2971df08a.png",
+            "version": "2415015-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/49/a8/49a8b3a7-e6ac-4076-9ae6-e2a2971df08a.png"
+          },
+          "filename": "2.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415015",
+          "filesize": "350270",
+          "url": "https://reliefweb.int/attachments/49a8b3a7-e6ac-4076-9ae6-e2a2971df08a/2.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/somalia/east-and-horn-africa-and-great-lakes-region-external-update-2-las-caanood-situation-emergency-response-somalia-and-ethiopia-19-april-2023",
+      "theme": [
+        {
+          "name": "Camp Coordination and Camp Management",
+          "id": 49458
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3956273,
+      "status": "published",
+      "body-html": "<p><strong>SOMALIA</strong></p>\n<p>The general security situation in Las Caanood reportedly remains tense. According to the National Displacement and Refugee Agency (NDRA), there are 154,230 people displaced from Las Caanood town, Sool region, due to the fighting that erupted on 6 February 2023. The newly displaced persons are in 74 locations in Sool, Togdheer and Sanaag regions. No returns have been reported so far.</p>\n<p><strong>Operational response</strong></p>\n<p>Somaliland: UNHCR’s partner, Norwegian Refugee Council (NRC) has set-up two protection helpdesks in Widh-Widh and Yagori IDP sites in Sool region to identify and support serious protection incidents. At each helpdesk, there is one paralegal and two community-based paralegals/case workers who will undertake protection response and referral services. NRC also established a protection helpdesk at the 18 May IDP site in Burao. NRC has started the necessary community mobilization and engagement processes at site level.<br />\nIn Kalabaydh, UNHCR’s partner conducted outreach activities, visiting some 300 IDP families displaced from Adhicadeeye, Samakab, and Gumays. The new arrivals were in need of emergency shelter, WASH facilities, and protection support.</p>\n"
+    }
+  },
+  "text": "# East and Horn of Africa, and the Great Lakes Region - External Update #2: Las Caanood Situation - Emergency Response in Somalia and Ethiopia (19 April 2023)\n\n**SOMALIA**\n\nThe general security situation in Las Caanood reportedly remains tense. According to the National Displacement and Refugee Agency (NDRA), there are 154,230 people displaced from Las Caanood town, Sool region, due to the fighting that erupted on 6 February 2023. The newly displaced persons are in 74 locations in Sool, Togdheer and Sanaag regions. No returns have been reported so far.\n\n**Operational response**\n\nSomaliland: UNHCR’s partner, Norwegian Refugee Council (NRC) has set-up two protection helpdesks in Widh-Widh and Yagori IDP sites in Sool region to identify and support serious protection incidents. At each helpdesk, there is one paralegal and two community-based paralegals/case workers who will undertake protection response and referral services. NRC also established a protection helpdesk at the 18 May IDP site in Burao. NRC has started the necessary community mobilization and engagement processes at site level.  \nIn Kalabaydh, UNHCR’s partner conducted outreach activities, visiting some 300 IDP families displaced from Adhicadeeye, Samakab, and Gumays. The new arrivals were in need of emergency shelter, WASH facilities, and protection support.",
+  "summary": "\n\nThe security situation in Las Caanood, Somalia remains tense, with 154,230 people displaced from the town due to fighting. UNHCR and its partner, Norwegian Refugee Council (NRC), have set up protection helpdesks in Sool, Togdheer and Sanaag regions to identify and support serious protection incidents. NRC has also started community mobilization and engagement processes at site level. In Kalabaydh, UNHCR's partner has visited 300 IDP families in need of emergency shelter, WASH facilities, and protection support.",
+  "metadata": {
+    "id": "3956273",
+    "name": "East and Horn of Africa, and the Great Lakes Region - External Update #2: Las Caanood Situation - Emergency Response in Somalia and Ethiopia (19 April 2023)",
+    "date_original": 1682467200000,
+    "date_changed": 1682519203000,
+    "date_created": 1682519114000,
+    "primary_country_id": 216,
+    "primary_country_name": "Somalia",
+    "primary_country_iso3": "som",
+    "primary_country_location": {
+      "lon": 47.33,
+      "lat": 5.79
+    }
+  }
+}

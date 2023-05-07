@@ -1,0 +1,164 @@
+{
+  "original": {
+    "id": "3957827",
+    "fields": {
+      "date": {
+        "changed": "2023-05-02T17:56:14+00:00",
+        "created": "2023-05-02T16:44:33+00:00",
+        "original": "2023-05-02T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/233",
+          "name": "Tonga",
+          "location": {
+            "lon": -174.83,
+            "lat": -20.39
+          },
+          "id": 233,
+          "shortname": "Tonga",
+          "iso3": "ton",
+          "primary": true
+        }
+      ],
+      "origin": "https://www.etcluster.org/document/etc-tonga-final-situation-report18-30-april-2023",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/233",
+        "name": "Tonga",
+        "location": {
+          "lon": -174.83,
+          "lat": -20.39
+        },
+        "id": 233,
+        "shortname": "Tonga",
+        "iso3": "ton"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "TS",
+          "name": "Tsunami",
+          "id": 4687
+        },
+        {
+          "code": "VO",
+          "name": "Volcano",
+          "id": 4615
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/13799",
+          "longname": "Emergency Telecommunications Cluster",
+          "name": "Emergency Telecommunications Cluster",
+          "id": 13799,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "ETC",
+          "homepage": "https://www.etcluster.org/"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "Tonga: Hunga Tonga - Hunga Ha'apai Volcano [FINAL] ETC Situation Report #18 Reporting period: 15/01/2022 to 30/04/2023",
+      "body": "*The ETC in the Pacific was activated in 2016 under the structure of the Pacific Humanitarian Team (PHT) to support telecommunications preparedness in the region. The ETC in the Pacific supported the response to the eruption of the Hunga-Tonga-Hunga-Ha-apai (HTHH) underwater volcano and the subsequent tsunami which hit Tonga from 15 January 2022 to 4 April 2023.*\n\n**Highlights**\n\n- From 15 January 2022 to 4 April 2023, the ETC delivered telecommunications emergency response support to Tonga, following the impact of the Hunga-Tonga-Hunga-Ha’apai underwater volcano eruption and subsequent tsunami. As of 4 April 2023, the ETC has transitioned service delivery and coordination through a handover to the Tongan Ministry of Meteorology, Energy, Information, Disaster Management, Environment, Climate Change and Communications (MEIDECC) and the National Emergency Management Office (NEMO).\n\n- At the onset of the emergency, the WFP-led ETC in the Pacific and partners rapidly supported government responders with nine prepaid satellite phones to enable voice service communication. By February 2022, three portable BGAN satellite terminals for data connectivity were set up by the ETC for government responders in Nuku’alofa and Vava’u. By August 2022, the ETC, in collaboration with the Government of Luxembourg, provided data connectivity services in the Emergency Operations Centre (EOC)s on Ha’apai and Vava’u islands through two sets of emergency.lu VSAT satellite terminals. The services were operational until March 2023 when the ETC, in collaboration with the Government of Luxembourg, decommissioned the equipment.\n\n- Further, the ETC collaborated with the Government of Tonga to install HF radio systems on the islands of ‘Eua, Vava'u, and Ha’apai. Users were trained on operating the system. Following the project handover, MEIDECC will further install the system on Niuatoputapu and Niuafo’ou to connect the remote islands to the HF radio control station on the mainland. The system will serve as a critical tool for communications between responders during emergencies and non-emergency.",
+      "url": "https://reliefweb.int/node/3957827",
+      "disaster": [
+        {
+          "name": "Tonga: Volcanic Eruption and Tsunami - Jan 2022",
+          "id": 51005,
+          "glide": "VO-2022-000005-TON",
+          "type": [
+            {
+              "code": "TS",
+              "name": "Tsunami",
+              "id": 4687
+            },
+            {
+              "code": "VO",
+              "name": "Volcano",
+              "id": 4615,
+              "primary": true
+            }
+          ],
+          "status": "past"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/f5/ec/f5ecc1da-c483-4c68-a7da-d6cf703ecc57.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/f5/ec/f5ecc1da-c483-4c68-a7da-d6cf703ecc57.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/f5/ec/f5ecc1da-c483-4c68-a7da-d6cf703ecc57.png",
+            "version": "2416475-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/f5/ec/f5ecc1da-c483-4c68-a7da-d6cf703ecc57.png"
+          },
+          "filename": "ETC Tonga SitRep FINAL 30_April 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2416475",
+          "filesize": "166207",
+          "url": "https://reliefweb.int/attachments/f5ecc1da-c483-4c68-a7da-d6cf703ecc57/ETC%20Tonga%20SitRep%20FINAL%2030_April%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/tonga/tonga-hunga-tonga-hunga-haapai-volcano-final-etc-situation-report-18-reporting-period-15012022-30042023",
+      "theme": [
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        },
+        {
+          "name": "Recovery and Reconstruction",
+          "id": 4601
+        }
+      ],
+      "id": 3957827,
+      "status": "published",
+      "body-html": "<p><em>The ETC in the Pacific was activated in 2016 under the structure of the Pacific Humanitarian Team (PHT) to support telecommunications preparedness in the region. The ETC in the Pacific supported the response to the eruption of the Hunga-Tonga-Hunga-Ha-apai (HTHH) underwater volcano and the subsequent tsunami which hit Tonga from 15 January 2022 to 4 April 2023.</em></p>\n<p><strong>Highlights</strong></p>\n<ul>\n<li>\n<p>From 15 January 2022 to 4 April 2023, the ETC delivered telecommunications emergency response support to Tonga, following the impact of the Hunga-Tonga-Hunga-Ha’apai underwater volcano eruption and subsequent tsunami. As of 4 April 2023, the ETC has transitioned service delivery and coordination through a handover to the Tongan Ministry of Meteorology, Energy, Information, Disaster Management, Environment, Climate Change and Communications (MEIDECC) and the National Emergency Management Office (NEMO).</p>\n</li>\n<li>\n<p>At the onset of the emergency, the WFP-led ETC in the Pacific and partners rapidly supported government responders with nine prepaid satellite phones to enable voice service communication. By February 2022, three portable BGAN satellite terminals for data connectivity were set up by the ETC for government responders in Nuku’alofa and Vava’u. By August 2022, the ETC, in collaboration with the Government of Luxembourg, provided data connectivity services in the Emergency Operations Centre (EOC)s on Ha’apai and Vava’u islands through two sets of emergency.lu VSAT satellite terminals. The services were operational until March 2023 when the ETC, in collaboration with the Government of Luxembourg, decommissioned the equipment.</p>\n</li>\n<li>\n<p>Further, the ETC collaborated with the Government of Tonga to install HF radio systems on the islands of ‘Eua, Vava'u, and Ha’apai. Users were trained on operating the system. Following the project handover, MEIDECC will further install the system on Niuatoputapu and Niuafo’ou to connect the remote islands to the HF radio control station on the mainland. The system will serve as a critical tool for communications between responders during emergencies and non-emergency.</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# Tonga: Hunga Tonga - Hunga Ha'apai Volcano [FINAL] ETC Situation Report #18 Reporting period: 15/01/2022 to 30/04/2023\n\n*The ETC in the Pacific was activated in 2016 under the structure of the Pacific Humanitarian Team (PHT) to support telecommunications preparedness in the region. The ETC in the Pacific supported the response to the eruption of the Hunga-Tonga-Hunga-Ha-apai (HTHH) underwater volcano and the subsequent tsunami which hit Tonga from 15 January 2022 to 4 April 2023.*\n\n**Highlights**\n\n- From 15 January 2022 to 4 April 2023, the ETC delivered telecommunications emergency response support to Tonga, following the impact of the Hunga-Tonga-Hunga-Ha’apai underwater volcano eruption and subsequent tsunami. As of 4 April 2023, the ETC has transitioned service delivery and coordination through a handover to the Tongan Ministry of Meteorology, Energy, Information, Disaster Management, Environment, Climate Change and Communications (MEIDECC) and the National Emergency Management Office (NEMO).\n\n- At the onset of the emergency, the WFP-led ETC in the Pacific and partners rapidly supported government responders with nine prepaid satellite phones to enable voice service communication. By February 2022, three portable BGAN satellite terminals for data connectivity were set up by the ETC for government responders in Nuku’alofa and Vava’u. By August 2022, the ETC, in collaboration with the Government of Luxembourg, provided data connectivity services in the Emergency Operations Centre (EOC)s on Ha’apai and Vava’u islands through two sets of emergency.lu VSAT satellite terminals. The services were operational until March 2023 when the ETC, in collaboration with the Government of Luxembourg, decommissioned the equipment.\n\n- Further, the ETC collaborated with the Government of Tonga to install HF radio systems on the islands of ‘Eua, Vava'u, and Ha’apai. Users were trained on operating the system. Following the project handover, MEIDECC will further install the system on Niuatoputapu and Niuafo’ou to connect the remote islands to the HF radio control station on the mainland. The system will serve as a critical tool for communications between responders during emergencies and non-emergency.",
+  "summary": " The ETC in the Pacific was activated in 2016 to support telecommunications preparedness in the region. From 15 January 2022 to 4 April 2023, the ETC provided emergency response support to Tonga following the eruption of the Hunga-Tonga-Hunga-Ha’apai underwater volcano and subsequent tsunami. This included providing nine prepaid satellite phones, three portable BGAN satellite terminals, and two sets of emergency.lu VSAT satellite terminals. The ETC also collaborated with the Government of Tonga to install HF radio systems on the islands of ‘Eua, Vava'u, and Ha’apai. As of 4 April 2023, the ETC has transitioned service delivery and coordination through a handover to the Tongan Ministry of Meteorology, Energy, Information, Disaster Management, Environment, Climate Change and Communications (MEIDECC) and the National Emergency Management Office (NEMO).",
+  "metadata": {
+    "id": "3957827",
+    "name": "Tonga: Hunga Tonga - Hunga Ha'apai Volcano [FINAL] ETC Situation Report #18 Reporting period: 15/01/2022 to 30/04/2023",
+    "date_original": 1682985600000,
+    "date_changed": 1683050174000,
+    "date_created": 1683045873000,
+    "primary_country_id": 233,
+    "primary_country_name": "Tonga",
+    "primary_country_iso3": "ton",
+    "primary_country_location": {
+      "lon": -174.83,
+      "lat": -20.39
+    }
+  }
+}

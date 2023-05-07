@@ -1,0 +1,144 @@
+{
+  "original": {
+    "id": "3955215",
+    "fields": {
+      "date": {
+        "changed": "2023-04-23T07:07:46+00:00",
+        "created": "2023-04-23T03:25:26+00:00",
+        "original": "2023-04-18T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/31",
+          "name": "Bangladesh",
+          "location": {
+            "lon": 90.27,
+            "lat": 23.84
+          },
+          "id": 31,
+          "shortname": "Bangladesh",
+          "iso3": "bgd",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/119",
+          "name": "India",
+          "location": {
+            "lon": 79.28,
+            "lat": 22.76
+          },
+          "id": 119,
+          "shortname": "India",
+          "iso3": "ind"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/168",
+          "name": "Nepal",
+          "location": {
+            "lon": 83.94,
+            "lat": 28.25
+          },
+          "id": 168,
+          "shortname": "Nepal",
+          "iso3": "npl"
+        }
+      ],
+      "origin": "https://asiapacific.unfpa.org/en/publications/digital-ecosystem-analysis-child-marriage-south-asia",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/31",
+        "name": "Bangladesh",
+        "location": {
+          "lon": 90.27,
+          "lat": 23.84
+        },
+        "id": 31,
+        "shortname": "Bangladesh",
+        "iso3": "bgd"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1070",
+          "longname": "United Nations Population Fund",
+          "spanish_name": "Fondo de Población de las Naciones Unidas",
+          "name": "United Nations Population Fund",
+          "id": 1070,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNFPA",
+          "homepage": "http://www.unfpa.org"
+        }
+      ],
+      "title": "Policy Brief: South Asia - Digital Ecosystem Analysis on Child Marriage in Bangladesh, India and Nepal",
+      "body": "**INTRODUCTION**\n\nThe South Asian region has made great strides in reducing instances of child marriage – where a girl’s risk of marrying in childhood has dropped by more than a third, from nearly 50 per cent to 30 per cent. However, there is more to be done to eradicate the harmful practice.\n\nInstances of child marriages across Bangladesh, India and Nepal are rooted in gender inequality and sustained by cultural and social norms, poverty and lack of opportunities. Further, natural disasters and social and political conflicts also contribute to high rates of child marriage. Humanitarian crises such as the COVID-19 pandemic have amplified the issue. It has led to increased sexual violence, the breakdown in the rule of law, disruption of social structures and internal and international displacement, all of which have led to child marriages in different contexts.\n\nGovernments, civil society organizations (CSOs) and non-profit organizations across all three countries have been working proactively to curb the issue of child marriage. The primary focus has been on empowering adolescent children through skill development and dialogue, enhancing the quality of and accessibility to education, health care and protection, fostering an enabling legal and policy framework, offering economic support to disadvantaged children and their families, and mobilizing parents and community members. Additionally, the South Asia Initiative to End Violence Against Children (SAIEVAC) was adopted by all three countries as a plan of action to end child marriages across the region. Finally, UNFPA and UNICEF have collaborated on a multi-country programme to end child marriage by involving families, educators, health providers, governments and religious and traditional leaders as part of the global effort to end child marriage by 2030.\n\nIn the past few years, the South Asian region has seen a sustained increase in information and communications technology (ICT) infrastructure and access to digital technologies and their usage. In 2021, Internet penetration in India, Nepal and Bangladesh stood at 45 per cent, 36.7 per cent and 29 per cent, respectively. Therefore, mobile Internet can potentially serve as a reliable tool to raise awareness and compel individuals and organizations across different strata of society to take action against child marriage. Community outreach activities in these countries can be adapted to digital channels – practitioners in this area leverage social media platforms such as Twitter and Instagram to facilitate communication.\n\nRecently, socially relevant issues have gained traction on social media platforms, including child marriage. Therefore, it becomes imperative to tap into the online space to understand perceptions existing within the community. This understanding can drive culturally informed initiatives by governments, non-profit organizations and individuals. Quilt.AI, in partnership with the UNFPA Asia Pacific Regional Office, combines digital research and artificial intelligence to build an effective communication and advocacy strategy against harmful practices such as child marriage and Gender-Biased Sex Selection (GBSS) in Asia. This report examines online narratives related to child marriage in Bangladesh, India and Nepal.",
+      "url": "https://reliefweb.int/node/3955215",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/ad/0e/ad0e756c-67fe-4059-bff2-06ed5208cb49.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/ad/0e/ad0e756c-67fe-4059-bff2-06ed5208cb49.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/ad/0e/ad0e756c-67fe-4059-bff2-06ed5208cb49.png",
+            "version": "2414123-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/ad/0e/ad0e756c-67fe-4059-bff2-06ed5208cb49.png"
+          },
+          "filename": "child_marriage_policy_brief_south_asia_1.pdf",
+          "mimetype": "application/pdf",
+          "id": "2414123",
+          "filesize": "5505077",
+          "url": "https://reliefweb.int/attachments/ad0e756c-67fe-4059-bff2-06ed5208cb49/child_marriage_policy_brief_south_asia_1.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/bangladesh/policy-brief-south-asia-digital-ecosystem-analysis-child-marriage-bangladesh-india-and-nepal",
+      "theme": [
+        {
+          "name": "Gender",
+          "id": 4594
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        }
+      ],
+      "id": 3955215,
+      "status": "published",
+      "body-html": "<p><strong>INTRODUCTION</strong></p>\n<p>The South Asian region has made great strides in reducing instances of child marriage – where a girl’s risk of marrying in childhood has dropped by more than a third, from nearly 50 per cent to 30 per cent. However, there is more to be done to eradicate the harmful practice.</p>\n<p>Instances of child marriages across Bangladesh, India and Nepal are rooted in gender inequality and sustained by cultural and social norms, poverty and lack of opportunities. Further, natural disasters and social and political conflicts also contribute to high rates of child marriage. Humanitarian crises such as the COVID-19 pandemic have amplified the issue. It has led to increased sexual violence, the breakdown in the rule of law, disruption of social structures and internal and international displacement, all of which have led to child marriages in different contexts.</p>\n<p>Governments, civil society organizations (CSOs) and non-profit organizations across all three countries have been working proactively to curb the issue of child marriage. The primary focus has been on empowering adolescent children through skill development and dialogue, enhancing the quality of and accessibility to education, health care and protection, fostering an enabling legal and policy framework, offering economic support to disadvantaged children and their families, and mobilizing parents and community members. Additionally, the South Asia Initiative to End Violence Against Children (SAIEVAC) was adopted by all three countries as a plan of action to end child marriages across the region. Finally, UNFPA and UNICEF have collaborated on a multi-country programme to end child marriage by involving families, educators, health providers, governments and religious and traditional leaders as part of the global effort to end child marriage by 2030.</p>\n<p>In the past few years, the South Asian region has seen a sustained increase in information and communications technology (ICT) infrastructure and access to digital technologies and their usage. In 2021, Internet penetration in India, Nepal and Bangladesh stood at 45 per cent, 36.7 per cent and 29 per cent, respectively. Therefore, mobile Internet can potentially serve as a reliable tool to raise awareness and compel individuals and organizations across different strata of society to take action against child marriage. Community outreach activities in these countries can be adapted to digital channels – practitioners in this area leverage social media platforms such as Twitter and Instagram to facilitate communication.</p>\n<p>Recently, socially relevant issues have gained traction on social media platforms, including child marriage. Therefore, it becomes imperative to tap into the online space to understand perceptions existing within the community. This understanding can drive culturally informed initiatives by governments, non-profit organizations and individuals. Quilt.AI, in partnership with the UNFPA Asia Pacific Regional Office, combines digital research and artificial intelligence to build an effective communication and advocacy strategy against harmful practices such as child marriage and Gender-Biased Sex Selection (GBSS) in Asia. This report examines online narratives related to child marriage in Bangladesh, India and Nepal.</p>\n"
+    }
+  },
+  "text": "# Policy Brief: South Asia - Digital Ecosystem Analysis on Child Marriage in Bangladesh, India and Nepal\n\n**INTRODUCTION**\n\nThe South Asian region has made great strides in reducing instances of child marriage – where a girl’s risk of marrying in childhood has dropped by more than a third, from nearly 50 per cent to 30 per cent. However, there is more to be done to eradicate the harmful practice.\n\nInstances of child marriages across Bangladesh, India and Nepal are rooted in gender inequality and sustained by cultural and social norms, poverty and lack of opportunities. Further, natural disasters and social and political conflicts also contribute to high rates of child marriage. Humanitarian crises such as the COVID-19 pandemic have amplified the issue. It has led to increased sexual violence, the breakdown in the rule of law, disruption of social structures and internal and international displacement, all of which have led to child marriages in different contexts.\n\nGovernments, civil society organizations (CSOs) and non-profit organizations across all three countries have been working proactively to curb the issue of child marriage. The primary focus has been on empowering adolescent children through skill development and dialogue, enhancing the quality of and accessibility to education, health care and protection, fostering an enabling legal and policy framework, offering economic support to disadvantaged children and their families, and mobilizing parents and community members. Additionally, the South Asia Initiative to End Violence Against Children (SAIEVAC) was adopted by all three countries as a plan of action to end child marriages across the region. Finally, UNFPA and UNICEF have collaborated on a multi-country programme to end child marriage by involving families, educators, health providers, governments and religious and traditional leaders as part of the global effort to end child marriage by 2030.\n\nIn the past few years, the South Asian region has seen a sustained increase in information and communications technology (ICT) infrastructure and access to digital technologies and their usage. In 2021, Internet penetration in India, Nepal and Bangladesh stood at 45 per cent, 36.7 per cent and 29 per cent, respectively. Therefore, mobile Internet can potentially serve as a reliable tool to raise awareness and compel individuals and organizations across different strata of society to take action against child marriage. Community outreach activities in these countries can be adapted to digital channels – practitioners in this area leverage social media platforms such as Twitter and Instagram to facilitate communication.\n\nRecently, socially relevant issues have gained traction on social media platforms, including child marriage. Therefore, it becomes imperative to tap into the online space to understand perceptions existing within the community. This understanding can drive culturally informed initiatives by governments, non-profit organizations and individuals. Quilt.AI, in partnership with the UNFPA Asia Pacific Regional Office, combines digital research and artificial intelligence to build an effective communication and advocacy strategy against harmful practices such as child marriage and Gender-Biased Sex Selection (GBSS) in Asia. This report examines online narratives related to child marriage in Bangladesh, India and Nepal.",
+  "summary": "\n\nThis policy brief examines the issue of child marriage in Bangladesh, India and Nepal, which is rooted in gender inequality and sustained by cultural and social norms, poverty and lack of opportunities. Governments, civil society organizations and non-profit organizations have been working to curb the issue, and the South Asia Initiative to End Violence Against Children (SAIEVAC) was adopted by all three countries as a plan of action. Additionally, the use of digital technologies and social media platforms has been leveraged to raise awareness and compel individuals and organizations to take action. Quilt.AI has partnered with the UNFPA Asia Pacific Regional Office to build an effective communication and advocacy strategy against child marriage and Gender-Biased Sex Selection (GBSS) in Asia.",
+  "metadata": {
+    "id": "3955215",
+    "name": "Policy Brief: South Asia - Digital Ecosystem Analysis on Child Marriage in Bangladesh, India and Nepal",
+    "date_original": 1681776000000,
+    "date_changed": 1682233666000,
+    "date_created": 1682220326000,
+    "primary_country_id": 31,
+    "primary_country_name": "Bangladesh",
+    "primary_country_iso3": "bgd",
+    "primary_country_location": {
+      "lon": 90.27,
+      "lat": 23.84
+    }
+  }
+}

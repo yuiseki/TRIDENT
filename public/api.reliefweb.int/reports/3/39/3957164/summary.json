@@ -1,0 +1,167 @@
+{
+  "original": {
+    "id": "3957164",
+    "fields": {
+      "date": {
+        "changed": "2023-04-29T07:12:22+00:00",
+        "created": "2023-04-29T01:06:21+00:00",
+        "original": "2023-04-29T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/249",
+          "name": "Vanuatu",
+          "location": {
+            "lon": 167.72,
+            "lat": -16.26
+          },
+          "id": 249,
+          "shortname": "Vanuatu",
+          "iso3": "vut",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/249",
+        "name": "Vanuatu",
+        "location": {
+          "lon": 167.72,
+          "lat": -16.26
+        },
+        "id": 249,
+        "shortname": "Vanuatu",
+        "iso3": "vut"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "TC",
+          "name": "Tropical Cyclone",
+          "id": 4618
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1979",
+          "longname": "United Nations Children's Fund",
+          "spanish_name": "Fondo de las Naciones Unidas para la Infancia",
+          "name": "UN Children's Fund",
+          "id": 1979,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNICEF",
+          "homepage": "http://www.unicef.org"
+        }
+      ],
+      "title": "UNICEF Vanuatu Humanitarian Situation Report No. 6 (Tropical Cyclones) - 28 March - 25 April 2023",
+      "body": "**Highlights** \n\n• Vanuatu experienced two cyclones in March 2023, causing significant damage to infrastructure and affecting almost half of the population. The provinces of Shefa and Tafea were hit the hardest, with the cyclones categorized as 4.\n\n• UNICEF has provided critical supplies to at least 9,000 people in the most affected areas during this emergency, which is a significant relief for the impacted population.\n\n• The government of Vanuatu launched an early recovery plan on April 14th, with a budget of USD 28,000,000.  \nThis plan aims to address the immediate and mid-term recovery needs of the affected population.\n\n• A Post Disaster Needs Assessment (PDNA) is ongoing; UNICEF is actively assisting in relevant technical domains to support the PDNA, including on Early Childhood Development (ECD) \n\n**UNICEF Response**\n\nUNICEF is providing assistance to the Government of Vanuatu in coordinating, assessing, and responding to the impacts of the cyclones across various crucial sectors, including WASH, Health, Nutrition, Education, Protection and Social Policy . The organization has deployed additional staff to provide support and is also delivering critical supplies to affected areas. \n\n*WASH* \n\n• UNICEF supported the distributions of 1,649 hygiene kits, benefiting an estimate 8,683 people in collaboration with Vanuatu Red Cross Society (VRCS), ADRA, and World Vision. An additional 1,738 kits have already been made available to these partners and are being distributed.\n\n• UNICEF is supporting the Department of Water Resources (DoWR) in implementing technical assessments, quick fixes and distributing water to households in the most affected provinces of Tafea and Shefa. The teams were successful in restoring services, such as in East Tanna, whereby the DoWR led the community mobilization to restore the piped water systems.\n\n• Local NGO partners, with UNICEF’s support, are undertaking technical assessment on the affected systems and services, which will support the quick fixes and early recovery of services.\n\n• The assessment date is further being used in the PDNA to establish the damage and losses and the development of the recovery plan. UNICEF is supporting this process with technical assistance. \n\n*HEALTH AND NUTRITION*\n\n• The Maternal and Child Health clinic in Vanuatu has been operating since 17th March in a tented space and has served 1200 children with immunization, Nutrition monitoring and counselling and micronutrient supplementation. \n\n• The second team of Vanuatu Family Health Association reached the outer islands of Tafea province namely Aneityum, Erromango, Aniwa, and Futuna Islands and served 402 children with Measles catch up immunization, MUAC screening, Vitamin A and albendazole distribution.\n\n• 2,019 women received Sexual and Reproductive Health and Research (SRH) services from the outreaches in Tafea province.\n\n• Nutrition orientation training was held at the VCH for 25 nurses and interns working at Vila Central Hospital to provide nutrition services to children attending both inpatient and outpatient wards. Essential nutrition supplies have been handed over.\n\n• UNICEF provided technical assistance for Tanna Island measles catch-up campaign in the week of 17th April and currently a measles catch-up campaign is ongoing.\n\n• UNICEF will support MoH and other partners in implementation nutrition response plan. Other partners like World Vision are local producing supplementary food (similar to high energy biscuit) to be distributed to moderately malnourished children, pregnant women and breastfeeding women.\n\n• UNICEF is working together with Vanuatu's Ministry of Health to lead the nutrition sub-cluster within the National Health Emergency Operation Centre (NHEOC). A response plan was developed, including coordination activities with Food Security Cluster. \n\n*EDUCATION*\n\n• All schools, including Early Childhood Care and Education Centres (ECCE), Primary, Secondary and Post-School Education and Training Institutions (PSET), have reopened in Vanuatu.\n\n• UNICEF distributed 123 temporary learning spaces, 43 school-in-a-box, 12 Early Childhood Development (ECD) kits, and school bags containing basic supplies for 1,828 students.\n\n• UNICEF continues to support the Education Cluster on the shipment and distribution of school supplies in Tafea province, while post-monitoring of distributed supplies in Shefa is being conducted by UNICEF and The Ministry of Education and Training (MoET). \n\n*CHILD PROTECTION*\n\n• As of 25 April, a total of 2,022 affected children, women and families were reached with psychosocial support and integrated Child Protection in Emergencies (CPiE) (1,375 were children under 18 years).\n\n• UNICEF Supported the Ministry of Youth Development Sports (MoYDS) and the Department of Civil Registration and Identity Management (CRIM) to carry out a training with 22 youth volunteers (including 6 females) on CPiE, Child Friendly Spaces (CFS), Protection and Psycho-Social Support (PSS), Protection from Sexual Exploitation and Abuse (PSEA) and key CPiE integrated messages. Around 35 youth volunteers were trained on PSEA.\n\n• UNICEF supported PSEA messaging in cyclone-affected areas, including 1,137 women and girls and 885 men and boys.\n\n• 5,882 people were registered between 3-25 April, including 21 persons with disabilities. Of these, 3,007 women and girls were registered, making up 51% of total registrations. At least 53% of the registrations were children under 18 (n=3,116), with 50% being girls. Approximately 10% were new birth certificates, 30% new NIDs, and 10% replacements due to cyclone damage.\n\n• The UNICEF Warehouse released 66 recreational kits, three 72sqm tents, ten 42sqm tents, and 35 tarpaulins (4x50 m), to MoYDS and Department of CRIM to support set up of CFS, PSS and BR activities.\n\n• Technical support was provided child protection input into the human impact analysis and recovery plan on the PDNA.\n\n*SOCIAL PROTECTION:*\n\n• UNICEF is supporting the Government of Vanuatu with roll out of Humanitarian Cash Transfers (HCT) in collaboration with other civil society organization. Government funded HCT is expected to benefit 66,000 households across the country. The piloting of digital platform to implement HCT was conducted on 25 April 2023, in Lelepa offshore island.",
+      "url": "https://reliefweb.int/node/3957164",
+      "disaster": [
+        {
+          "name": "Tropical Cyclone Kevin - Mar 2023",
+          "id": 51506,
+          "glide": "TC-2023-000030-VUT",
+          "type": [
+            {
+              "code": "TC",
+              "name": "Tropical Cyclone",
+              "id": 4618,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Tropical Cyclone Judy - Feb 2023",
+          "id": 51504,
+          "glide": "EC-2023-000028-VUT",
+          "type": [
+            {
+              "code": "TC",
+              "name": "Tropical Cyclone",
+              "id": 4618,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/89/8b/898b7e2a-1bc3-4300-9c1e-2146912a7175.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/89/8b/898b7e2a-1bc3-4300-9c1e-2146912a7175.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/89/8b/898b7e2a-1bc3-4300-9c1e-2146912a7175.png",
+            "version": "2415781-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/89/8b/898b7e2a-1bc3-4300-9c1e-2146912a7175.png"
+          },
+          "filename": "UNICEF Vanuatu Humanitarian Situation Report No. 6 (Tropical Cyclones JUDY and KEVIN) - 28 March - 25 April 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415781",
+          "filesize": "406925",
+          "url": "https://reliefweb.int/attachments/898b7e2a-1bc3-4300-9c1e-2146912a7175/UNICEF%20Vanuatu%20Humanitarian%20Situation%20Report%20No.%206%20%28Tropical%20Cyclones%20JUDY%20and%20KEVIN%29%20-%2028%20March%20-%2025%20April%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/vanuatu/unicef-vanuatu-humanitarian-situation-report-no-6-tropical-cyclones-28-march-25-april-2023",
+      "theme": [
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3957164,
+      "status": "published",
+      "body-html": "<p><strong>Highlights</strong></p>\n<p>• Vanuatu experienced two cyclones in March 2023, causing significant damage to infrastructure and affecting almost half of the population. The provinces of Shefa and Tafea were hit the hardest, with the cyclones categorized as 4.</p>\n<p>• UNICEF has provided critical supplies to at least 9,000 people in the most affected areas during this emergency, which is a significant relief for the impacted population.</p>\n<p>• The government of Vanuatu launched an early recovery plan on April 14th, with a budget of USD 28,000,000.<br />\nThis plan aims to address the immediate and mid-term recovery needs of the affected population.</p>\n<p>• A Post Disaster Needs Assessment (PDNA) is ongoing; UNICEF is actively assisting in relevant technical domains to support the PDNA, including on Early Childhood Development (ECD)</p>\n<p><strong>UNICEF Response</strong></p>\n<p>UNICEF is providing assistance to the Government of Vanuatu in coordinating, assessing, and responding to the impacts of the cyclones across various crucial sectors, including WASH, Health, Nutrition, Education, Protection and Social Policy . The organization has deployed additional staff to provide support and is also delivering critical supplies to affected areas.</p>\n<p><em>WASH</em></p>\n<p>• UNICEF supported the distributions of 1,649 hygiene kits, benefiting an estimate 8,683 people in collaboration with Vanuatu Red Cross Society (VRCS), ADRA, and World Vision. An additional 1,738 kits have already been made available to these partners and are being distributed.</p>\n<p>• UNICEF is supporting the Department of Water Resources (DoWR) in implementing technical assessments, quick fixes and distributing water to households in the most affected provinces of Tafea and Shefa. The teams were successful in restoring services, such as in East Tanna, whereby the DoWR led the community mobilization to restore the piped water systems.</p>\n<p>• Local NGO partners, with UNICEF’s support, are undertaking technical assessment on the affected systems and services, which will support the quick fixes and early recovery of services.</p>\n<p>• The assessment date is further being used in the PDNA to establish the damage and losses and the development of the recovery plan. UNICEF is supporting this process with technical assistance.</p>\n<p><em>HEALTH AND NUTRITION</em></p>\n<p>• The Maternal and Child Health clinic in Vanuatu has been operating since 17th March in a tented space and has served 1200 children with immunization, Nutrition monitoring and counselling and micronutrient supplementation.</p>\n<p>• The second team of Vanuatu Family Health Association reached the outer islands of Tafea province namely Aneityum, Erromango, Aniwa, and Futuna Islands and served 402 children with Measles catch up immunization, MUAC screening, Vitamin A and albendazole distribution.</p>\n<p>• 2,019 women received Sexual and Reproductive Health and Research (SRH) services from the outreaches in Tafea province.</p>\n<p>• Nutrition orientation training was held at the VCH for 25 nurses and interns working at Vila Central Hospital to provide nutrition services to children attending both inpatient and outpatient wards. Essential nutrition supplies have been handed over.</p>\n<p>• UNICEF provided technical assistance for Tanna Island measles catch-up campaign in the week of 17th April and currently a measles catch-up campaign is ongoing.</p>\n<p>• UNICEF will support MoH and other partners in implementation nutrition response plan. Other partners like World Vision are local producing supplementary food (similar to high energy biscuit) to be distributed to moderately malnourished children, pregnant women and breastfeeding women.</p>\n<p>• UNICEF is working together with Vanuatu's Ministry of Health to lead the nutrition sub-cluster within the National Health Emergency Operation Centre (NHEOC). A response plan was developed, including coordination activities with Food Security Cluster.</p>\n<p><em>EDUCATION</em></p>\n<p>• All schools, including Early Childhood Care and Education Centres (ECCE), Primary, Secondary and Post-School Education and Training Institutions (PSET), have reopened in Vanuatu.</p>\n<p>• UNICEF distributed 123 temporary learning spaces, 43 school-in-a-box, 12 Early Childhood Development (ECD) kits, and school bags containing basic supplies for 1,828 students.</p>\n<p>• UNICEF continues to support the Education Cluster on the shipment and distribution of school supplies in Tafea province, while post-monitoring of distributed supplies in Shefa is being conducted by UNICEF and The Ministry of Education and Training (MoET).</p>\n<p><em>CHILD PROTECTION</em></p>\n<p>• As of 25 April, a total of 2,022 affected children, women and families were reached with psychosocial support and integrated Child Protection in Emergencies (CPiE) (1,375 were children under 18 years).</p>\n<p>• UNICEF Supported the Ministry of Youth Development Sports (MoYDS) and the Department of Civil Registration and Identity Management (CRIM) to carry out a training with 22 youth volunteers (including 6 females) on CPiE, Child Friendly Spaces (CFS), Protection and Psycho-Social Support (PSS), Protection from Sexual Exploitation and Abuse (PSEA) and key CPiE integrated messages. Around 35 youth volunteers were trained on PSEA.</p>\n<p>• UNICEF supported PSEA messaging in cyclone-affected areas, including 1,137 women and girls and 885 men and boys.</p>\n<p>• 5,882 people were registered between 3-25 April, including 21 persons with disabilities. Of these, 3,007 women and girls were registered, making up 51% of total registrations. At least 53% of the registrations were children under 18 (n=3,116), with 50% being girls. Approximately 10% were new birth certificates, 30% new NIDs, and 10% replacements due to cyclone damage.</p>\n<p>• The UNICEF Warehouse released 66 recreational kits, three 72sqm tents, ten 42sqm tents, and 35 tarpaulins (4x50 m), to MoYDS and Department of CRIM to support set up of CFS, PSS and BR activities.</p>\n<p>• Technical support was provided child protection input into the human impact analysis and recovery plan on the PDNA.</p>\n<p><em>SOCIAL PROTECTION:</em></p>\n<p>• UNICEF is supporting the Government of Vanuatu with roll out of Humanitarian Cash Transfers (HCT) in collaboration with other civil society organization. Government funded HCT is expected to benefit 66,000 households across the country. The piloting of digital platform to implement HCT was conducted on 25 April 2023, in Lelepa offshore island.</p>\n"
+    }
+  },
+  "text": "# UNICEF Vanuatu Humanitarian Situation Report No. 6 (Tropical Cyclones) - 28 March - 25 April 2023\n\n**Highlights** \n\n• Vanuatu experienced two cyclones in March 2023, causing significant damage to infrastructure and affecting almost half of the population. The provinces of Shefa and Tafea were hit the hardest, with the cyclones categorized as 4.\n\n• UNICEF has provided critical supplies to at least 9,000 people in the most affected areas during this emergency, which is a significant relief for the impacted population.\n\n• The government of Vanuatu launched an early recovery plan on April 14th, with a budget of USD 28,000,000.  \nThis plan aims to address the immediate and mid-term recovery needs of the affected population.\n\n• A Post Disaster Needs Assessment (PDNA) is ongoing; UNICEF is actively assisting in relevant technical domains to support the PDNA, including on Early Childhood Development (ECD) \n\n**UNICEF Response**\n\nUNICEF is providing assistance to the Government of Vanuatu in coordinating, assessing, and responding to the impacts of the cyclones across various crucial sectors, including WASH, Health, Nutrition, Education, Protection and Social Policy . The organization has deployed additional staff to provide support and is also delivering critical supplies to affected areas. \n\n*WASH* \n\n• UNICEF supported the distributions of 1,649 hygiene kits, benefiting an estimate 8,683 people in collaboration with Vanuatu Red Cross Society (VRCS), ADRA, and World Vision. An additional 1,738 kits have already been made available to these partners and are being distributed.\n\n• UNICEF is supporting the Department of Water Resources (DoWR) in implementing technical assessments, quick fixes and distributing water to households in the most affected provinces of Tafea and Shefa. The teams were successful in restoring services, such as in East Tanna, whereby the DoWR led the community mobilization to restore the piped water systems.\n\n• Local NGO partners, with UNICEF’s support, are undertaking technical assessment on the affected systems and services, which will support the quick fixes and early recovery of services.\n\n• The assessment date is further being used in the PDNA to establish the damage and losses and the development of the recovery plan. UNICEF is supporting this process with technical assistance. \n\n*HEALTH AND NUTRITION*\n\n• The Maternal and Child Health clinic in Vanuatu has been operating since 17th March in a tented space and has served 1200 children with immunization, Nutrition monitoring and counselling and micronutrient supplementation. \n\n• The second team of Vanuatu Family Health Association reached the outer islands of Tafea province namely Aneityum, Erromango, Aniwa, and Futuna Islands and served 402 children with Measles catch up immunization, MUAC screening, Vitamin A and albendazole distribution.\n\n• 2,019 women received Sexual and Reproductive Health and Research (SRH) services from the outreaches in Tafea province.\n\n• Nutrition orientation training was held at the VCH for 25 nurses and interns working at Vila Central Hospital to provide nutrition services to children attending both inpatient and outpatient wards. Essential nutrition supplies have been handed over.\n\n• UNICEF provided technical assistance for Tanna Island measles catch-up campaign in the week of 17th April and currently a measles catch-up campaign is ongoing.\n\n• UNICEF will support MoH and other partners in implementation nutrition response plan. Other partners like World Vision are local producing supplementary food (similar to high energy biscuit) to be distributed to moderately malnourished children, pregnant women and breastfeeding women.\n\n• UNICEF is working together with Vanuatu's Ministry of Health to lead the nutrition sub-cluster within the National Health Emergency Operation Centre (NHEOC). A response plan was developed, including coordination activities with Food Security Cluster. \n\n*EDUCATION*\n\n• All schools, including Early Childhood Care and Education Centres (ECCE), Primary, Secondary and Post-School Education and Training Institutions (PSET), have reopened in Vanuatu.\n\n• UNICEF distributed 123 temporary learning spaces, 43 school-in-a-box, 12 Early Childhood Development (ECD) kits, and school bags containing basic supplies for 1,828 students.\n\n• UNICEF continues to support the Education Cluster on the shipment and distribution of school supplies in Tafea province, while post-monitoring of distributed supplies in Shefa is being conducted by UNICEF and The Ministry of Education and Training (MoET). \n\n*CHILD PROTECTION*\n\n• As of 25 April, a total of 2,022 affected children, women and families were reached with psychosocial support and integrated Child Protection in Emergencies (CPiE) (1,375 were children under 18 years).\n\n• UNICEF Supported the Ministry of Youth Development Sports (MoYDS) and the Department of Civil Registration and Identity Management (CRIM) to carry out a training with 22 youth volunteers (including 6 females) on CPiE, Child Friendly Spaces (CFS), Protection and Psycho-Social Support (PSS), Protection from Sexual Exploitation and Abuse (PSEA) and key CPiE integrated messages. Around 35 youth volunteers were trained on PSEA.\n\n• UNICEF supported PSEA messaging in cyclone-affected areas, including 1,137 women and girls and 885 men and boys.\n\n• 5,882 people were registered between 3-25 April, including 21 persons with disabilities. Of these, 3,007 women and girls were registered, making up 51% of total registrations. At least 53% of the registrations were children under 18 (n=3,116), with 50% being girls. Approximately 10% were new birth certificates, 30% new NIDs, and 10% replacements due to cyclone damage.\n\n• The UNICEF Warehouse released 66 recreational kits, three 72sqm tents, ten 42sqm tents, and 35 tarpaulins (4x50 m), to MoYDS and Department of CRIM to support set up of CFS, PSS and BR activities.\n\n• Technical support was provided child protection input into the human impact analysis and recovery plan on the PDNA.\n\n*SOCIAL PROTECTION:*\n\n• UNICEF is supporting the Government of Vanuatu with roll out of Humanitarian Cash Transfers (HCT) in collaboration with other civil society organization. Government funded HCT is expected to benefit 66,000 households across the country. The piloting of digital platform to implement HCT was conducted on 25 April 2023, in Lelepa offshore island.",
+  "summary": " In March 2023, Vanuatu experienced two cyclones, causing significant damage to infrastructure and affecting almost half of the population. UNICEF has provided critical supplies to at least 9,000 people in the most affected areas and is actively assisting the government in coordinating, assessing, and responding to the impacts of the cyclones across various crucial sectors, including WASH, Health, Nutrition, Education, Protection and Social Policy. The government of Vanuatu launched an early recovery plan on April 14th, with a budget of USD 28,000,000, and UNICEF is providing technical assistance for the Post Disaster Needs Assessment (PDNA). UNICEF is also supporting the roll out of Humanitarian Cash Transfers (HCT) in collaboration with other civil society organizations.",
+  "metadata": {
+    "id": "3957164",
+    "name": "UNICEF Vanuatu Humanitarian Situation Report No. 6 (Tropical Cyclones) - 28 March - 25 April 2023",
+    "date_original": 1682726400000,
+    "date_changed": 1682752342000,
+    "date_created": 1682730381000,
+    "primary_country_id": 249,
+    "primary_country_name": "Vanuatu",
+    "primary_country_iso3": "vut",
+    "primary_country_location": {
+      "lon": 167.72,
+      "lat": -16.26
+    }
+  }
+}

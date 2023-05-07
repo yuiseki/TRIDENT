@@ -1,0 +1,126 @@
+{
+  "original": {
+    "id": "3956978",
+    "fields": {
+      "date": {
+        "changed": "2023-04-28T13:54:32+00:00",
+        "created": "2023-04-28T13:18:14+00:00",
+        "original": "2023-04-28T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/158",
+          "name": "Moldova",
+          "location": {
+            "lon": 28.57,
+            "lat": 47.19
+          },
+          "id": 158,
+          "shortname": "Moldova",
+          "iso3": "mda",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/241",
+          "name": "Ukraine",
+          "location": {
+            "lon": 31.32,
+            "lat": 49.32
+          },
+          "id": 241,
+          "shortname": "Ukraine",
+          "iso3": "ukr"
+        }
+      ],
+      "origin": "https://data.unhcr.org/en/documents/details/100324",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/158",
+        "name": "Moldova",
+        "location": {
+          "lon": 28.57,
+          "lat": 47.19
+        },
+        "id": 158,
+        "shortname": "Moldova",
+        "iso3": "mda"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "Ukraine Situation: The Republic of Moldova Operations Update (11 April 2023)",
+      "body": "**Recent highlights**\n\n- UNHCR continues supporting authorities with technical guidance on the registration process for temporary protection and continues monitoring implementation of the regime. UNHCR also helped authorities to update the General Inspectorate for Migration’s (IGM) public [FAQs](http://igm.gov.md/ro/content/%C3%AEntreb%C4%83ri-frecvente) on temporary protection and supported IGM information sessions for refugees and other stakeholders across the country, which started recently and include roundtables with refugees.\n\n- UNHCR implementing partner AVE Copiii held a child protection training for 78 Child Protection Specialists from the Moldovan Guardianship Authority between April 3-5. The Ministry of Labor and Social Protection, UNHCR, and UNICEF jointly hosted the training. Initial feedback on the training was very positive: a second session, with the same participants at the end of the month, will explore additional topics and practical case scenarios.\n\n- On 11 April, UNHCR and the Moldova State University signed a Memorandum of Understanding to solidify their commitment to educating students about UNHCR’s mandate and the challenges surrounding forced displacement and refugees. UNHCR will offer an elective course on the needs of refugees and other vulnerable groups and will develop opportunities for students to expand their skills and knowledge about refugees and humanitarian action through on-job and field training.\n\n**Other activities during the reporting period**\n\nOn 24 March, UNHCR and CHS Alliance conducted a workshop on the Misconduct Disclosure Scheme. Over 40 organizations attended and received information on how to join the scheme.  \nWith Japan support, on 28 March UNHCR provided the Association of People with Disabilities of the Republic of Moldova (AOSIRM) with equipment including two cars with wheelchair access, power generators, laptops, printers, and hygiene kits. This assistance helps increase the AOSIRM’s capacity to identify, reach, and support more people in need - both Moldovans and refugees alike.\n\nThe Gender-Based Violence (GBV) Sub Working Group has trained, on 29 March, 14 staff of partner ACTED on GBV core concepts, safe referrals and risk mitigation in accommodations. Also, during a monitoring visit of peaceful coexistence activities carried out by partner Casa Marioarei for women and adolescents in Falesti,  \nUNHCR heard positive feedback from refugees about these types of activities, as well as concerns about temporary protection status requiring proof of residence.\n\nUNHCR carried out training sessions for over 80 partner staff in relation to proGres move to the cloud. The first session targeted over 30 staff working at the Cash Enrolment Centres in Ungheni, Orhei, Causeni, and Chisinau as well as over 50 partner staff from Law Centre of Advocates, who are present at protection desks in each cash enrolment centre to provide legal assistance.\n\nUNHCR and partners continue to support refugees and host communities with non-food items, such as thermal blankets, hygiene kits, and bed linen sets. Since 24 February 2022, UNHCR has distributed over 202,731 of such items. In 2023, UNHCR has reached around 7,600 refugees with non-food items.",
+      "url": "https://reliefweb.int/node/3956978",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/56/f4/56f47953-8f69-4ee4-b557-5f030f8be5ea.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/56/f4/56f47953-8f69-4ee4-b557-5f030f8be5ea.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/56/f4/56f47953-8f69-4ee4-b557-5f030f8be5ea.png",
+            "version": "2415604-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/56/f4/56f47953-8f69-4ee4-b557-5f030f8be5ea.png"
+          },
+          "filename": "230411_Operations Update.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415604",
+          "filesize": "1795958",
+          "url": "https://reliefweb.int/attachments/56f47953-8f69-4ee4-b557-5f030f8be5ea/230411_Operations%20Update.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/moldova/ukraine-situation-republic-moldova-operations-update-11-april-2023",
+      "theme": [
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        }
+      ],
+      "id": 3956978,
+      "status": "published",
+      "body-html": "<p><strong>Recent highlights</strong></p>\n<ul>\n<li>\n<p>UNHCR continues supporting authorities with technical guidance on the registration process for temporary protection and continues monitoring implementation of the regime. UNHCR also helped authorities to update the General Inspectorate for Migration’s (IGM) public <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"http://igm.gov.md/ro/content/%C3%AEntreb%C4%83ri-frecvente\">FAQs</a> on temporary protection and supported IGM information sessions for refugees and other stakeholders across the country, which started recently and include roundtables with refugees.</p>\n</li>\n<li>\n<p>UNHCR implementing partner AVE Copiii held a child protection training for 78 Child Protection Specialists from the Moldovan Guardianship Authority between April 3-5. The Ministry of Labor and Social Protection, UNHCR, and UNICEF jointly hosted the training. Initial feedback on the training was very positive: a second session, with the same participants at the end of the month, will explore additional topics and practical case scenarios.</p>\n</li>\n<li>\n<p>On 11 April, UNHCR and the Moldova State University signed a Memorandum of Understanding to solidify their commitment to educating students about UNHCR’s mandate and the challenges surrounding forced displacement and refugees. UNHCR will offer an elective course on the needs of refugees and other vulnerable groups and will develop opportunities for students to expand their skills and knowledge about refugees and humanitarian action through on-job and field training.</p>\n</li>\n</ul>\n<p><strong>Other activities during the reporting period</strong></p>\n<p>On 24 March, UNHCR and CHS Alliance conducted a workshop on the Misconduct Disclosure Scheme. Over 40 organizations attended and received information on how to join the scheme.<br />\nWith Japan support, on 28 March UNHCR provided the Association of People with Disabilities of the Republic of Moldova (AOSIRM) with equipment including two cars with wheelchair access, power generators, laptops, printers, and hygiene kits. This assistance helps increase the AOSIRM’s capacity to identify, reach, and support more people in need - both Moldovans and refugees alike.</p>\n<p>The Gender-Based Violence (GBV) Sub Working Group has trained, on 29 March, 14 staff of partner ACTED on GBV core concepts, safe referrals and risk mitigation in accommodations. Also, during a monitoring visit of peaceful coexistence activities carried out by partner Casa Marioarei for women and adolescents in Falesti,<br />\nUNHCR heard positive feedback from refugees about these types of activities, as well as concerns about temporary protection status requiring proof of residence.</p>\n<p>UNHCR carried out training sessions for over 80 partner staff in relation to proGres move to the cloud. The first session targeted over 30 staff working at the Cash Enrolment Centres in Ungheni, Orhei, Causeni, and Chisinau as well as over 50 partner staff from Law Centre of Advocates, who are present at protection desks in each cash enrolment centre to provide legal assistance.</p>\n<p>UNHCR and partners continue to support refugees and host communities with non-food items, such as thermal blankets, hygiene kits, and bed linen sets. Since 24 February 2022, UNHCR has distributed over 202,731 of such items. In 2023, UNHCR has reached around 7,600 refugees with non-food items.</p>\n"
+    }
+  },
+  "text": "# Ukraine Situation: The Republic of Moldova Operations Update (11 April 2023)\n\n**Recent highlights**\n\n- UNHCR continues supporting authorities with technical guidance on the registration process for temporary protection and continues monitoring implementation of the regime. UNHCR also helped authorities to update the General Inspectorate for Migration’s (IGM) public [FAQs](http://igm.gov.md/ro/content/%C3%AEntreb%C4%83ri-frecvente) on temporary protection and supported IGM information sessions for refugees and other stakeholders across the country, which started recently and include roundtables with refugees.\n\n- UNHCR implementing partner AVE Copiii held a child protection training for 78 Child Protection Specialists from the Moldovan Guardianship Authority between April 3-5. The Ministry of Labor and Social Protection, UNHCR, and UNICEF jointly hosted the training. Initial feedback on the training was very positive: a second session, with the same participants at the end of the month, will explore additional topics and practical case scenarios.\n\n- On 11 April, UNHCR and the Moldova State University signed a Memorandum of Understanding to solidify their commitment to educating students about UNHCR’s mandate and the challenges surrounding forced displacement and refugees. UNHCR will offer an elective course on the needs of refugees and other vulnerable groups and will develop opportunities for students to expand their skills and knowledge about refugees and humanitarian action through on-job and field training.\n\n**Other activities during the reporting period**\n\nOn 24 March, UNHCR and CHS Alliance conducted a workshop on the Misconduct Disclosure Scheme. Over 40 organizations attended and received information on how to join the scheme.  \nWith Japan support, on 28 March UNHCR provided the Association of People with Disabilities of the Republic of Moldova (AOSIRM) with equipment including two cars with wheelchair access, power generators, laptops, printers, and hygiene kits. This assistance helps increase the AOSIRM’s capacity to identify, reach, and support more people in need - both Moldovans and refugees alike.\n\nThe Gender-Based Violence (GBV) Sub Working Group has trained, on 29 March, 14 staff of partner ACTED on GBV core concepts, safe referrals and risk mitigation in accommodations. Also, during a monitoring visit of peaceful coexistence activities carried out by partner Casa Marioarei for women and adolescents in Falesti,  \nUNHCR heard positive feedback from refugees about these types of activities, as well as concerns about temporary protection status requiring proof of residence.\n\nUNHCR carried out training sessions for over 80 partner staff in relation to proGres move to the cloud. The first session targeted over 30 staff working at the Cash Enrolment Centres in Ungheni, Orhei, Causeni, and Chisinau as well as over 50 partner staff from Law Centre of Advocates, who are present at protection desks in each cash enrolment centre to provide legal assistance.\n\nUNHCR and partners continue to support refugees and host communities with non-food items, such as thermal blankets, hygiene kits, and bed linen sets. Since 24 February 2022, UNHCR has distributed over 202,731 of such items. In 2023, UNHCR has reached around 7,600 refugees with non-food items.",
+  "summary": " UNHCR and its partners are providing technical guidance and support to the Republic of Moldova in the registration process for temporary protection of refugees. UNHCR is also providing training to Child Protection Specialists, and has signed a Memorandum of Understanding with the Moldova State University to educate students about refugees and humanitarian action. Additionally, UNHCR and its partners are providing equipment, training, and non-food items to refugees and host communities.",
+  "metadata": {
+    "id": "3956978",
+    "name": "Ukraine Situation: The Republic of Moldova Operations Update (11 April 2023)",
+    "date_original": 1682640000000,
+    "date_changed": 1682690072000,
+    "date_created": 1682687894000,
+    "primary_country_id": 158,
+    "primary_country_name": "Moldova",
+    "primary_country_iso3": "mda",
+    "primary_country_location": {
+      "lon": 28.57,
+      "lat": 47.19
+    }
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "original": {
+    "id": "3955950",
+    "fields": {
+      "date": {
+        "changed": "2023-04-25T18:48:29+00:00",
+        "created": "2023-04-25T18:37:21+00:00",
+        "original": "2023-04-20T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/226",
+          "name": "Syrian Arab Republic",
+          "location": {
+            "lon": 38.51,
+            "lat": 35.01
+          },
+          "id": 226,
+          "shortname": "Syria",
+          "iso3": "syr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/236",
+          "name": "Türkiye",
+          "location": {
+            "lon": 35.18,
+            "lat": 39.06
+          },
+          "id": 236,
+          "shortname": "Türkiye",
+          "iso3": "tur",
+          "primary": true
+        }
+      ],
+      "origin": "https://www.unfpa.org/resources/turkiyesyria-earthquake-joint-situation-report-3-20-april-2023",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/236",
+        "name": "Türkiye",
+        "location": {
+          "lon": 35.18,
+          "lat": 39.06
+        },
+        "id": 236,
+        "shortname": "Türkiye",
+        "iso3": "tur"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EQ",
+          "name": "Earthquake",
+          "id": 4628
+        },
+        {
+          "code": "FF",
+          "name": "Flash Flood",
+          "id": 4624
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1070",
+          "longname": "United Nations Population Fund",
+          "spanish_name": "Fondo de Población de las Naciones Unidas",
+          "name": "United Nations Population Fund",
+          "id": 1070,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNFPA",
+          "homepage": "http://www.unfpa.org"
+        }
+      ],
+      "title": "UNFPA Türkiye/Syria Earthquake Joint Situation Report #3 - 20 April, 2023",
+      "body": "**THE SITUATION**\n\nIn the early hours of 6 February 2023, multiple earthquakes, the strongest being of 7.7 magnitude, struck southern Türkiye and northern Syria, creating a disaster of colossal proportions. Following the initial quake, around 17,000 aftershocks occurred until March 13, highlighting the vulnerability of the region to future earthquakes and the severe risks facing communities.\n\nIn addition to leaving hundreds of thousands of people, mostly women and children, without access to shelter, food, water, heat, and health care, the emergency is further compounding the risks of gender-based violence. In Syria, close to nine million people have been affected by the devastating earthquakes. The damage is worse in the north-west, where more than 4.2 million people have been affected in Aleppo, and three million people have been affected in Idlib. More than 7,400 buildings have been completely or partially destroyed. In Türkiye, nearly 50,000 people were killed and tens of thousands more were injured due to the earthquakes, while over 216,000 people from affected areas have been relocated to other provinces, according to Türkiye’s Disaster and Emergency Management Authority (AFAD).\n\nThe catastrophic consequences of the earthquake have been exacerbated by the severe weather conditions that have affected north-west Syria and Türkiye in recent weeks. The heavy rain and floods that struck the region are having a serious humanitarian impact on people’s lives, health, and access to services, particularly those living in reception centres, camps, informal settlements, or on the street.\n\nUNFPA has issued two appeals to fund its responses in Syria and Türkiye, with a combined total ask of $44.5 million. UNFPA calls on the international community to focus on leaving no one behind and to support humanitarian and recovery efforts on building resilient SRH services and prevention and response mechanisms for all forms of gender- based violence( GBV), including child and forced marriage.",
+      "url": "https://reliefweb.int/node/3955950",
+      "disaster": [
+        {
+          "name": "Türkiye: Floods - Mar 2023",
+          "id": 51529,
+          "glide": "FL-2023-000040-TUR",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Syria: Floods - Feb 2023",
+          "id": 51492,
+          "glide": "FL-2023-000042-SYR",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            },
+            {
+              "code": "FF",
+              "name": "Flash Flood",
+              "id": 4624
+            }
+          ],
+          "status": "alert"
+        },
+        {
+          "name": "Türkiye/Syria: Earthquakes - Feb 2023",
+          "id": 51470,
+          "glide": "EQ-2023-000015-TUR",
+          "type": [
+            {
+              "code": "EQ",
+              "name": "Earthquake",
+              "id": 4628,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/e3/d1/e3d15e97-43ed-4d82-8847-ce141cb254fd.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/e3/d1/e3d15e97-43ed-4d82-8847-ce141cb254fd.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/e3/d1/e3d15e97-43ed-4d82-8847-ce141cb254fd.png",
+            "version": "2414683-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/e3/d1/e3d15e97-43ed-4d82-8847-ce141cb254fd.png"
+          },
+          "filename": "Turkiye-Syria Earthquake Joint Sitrep 3.pdf",
+          "mimetype": "application/pdf",
+          "id": "2414683",
+          "filesize": "2136061",
+          "url": "https://reliefweb.int/attachments/e3d15e97-43ed-4d82-8847-ce141cb254fd/Turkiye-Syria%20Earthquake%20Joint%20Sitrep%203.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/turkiye/unfpa-turkiyesyria-earthquake-joint-situation-report-3-20-april-2023",
+      "theme": [
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Gender",
+          "id": 4594
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3955950,
+      "status": "published",
+      "body-html": "<p><strong>THE SITUATION</strong></p>\n<p>In the early hours of 6 February 2023, multiple earthquakes, the strongest being of 7.7 magnitude, struck southern Türkiye and northern Syria, creating a disaster of colossal proportions. Following the initial quake, around 17,000 aftershocks occurred until March 13, highlighting the vulnerability of the region to future earthquakes and the severe risks facing communities.</p>\n<p>In addition to leaving hundreds of thousands of people, mostly women and children, without access to shelter, food, water, heat, and health care, the emergency is further compounding the risks of gender-based violence. In Syria, close to nine million people have been affected by the devastating earthquakes. The damage is worse in the north-west, where more than 4.2 million people have been affected in Aleppo, and three million people have been affected in Idlib. More than 7,400 buildings have been completely or partially destroyed. In Türkiye, nearly 50,000 people were killed and tens of thousands more were injured due to the earthquakes, while over 216,000 people from affected areas have been relocated to other provinces, according to Türkiye’s Disaster and Emergency Management Authority (AFAD).</p>\n<p>The catastrophic consequences of the earthquake have been exacerbated by the severe weather conditions that have affected north-west Syria and Türkiye in recent weeks. The heavy rain and floods that struck the region are having a serious humanitarian impact on people’s lives, health, and access to services, particularly those living in reception centres, camps, informal settlements, or on the street.</p>\n<p>UNFPA has issued two appeals to fund its responses in Syria and Türkiye, with a combined total ask of $44.5 million. UNFPA calls on the international community to focus on leaving no one behind and to support humanitarian and recovery efforts on building resilient SRH services and prevention and response mechanisms for all forms of gender- based violence( GBV), including child and forced marriage.</p>\n"
+    }
+  },
+  "text": "# UNFPA Türkiye/Syria Earthquake Joint Situation Report #3 - 20 April, 2023\n\n**THE SITUATION**\n\nIn the early hours of 6 February 2023, multiple earthquakes, the strongest being of 7.7 magnitude, struck southern Türkiye and northern Syria, creating a disaster of colossal proportions. Following the initial quake, around 17,000 aftershocks occurred until March 13, highlighting the vulnerability of the region to future earthquakes and the severe risks facing communities.\n\nIn addition to leaving hundreds of thousands of people, mostly women and children, without access to shelter, food, water, heat, and health care, the emergency is further compounding the risks of gender-based violence. In Syria, close to nine million people have been affected by the devastating earthquakes. The damage is worse in the north-west, where more than 4.2 million people have been affected in Aleppo, and three million people have been affected in Idlib. More than 7,400 buildings have been completely or partially destroyed. In Türkiye, nearly 50,000 people were killed and tens of thousands more were injured due to the earthquakes, while over 216,000 people from affected areas have been relocated to other provinces, according to Türkiye’s Disaster and Emergency Management Authority (AFAD).\n\nThe catastrophic consequences of the earthquake have been exacerbated by the severe weather conditions that have affected north-west Syria and Türkiye in recent weeks. The heavy rain and floods that struck the region are having a serious humanitarian impact on people’s lives, health, and access to services, particularly those living in reception centres, camps, informal settlements, or on the street.\n\nUNFPA has issued two appeals to fund its responses in Syria and Türkiye, with a combined total ask of $44.5 million. UNFPA calls on the international community to focus on leaving no one behind and to support humanitarian and recovery efforts on building resilient SRH services and prevention and response mechanisms for all forms of gender- based violence( GBV), including child and forced marriage.",
+  "summary": " In February 2023, a 7.7 magnitude earthquake struck southern Türkiye and northern Syria, leaving hundreds of thousands of people without access to basic needs and compounding the risks of gender-based violence. In Syria, close to nine million people have been affected, with more than 4.2 million in Aleppo and three million in Idlib. In Türkiye, nearly 50,000 people were killed and tens of thousands more were injured. UNFPA has issued two appeals to fund its responses in Syria and Türkiye, with a combined total ask of $44.5 million, to focus on leaving no one behind and to support humanitarian and recovery efforts.",
+  "metadata": {
+    "id": "3955950",
+    "name": "UNFPA Türkiye/Syria Earthquake Joint Situation Report #3 - 20 April, 2023",
+    "date_original": 1681948800000,
+    "date_changed": 1682448509000,
+    "date_created": 1682447841000,
+    "primary_country_id": 236,
+    "primary_country_name": "Türkiye",
+    "primary_country_iso3": "tur",
+    "primary_country_location": {
+      "lon": 35.18,
+      "lat": 39.06
+    }
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "original": {
+    "id": "3954039",
+    "fields": {
+      "date": {
+        "changed": "2023-04-18T18:05:37+00:00",
+        "created": "2023-04-18T17:52:49+00:00",
+        "original": "2023-04-18T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/83",
+          "name": "El Salvador",
+          "location": {
+            "lon": -88.87,
+            "lat": 13.74
+          },
+          "id": 83,
+          "shortname": "El Salvador",
+          "iso3": "slv",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/254",
+          "name": "World",
+          "id": 254,
+          "shortname": "World",
+          "iso3": "wld"
+        }
+      ],
+      "origin": "https://reporting.unhcr.org/document/4667",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/83",
+        "name": "El Salvador",
+        "location": {
+          "lon": -88.87,
+          "lat": 13.74
+        },
+        "id": 83,
+        "shortname": "El Salvador",
+        "iso3": "slv"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "UNHCR El Salvador Operational Update #2 - February 2023",
+      "body": "**Key Figures**\n\n**Community-based Protection**\n\n**374** individuals assisted through UNHCR’s helpline in February, and 522 in 2023.\n\n**212** people assisted at the Support Spaces in February, and 347 in 2023.\n\n**7,024** people reached by the Mobile Units operating from the Support Spaces across the country in February, and 11,761 in 2023.\n\n**Cash Assistance**\n\n**306** households (**980** individuals) at heightened risk received cash assistance in February, and 581 households (1,523 individuals) in 2023. This support helps cover basic needs such as food, rent, documentation, and transportation, as well as to facilitate livelihoods activities for economic integration and education.\n\n**Registration**\n\n**171** people registered with biometrics, and 340 in 2023.\n\n**Funding**\n\n**8%** of UNHCR’s financial requirements for El Salvador received by 28 February 2023.\n\n**Highlights**\n\n- The Ministry of Foreign Affairs and UNHCR reaffirmed their commitment to strengthen CODER, the institution in charge of examining refugee claims and determining refugee status in El Salvador. This alliance, collaboration, will contribute to the technical strengthening of the procedure for refugee status determination.\n\n- UNHCR, the Ministry of Culture and the Organization of Salvadoran Women for Peace (ORMUSA) held a community forum with 41 indigenous women from Nahuizalco. The forum “Towards a Digitally Inclusive World: Innovation and Technology for Gender Equality\", explored the effects of the digital gender gap in terms of social and economic inequalities.\n\n- UNHCR held two sessions with 33 representatives of government institutions and municipalities, 13 UN agencies and 13 partner organizations, to jointly reflect on achievements in 2022 and opportunities for action in 2023.\n\n- To encourage new membership, the Protection Sector, held a virtual public informative session with 14 attendees on the objective and work of the Protection Sector and the Areas of Responsibility for Gender-Based Violence and Child Protection in El Salvador.\n\n- Children’s Villages SOS and UNHCR organised a workshop with delegates from CUBOS community centres and the Support Spaces for the use of board games and the book [\"Te cuento mi cuento\"](https://data.unhcr.org/es/documents/details/99474). This educational material, developed as part of an alliance with UNICEF, seeks to raise awareness about forced displacement.",
+      "url": "https://reliefweb.int/node/3954039",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/e6/48/e648648e-1b5d-4e53-aa6b-b36e33729ff3.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/e6/48/e648648e-1b5d-4e53-aa6b-b36e33729ff3.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/e6/48/e648648e-1b5d-4e53-aa6b-b36e33729ff3.png",
+            "version": "2413189-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/e6/48/e648648e-1b5d-4e53-aa6b-b36e33729ff3.png"
+          },
+          "filename": "UNHCR El Salvador Operational Update #2 - February 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2413189",
+          "filesize": "868034",
+          "url": "https://reliefweb.int/attachments/e648648e-1b5d-4e53-aa6b-b36e33729ff3/UNHCR%20El%20Salvador%20Operational%20Update%20%232%20-%20February%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/el-salvador/unhcr-el-salvador-operational-update-2-february-2023",
+      "theme": [
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Recovery and Reconstruction",
+          "id": 4601
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        }
+      ],
+      "id": 3954039,
+      "status": "published",
+      "body-html": "<p><strong>Key Figures</strong></p>\n<p><strong>Community-based Protection</strong></p>\n<p><strong>374</strong> individuals assisted through UNHCR’s helpline in February, and 522 in 2023.</p>\n<p><strong>212</strong> people assisted at the Support Spaces in February, and 347 in 2023.</p>\n<p><strong>7,024</strong> people reached by the Mobile Units operating from the Support Spaces across the country in February, and 11,761 in 2023.</p>\n<p><strong>Cash Assistance</strong></p>\n<p><strong>306</strong> households (<strong>980</strong> individuals) at heightened risk received cash assistance in February, and 581 households (1,523 individuals) in 2023. This support helps cover basic needs such as food, rent, documentation, and transportation, as well as to facilitate livelihoods activities for economic integration and education.</p>\n<p><strong>Registration</strong></p>\n<p><strong>171</strong> people registered with biometrics, and 340 in 2023.</p>\n<p><strong>Funding</strong></p>\n<p><strong>8%</strong> of UNHCR’s financial requirements for El Salvador received by 28 February 2023.</p>\n<p><strong>Highlights</strong></p>\n<ul>\n<li>\n<p>The Ministry of Foreign Affairs and UNHCR reaffirmed their commitment to strengthen CODER, the institution in charge of examining refugee claims and determining refugee status in El Salvador. This alliance, collaboration, will contribute to the technical strengthening of the procedure for refugee status determination.</p>\n</li>\n<li>\n<p>UNHCR, the Ministry of Culture and the Organization of Salvadoran Women for Peace (ORMUSA) held a community forum with 41 indigenous women from Nahuizalco. The forum “Towards a Digitally Inclusive World: Innovation and Technology for Gender Equality&quot;, explored the effects of the digital gender gap in terms of social and economic inequalities.</p>\n</li>\n<li>\n<p>UNHCR held two sessions with 33 representatives of government institutions and municipalities, 13 UN agencies and 13 partner organizations, to jointly reflect on achievements in 2022 and opportunities for action in 2023.</p>\n</li>\n<li>\n<p>To encourage new membership, the Protection Sector, held a virtual public informative session with 14 attendees on the objective and work of the Protection Sector and the Areas of Responsibility for Gender-Based Violence and Child Protection in El Salvador.</p>\n</li>\n<li>\n<p>Children’s Villages SOS and UNHCR organised a workshop with delegates from CUBOS community centres and the Support Spaces for the use of board games and the book <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://data.unhcr.org/es/documents/details/99474\">&quot;Te cuento mi cuento&quot;</a>. This educational material, developed as part of an alliance with UNICEF, seeks to raise awareness about forced displacement.</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# UNHCR El Salvador Operational Update #2 - February 2023\n\n**Key Figures**\n\n**Community-based Protection**\n\n**374** individuals assisted through UNHCR’s helpline in February, and 522 in 2023.\n\n**212** people assisted at the Support Spaces in February, and 347 in 2023.\n\n**7,024** people reached by the Mobile Units operating from the Support Spaces across the country in February, and 11,761 in 2023.\n\n**Cash Assistance**\n\n**306** households (**980** individuals) at heightened risk received cash assistance in February, and 581 households (1,523 individuals) in 2023. This support helps cover basic needs such as food, rent, documentation, and transportation, as well as to facilitate livelihoods activities for economic integration and education.\n\n**Registration**\n\n**171** people registered with biometrics, and 340 in 2023.\n\n**Funding**\n\n**8%** of UNHCR’s financial requirements for El Salvador received by 28 February 2023.\n\n**Highlights**\n\n- The Ministry of Foreign Affairs and UNHCR reaffirmed their commitment to strengthen CODER, the institution in charge of examining refugee claims and determining refugee status in El Salvador. This alliance, collaboration, will contribute to the technical strengthening of the procedure for refugee status determination.\n\n- UNHCR, the Ministry of Culture and the Organization of Salvadoran Women for Peace (ORMUSA) held a community forum with 41 indigenous women from Nahuizalco. The forum “Towards a Digitally Inclusive World: Innovation and Technology for Gender Equality\", explored the effects of the digital gender gap in terms of social and economic inequalities.\n\n- UNHCR held two sessions with 33 representatives of government institutions and municipalities, 13 UN agencies and 13 partner organizations, to jointly reflect on achievements in 2022 and opportunities for action in 2023.\n\n- To encourage new membership, the Protection Sector, held a virtual public informative session with 14 attendees on the objective and work of the Protection Sector and the Areas of Responsibility for Gender-Based Violence and Child Protection in El Salvador.\n\n- Children’s Villages SOS and UNHCR organised a workshop with delegates from CUBOS community centres and the Support Spaces for the use of board games and the book [\"Te cuento mi cuento\"](https://data.unhcr.org/es/documents/details/99474). This educational material, developed as part of an alliance with UNICEF, seeks to raise awareness about forced displacement.",
+  "summary": " In February 2023, UNHCR El Salvador provided assistance to 374 individuals through their helpline, 212 people at their Support Spaces, and 7,024 people through their Mobile Units. 306 households (980 individuals) at heightened risk received cash assistance to cover basic needs. 171 people were registered with biometrics, and 8% of UNHCR’s financial requirements for El Salvador were received. Highlights included a commitment to strengthen CODER, a community forum with indigenous women, two sessions with government institutions and partner organizations, a virtual public informative session, and a workshop with delegates from CUBOS community centres and the Support Spaces.",
+  "metadata": {
+    "id": "3954039",
+    "name": "UNHCR El Salvador Operational Update #2 - February 2023",
+    "date_original": 1681776000000,
+    "date_changed": 1681841137000,
+    "date_created": 1681840369000,
+    "primary_country_id": 83,
+    "primary_country_name": "El Salvador",
+    "primary_country_iso3": "slv",
+    "primary_country_location": {
+      "lon": -88.87,
+      "lat": 13.74
+    }
+  }
+}

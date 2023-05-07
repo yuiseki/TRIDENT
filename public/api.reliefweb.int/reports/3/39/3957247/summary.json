@@ -1,0 +1,140 @@
+{
+  "original": {
+    "id": "3957247",
+    "fields": {
+      "date": {
+        "changed": "2023-04-30T19:32:49+00:00",
+        "created": "2023-04-30T07:47:02+00:00",
+        "original": "2023-04-29T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/13",
+          "name": "Afghanistan",
+          "location": {
+            "lon": 66.03,
+            "lat": 33.84
+          },
+          "id": 13,
+          "shortname": "Afghanistan",
+          "iso3": "afg",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/13",
+        "name": "Afghanistan",
+        "location": {
+          "lon": 66.03,
+          "lat": 33.84
+        },
+        "id": 13,
+        "shortname": "Afghanistan",
+        "iso3": "afg"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "DR",
+          "name": "Drought",
+          "id": 4672
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "Afghanistan: WFP Weekly Market Price Bulletin: Issue 149 (4th Week of April 2023)",
+      "body": "**Highlights**\n\n- Due to the fact that the lean season is already completed throughout the country, the main commodities prices have started to decline compared to last week. However, the prices of rice, pulses and sugar are substantially high compared to the 2-year average, with Eid celebration being a major reason resulting in high de- mand and prices for some commodities.\n\n- The purchasing power of unskilled casual labour and livestock keepers im- proved by 3% and 1%, respectively, mainly due to decreased wheat prices and increased labour wage compared to the previous week. The ToT for one-year female sheep and unskilled casual labour to wheat has improved compared to last year too.\n\n- Compared to last week, the value of Afghani against USD has slightly depreciated due to lack of sufficient dollars available because of Eid holidays as well as closure of the currency market. The value of Afghani against US Dollar is below its 2-year average.",
+      "url": "https://reliefweb.int/node/3957247",
+      "disaster": [
+        {
+          "name": "Afghanistan: Drought - 2021-2023",
+          "id": 50620,
+          "glide": "DR-2021-000022-AFG",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/16/2a/162ab6a3-b3a0-4c42-834a-4013f847f322.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/16/2a/162ab6a3-b3a0-4c42-834a-4013f847f322.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/16/2a/162ab6a3-b3a0-4c42-834a-4013f847f322.png",
+            "version": "2415877-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/16/2a/162ab6a3-b3a0-4c42-834a-4013f847f322.png"
+          },
+          "filename": "WFP - Issue 149 - Countrywide Weekly Market Price Bulletin_Week4 Apr 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415877",
+          "filesize": "717476",
+          "url": "https://reliefweb.int/attachments/162ab6a3-b3a0-4c42-834a-4013f847f322/WFP%20-%20Issue%20149%20-%20Countrywide%20Weekly%20Market%20Price%20Bulletin_Week4%20Apr%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/afghanistan/afghanistan-wfp-weekly-market-price-bulletin-issue-149-4th-week-april-2023",
+      "redirects": [
+        "https://reliefweb.int/report/afghanistan/afghanistan-wfp-weekly-market-price-bulletin-issue-1494th-week-april-2023"
+      ],
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        }
+      ],
+      "id": 3957247,
+      "status": "published",
+      "body-html": "<p><strong>Highlights</strong></p>\n<ul>\n<li>\n<p>Due to the fact that the lean season is already completed throughout the country, the main commodities prices have started to decline compared to last week. However, the prices of rice, pulses and sugar are substantially high compared to the 2-year average, with Eid celebration being a major reason resulting in high de- mand and prices for some commodities.</p>\n</li>\n<li>\n<p>The purchasing power of unskilled casual labour and livestock keepers im- proved by 3% and 1%, respectively, mainly due to decreased wheat prices and increased labour wage compared to the previous week. The ToT for one-year female sheep and unskilled casual labour to wheat has improved compared to last year too.</p>\n</li>\n<li>\n<p>Compared to last week, the value of Afghani against USD has slightly depreciated due to lack of sufficient dollars available because of Eid holidays as well as closure of the currency market. The value of Afghani against US Dollar is below its 2-year average.</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# Afghanistan: WFP Weekly Market Price Bulletin: Issue 149 (4th Week of April 2023)\n\n**Highlights**\n\n- Due to the fact that the lean season is already completed throughout the country, the main commodities prices have started to decline compared to last week. However, the prices of rice, pulses and sugar are substantially high compared to the 2-year average, with Eid celebration being a major reason resulting in high de- mand and prices for some commodities.\n\n- The purchasing power of unskilled casual labour and livestock keepers im- proved by 3% and 1%, respectively, mainly due to decreased wheat prices and increased labour wage compared to the previous week. The ToT for one-year female sheep and unskilled casual labour to wheat has improved compared to last year too.\n\n- Compared to last week, the value of Afghani against USD has slightly depreciated due to lack of sufficient dollars available because of Eid holidays as well as closure of the currency market. The value of Afghani against US Dollar is below its 2-year average.",
+  "summary": " This bulletin provides an overview of the market prices of commodities in Afghanistan during the 4th week of April 2023. Prices of rice, pulses, and sugar are higher than the 2-year average due to the Eid celebration. The purchasing power of unskilled casual labor and livestock keepers improved due to decreased wheat prices and increased labor wages. The value of Afghani against USD has slightly decreased due to lack of sufficient dollars available due to Eid holidays and closure of the currency market.",
+  "metadata": {
+    "id": "3957247",
+    "name": "Afghanistan: WFP Weekly Market Price Bulletin: Issue 149 (4th Week of April 2023)",
+    "date_original": 1682726400000,
+    "date_changed": 1682883169000,
+    "date_created": 1682840822000,
+    "primary_country_id": 13,
+    "primary_country_name": "Afghanistan",
+    "primary_country_iso3": "afg",
+    "primary_country_location": {
+      "lon": 66.03,
+      "lat": 33.84
+    }
+  }
+}

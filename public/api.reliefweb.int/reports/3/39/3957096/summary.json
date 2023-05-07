@@ -1,0 +1,181 @@
+{
+  "original": {
+    "id": "3957096",
+    "fields": {
+      "date": {
+        "changed": "2023-04-28T17:44:06+00:00",
+        "created": "2023-04-28T17:33:03+00:00",
+        "original": "2023-04-28T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/54",
+          "name": "Central African Republic",
+          "location": {
+            "lon": 20.48,
+            "lat": 6.57
+          },
+          "id": 54,
+          "shortname": "CAR",
+          "iso3": "caf"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/55",
+          "name": "Chad",
+          "location": {
+            "lon": 18.66,
+            "lat": 15.36
+          },
+          "id": 55,
+          "shortname": "Chad",
+          "iso3": "tcd",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/55",
+        "name": "Chad",
+        "location": {
+          "lon": 18.66,
+          "lat": 15.36
+        },
+        "id": 55,
+        "shortname": "Chad",
+        "iso3": "tcd"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1979",
+          "longname": "United Nations Children's Fund",
+          "spanish_name": "Fondo de las Naciones Unidas para la Infancia",
+          "name": "UN Children's Fund",
+          "id": 1979,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNICEF",
+          "homepage": "http://www.unicef.org"
+        }
+      ],
+      "title": "UNICEF Chad Humanitarian Situation Report No. 1 for 1 January to 31 March 2023",
+      "body": "**Highlights**\n\n- The nutrition crisis persists in Chad and during the first quarter of 2023, 53,700 under-5 children (29,725 girls and 23,975 boys) suffering from severe acute malnutrition were admitted and treated countrywide, with a cure rate of 95.8 per cent.\n\n- In response to displacement triggered by floods and conflicts, UNICEF provided NFI kits to 52,170 people (16,530 girls, 10,535 women, 15,549 boys, 9,556 men) in three provinces.\n\n- UNICEF provided 52,092 people (16,245 girls, 15,008 boys, 9,996 men and 10,843 women) with sufficient quantity of safe water for drinking, cooking and personal hygiene in four provinces.\n\n- Following multiple cases of measles reported in flood-affected and refugee sites, UNICEF supported a riposte immunization campaign that reached 414,250 children (211,265 girls and 202,985 boys) in N'Djamena.",
+      "url": "https://reliefweb.int/node/3957096",
+      "disaster": [
+        {
+          "name": "Chad: Floods - Jul 2022",
+          "id": 51286,
+          "glide": "FL-2022-000287-TCD",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/55/dc/55dc0a2e-47ad-4a09-9f10-b0467d34a39e.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/55/dc/55dc0a2e-47ad-4a09-9f10-b0467d34a39e.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/55/dc/55dc0a2e-47ad-4a09-9f10-b0467d34a39e.png",
+            "version": "2415705-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/55/dc/55dc0a2e-47ad-4a09-9f10-b0467d34a39e.png"
+          },
+          "filename": "UNICEF Chad Humanitarian Situation Report No. 1 - 01 January-31 March 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415705",
+          "filesize": "4370094",
+          "url": "https://reliefweb.int/attachments/55dc0a2e-47ad-4a09-9f10-b0467d34a39e/UNICEF%20Chad%20Humanitarian%20Situation%20Report%20No.%201%20-%2001%20January-31%20March%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/chad/unicef-chad-humanitarian-situation-report-no-1-1-january-31-march-2023",
+      "theme": [
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "HIV/Aids",
+          "id": 4596
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3957096,
+      "status": "published",
+      "body-html": "<p><strong>Highlights</strong></p>\n<ul>\n<li>\n<p>The nutrition crisis persists in Chad and during the first quarter of 2023, 53,700 under-5 children (29,725 girls and 23,975 boys) suffering from severe acute malnutrition were admitted and treated countrywide, with a cure rate of 95.8 per cent.</p>\n</li>\n<li>\n<p>In response to displacement triggered by floods and conflicts, UNICEF provided NFI kits to 52,170 people (16,530 girls, 10,535 women, 15,549 boys, 9,556 men) in three provinces.</p>\n</li>\n<li>\n<p>UNICEF provided 52,092 people (16,245 girls, 15,008 boys, 9,996 men and 10,843 women) with sufficient quantity of safe water for drinking, cooking and personal hygiene in four provinces.</p>\n</li>\n<li>\n<p>Following multiple cases of measles reported in flood-affected and refugee sites, UNICEF supported a riposte immunization campaign that reached 414,250 children (211,265 girls and 202,985 boys) in N'Djamena.</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# UNICEF Chad Humanitarian Situation Report No. 1 for 1 January to 31 March 2023\n\n**Highlights**\n\n- The nutrition crisis persists in Chad and during the first quarter of 2023, 53,700 under-5 children (29,725 girls and 23,975 boys) suffering from severe acute malnutrition were admitted and treated countrywide, with a cure rate of 95.8 per cent.\n\n- In response to displacement triggered by floods and conflicts, UNICEF provided NFI kits to 52,170 people (16,530 girls, 10,535 women, 15,549 boys, 9,556 men) in three provinces.\n\n- UNICEF provided 52,092 people (16,245 girls, 15,008 boys, 9,996 men and 10,843 women) with sufficient quantity of safe water for drinking, cooking and personal hygiene in four provinces.\n\n- Following multiple cases of measles reported in flood-affected and refugee sites, UNICEF supported a riposte immunization campaign that reached 414,250 children (211,265 girls and 202,985 boys) in N'Djamena.",
+  "summary": " During the first quarter of 2023, UNICEF provided humanitarian aid to those affected by floods and conflicts in Chad. This included providing nutrition treatment to 53,700 under-5 children, NFI kits to 52,170 people, safe water to 52,092 people, and a riposte immunization campaign that reached 414,250 children.",
+  "metadata": {
+    "id": "3957096",
+    "name": "UNICEF Chad Humanitarian Situation Report No. 1 for 1 January to 31 March 2023",
+    "date_original": 1682640000000,
+    "date_changed": 1682703846000,
+    "date_created": 1682703183000,
+    "primary_country_id": 55,
+    "primary_country_name": "Chad",
+    "primary_country_iso3": "tcd",
+    "primary_country_location": {
+      "lon": 18.66,
+      "lat": 15.36
+    }
+  }
+}

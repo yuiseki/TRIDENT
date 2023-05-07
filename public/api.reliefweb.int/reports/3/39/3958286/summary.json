@@ -1,0 +1,126 @@
+{
+  "original": {
+    "id": "3958286",
+    "fields": {
+      "date": {
+        "changed": "2023-05-03T18:37:15+00:00",
+        "created": "2023-05-03T00:00:00+00:00",
+        "original": "2023-05-03T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/109",
+          "name": "Guatemala",
+          "location": {
+            "lon": -90.39,
+            "lat": 15.61
+          },
+          "id": 109,
+          "shortname": "Guatemala",
+          "iso3": "gtm",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/109",
+        "name": "Guatemala",
+        "location": {
+          "lon": -90.39,
+          "lat": 15.61
+        },
+        "id": 109,
+        "shortname": "Guatemala",
+        "iso3": "gtm"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "WFP Guatemala Country Brief, February 2023",
+      "body": "**In Numbers**\n\n**USD 294,000** cash-based transfers made\n\n**USD 11.4 m** six months (March - August 2023) net funding requirements, representing 45 percent of total\n\n**20,604 people assisted** in February 2023\n\n\n**Operational Updates**\n\n-   In February, WFP delivered cash-based transfers (CBT) to 9,000 beneficiaries (53 percent women and girls). Of these, 7,800 in the departments of Alta Verapaz, Izabal, Jutiapa, Solola and Guatemala received CBT conditional on their participation in early recovery projects, such as soil and water conservation, vegetable gardening, biofertilizer preparation, poultry farming and nutrition.\n    \n-   WFP’s ‘nutrition brigades’ provided nutritional assessments, counseling and micronutrient supplementation to 4,000 beneficiaries, including children under 5 (71 percent). Of these, 69 percent are in families participating in resilience activities in Alta Verapaz, El Progreso and Zacapa.\n    \n-   WFP supported 2,300 beneficiaries (90 percent of women) through asset creation activities in the departments of Chiquimula, El Progreso, Zacapa and Alta Verapaz.\n    \n-   In Chimaltenango, Chiquimula, Escuintla, San Marcos, and Quetzaltenango departments, 400 beneficiaries (85 percent of women) received training on pedagogical school gardens, nutrition, financial literacy and the use of the School Feeding Mobile Application and school feeding law implementation, which includes training on nutrition, healthy eating habits and hygiene.\n    \n-   Under the pilot project “Vulnerable Youth in Urban Areas” launched by WFP and La Mancomunidad Gran Ciudad del Sur to strengthen the social protection systems in the department of Guatemala, WFP assisted through CBT 1,000 beneficiaries in the municipality of Guatemala City and Villa Nueva. Furthermore, WFP planned to complement the CBT assistance by implementing capacity strengthening activities aimed at promoting employment opportunities for youth in urban areas, such as providing the technical expertise to acquire, among others, mechanical or baking skills.",
+      "url": "https://reliefweb.int/node/3958286",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/22/64/22642ebc-7249-4552-a770-f38c29052bff.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/22/64/22642ebc-7249-4552-a770-f38c29052bff.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/22/64/22642ebc-7249-4552-a770-f38c29052bff.png",
+            "version": "2416953-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/22/64/22642ebc-7249-4552-a770-f38c29052bff.png"
+          },
+          "filename": "WFP Guatemala - Country Brief February 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2416953",
+          "filesize": "408082",
+          "url": "https://reliefweb.int/attachments/22642ebc-7249-4552-a770-f38c29052bff/WFP%20Guatemala%20-%20Country%20Brief%20February%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/guatemala/wfp-guatemala-country-brief-february-2023",
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        },
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Recovery and Reconstruction",
+          "id": 4601
+        }
+      ],
+      "id": 3958286,
+      "status": "published",
+      "body-html": "<p><strong>In Numbers</strong></p>\n<p><strong>USD 294,000</strong> cash-based transfers made</p>\n<p><strong>USD 11.4 m</strong> six months (March - August 2023) net funding requirements, representing 45 percent of total</p>\n<p><strong>20,604 people assisted</strong> in February 2023</p>\n<p><strong>Operational Updates</strong></p>\n<ul>\n<li>\n<p>In February, WFP delivered cash-based transfers (CBT) to 9,000 beneficiaries (53 percent women and girls). Of these, 7,800 in the departments of Alta Verapaz, Izabal, Jutiapa, Solola and Guatemala received CBT conditional on their participation in early recovery projects, such as soil and water conservation, vegetable gardening, biofertilizer preparation, poultry farming and nutrition.</p>\n</li>\n<li>\n<p>WFP’s ‘nutrition brigades’ provided nutritional assessments, counseling and micronutrient supplementation to 4,000 beneficiaries, including children under 5 (71 percent). Of these, 69 percent are in families participating in resilience activities in Alta Verapaz, El Progreso and Zacapa.</p>\n</li>\n<li>\n<p>WFP supported 2,300 beneficiaries (90 percent of women) through asset creation activities in the departments of Chiquimula, El Progreso, Zacapa and Alta Verapaz.</p>\n</li>\n<li>\n<p>In Chimaltenango, Chiquimula, Escuintla, San Marcos, and Quetzaltenango departments, 400 beneficiaries (85 percent of women) received training on pedagogical school gardens, nutrition, financial literacy and the use of the School Feeding Mobile Application and school feeding law implementation, which includes training on nutrition, healthy eating habits and hygiene.</p>\n</li>\n<li>\n<p>Under the pilot project “Vulnerable Youth in Urban Areas” launched by WFP and La Mancomunidad Gran Ciudad del Sur to strengthen the social protection systems in the department of Guatemala, WFP assisted through CBT 1,000 beneficiaries in the municipality of Guatemala City and Villa Nueva. Furthermore, WFP planned to complement the CBT assistance by implementing capacity strengthening activities aimed at promoting employment opportunities for youth in urban areas, such as providing the technical expertise to acquire, among others, mechanical or baking skills.</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# WFP Guatemala Country Brief, February 2023\n\n**In Numbers**\n\n**USD 294,000** cash-based transfers made\n\n**USD 11.4 m** six months (March - August 2023) net funding requirements, representing 45 percent of total\n\n**20,604 people assisted** in February 2023\n\n\n**Operational Updates**\n\n-   In February, WFP delivered cash-based transfers (CBT) to 9,000 beneficiaries (53 percent women and girls). Of these, 7,800 in the departments of Alta Verapaz, Izabal, Jutiapa, Solola and Guatemala received CBT conditional on their participation in early recovery projects, such as soil and water conservation, vegetable gardening, biofertilizer preparation, poultry farming and nutrition.\n    \n-   WFP’s ‘nutrition brigades’ provided nutritional assessments, counseling and micronutrient supplementation to 4,000 beneficiaries, including children under 5 (71 percent). Of these, 69 percent are in families participating in resilience activities in Alta Verapaz, El Progreso and Zacapa.\n    \n-   WFP supported 2,300 beneficiaries (90 percent of women) through asset creation activities in the departments of Chiquimula, El Progreso, Zacapa and Alta Verapaz.\n    \n-   In Chimaltenango, Chiquimula, Escuintla, San Marcos, and Quetzaltenango departments, 400 beneficiaries (85 percent of women) received training on pedagogical school gardens, nutrition, financial literacy and the use of the School Feeding Mobile Application and school feeding law implementation, which includes training on nutrition, healthy eating habits and hygiene.\n    \n-   Under the pilot project “Vulnerable Youth in Urban Areas” launched by WFP and La Mancomunidad Gran Ciudad del Sur to strengthen the social protection systems in the department of Guatemala, WFP assisted through CBT 1,000 beneficiaries in the municipality of Guatemala City and Villa Nueva. Furthermore, WFP planned to complement the CBT assistance by implementing capacity strengthening activities aimed at promoting employment opportunities for youth in urban areas, such as providing the technical expertise to acquire, among others, mechanical or baking skills.",
+  "summary": " In February 2023, WFP provided cash-based transfers to 9,000 beneficiaries (53% women and girls) in five departments, nutritional assessments and micronutrient supplementation to 4,000 beneficiaries (71% children under 5), asset creation activities to 2,300 beneficiaries (90% women) in four departments, and training on pedagogical school gardens, nutrition, financial literacy, and the use of the School Feeding Mobile Application to 400 beneficiaries (85% women) in five departments. Additionally, WFP launched a pilot project to assist 1,000 beneficiaries in Guatemala City and Villa Nueva, and planned to complement the CBT assistance by providing capacity strengthening activities to promote employment opportunities for youth in urban areas.",
+  "metadata": {
+    "id": "3958286",
+    "name": "WFP Guatemala Country Brief, February 2023",
+    "date_original": 1683072000000,
+    "date_changed": 1683139035000,
+    "date_created": 1683072000000,
+    "primary_country_id": 109,
+    "primary_country_name": "Guatemala",
+    "primary_country_iso3": "gtm",
+    "primary_country_location": {
+      "lon": -90.39,
+      "lat": 15.61
+    }
+  }
+}

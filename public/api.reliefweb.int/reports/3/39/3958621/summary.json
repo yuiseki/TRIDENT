@@ -1,0 +1,127 @@
+{
+  "original": {
+    "id": "3958621",
+    "fields": {
+      "date": {
+        "changed": "2023-05-04T14:01:01+00:00",
+        "created": "2023-05-04T12:48:49+00:00",
+        "original": "2023-05-04T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/226",
+          "name": "Syrian Arab Republic",
+          "location": {
+            "lon": 38.51,
+            "lat": 35.01
+          },
+          "id": 226,
+          "shortname": "Syria",
+          "iso3": "syr",
+          "primary": true
+        }
+      ],
+      "origin": "https://www.etcluster.org/document/etc-syria-sitrep-march-april-2023",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/226",
+        "name": "Syrian Arab Republic",
+        "location": {
+          "lon": 38.51,
+          "lat": 35.01
+        },
+        "id": 226,
+        "shortname": "Syria",
+        "iso3": "syr"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/13799",
+          "longname": "Emergency Telecommunications Cluster",
+          "name": "Emergency Telecommunications Cluster",
+          "id": 13799,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "ETC",
+          "homepage": "https://www.etcluster.org/"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "Syria - Conflict ETC Situation Report #59 (Reporting period: 01/03/2023 to 30/04/2023)",
+      "body": "**HIGHLIGHTS**\n\n- The ETC installed a dedicated solar power system for the VHF radio repeater at the UN hub in Damascus to ensure uninterrupted coverage after a fault with the existing power supply system caused a temporary outage.\n\n- The cluster also replaced a faulty antenna on one of the VHF radio base stations in the Damascus Security Operations Centre (SOC) and completed all routine annual maintenance of communications equipment in the SOC.\n\n- Approval was received from the authorities to conduct a mission to Hama from 7-15 May to install a VHF radio repeater. The installation will expand radio coverage in rural Hama to support the scale-u",
+      "url": "https://reliefweb.int/node/3958621",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/b1/4e/b14ee9ff-cea1-4df6-8edb-f613e6739ed7.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/b1/4e/b14ee9ff-cea1-4df6-8edb-f613e6739ed7.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/b1/4e/b14ee9ff-cea1-4df6-8edb-f613e6739ed7.png",
+            "version": "2417357-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/b1/4e/b14ee9ff-cea1-4df6-8edb-f613e6739ed7.png"
+          },
+          "filename": "ETC Syria SitRep 59_Apr 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2417357",
+          "filesize": "170509",
+          "url": "https://reliefweb.int/attachments/b14ee9ff-cea1-4df6-8edb-f613e6739ed7/ETC%20Syria%20SitRep%2059_Apr%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/syrian-arab-republic/syria-conflict-etc-situation-report-59-reporting-period-01032023-30042023",
+      "theme": [
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        }
+      ],
+      "id": 3958621,
+      "status": "published",
+      "body-html": "<p><strong>HIGHLIGHTS</strong></p>\n<ul>\n<li>\n<p>The ETC installed a dedicated solar power system for the VHF radio repeater at the UN hub in Damascus to ensure uninterrupted coverage after a fault with the existing power supply system caused a temporary outage.</p>\n</li>\n<li>\n<p>The cluster also replaced a faulty antenna on one of the VHF radio base stations in the Damascus Security Operations Centre (SOC) and completed all routine annual maintenance of communications equipment in the SOC.</p>\n</li>\n<li>\n<p>Approval was received from the authorities to conduct a mission to Hama from 7-15 May to install a VHF radio repeater. The installation will expand radio coverage in rural Hama to support the scale-u</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# Syria - Conflict ETC Situation Report #59 (Reporting period: 01/03/2023 to 30/04/2023)\n\n**HIGHLIGHTS**\n\n- The ETC installed a dedicated solar power system for the VHF radio repeater at the UN hub in Damascus to ensure uninterrupted coverage after a fault with the existing power supply system caused a temporary outage.\n\n- The cluster also replaced a faulty antenna on one of the VHF radio base stations in the Damascus Security Operations Centre (SOC) and completed all routine annual maintenance of communications equipment in the SOC.\n\n- Approval was received from the authorities to conduct a mission to Hama from 7-15 May to install a VHF radio repeater. The installation will expand radio coverage in rural Hama to support the scale-u",
+  "summary": " The ETC installed a dedicated solar power system and replaced a faulty antenna in the Damascus Security Operations Centre (SOC) to ensure uninterrupted coverage. Approval was received to conduct a mission to Hama from 7-15 May to install a VHF radio repeater, which will expand radio coverage in rural Hama.",
+  "metadata": {
+    "id": "3958621",
+    "name": "Syria - Conflict ETC Situation Report #59 (Reporting period: 01/03/2023 to 30/04/2023)",
+    "date_original": 1683158400000,
+    "date_changed": 1683208861000,
+    "date_created": 1683204529000,
+    "primary_country_id": 226,
+    "primary_country_name": "Syrian Arab Republic",
+    "primary_country_iso3": "syr",
+    "primary_country_location": {
+      "lon": 38.51,
+      "lat": 35.01
+    }
+  }
+}

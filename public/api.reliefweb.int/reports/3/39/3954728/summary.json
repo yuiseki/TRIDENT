@@ -1,0 +1,122 @@
+{
+  "original": {
+    "id": "3954728",
+    "fields": {
+      "date": {
+        "changed": "2023-04-20T14:22:19+00:00",
+        "created": "2023-04-20T13:58:27+00:00",
+        "original": "2023-04-20T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/241",
+          "name": "Ukraine",
+          "location": {
+            "lon": 31.32,
+            "lat": 49.32
+          },
+          "id": 241,
+          "shortname": "Ukraine",
+          "iso3": "ukr",
+          "primary": true
+        }
+      ],
+      "origin": "https://www.who.int/europe/publications/i/item/WHO-EURO-2023-5319-45083-69056",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/241",
+        "name": "Ukraine",
+        "location": {
+          "lon": 31.32,
+          "lat": 49.32
+        },
+        "id": 241,
+        "shortname": "Ukraine",
+        "iso3": "ukr"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1275",
+          "longname": "World Health Organization",
+          "spanish_name": "Organización Mundial de la Salud",
+          "name": "World Health Organization",
+          "id": 1275,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WHO",
+          "homepage": "http://www.who.int/"
+        }
+      ],
+      "title": "War in Ukraine: Situation report from WHO Ukraine country office. Issue No. 50, 19 April 2023",
+      "body": "**HIGHLIGHTS**\n\n- Supported by the European Union (Directorate-General for Neighbourhood and Enlargement Negotiations and Directorate General for European Civil Protection and Humanitarian Aid Operations), the Canadian Ministry of Foreign Affairs, Trade and Development, the Swiss Federal Department of Foreign Affairs ; the United States Agency for International Development – Bureau for Humanitarian Assistance, the German Embassy in Ukraine, and the Ukraine Humanitarian Fund, the WHO Country Office (CO) in Ukraine took part in a UN interagency humanitarian convoy to deliver medical supplies and medicines to two hospitals in Toretsk, a primary care centre in Kurakhove in the Donetsk region, Velykyi Burluk in the Kharkiv region, and four medical facilities in Zaporizhzhya. The supplies included interagency health kits, kits for the treatment of injuries and emergency surgeries, kits for the treatment of non-infectious diseases, paediatric kits and pneumonia treatment kits.\n\n- On 5 April, the WHO CO held a seminar in Cherkasy to improve the operation of the emergency medical care and disaster medicine system in Ukraine. The seminar was opened and attended by representatives of WHO, the Ministry of Health (MoH) of Ukraine and directors from the regional centre for emergency care and disaster medicine. Key findings were presented, including the fact that 12 500 people with limited access due to their location in the recently retaken areas have received medical care; and that up to 3000 people have undergone treatment abroad with support from the State Emergency Service of Ukraine and international partners.\n\n\n**SITUATION UPDATE**\n\n-   As of 18 April, the State Emergency Service of Ukraine reported 1564 households and 330 houses remain flooded with transport connections to 30 settlements are disrupted. The seasonal water level rise occurs in the territories of Volyn, Dnipropetorvsk, Zhytomyr, Kyiv, Kirovograd, Rivna, Poltava, Cherkasy, and Chernihiv regions.\n    \n-   UN provided shelter materials and other vital items to 1500 people in a community along the Dripro River in Kherson. “This is the first time we managed to go to this area, only a couple of hundreds meters from the front line, where the level of destruction is appalling,” Denise Brown, Humanitarian Coordinator for Ukraine.\n    \n-   According to a sociological research result, during the year of the full-scale war, 9 out of 10 Ukrainians experienced at least on of the symptoms of psycho traumatization. According to forecasts, 40-50% of the population of Ukraine will need psychological support. To meet his need, state authorities are coordinating efforts and working out specific solutions to provide Ukrainians with high- quality and affordable state services for psychosocial support.\n    \n    “A full-scale war brings not only direct losses, but also indirect ones [...]. the topic of mental health is becoming increasingly relevant not only in Ukraine, but also in other countries. Attention to this direction is a worldwide trend that requires a comprehensive approach and timely response,” Minister of Health Viktor Lyashko.\n    \n-   The development of primary medical care, strategic procurement and medium-term contracts and management of the Medical Guarantee Program are priority areas of work for 2023-2024. Specialist of the National Health Service of Ukraine (NHSU) and WHO identified the following points: formation of a methodology for assessing needs in the field of healthcare; launch of the project on forming the profile of the healthcare institution; refinement of indicators of universal primary medical care coverage; planning the modernization of the Medical Guarantee Program.\n    \n    \"Stability and development are extremely important for both patients and doctors. Especially now, during the war. Every Ukrainian man and woman should have access to a quality medical service, and doctors should provide this service and receive a financial reward for it. In fact, this is the priority of the National Health Service and the mission of the WHO [...],” the Head of NHSU, Natalya Husak.",
+      "url": "https://reliefweb.int/node/3954728",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/4f/10/4f10150c-efe5-4a86-8a8e-36b5e737c49a.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/4f/10/4f10150c-efe5-4a86-8a8e-36b5e737c49a.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/4f/10/4f10150c-efe5-4a86-8a8e-36b5e737c49a.png",
+            "version": "2413808-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/4f/10/4f10150c-efe5-4a86-8a8e-36b5e737c49a.png"
+          },
+          "filename": "WHO-EURO-2023-5319-45083-69056-eng.pdf",
+          "mimetype": "application/pdf",
+          "id": "2413808",
+          "filesize": "1090745",
+          "url": "https://reliefweb.int/attachments/4f10150c-efe5-4a86-8a8e-36b5e737c49a/WHO-EURO-2023-5319-45083-69056-eng.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/ukraine/war-ukraine-situation-report-who-ukraine-country-office-issue-no-50-19-april-2023",
+      "theme": [
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        }
+      ],
+      "id": 3954728,
+      "status": "published",
+      "body-html": "<p><strong>HIGHLIGHTS</strong></p>\n<ul>\n<li>\n<p>Supported by the European Union (Directorate-General for Neighbourhood and Enlargement Negotiations and Directorate General for European Civil Protection and Humanitarian Aid Operations), the Canadian Ministry of Foreign Affairs, Trade and Development, the Swiss Federal Department of Foreign Affairs ; the United States Agency for International Development – Bureau for Humanitarian Assistance, the German Embassy in Ukraine, and the Ukraine Humanitarian Fund, the WHO Country Office (CO) in Ukraine took part in a UN interagency humanitarian convoy to deliver medical supplies and medicines to two hospitals in Toretsk, a primary care centre in Kurakhove in the Donetsk region, Velykyi Burluk in the Kharkiv region, and four medical facilities in Zaporizhzhya. The supplies included interagency health kits, kits for the treatment of injuries and emergency surgeries, kits for the treatment of non-infectious diseases, paediatric kits and pneumonia treatment kits.</p>\n</li>\n<li>\n<p>On 5 April, the WHO CO held a seminar in Cherkasy to improve the operation of the emergency medical care and disaster medicine system in Ukraine. The seminar was opened and attended by representatives of WHO, the Ministry of Health (MoH) of Ukraine and directors from the regional centre for emergency care and disaster medicine. Key findings were presented, including the fact that 12 500 people with limited access due to their location in the recently retaken areas have received medical care; and that up to 3000 people have undergone treatment abroad with support from the State Emergency Service of Ukraine and international partners.</p>\n</li>\n</ul>\n<p><strong>SITUATION UPDATE</strong></p>\n<ul>\n<li>\n<p>As of 18 April, the State Emergency Service of Ukraine reported 1564 households and 330 houses remain flooded with transport connections to 30 settlements are disrupted. The seasonal water level rise occurs in the territories of Volyn, Dnipropetorvsk, Zhytomyr, Kyiv, Kirovograd, Rivna, Poltava, Cherkasy, and Chernihiv regions.</p>\n</li>\n<li>\n<p>UN provided shelter materials and other vital items to 1500 people in a community along the Dripro River in Kherson. “This is the first time we managed to go to this area, only a couple of hundreds meters from the front line, where the level of destruction is appalling,” Denise Brown, Humanitarian Coordinator for Ukraine.</p>\n</li>\n<li>\n<p>According to a sociological research result, during the year of the full-scale war, 9 out of 10 Ukrainians experienced at least on of the symptoms of psycho traumatization. According to forecasts, 40-50% of the population of Ukraine will need psychological support. To meet his need, state authorities are coordinating efforts and working out specific solutions to provide Ukrainians with high- quality and affordable state services for psychosocial support.</p>\n<p>“A full-scale war brings not only direct losses, but also indirect ones [...]. the topic of mental health is becoming increasingly relevant not only in Ukraine, but also in other countries. Attention to this direction is a worldwide trend that requires a comprehensive approach and timely response,” Minister of Health Viktor Lyashko.</p>\n</li>\n<li>\n<p>The development of primary medical care, strategic procurement and medium-term contracts and management of the Medical Guarantee Program are priority areas of work for 2023-2024. Specialist of the National Health Service of Ukraine (NHSU) and WHO identified the following points: formation of a methodology for assessing needs in the field of healthcare; launch of the project on forming the profile of the healthcare institution; refinement of indicators of universal primary medical care coverage; planning the modernization of the Medical Guarantee Program.</p>\n<p>&quot;Stability and development are extremely important for both patients and doctors. Especially now, during the war. Every Ukrainian man and woman should have access to a quality medical service, and doctors should provide this service and receive a financial reward for it. In fact, this is the priority of the National Health Service and the mission of the WHO [...],” the Head of NHSU, Natalya Husak.</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# War in Ukraine: Situation report from WHO Ukraine country office. Issue No. 50, 19 April 2023\n\n**HIGHLIGHTS**\n\n- Supported by the European Union (Directorate-General for Neighbourhood and Enlargement Negotiations and Directorate General for European Civil Protection and Humanitarian Aid Operations), the Canadian Ministry of Foreign Affairs, Trade and Development, the Swiss Federal Department of Foreign Affairs ; the United States Agency for International Development – Bureau for Humanitarian Assistance, the German Embassy in Ukraine, and the Ukraine Humanitarian Fund, the WHO Country Office (CO) in Ukraine took part in a UN interagency humanitarian convoy to deliver medical supplies and medicines to two hospitals in Toretsk, a primary care centre in Kurakhove in the Donetsk region, Velykyi Burluk in the Kharkiv region, and four medical facilities in Zaporizhzhya. The supplies included interagency health kits, kits for the treatment of injuries and emergency surgeries, kits for the treatment of non-infectious diseases, paediatric kits and pneumonia treatment kits.\n\n- On 5 April, the WHO CO held a seminar in Cherkasy to improve the operation of the emergency medical care and disaster medicine system in Ukraine. The seminar was opened and attended by representatives of WHO, the Ministry of Health (MoH) of Ukraine and directors from the regional centre for emergency care and disaster medicine. Key findings were presented, including the fact that 12 500 people with limited access due to their location in the recently retaken areas have received medical care; and that up to 3000 people have undergone treatment abroad with support from the State Emergency Service of Ukraine and international partners.\n\n\n**SITUATION UPDATE**\n\n-   As of 18 April, the State Emergency Service of Ukraine reported 1564 households and 330 houses remain flooded with transport connections to 30 settlements are disrupted. The seasonal water level rise occurs in the territories of Volyn, Dnipropetorvsk, Zhytomyr, Kyiv, Kirovograd, Rivna, Poltava, Cherkasy, and Chernihiv regions.\n    \n-   UN provided shelter materials and other vital items to 1500 people in a community along the Dripro River in Kherson. “This is the first time we managed to go to this area, only a couple of hundreds meters from the front line, where the level of destruction is appalling,” Denise Brown, Humanitarian Coordinator for Ukraine.\n    \n-   According to a sociological research result, during the year of the full-scale war, 9 out of 10 Ukrainians experienced at least on of the symptoms of psycho traumatization. According to forecasts, 40-50% of the population of Ukraine will need psychological support. To meet his need, state authorities are coordinating efforts and working out specific solutions to provide Ukrainians with high- quality and affordable state services for psychosocial support.\n    \n    “A full-scale war brings not only direct losses, but also indirect ones [...]. the topic of mental health is becoming increasingly relevant not only in Ukraine, but also in other countries. Attention to this direction is a worldwide trend that requires a comprehensive approach and timely response,” Minister of Health Viktor Lyashko.\n    \n-   The development of primary medical care, strategic procurement and medium-term contracts and management of the Medical Guarantee Program are priority areas of work for 2023-2024. Specialist of the National Health Service of Ukraine (NHSU) and WHO identified the following points: formation of a methodology for assessing needs in the field of healthcare; launch of the project on forming the profile of the healthcare institution; refinement of indicators of universal primary medical care coverage; planning the modernization of the Medical Guarantee Program.\n    \n    \"Stability and development are extremely important for both patients and doctors. Especially now, during the war. Every Ukrainian man and woman should have access to a quality medical service, and doctors should provide this service and receive a financial reward for it. In fact, this is the priority of the National Health Service and the mission of the WHO [...],” the Head of NHSU, Natalya Husak.",
+  "summary": "\n\nThe WHO Country Office in Ukraine, supported by the European Union, Canada, Switzerland, the United States, and Germany, has been delivering medical supplies and medicines to hospitals and medical facilities in the Donetsk, Kharkiv, and Zaporizhzhya regions. On 5 April, the WHO Country Office held a seminar in Cherkasy to improve the emergency medical care and disaster medicine system in Ukraine. As of 18 April, 1564 households and 330 houses remain flooded due to seasonal water level rise in the Volyn, Dnipropetorvsk, Zhytomyr, Kyiv, Kirovograd, Rivna, Poltava, Cherkasy, and Chernihiv regions. UN provided shelter materials and other vital items to 1500 people in a community along the Dripro River in Kherson. According to a sociological research result, 9 out of 10 Ukrainians experienced at least one of the symptoms of psycho traumatization due to the war. The National Health Service of Ukraine and WHO are working on developing primary medical care, strategic procurement and medium-term contracts, and management of the Medical Guarantee Program.",
+  "metadata": {
+    "id": "3954728",
+    "name": "War in Ukraine: Situation report from WHO Ukraine country office. Issue No. 50, 19 April 2023",
+    "date_original": 1681948800000,
+    "date_changed": 1682000539000,
+    "date_created": 1681999107000,
+    "primary_country_id": 241,
+    "primary_country_name": "Ukraine",
+    "primary_country_iso3": "ukr",
+    "primary_country_location": {
+      "lon": 31.32,
+      "lat": 49.32
+    }
+  }
+}

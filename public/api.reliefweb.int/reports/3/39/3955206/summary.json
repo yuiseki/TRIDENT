@@ -1,0 +1,345 @@
+{
+  "original": {
+    "id": "3955206",
+    "fields": {
+      "date": {
+        "changed": "2023-04-23T01:25:34+00:00",
+        "created": "2023-04-22T22:35:15+00:00",
+        "original": "2023-04-20T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/20",
+          "name": "Anguilla",
+          "location": {
+            "lon": -63.0686,
+            "lat": 18.2206
+          },
+          "id": 20,
+          "shortname": "Anguilla",
+          "iso3": "aia"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/22",
+          "name": "Argentina",
+          "location": {
+            "lon": -64,
+            "lat": -35.38
+          },
+          "id": 22,
+          "shortname": "Argentina",
+          "iso3": "arg"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/29",
+          "name": "Bahamas",
+          "location": {
+            "lon": -76.55,
+            "lat": 25.24
+          },
+          "id": 29,
+          "shortname": "Bahamas",
+          "iso3": "bhs"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/42",
+          "name": "Brazil",
+          "location": {
+            "lon": -51.62,
+            "lat": -9.59
+          },
+          "id": 42,
+          "shortname": "Brazil",
+          "iso3": "bra"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/43",
+          "name": "British Virgin Islands",
+          "location": {
+            "lon": -64.64,
+            "lat": 18.4207
+          },
+          "id": 43,
+          "shortname": "British Virgin Islands",
+          "iso3": "vgb"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/57",
+          "name": "Chile",
+          "location": {
+            "lon": -72.31,
+            "lat": -37.72
+          },
+          "id": 57,
+          "shortname": "Chile",
+          "iso3": "chl"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/64",
+          "name": "Colombia",
+          "location": {
+            "lon": -73.07,
+            "lat": 3.9
+          },
+          "id": 64,
+          "shortname": "Colombia",
+          "iso3": "col"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/68",
+          "name": "Costa Rica",
+          "location": {
+            "lon": -84.19,
+            "lat": 9.97
+          },
+          "id": 68,
+          "shortname": "Costa Rica",
+          "iso3": "cri"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/71",
+          "name": "Cuba",
+          "location": {
+            "lon": -79.24,
+            "lat": 21.95
+          },
+          "id": 71,
+          "shortname": "Cuba",
+          "iso3": "cub"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/14893",
+          "name": "Curaçao (The Netherlands)",
+          "location": {
+            "lon": -68.98,
+            "lat": 12.15
+          },
+          "id": 14893,
+          "shortname": "Curaçao (The Netherlands)",
+          "iso3": "cuw"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/79",
+          "name": "Dominican Republic",
+          "location": {
+            "lon": -70.11,
+            "lat": 18.85
+          },
+          "id": 79,
+          "shortname": "Dominican Rep.",
+          "iso3": "dom"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/81",
+          "name": "Ecuador",
+          "location": {
+            "lon": -78.43,
+            "lat": -1.16
+          },
+          "id": 81,
+          "shortname": "Ecuador",
+          "iso3": "ecu"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/83",
+          "name": "El Salvador",
+          "location": {
+            "lon": -88.87,
+            "lat": 13.74
+          },
+          "id": 83,
+          "shortname": "El Salvador",
+          "iso3": "slv"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/109",
+          "name": "Guatemala",
+          "location": {
+            "lon": -90.39,
+            "lat": 15.61
+          },
+          "id": 109,
+          "shortname": "Guatemala",
+          "iso3": "gtm"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/112",
+          "name": "Guyana",
+          "location": {
+            "lon": -58.97,
+            "lat": 5.62
+          },
+          "id": 112,
+          "shortname": "Guyana",
+          "iso3": "guy"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/116",
+          "name": "Honduras",
+          "location": {
+            "lon": -86.62,
+            "lat": 14.82
+          },
+          "id": 116,
+          "shortname": "Honduras",
+          "iso3": "hnd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/156",
+          "name": "Mexico",
+          "location": {
+            "lon": -102.53,
+            "lat": 23.95
+          },
+          "id": 156,
+          "shortname": "Mexico",
+          "iso3": "mex"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/173",
+          "name": "Nicaragua",
+          "location": {
+            "lon": -85.03,
+            "lat": 12.84
+          },
+          "id": 173,
+          "shortname": "Nicaragua",
+          "iso3": "nic"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/186",
+          "name": "Paraguay",
+          "location": {
+            "lon": -58.39,
+            "lat": -23.24
+          },
+          "id": 186,
+          "shortname": "Paraguay",
+          "iso3": "pry"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/187",
+          "name": "Peru",
+          "location": {
+            "lon": -75.31,
+            "lat": -10.15
+          },
+          "id": 187,
+          "shortname": "Peru",
+          "iso3": "per"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/247",
+          "name": "Uruguay",
+          "location": {
+            "lon": -56.01,
+            "lat": -32.8
+          },
+          "id": 247,
+          "shortname": "Uruguay",
+          "iso3": "ury"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/250",
+          "name": "Venezuela (Bolivarian Republic of)",
+          "location": {
+            "lon": -65.8,
+            "lat": 7.62
+          },
+          "id": 250,
+          "shortname": "Venezuela",
+          "iso3": "ven"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/254",
+          "name": "World",
+          "id": 254,
+          "shortname": "World",
+          "iso3": "wld",
+          "primary": true
+        }
+      ],
+      "origin": "https://inee.org/resources/regional-monitoring-framework-students-move-latin-america-and-caribbean",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/254",
+        "name": "World",
+        "id": 254,
+        "shortname": "World",
+        "iso3": "wld"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1820",
+          "longname": "United Nations Educational, Scientific and Cultural Organization",
+          "spanish_name": "Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura",
+          "name": "UN Educational, Scientific and Cultural Organization",
+          "id": 1820,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNESCO",
+          "homepage": "http://www.unesco.org"
+        }
+      ],
+      "title": "The Regional Monitoring Framework for Students on the Move in Latin America and the Caribbean",
+      "body": "**PRACTICE PROFILE**\n\nThe [Regional Framework for Monitoring People on the Move in Latin America and the Caribbean](https://beta.emacunesco.org/en/inicio-english/) (RMF) is a UNESCO initiative developed in collaboration with 18 ministries of education in the region. It supports the formulation, implementation, and monitoring of national education policies to ensure the right to education for people on the move in the region, in response to the challenges posed by the significant increase in intra-regional displacement flows. The framework aims to strengthen educational policy processes for full educational inclusion of students on the move. It includes complementary quantitative (common indicators) and qualitative (normative map on policies and good practices) elements to understand how the right to education is guaranteed. The [Education y Movilidad in América Latina y el Caribe](https://beta.emacunesco.org/en/inicio-english/) platform provides access to these elements and data generated and collected in this framework. \n\n**The need for a coordinated regional response to ensure access to education for people on the move in Latin America and the Caribbean**\n\nIn recent years, LAC has experienced an increase in intraregional movement and large-scale displacement, raising a unique set of protection concerns and emphasizing the need for a coordinated regional response to ensure the rights of people on the move. In referring to cross-border movements in the LAC region, the term “people on the move” recognizes the diversity of experiences in terms of motivation, legal status, magnitude, and composition, and includes migrants, refugees, asylum-seekers, and returned persons. Although Venezuelan displacement is one of the largest humanitarian crises in the region’s history, with more than 5.9 million migrants and refugees across LAC, it does not represent all regional mobility.\n\nHost countries in the region have faced the challenge of integrating people on the move into their national education systems, ensuring the right to education for all. In the face of large-scale regional human mobility and a lack of comparable quality data on inclusion in national education systems, there was a need to mobilize and create a coordinated response. This included strengthening the planning and monitoring capacities of national education systems based on the generation of comparable and quality data and the development of regional instruments for monitoring considering the commitments related to SDG 4 and relevant national policies, under an inclusive approach.\n\nIn 2019, UNESCO carried out an [analysis of Education Management Information Systems (EMIS) in Chile, Colombia, Ecuador, Guatemala, and Peru](https://unesdoc.unesco.org/ark:/48223/pf0000382822_eng.locale=en) and identified existing challenges related to monitoring and producing reliable, accurate, and relevant data. The diagnosis highlighted the need for the development of guidelines to harmonize statistical processes and the provision of technical assistance to obtain indicators that adequately inform the education response, and data that is disaggregated by sex. This need was reaffirmed by the Ministries of Foreign Affairs and Ministries of Education of the region within the framework of the Quito Process, which states that strengthening data production and monitoring frameworks at the regional level is a priority that will facilitate intergovernmental coordination.\n\nThe approach:\n\nConsidering the regional needs and commitments of MoEs, and in line with its regional strategy to support affected countries in guaranteeing the right to education of the situation of people on the move, ORELAC UNESCO is coordinating, as part of the regional component of the Multi-Year Resilience Program (MYRP) for the Venezuela Refugee and Migrant Crisis funded by Education Cannot Wait (ECW), the development of the Regional Monitoring Framework for Students on the Move (RMF). This multi-partner initiative is strongly driven by the involvement of 18 Member States: Argentina, Brazil, Chile, Costa Rica, Cuba, Curaçao, Dominican Republic, Ecuador, El Salvador, Guyana, Honduras, Mexico, Nicaragua, Paraguay, Peru, Uruguay, Anguilla, Bahamas, and the British Virgin Islands.\n\nThe RMF attempts to address the challenges caused by the lack of data and to transform the way education data is collected to support the formulation and implementation of educational policies aimed at guaranteeing the right to education of people on the move. It is developed through policy dialogue and by strengthening the planning and monitoring capacities of national education systems in the LAC region to enable the generation of timely, relevant, and comparable quality data, in alignment with relevant national policies to facilitate:\n\n- Knowledge and monitoring of the educational situation of students on the move in the region in relation to the fulfilment of their right to education.\n\n- Consolidating a space for knowledge, diagnosis and support for the formulation and implementation of educational policies aimed at guaranteeing the right to education of people on the move that is based on evidence.\n\n- Providing visibility to good practices for the educational inclusion of people on the move that have been implemented by Governments and NGOs in the region.\n\n- Contributing to the monitoring of SDG4 in the region with information on the educational situation of students on the move.\n\n- Establishing a dialogue on the criteria for the identification and comparability of indicators that allows for having comparable regional indicators. \n\nThe RMF is composed of complementary quantitative and qualitative dimensions. The quantitative element consists of a set of comparable and relevant statistical indicators to monitor the educational trajectories of people on the move, support the strengthening of national planning for educational interventions, and better understand progress across the region. The qualitative dimension contains a normative map of national policies for the educational inclusion of students on the move, an inventory of innovative experiences and promising practices, and a section on policy implementation analysis. The open data platform [Educación y Movilidad en América Latina y el Caribe - EMAC](https://beta.emacunesco.org/en/inicio-english/) disseminates all the results of the initiative, the knowledge generated and relevant information on inclusive education at the regional level.\n\nImplementation:\n\nThe Regional Monitoring Framework promotes policy coordination, harmonization, and inclusion of data on the right to education for people on the move, through mechanisms to systematically engage regional partners, especially ministries of education. The implementation of the RMF is based on the creation of an environment for dialogue, knowledge sharing, and advocacy related to the right to education for people on the move. Ultimately, the objective is to facilitate the exchange of information and best practices and to promote the development of policies and practices that ensure access to education for all students, regardless of their mobility status.\n\nKey steps for implementation include :\n\n1\\) Better understanding of actions implemented in different national contextsto guarantee the right to education and identification of needs to improve processes to strengthen data production and capacity, in close collaboration with the Quito Process, the [Grupo Regional de Educación (GRE)](https://response.reliefweb.int/latin-america-and-caribbean/regional-education-group-education-lac) and the Education and Human Mobility Working Group, bringing together the region's Ministries of Education and education partners, through:\n\n- A rapid diagnosis of the availability of information on students on the move in the Institutional Educational Information Systems in Chile, Colombia, Ecuador, Peru, and Guatemala (2019)\n\n- A [regional study](https://www.buenosaires.iiep.unesco.org/es/publicaciones/analisis-y-recomendaciones-para-la-modificacion-y-desarrollo-de-marcos-normativos-y) to analyze and provide recommendations for the modification and development of normative frameworks and national policies that guarantee access and educational inclusion of people on the move (2020)\n\n2\\) Setting up [technical working roundtables](https://beta.emacunesco.org/en/about-the-project/technical-working-table/) bringing together designated national technical focal points from 18 ministries of education in the region, education specialists of UNESCO, education partners from the GRE working with people on the move, and education and migration statistics experts. Technical focal points are appointed by each MoE involved. These (sub-)working groups provide a platform for sharing knowledge, information, and experiences between different countries and partners, and function as a collective decision-making structure, and are essential to coordinate implementation of the RMF across the development-humanitarian nexus with leadership from the ministries of education and the coordination of UNESCO.\n\n3\\) Developing an online open data platform designed as a tool for analysis, visualization and dissemination of data, indicators, knowledge, and diagnostics collected under the RMF, to enable the implementation of lessons and best practices in the different countries of the region. Ultimately, it will be possible to visualize and track the educational trajectories of students on the move on its online web platform, allowing for data and policy comparisons across the region.",
+      "url": "https://reliefweb.int/node/3955206",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/68/59/685905ad-9ea0-4522-bc28-0f86562afdd8.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/68/59/685905ad-9ea0-4522-bc28-0f86562afdd8.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/68/59/685905ad-9ea0-4522-bc28-0f86562afdd8.png",
+            "version": "2414111-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/68/59/685905ad-9ea0-4522-bc28-0f86562afdd8.png"
+          },
+          "filename": "UNESCO EIE Data Evidence and Learning - Case Study The Regional Monitoring Framework POTM in LAC.pdf",
+          "mimetype": "application/pdf",
+          "id": "2414111",
+          "filesize": "347968",
+          "url": "https://reliefweb.int/attachments/685905ad-9ea0-4522-bc28-0f86562afdd8/UNESCO%20EIE%20Data%20Evidence%20and%20Learning%20-%20Case%20Study%20The%20Regional%20Monitoring%20Framework%20POTM%20in%20LAC.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/world/regional-monitoring-framework-students-move-latin-america-and-caribbean",
+      "theme": [
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        }
+      ],
+      "id": 3955206,
+      "status": "published",
+      "body-html": "<p><strong>PRACTICE PROFILE</strong></p>\n<p>The <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://beta.emacunesco.org/en/inicio-english/\">Regional Framework for Monitoring People on the Move in Latin America and the Caribbean</a> (RMF) is a UNESCO initiative developed in collaboration with 18 ministries of education in the region. It supports the formulation, implementation, and monitoring of national education policies to ensure the right to education for people on the move in the region, in response to the challenges posed by the significant increase in intra-regional displacement flows. The framework aims to strengthen educational policy processes for full educational inclusion of students on the move. It includes complementary quantitative (common indicators) and qualitative (normative map on policies and good practices) elements to understand how the right to education is guaranteed. The <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://beta.emacunesco.org/en/inicio-english/\">Education y Movilidad in América Latina y el Caribe</a> platform provides access to these elements and data generated and collected in this framework.</p>\n<p><strong>The need for a coordinated regional response to ensure access to education for people on the move in Latin America and the Caribbean</strong></p>\n<p>In recent years, LAC has experienced an increase in intraregional movement and large-scale displacement, raising a unique set of protection concerns and emphasizing the need for a coordinated regional response to ensure the rights of people on the move. In referring to cross-border movements in the LAC region, the term “people on the move” recognizes the diversity of experiences in terms of motivation, legal status, magnitude, and composition, and includes migrants, refugees, asylum-seekers, and returned persons. Although Venezuelan displacement is one of the largest humanitarian crises in the region’s history, with more than 5.9 million migrants and refugees across LAC, it does not represent all regional mobility.</p>\n<p>Host countries in the region have faced the challenge of integrating people on the move into their national education systems, ensuring the right to education for all. In the face of large-scale regional human mobility and a lack of comparable quality data on inclusion in national education systems, there was a need to mobilize and create a coordinated response. This included strengthening the planning and monitoring capacities of national education systems based on the generation of comparable and quality data and the development of regional instruments for monitoring considering the commitments related to SDG 4 and relevant national policies, under an inclusive approach.</p>\n<p>In 2019, UNESCO carried out an <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://unesdoc.unesco.org/ark:/48223/pf0000382822_eng.locale=en\">analysis of Education Management Information Systems (EMIS) in Chile, Colombia, Ecuador, Guatemala, and Peru</a> and identified existing challenges related to monitoring and producing reliable, accurate, and relevant data. The diagnosis highlighted the need for the development of guidelines to harmonize statistical processes and the provision of technical assistance to obtain indicators that adequately inform the education response, and data that is disaggregated by sex. This need was reaffirmed by the Ministries of Foreign Affairs and Ministries of Education of the region within the framework of the Quito Process, which states that strengthening data production and monitoring frameworks at the regional level is a priority that will facilitate intergovernmental coordination.</p>\n<p>The approach:</p>\n<p>Considering the regional needs and commitments of MoEs, and in line with its regional strategy to support affected countries in guaranteeing the right to education of the situation of people on the move, ORELAC UNESCO is coordinating, as part of the regional component of the Multi-Year Resilience Program (MYRP) for the Venezuela Refugee and Migrant Crisis funded by Education Cannot Wait (ECW), the development of the Regional Monitoring Framework for Students on the Move (RMF). This multi-partner initiative is strongly driven by the involvement of 18 Member States: Argentina, Brazil, Chile, Costa Rica, Cuba, Curaçao, Dominican Republic, Ecuador, El Salvador, Guyana, Honduras, Mexico, Nicaragua, Paraguay, Peru, Uruguay, Anguilla, Bahamas, and the British Virgin Islands.</p>\n<p>The RMF attempts to address the challenges caused by the lack of data and to transform the way education data is collected to support the formulation and implementation of educational policies aimed at guaranteeing the right to education of people on the move. It is developed through policy dialogue and by strengthening the planning and monitoring capacities of national education systems in the LAC region to enable the generation of timely, relevant, and comparable quality data, in alignment with relevant national policies to facilitate:</p>\n<ul>\n<li>\n<p>Knowledge and monitoring of the educational situation of students on the move in the region in relation to the fulfilment of their right to education.</p>\n</li>\n<li>\n<p>Consolidating a space for knowledge, diagnosis and support for the formulation and implementation of educational policies aimed at guaranteeing the right to education of people on the move that is based on evidence.</p>\n</li>\n<li>\n<p>Providing visibility to good practices for the educational inclusion of people on the move that have been implemented by Governments and NGOs in the region.</p>\n</li>\n<li>\n<p>Contributing to the monitoring of SDG4 in the region with information on the educational situation of students on the move.</p>\n</li>\n<li>\n<p>Establishing a dialogue on the criteria for the identification and comparability of indicators that allows for having comparable regional indicators.</p>\n</li>\n</ul>\n<p>The RMF is composed of complementary quantitative and qualitative dimensions. The quantitative element consists of a set of comparable and relevant statistical indicators to monitor the educational trajectories of people on the move, support the strengthening of national planning for educational interventions, and better understand progress across the region. The qualitative dimension contains a normative map of national policies for the educational inclusion of students on the move, an inventory of innovative experiences and promising practices, and a section on policy implementation analysis. The open data platform <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://beta.emacunesco.org/en/inicio-english/\">Educación y Movilidad en América Latina y el Caribe - EMAC</a> disseminates all the results of the initiative, the knowledge generated and relevant information on inclusive education at the regional level.</p>\n<p>Implementation:</p>\n<p>The Regional Monitoring Framework promotes policy coordination, harmonization, and inclusion of data on the right to education for people on the move, through mechanisms to systematically engage regional partners, especially ministries of education. The implementation of the RMF is based on the creation of an environment for dialogue, knowledge sharing, and advocacy related to the right to education for people on the move. Ultimately, the objective is to facilitate the exchange of information and best practices and to promote the development of policies and practices that ensure access to education for all students, regardless of their mobility status.</p>\n<p>Key steps for implementation include :</p>\n<p>1) Better understanding of actions implemented in different national contextsto guarantee the right to education and identification of needs to improve processes to strengthen data production and capacity, in close collaboration with the Quito Process, the <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://response.reliefweb.int/latin-america-and-caribbean/regional-education-group-education-lac\">Grupo Regional de Educación (GRE)</a> and the Education and Human Mobility Working Group, bringing together the region's Ministries of Education and education partners, through:</p>\n<ul>\n<li>\n<p>A rapid diagnosis of the availability of information on students on the move in the Institutional Educational Information Systems in Chile, Colombia, Ecuador, Peru, and Guatemala (2019)</p>\n</li>\n<li>\n<p>A <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.buenosaires.iiep.unesco.org/es/publicaciones/analisis-y-recomendaciones-para-la-modificacion-y-desarrollo-de-marcos-normativos-y\">regional study</a> to analyze and provide recommendations for the modification and development of normative frameworks and national policies that guarantee access and educational inclusion of people on the move (2020)</p>\n</li>\n</ul>\n<p>2) Setting up <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://beta.emacunesco.org/en/about-the-project/technical-working-table/\">technical working roundtables</a> bringing together designated national technical focal points from 18 ministries of education in the region, education specialists of UNESCO, education partners from the GRE working with people on the move, and education and migration statistics experts. Technical focal points are appointed by each MoE involved. These (sub-)working groups provide a platform for sharing knowledge, information, and experiences between different countries and partners, and function as a collective decision-making structure, and are essential to coordinate implementation of the RMF across the development-humanitarian nexus with leadership from the ministries of education and the coordination of UNESCO.</p>\n<p>3) Developing an online open data platform designed as a tool for analysis, visualization and dissemination of data, indicators, knowledge, and diagnostics collected under the RMF, to enable the implementation of lessons and best practices in the different countries of the region. Ultimately, it will be possible to visualize and track the educational trajectories of students on the move on its online web platform, allowing for data and policy comparisons across the region.</p>\n"
+    }
+  },
+  "text": "# The Regional Monitoring Framework for Students on the Move in Latin America and the Caribbean\n\n**PRACTICE PROFILE**\n\nThe [Regional Framework for Monitoring People on the Move in Latin America and the Caribbean](https://beta.emacunesco.org/en/inicio-english/) (RMF) is a UNESCO initiative developed in collaboration with 18 ministries of education in the region. It supports the formulation, implementation, and monitoring of national education policies to ensure the right to education for people on the move in the region, in response to the challenges posed by the significant increase in intra-regional displacement flows. The framework aims to strengthen educational policy processes for full educational inclusion of students on the move. It includes complementary quantitative (common indicators) and qualitative (normative map on policies and good practices) elements to understand how the right to education is guaranteed. The [Education y Movilidad in América Latina y el Caribe](https://beta.emacunesco.org/en/inicio-english/) platform provides access to these elements and data generated and collected in this framework. \n\n**The need for a coordinated regional response to ensure access to education for people on the move in Latin America and the Caribbean**\n\nIn recent years, LAC has experienced an increase in intraregional movement and large-scale displacement, raising a unique set of protection concerns and emphasizing the need for a coordinated regional response to ensure the rights of people on the move. In referring to cross-border movements in the LAC region, the term “people on the move” recognizes the diversity of experiences in terms of motivation, legal status, magnitude, and composition, and includes migrants, refugees, asylum-seekers, and returned persons. Although Venezuelan displacement is one of the largest humanitarian crises in the region’s history, with more than 5.9 million migrants and refugees across LAC, it does not represent all regional mobility.\n\nHost countries in the region have faced the challenge of integrating people on the move into their national education systems, ensuring the right to education for all. In the face of large-scale regional human mobility and a lack of comparable quality data on inclusion in national education systems, there was a need to mobilize and create a coordinated response. This included strengthening the planning and monitoring capacities of national education systems based on the generation of comparable and quality data and the development of regional instruments for monitoring considering the commitments related to SDG 4 and relevant national policies, under an inclusive approach.\n\nIn 2019, UNESCO carried out an [analysis of Education Management Information Systems (EMIS) in Chile, Colombia, Ecuador, Guatemala, and Peru](https://unesdoc.unesco.org/ark:/48223/pf0000382822_eng.locale=en) and identified existing challenges related to monitoring and producing reliable, accurate, and relevant data. The diagnosis highlighted the need for the development of guidelines to harmonize statistical processes and the provision of technical assistance to obtain indicators that adequately inform the education response, and data that is disaggregated by sex. This need was reaffirmed by the Ministries of Foreign Affairs and Ministries of Education of the region within the framework of the Quito Process, which states that strengthening data production and monitoring frameworks at the regional level is a priority that will facilitate intergovernmental coordination.\n\nThe approach:\n\nConsidering the regional needs and commitments of MoEs, and in line with its regional strategy to support affected countries in guaranteeing the right to education of the situation of people on the move, ORELAC UNESCO is coordinating, as part of the regional component of the Multi-Year Resilience Program (MYRP) for the Venezuela Refugee and Migrant Crisis funded by Education Cannot Wait (ECW), the development of the Regional Monitoring Framework for Students on the Move (RMF). This multi-partner initiative is strongly driven by the involvement of 18 Member States: Argentina, Brazil, Chile, Costa Rica, Cuba, Curaçao, Dominican Republic, Ecuador, El Salvador, Guyana, Honduras, Mexico, Nicaragua, Paraguay, Peru, Uruguay, Anguilla, Bahamas, and the British Virgin Islands.\n\nThe RMF attempts to address the challenges caused by the lack of data and to transform the way education data is collected to support the formulation and implementation of educational policies aimed at guaranteeing the right to education of people on the move. It is developed through policy dialogue and by strengthening the planning and monitoring capacities of national education systems in the LAC region to enable the generation of timely, relevant, and comparable quality data, in alignment with relevant national policies to facilitate:\n\n- Knowledge and monitoring of the educational situation of students on the move in the region in relation to the fulfilment of their right to education.\n\n- Consolidating a space for knowledge, diagnosis and support for the formulation and implementation of educational policies aimed at guaranteeing the right to education of people on the move that is based on evidence.\n\n- Providing visibility to good practices for the educational inclusion of people on the move that have been implemented by Governments and NGOs in the region.\n\n- Contributing to the monitoring of SDG4 in the region with information on the educational situation of students on the move.\n\n- Establishing a dialogue on the criteria for the identification and comparability of indicators that allows for having comparable regional indicators. \n\nThe RMF is composed of complementary quantitative and qualitative dimensions. The quantitative element consists of a set of comparable and relevant statistical indicators to monitor the educational trajectories of people on the move, support the strengthening of national planning for educational interventions, and better understand progress across the region. The qualitative dimension contains a normative map of national policies for the educational inclusion of students on the move, an inventory of innovative experiences and promising practices, and a section on policy implementation analysis. The open data platform [Educación y Movilidad en América Latina y el Caribe - EMAC](https://beta.emacunesco.org/en/inicio-english/) disseminates all the results of the initiative, the knowledge generated and relevant information on inclusive education at the regional level.\n\nImplementation:\n\nThe Regional Monitoring Framework promotes policy coordination, harmonization, and inclusion of data on the right to education for people on the move, through mechanisms to systematically engage regional partners, especially ministries of education. The implementation of the RMF is based on the creation of an environment for dialogue, knowledge sharing, and advocacy related to the right to education for people on the move. Ultimately, the objective is to facilitate the exchange of information and best practices and to promote the development of policies and practices that ensure access to education for all students, regardless of their mobility status.\n\nKey steps for implementation include :\n\n1\\) Better understanding of actions implemented in different national contextsto guarantee the right to education and identification of needs to improve processes to strengthen data production and capacity, in close collaboration with the Quito Process, the [Grupo Regional de Educación (GRE)](https://response.reliefweb.int/latin-america-and-caribbean/regional-education-group-education-lac) and the Education and Human Mobility Working Group, bringing together the region's Ministries of Education and education partners, through:\n\n- A rapid diagnosis of the availability of information on students on the move in the Institutional Educational Information Systems in Chile, Colombia, Ecuador, Peru, and Guatemala (2019)\n\n- A [regional study](https://www.buenosaires.iiep.unesco.org/es/publicaciones/analisis-y-recomendaciones-para-la-modificacion-y-desarrollo-de-marcos-normativos-y) to analyze and provide recommendations for the modification and development of normative frameworks and national policies that guarantee access and educational inclusion of people on the move (2020)\n\n2\\) Setting up [technical working roundtables](https://beta.emacunesco.org/en/about-the-project/technical-working-table/) bringing together designated national technical focal points from 18 ministries of education in the region, education specialists of UNESCO, education partners from the GRE working with people on the move, and education and migration statistics experts. Technical focal points are appointed by each MoE involved. These (sub-)working groups provide a platform for sharing knowledge, information, and experiences between different countries and partners, and function as a collective decision-making structure, and are essential to coordinate implementation of the RMF across the development-humanitarian nexus with leadership from the ministries of education and the coordination of UNESCO.\n\n3\\) Developing an online open data platform designed as a tool for analysis, visualization and dissemination of data, indicators, knowledge, and diagnostics collected under the RMF, to enable the implementation of lessons and best practices in the different countries of the region. Ultimately, it will be possible to visualize and track the educational trajectories of students on the move on its online web platform, allowing for data and policy comparisons across the region.",
+  "summary": " The Regional Monitoring Framework for Students on the Move in Latin America and the Caribbean (RMF) is a UNESCO initiative developed in collaboration with 18 ministries of education in the region to ensure the right to education for people on the move. The RMF is composed of complementary quantitative and qualitative elements to understand how the right to education is guaranteed. It includes a set of comparable and relevant statistical indicators, a normative map of national policies, an inventory of innovative experiences and promising practices, and a section on policy implementation analysis. The implementation of the RMF is based on the creation of an environment for dialogue, knowledge sharing, and advocacy related to the right to education for people on the move.",
+  "metadata": {
+    "id": "3955206",
+    "name": "The Regional Monitoring Framework for Students on the Move in Latin America and the Caribbean",
+    "date_original": 1681948800000,
+    "date_changed": 1682213134000,
+    "date_created": 1682202915000,
+    "primary_country_id": 254,
+    "primary_country_name": "World",
+    "primary_country_iso3": "wld"
+  }
+}

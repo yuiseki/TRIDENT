@@ -1,0 +1,121 @@
+{
+  "original": {
+    "id": "3959185",
+    "fields": {
+      "date": {
+        "changed": "2023-05-05T20:20:04+00:00",
+        "created": "2023-05-05T17:21:43+00:00",
+        "original": "2023-05-05T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/196",
+          "name": "Romania",
+          "location": {
+            "lon": 24.9668,
+            "lat": 45.9432
+          },
+          "id": 196,
+          "shortname": "Romania",
+          "iso3": "rou",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/241",
+          "name": "Ukraine",
+          "location": {
+            "lon": 31.32,
+            "lat": 49.32
+          },
+          "id": 241,
+          "shortname": "Ukraine",
+          "iso3": "ukr"
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/196",
+        "name": "Romania",
+        "location": {
+          "lon": 24.9668,
+          "lat": 45.9432
+        },
+        "id": 196,
+        "shortname": "Romania",
+        "iso3": "rou"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "UNHCR Romania: Ukraine Refugee Situation Update, Update #45, 5 May 2023",
+      "body": "**Key figures**\n\n130,387 refugees granted temporary protection in Romania (as of 1 May 2023)\n\n97,592 refugees in Romania (as of 30 April 2023)\n\n18,984 refugees supported with cash assistance in 2023.\n\n43,129 refugees supported in 2022.\n\n29,914 refugees provided with protection counselling services and legal support in 2023. 65,000 refugees assisted since 2022.\n\n1,200 refugees supported with livelihoods & employment services in 2023.\n\n**Highlights**\n\nOn 5 May, UNHCR and partners hosted a visit at RomExpo, Bucharest of Mr Wesley Reisser, Deputy Director of the Office of Human Rights & Humanitarian Affairs, from the US State Department. During the visit, the delegation engaged with the refugees from Ukraine as well as with 16 actors (such as authorities, UN Agencies and NGOs) operating within the UNHCR’s integrated service hub for refugee at RomExpo . The facility is currently supporting 300 refugees on a daily basis. Most recently refugees are assisted with dedicated counselling, cash assistance and general support to access the newly adopted national assistance programme for refugees.\n\nOn 3 May, UNHCR and partners hosted a visit at RomExpo of Mr. Ichiro Aisawa, Member of the Japanese Parliament and H.E. Mr. Hiroshi Ueda, Ambassador of Japan to Romania. The delegation also visited the adjacent social store set up by the Municipality of Bucharest and supported by UNHCR with core-relief items. During the visit, the delegation exchanged views with humanitarian actors and learned more about the most pressing needs of refugees from Ukraine.\n\n**Response**\n\nUNHCR in Romania is adopting a multi-year strategy that will cover programmes for refugees from 2024 until 2026. The strategy was developed with an extensive consultative process with partners and key stakeholders. It aims to continue providing critical assistance to the most vulnerable refugees and families with basic needs, key protection services and promoting socio-economic inclusion through livelihood services.\n\nOn 3 and 4 May, UNHCR organized a training for NGOs and partners of the Refugee Response Plan (RRP) on the European Union’s General Data Protection Regulation (GDPR). 65 participants from different organisations were present and trained on the GDPR policy in the humanitarian context. The training aimed also at supporting the InterAgency referral mechanism, which is critical to address gaps and duplication in the provision of support and services to refugees.\n\nOn 28 April, UNHCR organized a focus group discussion in Suceava county attended by 22 women and five men. During the discussion, UNHCR provided information on services available for refugees from Ukraine in Romania and shared information through counselling desks on the new government run assistance programme.. UNHCR also continued providing protection counselling services in person as well as through hotlines phone numbers. So far in 2023, UNHCR and partners provided protection and legal counselling to nearly 30,000 refugees.\n\nUNHCR and partners continue supporting refugees to access livelihoods and employment opportunities. This week, UNHCR’s together with partners provided a professional cooking training for ten refugees from Ukraine. In addition, UNHCR continues to facilitate Romanian language courses that help refugees in accessing job opportunities in Romania. So far in 2023, UNHCR and partners assisted 207 refugees with language courses and another 195 with various professional trainings.",
+      "url": "https://reliefweb.int/node/3959185",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/68/cf/68cf406b-f266-4edc-a342-b1930aa31b77.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/68/cf/68cf406b-f266-4edc-a342-b1930aa31b77.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/68/cf/68cf406b-f266-4edc-a342-b1930aa31b77.png",
+            "version": "2417855-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/68/cf/68cf406b-f266-4edc-a342-b1930aa31b77.png"
+          },
+          "filename": "UNHCR Romania _ Ukraine Refugee Situation Update _ 5 May 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2417855",
+          "filesize": "205558",
+          "url": "https://reliefweb.int/attachments/68cf406b-f266-4edc-a342-b1930aa31b77/UNHCR%20Romania%20_%20Ukraine%20Refugee%20Situation%20Update%20_%205%20May%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/romania/unhcr-romania-ukraine-refugee-situation-update-update-45-5-may-2023",
+      "theme": [
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        }
+      ],
+      "id": 3959185,
+      "status": "published",
+      "body-html": "<p><strong>Key figures</strong></p>\n<p>130,387 refugees granted temporary protection in Romania (as of 1 May 2023)</p>\n<p>97,592 refugees in Romania (as of 30 April 2023)</p>\n<p>18,984 refugees supported with cash assistance in 2023.</p>\n<p>43,129 refugees supported in 2022.</p>\n<p>29,914 refugees provided with protection counselling services and legal support in 2023. 65,000 refugees assisted since 2022.</p>\n<p>1,200 refugees supported with livelihoods &amp; employment services in 2023.</p>\n<p><strong>Highlights</strong></p>\n<p>On 5 May, UNHCR and partners hosted a visit at RomExpo, Bucharest of Mr Wesley Reisser, Deputy Director of the Office of Human Rights &amp; Humanitarian Affairs, from the US State Department. During the visit, the delegation engaged with the refugees from Ukraine as well as with 16 actors (such as authorities, UN Agencies and NGOs) operating within the UNHCR’s integrated service hub for refugee at RomExpo . The facility is currently supporting 300 refugees on a daily basis. Most recently refugees are assisted with dedicated counselling, cash assistance and general support to access the newly adopted national assistance programme for refugees.</p>\n<p>On 3 May, UNHCR and partners hosted a visit at RomExpo of Mr. Ichiro Aisawa, Member of the Japanese Parliament and H.E. Mr. Hiroshi Ueda, Ambassador of Japan to Romania. The delegation also visited the adjacent social store set up by the Municipality of Bucharest and supported by UNHCR with core-relief items. During the visit, the delegation exchanged views with humanitarian actors and learned more about the most pressing needs of refugees from Ukraine.</p>\n<p><strong>Response</strong></p>\n<p>UNHCR in Romania is adopting a multi-year strategy that will cover programmes for refugees from 2024 until 2026. The strategy was developed with an extensive consultative process with partners and key stakeholders. It aims to continue providing critical assistance to the most vulnerable refugees and families with basic needs, key protection services and promoting socio-economic inclusion through livelihood services.</p>\n<p>On 3 and 4 May, UNHCR organized a training for NGOs and partners of the Refugee Response Plan (RRP) on the European Union’s General Data Protection Regulation (GDPR). 65 participants from different organisations were present and trained on the GDPR policy in the humanitarian context. The training aimed also at supporting the InterAgency referral mechanism, which is critical to address gaps and duplication in the provision of support and services to refugees.</p>\n<p>On 28 April, UNHCR organized a focus group discussion in Suceava county attended by 22 women and five men. During the discussion, UNHCR provided information on services available for refugees from Ukraine in Romania and shared information through counselling desks on the new government run assistance programme.. UNHCR also continued providing protection counselling services in person as well as through hotlines phone numbers. So far in 2023, UNHCR and partners provided protection and legal counselling to nearly 30,000 refugees.</p>\n<p>UNHCR and partners continue supporting refugees to access livelihoods and employment opportunities. This week, UNHCR’s together with partners provided a professional cooking training for ten refugees from Ukraine. In addition, UNHCR continues to facilitate Romanian language courses that help refugees in accessing job opportunities in Romania. So far in 2023, UNHCR and partners assisted 207 refugees with language courses and another 195 with various professional trainings.</p>\n"
+    }
+  },
+  "text": "# UNHCR Romania: Ukraine Refugee Situation Update, Update #45, 5 May 2023\n\n**Key figures**\n\n130,387 refugees granted temporary protection in Romania (as of 1 May 2023)\n\n97,592 refugees in Romania (as of 30 April 2023)\n\n18,984 refugees supported with cash assistance in 2023.\n\n43,129 refugees supported in 2022.\n\n29,914 refugees provided with protection counselling services and legal support in 2023. 65,000 refugees assisted since 2022.\n\n1,200 refugees supported with livelihoods & employment services in 2023.\n\n**Highlights**\n\nOn 5 May, UNHCR and partners hosted a visit at RomExpo, Bucharest of Mr Wesley Reisser, Deputy Director of the Office of Human Rights & Humanitarian Affairs, from the US State Department. During the visit, the delegation engaged with the refugees from Ukraine as well as with 16 actors (such as authorities, UN Agencies and NGOs) operating within the UNHCR’s integrated service hub for refugee at RomExpo . The facility is currently supporting 300 refugees on a daily basis. Most recently refugees are assisted with dedicated counselling, cash assistance and general support to access the newly adopted national assistance programme for refugees.\n\nOn 3 May, UNHCR and partners hosted a visit at RomExpo of Mr. Ichiro Aisawa, Member of the Japanese Parliament and H.E. Mr. Hiroshi Ueda, Ambassador of Japan to Romania. The delegation also visited the adjacent social store set up by the Municipality of Bucharest and supported by UNHCR with core-relief items. During the visit, the delegation exchanged views with humanitarian actors and learned more about the most pressing needs of refugees from Ukraine.\n\n**Response**\n\nUNHCR in Romania is adopting a multi-year strategy that will cover programmes for refugees from 2024 until 2026. The strategy was developed with an extensive consultative process with partners and key stakeholders. It aims to continue providing critical assistance to the most vulnerable refugees and families with basic needs, key protection services and promoting socio-economic inclusion through livelihood services.\n\nOn 3 and 4 May, UNHCR organized a training for NGOs and partners of the Refugee Response Plan (RRP) on the European Union’s General Data Protection Regulation (GDPR). 65 participants from different organisations were present and trained on the GDPR policy in the humanitarian context. The training aimed also at supporting the InterAgency referral mechanism, which is critical to address gaps and duplication in the provision of support and services to refugees.\n\nOn 28 April, UNHCR organized a focus group discussion in Suceava county attended by 22 women and five men. During the discussion, UNHCR provided information on services available for refugees from Ukraine in Romania and shared information through counselling desks on the new government run assistance programme.. UNHCR also continued providing protection counselling services in person as well as through hotlines phone numbers. So far in 2023, UNHCR and partners provided protection and legal counselling to nearly 30,000 refugees.\n\nUNHCR and partners continue supporting refugees to access livelihoods and employment opportunities. This week, UNHCR’s together with partners provided a professional cooking training for ten refugees from Ukraine. In addition, UNHCR continues to facilitate Romanian language courses that help refugees in accessing job opportunities in Romania. So far in 2023, UNHCR and partners assisted 207 refugees with language courses and another 195 with various professional trainings.",
+  "summary": " UNHCR Romania is providing assistance to 130,387 refugees from Ukraine, including cash assistance, protection counselling services, legal support, livelihoods & employment services, and language courses. On 5 May, the US State Department and Japanese Parliament visited RomExpo to engage with refugees and learn about their needs. UNHCR is also providing a multi-year strategy to cover programmes for refugees from 2024-2026, and organized a training for NGOs and partners on the European Union’s General Data Protection Regulation.",
+  "metadata": {
+    "id": "3959185",
+    "name": "UNHCR Romania: Ukraine Refugee Situation Update, Update #45, 5 May 2023",
+    "date_original": 1683244800000,
+    "date_changed": 1683318004000,
+    "date_created": 1683307303000,
+    "primary_country_id": 196,
+    "primary_country_name": "Romania",
+    "primary_country_iso3": "rou",
+    "primary_country_location": {
+      "lon": 24.9668,
+      "lat": 45.9432
+    }
+  }
+}

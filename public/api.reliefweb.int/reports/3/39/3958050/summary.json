@@ -1,0 +1,181 @@
+{
+  "original": {
+    "id": "3958050",
+    "fields": {
+      "date": {
+        "changed": "2023-05-03T12:04:22+00:00",
+        "created": "2023-05-03T08:11:47+00:00",
+        "original": "2023-05-03T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/54",
+          "name": "Central African Republic",
+          "location": {
+            "lon": 20.48,
+            "lat": 6.57
+          },
+          "id": 54,
+          "shortname": "CAR",
+          "iso3": "caf"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/82",
+          "name": "Egypt",
+          "location": {
+            "lon": 29.87,
+            "lat": 26.49
+          },
+          "id": 82,
+          "shortname": "Egypt",
+          "iso3": "egy"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/87",
+          "name": "Ethiopia",
+          "location": {
+            "lon": 39.62,
+            "lat": 8.63
+          },
+          "id": 87,
+          "shortname": "Ethiopia",
+          "iso3": "eth"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/140",
+          "name": "Libya",
+          "location": {
+            "lon": 18.02,
+            "lat": 27.04
+          },
+          "id": 140,
+          "shortname": "Libya",
+          "iso3": "lby"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/8657",
+          "name": "South Sudan",
+          "location": {
+            "lon": 30.5,
+            "lat": 6.9
+          },
+          "id": 8657,
+          "shortname": "South Sudan",
+          "iso3": "ssd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/220",
+          "name": "Sudan",
+          "location": {
+            "lon": 30,
+            "lat": 15
+          },
+          "id": 220,
+          "shortname": "Sudan",
+          "iso3": "sdn",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/220",
+        "name": "Sudan",
+        "location": {
+          "lon": 30,
+          "lat": 15
+        },
+        "id": 220,
+        "shortname": "Sudan",
+        "iso3": "sdn"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1255",
+          "longname": "International Organization for Migration",
+          "spanish_name": "Organización Internacional para las Migraciones",
+          "name": "International Organization for Migration",
+          "id": 1255,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "IOM",
+          "homepage": "http://www.iom.int/"
+        }
+      ],
+      "title": "Sudan: Escalating Conflict Situation Update 01 May 2023",
+      "body": "*IOM calls on all parties to ensure the safety of humanitarians and allow their unrestricted access to be able to assist those most vulnerable. IOM urges all parties to cease hostilities and joins the UN Secretary General in appealing for the restoration of calm and dialogue to resolve the crisis and enable humanitarian aid.*\n\n**SITUATION OVERVIEW**\n\nHeavy fighting between the Rapid Support Forces (RSF) and the Sudanese Armed Forces (SAF) has continued uninterrupted for more than two weeks (since April 15). Humanitarian ceasefires have so far not held, and civilians are bearing the brunt of what is fast becoming a deadly conflict. Agreements for talks in Saudi Arabia bring fragile hope for a de-escalation. \n\nThe deteriorating situation has been marked by multiplying civilian deaths, destruction of health, water and communication facilities, shortage of supplies and poor conditions at border points as people flee to neighboring countries. Looting and attacks on homes, offices and compounds are widespread, and three IOM facilities have been impacted. According to the World Health Organization (WHO), the majority of hospitals have been impacted by the conflict, especially in Khartoum where only one in four health facilities are fully functional. With depleting access to health care, water and food, humanitarian needs are burgeoning. At the same time, the scarcity of goods and basic services is driving up prices, and people are struggling to cope. \n\nIOM’s Displacement Tracking Matrix (DTM) continues to operate through a network of key informants (remote interviews) and is the main source of early warning displacement alerts. As of 28 April, DTM Sudan estimates more than 334,000 people have been displaced, with West and South Darfur states being the most severely affected (72% of displacement reported from these states). Cross-border movements into neighboring countries are also rapidly increasing, with the highest estimates being for Chad (30,000 individuals), Egypt (42,000 individuals), Ethiopia (10,000 individuals) and South Sudan (27,275 individuals), according to IOM, UNHCR and partner sources as of 1 May. The population flows are mixed, comprising of returnees, third country nationals (TCNs) and refugees/asylum seekers. Travel is reported to be difficult in this highly insecure environment, and rising demand as well as fuel scarcity has driven up the price of transportation. Reports from Egypt’s border with Sudan indicate that transportation has cost up to $1000 per person. \n\nIOM stands in solidarity with the people of Sudan through this difficult time. A third of the population (15.8 million people) needed aid before the ongoing escalation; today, millions more are difficult time. A third of the population (15.8 million people) needed aid before the ongoing escalation; today, millions more are being pushed to the brink of despair due to conflict and lack of basic supplies, increases in food and fuel prices and lack of medical supplies and health facilities. \n\nIOM is working on its response plan and appeal, to enable the scale up needed to respond in Sudan, as well as in neighboring countries where third county nationals and returnees require urgent support. IOM’s Crisis Response Plans for Sudan, Chad, Ethiopia, and the Central African Republic remain severely underfunded.",
+      "url": "https://reliefweb.int/node/3958050",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/f2/48/f2480ca9-a80f-41f3-abff-dc64ca3d906c.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/f2/48/f2480ca9-a80f-41f3-abff-dc64ca3d906c.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/f2/48/f2480ca9-a80f-41f3-abff-dc64ca3d906c.png",
+            "version": "2416741-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/f2/48/f2480ca9-a80f-41f3-abff-dc64ca3d906c.png"
+          },
+          "filename": "IOM Sudan Situation Update #3_02 May 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2416741",
+          "filesize": "492499",
+          "url": "https://reliefweb.int/attachments/f2480ca9-a80f-41f3-abff-dc64ca3d906c/IOM%20Sudan%20Situation%20Update%20%233_02%20May%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/sudan/sudan-escalating-conflict-situation-update-01-may-2023",
+      "theme": [
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3958050,
+      "status": "published",
+      "body-html": "<p><em>IOM calls on all parties to ensure the safety of humanitarians and allow their unrestricted access to be able to assist those most vulnerable. IOM urges all parties to cease hostilities and joins the UN Secretary General in appealing for the restoration of calm and dialogue to resolve the crisis and enable humanitarian aid.</em></p>\n<p><strong>SITUATION OVERVIEW</strong></p>\n<p>Heavy fighting between the Rapid Support Forces (RSF) and the Sudanese Armed Forces (SAF) has continued uninterrupted for more than two weeks (since April 15). Humanitarian ceasefires have so far not held, and civilians are bearing the brunt of what is fast becoming a deadly conflict. Agreements for talks in Saudi Arabia bring fragile hope for a de-escalation.</p>\n<p>The deteriorating situation has been marked by multiplying civilian deaths, destruction of health, water and communication facilities, shortage of supplies and poor conditions at border points as people flee to neighboring countries. Looting and attacks on homes, offices and compounds are widespread, and three IOM facilities have been impacted. According to the World Health Organization (WHO), the majority of hospitals have been impacted by the conflict, especially in Khartoum where only one in four health facilities are fully functional. With depleting access to health care, water and food, humanitarian needs are burgeoning. At the same time, the scarcity of goods and basic services is driving up prices, and people are struggling to cope.</p>\n<p>IOM’s Displacement Tracking Matrix (DTM) continues to operate through a network of key informants (remote interviews) and is the main source of early warning displacement alerts. As of 28 April, DTM Sudan estimates more than 334,000 people have been displaced, with West and South Darfur states being the most severely affected (72% of displacement reported from these states). Cross-border movements into neighboring countries are also rapidly increasing, with the highest estimates being for Chad (30,000 individuals), Egypt (42,000 individuals), Ethiopia (10,000 individuals) and South Sudan (27,275 individuals), according to IOM, UNHCR and partner sources as of 1 May. The population flows are mixed, comprising of returnees, third country nationals (TCNs) and refugees/asylum seekers. Travel is reported to be difficult in this highly insecure environment, and rising demand as well as fuel scarcity has driven up the price of transportation. Reports from Egypt’s border with Sudan indicate that transportation has cost up to $1000 per person.</p>\n<p>IOM stands in solidarity with the people of Sudan through this difficult time. A third of the population (15.8 million people) needed aid before the ongoing escalation; today, millions more are difficult time. A third of the population (15.8 million people) needed aid before the ongoing escalation; today, millions more are being pushed to the brink of despair due to conflict and lack of basic supplies, increases in food and fuel prices and lack of medical supplies and health facilities.</p>\n<p>IOM is working on its response plan and appeal, to enable the scale up needed to respond in Sudan, as well as in neighboring countries where third county nationals and returnees require urgent support. IOM’s Crisis Response Plans for Sudan, Chad, Ethiopia, and the Central African Republic remain severely underfunded.</p>\n"
+    }
+  },
+  "text": "# Sudan: Escalating Conflict Situation Update 01 May 2023\n\n*IOM calls on all parties to ensure the safety of humanitarians and allow their unrestricted access to be able to assist those most vulnerable. IOM urges all parties to cease hostilities and joins the UN Secretary General in appealing for the restoration of calm and dialogue to resolve the crisis and enable humanitarian aid.*\n\n**SITUATION OVERVIEW**\n\nHeavy fighting between the Rapid Support Forces (RSF) and the Sudanese Armed Forces (SAF) has continued uninterrupted for more than two weeks (since April 15). Humanitarian ceasefires have so far not held, and civilians are bearing the brunt of what is fast becoming a deadly conflict. Agreements for talks in Saudi Arabia bring fragile hope for a de-escalation. \n\nThe deteriorating situation has been marked by multiplying civilian deaths, destruction of health, water and communication facilities, shortage of supplies and poor conditions at border points as people flee to neighboring countries. Looting and attacks on homes, offices and compounds are widespread, and three IOM facilities have been impacted. According to the World Health Organization (WHO), the majority of hospitals have been impacted by the conflict, especially in Khartoum where only one in four health facilities are fully functional. With depleting access to health care, water and food, humanitarian needs are burgeoning. At the same time, the scarcity of goods and basic services is driving up prices, and people are struggling to cope. \n\nIOM’s Displacement Tracking Matrix (DTM) continues to operate through a network of key informants (remote interviews) and is the main source of early warning displacement alerts. As of 28 April, DTM Sudan estimates more than 334,000 people have been displaced, with West and South Darfur states being the most severely affected (72% of displacement reported from these states). Cross-border movements into neighboring countries are also rapidly increasing, with the highest estimates being for Chad (30,000 individuals), Egypt (42,000 individuals), Ethiopia (10,000 individuals) and South Sudan (27,275 individuals), according to IOM, UNHCR and partner sources as of 1 May. The population flows are mixed, comprising of returnees, third country nationals (TCNs) and refugees/asylum seekers. Travel is reported to be difficult in this highly insecure environment, and rising demand as well as fuel scarcity has driven up the price of transportation. Reports from Egypt’s border with Sudan indicate that transportation has cost up to $1000 per person. \n\nIOM stands in solidarity with the people of Sudan through this difficult time. A third of the population (15.8 million people) needed aid before the ongoing escalation; today, millions more are difficult time. A third of the population (15.8 million people) needed aid before the ongoing escalation; today, millions more are being pushed to the brink of despair due to conflict and lack of basic supplies, increases in food and fuel prices and lack of medical supplies and health facilities. \n\nIOM is working on its response plan and appeal, to enable the scale up needed to respond in Sudan, as well as in neighboring countries where third county nationals and returnees require urgent support. IOM’s Crisis Response Plans for Sudan, Chad, Ethiopia, and the Central African Republic remain severely underfunded.",
+  "summary": "\n\nThe conflict between the Rapid Support Forces (RSF) and the Sudanese Armed Forces (SAF) has been ongoing for two weeks, resulting in civilian deaths, destruction of infrastructure, and displacement of over 334,000 people. IOM is calling on all parties to cease hostilities and allow unrestricted access to humanitarian aid. IOM is also appealing for the restoration of calm and dialogue to resolve the crisis. The population is struggling to cope with depleting access to health care, water, and food, and rising prices of goods and services. IOM is working on a response plan and appeal to enable the scale up needed to respond in Sudan and neighboring countries.",
+  "metadata": {
+    "id": "3958050",
+    "name": "Sudan: Escalating Conflict Situation Update 01 May 2023",
+    "date_original": 1683072000000,
+    "date_changed": 1683115462000,
+    "date_created": 1683101507000,
+    "primary_country_id": 220,
+    "primary_country_name": "Sudan",
+    "primary_country_iso3": "sdn",
+    "primary_country_location": {
+      "lon": 30,
+      "lat": 15
+    }
+  }
+}

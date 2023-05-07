@@ -1,0 +1,133 @@
+{
+  "original": {
+    "id": "3957970",
+    "fields": {
+      "date": {
+        "changed": "2023-05-03T03:55:25+00:00",
+        "created": "2023-05-03T03:27:41+00:00",
+        "original": "2023-05-03T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/168",
+          "name": "Nepal",
+          "location": {
+            "lon": 83.94,
+            "lat": 28.25
+          },
+          "id": 168,
+          "shortname": "Nepal",
+          "iso3": "npl",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/168",
+        "name": "Nepal",
+        "location": {
+          "lon": 83.94,
+          "lat": 28.25
+        },
+        "id": 168,
+        "shortname": "Nepal",
+        "iso3": "npl"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1275",
+          "longname": "World Health Organization",
+          "spanish_name": "Organización Mundial de la Salud",
+          "name": "World Health Organization",
+          "id": 1275,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WHO",
+          "homepage": "http://www.who.int/"
+        }
+      ],
+      "title": "Focused COVID-19 Media Monitoring, Nepal (May 3, 2023) [EN/NE]",
+      "body": "**Recurring Theme(s):**\n\n- 55 new coronavirus cases have been confirmed in the last 24 hours. Currently, there are 252 active cases in the country.\n\n- President Ramchandra Paudel has expressed his desire to cover medical expenses incurred during his treatment in India.\n\n- The consultation fee of doctors is decided to be increased by 14 percent, effective from May 15.",
+      "url": "https://reliefweb.int/node/3957970",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/d5/a9/d5a96992-fdbe-4c0c-897c-a7528cff094d.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/d5/a9/d5a96992-fdbe-4c0c-897c-a7528cff094d.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/d5/a9/d5a96992-fdbe-4c0c-897c-a7528cff094d.png",
+            "version": "2416621-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/d5/a9/d5a96992-fdbe-4c0c-897c-a7528cff094d.png"
+          },
+          "filename": "Focused COVID-19 and Health Media Monitoring_Nepal_(English)_3rd May.pdf",
+          "description": "English version",
+          "mimetype": "application/pdf",
+          "id": "2416621",
+          "filesize": "340658",
+          "url": "https://reliefweb.int/attachments/d5a96992-fdbe-4c0c-897c-a7528cff094d/Focused%20COVID-19%20and%20Health%20Media%20Monitoring_Nepal_%28English%29_3rd%20May.pdf"
+        },
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/8a/16/8a162a34-7dc8-49d8-a691-1f693c52824f.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/8a/16/8a162a34-7dc8-49d8-a691-1f693c52824f.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/8a/16/8a162a34-7dc8-49d8-a691-1f693c52824f.png",
+            "version": "2416623-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/8a/16/8a162a34-7dc8-49d8-a691-1f693c52824f.png"
+          },
+          "filename": "Focused COVID-19 and Health Media Monitoring_Nepal_(Nepali)_3rd May.pdf",
+          "description": "Nepali version",
+          "mimetype": "application/pdf",
+          "id": "2416623",
+          "filesize": "379530",
+          "url": "https://reliefweb.int/attachments/8a162a34-7dc8-49d8-a691-1f693c52824f/Focused%20COVID-19%20and%20Health%20Media%20Monitoring_Nepal_%28Nepali%29_3rd%20May.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/nepal/focused-covid-19-media-monitoring-nepal-may-3-2023-enne",
+      "theme": [
+        {
+          "name": "Health",
+          "id": 4595
+        }
+      ],
+      "id": 3957970,
+      "status": "published",
+      "body-html": "<p><strong>Recurring Theme(s):</strong></p>\n<ul>\n<li>\n<p>55 new coronavirus cases have been confirmed in the last 24 hours. Currently, there are 252 active cases in the country.</p>\n</li>\n<li>\n<p>President Ramchandra Paudel has expressed his desire to cover medical expenses incurred during his treatment in India.</p>\n</li>\n<li>\n<p>The consultation fee of doctors is decided to be increased by 14 percent, effective from May 15.</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# Focused COVID-19 Media Monitoring, Nepal (May 3, 2023) [EN/NE]\n\n**Recurring Theme(s):**\n\n- 55 new coronavirus cases have been confirmed in the last 24 hours. Currently, there are 252 active cases in the country.\n\n- President Ramchandra Paudel has expressed his desire to cover medical expenses incurred during his treatment in India.\n\n- The consultation fee of doctors is decided to be increased by 14 percent, effective from May 15.",
+  "summary": " In Nepal, 55 new coronavirus cases have been confirmed in the last 24 hours, bringing the total number of active cases to 252. President Ramchandra Paudel has expressed his desire to cover medical expenses incurred during his treatment in India. Additionally, the consultation fee of doctors is set to increase by 14 percent, effective from May 15.",
+  "metadata": {
+    "id": "3957970",
+    "name": "Focused COVID-19 Media Monitoring, Nepal (May 3, 2023) [EN/NE]",
+    "date_original": 1683072000000,
+    "date_changed": 1683086125000,
+    "date_created": 1683084461000,
+    "primary_country_id": 168,
+    "primary_country_name": "Nepal",
+    "primary_country_iso3": "npl",
+    "primary_country_location": {
+      "lon": 83.94,
+      "lat": 28.25
+    }
+  }
+}

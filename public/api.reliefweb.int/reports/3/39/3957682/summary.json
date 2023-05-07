@@ -1,0 +1,513 @@
+{
+  "original": {
+    "id": "3957682",
+    "fields": {
+      "date": {
+        "changed": "2023-05-05T01:47:33+00:00",
+        "created": "2023-05-03T08:00:00+00:00",
+        "original": "2023-05-03T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/13",
+          "name": "Afghanistan",
+          "location": {
+            "lon": 66.03,
+            "lat": 33.84
+          },
+          "id": 13,
+          "shortname": "Afghanistan",
+          "iso3": "afg"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/31",
+          "name": "Bangladesh",
+          "location": {
+            "lon": 90.27,
+            "lat": 23.84
+          },
+          "id": 31,
+          "shortname": "Bangladesh",
+          "iso3": "bgd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/46",
+          "name": "Burkina Faso",
+          "location": {
+            "lon": -1.57,
+            "lat": 12.28
+          },
+          "id": 46,
+          "shortname": "Burkina Faso",
+          "iso3": "bfa"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/54",
+          "name": "Central African Republic",
+          "location": {
+            "lon": 20.48,
+            "lat": 6.57
+          },
+          "id": 54,
+          "shortname": "CAR",
+          "iso3": "caf"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/75",
+          "name": "Democratic Republic of the Congo",
+          "location": {
+            "lon": 21.7587,
+            "lat": -4.03833
+          },
+          "id": 75,
+          "shortname": "DR Congo",
+          "iso3": "cod"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/87",
+          "name": "Ethiopia",
+          "location": {
+            "lon": 39.62,
+            "lat": 8.63
+          },
+          "id": 87,
+          "shortname": "Ethiopia",
+          "iso3": "eth"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/98",
+          "name": "Gambia",
+          "location": {
+            "lon": -15.91,
+            "lat": 13.44
+          },
+          "id": 98,
+          "shortname": "Gambia",
+          "iso3": "gmb"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/102",
+          "name": "Ghana",
+          "location": {
+            "lon": -1.19,
+            "lat": 7.28
+          },
+          "id": 102,
+          "shortname": "Ghana",
+          "iso3": "gha"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/113",
+          "name": "Haiti",
+          "location": {
+            "lon": -72.43,
+            "lat": 19.18
+          },
+          "id": 113,
+          "shortname": "Haiti",
+          "iso3": "hti"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/139",
+          "name": "Liberia",
+          "location": {
+            "lon": -9.31,
+            "lat": 6.45
+          },
+          "id": 139,
+          "shortname": "Liberia",
+          "iso3": "lbr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/144",
+          "name": "Madagascar",
+          "location": {
+            "lon": 46.71,
+            "lat": -19.37
+          },
+          "id": 144,
+          "shortname": "Madagascar",
+          "iso3": "mdg"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/146",
+          "name": "Malawi",
+          "location": {
+            "lon": 33.74,
+            "lat": -13.22
+          },
+          "id": 146,
+          "shortname": "Malawi",
+          "iso3": "mwi"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/149",
+          "name": "Mali",
+          "location": {
+            "lon": -1.25,
+            "lat": 17.35
+          },
+          "id": 149,
+          "shortname": "Mali",
+          "iso3": "mli"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/164",
+          "name": "Mozambique",
+          "location": {
+            "lon": 34.75,
+            "lat": -18.09
+          },
+          "id": 164,
+          "shortname": "Mozambique",
+          "iso3": "moz"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/165",
+          "name": "Myanmar",
+          "location": {
+            "lon": 96.51,
+            "lat": 21.15
+          },
+          "id": 165,
+          "shortname": "Myanmar",
+          "iso3": "mmr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/166",
+          "name": "Namibia",
+          "location": {
+            "lon": 17.29,
+            "lat": -21.2
+          },
+          "id": 166,
+          "shortname": "Namibia",
+          "iso3": "nam"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/175",
+          "name": "Nigeria",
+          "location": {
+            "lon": 8.11,
+            "lat": 9.59
+          },
+          "id": 175,
+          "shortname": "Nigeria",
+          "iso3": "nga"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/182",
+          "name": "Pakistan",
+          "location": {
+            "lon": 69.39,
+            "lat": 29.97
+          },
+          "id": 182,
+          "shortname": "Pakistan",
+          "iso3": "pak"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/211",
+          "name": "Sierra Leone",
+          "location": {
+            "lon": -11.79,
+            "lat": 8.56
+          },
+          "id": 211,
+          "shortname": "Sierra Leone",
+          "iso3": "sle"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/216",
+          "name": "Somalia",
+          "location": {
+            "lon": 47.33,
+            "lat": 5.79
+          },
+          "id": 216,
+          "shortname": "Somalia",
+          "iso3": "som"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/8657",
+          "name": "South Sudan",
+          "location": {
+            "lon": 30.5,
+            "lat": 6.9
+          },
+          "id": 8657,
+          "shortname": "South Sudan",
+          "iso3": "ssd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/220",
+          "name": "Sudan",
+          "location": {
+            "lon": 30,
+            "lat": 15
+          },
+          "id": 220,
+          "shortname": "Sudan",
+          "iso3": "sdn"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/226",
+          "name": "Syrian Arab Republic",
+          "location": {
+            "lon": 38.51,
+            "lat": 35.01
+          },
+          "id": 226,
+          "shortname": "Syria",
+          "iso3": "syr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/241",
+          "name": "Ukraine",
+          "location": {
+            "lon": 31.32,
+            "lat": 49.32
+          },
+          "id": 241,
+          "shortname": "Ukraine",
+          "iso3": "ukr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/254",
+          "name": "World",
+          "id": 254,
+          "shortname": "World",
+          "iso3": "wld",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/255",
+          "name": "Yemen",
+          "location": {
+            "lon": 47.62,
+            "lat": 15.94
+          },
+          "id": 255,
+          "shortname": "Yemen",
+          "iso3": "yem"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/257",
+          "name": "Zimbabwe",
+          "location": {
+            "lon": 29.94,
+            "lat": -19.19
+          },
+          "id": 257,
+          "shortname": "Zimbabwe",
+          "iso3": "zwe"
+        }
+      ],
+      "origin": "https://www.fsinplatform.org/grfc2023",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/254",
+        "name": "World",
+        "id": 254,
+        "shortname": "World",
+        "iso3": "wld"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "DR",
+          "name": "Drought",
+          "id": 4672
+        },
+        {
+          "code": "EQ",
+          "name": "Earthquake",
+          "id": 4628
+        },
+        {
+          "code": "TC",
+          "name": "Tropical Cyclone",
+          "id": 4618
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/13333",
+          "name": "Food Security Information Network",
+          "id": 13333,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "FSIN",
+          "homepage": "https://www.fsinplatform.org/"
+        }
+      ],
+      "title": "Global Report on Food Crises 2023",
+      "body": "The [**Global Report on Food Crises (GRFC) 2023**](https://www.fsinplatform.org/grfc2023) highlights that the number of people experiencing **high levels of acute food insecurity** and requiring urgent food and livelihood assistance **increased** for the fourth consecutive year in 2022. Over a quarter of a billion people were estimated to face acute hunger, with economic shocks and the Ukraine war contributing to the increase. In 2022, around 258 million people across 58 countries and territories faced acute food insecurity at crisis or worse levels (IPC/CH Phase 3-5), up from 193 million people in 53 countries and territories in 2021.\n\nPublished by the [Food Security Information Network (FSIN)](https://www.fsinplatform.org/) in support of [the Global Network against Food Crises (GNAFC),](https://www.fightfoodcrises.net/) the GRFC 2023 is the **reference document** for global, regional and country-level acute food insecurity in 2022 in GRFC-identified countries. The report is the result of a **collaborative effort among 16 partners** to achieve a consensus-based assessment of acute food insecurity in countries with food crises, and aims to inform humanitarian and development action by **independent and consensus-based evidence and analysis.**\n\n[Read the full report](https://www.fsinplatform.org/grfc2023)",
+      "url": "https://reliefweb.int/node/3957682",
+      "disaster": [
+        {
+          "name": "Tropical Cyclone Freddy - Feb 2023",
+          "id": 51486,
+          "glide": "TC-2023-000023-MDG",
+          "type": [
+            {
+              "code": "TC",
+              "name": "Tropical Cyclone",
+              "id": 4618,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Türkiye/Syria: Earthquakes - Feb 2023",
+          "id": 51470,
+          "glide": "EQ-2023-000015-TUR",
+          "type": [
+            {
+              "code": "EQ",
+              "name": "Earthquake",
+              "id": 4628,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Syria: Drought - 2021-2022",
+          "id": 50824,
+          "glide": "DR-2021-000125-SYR",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Afghanistan: Drought - 2021-2023",
+          "id": 50620,
+          "glide": "DR-2021-000022-AFG",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Madagascar: Drought - 2018-2023",
+          "id": 46459,
+          "glide": "DR-2018-000141-MDG",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Ethiopia: Drought - 2015-2023",
+          "id": 23121,
+          "glide": "DR-2015-000109-ETH",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Somalia: Drought - 2015-2023",
+          "id": 23101,
+          "glide": "DR-2015-000134-SOM",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/world/global-report-food-crises-2023",
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        }
+      ],
+      "id": 3957682,
+      "headline": {
+        "summary": "In 2022, 258 million people across 58 countries and territories faced acute food insecurity at crisis or worse levels (IPC/CH Phase 3-5), up from 193 million in 53 countries and territories in 2021.",
+        "image": {
+          "copyright": "FAO",
+          "filename": "a47979b67a (1).jpg",
+          "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/images/reports/78/f6/78f691db-d8a4-4322-b5aa-a80bc375487a.jpg",
+          "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/images/reports/78/f6/78f691db-d8a4-4322-b5aa-a80bc375487a.jpg",
+          "width": "710",
+          "mimetype": "image/jpeg",
+          "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/images/reports/78/f6/78f691db-d8a4-4322-b5aa-a80bc375487a.jpg",
+          "id": "1616164",
+          "filesize": "72320",
+          "url": "https://reliefweb.int/sites/default/files/images/reports/78/f6/78f691db-d8a4-4322-b5aa-a80bc375487a.jpg",
+          "height": "474"
+        },
+        "title": "Number of people suffering high levels of acute food insecurity rose for fourth consecutive year in 2022"
+      },
+      "status": "published",
+      "body-html": "<p>The <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.fsinplatform.org/grfc2023\"><strong>Global Report on Food Crises (GRFC) 2023</strong></a> highlights that the number of people experiencing <strong>high levels of acute food insecurity</strong> and requiring urgent food and livelihood assistance <strong>increased</strong> for the fourth consecutive year in 2022. Over a quarter of a billion people were estimated to face acute hunger, with economic shocks and the Ukraine war contributing to the increase. In 2022, around 258 million people across 58 countries and territories faced acute food insecurity at crisis or worse levels (IPC/CH Phase 3-5), up from 193 million people in 53 countries and territories in 2021.</p>\n<p>Published by the <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.fsinplatform.org/\">Food Security Information Network (FSIN)</a> in support of <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.fightfoodcrises.net/\">the Global Network against Food Crises (GNAFC),</a> the GRFC 2023 is the <strong>reference document</strong> for global, regional and country-level acute food insecurity in 2022 in GRFC-identified countries. The report is the result of a <strong>collaborative effort among 16 partners</strong> to achieve a consensus-based assessment of acute food insecurity in countries with food crises, and aims to inform humanitarian and development action by <strong>independent and consensus-based evidence and analysis.</strong></p>\n<p><a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.fsinplatform.org/grfc2023\">Read the full report</a></p>\n"
+    }
+  },
+  "text": "# Global Report on Food Crises 2023\n\nThe [**Global Report on Food Crises (GRFC) 2023**](https://www.fsinplatform.org/grfc2023) highlights that the number of people experiencing **high levels of acute food insecurity** and requiring urgent food and livelihood assistance **increased** for the fourth consecutive year in 2022. Over a quarter of a billion people were estimated to face acute hunger, with economic shocks and the Ukraine war contributing to the increase. In 2022, around 258 million people across 58 countries and territories faced acute food insecurity at crisis or worse levels (IPC/CH Phase 3-5), up from 193 million people in 53 countries and territories in 2021.\n\nPublished by the [Food Security Information Network (FSIN)](https://www.fsinplatform.org/) in support of [the Global Network against Food Crises (GNAFC),](https://www.fightfoodcrises.net/) the GRFC 2023 is the **reference document** for global, regional and country-level acute food insecurity in 2022 in GRFC-identified countries. The report is the result of a **collaborative effort among 16 partners** to achieve a consensus-based assessment of acute food insecurity in countries with food crises, and aims to inform humanitarian and development action by **independent and consensus-based evidence and analysis.**\n\n[Read the full report](https://www.fsinplatform.org/grfc2023)",
+  "summary": " The Global Report on Food Crises 2023, published by the Food Security Information Network (FSIN) in support of the Global Network against Food Crises (GNAFC), highlights that the number of people experiencing high levels of acute food insecurity and requiring urgent food and livelihood assistance increased for the fourth consecutive year in 2022. The report is the result of a collaborative effort among 16 partners and aims to inform humanitarian and development action by independent and consensus-based evidence and analysis.",
+  "metadata": {
+    "id": "3957682",
+    "name": "Global Report on Food Crises 2023",
+    "date_original": 1683072000000,
+    "date_changed": 1683251253000,
+    "date_created": 1683100800000,
+    "primary_country_id": 254,
+    "primary_country_name": "World",
+    "primary_country_iso3": "wld"
+  }
+}

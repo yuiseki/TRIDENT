@@ -1,0 +1,172 @@
+{
+  "original": {
+    "id": "3953909",
+    "fields": {
+      "date": {
+        "changed": "2023-04-18T13:26:21+00:00",
+        "created": "2023-04-18T12:15:27+00:00",
+        "original": "2023-04-18T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/236",
+          "name": "Türkiye",
+          "location": {
+            "lon": 35.18,
+            "lat": 39.06
+          },
+          "id": 236,
+          "shortname": "Türkiye",
+          "iso3": "tur",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/236",
+        "name": "Türkiye",
+        "location": {
+          "lon": 35.18,
+          "lat": 39.06
+        },
+        "id": 236,
+        "shortname": "Türkiye",
+        "iso3": "tur"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EQ",
+          "name": "Earthquake",
+          "id": 4628
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/13799",
+          "longname": "Emergency Telecommunications Cluster",
+          "name": "Emergency Telecommunications Cluster",
+          "id": 13799,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "ETC",
+          "homepage": "https://www.etcluster.org/"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "Türkiye - Earthquake response - ETS Situation Report #9 (Reporting period: 04/04/2023 to 17/04/2023)",
+      "body": "**Highlights**\n\n• On 04 April, the ETS trained four Security Operations Centre (SOC) staff to operate the SOC in Gaziantep.\n\n• The ETS conducted assessments in temporary settlements in Adiyaman, Malatya, and Kahramanmaraş to identify needs for additional charging stations.\n\n• The ETS is currently evaluating technical and financial proposals received from vendors for 60 charging station units with solar power. 40 charging stations will be installed in temporary settlements in Hatay and a further 20 units in Malatya, Adiyaman and Kahramanmaraş\n\n**Situation overview**\n\nThe response to the earthquakes is being led by the Government of Türkiye, coordinated through the Disaster and Emergency Management Presidency (AFAD) and with the Turkish Red Crescent (TRC). The international humanitarian community is supporting the Government of Türkiye to provide assistance to the affected population.\n\nAccording to OCHA, the earthquakes in Türkiye resulted in the displacement of about 3 million people and approximately 1.6 million people have been reported to be currently living in informal settlements1",
+      "url": "https://reliefweb.int/node/3953909",
+      "disaster": [
+        {
+          "name": "Türkiye: Floods - Mar 2023",
+          "id": 51529,
+          "glide": "FL-2023-000040-TUR",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Türkiye/Syria: Earthquakes - Feb 2023",
+          "id": 51470,
+          "glide": "EQ-2023-000015-TUR",
+          "type": [
+            {
+              "code": "EQ",
+              "name": "Earthquake",
+              "id": 4628,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/09/97/09978a04-f244-42c7-9efb-ca970364a630.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/09/97/09978a04-f244-42c7-9efb-ca970364a630.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/09/97/09978a04-f244-42c7-9efb-ca970364a630.png",
+            "version": "2413099-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/09/97/09978a04-f244-42c7-9efb-ca970364a630.png"
+          },
+          "filename": "9. ETS Turkiye SitRep-2023-04-17.pdf",
+          "mimetype": "application/pdf",
+          "id": "2413099",
+          "filesize": "163763",
+          "url": "https://reliefweb.int/attachments/09978a04-f244-42c7-9efb-ca970364a630/9.%20ETS%20Turkiye%20SitRep-2023-04-17.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/turkiye/turkiye-earthquake-response-ets-situation-report-9-reporting-period-04042023-17042023",
+      "theme": [
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        }
+      ],
+      "id": 3953909,
+      "status": "published",
+      "body-html": "<p><strong>Highlights</strong></p>\n<p>• On 04 April, the ETS trained four Security Operations Centre (SOC) staff to operate the SOC in Gaziantep.</p>\n<p>• The ETS conducted assessments in temporary settlements in Adiyaman, Malatya, and Kahramanmaraş to identify needs for additional charging stations.</p>\n<p>• The ETS is currently evaluating technical and financial proposals received from vendors for 60 charging station units with solar power. 40 charging stations will be installed in temporary settlements in Hatay and a further 20 units in Malatya, Adiyaman and Kahramanmaraş</p>\n<p><strong>Situation overview</strong></p>\n<p>The response to the earthquakes is being led by the Government of Türkiye, coordinated through the Disaster and Emergency Management Presidency (AFAD) and with the Turkish Red Crescent (TRC). The international humanitarian community is supporting the Government of Türkiye to provide assistance to the affected population.</p>\n<p>According to OCHA, the earthquakes in Türkiye resulted in the displacement of about 3 million people and approximately 1.6 million people have been reported to be currently living in informal settlements1</p>\n"
+    }
+  },
+  "text": "# Türkiye - Earthquake response - ETS Situation Report #9 (Reporting period: 04/04/2023 to 17/04/2023)\n\n**Highlights**\n\n• On 04 April, the ETS trained four Security Operations Centre (SOC) staff to operate the SOC in Gaziantep.\n\n• The ETS conducted assessments in temporary settlements in Adiyaman, Malatya, and Kahramanmaraş to identify needs for additional charging stations.\n\n• The ETS is currently evaluating technical and financial proposals received from vendors for 60 charging station units with solar power. 40 charging stations will be installed in temporary settlements in Hatay and a further 20 units in Malatya, Adiyaman and Kahramanmaraş\n\n**Situation overview**\n\nThe response to the earthquakes is being led by the Government of Türkiye, coordinated through the Disaster and Emergency Management Presidency (AFAD) and with the Turkish Red Crescent (TRC). The international humanitarian community is supporting the Government of Türkiye to provide assistance to the affected population.\n\nAccording to OCHA, the earthquakes in Türkiye resulted in the displacement of about 3 million people and approximately 1.6 million people have been reported to be currently living in informal settlements1",
+  "summary": " The Earthquake Technical Support (ETS) is providing assistance to the Government of Türkiye in response to the earthquakes that have displaced 3 million people. During the reporting period of 04/04/2023 to 17/04/2023, the ETS trained four Security Operations Centre (SOC) staff to operate the SOC in Gaziantep, conducted assessments in temporary settlements in Adiyaman, Malatya, and Kahramanmaraş to identify needs for additional charging stations, and is currently evaluating technical and financial proposals received from vendors for 60 charging station units with solar power. 40 charging stations will be installed in temporary settlements in Hatay and a further 20 units in Malatya, Adiyaman and Kahramanmaraş.",
+  "metadata": {
+    "id": "3953909",
+    "name": "Türkiye - Earthquake response - ETS Situation Report #9 (Reporting period: 04/04/2023 to 17/04/2023)",
+    "date_original": 1681776000000,
+    "date_changed": 1681824381000,
+    "date_created": 1681820127000,
+    "primary_country_id": 236,
+    "primary_country_name": "Türkiye",
+    "primary_country_iso3": "tur",
+    "primary_country_location": {
+      "lon": 35.18,
+      "lat": 39.06
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "original": {
+    "id": "3957370",
+    "fields": {
+      "date": {
+        "changed": "2023-05-01T14:02:09+00:00",
+        "created": "2023-05-01T11:55:03+00:00",
+        "original": "2023-05-01T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/227",
+          "name": "Tajikistan",
+          "location": {
+            "lon": 71.04,
+            "lat": 38.84
+          },
+          "id": 227,
+          "shortname": "Tajikistan",
+          "iso3": "tjk",
+          "primary": true
+        }
+      ],
+      "origin": "https://docs.wfp.org/api/documents/WFP-0000148647/download/",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/227",
+        "name": "Tajikistan",
+        "location": {
+          "lon": 71.04,
+          "lat": 38.84
+        },
+        "id": 227,
+        "shortname": "Tajikistan",
+        "iso3": "tjk"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "Tajikistan Market Situation Update, No. 17 (April 24 - April 30, 2023)",
+      "body": "**Highlights**\n\n- Compared to the last week, prices for basic commodities such as wheat flour (1st grade), wheat flour (highest grade), vegetable and cottonseed oils down by 1-2%. On the other hand, the average price of sugar and beef increased by 1%\n\n- During this week, the average price of eggs increased by 2%, compared to the last month by 8%, and compared to the same period of the last year by 53%\n\n- Average prices for vegetables, including onions and cucumbers, due to the beginning of the harvest season and an increase in stocks of these products in the local markets decreased by 11-26% compared to the last week\n\n- During the current week, in the majority of city and district markets, the average price of vegetables, including carrots and potatoes has increased by 2-4%\n\n- The average prices of petrol and diesel haven't changed from the last week. However, LPG prices decreased by 1% compared to the last week",
+      "url": "https://reliefweb.int/node/3957370",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/ee/75/ee75a540-e0c4-40e7-8925-f35b4fa5ac41.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/ee/75/ee75a540-e0c4-40e7-8925-f35b4fa5ac41.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/ee/75/ee75a540-e0c4-40e7-8925-f35b4fa5ac41.png",
+            "version": "2416007-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/ee/75/ee75a540-e0c4-40e7-8925-f35b4fa5ac41.png"
+          },
+          "filename": "WFP-0000148647.pdf",
+          "mimetype": "application/pdf",
+          "id": "2416007",
+          "filesize": "200007",
+          "url": "https://reliefweb.int/attachments/ee75a540-e0c4-40e7-8925-f35b4fa5ac41/WFP-0000148647.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/tajikistan/tajikistan-market-situation-update-no-17-april-24-april-30-2023",
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        }
+      ],
+      "id": 3957370,
+      "status": "published",
+      "body-html": "<p><strong>Highlights</strong></p>\n<ul>\n<li>\n<p>Compared to the last week, prices for basic commodities such as wheat flour (1st grade), wheat flour (highest grade), vegetable and cottonseed oils down by 1-2%. On the other hand, the average price of sugar and beef increased by 1%</p>\n</li>\n<li>\n<p>During this week, the average price of eggs increased by 2%, compared to the last month by 8%, and compared to the same period of the last year by 53%</p>\n</li>\n<li>\n<p>Average prices for vegetables, including onions and cucumbers, due to the beginning of the harvest season and an increase in stocks of these products in the local markets decreased by 11-26% compared to the last week</p>\n</li>\n<li>\n<p>During the current week, in the majority of city and district markets, the average price of vegetables, including carrots and potatoes has increased by 2-4%</p>\n</li>\n<li>\n<p>The average prices of petrol and diesel haven't changed from the last week. However, LPG prices decreased by 1% compared to the last week</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# Tajikistan Market Situation Update, No. 17 (April 24 - April 30, 2023)\n\n**Highlights**\n\n- Compared to the last week, prices for basic commodities such as wheat flour (1st grade), wheat flour (highest grade), vegetable and cottonseed oils down by 1-2%. On the other hand, the average price of sugar and beef increased by 1%\n\n- During this week, the average price of eggs increased by 2%, compared to the last month by 8%, and compared to the same period of the last year by 53%\n\n- Average prices for vegetables, including onions and cucumbers, due to the beginning of the harvest season and an increase in stocks of these products in the local markets decreased by 11-26% compared to the last week\n\n- During the current week, in the majority of city and district markets, the average price of vegetables, including carrots and potatoes has increased by 2-4%\n\n- The average prices of petrol and diesel haven't changed from the last week. However, LPG prices decreased by 1% compared to the last week",
+  "summary": " This market situation update for Tajikistan covers the period of April 24-30, 2023. Prices for basic commodities such as wheat flour, vegetable and cottonseed oils decreased, while the average price of sugar, beef, and eggs increased. Prices for vegetables decreased due to the beginning of the harvest season, while prices for carrots and potatoes increased. Prices for petrol and diesel remained the same, while LPG prices decreased by 1%.",
+  "metadata": {
+    "id": "3957370",
+    "name": "Tajikistan Market Situation Update, No. 17 (April 24 - April 30, 2023)",
+    "date_original": 1682899200000,
+    "date_changed": 1682949729000,
+    "date_created": 1682942103000,
+    "primary_country_id": 227,
+    "primary_country_name": "Tajikistan",
+    "primary_country_iso3": "tjk",
+    "primary_country_location": {
+      "lon": 71.04,
+      "lat": 38.84
+    }
+  }
+}

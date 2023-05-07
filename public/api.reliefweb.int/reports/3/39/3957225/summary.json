@@ -1,0 +1,103 @@
+{
+  "original": {
+    "id": "3957225",
+    "fields": {
+      "date": {
+        "changed": "2023-04-30T04:14:15+00:00",
+        "created": "2023-04-30T00:06:49+00:00",
+        "original": "2023-04-25T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/254",
+          "name": "World",
+          "id": 254,
+          "shortname": "World",
+          "iso3": "wld",
+          "primary": true
+        }
+      ],
+      "origin": "https://openknowledge.worldbank.org/entities/publication/db1a1f4a-d4ed-4bab-a98b-06705a335595",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/254",
+        "name": "World",
+        "id": 254,
+        "shortname": "World",
+        "iso3": "wld"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1220",
+          "longname": "The World Bank Group",
+          "spanish_name": "Banco Mundial",
+          "name": "World Bank",
+          "id": 1220,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "World Bank",
+          "homepage": "http://www.worldbank.org"
+        }
+      ],
+      "title": "Breaking Barriers: Improving Access to Clean Cooking in Displacement Settings",
+      "body": "**Abstract**  \n\nCooking programs in camps and other settings for the world’s 100 million displaced people have typically provided substandard stoves and fuelwood rather than clean, modern fuels. But clean cooking solutions are gaining ground, with new operating models that improve affordability. The goal should be the integration of clean cooking within basic service packages provided to displaced populations and a framework to provide such services for aslong as the displacement lasts. This Live Wire provides evidence of constructive change from refugee camps and other displacement settlements around the world.  \n\n**Citation**  \n\n“Bellur, Sharmila; Antony, Anish Paul. 2023. Breaking Barriers: Improving Access to Clean Cooking in Displacement Settings. Live Wire; 2023/127. © World Bank, Washington, DC. http://hdl.handle.net/10986/39737 License: CC BY-NC 3.0 IGO.”  \n\n**URI**\nhttps://openknowledge.worldbank.org/handle/10986/39737  \n\n**Collections**\n[Live Wire](https://openknowledge.worldbank.org/collections/8fb9e6e8-afc2-513f-9210-05de76654b06)  \n\n[FULL ITEM PAGE](https://openknowledge.worldbank.org/entities/publication/db1a1f4a-d4ed-4bab-a98b-06705a335595/full)",
+      "url": "https://reliefweb.int/node/3957225",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/b8/02/b80255a9-4d23-410f-aa0c-24fda0f8badd.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/b8/02/b80255a9-4d23-410f-aa0c-24fda0f8badd.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/b8/02/b80255a9-4d23-410f-aa0c-24fda0f8badd.png",
+            "version": "2415833-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/b8/02/b80255a9-4d23-410f-aa0c-24fda0f8badd.png"
+          },
+          "filename": "IDU07020046f0b3bb043180bf370362bf3048554.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415833",
+          "filesize": "434730",
+          "url": "https://reliefweb.int/attachments/b80255a9-4d23-410f-aa0c-24fda0f8badd/IDU07020046f0b3bb043180bf370362bf3048554.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/world/breaking-barriers-improving-access-clean-cooking-displacement-settings",
+      "theme": [
+        {
+          "name": "Climate Change and Environment",
+          "id": 4588
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        }
+      ],
+      "id": 3957225,
+      "status": "published",
+      "body-html": "<p><strong>Abstract</strong></p>\n<p>Cooking programs in camps and other settings for the world’s 100 million displaced people have typically provided substandard stoves and fuelwood rather than clean, modern fuels. But clean cooking solutions are gaining ground, with new operating models that improve affordability. The goal should be the integration of clean cooking within basic service packages provided to displaced populations and a framework to provide such services for aslong as the displacement lasts. This Live Wire provides evidence of constructive change from refugee camps and other displacement settlements around the world.</p>\n<p><strong>Citation</strong></p>\n<p>“Bellur, Sharmila; Antony, Anish Paul. 2023. Breaking Barriers: Improving Access to Clean Cooking in Displacement Settings. Live Wire; 2023/127. © World Bank, Washington, DC. <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"http://hdl.handle.net/10986/39737\">http://hdl.handle.net/10986/39737</a> License: CC BY-NC 3.0 IGO.”</p>\n<p><strong>URI</strong>\n<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://openknowledge.worldbank.org/handle/10986/39737\">https://openknowledge.worldbank.org/handle/10986/39737</a></p>\n<p><strong>Collections</strong>\n<a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://openknowledge.worldbank.org/collections/8fb9e6e8-afc2-513f-9210-05de76654b06\">Live Wire</a></p>\n<p><a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://openknowledge.worldbank.org/entities/publication/db1a1f4a-d4ed-4bab-a98b-06705a335595/full\">FULL ITEM PAGE</a></p>\n"
+    }
+  },
+  "text": "# Breaking Barriers: Improving Access to Clean Cooking in Displacement Settings\n\n**Abstract**  \n\nCooking programs in camps and other settings for the world’s 100 million displaced people have typically provided substandard stoves and fuelwood rather than clean, modern fuels. But clean cooking solutions are gaining ground, with new operating models that improve affordability. The goal should be the integration of clean cooking within basic service packages provided to displaced populations and a framework to provide such services for aslong as the displacement lasts. This Live Wire provides evidence of constructive change from refugee camps and other displacement settlements around the world.  \n\n**Citation**  \n\n“Bellur, Sharmila; Antony, Anish Paul. 2023. Breaking Barriers: Improving Access to Clean Cooking in Displacement Settings. Live Wire; 2023/127. © World Bank, Washington, DC. http://hdl.handle.net/10986/39737 License: CC BY-NC 3.0 IGO.”  \n\n**URI**\nhttps://openknowledge.worldbank.org/handle/10986/39737  \n\n**Collections**\n[Live Wire](https://openknowledge.worldbank.org/collections/8fb9e6e8-afc2-513f-9210-05de76654b06)  \n\n[FULL ITEM PAGE](https://openknowledge.worldbank.org/entities/publication/db1a1f4a-d4ed-4bab-a98b-06705a335595/full)",
+  "summary": " This Live Wire provides evidence of how clean cooking solutions are gaining ground in refugee camps and other displacement settlements around the world. It discusses how new operating models can improve affordability and suggests that clean cooking should be integrated into basic service packages provided to displaced populations.",
+  "metadata": {
+    "id": "3957225",
+    "name": "Breaking Barriers: Improving Access to Clean Cooking in Displacement Settings",
+    "date_original": 1682380800000,
+    "date_changed": 1682828055000,
+    "date_created": 1682813209000,
+    "primary_country_id": 254,
+    "primary_country_name": "World",
+    "primary_country_iso3": "wld"
+  }
+}

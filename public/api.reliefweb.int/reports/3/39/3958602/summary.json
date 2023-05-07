@@ -1,0 +1,149 @@
+{
+  "original": {
+    "id": "3958602",
+    "fields": {
+      "date": {
+        "changed": "2023-05-04T12:47:00+00:00",
+        "created": "2023-05-04T12:05:22+00:00",
+        "original": "2023-05-04T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/236",
+          "name": "Türkiye",
+          "location": {
+            "lon": 35.18,
+            "lat": 39.06
+          },
+          "id": 236,
+          "shortname": "Türkiye",
+          "iso3": "tur",
+          "primary": true
+        }
+      ],
+      "origin": "https://sheltercluster.org/turkiye-earthquake-2023/documents/information-brief-shelter-sector-no120230428",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/236",
+        "name": "Türkiye",
+        "location": {
+          "lon": 35.18,
+          "lat": 39.06
+        },
+        "id": 236,
+        "shortname": "Türkiye",
+        "iso3": "tur"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EQ",
+          "name": "Earthquake",
+          "id": 4628
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/13726",
+          "name": "Shelter Cluster",
+          "id": 13726,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "Shelter Cluster",
+          "homepage": "https://www.sheltercluster.org/"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "Shelter Sector Türkiye - Information brief Shelter Sector No. 1 - 28/04/2023",
+      "body": "**Overview**\n\n**Needs**\n\nAs summer approaches, a good proportion of the 720,000 families/2.8 million people currently living in tents (in formal and informal sites) will likely stay in tents for months to come, with basic living conditions and limited services, raising humanitarian concerns from both shelter adequacy and protection perspectives. Additionally, reported flows of affected families returning to the affected areas and population movement seeking livelihood opportunities within the affected areas, will require additional emergency shelter solutions, placing significant pressure on an already stressed relief systems.  \nIn order to cope with increasing need to service families in tents, eligible and waiting for government support, additional government managed and serviced sites (formal tent sites) are being set up to accommodate families that were self-settled in tents elsewhere. Self-settled families with light damaged dwellings and families that for other reasons are not eligible for government support, including those who have chosen to stay next to their damaged dwellings, will likely remain in tents, with poor living conditions and limited or no services, until alternative/additional support from government is accessible.  \nGiven the limited funding and operational capacity to respond to scale, shelter sector partners will need to prioritize assisting the most vulnerable households, who currently have little or no access to resources or services and very limited capacity to self-recover.\n\n**Challenges and constraints**\n\nGiven the government formal relief to recovery pathway, the scale of need, the limited funding and operational capacity to respond at scale, there will almost certainly be unavoidable delays and gaps in assistance. This will require prioritization in decongesting informal sites, while focusing on assisting the most vulnerable, who currently have little or no access to resources or services and very limited capacity to self-recover. As the response unfolds, there are emerging challenges on clarity of the available government support packages and services available to the different groups, in particular for those with light damaged dwellings, assessed as structurally sound, but not livable without significant repairs, which are a considerable proportion of the total affected households, and those in peri-urban, remote and rural areas, with different levels of house damage, that have chosen to stay in their land or within their community or their networks of support with access to their livelihoods.\n\n**Reach**\n\nAs of 25/04/2023, Shelter Sector partners collectively have supported 233,264 households with support\nfor an improved living space (including distribution of tents and other shelter materials), 59% of the sector\ntarget of 1,5 million individuals. An additional 1,297,432 households were reached with assistance to\nresume their domestic life through the provision of household items. These numbers include the in-kind\nitems that were handed over to the government.\n\n**Funding**\n\nAs of the 24th of April, 42.5% of the 246 million required for\nthe Shelter Sector in the Flash Appeal is funded. Of this 104\nmillion, almost 82 million is committed against a total of almost\n23 million that is already paid. The limited amount of money\nthat has already been paid to shelter partners pose challenges.\nYou can find more information on the funding status of the\nFlash Appeal in the [Financial Tracking Service here](https://fts.unocha.org/appeals/1150/clusters).",
+      "url": "https://reliefweb.int/node/3958602",
+      "disaster": [
+        {
+          "name": "Türkiye/Syria: Earthquakes - Feb 2023",
+          "id": 51470,
+          "glide": "EQ-2023-000015-TUR",
+          "type": [
+            {
+              "code": "EQ",
+              "name": "Earthquake",
+              "id": 4628,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/f0/24/f0241eff-5148-43f7-9cc0-f3bcaa747eda.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/f0/24/f0241eff-5148-43f7-9cc0-f3bcaa747eda.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/f0/24/f0241eff-5148-43f7-9cc0-f3bcaa747eda.png",
+            "version": "2417345-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/f0/24/f0241eff-5148-43f7-9cc0-f3bcaa747eda.png"
+          },
+          "filename": "Information Brief Shelter Sector No1_20230428.pdf",
+          "mimetype": "application/pdf",
+          "id": "2417345",
+          "filesize": "421873",
+          "url": "https://reliefweb.int/attachments/f0241eff-5148-43f7-9cc0-f3bcaa747eda/Information%20Brief%20Shelter%20Sector%20No1_20230428.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/turkiye/shelter-sector-turkiye-information-brief-shelter-sector-no-1-28042023",
+      "theme": [
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        }
+      ],
+      "id": 3958602,
+      "status": "published",
+      "body-html": "<p><strong>Overview</strong></p>\n<p><strong>Needs</strong></p>\n<p>As summer approaches, a good proportion of the 720,000 families/2.8 million people currently living in tents (in formal and informal sites) will likely stay in tents for months to come, with basic living conditions and limited services, raising humanitarian concerns from both shelter adequacy and protection perspectives. Additionally, reported flows of affected families returning to the affected areas and population movement seeking livelihood opportunities within the affected areas, will require additional emergency shelter solutions, placing significant pressure on an already stressed relief systems.<br />\nIn order to cope with increasing need to service families in tents, eligible and waiting for government support, additional government managed and serviced sites (formal tent sites) are being set up to accommodate families that were self-settled in tents elsewhere. Self-settled families with light damaged dwellings and families that for other reasons are not eligible for government support, including those who have chosen to stay next to their damaged dwellings, will likely remain in tents, with poor living conditions and limited or no services, until alternative/additional support from government is accessible.<br />\nGiven the limited funding and operational capacity to respond to scale, shelter sector partners will need to prioritize assisting the most vulnerable households, who currently have little or no access to resources or services and very limited capacity to self-recover.</p>\n<p><strong>Challenges and constraints</strong></p>\n<p>Given the government formal relief to recovery pathway, the scale of need, the limited funding and operational capacity to respond at scale, there will almost certainly be unavoidable delays and gaps in assistance. This will require prioritization in decongesting informal sites, while focusing on assisting the most vulnerable, who currently have little or no access to resources or services and very limited capacity to self-recover. As the response unfolds, there are emerging challenges on clarity of the available government support packages and services available to the different groups, in particular for those with light damaged dwellings, assessed as structurally sound, but not livable without significant repairs, which are a considerable proportion of the total affected households, and those in peri-urban, remote and rural areas, with different levels of house damage, that have chosen to stay in their land or within their community or their networks of support with access to their livelihoods.</p>\n<p><strong>Reach</strong></p>\n<p>As of 25/04/2023, Shelter Sector partners collectively have supported 233,264 households with support\nfor an improved living space (including distribution of tents and other shelter materials), 59% of the sector\ntarget of 1,5 million individuals. An additional 1,297,432 households were reached with assistance to\nresume their domestic life through the provision of household items. These numbers include the in-kind\nitems that were handed over to the government.</p>\n<p><strong>Funding</strong></p>\n<p>As of the 24th of April, 42.5% of the 246 million required for\nthe Shelter Sector in the Flash Appeal is funded. Of this 104\nmillion, almost 82 million is committed against a total of almost\n23 million that is already paid. The limited amount of money\nthat has already been paid to shelter partners pose challenges.\nYou can find more information on the funding status of the\nFlash Appeal in the <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://fts.unocha.org/appeals/1150/clusters\">Financial Tracking Service here</a>.</p>\n"
+    }
+  },
+  "text": "# Shelter Sector Türkiye - Information brief Shelter Sector No. 1 - 28/04/2023\n\n**Overview**\n\n**Needs**\n\nAs summer approaches, a good proportion of the 720,000 families/2.8 million people currently living in tents (in formal and informal sites) will likely stay in tents for months to come, with basic living conditions and limited services, raising humanitarian concerns from both shelter adequacy and protection perspectives. Additionally, reported flows of affected families returning to the affected areas and population movement seeking livelihood opportunities within the affected areas, will require additional emergency shelter solutions, placing significant pressure on an already stressed relief systems.  \nIn order to cope with increasing need to service families in tents, eligible and waiting for government support, additional government managed and serviced sites (formal tent sites) are being set up to accommodate families that were self-settled in tents elsewhere. Self-settled families with light damaged dwellings and families that for other reasons are not eligible for government support, including those who have chosen to stay next to their damaged dwellings, will likely remain in tents, with poor living conditions and limited or no services, until alternative/additional support from government is accessible.  \nGiven the limited funding and operational capacity to respond to scale, shelter sector partners will need to prioritize assisting the most vulnerable households, who currently have little or no access to resources or services and very limited capacity to self-recover.\n\n**Challenges and constraints**\n\nGiven the government formal relief to recovery pathway, the scale of need, the limited funding and operational capacity to respond at scale, there will almost certainly be unavoidable delays and gaps in assistance. This will require prioritization in decongesting informal sites, while focusing on assisting the most vulnerable, who currently have little or no access to resources or services and very limited capacity to self-recover. As the response unfolds, there are emerging challenges on clarity of the available government support packages and services available to the different groups, in particular for those with light damaged dwellings, assessed as structurally sound, but not livable without significant repairs, which are a considerable proportion of the total affected households, and those in peri-urban, remote and rural areas, with different levels of house damage, that have chosen to stay in their land or within their community or their networks of support with access to their livelihoods.\n\n**Reach**\n\nAs of 25/04/2023, Shelter Sector partners collectively have supported 233,264 households with support\nfor an improved living space (including distribution of tents and other shelter materials), 59% of the sector\ntarget of 1,5 million individuals. An additional 1,297,432 households were reached with assistance to\nresume their domestic life through the provision of household items. These numbers include the in-kind\nitems that were handed over to the government.\n\n**Funding**\n\nAs of the 24th of April, 42.5% of the 246 million required for\nthe Shelter Sector in the Flash Appeal is funded. Of this 104\nmillion, almost 82 million is committed against a total of almost\n23 million that is already paid. The limited amount of money\nthat has already been paid to shelter partners pose challenges.\nYou can find more information on the funding status of the\nFlash Appeal in the [Financial Tracking Service here](https://fts.unocha.org/appeals/1150/clusters).",
+  "summary": " This information brief provides an overview of the shelter sector in Turkey, where 720,000 families/2.8 million people are currently living in tents. As summer approaches, additional emergency shelter solutions are needed to cope with the increasing need to service families in tents. Challenges include limited funding and operational capacity to respond to scale, as well as clarity of the available government support packages and services. As of 25/04/2023, 233,264 households have been supported with improved living space and 1,297,432 households have been reached with assistance to resume their domestic life. 42.5% of the 246 million required for the Shelter Sector in the Flash Appeal is funded.",
+  "metadata": {
+    "id": "3958602",
+    "name": "Shelter Sector Türkiye - Information brief Shelter Sector No. 1 - 28/04/2023",
+    "date_original": 1683158400000,
+    "date_changed": 1683204420000,
+    "date_created": 1683201922000,
+    "primary_country_id": 236,
+    "primary_country_name": "Türkiye",
+    "primary_country_iso3": "tur",
+    "primary_country_location": {
+      "lon": 35.18,
+      "lat": 39.06
+    }
+  }
+}

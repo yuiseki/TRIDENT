@@ -1,0 +1,961 @@
+{
+  "original": {
+    "id": "3958876",
+    "fields": {
+      "date": {
+        "changed": "2023-05-05T09:25:36+00:00",
+        "created": "2023-05-05T08:07:46+00:00",
+        "original": "2023-05-05T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/16",
+          "name": "Algeria",
+          "location": {
+            "lon": 2.63,
+            "lat": 28.16
+          },
+          "id": 16,
+          "shortname": "Algeria",
+          "iso3": "dza"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/19",
+          "name": "Angola",
+          "location": {
+            "lon": 17.91,
+            "lat": -12.1
+          },
+          "id": 19,
+          "shortname": "Angola",
+          "iso3": "ago"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/36",
+          "name": "Benin",
+          "location": {
+            "lon": 2.43,
+            "lat": 10.34
+          },
+          "id": 36,
+          "shortname": "Benin",
+          "iso3": "ben"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/41",
+          "name": "Botswana",
+          "location": {
+            "lon": 24.32,
+            "lat": -22.21
+          },
+          "id": 41,
+          "shortname": "Botswana",
+          "iso3": "bwa"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/46",
+          "name": "Burkina Faso",
+          "location": {
+            "lon": -1.57,
+            "lat": 12.28
+          },
+          "id": 46,
+          "shortname": "Burkina Faso",
+          "iso3": "bfa"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/47",
+          "name": "Burundi",
+          "location": {
+            "lon": 29.89,
+            "lat": -3.53
+          },
+          "id": 47,
+          "shortname": "Burundi",
+          "iso3": "bdi"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/52",
+          "name": "Cabo Verde",
+          "location": {
+            "lon": -23.97,
+            "lat": 15.98
+          },
+          "id": 52,
+          "shortname": "Cabo Verde",
+          "iso3": "cpv"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/49",
+          "name": "Cameroon",
+          "location": {
+            "lon": 12.21,
+            "lat": 4.81
+          },
+          "id": 49,
+          "shortname": "Cameroon",
+          "iso3": "cmr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/54",
+          "name": "Central African Republic",
+          "location": {
+            "lon": 20.48,
+            "lat": 6.57
+          },
+          "id": 54,
+          "shortname": "CAR",
+          "iso3": "caf"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/55",
+          "name": "Chad",
+          "location": {
+            "lon": 18.66,
+            "lat": 15.36
+          },
+          "id": 55,
+          "shortname": "Chad",
+          "iso3": "tcd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/65",
+          "name": "Comoros",
+          "location": {
+            "lon": 43.68,
+            "lat": -11.89
+          },
+          "id": 65,
+          "shortname": "Comoros",
+          "iso3": "com"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/66",
+          "name": "Congo",
+          "location": {
+            "lon": 15.99,
+            "lat": -0.31
+          },
+          "id": 66,
+          "shortname": "Congo",
+          "iso3": "cog"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/69",
+          "name": "Côte d'Ivoire",
+          "location": {
+            "lon": -5.38,
+            "lat": 7.81
+          },
+          "id": 69,
+          "shortname": "Côte d'Ivoire",
+          "iso3": "civ"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/75",
+          "name": "Democratic Republic of the Congo",
+          "location": {
+            "lon": 21.7587,
+            "lat": -4.03833
+          },
+          "id": 75,
+          "shortname": "DR Congo",
+          "iso3": "cod"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/84",
+          "name": "Equatorial Guinea",
+          "location": {
+            "lon": 10.53,
+            "lat": 1.61
+          },
+          "id": 84,
+          "shortname": "Equatorial Guinea",
+          "iso3": "gnq",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/85",
+          "name": "Eritrea",
+          "location": {
+            "lon": 38.58,
+            "lat": 15.68
+          },
+          "id": 85,
+          "shortname": "Eritrea",
+          "iso3": "eri"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/223",
+          "name": "Eswatini",
+          "location": {
+            "lon": 31.5,
+            "lat": -26.56
+          },
+          "id": 223,
+          "shortname": "Eswatini",
+          "iso3": "swz"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/87",
+          "name": "Ethiopia",
+          "location": {
+            "lon": 39.62,
+            "lat": 8.63
+          },
+          "id": 87,
+          "shortname": "Ethiopia",
+          "iso3": "eth"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/96",
+          "name": "Gabon",
+          "location": {
+            "lon": 11.8,
+            "lat": -0.59
+          },
+          "id": 96,
+          "shortname": "Gabon",
+          "iso3": "gab"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/98",
+          "name": "Gambia",
+          "location": {
+            "lon": -15.91,
+            "lat": 13.44
+          },
+          "id": 98,
+          "shortname": "Gambia",
+          "iso3": "gmb"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/102",
+          "name": "Ghana",
+          "location": {
+            "lon": -1.19,
+            "lat": 7.28
+          },
+          "id": 102,
+          "shortname": "Ghana",
+          "iso3": "gha"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/110",
+          "name": "Guinea",
+          "location": {
+            "lon": -11.03,
+            "lat": 10.79
+          },
+          "id": 110,
+          "shortname": "Guinea",
+          "iso3": "gin"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/111",
+          "name": "Guinea-Bissau",
+          "location": {
+            "lon": -14.96,
+            "lat": 12.03
+          },
+          "id": 111,
+          "shortname": "Guinea-Bissau",
+          "iso3": "gnb"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/131",
+          "name": "Kenya",
+          "location": {
+            "lon": 37.86,
+            "lat": 0.53
+          },
+          "id": 131,
+          "shortname": "Kenya",
+          "iso3": "ken"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/138",
+          "name": "Lesotho",
+          "location": {
+            "lon": 28.24,
+            "lat": -29.58
+          },
+          "id": 138,
+          "shortname": "Lesotho",
+          "iso3": "lso"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/139",
+          "name": "Liberia",
+          "location": {
+            "lon": -9.31,
+            "lat": 6.45
+          },
+          "id": 139,
+          "shortname": "Liberia",
+          "iso3": "lbr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/144",
+          "name": "Madagascar",
+          "location": {
+            "lon": 46.71,
+            "lat": -19.37
+          },
+          "id": 144,
+          "shortname": "Madagascar",
+          "iso3": "mdg"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/146",
+          "name": "Malawi",
+          "location": {
+            "lon": 33.74,
+            "lat": -13.22
+          },
+          "id": 146,
+          "shortname": "Malawi",
+          "iso3": "mwi"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/149",
+          "name": "Mali",
+          "location": {
+            "lon": -1.25,
+            "lat": 17.35
+          },
+          "id": 149,
+          "shortname": "Mali",
+          "iso3": "mli"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/153",
+          "name": "Mauritania",
+          "location": {
+            "lon": -10.53,
+            "lat": 19.76
+          },
+          "id": 153,
+          "shortname": "Mauritania",
+          "iso3": "mrt"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/154",
+          "name": "Mauritius",
+          "location": {
+            "lon": 57.87,
+            "lat": -20.25
+          },
+          "id": 154,
+          "shortname": "Mauritius",
+          "iso3": "mus"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/164",
+          "name": "Mozambique",
+          "location": {
+            "lon": 34.75,
+            "lat": -18.09
+          },
+          "id": 164,
+          "shortname": "Mozambique",
+          "iso3": "moz"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/166",
+          "name": "Namibia",
+          "location": {
+            "lon": 17.29,
+            "lat": -21.2
+          },
+          "id": 166,
+          "shortname": "Namibia",
+          "iso3": "nam"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/174",
+          "name": "Niger",
+          "location": {
+            "lon": 9.4,
+            "lat": 17.43
+          },
+          "id": 174,
+          "shortname": "Niger",
+          "iso3": "ner"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/175",
+          "name": "Nigeria",
+          "location": {
+            "lon": 8.11,
+            "lat": 9.59
+          },
+          "id": 175,
+          "shortname": "Nigeria",
+          "iso3": "nga"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/198",
+          "name": "Rwanda",
+          "location": {
+            "lon": 29.92,
+            "lat": -1.87
+          },
+          "id": 198,
+          "shortname": "Rwanda",
+          "iso3": "rwa"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/206",
+          "name": "Sao Tome and Principe",
+          "location": {
+            "lon": 6.74,
+            "lat": 0.46
+          },
+          "id": 206,
+          "shortname": "Sao Tome and Principe",
+          "iso3": "stp"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/208",
+          "name": "Senegal",
+          "location": {
+            "lon": -14.82,
+            "lat": 15.22
+          },
+          "id": 208,
+          "shortname": "Senegal",
+          "iso3": "sen"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/210",
+          "name": "Seychelles",
+          "location": {
+            "lon": 52.23,
+            "lat": -6.35
+          },
+          "id": 210,
+          "shortname": "Seychelles",
+          "iso3": "syc"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/211",
+          "name": "Sierra Leone",
+          "location": {
+            "lon": -11.79,
+            "lat": 8.56
+          },
+          "id": 211,
+          "shortname": "Sierra Leone",
+          "iso3": "sle"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/217",
+          "name": "South Africa",
+          "location": {
+            "lon": 23.91,
+            "lat": -28.38
+          },
+          "id": 217,
+          "shortname": "South Africa",
+          "iso3": "zaf"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/8657",
+          "name": "South Sudan",
+          "location": {
+            "lon": 30.5,
+            "lat": 6.9
+          },
+          "id": 8657,
+          "shortname": "South Sudan",
+          "iso3": "ssd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/231",
+          "name": "Togo",
+          "location": {
+            "lon": 1.04,
+            "lat": 8.77
+          },
+          "id": 231,
+          "shortname": "Togo",
+          "iso3": "tgo"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/240",
+          "name": "Uganda",
+          "location": {
+            "lon": 32.39,
+            "lat": 1.28
+          },
+          "id": 240,
+          "shortname": "Uganda",
+          "iso3": "uga"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/244",
+          "name": "United Republic of Tanzania",
+          "location": {
+            "lon": 34.82,
+            "lat": -6.27
+          },
+          "id": 244,
+          "shortname": "Tanzania",
+          "iso3": "tza"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/254",
+          "name": "World",
+          "id": 254,
+          "shortname": "World",
+          "iso3": "wld"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/256",
+          "name": "Zambia",
+          "location": {
+            "lon": 27.43,
+            "lat": -14
+          },
+          "id": 256,
+          "shortname": "Zambia",
+          "iso3": "zmb"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/257",
+          "name": "Zimbabwe",
+          "location": {
+            "lon": 29.94,
+            "lat": -19.19
+          },
+          "id": 257,
+          "shortname": "Zimbabwe",
+          "iso3": "zwe"
+        }
+      ],
+      "origin": "https://apps.who.int/iris/handle/10665/367498",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/84",
+        "name": "Equatorial Guinea",
+        "location": {
+          "lon": 10.53,
+          "lat": 1.61
+        },
+        "id": 84,
+        "shortname": "Equatorial Guinea",
+        "iso3": "gnq"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "DR",
+          "name": "Drought",
+          "id": 4672
+        },
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        },
+        {
+          "code": "LS",
+          "name": "Land Slide",
+          "id": 4728
+        },
+        {
+          "code": "TC",
+          "name": "Tropical Cyclone",
+          "id": 4618
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1275",
+          "longname": "World Health Organization",
+          "spanish_name": "Organización Mundial de la Salud",
+          "name": "World Health Organization",
+          "id": 1275,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WHO",
+          "homepage": "http://www.who.int/"
+        }
+      ],
+      "title": "Weekly Bulletin on Outbreaks and other Emergencies: Week 18: 24-30 April 2023 (Data as reported by: 17:00; 30 April 2023)",
+      "body": "This Weekly Bulletin focuses on public health emergencies occurring in the WHO African region. This week’s articles cover:\n\n- Gastroenteritis in Kenya \n\n- Measles in South Africa \n\n- Mpox in Africa \n\nFor each of these events, a brief description, followed by public health measures implemented and an interpretation of the situation is provided.\n\nA table is provided at the end of the bulletin with information on all new and ongoing public health events currently being monitored in the region, as well as recent events that have been controlled and closed.\n\n**Major issues and challenges include:**\n\n- A gastroenteritis outbreak at a girls high school in Kakamega County, Kenya caused panic for the school population and was subsequently closed due to external pressures over the increasing number of students reporting similar symptoms. The students were forced to leave dispersing to their various Counties of residence without identifying a causal agent of the outbreak. Kakamega County health authorities are now faced with tracking and monitoring students throughout the country as they continue with further investigation. Overall, laboratory findings have not identified the cause of the outbreak making the reopening of schools difficult since guidance has to remain comprehensive.\n\n- The ongoing Measles outbreak in South Africa has been declared in all the provinces except for the Eastern Cape. The government has instituted several response measures to control the outbreak. Although reactive vaccination has been conducted in the affected provinces, there is need to strengthen routine immunization, as this will forestall near future outbreaks.",
+      "url": "https://reliefweb.int/node/3958876",
+      "disaster": [
+        {
+          "name": "Tanzania: Marburg Virus Disease Outbreak - Mar 2023",
+          "id": 51537,
+          "glide": "EP-2023-000047-TZA",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Equatorial Guinea: Marburg Virus Disease Outbreak - Jan 2023",
+          "id": 51505,
+          "glide": "EP-2023-000027-GNQ",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Tropical Cyclone Freddy - Feb 2023",
+          "id": 51486,
+          "glide": "TC-2023-000023-MDG",
+          "type": [
+            {
+              "code": "TC",
+              "name": "Tropical Cyclone",
+              "id": 4618,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Mozambique: Floods - Feb 2023",
+          "id": 51479,
+          "glide": "FL-2023-000018-MOZ",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Zambia: Cholera Outbreak - Jan 2023",
+          "id": 51469,
+          "glide": "EP-2023-000013-ZMB",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Mozambique: Cholera Outbreak - Dec 2022",
+          "id": 51453,
+          "glide": "EP-2023-000006-MOZ",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Tropical Cyclone Cheneso - Jan 2023",
+          "id": 51450,
+          "glide": "TC-2023-000012-MDG",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611
+            },
+            {
+              "code": "LS",
+              "name": "Land Slide",
+              "id": 4728
+            },
+            {
+              "code": "TC",
+              "name": "Tropical Cyclone",
+              "id": 4618,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "South Africa: Floods - Dec 2022",
+          "id": 51427,
+          "glide": "FL-2022-000382-ZAF",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Kenya: Cholera Outbreak - Oct 2022",
+          "id": 51402,
+          "glide": "EP-2022-000367-KEN",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Cameroon: Floods - Aug 2022",
+          "id": 51369,
+          "glide": "FL-2022-000349-CMR",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            }
+          ],
+          "status": "past"
+        },
+        {
+          "name": "Ethiopia: Cholera Outbreak - Sep 2022",
+          "id": 51337,
+          "glide": "EP-2022-000323-ETH",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "South Sudan: Cholera Outbreak - May 2022",
+          "id": 51167,
+          "glide": "EP-2022-000236-SSD",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Malawi: Cholera Outbreak - Mar 2022",
+          "id": 51162,
+          "glide": "EP-2022-000298-MWI",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "South Sudan: Floods 2021-2022",
+          "id": 50794,
+          "glide": "FL-2021-000108-SSD",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Cameroon: Cholera Outbreak - Jul 2018",
+          "id": 46464,
+          "glide": "EP-2018-000142-CMR",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Madagascar: Drought - 2018-2023",
+          "id": 46459,
+          "glide": "DR-2018-000141-MDG",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Horn of Africa: Polio Outbreak - Aug 2018",
+          "id": 46434,
+          "glide": "EP-2018-000161-SOM",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Nigeria: Cholera Outbreak - Jun 2017",
+          "id": 43154,
+          "glide": "EP-2017-000077-NGA",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Ethiopia: Drought - 2015-2023",
+          "id": 23121,
+          "glide": "DR-2015-000109-ETH",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Kenya: Drought - 2014-2023",
+          "id": 15360,
+          "glide": "DR-2014-000131-KEN",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "DR Congo: Cholera and Measles Outbreaks - Jan 2013",
+          "id": 14127,
+          "glide": "EP-2013-000175-COD",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/c4/cd/c4cd71d1-ca56-4824-b1c1-2df7b26176c8.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/c4/cd/c4cd71d1-ca56-4824-b1c1-2df7b26176c8.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/c4/cd/c4cd71d1-ca56-4824-b1c1-2df7b26176c8.png",
+            "version": "2417585-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/c4/cd/c4cd71d1-ca56-4824-b1c1-2df7b26176c8.png"
+          },
+          "filename": "OEW18-2430042023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2417585",
+          "filesize": "3053989",
+          "url": "https://reliefweb.int/attachments/c4cd71d1-ca56-4824-b1c1-2df7b26176c8/OEW18-2430042023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/equatorial-guinea/weekly-bulletin-outbreaks-and-other-emergencies-week-18-24-30-april-2023-data-reported-1700-30-april-2023",
+      "theme": [
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        }
+      ],
+      "id": 3958876,
+      "status": "published",
+      "body-html": "<p>This Weekly Bulletin focuses on public health emergencies occurring in the WHO African region. This week’s articles cover:</p>\n<ul>\n<li>\n<p>Gastroenteritis in Kenya</p>\n</li>\n<li>\n<p>Measles in South Africa</p>\n</li>\n<li>\n<p>Mpox in Africa</p>\n</li>\n</ul>\n<p>For each of these events, a brief description, followed by public health measures implemented and an interpretation of the situation is provided.</p>\n<p>A table is provided at the end of the bulletin with information on all new and ongoing public health events currently being monitored in the region, as well as recent events that have been controlled and closed.</p>\n<p><strong>Major issues and challenges include:</strong></p>\n<ul>\n<li>\n<p>A gastroenteritis outbreak at a girls high school in Kakamega County, Kenya caused panic for the school population and was subsequently closed due to external pressures over the increasing number of students reporting similar symptoms. The students were forced to leave dispersing to their various Counties of residence without identifying a causal agent of the outbreak. Kakamega County health authorities are now faced with tracking and monitoring students throughout the country as they continue with further investigation. Overall, laboratory findings have not identified the cause of the outbreak making the reopening of schools difficult since guidance has to remain comprehensive.</p>\n</li>\n<li>\n<p>The ongoing Measles outbreak in South Africa has been declared in all the provinces except for the Eastern Cape. The government has instituted several response measures to control the outbreak. Although reactive vaccination has been conducted in the affected provinces, there is need to strengthen routine immunization, as this will forestall near future outbreaks.</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# Weekly Bulletin on Outbreaks and other Emergencies: Week 18: 24-30 April 2023 (Data as reported by: 17:00; 30 April 2023)\n\nThis Weekly Bulletin focuses on public health emergencies occurring in the WHO African region. This week’s articles cover:\n\n- Gastroenteritis in Kenya \n\n- Measles in South Africa \n\n- Mpox in Africa \n\nFor each of these events, a brief description, followed by public health measures implemented and an interpretation of the situation is provided.\n\nA table is provided at the end of the bulletin with information on all new and ongoing public health events currently being monitored in the region, as well as recent events that have been controlled and closed.\n\n**Major issues and challenges include:**\n\n- A gastroenteritis outbreak at a girls high school in Kakamega County, Kenya caused panic for the school population and was subsequently closed due to external pressures over the increasing number of students reporting similar symptoms. The students were forced to leave dispersing to their various Counties of residence without identifying a causal agent of the outbreak. Kakamega County health authorities are now faced with tracking and monitoring students throughout the country as they continue with further investigation. Overall, laboratory findings have not identified the cause of the outbreak making the reopening of schools difficult since guidance has to remain comprehensive.\n\n- The ongoing Measles outbreak in South Africa has been declared in all the provinces except for the Eastern Cape. The government has instituted several response measures to control the outbreak. Although reactive vaccination has been conducted in the affected provinces, there is need to strengthen routine immunization, as this will forestall near future outbreaks.",
+  "summary": " This Weekly Bulletin focuses on public health emergencies occurring in the WHO African region, including gastroenteritis in Kenya, measles in South Africa, and mpox in Africa. Major issues and challenges include an outbreak of gastroenteritis in Kakamega County, Kenya, and an ongoing measles outbreak in South Africa. Response measures have been implemented, but there is a need to strengthen routine immunization to prevent future outbreaks.",
+  "metadata": {
+    "id": "3958876",
+    "name": "Weekly Bulletin on Outbreaks and other Emergencies: Week 18: 24-30 April 2023 (Data as reported by: 17:00; 30 April 2023)",
+    "date_original": 1683244800000,
+    "date_changed": 1683278736000,
+    "date_created": 1683274066000,
+    "primary_country_id": 84,
+    "primary_country_name": "Equatorial Guinea",
+    "primary_country_iso3": "gnq",
+    "primary_country_location": {
+      "lon": 10.53,
+      "lat": 1.61
+    }
+  }
+}

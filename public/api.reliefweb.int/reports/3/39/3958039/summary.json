@@ -1,0 +1,131 @@
+{
+  "original": {
+    "id": "3958039",
+    "fields": {
+      "date": {
+        "changed": "2023-05-03T09:03:10+00:00",
+        "created": "2023-05-03T07:48:20+00:00",
+        "original": "2023-05-03T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/255",
+          "name": "Yemen",
+          "location": {
+            "lon": 47.62,
+            "lat": 15.94
+          },
+          "id": 255,
+          "shortname": "Yemen",
+          "iso3": "yem",
+          "primary": true
+        }
+      ],
+      "origin": "https://www.etcluster.org/document/etc-yemen-sitrep-april-2023",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/255",
+        "name": "Yemen",
+        "location": {
+          "lon": 47.62,
+          "lat": 15.94
+        },
+        "id": 255,
+        "shortname": "Yemen",
+        "iso3": "yem"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/13799",
+          "longname": "Emergency Telecommunications Cluster",
+          "name": "Emergency Telecommunications Cluster",
+          "id": 13799,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "ETC",
+          "homepage": "https://www.etcluster.org/"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "Yemen Conflict - ETC Situation Report #79 (Reporting period: 01/04/2023 to 30/04/2023)",
+      "body": "**Highlight**\n\n- In April, the ETC provided data\nconnectivity services to 1,298\nhumanitarians and security\ncommunications services to a total of\n2,396 responders across 20 sites in\nYemen.\n\n- A telecommunications specialist and\nformer WFP staff member, sponsored by\nthe ETC, arrived in Aden on 27 April to\nprovide telecommunications training to\nUNDSS Security Operations Centre\n(SOC) Operators in Aden, Marib, and Al\nMokha from 29 April to 15 May.\n\n- The ETC set up dedicated bandwidth and Wi-Fi connectivity for the UN Mission to\nsupport the Hodeidah Agreement (UNMHA) in Al-Mokha in response to their request and\nneeds.",
+      "url": "https://reliefweb.int/node/3958039",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/66/f9/66f94394-c7ed-48ef-a3b1-782eb0bfe3b9.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/66/f9/66f94394-c7ed-48ef-a3b1-782eb0bfe3b9.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/66/f9/66f94394-c7ed-48ef-a3b1-782eb0bfe3b9.png",
+            "version": "2416723-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/66/f9/66f94394-c7ed-48ef-a3b1-782eb0bfe3b9.png"
+          },
+          "filename": "ETC Yemen SitRep-April 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2416723",
+          "filesize": "141437",
+          "url": "https://reliefweb.int/attachments/66f94394-c7ed-48ef-a3b1-782eb0bfe3b9/ETC%20Yemen%20SitRep-April%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/yemen/yemen-conflict-etc-situation-report-79-reporting-period-01042023-30042023",
+      "theme": [
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        }
+      ],
+      "id": 3958039,
+      "status": "published",
+      "body-html": "<p><strong>Highlight</strong></p>\n<ul>\n<li>\n<p>In April, the ETC provided data\nconnectivity services to 1,298\nhumanitarians and security\ncommunications services to a total of\n2,396 responders across 20 sites in\nYemen.</p>\n</li>\n<li>\n<p>A telecommunications specialist and\nformer WFP staff member, sponsored by\nthe ETC, arrived in Aden on 27 April to\nprovide telecommunications training to\nUNDSS Security Operations Centre\n(SOC) Operators in Aden, Marib, and Al\nMokha from 29 April to 15 May.</p>\n</li>\n<li>\n<p>The ETC set up dedicated bandwidth and Wi-Fi connectivity for the UN Mission to\nsupport the Hodeidah Agreement (UNMHA) in Al-Mokha in response to their request and\nneeds.</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# Yemen Conflict - ETC Situation Report #79 (Reporting period: 01/04/2023 to 30/04/2023)\n\n**Highlight**\n\n- In April, the ETC provided data\nconnectivity services to 1,298\nhumanitarians and security\ncommunications services to a total of\n2,396 responders across 20 sites in\nYemen.\n\n- A telecommunications specialist and\nformer WFP staff member, sponsored by\nthe ETC, arrived in Aden on 27 April to\nprovide telecommunications training to\nUNDSS Security Operations Centre\n(SOC) Operators in Aden, Marib, and Al\nMokha from 29 April to 15 May.\n\n- The ETC set up dedicated bandwidth and Wi-Fi connectivity for the UN Mission to\nsupport the Hodeidah Agreement (UNMHA) in Al-Mokha in response to their request and\nneeds.",
+  "summary": " In April, the ETC provided data connectivity services to 1,298 humanitarians and security communications services to 2,396 responders across 20 sites in Yemen. Additionally, a telecommunications specialist sponsored by the ETC arrived in Aden to provide training to UNDSS Security Operations Centre Operators in Aden, Marib, and Al Mokha. The ETC also set up dedicated bandwidth and Wi-Fi connectivity for the UN Mission to support the Hodeidah Agreement in Al-Mokha.",
+  "metadata": {
+    "id": "3958039",
+    "name": "Yemen Conflict - ETC Situation Report #79 (Reporting period: 01/04/2023 to 30/04/2023)",
+    "date_original": 1683072000000,
+    "date_changed": 1683104590000,
+    "date_created": 1683100100000,
+    "primary_country_id": 255,
+    "primary_country_name": "Yemen",
+    "primary_country_iso3": "yem",
+    "primary_country_location": {
+      "lon": 47.62,
+      "lat": 15.94
+    }
+  }
+}

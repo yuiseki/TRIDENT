@@ -1,0 +1,194 @@
+{
+  "original": {
+    "id": "3957875",
+    "fields": {
+      "date": {
+        "changed": "2023-05-02T18:29:16+00:00",
+        "created": "2023-05-02T18:11:55+00:00",
+        "original": "2023-05-02T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/24",
+          "name": "Aruba (The Netherlands)",
+          "location": {
+            "lon": -69.98,
+            "lat": 12.52
+          },
+          "id": 24,
+          "shortname": "Aruba (The Netherlands)",
+          "iso3": "abw"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/14893",
+          "name": "Curaçao (The Netherlands)",
+          "location": {
+            "lon": -68.98,
+            "lat": 12.15
+          },
+          "id": 14893,
+          "shortname": "Curaçao (The Netherlands)",
+          "iso3": "cuw"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/79",
+          "name": "Dominican Republic",
+          "location": {
+            "lon": -70.11,
+            "lat": 18.85
+          },
+          "id": 79,
+          "shortname": "Dominican Rep.",
+          "iso3": "dom",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/112",
+          "name": "Guyana",
+          "location": {
+            "lon": -58.97,
+            "lat": 5.62
+          },
+          "id": 112,
+          "shortname": "Guyana",
+          "iso3": "guy"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/234",
+          "name": "Trinidad and Tobago",
+          "location": {
+            "lon": -61.25,
+            "lat": 10.47
+          },
+          "id": 234,
+          "shortname": "Trinidad and Tobago",
+          "iso3": "tto"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/250",
+          "name": "Venezuela (Bolivarian Republic of)",
+          "location": {
+            "lon": -65.8,
+            "lat": 7.62
+          },
+          "id": 250,
+          "shortname": "Venezuela",
+          "iso3": "ven"
+        }
+      ],
+      "origin": "https://www.r4v.info/en/document/situation-report-caribbean-jan-feb-2023",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/79",
+        "name": "Dominican Republic",
+        "location": {
+          "lon": -70.11,
+          "lat": 18.85
+        },
+        "id": 79,
+        "shortname": "Dominican Rep.",
+        "iso3": "dom"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/47264",
+          "longname": "Response for Venezuelans",
+          "spanish_name": "Respuesta a los venezolanos (R4V)",
+          "name": "R4V",
+          "id": 47264,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "R4V",
+          "homepage": "https://r4v.info"
+        }
+      ],
+      "title": "Caribbean Situation Report January - February 2023",
+      "body": "**Situation**\n\n- A UN Country Team mission to Aruba involving representatives from 11 UN agencies conducted a needs assessment from 2-3 February and met with UN and R4V organizations. The mission identified potential areas for collaboration with the government and people of Aruba to support the implementation of the Sustainable Development Goals (SDGs), which have guided R4V partners’ activities. The team consulted with various stakeholders, including government, civil society, trade unions, journalists, and university students.\n\n- During the reporting period, the authorities used checkpoints to detect persons entering irregularly, including Venezuelans, who were then detained by the Guarda nos Costa. R4V partners could not confirm whether all Venezuelans were given the option to seek asylum or other forms of international protection in Aruba prior to their deportation.\n\n- Curaçao received a delegation from the Venezuelan government at the end of January for consultations about re-opening the borders. The Curacaoan government subsequently announced its intention to reopen its air and maritime borders with Venezuela on 3 April for commercial traffic.\n\n- By February, 23,725 visas had been issued for Venezuelans in the Dominican Republic, who were registered in the country’s Normalization Plan for Venezuelans (PNV). R4V partners continued to emphasize the need to complete the process promptly with the Venezuelan community. Failure to complete phase three (to receive an ID card) after visa expiry might result in losing initial temporary permits.\n\n- On 8 February, Venezuelan singer-songwriter Carlos Julián Martínez released the song “SOMOS\", featuring Dominican singer Lu Polanco. The song celebrates the peaceful coexistence between Dominicans and Venezuelans, depicting the story of a young Venezuelan arriving in Santo Domingo and discovering the shared bonds between the two nations with the help of a Dominican friend. Separately, the General Direction of Migration (DGM) reduced visa overstay fees to those whose residency expired 3+ years ago: 40% for 3-6 years expired and 50% for over six years. The deadline to renew and apply this discount was March 30, 2023.\n\n- In Guyana, in February, the National Assembly approved the 2023 Budget worth $781.9 billion, including the allocation of $4.7 billion for the development of infrastructure, health, and education sectors in the hinterland regions' indigenous communities, home to many Venezuelans in Guyana. Funds were also allocated by Guyana's Ministry of Education to improve indigenous education, including a study on displaced children, an ESL program for preschoolers and a school mapping study. Venezuelan refugees and migrants will benefit from all these initiatives. Further, on February 16, an R4V partner in Guyana released a study entitled Invisible Movements: Recommendation for Facilitating the Cross-Border Migration of Indigenous Peoples in the Caribbean.\n\n- In December, according to the media, over 1,000 Venezuelans in Trinidad and Tobago returned to Venezuela, reportedly due to high living costs and difficulty enrolling their children in schools. Meanwhile, the Minister of National Security of Trinidad and Tobago announced a one-year extension of Venezuelan registration permits. According to media reports, incidents involving Venezuelans as either victims or perpetrators of criminal activity contributed to xenophobia and fear among host communities as well as refugees and migrants.\n\n- Also in Trinidad and Tobago, the Administration of Justice (Indictable Proceedings) Amendment Act fast-tracked prosecutions for certain sexual and human trafficking offenses to reduce the adverse effects of delay on victims and witnesses. At the same time, according to R4V partners, refugees and migrants showed reluctance to report gender-based violence (GBV) concerns to state authorities. In media interviews US Ambassador to Trinidad and Tobago Candace Bond promised to collaborate with Trinidad and Tobago on human trafficking and the welfare of Venezuelan refugees and migrants.",
+      "url": "https://reliefweb.int/node/3957875",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/54/61/54610ed0-e288-4f54-8f32-3c3d3dd037d2.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/54/61/54610ed0-e288-4f54-8f32-3c3d3dd037d2.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/54/61/54610ed0-e288-4f54-8f32-3c3d3dd037d2.png",
+            "version": "2416516-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/54/61/54610ed0-e288-4f54-8f32-3c3d3dd037d2.png"
+          },
+          "filename": "Caribbean Situation Report January - February 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2416516",
+          "filesize": "738660",
+          "url": "https://reliefweb.int/attachments/54610ed0-e288-4f54-8f32-3c3d3dd037d2/Caribbean%20Situation%20Report%20January%20-%20February%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/dominican-republic/caribbean-situation-report-january-february-2023",
+      "theme": [
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3957875,
+      "status": "published",
+      "body-html": "<p><strong>Situation</strong></p>\n<ul>\n<li>\n<p>A UN Country Team mission to Aruba involving representatives from 11 UN agencies conducted a needs assessment from 2-3 February and met with UN and R4V organizations. The mission identified potential areas for collaboration with the government and people of Aruba to support the implementation of the Sustainable Development Goals (SDGs), which have guided R4V partners’ activities. The team consulted with various stakeholders, including government, civil society, trade unions, journalists, and university students.</p>\n</li>\n<li>\n<p>During the reporting period, the authorities used checkpoints to detect persons entering irregularly, including Venezuelans, who were then detained by the Guarda nos Costa. R4V partners could not confirm whether all Venezuelans were given the option to seek asylum or other forms of international protection in Aruba prior to their deportation.</p>\n</li>\n<li>\n<p>Curaçao received a delegation from the Venezuelan government at the end of January for consultations about re-opening the borders. The Curacaoan government subsequently announced its intention to reopen its air and maritime borders with Venezuela on 3 April for commercial traffic.</p>\n</li>\n<li>\n<p>By February, 23,725 visas had been issued for Venezuelans in the Dominican Republic, who were registered in the country’s Normalization Plan for Venezuelans (PNV). R4V partners continued to emphasize the need to complete the process promptly with the Venezuelan community. Failure to complete phase three (to receive an ID card) after visa expiry might result in losing initial temporary permits.</p>\n</li>\n<li>\n<p>On 8 February, Venezuelan singer-songwriter Carlos Julián Martínez released the song “SOMOS&quot;, featuring Dominican singer Lu Polanco. The song celebrates the peaceful coexistence between Dominicans and Venezuelans, depicting the story of a young Venezuelan arriving in Santo Domingo and discovering the shared bonds between the two nations with the help of a Dominican friend. Separately, the General Direction of Migration (DGM) reduced visa overstay fees to those whose residency expired 3+ years ago: 40% for 3-6 years expired and 50% for over six years. The deadline to renew and apply this discount was March 30, 2023.</p>\n</li>\n<li>\n<p>In Guyana, in February, the National Assembly approved the 2023 Budget worth $781.9 billion, including the allocation of $4.7 billion for the development of infrastructure, health, and education sectors in the hinterland regions' indigenous communities, home to many Venezuelans in Guyana. Funds were also allocated by Guyana's Ministry of Education to improve indigenous education, including a study on displaced children, an ESL program for preschoolers and a school mapping study. Venezuelan refugees and migrants will benefit from all these initiatives. Further, on February 16, an R4V partner in Guyana released a study entitled Invisible Movements: Recommendation for Facilitating the Cross-Border Migration of Indigenous Peoples in the Caribbean.</p>\n</li>\n<li>\n<p>In December, according to the media, over 1,000 Venezuelans in Trinidad and Tobago returned to Venezuela, reportedly due to high living costs and difficulty enrolling their children in schools. Meanwhile, the Minister of National Security of Trinidad and Tobago announced a one-year extension of Venezuelan registration permits. According to media reports, incidents involving Venezuelans as either victims or perpetrators of criminal activity contributed to xenophobia and fear among host communities as well as refugees and migrants.</p>\n</li>\n<li>\n<p>Also in Trinidad and Tobago, the Administration of Justice (Indictable Proceedings) Amendment Act fast-tracked prosecutions for certain sexual and human trafficking offenses to reduce the adverse effects of delay on victims and witnesses. At the same time, according to R4V partners, refugees and migrants showed reluctance to report gender-based violence (GBV) concerns to state authorities. In media interviews US Ambassador to Trinidad and Tobago Candace Bond promised to collaborate with Trinidad and Tobago on human trafficking and the welfare of Venezuelan refugees and migrants.</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# Caribbean Situation Report January - February 2023\n\n**Situation**\n\n- A UN Country Team mission to Aruba involving representatives from 11 UN agencies conducted a needs assessment from 2-3 February and met with UN and R4V organizations. The mission identified potential areas for collaboration with the government and people of Aruba to support the implementation of the Sustainable Development Goals (SDGs), which have guided R4V partners’ activities. The team consulted with various stakeholders, including government, civil society, trade unions, journalists, and university students.\n\n- During the reporting period, the authorities used checkpoints to detect persons entering irregularly, including Venezuelans, who were then detained by the Guarda nos Costa. R4V partners could not confirm whether all Venezuelans were given the option to seek asylum or other forms of international protection in Aruba prior to their deportation.\n\n- Curaçao received a delegation from the Venezuelan government at the end of January for consultations about re-opening the borders. The Curacaoan government subsequently announced its intention to reopen its air and maritime borders with Venezuela on 3 April for commercial traffic.\n\n- By February, 23,725 visas had been issued for Venezuelans in the Dominican Republic, who were registered in the country’s Normalization Plan for Venezuelans (PNV). R4V partners continued to emphasize the need to complete the process promptly with the Venezuelan community. Failure to complete phase three (to receive an ID card) after visa expiry might result in losing initial temporary permits.\n\n- On 8 February, Venezuelan singer-songwriter Carlos Julián Martínez released the song “SOMOS\", featuring Dominican singer Lu Polanco. The song celebrates the peaceful coexistence between Dominicans and Venezuelans, depicting the story of a young Venezuelan arriving in Santo Domingo and discovering the shared bonds between the two nations with the help of a Dominican friend. Separately, the General Direction of Migration (DGM) reduced visa overstay fees to those whose residency expired 3+ years ago: 40% for 3-6 years expired and 50% for over six years. The deadline to renew and apply this discount was March 30, 2023.\n\n- In Guyana, in February, the National Assembly approved the 2023 Budget worth $781.9 billion, including the allocation of $4.7 billion for the development of infrastructure, health, and education sectors in the hinterland regions' indigenous communities, home to many Venezuelans in Guyana. Funds were also allocated by Guyana's Ministry of Education to improve indigenous education, including a study on displaced children, an ESL program for preschoolers and a school mapping study. Venezuelan refugees and migrants will benefit from all these initiatives. Further, on February 16, an R4V partner in Guyana released a study entitled Invisible Movements: Recommendation for Facilitating the Cross-Border Migration of Indigenous Peoples in the Caribbean.\n\n- In December, according to the media, over 1,000 Venezuelans in Trinidad and Tobago returned to Venezuela, reportedly due to high living costs and difficulty enrolling their children in schools. Meanwhile, the Minister of National Security of Trinidad and Tobago announced a one-year extension of Venezuelan registration permits. According to media reports, incidents involving Venezuelans as either victims or perpetrators of criminal activity contributed to xenophobia and fear among host communities as well as refugees and migrants.\n\n- Also in Trinidad and Tobago, the Administration of Justice (Indictable Proceedings) Amendment Act fast-tracked prosecutions for certain sexual and human trafficking offenses to reduce the adverse effects of delay on victims and witnesses. At the same time, according to R4V partners, refugees and migrants showed reluctance to report gender-based violence (GBV) concerns to state authorities. In media interviews US Ambassador to Trinidad and Tobago Candace Bond promised to collaborate with Trinidad and Tobago on human trafficking and the welfare of Venezuelan refugees and migrants.",
+  "summary": " During the January-February 2023 period, the UN Country Team mission to Aruba identified potential areas for collaboration with the government and people of Aruba to support the implementation of the Sustainable Development Goals (SDGs). In Curaçao, a delegation from the Venezuelan government visited to discuss re-opening the borders, and in the Dominican Republic, 23,725 visas had been issued for Venezuelans in the Normalization Plan for Venezuelans (PNV). In Guyana, funds were allocated to improve indigenous education, and in Trinidad and Tobago, the Administration of Justice (Indictable Proceedings) Amendment Act fast-tracked prosecutions for certain sexual and human trafficking offenses. US Ambassador to Trinidad and Tobago Candace Bond also promised to collaborate with Trinidad and Tobago on human trafficking and the welfare of Venezuelan refugees and migrants.",
+  "metadata": {
+    "id": "3957875",
+    "name": "Caribbean Situation Report January - February 2023",
+    "date_original": 1682985600000,
+    "date_changed": 1683052156000,
+    "date_created": 1683051115000,
+    "primary_country_id": 79,
+    "primary_country_name": "Dominican Republic",
+    "primary_country_iso3": "dom",
+    "primary_country_location": {
+      "lon": -70.11,
+      "lat": 18.85
+    }
+  }
+}

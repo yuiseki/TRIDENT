@@ -1,0 +1,166 @@
+{
+  "original": {
+    "id": "3957205",
+    "fields": {
+      "date": {
+        "changed": "2023-05-02T05:58:20+00:00",
+        "created": "2023-04-29T12:21:17+00:00",
+        "original": "2023-04-29T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/71",
+          "name": "Cuba",
+          "location": {
+            "lon": -79.24,
+            "lat": 21.95
+          },
+          "id": 71,
+          "shortname": "Cuba",
+          "iso3": "cub"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/81",
+          "name": "Ecuador",
+          "location": {
+            "lon": -78.43,
+            "lat": -1.16
+          },
+          "id": 81,
+          "shortname": "Ecuador",
+          "iso3": "ecu"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/113",
+          "name": "Haiti",
+          "location": {
+            "lon": -72.43,
+            "lat": 19.18
+          },
+          "id": 113,
+          "shortname": "Haiti",
+          "iso3": "hti"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/116",
+          "name": "Honduras",
+          "location": {
+            "lon": -86.62,
+            "lat": 14.82
+          },
+          "id": 116,
+          "shortname": "Honduras",
+          "iso3": "hnd",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/250",
+          "name": "Venezuela (Bolivarian Republic of)",
+          "location": {
+            "lon": -65.8,
+            "lat": 7.62
+          },
+          "id": 250,
+          "shortname": "Venezuela",
+          "iso3": "ven"
+        }
+      ],
+      "origin": "https://data.unhcr.org/en/documents/details/100332",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/116",
+        "name": "Honduras",
+        "location": {
+          "lon": -86.62,
+          "lat": 14.82
+        },
+        "id": 116,
+        "shortname": "Honduras",
+        "iso3": "hnd"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "Honduras Operational Update 17 - April 2023",
+      "body": "**Key Figures**\n\n***+247,000*** people have been internally displaced in Honduras as a result of violence between 2004 and 2018\n\n***572,000*** Honduran nationals have been returned from 2015 until March 2023, according to data from CONMIGHO.\n\n***60,532*** persons of different nationalities entered Honduras irregularly in the first trimester of 2023, according to the National Migration Institute (INM).\n\n***Our Response***\n\n***15,225*** mainly internally displaced persons, but also asylum-seekers, returnees, mixed movements, and host community members were served by UNHCR and its partners so far in 2023, with services such as shelter, cash and voucher assistance, community protection, case management and risk mitigation.",
+      "url": "https://reliefweb.int/node/3957205",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/b3/f7/b3f79847-af7e-48c9-9ed2-9e8c1f753851.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/b3/f7/b3f79847-af7e-48c9-9ed2-9e8c1f753851.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/b3/f7/b3f79847-af7e-48c9-9ed2-9e8c1f753851.png",
+            "version": "2415815-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/b3/f7/b3f79847-af7e-48c9-9ed2-9e8c1f753851.png"
+          },
+          "filename": "Honduras - Operational Update - March 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415815",
+          "filesize": "1271602",
+          "url": "https://reliefweb.int/attachments/b3f79847-af7e-48c9-9ed2-9e8c1f753851/Honduras%20-%20Operational%20Update%20-%20March%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/honduras/honduras-operational-update-17-april-2023",
+      "redirects": [
+        "https://reliefweb.int/report/honduras/honduras-operational-update-17-march-2023"
+      ],
+      "theme": [
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        }
+      ],
+      "id": 3957205,
+      "status": "published",
+      "body-html": "<p><strong>Key Figures</strong></p>\n<p><em><strong>+247,000</strong></em> people have been internally displaced in Honduras as a result of violence between 2004 and 2018</p>\n<p><em><strong>572,000</strong></em> Honduran nationals have been returned from 2015 until March 2023, according to data from CONMIGHO.</p>\n<p><em><strong>60,532</strong></em> persons of different nationalities entered Honduras irregularly in the first trimester of 2023, according to the National Migration Institute (INM).</p>\n<p><em><strong>Our Response</strong></em></p>\n<p><em><strong>15,225</strong></em> mainly internally displaced persons, but also asylum-seekers, returnees, mixed movements, and host community members were served by UNHCR and its partners so far in 2023, with services such as shelter, cash and voucher assistance, community protection, case management and risk mitigation.</p>\n"
+    }
+  },
+  "text": "# Honduras Operational Update 17 - April 2023\n\n**Key Figures**\n\n***+247,000*** people have been internally displaced in Honduras as a result of violence between 2004 and 2018\n\n***572,000*** Honduran nationals have been returned from 2015 until March 2023, according to data from CONMIGHO.\n\n***60,532*** persons of different nationalities entered Honduras irregularly in the first trimester of 2023, according to the National Migration Institute (INM).\n\n***Our Response***\n\n***15,225*** mainly internally displaced persons, but also asylum-seekers, returnees, mixed movements, and host community members were served by UNHCR and its partners so far in 2023, with services such as shelter, cash and voucher assistance, community protection, case management and risk mitigation.",
+  "summary": "\n\nIn Honduras, 247,000 people have been internally displaced due to violence between 2004 and 2018. From 2015 to March 2023, 572,000 Honduran nationals have been returned. In the first trimester of 2023, 60,532 persons of different nationalities entered Honduras irregularly. UNHCR and its partners have provided services such as shelter, cash and voucher assistance, community protection, case management and risk mitigation to 15,225 mainly internally displaced persons, but also asylum-seekers, returnees, mixed movements, and host community members so far in 2023.",
+  "metadata": {
+    "id": "3957205",
+    "name": "Honduras Operational Update 17 - April 2023",
+    "date_original": 1682726400000,
+    "date_changed": 1683007100000,
+    "date_created": 1682770877000,
+    "primary_country_id": 116,
+    "primary_country_name": "Honduras",
+    "primary_country_iso3": "hnd",
+    "primary_country_location": {
+      "lon": -86.62,
+      "lat": 14.82
+    }
+  }
+}

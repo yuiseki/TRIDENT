@@ -1,0 +1,118 @@
+{
+  "original": {
+    "id": "3956321",
+    "fields": {
+      "date": {
+        "changed": "2023-04-26T16:26:20+00:00",
+        "created": "2023-04-26T16:25:52+00:00",
+        "original": "2023-04-26T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/187",
+          "name": "Peru",
+          "location": {
+            "lon": -75.31,
+            "lat": -10.15
+          },
+          "id": 187,
+          "shortname": "Peru",
+          "iso3": "per",
+          "primary": true
+        }
+      ],
+      "origin": "https://www.worldbank.org/en/news/press-release/2023/04/26/peru-informe-pobreza-y-equidad-resurgir-fortalecidos",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/187",
+        "name": "Peru",
+        "location": {
+          "lon": -75.31,
+          "lat": -10.15
+        },
+        "id": 187,
+        "shortname": "Peru",
+        "iso3": "per"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1220",
+          "longname": "The World Bank Group",
+          "spanish_name": "Banco Mundial",
+          "name": "World Bank",
+          "id": 1220,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "World Bank",
+          "homepage": "http://www.worldbank.org"
+        }
+      ],
+      "title": "Rising Strong: Peru Poverty and Equity Assessment",
+      "body": "**Seven In Ten Peruvians Are Poor Or At Risk Of Falling Into Poverty According To A New World Bank Report**\n\nLIMA, April 26, 2023 – For two decades, Peru managed to significantly reduce poverty thanks to solid economic growth. However, the COVID-19 pandemic in the country halted this progress and caused nearly two million people to fall into poverty: today there are more poor and vulnerable people than before the health crisis, and most of them live in urban areas, according to the World Bank report Rising Strong: Peru Poverty and Equity Assessment, released today.\n\nBetween 2004 and 2019, poverty fell from 59 percent to 20 percent, owing mainly to vigorous economic growth, although this figure increased to 26 percent in 2021 because of the pandemic. However, many of the people who escaped poverty remained vulnerable: four in ten Peruvians are at risk of falling into poverty, the highest level since 2004, according to the report.\n\nThe crisis also accelerated the urbanization of poverty. Today in Peru, seven in ten poor people live in urban areas. Notwithstanding, the rural poor are still poorer than their urban counterparts.\n\nThe Rising Strong: Peru Poverty and Equity Assessment is one of the medium-term studies the World Bank carries out in developing countries. It analyzes the vulnerabilities of social improvements in Peru and offers recommendations for public policies that promote inclusive development and shared prosperity.\n\n\"Poverty reduction in Peru over the past two decades has been remarkable. Today, however, seven in ten Peruvians are poor or are at risk of falling into poverty,\" said Felipe López-Calva, global director for the World Bank Group's Poverty and Equity Global Practice. \"Peru needs to fully recover from the impact of the pandemic; it now has the opportunity to reduce social fragility and move towards more equitable, sustainable growth,\" he said.\n\nThe new report includes the following public policy recommendations for recovery and for building on past progress:    \n- Promote access to quality public services. Although the past two decades have seen improvements in access to basic services, nearly 60 percent of Peruvian households still lack one or more essential services such as drinking water, sanitation, electricity and internet connections.    \n- Address high levels of informality and job insecurity: three in four workers are informal and the quality of employment has worsened following the pandemic, which affects the redistributive capacity of the tax system. Only eight out of every 100 workers are taxed directly on their labor income, while the greatest burden of tax collection is on the General Sales Tax (IGV).   \n- Close persistent gender gaps to boost economic growth and reduce poverty. Over the past two decades, women have not increased their labor force participation with respect to men (nearly 20 percentage points less). On average, women have jobs of lower quality and lower productivity.   \n\n“Improving the course requires driving growth above the current path,\" said Pilar Maisterra, interim World Bank director for Bolivia, Chile, Ecuador and Peru. “For this growth to be inclusive and focused on improving the productive capacity of the poorest population, quality employment and women’s labor participation must be promoted, and resource management and the implementation capacity of local and regional governments must be improved,” she said.\n\nTo emerge stronger from the crisis, in the short term, it is essential to recover the human capital losses caused by the pandemic, especially in terms of learning, employment and health conditions. Looking ahead, social protection systems will need to modernize to respond to the growing urbanization of poverty and vulnerability to new crises, which will become more frequent in the context of climate change.\n\n---\n\n \n\nLINKS\n\nLearn more about the work of the World Bank in Latin America and the Caribbean: www.worldbank.org/lac\n\nVisit us on Facebook: http://www.facebook.com/worldbank\n\nBe updated via Twitter: http://www.twitter.com/BancoMundialLAC\n\nFor our YouTube channel: https://www.youtube.com/BancoMundialenAmericaLatina\n\nPRESS RELEASE NO: 26.04.2023",
+      "url": "https://reliefweb.int/node/3956321",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/11/8a/118a9efa-e94e-440f-b3e5-a176e81fbc7b.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/11/8a/118a9efa-e94e-440f-b3e5-a176e81fbc7b.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/11/8a/118a9efa-e94e-440f-b3e5-a176e81fbc7b.png",
+            "version": "2415050-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/11/8a/118a9efa-e94e-440f-b3e5-a176e81fbc7b.png"
+          },
+          "filename": "EN.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415050",
+          "filesize": "8623331",
+          "url": "https://reliefweb.int/attachments/118a9efa-e94e-440f-b3e5-a176e81fbc7b/EN.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/peru/rising-strong-peru-poverty-and-equity-assessment",
+      "theme": [
+        {
+          "name": "Recovery and Reconstruction",
+          "id": 4601
+        }
+      ],
+      "id": 3956321,
+      "status": "published",
+      "body-html": "<p><strong>Seven In Ten Peruvians Are Poor Or At Risk Of Falling Into Poverty According To A New World Bank Report</strong></p>\n<p>LIMA, April 26, 2023 – For two decades, Peru managed to significantly reduce poverty thanks to solid economic growth. However, the COVID-19 pandemic in the country halted this progress and caused nearly two million people to fall into poverty: today there are more poor and vulnerable people than before the health crisis, and most of them live in urban areas, according to the World Bank report Rising Strong: Peru Poverty and Equity Assessment, released today.</p>\n<p>Between 2004 and 2019, poverty fell from 59 percent to 20 percent, owing mainly to vigorous economic growth, although this figure increased to 26 percent in 2021 because of the pandemic. However, many of the people who escaped poverty remained vulnerable: four in ten Peruvians are at risk of falling into poverty, the highest level since 2004, according to the report.</p>\n<p>The crisis also accelerated the urbanization of poverty. Today in Peru, seven in ten poor people live in urban areas. Notwithstanding, the rural poor are still poorer than their urban counterparts.</p>\n<p>The Rising Strong: Peru Poverty and Equity Assessment is one of the medium-term studies the World Bank carries out in developing countries. It analyzes the vulnerabilities of social improvements in Peru and offers recommendations for public policies that promote inclusive development and shared prosperity.</p>\n<p>&quot;Poverty reduction in Peru over the past two decades has been remarkable. Today, however, seven in ten Peruvians are poor or are at risk of falling into poverty,&quot; said Felipe López-Calva, global director for the World Bank Group's Poverty and Equity Global Practice. &quot;Peru needs to fully recover from the impact of the pandemic; it now has the opportunity to reduce social fragility and move towards more equitable, sustainable growth,&quot; he said.</p>\n<p>The new report includes the following public policy recommendations for recovery and for building on past progress:</p>\n<ul>\n<li>Promote access to quality public services. Although the past two decades have seen improvements in access to basic services, nearly 60 percent of Peruvian households still lack one or more essential services such as drinking water, sanitation, electricity and internet connections.</li>\n<li>Address high levels of informality and job insecurity: three in four workers are informal and the quality of employment has worsened following the pandemic, which affects the redistributive capacity of the tax system. Only eight out of every 100 workers are taxed directly on their labor income, while the greatest burden of tax collection is on the General Sales Tax (IGV).</li>\n<li>Close persistent gender gaps to boost economic growth and reduce poverty. Over the past two decades, women have not increased their labor force participation with respect to men (nearly 20 percentage points less). On average, women have jobs of lower quality and lower productivity.</li>\n</ul>\n<p>“Improving the course requires driving growth above the current path,&quot; said Pilar Maisterra, interim World Bank director for Bolivia, Chile, Ecuador and Peru. “For this growth to be inclusive and focused on improving the productive capacity of the poorest population, quality employment and women’s labor participation must be promoted, and resource management and the implementation capacity of local and regional governments must be improved,” she said.</p>\n<p>To emerge stronger from the crisis, in the short term, it is essential to recover the human capital losses caused by the pandemic, especially in terms of learning, employment and health conditions. Looking ahead, social protection systems will need to modernize to respond to the growing urbanization of poverty and vulnerability to new crises, which will become more frequent in the context of climate change.</p>\n\n<p>LINKS</p>\n<p>Learn more about the work of the World Bank in Latin America and the Caribbean: <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"http://www.worldbank.org/lac\">www.worldbank.org/lac</a></p>\n<p>Visit us on Facebook: <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"http://www.facebook.com/worldbank\">http://www.facebook.com/worldbank</a></p>\n<p>Be updated via Twitter: <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"http://www.twitter.com/BancoMundialLAC\">http://www.twitter.com/BancoMundialLAC</a></p>\n<p>For our YouTube channel: <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.youtube.com/BancoMundialenAmericaLatina\">https://www.youtube.com/BancoMundialenAmericaLatina</a></p>\n<p>PRESS RELEASE NO: 26.04.2023</p>\n"
+    }
+  },
+  "text": "# Rising Strong: Peru Poverty and Equity Assessment\n\n**Seven In Ten Peruvians Are Poor Or At Risk Of Falling Into Poverty According To A New World Bank Report**\n\nLIMA, April 26, 2023 – For two decades, Peru managed to significantly reduce poverty thanks to solid economic growth. However, the COVID-19 pandemic in the country halted this progress and caused nearly two million people to fall into poverty: today there are more poor and vulnerable people than before the health crisis, and most of them live in urban areas, according to the World Bank report Rising Strong: Peru Poverty and Equity Assessment, released today.\n\nBetween 2004 and 2019, poverty fell from 59 percent to 20 percent, owing mainly to vigorous economic growth, although this figure increased to 26 percent in 2021 because of the pandemic. However, many of the people who escaped poverty remained vulnerable: four in ten Peruvians are at risk of falling into poverty, the highest level since 2004, according to the report.\n\nThe crisis also accelerated the urbanization of poverty. Today in Peru, seven in ten poor people live in urban areas. Notwithstanding, the rural poor are still poorer than their urban counterparts.\n\nThe Rising Strong: Peru Poverty and Equity Assessment is one of the medium-term studies the World Bank carries out in developing countries. It analyzes the vulnerabilities of social improvements in Peru and offers recommendations for public policies that promote inclusive development and shared prosperity.\n\n\"Poverty reduction in Peru over the past two decades has been remarkable. Today, however, seven in ten Peruvians are poor or are at risk of falling into poverty,\" said Felipe López-Calva, global director for the World Bank Group's Poverty and Equity Global Practice. \"Peru needs to fully recover from the impact of the pandemic; it now has the opportunity to reduce social fragility and move towards more equitable, sustainable growth,\" he said.\n\nThe new report includes the following public policy recommendations for recovery and for building on past progress:    \n- Promote access to quality public services. Although the past two decades have seen improvements in access to basic services, nearly 60 percent of Peruvian households still lack one or more essential services such as drinking water, sanitation, electricity and internet connections.    \n- Address high levels of informality and job insecurity: three in four workers are informal and the quality of employment has worsened following the pandemic, which affects the redistributive capacity of the tax system. Only eight out of every 100 workers are taxed directly on their labor income, while the greatest burden of tax collection is on the General Sales Tax (IGV).   \n- Close persistent gender gaps to boost economic growth and reduce poverty. Over the past two decades, women have not increased their labor force participation with respect to men (nearly 20 percentage points less). On average, women have jobs of lower quality and lower productivity.   \n\n“Improving the course requires driving growth above the current path,\" said Pilar Maisterra, interim World Bank director for Bolivia, Chile, Ecuador and Peru. “For this growth to be inclusive and focused on improving the productive capacity of the poorest population, quality employment and women’s labor participation must be promoted, and resource management and the implementation capacity of local and regional governments must be improved,” she said.\n\nTo emerge stronger from the crisis, in the short term, it is essential to recover the human capital losses caused by the pandemic, especially in terms of learning, employment and health conditions. Looking ahead, social protection systems will need to modernize to respond to the growing urbanization of poverty and vulnerability to new crises, which will become more frequent in the context of climate change.\n\n---\n\n \n\nLINKS\n\nLearn more about the work of the World Bank in Latin America and the Caribbean: www.worldbank.org/lac\n\nVisit us on Facebook: http://www.facebook.com/worldbank\n\nBe updated via Twitter: http://www.twitter.com/BancoMundialLAC\n\nFor our YouTube channel: https://www.youtube.com/BancoMundialenAmericaLatina\n\nPRESS RELEASE NO: 26.04.2023",
+  "summary": "\n\nThe World Bank released a report, Rising Strong: Peru Poverty and Equity Assessment, which found that seven in ten Peruvians are poor or at risk of falling into poverty due to the COVID-19 pandemic. The report also found that poverty had decreased from 59 percent to 20 percent between 2004 and 2019, but increased to 26 percent in 2021 due to the pandemic. Additionally, the report found that most of the poor live in urban areas, and that four in ten Peruvians are at risk of falling into poverty. The report includes public policy recommendations to reduce poverty and promote inclusive development, such as promoting access to quality public services, addressing high levels of informality and job insecurity, and closing gender gaps.",
+  "metadata": {
+    "id": "3956321",
+    "name": "Rising Strong: Peru Poverty and Equity Assessment",
+    "date_original": 1682467200000,
+    "date_changed": 1682526380000,
+    "date_created": 1682526352000,
+    "primary_country_id": 187,
+    "primary_country_name": "Peru",
+    "primary_country_iso3": "per",
+    "primary_country_location": {
+      "lon": -75.31,
+      "lat": -10.15
+    }
+  }
+}

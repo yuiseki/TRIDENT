@@ -1,0 +1,129 @@
+{
+  "original": {
+    "id": "3956049",
+    "fields": {
+      "date": {
+        "changed": "2023-04-26T05:28:00+00:00",
+        "created": "2023-04-26T05:16:58+00:00",
+        "original": "2023-04-26T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/38",
+          "name": "Bhutan",
+          "location": {
+            "lon": 90.43,
+            "lat": 27.42
+          },
+          "id": 38,
+          "shortname": "Bhutan",
+          "iso3": "btn",
+          "primary": true
+        }
+      ],
+      "origin": "https://logcluster.org/document/bhutan-preparedness-quarterly-update-january-march-2023",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/38",
+        "name": "Bhutan",
+        "location": {
+          "lon": 90.43,
+          "lat": 27.42
+        },
+        "id": 38,
+        "shortname": "Bhutan",
+        "iso3": "btn"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/3594",
+          "name": "Logistics Cluster",
+          "id": 3594,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "Logistics Cluster",
+          "homepage": "http://www.logcluster.org/"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "Bhutan Preparedness - Quarterly Update, January - March 2023",
+      "body": "**Highlights**\n\n• Representative of the Ministry of Agriculture and Livestock (MOAL) of Bhutan participated in the Logistics Cluster’s Preparedness Design Workshop held in Rome, Italy, between 24-26 January 2023, to share the country’s experiencesin humanitarian logistics preparedness capacity strengthening. As part of the Workshop’s networking session, an initial discussion was held with the IMPACCT working group (IMPortation And Customs Clearance Together!) to discuss potential support and collaboration on enhancing the country’s humanitarian cargo importation and customs clearance process.\n\n• In January, the Ministry of Finance endorsed disaster preparedness activities, including the prioritised logistics preparedness activities in 2023. The endorsement from the Government amplified the FieldBased Preparedness Project (FBPP)’s institutional capacity-strengthening approach in ensuring national ownership, leadership, and longer-term commitment towards the more sustainable logistics preparedness activities led by the national counterparts.\n\n• Between January and March, the Preparedness Officer coordinated with MoAL and the Department of Local Governance and Disaster Management (DLGDM), the National Logistics Preparedness Working Group (NLPWG) leads in preparing for the Standard Operating Procedures (SOPs) development workshop for the national logistics desk. The SOPs will guide the strategic actions of relevant stakeholders in emergency logistics coordination and response.",
+      "url": "https://reliefweb.int/node/3956049",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/5d/80/5d80ea53-734b-4dd7-8ec2-dc69ec0a7490.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/5d/80/5d80ea53-734b-4dd7-8ec2-dc69ec0a7490.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/5d/80/5d80ea53-734b-4dd7-8ec2-dc69ec0a7490.png",
+            "version": "2414792-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/5d/80/5d80ea53-734b-4dd7-8ec2-dc69ec0a7490.png"
+          },
+          "filename": "Logistics Cluster_Preparedness_Quarterly Update_Bhutan_Q12023_Final.pdf",
+          "mimetype": "application/pdf",
+          "id": "2414792",
+          "filesize": "417525",
+          "url": "https://reliefweb.int/attachments/5d80ea53-734b-4dd7-8ec2-dc69ec0a7490/Logistics%20Cluster_Preparedness_Quarterly%20Update_Bhutan_Q12023_Final.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/bhutan/bhutan-preparedness-quarterly-update-january-march-2023",
+      "redirects": [
+        "https://reliefweb.int/report/bhutan/bhutan-preparedness-quarterly-update-january-march2023"
+      ],
+      "theme": [
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Disaster Management",
+          "id": 4591
+        }
+      ],
+      "id": 3956049,
+      "status": "published",
+      "body-html": "<p><strong>Highlights</strong></p>\n<p>• Representative of the Ministry of Agriculture and Livestock (MOAL) of Bhutan participated in the Logistics Cluster’s Preparedness Design Workshop held in Rome, Italy, between 24-26 January 2023, to share the country’s experiencesin humanitarian logistics preparedness capacity strengthening. As part of the Workshop’s networking session, an initial discussion was held with the IMPACCT working group (IMPortation And Customs Clearance Together!) to discuss potential support and collaboration on enhancing the country’s humanitarian cargo importation and customs clearance process.</p>\n<p>• In January, the Ministry of Finance endorsed disaster preparedness activities, including the prioritised logistics preparedness activities in 2023. The endorsement from the Government amplified the FieldBased Preparedness Project (FBPP)’s institutional capacity-strengthening approach in ensuring national ownership, leadership, and longer-term commitment towards the more sustainable logistics preparedness activities led by the national counterparts.</p>\n<p>• Between January and March, the Preparedness Officer coordinated with MoAL and the Department of Local Governance and Disaster Management (DLGDM), the National Logistics Preparedness Working Group (NLPWG) leads in preparing for the Standard Operating Procedures (SOPs) development workshop for the national logistics desk. The SOPs will guide the strategic actions of relevant stakeholders in emergency logistics coordination and response.</p>\n"
+    }
+  },
+  "text": "# Bhutan Preparedness - Quarterly Update, January - March 2023\n\n**Highlights**\n\n• Representative of the Ministry of Agriculture and Livestock (MOAL) of Bhutan participated in the Logistics Cluster’s Preparedness Design Workshop held in Rome, Italy, between 24-26 January 2023, to share the country’s experiencesin humanitarian logistics preparedness capacity strengthening. As part of the Workshop’s networking session, an initial discussion was held with the IMPACCT working group (IMPortation And Customs Clearance Together!) to discuss potential support and collaboration on enhancing the country’s humanitarian cargo importation and customs clearance process.\n\n• In January, the Ministry of Finance endorsed disaster preparedness activities, including the prioritised logistics preparedness activities in 2023. The endorsement from the Government amplified the FieldBased Preparedness Project (FBPP)’s institutional capacity-strengthening approach in ensuring national ownership, leadership, and longer-term commitment towards the more sustainable logistics preparedness activities led by the national counterparts.\n\n• Between January and March, the Preparedness Officer coordinated with MoAL and the Department of Local Governance and Disaster Management (DLGDM), the National Logistics Preparedness Working Group (NLPWG) leads in preparing for the Standard Operating Procedures (SOPs) development workshop for the national logistics desk. The SOPs will guide the strategic actions of relevant stakeholders in emergency logistics coordination and response.",
+  "summary": "\n\nIn January 2023, the Ministry of Agriculture and Livestock (MOAL) of Bhutan participated in the Logistics Cluster’s Preparedness Design Workshop in Rome, Italy, and the Ministry of Finance endorsed disaster preparedness activities. Between January and March, the Preparedness Officer coordinated with MoAL and the Department of Local Governance and Disaster Management (DLGDM) to prepare for the Standard Operating Procedures (SOPs) development workshop for the national logistics desk. The SOPs will guide the strategic actions of relevant stakeholders in emergency logistics coordination and response.",
+  "metadata": {
+    "id": "3956049",
+    "name": "Bhutan Preparedness - Quarterly Update, January - March 2023",
+    "date_original": 1682467200000,
+    "date_changed": 1682486880000,
+    "date_created": 1682486218000,
+    "primary_country_id": 38,
+    "primary_country_name": "Bhutan",
+    "primary_country_iso3": "btn",
+    "primary_country_location": {
+      "lon": 90.43,
+      "lat": 27.42
+    }
+  }
+}

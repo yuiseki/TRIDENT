@@ -1,0 +1,145 @@
+{
+  "original": {
+    "id": "3958104",
+    "fields": {
+      "date": {
+        "changed": "2023-05-03T12:05:28+00:00",
+        "created": "2023-05-03T10:53:13+00:00",
+        "original": "2023-05-03T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/55",
+          "name": "Chad",
+          "location": {
+            "lon": 18.66,
+            "lat": 15.36
+          },
+          "id": 55,
+          "shortname": "Chad",
+          "iso3": "tcd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/140",
+          "name": "Libya",
+          "location": {
+            "lon": 18.02,
+            "lat": 27.04
+          },
+          "id": 140,
+          "shortname": "Libya",
+          "iso3": "lby",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/220",
+          "name": "Sudan",
+          "location": {
+            "lon": 30,
+            "lat": 15
+          },
+          "id": 220,
+          "shortname": "Sudan",
+          "iso3": "sdn"
+        }
+      ],
+      "origin": "https://dtm.iom.int/reports/iom-libya-emergency-tracking-sudan-situation-update-1-3-may-2023",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/140",
+        "name": "Libya",
+        "location": {
+          "lon": 18.02,
+          "lat": 27.04
+        },
+        "id": 140,
+        "shortname": "Libya",
+        "iso3": "lby"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1255",
+          "longname": "International Organization for Migration",
+          "spanish_name": "Organización Internacional para las Migraciones",
+          "name": "International Organization for Migration",
+          "id": 1255,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "IOM",
+          "homepage": "http://www.iom.int/"
+        }
+      ],
+      "title": "IOM Libya Emergency Tracking - Sudan Situation: Update 1 (3 May 2023)",
+      "body": "This report provides an overview of related arrivals to Libya following the onset of armed clashes in Sudan in mid-April 2023. This brief is based on information gathered through IOM Libya emergency tracking and flow monitoring activities in Al Kufra between 15 April and 2 May 2023. As of 03 May, IOM Libya’s Displacement Tracking Matrix (DTM) recorded the arrival of close to 700 individuals - both Sudanese and third-country nationals - in Alkufra (Libya) from Sudan and via Chad.",
+      "url": "https://reliefweb.int/node/3958104",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/5c/f9/5cf9d4b1-f95c-4d9a-b229-0bb8cbe6e9d8.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/5c/f9/5cf9d4b1-f95c-4d9a-b229-0bb8cbe6e9d8.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/5c/f9/5cf9d4b1-f95c-4d9a-b229-0bb8cbe6e9d8.png",
+            "version": "2416771-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/5c/f9/5cf9d4b1-f95c-4d9a-b229-0bb8cbe6e9d8.png"
+          },
+          "filename": "DTM-Libya_Sudan-Situation_Update_1.pdf",
+          "mimetype": "application/pdf",
+          "id": "2416771",
+          "filesize": "598820",
+          "url": "https://reliefweb.int/attachments/5cf9d4b1-f95c-4d9a-b229-0bb8cbe6e9d8/DTM-Libya_Sudan-Situation_Update_1.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/libya/iom-libya-emergency-tracking-sudan-situation-update-1-3-may-2023",
+      "theme": [
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3958104,
+      "status": "published",
+      "body-html": "<p>This report provides an overview of related arrivals to Libya following the onset of armed clashes in Sudan in mid-April 2023. This brief is based on information gathered through IOM Libya emergency tracking and flow monitoring activities in Al Kufra between 15 April and 2 May 2023. As of 03 May, IOM Libya’s Displacement Tracking Matrix (DTM) recorded the arrival of close to 700 individuals - both Sudanese and third-country nationals - in Alkufra (Libya) from Sudan and via Chad.</p>\n"
+    }
+  },
+  "text": "# IOM Libya Emergency Tracking - Sudan Situation: Update 1 (3 May 2023)\n\nThis report provides an overview of related arrivals to Libya following the onset of armed clashes in Sudan in mid-April 2023. This brief is based on information gathered through IOM Libya emergency tracking and flow monitoring activities in Al Kufra between 15 April and 2 May 2023. As of 03 May, IOM Libya’s Displacement Tracking Matrix (DTM) recorded the arrival of close to 700 individuals - both Sudanese and third-country nationals - in Alkufra (Libya) from Sudan and via Chad.",
+  "summary": " IOM Libya's Displacement Tracking Matrix (DTM) recorded the arrival of close to 700 individuals - both Sudanese and third-country nationals - in Alkufra (Libya) from Sudan and via Chad between 15 April and 2 May 2023, following the onset of armed clashes in Sudan in mid-April.",
+  "metadata": {
+    "id": "3958104",
+    "name": "IOM Libya Emergency Tracking - Sudan Situation: Update 1 (3 May 2023)",
+    "date_original": 1683072000000,
+    "date_changed": 1683115528000,
+    "date_created": 1683111193000,
+    "primary_country_id": 140,
+    "primary_country_name": "Libya",
+    "primary_country_iso3": "lby",
+    "primary_country_location": {
+      "lon": 18.02,
+      "lat": 27.04
+    }
+  }
+}

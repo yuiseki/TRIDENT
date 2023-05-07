@@ -1,0 +1,362 @@
+{
+  "original": {
+    "id": "3956871",
+    "fields": {
+      "date": {
+        "changed": "2023-04-28T12:51:33+00:00",
+        "created": "2023-04-28T08:49:38+00:00",
+        "original": "2023-04-28T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/15",
+          "name": "Albania",
+          "location": {
+            "lon": 20.16,
+            "lat": 40.64
+          },
+          "id": 15,
+          "shortname": "Albania",
+          "iso3": "alb"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/27",
+          "name": "Azerbaijan",
+          "location": {
+            "lon": 47.72,
+            "lat": 40.42
+          },
+          "id": 27,
+          "shortname": "Azerbaijan",
+          "iso3": "aze"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/33",
+          "name": "Belarus",
+          "location": {
+            "lon": 28.05,
+            "lat": 53.54
+          },
+          "id": 33,
+          "shortname": "Belarus",
+          "iso3": "blr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/34",
+          "name": "Belgium",
+          "location": {
+            "lon": 4.66,
+            "lat": 50.64
+          },
+          "id": 34,
+          "shortname": "Belgium",
+          "iso3": "bel"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/40",
+          "name": "Bosnia and Herzegovina",
+          "location": {
+            "lon": 17.79,
+            "lat": 44.17
+          },
+          "id": 40,
+          "shortname": "Bosnia and Herzegovina",
+          "iso3": "bih"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/45",
+          "name": "Bulgaria",
+          "location": {
+            "lon": 25.23,
+            "lat": 42.76
+          },
+          "id": 45,
+          "shortname": "Bulgaria",
+          "iso3": "bgr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/73",
+          "name": "Czechia",
+          "location": {
+            "lon": 15.34,
+            "lat": 49.74
+          },
+          "id": 73,
+          "shortname": "Czechia",
+          "iso3": "cze"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/86",
+          "name": "Estonia",
+          "location": {
+            "lon": 25.76,
+            "lat": 58.78
+          },
+          "id": 86,
+          "shortname": "Estonia",
+          "iso3": "est"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/101",
+          "name": "Germany",
+          "location": {
+            "lon": 10.02,
+            "lat": 51.13
+          },
+          "id": 101,
+          "shortname": "Germany",
+          "iso3": "deu"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/117",
+          "name": "Hungary",
+          "location": {
+            "lon": 19.5,
+            "lat": 47.06
+          },
+          "id": 117,
+          "shortname": "Hungary",
+          "iso3": "hun"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/123",
+          "name": "Ireland",
+          "location": {
+            "lon": -7.74,
+            "lat": 53.31
+          },
+          "id": 123,
+          "shortname": "Ireland",
+          "iso3": "irl"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/136",
+          "name": "Latvia",
+          "location": {
+            "lon": 24.86,
+            "lat": 56.96
+          },
+          "id": 136,
+          "shortname": "Latvia",
+          "iso3": "lva"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/142",
+          "name": "Lithuania",
+          "location": {
+            "lon": 23.93,
+            "lat": 55.49
+          },
+          "id": 142,
+          "shortname": "Lithuania",
+          "iso3": "ltu"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/158",
+          "name": "Moldova",
+          "location": {
+            "lon": 28.57,
+            "lat": 47.19
+          },
+          "id": 158,
+          "shortname": "Moldova",
+          "iso3": "mda"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/161",
+          "name": "Montenegro",
+          "location": {
+            "lon": 19.25,
+            "lat": 42.79
+          },
+          "id": 161,
+          "shortname": "Montenegro",
+          "iso3": "mne"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/190",
+          "name": "Poland",
+          "location": {
+            "lon": 19.3,
+            "lat": 52.12
+          },
+          "id": 190,
+          "shortname": "Poland",
+          "iso3": "pol"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/196",
+          "name": "Romania",
+          "location": {
+            "lon": 24.9668,
+            "lat": 45.9432
+          },
+          "id": 196,
+          "shortname": "Romania",
+          "iso3": "rou"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/209",
+          "name": "Serbia",
+          "location": {
+            "lon": 20.8,
+            "lat": 44.23
+          },
+          "id": 209,
+          "shortname": "Serbia",
+          "iso3": "srb"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/213",
+          "name": "Slovakia",
+          "location": {
+            "lon": 19.49,
+            "lat": 48.71
+          },
+          "id": 213,
+          "shortname": "Slovakia",
+          "iso3": "svk"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/229",
+          "name": "the Republic of North Macedonia",
+          "location": {
+            "lon": 21.7,
+            "lat": 41.6
+          },
+          "id": 229,
+          "shortname": "North Macedonia",
+          "iso3": "mkd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/236",
+          "name": "Türkiye",
+          "location": {
+            "lon": 35.18,
+            "lat": 39.06
+          },
+          "id": 236,
+          "shortname": "Türkiye",
+          "iso3": "tur"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/241",
+          "name": "Ukraine",
+          "location": {
+            "lon": 31.32,
+            "lat": 49.32
+          },
+          "id": 241,
+          "shortname": "Ukraine",
+          "iso3": "ukr",
+          "primary": true
+        }
+      ],
+      "origin": "https://www.iom.int/sites/g/files/tmzbdl486/files/situation_reports/file/iom-regional-ukraine-response-external-sitrep-27042023.pdf",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/241",
+        "name": "Ukraine",
+        "location": {
+          "lon": 31.32,
+          "lat": 49.32
+        },
+        "id": 241,
+        "shortname": "Ukraine",
+        "iso3": "ukr"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1255",
+          "longname": "International Organization for Migration",
+          "spanish_name": "Organización Internacional para las Migraciones",
+          "name": "International Organization for Migration",
+          "id": 1255,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "IOM",
+          "homepage": "http://www.iom.int/"
+        }
+      ],
+      "title": "IOM Regional Ukraine Response Situation Report, 27 April 2023",
+      "body": "**SITUATION REPORT**\n\nThe full-scale war entered its second year with continued destruction across the country and fighting particularly concentrated in the East and South of Ukraine. Large-scale displacement persists with over 13.5 million people currently affected by displacement within and beyond the country’s borders.  \nA total of [5.6 million people have returned to their place of habitual residence](https://dtm.iom.int/reports/ukraine-returns-report-16-23-january-2023?close=true), primarily following displacement within Ukraine, despite critical challenges such as persistent instability, damage to housing and civilian infrastructure, and limited services. People’s movements and intentions continue to be dynamic, and humanitarian needs remain high: [the humanitarian community estimates that 17.6 million people in Ukraine](https://reliefweb.int/attachments/18db203c-0d11-440b-958b-40ef16607cdc/Ukraine%20Humanitarian%20Needs%20Overview%202023.pdf) - 40 per cent of the country’s total population – and [4.2 million in refugee hosting countries](https://data.unhcr.org/en/documents/download/97958) continue to need multi-sectoral humanitarian assistance.\n\nThe harsh winter months, and the life-threatening risks around the cold weather are coming to an end for now. In Ukraine, under the leadership of the government, humanitarian partners rose to the challenge of providing winterization essentials to families and individuals who had lost or become separated from their possessions. IOM distributed non-food items, repaired and replaced vital heating infrastructure, provided fuel and generators, and [supported government-run ‘Invincibility Points](https://ukraine.iom.int/news/thermal-blankets-usaid-and-iom-will-help-ukrainian-railways-keep-people-warm-heating-points-and-shelters).’ In refugee hosting countries, IOM helped keep the heat on by providing solid fuel and paying utility bills for collective accommodation centres and institutions providing services to vulnerable refugees and third country nationals (TCNs).\n\nIOM remains prepared to respond quickly to potential shifts in the war and resulting displacement dynamics, and continues working to meet acute humanitarian needs in the newly accessible and heavily impacted areas near the frontlines. With 15 per cent of Appeal needs funded so far in Ukraine, IOM has been able to sustain a vital response, delivering assistance where it is the most needed. Procurement, delivery and pre-positioning of basic relief materials continues, as does IOM’s efforts to expand the reach of its Common Pipeline of these essential items.\n\nSeveral risk factors threaten to exacerbate humanitarian needs in the region.  \nThe war has stifled Ukraine’s economy, severely depleting safety nets for its citizens. According to World Bank sources, poverty in Ukraine is expected to increase tenfold in 2023. In neighbouring countries, some of which are also struggling with a deteriorating socioeconomic context, there are concerns that fatigue may affect the generosity of host governments and communities, with possible increased social tensions as the war and resulting displacement continue. Acute needs remain high with [more than half of the 8.1 million Ukrainian refugees in the region require some form of humanitarian assistance](https://data.unhcr.org/en/documents/download/97958). As the possibility of returning home remains out of the question for many, there is an urgent need to identify solutions to support the self-reliance of refugees and ensure preparedness for any acute spikes in displacement.\n\nLaying out its response to these urgent and longer term needs, the [2023 IOM Appeal for Ukraine and Neighbouring Countries](https://crisisresponse.iom.int/sites/g/files/tmzbdl1481/files/uploaded-files/IOM%20APPEAL%202023%20%283%29.pdf) encompasses a comprehensive approach to reaching the most vulnerable in areas where needs are the most acute while addressing longer term issues such as transition and recovery, as well as sustainability in an uncertain context. Persistent needs and potentially growing gaps in the regional refugee response, coupled with only five per cent of IOM’s Appeal for the refugee-hosting countries being funded, threatens IOM’s ability maintain the capacity it has built over the past year of response.",
+      "url": "https://reliefweb.int/node/3956871",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/25/b2/25b2ff95-fd4a-4896-b74c-d94792e55c56.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/25/b2/25b2ff95-fd4a-4896-b74c-d94792e55c56.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/25/b2/25b2ff95-fd4a-4896-b74c-d94792e55c56.png",
+            "version": "2415528-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/25/b2/25b2ff95-fd4a-4896-b74c-d94792e55c56.png"
+          },
+          "filename": "iom-regional-ukraine-response-external-sitrep-27042023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415528",
+          "filesize": "6824538",
+          "url": "https://reliefweb.int/attachments/25b2ff95-fd4a-4896-b74c-d94792e55c56/iom-regional-ukraine-response-external-sitrep-27042023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/ukraine/iom-regional-ukraine-response-situation-report-27-april-2023",
+      "theme": [
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3956871,
+      "status": "published",
+      "body-html": "<p><strong>SITUATION REPORT</strong></p>\n<p>The full-scale war entered its second year with continued destruction across the country and fighting particularly concentrated in the East and South of Ukraine. Large-scale displacement persists with over 13.5 million people currently affected by displacement within and beyond the country’s borders.<br />\nA total of <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://dtm.iom.int/reports/ukraine-returns-report-16-23-january-2023?close=true\">5.6 million people have returned to their place of habitual residence</a>, primarily following displacement within Ukraine, despite critical challenges such as persistent instability, damage to housing and civilian infrastructure, and limited services. People’s movements and intentions continue to be dynamic, and humanitarian needs remain high: <a href=\"https://reliefweb.int/attachments/18db203c-0d11-440b-958b-40ef16607cdc/Ukraine%20Humanitarian%20Needs%20Overview%202023.pdf\">the humanitarian community estimates that 17.6 million people in Ukraine</a> - 40 per cent of the country’s total population – and <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://data.unhcr.org/en/documents/download/97958\">4.2 million in refugee hosting countries</a> continue to need multi-sectoral humanitarian assistance.</p>\n<p>The harsh winter months, and the life-threatening risks around the cold weather are coming to an end for now. In Ukraine, under the leadership of the government, humanitarian partners rose to the challenge of providing winterization essentials to families and individuals who had lost or become separated from their possessions. IOM distributed non-food items, repaired and replaced vital heating infrastructure, provided fuel and generators, and <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://ukraine.iom.int/news/thermal-blankets-usaid-and-iom-will-help-ukrainian-railways-keep-people-warm-heating-points-and-shelters\">supported government-run ‘Invincibility Points</a>.’ In refugee hosting countries, IOM helped keep the heat on by providing solid fuel and paying utility bills for collective accommodation centres and institutions providing services to vulnerable refugees and third country nationals (TCNs).</p>\n<p>IOM remains prepared to respond quickly to potential shifts in the war and resulting displacement dynamics, and continues working to meet acute humanitarian needs in the newly accessible and heavily impacted areas near the frontlines. With 15 per cent of Appeal needs funded so far in Ukraine, IOM has been able to sustain a vital response, delivering assistance where it is the most needed. Procurement, delivery and pre-positioning of basic relief materials continues, as does IOM’s efforts to expand the reach of its Common Pipeline of these essential items.</p>\n<p>Several risk factors threaten to exacerbate humanitarian needs in the region.<br />\nThe war has stifled Ukraine’s economy, severely depleting safety nets for its citizens. According to World Bank sources, poverty in Ukraine is expected to increase tenfold in 2023. In neighbouring countries, some of which are also struggling with a deteriorating socioeconomic context, there are concerns that fatigue may affect the generosity of host governments and communities, with possible increased social tensions as the war and resulting displacement continue. Acute needs remain high with <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://data.unhcr.org/en/documents/download/97958\">more than half of the 8.1 million Ukrainian refugees in the region require some form of humanitarian assistance</a>. As the possibility of returning home remains out of the question for many, there is an urgent need to identify solutions to support the self-reliance of refugees and ensure preparedness for any acute spikes in displacement.</p>\n<p>Laying out its response to these urgent and longer term needs, the <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://crisisresponse.iom.int/sites/g/files/tmzbdl1481/files/uploaded-files/IOM%20APPEAL%202023%20%283%29.pdf\">2023 IOM Appeal for Ukraine and Neighbouring Countries</a> encompasses a comprehensive approach to reaching the most vulnerable in areas where needs are the most acute while addressing longer term issues such as transition and recovery, as well as sustainability in an uncertain context. Persistent needs and potentially growing gaps in the regional refugee response, coupled with only five per cent of IOM’s Appeal for the refugee-hosting countries being funded, threatens IOM’s ability maintain the capacity it has built over the past year of response.</p>\n"
+    }
+  },
+  "text": "# IOM Regional Ukraine Response Situation Report, 27 April 2023\n\n**SITUATION REPORT**\n\nThe full-scale war entered its second year with continued destruction across the country and fighting particularly concentrated in the East and South of Ukraine. Large-scale displacement persists with over 13.5 million people currently affected by displacement within and beyond the country’s borders.  \nA total of [5.6 million people have returned to their place of habitual residence](https://dtm.iom.int/reports/ukraine-returns-report-16-23-january-2023?close=true), primarily following displacement within Ukraine, despite critical challenges such as persistent instability, damage to housing and civilian infrastructure, and limited services. People’s movements and intentions continue to be dynamic, and humanitarian needs remain high: [the humanitarian community estimates that 17.6 million people in Ukraine](https://reliefweb.int/attachments/18db203c-0d11-440b-958b-40ef16607cdc/Ukraine%20Humanitarian%20Needs%20Overview%202023.pdf) - 40 per cent of the country’s total population – and [4.2 million in refugee hosting countries](https://data.unhcr.org/en/documents/download/97958) continue to need multi-sectoral humanitarian assistance.\n\nThe harsh winter months, and the life-threatening risks around the cold weather are coming to an end for now. In Ukraine, under the leadership of the government, humanitarian partners rose to the challenge of providing winterization essentials to families and individuals who had lost or become separated from their possessions. IOM distributed non-food items, repaired and replaced vital heating infrastructure, provided fuel and generators, and [supported government-run ‘Invincibility Points](https://ukraine.iom.int/news/thermal-blankets-usaid-and-iom-will-help-ukrainian-railways-keep-people-warm-heating-points-and-shelters).’ In refugee hosting countries, IOM helped keep the heat on by providing solid fuel and paying utility bills for collective accommodation centres and institutions providing services to vulnerable refugees and third country nationals (TCNs).\n\nIOM remains prepared to respond quickly to potential shifts in the war and resulting displacement dynamics, and continues working to meet acute humanitarian needs in the newly accessible and heavily impacted areas near the frontlines. With 15 per cent of Appeal needs funded so far in Ukraine, IOM has been able to sustain a vital response, delivering assistance where it is the most needed. Procurement, delivery and pre-positioning of basic relief materials continues, as does IOM’s efforts to expand the reach of its Common Pipeline of these essential items.\n\nSeveral risk factors threaten to exacerbate humanitarian needs in the region.  \nThe war has stifled Ukraine’s economy, severely depleting safety nets for its citizens. According to World Bank sources, poverty in Ukraine is expected to increase tenfold in 2023. In neighbouring countries, some of which are also struggling with a deteriorating socioeconomic context, there are concerns that fatigue may affect the generosity of host governments and communities, with possible increased social tensions as the war and resulting displacement continue. Acute needs remain high with [more than half of the 8.1 million Ukrainian refugees in the region require some form of humanitarian assistance](https://data.unhcr.org/en/documents/download/97958). As the possibility of returning home remains out of the question for many, there is an urgent need to identify solutions to support the self-reliance of refugees and ensure preparedness for any acute spikes in displacement.\n\nLaying out its response to these urgent and longer term needs, the [2023 IOM Appeal for Ukraine and Neighbouring Countries](https://crisisresponse.iom.int/sites/g/files/tmzbdl1481/files/uploaded-files/IOM%20APPEAL%202023%20%283%29.pdf) encompasses a comprehensive approach to reaching the most vulnerable in areas where needs are the most acute while addressing longer term issues such as transition and recovery, as well as sustainability in an uncertain context. Persistent needs and potentially growing gaps in the regional refugee response, coupled with only five per cent of IOM’s Appeal for the refugee-hosting countries being funded, threatens IOM’s ability maintain the capacity it has built over the past year of response.",
+  "summary": "\n\nThe full-scale war in Ukraine has entered its second year, with over 13.5 million people affected by displacement within and beyond the country’s borders. Despite critical challenges, 5.6 million people have returned to their place of habitual residence. Humanitarian needs remain high, with 17.6 million people in Ukraine and 4.2 million in refugee hosting countries needing assistance. IOM has been providing winterization essentials, fuel, generators, and other support to those affected. The 2023 IOM Appeal for Ukraine and Neighbouring Countries encompasses a comprehensive approach to reaching the most vulnerable, but only 5% of the Appeal has been funded, threatening IOM’s ability to maintain its capacity.",
+  "metadata": {
+    "id": "3956871",
+    "name": "IOM Regional Ukraine Response Situation Report, 27 April 2023",
+    "date_original": 1682640000000,
+    "date_changed": 1682686293000,
+    "date_created": 1682671778000,
+    "primary_country_id": 241,
+    "primary_country_name": "Ukraine",
+    "primary_country_iso3": "ukr",
+    "primary_country_location": {
+      "lon": 31.32,
+      "lat": 49.32
+    }
+  }
+}

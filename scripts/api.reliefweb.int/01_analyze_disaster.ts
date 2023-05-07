@@ -153,6 +153,7 @@ const ongoingDisastersSummaryJoined = ongoingDisasterSummaryJsonList
   .replaceAll("\n\n", "\n");
 //console.log(ongoingDisastersSummaryJoined);
 console.log(ongoingDisastersSummaryJoined.length);
+
 const ongoingDisastersSummaryJoinedBaseDir = `./public/api.reliefweb.int/disasters/summaries/${new Date().getFullYear()}/${
   new Date().getMonth() + 1
 }/${new Date().getDate()}`;

@@ -1,0 +1,133 @@
+{
+  "original": {
+    "id": "3955638",
+    "fields": {
+      "date": {
+        "changed": "2023-04-25T03:26:22+00:00",
+        "created": "2023-04-25T03:22:46+00:00",
+        "original": "2023-04-25T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/168",
+          "name": "Nepal",
+          "location": {
+            "lon": 83.94,
+            "lat": 28.25
+          },
+          "id": 168,
+          "shortname": "Nepal",
+          "iso3": "npl",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/168",
+        "name": "Nepal",
+        "location": {
+          "lon": 83.94,
+          "lat": 28.25
+        },
+        "id": 168,
+        "shortname": "Nepal",
+        "iso3": "npl"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1275",
+          "longname": "World Health Organization",
+          "spanish_name": "Organización Mundial de la Salud",
+          "name": "World Health Organization",
+          "id": 1275,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WHO",
+          "homepage": "http://www.who.int/"
+        }
+      ],
+      "title": "Focused COVID-19 Media Monitoring, Nepal (April 25, 2023) [EN/NE]",
+      "body": "**RECURRING THEME(S)**\n\n• 113 new coronavirus cases have been confirmed in the last 24 hours. Currently, there are 362 active cases in the\ncountry.\n\n• The Ministry of Health and Population has urged the public to be vaccinated with COVID-19 shots in view of increasing\ninfections.\n\n• President Ramchandra Paudel underwent further health examinations on Monday, and his health condition is gradually\nimproving.",
+      "url": "https://reliefweb.int/node/3955638",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/38/af/38affed0-387d-48d8-bbfe-3927fc107d5e.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/38/af/38affed0-387d-48d8-bbfe-3927fc107d5e.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/38/af/38affed0-387d-48d8-bbfe-3927fc107d5e.png",
+            "version": "2414383-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/38/af/38affed0-387d-48d8-bbfe-3927fc107d5e.png"
+          },
+          "filename": "Focused COVID-19 and Health Media Monitoring_Nepal_(English)_25th April.pdf",
+          "description": "English version",
+          "mimetype": "application/pdf",
+          "id": "2414383",
+          "filesize": "285789",
+          "url": "https://reliefweb.int/attachments/38affed0-387d-48d8-bbfe-3927fc107d5e/Focused%20COVID-19%20and%20Health%20Media%20Monitoring_Nepal_%28English%29_25th%20April.pdf"
+        },
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/c0/60/c060125d-49a5-415d-8784-f3ffbbc27d1c.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/c0/60/c060125d-49a5-415d-8784-f3ffbbc27d1c.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/c0/60/c060125d-49a5-415d-8784-f3ffbbc27d1c.png",
+            "version": "2414385-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/c0/60/c060125d-49a5-415d-8784-f3ffbbc27d1c.png"
+          },
+          "filename": "Focused COVID-19 and Health Media Monitoring_Nepal_(Nepali)_ 25th April.pdf",
+          "description": "Nepali version",
+          "mimetype": "application/pdf",
+          "id": "2414385",
+          "filesize": "342703",
+          "url": "https://reliefweb.int/attachments/c060125d-49a5-415d-8784-f3ffbbc27d1c/Focused%20COVID-19%20and%20Health%20Media%20Monitoring_Nepal_%28Nepali%29_%2025th%20April.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/nepal/focused-covid-19-media-monitoring-nepal-april-25-2023-enne",
+      "theme": [
+        {
+          "name": "Health",
+          "id": 4595
+        }
+      ],
+      "id": 3955638,
+      "status": "published",
+      "body-html": "<p><strong>RECURRING THEME(S)</strong></p>\n<p>• 113 new coronavirus cases have been confirmed in the last 24 hours. Currently, there are 362 active cases in the\ncountry.</p>\n<p>• The Ministry of Health and Population has urged the public to be vaccinated with COVID-19 shots in view of increasing\ninfections.</p>\n<p>• President Ramchandra Paudel underwent further health examinations on Monday, and his health condition is gradually\nimproving.</p>\n"
+    }
+  },
+  "text": "# Focused COVID-19 Media Monitoring, Nepal (April 25, 2023) [EN/NE]\n\n**RECURRING THEME(S)**\n\n• 113 new coronavirus cases have been confirmed in the last 24 hours. Currently, there are 362 active cases in the\ncountry.\n\n• The Ministry of Health and Population has urged the public to be vaccinated with COVID-19 shots in view of increasing\ninfections.\n\n• President Ramchandra Paudel underwent further health examinations on Monday, and his health condition is gradually\nimproving.",
+  "summary": " In Nepal, 113 new coronavirus cases have been confirmed in the last 24 hours, bringing the total number of active cases to 362. The Ministry of Health and Population has urged the public to get vaccinated, and President Ramchandra Paudel is undergoing further health examinations with his condition gradually improving.",
+  "metadata": {
+    "id": "3955638",
+    "name": "Focused COVID-19 Media Monitoring, Nepal (April 25, 2023) [EN/NE]",
+    "date_original": 1682380800000,
+    "date_changed": 1682393182000,
+    "date_created": 1682392966000,
+    "primary_country_id": 168,
+    "primary_country_name": "Nepal",
+    "primary_country_iso3": "npl",
+    "primary_country_location": {
+      "lon": 83.94,
+      "lat": 28.25
+    }
+  }
+}

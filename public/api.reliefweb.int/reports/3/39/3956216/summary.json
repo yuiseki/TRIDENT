@@ -1,0 +1,562 @@
+{
+  "original": {
+    "id": "3956216",
+    "fields": {
+      "date": {
+        "changed": "2023-04-26T15:36:00+00:00",
+        "created": "2023-04-26T11:56:12+00:00",
+        "original": "2023-04-26T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/31",
+          "name": "Bangladesh",
+          "location": {
+            "lon": 90.27,
+            "lat": 23.84
+          },
+          "id": 31,
+          "shortname": "Bangladesh",
+          "iso3": "bgd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/35",
+          "name": "Belize",
+          "location": {
+            "lon": -88.69,
+            "lat": 17.22
+          },
+          "id": 35,
+          "shortname": "Belize",
+          "iso3": "blz"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/46",
+          "name": "Burkina Faso",
+          "location": {
+            "lon": -1.57,
+            "lat": 12.28
+          },
+          "id": 46,
+          "shortname": "Burkina Faso",
+          "iso3": "bfa"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/71",
+          "name": "Cuba",
+          "location": {
+            "lon": -79.24,
+            "lat": 21.95
+          },
+          "id": 71,
+          "shortname": "Cuba",
+          "iso3": "cub"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/75",
+          "name": "Democratic Republic of the Congo",
+          "location": {
+            "lon": 21.7587,
+            "lat": -4.03833
+          },
+          "id": 75,
+          "shortname": "DR Congo",
+          "iso3": "cod"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/78",
+          "name": "Dominica",
+          "location": {
+            "lon": -61.36,
+            "lat": 15.44
+          },
+          "id": 78,
+          "shortname": "Dominica",
+          "iso3": "dma"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/83",
+          "name": "El Salvador",
+          "location": {
+            "lon": -88.87,
+            "lat": 13.74
+          },
+          "id": 83,
+          "shortname": "El Salvador",
+          "iso3": "slv"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/87",
+          "name": "Ethiopia",
+          "location": {
+            "lon": 39.62,
+            "lat": 8.63
+          },
+          "id": 87,
+          "shortname": "Ethiopia",
+          "iso3": "eth"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/98",
+          "name": "Gambia",
+          "location": {
+            "lon": -15.91,
+            "lat": 13.44
+          },
+          "id": 98,
+          "shortname": "Gambia",
+          "iso3": "gmb"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/109",
+          "name": "Guatemala",
+          "location": {
+            "lon": -90.39,
+            "lat": 15.61
+          },
+          "id": 109,
+          "shortname": "Guatemala",
+          "iso3": "gtm"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/113",
+          "name": "Haiti",
+          "location": {
+            "lon": -72.43,
+            "lat": 19.18
+          },
+          "id": 113,
+          "shortname": "Haiti",
+          "iso3": "hti"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/131",
+          "name": "Kenya",
+          "location": {
+            "lon": 37.86,
+            "lat": 0.53
+          },
+          "id": 131,
+          "shortname": "Kenya",
+          "iso3": "ken"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/144",
+          "name": "Madagascar",
+          "location": {
+            "lon": 46.71,
+            "lat": -19.37
+          },
+          "id": 144,
+          "shortname": "Madagascar",
+          "iso3": "mdg"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/146",
+          "name": "Malawi",
+          "location": {
+            "lon": 33.74,
+            "lat": -13.22
+          },
+          "id": 146,
+          "shortname": "Malawi",
+          "iso3": "mwi"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/149",
+          "name": "Mali",
+          "location": {
+            "lon": -1.25,
+            "lat": 17.35
+          },
+          "id": 149,
+          "shortname": "Mali",
+          "iso3": "mli"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/153",
+          "name": "Mauritania",
+          "location": {
+            "lon": -10.53,
+            "lat": 19.76
+          },
+          "id": 153,
+          "shortname": "Mauritania",
+          "iso3": "mrt"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/164",
+          "name": "Mozambique",
+          "location": {
+            "lon": 34.75,
+            "lat": -18.09
+          },
+          "id": 164,
+          "shortname": "Mozambique",
+          "iso3": "moz"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/173",
+          "name": "Nicaragua",
+          "location": {
+            "lon": -85.03,
+            "lat": 12.84
+          },
+          "id": 173,
+          "shortname": "Nicaragua",
+          "iso3": "nic"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/208",
+          "name": "Senegal",
+          "location": {
+            "lon": -14.82,
+            "lat": 15.22
+          },
+          "id": 208,
+          "shortname": "Senegal",
+          "iso3": "sen"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/216",
+          "name": "Somalia",
+          "location": {
+            "lon": 47.33,
+            "lat": 5.79
+          },
+          "id": 216,
+          "shortname": "Somalia",
+          "iso3": "som"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/254",
+          "name": "World",
+          "id": 254,
+          "shortname": "World",
+          "iso3": "wld",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/256",
+          "name": "Zambia",
+          "location": {
+            "lon": 27.43,
+            "lat": -14
+          },
+          "id": 256,
+          "shortname": "Zambia",
+          "iso3": "zmb"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/257",
+          "name": "Zimbabwe",
+          "location": {
+            "lon": 29.94,
+            "lat": -19.19
+          },
+          "id": 257,
+          "shortname": "Zimbabwe",
+          "iso3": "zwe"
+        }
+      ],
+      "origin": "https://www.wfp.org/publications/2022-climate-risk-insurance-annual-report",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/254",
+        "name": "World",
+        "id": 254,
+        "shortname": "World",
+        "iso3": "wld"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "DR",
+          "name": "Drought",
+          "id": 4672
+        },
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        },
+        {
+          "code": "FF",
+          "name": "Flash Flood",
+          "id": 4624
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        },
+        {
+          "code": "LS",
+          "name": "Land Slide",
+          "id": 4728
+        },
+        {
+          "code": "TC",
+          "name": "Tropical Cyclone",
+          "id": 4618
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "2022 Climate Risk Insurance Annual Report",
+      "body": "*The 2022 Climate Risk Insurance Annual Report highlights key insights and achievements from WFP-supported Climate Risk Insurance (CRI) programmes. It provides deep dives into WFP-supported CRI programmes in each country, as well as stories from the field, interviews with partners, and insights into how WFP promotes gender equality and women’s empowerment in its programmes.*\n\nThe last year brought unprecedented challenges for people around the world as they continued to grapple with the effects of climate change. For over a decade, WFP has prioritised advancing financial protection as a means of building resilience to extreme weather events—an essential part of its mandate of saving lives and changing lives. Given the severe effects of the climate crisis, it is essential to enable households and communities to recover from losses and damages caused by climate-related shocks and prevent them from being pushed into hunger and food insecurity. In 2022, WFP provided financial protection to over 3.8 million people across 21 countries in Africa, Asia, Latin America and the Caribbean, through climate risk insurance instruments. In regions affected by droughts, floods, and hurricanes, these insurance products provided much-needed payouts to support 1.8 million people with a total of US$12.6 million.",
+      "url": "https://reliefweb.int/node/3956216",
+      "disaster": [
+        {
+          "name": "DR Congo: Floods and Landslides - Dec 2022",
+          "id": 51420,
+          "glide": "FL-2022-000376-COD",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            },
+            {
+              "code": "LS",
+              "name": "Land Slide",
+              "id": 4728
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Gambia: Floods - Jul 2022",
+          "id": 51278,
+          "glide": "FL-2022-000276-GMB",
+          "type": [
+            {
+              "code": "FF",
+              "name": "Flash Flood",
+              "id": 4624
+            },
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            }
+          ],
+          "status": "past"
+        },
+        {
+          "name": "Mauritania: Drought - Jun 2022",
+          "id": 51233,
+          "glide": "OT-2022-000240-MRT",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "past"
+        },
+        {
+          "name": "Bangladesh: Floods and Landslides - May 2022",
+          "id": 51183,
+          "glide": "FL-2022-000217-BGD",
+          "type": [
+            {
+              "code": "FF",
+              "name": "Flash Flood",
+              "id": 4624
+            },
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            },
+            {
+              "code": "LS",
+              "name": "Land Slide",
+              "id": 4728
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Madagascar: Floods and Landslides - Jan 2022",
+          "id": 51018,
+          "glide": "ST-2022-000138-MDG",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            },
+            {
+              "code": "LS",
+              "name": "Land Slide",
+              "id": 4728
+            }
+          ],
+          "status": "past"
+        },
+        {
+          "name": "Tropical Storm Ana - Jan 2022",
+          "id": 51016,
+          "glide": "ST-2022-000088-MOZ",
+          "type": [
+            {
+              "code": "TC",
+              "name": "Tropical Cyclone",
+              "id": 4618,
+              "primary": true
+            }
+          ],
+          "status": "past"
+        },
+        {
+          "name": "Southern Africa: Drought - 2018-2022",
+          "id": 47463,
+          "glide": "DR-2018-000429-ZWE",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "past"
+        },
+        {
+          "name": "Madagascar: Drought - 2018-2023",
+          "id": 46459,
+          "glide": "DR-2018-000141-MDG",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Ethiopia: Drought - 2015-2023",
+          "id": 23121,
+          "glide": "DR-2015-000109-ETH",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Somalia: Drought - 2015-2023",
+          "id": 23101,
+          "glide": "DR-2015-000134-SOM",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Kenya: Drought - 2014-2023",
+          "id": 15360,
+          "glide": "DR-2014-000131-KEN",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/1f/08/1f086f95-51a0-47eb-9986-8178f520d17b.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/1f/08/1f086f95-51a0-47eb-9986-8178f520d17b.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/1f/08/1f086f95-51a0-47eb-9986-8178f520d17b.png",
+            "version": "2414968-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/1f/08/1f086f95-51a0-47eb-9986-8178f520d17b.png"
+          },
+          "filename": "WFP-0000148577.pdf",
+          "mimetype": "application/pdf",
+          "id": "2414968",
+          "filesize": "12254207",
+          "url": "https://reliefweb.int/attachments/1f086f95-51a0-47eb-9986-8178f520d17b/WFP-0000148577.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/world/2022-climate-risk-insurance-annual-report",
+      "theme": [
+        {
+          "name": "Climate Change and Environment",
+          "id": 4588
+        },
+        {
+          "name": "Disaster Management",
+          "id": 4591
+        },
+        {
+          "name": "Humanitarian Financing",
+          "id": 4597
+        }
+      ],
+      "id": 3956216,
+      "status": "published",
+      "body-html": "<p><em>The 2022 Climate Risk Insurance Annual Report highlights key insights and achievements from WFP-supported Climate Risk Insurance (CRI) programmes. It provides deep dives into WFP-supported CRI programmes in each country, as well as stories from the field, interviews with partners, and insights into how WFP promotes gender equality and women’s empowerment in its programmes.</em></p>\n<p>The last year brought unprecedented challenges for people around the world as they continued to grapple with the effects of climate change. For over a decade, WFP has prioritised advancing financial protection as a means of building resilience to extreme weather events—an essential part of its mandate of saving lives and changing lives. Given the severe effects of the climate crisis, it is essential to enable households and communities to recover from losses and damages caused by climate-related shocks and prevent them from being pushed into hunger and food insecurity. In 2022, WFP provided financial protection to over 3.8 million people across 21 countries in Africa, Asia, Latin America and the Caribbean, through climate risk insurance instruments. In regions affected by droughts, floods, and hurricanes, these insurance products provided much-needed payouts to support 1.8 million people with a total of US$12.6 million.</p>\n"
+    }
+  },
+  "text": "# 2022 Climate Risk Insurance Annual Report\n\n*The 2022 Climate Risk Insurance Annual Report highlights key insights and achievements from WFP-supported Climate Risk Insurance (CRI) programmes. It provides deep dives into WFP-supported CRI programmes in each country, as well as stories from the field, interviews with partners, and insights into how WFP promotes gender equality and women’s empowerment in its programmes.*\n\nThe last year brought unprecedented challenges for people around the world as they continued to grapple with the effects of climate change. For over a decade, WFP has prioritised advancing financial protection as a means of building resilience to extreme weather events—an essential part of its mandate of saving lives and changing lives. Given the severe effects of the climate crisis, it is essential to enable households and communities to recover from losses and damages caused by climate-related shocks and prevent them from being pushed into hunger and food insecurity. In 2022, WFP provided financial protection to over 3.8 million people across 21 countries in Africa, Asia, Latin America and the Caribbean, through climate risk insurance instruments. In regions affected by droughts, floods, and hurricanes, these insurance products provided much-needed payouts to support 1.8 million people with a total of US$12.6 million.",
+  "summary": " The 2022 Climate Risk Insurance Annual Report from WFP highlights the achievements of their CRI programmes in 21 countries across Africa, Asia, Latin America and the Caribbean. It provides an overview of how WFP is promoting gender equality and women’s empowerment in its programmes, as well as stories from the field and interviews with partners. In 2022, WFP provided financial protection to over 3.8 million people, with payouts of US$12.6 million to support 1.8 million people affected by droughts, floods, and hurricanes.",
+  "metadata": {
+    "id": "3956216",
+    "name": "2022 Climate Risk Insurance Annual Report",
+    "date_original": 1682467200000,
+    "date_changed": 1682523360000,
+    "date_created": 1682510172000,
+    "primary_country_id": 254,
+    "primary_country_name": "World",
+    "primary_country_iso3": "wld"
+  }
+}

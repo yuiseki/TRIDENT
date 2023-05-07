@@ -1,0 +1,137 @@
+{
+  "original": {
+    "id": "3954296",
+    "fields": {
+      "date": {
+        "changed": "2023-04-19T12:27:11+00:00",
+        "created": "2023-04-19T11:28:48+00:00",
+        "original": "2023-04-19T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/82",
+          "name": "Egypt",
+          "location": {
+            "lon": 29.87,
+            "lat": 26.49
+          },
+          "id": 82,
+          "shortname": "Egypt",
+          "iso3": "egy"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/180",
+          "name": "occupied Palestinian territory",
+          "location": {
+            "lon": 35.2332,
+            "lat": 31.9522
+          },
+          "id": 180,
+          "shortname": "oPt",
+          "iso3": "pse",
+          "primary": true
+        }
+      ],
+      "ocha_product": [
+        {
+          "name": "Situation Report",
+          "id": 12345
+        }
+      ],
+      "origin": "https://www.ochaopt.org/content/movement-and-out-gaza-update-covering-march-2023",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/180",
+        "name": "occupied Palestinian territory",
+        "location": {
+          "lon": 35.2332,
+          "lat": 31.9522
+        },
+        "id": 180,
+        "shortname": "oPt",
+        "iso3": "pse"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1503",
+          "longname": "United Nations Office for the Coordination of Humanitarian Affairs",
+          "spanish_name": "Oficina de Coordinación de Asuntos Humanitarios",
+          "name": "UN Office for the Coordination of Humanitarian Affairs",
+          "id": 1503,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "OCHA",
+          "disclaimer": "To learn more about OCHA's activities, please visit https://www.unocha.org/.",
+          "homepage": "http://www.unocha.org/"
+        }
+      ],
+      "title": "Movement in and out of Gaza: update covering March 2023",
+      "body": "**Highlights**\n\n-   In March 2023, more people crossed in and out of Gaza, with the Israeli authorities increasing the number of exit permits for work purposes.\n-   However, movement remained highly restricted, with most people still not eligible to apply for permits.\n-   More goods entered Gaza, while fewer goods exited.\n\n**Movement of people to Israel and the West Bank**\n\n-   **In March, the Israeli authorities allowed 51,153 exits of people from Gaza** (in most cases, travelers exited multiple times). This is 13 per cent higher than in February, and 44 per cent higher than the monthly average in 2022. However, it is 90 per cent lower than the monthly average in 2000, before the imposition of category-based restrictions by the Israeli authorities.\n-   **Up to 88 per cent of the exits were by Palestinians allowed out for work-related purposes,** most of whom are employed as day labourers in Israel. The Israeli authorities increased the number exit permits for such purposes from 20,787 in February to 21,306 in March.\n-   **Six per cent of the exits were by patients referred for medical treatment in the West Bank or Israel and their companions.** Some 1,641 exit-permit applications were submitted to the Israeli authorities for medical appointments scheduled for March. Of these, 18 per cent were not approved on time, compared with 15 per cent in February. Click here for more information.",
+      "url": "https://reliefweb.int/node/3954296",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/d3/bc/d3bc61da-53dd-477b-a2bf-3f3398faa8ee.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/d3/bc/d3bc61da-53dd-477b-a2bf-3f3398faa8ee.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/d3/bc/d3bc61da-53dd-477b-a2bf-3f3398faa8ee.png",
+            "version": "2413462-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/d3/bc/d3bc61da-53dd-477b-a2bf-3f3398faa8ee.png"
+          },
+          "filename": "Movement in and out of Gaza_ update covering March 2023 _ United Nations Office for the Coordination of Humanitarian Affairs - occupied Palestinian territory.pdf",
+          "mimetype": "application/pdf",
+          "id": "2413462",
+          "filesize": "3196355",
+          "url": "https://reliefweb.int/attachments/d3bc61da-53dd-477b-a2bf-3f3398faa8ee/Movement%20in%20and%20out%20of%20Gaza_%20update%20covering%20March%202023%20_%20United%20Nations%20Office%20for%20the%20Coordination%20of%20Humanitarian%20Affairs%20-%20occupied%20Palestinian%20territory.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/occupied-palestinian-territory/movement-and-out-gaza-update-covering-march-2023",
+      "theme": [
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        }
+      ],
+      "id": 3954296,
+      "status": "published",
+      "body-html": "<p><strong>Highlights</strong></p>\n<ul>\n<li>In March 2023, more people crossed in and out of Gaza, with the Israeli authorities increasing the number of exit permits for work purposes.</li>\n<li>However, movement remained highly restricted, with most people still not eligible to apply for permits.</li>\n<li>More goods entered Gaza, while fewer goods exited.</li>\n</ul>\n<p><strong>Movement of people to Israel and the West Bank</strong></p>\n<ul>\n<li>\n<strong>In March, the Israeli authorities allowed 51,153 exits of people from Gaza</strong> (in most cases, travelers exited multiple times). This is 13 per cent higher than in February, and 44 per cent higher than the monthly average in 2022. However, it is 90 per cent lower than the monthly average in 2000, before the imposition of category-based restrictions by the Israeli authorities.</li>\n<li>\n<strong>Up to 88 per cent of the exits were by Palestinians allowed out for work-related purposes,</strong> most of whom are employed as day labourers in Israel. The Israeli authorities increased the number exit permits for such purposes from 20,787 in February to 21,306 in March.</li>\n<li>\n<strong>Six per cent of the exits were by patients referred for medical treatment in the West Bank or Israel and their companions.</strong> Some 1,641 exit-permit applications were submitted to the Israeli authorities for medical appointments scheduled for March. Of these, 18 per cent were not approved on time, compared with 15 per cent in February. Click here for more information.</li>\n</ul>\n"
+    }
+  },
+  "text": "# Movement in and out of Gaza: update covering March 2023\n\n**Highlights**\n\n-   In March 2023, more people crossed in and out of Gaza, with the Israeli authorities increasing the number of exit permits for work purposes.\n-   However, movement remained highly restricted, with most people still not eligible to apply for permits.\n-   More goods entered Gaza, while fewer goods exited.\n\n**Movement of people to Israel and the West Bank**\n\n-   **In March, the Israeli authorities allowed 51,153 exits of people from Gaza** (in most cases, travelers exited multiple times). This is 13 per cent higher than in February, and 44 per cent higher than the monthly average in 2022. However, it is 90 per cent lower than the monthly average in 2000, before the imposition of category-based restrictions by the Israeli authorities.\n-   **Up to 88 per cent of the exits were by Palestinians allowed out for work-related purposes,** most of whom are employed as day labourers in Israel. The Israeli authorities increased the number exit permits for such purposes from 20,787 in February to 21,306 in March.\n-   **Six per cent of the exits were by patients referred for medical treatment in the West Bank or Israel and their companions.** Some 1,641 exit-permit applications were submitted to the Israeli authorities for medical appointments scheduled for March. Of these, 18 per cent were not approved on time, compared with 15 per cent in February. Click here for more information.",
+  "summary": " In March 2023, the Israeli authorities increased the number of exit permits for work purposes, allowing 51,153 exits of people from Gaza. 88% of the exits were for work-related purposes, while 6% were for medical treatment in the West Bank or Israel. More goods entered Gaza, while fewer goods exited.",
+  "metadata": {
+    "id": "3954296",
+    "name": "Movement in and out of Gaza: update covering March 2023",
+    "date_original": 1681862400000,
+    "date_changed": 1681907231000,
+    "date_created": 1681903728000,
+    "primary_country_id": 180,
+    "primary_country_name": "occupied Palestinian territory",
+    "primary_country_iso3": "pse",
+    "primary_country_location": {
+      "lon": 35.2332,
+      "lat": 31.9522
+    }
+  }
+}

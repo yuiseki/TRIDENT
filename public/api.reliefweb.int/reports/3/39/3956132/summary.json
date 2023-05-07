@@ -1,0 +1,142 @@
+{
+  "original": {
+    "id": "3956132",
+    "fields": {
+      "date": {
+        "changed": "2023-04-26T09:51:35+00:00",
+        "created": "2023-04-26T09:11:39+00:00",
+        "original": "2023-04-26T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/226",
+          "name": "Syrian Arab Republic",
+          "location": {
+            "lon": 38.51,
+            "lat": 35.01
+          },
+          "id": 226,
+          "shortname": "Syria",
+          "iso3": "syr",
+          "primary": true
+        }
+      ],
+      "origin": "https://data.unhcr.org/en/documents/details/100268",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/226",
+        "name": "Syrian Arab Republic",
+        "location": {
+          "lon": 38.51,
+          "lat": 35.01
+        },
+        "id": 226,
+        "shortname": "Syria",
+        "iso3": "syr"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EQ",
+          "name": "Earthquake",
+          "id": 4628
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "UNHCR Cross-Border Operation for North-West Syria 2023 - January - March 2023",
+      "body": "The earthquakes have worsened a long-standing humanitarian crisis in north-west Syria, where 2.7 million people were already displaced and living in temporary sites, and 4.1 million people are reliant on humanitarian assistance.  \nUNHCR and its partners have scaled up the provision of core relief items and protection services to support those affected by the earthquakes. UNHCR has also strengthened the coordination of all three clusters under its responsibility.",
+      "url": "https://reliefweb.int/node/3956132",
+      "disaster": [
+        {
+          "name": "Türkiye/Syria: Earthquakes - Feb 2023",
+          "id": 51470,
+          "glide": "EQ-2023-000015-TUR",
+          "type": [
+            {
+              "code": "EQ",
+              "name": "Earthquake",
+              "id": 4628,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/8f/99/8f999c60-487a-4a8d-abfc-7f06e7855916.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/8f/99/8f999c60-487a-4a8d-abfc-7f06e7855916.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/8f/99/8f999c60-487a-4a8d-abfc-7f06e7855916.png",
+            "version": "2414883-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/8f/99/8f999c60-487a-4a8d-abfc-7f06e7855916.png"
+          },
+          "filename": "230426 UNHCR Cross-border operation in north-west Syria Operational Update January-March 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2414883",
+          "filesize": "1093480",
+          "url": "https://reliefweb.int/attachments/8f999c60-487a-4a8d-abfc-7f06e7855916/230426%20UNHCR%20Cross-border%20operation%20in%20north-west%20Syria%20Operational%20Update%20January-March%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/syrian-arab-republic/unhcr-cross-border-operation-north-west-syria-2023-january-march-2023",
+      "theme": [
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        }
+      ],
+      "id": 3956132,
+      "status": "published",
+      "body-html": "<p>The earthquakes have worsened a long-standing humanitarian crisis in north-west Syria, where 2.7 million people were already displaced and living in temporary sites, and 4.1 million people are reliant on humanitarian assistance.<br />\nUNHCR and its partners have scaled up the provision of core relief items and protection services to support those affected by the earthquakes. UNHCR has also strengthened the coordination of all three clusters under its responsibility.</p>\n"
+    }
+  },
+  "text": "# UNHCR Cross-Border Operation for North-West Syria 2023 - January - March 2023\n\nThe earthquakes have worsened a long-standing humanitarian crisis in north-west Syria, where 2.7 million people were already displaced and living in temporary sites, and 4.1 million people are reliant on humanitarian assistance.  \nUNHCR and its partners have scaled up the provision of core relief items and protection services to support those affected by the earthquakes. UNHCR has also strengthened the coordination of all three clusters under its responsibility.",
+  "summary": "\n\nUNHCR and its partners have responded to the worsening humanitarian crisis in north-west Syria, providing core relief items and protection services to those affected by the earthquakes. UNHCR has also increased coordination of the three clusters under its responsibility.",
+  "metadata": {
+    "id": "3956132",
+    "name": "UNHCR Cross-Border Operation for North-West Syria 2023 - January - March 2023",
+    "date_original": 1682467200000,
+    "date_changed": 1682502695000,
+    "date_created": 1682500299000,
+    "primary_country_id": 226,
+    "primary_country_name": "Syrian Arab Republic",
+    "primary_country_iso3": "syr",
+    "primary_country_location": {
+      "lon": 38.51,
+      "lat": 35.01
+    }
+  }
+}

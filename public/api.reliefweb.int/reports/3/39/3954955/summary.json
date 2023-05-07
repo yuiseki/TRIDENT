@@ -1,0 +1,111 @@
+{
+  "original": {
+    "id": "3954955",
+    "fields": {
+      "date": {
+        "changed": "2023-04-21T09:44:51+00:00",
+        "created": "2023-04-21T08:13:54+00:00",
+        "original": "2023-04-21T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/254",
+          "name": "World",
+          "id": 254,
+          "shortname": "World",
+          "iso3": "wld",
+          "primary": true
+        }
+      ],
+      "origin": "http://apps.who.int/iris/bitstream/handle/10665/367099/WER9816-eng-fre.pdf",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/254",
+        "name": "World",
+        "id": 254,
+        "shortname": "World",
+        "iso3": "wld"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        },
+        {
+          "code": "fr",
+          "name": "French",
+          "id": 268
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1275",
+          "longname": "World Health Organization",
+          "spanish_name": "Organización Mundial de la Salud",
+          "name": "World Health Organization",
+          "id": 1275,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WHO",
+          "homepage": "http://www.who.int/"
+        }
+      ],
+      "title": "Weekly Epidemiological Record (WER), 14 April 2023, Vol. 98, No. 16, pp. 167–174 [EN/FR]",
+      "body": "**Contents**\n\n167 Update on the outbreak of wild poliovirus type 1 in southeastern Africa, 2021–2022\n\n**Sommaire**\n\n167 Mise à jour sur la flambée épidémique de poliovirus sauvage de type 1 dans le sud-est de l’Afrique, 2021-2022",
+      "url": "https://reliefweb.int/node/3954955",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/84/c3/84c32de4-4390-4d97-b35d-f3f778f25c67.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/84/c3/84c32de4-4390-4d97-b35d-f3f778f25c67.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/84/c3/84c32de4-4390-4d97-b35d-f3f778f25c67.png",
+            "version": "2413931-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/84/c3/84c32de4-4390-4d97-b35d-f3f778f25c67.png"
+          },
+          "filename": "WER9816-eng-fre.pdf",
+          "mimetype": "application/pdf",
+          "id": "2413931",
+          "filesize": "516538",
+          "url": "https://reliefweb.int/attachments/84c32de4-4390-4d97-b35d-f3f778f25c67/WER9816-eng-fre.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/world/weekly-epidemiological-record-wer-14-april-2023-vol-98-no-16-pp-167-174-enfr",
+      "theme": [
+        {
+          "name": "Health",
+          "id": 4595
+        }
+      ],
+      "id": 3954955,
+      "status": "published",
+      "body-html": "<p><strong>Contents</strong></p>\n<p>167 Update on the outbreak of wild poliovirus type 1 in southeastern Africa, 2021–2022</p>\n<p><strong>Sommaire</strong></p>\n<p>167 Mise à jour sur la flambée épidémique de poliovirus sauvage de type 1 dans le sud-est de l’Afrique, 2021-2022</p>\n"
+    }
+  },
+  "text": "# Weekly Epidemiological Record (WER), 14 April 2023, Vol. 98, No. 16, pp. 167–174 [EN/FR]\n\n**Contents**\n\n167 Update on the outbreak of wild poliovirus type 1 in southeastern Africa, 2021–2022\n\n**Sommaire**\n\n167 Mise à jour sur la flambée épidémique de poliovirus sauvage de type 1 dans le sud-est de l’Afrique, 2021-2022",
+  "summary": " This article from the Weekly Epidemiological Record (WER) provides an update on the 2021-2022 outbreak of wild poliovirus type 1 in southeastern Africa.",
+  "metadata": {
+    "id": "3954955",
+    "name": "Weekly Epidemiological Record (WER), 14 April 2023, Vol. 98, No. 16, pp. 167–174 [EN/FR]",
+    "date_original": 1682035200000,
+    "date_changed": 1682070291000,
+    "date_created": 1682064834000,
+    "primary_country_id": 254,
+    "primary_country_name": "World",
+    "primary_country_iso3": "wld"
+  }
+}

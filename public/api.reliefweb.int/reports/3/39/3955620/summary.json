@@ -1,0 +1,279 @@
+{
+  "original": {
+    "id": "3955620",
+    "fields": {
+      "date": {
+        "changed": "2023-04-24T22:41:49+00:00",
+        "created": "2023-04-24T22:39:02+00:00",
+        "original": "2023-04-24T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/77",
+          "name": "Djibouti",
+          "location": {
+            "lon": 42.58,
+            "lat": 11.75
+          },
+          "id": 77,
+          "shortname": "Djibouti",
+          "iso3": "dji"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/87",
+          "name": "Ethiopia",
+          "location": {
+            "lon": 39.62,
+            "lat": 8.63
+          },
+          "id": 87,
+          "shortname": "Ethiopia",
+          "iso3": "eth"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/131",
+          "name": "Kenya",
+          "location": {
+            "lon": 37.86,
+            "lat": 0.53
+          },
+          "id": 131,
+          "shortname": "Kenya",
+          "iso3": "ken"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/216",
+          "name": "Somalia",
+          "location": {
+            "lon": 47.33,
+            "lat": 5.79
+          },
+          "id": 216,
+          "shortname": "Somalia",
+          "iso3": "som",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/8657",
+          "name": "South Sudan",
+          "location": {
+            "lon": 30.5,
+            "lat": 6.9
+          },
+          "id": 8657,
+          "shortname": "South Sudan",
+          "iso3": "ssd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/220",
+          "name": "Sudan",
+          "location": {
+            "lon": 30,
+            "lat": 15
+          },
+          "id": 220,
+          "shortname": "Sudan",
+          "iso3": "sdn"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/240",
+          "name": "Uganda",
+          "location": {
+            "lon": 32.39,
+            "lat": 1.28
+          },
+          "id": 240,
+          "shortname": "Uganda",
+          "iso3": "uga"
+        }
+      ],
+      "origin": "https://www.who.int/publications/m/item/situation-report--greater-horn-of-africa-food-insecurity-and-health---grade-3-emergency---1-january-2023---1-february-2023",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/216",
+        "name": "Somalia",
+        "location": {
+          "lon": 47.33,
+          "lat": 5.79
+        },
+        "id": 216,
+        "shortname": "Somalia",
+        "iso3": "som"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "DR",
+          "name": "Drought",
+          "id": 4672
+        },
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1275",
+          "longname": "World Health Organization",
+          "spanish_name": "Organización Mundial de la Salud",
+          "name": "World Health Organization",
+          "id": 1275,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WHO",
+          "homepage": "http://www.who.int/"
+        }
+      ],
+      "title": "Situation Report: Greater Horn of Africa Food Insecurity and Health - Grade 3 Emergency — 1 January 2023 - 1 February 2023",
+      "body": "**Overview**  \n\n- The Greater Horn of Africa (GHoA) countries have continued to face serious drought situation due to five failed rainy seasons. Rainfall is projected to be below-average from March to May. \n\n- More than 46 million people in IPC3+ are facing crisis level of food insecurity including 6.7 million IPC Phase 4, and 355 thousand in IPC phase 5.  \n\n- Over 11.6 million internally displaced persons and 4.5 million refugees and asylum seekers currently living in the GHoA.\nNearly 2.3M new internally displaced people are reported mainly from Somalia, Ethiopia and Kenya due to drought.  \n\n- 11.9 million children under five years old are likely to face acute malnutrition in 2023 and nearly 2.9 million children der five years old will require SAM treatment in 2023  \n\n- There has been a significant increase in admissions of SAM and MAM cases in refugee and IDP sites, especially in Ethiopia and Kenya, in comparison to previous years this period.  \n\n- Ongoing cholera outbreaks are reported in three countries (Ethiopia, Somalia and Kenya) resulting in an increase in morbidities and mortalities  \n\n- Ongoing measles outbreaks affect all the seven countries in the region, in response reactive vaccination campaigns are conducted.  \n\n- The Sudan Virus Ebola outbreak has been declared over in Uganda on 11 January 2023 since new case has been reported for 42 consecutive days  \n\n- WHO has continued to provide the necessary support in terms of health sector coordination, technical and financial support as well as the provision of drugs and supplies required to strengthen the surveillance and response measures.",
+      "url": "https://reliefweb.int/node/3955620",
+      "disaster": [
+        {
+          "name": "Kenya: Cholera Outbreak - Oct 2022",
+          "id": 51402,
+          "glide": "EP-2022-000367-KEN",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Ethiopia: Cholera Outbreak - Sep 2022",
+          "id": 51337,
+          "glide": "EP-2022-000323-ETH",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "South Sudan: Cholera Outbreak - May 2022",
+          "id": 51167,
+          "glide": "EP-2022-000236-SSD",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Ethiopia: Drought - 2015-2023",
+          "id": 23121,
+          "glide": "DR-2015-000109-ETH",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Somalia: Drought - 2015-2023",
+          "id": 23101,
+          "glide": "DR-2015-000134-SOM",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Kenya: Drought - 2014-2023",
+          "id": 15360,
+          "glide": "DR-2014-000131-KEN",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/b5/17/b5172eda-e576-4a99-8dc4-88ca4054a47f.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/b5/17/b5172eda-e576-4a99-8dc4-88ca4054a47f.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/b5/17/b5172eda-e576-4a99-8dc4-88ca4054a47f.png",
+            "version": "2414365-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/b5/17/b5172eda-e576-4a99-8dc4-88ca4054a47f.png"
+          },
+          "filename": "ghoa-food-insecurity-and-health-sitrep-7_final.pdf",
+          "mimetype": "application/pdf",
+          "id": "2414365",
+          "filesize": "1015258",
+          "url": "https://reliefweb.int/attachments/b5172eda-e576-4a99-8dc4-88ca4054a47f/ghoa-food-insecurity-and-health-sitrep-7_final.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/somalia/situation-report-greater-horn-africa-food-insecurity-and-health-grade-3-emergency-1-january-2023-1-february-2023",
+      "theme": [
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        }
+      ],
+      "id": 3955620,
+      "status": "published",
+      "body-html": "<p><strong>Overview</strong></p>\n<ul>\n<li>\n<p>The Greater Horn of Africa (GHoA) countries have continued to face serious drought situation due to five failed rainy seasons. Rainfall is projected to be below-average from March to May.</p>\n</li>\n<li>\n<p>More than 46 million people in IPC3+ are facing crisis level of food insecurity including 6.7 million IPC Phase 4, and 355 thousand in IPC phase 5.</p>\n</li>\n<li>\n<p>Over 11.6 million internally displaced persons and 4.5 million refugees and asylum seekers currently living in the GHoA.\nNearly 2.3M new internally displaced people are reported mainly from Somalia, Ethiopia and Kenya due to drought.</p>\n</li>\n<li>\n<p>11.9 million children under five years old are likely to face acute malnutrition in 2023 and nearly 2.9 million children der five years old will require SAM treatment in 2023</p>\n</li>\n<li>\n<p>There has been a significant increase in admissions of SAM and MAM cases in refugee and IDP sites, especially in Ethiopia and Kenya, in comparison to previous years this period.</p>\n</li>\n<li>\n<p>Ongoing cholera outbreaks are reported in three countries (Ethiopia, Somalia and Kenya) resulting in an increase in morbidities and mortalities</p>\n</li>\n<li>\n<p>Ongoing measles outbreaks affect all the seven countries in the region, in response reactive vaccination campaigns are conducted.</p>\n</li>\n<li>\n<p>The Sudan Virus Ebola outbreak has been declared over in Uganda on 11 January 2023 since new case has been reported for 42 consecutive days</p>\n</li>\n<li>\n<p>WHO has continued to provide the necessary support in terms of health sector coordination, technical and financial support as well as the provision of drugs and supplies required to strengthen the surveillance and response measures.</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# Situation Report: Greater Horn of Africa Food Insecurity and Health - Grade 3 Emergency — 1 January 2023 - 1 February 2023\n\n**Overview**  \n\n- The Greater Horn of Africa (GHoA) countries have continued to face serious drought situation due to five failed rainy seasons. Rainfall is projected to be below-average from March to May. \n\n- More than 46 million people in IPC3+ are facing crisis level of food insecurity including 6.7 million IPC Phase 4, and 355 thousand in IPC phase 5.  \n\n- Over 11.6 million internally displaced persons and 4.5 million refugees and asylum seekers currently living in the GHoA.\nNearly 2.3M new internally displaced people are reported mainly from Somalia, Ethiopia and Kenya due to drought.  \n\n- 11.9 million children under five years old are likely to face acute malnutrition in 2023 and nearly 2.9 million children der five years old will require SAM treatment in 2023  \n\n- There has been a significant increase in admissions of SAM and MAM cases in refugee and IDP sites, especially in Ethiopia and Kenya, in comparison to previous years this period.  \n\n- Ongoing cholera outbreaks are reported in three countries (Ethiopia, Somalia and Kenya) resulting in an increase in morbidities and mortalities  \n\n- Ongoing measles outbreaks affect all the seven countries in the region, in response reactive vaccination campaigns are conducted.  \n\n- The Sudan Virus Ebola outbreak has been declared over in Uganda on 11 January 2023 since new case has been reported for 42 consecutive days  \n\n- WHO has continued to provide the necessary support in terms of health sector coordination, technical and financial support as well as the provision of drugs and supplies required to strengthen the surveillance and response measures.",
+  "summary": " The Greater Horn of Africa (GHoA) countries have experienced five failed rainy seasons, resulting in 46 million people facing crisis level of food insecurity and 11.6 million internally displaced persons. 11.9 million children under five years old are likely to face acute malnutrition in 2023 and nearly 2.9 million children der five years old will require SAM treatment. Cholera and measles outbreaks have been reported in three and seven countries respectively, and the Sudan Virus Ebola outbreak has been declared over in Uganda. WHO has provided support in terms of health sector coordination, technical and financial support, and drugs and supplies.",
+  "metadata": {
+    "id": "3955620",
+    "name": "Situation Report: Greater Horn of Africa Food Insecurity and Health - Grade 3 Emergency — 1 January 2023 - 1 February 2023",
+    "date_original": 1682294400000,
+    "date_changed": 1682376109000,
+    "date_created": 1682375942000,
+    "primary_country_id": 216,
+    "primary_country_name": "Somalia",
+    "primary_country_iso3": "som",
+    "primary_country_location": {
+      "lon": 47.33,
+      "lat": 5.79
+    }
+  }
+}

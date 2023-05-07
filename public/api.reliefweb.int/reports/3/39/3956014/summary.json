@@ -1,0 +1,118 @@
+{
+  "original": {
+    "id": "3956014",
+    "fields": {
+      "date": {
+        "changed": "2023-04-26T03:25:45+00:00",
+        "created": "2023-04-26T02:06:35+00:00",
+        "original": "2023-04-25T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/228",
+          "name": "Thailand",
+          "location": {
+            "lon": 101.02,
+            "lat": 15.13
+          },
+          "id": 228,
+          "shortname": "Thailand",
+          "iso3": "tha",
+          "primary": true
+        }
+      ],
+      "origin": "https://cdn.who.int/media/docs/default-source/searo/thailand/2023_04_25_tha-sitrep-262-covid-19.pdf?sfvrsn=e8623ef5_1",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/228",
+        "name": "Thailand",
+        "location": {
+          "lon": 101.02,
+          "lat": 15.13
+        },
+        "id": 228,
+        "shortname": "Thailand",
+        "iso3": "tha"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1275",
+          "longname": "World Health Organization",
+          "spanish_name": "Organización Mundial de la Salud",
+          "name": "World Health Organization",
+          "id": 1275,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WHO",
+          "homepage": "http://www.who.int/"
+        }
+      ],
+      "title": "COVID-19 WHO Thailand Weekly Situation Update No. 262 - 25 April 2023",
+      "body": "4,730,490 confirmed cases\n\n33,947 total deaths\n\n**Daily average numbers reported from 15 –22 April 2022**\n\n- 155* new confirmed cases per day    \n*(including hospital admissions only)\n\n- 1 death per day\n\n**Main messages**\n\n- Continue to reduce community transmission of COVID-19 across Thailand \n\n- RTG encourages COVID-free settings and booster vaccinations\n\n- Get vaccinated, maintain universal precautions and stay informed",
+      "url": "https://reliefweb.int/node/3956014",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/65/80/65800d98-779f-4c6a-9e1c-278266c87866.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/65/80/65800d98-779f-4c6a-9e1c-278266c87866.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/65/80/65800d98-779f-4c6a-9e1c-278266c87866.png",
+            "version": "2414752-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/65/80/65800d98-779f-4c6a-9e1c-278266c87866.png"
+          },
+          "filename": "2023_04_25_tha-sitrep-262-covid-19.pdf",
+          "mimetype": "application/pdf",
+          "id": "2414752",
+          "filesize": "1647787",
+          "url": "https://reliefweb.int/attachments/65800d98-779f-4c6a-9e1c-278266c87866/2023_04_25_tha-sitrep-262-covid-19.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/thailand/covid-19-who-thailand-weekly-situation-update-no-262-25-april-2023",
+      "theme": [
+        {
+          "name": "Health",
+          "id": 4595
+        }
+      ],
+      "id": 3956014,
+      "status": "published",
+      "body-html": "<p>4,730,490 confirmed cases</p>\n<p>33,947 total deaths</p>\n<p><strong>Daily average numbers reported from 15 –22 April 2022</strong></p>\n<ul>\n<li>\n<p>155* new confirmed cases per day<br />\n*(including hospital admissions only)</p>\n</li>\n<li>\n<p>1 death per day</p>\n</li>\n</ul>\n<p><strong>Main messages</strong></p>\n<ul>\n<li>\n<p>Continue to reduce community transmission of COVID-19 across Thailand</p>\n</li>\n<li>\n<p>RTG encourages COVID-free settings and booster vaccinations</p>\n</li>\n<li>\n<p>Get vaccinated, maintain universal precautions and stay informed</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# COVID-19 WHO Thailand Weekly Situation Update No. 262 - 25 April 2023\n\n4,730,490 confirmed cases\n\n33,947 total deaths\n\n**Daily average numbers reported from 15 –22 April 2022**\n\n- 155* new confirmed cases per day    \n*(including hospital admissions only)\n\n- 1 death per day\n\n**Main messages**\n\n- Continue to reduce community transmission of COVID-19 across Thailand \n\n- RTG encourages COVID-free settings and booster vaccinations\n\n- Get vaccinated, maintain universal precautions and stay informed",
+  "summary": " The World Health Organization's Thailand Weekly Situation Update No. 262 reported 4,730,490 confirmed cases and 33,947 total deaths. From 15-22 April 2022, the daily average numbers reported were 155 new confirmed cases per day (including hospital admissions only) and 1 death per day. The main messages are to continue to reduce community transmission of COVID-19, encourage COVID-free settings and booster vaccinations, and to get vaccinated, maintain universal precautions, and stay informed.",
+  "metadata": {
+    "id": "3956014",
+    "name": "COVID-19 WHO Thailand Weekly Situation Update No. 262 - 25 April 2023",
+    "date_original": 1682380800000,
+    "date_changed": 1682479545000,
+    "date_created": 1682474795000,
+    "primary_country_id": 228,
+    "primary_country_name": "Thailand",
+    "primary_country_iso3": "tha",
+    "primary_country_location": {
+      "lon": 101.02,
+      "lat": 15.13
+    }
+  }
+}

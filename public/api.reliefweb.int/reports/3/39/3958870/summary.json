@@ -1,0 +1,196 @@
+{
+  "original": {
+    "id": "3958870",
+    "fields": {
+      "date": {
+        "changed": "2023-05-05T18:06:05+00:00",
+        "created": "2023-05-05T07:48:43+00:00",
+        "original": "2023-05-05T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/54",
+          "name": "Central African Republic",
+          "location": {
+            "lon": 20.48,
+            "lat": 6.57
+          },
+          "id": 54,
+          "shortname": "CAR",
+          "iso3": "caf"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/55",
+          "name": "Chad",
+          "location": {
+            "lon": 18.66,
+            "lat": 15.36
+          },
+          "id": 55,
+          "shortname": "Chad",
+          "iso3": "tcd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/82",
+          "name": "Egypt",
+          "location": {
+            "lon": 29.87,
+            "lat": 26.49
+          },
+          "id": 82,
+          "shortname": "Egypt",
+          "iso3": "egy"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/87",
+          "name": "Ethiopia",
+          "location": {
+            "lon": 39.62,
+            "lat": 8.63
+          },
+          "id": 87,
+          "shortname": "Ethiopia",
+          "iso3": "eth"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/140",
+          "name": "Libya",
+          "location": {
+            "lon": 18.02,
+            "lat": 27.04
+          },
+          "id": 140,
+          "shortname": "Libya",
+          "iso3": "lby"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/207",
+          "name": "Saudi Arabia",
+          "location": {
+            "lon": 44.55,
+            "lat": 24.13
+          },
+          "id": 207,
+          "shortname": "Saudi Arabia",
+          "iso3": "sau"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/8657",
+          "name": "South Sudan",
+          "location": {
+            "lon": 30.5,
+            "lat": 6.9
+          },
+          "id": 8657,
+          "shortname": "South Sudan",
+          "iso3": "ssd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/220",
+          "name": "Sudan",
+          "location": {
+            "lon": 30,
+            "lat": 15
+          },
+          "id": 220,
+          "shortname": "Sudan",
+          "iso3": "sdn",
+          "primary": true
+        }
+      ],
+      "origin": "https://docs.wfp.org/api/documents/WFP-0000148784/download/",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/220",
+        "name": "Sudan",
+        "location": {
+          "lon": 30,
+          "lat": 15
+        },
+        "id": 220,
+        "shortname": "Sudan",
+        "iso3": "sdn"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "Conflict in Sudan: Food Security Analysis and Forecast (May 2023)",
+      "body": "**Executive Summary**\n\n• The number of acutely food insecure is expected to increase by 2 M to 2.5 M to a total of 19 M across Sudan in the next 3-6 months, if the current conflict continues. It is also to be noted that this represents the minimum expected increase in the number of acutely food insecure.\n\n• States that will see the highest food insecurity in the next 3-6 months will be West Darfur, West Kordofan, Blue Nile, Red Sea and North Darfur.\n\n• Over 800,000 and returnees may flee Sudan to neighbouring countries, including approximately 600,000 Sudanese refugees as well as refugees hosted by Sudan. Moreover, at least 200,000 South Sudanese and other refugees hosted by Sudan might return home prematurely.\n\n• Prior to the conflict, Sudan had 3.7 IDPs, the majority of whom were in Darfur (79 percent). Following the recent outbreak of the conflict, the total estimate of displaced individuals across Sudan has reached approximately 334,000 people – mainly in West Darfur and South Darfur (72 percent of the new displaced population).\n\n• As of March 2023, 14.8 million households could not afford the local food basket (LFB). If the current conflict continues, the price of the LFB is projected to increase by a further 25 percent in the next 3-6 months. This forecasted increase in food prices will, in turn, result in over 18 M being unable to afford the LFB.\n\n• Prices for Sorghum and Wheat showed some stability in the first quarter of the year; however, they were still well above the levels recorded in the past years. Yet, prices are reported to have increased since the outbreak of the conflict. If no peace agreement is achieved, forecast staple food prices are likely to increase in the next 3-6 months to reach peak levels similar to the ones recorded in 2022.",
+      "url": "https://reliefweb.int/node/3958870",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/d0/e8/d0e8702f-ea5d-4f93-88c3-5a06daf95d75.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/d0/e8/d0e8702f-ea5d-4f93-88c3-5a06daf95d75.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/d0/e8/d0e8702f-ea5d-4f93-88c3-5a06daf95d75.png",
+            "version": "2417582-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/d0/e8/d0e8702f-ea5d-4f93-88c3-5a06daf95d75.png"
+          },
+          "filename": "WFP-0000148784.pdf",
+          "mimetype": "application/pdf",
+          "id": "2417582",
+          "filesize": "1595911",
+          "url": "https://reliefweb.int/attachments/d0e8702f-ea5d-4f93-88c3-5a06daf95d75/WFP-0000148784.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/sudan/conflict-sudan-food-security-analysis-and-forecast-may-2023",
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        }
+      ],
+      "id": 3958870,
+      "status": "published",
+      "body-html": "<p><strong>Executive Summary</strong></p>\n<p>• The number of acutely food insecure is expected to increase by 2 M to 2.5 M to a total of 19 M across Sudan in the next 3-6 months, if the current conflict continues. It is also to be noted that this represents the minimum expected increase in the number of acutely food insecure.</p>\n<p>• States that will see the highest food insecurity in the next 3-6 months will be West Darfur, West Kordofan, Blue Nile, Red Sea and North Darfur.</p>\n<p>• Over 800,000 and returnees may flee Sudan to neighbouring countries, including approximately 600,000 Sudanese refugees as well as refugees hosted by Sudan. Moreover, at least 200,000 South Sudanese and other refugees hosted by Sudan might return home prematurely.</p>\n<p>• Prior to the conflict, Sudan had 3.7 IDPs, the majority of whom were in Darfur (79 percent). Following the recent outbreak of the conflict, the total estimate of displaced individuals across Sudan has reached approximately 334,000 people – mainly in West Darfur and South Darfur (72 percent of the new displaced population).</p>\n<p>• As of March 2023, 14.8 million households could not afford the local food basket (LFB). If the current conflict continues, the price of the LFB is projected to increase by a further 25 percent in the next 3-6 months. This forecasted increase in food prices will, in turn, result in over 18 M being unable to afford the LFB.</p>\n<p>• Prices for Sorghum and Wheat showed some stability in the first quarter of the year; however, they were still well above the levels recorded in the past years. Yet, prices are reported to have increased since the outbreak of the conflict. If no peace agreement is achieved, forecast staple food prices are likely to increase in the next 3-6 months to reach peak levels similar to the ones recorded in 2022.</p>\n"
+    }
+  },
+  "text": "# Conflict in Sudan: Food Security Analysis and Forecast (May 2023)\n\n**Executive Summary**\n\n• The number of acutely food insecure is expected to increase by 2 M to 2.5 M to a total of 19 M across Sudan in the next 3-6 months, if the current conflict continues. It is also to be noted that this represents the minimum expected increase in the number of acutely food insecure.\n\n• States that will see the highest food insecurity in the next 3-6 months will be West Darfur, West Kordofan, Blue Nile, Red Sea and North Darfur.\n\n• Over 800,000 and returnees may flee Sudan to neighbouring countries, including approximately 600,000 Sudanese refugees as well as refugees hosted by Sudan. Moreover, at least 200,000 South Sudanese and other refugees hosted by Sudan might return home prematurely.\n\n• Prior to the conflict, Sudan had 3.7 IDPs, the majority of whom were in Darfur (79 percent). Following the recent outbreak of the conflict, the total estimate of displaced individuals across Sudan has reached approximately 334,000 people – mainly in West Darfur and South Darfur (72 percent of the new displaced population).\n\n• As of March 2023, 14.8 million households could not afford the local food basket (LFB). If the current conflict continues, the price of the LFB is projected to increase by a further 25 percent in the next 3-6 months. This forecasted increase in food prices will, in turn, result in over 18 M being unable to afford the LFB.\n\n• Prices for Sorghum and Wheat showed some stability in the first quarter of the year; however, they were still well above the levels recorded in the past years. Yet, prices are reported to have increased since the outbreak of the conflict. If no peace agreement is achieved, forecast staple food prices are likely to increase in the next 3-6 months to reach peak levels similar to the ones recorded in 2022.",
+  "summary": " This report forecasts that the number of acutely food insecure people in Sudan will increase by 2-2.5 million in the next 3-6 months if the current conflict continues. It also predicts that West Darfur, West Kordofan, Blue Nile, Red Sea and North Darfur will be the most affected states. Additionally, it is estimated that 800,000 people may flee Sudan and that food prices will increase by 25%, resulting in 18 million people being unable to afford the local food basket.",
+  "metadata": {
+    "id": "3958870",
+    "name": "Conflict in Sudan: Food Security Analysis and Forecast (May 2023)",
+    "date_original": 1683244800000,
+    "date_changed": 1683309965000,
+    "date_created": 1683272923000,
+    "primary_country_id": 220,
+    "primary_country_name": "Sudan",
+    "primary_country_iso3": "sdn",
+    "primary_country_location": {
+      "lon": 30,
+      "lat": 15
+    }
+  }
+}

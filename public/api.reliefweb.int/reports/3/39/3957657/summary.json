@@ -1,0 +1,191 @@
+{
+  "original": {
+    "id": "3957657",
+    "fields": {
+      "date": {
+        "changed": "2023-05-02T13:18:33+00:00",
+        "created": "2023-05-02T11:34:29+00:00",
+        "original": "2023-05-02T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/49",
+          "name": "Cameroon",
+          "location": {
+            "lon": 12.21,
+            "lat": 4.81
+          },
+          "id": 49,
+          "shortname": "Cameroon",
+          "iso3": "cmr",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/54",
+          "name": "Central African Republic",
+          "location": {
+            "lon": 20.48,
+            "lat": 6.57
+          },
+          "id": 54,
+          "shortname": "CAR",
+          "iso3": "caf"
+        }
+      ],
+      "ocha_product": [
+        {
+          "name": "Humanitarian Bulletin",
+          "id": 12346
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/49",
+        "name": "Cameroon",
+        "location": {
+          "lon": 12.21,
+          "lat": 4.81
+        },
+        "id": 49,
+        "shortname": "Cameroon",
+        "iso3": "cmr"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "FF",
+          "name": "Flash Flood",
+          "id": 4624
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        },
+        {
+          "code": "MS",
+          "name": "Mud Slide",
+          "id": 4814
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1503",
+          "longname": "United Nations Office for the Coordination of Humanitarian Affairs",
+          "spanish_name": "Oficina de Coordinación de Asuntos Humanitarios",
+          "name": "UN Office for the Coordination of Humanitarian Affairs",
+          "id": 1503,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "OCHA",
+          "disclaimer": "To learn more about OCHA's activities, please visit https://www.unocha.org/.",
+          "homepage": "http://www.unocha.org/"
+        }
+      ],
+      "title": "Cameroon Humanitarian Bulletin March 2023",
+      "body": "**HIGHLIGHTS**\n\n• Over 4,000 people displaced in March in the Far North due to violence and insecurity.\n\n• Floods and mudslides from Mount Cameroon affected over 3,000 people in the South-West.\n\n• About 54 per cent of schools are still closed in the North-West and South-West.\n\n• Lack of essential supplies deprives hundreds of children from nutrition assistance.\n\n• UNHCR facilitated the voluntary repatriation of 200 refugees from the Central African Republic (CAR).\n\n• 67th Commission of the status of women: The Cameroonian-based NGO Reach Out participated.\n\n**OVER 4,000 PEOPLE DISPLACED IN MARCH IN THE FAR NORTH DUE TO VIOLENCE AND INSECURITY**\n\nIncreased violence in the Lake Chad basin continue to deteriorate the living conditions of Cameroonians in the Far North region, causing continuous displacement of population. Following a series of attacks from non-State armed groups (NSAGs) in several localities in the Mayo-Tsanaga division since the beginning of March 2023, more than 4,000 people have been displaced to other localities in the same division. The rapid response mechanism has identified shelter and non-food items (NFIs), food and education as priority needs of the displaced population.  \nNSAGs incursions into villages, kidnappings, the use of improvised explosive devices (IEDs), affect the population.  \nThe Mayo-Sava, Mayo-Tsanaga and Logone et Chari divisions are the most affected.  \n\nAs of August 2022, armed conflict, inter-community clashes and floodings have forced over 385,000 people to flee their homes across the region. Most displaced people have found refuge in communities already facing challenges, putting more pressure on scarce local resources and overstretched infrastructure. The region is already suffering from poverty, food insecurity, disease outbreaks and socio-economic deficits.  \n\nAlthough humanitarian partners scaled up urgent response activities such as shelter, food, health, nutrition, education, water, hygiene, and sanitation as well as protection services to the most vulnerable displaced people, numerous needs remain uncovered.",
+      "url": "https://reliefweb.int/node/3957657",
+      "disaster": [
+        {
+          "name": "Cameroon: Floods - Mar 2023",
+          "id": 51541,
+          "glide": "FL-2023-000063-CMR",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            },
+            {
+              "code": "FF",
+              "name": "Flash Flood",
+              "id": 4624
+            },
+            {
+              "code": "MS",
+              "name": "Mud Slide",
+              "id": 4814
+            }
+          ],
+          "status": "alert"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/20/39/20396a02-e65d-4868-810c-cf3ab90f766b.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/20/39/20396a02-e65d-4868-810c-cf3ab90f766b.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/20/39/20396a02-e65d-4868-810c-cf3ab90f766b.png",
+            "version": "2416309-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/20/39/20396a02-e65d-4868-810c-cf3ab90f766b.png"
+          },
+          "filename": "Cameroon Humanitarian Bulletin_March 2023 fv.pdf",
+          "mimetype": "application/pdf",
+          "id": "2416309",
+          "filesize": "406847",
+          "url": "https://reliefweb.int/attachments/20396a02-e65d-4868-810c-cf3ab90f766b/Cameroon%20Humanitarian%20Bulletin_March%202023%20fv.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/cameroon/cameroon-humanitarian-bulletin-march-2023",
+      "theme": [
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3957657,
+      "status": "published",
+      "body-html": "<p><strong>HIGHLIGHTS</strong></p>\n<p>• Over 4,000 people displaced in March in the Far North due to violence and insecurity.</p>\n<p>• Floods and mudslides from Mount Cameroon affected over 3,000 people in the South-West.</p>\n<p>• About 54 per cent of schools are still closed in the North-West and South-West.</p>\n<p>• Lack of essential supplies deprives hundreds of children from nutrition assistance.</p>\n<p>• UNHCR facilitated the voluntary repatriation of 200 refugees from the Central African Republic (CAR).</p>\n<p>• 67th Commission of the status of women: The Cameroonian-based NGO Reach Out participated.</p>\n<p><strong>OVER 4,000 PEOPLE DISPLACED IN MARCH IN THE FAR NORTH DUE TO VIOLENCE AND INSECURITY</strong></p>\n<p>Increased violence in the Lake Chad basin continue to deteriorate the living conditions of Cameroonians in the Far North region, causing continuous displacement of population. Following a series of attacks from non-State armed groups (NSAGs) in several localities in the Mayo-Tsanaga division since the beginning of March 2023, more than 4,000 people have been displaced to other localities in the same division. The rapid response mechanism has identified shelter and non-food items (NFIs), food and education as priority needs of the displaced population.<br />\nNSAGs incursions into villages, kidnappings, the use of improvised explosive devices (IEDs), affect the population.<br />\nThe Mayo-Sava, Mayo-Tsanaga and Logone et Chari divisions are the most affected.</p>\n<p>As of August 2022, armed conflict, inter-community clashes and floodings have forced over 385,000 people to flee their homes across the region. Most displaced people have found refuge in communities already facing challenges, putting more pressure on scarce local resources and overstretched infrastructure. The region is already suffering from poverty, food insecurity, disease outbreaks and socio-economic deficits.</p>\n<p>Although humanitarian partners scaled up urgent response activities such as shelter, food, health, nutrition, education, water, hygiene, and sanitation as well as protection services to the most vulnerable displaced people, numerous needs remain uncovered.</p>\n"
+    }
+  },
+  "text": "# Cameroon Humanitarian Bulletin March 2023\n\n**HIGHLIGHTS**\n\n• Over 4,000 people displaced in March in the Far North due to violence and insecurity.\n\n• Floods and mudslides from Mount Cameroon affected over 3,000 people in the South-West.\n\n• About 54 per cent of schools are still closed in the North-West and South-West.\n\n• Lack of essential supplies deprives hundreds of children from nutrition assistance.\n\n• UNHCR facilitated the voluntary repatriation of 200 refugees from the Central African Republic (CAR).\n\n• 67th Commission of the status of women: The Cameroonian-based NGO Reach Out participated.\n\n**OVER 4,000 PEOPLE DISPLACED IN MARCH IN THE FAR NORTH DUE TO VIOLENCE AND INSECURITY**\n\nIncreased violence in the Lake Chad basin continue to deteriorate the living conditions of Cameroonians in the Far North region, causing continuous displacement of population. Following a series of attacks from non-State armed groups (NSAGs) in several localities in the Mayo-Tsanaga division since the beginning of March 2023, more than 4,000 people have been displaced to other localities in the same division. The rapid response mechanism has identified shelter and non-food items (NFIs), food and education as priority needs of the displaced population.  \nNSAGs incursions into villages, kidnappings, the use of improvised explosive devices (IEDs), affect the population.  \nThe Mayo-Sava, Mayo-Tsanaga and Logone et Chari divisions are the most affected.  \n\nAs of August 2022, armed conflict, inter-community clashes and floodings have forced over 385,000 people to flee their homes across the region. Most displaced people have found refuge in communities already facing challenges, putting more pressure on scarce local resources and overstretched infrastructure. The region is already suffering from poverty, food insecurity, disease outbreaks and socio-economic deficits.  \n\nAlthough humanitarian partners scaled up urgent response activities such as shelter, food, health, nutrition, education, water, hygiene, and sanitation as well as protection services to the most vulnerable displaced people, numerous needs remain uncovered.",
+  "summary": "\n\nIn March 2023, over 4,000 people were displaced in the Far North region of Cameroon due to violence and insecurity caused by non-State armed groups. Floods and mudslides from Mount Cameroon affected over 3,000 people in the South-West, and 54% of schools remain closed in the North-West and South-West. UNHCR facilitated the voluntary repatriation of 200 refugees from the Central African Republic (CAR). The Cameroonian-based NGO Reach Out participated in the 67th Commission of the Status of Women. Humanitarian partners have scaled up urgent response activities such as shelter, food, health, nutrition, education, water, hygiene, and sanitation, but numerous needs remain uncovered.",
+  "metadata": {
+    "id": "3957657",
+    "name": "Cameroon Humanitarian Bulletin March 2023",
+    "date_original": 1682985600000,
+    "date_changed": 1683033513000,
+    "date_created": 1683027269000,
+    "primary_country_id": 49,
+    "primary_country_name": "Cameroon",
+    "primary_country_iso3": "cmr",
+    "primary_country_location": {
+      "lon": 12.21,
+      "lat": 4.81
+    }
+  }
+}

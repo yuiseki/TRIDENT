@@ -1,0 +1,241 @@
+{
+  "original": {
+    "id": "3954620",
+    "fields": {
+      "date": {
+        "changed": "2023-05-03T11:18:38+00:00",
+        "created": "2023-04-20T10:05:24+00:00",
+        "original": "2023-04-20T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/175",
+          "name": "Nigeria",
+          "location": {
+            "lon": 8.11,
+            "lat": 9.59
+          },
+          "id": 175,
+          "shortname": "Nigeria",
+          "iso3": "nga",
+          "primary": true
+        }
+      ],
+      "ocha_product": [
+        {
+          "name": "Situation Report",
+          "id": 12345
+        }
+      ],
+      "origin": "https://reports.unocha.org/en/country/nigeria/",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/175",
+        "name": "Nigeria",
+        "location": {
+          "lon": 8.11,
+          "lat": 9.59
+        },
+        "id": 175,
+        "shortname": "Nigeria",
+        "iso3": "nga"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        },
+        {
+          "code": "FR",
+          "name": "Fire",
+          "id": 5706
+        },
+        {
+          "code": "FF",
+          "name": "Flash Flood",
+          "id": 4624
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1503",
+          "longname": "United Nations Office for the Coordination of Humanitarian Affairs",
+          "spanish_name": "Oficina de Coordinación de Asuntos Humanitarios",
+          "name": "UN Office for the Coordination of Humanitarian Affairs",
+          "id": 1503,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "OCHA",
+          "disclaimer": "To learn more about OCHA's activities, please visit https://www.unocha.org/.",
+          "homepage": "http://www.unocha.org/"
+        }
+      ],
+      "title": "Nigeria Situation Report, 20 Apr 2023",
+      "body": "**HIGHLIGHTS** \n\n- An estimated 4.3 million people at risk of hunger in north-east Nigeria this lean season (June-August).\n\n- Disease outbreaks stretch an already threadbare healthcare system.\n\n- Adamawa State Government suspends NGO activities disrupting humanitarian operations in the state during elections.\n\n- US$1.3 billion required to reach 6 million people in north-east Nigeria with humanitarian assistance in 2023.\n\n**BACKGROUND**\n\n**Situation Overview**\n\n**An estimated 4.3 million people are at risk of hunger in north-east Nigeria this lean season**\n\nAn estimated 4.3 million people in north-east Nigeria are at risk of severe hunger at the peak of this year’s lean season (June-August) if urgent actions are not taken. This is according to the March 2023 Cadre Harmonisé (CH) food and nutrition analysis. The CH report projects that over half a million people in Borno, Adamawa and Yobe (BAY) States will face a food emergency during the projected period. Years of protracted conflict and violence continue to prevent many people in northeast Nigeria from growing the food they need or earning an income. In addition, the CH report identified the Central Bank of Nigeria’s (CBN) currency re-design policy among the key drivers of food insecurity, impacting on the functioning of markets.  \nThe devastating 2022 floods that destroyed close to 700,000 hectares of farmland across 34 states also had a severe impact on food security. Very high levels of inflation of food prices at 22.04 per cent have also undermined people’s ability to procure food, exacerbated by prolonged nationwide petrol scarcity that has caused a spike in the cost of transportation and other commodities across Nigeria.",
+      "url": "https://reliefweb.int/node/3954620",
+      "disaster": [
+        {
+          "name": "Nigeria: Diphtheria Outbreak - Jan 2023",
+          "id": 51520,
+          "glide": "EP-2023-000034-NGA",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "alert"
+        },
+        {
+          "name": "Nigeria: Floods - Jun 2022",
+          "id": 51265,
+          "glide": "FL-2022-000271-NGA",
+          "type": [
+            {
+              "code": "FF",
+              "name": "Flash Flood",
+              "id": 4624
+            },
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Nigeria: Cholera Outbreak - Jun 2017",
+          "id": 43154,
+          "glide": "EP-2017-000077-NGA",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/07/13/07139e5c-5510-4572-87d8-0f53dcd63b0d.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/07/13/07139e5c-5510-4572-87d8-0f53dcd63b0d.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/07/13/07139e5c-5510-4572-87d8-0f53dcd63b0d.png",
+            "version": "2416769-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/07/13/07139e5c-5510-4572-87d8-0f53dcd63b0d.png"
+          },
+          "filename": "Situation Report - Nigeria  - 20 Apr 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2416769",
+          "filesize": "2623574",
+          "url": "https://reliefweb.int/attachments/07139e5c-5510-4572-87d8-0f53dcd63b0d/Situation%20Report%20-%20Nigeria%20%20-%2020%20Apr%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/nigeria/nigeria-situation-report-20-apr-2023",
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        },
+        {
+          "name": "Camp Coordination and Camp Management",
+          "id": 49458
+        },
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        },
+        {
+          "name": "Mine Action",
+          "id": 12033
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Recovery and Reconstruction",
+          "id": 4601
+        },
+        {
+          "name": "Safety and Security",
+          "id": 4602
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3954620,
+      "status": "published",
+      "body-html": "<p><strong>HIGHLIGHTS</strong></p>\n<ul>\n<li>\n<p>An estimated 4.3 million people at risk of hunger in north-east Nigeria this lean season (June-August).</p>\n</li>\n<li>\n<p>Disease outbreaks stretch an already threadbare healthcare system.</p>\n</li>\n<li>\n<p>Adamawa State Government suspends NGO activities disrupting humanitarian operations in the state during elections.</p>\n</li>\n<li>\n<p>US$1.3 billion required to reach 6 million people in north-east Nigeria with humanitarian assistance in 2023.</p>\n</li>\n</ul>\n<p><strong>BACKGROUND</strong></p>\n<p><strong>Situation Overview</strong></p>\n<p><strong>An estimated 4.3 million people are at risk of hunger in north-east Nigeria this lean season</strong></p>\n<p>An estimated 4.3 million people in north-east Nigeria are at risk of severe hunger at the peak of this year’s lean season (June-August) if urgent actions are not taken. This is according to the March 2023 Cadre Harmonisé (CH) food and nutrition analysis. The CH report projects that over half a million people in Borno, Adamawa and Yobe (BAY) States will face a food emergency during the projected period. Years of protracted conflict and violence continue to prevent many people in northeast Nigeria from growing the food they need or earning an income. In addition, the CH report identified the Central Bank of Nigeria’s (CBN) currency re-design policy among the key drivers of food insecurity, impacting on the functioning of markets.<br />\nThe devastating 2022 floods that destroyed close to 700,000 hectares of farmland across 34 states also had a severe impact on food security. Very high levels of inflation of food prices at 22.04 per cent have also undermined people’s ability to procure food, exacerbated by prolonged nationwide petrol scarcity that has caused a spike in the cost of transportation and other commodities across Nigeria.</p>\n"
+    }
+  },
+  "text": "# Nigeria Situation Report, 20 Apr 2023\n\n**HIGHLIGHTS** \n\n- An estimated 4.3 million people at risk of hunger in north-east Nigeria this lean season (June-August).\n\n- Disease outbreaks stretch an already threadbare healthcare system.\n\n- Adamawa State Government suspends NGO activities disrupting humanitarian operations in the state during elections.\n\n- US$1.3 billion required to reach 6 million people in north-east Nigeria with humanitarian assistance in 2023.\n\n**BACKGROUND**\n\n**Situation Overview**\n\n**An estimated 4.3 million people are at risk of hunger in north-east Nigeria this lean season**\n\nAn estimated 4.3 million people in north-east Nigeria are at risk of severe hunger at the peak of this year’s lean season (June-August) if urgent actions are not taken. This is according to the March 2023 Cadre Harmonisé (CH) food and nutrition analysis. The CH report projects that over half a million people in Borno, Adamawa and Yobe (BAY) States will face a food emergency during the projected period. Years of protracted conflict and violence continue to prevent many people in northeast Nigeria from growing the food they need or earning an income. In addition, the CH report identified the Central Bank of Nigeria’s (CBN) currency re-design policy among the key drivers of food insecurity, impacting on the functioning of markets.  \nThe devastating 2022 floods that destroyed close to 700,000 hectares of farmland across 34 states also had a severe impact on food security. Very high levels of inflation of food prices at 22.04 per cent have also undermined people’s ability to procure food, exacerbated by prolonged nationwide petrol scarcity that has caused a spike in the cost of transportation and other commodities across Nigeria.",
+  "summary": " In north-east Nigeria, an estimated 4.3 million people are at risk of severe hunger during the lean season (June-August) due to years of conflict and violence, the 2022 floods, and the Central Bank of Nigeria’s currency re-design policy. In addition, very high levels of inflation and petrol scarcity have caused a spike in the cost of transportation and other commodities, further exacerbating the food insecurity. US$1.3 billion is required to reach 6 million people in north-east Nigeria with humanitarian assistance in 2023.",
+  "metadata": {
+    "id": "3954620",
+    "name": "Nigeria Situation Report, 20 Apr 2023",
+    "date_original": 1681948800000,
+    "date_changed": 1683112718000,
+    "date_created": 1681985124000,
+    "primary_country_id": 175,
+    "primary_country_name": "Nigeria",
+    "primary_country_iso3": "nga",
+    "primary_country_location": {
+      "lon": 8.11,
+      "lat": 9.59
+    }
+  }
+}

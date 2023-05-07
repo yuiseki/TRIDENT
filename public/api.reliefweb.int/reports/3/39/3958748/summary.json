@@ -1,0 +1,194 @@
+{
+  "original": {
+    "id": "3958748",
+    "fields": {
+      "date": {
+        "changed": "2023-05-04T19:27:35+00:00",
+        "created": "2023-05-04T18:29:59+00:00",
+        "original": "2023-05-04T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/46",
+          "name": "Burkina Faso",
+          "location": {
+            "lon": -1.57,
+            "lat": 12.28
+          },
+          "id": 46,
+          "shortname": "Burkina Faso",
+          "iso3": "bfa",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/49",
+          "name": "Cameroon",
+          "location": {
+            "lon": 12.21,
+            "lat": 4.81
+          },
+          "id": 49,
+          "shortname": "Cameroon",
+          "iso3": "cmr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/98",
+          "name": "Gambia",
+          "location": {
+            "lon": -15.91,
+            "lat": 13.44
+          },
+          "id": 98,
+          "shortname": "Gambia",
+          "iso3": "gmb"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/110",
+          "name": "Guinea",
+          "location": {
+            "lon": -11.03,
+            "lat": 10.79
+          },
+          "id": 110,
+          "shortname": "Guinea",
+          "iso3": "gin"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/153",
+          "name": "Mauritania",
+          "location": {
+            "lon": -10.53,
+            "lat": 19.76
+          },
+          "id": 153,
+          "shortname": "Mauritania",
+          "iso3": "mrt"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/174",
+          "name": "Niger",
+          "location": {
+            "lon": 9.4,
+            "lat": 17.43
+          },
+          "id": 174,
+          "shortname": "Niger",
+          "iso3": "ner"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/175",
+          "name": "Nigeria",
+          "location": {
+            "lon": 8.11,
+            "lat": 9.59
+          },
+          "id": 175,
+          "shortname": "Nigeria",
+          "iso3": "nga"
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/46",
+        "name": "Burkina Faso",
+        "location": {
+          "lon": -1.57,
+          "lat": 12.28
+        },
+        "id": 46,
+        "shortname": "Burkina Faso",
+        "iso3": "bfa"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1979",
+          "longname": "United Nations Children's Fund",
+          "spanish_name": "Fondo de las Naciones Unidas para la Infancia",
+          "name": "UN Children's Fund",
+          "id": 1979,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNICEF",
+          "homepage": "http://www.unicef.org"
+        }
+      ],
+      "title": "Sahel: Child Rights and Humanitarian Dashboard - December 2022",
+      "url": "https://reliefweb.int/node/3958748",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/34/d5/34d56871-6869-4b12-973e-de97f01bdaa5.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/34/d5/34d56871-6869-4b12-973e-de97f01bdaa5.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/34/d5/34d56871-6869-4b12-973e-de97f01bdaa5.png",
+            "version": "2417484-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/34/d5/34d56871-6869-4b12-973e-de97f01bdaa5.png"
+          },
+          "filename": "UNICEF WCAR Sahel Child Rights and Humanitarian Dashboard - 31 December 2022.pdf",
+          "mimetype": "application/pdf",
+          "id": "2417484",
+          "filesize": "2412270",
+          "url": "https://reliefweb.int/attachments/34d56871-6869-4b12-973e-de97f01bdaa5/UNICEF%20WCAR%20Sahel%20Child%20Rights%20and%20Humanitarian%20Dashboard%20-%2031%20December%202022.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/burkina-faso/sahel-child-rights-and-humanitarian-dashboard-december-2022",
+      "theme": [
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3958748,
+      "status": "published"
+    }
+  },
+  "text": "# Sahel: Child Rights and Humanitarian Dashboard - December 2022\n\nundefined",
+  "summary": " This dashboard provides an overview of the child rights and humanitarian situation in the Sahel region in December 2022.",
+  "metadata": {
+    "id": "3958748",
+    "name": "Sahel: Child Rights and Humanitarian Dashboard - December 2022",
+    "date_original": 1683158400000,
+    "date_changed": 1683228455000,
+    "date_created": 1683224999000,
+    "primary_country_id": 46,
+    "primary_country_name": "Burkina Faso",
+    "primary_country_iso3": "bfa",
+    "primary_country_location": {
+      "lon": -1.57,
+      "lat": 12.28
+    }
+  }
+}

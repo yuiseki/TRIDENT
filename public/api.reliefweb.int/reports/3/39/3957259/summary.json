@@ -1,0 +1,178 @@
+{
+  "original": {
+    "id": "3957259",
+    "fields": {
+      "date": {
+        "changed": "2023-04-30T19:31:07+00:00",
+        "created": "2023-04-30T11:50:51+00:00",
+        "original": "2023-04-30T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/226",
+          "name": "Syrian Arab Republic",
+          "location": {
+            "lon": 38.51,
+            "lat": 35.01
+          },
+          "id": 226,
+          "shortname": "Syria",
+          "iso3": "syr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/236",
+          "name": "Türkiye",
+          "location": {
+            "lon": 35.18,
+            "lat": 39.06
+          },
+          "id": 236,
+          "shortname": "Türkiye",
+          "iso3": "tur",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/241",
+          "name": "Ukraine",
+          "location": {
+            "lon": 31.32,
+            "lat": 49.32
+          },
+          "id": 241,
+          "shortname": "Ukraine",
+          "iso3": "ukr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/254",
+          "name": "World",
+          "id": 254,
+          "shortname": "World",
+          "iso3": "wld"
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/236",
+        "name": "Türkiye",
+        "location": {
+          "lon": 35.18,
+          "lat": 39.06
+        },
+        "id": 236,
+        "shortname": "Türkiye",
+        "iso3": "tur"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EQ",
+          "name": "Earthquake",
+          "id": 4628
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "WFP Türkiye Country Brief, March 2023",
+      "body": "**In Numbers**\n\n**60,306** people received cash assistance (livelihoods, e-vouchers and BIM cards) in March 2023. 1,272,575 earthquake-affected people received WFP food assistance since the beginning of the emergency response.  \n**US$ 1.6 m** distributed through value vouchers and US$ 17,000 through vocational and on-the-job trainings (estimated)   \n**US$ 62.2 m** six-month net funding requirements (April - September 2023)  \n\n**Türkiye Earthquake Response***\n\n- As of the end of February, out of 59 municipalities, WFP continued to provide food commodities needed to serve cooked meals to earthquake-affected populations in 25 municipalities in the worst-hit five provinces (Adıyaman, Gaziantep, Hatay, Kahramanmaraş and Malatya) where markets are still not functional as per WFP’s onsite monitoring results. Also, WFP initiated a needs assessment in these provinces to identify the severity and nature of needs and better channel commodity assistance during the month of Ramadan. The remaining 34 municipalities might be assisted with cash, depending on their needs.\n\n- Between the end of February and the beginning of March, WFP and the International Organization for Migration (IOM) provided seven mobile kitchens to municipalities and governorates in Adıyaman, Hatay and Kahramanmaraş to increase the capacity to prepare cooked meals in these provinces. Each mobile kitchen continues to serve around 3,000 cooked meals per day.\n\n- In March, WFP supplied the Ministry of Family and Social Services (MoFSS) with 53,760 food packages which were distributed in camps in the worst-hit five provinces. These food packages are sufficient for 268,800 earthquake-affected people, covering the food needs of a five-person household for one week.\n\n- As part of its transition into cash assistance, WFP and the Turkish Red Crescent (TRC) provided 13,024 earthquake-affected people (3,256 Turkish and Syrian households) in camps with e-vouchers (BIM cards) credited monthly with Turkish Lira (TRY) 2,500 (US$ 130) per household.",
+      "url": "https://reliefweb.int/node/3957259",
+      "disaster": [
+        {
+          "name": "Türkiye/Syria: Earthquakes - Feb 2023",
+          "id": 51470,
+          "glide": "EQ-2023-000015-TUR",
+          "type": [
+            {
+              "code": "EQ",
+              "name": "Earthquake",
+              "id": 4628,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/06/2a/062ab047-5337-4c1f-baa8-424d733cffd2.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/06/2a/062ab047-5337-4c1f-baa8-424d733cffd2.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/06/2a/062ab047-5337-4c1f-baa8-424d733cffd2.png",
+            "version": "2415883-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/06/2a/062ab047-5337-4c1f-baa8-424d733cffd2.png"
+          },
+          "filename": "2023 03 Türkiye Country Brief.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415883",
+          "filesize": "259696",
+          "url": "https://reliefweb.int/attachments/062ab047-5337-4c1f-baa8-424d733cffd2/2023%2003%20T%C3%BCrkiye%20Country%20Brief.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/turkiye/wfp-turkiye-country-brief-march-2023",
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Recovery and Reconstruction",
+          "id": 4601
+        }
+      ],
+      "id": 3957259,
+      "status": "published",
+      "body-html": "<p><strong>In Numbers</strong></p>\n<p><strong>60,306</strong> people received cash assistance (livelihoods, e-vouchers and BIM cards) in March 2023. 1,272,575 earthquake-affected people received WFP food assistance since the beginning of the emergency response.<br />\n<strong>US$ 1.6 m</strong> distributed through value vouchers and US$ 17,000 through vocational and on-the-job trainings (estimated)<br />\n<strong>US$ 62.2 m</strong> six-month net funding requirements (April - September 2023)</p>\n<p><strong>Türkiye Earthquake Response</strong>*</p>\n<ul>\n<li>\n<p>As of the end of February, out of 59 municipalities, WFP continued to provide food commodities needed to serve cooked meals to earthquake-affected populations in 25 municipalities in the worst-hit five provinces (Adıyaman, Gaziantep, Hatay, Kahramanmaraş and Malatya) where markets are still not functional as per WFP’s onsite monitoring results. Also, WFP initiated a needs assessment in these provinces to identify the severity and nature of needs and better channel commodity assistance during the month of Ramadan. The remaining 34 municipalities might be assisted with cash, depending on their needs.</p>\n</li>\n<li>\n<p>Between the end of February and the beginning of March, WFP and the International Organization for Migration (IOM) provided seven mobile kitchens to municipalities and governorates in Adıyaman, Hatay and Kahramanmaraş to increase the capacity to prepare cooked meals in these provinces. Each mobile kitchen continues to serve around 3,000 cooked meals per day.</p>\n</li>\n<li>\n<p>In March, WFP supplied the Ministry of Family and Social Services (MoFSS) with 53,760 food packages which were distributed in camps in the worst-hit five provinces. These food packages are sufficient for 268,800 earthquake-affected people, covering the food needs of a five-person household for one week.</p>\n</li>\n<li>\n<p>As part of its transition into cash assistance, WFP and the Turkish Red Crescent (TRC) provided 13,024 earthquake-affected people (3,256 Turkish and Syrian households) in camps with e-vouchers (BIM cards) credited monthly with Turkish Lira (TRY) 2,500 (US$ 130) per household.</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# WFP Türkiye Country Brief, March 2023\n\n**In Numbers**\n\n**60,306** people received cash assistance (livelihoods, e-vouchers and BIM cards) in March 2023. 1,272,575 earthquake-affected people received WFP food assistance since the beginning of the emergency response.  \n**US$ 1.6 m** distributed through value vouchers and US$ 17,000 through vocational and on-the-job trainings (estimated)   \n**US$ 62.2 m** six-month net funding requirements (April - September 2023)  \n\n**Türkiye Earthquake Response***\n\n- As of the end of February, out of 59 municipalities, WFP continued to provide food commodities needed to serve cooked meals to earthquake-affected populations in 25 municipalities in the worst-hit five provinces (Adıyaman, Gaziantep, Hatay, Kahramanmaraş and Malatya) where markets are still not functional as per WFP’s onsite monitoring results. Also, WFP initiated a needs assessment in these provinces to identify the severity and nature of needs and better channel commodity assistance during the month of Ramadan. The remaining 34 municipalities might be assisted with cash, depending on their needs.\n\n- Between the end of February and the beginning of March, WFP and the International Organization for Migration (IOM) provided seven mobile kitchens to municipalities and governorates in Adıyaman, Hatay and Kahramanmaraş to increase the capacity to prepare cooked meals in these provinces. Each mobile kitchen continues to serve around 3,000 cooked meals per day.\n\n- In March, WFP supplied the Ministry of Family and Social Services (MoFSS) with 53,760 food packages which were distributed in camps in the worst-hit five provinces. These food packages are sufficient for 268,800 earthquake-affected people, covering the food needs of a five-person household for one week.\n\n- As part of its transition into cash assistance, WFP and the Turkish Red Crescent (TRC) provided 13,024 earthquake-affected people (3,256 Turkish and Syrian households) in camps with e-vouchers (BIM cards) credited monthly with Turkish Lira (TRY) 2,500 (US$ 130) per household.",
+  "summary": " In March 2023, WFP provided food assistance to 1,272,575 earthquake-affected people in Turkey. This included cash assistance to 60,306 people, 53,760 food packages to 268,800 people, and e-vouchers to 13,024 people. WFP also provided seven mobile kitchens to municipalities and governorates in Adıyaman, Hatay and Kahramanmaraş. WFP's six-month net funding requirements for April-September 2023 are US$ 62.2 million.",
+  "metadata": {
+    "id": "3957259",
+    "name": "WFP Türkiye Country Brief, March 2023",
+    "date_original": 1682812800000,
+    "date_changed": 1682883067000,
+    "date_created": 1682855451000,
+    "primary_country_id": 236,
+    "primary_country_name": "Türkiye",
+    "primary_country_iso3": "tur",
+    "primary_country_location": {
+      "lon": 35.18,
+      "lat": 39.06
+    }
+  }
+}

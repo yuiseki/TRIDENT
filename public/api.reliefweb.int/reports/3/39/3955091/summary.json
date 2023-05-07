@@ -1,0 +1,222 @@
+{
+  "original": {
+    "id": "3955091",
+    "fields": {
+      "date": {
+        "changed": "2023-04-24T12:03:06+00:00",
+        "created": "2023-04-21T17:56:04+00:00",
+        "original": "2023-04-20T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/236",
+          "name": "Türkiye",
+          "location": {
+            "lon": 35.18,
+            "lat": 39.06
+          },
+          "id": 236,
+          "shortname": "Türkiye",
+          "iso3": "tur",
+          "primary": true
+        }
+      ],
+      "ocha_product": [
+        {
+          "name": "Situation Report",
+          "id": 12345
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/236",
+        "name": "Türkiye",
+        "location": {
+          "lon": 35.18,
+          "lat": 39.06
+        },
+        "id": 236,
+        "shortname": "Türkiye",
+        "iso3": "tur"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EQ",
+          "name": "Earthquake",
+          "id": 4628
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1503",
+          "longname": "United Nations Office for the Coordination of Humanitarian Affairs",
+          "spanish_name": "Oficina de Coordinación de Asuntos Humanitarios",
+          "name": "UN Office for the Coordination of Humanitarian Affairs",
+          "id": 1503,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "OCHA",
+          "disclaimer": "To learn more about OCHA's activities, please visit https://www.unocha.org/.",
+          "homepage": "http://www.unocha.org/"
+        }
+      ],
+      "title": "Türkiye: 2023 Earthquakes Situation Report No. 15, as of 20 April 2023 [EN/TR]",
+      "body": "*This report is produced by the OCHA mission in Türkiye in collaboration with humanitarian partners and covers the humanitarian situation and earthquake response in Türkiye. It covers the period from 14 to 20 April 2023.*\n\n**HIGHLIGHTS** \n\n-   Difficult weather conditions, including heavy rain and flooding, strong winds as well as increasingly hot weather in some areas, pose additional challenges to the humanitarian response.\n    \n-   An estimated 1.6 million people continue to live in informal settlements, mostly in makeshift shelters or tents, with very basic living conditions and limited access to services. They are urgently requiring increased services such as clean water, adequate sanitation, access to information on available services and social protection schemes.\n\n9.1M affected people\n\n5.2M targeted for humanitarian assistance\n\n3M people having to relocate from their homes\n\n1.6M people staying in informal settlements\n\n4M children affected\n\n**SITUATION UPDATE**\n\nThe response to the earthquakes in Türkiye continues to be led by the Government of Türkiye in coordination with Türkiye’s national disaster management authority (AFAD) and with support from the Turkish Red Crescent. The international humanitarian community continues to support the government in providing immediate assistance to the affected population. In a collaborative effort, humanitarian partners are mobilizing emergency teams and relief operations, delivering relief items such as food, medical supplies, shelter, hygiene and dignity kits and WASH assistance, among other essential needs.\n\nEarthquake affected areas continue to be affected by difficult weather conditions, particularly impacting those living in informal sites and tent cities. This includes heavy rain coupled with strong winds causing flooding and destruction of tents and containers. On 20 April, a heavy storm occurred in Pazarcık district of Kahramanmaraş. Tents and containers in both informal and formal sites were blown away and damaged, exposing some of the affected families to harsh weather conditions. Unconfirmed reports suggest that one child died and 44 people were injured during the storms with approximately three hundred families affected.\n\nIn parallel, in some areas (e.g. Hatay province) increasingly hot weather will require adaptation and mitigation measures for emergency shelters.  \n\nAdditionally, several earthquakes occurred over the past few days across several provinces, according to Türkiye’s national disaster management authority (AFAD). One earthquake of 4.6 magnitude in Elazığ on 20 April, one of 3.6 magnitude in Hatay on 17 April and another of 3.8 magnitude in Muğla province on the same day.",
+      "url": "https://reliefweb.int/node/3955091",
+      "disaster": [
+        {
+          "name": "Türkiye: Floods - Mar 2023",
+          "id": 51529,
+          "glide": "FL-2023-000040-TUR",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Türkiye/Syria: Earthquakes - Feb 2023",
+          "id": 51470,
+          "glide": "EQ-2023-000015-TUR",
+          "type": [
+            {
+              "code": "EQ",
+              "name": "Earthquake",
+              "id": 4628,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/5c/0e/5c0e065b-e929-4ad4-ae02-988a87a7dcc0.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/5c/0e/5c0e065b-e929-4ad4-ae02-988a87a7dcc0.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/5c/0e/5c0e065b-e929-4ad4-ae02-988a87a7dcc0.png",
+            "version": "2414016-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/5c/0e/5c0e065b-e929-4ad4-ae02-988a87a7dcc0.png"
+          },
+          "filename": "SitRep #15 20 April 2023 FINAL.pdf",
+          "description": "English version",
+          "mimetype": "application/pdf",
+          "id": "2414016",
+          "filesize": "828465",
+          "url": "https://reliefweb.int/attachments/5c0e065b-e929-4ad4-ae02-988a87a7dcc0/SitRep%20%2315%2020%20April%202023%20FINAL.pdf"
+        },
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/6d/71/6d713849-8bb2-4c0e-8625-cdd846eebd36.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/6d/71/6d713849-8bb2-4c0e-8625-cdd846eebd36.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/6d/71/6d713849-8bb2-4c0e-8625-cdd846eebd36.png",
+            "version": "2414261-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/6d/71/6d713849-8bb2-4c0e-8625-cdd846eebd36.png"
+          },
+          "filename": "SitRep #15 20 April 2023 FINAL TR.pdf",
+          "description": "Turkish version",
+          "mimetype": "application/pdf",
+          "id": "2414261",
+          "filesize": "821912",
+          "url": "https://reliefweb.int/attachments/6d713849-8bb2-4c0e-8625-cdd846eebd36/SitRep%20%2315%2020%20April%202023%20FINAL%20TR.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/turkiye/turkiye-2023-earthquakes-situation-report-no-15-20-april-2023-entr",
+      "redirects": [
+        "https://reliefweb.int/report/turkiye/turkiye-2023-earthquakes-situation-report-no-15-20-april-2023"
+      ],
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        },
+        {
+          "name": "Camp Coordination and Camp Management",
+          "id": 49458
+        },
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Logistics and Telecommunications",
+          "id": 4598
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Recovery and Reconstruction",
+          "id": 4601
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3955091,
+      "status": "published",
+      "body-html": "<p><em>This report is produced by the OCHA mission in Türkiye in collaboration with humanitarian partners and covers the humanitarian situation and earthquake response in Türkiye. It covers the period from 14 to 20 April 2023.</em></p>\n<p><strong>HIGHLIGHTS</strong></p>\n<ul>\n<li>\n<p>Difficult weather conditions, including heavy rain and flooding, strong winds as well as increasingly hot weather in some areas, pose additional challenges to the humanitarian response.</p>\n</li>\n<li>\n<p>An estimated 1.6 million people continue to live in informal settlements, mostly in makeshift shelters or tents, with very basic living conditions and limited access to services. They are urgently requiring increased services such as clean water, adequate sanitation, access to information on available services and social protection schemes.</p>\n</li>\n</ul>\n<p>9.1M affected people</p>\n<p>5.2M targeted for humanitarian assistance</p>\n<p>3M people having to relocate from their homes</p>\n<p>1.6M people staying in informal settlements</p>\n<p>4M children affected</p>\n<p><strong>SITUATION UPDATE</strong></p>\n<p>The response to the earthquakes in Türkiye continues to be led by the Government of Türkiye in coordination with Türkiye’s national disaster management authority (AFAD) and with support from the Turkish Red Crescent. The international humanitarian community continues to support the government in providing immediate assistance to the affected population. In a collaborative effort, humanitarian partners are mobilizing emergency teams and relief operations, delivering relief items such as food, medical supplies, shelter, hygiene and dignity kits and WASH assistance, among other essential needs.</p>\n<p>Earthquake affected areas continue to be affected by difficult weather conditions, particularly impacting those living in informal sites and tent cities. This includes heavy rain coupled with strong winds causing flooding and destruction of tents and containers. On 20 April, a heavy storm occurred in Pazarcık district of Kahramanmaraş. Tents and containers in both informal and formal sites were blown away and damaged, exposing some of the affected families to harsh weather conditions. Unconfirmed reports suggest that one child died and 44 people were injured during the storms with approximately three hundred families affected.</p>\n<p>In parallel, in some areas (e.g. Hatay province) increasingly hot weather will require adaptation and mitigation measures for emergency shelters.</p>\n<p>Additionally, several earthquakes occurred over the past few days across several provinces, according to Türkiye’s national disaster management authority (AFAD). One earthquake of 4.6 magnitude in Elazığ on 20 April, one of 3.6 magnitude in Hatay on 17 April and another of 3.8 magnitude in Muğla province on the same day.</p>\n"
+    }
+  },
+  "text": "# Türkiye: 2023 Earthquakes Situation Report No. 15, as of 20 April 2023 [EN/TR]\n\n*This report is produced by the OCHA mission in Türkiye in collaboration with humanitarian partners and covers the humanitarian situation and earthquake response in Türkiye. It covers the period from 14 to 20 April 2023.*\n\n**HIGHLIGHTS** \n\n-   Difficult weather conditions, including heavy rain and flooding, strong winds as well as increasingly hot weather in some areas, pose additional challenges to the humanitarian response.\n    \n-   An estimated 1.6 million people continue to live in informal settlements, mostly in makeshift shelters or tents, with very basic living conditions and limited access to services. They are urgently requiring increased services such as clean water, adequate sanitation, access to information on available services and social protection schemes.\n\n9.1M affected people\n\n5.2M targeted for humanitarian assistance\n\n3M people having to relocate from their homes\n\n1.6M people staying in informal settlements\n\n4M children affected\n\n**SITUATION UPDATE**\n\nThe response to the earthquakes in Türkiye continues to be led by the Government of Türkiye in coordination with Türkiye’s national disaster management authority (AFAD) and with support from the Turkish Red Crescent. The international humanitarian community continues to support the government in providing immediate assistance to the affected population. In a collaborative effort, humanitarian partners are mobilizing emergency teams and relief operations, delivering relief items such as food, medical supplies, shelter, hygiene and dignity kits and WASH assistance, among other essential needs.\n\nEarthquake affected areas continue to be affected by difficult weather conditions, particularly impacting those living in informal sites and tent cities. This includes heavy rain coupled with strong winds causing flooding and destruction of tents and containers. On 20 April, a heavy storm occurred in Pazarcık district of Kahramanmaraş. Tents and containers in both informal and formal sites were blown away and damaged, exposing some of the affected families to harsh weather conditions. Unconfirmed reports suggest that one child died and 44 people were injured during the storms with approximately three hundred families affected.\n\nIn parallel, in some areas (e.g. Hatay province) increasingly hot weather will require adaptation and mitigation measures for emergency shelters.  \n\nAdditionally, several earthquakes occurred over the past few days across several provinces, according to Türkiye’s national disaster management authority (AFAD). One earthquake of 4.6 magnitude in Elazığ on 20 April, one of 3.6 magnitude in Hatay on 17 April and another of 3.8 magnitude in Muğla province on the same day.",
+  "summary": " This report covers the humanitarian situation and response to the earthquakes in Türkiye from 14 to 20 April 2023. 9.1 million people have been affected, with 5.2 million targeted for humanitarian assistance and 3 million people having to relocate from their homes. An estimated 1.6 million people are living in informal settlements with limited access to services. Difficult weather conditions, including heavy rain and flooding, strong winds, and increasingly hot weather in some areas, are posing additional challenges to the humanitarian response. Earthquakes have also occurred across several provinces. The response is being led by the Government of Türkiye in coordination with Türkiye’s national disaster management authority (AFAD) and with support from the Turkish Red Crescent.",
+  "metadata": {
+    "id": "3955091",
+    "name": "Türkiye: 2023 Earthquakes Situation Report No. 15, as of 20 April 2023 [EN/TR]",
+    "date_original": 1681948800000,
+    "date_changed": 1682337786000,
+    "date_created": 1682099764000,
+    "primary_country_id": 236,
+    "primary_country_name": "Türkiye",
+    "primary_country_iso3": "tur",
+    "primary_country_location": {
+      "lon": 35.18,
+      "lat": 39.06
+    }
+  }
+}

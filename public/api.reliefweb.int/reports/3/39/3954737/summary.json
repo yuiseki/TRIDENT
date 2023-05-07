@@ -1,0 +1,342 @@
+{
+  "original": {
+    "id": "3954737",
+    "fields": {
+      "date": {
+        "changed": "2023-04-20T14:12:40+00:00",
+        "created": "2023-04-20T14:06:11+00:00",
+        "original": "2023-04-20T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/15",
+          "name": "Albania",
+          "location": {
+            "lon": 20.16,
+            "lat": 40.64
+          },
+          "id": 15,
+          "shortname": "Albania",
+          "iso3": "alb"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/23",
+          "name": "Armenia",
+          "location": {
+            "lon": 44.66,
+            "lat": 40.61
+          },
+          "id": 23,
+          "shortname": "Armenia",
+          "iso3": "arm"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/27",
+          "name": "Azerbaijan",
+          "location": {
+            "lon": 47.72,
+            "lat": 40.42
+          },
+          "id": 27,
+          "shortname": "Azerbaijan",
+          "iso3": "aze"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/33",
+          "name": "Belarus",
+          "location": {
+            "lon": 28.05,
+            "lat": 53.54
+          },
+          "id": 33,
+          "shortname": "Belarus",
+          "iso3": "blr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/40",
+          "name": "Bosnia and Herzegovina",
+          "location": {
+            "lon": 17.79,
+            "lat": 44.17
+          },
+          "id": 40,
+          "shortname": "Bosnia and Herzegovina",
+          "iso3": "bih"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/45",
+          "name": "Bulgaria",
+          "location": {
+            "lon": 25.23,
+            "lat": 42.76
+          },
+          "id": 45,
+          "shortname": "Bulgaria",
+          "iso3": "bgr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/70",
+          "name": "Croatia",
+          "location": {
+            "lon": 16.68,
+            "lat": 45.66
+          },
+          "id": 70,
+          "shortname": "Croatia",
+          "iso3": "hrv"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/100",
+          "name": "Georgia",
+          "location": {
+            "lon": 43.52,
+            "lat": 42.18
+          },
+          "id": 100,
+          "shortname": "Georgia",
+          "iso3": "geo"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/104",
+          "name": "Greece",
+          "location": {
+            "lon": 23.83,
+            "lat": 38.59
+          },
+          "id": 104,
+          "shortname": "Greece",
+          "iso3": "grc"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/130",
+          "name": "Kazakhstan",
+          "location": {
+            "lon": 67.3,
+            "lat": 48.16
+          },
+          "id": 130,
+          "shortname": "Kazakhstan",
+          "iso3": "kaz"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/134",
+          "name": "Kyrgyzstan",
+          "location": {
+            "lon": 74.56,
+            "lat": 41.47
+          },
+          "id": 134,
+          "shortname": "Kyrgyzstan",
+          "iso3": "kgz"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/158",
+          "name": "Moldova",
+          "location": {
+            "lon": 28.57,
+            "lat": 47.19
+          },
+          "id": 158,
+          "shortname": "Moldova",
+          "iso3": "mda"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/161",
+          "name": "Montenegro",
+          "location": {
+            "lon": 19.25,
+            "lat": 42.79
+          },
+          "id": 161,
+          "shortname": "Montenegro",
+          "iso3": "mne"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/196",
+          "name": "Romania",
+          "location": {
+            "lon": 24.9668,
+            "lat": 45.9432
+          },
+          "id": 196,
+          "shortname": "Romania",
+          "iso3": "rou"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/209",
+          "name": "Serbia",
+          "location": {
+            "lon": 20.8,
+            "lat": 44.23
+          },
+          "id": 209,
+          "shortname": "Serbia",
+          "iso3": "srb"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/227",
+          "name": "Tajikistan",
+          "location": {
+            "lon": 71.04,
+            "lat": 38.84
+          },
+          "id": 227,
+          "shortname": "Tajikistan",
+          "iso3": "tjk"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/229",
+          "name": "the Republic of North Macedonia",
+          "location": {
+            "lon": 21.7,
+            "lat": 41.6
+          },
+          "id": 229,
+          "shortname": "North Macedonia",
+          "iso3": "mkd"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/236",
+          "name": "Türkiye",
+          "location": {
+            "lon": 35.18,
+            "lat": 39.06
+          },
+          "id": 236,
+          "shortname": "Türkiye",
+          "iso3": "tur",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/237",
+          "name": "Turkmenistan",
+          "location": {
+            "lon": 59.38,
+            "lat": 39.12
+          },
+          "id": 237,
+          "shortname": "Turkmenistan",
+          "iso3": "tkm"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/241",
+          "name": "Ukraine",
+          "location": {
+            "lon": 31.32,
+            "lat": 49.32
+          },
+          "id": 241,
+          "shortname": "Ukraine",
+          "iso3": "ukr"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/248",
+          "name": "Uzbekistan",
+          "location": {
+            "lon": 63.17,
+            "lat": 41.75
+          },
+          "id": 248,
+          "shortname": "Uzbekistan",
+          "iso3": "uzb"
+        }
+      ],
+      "origin": "https://www.unicef.org/media/139056/file/SOWC23%20ECARO%20Brief,%20English.pdf",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/236",
+        "name": "Türkiye",
+        "location": {
+          "lon": 35.18,
+          "lat": 39.06
+        },
+        "id": 236,
+        "shortname": "Türkiye",
+        "iso3": "tur"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1979",
+          "longname": "United Nations Children's Fund",
+          "spanish_name": "Fondo de las Naciones Unidas para la Infancia",
+          "name": "UN Children's Fund",
+          "id": 1979,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNICEF",
+          "homepage": "http://www.unicef.org"
+        }
+      ],
+      "title": "The State of the World’s Children 2023: For Every Child, Vaccination - Regional Brief: Europe and Central Asia",
+      "body": "**For every child, vaccination**\n\n**Immunization is one of humanity’s most remarkable success stories. It has saved countless lives. Many more lives will be saved if the goals of the Immunization Agenda 2030 are achieved.**  \n\nThis global strategy aims for a world where “everyone, everywhere, at every age, fully benefits from vaccines for good health and well-being.” Immunization allows children everywhere to live lives free of many forms of disability and illness. It has led to the eradication of smallpox, a disfiguring and often fatal disease that in the twentieth century alone claimed an estimated 300 million lives. There has been remarkable progress, too, in eradicating polio. The power of immunization was demonstrated again in the COVID-19 pandemic. The disease claimed 14.9 million lives – directly and indirectly – in 2020 and 2021, according to the World Health Organization (WHO), and disrupted lives around the world, especially children’s. While it has taken far too long to get COVID-19 vaccines to people living in the poorest countries, the global impact is still astounding: Already, at least two thirds of the world’s population has been immunized against COVID-19. Those vaccines have prevented an estimated 20 million deaths globally. These examples demonstrate that public demand, scientific innovations and – perhaps above all – political will can drive rapid change. \n\n**We must do more, and we must do better, now**\n\nGlobally, an estimated 67 million children missed out entirely or partially on routine immunization from 2019 to 2021. In Europe and Central Asia, this figure is over 931,000 children. As these children pass the age when vaccines are routinely given, it will require a dedicated effort to ensure that they catch up with their vaccinations.  \n\nThe pandemic also exposed – and exacerbated – persistent weaknesses in health systems and primary health care. Key resources were diverted to respond to the pandemic, which, along with many other factors, contributed to the backsliding in routine immunization. But even before the pandemic, far too many primary health care systems suffered from insufficient numbers of skilled health workers, especially in rural areas, limited access to essential supplies and equipment, weak capacity for collecting and using data and conducting disease surveillance, shortages at the local level of key medicines and vaccines, and barriers to using available resources efficiently and effectively.  \nIn Europe and Central Asia, vaccine hesitancy is also a challenge. Attitudes on vaccines are influenced by people’s concerns related to vaccine safety, myths and misconceptions. Vaccine misinformation is often disseminated through traditional and social media and anti-vaccination movements. Decreasing trust in the health systems also influences negative attitudes towards vaccine uptake.\n\n**The consequences of failure**\n\nUnfortunately, the world continues to see far too many outbreaks of vaccinepreventable diseases. The consequences of failing to vaccinate children may become more severe in years to come. Climate change risks exposing new communities to infectious diseases, such as malaria, dengue and cholera, and may alter seasonal disease patterns. Also of long-term concern is the rise of drug-resistant infections. Failure to immunize children sets back still further the prospects of attaining the Sustainable Development Goals (SDGs).  \nImmunization is key to achieving SDG 3, which aims to “ensure healthy lives and promote well-being for all at all ages”. But it is also linked to 13 of the other SDGs. In that sense, immunization is at the heart of our collective commitment to achieve a better and more sustainable future for us all.\n\n**A time for political will**\n\nMuch will have to happen if we are to protect every child against vaccine-preventable diseases. The needs are complex, even daunting. But overriding them all is one single necessity: political will. Nothing will happen unless we garner the political will – globally, nationally and locally – to protect children against vaccine-preventable diseases.  \n\nThat will should be grounded in optimism. The emergence of mass immunization in the 1980s and the development of COVID-19 vaccines show we can make progress, and we can make progress quickly. Encouragingly, and despite the setbacks it caused to childhood immunization, the pandemic may also have helped lay the groundwork in some countries for faster progress.  \n\nPolitical will should also be grounded in the realization that immunizing children makes economic sense. At an average cost of about US$58 per child in low- and middle-income countries, the standard course of vaccines can contribute enormously to protecting against disease and lifelong disability.  \n\nDespite shrinking national budgets in some countries, immunization must remain a priority because it is a proven strategy for reducing future healthcare costs and supports economic growth. It generates strong returns on investment – as much as US$26 for every US$1 invested. Continued and sustainable investment in immunization as part of health budgets is essential.  \n\nBut governments and donors need to work together to improve the efficiency and effectiveness of planning, budgeting and service delivery.\n\nNow is a time for determination.\n\nNow is a time for political will.\n\nNow is the time to protect the health of every child.",
+      "url": "https://reliefweb.int/node/3954737",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/22/96/2296ffe3-197f-4a78-a6ad-340fed4f4332.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/22/96/2296ffe3-197f-4a78-a6ad-340fed4f4332.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/22/96/2296ffe3-197f-4a78-a6ad-340fed4f4332.png",
+            "version": "2413816-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/22/96/2296ffe3-197f-4a78-a6ad-340fed4f4332.png"
+          },
+          "filename": "SOWC23 ECARO Brief, English.pdf",
+          "mimetype": "application/pdf",
+          "id": "2413816",
+          "filesize": "3935603",
+          "url": "https://reliefweb.int/attachments/2296ffe3-197f-4a78-a6ad-340fed4f4332/SOWC23%20ECARO%20Brief%2C%20English.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/turkiye/state-worlds-children-2023-every-child-vaccination-regional-brief-europe-and-central-asia",
+      "theme": [
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        }
+      ],
+      "id": 3954737,
+      "status": "published",
+      "body-html": "<p><strong>For every child, vaccination</strong></p>\n<p><strong>Immunization is one of humanity’s most remarkable success stories. It has saved countless lives. Many more lives will be saved if the goals of the Immunization Agenda 2030 are achieved.</strong></p>\n<p>This global strategy aims for a world where “everyone, everywhere, at every age, fully benefits from vaccines for good health and well-being.” Immunization allows children everywhere to live lives free of many forms of disability and illness. It has led to the eradication of smallpox, a disfiguring and often fatal disease that in the twentieth century alone claimed an estimated 300 million lives. There has been remarkable progress, too, in eradicating polio. The power of immunization was demonstrated again in the COVID-19 pandemic. The disease claimed 14.9 million lives – directly and indirectly – in 2020 and 2021, according to the World Health Organization (WHO), and disrupted lives around the world, especially children’s. While it has taken far too long to get COVID-19 vaccines to people living in the poorest countries, the global impact is still astounding: Already, at least two thirds of the world’s population has been immunized against COVID-19. Those vaccines have prevented an estimated 20 million deaths globally. These examples demonstrate that public demand, scientific innovations and – perhaps above all – political will can drive rapid change.</p>\n<p><strong>We must do more, and we must do better, now</strong></p>\n<p>Globally, an estimated 67 million children missed out entirely or partially on routine immunization from 2019 to 2021. In Europe and Central Asia, this figure is over 931,000 children. As these children pass the age when vaccines are routinely given, it will require a dedicated effort to ensure that they catch up with their vaccinations.</p>\n<p>The pandemic also exposed – and exacerbated – persistent weaknesses in health systems and primary health care. Key resources were diverted to respond to the pandemic, which, along with many other factors, contributed to the backsliding in routine immunization. But even before the pandemic, far too many primary health care systems suffered from insufficient numbers of skilled health workers, especially in rural areas, limited access to essential supplies and equipment, weak capacity for collecting and using data and conducting disease surveillance, shortages at the local level of key medicines and vaccines, and barriers to using available resources efficiently and effectively.<br />\nIn Europe and Central Asia, vaccine hesitancy is also a challenge. Attitudes on vaccines are influenced by people’s concerns related to vaccine safety, myths and misconceptions. Vaccine misinformation is often disseminated through traditional and social media and anti-vaccination movements. Decreasing trust in the health systems also influences negative attitudes towards vaccine uptake.</p>\n<p><strong>The consequences of failure</strong></p>\n<p>Unfortunately, the world continues to see far too many outbreaks of vaccinepreventable diseases. The consequences of failing to vaccinate children may become more severe in years to come. Climate change risks exposing new communities to infectious diseases, such as malaria, dengue and cholera, and may alter seasonal disease patterns. Also of long-term concern is the rise of drug-resistant infections. Failure to immunize children sets back still further the prospects of attaining the Sustainable Development Goals (SDGs).<br />\nImmunization is key to achieving SDG 3, which aims to “ensure healthy lives and promote well-being for all at all ages”. But it is also linked to 13 of the other SDGs. In that sense, immunization is at the heart of our collective commitment to achieve a better and more sustainable future for us all.</p>\n<p><strong>A time for political will</strong></p>\n<p>Much will have to happen if we are to protect every child against vaccine-preventable diseases. The needs are complex, even daunting. But overriding them all is one single necessity: political will. Nothing will happen unless we garner the political will – globally, nationally and locally – to protect children against vaccine-preventable diseases.</p>\n<p>That will should be grounded in optimism. The emergence of mass immunization in the 1980s and the development of COVID-19 vaccines show we can make progress, and we can make progress quickly. Encouragingly, and despite the setbacks it caused to childhood immunization, the pandemic may also have helped lay the groundwork in some countries for faster progress.</p>\n<p>Political will should also be grounded in the realization that immunizing children makes economic sense. At an average cost of about US$58 per child in low- and middle-income countries, the standard course of vaccines can contribute enormously to protecting against disease and lifelong disability.</p>\n<p>Despite shrinking national budgets in some countries, immunization must remain a priority because it is a proven strategy for reducing future healthcare costs and supports economic growth. It generates strong returns on investment – as much as US$26 for every US$1 invested. Continued and sustainable investment in immunization as part of health budgets is essential.</p>\n<p>But governments and donors need to work together to improve the efficiency and effectiveness of planning, budgeting and service delivery.</p>\n<p>Now is a time for determination.</p>\n<p>Now is a time for political will.</p>\n<p>Now is the time to protect the health of every child.</p>\n"
+    }
+  },
+  "text": "# The State of the World’s Children 2023: For Every Child, Vaccination - Regional Brief: Europe and Central Asia\n\n**For every child, vaccination**\n\n**Immunization is one of humanity’s most remarkable success stories. It has saved countless lives. Many more lives will be saved if the goals of the Immunization Agenda 2030 are achieved.**  \n\nThis global strategy aims for a world where “everyone, everywhere, at every age, fully benefits from vaccines for good health and well-being.” Immunization allows children everywhere to live lives free of many forms of disability and illness. It has led to the eradication of smallpox, a disfiguring and often fatal disease that in the twentieth century alone claimed an estimated 300 million lives. There has been remarkable progress, too, in eradicating polio. The power of immunization was demonstrated again in the COVID-19 pandemic. The disease claimed 14.9 million lives – directly and indirectly – in 2020 and 2021, according to the World Health Organization (WHO), and disrupted lives around the world, especially children’s. While it has taken far too long to get COVID-19 vaccines to people living in the poorest countries, the global impact is still astounding: Already, at least two thirds of the world’s population has been immunized against COVID-19. Those vaccines have prevented an estimated 20 million deaths globally. These examples demonstrate that public demand, scientific innovations and – perhaps above all – political will can drive rapid change. \n\n**We must do more, and we must do better, now**\n\nGlobally, an estimated 67 million children missed out entirely or partially on routine immunization from 2019 to 2021. In Europe and Central Asia, this figure is over 931,000 children. As these children pass the age when vaccines are routinely given, it will require a dedicated effort to ensure that they catch up with their vaccinations.  \n\nThe pandemic also exposed – and exacerbated – persistent weaknesses in health systems and primary health care. Key resources were diverted to respond to the pandemic, which, along with many other factors, contributed to the backsliding in routine immunization. But even before the pandemic, far too many primary health care systems suffered from insufficient numbers of skilled health workers, especially in rural areas, limited access to essential supplies and equipment, weak capacity for collecting and using data and conducting disease surveillance, shortages at the local level of key medicines and vaccines, and barriers to using available resources efficiently and effectively.  \nIn Europe and Central Asia, vaccine hesitancy is also a challenge. Attitudes on vaccines are influenced by people’s concerns related to vaccine safety, myths and misconceptions. Vaccine misinformation is often disseminated through traditional and social media and anti-vaccination movements. Decreasing trust in the health systems also influences negative attitudes towards vaccine uptake.\n\n**The consequences of failure**\n\nUnfortunately, the world continues to see far too many outbreaks of vaccinepreventable diseases. The consequences of failing to vaccinate children may become more severe in years to come. Climate change risks exposing new communities to infectious diseases, such as malaria, dengue and cholera, and may alter seasonal disease patterns. Also of long-term concern is the rise of drug-resistant infections. Failure to immunize children sets back still further the prospects of attaining the Sustainable Development Goals (SDGs).  \nImmunization is key to achieving SDG 3, which aims to “ensure healthy lives and promote well-being for all at all ages”. But it is also linked to 13 of the other SDGs. In that sense, immunization is at the heart of our collective commitment to achieve a better and more sustainable future for us all.\n\n**A time for political will**\n\nMuch will have to happen if we are to protect every child against vaccine-preventable diseases. The needs are complex, even daunting. But overriding them all is one single necessity: political will. Nothing will happen unless we garner the political will – globally, nationally and locally – to protect children against vaccine-preventable diseases.  \n\nThat will should be grounded in optimism. The emergence of mass immunization in the 1980s and the development of COVID-19 vaccines show we can make progress, and we can make progress quickly. Encouragingly, and despite the setbacks it caused to childhood immunization, the pandemic may also have helped lay the groundwork in some countries for faster progress.  \n\nPolitical will should also be grounded in the realization that immunizing children makes economic sense. At an average cost of about US$58 per child in low- and middle-income countries, the standard course of vaccines can contribute enormously to protecting against disease and lifelong disability.  \n\nDespite shrinking national budgets in some countries, immunization must remain a priority because it is a proven strategy for reducing future healthcare costs and supports economic growth. It generates strong returns on investment – as much as US$26 for every US$1 invested. Continued and sustainable investment in immunization as part of health budgets is essential.  \n\nBut governments and donors need to work together to improve the efficiency and effectiveness of planning, budgeting and service delivery.\n\nNow is a time for determination.\n\nNow is a time for political will.\n\nNow is the time to protect the health of every child.",
+  "summary": " Immunization has saved countless lives and is a key part of achieving the Sustainable Development Goals. In Europe and Central Asia, an estimated 931,000 children have missed out on routine immunization from 2019 to 2021. Vaccine hesitancy, weak health systems, and the COVID-19 pandemic have all contributed to this. To protect every child against vaccine-preventable diseases, political will is needed to ensure immunization remains a priority and to improve the efficiency and effectiveness of planning, budgeting and service delivery.",
+  "metadata": {
+    "id": "3954737",
+    "name": "The State of the World’s Children 2023: For Every Child, Vaccination - Regional Brief: Europe and Central Asia",
+    "date_original": 1681948800000,
+    "date_changed": 1681999960000,
+    "date_created": 1681999571000,
+    "primary_country_id": 236,
+    "primary_country_name": "Türkiye",
+    "primary_country_iso3": "tur",
+    "primary_country_location": {
+      "lon": 35.18,
+      "lat": 39.06
+    }
+  }
+}

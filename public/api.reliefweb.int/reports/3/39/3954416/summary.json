@@ -1,0 +1,114 @@
+{
+  "original": {
+    "id": "3954416",
+    "fields": {
+      "date": {
+        "changed": "2023-04-19T17:20:54+00:00",
+        "created": "2023-04-19T16:56:52+00:00",
+        "original": "2023-04-19T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/255",
+          "name": "Yemen",
+          "location": {
+            "lon": 47.62,
+            "lat": 15.94
+          },
+          "id": 255,
+          "shortname": "Yemen",
+          "iso3": "yem",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/255",
+        "name": "Yemen",
+        "location": {
+          "lon": 47.62,
+          "lat": 15.94
+        },
+        "id": 255,
+        "shortname": "Yemen",
+        "iso3": "yem"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1070",
+          "longname": "United Nations Population Fund",
+          "spanish_name": "Fondo de Población de las Naciones Unidas",
+          "name": "United Nations Population Fund",
+          "id": 1070,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNFPA",
+          "homepage": "http://www.unfpa.org"
+        }
+      ],
+      "title": "UNFPA Response in Yemen, Issue #1 Jan-Mar 2023",
+      "body": "**HIGHLIGHTS: JANUARY- MARCH**\n\nEight years on, Yemen remains one of the world’s largest humanitarian crises. A\nstaggering 21.6 million people require some form of humanitarian assistance in 2023,\nand 80 per cent of the country’s population struggles to access food, safe drinking water\nand adequate health services. These are the results of multiple overlapping emergencies\nthat have pummeled the country: violent conflict, economic collapse, recurrent natural\ndisasters and severely disrupted public services.\nWomen and girls are bearing the brunt ofthe crisis. An estimated 80 per cent of the 4.5\nmillion people displaced in Yemen are women and children. Approximately 26 per cent\nof displaced households are headed by women.\nWithout access to lifesaving medicines, about 1 million women who are estimated to\ndeliver in 2023 are particularly at risk. Another 1 million women who would want to\nuse family planning to postpone or avoid pregnancy will be at risk of unwanted\npregnancies. Over 1.5 million pregnant and breastfeeding women are projected to\nexperience acute malnutrition sometime in the course of 2023.\nAn estimated 7.1 million women and girls will require services to prevent and address\ngender-based violence in 2023. However, such services remain overstretched across\nYemen, and completely absent in some hard-to-reach areas.\nOn 27 February, the UN and the Governments of Sweden and Switzerland co-hosted a\nHigh-Level Pledging Event for the Humanitarian Crisis in Yemen bringing together\nrepresentatives of Member States, international organizations, UN Agencies, NGOs and\ncivil society to raise funding to meet the humanitarian needs of Yemenis affected by the\nconflict. At the event, USD $1.16 billion was pledged, almost 30 per cent of the 2023\nHumanitarian Response Plan appeal for $4.3 billion.\nIn 2023, UNFPA is appealing for US$70 million to sustain programmes for women and\ngirls in Yemen. Only 12 percent of this funding appeal has been received by March\n2023. Lack of funding is forcing UNFPA to scale back lifesaving services. In turn,\nthousands of women will lose access to reproductive healthcare facilities and more than\na million women could lose access to gender-based violence services and mental health\ncare.\nIn the first three months of the year, UNFPA's response reached nearly half a million\nindividuals with life-saving reproductive health services, protection information and\nservices and emergency relief, with support to 84 health facilities, 29 safe spaces, eight\nshelters and five specialized mental health centres.",
+      "url": "https://reliefweb.int/node/3954416",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/3c/57/3c57cabe-9282-42b3-ac82-ae650c07d533.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/3c/57/3c57cabe-9282-42b3-ac82-ae650c07d533.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/3c/57/3c57cabe-9282-42b3-ac82-ae650c07d533.png",
+            "version": "2413548-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/3c/57/3c57cabe-9282-42b3-ac82-ae650c07d533.png"
+          },
+          "filename": "UNFPA Yemen - Situation Report - Jan - Mar 2023 (1).pdf",
+          "mimetype": "application/pdf",
+          "id": "2413548",
+          "filesize": "3144066",
+          "url": "https://reliefweb.int/attachments/3c57cabe-9282-42b3-ac82-ae650c07d533/UNFPA%20Yemen%20-%20Situation%20Report%20-%20Jan%20-%20Mar%202023%20%281%29.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/yemen/unfpa-response-yemen-issue-1-jan-mar-2023",
+      "theme": [
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        }
+      ],
+      "id": 3954416,
+      "status": "published",
+      "body-html": "<p><strong>HIGHLIGHTS: JANUARY- MARCH</strong></p>\n<p>Eight years on, Yemen remains one of the world’s largest humanitarian crises. A\nstaggering 21.6 million people require some form of humanitarian assistance in 2023,\nand 80 per cent of the country’s population struggles to access food, safe drinking water\nand adequate health services. These are the results of multiple overlapping emergencies\nthat have pummeled the country: violent conflict, economic collapse, recurrent natural\ndisasters and severely disrupted public services.\nWomen and girls are bearing the brunt ofthe crisis. An estimated 80 per cent of the 4.5\nmillion people displaced in Yemen are women and children. Approximately 26 per cent\nof displaced households are headed by women.\nWithout access to lifesaving medicines, about 1 million women who are estimated to\ndeliver in 2023 are particularly at risk. Another 1 million women who would want to\nuse family planning to postpone or avoid pregnancy will be at risk of unwanted\npregnancies. Over 1.5 million pregnant and breastfeeding women are projected to\nexperience acute malnutrition sometime in the course of 2023.\nAn estimated 7.1 million women and girls will require services to prevent and address\ngender-based violence in 2023. However, such services remain overstretched across\nYemen, and completely absent in some hard-to-reach areas.\nOn 27 February, the UN and the Governments of Sweden and Switzerland co-hosted a\nHigh-Level Pledging Event for the Humanitarian Crisis in Yemen bringing together\nrepresentatives of Member States, international organizations, UN Agencies, NGOs and\ncivil society to raise funding to meet the humanitarian needs of Yemenis affected by the\nconflict. At the event, USD $1.16 billion was pledged, almost 30 per cent of the 2023\nHumanitarian Response Plan appeal for $4.3 billion.\nIn 2023, UNFPA is appealing for US$70 million to sustain programmes for women and\ngirls in Yemen. Only 12 percent of this funding appeal has been received by March\n2023. Lack of funding is forcing UNFPA to scale back lifesaving services. In turn,\nthousands of women will lose access to reproductive healthcare facilities and more than\na million women could lose access to gender-based violence services and mental health\ncare.\nIn the first three months of the year, UNFPA's response reached nearly half a million\nindividuals with life-saving reproductive health services, protection information and\nservices and emergency relief, with support to 84 health facilities, 29 safe spaces, eight\nshelters and five specialized mental health centres.</p>\n"
+    }
+  },
+  "text": "# UNFPA Response in Yemen, Issue #1 Jan-Mar 2023\n\n**HIGHLIGHTS: JANUARY- MARCH**\n\nEight years on, Yemen remains one of the world’s largest humanitarian crises. A\nstaggering 21.6 million people require some form of humanitarian assistance in 2023,\nand 80 per cent of the country’s population struggles to access food, safe drinking water\nand adequate health services. These are the results of multiple overlapping emergencies\nthat have pummeled the country: violent conflict, economic collapse, recurrent natural\ndisasters and severely disrupted public services.\nWomen and girls are bearing the brunt ofthe crisis. An estimated 80 per cent of the 4.5\nmillion people displaced in Yemen are women and children. Approximately 26 per cent\nof displaced households are headed by women.\nWithout access to lifesaving medicines, about 1 million women who are estimated to\ndeliver in 2023 are particularly at risk. Another 1 million women who would want to\nuse family planning to postpone or avoid pregnancy will be at risk of unwanted\npregnancies. Over 1.5 million pregnant and breastfeeding women are projected to\nexperience acute malnutrition sometime in the course of 2023.\nAn estimated 7.1 million women and girls will require services to prevent and address\ngender-based violence in 2023. However, such services remain overstretched across\nYemen, and completely absent in some hard-to-reach areas.\nOn 27 February, the UN and the Governments of Sweden and Switzerland co-hosted a\nHigh-Level Pledging Event for the Humanitarian Crisis in Yemen bringing together\nrepresentatives of Member States, international organizations, UN Agencies, NGOs and\ncivil society to raise funding to meet the humanitarian needs of Yemenis affected by the\nconflict. At the event, USD $1.16 billion was pledged, almost 30 per cent of the 2023\nHumanitarian Response Plan appeal for $4.3 billion.\nIn 2023, UNFPA is appealing for US$70 million to sustain programmes for women and\ngirls in Yemen. Only 12 percent of this funding appeal has been received by March\n2023. Lack of funding is forcing UNFPA to scale back lifesaving services. In turn,\nthousands of women will lose access to reproductive healthcare facilities and more than\na million women could lose access to gender-based violence services and mental health\ncare.\nIn the first three months of the year, UNFPA's response reached nearly half a million\nindividuals with life-saving reproductive health services, protection information and\nservices and emergency relief, with support to 84 health facilities, 29 safe spaces, eight\nshelters and five specialized mental health centres.",
+  "summary": " In 2023, Yemen remains one of the world’s largest humanitarian crises, with 21.6 million people requiring assistance and 80% of the population struggling to access food, water, and health services. Women and girls are bearing the brunt of the crisis, with 1 million women estimated to deliver in 2023 and 1 million women wanting to use family planning to postpone or avoid pregnancy at risk of unwanted pregnancies. UNFPA is appealing for US$70 million to sustain programmes for women and girls in Yemen, but only 12% of this funding appeal has been received by March 2023. In the first three months of the year, UNFPA's response has reached nearly half a million individuals with life-saving reproductive health services, protection information and services, and emergency relief.",
+  "metadata": {
+    "id": "3954416",
+    "name": "UNFPA Response in Yemen, Issue #1 Jan-Mar 2023",
+    "date_original": 1681862400000,
+    "date_changed": 1681924854000,
+    "date_created": 1681923412000,
+    "primary_country_id": 255,
+    "primary_country_name": "Yemen",
+    "primary_country_iso3": "yem",
+    "primary_country_location": {
+      "lon": 47.62,
+      "lat": 15.94
+    }
+  }
+}

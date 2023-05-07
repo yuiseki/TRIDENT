@@ -1,0 +1,218 @@
+{
+  "original": {
+    "id": "3954692",
+    "fields": {
+      "date": {
+        "changed": "2023-04-20T13:35:07+00:00",
+        "created": "2023-04-20T12:30:30+00:00",
+        "original": "2023-04-20T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/216",
+          "name": "Somalia",
+          "location": {
+            "lon": 47.33,
+            "lat": 5.79
+          },
+          "id": 216,
+          "shortname": "Somalia",
+          "iso3": "som",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/216",
+        "name": "Somalia",
+        "location": {
+          "lon": 47.33,
+          "lat": 5.79
+        },
+        "id": 216,
+        "shortname": "Somalia",
+        "iso3": "som"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "DR",
+          "name": "Drought",
+          "id": 4672
+        },
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        },
+        {
+          "code": "FF",
+          "name": "Flash Flood",
+          "id": 4624
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/15477",
+          "name": "Health Cluster",
+          "id": 15477,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "Health Cluster",
+          "homepage": "https://healthcluster.who.int/"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1275",
+          "longname": "World Health Organization",
+          "spanish_name": "Organización Mundial de la Salud",
+          "name": "World Health Organization",
+          "id": 1275,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WHO",
+          "homepage": "http://www.who.int/"
+        }
+      ],
+      "title": "Somalia: Health Cluster Bulletin, March 2023",
+      "body": "**Key Highlights**\n\n- Flash floods experienced in different flood prone areas of the country following light to moderate rains received in the country.\n\n- The cholera outbreak in Jubaland continues to pose threat as it spread to more districts in the state.\n\n- A new report on mortality estimates released by the Federal Ministry of Health & Human Services, WHO and UNICEF suggests that an estimated 43,000 “excess deaths” may have occurred in 2022 in Somalia due to the deepening drought, half of these deaths may have occurred among children under the age of 5 years.\n\n- Renewed conflict since January in Lascanood has resulted in killing of 80 persons and displacement of 30,000 people.\n\n**Situation Updates**\n\nThe current drought crisis in Somalia is unfolding against an already grim backdrop. With nearly half of the population (7.9 million) in need of humanitarian assistance, the situation is exacerbated by climate change-induced extreme weather, political instability, and insecurity, which continue to worsen public health and nutrition concerns.  \n\nSeveral areas of Somalia received moderate rains in the week starting 12 March, with the heaviest rainfall recorded in Gedo and Bay regions, particularly in Baardheere, Luuq and Doolow districts, according to the latest rainfall outlook for the 2023 Gu season. Partners have raised concerns over a likely deterioration of living conditions, particularly for Internally Displaced Persons (IDPs) living in overcrowded settlements with inadequate shelter. The rains also come at a time when partners are struggling with a surge in disease outbreaks, including acute watery diarrhoea/cholera, and measles cases, which are likely to increase due to the risk of consumption of contaminated water and lack of adequate sanitation and hygiene facilities and services.\n\nFrom epidemiological week 1-13, 2023, a total of 4,032 cases of cholera and 15 deaths (CFR 0.41%) have been reported from 26 of the 74 drought affected districts. Of the total cases, 2,167 (54%) are children under 5 years, 2,016 (50%) were women. All reported cases did not receive Oral Cholera Vaccine that was administered in cholera high risk districts. Since January 2023, the districts reporting the highest number of cases include Kismayo, Belethawo, Afgoye, and Afmadow. Cholera cases in drought affected districts are treated in eleven (11) cholera treatment centres. The majority of the cases are treated from Benadir hospital CTC, Belethawo CTC and Kismayo hospital CTC",
+      "url": "https://reliefweb.int/node/3954692",
+      "disaster": [
+        {
+          "name": "Somalia: Floods - Mar 2023",
+          "id": 51530,
+          "glide": "FF-2023-000044-SOM",
+          "type": [
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            },
+            {
+              "code": "FF",
+              "name": "Flash Flood",
+              "id": 4624
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Somalia: Measles Outbreak - Dec 2016",
+          "id": 38824,
+          "glide": "EP-2016-000131-SOM",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Somalia: Cholera Outbreak - Apr 2016",
+          "id": 33516,
+          "glide": "EP-2016-000053-SOM",
+          "type": [
+            {
+              "code": "EP",
+              "name": "Epidemic",
+              "id": 4642,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        },
+        {
+          "name": "Somalia: Drought - 2015-2023",
+          "id": 23101,
+          "glide": "DR-2015-000134-SOM",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/80/dd/80dd4191-d956-4dd3-9a20-87d8a47557c5.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/80/dd/80dd4191-d956-4dd3-9a20-87d8a47557c5.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/80/dd/80dd4191-d956-4dd3-9a20-87d8a47557c5.png",
+            "version": "2413782-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/80/dd/80dd4191-d956-4dd3-9a20-87d8a47557c5.png"
+          },
+          "filename": "Somalia Health Cluster Bulletin March 2023 Final.pdf",
+          "mimetype": "application/pdf",
+          "id": "2413782",
+          "filesize": "851766",
+          "url": "https://reliefweb.int/attachments/80dd4191-d956-4dd3-9a20-87d8a47557c5/Somalia%20Health%20Cluster%20Bulletin%20March%202023%20Final.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/somalia/somalia-health-cluster-bulletin-march-2023",
+      "theme": [
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        }
+      ],
+      "id": 3954692,
+      "status": "published",
+      "body-html": "<p><strong>Key Highlights</strong></p>\n<ul>\n<li>\n<p>Flash floods experienced in different flood prone areas of the country following light to moderate rains received in the country.</p>\n</li>\n<li>\n<p>The cholera outbreak in Jubaland continues to pose threat as it spread to more districts in the state.</p>\n</li>\n<li>\n<p>A new report on mortality estimates released by the Federal Ministry of Health &amp; Human Services, WHO and UNICEF suggests that an estimated 43,000 “excess deaths” may have occurred in 2022 in Somalia due to the deepening drought, half of these deaths may have occurred among children under the age of 5 years.</p>\n</li>\n<li>\n<p>Renewed conflict since January in Lascanood has resulted in killing of 80 persons and displacement of 30,000 people.</p>\n</li>\n</ul>\n<p><strong>Situation Updates</strong></p>\n<p>The current drought crisis in Somalia is unfolding against an already grim backdrop. With nearly half of the population (7.9 million) in need of humanitarian assistance, the situation is exacerbated by climate change-induced extreme weather, political instability, and insecurity, which continue to worsen public health and nutrition concerns.</p>\n<p>Several areas of Somalia received moderate rains in the week starting 12 March, with the heaviest rainfall recorded in Gedo and Bay regions, particularly in Baardheere, Luuq and Doolow districts, according to the latest rainfall outlook for the 2023 Gu season. Partners have raised concerns over a likely deterioration of living conditions, particularly for Internally Displaced Persons (IDPs) living in overcrowded settlements with inadequate shelter. The rains also come at a time when partners are struggling with a surge in disease outbreaks, including acute watery diarrhoea/cholera, and measles cases, which are likely to increase due to the risk of consumption of contaminated water and lack of adequate sanitation and hygiene facilities and services.</p>\n<p>From epidemiological week 1-13, 2023, a total of 4,032 cases of cholera and 15 deaths (CFR 0.41%) have been reported from 26 of the 74 drought affected districts. Of the total cases, 2,167 (54%) are children under 5 years, 2,016 (50%) were women. All reported cases did not receive Oral Cholera Vaccine that was administered in cholera high risk districts. Since January 2023, the districts reporting the highest number of cases include Kismayo, Belethawo, Afgoye, and Afmadow. Cholera cases in drought affected districts are treated in eleven (11) cholera treatment centres. The majority of the cases are treated from Benadir hospital CTC, Belethawo CTC and Kismayo hospital CTC</p>\n"
+    }
+  },
+  "text": "# Somalia: Health Cluster Bulletin, March 2023\n\n**Key Highlights**\n\n- Flash floods experienced in different flood prone areas of the country following light to moderate rains received in the country.\n\n- The cholera outbreak in Jubaland continues to pose threat as it spread to more districts in the state.\n\n- A new report on mortality estimates released by the Federal Ministry of Health & Human Services, WHO and UNICEF suggests that an estimated 43,000 “excess deaths” may have occurred in 2022 in Somalia due to the deepening drought, half of these deaths may have occurred among children under the age of 5 years.\n\n- Renewed conflict since January in Lascanood has resulted in killing of 80 persons and displacement of 30,000 people.\n\n**Situation Updates**\n\nThe current drought crisis in Somalia is unfolding against an already grim backdrop. With nearly half of the population (7.9 million) in need of humanitarian assistance, the situation is exacerbated by climate change-induced extreme weather, political instability, and insecurity, which continue to worsen public health and nutrition concerns.  \n\nSeveral areas of Somalia received moderate rains in the week starting 12 March, with the heaviest rainfall recorded in Gedo and Bay regions, particularly in Baardheere, Luuq and Doolow districts, according to the latest rainfall outlook for the 2023 Gu season. Partners have raised concerns over a likely deterioration of living conditions, particularly for Internally Displaced Persons (IDPs) living in overcrowded settlements with inadequate shelter. The rains also come at a time when partners are struggling with a surge in disease outbreaks, including acute watery diarrhoea/cholera, and measles cases, which are likely to increase due to the risk of consumption of contaminated water and lack of adequate sanitation and hygiene facilities and services.\n\nFrom epidemiological week 1-13, 2023, a total of 4,032 cases of cholera and 15 deaths (CFR 0.41%) have been reported from 26 of the 74 drought affected districts. Of the total cases, 2,167 (54%) are children under 5 years, 2,016 (50%) were women. All reported cases did not receive Oral Cholera Vaccine that was administered in cholera high risk districts. Since January 2023, the districts reporting the highest number of cases include Kismayo, Belethawo, Afgoye, and Afmadow. Cholera cases in drought affected districts are treated in eleven (11) cholera treatment centres. The majority of the cases are treated from Benadir hospital CTC, Belethawo CTC and Kismayo hospital CTC",
+  "summary": " In March 2023, Somalia experienced flash floods in flood prone areas following light to moderate rains. A new report suggests that 43,000 \"excess deaths\" may have occurred in 2022 due to the deepening drought, with half of these deaths among children under 5. Renewed conflict in Lascanood has resulted in 80 deaths and displacement of 30,000 people. The current drought crisis is compounded by climate change-induced extreme weather, political instability, and insecurity, leading to a surge in disease outbreaks, including cholera and measles. Cholera cases have been reported in 26 of the 74 drought affected districts, with the majority of cases treated in Benadir hospital CTC, Belethawo CTC and Kismayo hospital CTC.",
+  "metadata": {
+    "id": "3954692",
+    "name": "Somalia: Health Cluster Bulletin, March 2023",
+    "date_original": 1681948800000,
+    "date_changed": 1681997707000,
+    "date_created": 1681993830000,
+    "primary_country_id": 216,
+    "primary_country_name": "Somalia",
+    "primary_country_iso3": "som",
+    "primary_country_location": {
+      "lon": 47.33,
+      "lat": 5.79
+    }
+  }
+}

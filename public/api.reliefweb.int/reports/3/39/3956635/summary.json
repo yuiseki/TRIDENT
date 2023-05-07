@@ -1,0 +1,137 @@
+{
+  "original": {
+    "id": "3956635",
+    "fields": {
+      "date": {
+        "changed": "2023-04-27T14:12:27+00:00",
+        "created": "2023-04-27T13:25:02+00:00",
+        "original": "2023-04-27T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/174",
+          "name": "Niger",
+          "location": {
+            "lon": 9.4,
+            "lat": 17.43
+          },
+          "id": 174,
+          "shortname": "Niger",
+          "iso3": "ner",
+          "primary": true
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/174",
+        "name": "Niger",
+        "location": {
+          "lon": 9.4,
+          "lat": 17.43
+        },
+        "id": 174,
+        "shortname": "Niger",
+        "iso3": "ner"
+      },
+      "format": [
+        {
+          "name": "Analysis",
+          "id": 3
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "DR",
+          "name": "Drought",
+          "id": 4672
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1741",
+          "longname": "United Nations World Food Programme",
+          "spanish_name": "Programa Mundial de Alimentos",
+          "name": "World Food Programme",
+          "id": 1741,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WFP",
+          "homepage": "http://www.wfp.org"
+        }
+      ],
+      "title": "Niger: Satellite imagery analysis 2022 - Cropland change detection analysis in hard-to-reach areas",
+      "body": "**Introduction**\n\nInsecurity in Niger is hampering national food security monitoring. To better assess the impact of insecurity in hard-to-reach areas, WFP and national partners conducted a cropland change detection analysis using high-resolution satellite images to overcome access limitations. This satellite analysis assesses cropland change in areas with little or no access; and compares the situation at the end of 2022 agricultural season with that of the previous year (2021) and a pre-crisis baseline (2016).\n\nThe analysis covers nearly 6,500 localities in 5 regions.  \nThe number of people living in those districts is estimated at over 4.7 million in the 211 hard-to-reach districts as of November 2022, in addition to the displaced population caused by the security situation.\n\nThis summary note briefly describes the methodology of the analysis. Then, it presents the main analysis results and its relationship to the security incidents that took place between January and October 2022. Finally, it proposes ways to use the analysis results in the Cadre Harmonisé process (contributing factors).\n\n**Methodology**\n\nSatellite images, namely Sentinel-2 (ESA/Copernicus), were acquired for the main agricultural season (i.e. between 15th June and 15th October) for the current year, the previous year, and a reference year before the start of the conflict in the analysed areas. The cropland changes in the conflict zones are detected by measuring the degree of change between the current year and a reference year, as well as between the current year and the previous year.\n\nThe temporal (5 days) and spatial (10 meters) resolution of these images makes it possible to detect fields of any size and to extract results at the scale of localities.\n\nFor each year of the study, cultivated areas are detected by calculating the Normalized Difference Vegetation Index (NDVI), which is a vegetation index commonly used in remote sensing. NDVI values for cultivated field during the agricultural season (from the time of the end of land preparation and sowing until the shoots of the drops and start of harvest) differ from those of other types of landscape, including natural vegetation or abandoned fields.\n\nLocalities are classified into the following 7 classes in the final map, after comparing the current year with the reference or previous year.\n\n· Severe decrease: >50% estimated area loss.\n\n· Medium decrease: 25%-50% estimated area loss.\n\n· Slight decrease: <25% estimated area loss.\n\n· Slight increase: <25% estimated area gain.\n\n· Medium increase: 25%-50% estimated area gain.\n\n· Significant increase: >50% estimated area gain.\n\nPopulated sites where no visible changes were detected are represented in grey, including areas with no visible agricultural activities. These categories are the result of a visual interpretation of satellite-derived composites, that could not be validated with field data.\n\nThe advantage of this methodology is that it provides timely, cost-efficient, reliable and evidence-based assessment of conflict impacts on agriculture, in hardto-reach areas where field data is limited. Moreover, the level of detail of the analysis can directly inform needs assessments and response planning at the locality level.",
+      "url": "https://reliefweb.int/node/3956635",
+      "disaster": [
+        {
+          "name": "Niger: Drought - May 2022",
+          "id": 51170,
+          "glide": "DR-2022-000210-NER",
+          "type": [
+            {
+              "code": "DR",
+              "name": "Drought",
+              "id": 4672,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/b1/ce/b1ce26aa-5bdc-4781-8638-769e0d5f9655.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/b1/ce/b1ce26aa-5bdc-4781-8638-769e0d5f9655.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/b1/ce/b1ce26aa-5bdc-4781-8638-769e0d5f9655.png",
+            "version": "2415350-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/b1/ce/b1ce26aa-5bdc-4781-8638-769e0d5f9655.png"
+          },
+          "filename": "WFP-0000148609.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415350",
+          "filesize": "5909289",
+          "url": "https://reliefweb.int/attachments/b1ce26aa-5bdc-4781-8638-769e0d5f9655/WFP-0000148609.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/niger/niger-satellite-imagery-analysis-2022-cropland-change-detection-analysis-hard-reach-areas",
+      "theme": [
+        {
+          "name": "Agriculture",
+          "id": 4587
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        }
+      ],
+      "id": 3956635,
+      "status": "published",
+      "body-html": "<p><strong>Introduction</strong></p>\n<p>Insecurity in Niger is hampering national food security monitoring. To better assess the impact of insecurity in hard-to-reach areas, WFP and national partners conducted a cropland change detection analysis using high-resolution satellite images to overcome access limitations. This satellite analysis assesses cropland change in areas with little or no access; and compares the situation at the end of 2022 agricultural season with that of the previous year (2021) and a pre-crisis baseline (2016).</p>\n<p>The analysis covers nearly 6,500 localities in 5 regions.<br />\nThe number of people living in those districts is estimated at over 4.7 million in the 211 hard-to-reach districts as of November 2022, in addition to the displaced population caused by the security situation.</p>\n<p>This summary note briefly describes the methodology of the analysis. Then, it presents the main analysis results and its relationship to the security incidents that took place between January and October 2022. Finally, it proposes ways to use the analysis results in the Cadre Harmonisé process (contributing factors).</p>\n<p><strong>Methodology</strong></p>\n<p>Satellite images, namely Sentinel-2 (ESA/Copernicus), were acquired for the main agricultural season (i.e. between 15th June and 15th October) for the current year, the previous year, and a reference year before the start of the conflict in the analysed areas. The cropland changes in the conflict zones are detected by measuring the degree of change between the current year and a reference year, as well as between the current year and the previous year.</p>\n<p>The temporal (5 days) and spatial (10 meters) resolution of these images makes it possible to detect fields of any size and to extract results at the scale of localities.</p>\n<p>For each year of the study, cultivated areas are detected by calculating the Normalized Difference Vegetation Index (NDVI), which is a vegetation index commonly used in remote sensing. NDVI values for cultivated field during the agricultural season (from the time of the end of land preparation and sowing until the shoots of the drops and start of harvest) differ from those of other types of landscape, including natural vegetation or abandoned fields.</p>\n<p>Localities are classified into the following 7 classes in the final map, after comparing the current year with the reference or previous year.</p>\n<p>· Severe decrease: &gt;50% estimated area loss.</p>\n<p>· Medium decrease: 25%-50% estimated area loss.</p>\n<p>· Slight decrease: &lt;25% estimated area loss.</p>\n<p>· Slight increase: &lt;25% estimated area gain.</p>\n<p>· Medium increase: 25%-50% estimated area gain.</p>\n<p>· Significant increase: &gt;50% estimated area gain.</p>\n<p>Populated sites where no visible changes were detected are represented in grey, including areas with no visible agricultural activities. These categories are the result of a visual interpretation of satellite-derived composites, that could not be validated with field data.</p>\n<p>The advantage of this methodology is that it provides timely, cost-efficient, reliable and evidence-based assessment of conflict impacts on agriculture, in hardto-reach areas where field data is limited. Moreover, the level of detail of the analysis can directly inform needs assessments and response planning at the locality level.</p>\n"
+    }
+  },
+  "text": "# Niger: Satellite imagery analysis 2022 - Cropland change detection analysis in hard-to-reach areas\n\n**Introduction**\n\nInsecurity in Niger is hampering national food security monitoring. To better assess the impact of insecurity in hard-to-reach areas, WFP and national partners conducted a cropland change detection analysis using high-resolution satellite images to overcome access limitations. This satellite analysis assesses cropland change in areas with little or no access; and compares the situation at the end of 2022 agricultural season with that of the previous year (2021) and a pre-crisis baseline (2016).\n\nThe analysis covers nearly 6,500 localities in 5 regions.  \nThe number of people living in those districts is estimated at over 4.7 million in the 211 hard-to-reach districts as of November 2022, in addition to the displaced population caused by the security situation.\n\nThis summary note briefly describes the methodology of the analysis. Then, it presents the main analysis results and its relationship to the security incidents that took place between January and October 2022. Finally, it proposes ways to use the analysis results in the Cadre Harmonisé process (contributing factors).\n\n**Methodology**\n\nSatellite images, namely Sentinel-2 (ESA/Copernicus), were acquired for the main agricultural season (i.e. between 15th June and 15th October) for the current year, the previous year, and a reference year before the start of the conflict in the analysed areas. The cropland changes in the conflict zones are detected by measuring the degree of change between the current year and a reference year, as well as between the current year and the previous year.\n\nThe temporal (5 days) and spatial (10 meters) resolution of these images makes it possible to detect fields of any size and to extract results at the scale of localities.\n\nFor each year of the study, cultivated areas are detected by calculating the Normalized Difference Vegetation Index (NDVI), which is a vegetation index commonly used in remote sensing. NDVI values for cultivated field during the agricultural season (from the time of the end of land preparation and sowing until the shoots of the drops and start of harvest) differ from those of other types of landscape, including natural vegetation or abandoned fields.\n\nLocalities are classified into the following 7 classes in the final map, after comparing the current year with the reference or previous year.\n\n· Severe decrease: >50% estimated area loss.\n\n· Medium decrease: 25%-50% estimated area loss.\n\n· Slight decrease: <25% estimated area loss.\n\n· Slight increase: <25% estimated area gain.\n\n· Medium increase: 25%-50% estimated area gain.\n\n· Significant increase: >50% estimated area gain.\n\nPopulated sites where no visible changes were detected are represented in grey, including areas with no visible agricultural activities. These categories are the result of a visual interpretation of satellite-derived composites, that could not be validated with field data.\n\nThe advantage of this methodology is that it provides timely, cost-efficient, reliable and evidence-based assessment of conflict impacts on agriculture, in hardto-reach areas where field data is limited. Moreover, the level of detail of the analysis can directly inform needs assessments and response planning at the locality level.",
+  "summary": "\n\nIn order to assess the impact of insecurity in hard-to-reach areas of Niger, WFP and national partners conducted a cropland change detection analysis using high-resolution satellite images. The analysis covered nearly 6,500 localities in 5 regions and estimated the number of people living in those districts at over 4.7 million. The analysis compared the situation at the end of 2022 agricultural season with that of the previous year (2021) and a pre-crisis baseline (2016). The results of the analysis were used to inform needs assessments and response planning at the locality level.",
+  "metadata": {
+    "id": "3956635",
+    "name": "Niger: Satellite imagery analysis 2022 - Cropland change detection analysis in hard-to-reach areas",
+    "date_original": 1682553600000,
+    "date_changed": 1682604747000,
+    "date_created": 1682601902000,
+    "primary_country_id": 174,
+    "primary_country_name": "Niger",
+    "primary_country_iso3": "ner",
+    "primary_country_location": {
+      "lon": 9.4,
+      "lat": 17.43
+    }
+  }
+}

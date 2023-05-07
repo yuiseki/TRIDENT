@@ -1,0 +1,142 @@
+{
+  "original": {
+    "id": "3956410",
+    "fields": {
+      "date": {
+        "changed": "2023-04-26T20:35:13+00:00",
+        "created": "2023-04-26T20:34:31+00:00",
+        "original": "2023-04-26T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/42",
+          "name": "Brazil",
+          "location": {
+            "lon": -51.62,
+            "lat": -9.59
+          },
+          "id": 42,
+          "shortname": "Brazil",
+          "iso3": "bra",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/250",
+          "name": "Venezuela (Bolivarian Republic of)",
+          "location": {
+            "lon": -65.8,
+            "lat": 7.62
+          },
+          "id": 250,
+          "shortname": "Venezuela",
+          "iso3": "ven"
+        }
+      ],
+      "origin": "https://reporting.unhcr.org/document/4726",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/42",
+        "name": "Brazil",
+        "location": {
+          "lon": -51.62,
+          "lat": -9.59
+        },
+        "id": 42,
+        "shortname": "Brazil",
+        "iso3": "bra"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/2868",
+          "longname": "United Nations High Commissioner for Refugees",
+          "spanish_name": "Oficina del Alto Comisionado de las Naciones Unidas para los Refugiados",
+          "name": "UN High Commissioner for Refugees",
+          "id": 2868,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNHCR",
+          "homepage": "http://www.unhcr.org/"
+        }
+      ],
+      "title": "UNHCR Brazil - Interiorization Report - January to March 2023 [EN/PT]",
+      "body": "On 30 March, 144 people boarded the flight that marked the milestone of 100,000 Venezuelans relocated from the North of Brazil to other parts of the country since 2018.  \nAmong the passengers were 15 elderly people who were welcomed at the Casa de Acolhida – Jardim Paraíso, a specific reception service of the Nova Iguaçu Municipal Secretariat of Social Assistance for elderly refugees and migrants.  \nThe group had been living in emergency shelters in Boa Vista (RR) for months and was looking for an opportunity to resume their lives with dignity in Brazil. Indalecio Perez, 65 years old, was on the flight and gave an emotional speech upon arrival in Nova Iguaçu (RJ): “I am sure that you feel in your soul the same joy that I am feeling”.  \nOlder adults, when traveling alone, encounter additional barriers in accessing durable solutions. Besides the risk of xenophobia due to nationality, they face difficulties in learning Portuguese, adapting to work dynamics in Brazil, dealing with the lack of digital inclusion and, like Brazilians, suffer from ageism when looking for a job and demonstrating their talent and willpower.  \nIn operation since 2020, the Casa de Acolhida was initially supported with federal resources and later started to be financed by the municipality. With capacity for up to 25 people, this is the second group of elderly Venezuelans hosted at the site",
+      "url": "https://reliefweb.int/node/3956410",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/c7/ac/c7aceb99-33fa-4975-b7a9-7657d8e56818.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/c7/ac/c7aceb99-33fa-4975-b7a9-7657d8e56818.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/c7/ac/c7aceb99-33fa-4975-b7a9-7657d8e56818.png",
+            "version": "2415153-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/c7/ac/c7aceb99-33fa-4975-b7a9-7657d8e56818.png"
+          },
+          "filename": "UNHCR Brazil - Interiorization Report, Jan-Mar-2023.pdf",
+          "description": "English version",
+          "mimetype": "application/pdf",
+          "id": "2415153",
+          "filesize": "1989098",
+          "url": "https://reliefweb.int/attachments/c7aceb99-33fa-4975-b7a9-7657d8e56818/UNHCR%20Brazil%20-%20Interiorization%20Report%2C%20Jan-Mar-2023.pdf"
+        },
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/ef/b9/efb9df2b-d8bb-4619-8472-5bd6243b0539.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/ef/b9/efb9df2b-d8bb-4619-8472-5bd6243b0539.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/ef/b9/efb9df2b-d8bb-4619-8472-5bd6243b0539.png",
+            "version": "2415155-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/ef/b9/efb9df2b-d8bb-4619-8472-5bd6243b0539.png"
+          },
+          "filename": "ACNUR Brasil - Relatório-de-Interiorização, Jan-Mar-2023.pdf",
+          "description": "Portuguese version",
+          "mimetype": "application/pdf",
+          "id": "2415155",
+          "filesize": "1990788",
+          "url": "https://reliefweb.int/attachments/efb9df2b-d8bb-4619-8472-5bd6243b0539/ACNUR%20Brasil%20-%20Relato%CC%81rio-de-Interiorizac%CC%A7a%CC%83o%2C%20Jan-Mar-2023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/brazil/unhcr-brazil-interiorization-report-january-march-2023-enpt",
+      "theme": [
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        }
+      ],
+      "id": 3956410,
+      "status": "published",
+      "body-html": "<p>On 30 March, 144 people boarded the flight that marked the milestone of 100,000 Venezuelans relocated from the North of Brazil to other parts of the country since 2018.<br />\nAmong the passengers were 15 elderly people who were welcomed at the Casa de Acolhida – Jardim Paraíso, a specific reception service of the Nova Iguaçu Municipal Secretariat of Social Assistance for elderly refugees and migrants.<br />\nThe group had been living in emergency shelters in Boa Vista (RR) for months and was looking for an opportunity to resume their lives with dignity in Brazil. Indalecio Perez, 65 years old, was on the flight and gave an emotional speech upon arrival in Nova Iguaçu (RJ): “I am sure that you feel in your soul the same joy that I am feeling”.<br />\nOlder adults, when traveling alone, encounter additional barriers in accessing durable solutions. Besides the risk of xenophobia due to nationality, they face difficulties in learning Portuguese, adapting to work dynamics in Brazil, dealing with the lack of digital inclusion and, like Brazilians, suffer from ageism when looking for a job and demonstrating their talent and willpower.<br />\nIn operation since 2020, the Casa de Acolhida was initially supported with federal resources and later started to be financed by the municipality. With capacity for up to 25 people, this is the second group of elderly Venezuelans hosted at the site</p>\n"
+    }
+  },
+  "text": "# UNHCR Brazil - Interiorization Report - January to March 2023 [EN/PT]\n\nOn 30 March, 144 people boarded the flight that marked the milestone of 100,000 Venezuelans relocated from the North of Brazil to other parts of the country since 2018.  \nAmong the passengers were 15 elderly people who were welcomed at the Casa de Acolhida – Jardim Paraíso, a specific reception service of the Nova Iguaçu Municipal Secretariat of Social Assistance for elderly refugees and migrants.  \nThe group had been living in emergency shelters in Boa Vista (RR) for months and was looking for an opportunity to resume their lives with dignity in Brazil. Indalecio Perez, 65 years old, was on the flight and gave an emotional speech upon arrival in Nova Iguaçu (RJ): “I am sure that you feel in your soul the same joy that I am feeling”.  \nOlder adults, when traveling alone, encounter additional barriers in accessing durable solutions. Besides the risk of xenophobia due to nationality, they face difficulties in learning Portuguese, adapting to work dynamics in Brazil, dealing with the lack of digital inclusion and, like Brazilians, suffer from ageism when looking for a job and demonstrating their talent and willpower.  \nIn operation since 2020, the Casa de Acolhida was initially supported with federal resources and later started to be financed by the municipality. With capacity for up to 25 people, this is the second group of elderly Venezuelans hosted at the site",
+  "summary": " On 30 March, 100,000 Venezuelans had been relocated from the North of Brazil to other parts of the country since 2018. 15 elderly people were welcomed at the Casa de Acolhida – Jardim Paraíso, a reception service of the Nova Iguaçu Municipal Secretariat of Social Assistance. This is the second group of elderly Venezuelans hosted at the site, which has been in operation since 2020 and is supported by federal and municipal resources. Elderly people face additional barriers in accessing durable solutions, such as xenophobia, lack of digital inclusion, and ageism.",
+  "metadata": {
+    "id": "3956410",
+    "name": "UNHCR Brazil - Interiorization Report - January to March 2023 [EN/PT]",
+    "date_original": 1682467200000,
+    "date_changed": 1682541313000,
+    "date_created": 1682541271000,
+    "primary_country_id": 42,
+    "primary_country_name": "Brazil",
+    "primary_country_iso3": "bra",
+    "primary_country_location": {
+      "lon": -51.62,
+      "lat": -9.59
+    }
+  }
+}

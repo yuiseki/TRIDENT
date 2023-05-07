@@ -1,0 +1,145 @@
+{
+  "original": {
+    "id": "3957228",
+    "fields": {
+      "date": {
+        "changed": "2023-04-30T08:01:46+00:00",
+        "created": "2023-04-30T03:01:27+00:00",
+        "original": "2023-04-30T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/54",
+          "name": "Central African Republic",
+          "location": {
+            "lon": 20.48,
+            "lat": 6.57
+          },
+          "id": 54,
+          "shortname": "CAR",
+          "iso3": "caf",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/220",
+          "name": "Sudan",
+          "location": {
+            "lon": 30,
+            "lat": 15
+          },
+          "id": 220,
+          "shortname": "Sudan",
+          "iso3": "sdn"
+        }
+      ],
+      "ocha_product": [
+        {
+          "name": "Flash Update",
+          "id": 14471
+        }
+      ],
+      "origin": "https://reports.unocha.org/en/country/car/",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/54",
+        "name": "Central African Republic",
+        "location": {
+          "lon": 20.48,
+          "lat": 6.57
+        },
+        "id": 54,
+        "shortname": "CAR",
+        "iso3": "caf"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1503",
+          "longname": "United Nations Office for the Coordination of Humanitarian Affairs",
+          "spanish_name": "Oficina de Coordinación de Asuntos Humanitarios",
+          "name": "UN Office for the Coordination of Humanitarian Affairs",
+          "id": 1503,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "OCHA",
+          "disclaimer": "To learn more about OCHA's activities, please visit https://www.unocha.org/.",
+          "homepage": "http://www.unocha.org/"
+        }
+      ],
+      "title": "Impact of Sudan crisis in the Central African Republic (Flash Update 30 Apr 2023)",
+      "body": "**Impact of Sudan crisis in the Central African Republic**\n\nThe ongoing conflict in Sudan have started affecting the Central African Republic (CAR), mostly the northern region. As a result of insecurity along the border area, traffic between Sudan and CAR has been severely disrupted, causing a sharp increase in the price of basic commodities. Sudan supplies several towns in CAR, particularly Birao in the Vakaga Prefecture and Ndélé in the Bamingui-Bangoran Prefecture. During the rainy season from April to October, access is very challenged and supplies largely depend on Sudan. For some items, prices have doubled. A 50-kg bag of sugar, which sold for XAF 40,000 before the conflict is now worth XAF 80,000 in Birao. A small bowl of millet that used to cost XAF 500 is now worth XAF 1,000.  \n\nThe northern region of CAR was already experiencing acute food insecurity, a situation that is [projected](https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1156015/?iso3=CAF) to reach one of its most severe stages by August if an adequate response is not forthcoming. According to the [2023 Humanitarian Needs Overview](https://reliefweb.int/node/3911977) released in November 2022, about 120,000 people are in need of humanitarian assistance and protection in northern CAR, and capacities to absorb additional needs are very limited.  \n\nHumanitarian teams comprising NGOs, United Nations and Government agencies arrived on 29 April in Am-Dafock from Birao to not only further assess the situation, but also provide emergency assistance, including clean water and emergency shelters. According to the first count, approximately 6,000 people, including 400 Central African returnees, have crossed the border from Sudan and are living in spontaneous settlements in Am-Dafock, CAR. The dynamic of new arrivals has stabilized and local authorities are discussing the possibility of relocation to Birao. In the meantime, a humanitarian partner continues to provide, among other things, an emergency medical and nutritional response to the arrivals, also strengthening the stock of medicines at the local health center.  \n\nAm-Dafock is in a flood-prone area and with the rainy season coming next month, access will be extremely limited. The humanitarian community is working hard to ensure that those in need receive required assistance in a timely manner, including in adapting logistical arrangements. Prior to the conflict, the humanitarian presence in this border region was already very limited.  \n\nCurrently, the most pressing needs include emergency shelter, food, clean water, and latrines",
+      "url": "https://reliefweb.int/node/3957228",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/2f/a1/2fa17827-9962-491a-9d7f-7a87ee081b9b.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/2f/a1/2fa17827-9962-491a-9d7f-7a87ee081b9b.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/2f/a1/2fa17827-9962-491a-9d7f-7a87ee081b9b.png",
+            "version": "2415839-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/2f/a1/2fa17827-9962-491a-9d7f-7a87ee081b9b.png"
+          },
+          "filename": "Flash Update - Central African Republic - 27 Apr 2023.pdf",
+          "mimetype": "application/pdf",
+          "id": "2415839",
+          "filesize": "375166",
+          "url": "https://reliefweb.int/attachments/2fa17827-9962-491a-9d7f-7a87ee081b9b/Flash%20Update%20-%20Central%20African%20Republic%20-%2027%20Apr%202023.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/central-african-republic/impact-sudan-crisis-central-african-republic-flash-update-30-apr-2023",
+      "theme": [
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Shelter and Non-Food Items",
+          "id": 4603
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3957228,
+      "status": "published",
+      "body-html": "<p><strong>Impact of Sudan crisis in the Central African Republic</strong></p>\n<p>The ongoing conflict in Sudan have started affecting the Central African Republic (CAR), mostly the northern region. As a result of insecurity along the border area, traffic between Sudan and CAR has been severely disrupted, causing a sharp increase in the price of basic commodities. Sudan supplies several towns in CAR, particularly Birao in the Vakaga Prefecture and Ndélé in the Bamingui-Bangoran Prefecture. During the rainy season from April to October, access is very challenged and supplies largely depend on Sudan. For some items, prices have doubled. A 50-kg bag of sugar, which sold for XAF 40,000 before the conflict is now worth XAF 80,000 in Birao. A small bowl of millet that used to cost XAF 500 is now worth XAF 1,000.</p>\n<p>The northern region of CAR was already experiencing acute food insecurity, a situation that is <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1156015/?iso3=CAF\">projected</a> to reach one of its most severe stages by August if an adequate response is not forthcoming. According to the <a href=\"https://reliefweb.int/node/3911977\">2023 Humanitarian Needs Overview</a> released in November 2022, about 120,000 people are in need of humanitarian assistance and protection in northern CAR, and capacities to absorb additional needs are very limited.</p>\n<p>Humanitarian teams comprising NGOs, United Nations and Government agencies arrived on 29 April in Am-Dafock from Birao to not only further assess the situation, but also provide emergency assistance, including clean water and emergency shelters. According to the first count, approximately 6,000 people, including 400 Central African returnees, have crossed the border from Sudan and are living in spontaneous settlements in Am-Dafock, CAR. The dynamic of new arrivals has stabilized and local authorities are discussing the possibility of relocation to Birao. In the meantime, a humanitarian partner continues to provide, among other things, an emergency medical and nutritional response to the arrivals, also strengthening the stock of medicines at the local health center.</p>\n<p>Am-Dafock is in a flood-prone area and with the rainy season coming next month, access will be extremely limited. The humanitarian community is working hard to ensure that those in need receive required assistance in a timely manner, including in adapting logistical arrangements. Prior to the conflict, the humanitarian presence in this border region was already very limited.</p>\n<p>Currently, the most pressing needs include emergency shelter, food, clean water, and latrines</p>\n"
+    }
+  },
+  "text": "# Impact of Sudan crisis in the Central African Republic (Flash Update 30 Apr 2023)\n\n**Impact of Sudan crisis in the Central African Republic**\n\nThe ongoing conflict in Sudan have started affecting the Central African Republic (CAR), mostly the northern region. As a result of insecurity along the border area, traffic between Sudan and CAR has been severely disrupted, causing a sharp increase in the price of basic commodities. Sudan supplies several towns in CAR, particularly Birao in the Vakaga Prefecture and Ndélé in the Bamingui-Bangoran Prefecture. During the rainy season from April to October, access is very challenged and supplies largely depend on Sudan. For some items, prices have doubled. A 50-kg bag of sugar, which sold for XAF 40,000 before the conflict is now worth XAF 80,000 in Birao. A small bowl of millet that used to cost XAF 500 is now worth XAF 1,000.  \n\nThe northern region of CAR was already experiencing acute food insecurity, a situation that is [projected](https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1156015/?iso3=CAF) to reach one of its most severe stages by August if an adequate response is not forthcoming. According to the [2023 Humanitarian Needs Overview](https://reliefweb.int/node/3911977) released in November 2022, about 120,000 people are in need of humanitarian assistance and protection in northern CAR, and capacities to absorb additional needs are very limited.  \n\nHumanitarian teams comprising NGOs, United Nations and Government agencies arrived on 29 April in Am-Dafock from Birao to not only further assess the situation, but also provide emergency assistance, including clean water and emergency shelters. According to the first count, approximately 6,000 people, including 400 Central African returnees, have crossed the border from Sudan and are living in spontaneous settlements in Am-Dafock, CAR. The dynamic of new arrivals has stabilized and local authorities are discussing the possibility of relocation to Birao. In the meantime, a humanitarian partner continues to provide, among other things, an emergency medical and nutritional response to the arrivals, also strengthening the stock of medicines at the local health center.  \n\nAm-Dafock is in a flood-prone area and with the rainy season coming next month, access will be extremely limited. The humanitarian community is working hard to ensure that those in need receive required assistance in a timely manner, including in adapting logistical arrangements. Prior to the conflict, the humanitarian presence in this border region was already very limited.  \n\nCurrently, the most pressing needs include emergency shelter, food, clean water, and latrines",
+  "summary": " The ongoing conflict in Sudan is having a severe impact on the Central African Republic (CAR), particularly in the northern region. Prices of basic commodities have doubled, and the region is already experiencing acute food insecurity. Approximately 6,000 people, including 400 Central African returnees, have crossed the border from Sudan and are living in spontaneous settlements in Am-Dafock, CAR. The most pressing needs include emergency shelter, food, clean water, and latrines. Humanitarian teams are providing emergency assistance and the humanitarian community is working hard to ensure those in need receive required assistance in a timely manner.",
+  "metadata": {
+    "id": "3957228",
+    "name": "Impact of Sudan crisis in the Central African Republic (Flash Update 30 Apr 2023)",
+    "date_original": 1682812800000,
+    "date_changed": 1682841706000,
+    "date_created": 1682823687000,
+    "primary_country_id": 54,
+    "primary_country_name": "Central African Republic",
+    "primary_country_iso3": "caf",
+    "primary_country_location": {
+      "lon": 20.48,
+      "lat": 6.57
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "original": {
+    "id": "3959176",
+    "fields": {
+      "date": {
+        "changed": "2023-05-05T16:45:20+00:00",
+        "created": "2023-05-05T16:43:45+00:00",
+        "original": "2023-05-05T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/241",
+          "name": "Ukraine",
+          "location": {
+            "lon": 31.32,
+            "lat": 49.32
+          },
+          "id": 241,
+          "shortname": "Ukraine",
+          "iso3": "ukr",
+          "primary": true
+        }
+      ],
+      "origin": "https://www.who.int/europe/publications/i/item/WHO-EURO-2023-5319-45083-69309",
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/241",
+        "name": "Ukraine",
+        "location": {
+          "lon": 31.32,
+          "lat": 49.32
+        },
+        "id": 241,
+        "shortname": "Ukraine",
+        "iso3": "ukr"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1275",
+          "longname": "World Health Organization",
+          "spanish_name": "Organización Mundial de la Salud",
+          "name": "World Health Organization",
+          "id": 1275,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "WHO",
+          "homepage": "http://www.who.int/"
+        }
+      ],
+      "title": "War in Ukraine: Situation report from WHO Ukraine country office. Issue No. 51, 5 May 2023",
+      "body": "**HIGHLIGHTS**\n\n- WHO Regional Director for Europe Dr Hans Henri P. Kluge and WHO Representative (WR) in Ukraine Dr Jarno Habicht met with the Minister of Health of Ukraine Viktor Liashko during his first official visit to the WHO Regional Office for Europe in Copenhagen. Key discussion points included: the impact of war on the health-care system and people’s health in Ukraine, current needs and challenges in Ukraine’s health sector and response thereto, priority directions of WHO cooperation in the health sector in Ukraine. The visit also provided an opportunity to discuss short-term activities in 2023 and the needs of the health sector in the coming years, as well as further reform of the health-care sector in Ukraine, among other topics.\n\n- The high-level visits of the Regional Director and Director of Health Emergencies Interventions to the WHO Country Office (CO) in Ukraine took place on 24–28 April 2023. The WHO delegation, which included Dr Gerald Rockenschaub (Regional Emergency Director at the WHO Regional Office for Europe (WHO/Europe)), Dr Heather Papowitz (Emergency Coordinator, WHO/Europe), Kayla King (Project Management Officer, WHO/Europe) and Altaf Musani (Director of Health Emergencies Interventions, WHO headquarters), visited the Odesa,  \nDnipropetrovsk and Poltava hubs to review the status of the WHO response on the ground and outline the next steps in WHO’s collective efforts in the country.\n\n**SITUATION UPDATE**\n\n- Multiple deaths were reported following more than 20 cruise missiles and two drone strikes fired by the Russian forces across Ukraine on 28 April In the town of Uman located 215 km south of Kyiv two rockets hit a block of flats, killing at least 17 people and wounding many others, according to Ukrainian police T wo people were also killed in strikes on the city of Dnipropetrovsk The governor of the Cherkasy oblast Ihor Taburets said the city was struck by two cruise missiles, with one hitting a residential building and the other a warehouse \n\n- A shelling on 17 April damaged a health care facility in the Nikopol raion Damages were also reported following a shelling that affected health care facilities in Sloviansk Druzhkivka and elsewhere in the Donetsk oblast In the Sumy oblast, 39 health care facilities were damaged, and in the Mykolayiv oblast, 98 health care facilities were damaged or destroyed by 21 April \n\n- The cooperation of the Ministry of Health and the European Commission led to the evacuation of 19 Ukrainians for specialized treatment in clinics in Croatia, marking the first instance of cooperation on medical evacuation to the country Another 38 citizens of Ukraine were transported to Poland thanks to support from the Canadian Foundation In addition to facilitating medical evacuations, the cooperation creates a unique opportunity for Ukrainian doctors to study and exchange practical experience with their foreign colleagues",
+      "url": "https://reliefweb.int/node/3959176",
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/47/85/47855ce1-f47d-44e3-9108-66d727bac4f0.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/47/85/47855ce1-f47d-44e3-9108-66d727bac4f0.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/47/85/47855ce1-f47d-44e3-9108-66d727bac4f0.png",
+            "version": "2417851-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/47/85/47855ce1-f47d-44e3-9108-66d727bac4f0.png"
+          },
+          "filename": "WHO-EURO-2023-5319-45083-69309-eng.pdf",
+          "mimetype": "application/pdf",
+          "id": "2417851",
+          "filesize": "1026107",
+          "url": "https://reliefweb.int/attachments/47855ce1-f47d-44e3-9108-66d727bac4f0/WHO-EURO-2023-5319-45083-69309-eng.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/ukraine/war-ukraine-situation-report-who-ukraine-country-office-issue-no-51-5-may-2023",
+      "theme": [
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        }
+      ],
+      "id": 3959176,
+      "status": "published",
+      "body-html": "<p><strong>HIGHLIGHTS</strong></p>\n<ul>\n<li>\n<p>WHO Regional Director for Europe Dr Hans Henri P. Kluge and WHO Representative (WR) in Ukraine Dr Jarno Habicht met with the Minister of Health of Ukraine Viktor Liashko during his first official visit to the WHO Regional Office for Europe in Copenhagen. Key discussion points included: the impact of war on the health-care system and people’s health in Ukraine, current needs and challenges in Ukraine’s health sector and response thereto, priority directions of WHO cooperation in the health sector in Ukraine. The visit also provided an opportunity to discuss short-term activities in 2023 and the needs of the health sector in the coming years, as well as further reform of the health-care sector in Ukraine, among other topics.</p>\n</li>\n<li>\n<p>The high-level visits of the Regional Director and Director of Health Emergencies Interventions to the WHO Country Office (CO) in Ukraine took place on 24–28 April 2023. The WHO delegation, which included Dr Gerald Rockenschaub (Regional Emergency Director at the WHO Regional Office for Europe (WHO/Europe)), Dr Heather Papowitz (Emergency Coordinator, WHO/Europe), Kayla King (Project Management Officer, WHO/Europe) and Altaf Musani (Director of Health Emergencies Interventions, WHO headquarters), visited the Odesa,<br />\nDnipropetrovsk and Poltava hubs to review the status of the WHO response on the ground and outline the next steps in WHO’s collective efforts in the country.</p>\n</li>\n</ul>\n<p><strong>SITUATION UPDATE</strong></p>\n<ul>\n<li>\n<p>Multiple deaths were reported following more than 20 cruise missiles and two drone strikes fired by the Russian forces across Ukraine on 28 April In the town of Uman located 215 km south of Kyiv two rockets hit a block of flats, killing at least 17 people and wounding many others, according to Ukrainian police T wo people were also killed in strikes on the city of Dnipropetrovsk The governor of the Cherkasy oblast Ihor Taburets said the city was struck by two cruise missiles, with one hitting a residential building and the other a warehouse</p>\n</li>\n<li>\n<p>A shelling on 17 April damaged a health care facility in the Nikopol raion Damages were also reported following a shelling that affected health care facilities in Sloviansk Druzhkivka and elsewhere in the Donetsk oblast In the Sumy oblast, 39 health care facilities were damaged, and in the Mykolayiv oblast, 98 health care facilities were damaged or destroyed by 21 April</p>\n</li>\n<li>\n<p>The cooperation of the Ministry of Health and the European Commission led to the evacuation of 19 Ukrainians for specialized treatment in clinics in Croatia, marking the first instance of cooperation on medical evacuation to the country Another 38 citizens of Ukraine were transported to Poland thanks to support from the Canadian Foundation In addition to facilitating medical evacuations, the cooperation creates a unique opportunity for Ukrainian doctors to study and exchange practical experience with their foreign colleagues</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# War in Ukraine: Situation report from WHO Ukraine country office. Issue No. 51, 5 May 2023\n\n**HIGHLIGHTS**\n\n- WHO Regional Director for Europe Dr Hans Henri P. Kluge and WHO Representative (WR) in Ukraine Dr Jarno Habicht met with the Minister of Health of Ukraine Viktor Liashko during his first official visit to the WHO Regional Office for Europe in Copenhagen. Key discussion points included: the impact of war on the health-care system and people’s health in Ukraine, current needs and challenges in Ukraine’s health sector and response thereto, priority directions of WHO cooperation in the health sector in Ukraine. The visit also provided an opportunity to discuss short-term activities in 2023 and the needs of the health sector in the coming years, as well as further reform of the health-care sector in Ukraine, among other topics.\n\n- The high-level visits of the Regional Director and Director of Health Emergencies Interventions to the WHO Country Office (CO) in Ukraine took place on 24–28 April 2023. The WHO delegation, which included Dr Gerald Rockenschaub (Regional Emergency Director at the WHO Regional Office for Europe (WHO/Europe)), Dr Heather Papowitz (Emergency Coordinator, WHO/Europe), Kayla King (Project Management Officer, WHO/Europe) and Altaf Musani (Director of Health Emergencies Interventions, WHO headquarters), visited the Odesa,  \nDnipropetrovsk and Poltava hubs to review the status of the WHO response on the ground and outline the next steps in WHO’s collective efforts in the country.\n\n**SITUATION UPDATE**\n\n- Multiple deaths were reported following more than 20 cruise missiles and two drone strikes fired by the Russian forces across Ukraine on 28 April In the town of Uman located 215 km south of Kyiv two rockets hit a block of flats, killing at least 17 people and wounding many others, according to Ukrainian police T wo people were also killed in strikes on the city of Dnipropetrovsk The governor of the Cherkasy oblast Ihor Taburets said the city was struck by two cruise missiles, with one hitting a residential building and the other a warehouse \n\n- A shelling on 17 April damaged a health care facility in the Nikopol raion Damages were also reported following a shelling that affected health care facilities in Sloviansk Druzhkivka and elsewhere in the Donetsk oblast In the Sumy oblast, 39 health care facilities were damaged, and in the Mykolayiv oblast, 98 health care facilities were damaged or destroyed by 21 April \n\n- The cooperation of the Ministry of Health and the European Commission led to the evacuation of 19 Ukrainians for specialized treatment in clinics in Croatia, marking the first instance of cooperation on medical evacuation to the country Another 38 citizens of Ukraine were transported to Poland thanks to support from the Canadian Foundation In addition to facilitating medical evacuations, the cooperation creates a unique opportunity for Ukrainian doctors to study and exchange practical experience with their foreign colleagues",
+  "summary": "\n\nWHO Regional Director for Europe Dr Hans Henri P. Kluge and WHO Representative (WR) in Ukraine Dr Jarno Habicht visited the WHO Regional Office for Europe in Copenhagen to discuss the impact of war on the health-care system and people’s health in Ukraine. The WHO delegation also visited Odesa, Dnipropetrovsk and Poltava hubs to review the status of the WHO response on the ground. Multiple deaths were reported following Russian forces' strikes across Ukraine. Health care facilities in various regions were damaged or destroyed. The cooperation of the Ministry of Health and the European Commission led to the evacuation of 19 Ukrainians for specialized treatment in clinics in Croatia, and 38 citizens of Ukraine were transported to Poland.",
+  "metadata": {
+    "id": "3959176",
+    "name": "War in Ukraine: Situation report from WHO Ukraine country office. Issue No. 51, 5 May 2023",
+    "date_original": 1683244800000,
+    "date_changed": 1683305120000,
+    "date_created": 1683305025000,
+    "primary_country_id": 241,
+    "primary_country_name": "Ukraine",
+    "primary_country_iso3": "ukr",
+    "primary_country_location": {
+      "lon": 31.32,
+      "lat": 49.32
+    }
+  }
+}

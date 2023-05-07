@@ -1,0 +1,230 @@
+{
+  "original": {
+    "id": "3955586",
+    "fields": {
+      "date": {
+        "changed": "2023-04-24T20:03:06+00:00",
+        "created": "2023-04-24T19:29:03+00:00",
+        "original": "2023-04-24T00:00:00+00:00"
+      },
+      "country": [
+        {
+          "href": "https://api.reliefweb.int/v1/countries/13",
+          "name": "Afghanistan",
+          "location": {
+            "lon": 66.03,
+            "lat": 33.84
+          },
+          "id": 13,
+          "shortname": "Afghanistan",
+          "iso3": "afg"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/121",
+          "name": "Iran (Islamic Republic of)",
+          "location": {
+            "lon": 54.3,
+            "lat": 32.57
+          },
+          "id": 121,
+          "shortname": "Iran",
+          "iso3": "irn"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/182",
+          "name": "Pakistan",
+          "location": {
+            "lon": 69.39,
+            "lat": 29.97
+          },
+          "id": 182,
+          "shortname": "Pakistan",
+          "iso3": "pak",
+          "primary": true
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/227",
+          "name": "Tajikistan",
+          "location": {
+            "lon": 71.04,
+            "lat": 38.84
+          },
+          "id": 227,
+          "shortname": "Tajikistan",
+          "iso3": "tjk"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/237",
+          "name": "Turkmenistan",
+          "location": {
+            "lon": 59.38,
+            "lat": 39.12
+          },
+          "id": 237,
+          "shortname": "Turkmenistan",
+          "iso3": "tkm"
+        },
+        {
+          "href": "https://api.reliefweb.int/v1/countries/248",
+          "name": "Uzbekistan",
+          "location": {
+            "lon": 63.17,
+            "lat": 41.75
+          },
+          "id": 248,
+          "shortname": "Uzbekistan",
+          "iso3": "uzb"
+        }
+      ],
+      "primary_country": {
+        "href": "https://api.reliefweb.int/v1/countries/182",
+        "name": "Pakistan",
+        "location": {
+          "lon": 69.39,
+          "lat": 29.97
+        },
+        "id": 182,
+        "shortname": "Pakistan",
+        "iso3": "pak"
+      },
+      "format": [
+        {
+          "name": "Situation Report",
+          "id": 10
+        }
+      ],
+      "disaster_type": [
+        {
+          "code": "EP",
+          "name": "Epidemic",
+          "id": 4642
+        },
+        {
+          "code": "FF",
+          "name": "Flash Flood",
+          "id": 4624
+        },
+        {
+          "code": "FL",
+          "name": "Flood",
+          "id": 4611
+        }
+      ],
+      "language": [
+        {
+          "code": "en",
+          "name": "English",
+          "id": 267
+        }
+      ],
+      "source": [
+        {
+          "href": "https://api.reliefweb.int/v1/sources/1979",
+          "longname": "United Nations Children's Fund",
+          "spanish_name": "Fondo de las Naciones Unidas para la Infancia",
+          "name": "UN Children's Fund",
+          "id": 1979,
+          "type": {
+            "name": "International Organization",
+            "id": 272
+          },
+          "shortname": "UNICEF",
+          "homepage": "http://www.unicef.org"
+        }
+      ],
+      "title": "UNICEF Afghanistan Outflow Humanitarian Situation Report No.2 (1 January - 31 December 2022)",
+      "body": "**Highlights**\n\n- The deteriorating humanitarian situation in Afghanistan in 2021 led to increased cross border movement of Afghans seeking protection and asylum in neighboring countries. As of 31 December, there were over 7.2 million Afghans of various statuses living in Iran, Pakistan, Tajikistan and Uzbekistan, including 2.1 million registered Afghan refugees. Over 1.6 million Afghans have arrived in the countries since August 2021. No official refugee arrivals have been recorded in Turkmenistan to date.\n\n- In 2022, UNICEF provided critical support to Afghans and host community members in the neighbouring countries, and enhanced preparedness actions in case of a potential increase of influx. Across these countries, UNICEF and partners have reached over 350,000 children with access to education and more than 325,000 children have been vaccinated against measles, among refugees and hosting communities. Over 20,000 children with severe acute malnutrition have been treated, and over 140,000 children and caregivers accessed mental health and psychosocial support.\n\n- UNICEF appealed for US$81.2 million to meet the needs of Afghan children and their families in 2022. As of the end of 2022, there was a funding gap of US$30.7 million (38 per cent). In 2023, US$66.2 million is required to continue support 1.9 million people, including 1.1 million children with essential services. Given the ongoing uncertainty in Afghanistan, this funding is necessary to protect the most vulnerable women and children.",
+      "url": "https://reliefweb.int/node/3955586",
+      "disaster": [
+        {
+          "name": "Pakistan: Floods - Jul 2022",
+          "id": 51234,
+          "glide": "FL-2022-000254-PAK",
+          "type": [
+            {
+              "code": "FF",
+              "name": "Flash Flood",
+              "id": 4624
+            },
+            {
+              "code": "FL",
+              "name": "Flood",
+              "id": 4611,
+              "primary": true
+            }
+          ],
+          "status": "ongoing"
+        }
+      ],
+      "file": [
+        {
+          "preview": {
+            "url-thumb": "https://reliefweb.int/sites/default/files/styles/thumbnail/public/previews/67/03/67039361-f129-4a31-85b6-482aa0cd4dce.png",
+            "url-small": "https://reliefweb.int/sites/default/files/styles/small/public/previews/67/03/67039361-f129-4a31-85b6-482aa0cd4dce.png",
+            "url-large": "https://reliefweb.int/sites/default/files/styles/large/public/previews/67/03/67039361-f129-4a31-85b6-482aa0cd4dce.png",
+            "version": "2414337-1-0",
+            "url": "https://reliefweb.int/sites/default/files/previews/67/03/67039361-f129-4a31-85b6-482aa0cd4dce.png"
+          },
+          "filename": "UNICEF Afghanistan (Outflow) Humanitarian Situation Report No. 2, Jan-Dec 2022 (1).pdf",
+          "mimetype": "application/pdf",
+          "id": "2414337",
+          "filesize": "419523",
+          "url": "https://reliefweb.int/attachments/67039361-f129-4a31-85b6-482aa0cd4dce/UNICEF%20Afghanistan%20%28Outflow%29%20Humanitarian%20Situation%20Report%20No.%202%2C%20Jan-Dec%202022%20%281%29.pdf"
+        }
+      ],
+      "url_alias": "https://reliefweb.int/report/pakistan/unicef-afghanistan-outflow-humanitarian-situation-report-no2-1-january-31-december-2022",
+      "redirects": [
+        "https://reliefweb.int/report/afghanistan/unicef-afghanistan-outflow-humanitarian-situation-report-no2-1-january-31-december-2022"
+      ],
+      "theme": [
+        {
+          "name": "Contributions",
+          "id": 4589
+        },
+        {
+          "name": "Coordination",
+          "id": 4590
+        },
+        {
+          "name": "Education",
+          "id": 4592
+        },
+        {
+          "name": "Food and Nutrition",
+          "id": 4593
+        },
+        {
+          "name": "Health",
+          "id": 4595
+        },
+        {
+          "name": "Protection and Human Rights",
+          "id": 4600
+        },
+        {
+          "name": "Water Sanitation Hygiene",
+          "id": 4604
+        }
+      ],
+      "id": 3955586,
+      "status": "published",
+      "body-html": "<p><strong>Highlights</strong></p>\n<ul>\n<li>\n<p>The deteriorating humanitarian situation in Afghanistan in 2021 led to increased cross border movement of Afghans seeking protection and asylum in neighboring countries. As of 31 December, there were over 7.2 million Afghans of various statuses living in Iran, Pakistan, Tajikistan and Uzbekistan, including 2.1 million registered Afghan refugees. Over 1.6 million Afghans have arrived in the countries since August 2021. No official refugee arrivals have been recorded in Turkmenistan to date.</p>\n</li>\n<li>\n<p>In 2022, UNICEF provided critical support to Afghans and host community members in the neighbouring countries, and enhanced preparedness actions in case of a potential increase of influx. Across these countries, UNICEF and partners have reached over 350,000 children with access to education and more than 325,000 children have been vaccinated against measles, among refugees and hosting communities. Over 20,000 children with severe acute malnutrition have been treated, and over 140,000 children and caregivers accessed mental health and psychosocial support.</p>\n</li>\n<li>\n<p>UNICEF appealed for US$81.2 million to meet the needs of Afghan children and their families in 2022. As of the end of 2022, there was a funding gap of US$30.7 million (38 per cent). In 2023, US$66.2 million is required to continue support 1.9 million people, including 1.1 million children with essential services. Given the ongoing uncertainty in Afghanistan, this funding is necessary to protect the most vulnerable women and children.</p>\n</li>\n</ul>\n"
+    }
+  },
+  "text": "# UNICEF Afghanistan Outflow Humanitarian Situation Report No.2 (1 January - 31 December 2022)\n\n**Highlights**\n\n- The deteriorating humanitarian situation in Afghanistan in 2021 led to increased cross border movement of Afghans seeking protection and asylum in neighboring countries. As of 31 December, there were over 7.2 million Afghans of various statuses living in Iran, Pakistan, Tajikistan and Uzbekistan, including 2.1 million registered Afghan refugees. Over 1.6 million Afghans have arrived in the countries since August 2021. No official refugee arrivals have been recorded in Turkmenistan to date.\n\n- In 2022, UNICEF provided critical support to Afghans and host community members in the neighbouring countries, and enhanced preparedness actions in case of a potential increase of influx. Across these countries, UNICEF and partners have reached over 350,000 children with access to education and more than 325,000 children have been vaccinated against measles, among refugees and hosting communities. Over 20,000 children with severe acute malnutrition have been treated, and over 140,000 children and caregivers accessed mental health and psychosocial support.\n\n- UNICEF appealed for US$81.2 million to meet the needs of Afghan children and their families in 2022. As of the end of 2022, there was a funding gap of US$30.7 million (38 per cent). In 2023, US$66.2 million is required to continue support 1.9 million people, including 1.1 million children with essential services. Given the ongoing uncertainty in Afghanistan, this funding is necessary to protect the most vulnerable women and children.",
+  "summary": " In 2021, the deteriorating humanitarian situation in Afghanistan led to increased cross border movement of Afghans seeking protection and asylum in neighboring countries. As of the end of 2022, UNICEF had provided critical support to Afghans and host community members in the neighbouring countries, reaching over 350,000 children with access to education and more than 325,000 children vaccinated against measles. UNICEF appealed for US$81.2 million to meet the needs of Afghan children and their families in 2022, but there was a funding gap of US$30.7 million (38 per cent). In 2023, US$66.2 million is required to continue support 1.9 million people, including 1.1 million children with essential services.",
+  "metadata": {
+    "id": "3955586",
+    "name": "UNICEF Afghanistan Outflow Humanitarian Situation Report No.2 (1 January - 31 December 2022)",
+    "date_original": 1682294400000,
+    "date_changed": 1682366586000,
+    "date_created": 1682364543000,
+    "primary_country_id": 182,
+    "primary_country_name": "Pakistan",
+    "primary_country_iso3": "pak",
+    "primary_country_location": {
+      "lon": 69.39,
+      "lat": 29.97
+    }
+  }
+}
