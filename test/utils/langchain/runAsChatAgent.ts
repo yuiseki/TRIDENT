@@ -25,10 +25,14 @@ const tools: ChainTool[] = [
 // agent executor
 const chatModel = new ChatOpenAI({ temperature: 0 });
 const executor = await initializeAgentExecutorWithOptions(tools, chatModel, {
-  agentType: "chat-zero-shot-react-description",
+  //agentType: "chat-zero-shot-react-description",
+  agentType: "zero-shot-react-description",
   agentArgs: {
-    prefix: `You are an AI who answers the question from user. You answer as concise as possible. You use tools proactively. Question from user: {input}.`,
-    suffix: `{agent_scratchpad}`,
+    prefix: `You are an AI who answers the question from user. You answer as concise as possible. You use tools proactively. You have access to the following tools:`,
+    suffix: `Begin!
+
+Question: {input}
+Thought: {agent_scratchpad}`,
     inputVariables: ["input", "agent_scratchpad"],
   },
   maxIterations: 8,
