@@ -35,7 +35,7 @@ const agentExecutor = await initializeAgentExecutorWithOptions(tools, model, {
 for await (const query of questions) {
   console.log("\n----- ----- ----- ----- ----- -----\n");
   console.log("Q:", query);
-  agentExecutor.agent.plan([], "")
+  //agentExecutor.agent.plan([], "")
   const result = await agentExecutor.call({
     question: query,
   });
