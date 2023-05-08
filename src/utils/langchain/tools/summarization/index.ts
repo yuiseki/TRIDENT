@@ -7,7 +7,7 @@ const summarizationPrompt = PromptTemplate.fromTemplate(
   "You are an AI who always concisely summarize given text as short as possible. Summarise the following text in a nutshell: {text}"
 );
 
-export const loadSummarizationChainTool = (llm: BaseLanguageModel) => {
+export const loadSummarizationChainTool = async (llm: BaseLanguageModel) => {
   return new ChainTool({
     name: "text-summarization",
     chain: new LLMChain({ llm: llm, prompt: summarizationPrompt }),

@@ -25,7 +25,7 @@
     "test:utils:langchain/namedEntityRecognition": "node --loader ts-node/esm ./test/utils/langchain/namedEntityRecognition.ts",
     "test:utils:langchain/analyzeOverpassResponse": "node --loader ts-node/esm ./test/utils/langchain/analyzeOverpassResponse.ts",
     "test:utils:langchain/runAsAgent": "node --loader ts-node/esm ./test/utils/langchain/runAsAgent.ts",
-    "test:utils:langchain/runVectorStoreAgent": "node --loader ts-node/esm ./test/utils/langchain/runVectorStoreAgent.ts"
+    "test:utils:langchain/runAsChatAgent": "node --loader ts-node/esm ./test/utils/langchain/runAsChatAgent.ts"
   },
   "dependencies": {
     "@dqbd/tiktoken": "^1.0.7",
