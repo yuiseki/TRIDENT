@@ -4,22 +4,26 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 import { OpenAI } from "langchain/llms/openai";
-import { ChainTool } from "langchain/tools";
+import { ChainTool, Tool } from "langchain/tools";
 import { initializeAgentExecutorWithOptions } from "langchain/agents";
 import { AgentStep } from "langchain/schema";
 
+import { Calculator } from "langchain/tools/calculator";
 import { loadResolutionChainTool } from "../../../src/utils/langchain/tools/resolutions/index.ts";
 import { loadSituationChainTool } from "../../../src/utils/langchain/tools/situations/index.ts";
 import { loadSummarizationChainTool } from "../../../src/utils/langchain/tools/summarization/index.ts";
 import { questions } from "../../questions.ts";
+import { Wikipedia } from "../../../src/utils/langchain/tools/wikipedia/index.ts";
 
 const model = new OpenAI({ temperature: 0 });
 
 // tools
-const tools: ChainTool[] = [
-  await loadResolutionChainTool(model),
+const tools: Array<ChainTool | Tool> = [
+  new Calculator(),
+  new Wikipedia(),
+  //await loadResolutionChainTool(model),
   await loadSituationChainTool(model),
-  await loadSummarizationChainTool(model),
+  //await loadSummarizationChainTool(model),
 ];
 
 // agent executor
