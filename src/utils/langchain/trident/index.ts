@@ -1,10 +1,4 @@
-import {
-  LLMSingleActionAgent,
-  AgentActionOutputParser,
-  AgentExecutor,
-} from "langchain/agents";
-import { LLMChain } from "langchain/chains";
-import { OpenAI } from "langchain/llms/openai";
+import { AgentActionOutputParser } from "langchain/agents";
 import {
   BasePromptTemplate,
   BaseStringPromptTemplate,
@@ -18,8 +12,7 @@ import {
   AgentAction,
   AgentFinish,
 } from "langchain/schema";
-import { SerpAPI, Tool } from "langchain/tools";
-import { Calculator } from "langchain/tools/calculator";
+import { Tool } from "langchain/tools";
 
 const PREFIX = `Answer the following questions as best you can. You have access to the following tools:`;
 const formatInstructions = (
@@ -39,7 +32,7 @@ const SUFFIX = `Begin!
 Question: {input}
 Thought:{agent_scratchpad}`;
 
-class CustomPromptTemplate extends BaseStringPromptTemplate {
+export class TridentPromptTemplate extends BaseStringPromptTemplate {
   tools: Tool[];
 
   constructor(args: { tools: Tool[]; inputVariables: string[] }) {
@@ -81,7 +74,7 @@ class CustomPromptTemplate extends BaseStringPromptTemplate {
   }
 }
 
-class CustomOutputParser extends AgentActionOutputParser {
+export class TridentOutputParser extends AgentActionOutputParser {
   async parse(text: string): Promise<AgentAction | AgentFinish> {
     if (text.includes("Final Answer:")) {
       const parts = text.split("Final Answer:");

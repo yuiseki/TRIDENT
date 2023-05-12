@@ -1,6 +1,6 @@
 import { OpenAI } from "langchain/llms/openai";
 import { ChatOpenAI } from "langchain/chat_models/openai";
-import { ChainTool } from "langchain/tools";
+import { ChainTool, Tool } from "langchain/tools";
 import { initializeAgentExecutorWithOptions } from "langchain/agents";
 import { AgentStep } from "langchain/schema";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
@@ -13,11 +13,15 @@ import { loadSituationChainTool } from "../../../src/utils/langchain/tools/situa
 import { loadSummarizationChainTool } from "../../../src/utils/langchain/tools/summarization/index.ts";
 import { questions } from "../../questions.ts";
 import { OpenAIEmbeddings } from "langchain/embeddings/openai";
+import { Calculator } from "langchain/tools/calculator";
+import { Wikipedia } from "../../../src/utils/langchain/tools/wikipedia/index.ts";
 
 const model = new OpenAI({ temperature: 0 });
 
 // tools
-const tools: ChainTool[] = [
+const tools: Array<ChainTool | Tool> = [
+  new Calculator(),
+  new Wikipedia(),
   await loadResolutionChainTool(model),
   await loadSituationChainTool(model),
   await loadSummarizationChainTool(model),

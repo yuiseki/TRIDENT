@@ -25,7 +25,9 @@
     "test:utils:langchain/namedEntityRecognition": "node --loader ts-node/esm ./test/utils/langchain/namedEntityRecognition.ts",
     "test:utils:langchain/analyzeOverpassResponse": "node --loader ts-node/esm ./test/utils/langchain/analyzeOverpassResponse.ts",
     "test:utils:langchain/runAsAgent": "node --loader ts-node/esm ./test/utils/langchain/runAsAgent.ts",
-    "test:utils:langchain/runAsChatAgent": "node --loader ts-node/esm ./test/utils/langchain/runAsChatAgent.ts"
+    "test:utils:langchain/runAsChatAgent": "node --loader ts-node/esm ./test/utils/langchain/runAsChatAgent.ts",
+    "test:trident": "node --loader ts-node/esm ./test/utils/langchain/trident.ts",
+    "test:planExec": "node --loader ts-node/esm ./test/utils/langchain/planExec.ts"
   },
   "dependencies": {
     "@dqbd/tiktoken": "^1.0.7",
