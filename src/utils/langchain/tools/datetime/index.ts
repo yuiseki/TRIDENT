@@ -7,7 +7,7 @@ export const loadDateTimeChainTool = async (llm: BaseLanguageModel) => {
   return new ChainTool({
     name: "qa-date-time",
     description:
-      "useful for when you need to ask about date and time. Input: a question related date and time.",
+      "useful for when you need to ask questions related date and time. Input: a question related date and time.",
     chain: new LLMChain({
       llm: llm,
       prompt: PromptTemplate.fromTemplate(

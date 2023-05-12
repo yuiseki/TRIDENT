@@ -14,7 +14,7 @@ export const loadSituationChainTool = async (llm: BaseLanguageModel) => {
   return new ChainTool({
     name: "qa-latest-worlds-situation",
     description:
-      "useful for when you need to ask latest humanitarian situation. Input: a question about humanitarian situation. Output: answer for the question.",
+      "useful for when you need to ask latest humanitarian situation and what happing in the world. Input: a question about latest situation.",
     chain: VectorDBQAChain.fromLLM(llm, situationsVectorStore),
   });
 };
