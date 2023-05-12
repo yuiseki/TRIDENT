@@ -13,7 +13,11 @@ export class Wikipedia extends Tool {
       params.append("srsearch", input);
       const res = await fetch(`${endpoint}?${params.toString()}`);
       const json = await res.json();
-      let answer = json["query"]["search"][0]["snippet"].replace(/<[^>]*>/, "");
+      let answer = json["query"]["search"][0]["snippet"].replaceAll(
+        /<[^>]*>/g,
+        ""
+      );
+      answer.replaceAll("&quot;", "**");
       if ("pageid" in json["query"]["search"][0]) {
         let pageId = json["query"]["search"][0]["pageid"];
         answer = `${answer}\nurl: https://en.wikipedia.org/?curid=${pageId}`;
