@@ -21,7 +21,7 @@ dotenv.config();
 const model = new OpenAI({ temperature: 0 });
 
 const tools = [
-  new Calculator(),
+  //new Calculator(),
   new Wikipedia(),
   new ReliefWeb(),
   await loadResolutionChainTool(model),
@@ -58,11 +58,11 @@ for await (const input of questions) {
   const result = await executor.call({ input });
   let idx = 0;
   for (const step of result.intermediateSteps as AgentStep[]) {
+    idx++;
     console.log("Iteration:", idx);
     console.log("\tTool:", step.action.tool);
     console.log("\tTool Input:", step.action.toolInput);
     console.log("\tObservation:", step.observation.replaceAll("\n", ".. "));
-    idx++;
   }
   console.log("");
   console.log("A:", result.output);

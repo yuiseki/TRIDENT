@@ -14,7 +14,7 @@ import {
 } from "langchain/schema";
 import { Tool } from "langchain/tools";
 
-const PREFIX = `Answer the following questions as best you can. You have access to the following tools:`;
+const PREFIX = `Answer the following questions as best you can. You answer as concise as possible. You have access to the following tools:`;
 const formatInstructions = (
   toolNames: string
 ) => `Use the following format in your response:
