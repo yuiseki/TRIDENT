@@ -15,6 +15,7 @@ import { loadDateTimeChainTool } from "../../../src/utils/langchain/tools/dateti
 
 import * as dotenv from "dotenv";
 import { questions } from "../../questions.ts";
+import { ReliefWeb } from "../../../src/utils/langchain/tools/reliefweb/index.ts";
 dotenv.config();
 
 const model = new OpenAI({ temperature: 0 });
@@ -22,8 +23,9 @@ const model = new OpenAI({ temperature: 0 });
 const tools = [
   new Calculator(),
   new Wikipedia(),
+  new ReliefWeb(),
   await loadResolutionChainTool(model),
-  await loadSituationChainTool(model),
+  //await loadSituationChainTool(model),
   await loadSummarizationChainTool(model),
   await loadDateTimeChainTool(model),
 ];
