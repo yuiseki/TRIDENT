@@ -27,6 +27,7 @@
     "test:utils:langchain/runAsAgent": "node --loader ts-node/esm ./test/utils/langchain/runAsAgent.ts",
     "test:utils:langchain/runAsChatAgent": "node --loader ts-node/esm ./test/utils/langchain/runAsChatAgent.ts",
     "test:trident": "node --loader ts-node/esm ./test/utils/langchain/trident.ts",
+    "test:geoai": "node --loader ts-node/esm ./test/utils/langchain/geoai.ts",
     "test:planExec": "node --loader ts-node/esm ./test/utils/langchain/planExec.ts"
   },
   "dependencies": {
