@@ -14,6 +14,7 @@ import { loadSummarizationChainTool } from "../../../src/utils/langchain/tools/s
 import { loadDateTimeChainTool } from "../../../src/utils/langchain/tools/datetime/index.ts";
 
 import * as dotenv from "dotenv";
+import { questions } from "../../questions.ts";
 dotenv.config();
 
 const model = new OpenAI({ temperature: 0 });
@@ -48,20 +49,20 @@ const executor = new AgentExecutor({
 });
 console.log("Loaded agent.");
 
-//const input = `How old is the UN Secretary General?`;
-const input = "How many days ago was the UN Secretary General born?";
-//const input = "What time is it now in Japan?";
-
-console.log("Q:", input);
-const result = await executor.call({ input });
-
-let idx = 0;
-for (const step of result.intermediateSteps as AgentStep[]) {
-  console.log("Iteration:", idx);
-  console.log("\tTool:", step.action.tool);
-  console.log("\tTool Input:", step.action.toolInput);
-  console.log("\tObservation:", step.observation.replaceAll("\n", ".. "));
-  idx++;
+for await (const input of questions) {
+  console.log("\n----- ----- ----- ----- ----- -----\n");
+  console.log("Q:", input);
+  console.log("");
+  const result = await executor.call({ input });
+  let idx = 0;
+  for (const step of result.intermediateSteps as AgentStep[]) {
+    console.log("Iteration:", idx);
+    console.log("\tTool:", step.action.tool);
+    console.log("\tTool Input:", step.action.toolInput);
+    console.log("\tObservation:", step.observation.replaceAll("\n", ".. "));
+    idx++;
+  }
+  console.log("");
+  console.log("A:", result.output);
+  console.log("\n----- ----- ----- ----- ----- -----\n");
 }
-
-console.log("A:", result.output);
