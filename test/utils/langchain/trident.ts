@@ -14,6 +14,7 @@ import { loadSummarizationChainTool } from "../../../src/utils/langchain/tools/s
 
 import * as dotenv from "dotenv";
 import { AgentStep } from "langchain/schema";
+import { loadDateTimeChainTool } from "../../../src/utils/langchain/tools/datetime/index.ts";
 dotenv.config();
 
 const model = new OpenAI({ temperature: 0 });
@@ -24,6 +25,7 @@ const tools = [
   await loadResolutionChainTool(model),
   await loadSituationChainTool(model),
   await loadSummarizationChainTool(model),
+  await loadDateTimeChainTool(model),
 ];
 
 const llmChain = new LLMChain({
@@ -47,15 +49,20 @@ const executor = new AgentExecutor({
 });
 console.log("Loaded agent.");
 
-const input = `Who is the secretary general of the UN?`;
+//const input = `How old is the UN Secretary General?`;
+const input = "How many days ago was the UN Secretary General born?";
+//const input = "What time is it now in Japan?";
 
 console.log("Q:", input);
 const result = await executor.call({ input });
-console.log(
-  "Steps:",
-  result.intermediateSteps.map((step: AgentStep) => {
-    return step.action.tool;
-    //return [step.action.tool, step.action.toolInput, step.observation];
-  })
-);
+
+let idx = 0;
+for (const step of result.intermediateSteps as AgentStep[]) {
+  console.log("Iteration:", idx);
+  console.log("\tTool:", step.action.tool);
+  console.log("\tTool Input:", step.action.toolInput);
+  console.log("\tObservation:", step.observation.replaceAll("\n", ".. "));
+  idx++;
+}
+
 console.log("A:", result.output);
