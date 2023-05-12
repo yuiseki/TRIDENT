@@ -2,7 +2,7 @@ import { Tool } from "langchain/tools";
 
 export class ReliefWeb extends Tool {
   name = "search-reliefweb";
-  description = `useful for when you need to know latest humanitarian situation reports in the specific country. Input: name of the specific country in English.`;
+  description = `useful for when you need to know latest situation reports in the specific country. Input: name of the specific country in English.`;
 
   async _call(input: string) {
     try {
