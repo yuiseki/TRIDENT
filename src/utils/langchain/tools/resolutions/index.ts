@@ -18,9 +18,9 @@ export const loadResolutionChainTool = async (llm: BaseLanguageModel) => {
   );
   const chainTool = new ChainTool({
     name: "qa-un-resolutions",
-    chain: VectorDBQAChain.fromLLM(llm, resolutionsVectorStore),
     description:
       "useful for when you need to ask about the United Nations and it's resolutions. This tool based on most reliable sources. Input: a question can answer based on the UN resolution.",
+    chain: VectorDBQAChain.fromLLM(llm, resolutionsVectorStore),
   });
   return chainTool;
 };

@@ -13,8 +13,8 @@ export const loadSituationChainTool = async (llm: BaseLanguageModel) => {
   );
   return new ChainTool({
     name: "qa-latest-worlds-situation",
-    chain: VectorDBQAChain.fromLLM(llm, situationsVectorStore),
     description:
       "useful for when you need to ask latest humanitarian situation. Input: a question about humanitarian situation. Output: answer for the question.",
+    chain: VectorDBQAChain.fromLLM(llm, situationsVectorStore),
   });
 };
