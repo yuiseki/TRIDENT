@@ -20,7 +20,7 @@ export const loadResolutionChainTool = async (llm: BaseLanguageModel) => {
     name: "qa-un-resolutions",
     chain: VectorDBQAChain.fromLLM(llm, resolutionsVectorStore),
     description:
-      "useful for when you need to ask about the United Nations and it's resolutions. Input: a question can answer based on the UN resolution. Output: answer for the question.",
+      "useful for when you need to ask about the United Nations and it's resolutions. This tool based on most reliable sources. Input: a question can answer based on the UN resolution.",
   });
   return chainTool;
 };
