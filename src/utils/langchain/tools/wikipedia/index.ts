@@ -17,7 +17,7 @@ export class Wikipedia extends Tool {
         /<[^>]*>/g,
         ""
       );
-      answer.replaceAll("&quot;", "**");
+      answer = answer.replaceAll("&quot;", "**");
       if ("pageid" in json["query"]["search"][0]) {
         let pageId = json["query"]["search"][0]["pageid"];
         answer = `${answer}\nurl: https://en.wikipedia.org/?curid=${pageId}`;
