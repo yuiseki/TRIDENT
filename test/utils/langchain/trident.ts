@@ -1,20 +1,19 @@
 import { LLMChain } from "langchain/chains";
+import { AgentStep } from "langchain/schema";
 import { OpenAI } from "langchain/llms/openai";
 import { AgentExecutor, LLMSingleActionAgent } from "langchain/agents";
-import { Calculator } from "langchain/tools/calculator";
 import {
   TridentOutputParser,
   TridentPromptTemplate,
 } from "../../../src/utils/langchain/trident/index.ts";
+import { Calculator } from "langchain/tools/calculator";
 import { Wikipedia } from "../../../src/utils/langchain/tools/wikipedia/index.ts";
-
 import { loadResolutionChainTool } from "../../../src/utils/langchain/tools/resolutions/index.ts";
 import { loadSituationChainTool } from "../../../src/utils/langchain/tools/situations/index.ts";
 import { loadSummarizationChainTool } from "../../../src/utils/langchain/tools/summarization/index.ts";
+import { loadDateTimeChainTool } from "../../../src/utils/langchain/tools/datetime/index.ts";
 
 import * as dotenv from "dotenv";
-import { AgentStep } from "langchain/schema";
-import { loadDateTimeChainTool } from "../../../src/utils/langchain/tools/datetime/index.ts";
 dotenv.config();
 
 const model = new OpenAI({ temperature: 0 });
