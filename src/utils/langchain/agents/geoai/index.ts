@@ -1,4 +1,8 @@
-import { AgentActionOutputParser } from "langchain/agents";
+import { LLMChain } from "langchain";
+import {
+  AgentActionOutputParser,
+  LLMSingleActionAgent,
+} from "langchain/agents";
 import {
   BasePromptTemplate,
   BaseStringPromptTemplate,
@@ -13,6 +17,8 @@ import {
   AgentFinish,
 } from "langchain/schema";
 import { Tool } from "langchain/tools";
+import { loadGeoAIDeepChain } from "../../chains/geoai";
+import { BaseLanguageModel } from "langchain/dist/base_language";
 
 const PREFIX = `You are OpenStreetMap dedicated GeoAI. You build query for Overpass API based on user input as best you can. You have access to the following tools:`;
 const formatInstructions = (
@@ -32,7 +38,7 @@ const SUFFIX = `Begin!
 Question: {input}
 Thought:{agent_scratchpad}`;
 
-export class GeoAIPromptTemplate extends BaseStringPromptTemplate {
+export class GeoAIDeepPromptTemplate extends BaseStringPromptTemplate {
   tools: Tool[];
 
   constructor(args: { tools: Tool[]; inputVariables: string[] }) {
@@ -99,3 +105,19 @@ export class GeoAIOutputParser extends AgentActionOutputParser {
     throw new Error("Not implemented");
   }
 }
+
+export const loadGeoAIDeepAgent = ({
+  llm,
+  tools,
+}: {
+  llm: BaseLanguageModel;
+  tools: Tool[];
+}) => {
+  const llmChain = loadGeoAIDeepChain({ llm, tools });
+  const agent = new LLMSingleActionAgent({
+    llmChain,
+    outputParser: new GeoAIOutputParser(),
+    stop: ["\nObservation"],
+  });
+  return agent;
+};
