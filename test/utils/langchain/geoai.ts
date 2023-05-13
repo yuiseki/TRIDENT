@@ -184,6 +184,6 @@ while (1) {
       },
     ]
   );
-  console.log("Final agent output:", agentResult.output);
+  console.log("GeoAI Agent output:", agentResult.output);
   console.log("");
 }
