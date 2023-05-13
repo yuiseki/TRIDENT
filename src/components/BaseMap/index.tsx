@@ -1,5 +1,6 @@
 import React, { MutableRefObject, useCallback } from "react";
 import {
+  GeolocateControl,
   Map,
   MapRef,
   NavigationControl,
@@ -27,7 +28,7 @@ export const BaseMap: React.FC<{
   latitude,
   zoom,
   children,
-  style = "https://tile.openstreetmap.jp/styles/osm-bright/style.json",
+  style = "./map_styles/fiord-color-gl-style/style.json",
   onMapLoad,
   onMapMove,
   onMapMoveEnd,
@@ -62,7 +63,7 @@ export const BaseMap: React.FC<{
       style={{
         display: "block",
         width: "100%",
-        height: "25vh",
+        height: "100%",
       }}
       id={id}
       ref={mapRef}
@@ -88,6 +89,7 @@ export const BaseMap: React.FC<{
         showZoom={true}
         showCompass={true}
       />
+      <GeolocateControl position="bottom-right" />
     </Map>
   );
 };
