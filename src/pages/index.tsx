@@ -9,13 +9,6 @@ import { scrollToBottom } from "@/utils/scrollToBottom";
 import { sleep } from "@/utils/sleep";
 import { placeholders } from "@/const/placeholders";
 
-const timeoutExec = (func: () => void, msec: number) =>
-  new Promise((resolve) =>
-    setTimeout(() => {
-      resolve(func());
-    }, msec)
-  );
-
 const greetings = `Hello! I'm TRIDENT, an unofficial UN dedicated interactive information retrieval and humanity assistance system. What kind of information are you looking for?`;
 
 export default function Home() {
