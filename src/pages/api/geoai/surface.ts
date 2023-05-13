@@ -54,9 +54,7 @@ export default async function handler(
   const surfaceChain = loadGeoAISurfaceChain({ llm: model, memory });
   const middleChain = loadGeoAIMiddleChain({ llm: model, memory });
   const surfaceResult = await surfaceChain.call({ input: queryString });
-  console.log("Surface output:", surfaceResult.response);
   const middleResult = await middleChain.call({ input: undefined });
-  console.log("Middle output:", middleResult.response);
 
   console.log(JSON.stringify(memory.chatHistory));
 
