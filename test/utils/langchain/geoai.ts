@@ -113,7 +113,7 @@ const innerPrompt = new PromptTemplate({
   template: `You are a conversation analysis assistant dedicated to build a digital map.
 You analyze the following conversation and accurately output a concise abstract of the map to instruct the Map Generating Agent.
 
-Example of concise abstract of the map:
+Examples of concise abstract of the map:
 ===
 Map of Police Stations in New York City
 Map of Hospitals in Taito-ku
@@ -131,12 +131,11 @@ Map of South Sudan
 ===
 
 Be careful, Your output MUST NOT to include any theme or subjects that do not appear in the following conversations.
+You should not output above examples as is, whenever possible.
 If you can't output concise abstract of the map, only output "No map specified."
 
 Current conversation:
-===
 {history}
-===
 
 Concise abstract of the map:`,
   inputVariables: ["history"],
@@ -155,34 +154,32 @@ const rl = readline.createInterface({ input: stdin, output: stdout });
 while (1) {
   const userInput = await rl.question("Waiting your input...: ");
   //console.log("User:", userInput);
-  console.log("Thinking...");
+  console.log("Surface Agent thinking...");
   const result1 = await surfaceChain.call({ input: userInput });
-  console.log("Surface Agent:", result1.response);
+  console.log("Surface Agent output:", result1.response);
+  console.log("Inner Agent thinking...");
   const result2 = await innerChain.call({ input: undefined });
   const output = result2.response;
-  console.log("Inner Agent:", output);
+  console.log("Inner Agent output:", output);
   if (
     output.toLowerCase().includes("not enough") ||
     output.toLowerCase().includes("no map")
   ) {
     continue;
   }
+  console.log("GeoAI Agent thinking...");
   const agentResult = await executor.call(
     { input: "Build query for Overpass API: " + output },
     [
       {
-        handleAgentAction(action, runId) {
-          console.log("\thandleAgentAction", runId);
+        handleAgentAction(action, _runId) {
+          console.log("\thandleAgentAction");
           console.log("\t\tTool:", action.tool);
           console.log("\t\tTool Input:", action.toolInput);
         },
-        handleAgentEnd(action, runId) {
-          console.log("\thandleAgentEnd", runId);
-          console.log("\t\treturnValues:", action.returnValues);
-        },
-        handleToolEnd(output, runId) {
-          console.log("\thandleToolEnd", runId);
-          console.log("\t\tOutput:", output.length);
+        handleToolEnd(output, _runId) {
+          console.log("\thandleToolEnd");
+          console.log("\t\tOutput:", output);
         },
       },
     ]
