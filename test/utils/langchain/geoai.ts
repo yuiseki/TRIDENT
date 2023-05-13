@@ -14,6 +14,7 @@ import {
   GeoAIOutputParser,
   GeoAIPromptTemplate,
 } from "../../../src/utils/langchain/agents/geoai/index.ts";
+import { loadEnglishTranslatorChainTool } from "../../../src/utils/langchain/tools/translator/index.ts";
 dotenv.config();
 
 const model = new OpenAI({ temperature: 0 });
@@ -22,6 +23,7 @@ const tools = [
   await loadAreaDetermineTool(model),
   await loadTagsDetermineTool(model),
   await loadOverpassQueryBuilderTool(model),
+  await loadEnglishTranslatorChainTool(model),
 ];
 
 const llmChain = new LLMChain({
@@ -46,9 +48,8 @@ const executor = new AgentExecutor({
 console.log("Loaded agent.");
 
 const questions = [
-  "松本市の病院を探すOverpass APIクエリ",
-  "松本市のホテルを探すOverpass APIクエリ",
-  "松本市の居酒屋を探すOverpass APIクエリ",
+  "長野県松本市のホテルを探すOverpass APIクエリ",
+  "長野県松本市の病院を探すOverpass APIクエリ",
 ];
 
 for await (const input of questions) {

@@ -7,7 +7,7 @@ export const loadAreaDetermineTool = async (llm: BaseLanguageModel) => {
   return new ChainTool({
     name: "osm-area-determine",
     description:
-      "useful for when you need to determine the geospatial area in OpenStreetMap. Input: Texts that need to determine the geospatial area in OpenStreetMap.",
+      "useful for when you need to determine the geospatial area in OpenStreetMap. Input: English text that need to determine the geospatial area in OpenStreetMap.",
     chain: new LLMChain({
       llm: llm,
       prompt: PromptTemplate.fromTemplate(
@@ -18,11 +18,14 @@ Examples:
 Input text: Police Stations and Police Boxes in New York City
 Output: New York
 
-Input Text: 台東区の病院と学校
+Input Text: Hospitals and Schools in Taito-ku
 Output: Taito
 
-Input Text: 松本市の二郎系ラーメン屋
-Output: Matsumoto
+Input Text: Ramen Restaurant in Kameido
+Output: Koto
+
+Input Text: Hotels in Kyoto
+Output: Kyoto
 
 Input Text: Shelter in the capital of Sudan
 Output: Khartoum
@@ -42,7 +45,7 @@ export const loadTagsDetermineTool = async (llm: BaseLanguageModel) => {
   return new ChainTool({
     name: "osm-tags-determine",
     description:
-      "useful when you need to determine tags in OpenStreetMap. Input: Texts that need to determine tags in OpenStreetMap.",
+      "useful when you need to determine tags in OpenStreetMap. Input: English text that need to determine tags in OpenStreetMap.",
     chain: new LLMChain({
       llm: llm,
       prompt: PromptTemplate.fromTemplate(
@@ -54,16 +57,19 @@ Input text: Police Stations and Police Boxes in New York City
 Output:
 "amenity"="police"
 
-Input Text: 台東区の病院と学校
+Input Text: Hospitals and Schools in Taito-ku
 Output:
 "amenity"="hospital"
 "amenity"="school"
 
-Input Text: 松本市の二郎系ラーメン屋
+Input Text: Ramen Restaurant in Kameido
 Output:
 "amenity"="restaurant"
 "cuisine"="noodle"
 
+Input Text: Hotels in Kyoto
+Output:
+"tourism"="hotel"
 
 Input Text: Shelter in the capital of Sudan
 Output:
@@ -85,7 +91,7 @@ export const loadOverpassQueryBuilderTool = async (llm: BaseLanguageModel) => {
   return new ChainTool({
     name: "overpass-query-builder",
     description:
-      "Useful when you need to query of the Overpass API. Input: text that contains target area and list of tags",
+      "Useful when you need to query of the Overpass API. Input: Text that must contains English name of target area and list of tags, You can get these texts by using the output of tool osm-area-determine and tool osm-tags-determine.",
     chain: new LLMChain({
       llm: llm,
       prompt: PromptTemplate.fromTemplate(
@@ -134,16 +140,29 @@ out geom;
 \`\`\`
 
 Input Text:
-Matsumoto
+Koto
 "amenity"="restaurant"
 "cuisine"="noodle"
 Output:
 \`\`\`
 [out:json][timeout:30000];
-area["name"="Matsumoto"]->.searchArea;
+area["name"="Koto"]->.searchArea;
 (
   nwr["amenity"="restaurant"](area.searchArea);
   nwr["cuisine"="noodle"](area.searchArea);
+);
+out geom;
+\`\`\`
+
+Input Text:
+Kyoto
+"tourism"="hotel"
+Output:
+\`\`\`
+[out:json][timeout:30000];
+area["name"="Koto"]->.searchArea;
+(
+  nwr["tourism"="hotel"](area.searchArea);
 );
 out geom;
 \`\`\`
