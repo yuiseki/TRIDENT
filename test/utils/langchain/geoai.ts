@@ -17,12 +17,14 @@ import { loadEnglishTranslatorChainTool } from "../../../src/utils/langchain/too
 import * as readline from "node:readline/promises";
 import { stdin, stdout } from "node:process";
 import * as dotenv from "dotenv";
+import { BufferMemory } from "langchain/memory";
 dotenv.config();
 
 const model = new OpenAI({ temperature: 0 });
+const memory = new BufferMemory();
 
-const surfaceChain = loadGeoAISurfaceChain({ llm: model });
-const middleChain = loadGeoAIMiddleChain({ llm: model });
+const surfaceChain = loadGeoAISurfaceChain({ llm: model, memory });
+const middleChain = loadGeoAIMiddleChain({ llm: model, memory });
 const tools = [
   await loadAreaDetermineTool(model),
   await loadTagsDetermineTool(model),
