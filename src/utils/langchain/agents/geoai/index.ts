@@ -14,7 +14,7 @@ import {
 } from "langchain/schema";
 import { Tool } from "langchain/tools";
 
-const PREFIX = `You are OpenStreetMap dedicated GeoAI. You create a map based on user input as best you can. You have access to the following tools:`;
+const PREFIX = `You are OpenStreetMap dedicated GeoAI. You build query for Overpass API based on user input as best you can. You have access to the following tools:`;
 const formatInstructions = (
   toolNames: string
 ) => `Use the following format in your response:
