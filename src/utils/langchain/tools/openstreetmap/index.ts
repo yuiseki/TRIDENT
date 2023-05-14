@@ -90,6 +90,222 @@ out geom;`,
   {
     areas: [
       {
+        name: "Belgorod Oblast, Russia",
+        style: {
+          borderColor: "yellow",
+          fillColor: "lightyellow",
+          emoji: "🚩",
+        },
+        query: `[out:json][timeout:30000];
+relation["name:en"="Belgorod Oblast"];
+out geom;`,
+        subjects: [
+          {
+            name: "Military facilities",
+            style: {
+              fillColor: "yellow",
+              emoji: "🪖",
+            },
+            query: `[out:json][timeout:30000];
+area["name:en"="Belgorod Oblast"]->.searchArea;
+(
+  nwr["landuse"="military"](area.searchArea);
+);
+out geom;`,
+          },
+        ],
+      },
+      {
+        name: "Voronezh Oblast, Russia",
+        style: {
+          borderColor: "yellow",
+          fillColor: "lightyellow",
+          emoji: "🚩",
+        },
+        query: `[out:json][timeout:30000];
+relation["name:en"="Voronezh Oblast"];
+out geom;`,
+        subjects: [
+          {
+            name: "Military facilities",
+            style: {
+              fillColor: "yellow",
+              emoji: "🪖",
+            },
+            query: `[out:json][timeout:30000];
+area["name:en"="Voronezh Oblast"]->.searchArea;
+(
+  nwr["landuse"="military"](area.searchArea);
+);
+out geom;`,
+          },
+        ],
+      },
+      {
+        name: "Bryansk Oblast, Russia",
+        style: {
+          borderColor: "yellow",
+          fillColor: "lightyellow",
+          emoji: "🚩",
+        },
+        query: `[out:json][timeout:30000];
+relation["name:en"="Bryansk Oblast"];
+out geom;`,
+        subjects: [
+          {
+            name: "Military facilities",
+            style: {
+              fillColor: "yellow",
+              emoji: "🪖",
+            },
+            query: `[out:json][timeout:30000];
+area["name:en"="Bryansk Oblast"]->.searchArea;
+(
+  nwr["landuse"="military"](area.searchArea);
+);
+out geom;`,
+          },
+        ],
+      },
+      {
+        name: "Kursk Oblast, Russia",
+        style: {
+          borderColor: "yellow",
+          fillColor: "lightyellow",
+          emoji: "🚩",
+        },
+        query: `[out:json][timeout:30000];
+relation["name:en"="Kursk Oblast"];
+out geom;`,
+        subjects: [
+          {
+            name: "Military facilities",
+            style: {
+              fillColor: "yellow",
+              emoji: "🪖",
+            },
+            query: `[out:json][timeout:30000];
+area["name:en"="Kursk Oblast"]->.searchArea;
+(
+  nwr["landuse"="military"](area.searchArea);
+);
+out geom;`,
+          },
+        ],
+      },
+      {
+        name: "Rostov Oblast, Russia",
+        style: {
+          borderColor: "yellow",
+          fillColor: "lightyellow",
+          emoji: "🚩",
+        },
+        query: `[out:json][timeout:30000];
+relation["name:en"="Rostov Oblast"];
+out geom;`,
+        subjects: [
+          {
+            name: "Military facilities",
+            style: {
+              fillColor: "yellow",
+              emoji: "🪖",
+            },
+            query: `[out:json][timeout:30000];
+area["name:en"="Rostov Oblast"]->.searchArea;
+(
+  nwr["landuse"="military"](area.searchArea);
+);
+out geom;`,
+          },
+        ],
+      },
+      {
+        name: "Ukraine",
+        style: {
+          borderColor: "yellow",
+          fillColor: "lightyellow",
+          emoji: "🚩",
+        },
+        query: `[out:json][timeout:30000];
+relation["name:en"="Ukraine"];
+out geom;`,
+        subjects: [
+          {
+            name: "Military facilities",
+            style: {
+              fillColor: "yellow",
+              emoji: "🪖",
+            },
+            query: `[out:json][timeout:30000];
+area["name:en"="Ukraine"]->.searchArea;
+(
+  nwr["landuse"="military"](area.searchArea);
+);
+out geom;`,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    areas: [
+      {
+        name: "Sudan",
+        style: {
+          borderColor: "yellow",
+          fillColor: "lightyellow",
+          emoji: "🚩",
+        },
+        query: `[out:json][timeout:30000];
+relation["name:en"="Sudan"];
+out geom;`,
+        subjects: [
+          {
+            name: "Military facilities",
+            style: {
+              fillColor: "yellow",
+              emoji: "🪖",
+            },
+            query: `[out:json][timeout:30000];
+area["name:en"="Sudan"]->.searchArea;
+(
+  nwr["landuse"="military"](area.searchArea);
+);
+out geom;`,
+          },
+        ],
+      },
+      {
+        name: "South Sudan",
+        style: {
+          borderColor: "yellow",
+          fillColor: "lightyellow",
+          emoji: "🚩",
+        },
+        query: `[out:json][timeout:30000];
+relation["name:en"="South Sudan"];
+out geom;`,
+        subjects: [
+          {
+            name: "Military facilities",
+            style: {
+              fillColor: "yellow",
+              emoji: "🪖",
+            },
+            query: `[out:json][timeout:30000];
+area["name:en"="South Sudan"]->.searchArea;
+(
+  nwr["landuse"="military"](area.searchArea);
+);
+out geom;`,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    areas: [
+      {
         name: "Municipality of Prizren",
         style: {
           borderColor: "yellow",

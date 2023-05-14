@@ -73,6 +73,9 @@ export const GeoJsonToMarkers: React.FC<{
           title = feature.properties.name;
         }
 
+        if (style?.emoji) {
+          icon = style.emoji;
+        }
         // United Nations
         if (
           (feature.properties &&
@@ -86,9 +89,6 @@ export const GeoJsonToMarkers: React.FC<{
         ) {
           icon = "🇺🇳";
           zIndex = 110;
-        }
-        if (style?.emoji) {
-          icon = style.emoji;
         }
 
         let center: Feature<Point, GeoJsonProperties> | undefined = undefined;
