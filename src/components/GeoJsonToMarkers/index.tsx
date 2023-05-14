@@ -140,7 +140,7 @@ export const GeoJsonToMarkers: React.FC<{
                       paint: {
                         "line-width": 4,
                         "line-color": style.borderColor,
-                        "line-opacity": 0.4,
+                        "line-opacity": 0.8,
                       },
                     }}
                   />
@@ -155,7 +155,7 @@ export const GeoJsonToMarkers: React.FC<{
                           ? style.borderColor
                           : "#3288bd",
                         "fill-color": style.fillColor,
-                        "fill-opacity": 0.4,
+                        "fill-opacity": 0.2,
                       },
                     }}
                   />

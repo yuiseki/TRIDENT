@@ -1,6 +1,6 @@
 import { getRequestParamAsString } from "@/utils/getRequestParamAsString";
 import { isQueryStringDanger } from "@/utils/isQueryStringDanger";
-import { examplesV2 } from "@/utils/langchain/tools/openstreetmap";
+import { examplesV2 } from "@/utils/langchain/tools/openstreetmap/examplesV2";
 import type { NextApiRequest, NextApiResponse } from "next";
 
 export default async function handler(
