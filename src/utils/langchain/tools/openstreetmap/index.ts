@@ -3,6 +3,167 @@ import { BaseLanguageModel } from "langchain/dist/base_language";
 import { PromptTemplate } from "langchain/prompts";
 import { ChainTool } from "langchain/tools";
 
+export const examplesV2 = [
+  {
+    areas: [
+      {
+        name: "台東区",
+        style: {
+          borderColor: "#9400D3",
+          fillColor: "#FFFFE0",
+        },
+        query: `[out:json][timeout:30000];
+relation["name:ja"="台東区"];
+out geom;`,
+        subjects: [
+          {
+            name: "公園",
+            style: {
+              fillColor: "green",
+              emoji: "🏞",
+            },
+            query: `[out:json][timeout:30000];
+area["name:ja"="台東区"]->.searchArea;
+(
+  nwr["leisure"="park"](area.searchArea);
+);
+out geom;`,
+          },
+        ],
+      },
+      {
+        name: "千代田区",
+        style: {
+          borderColor: "#9400D3",
+          fillColor: "#FFFFE0",
+        },
+        query: `[out:json][timeout:30000];
+relation["name:ja"="千代田区"];
+out geom;`,
+        subjects: [
+          {
+            name: "公園",
+            style: {
+              fillColor: "green",
+              emoji: "🏞",
+            },
+            query: `[out:json][timeout:30000];
+area["name:ja"="千代田区"]->.searchArea;
+(
+  nwr["leisure"="park"](area.searchArea);
+);
+out geom;`,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    areas: [
+      {
+        name: "City of New York",
+        style: {
+          borderColor: "yellow",
+          fillColor: "lightyellow",
+        },
+        query: `[out:json][timeout:30000];
+relation["name"="City of New York"];
+out geom;`,
+        subjects: [
+          {
+            name: "Police Stations",
+            style: {
+              fillColor: "red",
+              emoji: "👮",
+            },
+            query: `[out:json][timeout:30000];
+area["name"="City of New York"]->.searchArea;
+(
+  nwr["amenity"="police"](area.searchArea);
+);
+out geom;`,
+          },
+          {
+            name: "Hotels",
+            style: {
+              fillColor: "green",
+              emoji: "🏨",
+            },
+            query: `[out:json][timeout:30000];
+area["name"="City of New York"]->.searchArea;
+(
+  nwr["tourism"="hotel"](area.searchArea);
+);
+out geom;`,
+          },
+        ],
+      },
+    ],
+  },
+];
+
+const examples: {
+  input: string;
+  area: string;
+  tags: string[];
+  query: string[];
+}[] = [
+  {
+    input: "Police Stations in New York City",
+    area: "City of New York",
+    tags: ['nwr["amenity"="police"]'],
+    query: [
+      `[out:json][timeout:30000];
+area["name"="City of New York"]->.searchArea;
+(
+  nwr["amenity"="police"](area.searchArea);
+);
+out geom;`,
+    ],
+  },
+  {
+    input: "United Nations Facilities in New York City",
+    area: "City of New York",
+    tags: [
+      'nwr["name"~"United Nations"]["building"="yes"]',
+      'nwr["name"~"United Nations"]["building:part"="yes"]',
+    ],
+    query: [
+      `[out:json][timeout:30000];
+area["name"="City of New York"]->.searchArea;
+(
+  nwr["name"~"United Nations"]["building"="yes"](area.searchArea);
+  nwr["name"~"United Nations"]["building:part"="yes"](area.searchArea);
+);
+out geom;`,
+    ],
+  },
+  {
+    input: "Hospitals and Schools in Taito-ku",
+    area: "Taito",
+    tags: [],
+    query: [],
+  },
+  {
+    input: "Hotels in Kyoto",
+    area: "Kyoto",
+    tags: [],
+    query: [],
+  },
+  {
+    input: "Shelter in the capital of Sudan",
+    area: "Khartoum",
+    tags: [],
+    query: [],
+  },
+  {
+    input: "Military Facilities in South Sudan",
+    area: "South Sudan",
+    tags: [],
+    query: [],
+  },
+];
+
 export const loadAreaDetermineTool = async (llm: BaseLanguageModel) => {
   return new ChainTool({
     name: "osm-area-determine",

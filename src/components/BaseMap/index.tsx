@@ -28,7 +28,7 @@ export const BaseMap: React.FC<{
   latitude,
   zoom,
   children,
-  style = "./map_styles/fiord-color-gl-style/style.json",
+  style = "/map_styles/fiord-color-gl-style/style.json",
   onMapLoad,
   onMapMove,
   onMapMoveEnd,

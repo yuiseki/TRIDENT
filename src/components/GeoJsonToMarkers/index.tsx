@@ -1,12 +1,14 @@
+import { TridentMapsStyle } from "@/types/TridentMaps";
 import * as turf from "@turf/turf";
 import { Feature, FeatureCollection, GeoJsonProperties, Point } from "geojson";
-import { useCallback, useEffect, useState } from "react";
-import { Marker, useMap } from "react-map-gl";
+import { Fragment, useCallback, useEffect, useState } from "react";
+import { Layer, Marker, Source, useMap } from "react-map-gl";
 
 export const GeoJsonToMarkers: React.FC<{
   geojson?: FeatureCollection;
   emoji?: string;
-}> = ({ geojson, emoji = "🇺🇳" }) => {
+  style?: TridentMapsStyle;
+}> = ({ geojson, emoji = "🇺🇳", style }) => {
   const { current: map } = useMap();
 
   const [currentZoom, setCurrentZoom] = useState<number | undefined>(8);
@@ -84,10 +86,14 @@ export const GeoJsonToMarkers: React.FC<{
           icon = "🇺🇳";
           zIndex = 110;
         }
+        if (style?.emoji) {
+          icon = style.emoji;
+        }
 
         let center: Feature<Point, GeoJsonProperties> | undefined = undefined;
         switch (feature.geometry.type) {
           case "Polygon":
+            console.log(style);
             const polygonFeatures = turf.polygon(feature.geometry.coordinates);
             center = turf.centroid(polygonFeatures);
             break;
@@ -118,37 +124,57 @@ export const GeoJsonToMarkers: React.FC<{
           }
         }
         return (
-          <Marker
-            key={feature.id}
-            longitude={center.geometry.coordinates[0]}
-            latitude={center.geometry.coordinates[1]}
-            onClick={() => onClickMarker(center)}
-            style={{ zIndex: zIndex }}
-          >
-            <div
-              title={title}
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                cursor: "pointer",
-                opacity: opacity,
-              }}
+          <Fragment key={feature.id}>
+            {feature.geometry.type === "Polygon" && (
+              <Source type="geojson" data={feature}>
+                <Layer
+                  {...{
+                    id: feature.id as string,
+                    type: "fill",
+                    paint: {
+                      "fill-color": style?.fillColor
+                        ? style.fillColor
+                        : "#3288bd",
+                      "fill-opacity": 0.4,
+                    },
+                  }}
+                />
+              </Source>
+            )}
+            <Marker
+              key={feature.id}
+              longitude={center.geometry.coordinates[0]}
+              latitude={center.geometry.coordinates[1]}
+              onClick={() => onClickMarker(center)}
+              style={{ zIndex: zIndex }}
             >
               <div
+                title={title}
                 style={{
-                  backgroundColor: "rgba(255, 255, 255, 0.5)",
-                  backdropFilter: "blur(4px)",
-                  borderRadius: "4px",
-                  padding: "6px",
-                  fontSize: fontSize,
-                  fontFamily: "sans-serif, emoji",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  cursor: "pointer",
+                  opacity: opacity,
+                  lineHeight: "1",
                 }}
               >
-                {icon}
+                <div
+                  style={{
+                    backgroundColor: "rgba(255, 255, 255, 0.5)",
+                    backdropFilter: "blur(4px)",
+                    borderRadius: "4px",
+                    padding: "2px 4px",
+                    fontSize: fontSize,
+                    fontFamily: "sans-serif, emoji",
+                    lineHeight: "1.1",
+                  }}
+                >
+                  {icon}
+                </div>
               </div>
-            </div>
-          </Marker>
+            </Marker>
+          </Fragment>
         );
       })}
     </>

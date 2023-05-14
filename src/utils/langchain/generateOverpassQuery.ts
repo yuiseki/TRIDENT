@@ -73,20 +73,6 @@ out geom;
 
 \`\`\`
 [out:json][timeout:30000];
-area["name"="San Francisco"]->.searchArea;
-(
-  nwr["name"~"United Nations Charter"](area.searchArea);
-  nwr["name:en"~"United Nations Charter"](area.searchArea);
-  nwr["name"~"UN Charter"](area.searchArea);
-  nwr["name:en"~"UN Charter"](area.searchArea);
-  nwr["short_name"~"UN Charter"](area.searchArea);
-  nwr["short_name:en"~"UN Charter"](area.searchArea);
-);
-out geom;
-\`\`\`
-
-\`\`\`
-[out:json][timeout:30000];
 area["name"="California"]->.searchArea;
 (
   nwr["name"="San Francisco"](area.searchArea);
