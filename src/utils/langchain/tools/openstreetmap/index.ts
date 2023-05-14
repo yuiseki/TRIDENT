@@ -9,8 +9,9 @@ export const examplesV2 = [
       {
         name: "台東区",
         style: {
-          borderColor: "#9400D3",
-          fillColor: "#FFFFE0",
+          borderColor: "yellow",
+          fillColor: "lightyellow",
+          emoji: "🚩",
         },
         query: `[out:json][timeout:30000];
 relation["name:ja"="台東区"];
@@ -19,7 +20,7 @@ out geom;`,
           {
             name: "公園",
             style: {
-              fillColor: "green",
+              fillColor: "lightgreen",
               emoji: "🏞",
             },
             query: `[out:json][timeout:30000];
@@ -29,13 +30,27 @@ area["name:ja"="台東区"]->.searchArea;
 );
 out geom;`,
           },
+          {
+            name: "駅",
+            style: {
+              fillColor: "lightblue",
+              emoji: "🚉",
+            },
+            query: `[out:json][timeout:30000];
+area["name:ja"="台東区"]->.searchArea;
+(
+  nwr["railway"="station"](area.searchArea);
+);
+out geom;`,
+          },
         ],
       },
       {
         name: "千代田区",
         style: {
-          borderColor: "#9400D3",
-          fillColor: "#FFFFE0",
+          borderColor: "yellow",
+          fillColor: "lightyellow",
+          emoji: "🚩",
         },
         query: `[out:json][timeout:30000];
 relation["name:ja"="千代田区"];
@@ -44,13 +59,26 @@ out geom;`,
           {
             name: "公園",
             style: {
-              fillColor: "green",
+              fillColor: "lightgreen",
               emoji: "🏞",
             },
             query: `[out:json][timeout:30000];
 area["name:ja"="千代田区"]->.searchArea;
 (
   nwr["leisure"="park"](area.searchArea);
+);
+out geom;`,
+          },
+          {
+            name: "駅",
+            style: {
+              fillColor: "lightblue",
+              emoji: "🚉",
+            },
+            query: `[out:json][timeout:30000];
+area["name:ja"="千代田区"]->.searchArea;
+(
+  nwr["railway"="station"](area.searchArea);
 );
 out geom;`,
           },

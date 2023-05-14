@@ -127,18 +127,34 @@ export const GeoJsonToMarkers: React.FC<{
           <Fragment key={feature.id}>
             {feature.geometry.type === "Polygon" && (
               <Source type="geojson" data={feature}>
-                <Layer
-                  {...{
-                    id: feature.id as string,
-                    type: "fill",
-                    paint: {
-                      "fill-color": style?.fillColor
-                        ? style.fillColor
-                        : "#3288bd",
-                      "fill-opacity": 0.4,
-                    },
-                  }}
-                />
+                {style?.borderColor && (
+                  <Layer
+                    {...{
+                      id: `${feature.id}-line`,
+                      type: "line",
+                      paint: {
+                        "line-width": 4,
+                        "line-color": style.borderColor,
+                        "line-opacity": 0.4,
+                      },
+                    }}
+                  />
+                )}
+                {style?.fillColor && (
+                  <Layer
+                    {...{
+                      id: `${feature.id}-fill`,
+                      type: "fill",
+                      paint: {
+                        "fill-outline-color": style?.borderColor
+                          ? style.borderColor
+                          : "#3288bd",
+                        "fill-color": style.fillColor,
+                        "fill-opacity": 0.4,
+                      },
+                    }}
+                  />
+                )}
               </Source>
             )}
             <Marker
@@ -157,11 +173,14 @@ export const GeoJsonToMarkers: React.FC<{
                   cursor: "pointer",
                   opacity: opacity,
                   lineHeight: "1",
+                  textAlign: "center",
                 }}
               >
                 <div
                   style={{
-                    backgroundColor: "rgba(255, 255, 255, 0.5)",
+                    backgroundColor: style?.fillColor
+                      ? style.fillColor
+                      : "rgba(255, 255, 255, 0.5)",
                     backdropFilter: "blur(4px)",
                     borderRadius: "4px",
                     padding: "2px 4px",
