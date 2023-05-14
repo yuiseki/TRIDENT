@@ -21,9 +21,11 @@ export default function Home() {
   ]);
   const [inputText, setInputText] = useState("");
   const [outputText, setOutputText] = useState(greetings);
+
+  const [initialized, setInitialized] = useState(false);
   const [lazyInserting, setLazyInserting] = useState(false);
   const [responding, setResponding] = useState(false);
-  const [initialized, setInitialized] = useState(false);
+
   const [placeholder, setPlaceholder] = useState(placeholders[0]);
   const [placeholderInitialized, setPlaceholderInitialized] = useState(false);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
@@ -47,9 +49,6 @@ export default function Home() {
       setOutputText("");
       setResponding(false);
       setInitialized(true);
-      if (textareaRef.current !== null) {
-        textareaRef.current.focus();
-      }
     }
   }, [dialogueList, initialized, outputText]);
 
@@ -249,13 +248,7 @@ export default function Home() {
                     await sleep(250);
                     scrollToBottom();
                     await sleep(250);
-                    if (textareaRef.current !== null) {
-                      textareaRef.current.focus();
-                      textareaRef.current.setSelectionRange(
-                        text.length,
-                        text.length
-                      );
-                    }
+                    // TODO: focus TextInput
                   }}
                 />
               </div>
