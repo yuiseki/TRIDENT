@@ -157,7 +157,7 @@ area["name"="City of New York"]->.searchArea;
 out geom;`,
           },
           {
-            name: "駅",
+            name: "Stations",
             style: {
               fillColor: "yellow",
               emoji: "🚉",
