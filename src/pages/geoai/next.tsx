@@ -67,7 +67,7 @@ export default function Home() {
       });
     };
     effect();
-  }, []);
+  }, [initialized]);
 
   useEffect(() => {
     setTimeout(() => {
