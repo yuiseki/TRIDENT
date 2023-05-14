@@ -8,9 +8,6 @@ import * as turf from "@turf/turf";
 
 export const GeoJsonMap = ({ geojson }: { geojson: FeatureCollection }) => {
   const mapRef = useRef<MapRef | null>(null);
-  const [currentCenter, setCurrentCenter] = useState<number[] | undefined>(
-    undefined
-  );
 
   // 初回のみ地図をデータにあわせる
   useEffect(() => {
@@ -19,7 +16,6 @@ export const GeoJsonMap = ({ geojson }: { geojson: FeatureCollection }) => {
       if (geojson === undefined) return;
       try {
         const [minLng, minLat, maxLng, maxLat] = turf.bbox(geojson);
-
         mapRef.current.fitBounds(
           [
             [minLng, minLat],
@@ -33,14 +29,6 @@ export const GeoJsonMap = ({ geojson }: { geojson: FeatureCollection }) => {
     }, 500);
   }, [geojson]);
 
-  const updateCurrentCenter = useCallback(() => {
-    if (!mapRef || !mapRef.current) return;
-    setCurrentCenter([
-      mapRef.current.getCenter().lng,
-      mapRef.current.getCenter().lat,
-    ]);
-  }, []);
-
   if (!geojson) return null;
 
   return (
@@ -53,8 +41,6 @@ export const GeoJsonMap = ({ geojson }: { geojson: FeatureCollection }) => {
             longitude={0}
             latitude={0}
             zoom={11}
-            onMapLoad={updateCurrentCenter}
-            onMapMoveEnd={updateCurrentCenter}
             style={"https://tile.openstreetmap.jp/styles/osm-bright/style.json"}
           >
             <GeoJsonToMarkers geojson={geojson} />

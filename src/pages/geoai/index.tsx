@@ -2,17 +2,29 @@
 
 import { BaseMap } from "@/components/BaseMap";
 import { DialogueElementItem } from "@/components/DialogueElementItem";
+import { GeoJsonToMarkers } from "@/components/GeoJsonToMarkers";
 import { TextInput } from "@/components/TextInput";
 import { DialogueElement } from "@/types/DialogueElement";
+import { nextPostJson } from "@/utils/nextPostJson";
+import { scrollToBottom } from "@/utils/scrollToBottom";
+import { sleep } from "@/utils/sleep";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { MapProvider, MapRef } from "react-map-gl";
+import { FeatureCollection } from "geojson";
+import { getOverpassResponse } from "@/utils/getOverpassResponse";
+import osmtogeojson from "osmtogeojson";
+import * as turf from "@turf/turf";
 
 const greetings = `Hello! I'm TRIDENT, an unofficial UN dedicated interactive information retrieval and humanity assistance system. What kind of information are you looking for?`;
 
 export default function Home() {
-  const mapRef = useRef<MapRef | null>(null);
   const [inputText, setInputText] = useState("");
   const [outputText, setOutputText] = useState(greetings);
+  const [pastMessages, setPastMessages] = useState<
+    { messages: Array<{ text: string }> } | undefined
+  >();
+  const mapRef = useRef<MapRef | null>(null);
+  const [geojson, setGeojson] = useState<FeatureCollection>();
 
   const [dialogueList, setDialogueList] = useState<DialogueElement[]>([
     {
@@ -52,6 +64,133 @@ export default function Home() {
     setTimeout(initializer, 25);
   }, [initializer]);
 
+  const insertNewDialogue = useCallback(
+    (newDialogueElement: DialogueElement, lazy?: boolean) => {
+      if (!lazy) {
+        setDialogueList((prev) => {
+          return [...prev, newDialogueElement];
+        });
+      } else {
+        const lazyNewDialogueElement = {
+          ...newDialogueElement,
+          text: "",
+        };
+        setDialogueList((prev) => {
+          return [...prev, lazyNewDialogueElement];
+        });
+        setOutputText(newDialogueElement.text);
+        setLazyInserting(true);
+      }
+    },
+    []
+  );
+  const [lazyInsertingInitialized, setLazyInsertingInitialized] =
+    useState(false);
+  const [intervalId, setIntervalId] = useState<NodeJS.Timer>();
+  useEffect(() => {
+    if (lazyInserting) {
+      if (!lazyInsertingInitialized) {
+        const newIntervalId = setInterval(() => {
+          setDialogueList((prev) => {
+            const last = prev[prev.length - 1];
+            last.text = outputText.slice(0, last.text.length + 1);
+            scrollToBottom();
+            if (outputText.length === last.text.length) {
+              setLazyInserting(false);
+              setLazyInsertingInitialized(false);
+              setOutputText("");
+              setResponding(false);
+            }
+            return [...prev.slice(0, prev.length - 1), last];
+          });
+        }, 50);
+        setIntervalId(newIntervalId);
+        setLazyInsertingInitialized(true);
+      }
+    } else {
+      clearInterval(intervalId);
+      setIntervalId(undefined);
+    }
+    return () => {
+      if (!lazyInserting) {
+        clearInterval(intervalId);
+        setIntervalId(undefined);
+      }
+    };
+  }, [intervalId, lazyInserting, lazyInsertingInitialized, outputText]);
+
+  const onSubmit = useCallback(async () => {
+    const newInputText = inputText.trim();
+    setInputText("");
+
+    insertNewDialogue({ who: "user", text: newInputText });
+
+    await sleep(200);
+    scrollToBottom();
+    setResponding(true);
+
+    let qaPath = "/api/geoai/surface";
+    const surfaceRes = await nextPostJson(qaPath, {
+      query: newInputText,
+      pastMessages: pastMessages ? JSON.stringify(pastMessages) : undefined,
+    });
+    const surfaceResJson: {
+      surface: string;
+      middle: string;
+      history: { messages: Array<{ text: string }> };
+    } = await surfaceRes.json();
+    setPastMessages(surfaceResJson.history);
+    insertNewDialogue(
+      {
+        who: "assistant",
+        text: surfaceResJson.surface,
+      },
+      true
+    );
+    if (!surfaceResJson.middle.toLowerCase().includes("no map")) {
+      const deepRes = await nextPostJson("/api/geoai/deep", {
+        query: surfaceResJson.middle,
+      });
+      const deepResJson = await deepRes.json();
+      const overpassQuery = deepResJson.output.split("```")[1];
+      console.log(overpassQuery);
+      try {
+        const overpassRes = await getOverpassResponse(
+          overpassQuery.replace('area["name"', 'area["name:en"')
+        );
+        const overpassJson = await overpassRes.json();
+        const newGeojson = osmtogeojson(overpassJson);
+        console.log(JSON.stringify(newGeojson));
+        if (newGeojson.features.length !== 0) {
+          setGeojson(newGeojson);
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    }
+
+    setResponding(false);
+  }, [inputText, insertNewDialogue]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (!mapRef || !mapRef.current) return;
+      if (geojson === undefined) return;
+      try {
+        const [minLng, minLat, maxLng, maxLat] = turf.bbox(geojson);
+        mapRef.current.fitBounds(
+          [
+            [minLng, minLat],
+            [maxLng, maxLat],
+          ],
+          { padding: 40, duration: 1000 }
+        );
+      } catch (e) {
+        console.error(e);
+      }
+    }, 500);
+  }, [geojson]);
+
   return (
     <main style={{ width: "100vw", height: "100vh" }}>
       <div
@@ -59,7 +198,7 @@ export default function Home() {
           position: "fixed",
           top: 0,
           left: 0,
-          width: "50%",
+          width: "60%",
           height: "100vh",
         }}
       >
@@ -95,16 +234,16 @@ export default function Home() {
           position: "fixed",
           top: 0,
           left: 0,
-          margin: "0px",
-          width: "50%",
+          margin: "0px 0px 5vh",
+          width: "60%",
           height: "100vh",
+          overflowY: "scroll",
         }}
       >
         <div
           style={{
             width: "95%",
-            margin: "auto",
-            height: "92vh",
+            margin: "0 auto 15vh",
             zIndex: 1000,
             background: "transparent",
           }}
@@ -129,10 +268,20 @@ export default function Home() {
             );
           })}
         </div>
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          left: 0,
+          bottom: "20px",
+          height: "8vh",
+          width: "60%",
+          margin: "auto",
+        }}
+      >
         <div
           style={{
-            height: "8vh",
-            maxWidth: "90%",
+            width: "95%",
             margin: "auto",
           }}
         >
@@ -141,27 +290,27 @@ export default function Home() {
             placeholder="..."
             inputText={inputText}
             setInputText={setInputText}
-            onSubmit={() => console.log(inputText)}
+            onSubmit={onSubmit}
           />
-          <div
-            style={{
-              color: "white",
-              width: "100%",
-              textAlign: "center",
-              opacity: 0.8,
-            }}
-          >
-            TRIDENT may produce inaccurate information.
-          </div>
+        </div>
+        <div
+          style={{
+            color: "white",
+            width: "100%",
+            textAlign: "center",
+            opacity: 0.8,
+          }}
+        >
+          TRIDENT may produce inaccurate information.
         </div>
       </div>
       <div
         style={{
           position: "fixed",
           top: 0,
-          left: "50%",
+          left: "60%",
           margin: "0px",
-          width: "50%",
+          width: "40%",
           height: "100%",
           zIndex: 1000,
         }}
@@ -173,7 +322,9 @@ export default function Home() {
             longitude={0}
             latitude={0}
             zoom={1}
-          ></BaseMap>
+          >
+            <GeoJsonToMarkers geojson={geojson} />
+          </BaseMap>
         </MapProvider>
       </div>
     </main>

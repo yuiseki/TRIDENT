@@ -48,24 +48,10 @@ export default async function handler(
   const deepAgentExecutor = new AgentExecutor({
     agent: deepAgent,
     tools,
-    returnIntermediateSteps: true,
   });
-  const agentResult = await deepAgentExecutor.call(
-    { input: "Build query for Overpass API: " + queryString },
-    [
-      {
-        handleAgentAction(action, _runId) {
-          console.log("\thandleAgentAction");
-          console.log("\t\tTool:", action.tool);
-          console.log("\t\tTool Input:", action.toolInput);
-        },
-        handleToolEnd(output, _runId) {
-          console.log("\thandleToolEnd");
-          console.log("\t\tOutput:", output);
-        },
-      },
-    ]
-  );
+  const agentResult = await deepAgentExecutor.call({
+    input: "Build query for Overpass API: " + queryString,
+  });
   console.log("GeoAI Agent output:", agentResult.output);
 
   res.status(200).json({ output: agentResult.output });

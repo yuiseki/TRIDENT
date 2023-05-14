@@ -14,7 +14,6 @@ export default async function handler(
   res: NextApiResponse
 ) {
   const queryString = getRequestParamAsString(req, "query");
-  const pastMessagesJsonString = getRequestParamAsString(req, "pastMessages");
   if (queryString === undefined) {
     res.status(400).json({ status: "ng", message: "query is missing" });
     return;
@@ -27,11 +26,12 @@ export default async function handler(
     res.status(400).json({ status: "ng", message: "invalid query" });
     return;
   }
+  const pastMessagesJsonString = getRequestParamAsString(req, "pastMessages");
 
   const model = new OpenAI({ temperature: 0 });
 
   let chatHistory = undefined;
-  if (pastMessagesJsonString) {
+  if (pastMessagesJsonString && pastMessagesJsonString !== "undefined") {
     const pastMessages = JSON.parse(pastMessagesJsonString).messages.map(
       (message: { text?: string }, idx: number) => {
         if ("text" in message && message.text) {
@@ -55,8 +55,6 @@ export default async function handler(
   const middleChain = loadGeoAIMiddleChain({ llm: model, memory });
   const surfaceResult = await surfaceChain.call({ input: queryString });
   const middleResult = await middleChain.call({ input: undefined });
-
-  console.log(JSON.stringify(memory.chatHistory));
 
   res.status(200).json({
     surface: surfaceResult.response,

@@ -4,7 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import { Marker, useMap } from "react-map-gl";
 
 export const GeoJsonToMarkers: React.FC<{
-  geojson: FeatureCollection;
+  geojson?: FeatureCollection;
   emoji?: string;
 }> = ({ geojson, emoji = "🇺🇳" }) => {
   const { current: map } = useMap();
