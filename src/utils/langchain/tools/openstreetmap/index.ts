@@ -1,9 +1,10 @@
+import { TridentMaps } from "@/types/TridentMaps";
 import { LLMChain } from "langchain/chains";
 import { BaseLanguageModel } from "langchain/dist/base_language";
 import { PromptTemplate } from "langchain/prompts";
 import { ChainTool } from "langchain/tools";
 
-export const examplesV2 = [
+export const examplesV2: TridentMaps[] = [
   {
     areas: [
       {
@@ -79,6 +80,49 @@ out geom;`,
 area["name:ja"="千代田区"]->.searchArea;
 (
   nwr["railway"="station"](area.searchArea);
+);
+out geom;`,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    areas: [
+      {
+        name: "Municipality of Prizren",
+        style: {
+          borderColor: "yellow",
+          fillColor: "lightyellow",
+          emoji: "🚩",
+        },
+        query: `[out:json][timeout:30000];
+relation["name:en"="Municipality of Prizren"];
+out geom;`,
+        subjects: [
+          {
+            name: "Police Stations",
+            style: {
+              fillColor: "blue",
+              emoji: "👮",
+            },
+            query: `[out:json][timeout:30000];
+area["name:en"="Municipality of Prizren"]->.searchArea;
+(
+  nwr["amenity"="police"](area.searchArea);
+);
+out geom;`,
+          },
+          {
+            name: "Hotels",
+            style: {
+              fillColor: "white",
+              emoji: "🏨",
+            },
+            query: `[out:json][timeout:30000];
+area["name:en"="Municipality of Prizren"]->.searchArea;
+(
+  nwr["tourism"="hotel"](area.searchArea);
 );
 out geom;`,
           },
