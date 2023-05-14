@@ -7,8 +7,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  /*
-  const queryString = getRequestParamAsString(req, "query");
+  const queryString = getRequestParamAsString(req, "index");
   if (queryString === undefined) {
     res.status(400).json({ status: "ng", message: "query is missing" });
     return;
@@ -21,7 +20,7 @@ export default async function handler(
     res.status(400).json({ status: "ng", message: "invalid query" });
     return;
   }
-  */
+  const index = parseInt(queryString);
 
-  res.status(200).json(examplesV2[1]);
+  res.status(200).json(examplesV2[index]);
 }
