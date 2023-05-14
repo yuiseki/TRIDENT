@@ -79,7 +79,7 @@ export const BaseMap: React.FC<{
         zoom: zoom,
       }}
       hash={false}
-      maxZoom={16}
+      maxZoom={22}
       maxPitch={85}
     >
       {children}
