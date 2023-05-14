@@ -52,19 +52,19 @@ export default function Home() {
             });
           }
         });
-        area.subjects.map((subject) => {
-          getOverpassResponse(subject.query).then(
-            async (subjectOverpassResponse) => {
-              const subjectOverpassJson = await subjectOverpassResponse.json();
-              const subjectGeojson = osmtogeojson(subjectOverpassJson);
-              if (subjectGeojson.features.length !== 0) {
+        area.concerns.map((concern) => {
+          getOverpassResponse(concern.query).then(
+            async (concernOverpassResponse) => {
+              const concernOverpassJson = await concernOverpassResponse.json();
+              const concernGeojson = osmtogeojson(concernOverpassJson);
+              if (concernGeojson.features.length !== 0) {
                 setGeojsonWithStyleList((prev) => {
                   return [
                     ...prev,
                     {
-                      id: `${area.name}-${subject.name}`,
-                      style: subject.style,
-                      geojson: subjectGeojson,
+                      id: `${area.name}-${concern.name}`,
+                      style: concern.style,
+                      geojson: concernGeojson,
                     },
                   ];
                 });

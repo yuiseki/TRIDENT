@@ -13,7 +13,7 @@ export const examplesV2: TridentMaps[] = [
         query: `[out:json][timeout:30000];
 relation["name:ja"="台東区"];
 out geom;`,
-        subjects: [
+        concerns: [
           {
             name: "公園",
             style: {
@@ -52,7 +52,7 @@ out geom;`,
         query: `[out:json][timeout:30000];
 relation["name:ja"="千代田区"];
 out geom;`,
-        subjects: [
+        concerns: [
           {
             name: "公園",
             style: {
@@ -95,7 +95,7 @@ out geom;`,
         query: `[out:json][timeout:30000];
 relation["name"="City of New York"];
 out geom;`,
-        subjects: [
+        concerns: [
           {
             name: "Police Stations",
             style: {
@@ -165,7 +165,7 @@ out geom;`,
         query: `[out:json][timeout:30000];
 relation["name:en"="Municipality of Prizren"];
 out geom;`,
-        subjects: [
+        concerns: [
           {
             name: "Police Stations",
             style: {
@@ -208,7 +208,7 @@ out geom;`,
         query: `[out:json][timeout:30000];
 relation["name:en"="Sudan"];
 out geom;`,
-        subjects: [
+        concerns: [
           {
             name: "Military facilities",
             style: {
@@ -234,7 +234,7 @@ out geom;`,
         query: `[out:json][timeout:30000];
 relation["name:en"="South Sudan"];
 out geom;`,
-        subjects: [
+        concerns: [
           {
             name: "Military facilities",
             style: {
@@ -264,7 +264,7 @@ out geom;`,
         query: `[out:json][timeout:30000];
 relation["name:en"="Belgorod Oblast"];
 out geom;`,
-        subjects: [
+        concerns: [
           {
             name: "Military facilities",
             style: {
@@ -290,7 +290,7 @@ out geom;`,
         query: `[out:json][timeout:30000];
 relation["name:en"="Voronezh Oblast"];
 out geom;`,
-        subjects: [
+        concerns: [
           {
             name: "Military facilities",
             style: {
@@ -316,7 +316,7 @@ out geom;`,
         query: `[out:json][timeout:30000];
 relation["name:en"="Bryansk Oblast"];
 out geom;`,
-        subjects: [
+        concerns: [
           {
             name: "Military facilities",
             style: {
@@ -342,7 +342,7 @@ out geom;`,
         query: `[out:json][timeout:30000];
 relation["name:en"="Kursk Oblast"];
 out geom;`,
-        subjects: [
+        concerns: [
           {
             name: "Military facilities",
             style: {
@@ -368,7 +368,7 @@ out geom;`,
         query: `[out:json][timeout:30000];
 relation["name:en"="Rostov Oblast"];
 out geom;`,
-        subjects: [
+        concerns: [
           {
             name: "Military facilities",
             style: {
@@ -394,7 +394,7 @@ out geom;`,
         query: `[out:json][timeout:30000];
 relation["name:en"="Ukraine"];
 out geom;`,
-        subjects: [
+        concerns: [
           {
             name: "Military facilities",
             style: {

@@ -4,7 +4,7 @@ export type TridentMapsStyle = {
   emoji?: string;
 };
 
-type TridentMapsSubject = {
+type TridentMapsConcern = {
   name: string;
   style: TridentMapsStyle;
   query: string;
@@ -14,7 +14,7 @@ type TridentMapsArea = {
   name: string;
   style: TridentMapsStyle;
   query: string;
-  subjects: TridentMapsSubject[];
+  concerns: TridentMapsConcern[];
 };
 
 export type TridentMaps = {
