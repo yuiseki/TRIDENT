@@ -53,6 +53,7 @@ export const GeoJsonToMarkers: React.FC<{
         }
         if (
           feature.geometry.type !== "Polygon" &&
+          feature.geometry.type !== "MultiPolygon" &&
           feature.geometry.type !== "LineString" &&
           feature.geometry.type !== "Point"
         ) {
@@ -128,7 +129,8 @@ export const GeoJsonToMarkers: React.FC<{
         }
         return (
           <Fragment key={feature.id}>
-            {feature.geometry.type === "Polygon" && (
+            {(feature.geometry.type === "Polygon" ||
+              feature.geometry.type === "MultiPolygon") && (
               <Source type="geojson" data={feature}>
                 {style?.borderColor && (
                   <Layer

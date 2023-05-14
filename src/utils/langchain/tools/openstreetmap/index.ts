@@ -93,6 +93,7 @@ out geom;`,
         style: {
           borderColor: "yellow",
           fillColor: "lightyellow",
+          emoji: "🚩",
         },
         query: `[out:json][timeout:30000];
 relation["name"="City of New York"];
@@ -101,7 +102,7 @@ out geom;`,
           {
             name: "Police Stations",
             style: {
-              fillColor: "red",
+              fillColor: "blue",
               emoji: "👮",
             },
             query: `[out:json][timeout:30000];
@@ -112,15 +113,42 @@ area["name"="City of New York"]->.searchArea;
 out geom;`,
           },
           {
+            name: "駅",
+            style: {
+              fillColor: "yellow",
+              emoji: "🚉",
+            },
+            query: `[out:json][timeout:30000];
+area["name"="City of New York"]->.searchArea;
+(
+  nwr["railway"="station"](area.searchArea);
+);
+out geom;`,
+          },
+          {
             name: "Hotels",
             style: {
-              fillColor: "green",
+              fillColor: "white",
               emoji: "🏨",
             },
             query: `[out:json][timeout:30000];
 area["name"="City of New York"]->.searchArea;
 (
   nwr["tourism"="hotel"](area.searchArea);
+);
+out geom;`,
+          },
+          {
+            name: "United Nations",
+            style: {
+              fillColor: "lightblue",
+              emoji: "🇺🇳",
+            },
+            query: `[out:json][timeout:30000];
+area["name"="City of New York"]->.searchArea;
+(
+  nwr["name"~"United Nations"]["building"="yes"](area.searchArea);
+  nwr["name"~"United Nations"]["building:part"="yes"](area.searchArea);
 );
 out geom;`,
           },

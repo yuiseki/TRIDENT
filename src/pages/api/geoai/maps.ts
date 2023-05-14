@@ -23,5 +23,5 @@ export default async function handler(
   }
   */
 
-  res.status(200).json(examplesV2[0]);
+  res.status(200).json(examplesV2[1]);
 }
