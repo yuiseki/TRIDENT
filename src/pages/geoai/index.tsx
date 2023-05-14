@@ -36,6 +36,7 @@ export default function Home() {
   const [initialized, setInitialized] = useState(false);
   const [lazyInserting, setLazyInserting] = useState(false);
   const [responding, setResponding] = useState(false);
+  const [mapping, setMapping] = useState(false);
 
   const initializer = useCallback(() => {
     if (initialized) {
@@ -148,6 +149,7 @@ export default function Home() {
       true
     );
     if (!surfaceResJson.middle.toLowerCase().includes("no map")) {
+      setMapping(true);
       const deepRes = await nextPostJson("/api/geoai/deep", {
         query: surfaceResJson.middle,
       });
@@ -164,12 +166,13 @@ export default function Home() {
         if (newGeojson.features.length !== 0) {
           setGeojson(newGeojson);
         }
+        setMapping(false);
       } catch (error) {
         console.log(error);
       }
+    } else {
+      setResponding(false);
     }
-
-    setResponding(false);
   }, [inputText, insertNewDialogue]);
 
   useEffect(() => {
@@ -260,9 +263,10 @@ export default function Home() {
                   dialogueElement={dialogueElement}
                   dialogueIndex={dialogueIndex}
                   isResponding={
-                    (responding || lazyInserting) &&
+                    (responding || lazyInserting || mapping) &&
                     dialogueIndex === dialogueList.length - 1
                   }
+                  mode="geoai"
                 />
               </div>
             );

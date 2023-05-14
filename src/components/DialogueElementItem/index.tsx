@@ -17,12 +17,14 @@ export const DialogueElementItem: React.FC<{
   dialogueIndex: number;
   isResponding: boolean;
   setInputText?: (text: string) => void;
+  mode?: string;
 }> = ({
   prevDialogueElement,
   dialogueElement,
   dialogueIndex,
   isResponding,
   setInputText,
+  mode,
 }) => {
   const [generatingOverpassQuery, setGeneratingOverpassQuery] = useState(false);
   const [overpassQueries, setOverpassQueries] = useState<
@@ -159,7 +161,8 @@ export const DialogueElementItem: React.FC<{
           })}
           {!isResponding &&
             dialogueIndex === 0 &&
-            dialogueElement.text.length > 0 && (
+            dialogueElement.text.length > 0 &&
+            mode !== "geoai" && (
               <>
                 <details style={{ marginTop: "10px" }}>
                   <summary>
@@ -266,7 +269,8 @@ export const DialogueElementItem: React.FC<{
             prevDialogueElement &&
             dialogueElement.who === "assistant" &&
             !dialogueElement.text.includes("I don't know.") &&
-            !dialogueElement.text.includes("Sorry, something went wrong.") && (
+            !dialogueElement.text.includes("Sorry, something went wrong.") &&
+            mode !== "geoai" && (
               <div style={{ margin: "25px 0", width: "100%" }}>
                 {geojson === undefined &&
                   overpassQuery === undefined &&
