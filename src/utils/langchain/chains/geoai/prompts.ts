@@ -105,7 +105,7 @@ AreaWithConcern: Khartoum, shelter
 
 Be careful, Your output MUST NOT to include any concerns that do not appear in the following conversations.
 You should not output above examples as is, whenever possible.
-If you can't output concise abstract of the map, only output "No map specified."
+If you can't output map definition, only output "No map specified."
 
 Current conversation:
 {history}
