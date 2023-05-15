@@ -218,6 +218,18 @@ area["name"="City of New York"]->.searchArea;
 );
 out geom;
 \`\`\`
+
+Input text:
+AreaWithConcern: Taitō-ku, ramen shops
+Output:
+\`\`\`
+[out:json][timeout:30000];
+area["name"="Taito"]->.searchArea;
+(
+  nwr["amenity"="restaurant"]["cuisine"="ramen"](area.searchArea);
+);
+out geom;
+\`\`\`
 ===
 
 Input text:
