@@ -16,7 +16,7 @@ import osmtogeojson from "osmtogeojson";
 import * as turf from "@turf/turf";
 import { TridentMapsStyle } from "@/types/TridentMaps";
 
-const greetings = `Hello! I'm TRIDENT GeoAI, an unofficial UN dedicated interactive information retrieval and humanity assistance system. What kind of information are you looking for?`;
+const greetings = `Hello! I'm TRIDENT GeoAI, an geospatial situation awareness empowerment system. Could you indicate me the areas and themes you want to see as the map?`;
 
 export default function Home() {
   const [inputText, setInputText] = useState("");
@@ -157,6 +157,7 @@ export default function Home() {
     const innerResJson = await innerRes.json();
     setResponding(false);
     if (!innerResJson.inner.toLowerCase().includes("no map")) {
+      setGeojsonWithStyleList([]);
       setMapping(true);
       const styles: {
         [key: string]: {
@@ -164,7 +165,8 @@ export default function Home() {
           color?: string;
         };
       } = {};
-      innerResJson.inner.split("\n").map(async (line: string, idx: number) => {
+      const lines = innerResJson.inner.split("\n");
+      lines.map(async (line: string, idx: number) => {
         console.log(line);
         if (line.startsWith("Emoji")) {
           const concern = line.split(":")[1].split(",")[0];
@@ -182,39 +184,68 @@ export default function Home() {
           }
           styles[concern].color = color;
         }
-        if (line.startsWith("Area")) {
-          let style = {};
-          Object.keys(styles).map((concern) => {
-            console.log("determine style:", line, concern);
-            if (line.includes(concern)) {
-              style = styles[concern];
-            }
-          });
-          const deepRes = await nextPostJson("/api/geoai/deep", {
-            query: line,
-          });
-          const deepResJson = await deepRes.json();
-          const overpassQuery = deepResJson.deep.split("```")[1];
-          const handleOverpassResponse = async (overpassResponse: Response) => {
-            const overpassResponseJson = await overpassResponse.json();
-            setMapping(false);
-            const newGeojson = osmtogeojson(overpassResponseJson);
-            if (newGeojson.features.length !== 0) {
-              setGeojsonWithStyleList((prev) => {
-                return [
-                  ...prev,
-                  { id: idx.toString(), style: style, geojson: newGeojson },
-                ];
-              });
-            } else {
-              getOverpassResponse(
-                overpassQuery.replace('["name"', '["name:en"')
-              ).then(handleOverpassResponse);
-            }
-          };
-          console.log(overpassQuery);
-          getOverpassResponse(overpassQuery).then(handleOverpassResponse);
+        if (line.startsWith("Area") || line.includes("Area")) {
         }
+      });
+
+      const linesWithArea = lines.filter((line: string) =>
+        line.includes("Area")
+      );
+      linesWithArea.map(async (line: string, idx: number) => {
+        let style = {};
+        Object.keys(styles).map((concern) => {
+          if (line.includes(concern)) {
+            style = styles[concern];
+          }
+        });
+        setMapping(true);
+        const deepRes = await nextPostJson("/api/geoai/deep", {
+          query: line,
+        });
+        const deepResJson = await deepRes.json();
+        console.log(deepResJson.deep);
+        if (deepResJson.deep.toLowerCase().includes("no valid")) {
+          return;
+        }
+        const overpassQuery = deepResJson.deep.split("```")[1];
+        const handleOverpassResponse = async (
+          overpassResponse: Response,
+          retry: boolean
+        ) => {
+          const overpassResponseJson = await overpassResponse.json();
+          setMapping(false);
+          const newGeojson = osmtogeojson(overpassResponseJson);
+          if (newGeojson.features.length !== 0) {
+            setGeojsonWithStyleList((prev) => {
+              return [
+                ...prev,
+                { id: idx.toString(), style: style, geojson: newGeojson },
+              ];
+            });
+            if (idx === linesWithArea.length - 1) {
+              console.log("Finish!!!!!");
+              insertNewDialogue(
+                {
+                  who: "assistant",
+                  text: "Mapping has been completed. Do you have any other requests?",
+                },
+                true
+              );
+            }
+          } else {
+            if (retry) {
+              getOverpassResponse(overpassQuery).then((overpassResponse) => {
+                handleOverpassResponse(overpassResponse, false);
+              });
+            }
+          }
+        };
+        console.log(overpassQuery);
+        getOverpassResponse(
+          overpassQuery.replace('["name"', '["name:en"')
+        ).then((overpassResponse) => {
+          handleOverpassResponse(overpassResponse, true);
+        });
       });
     } else {
       setResponding(false);

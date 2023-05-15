@@ -8,7 +8,7 @@ export const GeoJsonToMarkers: React.FC<{
   geojson?: FeatureCollection;
   emoji?: string;
   style?: TridentMapsStyle;
-}> = ({ geojson, emoji = "🚩", style }) => {
+}> = ({ geojson, emoji, style }) => {
   const { current: map } = useMap();
 
   const [currentZoom, setCurrentZoom] = useState<number | undefined>(8);
@@ -159,42 +159,44 @@ export const GeoJsonToMarkers: React.FC<{
                 }
               </Source>
             )}
-            <Marker
-              key={feature.id}
-              longitude={center.geometry.coordinates[0]}
-              latitude={center.geometry.coordinates[1]}
-              onClick={() => onClickMarker(center)}
-              style={{ zIndex: zIndex }}
-            >
-              <div
-                title={title}
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                  cursor: "pointer",
-                  opacity: opacity,
-                  lineHeight: "1",
-                  textAlign: "center",
-                }}
+            {icon && (
+              <Marker
+                key={feature.id}
+                longitude={center.geometry.coordinates[0]}
+                latitude={center.geometry.coordinates[1]}
+                onClick={() => onClickMarker(center)}
+                style={{ zIndex: zIndex }}
               >
                 <div
+                  title={title}
                   style={{
-                    backgroundColor: style?.color
-                      ? style.color
-                      : "rgba(255, 255, 255, 0.5)",
-                    backdropFilter: "blur(4px)",
-                    borderRadius: "4px",
-                    padding: "2px 4px",
-                    fontSize: fontSize,
-                    fontFamily: "sans-serif, emoji",
-                    lineHeight: "1.1",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    cursor: "pointer",
+                    opacity: opacity,
+                    lineHeight: "1",
+                    textAlign: "center",
                   }}
                 >
-                  {icon}
+                  <div
+                    style={{
+                      backgroundColor: style?.color
+                        ? style.color
+                        : "rgba(255, 255, 255, 0.5)",
+                      backdropFilter: "blur(4px)",
+                      borderRadius: "4px",
+                      padding: "2px 4px",
+                      fontSize: fontSize,
+                      fontFamily: "sans-serif, emoji",
+                      lineHeight: "1.1",
+                    }}
+                  >
+                    {icon}
+                  </div>
                 </div>
-              </div>
-            </Marker>
+              </Marker>
+            )}
           </Fragment>
         );
       })}
