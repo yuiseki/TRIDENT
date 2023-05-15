@@ -110,7 +110,7 @@ If you can't output concise abstract of the map, only output "No map specified."
 Current conversation:
 {history}
 
-Concise abstract of the map:`,
+Output:`,
   inputVariables: ["history"],
 });
 
