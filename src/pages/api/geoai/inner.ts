@@ -41,7 +41,9 @@ export default async function handler(
   const chain = loadGeoAIInnerChain({ llm: model, memory });
   const result = await chain.call({ input: undefined });
 
-  console.log(JSON.stringify(memory.chatHistory));
+  console.log("");
+  console.log(result.response);
+  console.log("");
 
   res.status(200).json({
     inner: result.response,

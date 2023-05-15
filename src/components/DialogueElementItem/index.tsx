@@ -9,7 +9,7 @@ import { FeatureCollection } from "geojson";
 import { getOverpassResponse } from "@/utils/getOverpassResponse";
 import osmtogeojson from "osmtogeojson";
 import { placeholders } from "@/const/placeholders";
-import { summary } from "../../../public/api.reliefweb.int/disasters/summaries/latest_summary.json";
+import summary from "../../../public/api.reliefweb.int/disasters/summaries/latest_summary.json";
 
 export const DialogueElementItem: React.FC<{
   prevDialogueElement?: DialogueElement;
@@ -168,7 +168,7 @@ export const DialogueElementItem: React.FC<{
                   <summary>
                     Summary of ongoing disasters around the world
                   </summary>
-                  {summary}
+                  {summary.summary}
                 </details>
                 <details style={{ marginTop: "10px" }}>
                   <summary>Examples</summary>

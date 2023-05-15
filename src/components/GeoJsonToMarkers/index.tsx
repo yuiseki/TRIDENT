@@ -8,7 +8,7 @@ export const GeoJsonToMarkers: React.FC<{
   geojson?: FeatureCollection;
   emoji?: string;
   style?: TridentMapsStyle;
-}> = ({ geojson, emoji = "🇺🇳", style }) => {
+}> = ({ geojson, emoji = "🚩", style }) => {
   const { current: map } = useMap();
 
   const [currentZoom, setCurrentZoom] = useState<number | undefined>(8);

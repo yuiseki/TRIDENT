@@ -149,6 +149,7 @@ export default function Home() {
       },
       true
     );
+    setMapping(true);
     setResponding(true);
     const innerRes = await nextPostJson("/api/geoai/inner", {
       pastMessages: JSON.stringify(surfaceResJson.history),
@@ -194,11 +195,7 @@ export default function Home() {
           });
           const deepResJson = await deepRes.json();
           const overpassQuery = deepResJson.deep.split("```")[1];
-          console.log(overpassQuery);
-          getOverpassResponse(
-            overpassQuery.replace('["name"', '["name:en"')
-          ).then(async (overpassResponse) => {
-            setMapping(true);
+          const handleOverpassResponse = async (overpassResponse: Response) => {
             const overpassResponseJson = await overpassResponse.json();
             setMapping(false);
             const newGeojson = osmtogeojson(overpassResponseJson);
@@ -209,12 +206,19 @@ export default function Home() {
                   { id: idx.toString(), style: style, geojson: newGeojson },
                 ];
               });
+            } else {
+              getOverpassResponse(
+                overpassQuery.replace('["name"', '["name:en"')
+              ).then(handleOverpassResponse);
             }
-          });
+          };
+          console.log(overpassQuery);
+          getOverpassResponse(overpassQuery).then(handleOverpassResponse);
         }
       });
     } else {
       setResponding(false);
+      setMapping(false);
     }
   }, [inputText, insertNewDialogue, pastMessages]);
 
@@ -251,7 +255,7 @@ export default function Home() {
           position: "fixed",
           top: 0,
           left: 0,
-          width: "60%",
+          width: "40%",
           height: "100vh",
         }}
       >
@@ -288,7 +292,7 @@ export default function Home() {
           top: 0,
           left: 0,
           margin: "0px 0px 5vh",
-          width: "60%",
+          width: "40%",
           height: "100vh",
           overflowY: "scroll",
         }}
@@ -329,7 +333,7 @@ export default function Home() {
           left: 0,
           bottom: "20px",
           height: "8vh",
-          width: "60%",
+          width: "40%",
           margin: "auto",
         }}
       >
@@ -362,9 +366,9 @@ export default function Home() {
         style={{
           position: "fixed",
           top: 0,
-          left: "60%",
+          left: "40%",
           margin: "0px",
-          width: "40%",
+          width: "60%",
           height: "100%",
           zIndex: 1000,
         }}
