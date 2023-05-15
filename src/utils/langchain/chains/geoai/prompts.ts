@@ -92,6 +92,16 @@ ColorForConcern: shelter, blue
 Area: Khartoum
 AreaWithConcern: Khartoum, shelter
 \`\`\`
+
+Input text:
+Map of national treasure castles in Japan
+Output:
+\`\`\
+EmojiForConcern: national treasure castles, 🏯
+ColorForConcern: national treasure castles, gray
+Area: Japan
+AreaWithConcern: Japan, national treasure castles
+\`\`\`
 ===
 
 Be careful, Your output MUST NOT to include any concerns that do not appear in the following conversations.
