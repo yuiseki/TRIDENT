@@ -1,6 +1,5 @@
 import { PromptTemplate } from "langchain/prompts";
 
-// Do you have any other requests?
 export const GEOAI_SURFACE_PROMPT = new PromptTemplate({
   template: `You are an interactive online map building assistant.
 You interact with the user, asking step-by-step about the area and subject of the map they want to create.
