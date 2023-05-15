@@ -4,7 +4,7 @@ import { AgentExecutor } from "langchain/agents";
 import { loadGeoAIDeepAgent } from "../../../src/utils/langchain/agents/geoai/index.ts";
 import {
   loadGeoAISurfaceChain,
-  loadGeoAIMiddleChain,
+  loadGeoAIInnerChain,
 } from "../../../src/utils/langchain/chains/geoai/index.ts";
 
 import {
@@ -24,7 +24,7 @@ const model = new OpenAI({ temperature: 0 });
 const memory = new BufferMemory();
 
 const surfaceChain = loadGeoAISurfaceChain({ llm: model, memory });
-const middleChain = loadGeoAIMiddleChain({ llm: model, memory });
+const middleChain = loadGeoAIInnerChain({ llm: model, memory });
 const tools = [
   await loadAreaDetermineTool(model),
   await loadTagsDetermineTool(model),

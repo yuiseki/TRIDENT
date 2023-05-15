@@ -1,5 +1,9 @@
 import { ConversationChain } from "langchain/chains";
-import { GEOAI_MIDDLE_PROMPT, GEOAI_SURFACE_PROMPT } from "./prompts";
+import {
+  GEOAI_DEEP_PROMPT,
+  GEOAI_MIDDLE_PROMPT as GEOAI_INNER_PROMPT,
+  GEOAI_SURFACE_PROMPT,
+} from "./prompts";
 import { LLMChain } from "langchain/chains";
 import { BaseLanguageModel } from "langchain/dist/base_language";
 import { BaseMemory, BufferMemory } from "langchain/memory";
@@ -24,7 +28,7 @@ export const loadGeoAISurfaceChain = ({
   return chain;
 };
 
-export const loadGeoAIMiddleChain = ({
+export const loadGeoAIInnerChain = ({
   llm,
   memory,
 }: {
@@ -36,13 +40,25 @@ export const loadGeoAIMiddleChain = ({
   }
   const chain = new ConversationChain({
     llm: llm,
-    prompt: GEOAI_MIDDLE_PROMPT,
+    prompt: GEOAI_INNER_PROMPT,
     memory: memory,
   });
   return chain;
 };
 
 export const loadGeoAIDeepChain = ({
+  llm,
+}: {
+  llm: BaseLanguageModel;
+}): LLMChain => {
+  const chain = new LLMChain({
+    llm: llm,
+    prompt: GEOAI_DEEP_PROMPT,
+  });
+  return chain;
+};
+
+export const loadGeoAIAgentChain = ({
   llm,
   tools,
 }: {

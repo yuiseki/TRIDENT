@@ -14,6 +14,7 @@ import { FeatureCollection } from "geojson";
 import { getOverpassResponse } from "@/utils/getOverpassResponse";
 import osmtogeojson from "osmtogeojson";
 import * as turf from "@turf/turf";
+import { TridentMapsStyle } from "@/types/TridentMaps";
 
 const greetings = `Hello! I'm TRIDENT, an unofficial UN dedicated interactive information retrieval and humanity assistance system. What kind of information are you looking for?`;
 
@@ -24,7 +25,9 @@ export default function Home() {
     { messages: Array<{ text: string }> } | undefined
   >();
   const mapRef = useRef<MapRef | null>(null);
-  const [geojson, setGeojson] = useState<FeatureCollection>();
+  const [geojsonWithStyleList, setGeojsonWithStyleList] = useState<
+    Array<{ id: string; style: TridentMapsStyle; geojson: FeatureCollection }>
+  >([]);
 
   const [dialogueList, setDialogueList] = useState<DialogueElement[]>([
     {
@@ -130,14 +133,12 @@ export default function Home() {
     scrollToBottom();
     setResponding(true);
 
-    let qaPath = "/api/geoai/surface";
-    const surfaceRes = await nextPostJson(qaPath, {
+    const surfaceRes = await nextPostJson("/api/geoai/surface", {
       query: newInputText,
       pastMessages: pastMessages ? JSON.stringify(pastMessages) : undefined,
     });
     const surfaceResJson: {
       surface: string;
-      middle: string;
       history: { messages: Array<{ text: string }> };
     } = await surfaceRes.json();
     setPastMessages(surfaceResJson.history);
@@ -148,39 +149,59 @@ export default function Home() {
       },
       true
     );
-    if (!surfaceResJson.middle.toLowerCase().includes("no map")) {
+    const innerRes = await nextPostJson("/api/geoai/inner", {
+      pastMessages: JSON.stringify(surfaceResJson.history),
+    });
+    const innerResJson = await innerRes.json();
+    console.log(innerResJson);
+    if (!innerResJson.inner.toLowerCase().includes("no map")) {
       setMapping(true);
-      const deepRes = await nextPostJson("/api/geoai/deep", {
-        query: surfaceResJson.middle,
-      });
-      const deepResJson = await deepRes.json();
-      const overpassQuery = deepResJson.output.split("```")[1];
-      console.log(overpassQuery);
-      try {
-        const overpassRes = await getOverpassResponse(
-          overpassQuery.replace('area["name"', 'area["name:en"')
-        );
-        const overpassJson = await overpassRes.json();
-        const newGeojson = osmtogeojson(overpassJson);
-        console.log(JSON.stringify(newGeojson));
-        if (newGeojson.features.length !== 0) {
-          setGeojson(newGeojson);
+      innerResJson.inner.split("\n").map(async (line: string, idx: number) => {
+        console.log(line);
+        if (line.startsWith("Area")) {
+          const deepRes = await nextPostJson("/api/geoai/deep", {
+            query: line,
+          });
+          const deepResJson = await deepRes.json();
+          const overpassQuery = deepResJson.deep.split("```")[1];
+          console.log(overpassQuery);
+          getOverpassResponse(
+            overpassQuery.replace('["name"', '["name:en"')
+          ).then(async (overpassResponse) => {
+            setMapping(true);
+            const overpassResponseJson = await overpassResponse.json();
+            setMapping(false);
+            const newGeojson = osmtogeojson(overpassResponseJson);
+            console.log(JSON.stringify(newGeojson));
+            if (newGeojson.features.length !== 0) {
+              setGeojsonWithStyleList((prev) => {
+                return [
+                  ...prev,
+                  { id: idx.toString(), style: {}, geojson: newGeojson },
+                ];
+              });
+            }
+          });
         }
-        setMapping(false);
-      } catch (error) {
-        console.log(error);
-      }
+      });
     } else {
       setResponding(false);
     }
-  }, [inputText, insertNewDialogue]);
+  }, [inputText, insertNewDialogue, pastMessages]);
 
   useEffect(() => {
     setTimeout(() => {
       if (!mapRef || !mapRef.current) return;
-      if (geojson === undefined) return;
+      if (geojsonWithStyleList.length === 0) return;
       try {
-        const [minLng, minLat, maxLng, maxLat] = turf.bbox(geojson);
+        console.log(geojsonWithStyleList);
+        const everything: FeatureCollection = {
+          type: "FeatureCollection",
+          features: geojsonWithStyleList
+            .map((item) => item.geojson.features)
+            .flat(),
+        };
+        const [minLng, minLat, maxLng, maxLat] = turf.bbox(everything);
         mapRef.current.fitBounds(
           [
             [minLng, minLat],
@@ -192,7 +213,7 @@ export default function Home() {
         console.error(e);
       }
     }, 500);
-  }, [geojson]);
+  }, [geojsonWithStyleList]);
 
   return (
     <main style={{ width: "100vw", height: "100vh" }}>
@@ -327,7 +348,16 @@ export default function Home() {
             latitude={0}
             zoom={1}
           >
-            <GeoJsonToMarkers geojson={geojson} />
+            {geojsonWithStyleList &&
+              geojsonWithStyleList.map((geojsonWithStyle) => {
+                return (
+                  <GeoJsonToMarkers
+                    key={geojsonWithStyle.id}
+                    geojson={geojsonWithStyle.geojson}
+                    style={geojsonWithStyle.style}
+                  />
+                );
+              })}
           </BaseMap>
         </MapProvider>
       </div>

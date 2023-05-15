@@ -92,7 +92,7 @@ export const loadOverpassQueryBuilderTool = async (llm: BaseLanguageModel) => {
   return new ChainTool({
     name: "overpass-query-builder",
     description:
-      "Useful when you need to query of the Overpass API. Input: Text that must contains English name of target area and list of tags, You can get these texts by using the output of tool osm-area-determine and tool osm-tags-determine.",
+      "Useful when you need to query of the Overpass API. Input: Text that contains name of target area and optionally contains list of tags, You can get these texts by using the output of tool osm-area-determine and tool osm-tags-determine.",
     chain: new LLMChain({
       llm: llm,
       prompt: PromptTemplate.fromTemplate(
@@ -101,13 +101,10 @@ export const loadOverpassQueryBuilderTool = async (llm: BaseLanguageModel) => {
 You will always reply according to the following rules:
 - The text of a valid Overpass API query.
 - The query timeout must be 30000.
-- The query utilize a area specifier.
-- The query will search nwr.
+- The query will utilize a area specifier as needed.
+- The query will search nwr as needed.
 - The query must be out geom.
-- Must output valid Overpass API queries as many as possible.
-- All queries must be enclosed by three backticks on new lines, denoting that it is a code block.
-- Must expands all possible patterns of Overpass API query with and without :en for area and tags.
-- Must output Overpass API query at the end to retrieve the region that also expands all variant names for fallback.
+- The query must be enclosed by three backticks on new lines, denoting that it is a code block.
 
 Examples:
 ===

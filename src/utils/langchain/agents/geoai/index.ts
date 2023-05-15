@@ -17,7 +17,7 @@ import {
   AgentFinish,
 } from "langchain/schema";
 import { Tool } from "langchain/tools";
-import { loadGeoAIDeepChain } from "../../chains/geoai";
+import { loadGeoAIAgentChain, loadGeoAIDeepChain } from "../../chains/geoai";
 import { BaseLanguageModel } from "langchain/dist/base_language";
 
 const PREFIX = `You are OpenStreetMap dedicated GeoAI. You build query for Overpass API based on user input as best you can. You have access to the following tools:`;
@@ -113,7 +113,7 @@ export const loadGeoAIDeepAgent = ({
   llm: BaseLanguageModel;
   tools: Tool[];
 }) => {
-  const llmChain = loadGeoAIDeepChain({ llm, tools });
+  const llmChain = loadGeoAIAgentChain({ llm, tools });
   const agent = new LLMSingleActionAgent({
     llmChain,
     outputParser: new GeoAIOutputParser(),

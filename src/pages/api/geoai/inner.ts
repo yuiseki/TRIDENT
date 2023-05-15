@@ -13,19 +13,6 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const queryString = getRequestParamAsString(req, "query");
-  if (queryString === undefined) {
-    res.status(400).json({ status: "ng", message: "query is missing" });
-    return;
-  }
-  if (queryString.length > 400) {
-    res.status(400).json({ status: "ng", message: "query is too long" });
-    return;
-  }
-  if (isQueryStringDanger(queryString)) {
-    res.status(400).json({ status: "ng", message: "invalid query" });
-    return;
-  }
   const pastMessagesJsonString = getRequestParamAsString(req, "pastMessages");
 
   const model = new OpenAI({ temperature: 0 });
@@ -51,11 +38,13 @@ export default async function handler(
     chatHistory,
   });
 
-  const surfaceChain = loadGeoAISurfaceChain({ llm: model, memory });
-  const surfaceResult = await surfaceChain.call({ input: queryString });
+  const chain = loadGeoAIInnerChain({ llm: model, memory });
+  const result = await chain.call({ input: undefined });
+
+  console.log(JSON.stringify(memory.chatHistory));
 
   res.status(200).json({
-    surface: surfaceResult.response,
+    inner: result.response,
     history: memory.chatHistory,
   });
 }

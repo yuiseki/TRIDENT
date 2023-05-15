@@ -145,21 +145,20 @@ export const GeoJsonToMarkers: React.FC<{
                     }}
                   />
                 )}
-                {style?.fillColor && (
+                {
                   <Layer
                     {...{
                       id: `${feature.id}-fill`,
                       type: "fill",
                       paint: {
-                        "fill-outline-color": style?.borderColor
-                          ? style.borderColor
+                        "fill-color": style?.fillColor
+                          ? style.fillColor
                           : "#3288bd",
-                        "fill-color": style.fillColor,
                         "fill-opacity": 0.2,
                       },
                     }}
                   />
-                )}
+                }
               </Source>
             )}
             <Marker

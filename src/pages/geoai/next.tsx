@@ -44,8 +44,8 @@ export default function Home() {
             });
           }
         });
-        area.subjects.map((subject) => {
-          getOverpassResponse(subject.query).then(
+        area.concerns.map((concern) => {
+          getOverpassResponse(concern.query).then(
             async (subjectOverpassResponse) => {
               const subjectOverpassJson = await subjectOverpassResponse.json();
               const subjectGeojson = osmtogeojson(subjectOverpassJson);
@@ -54,8 +54,8 @@ export default function Home() {
                   return [
                     ...prev,
                     {
-                      id: `${area.name}-${subject.name}`,
-                      style: subject.style,
+                      id: `${area.name}-${concern.name}`,
+                      style: concern.style,
                       geojson: subjectGeojson,
                     },
                   ];
