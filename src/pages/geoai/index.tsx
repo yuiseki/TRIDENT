@@ -16,7 +16,7 @@ import osmtogeojson from "osmtogeojson";
 import * as turf from "@turf/turf";
 import { TridentMapsStyle } from "@/types/TridentMaps";
 
-const greetings = `Hello! I'm TRIDENT, an unofficial UN dedicated interactive information retrieval and humanity assistance system. What kind of information are you looking for?`;
+const greetings = `Hello! I'm TRIDENT GeoAI, an unofficial UN dedicated interactive information retrieval and humanity assistance system. What kind of information are you looking for?`;
 
 export default function Home() {
   const [inputText, setInputText] = useState("");
@@ -149,16 +149,46 @@ export default function Home() {
       },
       true
     );
+    setResponding(true);
     const innerRes = await nextPostJson("/api/geoai/inner", {
       pastMessages: JSON.stringify(surfaceResJson.history),
     });
     const innerResJson = await innerRes.json();
-    console.log(innerResJson);
+    setResponding(false);
     if (!innerResJson.inner.toLowerCase().includes("no map")) {
       setMapping(true);
+      const styles: {
+        [key: string]: {
+          emoji?: string;
+          color?: string;
+        };
+      } = {};
       innerResJson.inner.split("\n").map(async (line: string, idx: number) => {
         console.log(line);
+        if (line.startsWith("Emoji")) {
+          const concern = line.split(":")[1].split(",")[0];
+          const emoji = line.split(":")[1].split(",")[1];
+          if (styles[concern] === undefined) {
+            styles[concern] = {};
+          }
+          styles[concern].emoji = emoji;
+        }
+        if (line.startsWith("Color")) {
+          const concern = line.split(":")[1].split(",")[0];
+          const color = line.split(":")[1].split(",")[1];
+          if (styles[concern] === undefined) {
+            styles[concern] = {};
+          }
+          styles[concern].color = color;
+        }
         if (line.startsWith("Area")) {
+          let style = {};
+          Object.keys(styles).map((concern) => {
+            console.log("determine style:", line, concern);
+            if (line.includes(concern)) {
+              style = styles[concern];
+            }
+          });
           const deepRes = await nextPostJson("/api/geoai/deep", {
             query: line,
           });
@@ -172,12 +202,11 @@ export default function Home() {
             const overpassResponseJson = await overpassResponse.json();
             setMapping(false);
             const newGeojson = osmtogeojson(overpassResponseJson);
-            console.log(JSON.stringify(newGeojson));
             if (newGeojson.features.length !== 0) {
               setGeojsonWithStyleList((prev) => {
                 return [
                   ...prev,
-                  { id: idx.toString(), style: {}, geojson: newGeojson },
+                  { id: idx.toString(), style: style, geojson: newGeojson },
                 ];
               });
             }

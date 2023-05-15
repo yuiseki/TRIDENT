@@ -1,6 +1,5 @@
 export type TridentMapsStyle = {
-  borderColor?: string;
-  fillColor?: string;
+  color?: string;
   emoji?: string;
 };
 

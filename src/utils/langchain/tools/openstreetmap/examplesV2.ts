@@ -6,8 +6,7 @@ export const examplesV2: TridentMaps[] = [
       {
         name: "台東区",
         style: {
-          borderColor: "yellow",
-          fillColor: "lightyellow",
+          color: "yellow",
           emoji: "🚩",
         },
         query: `[out:json][timeout:30000];
@@ -17,7 +16,7 @@ out geom;`,
           {
             name: "公園",
             style: {
-              fillColor: "lightgreen",
+              color: "green",
               emoji: "🏞",
             },
             query: `[out:json][timeout:30000];
@@ -30,7 +29,7 @@ out geom;`,
           {
             name: "駅",
             style: {
-              fillColor: "lightblue",
+              color: "blue",
               emoji: "🚉",
             },
             query: `[out:json][timeout:30000];
@@ -45,8 +44,7 @@ out geom;`,
       {
         name: "千代田区",
         style: {
-          borderColor: "yellow",
-          fillColor: "lightyellow",
+          color: "yellow",
           emoji: "🚩",
         },
         query: `[out:json][timeout:30000];
@@ -56,7 +54,7 @@ out geom;`,
           {
             name: "公園",
             style: {
-              fillColor: "lightgreen",
+              color: "green",
               emoji: "🏞",
             },
             query: `[out:json][timeout:30000];
@@ -69,7 +67,7 @@ out geom;`,
           {
             name: "駅",
             style: {
-              fillColor: "lightblue",
+              color: "blue",
               emoji: "🚉",
             },
             query: `[out:json][timeout:30000];
@@ -88,8 +86,7 @@ out geom;`,
       {
         name: "City of New York",
         style: {
-          borderColor: "yellow",
-          fillColor: "lightyellow",
+          color: "yellow",
           emoji: "🚩",
         },
         query: `[out:json][timeout:30000];
@@ -99,7 +96,7 @@ out geom;`,
           {
             name: "Police Stations",
             style: {
-              fillColor: "blue",
+              color: "blue",
               emoji: "👮",
             },
             query: `[out:json][timeout:30000];
@@ -112,7 +109,7 @@ out geom;`,
           {
             name: "Stations",
             style: {
-              fillColor: "yellow",
+              color: "yellow",
               emoji: "🚉",
             },
             query: `[out:json][timeout:30000];
@@ -125,7 +122,7 @@ out geom;`,
           {
             name: "Hotels",
             style: {
-              fillColor: "white",
+              color: "white",
               emoji: "🏨",
             },
             query: `[out:json][timeout:30000];
@@ -138,7 +135,7 @@ out geom;`,
           {
             name: "United Nations",
             style: {
-              fillColor: "lightblue",
+              color: "blue",
               emoji: "🇺🇳",
             },
             query: `[out:json][timeout:30000];
@@ -158,8 +155,7 @@ out geom;`,
       {
         name: "Municipality of Prizren",
         style: {
-          borderColor: "yellow",
-          fillColor: "lightyellow",
+          color: "yellow",
           emoji: "🚩",
         },
         query: `[out:json][timeout:30000];
@@ -169,7 +165,7 @@ out geom;`,
           {
             name: "Police Stations",
             style: {
-              fillColor: "blue",
+              color: "blue",
               emoji: "👮",
             },
             query: `[out:json][timeout:30000];
@@ -182,7 +178,7 @@ out geom;`,
           {
             name: "Hotels",
             style: {
-              fillColor: "white",
+              color: "white",
               emoji: "🏨",
             },
             query: `[out:json][timeout:30000];
@@ -201,8 +197,7 @@ out geom;`,
       {
         name: "Sudan",
         style: {
-          borderColor: "yellow",
-          fillColor: "lightyellow",
+          color: "yellow",
           emoji: "🚩",
         },
         query: `[out:json][timeout:30000];
@@ -212,7 +207,7 @@ out geom;`,
           {
             name: "Military facilities",
             style: {
-              fillColor: "yellow",
+              color: "yellow",
               emoji: "🪖",
             },
             query: `[out:json][timeout:30000];
@@ -227,8 +222,7 @@ out geom;`,
       {
         name: "South Sudan",
         style: {
-          borderColor: "yellow",
-          fillColor: "lightyellow",
+          color: "yellow",
           emoji: "🚩",
         },
         query: `[out:json][timeout:30000];
@@ -238,7 +232,7 @@ out geom;`,
           {
             name: "Military facilities",
             style: {
-              fillColor: "yellow",
+              color: "yellow",
               emoji: "🪖",
             },
             query: `[out:json][timeout:30000];
@@ -257,8 +251,7 @@ out geom;`,
       {
         name: "Belgorod Oblast, Russia",
         style: {
-          borderColor: "yellow",
-          fillColor: "lightyellow",
+          color: "yellow",
           emoji: "🚩",
         },
         query: `[out:json][timeout:30000];
@@ -268,7 +261,7 @@ out geom;`,
           {
             name: "Military facilities",
             style: {
-              fillColor: "yellow",
+              color: "yellow",
               emoji: "🪖",
             },
             query: `[out:json][timeout:30000];
@@ -283,8 +276,7 @@ out geom;`,
       {
         name: "Voronezh Oblast, Russia",
         style: {
-          borderColor: "yellow",
-          fillColor: "lightyellow",
+          color: "yellow",
           emoji: "🚩",
         },
         query: `[out:json][timeout:30000];
@@ -294,7 +286,7 @@ out geom;`,
           {
             name: "Military facilities",
             style: {
-              fillColor: "yellow",
+              color: "yellow",
               emoji: "🪖",
             },
             query: `[out:json][timeout:30000];
@@ -309,8 +301,7 @@ out geom;`,
       {
         name: "Bryansk Oblast, Russia",
         style: {
-          borderColor: "yellow",
-          fillColor: "lightyellow",
+          color: "yellow",
           emoji: "🚩",
         },
         query: `[out:json][timeout:30000];
@@ -320,7 +311,7 @@ out geom;`,
           {
             name: "Military facilities",
             style: {
-              fillColor: "yellow",
+              color: "yellow",
               emoji: "🪖",
             },
             query: `[out:json][timeout:30000];
@@ -335,8 +326,7 @@ out geom;`,
       {
         name: "Kursk Oblast, Russia",
         style: {
-          borderColor: "yellow",
-          fillColor: "lightyellow",
+          color: "yellow",
           emoji: "🚩",
         },
         query: `[out:json][timeout:30000];
@@ -346,7 +336,7 @@ out geom;`,
           {
             name: "Military facilities",
             style: {
-              fillColor: "yellow",
+              color: "yellow",
               emoji: "🪖",
             },
             query: `[out:json][timeout:30000];
@@ -361,8 +351,7 @@ out geom;`,
       {
         name: "Rostov Oblast, Russia",
         style: {
-          borderColor: "yellow",
-          fillColor: "lightyellow",
+          color: "yellow",
           emoji: "🚩",
         },
         query: `[out:json][timeout:30000];
@@ -372,7 +361,7 @@ out geom;`,
           {
             name: "Military facilities",
             style: {
-              fillColor: "yellow",
+              color: "yellow",
               emoji: "🪖",
             },
             query: `[out:json][timeout:30000];
@@ -387,8 +376,7 @@ out geom;`,
       {
         name: "Ukraine",
         style: {
-          borderColor: "yellow",
-          fillColor: "lightyellow",
+          color: "yellow",
           emoji: "🚩",
         },
         query: `[out:json][timeout:30000];
@@ -398,7 +386,7 @@ out geom;`,
           {
             name: "Military facilities",
             style: {
-              fillColor: "yellow",
+              color: "yellow",
               emoji: "🪖",
             },
             query: `[out:json][timeout:30000];

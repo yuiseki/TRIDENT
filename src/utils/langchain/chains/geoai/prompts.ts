@@ -1,5 +1,6 @@
 import { PromptTemplate } from "langchain/prompts";
 
+// Do you have any other requests?
 export const GEOAI_SURFACE_PROMPT = new PromptTemplate({
   template: `You are an interactive online map building assistant.
 You interact with the user, asking step-by-step about the area and subject of the map they want to create.
@@ -7,7 +8,7 @@ You respond in their language whenever possible.
 
 - First, you must confirm the area to be covered to the user
 - Second, you should confirm the theme or subject of the map to the user
-- When you get above information from user, you should output "I copy, I'm trying to create map for you. Please wait a while. Do you have any other requests?" as language in conversations.
+- When you get above information from user, you should output "I copy, I'm generating map. Please wait a while..." as language in conversations.
 
 Current conversation:
 {history}
@@ -23,10 +24,10 @@ Map definition must be enclosed by three backticks on new lines, denoting that i
 
 Use the following format for map definition:
 \`\`\`
-Area: geospatial area mentioned by user
-AreaWithConcern: pair of geospatial area and concern mentioned by user
 EmojiForConcern: emoji best suited to expressing specific concern, should be different for each concern
 ColorForConcern: color best suited to expressing specific concern, should be different for each concern, should be one of [cyan, yellow, gray, blue, green, pink, coral]
+Area: geospatial area mentioned by user
+AreaWithConcern: pair of geospatial area and concern mentioned by user
 ... (this Area/AreaWithConcern/EmojiForConcern/ColorForConcern can repeat N times)
 \`\`\`
 
@@ -47,12 +48,12 @@ Example 2:
 Input: Map military facilities in Sudan and South Sudan.
 Output:
 \`\`\`
+EmojiForConcern: military facilities, 🪖
+ColorForConcern: military facilities, coral
 Area: Sudan
 Area: South Sudan
 AreaWithConcern: Sudan, military facilities
 AreaWithConcern: South Sudan, military facilities
-EmojiForConcern: military facilities, 🪖
-ColorForConcern: military facilities, coral
 \`\`\`
 ===
 
@@ -60,7 +61,14 @@ ColorForConcern: military facilities, coral
 Example 3:
 Input: Map military facilities, hospitals and shelter in Sudan and South Sudan.
 Output:
-\`\`\`
+\`\`\
+EmojiForConcern: military facilities, 🪖
+EmojiForConcern: hospitals, 🏥
+EmojiForConcern: shelter, ⛺
+ColorForConcern: military facilities, coral
+ColorForConcern: hospitals, green
+ColorForConcern: shelter, blue
+
 Area: Sudan
 Area: South Sudan
 AreaWithConcern: Sudan, military facilities
@@ -69,12 +77,6 @@ AreaWithConcern: Sudan, shelter
 AreaWithConcern: South Sudan, military facilities
 AreaWithConcern: South Sudan, hospitals
 AreaWithConcern: South Sudan, shelter
-EmojiForConcern: military facilities, 🪖
-EmojiForConcern: hospitals, 🏥
-EmojiForConcern: shelter, ⛺
-ColorForConcern: military facilities, coral
-ColorForConcern: hospitals, green
-ColorForConcern: shelter, blue
 \`\`\`
 ===
 
