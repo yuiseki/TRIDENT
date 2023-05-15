@@ -236,7 +236,7 @@ AreaWithConcern: Chiba Prefecture, Western-style confectionery stores
 Output:
 \`\`\`
 [out:json][timeout:30000];
-area["name"="Chiba"]->.searchArea;
+area["name"="Chiba Prefecture"]->.searchArea;
 (
   nwr["shop"="confectionery"](area.searchArea);
 );
