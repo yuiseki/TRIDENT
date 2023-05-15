@@ -102,6 +102,19 @@ ColorForConcern: national treasure castles, white
 Area: Japan
 AreaWithConcern: Japan, national treasure castles
 \`\`\`
+
+Input text:
+Show the bar and police station in Prizren, Kosovo.
+Output:
+\`\`\
+EmojiForConcern: bar, 🍻
+ColorForConcern: bar, yellow
+EmojiForConcern: police station, 🚓
+ColorForConcern: police station, blue
+Area: Municipality of Prizren
+AreaWithConcern: Municipality of Prizren, bar
+AreaWithConcern: Municipality of Prizren, police station
+\`\`\`
 ===
 
 Be careful, Your output MUST NOT to include any concerns that do not appear in the following conversations.
