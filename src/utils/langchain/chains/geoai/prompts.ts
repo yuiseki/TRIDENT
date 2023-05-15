@@ -230,6 +230,18 @@ area["name"="Taito"]->.searchArea;
 );
 out geom;
 \`\`\`
+
+Input text:
+AreaWithConcern: Chiba Prefecture, Western-style confectionery stores
+Output:
+\`\`\`
+[out:json][timeout:30000];
+area["name"="Chiba"]->.searchArea;
+(
+  nwr["shop"="confectionery"](area.searchArea);
+);
+out geom;
+\`\`\`
 ===
 
 Input text:
