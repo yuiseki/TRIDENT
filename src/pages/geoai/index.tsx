@@ -15,8 +15,9 @@ import { getOverpassResponse } from "@/utils/getOverpassResponse";
 import osmtogeojson from "osmtogeojson";
 import * as turf from "@turf/turf";
 import { TridentMapsStyle } from "@/types/TridentMaps";
+import Head from "next/head";
 
-const greetings = `Hello! I'm TRIDENT GeoAI, an geospatial situation awareness empowerment system. Could you indicate me the areas and themes you want to see as the map?`;
+const greetings = `Hello! I'm TRIDENT GeoAI, interactive geospatial situation awareness empowerment system. Could you indicate me the areas and themes you want to see as the map?`;
 
 export default function Home() {
   const [inputText, setInputText] = useState("");
@@ -280,151 +281,168 @@ export default function Home() {
   }, [geojsonWithStyleList]);
 
   return (
-    <main style={{ width: "100vw", height: "100vh" }}>
-      <div
-        style={{
-          position: "fixed",
-          top: 0,
-          left: 0,
-          width: "40%",
-          height: "100vh",
-        }}
-      >
+    <>
+      <Head>
+        <title>
+          TRIDENT GeoAI - Interactive geospatial situation awareness empowerment
+          system
+        </title>
+        <meta
+          name="description"
+          content="TRIDENT GeoAI - Interactive geospatial situation awareness empowerment system"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="icon"
+          href="https://i.gyazo.com/36f5e676caec5f5e746a95054a46504f.png"
+        />
+      </Head>
+      <main style={{ width: "100vw", height: "100vh" }}>
+        <div
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "40%",
+            height: "100vh",
+          }}
+        >
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              backgroundColor: "rgba(0, 158, 219, 1)",
+              backgroundImage: 'url("/Flag_of_the_United_Nations.svg")',
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              zIndex: 9,
+            }}
+          ></div>
+          <div
+            style={{
+              position: "relative",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
+              zIndex: 10,
+            }}
+          ></div>
+        </div>
+        <div
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            margin: "0px 0px 5vh",
+            width: "40%",
+            height: "100vh",
+            overflowY: "scroll",
+          }}
+        >
+          <div
+            style={{
+              width: "95%",
+              margin: "0 auto 15vh",
+              zIndex: 1000,
+              background: "transparent",
+            }}
+          >
+            {dialogueList.map((dialogueElement, dialogueIndex) => {
+              return (
+                <div key={dialogueIndex}>
+                  <DialogueElementItem
+                    prevDialogueElement={
+                      0 < dialogueIndex
+                        ? dialogueList[dialogueIndex - 1]
+                        : undefined
+                    }
+                    dialogueElement={dialogueElement}
+                    dialogueIndex={dialogueIndex}
+                    isResponding={
+                      (responding || lazyInserting || mapping) &&
+                      dialogueIndex === dialogueList.length - 1
+                    }
+                    mode="geoai"
+                  />
+                </div>
+              );
+            })}
+          </div>
+        </div>
         <div
           style={{
             position: "absolute",
-            top: 0,
             left: 0,
-            width: "100%",
-            height: "100%",
-            backgroundColor: "rgba(0, 158, 219, 1)",
-            backgroundImage: 'url("/Flag_of_the_United_Nations.svg")',
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            zIndex: 9,
-          }}
-        ></div>
-        <div
-          style={{
-            position: "relative",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            backgroundColor: "rgba(0, 0, 0, 0.5)",
-            zIndex: 10,
-          }}
-        ></div>
-      </div>
-      <div
-        style={{
-          position: "fixed",
-          top: 0,
-          left: 0,
-          margin: "0px 0px 5vh",
-          width: "40%",
-          height: "100vh",
-          overflowY: "scroll",
-        }}
-      >
-        <div
-          style={{
-            width: "95%",
-            margin: "0 auto 15vh",
-            zIndex: 1000,
-            background: "transparent",
-          }}
-        >
-          {dialogueList.map((dialogueElement, dialogueIndex) => {
-            return (
-              <div key={dialogueIndex}>
-                <DialogueElementItem
-                  prevDialogueElement={
-                    0 < dialogueIndex
-                      ? dialogueList[dialogueIndex - 1]
-                      : undefined
-                  }
-                  dialogueElement={dialogueElement}
-                  dialogueIndex={dialogueIndex}
-                  isResponding={
-                    (responding || lazyInserting || mapping) &&
-                    dialogueIndex === dialogueList.length - 1
-                  }
-                  mode="geoai"
-                />
-              </div>
-            );
-          })}
-        </div>
-      </div>
-      <div
-        style={{
-          position: "absolute",
-          left: 0,
-          bottom: "20px",
-          height: "8vh",
-          width: "40%",
-          margin: "auto",
-        }}
-      >
-        <div
-          style={{
-            width: "95%",
+            bottom: "20px",
+            height: "8vh",
+            width: "40%",
             margin: "auto",
           }}
         >
-          <TextInput
-            disabled={false}
-            placeholder="..."
-            inputText={inputText}
-            setInputText={setInputText}
-            onSubmit={onSubmit}
-          />
+          <div
+            style={{
+              width: "95%",
+              margin: "auto",
+            }}
+          >
+            <TextInput
+              disabled={false}
+              placeholder="..."
+              inputText={inputText}
+              setInputText={setInputText}
+              onSubmit={onSubmit}
+            />
+          </div>
+          <div
+            style={{
+              color: "white",
+              width: "100%",
+              textAlign: "center",
+              opacity: 0.8,
+            }}
+          >
+            TRIDENT may produce inaccurate information.
+          </div>
         </div>
         <div
           style={{
-            color: "white",
-            width: "100%",
-            textAlign: "center",
-            opacity: 0.8,
+            position: "fixed",
+            top: 0,
+            left: "40%",
+            margin: "0px",
+            width: "60%",
+            height: "100%",
+            zIndex: 1000,
           }}
         >
-          TRIDENT may produce inaccurate information.
+          <MapProvider>
+            <BaseMap
+              id="mainMap"
+              mapRef={mapRef}
+              longitude={0}
+              latitude={0}
+              zoom={1}
+            >
+              {geojsonWithStyleList &&
+                geojsonWithStyleList.map((geojsonWithStyle) => {
+                  return (
+                    <GeoJsonToMarkers
+                      key={geojsonWithStyle.id}
+                      geojson={geojsonWithStyle.geojson}
+                      style={geojsonWithStyle.style}
+                    />
+                  );
+                })}
+            </BaseMap>
+          </MapProvider>
         </div>
-      </div>
-      <div
-        style={{
-          position: "fixed",
-          top: 0,
-          left: "40%",
-          margin: "0px",
-          width: "60%",
-          height: "100%",
-          zIndex: 1000,
-        }}
-      >
-        <MapProvider>
-          <BaseMap
-            id="mainMap"
-            mapRef={mapRef}
-            longitude={0}
-            latitude={0}
-            zoom={1}
-          >
-            {geojsonWithStyleList &&
-              geojsonWithStyleList.map((geojsonWithStyle) => {
-                return (
-                  <GeoJsonToMarkers
-                    key={geojsonWithStyle.id}
-                    geojson={geojsonWithStyle.geojson}
-                    style={geojsonWithStyle.style}
-                  />
-                );
-              })}
-          </BaseMap>
-        </MapProvider>
-      </div>
-    </main>
+      </main>
+    </>
   );
 }
