@@ -19,7 +19,7 @@ AI:`,
   inputVariables: ["history", "input"],
 });
 
-export const GEOAI_MIDDLE_PROMPT = new PromptTemplate({
+export const GEOAI_INNER_PROMPT = new PromptTemplate({
   template: `You are a conversation analysis assistant dedicated to build a digital map.
 You analyze the following conversation and accurately output map definition to instruct the Map Building Agent.
 Map definition MUST be enclosed by THREE BACKTICKS on new lines, denoting that it is a code block.

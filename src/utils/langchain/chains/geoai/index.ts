@@ -1,7 +1,7 @@
 import { ConversationChain } from "langchain/chains";
 import {
   GEOAI_DEEP_PROMPT,
-  GEOAI_MIDDLE_PROMPT as GEOAI_INNER_PROMPT,
+  GEOAI_INNER_PROMPT,
   GEOAI_SURFACE_PROMPT,
 } from "./prompts";
 import { LLMChain } from "langchain/chains";
