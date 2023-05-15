@@ -35,28 +35,24 @@ AreaWithConcern: pair of geospatial area and concern mentioned by user
 
 Examples of map definition:
 ===
-Example 1:
-Input: Map of Sudan and South Sudan
+Input text:
+Map of Sudan and South Sudan
 Output:
 \`\`\`
 Area: Sudan
 Area: South Sudan
 \`\`\`
-===
 
-===
-Example 2:
-Input: Map of the capitals of Sudan and South Sudan
+Input text:
+Map of the capitals of Sudan and South Sudan
 Output:
 \`\`\`
 Area: Khartoum
 Area: Juba
 \`\`\`
-===
 
-===
-Example 3:
-Input: Map military facilities in Sudan and South Sudan
+Input text:
+Map military facilities in Sudan and South Sudan
 Output:
 \`\`\`
 EmojiForConcern: military facilities, 🪖
@@ -66,11 +62,9 @@ Area: South Sudan
 AreaWithConcern: Sudan, military facilities
 AreaWithConcern: South Sudan, military facilities
 \`\`\`
-===
 
-===
-Example 4:
-Input: Map military facilities, hospitals and shelter in Sudan and South Sudan
+Input text:
+Map military facilities, hospitals and shelter in Sudan and South Sudan
 Output:
 \`\`\
 EmojiForConcern: military facilities, 🪖
@@ -88,11 +82,9 @@ AreaWithConcern: South Sudan, military facilities
 AreaWithConcern: South Sudan, hospitals
 AreaWithConcern: South Sudan, shelter
 \`\`\`
-===
 
-===
-Example 5:
-Input: Map shelters in the capital of Sudan
+Input text:
+Map shelters in the capital of Sudan
 Output:
 \`\`\
 EmojiForConcern: shelter, ⛺
