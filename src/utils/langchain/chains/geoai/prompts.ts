@@ -276,6 +276,30 @@ area["name"="Japan"]->.searchArea;
 );
 out geom;
 \`\`\`
+
+Input text:
+AreaWithConcern: Asakusa, izakaya
+Output:
+\`\`\`
+[out:json][timeout:30000];
+area["name:en"="Asakusa"]->.searchArea;
+(
+  nwr["amenity"="bar"](area.searchArea);
+);
+out geom;
+\`\`\`
+
+Input text:
+AreaWithConcern: Prizren, bars
+Output:
+\`\`\`
+[out:json][timeout:30000];
+area["name"="Municipality of Prizren"]->.searchArea;
+(
+  nwr["amenity"="bar"](area.searchArea);
+);
+out geom;
+\`\`\`
 ===
 
 Input text:
