@@ -254,11 +254,23 @@ out geom;
 \`\`\`
 
 Input text:
+AreaWithConcern: Japan, castles
+Output:
+\`\`\`
+[out:json][timeout:30000];
+area["name"="Japan"]->.searchArea;
+(
+  nwr["historic"="castle"](area.searchArea);
+);
+out geom;
+\`\`\`
+
+Input text:
 AreaWithConcern: Japan, national treasure castles
 Output:
 \`\`\`
 [out:json][timeout:30000];
-area["name:en"="Japan"]->.searchArea;
+area["name"="Japan"]->.searchArea;
 (
   nwr["historic"="castle"]["heritage"](area.searchArea);
 );
