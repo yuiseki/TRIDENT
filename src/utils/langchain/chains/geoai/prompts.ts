@@ -98,7 +98,7 @@ Map of national treasure castles in Japan
 Output:
 \`\`\
 EmojiForConcern: national treasure castles, 🏯
-ColorForConcern: national treasure castles, gray
+ColorForConcern: national treasure castles, white
 Area: Japan
 AreaWithConcern: Japan, national treasure castles
 \`\`\`
