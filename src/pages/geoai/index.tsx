@@ -169,7 +169,7 @@ export default function Home() {
       const lines = innerResJson.inner.split("\n");
       lines.map(async (line: string, idx: number) => {
         console.log(line);
-        if (line.startsWith("Emoji")) {
+        if (line.includes("Emoji")) {
           const concern = line.split(":")[1].split(",")[0];
           const emoji = line.split(":")[1].split(",")[1];
           if (styles[concern] === undefined) {
@@ -177,15 +177,13 @@ export default function Home() {
           }
           styles[concern].emoji = emoji;
         }
-        if (line.startsWith("Color")) {
+        if (line.includes("Color")) {
           const concern = line.split(":")[1].split(",")[0];
           const color = line.split(":")[1].split(",")[1];
           if (styles[concern] === undefined) {
             styles[concern] = {};
           }
           styles[concern].color = color;
-        }
-        if (line.startsWith("Area") || line.includes("Area")) {
         }
       });
 
