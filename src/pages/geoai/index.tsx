@@ -190,6 +190,9 @@ export default function Home() {
       const linesWithArea = lines.filter((line: string) =>
         line.includes("Area")
       );
+      const linesWithConfirm = lines.filter((line: string) =>
+        line.includes("ConfirmHelpful")
+      );
       linesWithArea.map(async (line: string, idx: number) => {
         let style = {};
         Object.keys(styles).map((concern) => {
@@ -226,7 +229,10 @@ export default function Home() {
               insertNewDialogue(
                 {
                   who: "assistant",
-                  text: "Mapping has been completed. Have we been helpful to you? Do you have any other requests?",
+                  text:
+                    linesWithConfirm.length > 0
+                      ? linesWithConfirm[0].split(":")[1]
+                      : "Mapping has been completed. Have we been helpful to you? Do you have any other requests",
                 },
                 true
               );
@@ -390,7 +396,7 @@ export default function Home() {
             }}
           >
             <TextInput
-              disabled={false}
+              disabled={responding || lazyInserting || mapping}
               placeholder="..."
               inputText={inputText}
               setInputText={setInputText}
