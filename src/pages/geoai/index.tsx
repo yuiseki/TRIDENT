@@ -226,7 +226,7 @@ export default function Home() {
               insertNewDialogue(
                 {
                   who: "assistant",
-                  text: "Mapping has been completed. Do you have any other requests?",
+                  text: "Mapping has been completed. Have we been helpful to you? Do you have any other requests?",
                 },
                 true
               );

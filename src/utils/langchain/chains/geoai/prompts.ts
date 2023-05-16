@@ -125,8 +125,9 @@ AreaWithConcern: Chuo-ku, Tokyo, soba noodle shops
 
 Be careful, Your output MUST NOT to include any concerns that do not appear in the following conversations.
 Be careful, If user want to clear or reset maps, accurately ignore previous conversation.
-You should not output above examples as is, whenever possible.
+If the last conversation does not contain any new additional geospatial information, only output "No map specified."
 If you can't output map definition, only output "No map specified."
+You should not output above examples as is, whenever possible.
 
 Current conversation:
 {history}
