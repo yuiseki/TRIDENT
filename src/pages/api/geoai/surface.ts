@@ -54,6 +54,10 @@ export default async function handler(
   const surfaceChain = loadGeoAISurfaceChain({ llm: model, memory });
   const surfaceResult = await surfaceChain.call({ input: queryString });
 
+  console.log("");
+  console.log(surfaceResult.response);
+  console.log("");
+
   res.status(200).json({
     surface: surfaceResult.response,
     history: memory.chatHistory,

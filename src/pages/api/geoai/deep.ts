@@ -39,9 +39,11 @@ export default async function handler(
   const model = new OpenAI({ temperature: 0 });
   const chain = loadGeoAIDeepChain({ llm: model });
   const result = await chain.call({ text: queryString });
+
   console.log("");
   console.log(result.text);
   console.log("");
+
   res.status(200).json({
     deep: result.text,
   });
