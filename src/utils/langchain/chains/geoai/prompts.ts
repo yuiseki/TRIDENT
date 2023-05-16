@@ -38,11 +38,18 @@ AreaWithConcern: pair of geospatial area and concern mentioned by user
 Examples of map definition:
 ===
 Input text:
-Map of Sudan and South Sudan
+Sudan and South Sudan
 Output:
 \`\`\`
 Area: Sudan
 Area: South Sudan
+\`\`\`
+
+Input text:
+東京都中央区
+Output:
+\`\`\`
+Area: Chuo-ku, Tokyo
 \`\`\`
 
 Input text:
@@ -106,20 +113,18 @@ AreaWithConcern: Japan, national treasure castles
 \`\`\`
 
 Input text:
-Show the bar and police station in Prizren, Kosovo.
+Show soba noodle shops in Chuo-ku, Tokyo
 Output:
 \`\`\
-EmojiForConcern: bar, 🍻
-ColorForConcern: bar, yellow
-EmojiForConcern: police station, 🚓
-ColorForConcern: police station, blue
-Area: Municipality of Prizren
-AreaWithConcern: Municipality of Prizren, bar
-AreaWithConcern: Municipality of Prizren, police station
+EmojiForConcern: soba noodle shops, 🍜
+ColorForConcern: soba noodle shops, gray
+Area: Chuo-ku, Tokyo
+AreaWithConcern: Chuo-ku, Tokyo, soba noodle shops
 \`\`\`
 ===
 
 Be careful, Your output MUST NOT to include any concerns that do not appear in the following conversations.
+Be careful, If user want to clear or reset maps, accurately ignore previous conversation.
 You should not output above examples as is, whenever possible.
 If you can't output map definition, only output "No map specified."
 
@@ -158,6 +163,18 @@ Output:
 \`\`\`
 [out:json][timeout:30000];
 relation["name"="Taito"];
+out geom;
+\`\`\`
+
+Input text:
+Area: Kita-ku, Tokyo
+Output:
+\`\`\`
+[out:json][timeout:30000];
+area["name:en"="Tokyo"]->.searchArea;
+(
+  relation["name:en"="Kita"](area.searchArea);
+);
 out geom;
 \`\`\`
 
@@ -232,6 +249,19 @@ out geom;
 \`\`\`
 
 Input text:
+AreaWithConcern: Chuo-ku, Tokyo, soba noodle shops
+Output:
+\`\`\`
+[out:json][timeout:30000];
+area["name"="Tokyo"]->.tokyo;
+area["name"="Chuo"]->.searchArea;
+(
+  nwr["amenity"="restaurant"]["cuisine"="soba"](area.searchArea)(area.tokyo);
+);
+out geom;
+\`\`\`
+
+Input text:
 AreaWithConcern: New York City, UN facilities
 Output:
 \`\`\`
@@ -297,7 +327,7 @@ AreaWithConcern: Asakusa, izakaya
 Output:
 \`\`\`
 [out:json][timeout:30000];
-area["name:en"="Asakusa"]->.searchArea;
+area["name"="Asakusa"]->.searchArea;
 (
   nwr["amenity"="bar"](area.searchArea);
 );

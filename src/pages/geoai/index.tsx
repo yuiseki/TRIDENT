@@ -241,7 +241,7 @@ export default function Home() {
         };
         console.log(overpassQuery);
         getOverpassResponse(
-          overpassQuery.replace('["name"', '["name:en"')
+          overpassQuery.replaceAll('["name"', '["name:en"')
         ).then((overpassResponse) => {
           handleOverpassResponse(overpassResponse, true);
         });
