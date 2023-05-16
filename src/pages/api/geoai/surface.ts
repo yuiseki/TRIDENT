@@ -59,6 +59,7 @@ export default async function handler(
   console.log("----- ----- -----");
   console.log("----- ----- -----");
   console.log("----- ----- -----");
+  console.log(queryString);
   console.log("");
   console.log(surfaceResult.response);
   console.log("");
