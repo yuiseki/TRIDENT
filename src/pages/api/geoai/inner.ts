@@ -1,9 +1,5 @@
 import { getRequestParamAsString } from "@/utils/getRequestParamAsString";
-import { isQueryStringDanger } from "@/utils/isQueryStringDanger";
-import {
-  loadGeoAIInnerChain,
-  loadGeoAISurfaceChain,
-} from "@/utils/langchain/chains/geoai";
+import { loadGeoAIInnerChain } from "@/utils/langchain/chains/geoai";
 import { OpenAI } from "langchain/llms/openai";
 import { BufferMemory, ChatMessageHistory } from "langchain/memory";
 import { AIChatMessage, HumanChatMessage } from "langchain/schema";
