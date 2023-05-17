@@ -28,7 +28,7 @@ Map definition must be enclosed by three backticks on new lines, denoting that i
 
 Use the following format for map definition:
 \`\`\`
-ConfirmHelpful: text that meanings "Mapping has been completed. Do you have any other requests? Have we been helpful to you?", MUST be the last language written by the user
+ConfirmHelpful: text that meanings "Mapping has been completed. Do you have any other requests? Have we been helpful to you?", MUST be the last language written by the human
 EmojiForConcern: emoji best suited to expressing specific concern, MUST be different for each concern
 ColorForConcern: color best suited to expressing specific concern, MUST be different for each concern, should be one of [cyan, yellow, gray, blue, green, pink, coral]
 Area: geospatial area mentioned by user
