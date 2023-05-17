@@ -137,6 +137,8 @@ export default function Home() {
     const surfaceRes = await nextPostJson("/api/geoai/surface", {
       query: newInputText,
       pastMessages: pastMessages ? JSON.stringify(pastMessages) : undefined,
+      bounds: JSON.stringify(mapRef.current?.getBounds()),
+      center: JSON.stringify(mapRef.current?.getCenter()),
     });
     const surfaceResJson: {
       surface: string;
@@ -154,9 +156,15 @@ export default function Home() {
     setResponding(true);
     const innerRes = await nextPostJson("/api/geoai/inner", {
       pastMessages: JSON.stringify(surfaceResJson.history),
+      bounds: JSON.stringify(mapRef.current?.getBounds()),
+      center: JSON.stringify(mapRef.current?.getCenter()),
     });
     const innerResJson = await innerRes.json();
     setResponding(false);
+    if (innerResJson.inner === undefined) {
+      setMapping(false);
+      return;
+    }
     if (!innerResJson.inner.toLowerCase().includes("no map")) {
       setGeojsonWithStyleList([]);
       setMapping(true);

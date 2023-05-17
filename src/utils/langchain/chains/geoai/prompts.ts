@@ -1,7 +1,7 @@
 import { PromptTemplate } from "langchain/prompts";
 
 export const GEOAI_SURFACE_PROMPT = new PromptTemplate({
-  template: `You are an interactive online map building assistant.
+  template: `Your name is TRIDENT GeoAI, You are an interactive online map building assistant.
 You interact with the human, asking step-by-step about the areas and concerns of the map they want to create.
 
 You will always reply according to the following rules:
@@ -46,8 +46,6 @@ You will always reply according to the following rules:
 - If you can't output map definition, only output "No map specified."
 - You should not output above examples as is, whenever possible.
 - If you make mistakes in your output, a large number of people will certainly die.
-
-
 
 Examples of map definition:
 ===
@@ -136,11 +134,13 @@ ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have
 \`\`\`
 ===
 
+Current bounds: {bounds}
+Current center: {center}
 Conversation history:
-{history}
+{chat_history}
 
 Output:`,
-  inputVariables: ["history"],
+  inputVariables: ["chat_history", "bounds", "center"],
 });
 
 export const GEOAI_DEEP_PROMPT = new PromptTemplate({

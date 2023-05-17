@@ -8,7 +8,7 @@ import { LLMChain } from "langchain/chains";
 import { BaseLanguageModel } from "langchain/dist/base_language";
 import { BaseMemory, BufferMemory } from "langchain/memory";
 import { Tool } from "langchain/tools";
-import { GeoAIDeepPromptTemplate } from "../../agents/geoai";
+import { GeoAIAgentPromptTemplate } from "../../agents/geoai";
 
 export const loadGeoAISurfaceChain = ({
   llm,
@@ -30,18 +30,12 @@ export const loadGeoAISurfaceChain = ({
 
 export const loadGeoAIInnerChain = ({
   llm,
-  memory,
 }: {
   llm: BaseLanguageModel;
-  memory?: BaseMemory;
 }): LLMChain => {
-  if (memory === undefined) {
-    memory = new BufferMemory();
-  }
-  const chain = new ConversationChain({
+  const chain = new LLMChain({
     llm: llm,
     prompt: GEOAI_INNER_PROMPT,
-    memory: memory,
   });
   return chain;
 };
@@ -67,7 +61,7 @@ export const loadGeoAIAgentChain = ({
 }): LLMChain => {
   const chain = new LLMChain({
     llm: llm,
-    prompt: new GeoAIDeepPromptTemplate({
+    prompt: new GeoAIAgentPromptTemplate({
       tools,
       inputVariables: ["input", "agent_scratchpad"],
     }),

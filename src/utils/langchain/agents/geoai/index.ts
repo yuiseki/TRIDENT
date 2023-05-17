@@ -38,7 +38,7 @@ const SUFFIX = `Begin!
 Question: {input}
 Thought:{agent_scratchpad}`;
 
-export class GeoAIDeepPromptTemplate extends BaseStringPromptTemplate {
+export class GeoAIAgentPromptTemplate extends BaseStringPromptTemplate {
   tools: Tool[];
 
   constructor(args: { tools: Tool[]; inputVariables: string[] }) {

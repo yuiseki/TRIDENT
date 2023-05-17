@@ -10,39 +10,58 @@ export default async function handler(
   res: NextApiResponse
 ) {
   const pastMessagesJsonString = getRequestParamAsString(req, "pastMessages");
+  const centerJsonString = getRequestParamAsString(req, "center");
+  const center = centerJsonString ? JSON.parse(centerJsonString) : undefined;
+  console.log("center", center);
+  const boundsJsonString = getRequestParamAsString(req, "bounds");
+  const boundsJson = boundsJsonString
+    ? JSON.parse(boundsJsonString)
+    : undefined;
+  let bbox;
+  if (boundsJson) {
+    bbox = [
+      boundsJson["_sw"].lat,
+      boundsJson["_sw"].lng,
+      boundsJson["_ne"].lat,
+      boundsJson["_ne"].lng,
+    ];
+  }
+  console.log("bbox", bbox);
 
   const model = new OpenAI({ temperature: 0 });
 
-  let chatHistory = undefined;
+  let chatHistory: string[] = [];
   if (pastMessagesJsonString && pastMessagesJsonString !== "undefined") {
     const pastMessages = JSON.parse(pastMessagesJsonString).messages.map(
       (message: { text?: string }, idx: number) => {
         if ("text" in message && message.text) {
           if (idx === 0 || idx % 2 === 0) {
-            return new HumanChatMessage(message.text);
+            return `Human: ${message.text}`;
           } else {
-            return new AIChatMessage(message.text);
+            return `AI: ${message.text}`;
           }
         } else {
-          return new HumanChatMessage("");
+          return "";
         }
       }
     );
-    chatHistory = new ChatMessageHistory(pastMessages);
+    chatHistory = pastMessages;
   }
-  const memory = new BufferMemory({
-    chatHistory,
+
+  console.log(chatHistory.join("\n"));
+
+  const chain = loadGeoAIInnerChain({ llm: model });
+  const result = await chain.call({
+    chat_history: chatHistory.join("\n"),
+    bounds: JSON.stringify(bbox),
+    center: JSON.stringify(center),
   });
 
-  const chain = loadGeoAIInnerChain({ llm: model, memory });
-  const result = await chain.call({ input: undefined });
-
   console.log("");
-  console.log(result.response);
+  console.log(result.text);
   console.log("");
 
   res.status(200).json({
-    inner: result.response,
-    history: memory.chatHistory,
+    inner: result.text,
   });
 }

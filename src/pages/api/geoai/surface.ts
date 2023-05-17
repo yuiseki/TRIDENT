@@ -56,9 +56,8 @@ export default async function handler(
   console.log("----- ----- -----");
   console.log("----- ----- -----");
   console.log("----- ----- -----");
-  console.log(queryString);
-  console.log("");
-  console.log(surfaceResult.response);
+  console.log("Human:", queryString);
+  console.log("AI:", surfaceResult.response);
   console.log("");
 
   res.status(200).json({
