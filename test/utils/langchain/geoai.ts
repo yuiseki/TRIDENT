@@ -24,7 +24,7 @@ const model = new OpenAI({ temperature: 0 });
 const memory = new BufferMemory();
 
 const surfaceChain = loadGeoAISurfaceChain({ llm: model, memory });
-const middleChain = loadGeoAIInnerChain({ llm: model, memory });
+const middleChain = loadGeoAIInnerChain({ llm: model });
 const tools = [
   await loadAreaDetermineTool(model),
   await loadTagsDetermineTool(model),
