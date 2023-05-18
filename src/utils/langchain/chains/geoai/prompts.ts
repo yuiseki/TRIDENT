@@ -27,8 +27,8 @@ export const GEOAI_INNER_PROMPT = new PromptTemplate({
 
 Use the following format for map definition:
 ConfirmHelpful: text that meanings "Mapping has been completed. Do you have any other requests? Have we been helpful to you?", MUST be the last language written by the human
-EmojiForConcern: emoji best suited to expressing specific concern, MUST be different for each concern
-ColorForConcern: color best suited to expressing specific concern, MUST be different for each concern, should be one of [cyan, yellow, gray, blue, green, pink, coral]
+EmojiForConcern: emoji best suited to expressing specific concern, MUST be unique for each concern
+ColorForConcern: color name best suited to expressing specific concern, MUST be unique for each concern, should be one of the name of Web Safe Color
 Area: geospatial area mentioned by user
 AreaWithConcern: pair of geospatial area and concern mentioned by user
 ... (You MUST always output only one ConfirmHelpful)
