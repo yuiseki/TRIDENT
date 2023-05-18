@@ -21,14 +21,13 @@ export default async function handler(
     res.status(400).json({ status: "ng", message: "invalid query" });
     return;
   }
+  console.log(queryString);
 
-  const model = new OpenAI({ temperature: 0 });
+  const model = new OpenAI({ temperature: 0, maxTokens: 2000 });
   const chain = loadGeoAIDeepChain({ llm: model });
   const result = await chain.call({ text: queryString });
 
-  console.log("");
   console.log(result.text);
-  console.log("");
 
   res.status(200).json({
     deep: result.text,

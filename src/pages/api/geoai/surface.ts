@@ -25,8 +25,6 @@ export default async function handler(
   }
   const pastMessagesJsonString = getRequestParamAsString(req, "pastMessages");
 
-  const model = new OpenAI({ temperature: 0 });
-
   let chatHistory = undefined;
   if (pastMessagesJsonString && pastMessagesJsonString !== "undefined") {
     const pastMessages = JSON.parse(pastMessagesJsonString).messages.map(
@@ -48,12 +46,10 @@ export default async function handler(
     chatHistory,
   });
 
+  const model = new OpenAI({ temperature: 0, maxTokens: 2000 });
   const surfaceChain = loadGeoAISurfaceChain({ llm: model, memory });
   const surfaceResult = await surfaceChain.call({ input: queryString });
 
-  console.log("----- ----- -----");
-  console.log("----- ----- -----");
-  console.log("----- ----- -----");
   console.log("----- ----- -----");
   console.log("----- ----- -----");
   console.log("Human:", queryString);

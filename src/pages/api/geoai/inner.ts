@@ -12,7 +12,6 @@ export default async function handler(
   const pastMessagesJsonString = getRequestParamAsString(req, "pastMessages");
   const centerJsonString = getRequestParamAsString(req, "center");
   const center = centerJsonString ? JSON.parse(centerJsonString) : undefined;
-  console.log("center", center);
   const boundsJsonString = getRequestParamAsString(req, "bounds");
   const boundsJson = boundsJsonString
     ? JSON.parse(boundsJsonString)
@@ -26,9 +25,6 @@ export default async function handler(
       boundsJson["_ne"].lng,
     ];
   }
-  console.log("bbox", bbox);
-
-  const model = new OpenAI({ temperature: 0 });
 
   let chatHistory: string[] = [];
   if (pastMessagesJsonString && pastMessagesJsonString !== "undefined") {
@@ -38,7 +34,8 @@ export default async function handler(
           if (idx === 0 || idx % 2 === 0) {
             return `Human: ${message.text}`;
           } else {
-            return `AI: ${message.text}`;
+            return "";
+            // return `AI: ${message.text}`;
           }
         } else {
           return "";
@@ -48,13 +45,18 @@ export default async function handler(
     chatHistory = pastMessages;
   }
 
+  console.log("----- ----- -----");
+  console.log("----- ----- -----");
   console.log(chatHistory.join("\n"));
+  console.log("center", JSON.stringify(center));
+  console.log("bbox", JSON.stringify(bbox));
 
+  const model = new OpenAI({ temperature: 0, maxTokens: 2000 });
   const chain = loadGeoAIInnerChain({ llm: model });
   const result = await chain.call({
     chat_history: chatHistory.join("\n"),
-    bounds: JSON.stringify(bbox),
-    center: JSON.stringify(center),
+    //bounds: JSON.stringify(bbox),
+    //center: JSON.stringify(center),
   });
 
   console.log("");

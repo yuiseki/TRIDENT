@@ -114,16 +114,16 @@ export const GeoJsonToMarkers: React.FC<{
         if (currentZoom) {
           if (13 < currentZoom) {
             opacity = 1.0;
-            fontSize = "1.2em";
+            fontSize = "1.4em";
           } else if (12 < currentZoom) {
-            opacity = 0.95;
-            fontSize = "0.8em";
+            opacity = 0.8;
+            fontSize = "1.3em";
           } else if (10 < currentZoom) {
-            opacity = 0.9;
-            fontSize = "0.6em";
+            opacity = 0.6;
+            fontSize = "1.1em";
           } else if (8 < currentZoom) {
-            fontSize = "0.4em";
-            opacity = 0.85;
+            fontSize = "1em";
+            opacity = 0.5;
           } else {
           }
         }

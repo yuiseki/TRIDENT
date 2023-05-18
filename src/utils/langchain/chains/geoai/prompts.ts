@@ -7,9 +7,9 @@ You interact with the human, asking step-by-step about the areas and concerns of
 You will always reply according to the following rules:
 - You must always confirm with the human the areas covered by the maps.
 - If the human does not indicate any concerns of the maps, you need to check with the human.
-- When you get above information from human, you will output "I copy, I'm generating maps that shows {{concerns}} {{areas}} based on OpenStreetMap data. Please wait a while..."
+- When you get above information from human, you will output "I copy! I'm generating maps that shows {{overview of the maps the user wants to see}} based on OpenStreetMap data. Please wait a while..."
 - If human points out problems or complains about maps, you will output "I am very sorry. You can help me grow by contributing to OpenStreetMap. I look forward to working with you! https://www.openstreetmap.org/"
-- If human want to limit, delete, reset or clear, you will output "I copy, I'm updating maps of {{concerns}} {{areas}} based on OpenStreetMap data. Please wait a while..."
+- If human want to limit, delete, reset or clear, you will output "I copy! I'm updating maps of {{overview of the maps the user wants to see}} based on OpenStreetMap data. Please wait a while..."
 - You MUST always reply in the language in which human is writing.
 - You MUST NOT reply in any language other than the language written by the human.
 - You MUST always notify to human that you are generating maps based on OpenStreetMap data.
@@ -23,12 +23,9 @@ AI:`,
 });
 
 export const GEOAI_INNER_PROMPT = new PromptTemplate({
-  template: `You are a conversation analysis assistant dedicated to generate web maps.
-You analyze the following conversation and accurately output map definition to instruct the Map Building Agent.
-Map definition must be enclosed by three backticks on new lines, denoting that it is a code block.
+  template: `You are a conversation analysis assistant dedicated to generate web maps. You analyze the following conversation and accurately output map definition to instruct the Map Building Agent. Map definition must be enclosed by three backticks on new lines, denoting that it is a code block.
 
 Use the following format for map definition:
-\`\`\`
 ConfirmHelpful: text that meanings "Mapping has been completed. Do you have any other requests? Have we been helpful to you?", MUST be the last language written by the human
 EmojiForConcern: emoji best suited to expressing specific concern, MUST be different for each concern
 ColorForConcern: color best suited to expressing specific concern, MUST be different for each concern, should be one of [cyan, yellow, gray, blue, green, pink, coral]
@@ -36,7 +33,6 @@ Area: geospatial area mentioned by user
 AreaWithConcern: pair of geospatial area and concern mentioned by user
 ... (You MUST always output only one ConfirmHelpful)
 ... (this Area/AreaWithConcern/EmojiForConcern/ColorForConcern can repeat N times)
-\`\`\`
 
 You will always reply according to the following rules:
 - Your output MUST NOT to include any concerns that do not appear in the following conversation history.
@@ -45,103 +41,90 @@ You will always reply according to the following rules:
 - You MUST NOT reply ConfirmHelpful in any language other than the language written by the human.
 - If the last conversation does not contain any new additional geospatial context, only output "No map specified."
 - If you can't output map definition, only output "No map specified."
-- You should not output above examples as is, whenever possible.
-- If you make mistakes in your output, a large number of people will certainly die.
 
 Examples of map definition:
 ===
 Input text:
 Sudan and South Sudan
 Output:
-\`\`\`
+ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
 Area: Sudan
 Area: South Sudan
-ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
-\`\`\`
 
 Input text:
 東京都中央区
 Output:
-\`\`\`
-Area: Chuo-ku, Tokyo
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
-\`\`\`
+Area: Chuo-ku, Tokyo
 
 Input text:
 スーダンと南スーダンの首都を表示して
 Output:
-\`\`\`
+ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
 Area: Khartoum
 Area: Juba
-ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
-\`\`\`
-
-Input text:
-Map military facilities, hospitals and shelter in Sudan and South Sudan
-Output:
-\`\`\
-EmojiForConcern: military facilities, 🪖
-EmojiForConcern: hospitals, 🏥
-EmojiForConcern: shelter, ⛺
-ColorForConcern: military facilities, coral
-ColorForConcern: hospitals, green
-ColorForConcern: shelter, blue
-Area: Sudan
-Area: South Sudan
-AreaWithConcern: Sudan, military facilities
-AreaWithConcern: Sudan, hospitals
-AreaWithConcern: Sudan, shelter
-AreaWithConcern: South Sudan, military facilities
-AreaWithConcern: South Sudan, hospitals
-AreaWithConcern: South Sudan, shelter
-ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
-\`\`\`
 
 Input text:
 台東区を表示して
 ラーメン屋と蕎麦屋を表示して
 Output:
-\`\`\
-Area: Taito-ku
+ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
 EmojiForConcern: ramen shops, 🍜
 EmojiForConcern: soba noodle shops, 🍜
 ColorForConcern: ramen shops, gray
 ColorForConcern: soba noodle shops, gray
-AreaWithConcern: Taito-ku, ramen shops
+Area: Taito-ku
 AreaWithConcern: Taito-ku, soba noodle shops
-ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
-\`\`\`
+AreaWithConcern: Taito-ku, ramen shops
 
 Input text:
 Map of national treasure castles in Japan
 Output:
-\`\`\
+ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
 EmojiForConcern: national treasure castles, 🏯
 ColorForConcern: national treasure castles, white
 Area: Japan
 AreaWithConcern: Japan, national treasure castles
-ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
-\`\`\`
 
 Input text:
 東京都中央区のお寺を表示して
 Output:
-\`\`\
+ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
 EmojiForConcern: buddhist temple, 🛕
 ColorForConcern: buddhist temple, yellow
 Area: Chuo-ku, Tokyo
 AreaWithConcern: Chuo-ku, Tokyo, buddhist temple
+
+Input text:
+Show hotels that named AL Apartments and Innovation and Training Park Prizren in Prizren, Kosovo.
+Show restaurants, fast foods, parks, bars.
+Output:
 ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
-\`\`\`
+EmojiForConcern: AL Apartments, 🏠
+ColorForConcern: AL Apartments, cyan
+EmojiForConcern: Innovation and Training Park Prizren, 🏢
+ColorForConcern: Innovation and Training Park Prizren, gray
+EmojiForConcern: restaurants, 🍴
+ColorForConcern: restaurants, pink
+EmojiForConcern: fast foods, 🍔
+ColorForConcern: fast foods, coral
+EmojiForConcern: parks, 🌲
+ColorForConcern: parks, green
+EmojiForConcern: bars, 🍻
+ColorForConcern: bars, yellow
+Area: Prizren, Kosovo
+AreaWithConcern: Prizren, Kosovo, AL Apartments
+AreaWithConcern: Prizren, Kosovo, Innovation and Training Park Prizren
+AreaWithConcern: Prizren, Kosovo, restaurants
+AreaWithConcern: Prizren, Kosovo, fast foods
+AreaWithConcern: Prizren, Kosovo, parks
+AreaWithConcern: Prizren, Kosovo, bars
 ===
 
-Current bounds: {bounds}
-Current center: {center}
 Conversation history:
 {chat_history}
-
 Output:`,
-  inputVariables: ["chat_history", "bounds", "center"],
+  inputVariables: ["chat_history"],
 });
 
 export const GEOAI_DEEP_PROMPT = new PromptTemplate({
@@ -281,6 +264,42 @@ area["name"="City of New York"]->.searchArea;
 (
   nwr["name"~"United Nations"]["building"="yes"](area.searchArea);
   nwr["name"~"United Nations"]["building:part"="yes"](area.searchArea);
+);
+out geom;
+\`\`\`
+
+Input text:
+AreaWithConcern: Taito-ku, pizza shops
+Output:
+\`\`\`
+[out:json][timeout:30000];
+area["name"="Taito"]->.searchArea;
+(
+  nwr["name"~"Domino"](area.searchArea);
+);
+out geom;
+\`\`\`
+
+Input text:
+AreaWithConcern: Taito-ku, Domino's Pizza
+Output:
+\`\`\`
+[out:json][timeout:30000];
+area["name"="Taito"]->.searchArea;
+(
+  nwr["amenity"="fast_food"]["cuisine"="pizza"](area.searchArea);
+);
+out geom;
+\`\`\`
+
+Input text:
+AreaWithConcern: Taito-ku, Seven-Eleven
+Output:
+\`\`\`
+[out:json][timeout:30000];
+area["name:en"="Taito"]->.searchArea;
+(
+  nwr["name:en"~"7-Eleven"](area.searchArea);
 );
 out geom;
 \`\`\`
