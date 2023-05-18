@@ -123,15 +123,12 @@ ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have
 \`\`\`
 
 Input text:
-東京都中央区のお寺と神社を表示して
+東京都中央区のお寺を表示して
 Output:
 \`\`\
-EmojiForConcern: shrines, ⛩
-ColorForConcern: shrines, pink
 EmojiForConcern: buddhist temple, 🛕
 ColorForConcern: buddhist temple, yellow
 Area: Chuo-ku, Tokyo
-AreaWithConcern: Chuo-ku, Tokyo, shrines
 AreaWithConcern: Chuo-ku, Tokyo, buddhist temple
 ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
 \`\`\`
