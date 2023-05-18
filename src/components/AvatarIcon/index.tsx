@@ -5,8 +5,8 @@ export const AvatarIcon: React.FC<{ who: string }> = ({ who }) => {
     <div
       style={{
         marginRight: "10px",
-        width: "44px",
-        height: "44px",
+        width: "30px",
+        height: "30px",
         marginLeft: "8px",
         alignItems: "center",
         justifyContent: "center",
@@ -14,6 +14,7 @@ export const AvatarIcon: React.FC<{ who: string }> = ({ who }) => {
         backdropFilter: "blur(4px)",
         backgroundColor:
           who === "assistant" ? "rgb(0, 158, 219)" : "rgba(0, 0, 0, 0.5)",
+        borderRadius: "2px",
         border:
           who === "assistant"
             ? "2px solid rgba(0, 158, 219, 0.6)"

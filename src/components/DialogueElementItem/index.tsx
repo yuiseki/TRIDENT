@@ -105,12 +105,12 @@ export const DialogueElementItem: React.FC<{
       key={dialogueIndex}
       style={{
         display: "flex",
-        flexDirection: "column",
-        gap: "12px",
+        flexDirection: "row",
+        gap: "8px",
         width: "100%",
-        padding: "14px",
-        marginTop: "20px",
-        marginBottom: "30px",
+        padding: "8px 10px",
+        marginTop: "15px",
+        marginBottom: "15px",
         border: "2px solid rgba(219, 219, 219, 0.5)",
         borderRadius: "2px",
         boxShadow: " 0 2px 6px 0 rgba(219, 219, 219, 0.3)",
@@ -121,25 +121,19 @@ export const DialogueElementItem: React.FC<{
         style={{
           display: "flex",
           justifyItems: "center",
-          alignItems: "center",
+          flexShrink: 0,
         }}
       >
         <AvatarIcon who={dialogueElement.who} />
-        <div
-          style={{
-            fontWeight: "bold",
-            fontSize: "1.4em",
-            marginLeft: "4px",
-          }}
-        >
-          {dialogueElement.who === "assistant" ? "TRIDENT" : "USER"}
-        </div>
       </div>
       <div>
         <div
           style={{
             fontSize: "1.2em",
-            paddingLeft: "70px",
+            paddingLeft: "5px",
+            paddingRight: "5px",
+            flexGrow: 1,
+            maxWidth: "100%",
           }}
         >
           {dialogueElement.text?.split("\n").map((row, rowIdx) => {
@@ -148,7 +142,8 @@ export const DialogueElementItem: React.FC<{
                 key={`${dialogueIndex}-${rowIdx}`}
                 style={{
                   minHeight: "1em",
-                  marginLeft: row.startsWith(" ") ? "1em" : "0px",
+                  maxWidth: "100%",
+                  wordBreak: "break-all",
                 }}
               >
                 {row}
