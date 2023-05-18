@@ -123,13 +123,16 @@ ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have
 \`\`\`
 
 Input text:
-Show soba noodle shops in Chuo-ku, Tokyo
+東京都中央区のお寺と神社を表示して
 Output:
 \`\`\
-EmojiForConcern: soba noodle shops, 🍜
-ColorForConcern: soba noodle shops, gray
+EmojiForConcern: shrines, ⛩
+ColorForConcern: shrines, pink
+EmojiForConcern: buddhist temple, 🛕
+ColorForConcern: buddhist temple, yellow
 Area: Chuo-ku, Tokyo
-AreaWithConcern: Chuo-ku, Tokyo, soba noodle shops
+AreaWithConcern: Chuo-ku, Tokyo, shrines
+AreaWithConcern: Chuo-ku, Tokyo, buddhist temple
 ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
 \`\`\`
 ===
@@ -245,16 +248,18 @@ out geom;
 \`\`\`
 
 Input text:
-AreaWithConcern: Taitō-ku, police station
+AreaWithConcern: Taito-ku, temples
 Output:
 \`\`\`
 [out:json][timeout:30000];
 area["name"="Taito"]->.searchArea;
 (
-  nwr["amenity"="police"](area.searchArea);
+  nwr["amenity"="place_of_worship"]["religion"="buddhist"](area.searchArea);
 );
 out geom;
 \`\`\`
+Important note:
+Never use "religion"="buddhism". It is wrong. Use "religion"="buddhist" instead.
 
 Input text:
 AreaWithConcern: Chuo-ku, Tokyo, soba noodle shops

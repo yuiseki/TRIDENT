@@ -162,6 +162,7 @@ export default function Home() {
     const innerResJson = await innerRes.json();
     setResponding(false);
     if (innerResJson.inner === undefined) {
+      setGeojsonWithStyleList([]);
       setMapping(false);
       return;
     }
@@ -176,7 +177,7 @@ export default function Home() {
       } = {};
       const lines = innerResJson.inner.split("\n");
       lines.map(async (line: string, idx: number) => {
-        console.log(line);
+        console.log(`inner line ${idx}:`, line);
         if (line.includes("Emoji")) {
           const concern = line.split(":")[1].split(",")[0];
           const emoji = line.split(":")[1].split(",")[1];
@@ -213,7 +214,7 @@ export default function Home() {
           query: line,
         });
         const deepResJson = await deepRes.json();
-        console.log(deepResJson.deep);
+        console.log("deep: ", deepResJson.deep);
         if (deepResJson.deep.toLowerCase().includes("no valid")) {
           return;
         }
