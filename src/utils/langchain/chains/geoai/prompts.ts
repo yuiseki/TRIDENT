@@ -71,7 +71,7 @@ Output:
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
 EmojiForConcern: ramen shops, 🍜
 EmojiForConcern: soba noodle shops, 🍜
-ColorForConcern: ramen shops, gray
+ColorForConcern: ramen shops, yellow
 ColorForConcern: soba noodle shops, gray
 Area: Taito-ku
 AreaWithConcern: Taito-ku, soba noodle shops
