@@ -409,7 +409,7 @@ export default function Home() {
               placeholder={
                 responding || lazyInserting || mapping
                   ? "..."
-                  : "文京区と台東区と墨田区のピザ屋、ハンバーガー屋、居酒屋、お寺、神社、駅、警察署、公園、 蕎麦屋とラーメン屋と病院と学校を表示して"
+                  : "文京区と台東区と墨田区のラーメン屋と蕎麦屋を表示して"
               }
               inputText={inputText}
               setInputText={setInputText}
