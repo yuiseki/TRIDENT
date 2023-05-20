@@ -24,7 +24,7 @@ export default function Home() {
   const [inputText, setInputText] = useState("");
   const [outputText, setOutputText] = useState(greetings);
   const [pastMessages, setPastMessages] = useState<
-    { messages: Array<{ text: string }> } | undefined
+    { messages: Array<any> } | undefined
   >();
   const mapRef = useRef<MapRef | null>(null);
   const [geojsonWithStyleList, setGeojsonWithStyleList] = useState<
@@ -155,7 +155,7 @@ export default function Home() {
     });
     const surfaceResJson: {
       surface: string;
-      history: { messages: Array<{ text: string }> };
+      history: { messages: Array<any> };
     } = await surfaceRes.json();
     setPastMessages(surfaceResJson.history);
     insertNewDialogue(
