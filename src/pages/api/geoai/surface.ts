@@ -27,20 +27,24 @@ export default async function handler(
 
   let chatHistory = undefined;
   if (pastMessagesJsonString && pastMessagesJsonString !== "undefined") {
-    const pastMessages = JSON.parse(pastMessagesJsonString).messages.map(
-      (message: { text?: string }, idx: number) => {
-        if ("text" in message && message.text) {
+    const pastMessages: {
+      messages: Array<{ type: string; data: { content: string } }>;
+    } = JSON.parse(pastMessagesJsonString);
+
+    const chatHistoryMessages = pastMessages.messages.map(
+      (message, idx: number) => {
+        if (message.data.content) {
           if (idx === 0 || idx % 2 === 0) {
-            return new HumanChatMessage(message.text);
+            return new HumanChatMessage(message.data.content);
           } else {
-            return new AIChatMessage(message.text);
+            return new AIChatMessage(message.data.content);
           }
         } else {
           return new HumanChatMessage("");
         }
       }
     );
-    chatHistory = new ChatMessageHistory(pastMessages);
+    chatHistory = new ChatMessageHistory(chatHistoryMessages);
   }
   const memory = new BufferMemory({
     chatHistory,

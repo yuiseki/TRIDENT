@@ -2,7 +2,11 @@ import { getRequestParamAsString } from "@/utils/getRequestParamAsString";
 import { loadGeoAIInnerChain } from "@/utils/langchain/chains/geoai";
 import { OpenAI } from "langchain/llms/openai";
 import { BufferMemory, ChatMessageHistory } from "langchain/memory";
-import { AIChatMessage, HumanChatMessage } from "langchain/schema";
+import {
+  AIChatMessage,
+  BaseChatMessageHistory,
+  HumanChatMessage,
+} from "langchain/schema";
 import type { NextApiRequest, NextApiResponse } from "next";
 
 export default async function handler(
@@ -10,6 +14,8 @@ export default async function handler(
   res: NextApiResponse
 ) {
   const pastMessagesJsonString = getRequestParamAsString(req, "pastMessages");
+
+  /*
   const centerJsonString = getRequestParamAsString(req, "center");
   const center = centerJsonString ? JSON.parse(centerJsonString) : undefined;
   const boundsJsonString = getRequestParamAsString(req, "bounds");
@@ -25,31 +31,32 @@ export default async function handler(
       boundsJson["_ne"].lng,
     ];
   }
+  */
 
   let chatHistory: string[] = [];
   if (pastMessagesJsonString && pastMessagesJsonString !== "undefined") {
-    const pastMessages = JSON.parse(pastMessagesJsonString).messages.map(
-      (message: { text?: string }, idx: number) => {
-        if ("text" in message && message.text) {
-          if (idx === 0 || idx % 2 === 0) {
-            return `Human: ${message.text}`;
-          } else {
-            return "";
-            // return `AI: ${message.text}`;
-          }
+    const pastMessages: {
+      messages: Array<{ type: string; data: { content: string } }>;
+    } = JSON.parse(pastMessagesJsonString);
+    chatHistory = pastMessages.messages.map((message, idx) => {
+      if (message.data.content) {
+        if (idx === 0 || idx % 2 === 0) {
+          return `Human: ${message.data.content}`;
         } else {
           return "";
+          //return `AI: ${message.data.content}`;
         }
+      } else {
+        return "";
       }
-    );
-    chatHistory = pastMessages;
+    });
   }
 
   console.log("----- ----- -----");
   console.log("----- ----- -----");
   console.log(chatHistory.join("\n"));
-  console.log("center", JSON.stringify(center));
-  console.log("bbox", JSON.stringify(bbox));
+  //console.log("center", JSON.stringify(center));
+  //console.log("bbox", JSON.stringify(bbox));
 
   const model = new OpenAI({ temperature: 0, maxTokens: 2000 });
   const chain = loadGeoAIInnerChain({ llm: model });

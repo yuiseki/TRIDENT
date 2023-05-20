@@ -35,7 +35,7 @@ AreaWithConcern: pair of geospatial area and concern mentioned by user
 ... (this Area/AreaWithConcern/EmojiForConcern/ColorForConcern can repeat N times)
 
 You will always reply according to the following rules:
-- Your output MUST NOT to include any concerns that do not appear in the following conversation history.
+- Your output must not to include any concerns that do not appear in the following conversation history.
 - If areas or concerns are intendedly to be narrow down, limit, delete, reset or clear in the following conversation history, you MUST remove them accurately from your output.
 - You MUST ALWAYS reply ConfirmHelpful in the language in which human is writing.
 - You MUST NOT reply ConfirmHelpful in any language other than the language written by the human.

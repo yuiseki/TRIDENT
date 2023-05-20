@@ -1,5 +1,46 @@
+import { Md5 } from "ts-md5";
+
 export const getOverpassResponse = async (overpassQuery: string) => {
   const queryString = `data=${encodeURIComponent(overpassQuery)}`;
   const overpassApiUrl = `https://overpass-api.de/api/interpreter?${queryString}`;
   return await fetch(overpassApiUrl);
+};
+
+export const getOverpassResponseJson = async (overpassQuery: string) => {
+  const res = await getOverpassResponse(overpassQuery);
+  return await res.json();
+};
+
+export const getOverpassResponseJsonWithCache = async (
+  overpassQuery: string,
+  cacheSeconds: number = 21600 // 6 hours
+) => {
+  const md5 = new Md5();
+  md5.appendStr(overpassQuery);
+  const hash = md5.end();
+  const key = `trident-geoai-overpass-cache-${hash}`;
+  const unixtime = Math.floor(new Date().getTime() / 1000);
+
+  const getAndCache = async () => {
+    const json = await getOverpassResponseJson(overpassQuery);
+    const valueToStore = {
+      query: overpassQuery,
+      json: json,
+      unixtime: unixtime,
+    };
+    window.localStorage.setItem(key, JSON.stringify(valueToStore));
+    return json;
+  };
+
+  const cache = window.localStorage.getItem(key);
+  if (cache) {
+    const valueFromStore = JSON.parse(cache);
+    if (unixtime - cacheSeconds < valueFromStore.unixtime) {
+      return valueFromStore.json;
+    } else {
+      return await getAndCache();
+    }
+  } else {
+    return await getAndCache();
+  }
 };

@@ -11,7 +11,10 @@ import { sleep } from "@/utils/sleep";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { MapProvider, MapRef } from "react-map-gl";
 import { FeatureCollection } from "geojson";
-import { getOverpassResponse } from "@/utils/getOverpassResponse";
+import {
+  getOverpassResponse,
+  getOverpassResponseJsonWithCache,
+} from "@/utils/getOverpassResponse";
 import osmtogeojson from "osmtogeojson";
 import * as turf from "@turf/turf";
 import { TridentMapsStyle } from "@/types/TridentMaps";
@@ -166,105 +169,111 @@ export default function Home() {
       setMapping(false);
       return;
     }
-    if (!innerResJson.inner.toLowerCase().includes("no map")) {
-      setGeojsonWithStyleList([]);
-      setMapping(true);
-      const styles: {
-        [key: string]: {
-          emoji?: string;
-          color?: string;
-        };
-      } = {};
-      const lines = innerResJson.inner.split("\n");
-      lines.map(async (line: string, idx: number) => {
-        console.log(`inner line ${idx}:`, line);
-        if (line.includes("Emoji")) {
-          const concern = line.split(":")[1].split(",")[0];
-          const emoji = line.split(":")[1].split(",")[1];
-          if (styles[concern] === undefined) {
-            styles[concern] = {};
-          }
-          styles[concern].emoji = emoji;
-        }
-        if (line.includes("Color")) {
-          const concern = line.split(":")[1].split(",")[0];
-          const color = line.split(":")[1].split(",")[1];
-          if (styles[concern] === undefined) {
-            styles[concern] = {};
-          }
-          styles[concern].color = color;
-        }
-      });
-
-      const linesWithArea = lines.filter((line: string) =>
-        line.includes("Area")
-      );
-      const linesWithConfirm = lines.filter((line: string) =>
-        line.includes("ConfirmHelpful")
-      );
-      linesWithArea.map(async (line: string, idx: number) => {
-        let style = {};
-        Object.keys(styles).map((concern) => {
-          if (line.includes(concern)) {
-            style = styles[concern];
-          }
-        });
-        setMapping(true);
-        const deepRes = await nextPostJson("/api/geoai/deep", {
-          query: line,
-        });
-        const deepResJson = await deepRes.json();
-        console.log("deep: ", deepResJson.deep);
-        if (deepResJson.deep.toLowerCase().includes("no valid")) {
-          return;
-        }
-        const overpassQuery = deepResJson.deep.split("```")[1];
-        const handleOverpassResponse = async (
-          overpassResponse: Response,
-          retry: boolean
-        ) => {
-          const overpassResponseJson = await overpassResponse.json();
-          setMapping(false);
-          const newGeojson = osmtogeojson(overpassResponseJson);
-          if (newGeojson.features.length !== 0) {
-            setGeojsonWithStyleList((prev) => {
-              return [
-                ...prev,
-                { id: idx.toString(), style: style, geojson: newGeojson },
-              ];
-            });
-            if (idx === linesWithArea.length - 1) {
-              console.log("Finish!!!!!");
-              insertNewDialogue(
-                {
-                  who: "assistant",
-                  text:
-                    linesWithConfirm.length > 0
-                      ? linesWithConfirm[0].split(":")[1]
-                      : "Mapping has been completed. Have we been helpful to you? Do you have any other requests",
-                },
-                true
-              );
-            }
-          } else {
-            if (retry) {
-              getOverpassResponse(overpassQuery).then((overpassResponse) => {
-                handleOverpassResponse(overpassResponse, false);
-              });
-            }
-          }
-        };
-        console.log(overpassQuery);
-        getOverpassResponse(
-          overpassQuery.replaceAll('["name"', '["name:en"')
-        ).then((overpassResponse) => {
-          handleOverpassResponse(overpassResponse, true);
-        });
-      });
-    } else {
+    if (innerResJson.inner.toLowerCase().includes("no map")) {
       setResponding(false);
       setMapping(false);
+      return;
     }
+
+    setGeojsonWithStyleList([]);
+    setMapping(true);
+
+    // determine style of concerns
+    const styles: {
+      [key: string]: {
+        emoji?: string;
+        color?: string;
+      };
+    } = {};
+    const lines = innerResJson.inner.split("\n");
+    lines.map(async (line: string, idx: number) => {
+      console.log(`inner line ${idx}:`, line);
+      if (line.includes("Emoji")) {
+        const concern = line.split(":")[1].split(",")[0];
+        const emoji = line.split(":")[1].split(",")[1];
+        if (styles[concern] === undefined) {
+          styles[concern] = {};
+        }
+        styles[concern].emoji = emoji;
+      }
+      if (line.includes("Color")) {
+        const concern = line.split(":")[1].split(",")[0];
+        const color = line.split(":")[1].split(",")[1];
+        if (styles[concern] === undefined) {
+          styles[concern] = {};
+        }
+        styles[concern].color = color;
+      }
+    });
+
+    // determine confirm message
+    const linesWithConfirm = lines.filter((line: string) =>
+      line.includes("ConfirmHelpful")
+    );
+
+    const linesWithArea = lines.filter((line: string) => line.includes("Area"));
+    linesWithArea.map(async (line: string, idx: number) => {
+      let style = {};
+      Object.keys(styles).map((concern) => {
+        if (line.includes(concern)) {
+          style = styles[concern];
+        }
+      });
+      setMapping(true);
+      const deepRes = await nextPostJson("/api/geoai/deep", {
+        query: line,
+      });
+      const deepResJson = await deepRes.json();
+      console.log("deep: ", deepResJson.deep);
+      if (deepResJson.deep.toLowerCase().includes("no valid")) {
+        setMapping(false);
+        return;
+      }
+      const overpassQuery = deepResJson.deep.split("```")[1];
+      console.log(overpassQuery);
+
+      const handleOverpassResponseJson = async (
+        overpassResponseJson: any,
+        retry: boolean
+      ) => {
+        setMapping(false);
+        const newGeojson = osmtogeojson(overpassResponseJson);
+        if (newGeojson.features.length !== 0) {
+          setGeojsonWithStyleList((prev) => {
+            return [
+              ...prev,
+              { id: idx.toString(), style: style, geojson: newGeojson },
+            ];
+          });
+          if (idx === linesWithArea.length - 1) {
+            console.log("Finish!!!!!");
+            insertNewDialogue(
+              {
+                who: "assistant",
+                text:
+                  linesWithConfirm.length > 0
+                    ? linesWithConfirm[0].split(":")[1]
+                    : "Mapping has been completed. Have we been helpful to you? Do you have any other requests",
+              },
+              true
+            );
+          }
+        } else {
+          if (retry) {
+            getOverpassResponseJsonWithCache(overpassQuery).then(
+              (overpassResponseJson) => {
+                handleOverpassResponseJson(overpassResponseJson, false);
+              }
+            );
+          }
+        }
+      };
+      getOverpassResponseJsonWithCache(
+        overpassQuery.replaceAll('["name"', '["name:en"')
+      ).then((overpassResponseJson) => {
+        handleOverpassResponseJson(overpassResponseJson, true);
+      });
+    });
   }, [inputText, insertNewDialogue, pastMessages]);
 
   useEffect(() => {
