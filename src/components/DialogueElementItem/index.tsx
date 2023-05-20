@@ -111,10 +111,15 @@ export const DialogueElementItem: React.FC<{
         padding: "8px 10px",
         marginTop: "15px",
         marginBottom: "15px",
-        border: "2px solid rgba(219, 219, 219, 0.5)",
+        border: "2px solid rgba(55, 55, 55, 0.5)",
         borderRadius: "2px",
-        boxShadow: " 0 2px 6px 0 rgba(219, 219, 219, 0.3)",
-        backgroundColor: "rgba(255, 255, 255, 0.9)",
+        boxShadow: " 0 2px 6px 0 rgba(55, 55, 55, 0.3)",
+        color: "rgb(236, 236, 241)",
+        backgroundColor: `${
+          dialogueElement.who === "assistant"
+            ? "rgba(68, 70, 84, 0.9)"
+            : "rgba(52, 53, 65, 0.9)"
+        }`,
       }}
     >
       <div

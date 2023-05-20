@@ -13,16 +13,16 @@ export const AvatarIcon: React.FC<{ who: string }> = ({ who }) => {
         display: "flex",
         backdropFilter: "blur(4px)",
         backgroundColor:
-          who === "assistant" ? "rgb(0, 158, 219)" : "rgba(0, 0, 0, 0.5)",
+          who === "assistant" ? "rgb(0, 158, 219)" : "rgba(209, 209, 209, 0.4)",
         borderRadius: "2px",
         border:
           who === "assistant"
             ? "2px solid rgba(0, 158, 219, 0.6)"
-            : "2px solid rgba(0, 0, 0, 0.1)",
+            : "2px solid rgba(209, 209, 209, 0.1)",
         boxShadow:
           who === "assistant"
             ? "0 2px 6px 0 rgba(0, 158, 219, 0.6)"
-            : "0 2px 6px 0 rgba(0, 0, 0, 0.3)",
+            : "0 2px 6px 0 rgba(209, 209, 209, 0.3)",
       }}
     >
       {who === "assistant" ? (
