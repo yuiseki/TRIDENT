@@ -11,10 +11,7 @@ import { sleep } from "@/utils/sleep";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { MapProvider, MapRef } from "react-map-gl";
 import { FeatureCollection } from "geojson";
-import {
-  getOverpassResponse,
-  getOverpassResponseJsonWithCache,
-} from "@/utils/getOverpassResponse";
+import { getOverpassResponseJsonWithCache } from "@/utils/getOverpassResponse";
 import osmtogeojson from "osmtogeojson";
 import * as turf from "@turf/turf";
 import { TridentMapsStyle } from "@/types/TridentMaps";
