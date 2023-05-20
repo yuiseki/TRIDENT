@@ -393,7 +393,6 @@ export default function Home() {
             position: "absolute",
             left: 0,
             bottom: "20px",
-            height: "8vh",
             width: "40%",
             margin: "auto",
           }}

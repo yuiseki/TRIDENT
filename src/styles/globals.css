@@ -26,12 +26,12 @@ button:disabled {
 }
 
 textarea {
-  border: 4px solid rgba(0, 158, 219, 0.4);
+  border: 2px solid rgba(0, 158, 219, 0.4);
   outline: none;
 }
 textarea:focus {
-  border: 4px solid rgba(0, 158, 219, 0.95);
-  box-shadow: 2px 2px 2px 0 rgba(0, 158, 219, 0.7);
+  border: 2px solid rgba(0, 158, 219, 0.95);
+  box-shadow: 1px 1px 1px 0 rgba(0, 158, 219, 0.7);
   outline: none;
 }
 
