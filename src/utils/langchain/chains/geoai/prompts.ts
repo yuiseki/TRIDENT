@@ -88,7 +88,7 @@ AreaWithConcern: Japan, national treasure castles
 Input text:
 東京都中央区のお寺と神社を表示して
 Output:
-ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
+ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
 EmojiForConcern: buddhist temple, 🛕
 ColorForConcern: buddhist temple, lightyellow
 EmojiForConcern: shrine, ⛩
