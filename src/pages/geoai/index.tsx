@@ -19,6 +19,7 @@ import osmtogeojson from "osmtogeojson";
 import * as turf from "@turf/turf";
 import { TridentMapsStyle } from "@/types/TridentMaps";
 import Head from "next/head";
+import { useLocalStorage } from "@/hooks/localStorage";
 
 const greetings = `Hello! I'm TRIDENT GeoAI, interactive geospatial situation awareness empowerment system. Could you indicate me the areas and themes you want to see as the map?`;
 
@@ -44,6 +45,18 @@ export default function Home() {
   const [lazyInserting, setLazyInserting] = useState(false);
   const [responding, setResponding] = useState(false);
   const [mapping, setMapping] = useState(false);
+
+  const [mapStyleJsonUrl, setMapStyleJsonUrl] = useLocalStorage<string>(
+    "trident-geoai-selected-map-style-json-url",
+    "/map_styles/fiord-color-gl-style/style.json"
+  );
+
+  const onSelectMapStyleJsonUrl = useCallback(
+    (e: React.ChangeEvent<HTMLSelectElement>) => {
+      setMapStyleJsonUrl(e.target.value);
+    },
+    [setMapStyleJsonUrl]
+  );
 
   const initializer = useCallback(() => {
     if (initialized) {
@@ -445,6 +458,38 @@ export default function Home() {
             zIndex: 1000,
           }}
         >
+          <select
+            style={{
+              position: "absolute",
+              top: 4,
+              right: 4,
+              zIndex: 10000,
+              height: "1.8em",
+              maxWidth: "250px",
+              textOverflow: "ellipsis",
+              fontSize: "0.8em",
+              fontFamily: "sans-serif, emoji",
+            }}
+            value={mapStyleJsonUrl}
+            onChange={onSelectMapStyleJsonUrl}
+          >
+            <option value={"/map_styles/fiord-color-gl-style/style.json"}>
+              🗺 OSM Fiord color (vector)
+            </option>
+            <option
+              value={
+                "https://tile.openstreetmap.jp/styles/osm-bright/style.json"
+              }
+            >
+              🗺 OSM JP bright (vector)
+            </option>
+            <option value={"/map_styles/osm-hot/style.json"}>
+              🗺 OSM HOT (raster)
+            </option>
+            <option value={"/map_styles/arcgis-world-imagery/style.json"}>
+              🛰 ArcGIS World Imagery (raster)
+            </option>
+          </select>
           <MapProvider>
             <BaseMap
               id="mainMap"
@@ -452,6 +497,7 @@ export default function Home() {
               longitude={0}
               latitude={0}
               zoom={1}
+              style={mapStyleJsonUrl}
             >
               {geojsonWithStyleList &&
                 geojsonWithStyleList.map((geojsonWithStyle) => {
