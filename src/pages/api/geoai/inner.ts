@@ -43,8 +43,7 @@ export default async function handler(
         if (idx === 0 || idx % 2 === 0) {
           return `Human: ${message.data.content}`;
         } else {
-          return "";
-          //return `AI: ${message.data.content}`;
+          return `AI: ${message.data.content}`;
         }
       } else {
         return "";
