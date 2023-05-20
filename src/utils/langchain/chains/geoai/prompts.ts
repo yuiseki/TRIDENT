@@ -118,6 +118,14 @@ AreaWithConcern: Prizren, Kosovo, restaurants
 AreaWithConcern: Prizren, Kosovo, fast foods
 AreaWithConcern: Prizren, Kosovo, parks
 AreaWithConcern: Prizren, Kosovo, bars
+
+Hints:
+EmojiForConcern: military facilities, 🪖
+ColorForConcern: military facilities, yellow
+EmojiForConcern: hospitals, 🏥
+ColorForConcern: hospitals, pink
+EmojiForConcern: shelters, 🏕
+ColorForConcern: shelters, green
 ===
 
 Conversation history:
@@ -210,6 +218,7 @@ Output:
 area["name"="Sudan"]->.searchArea;
 (
   nwr["amenity"="shelter"](area.searchArea);
+  nwr["amenity"="refugee_site"](area.searchArea);
 );
 out geom;
 \`\`\`
