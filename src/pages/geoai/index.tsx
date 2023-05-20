@@ -218,11 +218,68 @@ export default function Home() {
 
     // determine confirm message
     const linesWithConfirm = lines.filter((line: string) =>
-      line.includes("ConfirmHelpful")
+      line.includes("ConfirmHelpful:")
     );
 
-    const linesWithArea = lines.filter((line: string) => line.includes("Area"));
+    const linesWithArea = lines.filter((line: string) =>
+      line.includes("Area:")
+    );
+    const linesWithAreaWithConcern = lines.filter((line: string) =>
+      line.includes("AreaWithConcern:")
+    );
+
     linesWithArea.map(async (line: string, idx: number) => {
+      const areaName = line.split(":")[1];
+      const areaRes = await fetch(
+        `https://nominatim.openstreetmap.org/search?q=${areaName}&format=json&limit=5`
+      );
+      const areasJson: Array<{ osm_type: string; osm_id: string }> =
+        await areaRes.json();
+      for await (const area of areasJson) {
+        if (area.osm_type === "relation") {
+          const osm_id = area.osm_id;
+          console.log(osm_id);
+          const areaOverpassQuery = `[out:json][timeout:30000];
+relation(id:${osm_id});
+out geom;
+          `;
+          const areaOverpassResponseJson =
+            await getOverpassResponseJsonWithCache(areaOverpassQuery);
+          try {
+            const newAreaGeojson = osmtogeojson(areaOverpassResponseJson);
+            console.log(newAreaGeojson);
+            setGeojsonWithStyleList((prev) => {
+              return [
+                ...prev,
+                { id: osm_id, style: {}, geojson: newAreaGeojson },
+              ];
+            });
+            if (
+              linesWithAreaWithConcern.length === 0 &&
+              idx === linesWithArea.length - 1
+            ) {
+              console.log("Finish!!!!!");
+              insertNewDialogue(
+                {
+                  who: "assistant",
+                  text:
+                    linesWithConfirm.length > 0
+                      ? linesWithConfirm[0].split(":")[1]
+                      : "Mapping has been completed. Have we been helpful to you? Do you have any other requests",
+                },
+                true
+              );
+              setMapping(false);
+            }
+          } catch (error) {
+            console.error(error);
+          }
+          break;
+        }
+      }
+    });
+
+    linesWithAreaWithConcern.map(async (line: string, idx: number) => {
       let style = {};
       Object.keys(styles).map((concern) => {
         if (line.includes(concern)) {
@@ -245,7 +302,6 @@ export default function Home() {
         overpassResponseJson: any,
         retry: boolean
       ) => {
-        setMapping(false);
         const newGeojson = osmtogeojson(overpassResponseJson);
         if (newGeojson.features.length !== 0) {
           setGeojsonWithStyleList((prev) => {
@@ -254,7 +310,7 @@ export default function Home() {
               { id: idx.toString(), style: style, geojson: newGeojson },
             ];
           });
-          if (idx === linesWithArea.length - 1) {
+          if (idx === linesWithAreaWithConcern.length - 1) {
             console.log("Finish!!!!!");
             insertNewDialogue(
               {
@@ -266,6 +322,7 @@ export default function Home() {
               },
               true
             );
+            setMapping(false);
           }
         } else {
           if (retry) {

@@ -134,6 +134,12 @@ export const GeoJsonToMarkers: React.FC<{
             const polygonFeatures = turf.polygon(feature.geometry.coordinates);
             center = turf.centroid(polygonFeatures);
             break;
+          case "MultiPolygon":
+            const multiPolygonFeatures = turf.multiPolygon(
+              feature.geometry.coordinates
+            );
+            center = turf.centroid(multiPolygonFeatures);
+            break;
           case "LineString":
             const bbox = turf.bbox(feature);
             const polygon = turf.bboxPolygon(bbox);
