@@ -37,7 +37,11 @@ export const nextPostJsonWithCache = async (
       resJson: json,
       unixtime: unixtime,
     };
-    window.localStorage.setItem(key, JSON.stringify(valueToStore));
+    try {
+      window.localStorage.setItem(key, JSON.stringify(valueToStore));
+    } catch (error) {
+      console.error("getOverpassResponseJsonWithCache error:", error);
+    }
     return json;
   };
 

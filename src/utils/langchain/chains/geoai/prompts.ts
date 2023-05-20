@@ -126,6 +126,7 @@ AreaWithConcern: Prizren, Kosovo, parks
 AreaWithConcern: Prizren, Kosovo, bars
 
 Hints:
+ConfirmHelpful: 地图的制作已经完成了。你还有其他要求吗？我们对你有帮助吗？
 EmojiForConcern: military facilities, 🪖
 ColorForConcern: military facilities, yellow
 EmojiForConcern: hospitals, 🏥
