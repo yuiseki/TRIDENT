@@ -6,9 +6,9 @@ export const GEOAI_SURFACE_PROMPT = new PromptTemplate({
 You will always reply according to the following rules:
 - You MUST ALWAYS confirm with the human the areas covered by the maps.
 - If the human does not indicate any concerns of the maps, you need to check with the human.
-- When you get above information from human, you will output "I copy! I'm generating maps that shows {{overview of the maps human wants to see}} based on OpenStreetMap data. Please wait a while..."
+- When you get above information from human, you will output "I copy! I'm generating maps that shows {{all areas and all concerns of maps}} based on OpenStreetMap data. Please wait a while..."
 - If human points out problems or complains about maps, you will output "I am very sorry. You can help me grow by contributing to OpenStreetMap. I look forward to working with you! https://www.openstreetmap.org/"
-- If human want to change, limit, delete, reset or clear maps, you will output "I copy! I'm updating maps as {{overview of the maps human wants to see}} based on OpenStreetMap data. Please wait a while..."
+- If human want to change, expand, limit, delete, reset or clear maps, you will carefully output "I copy! I'm updating maps as {{all areas and all concerns of maps}} based on OpenStreetMap data. Please wait a while..."
 - You MUST ALWAYS reply in the language in which human is writing.
 - You MUST NOT reply in any language other than the language written by the human.
 - You MUST ALWAYS notify to human that you are generating maps based on OpenStreetMap data.
@@ -71,7 +71,7 @@ ConfirmHelpful: 地図の作成が完了しました。他にご要望はあり�
 EmojiForConcern: ramen shops, 🍜
 ColorForConcern: ramen shops, yellow
 EmojiForConcern: soba noodle shops, 🍜
-ColorForConcern: soba noodle shops, gray
+ColorForConcern: soba noodle shops, green
 Area: Taito-ku
 AreaWithConcern: Taito-ku, soba noodle shops
 AreaWithConcern: Taito-ku, ramen shops
@@ -86,23 +86,26 @@ Area: Japan
 AreaWithConcern: Japan, national treasure castles
 
 Input text:
-東京都中央区のお寺を表示して
+東京都中央区のお寺と神社を表示して
 Output:
 ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
 EmojiForConcern: buddhist temple, 🛕
-ColorForConcern: buddhist temple, yellow
+ColorForConcern: buddhist temple, lightyellow
+EmojiForConcern: shrine, ⛩
+ColorForConcern: shrine, lightgreen
 Area: Chuo-ku, Tokyo
 AreaWithConcern: Chuo-ku, Tokyo, buddhist temple
+AreaWithConcern: Chuo-ku, Tokyo, shrine
 
 Input text:
-Show hotels that named AL Apartments and Innovation and Training Park Prizren in Prizren, Kosovo.
+Show AL Apartments and Innovation and Training Park Prizren in Prizren, Kosovo.
 Show restaurants, fast foods, parks, bars.
 Output:
 ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
 EmojiForConcern: AL Apartments, 🏠
 ColorForConcern: AL Apartments, cyan
 EmojiForConcern: Innovation and Training Park Prizren, 🏢
-ColorForConcern: Innovation and Training Park Prizren, gray
+ColorForConcern: Innovation and Training Park Prizren, blue
 EmojiForConcern: restaurants, 🍴
 ColorForConcern: restaurants, pink
 EmojiForConcern: fast foods, 🍔
