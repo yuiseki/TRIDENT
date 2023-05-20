@@ -12,6 +12,8 @@ export const GeoJsonToMarkers: React.FC<{
   const { current: map } = useMap();
 
   const [currentZoom, setCurrentZoom] = useState<number | undefined>(8);
+  const [opacity, setOpacity] = useState(0.8);
+  const [fontSize, setFontSize] = useState("1em");
 
   useEffect(() => {
     if (!map) return;
@@ -23,6 +25,42 @@ export const GeoJsonToMarkers: React.FC<{
     });
     setCurrentZoom(map.getZoom());
   }, [map]);
+
+  // determine style of markers
+  useEffect(() => {
+    let newOpacity = 0.8;
+    let newFontSize = "1em";
+    if (currentZoom) {
+      console.log("zoom:", currentZoom);
+      if (14 <= currentZoom) {
+        newOpacity = 1;
+        newFontSize = "1.4em";
+      }
+      if (currentZoom < 14) {
+        newOpacity = 0.8;
+        newFontSize = "1.4em";
+      }
+      if (currentZoom < 13) {
+        newOpacity = 0.7;
+        newFontSize = "1.3em";
+      }
+      if (currentZoom < 12) {
+        newOpacity = 0.6;
+        newFontSize = "1.1em";
+      }
+      if (currentZoom < 11) {
+        newOpacity = 0.5;
+        newFontSize = "1em";
+      }
+      if (currentZoom < 10) {
+        newOpacity = 0.4;
+        newFontSize = "0.8em";
+      }
+    }
+    console.log("size and opacity:", newFontSize, newOpacity);
+    setOpacity(newOpacity);
+    setFontSize(newFontSize);
+  }, [currentZoom]);
 
   const onClickMarker = useCallback(
     (center: Feature<Point, GeoJsonProperties> | undefined) => {
@@ -61,7 +99,6 @@ export const GeoJsonToMarkers: React.FC<{
         }
 
         let zIndex = 100;
-        let fontSize = "1.5em";
         let icon = emoji;
         let title = "No name";
 
@@ -110,23 +147,7 @@ export const GeoJsonToMarkers: React.FC<{
         if (center === undefined) {
           return null;
         }
-        let opacity = 0.8;
-        if (currentZoom) {
-          if (13 < currentZoom) {
-            opacity = 1.0;
-            fontSize = "1.4em";
-          } else if (12 < currentZoom) {
-            opacity = 0.8;
-            fontSize = "1.3em";
-          } else if (10 < currentZoom) {
-            opacity = 0.6;
-            fontSize = "1.1em";
-          } else if (8 < currentZoom) {
-            fontSize = "1em";
-            opacity = 0.5;
-          } else {
-          }
-        }
+
         return (
           <Fragment key={feature.id}>
             {(feature.geometry.type === "Polygon" ||
