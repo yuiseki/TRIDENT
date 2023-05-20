@@ -5,7 +5,7 @@ import { DialogueElementItem } from "@/components/DialogueElementItem";
 import { GeoJsonToMarkers } from "@/components/GeoJsonToMarkers";
 import { TextInput } from "@/components/TextInput";
 import { DialogueElement } from "@/types/DialogueElement";
-import { nextPostJson } from "@/utils/nextPostJson";
+import { nextPostJson, nextPostJsonWithCache } from "@/utils/nextPostJson";
 import { scrollToBottom } from "@/utils/scrollToBottom";
 import { sleep } from "@/utils/sleep";
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -220,10 +220,9 @@ export default function Home() {
         }
       });
       setMapping(true);
-      const deepRes = await nextPostJson("/api/geoai/deep", {
+      const deepResJson = await nextPostJsonWithCache("/api/geoai/deep", {
         query: line,
       });
-      const deepResJson = await deepRes.json();
       console.log("deep: ", deepResJson.deep);
       if (deepResJson.deep.toLowerCase().includes("no valid")) {
         setMapping(false);

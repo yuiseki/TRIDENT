@@ -26,6 +26,7 @@ export const getOverpassResponseJsonWithCache = async (
     const valueToStore = {
       query: overpassQuery,
       json: json,
+      resJson: json,
       unixtime: unixtime,
     };
     window.localStorage.setItem(key, JSON.stringify(valueToStore));
@@ -35,8 +36,11 @@ export const getOverpassResponseJsonWithCache = async (
   const cache = window.localStorage.getItem(key);
   if (cache) {
     const valueFromStore = JSON.parse(cache);
-    if (unixtime - cacheSeconds < valueFromStore.unixtime) {
-      return valueFromStore.json;
+    if (
+      "resJson" in valueFromStore &&
+      unixtime - cacheSeconds < valueFromStore.unixtime
+    ) {
+      return valueFromStore.resJson;
     } else {
       return await getAndCache();
     }
