@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { KeyboardEventHandler, useCallback, useRef } from "react";
+import { useCallback, useRef } from "react";
 
 export const TextInput = ({
   disabled,
@@ -16,21 +16,22 @@ export const TextInput = ({
 }) => {
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
-  const onKeyDown: KeyboardEventHandler<HTMLTextAreaElement> = useCallback(
-    (event: React.KeyboardEvent<HTMLTextAreaElement>) => {
-      if ((event.ctrlKey || event.metaKey) && event.key === "Enter") {
-        console.log(
-          "onKeyDown ctrl + Enter",
-          event.currentTarget.value,
-          event.currentTarget.value.length
-        );
-        if (0 < event.currentTarget.value.length) {
-          onSubmit();
+  const onKeyDown: React.KeyboardEventHandler<HTMLTextAreaElement> =
+    useCallback(
+      (event: React.KeyboardEvent<HTMLTextAreaElement>) => {
+        if ((event.ctrlKey || event.metaKey) && event.key === "Enter") {
+          console.log(
+            "onKeyDown ctrl + Enter",
+            event.currentTarget.value,
+            event.currentTarget.value.length
+          );
+          if (0 < event.currentTarget.value.length) {
+            onSubmit();
+          }
         }
-      }
-    },
-    [onSubmit]
-  );
+      },
+      [onSubmit]
+    );
 
   return (
     <div style={{ position: "relative" }}>
