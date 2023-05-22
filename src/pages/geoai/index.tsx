@@ -362,8 +362,8 @@ out geom;
           ],
           { padding: 40, duration: 1000 }
         );
-      } catch (e) {
-        console.error(e);
+      } catch (error) {
+        console.error(error);
       }
     }, 500);
   }, [geojsonWithStyleList]);

@@ -87,12 +87,12 @@ export const DialogueElementItem: React.FC<{
               console.log(analyzeJson.text);
               setAnalyze(analyzeJson.text);
             } catch (error) {
-              console.log(error);
+              console.error(error);
             }
             break;
           }
         } catch (error) {
-          console.log(error);
+          console.error(error);
           continue;
         }
       }

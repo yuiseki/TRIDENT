@@ -31,7 +31,6 @@ export const GeoJsonToMarkers: React.FC<{
     let newOpacity = 0.8;
     let newFontSize = "1em";
     if (currentZoom) {
-      console.log("zoom:", currentZoom);
       if (14 <= currentZoom) {
         newOpacity = 1;
         newFontSize = "1.4em";
@@ -57,7 +56,7 @@ export const GeoJsonToMarkers: React.FC<{
         newFontSize = "1em";
       }
     }
-    console.log("size and opacity:", newFontSize, newOpacity);
+    console.info("zoom, size, opacity:", currentZoom, newFontSize, newOpacity);
     setOpacity(newOpacity);
     setFontSize(newFontSize);
   }, [currentZoom]);
