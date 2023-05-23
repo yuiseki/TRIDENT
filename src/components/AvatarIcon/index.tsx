@@ -3,27 +3,9 @@
 export const AvatarIcon: React.FC<{ who: string }> = ({ who }) => {
   return (
     <div
-      style={{
-        marginRight: "10px",
-        width: "30px",
-        height: "30px",
-        marginLeft: "8px",
-        alignItems: "center",
-        justifyContent: "center",
-        display: "flex",
-        backdropFilter: "blur(4px)",
-        backgroundColor:
-          who === "assistant" ? "rgb(0, 158, 219)" : "rgba(209, 209, 209, 0.4)",
-        borderRadius: "2px",
-        border:
-          who === "assistant"
-            ? "2px solid rgba(0, 158, 219, 0.6)"
-            : "2px solid rgba(209, 209, 209, 0.1)",
-        boxShadow:
-          who === "assistant"
-            ? "0 2px 6px 0 rgba(0, 158, 219, 0.6)"
-            : "0 2px 6px 0 rgba(209, 209, 209, 0.3)",
-      }}
+      className={`avatarIcon ${
+        who === "assistant" ? "avatarIconAssistant" : "avatarIconHuman"
+      }`}
     >
       {who === "assistant" ? (
         <img

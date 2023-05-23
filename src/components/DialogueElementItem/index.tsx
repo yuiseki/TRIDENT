@@ -103,28 +103,11 @@ export const DialogueElementItem: React.FC<{
   return (
     <div
       key={dialogueIndex}
-      style={{
-        display: "flex",
-        flexDirection: "row",
-        gap: "8px",
-        width: "100%",
-        padding: "8px 10px",
-        marginTop: "15px",
-        marginBottom: "15px",
-        border: "2px solid rgba(55, 55, 55, 0.5)",
-        borderRadius: "2px",
-        boxShadow: " 0 2px 6px 0 rgba(55, 55, 55, 0.3)",
-        color: `${
-          dialogueElement.who === "assistant"
-            ? "rgba(236, 236, 241, 0.8)"
-            : "rgba(236, 236, 241, 1)"
-        }`,
-        backgroundColor: `${
-          dialogueElement.who === "assistant"
-            ? "rgba(68, 70, 84, 0.9)"
-            : "rgba(52, 53, 65, 0.9)"
-        }`,
-      }}
+      className={`dialogueElementItem ${
+        dialogueElement.who === "assistant"
+          ? "dialogueElementItemAssistant"
+          : "dialogueElementItemHuman"
+      }`}
     >
       <div
         style={{

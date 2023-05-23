@@ -6,7 +6,6 @@ import { GeoJsonToMarkers } from "@/components/GeoJsonToMarkers";
 import { TextInput } from "@/components/TextInput";
 import { DialogueElement } from "@/types/DialogueElement";
 import { nextPostJson, nextPostJsonWithCache } from "@/utils/nextPostJson";
-import { scrollToBottom } from "@/utils/scrollToBottom";
 import { sleep } from "@/utils/sleep";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { MapProvider, MapRef } from "react-map-gl";
@@ -67,10 +66,17 @@ export default function Home() {
     }, 500);
   }, [geojsonWithStyleList]);
 
-  // dialogue state
+  // dialogue ref and state
+  const dialogueRef = useRef<HTMLDivElement | null>(null);
   const [dialogueList, setDialogueList] = useState<DialogueElement[]>([]);
   const [lazyInserting, setLazyInserting] = useState(false);
   const [insertingText, setInsertingText] = useState(greetings);
+  const scrollToBottom = useCallback(async () => {
+    await sleep(100);
+    if (dialogueRef.current) {
+      dialogueRef.current.scrollTop = dialogueRef.current.scrollHeight;
+    }
+  }, []);
   const insertNewDialogue = useCallback(
     (newDialogueElement: DialogueElement, lazy?: boolean) => {
       if (!lazy) {
@@ -124,7 +130,13 @@ export default function Home() {
         setIntervalId(undefined);
       }
     };
-  }, [intervalId, lazyInserting, lazyInsertingInitialized, insertingText]);
+  }, [
+    intervalId,
+    lazyInserting,
+    lazyInsertingInitialized,
+    insertingText,
+    scrollToBottom,
+  ]);
 
   // communication state
   const [responding, setResponding] = useState(false);
@@ -352,7 +364,7 @@ out geom;
         handleOverpassResponseJson(overpassResponseJson, true);
       });
     });
-  }, [inputText, insertNewDialogue, pastMessages]);
+  }, [inputText, insertNewDialogue, pastMessages, scrollToBottom]);
 
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
@@ -363,7 +375,7 @@ out geom;
           who: "assistant",
           text: greetings,
         },
-        true
+        false
       );
     } else {
       if (textareaRef.current) {
@@ -390,62 +402,13 @@ out geom;
           href="https://i.gyazo.com/36f5e676caec5f5e746a95054a46504f.png"
         />
       </Head>
-      <main style={{ width: "100vw", height: "100vh" }}>
-        <div
-          style={{
-            position: "fixed",
-            top: 0,
-            left: 0,
-            width: "40%",
-            height: "100vh",
-          }}
-        >
-          <div
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              backgroundColor: "rgba(0, 158, 219, 1)",
-              backgroundImage: 'url("/Flag_of_the_United_Nations.svg")',
-              backgroundSize: "cover",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "center",
-              zIndex: 9,
-            }}
-          ></div>
-          <div
-            style={{
-              position: "relative",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              backgroundColor: "rgba(0, 0, 0, 0.5)",
-              zIndex: 10,
-            }}
-          ></div>
+      <main className="geoaiMain">
+        <div className="geoAIBackgroundWrap">
+          <div className="geoAIBackgroundFlag"></div>
+          <div className="geoAIBackgroundOverlay"></div>
         </div>
-        <div
-          style={{
-            position: "fixed",
-            top: 0,
-            left: 0,
-            margin: "0px 0px 5vh",
-            width: "40%",
-            height: "100vh",
-            overflowY: "scroll",
-          }}
-        >
-          <div
-            style={{
-              width: "95%",
-              margin: "0 auto 15vh",
-              zIndex: 1000,
-              background: "transparent",
-            }}
-          >
+        <div className="geoAIDialogueOuterWrap" ref={dialogueRef}>
+          <div className="geoAIDialogueInnerWrap">
             {dialogueList.map((dialogueElement, dialogueIndex) => {
               return (
                 <div key={dialogueIndex}>
@@ -468,28 +431,15 @@ out geom;
             })}
           </div>
         </div>
-        <div
-          style={{
-            position: "absolute",
-            left: 0,
-            bottom: "20px",
-            width: "40%",
-            margin: "auto",
-          }}
-        >
-          <div
-            style={{
-              width: "95%",
-              margin: "auto",
-            }}
-          >
+        <div className="geoAIInputOuterWrap">
+          <div className="geoAIInputInnerWrap">
             <TextInput
               textareaRef={textareaRef}
               disabled={responding || lazyInserting || mapping}
               placeholder={
                 responding || lazyInserting || mapping
                   ? "..."
-                  : "文京区と台東区と墨田区のラーメン屋と蕎麦屋を表示して"
+                  : "Show sushi shops in Taito-ku, Tokyo"
               }
               inputText={inputText}
               setInputText={setInputText}
@@ -507,17 +457,7 @@ out geom;
             TRIDENT may produce inaccurate information.
           </div>
         </div>
-        <div
-          style={{
-            position: "fixed",
-            top: 0,
-            left: "40%",
-            margin: "0px",
-            width: "60%",
-            height: "100%",
-            zIndex: 1000,
-          }}
-        >
+        <div className="geoAIMapWrap">
           <select
             style={{
               position: "absolute",

@@ -36,8 +36,9 @@ export const TextInput = ({
     );
 
   return (
-    <div style={{ position: "relative" }}>
+    <div className="textInput" style={{ position: "relative" }}>
       <textarea
+        className="textInputTextarea"
         ref={textareaRef}
         value={inputText}
         placeholder={placeholder}
@@ -54,33 +55,12 @@ export const TextInput = ({
         }}
         rows={inputText ? inputText.split("\n").length : 1}
         maxLength={400}
-        style={{
-          overflowY: "hidden",
-          resize: "none",
-          minHeight: "50px",
-          maxHeight: "200px",
-          whiteSpace: "pre-wrap",
-          height: "auto",
-          width: "100%",
-          color: "rgb(236, 236, 241)",
-          backgroundColor: "rgba(64, 65, 79, 0.9)",
-          borderRadius: "2px",
-          padding: "8px 46px 8px 12px",
-          fontWeight: 400,
-        }}
       />
       <button
+        className="textInputButton"
         onClick={onSubmit}
         disabled={disabled}
         style={{
-          position: "absolute",
-          bottom: 18,
-          right: 15,
-          color: "rgb(253, 254, 255)",
-          backgroundColor: "rgba(0, 158, 219, 1)",
-          boxShadow: "0 2px 6px 0 rgba(0, 158, 219, 0.6)",
-          border: "2px solid rgba(0, 158, 219, 0.6)",
-          borderRadius: "2px",
           display: "block",
           padding: "4px",
           height: "34px",
