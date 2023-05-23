@@ -230,47 +230,64 @@ export default function Home() {
       );
       const areasJson: Array<{ osm_type: string; osm_id: string }> =
         await areaRes.json();
-      for await (const area of areasJson) {
-        if (area.osm_type === "relation") {
-          const osm_id = area.osm_id;
-          console.log(osm_id);
-          const areaOverpassQuery = `[out:json][timeout:30000];
+      let osm_id: string;
+      let areaOverpassQuery;
+      const areasNodes = areasJson.filter((area) => {
+        return area.osm_type === "node";
+      });
+      if (0 < areasNodes.length) {
+        osm_id = areasNodes[0].osm_id;
+        areaOverpassQuery = `
+[out:json][timeout:30000];
+node(id:${osm_id});
+out geom;
+        `;
+      }
+      const areasRelations = areasJson.filter((area) => {
+        return area.osm_type === "relation";
+      });
+      if (0 < areasRelations.length) {
+        osm_id = areasRelations[0].osm_id;
+        areaOverpassQuery = `
+[out:json][timeout:30000];
 relation(id:${osm_id});
 out geom;
-          `;
-          const areaOverpassResponseJson =
-            await getOverpassResponseJsonWithCache(areaOverpassQuery);
-          try {
-            const newAreaGeojson = osmtogeojson(areaOverpassResponseJson);
-            console.log(newAreaGeojson);
-            setGeojsonWithStyleList((prev) => {
-              return [
-                ...prev,
-                { id: osm_id, style: {}, geojson: newAreaGeojson },
-              ];
-            });
-            if (
-              linesWithAreaWithConcern.length === 0 &&
-              idx === linesWithArea.length - 1
-            ) {
-              console.log("Finish!!!!!");
-              insertNewDialogue(
-                {
-                  who: "assistant",
-                  text:
-                    linesWithConfirm.length > 0
-                      ? linesWithConfirm[0].split(":")[1]
-                      : "Mapping has been completed. Have we been helpful to you? Do you have any other requests",
-                },
-                true
-              );
-              setMapping(false);
-            }
-          } catch (error) {
-            console.error(error);
-          }
-          break;
+        `;
+      }
+      if (!areaOverpassQuery) {
+        return;
+      }
+      const areaOverpassResponseJson = await getOverpassResponseJsonWithCache(
+        areaOverpassQuery
+      );
+      try {
+        const newAreaGeojson = osmtogeojson(areaOverpassResponseJson);
+        console.log(newAreaGeojson);
+        setGeojsonWithStyleList((prev) => {
+          return [
+            ...prev,
+            { id: osm_id, style: { emoji: "🚩" }, geojson: newAreaGeojson },
+          ];
+        });
+        if (
+          linesWithAreaWithConcern.length === 0 &&
+          idx === linesWithArea.length - 1
+        ) {
+          console.log("Finish!!!!!");
+          insertNewDialogue(
+            {
+              who: "assistant",
+              text:
+                linesWithConfirm.length > 0
+                  ? linesWithConfirm[0].split(":")[1]
+                  : "Mapping has been completed. Have we been helpful to you? Do you have any other requests",
+            },
+            true
+          );
+          setMapping(false);
         }
+      } catch (error) {
+        console.error(error);
       }
     });
 

@@ -23,7 +23,7 @@ export const TextInput = ({
       (event: React.KeyboardEvent<HTMLTextAreaElement>) => {
         if ((event.ctrlKey || event.metaKey) && event.key === "Enter") {
           console.log(
-            "onKeyDown ctrl + Enter",
+            "TextInput: onKeyDown, ctrl + Enter,",
             event.currentTarget.value,
             event.currentTarget.value.length
           );
