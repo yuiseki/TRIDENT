@@ -290,49 +290,55 @@ out geom;
 \`\`\`
 
 Input text:
-AreaWithConcern: Taito-ku, pizza shops
+AreaWithConcern: Taito-ku, Tokyo, pizza shops
 Output:
 \`\`\`
 [out:json][timeout:30000];
+area["name"="Tokyo"]->.tokyo;
 area["name"="Taito"]->.searchArea;
 (
-  nwr["name"~"Domino"](area.searchArea);
+  nwr["amenity"="fast_food"]["cuisine"="pizza"](area.searchArea)(area.tokyo);
+);
+out geom;
+\`\`\`
+Important note:
+Pizza shops are fast food, not restaurants!
+
+Input text:
+AreaWithConcern: Taito-ku, Tokyo, Domino's Pizza
+Output:
+\`\`\`
+[out:json][timeout:30000];
+area["name"="Tokyo"]->.tokyo;
+area["name"="Taito"]->.searchArea;
+(
+  nwr["amenity"="fast_food"]["name"~"Domino"](area.searchArea)(area.tokyo);
 );
 out geom;
 \`\`\`
 
 Input text:
-AreaWithConcern: Taito-ku, Domino's Pizza
+AreaWithConcern: Taito-ku, Tokyo, Seven-Eleven
 Output:
 \`\`\`
 [out:json][timeout:30000];
-area["name"="Taito"]->.searchArea;
-(
-  nwr["amenity"="fast_food"]["cuisine"="pizza"](area.searchArea);
-);
-out geom;
-\`\`\`
-
-Input text:
-AreaWithConcern: Taito-ku, Seven-Eleven
-Output:
-\`\`\`
-[out:json][timeout:30000];
+area["name"="Tokyo"]->.tokyo;
 area["name:en"="Taito"]->.searchArea;
 (
-  nwr["name:en"~"7-Eleven"](area.searchArea);
+  nwr["name:en"~"7-Eleven"](area.searchArea)(area.tokyo);
 );
 out geom;
 \`\`\`
 
 Input text:
-AreaWithConcern: Taito-ku, ramen shops
+AreaWithConcern: Taito-ku, Tokyo, ramen shops
 Output:
 \`\`\`
 [out:json][timeout:30000];
+area["name"="Tokyo"]->.tokyo;
 area["name"="Taito"]->.searchArea;
 (
-  nwr["amenity"="restaurant"]["cuisine"="ramen"](area.searchArea);
+  nwr["amenity"="restaurant"]["cuisine"="ramen"](area.searchArea)(area.tokyo);
 );
 out geom;
 \`\`\`
@@ -345,18 +351,6 @@ Output:
 area["name"="Chiba Prefecture"]->.searchArea;
 (
   nwr["shop"="confectionery"](area.searchArea);
-);
-out geom;
-\`\`\`
-
-Input text:
-AreaWithConcern: Japan, castles
-Output:
-\`\`\`
-[out:json][timeout:30000];
-area["name"="Japan"]->.searchArea;
-(
-  nwr["historic"="castle"](area.searchArea);
 );
 out geom;
 \`\`\`
