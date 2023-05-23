@@ -81,7 +81,7 @@ textarea:focus {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-size: 1rem;
+  font-size: 14px;
   line-height: 1.75;
 }
 
