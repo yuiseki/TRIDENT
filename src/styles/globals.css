@@ -316,7 +316,7 @@ main.geoaiMain {
     font-size: 1em;
     line-height: 1em;
     padding: 12px 46px 8px 8px;
-    min-height: 2em;
+    min-height: 40px;
   }
   .textInputButton {
     position: absolute;
