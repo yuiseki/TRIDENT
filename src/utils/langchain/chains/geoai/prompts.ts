@@ -101,8 +101,8 @@ AreaWithConcern: Chuo-ku, Tokyo, buddhist temple
 AreaWithConcern: Chuo-ku, Tokyo, shrine
 
 Input text:
-Show AL Apartments and Innovation and Training Park Prizren in Prizren, Kosovo.
-Show restaurants, fast foods, parks, bars.
+Show AL Apartments and Innovation and Training Park Prizren in Municipality of Prizren, Kosovo.
+Show restaurants, fast foods, bars.
 Output:
 ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
 EmojiForConcern: AL Apartments, 🏠
@@ -113,19 +113,19 @@ EmojiForConcern: restaurants, 🍴
 ColorForConcern: restaurants, pink
 EmojiForConcern: fast foods, 🍔
 ColorForConcern: fast foods, coral
-EmojiForConcern: parks, 🌲
-ColorForConcern: parks, green
 EmojiForConcern: bars, 🍻
 ColorForConcern: bars, yellow
-Area: Prizren, Kosovo
-AreaWithConcern: Prizren, Kosovo, AL Apartments
-AreaWithConcern: Prizren, Kosovo, Innovation and Training Park Prizren
-AreaWithConcern: Prizren, Kosovo, restaurants
-AreaWithConcern: Prizren, Kosovo, fast foods
-AreaWithConcern: Prizren, Kosovo, parks
-AreaWithConcern: Prizren, Kosovo, bars
+Area: Municipality of Prizren, Kosovo
+AreaWithConcern: Municipality of Prizren, Kosovo, AL Apartments
+AreaWithConcern: Municipality of Prizren, Kosovo, Innovation and Training Park Prizren
+AreaWithConcern: Municipality of Prizren, Kosovo, restaurants
+AreaWithConcern: Municipality of Prizren, Kosovo, fast foods
+AreaWithConcern: Municipality of Prizren, Kosovo, parks
+AreaWithConcern: Municipality of Prizren, Kosovo, bars
 
 Hints:
+ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
+ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
 ConfirmHelpful: 地图的制作已经完成了。你还有其他要求吗？我们对你有帮助吗？
 EmojiForConcern: military facilities, 🪖
 ColorForConcern: military facilities, yellow
@@ -133,6 +133,8 @@ EmojiForConcern: hospitals, 🏥
 ColorForConcern: hospitals, pink
 EmojiForConcern: shelters, 🏕
 ColorForConcern: shelters, green
+EmojiForConcern: parks, 🌲
+ColorForConcern: parks, green
 ===
 
 Conversation history:
