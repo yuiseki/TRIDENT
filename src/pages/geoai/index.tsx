@@ -228,6 +228,11 @@ export default function Home() {
       line.includes("ConfirmHelpful:")
     );
 
+    const linesWithAreaAndOrConcern = lines.filter((line: string) =>
+      line.includes("Area")
+    );
+
+    /*
     const linesWithArea = lines.filter((line: string) =>
       line.includes("Area:")
     );
@@ -302,8 +307,9 @@ out geom;
         console.error(error);
       }
     });
+    */
 
-    linesWithAreaWithConcern.map(async (line: string, idx: number) => {
+    linesWithAreaAndOrConcern.map(async (line: string, idx: number) => {
       let style = {};
       Object.keys(styles).map((concern) => {
         if (line.includes(concern)) {
@@ -334,7 +340,7 @@ out geom;
               { id: idx.toString(), style: style, geojson: newGeojson },
             ];
           });
-          if (idx === linesWithAreaWithConcern.length - 1) {
+          if (idx === linesWithAreaAndOrConcern.length - 1) {
             console.log("Finish!!!!!");
             insertNewDialogue(
               {

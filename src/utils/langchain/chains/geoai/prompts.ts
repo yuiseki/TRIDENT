@@ -54,6 +54,15 @@ Area: Sudan
 Area: South Sudan
 
 Input text:
+Show UN facilities in New York City.
+Output:
+ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
+EmojiForConcern: UN facilities, 🇺🇳
+ColorForConcern: UN facilities, lightblue
+Area: City of New York
+AreaWithConcern City of New York, UN facilities
+
+Input text:
 東京都中央区
 Output:
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
@@ -76,8 +85,8 @@ ColorForConcern: ramen shops, lightyellow
 EmojiForConcern: soba noodle shops, 🍜
 ColorForConcern: soba noodle shops, lightgreen
 Area: Taito-ku
-AreaWithConcern: Taito-ku, soba noodle shops
-AreaWithConcern: Taito-ku, ramen shops
+AreaWithConcern: Taito-ku, Tokyo, soba noodle shops
+AreaWithConcern: Taito-ku, Tokyo, ramen shops
 
 Input text:
 Map of national treasure castles in Japan
@@ -89,39 +98,28 @@ Area: Japan
 AreaWithConcern: Japan, national treasure castles
 
 Input text:
-東京都中央区のお寺と神社を表示して
+台東区のお寺と神社を表示して
 Output:
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
 EmojiForConcern: buddhist temple, 🛕
 ColorForConcern: buddhist temple, lightyellow
 EmojiForConcern: shrine, ⛩
 ColorForConcern: shrine, lightgreen
-Area: Chuo-ku, Tokyo
-AreaWithConcern: Chuo-ku, Tokyo, buddhist temple
-AreaWithConcern: Chuo-ku, Tokyo, shrine
+Area: Taito-ku, Tokyo
+AreaWithConcern: Taito-ku, Tokyo, buddhist temple
+AreaWithConcern: Taito-ku, Tokyo, shrine
 
 Input text:
 Show AL Apartments and Innovation and Training Park Prizren in Municipality of Prizren, Kosovo.
-Show restaurants, fast foods, bars.
 Output:
 ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
 EmojiForConcern: AL Apartments, 🏠
 ColorForConcern: AL Apartments, cyan
 EmojiForConcern: Innovation and Training Park Prizren, 🏢
 ColorForConcern: Innovation and Training Park Prizren, blue
-EmojiForConcern: restaurants, 🍴
-ColorForConcern: restaurants, pink
-EmojiForConcern: fast foods, 🍔
-ColorForConcern: fast foods, coral
-EmojiForConcern: bars, 🍻
-ColorForConcern: bars, yellow
 Area: Municipality of Prizren, Kosovo
 AreaWithConcern: Municipality of Prizren, Kosovo, AL Apartments
 AreaWithConcern: Municipality of Prizren, Kosovo, Innovation and Training Park Prizren
-AreaWithConcern: Municipality of Prizren, Kosovo, restaurants
-AreaWithConcern: Municipality of Prizren, Kosovo, fast foods
-AreaWithConcern: Municipality of Prizren, Kosovo, parks
-AreaWithConcern: Municipality of Prizren, Kosovo, bars
 
 Hints:
 ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
@@ -135,6 +133,12 @@ EmojiForConcern: shelters, 🏕
 ColorForConcern: shelters, green
 EmojiForConcern: parks, 🌲
 ColorForConcern: parks, green
+EmojiForConcern: restaurants, 🍴
+ColorForConcern: restaurants, pink
+EmojiForConcern: fast foods, 🍔
+ColorForConcern: fast foods, coral
+EmojiForConcern: bars, 🍻
+ColorForConcern: bars, yellow
 ===
 
 Conversation history:

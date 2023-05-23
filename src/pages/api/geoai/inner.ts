@@ -43,7 +43,8 @@ export default async function handler(
         if (idx === 0 || idx % 2 === 0) {
           return `Human: ${message.data.content}`;
         } else {
-          return `AI: ${message.data.content}`;
+          return "";
+          //return `AI: ${message.data.content}`;
         }
       } else {
         return "";
@@ -57,19 +58,26 @@ export default async function handler(
   //console.log("center", JSON.stringify(center));
   //console.log("bbox", JSON.stringify(bbox));
 
-  const model = new OpenAI({ temperature: 0, maxTokens: 2000 });
-  const chain = loadGeoAIInnerChain({ llm: model });
-  const result = await chain.call({
-    chat_history: chatHistory.join("\n"),
-    //bounds: JSON.stringify(bbox),
-    //center: JSON.stringify(center),
-  });
+  try {
+    const model = new OpenAI({ temperature: 0, maxTokens: 2000 });
+    const chain = loadGeoAIInnerChain({ llm: model });
+    const result = await chain.call({
+      chat_history: chatHistory.join("\n"),
+      //bounds: JSON.stringify(bbox),
+      //center: JSON.stringify(center),
+    });
 
-  console.log("");
-  console.log(result.text);
-  console.log("");
+    console.log("");
+    console.log(result.text);
+    console.log("");
 
-  res.status(200).json({
-    inner: result.text,
-  });
+    res.status(200).json({
+      inner: result.text,
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({
+      inner: "ConfirmHelpful: Sorry, something went wrong...",
+    });
+  }
 }
