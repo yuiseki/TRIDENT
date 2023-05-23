@@ -21,27 +21,23 @@ import { useLocalStorage } from "@/hooks/localStorage";
 const greetings = `Hello! I'm TRIDENT GeoAI, interactive geospatial situation awareness empowerment system. Could you indicate me the areas and themes you want to see as the map?`;
 
 export default function Home() {
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
   const [inputText, setInputText] = useState("");
   const [outputText, setOutputText] = useState(greetings);
+  const [dialogueList, setDialogueList] = useState<DialogueElement[]>([]);
   const [pastMessages, setPastMessages] = useState<
     { messages: Array<any> } | undefined
   >();
+
+  const [lazyInserting, setLazyInserting] = useState(false);
+  const [responding, setResponding] = useState(false);
+  const [mapping, setMapping] = useState(false);
+
+  // maps
   const mapRef = useRef<MapRef | null>(null);
   const [geojsonWithStyleList, setGeojsonWithStyleList] = useState<
     Array<{ id: string; style: TridentMapsStyle; geojson: FeatureCollection }>
   >([]);
-
-  const [dialogueList, setDialogueList] = useState<DialogueElement[]>([
-    {
-      who: "assistant",
-      text: "",
-    },
-  ]);
-
-  const [initialized, setInitialized] = useState(false);
-  const [lazyInserting, setLazyInserting] = useState(false);
-  const [responding, setResponding] = useState(false);
-  const [mapping, setMapping] = useState(false);
 
   const [mapStyleJsonUrl, setMapStyleJsonUrl] = useLocalStorage<string>(
     "trident-geoai-selected-map-style-json-url",
@@ -54,33 +50,6 @@ export default function Home() {
     },
     [setMapStyleJsonUrl]
   );
-
-  const initializer = useCallback(() => {
-    if (initialized) {
-      return;
-    }
-    setResponding(true);
-    const outputtingTextLength =
-      dialogueList[dialogueList.length - 1].text.length;
-    if (outputtingTextLength < outputText.length) {
-      const newDialogueList = [
-        {
-          who: "assistant",
-          text: outputText.slice(0, outputtingTextLength + 1),
-        },
-      ];
-      setDialogueList(newDialogueList);
-    } else {
-      setOutputText("");
-      setResponding(false);
-      setInitialized(true);
-      // TODO: focus TextInput when initialize finished
-    }
-  }, [dialogueList, initialized, outputText]);
-
-  useEffect(() => {
-    setTimeout(initializer, 25);
-  }, [initializer]);
 
   const insertNewDialogue = useCallback(
     (newDialogueElement: DialogueElement, lazy?: boolean) => {
@@ -368,6 +337,25 @@ out geom;
     }, 500);
   }, [geojsonWithStyleList]);
 
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    if (!mounted) {
+      setMounted(true);
+      insertNewDialogue(
+        {
+          who: "assistant",
+          text: greetings,
+        },
+        true
+      );
+    } else {
+      if (textareaRef.current) {
+        textareaRef.current.focus();
+      }
+    }
+  }, [mounted, insertNewDialogue]);
+  if (!mounted) return null;
+
   return (
     <>
       <Head>
@@ -479,6 +467,7 @@ out geom;
             }}
           >
             <TextInput
+              textareaRef={textareaRef}
               disabled={responding || lazyInserting || mapping}
               placeholder={
                 responding || lazyInserting || mapping

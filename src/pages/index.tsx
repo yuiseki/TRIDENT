@@ -13,51 +13,21 @@ import { TextInput } from "@/components/TextInput";
 const greetings = `Hello! I'm TRIDENT, an unofficial UN dedicated interactive information retrieval and humanity assistance system. What kind of information are you looking for?`;
 
 export default function Home() {
-  const [dialogueList, setDialogueList] = useState<DialogueElement[]>([
-    {
-      who: "assistant",
-      text: "",
-    },
-  ]);
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
   const [inputText, setInputText] = useState("");
   const [outputText, setOutputText] = useState(greetings);
+  const [dialogueList, setDialogueList] = useState<DialogueElement[]>([]);
 
-  const [initialized, setInitialized] = useState(false);
   const [lazyInserting, setLazyInserting] = useState(false);
   const [responding, setResponding] = useState(false);
 
   const [placeholder, setPlaceholder] = useState(placeholders[0]);
   const [placeholderInitialized, setPlaceholderInitialized] = useState(false);
-  const textareaRef = useRef<HTMLTextAreaElement>(null);
-
-  const initializer = useCallback(() => {
-    if (initialized) {
-      return;
-    }
-    setResponding(true);
-    const outputtingTextLength =
-      dialogueList[dialogueList.length - 1].text.length;
-    if (outputtingTextLength < outputText.length) {
-      const newDialogueList = [
-        {
-          who: "assistant",
-          text: outputText.slice(0, outputtingTextLength + 1),
-        },
-      ];
-      setDialogueList(newDialogueList);
-    } else {
-      setOutputText("");
-      setResponding(false);
-      setInitialized(true);
-    }
-  }, [dialogueList, initialized, outputText]);
-
-  useEffect(() => {
-    setTimeout(initializer, 25);
-  }, [initializer]);
-
   useEffect(() => {
     if (placeholderInitialized) {
+      if (textareaRef.current) {
+        textareaRef.current.focus();
+      }
       return;
     }
     setInterval(() => {
@@ -71,12 +41,11 @@ export default function Home() {
       });
     }, 10000);
     setPlaceholderInitialized(true);
-  }, []);
+  }, [placeholderInitialized]);
 
   const [lazyInsertingInitialized, setLazyInsertingInitialized] =
     useState(false);
   const [intervalId, setIntervalId] = useState<NodeJS.Timer>();
-
   useEffect(() => {
     if (lazyInserting) {
       if (!lazyInsertingInitialized) {
@@ -129,7 +98,7 @@ export default function Home() {
     []
   );
 
-  const submitQuestion = useCallback(async () => {
+  const onSubmit = useCallback(async () => {
     const newInputText = inputText.trim();
     setInputText("");
 
@@ -168,6 +137,21 @@ export default function Home() {
 
     setResponding(false);
   }, [inputText, insertNewDialogue]);
+
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    if (!mounted) {
+      setMounted(true);
+      insertNewDialogue(
+        {
+          who: "assistant",
+          text: greetings,
+        },
+        true
+      );
+    }
+  }, [mounted, insertNewDialogue]);
+  if (!mounted) return null;
 
   return (
     <>
@@ -271,16 +255,12 @@ export default function Home() {
             }}
           >
             <TextInput
-              disabled={
-                responding ||
-                lazyInserting ||
-                !initialized ||
-                inputText.length === 0
-              }
+              textareaRef={textareaRef}
+              disabled={responding || lazyInserting || inputText.length === 0}
               placeholder={responding || lazyInserting ? "..." : placeholder}
               inputText={inputText}
               setInputText={setInputText}
-              onSubmit={submitQuestion}
+              onSubmit={onSubmit}
             />
           </div>
           <div

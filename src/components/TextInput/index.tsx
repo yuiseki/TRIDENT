@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { useCallback, useRef } from "react";
+import { RefObject, useCallback, useRef } from "react";
 
 export const TextInput = ({
   disabled,
@@ -7,14 +7,16 @@ export const TextInput = ({
   inputText,
   setInputText,
   onSubmit,
+  textareaRef,
 }: {
   disabled: boolean;
   placeholder: string;
   inputText: string;
   setInputText: (inputText: string) => void;
   onSubmit: () => void;
+  textareaRef: RefObject<HTMLTextAreaElement>;
 }) => {
-  const textareaRef = useRef<HTMLTextAreaElement>(null);
+  //const textareaRef = useRef<HTMLTextAreaElement>(null);
 
   const onKeyDown: React.KeyboardEventHandler<HTMLTextAreaElement> =
     useCallback(
