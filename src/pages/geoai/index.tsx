@@ -135,12 +135,12 @@ export default function Home() {
   const onSubmit = useCallback(async () => {
     const newInputText = inputText.trim();
     setInputText("");
+    setResponding(true);
 
     insertNewDialogue({ who: "user", text: newInputText });
 
     await sleep(200);
     scrollToBottom();
-    setResponding(true);
 
     const surfaceRes = await nextPostJson("/api/geoai/surface", {
       query: newInputText,
