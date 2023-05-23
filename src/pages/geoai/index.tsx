@@ -21,36 +21,56 @@ import { useLocalStorage } from "@/hooks/localStorage";
 const greetings = `Hello! I'm TRIDENT GeoAI, interactive geospatial situation awareness empowerment system. Could you indicate me the areas and themes you want to see as the map?`;
 
 export default function Home() {
+  // input ref and state
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const [inputText, setInputText] = useState("");
-  const [outputText, setOutputText] = useState(greetings);
-  const [dialogueList, setDialogueList] = useState<DialogueElement[]>([]);
-  const [pastMessages, setPastMessages] = useState<
-    { messages: Array<any> } | undefined
-  >();
 
-  const [lazyInserting, setLazyInserting] = useState(false);
-  const [responding, setResponding] = useState(false);
-  const [mapping, setMapping] = useState(false);
-
-  // maps
+  // maps ref and state
   const mapRef = useRef<MapRef | null>(null);
   const [geojsonWithStyleList, setGeojsonWithStyleList] = useState<
     Array<{ id: string; style: TridentMapsStyle; geojson: FeatureCollection }>
   >([]);
-
+  // base maps
   const [mapStyleJsonUrl, setMapStyleJsonUrl] = useLocalStorage<string>(
     "trident-geoai-selected-map-style-json-url",
     "/map_styles/fiord-color-gl-style/style.json"
   );
-
   const onSelectMapStyleJsonUrl = useCallback(
     (e: React.ChangeEvent<HTMLSelectElement>) => {
       setMapStyleJsonUrl(e.target.value);
     },
     [setMapStyleJsonUrl]
   );
+  useEffect(() => {
+    setTimeout(() => {
+      if (!mapRef || !mapRef.current) return;
+      if (geojsonWithStyleList.length === 0) return;
+      try {
+        console.log(geojsonWithStyleList);
+        const everything: FeatureCollection = {
+          type: "FeatureCollection",
+          features: geojsonWithStyleList
+            .map((item) => item.geojson.features)
+            .flat(),
+        };
+        const [minLng, minLat, maxLng, maxLat] = turf.bbox(everything);
+        mapRef.current.fitBounds(
+          [
+            [minLng, minLat],
+            [maxLng, maxLat],
+          ],
+          { padding: 40, duration: 1000 }
+        );
+      } catch (error) {
+        console.error(error);
+      }
+    }, 500);
+  }, [geojsonWithStyleList]);
 
+  // dialogue state
+  const [dialogueList, setDialogueList] = useState<DialogueElement[]>([]);
+  const [lazyInserting, setLazyInserting] = useState(false);
+  const [insertingText, setInsertingText] = useState(greetings);
   const insertNewDialogue = useCallback(
     (newDialogueElement: DialogueElement, lazy?: boolean) => {
       if (!lazy) {
@@ -65,7 +85,7 @@ export default function Home() {
         setDialogueList((prev) => {
           return [...prev, lazyNewDialogueElement];
         });
-        setOutputText(newDialogueElement.text);
+        setInsertingText(newDialogueElement.text);
         setLazyInserting(true);
       }
     },
@@ -80,12 +100,12 @@ export default function Home() {
         const newIntervalId = setInterval(() => {
           setDialogueList((prev) => {
             const last = prev[prev.length - 1];
-            last.text = outputText.slice(0, last.text.length + 1);
+            last.text = insertingText.slice(0, last.text.length + 1);
             scrollToBottom();
-            if (outputText.length === last.text.length) {
+            if (insertingText.length === last.text.length) {
               setLazyInserting(false);
               setLazyInsertingInitialized(false);
-              setOutputText("");
+              setInsertingText("");
               setResponding(false);
             }
             return [...prev.slice(0, prev.length - 1), last];
@@ -104,8 +124,14 @@ export default function Home() {
         setIntervalId(undefined);
       }
     };
-  }, [intervalId, lazyInserting, lazyInsertingInitialized, outputText]);
+  }, [intervalId, lazyInserting, lazyInsertingInitialized, insertingText]);
 
+  // communication state
+  const [responding, setResponding] = useState(false);
+  const [mapping, setMapping] = useState(false);
+  const [pastMessages, setPastMessages] = useState<
+    { messages: Array<any> } | undefined
+  >();
   const onSubmit = useCallback(async () => {
     const newInputText = inputText.trim();
     setInputText("");
@@ -310,32 +336,6 @@ out geom;
       });
     });
   }, [inputText, insertNewDialogue, pastMessages]);
-
-  useEffect(() => {
-    setTimeout(() => {
-      if (!mapRef || !mapRef.current) return;
-      if (geojsonWithStyleList.length === 0) return;
-      try {
-        console.log(geojsonWithStyleList);
-        const everything: FeatureCollection = {
-          type: "FeatureCollection",
-          features: geojsonWithStyleList
-            .map((item) => item.geojson.features)
-            .flat(),
-        };
-        const [minLng, minLat, maxLng, maxLat] = turf.bbox(everything);
-        mapRef.current.fitBounds(
-          [
-            [minLng, minLat],
-            [maxLng, maxLat],
-          ],
-          { padding: 40, duration: 1000 }
-        );
-      } catch (error) {
-        console.error(error);
-      }
-    }, 500);
-  }, [geojsonWithStyleList]);
 
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
