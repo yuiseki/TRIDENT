@@ -194,7 +194,7 @@ div.overlay {
 
 .textInputButton {
   position: absolute;
-  bottom: 10px;
+  bottom: 16px;
   right: 10px;
   color: rgb(253, 254, 255);
   background: rgba(96, 104, 124, 1);
@@ -278,6 +278,19 @@ main.geoaiMain {
   width: 60%;
   height: 100%;
   z-index: 1000;
+}
+
+.geoAIMapSelectWrap select {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  appearance: none;
+  border-radius: 12px;
+  min-height: 20px;
+  margin: 0px;
+  padding: 2px 8px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: sans-serif, emoji;
 }
 
 @media screen and (max-width: 600px) {

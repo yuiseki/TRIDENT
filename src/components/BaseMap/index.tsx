@@ -1,5 +1,6 @@
 import React, { MutableRefObject, useCallback } from "react";
 import {
+  AttributionControl,
   GeolocateControl,
   Map,
   MapRef,
@@ -74,7 +75,7 @@ export const BaseMap: React.FC<{
       onMoveEnd={onMoveEnd}
       mapLib={maplibregl}
       mapStyle={style}
-      attributionControl={true}
+      attributionControl={false}
       initialViewState={{
         longitude: longitude,
         latitude: latitude,
@@ -85,13 +86,14 @@ export const BaseMap: React.FC<{
       maxPitch={85}
     >
       {children}
+      <GeolocateControl position="bottom-right" />
       <NavigationControl
         position="bottom-right"
         visualizePitch={true}
         showZoom={true}
         showCompass={true}
       />
-      <GeolocateControl position="bottom-right" />
+      <AttributionControl position="top-right" />
     </Map>
   );
 };
