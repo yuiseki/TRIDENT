@@ -98,16 +98,16 @@ Area: Japan
 AreaWithConcern: Japan, national treasure castles
 
 Input text:
-台東区のお寺と神社を表示して
+日本でソニーの名前を持つ会社・工場などを表示して
 Output:
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
-EmojiForConcern: buddhist temple, 🛕
-ColorForConcern: buddhist temple, lightyellow
-EmojiForConcern: shrine, ⛩
-ColorForConcern: shrine, lightgreen
-Area: Taito-ku, Tokyo
-AreaWithConcern: Taito-ku, Tokyo, buddhist temple
-AreaWithConcern: Taito-ku, Tokyo, shrine
+EmojiForConcern: Sony companies, 🏢
+ColorForConcern: Sony companies, blue
+EmojiForConcern: Sony factories, 🏭
+ColorForConcern: Sony factories, lightgrey
+Area: Japan
+AreaWithConcern: Japan, Sony companies
+AreaWithConcern: Japan, Sony factories
 
 Input text:
 Show AL Apartments and Innovation and Training Park Prizren in Municipality of Prizren, Kosovo.
@@ -139,6 +139,10 @@ EmojiForConcern: fast foods, 🍔
 ColorForConcern: fast foods, coral
 EmojiForConcern: bars, 🍻
 ColorForConcern: bars, yellow
+EmojiForConcern: buddhist temple, 🛕
+ColorForConcern: buddhist temple, lightyellow
+EmojiForConcern: shrine, ⛩
+ColorForConcern: shrine, lightgreen
 ===
 
 Conversation history:
@@ -160,6 +164,15 @@ You will always reply according to the following rules:
 
 Examples:
 ===
+Input text:
+Area: Sudan
+Output:
+\`\`\`
+[out:json][timeout:30000];
+relation["name"="Sudan"];
+out geom;
+\`\`\`
+
 Input text:
 Area: New York City
 Output:
@@ -183,7 +196,10 @@ Area: Taito-ku
 Output:
 \`\`\`
 [out:json][timeout:30000];
-relation["name"="Taito"];
+area["name"="Tokyo"]->.searchArea;
+(
+  relation["name"="Taito"](area.searchArea);
+);
 out geom;
 \`\`\`
 
@@ -192,31 +208,9 @@ Area: Kita-ku, Tokyo
 Output:
 \`\`\`
 [out:json][timeout:30000];
-area["name:en"="Tokyo"]->.searchArea;
+area["name"="Tokyo"]->.searchArea;
 (
-  relation["name:en"="Kita"](area.searchArea);
-);
-out geom;
-\`\`\`
-
-Input text:
-Area: Sudan
-Output:
-\`\`\`
-[out:json][timeout:30000];
-relation["name"="Sudan"];
-out geom;
-\`\`\`
-
-Input text:
-AreaWithConcern: Juba, South Sudan, military facilities
-Output:
-\`\`\`
-[out:json][timeout:30000];
-area["name"="South Sudan"]->.sudan;
-area["name"="Juba"]->.searchArea;
-(
-  nwr["landuse"="military"](area.searchArea)(area.sudan);
+  relation["name"="Kita"](area.searchArea);
 );
 out geom;
 \`\`\`
@@ -246,42 +240,28 @@ area["name"="Sudan"]->.searchArea;
 out geom;
 \`\`\`
 
-
 Input text:
-AreaWithConcern: Sudan, hotels
-Output:
-\`\`\`
-[out:json][timeout:30000];
-area["name"="Sudan"]->.searchArea;
-(
-  nwr["tourism"="hotel"](area.searchArea);
-);
-out geom;
-\`\`\`
-
-Input text:
-AreaWithConcern: Taito-ku, temples
-Output:
-\`\`\`
-[out:json][timeout:30000];
-area["name"="Taito"]->.searchArea;
-(
-  nwr["amenity"="place_of_worship"]["religion"="buddhist"](area.searchArea);
-);
-out geom;
-\`\`\`
-Important note:
-Never use "religion"="buddhism". It is wrong. Use "religion"="buddhist" instead.
-
-Input text:
-AreaWithConcern: Chuo-ku, Tokyo, soba noodle shops
+AreaWithConcern: Taito, Tokyo, hotels
 Output:
 \`\`\`
 [out:json][timeout:30000];
 area["name"="Tokyo"]->.tokyo;
-area["name"="Chuo"]->.searchArea;
+area["name"="Taito"]->.searchArea;
 (
-  nwr["amenity"="restaurant"]["cuisine"="soba"](area.searchArea)(area.tokyo);
+  nwr["tourism"="hotel"](area.searchArea)(area.tokyo);
+);
+out geom;
+\`\`\`
+
+Input text:
+AreaWithConcern: Juba, South Sudan, military facilities
+Output:
+\`\`\`
+[out:json][timeout:30000];
+area["name"="South Sudan"]->.sudan;
+area["name"="Juba"]->.searchArea;
+(
+  nwr["landuse"="military"](area.searchArea)(area.sudan);
 );
 out geom;
 \`\`\`
@@ -300,96 +280,6 @@ out geom;
 \`\`\`
 
 Input text:
-AreaWithConcern: Taito-ku, Tokyo, pizza shops
-Output:
-\`\`\`
-[out:json][timeout:30000];
-area["name"="Tokyo"]->.tokyo;
-area["name"="Taito"]->.searchArea;
-(
-  nwr["amenity"="fast_food"]["cuisine"="pizza"](area.searchArea)(area.tokyo);
-);
-out geom;
-\`\`\`
-Important note:
-Pizza shops are fast food, not restaurants!
-
-Input text:
-AreaWithConcern: Taito-ku, Tokyo, Domino's Pizza
-Output:
-\`\`\`
-[out:json][timeout:30000];
-area["name"="Tokyo"]->.tokyo;
-area["name"="Taito"]->.searchArea;
-(
-  nwr["amenity"="fast_food"]["name"~"Domino"](area.searchArea)(area.tokyo);
-);
-out geom;
-\`\`\`
-
-Input text:
-AreaWithConcern: Taito-ku, Tokyo, Seven-Eleven
-Output:
-\`\`\`
-[out:json][timeout:30000];
-area["name"="Tokyo"]->.tokyo;
-area["name:en"="Taito"]->.searchArea;
-(
-  nwr["name:en"~"7-Eleven"](area.searchArea)(area.tokyo);
-);
-out geom;
-\`\`\`
-
-Input text:
-AreaWithConcern: Taito-ku, Tokyo, ramen shops
-Output:
-\`\`\`
-[out:json][timeout:30000];
-area["name"="Tokyo"]->.tokyo;
-area["name"="Taito"]->.searchArea;
-(
-  nwr["amenity"="restaurant"]["cuisine"="ramen"](area.searchArea)(area.tokyo);
-);
-out geom;
-\`\`\`
-
-Input text:
-AreaWithConcern: Chiba Prefecture, Western-style confectionery stores
-Output:
-\`\`\`
-[out:json][timeout:30000];
-area["name"="Chiba Prefecture"]->.searchArea;
-(
-  nwr["shop"="confectionery"](area.searchArea);
-);
-out geom;
-\`\`\`
-
-Input text:
-AreaWithConcern: Japan, national treasure castles
-Output:
-\`\`\`
-[out:json][timeout:30000];
-area["name"="Japan"]->.searchArea;
-(
-  nwr["historic"="castle"]["heritage"](area.searchArea);
-);
-out geom;
-\`\`\`
-
-Input text:
-AreaWithConcern: Asakusa, izakaya
-Output:
-\`\`\`
-[out:json][timeout:30000];
-area["name"="Asakusa"]->.searchArea;
-(
-  nwr["amenity"="bar"](area.searchArea);
-);
-out geom;
-\`\`\`
-
-Input text:
 AreaWithConcern: Prizren, bars
 Output:
 \`\`\`
@@ -401,6 +291,23 @@ area["name"="Municipality of Prizren"]->.searchArea;
 out geom;
 \`\`\`
 ===
+
+Useful hints:
+Hotels: nwr["tourism"="hotel"]
+Izakaya: nwr["amenity"="bar"]
+Company: nwr["office"="company"]
+Factories: nwr["landuse"="industrial"]
+Important note: Never use "landuse"="factory". It is wrong. Use "landuse"="industrial" instead.
+National treasure castles: nwr["historic"="castle"]["heritage"]
+Temples: nwr["amenity"="place_of_worship"]["religion"="buddhist"]
+Important note: Never use "religion"="buddhism". It is wrong. Use "religion"="buddhist" instead.
+Pizza shops: nwr["amenity"="fast_food"]["cuisine"="pizza"]
+Important note: Pizza shops are fast food, not restaurants!
+Domino's Pizza: nwr["name"~"Domino"]["cuisine"="pizza"]
+Seven-Eleven: nwr["name"~"7-Eleven"]
+Soba noodle shops: nwr["amenity"="restaurant"]["cuisine"="soba"]
+Ramen shops: nwr["amenity"="restaurant"]["cuisine"="ramen"]
+Western-style confectionery stores: nwr["shop"="confectionery"]
 
 Input text:
 {text}
