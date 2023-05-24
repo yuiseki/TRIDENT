@@ -305,13 +305,13 @@ main.geoaiMain {
   }
   .geoAIBackgroundWrap {
     width: 100%;
-    height: 40dvh;
+    height: 50dvh;
     top: inherit;
     bottom: 0;
   }
   .geoAIDialogueOuterWrap {
     width: 100%;
-    height: 40dvh;
+    height: 50dvh;
     top: inherit;
     bottom: -5vh;
   }
@@ -323,7 +323,7 @@ main.geoaiMain {
     width: 100%;
     top: 0;
     left: 0;
-    height: 60dvh;
+    height: 50dvh;
   }
   .dialogueElementItem {
     gap: 0px;

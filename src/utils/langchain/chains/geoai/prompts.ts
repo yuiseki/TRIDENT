@@ -200,13 +200,14 @@ out geom;
 \`\`\`
 
 Input text:
-AreaWithConcern: Sudan, military facilities
+AreaWithConcern: Juba, South Sudan, military facilities
 Output:
 \`\`\`
 [out:json][timeout:30000];
-area["name"="Sudan"]->.searchArea;
+area["name"="South Sudan"]->.sudan;
+area["name"="Juba"]->.searchArea;
 (
-  nwr["landuse"="military"](area.searchArea);
+  nwr["landuse"="military"](area.searchArea)(area.sudan);
 );
 out geom;
 \`\`\`
