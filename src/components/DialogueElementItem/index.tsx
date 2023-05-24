@@ -6,7 +6,10 @@ import { GeoJsonMap } from "../GeoJsonMap";
 import { sleep } from "@/utils/sleep";
 import { scrollToBottom } from "@/utils/scrollToBottom";
 import { FeatureCollection } from "geojson";
-import { getOverpassResponse } from "@/utils/getOverpassResponse";
+import {
+  getOverpassResponse,
+  getOverpassResponseJsonWithCache,
+} from "@/utils/getOverpassResponse";
 import osmtogeojson from "osmtogeojson";
 import { placeholders } from "@/const/placeholders";
 import summary from "../../../public/api.reliefweb.int/disasters/summaries/latest_summary.json";
@@ -51,8 +54,7 @@ export const DialogueElementItem: React.FC<{
         setOverpassQuery(query);
         setRequestingOverpassApi(true);
         try {
-          const overpassRes = await getOverpassResponse(query);
-          const overpassJson = await overpassRes.json();
+          const overpassJson = await getOverpassResponseJsonWithCache(query);
           newGeojson = osmtogeojson(overpassJson);
           console.log(JSON.stringify(newGeojson));
           if (newGeojson.features.length === 0) {

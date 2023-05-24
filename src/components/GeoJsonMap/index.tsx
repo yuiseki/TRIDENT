@@ -32,7 +32,14 @@ export const GeoJsonMap = ({ geojson }: { geojson: FeatureCollection }) => {
   if (!geojson) return null;
 
   return (
-    <div style={{ width: "100%", maxHeight: "25vh" }}>
+    <div
+      style={{
+        width: "100%",
+        height: "200px",
+        minHeight: "10vh",
+        maxHeight: "25vh",
+      }}
+    >
       <MapProvider>
         <div style={{ margin: "0px", height: "100%" }}>
           <BaseMap

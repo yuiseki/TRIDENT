@@ -147,7 +147,7 @@ export default function Home() {
           who: "assistant",
           text: greetings,
         },
-        true
+        false
       );
     }
   }, [mounted, insertNewDialogue]);
