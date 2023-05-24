@@ -158,26 +158,26 @@ export const GeoJsonToMarkers: React.FC<{
             {(feature.geometry.type === "Polygon" ||
               feature.geometry.type === "MultiPolygon") && (
               <Source type="geojson" data={feature}>
-                {style?.color && (
+                {
                   <Layer
                     {...{
                       id: `${feature.id}-line`,
                       type: "line",
                       paint: {
                         "line-width": 4,
-                        "line-color": style.color,
+                        "line-color": style?.color ? style.color : "#f2f8fc",
                         "line-opacity": 0.8,
                       },
                     }}
                   />
-                )}
+                }
                 {
                   <Layer
                     {...{
                       id: `${feature.id}-fill`,
                       type: "fill",
                       paint: {
-                        "fill-color": style?.color ? style.color : "#3288bd",
+                        "fill-color": style?.color ? style.color : "#00b8ff",
                         "fill-opacity": 0.2,
                       },
                     }}
