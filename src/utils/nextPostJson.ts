@@ -19,7 +19,7 @@ export const nextPostJsonWithCache = async (
   const md5 = new Md5();
   md5.appendStr(`${url}\n${bodyJsonString}`);
   const hash = md5.end();
-  const key = `trident-geoai-next-post-json-cache-${hash}`;
+  const key = `trident-geoai-next-post-json-cache-2023-05-24${hash}`;
   const unixtime = Math.floor(new Date().getTime() / 1000);
 
   const fetchAndCache = async () => {
