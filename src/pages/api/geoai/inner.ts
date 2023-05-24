@@ -54,7 +54,7 @@ export default async function handler(
 
   console.log("----- ----- -----");
   console.log("----- ----- -----");
-  console.log(chatHistory.join("\n"));
+  console.log(chatHistory.join("\n").replace("\n\n", "\n"));
   //console.log("center", JSON.stringify(center));
   //console.log("bbox", JSON.stringify(bbox));
 
@@ -62,7 +62,7 @@ export default async function handler(
     const model = new OpenAI({ temperature: 0, maxTokens: 2000 });
     const chain = loadGeoAIInnerChain({ llm: model });
     const result = await chain.call({
-      chat_history: chatHistory.join("\n"),
+      chat_history: chatHistory.join("\n").replace("\n\n", "\n"),
       //bounds: JSON.stringify(bbox),
       //center: JSON.stringify(center),
     });

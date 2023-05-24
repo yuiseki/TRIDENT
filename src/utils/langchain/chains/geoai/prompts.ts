@@ -170,6 +170,15 @@ out geom;
 \`\`\`
 
 Input text:
+Area: Tokyo
+Output:
+\`\`\`
+[out:json][timeout:30000];
+relation["name"="Tokyo"];
+out geom;
+\`\`\`
+
+Input text:
 Area: Taito-ku
 Output:
 \`\`\`
