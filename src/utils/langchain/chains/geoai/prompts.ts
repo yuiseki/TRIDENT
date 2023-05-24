@@ -47,14 +47,14 @@ You will always reply according to the following rules:
 Examples of map definition:
 ===
 Input text:
-Sudan and South Sudan
+Human: Sudan and South Sudan
 Output:
 ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
 Area: Sudan
 Area: South Sudan
 
 Input text:
-Show UN facilities in New York City.
+Human: Show UN facilities in New York City.
 Output:
 ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
 EmojiForConcern: UN facilities, 🇺🇳
@@ -63,33 +63,33 @@ Area: City of New York
 AreaWithConcern City of New York, UN facilities
 
 Input text:
-東京都中央区
+Human: 東京都中央区
 Output:
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
 Area: Chuo-ku, Tokyo
 
 Input text:
-スーダンと南スーダンの首都を表示して
+Human: スーダンと南スーダンの首都を表示して
 Output:
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
 Area: Khartoum, Sudan
 Area: Juba, South Sudan
 
 Input text:
-台東区を表示して
-ラーメン屋と蕎麦屋を表示して
+Human: 台東区を表示して
+Human: 病院を表示して
 Output:
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
-EmojiForConcern: ramen shops, 🍜
-ColorForConcern: ramen shops, lightyellow
-EmojiForConcern: soba noodle shops, 🍜
-ColorForConcern: soba noodle shops, lightgreen
+EmojiForConcern: hospitals, 🏥
+ColorForConcern: hospitals, red
+EmojiForConcern: doctors, 🩺
+ColorForConcern: doctors, lightpink
 Area: Taito-ku
-AreaWithConcern: Taito-ku, Tokyo, soba noodle shops
-AreaWithConcern: Taito-ku, Tokyo, ramen shops
+AreaWithConcern: Taito-ku, Tokyo, hospitals
+AreaWithConcern: Taito-ku, Tokyo, doctors
 
 Input text:
-Map of national treasure castles in Japan
+Human: Show national treasure castles in Japan
 Output:
 ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
 EmojiForConcern: national treasure castles, 🏯
@@ -98,7 +98,7 @@ Area: Japan
 AreaWithConcern: Japan, national treasure castles
 
 Input text:
-日本でソニーの名前を持つ会社・工場などを表示して
+Human: 日本でソニーの名前を持つ会社・工場などを表示して
 Output:
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
 EmojiForConcern: Sony companies, 🏢
@@ -110,7 +110,7 @@ AreaWithConcern: Japan, Sony companies
 AreaWithConcern: Japan, Sony factories
 
 Input text:
-Show AL Apartments and Innovation and Training Park Prizren in Municipality of Prizren, Kosovo.
+Human: Show AL Apartments and Innovation and Training Park Prizren in Municipality of Prizren, Kosovo.
 Output:
 ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
 EmojiForConcern: AL Apartments, 🏠
@@ -127,8 +127,6 @@ ConfirmHelpful: 地図の作成が完了しました。他にご要望はあり�
 ConfirmHelpful: 地图的制作已经完成了。你还有其他要求吗？我们对你有帮助吗？
 EmojiForConcern: military facilities, 🪖
 ColorForConcern: military facilities, yellow
-EmojiForConcern: hospitals, 🏥
-ColorForConcern: hospitals, pink
 EmojiForConcern: shelters, 🏕
 ColorForConcern: shelters, green
 EmojiForConcern: parks, 🌲
@@ -139,6 +137,10 @@ EmojiForConcern: fast foods, 🍔
 ColorForConcern: fast foods, coral
 EmojiForConcern: bars, 🍻
 ColorForConcern: bars, yellow
+EmojiForConcern: ramen shops, 🍜
+ColorForConcern: ramen shops, lightyellow
+EmojiForConcern: soba noodle shops, 🍜
+ColorForConcern: soba noodle shops, lightgreen
 EmojiForConcern: buddhist temple, 🛕
 ColorForConcern: buddhist temple, lightyellow
 EmojiForConcern: shrine, ⛩
@@ -223,6 +225,7 @@ Output:
 area["name"="Sudan"]->.searchArea;
 (
   nwr["amenity"="hospital"](area.searchArea);
+  nwr["amenity"="doctors"](area.searchArea);
 );
 out geom;
 \`\`\`
