@@ -72,8 +72,8 @@ Input text:
 スーダンと南スーダンの首都を表示して
 Output:
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
-Area: Khartoum
-Area: Juba
+Area: Khartoum, Sudan
+Area: Juba, South Sudan
 
 Input text:
 台東区を表示して
