@@ -8,6 +8,7 @@ import {
   HumanChatMessage,
 } from "langchain/schema";
 import type { NextApiRequest, NextApiResponse } from "next";
+import * as turf from "@turf/turf";
 
 export default async function handler(
   req: NextApiRequest,
@@ -15,14 +16,14 @@ export default async function handler(
 ) {
   const pastMessagesJsonString = getRequestParamAsString(req, "pastMessages");
 
-  /*
   const centerJsonString = getRequestParamAsString(req, "center");
   const center = centerJsonString ? JSON.parse(centerJsonString) : undefined;
   const boundsJsonString = getRequestParamAsString(req, "bounds");
   const boundsJson = boundsJsonString
     ? JSON.parse(boundsJsonString)
     : undefined;
-  let bbox;
+  let bbox: number[] | undefined;
+  let bboxArea;
   if (boundsJson) {
     bbox = [
       boundsJson["_sw"].lat,
@@ -30,8 +31,12 @@ export default async function handler(
       boundsJson["_ne"].lat,
       boundsJson["_ne"].lng,
     ];
+    const boundsPolygon = turf.bboxPolygon(bbox);
+    bboxArea = turf.area(boundsPolygon);
+    if (205388007 < bboxArea) {
+      bbox = undefined;
+    }
   }
-  */
 
   let chatHistory: string[] = [];
   if (pastMessagesJsonString && pastMessagesJsonString !== "undefined") {
@@ -55,15 +60,21 @@ export default async function handler(
   console.log("----- ----- -----");
   console.log("----- ----- -----");
   console.log(chatHistory.join("\n").replace("\n\n", "\n"));
-  //console.log("center", JSON.stringify(center));
-  //console.log("bbox", JSON.stringify(bbox));
+  // {"lng":139.77250373249035,"lat":35.7149285624982}
+  console.log("center", JSON.stringify(center));
+  // [35.70627531465682,139.7596437274433,35.72358087083748,139.78536373754145]
+  console.log("bbox", JSON.stringify(bbox));
+  // 地球全体: 235420614855566.94
+  // 三ノ輪: 3876858.594090954
+  // 山手線: 205388007.54351923
+  console.log("bbox area:", bboxArea);
 
   try {
     const model = new OpenAI({ temperature: 0, maxTokens: 2000 });
     const chain = loadGeoAIInnerChain({ llm: model });
     const result = await chain.call({
       chat_history: chatHistory.join("\n").replace("\n\n", "\n"),
-      //bounds: JSON.stringify(bbox),
+      //bbox: JSON.stringify(bbox),
       //center: JSON.stringify(center),
     });
 

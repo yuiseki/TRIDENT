@@ -320,13 +320,11 @@ out geom;
       const deepResJson = await nextPostJsonWithCache("/api/geoai/deep", {
         query: line,
       });
-      console.log("deep: ", deepResJson.deep);
       if (deepResJson.deep.toLowerCase().includes("no valid")) {
         setMapping(false);
         return;
       }
       const overpassQuery = deepResJson.deep.split("```")[1];
-      console.log(overpassQuery);
 
       const handleOverpassResponseJson = async (
         overpassResponseJson: any,

@@ -25,6 +25,44 @@ AI:`,
   inputVariables: ["history", "input"],
 });
 
+const geoAIInnerHints = `
+ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
+ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+ConfirmHelpful: 地图的制作已经完成了。你还有其他要求吗？我们对你有帮助吗？
+EmojiForConcern: military facilities, 🪖
+ColorForConcern: military facilities, yellow
+EmojiForConcern: shelters, 🏕
+ColorForConcern: shelters, green
+EmojiForConcern: restaurants, 🍴
+ColorForConcern: restaurants, pink
+EmojiForConcern: fast foods, 🍔
+ColorForConcern: fast foods, coral
+EmojiForConcern: bars, 🍻
+ColorForConcern: bars, yellow
+EmojiForConcern: ramen shops, 🍜
+ColorForConcern: ramen shops, lightyellow
+EmojiForConcern: soba noodle shops, 🍜
+ColorForConcern: soba noodle shops, lightgreen
+EmojiForConcern: buddhist temple, 🛕
+ColorForConcern: buddhist temple, lightyellow
+EmojiForConcern: shrine, ⛩
+ColorForConcern: shrine, lightgreen
+EmojiForConcern: national treasure castles, 🏯
+ColorForConcern: national treasure castles, white
+`;
+const bboxInnerLang = `
+Input text:
+Human: 駅と公園を表示して
+Bounding Box: [[35.7062,139.7596,35.7235,139.7853]]
+Output:
+ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+EmojiForConcern: parks, 🌲
+ColorForConcern: parks, green
+EmojiForConcern: railway stations, 🚉
+ColorForConcern: railway stations, gray
+BoundingBoxWithConcern: bbox[[35.7062,139.7596,35.7235,139.7853]], parks
+BoundingBoxWithConcern: bbox[[35.7062,139.7596,35.7235,139.7853]], railway stations
+`;
 export const GEOAI_INNER_PROMPT = new PromptTemplate({
   template: `You are a conversation analysis assistant dedicated to generate web maps. You analyze the following conversation and accurately output map definition to instruct the Map Building Agent. Map definition MUST be enclosed by three backticks on new lines, denoting that it is a code block.
 
@@ -61,15 +99,6 @@ Area: Sudan
 Area: South Sudan
 
 Input text:
-Human: Show UN facilities in New York City.
-Output:
-ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
-EmojiForConcern: UN facilities, 🇺🇳
-ColorForConcern: UN facilities, lightblue
-Area: City of New York
-AreaWithConcern City of New York, UN facilities
-
-Input text:
 Human: 東京都中央区
 Output:
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
@@ -83,6 +112,15 @@ Area: Khartoum, Sudan
 Area: Juba, South Sudan
 
 Input text:
+Human: Show UN facilities in New York City.
+Output:
+ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
+EmojiForConcern: UN facilities, 🇺🇳
+ColorForConcern: UN facilities, lightblue
+Area: City of New York
+AreaWithConcern City of New York, UN facilities
+
+Input text:
 Human: 台東区を表示して
 Human: 病院を表示して
 Output:
@@ -91,18 +129,9 @@ EmojiForConcern: hospitals, 🏥
 ColorForConcern: hospitals, red
 EmojiForConcern: doctors, 🩺
 ColorForConcern: doctors, lightpink
-Area: Taito-ku
+Area: Taito-ku, Tokyo
 AreaWithConcern: Taito-ku, Tokyo, hospitals
 AreaWithConcern: Taito-ku, Tokyo, doctors
-
-Input text:
-Human: Show national treasure castles in Japan
-Output:
-ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
-EmojiForConcern: national treasure castles, 🏯
-ColorForConcern: national treasure castles, white
-Area: Japan
-AreaWithConcern: Japan, national treasure castles
 
 Input text:
 Human: 日本でソニーの名前を持つ会社・工場などを表示して
@@ -127,39 +156,27 @@ ColorForConcern: Innovation and Training Park Prizren, blue
 Area: Municipality of Prizren, Kosovo
 AreaWithConcern: Municipality of Prizren, Kosovo, AL Apartments
 AreaWithConcern: Municipality of Prizren, Kosovo, Innovation and Training Park Prizren
-
-Hints:
-ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
-ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
-ConfirmHelpful: 地图的制作已经完成了。你还有其他要求吗？我们对你有帮助吗？
-EmojiForConcern: military facilities, 🪖
-ColorForConcern: military facilities, yellow
-EmojiForConcern: shelters, 🏕
-ColorForConcern: shelters, green
-EmojiForConcern: parks, 🌲
-ColorForConcern: parks, green
-EmojiForConcern: restaurants, 🍴
-ColorForConcern: restaurants, pink
-EmojiForConcern: fast foods, 🍔
-ColorForConcern: fast foods, coral
-EmojiForConcern: bars, 🍻
-ColorForConcern: bars, yellow
-EmojiForConcern: ramen shops, 🍜
-ColorForConcern: ramen shops, lightyellow
-EmojiForConcern: soba noodle shops, 🍜
-ColorForConcern: soba noodle shops, lightgreen
-EmojiForConcern: buddhist temple, 🛕
-ColorForConcern: buddhist temple, lightyellow
-EmojiForConcern: shrine, ⛩
-ColorForConcern: shrine, lightgreen
 ===
 
-Conversation history:
+Useful hints of map definition:${geoAIInnerHints}
+
+Conversation History:
 {chat_history}
+
 Output:`,
   inputVariables: ["chat_history"],
 });
 
+const bboxQueryExample = `
+Input text:
+BoundingBoxWithConcern: bbox[[35.7062,139.7596,35.7235,139.7853]], parks
+Output:
+\`\`\`
+[out:json][timeout:30000];
+nwr["leisure"="park"](35.7062,139.7596,35.7235,139.7853);
+out geom;
+\`\`\`
+`;
 export const GEOAI_DEEP_PROMPT = new PromptTemplate({
   template: `You are an expert OpenStreetMap and Overpass API. You output the best Overpass API query based on input text.
 

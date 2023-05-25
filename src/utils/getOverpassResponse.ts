@@ -21,6 +21,8 @@ export const getOverpassResponseJsonWithCache = async (
   const key = `trident-geoai-overpass-cache-${hash}`;
   const unixtime = Math.floor(new Date().getTime() / 1000);
 
+  console.log(overpassQuery);
+
   const getAndCache = async () => {
     const json = await getOverpassResponseJson(overpassQuery);
     const valueToStore = {
