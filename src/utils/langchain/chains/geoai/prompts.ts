@@ -105,6 +105,12 @@ ConfirmHelpful: 地図の作成が完了しました。他にご要望はあり�
 Area: Chuo-ku, Tokyo
 
 Input text:
+Human: 静岡県伊豆市
+Output:
+ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+Area: Izu, Shizuoka Prefecture 
+
+Input text:
 Human: スーダンと南スーダンの首都を表示して
 Output:
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
