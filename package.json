@@ -35,7 +35,7 @@
     "@pinecone-database/pinecone": "^0.1.0",
     "@turf/turf": "^6.5.0",
     "@types/node": "18.16.16",
-    "@types/react": "18.2.6",
+    "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
     "cheerio": "^1.0.0-rc.12",
     "dotenv": "^16.0.3",
