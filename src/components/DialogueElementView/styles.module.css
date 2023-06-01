@@ -1,0 +1,22 @@
+.dialogueElementView {
+  display: flex;
+  flex-direction: row;
+  line-height: 1.5;
+  gap: 8px;
+  width: 100%;
+  padding: 8px 10px;
+  margin: 15px auto 15px;
+  border: 2px solid rgba(55, 55, 55, 0.5);
+  border-radius: 2px;
+  box-shadow: 0 2px 6px 0 rgba(55, 55, 55, 0.3);
+}
+
+.dialogueElementViewAssistant {
+  color: rgba(236, 236, 241, 0.8);
+  background: rgba(68, 70, 84, 0.8);
+}
+
+.dialogueElementViewHuman {
+  color: rgba(236, 236, 241, 1);
+  background: rgba(52, 53, 65, 0.8);
+}
