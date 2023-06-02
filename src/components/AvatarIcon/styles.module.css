@@ -4,19 +4,17 @@
   justify-content: center;
   width: 30px;
   height: 30px;
-  margin: 0 10px;
-  border-radius: 2px;
+  margin: 0;
+  border-radius: 0.125rem;
   backdrop-filter: blur(4px);
 }
 
 .avatarIconAssistant {
   border: 2px solid rgba(0, 158, 219, 0.6);
-  box-shadow: 0 2px 2px 0 rgba(0, 158, 219, 0.6);
   background: rgb(0, 158, 219);
 }
 
 .avatarIconHuman {
   border: 2px solid rgba(96, 104, 124, 0.6);
-  box-shadow: 0 2px 2px 0 rgba(209, 209, 209, 0.3);
   background: rgba(209, 209, 209, 0.4);
 }

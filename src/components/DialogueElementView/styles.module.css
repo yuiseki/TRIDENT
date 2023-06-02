@@ -2,13 +2,22 @@
   display: flex;
   flex-direction: row;
   line-height: 1.5;
-  gap: 8px;
   width: 100%;
+  gap: 10px;
   padding: 8px 10px;
-  margin: 15px auto 15px;
+  margin: 10px auto 10px;
   border: 2px solid rgba(55, 55, 55, 0.5);
   border-radius: 2px;
   box-shadow: 0 2px 6px 0 rgba(55, 55, 55, 0.3);
+}
+
+@media screen and (max-width: 600px) {
+  .dialogueElementView {
+    gap: 6px;
+    padding: 8px 6px;
+    margin: 0px auto 0px;
+    border: none;
+  }
 }
 
 .dialogueElementViewAssistant {

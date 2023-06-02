@@ -58,7 +58,7 @@ export const TextInput = ({
       <button
         className={styles.textInputButton}
         onClick={onSubmit}
-        disabled={disabled}
+        disabled={disabled || inputText.length === 0}
         style={{
           display: "block",
           padding: "4px",

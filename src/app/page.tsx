@@ -369,6 +369,7 @@ export default function Home() {
           </div>
           <div
             style={{
+              fontSize: "0.8rem",
               color: "white",
               width: "100%",
               textAlign: "center",
