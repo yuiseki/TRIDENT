@@ -7,7 +7,7 @@ import { loadTridentSurfaceChain } from "@/utils/langchain/chains/surface";
 export async function POST(request: Request) {
   const res = await request.json();
   const query = res.query;
-  const pastMessagesJsonString = res.pastMessagesJsonString;
+  const pastMessagesJsonString = res.pastMessages;
 
   let chatHistory = undefined;
   if (pastMessagesJsonString && pastMessagesJsonString !== "undefined") {
@@ -34,7 +34,7 @@ export async function POST(request: Request) {
     chatHistory,
   });
 
-  const model = new OpenAI({ temperature: 0, maxTokens: 2000 });
+  const model = new OpenAI({ temperature: 0 });
   const surfaceChain = loadTridentSurfaceChain({ llm: model, memory });
   const surfaceResult = await surfaceChain.call({ input: query });
 

@@ -30,7 +30,7 @@ export async function POST(request: Request) {
   console.log("----- ----- -----");
   console.log(chatHistory.join("\n").replace("\n\n", "\n"));
 
-  const model = new OpenAI({ temperature: 0, maxTokens: 2000 });
+  const model = new OpenAI({ temperature: 0 });
   const chain = loadTridentInnerChain({ llm: model });
   const result = await chain.call({
     chat_history: chatHistory.join("\n").replace("\n\n", "\n"),

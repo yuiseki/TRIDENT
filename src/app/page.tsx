@@ -154,6 +154,7 @@ export default function Home() {
     await sleep(200);
     scrollToBottom();
 
+    console.log(JSON.stringify(pastMessages, null, 2));
     const surfaceRes = await nextPostJson("/api/surface", {
       query: newInputText,
       pastMessages: pastMessages ? JSON.stringify(pastMessages) : undefined,

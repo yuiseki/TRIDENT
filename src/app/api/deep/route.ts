@@ -6,7 +6,7 @@ export async function POST(request: Request) {
   const res = await request.json();
   const query = res.query;
 
-  const model = new OpenAI({ temperature: 0, maxTokens: 2000 });
+  const model = new OpenAI({ temperature: 0 });
   const chain = loadTridentDeepChain({ llm: model });
   const result = await chain.call({ text: query });
 
