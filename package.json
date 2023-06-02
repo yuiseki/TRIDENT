@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ducanh2912/next-pwa": "^8.5.1",
     "@turf/turf": "^6.5.0",
     "@types/node": "20.2.5",
     "@types/react": "18.2.7",
