@@ -113,12 +113,12 @@ div.overlay {
   right: 10px;
 }
 
-main.geoaiMain {
+main.tridentMain {
   width: 100vw;
   height: 100dvh;
 }
 
-.geoAIBackgroundWrap {
+.tridentBackgroundWrap {
   position: fixed;
   top: 0;
   left: 0;
@@ -126,7 +126,7 @@ main.geoaiMain {
   height: 100vh;
 }
 
-.geoAIBackgroundFlag {
+.tridentBackgroundFlag {
   position: absolute;
   top: 0;
   left: 0;
@@ -140,7 +140,7 @@ main.geoaiMain {
   z-index: 9;
 }
 
-.geoAIBackgroundOverlay {
+.tridentBackgroundOverlay {
   position: relative;
   top: 0;
   left: 0;
@@ -150,7 +150,7 @@ main.geoaiMain {
   z-index: 10;
 }
 
-.geoAIDialogueOuterWrap {
+.tridentDialogueOuterWrap {
   position: fixed;
   top: 0;
   left: 0;
@@ -160,14 +160,14 @@ main.geoaiMain {
   overflow-y: scroll;
 }
 
-.geoAIDialogueInnerWrap {
+.tridentDialogueInnerWrap {
   width: 95%;
   margin: 0 auto 15vh;
   z-index: 1000;
   background: transparent;
 }
 
-.geoAIInputOuterWrap {
+.tridentInputOuterWrap {
   position: absolute;
   left: 0;
   bottom: 10px;
@@ -176,12 +176,12 @@ main.geoaiMain {
   overflow-y: scroll;
 }
 
-.geoAIInputInnerWrap {
+.tridentInputInnerWrap {
   width: 95%;
   margin: auto;
 }
 
-.geoAIMapWrap {
+.tridentMapWrap {
   position: fixed;
   top: 0;
   left: 40%;
@@ -191,7 +191,7 @@ main.geoaiMain {
   z-index: 1000;
 }
 
-.geoAIMapSelectWrap select {
+.tridentMapSelectWrap select {
   font-size: 1rem;
   line-height: 1.4;
   appearance: none;
@@ -206,23 +206,23 @@ main.geoaiMain {
 }
 
 @media screen and (max-width: 600px) {
-  .geoAIBackgroundWrap {
+  .tridentBackgroundWrap {
     width: 100%;
     height: 50dvh;
     top: inherit;
     bottom: 0;
   }
-  .geoAIDialogueOuterWrap {
+  .tridentDialogueOuterWrap {
     width: 100%;
     height: 50dvh;
     top: inherit;
     bottom: -5vh;
   }
-  .geoAIInputOuterWrap {
+  .tridentInputOuterWrap {
     width: 100%;
     height: auto;
   }
-  .geoAIMapWrap {
+  .tridentMapWrap {
     width: 100%;
     top: 0;
     left: 0;

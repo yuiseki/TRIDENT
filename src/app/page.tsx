@@ -316,12 +316,12 @@ export default function Home() {
     <>
       <Head>
         <title>
-          TRIDENT GeoAI - Interactive geospatial situation awareness empowerment
-          system
+          TRIDENT trident - Interactive geospatial situation awareness
+          empowerment system
         </title>
         <meta
           name="description"
-          content="TRIDENT GeoAI - Interactive geospatial situation awareness empowerment system"
+          content="TRIDENT trident - Interactive geospatial situation awareness empowerment system"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
@@ -329,13 +329,13 @@ export default function Home() {
           href="https://i.gyazo.com/36f5e676caec5f5e746a95054a46504f.png"
         />
       </Head>
-      <main className="geoaiMain">
-        <div className="geoAIBackgroundWrap">
-          <div className="geoAIBackgroundFlag"></div>
-          <div className="geoAIBackgroundOverlay"></div>
+      <main className="tridentMain">
+        <div className="tridentBackgroundWrap">
+          <div className="tridentBackgroundFlag"></div>
+          <div className="tridentBackgroundOverlay"></div>
         </div>
-        <div className="geoAIDialogueOuterWrap" ref={dialogueRef}>
-          <div className="geoAIDialogueInnerWrap">
+        <div className="tridentDialogueOuterWrap" ref={dialogueRef}>
+          <div className="tridentDialogueInnerWrap">
             {dialogueList.map((dialogueElement, dialogueIndex) => {
               return (
                 <div key={dialogueIndex}>
@@ -352,8 +352,8 @@ export default function Home() {
             })}
           </div>
         </div>
-        <div className="geoAIInputOuterWrap">
-          <div className="geoAIInputInnerWrap">
+        <div className="tridentInputOuterWrap">
+          <div className="tridentInputInnerWrap">
             <TextInput
               textareaRef={textareaRef}
               disabled={responding || lazyInserting || mapping}
@@ -378,8 +378,8 @@ export default function Home() {
             TRIDENT may produce inaccurate information.
           </div>
         </div>
-        <div className="geoAIMapWrap">
-          <div className="geoAIMapSelectWrap">
+        <div className="tridentMapWrap">
+          <div className="tridentMapSelectWrap">
             <select
               style={{
                 position: "absolute",

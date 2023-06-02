@@ -1,6 +1,6 @@
 import { PromptTemplate } from "langchain/prompts";
 
-const geoAIInnerHints = `
+const tridentInnerHints = `
 ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
 ConfirmHelpful: 地图的制作已经完成了。你还有其他要求吗？我们对你有帮助吗？
@@ -139,7 +139,7 @@ AreaWithConcern: Municipality of Prizren, Kosovo, AL Apartments
 AreaWithConcern: Municipality of Prizren, Kosovo, Innovation and Training Park Prizren
 ===
 
-Useful hints of map definition:${geoAIInnerHints}
+Useful hints of map definition:${tridentInnerHints}
 
 Conversation History:
 {chat_history}
