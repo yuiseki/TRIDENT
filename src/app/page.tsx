@@ -14,7 +14,6 @@ import { getOverpassResponseJsonWithCache } from "@/utils/getOverpassResponse";
 import osmtogeojson from "osmtogeojson";
 import * as turf from "@turf/turf";
 import { TridentMapsStyle } from "@/types/TridentMaps";
-import Head from "next/head";
 import { useLocalStorage } from "@/hooks/localStorage";
 
 const greetings = `Hello! I'm TRIDENT, interactive Smart Maps assistant. Could you indicate me the areas and themes you want to see as the map?`;
@@ -29,6 +28,8 @@ export default function Home() {
   const [geojsonWithStyleList, setGeojsonWithStyleList] = useState<
     Array<{ id: string; style: TridentMapsStyle; geojson: FeatureCollection }>
   >([]);
+  const [mapTitle, setMapTitle] = useState<string | undefined>(undefined);
+
   // base maps
   const [mapStyleJsonUrl, setMapStyleJsonUrl] = useLocalStorage<string>(
     "trident-selected-map-style-json-url",
@@ -154,7 +155,6 @@ export default function Home() {
     await sleep(200);
     scrollToBottom();
 
-    console.log(JSON.stringify(pastMessages, null, 2));
     const surfaceRes = await nextPostJson("/api/surface", {
       query: newInputText,
       pastMessages: pastMessages ? JSON.stringify(pastMessages) : undefined,
@@ -206,6 +206,10 @@ export default function Home() {
     const lines = innerResJson.inner.split("\n");
     lines.map(async (line: string, idx: number) => {
       console.log(`inner line ${idx}:`, line);
+      if (line.includes("Title")) {
+        const newMapTitle = line.split(":")[1];
+        setMapTitle(newMapTitle);
+      }
       if (line.includes("Emoji")) {
         const concern = line.split(":")[1].split(",")[0];
         const emoji = line.split(":")[1].split(",")[1];
@@ -294,6 +298,11 @@ export default function Home() {
     });
   }, [inputText, insertNewDialogue, pastMessages, scrollToBottom]);
 
+  const [pageTitle, setPageTitle] = useState("TRIDENT");
+  useEffect(() => {
+    setPageTitle(mapTitle ? `${mapTitle} | TRIDENT` : "TRIDENT");
+  }, [mapTitle]);
+
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
     if (!mounted) {
@@ -315,21 +324,7 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>
-          TRIDENT trident - Interactive geospatial situation awareness
-          empowerment system
-        </title>
-        <meta
-          name="description"
-          content="TRIDENT trident - Interactive geospatial situation awareness empowerment system"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-          rel="icon"
-          href="https://i.gyazo.com/36f5e676caec5f5e746a95054a46504f.png"
-        />
-      </Head>
+      <title>{pageTitle}</title>
       <main className="tridentMain">
         <div className="tridentBackgroundWrap">
           <div className="tridentBackgroundFlag"></div>

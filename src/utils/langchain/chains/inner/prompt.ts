@@ -43,6 +43,7 @@ export const TRIDENT_INNER_PROMPT = new PromptTemplate({
 
 Use the following format for map definition:
 ConfirmHelpful: text that meanings "Mapping has been completed. Do you have any other requests? Have we been helpful to you?", MUST be the last language written by the human
+TitleOfMap: very shot text that best suited to explain this map.
 EmojiForConcern: emoji best suited to expressing specific concern, MUST be unique for each concern
 ColorForConcern: color name best suited to expressing specific concern, MUST be unique for each concern, should be one of the name of Web Safe Color
 Area: geospatial area mentioned by human
@@ -70,6 +71,7 @@ Input text:
 Human: Sudan and South Sudan
 Output:
 ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
+TitleOfMap: Sudan and South Sudan
 Area: Sudan
 Area: South Sudan
 
@@ -77,18 +79,21 @@ Input text:
 Human: 東京都中央区
 Output:
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+TitleOfMap: 東京都中央区
 Area: Chuo-ku, Tokyo
 
 Input text:
 Human: 静岡県伊豆市
 Output:
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+TitleOfMap: 静岡県伊豆市
 Area: Izu, Shizuoka Prefecture 
 
 Input text:
 Human: スーダンと南スーダンの首都を表示して
 Output:
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+TitleOfMap: スーダンと南スーダンの首都
 Area: Khartoum, Sudan
 Area: Juba, South Sudan
 
@@ -96,6 +101,7 @@ Input text:
 Human: Show UN facilities in New York City.
 Output:
 ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
+TitleOfMap: UN facilities in New York City
 EmojiForConcern: UN facilities, 🇺🇳
 ColorForConcern: UN facilities, lightblue
 Area: City of New York
@@ -106,6 +112,7 @@ Human: 台東区を表示して
 Human: 病院を表示して
 Output:
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+TitleOfMap: 台東区の病院
 EmojiForConcern: hospitals, 🏥
 ColorForConcern: hospitals, red
 EmojiForConcern: doctors, 🩺
@@ -118,6 +125,7 @@ Input text:
 Human: 日本でソニーの名前を持つ会社・工場などを表示して
 Output:
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+TitleOfMap: 日本のソニー関連の会社と工場
 EmojiForConcern: Sony companies, 🏢
 ColorForConcern: Sony companies, blue
 EmojiForConcern: Sony factories, 🏭
@@ -130,6 +138,7 @@ Input text:
 Human: Show AL Apartments and Innovation and Training Park Prizren in Municipality of Prizren, Kosovo.
 Output:
 ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
+TitleOfMap: Apartment and Park in Municipality of Prizren
 EmojiForConcern: AL Apartments, 🏠
 ColorForConcern: AL Apartments, cyan
 EmojiForConcern: Innovation and Training Park Prizren, 🏢
