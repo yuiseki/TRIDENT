@@ -331,6 +331,7 @@ export default function Home() {
           <div className="tridentBackgroundOverlay"></div>
         </div>
         <div className="tridentDialogueOuterWrap" ref={dialogueRef}>
+          <div className="tridentMapTitle">{mapTitle}</div>
           <div className="tridentDialogueInnerWrap">
             {dialogueList.map((dialogueElement, dialogueIndex) => {
               return (

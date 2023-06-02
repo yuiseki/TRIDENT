@@ -154,6 +154,21 @@ main.tridentMain {
   overflow-y: scroll;
 }
 
+.tridentMapTitle {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  color: rgba(236, 236, 241, 1);
+  background: rgba(52, 53, 65, 0.8);
+  backdrop-filter: blur(2px);
+  line-height: 2rem;
+  height: 2rem;
+  z-index: 2000;
+}
+
 .tridentDialogueInnerWrap {
   width: 95%;
   margin: 0 auto 15vh;
