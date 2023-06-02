@@ -30,11 +30,12 @@ body {
 
 input[type="button"]:disabled {
   opacity: 0.4;
-  background-color: rgba(0, 158, 219, 0.4) !important;
+  background-color: rgba(0, 158, 219, 0.95) !important;
 }
 
 button {
   cursor: pointer;
+  background-color: rgba(0, 158, 219, 0.95) !important;
 }
 
 button:disabled {

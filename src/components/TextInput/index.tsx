@@ -69,8 +69,8 @@ export const TextInput = ({
         <img
           style={{ height: "24px", width: "24px" }}
           src="https://i.gyazo.com/d597c2b08219ea88a211cf98859d9265.png"
-          alt="Request updating of web site"
-          title="Request updating of web site"
+          alt="Submit (Ctrl + Enter)"
+          title="Submit (Ctrl + Enter)"
         />
       </button>
     </div>
