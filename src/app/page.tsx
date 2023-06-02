@@ -383,8 +383,8 @@ export default function Home() {
             <select
               style={{
                 position: "absolute",
-                top: 40,
-                right: 10,
+                bottom: 10,
+                left: 10,
                 zIndex: 10000,
                 maxWidth: "250px",
                 textOverflow: "ellipsis",
