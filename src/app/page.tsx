@@ -171,7 +171,7 @@ export default function Home() {
         who: "assistant",
         text: surfaceResJson.surface,
       },
-      true
+      false
     );
     setMapping(true);
     setResponding(true);
@@ -276,7 +276,7 @@ export default function Home() {
                     ? linesWithConfirm[0].split(":")[1]
                     : "Mapping has been completed. Have we been helpful to you? Do you have any other requests",
               },
-              true
+              false
             );
             setMapping(false);
           }
