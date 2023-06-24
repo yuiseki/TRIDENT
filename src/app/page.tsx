@@ -84,6 +84,8 @@ export default function Home() {
         setDialogueList((prev) => {
           return [...prev, newDialogueElement];
         });
+        scrollToBottom();
+        setResponding(false);
       } else {
         const lazyNewDialogueElement = {
           ...newDialogueElement,
