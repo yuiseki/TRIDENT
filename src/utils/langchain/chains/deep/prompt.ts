@@ -51,7 +51,7 @@ out geom;
 \`\`\`
 
 Input text:
-Area: Taito-ku
+Area: Taito-ku, Tokyo
 Output:
 \`\`\`
 [out:json][timeout:30000];
@@ -71,6 +71,15 @@ area["name"="Tokyo"]->.searchArea;
 (
   relation["name"="Kita"](area.searchArea);
 );
+out geom;
+\`\`\`
+
+Input text:
+Area: Prizren, Kosovo
+Output:
+\`\`\`
+[out:json][timeout:30000];
+relation["name"="Municipality of Prizren"];
 out geom;
 \`\`\`
 
