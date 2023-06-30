@@ -47,6 +47,9 @@ export default function Home() {
       if (geojsonWithStyleList.length === 0) return;
       try {
         console.log(geojsonWithStyleList);
+        geojsonWithStyleList.map((item) =>
+          console.log(JSON.stringify(item.geojson))
+        );
         const everything: FeatureCollection = {
           type: "FeatureCollection",
           features: geojsonWithStyleList
