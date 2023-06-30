@@ -175,13 +175,16 @@ out geom;
 
 Useful hints:
 Hotels: nwr["tourism"="hotel"]
+Church: nwr["building"="church"]
+Mosque: nwr["building"="mosque"]
+Shrine: nwr["amenity"="place_of_worship"]["religion"="shinto"]
+Temples: nwr["amenity"="place_of_worship"]["religion"="buddhist"]
+Important note: Never use "religion"="buddhism". It is wrong. Use "religion"="buddhist" instead.
 Izakaya: nwr["amenity"="bar"]
 Company: nwr["office"="company"]
 Factories: nwr["landuse"="industrial"]
 Important note: Never use "landuse"="factory". It is wrong. Use "landuse"="industrial" instead.
 National treasure castles: nwr["historic"="castle"]["heritage"]
-Temples: nwr["amenity"="place_of_worship"]["religion"="buddhist"]
-Important note: Never use "religion"="buddhism". It is wrong. Use "religion"="buddhist" instead.
 Pizza shops: nwr["amenity"="fast_food"]["cuisine"="pizza"]
 Important note: Pizza shops are fast food, not restaurants!
 Domino's Pizza: nwr["name"~"Domino"]["cuisine"="pizza"]
