@@ -14,8 +14,9 @@ const geoJsonFileParks = await fs.readFile(
 );
 const geoJsonParks: FeatureCollection = JSON.parse(geoJsonFileParks);
 
+const myStationName = "上野";
 const myStation = geoJsonStations.features.filter(
-  (f) => f.properties && f.properties.name === "御徒町"
+  (f) => f.properties && f.properties.name === myStationName
 )[0];
 let myStationCenter;
 switch (myStation.geometry.type) {
