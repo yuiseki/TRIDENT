@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - type: bind
+        source: ${LOCAL_WORKSPACE_FOLDER:-.}
+        target: /app
+    command: npm run dev
+    ports:
+      - 3000:3000
+    networks:
+      - myapp
+
+networks:
+  myapp:
+    name: myapp
