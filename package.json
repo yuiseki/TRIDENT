@@ -17,7 +17,7 @@
     "@turf/turf": "^6.5.0",
     "@types/node": "20.3.3",
     "@types/react": "18.2.14",
-    "@types/react-dom": "18.2.6",
+    "@types/react-dom": "18.2.7",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.9",
     "langchain": "^0.0.88",
