@@ -15,7 +15,7 @@
   "dependencies": {
     "@ducanh2912/next-pwa": "^9.0.0",
     "@turf/turf": "^6.5.0",
-    "@types/node": "20.4.2",
+    "@types/node": "20.4.3",
     "@types/react": "18.2.15",
     "@types/react-dom": "18.2.7",
     "eslint": "8.45.0",
