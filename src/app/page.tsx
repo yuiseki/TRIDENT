@@ -170,6 +170,7 @@ export default function Home() {
       surface: string;
       history: { messages: Array<any> };
     } = await surfaceRes.json();
+    console.log(surfaceResJson);
     setPastMessages(surfaceResJson.history);
     insertNewDialogue(
       {

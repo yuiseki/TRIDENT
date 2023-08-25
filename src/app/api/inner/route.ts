@@ -1,37 +1,43 @@
 import { NextResponse } from "next/server";
 import { OpenAI } from "langchain/llms/openai";
 import { loadTridentInnerChain } from "@/utils/langchain/chains/inner";
+import { BaseChatMessage } from "langchain/schema";
 
 export async function POST(request: Request) {
-  const res = await request.json();
-  const pastMessagesJsonString = res.pastMessages;
-
-  let chatHistory: Array<string | null> = [];
-  let chatHistoryLines = "";
-  if (pastMessagesJsonString && pastMessagesJsonString !== "undefined") {
-    const pastMessages: {
-      messages: Array<{ type: string; data: { content: string } }>;
-    } = JSON.parse(pastMessagesJsonString);
-    chatHistory = pastMessages.messages
-      .map((message, idx) => {
-        if (message.data.content) {
-          if (idx === 0 || idx % 2 === 0) {
-            return `Human: ${message.data.content}`;
-          } else {
-            return null;
-            //return `AI: ${message.data.content}`;
-          }
-        } else {
-          return null;
-        }
-      })
-      .filter((v) => v);
-    chatHistoryLines = chatHistory.join("\n").replace("\n\n", "\n");
-  }
-
   console.log("----- ----- -----");
   console.log("----- inner -----");
   console.log("----- ----- -----");
+
+  const res = await request.json();
+  const pastMessagesJsonString = res.pastMessages;
+
+  console.log("pastMessagesJsonString");
+  console.log(pastMessagesJsonString);
+
+  let chatHistory = undefined;
+  let chatHistoryLines = "";
+  if (pastMessagesJsonString && pastMessagesJsonString !== "undefined") {
+    const pastMessages: Array<{ type: string; data: { content: string } }> =
+      JSON.parse(pastMessagesJsonString);
+    chatHistory =
+      pastMessages &&
+      pastMessages
+        .map((message, idx) => {
+          switch (message.type) {
+            case "human":
+              return `Human: ${message.data.content}`;
+            case "ai":
+              return `AI: ${message.data.content}`;
+            default:
+              return `${message.data.content}`;
+          }
+        })
+        .filter((v) => v);
+    if (chatHistory) {
+      chatHistoryLines = chatHistory.join("\n").replace("\n\n", "\n");
+    }
+  }
+
   console.log(chatHistoryLines);
 
   const model = new OpenAI({ temperature: 0 });
