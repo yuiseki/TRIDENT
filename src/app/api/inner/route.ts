@@ -22,14 +22,14 @@ export async function POST(request: Request) {
     chatHistory =
       pastMessages &&
       pastMessages
-        .map((message, idx) => {
+        .map((message) => {
           switch (message.type) {
             case "human":
               return `Human: ${message.data.content}`;
             case "ai":
-              return `AI: ${message.data.content}`;
+              return null;
             default:
-              return `${message.data.content}`;
+              return null;
           }
         })
         .filter((v) => v);

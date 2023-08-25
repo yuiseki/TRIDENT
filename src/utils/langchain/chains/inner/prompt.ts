@@ -124,6 +124,17 @@ AreaWithConcern: Taito-ku, Tokyo, hospitals
 AreaWithConcern: Taito-ku, Tokyo, doctors
 
 Input text:
+Human: レバノンを表示して
+Human: 大使館を表示して
+Human: 軍事施設も表示して
+Output:
+ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+TitleOfMap: レバノンの大使館と軍事施設
+Area: Lebanon
+AreaWithConcern: Lebanon, Embassies
+AreaWithConcern: Lebanon, Military facilities
+
+Input text:
 Human: 日本でソニーの名前を持つ会社・工場などを表示して
 Output:
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？

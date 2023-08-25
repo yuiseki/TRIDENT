@@ -147,9 +147,7 @@ export default function Home() {
   // communication state
   const [responding, setResponding] = useState(false);
   const [mapping, setMapping] = useState(false);
-  const [pastMessages, setPastMessages] = useState<
-    { messages: Array<any> } | undefined
-  >();
+  const [pastMessages, setPastMessages] = useState<Array<any> | undefined>();
   const onSubmit = useCallback(async () => {
     const newInputText = inputText.trim();
     setInputText("");
@@ -168,10 +166,12 @@ export default function Home() {
     });
     const surfaceResJson: {
       surface: string;
-      history: { messages: Array<any> };
+      history: Array<any>;
     } = await surfaceRes.json();
     console.log(surfaceResJson);
-    setPastMessages(surfaceResJson.history);
+    setPastMessages((prev) => {
+      return [prev, surfaceResJson.history].flat().filter((v) => v);
+    });
     insertNewDialogue(
       {
         who: "assistant",

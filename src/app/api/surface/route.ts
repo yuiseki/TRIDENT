@@ -26,12 +26,15 @@ export async function POST(request: Request) {
     const pastMessages: Array<{ type: string; data: { content: string } }> =
       JSON.parse(pastMessagesJsonString);
 
-    const chatHistoryMessages = pastMessages.map((message, idx: number) => {
+    const chatHistoryMessages = pastMessages.map((message) => {
       if (message.data.content) {
-        if (idx === 0 || idx % 2 === 0) {
-          return new HumanChatMessage(message.data.content);
-        } else {
-          return new AIChatMessage(message.data.content);
+        switch (message.type) {
+          case "human":
+            return new HumanChatMessage(message.data.content);
+          case "ai":
+            return new AIChatMessage(message.data.content);
+          default:
+            return new HumanChatMessage("");
         }
       } else {
         return new HumanChatMessage("");
@@ -43,7 +46,7 @@ export async function POST(request: Request) {
   const memory = new BufferMemory({
     returnMessages: true,
     memoryKey: "history",
-    chatHistory: new ChatMessageHistory(pastMessages),
+    chatHistory: chatHistory,
   });
 
   const model = new OpenAI({ temperature: 0 });
