@@ -174,6 +174,7 @@ out geom;
 ===
 
 Useful hints:
+Embassies: nwr["office"="diplomatic"]
 Hotels: nwr["tourism"="hotel"]
 Church: nwr["building"="church"]
 Mosque: nwr["building"="mosque"]

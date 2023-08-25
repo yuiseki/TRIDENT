@@ -4,6 +4,8 @@ const tridentInnerHints = `
 ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
 ConfirmHelpful: 地图的制作已经完成了。你还有其他要求吗？我们对你有帮助吗？
+EmojiForConcern: embassies, 🏢
+ColorForConcern: embassies, lightblue
 EmojiForConcern: military facilities, 🪖
 ColorForConcern: military facilities, yellow
 EmojiForConcern: shelters, 🏕
