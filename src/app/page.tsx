@@ -363,7 +363,7 @@ export default function Home() {
               placeholder={
                 responding || lazyInserting || mapping
                   ? "..."
-                  : "Show sushi shops in Taito-ku, Tokyo"
+                  : "Show embassies in Lebanon."
               }
               inputText={inputText}
               setInputText={setInputText}
