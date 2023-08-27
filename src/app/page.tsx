@@ -158,7 +158,7 @@ export default function Home() {
     await sleep(200);
     scrollToBottom();
 
-    const surfaceRes = await nextPostJson("/api/surface", {
+    const surfaceRes = await nextPostJson("/api/ai/surface", {
       query: newInputText,
       pastMessages: pastMessages ? JSON.stringify(pastMessages) : undefined,
       bounds: JSON.stringify(mapRef.current?.getBounds()),
@@ -181,7 +181,7 @@ export default function Home() {
     );
     setMapping(true);
     setResponding(true);
-    const innerRes = await nextPostJson("/api/inner", {
+    const innerRes = await nextPostJson("/api/ai/inner", {
       pastMessages: JSON.stringify(surfaceResJson.history),
       bounds: JSON.stringify(mapRef.current?.getBounds()),
       center: JSON.stringify(mapRef.current?.getCenter()),
@@ -251,7 +251,7 @@ export default function Home() {
         }
       });
       setMapping(true);
-      const deepResJson = await nextPostJsonWithCache("/api/deep", {
+      const deepResJson = await nextPostJsonWithCache("/api/ai/deep", {
         query: line,
       });
       if (deepResJson.deep.toLowerCase().includes("no valid")) {
