@@ -115,7 +115,7 @@ EmojiForConcern: Hospitals, 🏥
 ColorForConcern: Hospitals, red
 EmojiForConcern: Doctors, 🩺
 ColorForConcern: Doctors, lightpink
-Area: Taito-ku, Tokyo
+Area: Taito, Tokyo
 AreaWithConcern: Taito, Tokyo, Hospitals
 AreaWithConcern: Taito, Tokyo, Doctors
 

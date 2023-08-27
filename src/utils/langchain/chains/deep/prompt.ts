@@ -49,7 +49,16 @@ Area: Sudan
 Output:
 \`\`\`
 [out:json][timeout:30000];
-relation["name"="Sudan"];
+relation[boundary="administrative"]["name"="Sudan"];
+out geom;
+\`\`\`
+
+Input text:
+Area: Lebanon
+Output:
+\`\`\`
+[out:json][timeout:30000];
+relation[boundary="administrative"]["name"="Lebanon"];
 out geom;
 \`\`\`
 
@@ -58,7 +67,7 @@ Area: New York City
 Output:
 \`\`\`
 [out:json][timeout:30000];
-relation["name"="City of New York"];
+relation[boundary="administrative"]["name"="City of New York"];
 out geom;
 \`\`\`
 
@@ -67,7 +76,7 @@ Area: Tokyo
 Output:
 \`\`\`
 [out:json][timeout:30000];
-relation["name"="Tokyo"];
+relation[boundary="administrative"]["name"="Tokyo"];
 out geom;
 \`\`\`
 
@@ -78,7 +87,7 @@ Output:
 [out:json][timeout:30000];
 area["name"="Tokyo"]->.searchArea;
 (
-  relation["name"="Taito"](area.searchArea);
+  relation[boundary="administrative"]["name"="Taito"](area.searchArea);
 );
 out geom;
 \`\`\`
@@ -90,7 +99,7 @@ Output:
 [out:json][timeout:30000];
 area["name"="Tokyo"]->.searchArea;
 (
-  relation["name"="Kita"](area.searchArea);
+  relation[boundary="administrative"]["name"="Kita"](area.searchArea);
 );
 out geom;
 \`\`\`
@@ -100,7 +109,7 @@ Area: Prizren, Kosovo
 Output:
 \`\`\`
 [out:json][timeout:30000];
-relation["name"="Municipality of Prizren"];
+relation[boundary="administrative"]["name"="Municipality of Prizren"];
 out geom;
 \`\`\`
 
