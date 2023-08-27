@@ -1,5 +1,26 @@
 import { PromptTemplate } from "langchain/prompts";
 
+const tridentDeepHints = `
+Embassies: nwr["office"="diplomatic"]
+Hotels: nwr["tourism"="hotel"]
+Church: nwr["building"="church"]
+Mosque: nwr["building"="mosque"]
+Shrine: nwr["amenity"="place_of_worship"]["religion"="shinto"]
+Temples: nwr["amenity"="place_of_worship"]["religion"="buddhist"]
+Important note: Never use "religion"="buddhism". It is wrong. Use "religion"="buddhist" instead.
+Izakaya: nwr["amenity"="bar"]
+Company: nwr["office"="company"]
+Factories: nwr["landuse"="industrial"]
+Important note: Never use "landuse"="factory". It is wrong. Use "landuse"="industrial" instead.
+National treasure castles: nwr["historic"="castle"]["heritage"]
+Pizza shops: nwr["amenity"="fast_food"]["cuisine"="pizza"]
+Important note: Pizza shops are fast food, not restaurants!
+Domino's Pizza: nwr["name"~"Domino"]["cuisine"="pizza"]
+Seven-Eleven: nwr["name"~"7-Eleven"]
+Soba noodle shops: nwr["amenity"="restaurant"]["cuisine"="soba"]
+Ramen shops: nwr["amenity"="restaurant"]["cuisine"="ramen"]
+Western-style confectionery stores: nwr["shop"="confectionery"]
+`;
 const bboxQueryExample = `
 Input text:
 BoundingBoxWithConcern: bbox[[35.7062,139.7596,35.7235,139.7853]], parks
@@ -51,7 +72,7 @@ out geom;
 \`\`\`
 
 Input text:
-Area: Taito-ku, Tokyo
+Area: Taito, Tokyo
 Output:
 \`\`\`
 [out:json][timeout:30000];
@@ -63,7 +84,7 @@ out geom;
 \`\`\`
 
 Input text:
-Area: Kita-ku, Tokyo
+Area: Kita, Tokyo
 Output:
 \`\`\`
 [out:json][timeout:30000];
@@ -84,7 +105,7 @@ out geom;
 \`\`\`
 
 Input text:
-AreaWithConcern: Sudan, hospitals
+AreaWithConcern: Sudan, Hospitals
 Output:
 \`\`\`
 [out:json][timeout:30000];
@@ -97,7 +118,7 @@ out geom;
 \`\`\`
 
 Input text:
-AreaWithConcern: Sudan, shelters
+AreaWithConcern: Sudan, Shelters
 Output:
 \`\`\`
 [out:json][timeout:30000];
@@ -110,7 +131,7 @@ out geom;
 \`\`\`
 
 Input text:
-AreaWithConcern: Taito, Tokyo, hotels
+AreaWithConcern: Taito, Tokyo, Hotels
 Output:
 \`\`\`
 [out:json][timeout:30000];
@@ -135,7 +156,7 @@ out geom;
 \`\`\`
 
 Input text:
-AreaWithConcern: Juba, South Sudan, military facilities
+AreaWithConcern: Juba, South Sudan, Military facilities
 Output:
 \`\`\`
 [out:json][timeout:30000];
@@ -161,7 +182,7 @@ out geom;
 \`\`\`
 
 Input text:
-AreaWithConcern: Prizren, bars
+AreaWithConcern: Prizren, Bars
 Output:
 \`\`\`
 [out:json][timeout:30000];
@@ -173,26 +194,7 @@ out geom;
 \`\`\`
 ===
 
-Useful hints:
-Embassies: nwr["office"="diplomatic"]
-Hotels: nwr["tourism"="hotel"]
-Church: nwr["building"="church"]
-Mosque: nwr["building"="mosque"]
-Shrine: nwr["amenity"="place_of_worship"]["religion"="shinto"]
-Temples: nwr["amenity"="place_of_worship"]["religion"="buddhist"]
-Important note: Never use "religion"="buddhism". It is wrong. Use "religion"="buddhist" instead.
-Izakaya: nwr["amenity"="bar"]
-Company: nwr["office"="company"]
-Factories: nwr["landuse"="industrial"]
-Important note: Never use "landuse"="factory". It is wrong. Use "landuse"="industrial" instead.
-National treasure castles: nwr["historic"="castle"]["heritage"]
-Pizza shops: nwr["amenity"="fast_food"]["cuisine"="pizza"]
-Important note: Pizza shops are fast food, not restaurants!
-Domino's Pizza: nwr["name"~"Domino"]["cuisine"="pizza"]
-Seven-Eleven: nwr["name"~"7-Eleven"]
-Soba noodle shops: nwr["amenity"="restaurant"]["cuisine"="soba"]
-Ramen shops: nwr["amenity"="restaurant"]["cuisine"="ramen"]
-Western-style confectionery stores: nwr["shop"="confectionery"]
+Useful hints:${tridentDeepHints}
 
 Input text:
 {text}

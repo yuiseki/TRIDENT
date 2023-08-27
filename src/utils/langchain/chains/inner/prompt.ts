@@ -4,28 +4,24 @@ const tridentInnerHints = `
 ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
 ConfirmHelpful: 地图的制作已经完成了。你还有其他要求吗？我们对你有帮助吗？
-EmojiForConcern: embassies, 🏢
-ColorForConcern: embassies, lightblue
-EmojiForConcern: military facilities, 🪖
-ColorForConcern: military facilities, yellow
-EmojiForConcern: shelters, 🏕
-ColorForConcern: shelters, green
-EmojiForConcern: restaurants, 🍴
-ColorForConcern: restaurants, pink
-EmojiForConcern: fast foods, 🍔
-ColorForConcern: fast foods, coral
-EmojiForConcern: bars, 🍻
-ColorForConcern: bars, yellow
-EmojiForConcern: ramen shops, 🍜
-ColorForConcern: ramen shops, lightyellow
-EmojiForConcern: soba noodle shops, 🍜
-ColorForConcern: soba noodle shops, lightgreen
-EmojiForConcern: buddhist temple, 🛕
-ColorForConcern: buddhist temple, lightyellow
-EmojiForConcern: shrine, ⛩
-ColorForConcern: shrine, lightgreen
-EmojiForConcern: national treasure castles, 🏯
-ColorForConcern: national treasure castles, white
+EmojiForConcern: Shelters, 🏕
+ColorForConcern: Shelters, green
+EmojiForConcern: Restaurants, 🍴
+ColorForConcern: Restaurants, pink
+EmojiForConcern: Fast foods, 🍔
+ColorForConcern: Fast foods, coral
+EmojiForConcern: Bars, 🍻
+ColorForConcern: Bars, yellow
+EmojiForConcern: Ramen shops, 🍜
+ColorForConcern: Ramen shops, lightyellow
+EmojiForConcern: Soba noodle shops, 🍜
+ColorForConcern: Soba noodle shops, lightgreen
+EmojiForConcern: Buddhist temple, 🛕
+ColorForConcern: Buddhist temple, lightyellow
+EmojiForConcern: Shrine, ⛩
+ColorForConcern: Shrine, lightgreen
+EmojiForConcern: National treasure castles, 🏯
+ColorForConcern: National treasure castles, white
 `;
 const bboxInnerLang = `
 Input text:
@@ -33,10 +29,10 @@ Human: 駅と公園を表示して
 Bounding Box: [[35.7062,139.7596,35.7235,139.7853]]
 Output:
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
-EmojiForConcern: parks, 🌲
-ColorForConcern: parks, green
-EmojiForConcern: railway stations, 🚉
-ColorForConcern: railway stations, gray
+EmojiForConcern: Parks, 🌲
+ColorForConcern: Parks, green
+EmojiForConcern: Railway stations, 🚉
+ColorForConcern: Railway stations, gray
 BoundingBoxWithConcern: bbox[[35.7062,139.7596,35.7235,139.7853]], parks
 BoundingBoxWithConcern: bbox[[35.7062,139.7596,35.7235,139.7853]], railway stations
 `;
@@ -82,7 +78,7 @@ Human: 東京都中央区
 Output:
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
 TitleOfMap: 東京都中央区
-Area: Chuo-ku, Tokyo
+Area: Chuo, Tokyo
 
 Input text:
 Human: 静岡県伊豆市
@@ -115,13 +111,13 @@ Human: 病院を表示して
 Output:
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
 TitleOfMap: 台東区の病院
-EmojiForConcern: hospitals, 🏥
-ColorForConcern: hospitals, red
-EmojiForConcern: doctors, 🩺
-ColorForConcern: doctors, lightpink
+EmojiForConcern: Hospitals, 🏥
+ColorForConcern: Hospitals, red
+EmojiForConcern: Doctors, 🩺
+ColorForConcern: Doctors, lightpink
 Area: Taito-ku, Tokyo
-AreaWithConcern: Taito-ku, Tokyo, hospitals
-AreaWithConcern: Taito-ku, Tokyo, doctors
+AreaWithConcern: Taito, Tokyo, Hospitals
+AreaWithConcern: Taito, Tokyo, Doctors
 
 Input text:
 Human: レバノンを表示して
@@ -130,6 +126,10 @@ Human: 軍事施設も表示して
 Output:
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
 TitleOfMap: レバノンの大使館と軍事施設
+EmojiForConcern: Embassies, 🏢
+ColorForConcern: Embassies, lightblue
+EmojiForConcern: Military facilities, 🪖
+ColorForConcern: Military facilities, yellow
 Area: Lebanon
 AreaWithConcern: Lebanon, Embassies
 AreaWithConcern: Lebanon, Military facilities
