@@ -24,10 +24,10 @@ export class ReliefWeb extends Tool {
       for (const data of listJson.data) {
         const detail = data.fields;
         answer +=
-          "date: " + new Date(detail.date.original).toUTCString() + "\n";
-        answer += detail.title + "\n";
+          "Date: " + new Date(detail.date.original).toUTCString() + "\n";
+        answer += "Title: " + detail.title + "\n";
         answer += detail.body.split("\n").slice(0, 5).join("\n") + "\n";
-        answer += "url: " + detail.url + "\n\n";
+        answer += "Source: " + detail.url + "\n\n";
       }
       return answer;
     } catch (error) {

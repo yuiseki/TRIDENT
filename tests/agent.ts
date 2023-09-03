@@ -20,6 +20,7 @@ const tools = [
 const llmChain = loadTridentAgentChain({ llm, tools });
 
 const input = `How many days ago did UNIFIL begin?`;
+//const input = `Report on the geopolitical risks in Lebanon`;
 
 const outputParser = new TridentOutputParser();
 const firstResult = await llmChain.call({

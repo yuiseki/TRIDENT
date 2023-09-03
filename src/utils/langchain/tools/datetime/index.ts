@@ -11,7 +11,7 @@ export const loadDateTimeChainTool = async (llm: BaseLanguageModel) => {
     chain: new LLMChain({
       llm: llm,
       prompt: PromptTemplate.fromTemplate(
-        `You are an Helpful assistant respond question about date and time as accurately as possible. You output only concise answer. Current date and time is ${new Date().toUTCString()}. Question: {text}`
+        `You are an Helpful assistant respond question about date and time as accurately as possible. Current date and time is ${new Date().toUTCString()}. Question: {text}\nLet's think step by step.`
       ),
     }),
   });

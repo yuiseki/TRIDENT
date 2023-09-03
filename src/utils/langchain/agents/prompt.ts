@@ -7,7 +7,12 @@ import {
 import { AgentStep, InputValues, PartialValues } from "langchain/schema";
 import { Tool } from "langchain/tools";
 
-const PREFIX = `You are an helpful assistant. You always respond to request as accurately as possible. Get the intent of the question as accurate as possible.`;
+const PREFIX = `You are an helpful assistant.
+You always respond to request as accurately as possible.
+Get the intent of the question as accurate as possible.
+You must always think in English.
+You can use the following tools to help you answer the question:
+`;
 const formatInstructions = (
   toolNames: string
 ) => `Use the following format in your response:
@@ -19,7 +24,9 @@ Action Input: the input to the action
 Observation: the result of the action
 ... (this Thought/Action/Action Input/Observation can be repeated up to 10 times)
 Thought: I now know the final answer
-Final Answer: the final answer to the original input question`;
+Final Answer: the final answer to the original input question
+(You should thought final answer is really correct or not before submitting)
+`;
 const SUFFIX = `Begin!
 
 Question: {input}
