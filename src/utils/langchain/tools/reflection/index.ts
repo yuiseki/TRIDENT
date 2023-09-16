@@ -8,11 +8,11 @@ import { ChainTool } from "langchain/tools";
 export const loadReflectionTool = async (llm: BaseLanguageModel) => {
   return new ChainTool({
     name: "reflection",
-    description: `useful for when you can not imagine action. Input: all previous agent_scratchpad.`,
+    description: `useful for when you can not imagine action. Input: list of your tools and your question.`,
     chain: new LLMChain({
       llm: llm,
       prompt: PromptTemplate.fromTemplate(
-        `You are an Helpful assistant to choose tool.\nLet's think step by step.\n{text}`
+        `You are an Helpful assistant to advice to use one of the tools.\nLet's think step by step.\n{text}`
       ),
     }),
   });

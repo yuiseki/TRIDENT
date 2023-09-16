@@ -2,7 +2,7 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 import { AgentAction, AgentStep } from "langchain/schema";
-import { OpenAI } from "langchain/llms/openai";
+import { OpenAI, OpenAIChat } from "langchain/llms/openai";
 
 import { Wikipedia } from "../src/utils/langchain/tools/wikipedia/index.ts";
 import {
@@ -25,7 +25,7 @@ const tools = [
 ];
 const llmChain = loadTridentAgentChain({ llm, tools });
 
-const input = `リビアで起きている洪水について教えてください。`;
+const input = `リビアで起きている洪水について詳細にレポートをまとめてください。`;
 
 const outputParser = new TridentOutputParser();
 const firstResult = await llmChain.call({
