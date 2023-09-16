@@ -5,7 +5,10 @@ import { AgentAction, AgentStep } from "langchain/schema";
 import { OpenAI } from "langchain/llms/openai";
 
 import { Wikipedia } from "../src/utils/langchain/tools/wikipedia/index.ts";
-import { ReliefWeb } from "../src/utils/langchain/tools/reliefweb/index.ts";
+import {
+  ReliefWebDisasters,
+  ReliefWebReports,
+} from "../src/utils/langchain/tools/reliefweb/index.ts";
 import { loadDateTimeChainTool } from "../src/utils/langchain/tools/datetime/index.ts";
 
 import { loadTridentAgentChain } from "../src/utils/langchain/agents/index.ts";
@@ -14,13 +17,13 @@ import { TridentOutputParser } from "../src/utils/langchain/agents/parser.ts";
 const llm = new OpenAI({ temperature: 0 });
 const tools = [
   new Wikipedia(),
-  new ReliefWeb(),
+  new ReliefWebReports(),
+  new ReliefWebDisasters(),
   await loadDateTimeChainTool(llm),
 ];
 const llmChain = loadTridentAgentChain({ llm, tools });
 
-const input = `How many days ago did UNIFIL begin?`;
-//const input = `Report on the geopolitical risks in Lebanon`;
+const input = `リビアで起きている洪水について教えてください。`;
 
 const outputParser = new TridentOutputParser();
 const firstResult = await llmChain.call({
@@ -50,6 +53,9 @@ while (true) {
   const tool = tools.filter((tool) => {
     return tool.name.match(action.tool);
   })[0];
+  if (tool === undefined) {
+    continue;
+  }
   const observation = await tool.call({ input: action.toolInput });
   const step = { action, observation };
   steps.push(step);
