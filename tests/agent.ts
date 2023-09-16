@@ -42,6 +42,7 @@ let result = firstResult;
 const steps = [];
 
 while (true) {
+  console.log("\n----- ----- ----- ----- ----- -----\n");
   const output = (await outputParser.parse(result.text)) as AgentAction;
   if ("returnValues" in output) {
     console.log("----- -----");
@@ -85,5 +86,4 @@ while (true) {
   console.log("resultText:", actionResult.text);
   console.log("----- -----");
   result = actionResult;
-  console.log("\n----- ----- ----- ----- ----- -----\n");
 }
