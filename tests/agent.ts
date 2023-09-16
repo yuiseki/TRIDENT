@@ -13,12 +13,14 @@ import { loadDateTimeChainTool } from "../src/utils/langchain/tools/datetime/ind
 
 import { loadTridentAgentChain } from "../src/utils/langchain/agents/index.ts";
 import { TridentOutputParser } from "../src/utils/langchain/agents/parser.ts";
+import { loadReflectionTool } from "../src/utils/langchain/tools/reflection/index.ts";
 
 const llm = new OpenAI({ temperature: 0 });
 const tools = [
   new Wikipedia(),
   new ReliefWebReports(),
   new ReliefWebDisasters(),
+  await loadReflectionTool(llm),
   await loadDateTimeChainTool(llm),
 ];
 const llmChain = loadTridentAgentChain({ llm, tools });
@@ -54,11 +56,12 @@ while (true) {
     return tool.name.match(action.tool);
   })[0];
   if (tool === undefined) {
-    continue;
+    break;
+  } else {
+    const observation = await tool.call({ input: action.toolInput });
+    const step = { action, observation };
+    steps.push(step);
   }
-  const observation = await tool.call({ input: action.toolInput });
-  const step = { action, observation };
-  steps.push(step);
 
   const agentScratchpad = steps.reduce(
     (thoughts, { action, observation }) =>

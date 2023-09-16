@@ -52,7 +52,6 @@ export class ReliefWebDisasters extends Tool {
       params.append("limit", "3");
       params.append("query[value]", `primary_country.name:${input}`);
       const apiUrl = `${disastersEndpoint}?${params.toString()}`;
-      console.log(apiUrl);
       const listRes = await fetch(apiUrl);
       const listJson = await listRes.json();
       for (const data of listJson.data) {
