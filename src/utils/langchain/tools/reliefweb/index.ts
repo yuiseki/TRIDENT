@@ -9,7 +9,7 @@ export class ReliefWeb extends Tool {
       let answer = "";
       const reportsEndpoint = "https://api.reliefweb.int/v1/reports";
       const params = new URLSearchParams();
-      params.append("appname", "LAPLACE");
+      params.append("appname", "TRIDENT");
       params.append("profile", "full");
       params.append("preset", "latest");
       params.append("slim", "1");
