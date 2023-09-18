@@ -7,7 +7,7 @@ import * as turf from "@turf/turf";
 import { GeoJsonToMarkers } from "../GeoJsonToMarkers";
 
 export const StaticMap: React.FC<{
-  style: string;
+  style: string | mapboxgl.Style;
   geojsonWithStyleList?: Array<{
     id: string;
     style: TridentMapsStyle;

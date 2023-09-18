@@ -18,7 +18,7 @@ export const BaseMap: React.FC<{
   latitude: number;
   zoom: number;
   children?: any;
-  style?: string;
+  style?: string | mapboxgl.Style;
   onMapLoad?: () => void;
   onMapMove?: () => void;
   onMapMoveEnd?: (e: ViewStateChangeEvent) => void;
