@@ -9,7 +9,8 @@ import { Tool } from "langchain/tools";
 
 const PREFIX = `You are an helpful assistant.
 You always respond to request as accurately as possible.
-Get the intent of the question as accurate as possible.
+Get the intent of the question as accurately as possible.
+You do not know exactly what day it is today.
 You must always think in English.
 You can use the following tools to help you answer the question:
 `;
