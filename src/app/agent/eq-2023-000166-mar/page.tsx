@@ -1,9 +1,6 @@
 "use client";
 
-import { BaseMap } from "@/components/BaseMap";
 import { StaticRegionsMap } from "@/components/StaticRegionsMap";
-import { useRef } from "react";
-import { MapProvider, MapRef } from "react-map-gl";
 
 export default function Page() {
   return (

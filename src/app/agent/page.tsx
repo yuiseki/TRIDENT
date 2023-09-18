@@ -17,7 +17,7 @@ export default function Page() {
           </li>
           <li>
             <a href="/agent/fl-2023-000168-lby">
-              2023年9月 熱帯性暴風雨ダニエル レポート
+              2023年9月 リビア洪水 レポート
             </a>
           </li>
         </ul>
