@@ -4,6 +4,7 @@
     "Chuo",
     "datetime",
     "Izakaya",
+    "jsonv",
     "Kita",
     "landuse",
     "langchain",
@@ -13,6 +14,7 @@
     "OPENAI",
     "reliefweb",
     "Söhne",
-    "Taito"
+    "Taito",
+    "unixtime"
   ]
 }

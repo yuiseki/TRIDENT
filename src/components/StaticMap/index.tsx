@@ -1,0 +1,75 @@
+import { MapProvider, MapRef } from "react-map-gl";
+import { BaseMap } from "../BaseMap";
+import { useEffect, useRef } from "react";
+import { TridentMapsStyle } from "@/types/TridentMaps";
+import { FeatureCollection } from "geojson";
+import * as turf from "@turf/turf";
+import { GeoJsonToMarkers } from "../GeoJsonToMarkers";
+
+export const StaticMap: React.FC<{
+  style: string;
+  geojsonWithStyleList?: Array<{
+    id: string;
+    style: TridentMapsStyle;
+    geojson: FeatureCollection;
+  }>;
+}> = ({
+  style = "/map_styles/fiord-color-gl-style/style.json",
+  geojsonWithStyleList = [],
+}) => {
+  const mapRef = useRef<MapRef | null>(null);
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (!mapRef || !mapRef.current) return;
+      if (geojsonWithStyleList.length === 0) return;
+      try {
+        console.log(geojsonWithStyleList);
+        geojsonWithStyleList.map((item) =>
+          console.log(JSON.stringify(item.geojson))
+        );
+        const everything: FeatureCollection = {
+          type: "FeatureCollection",
+          features: geojsonWithStyleList
+            .map((item) => item.geojson.features)
+            .flat(),
+        };
+        const [minLng, minLat, maxLng, maxLat] = turf.bbox(everything);
+        mapRef.current.fitBounds(
+          [
+            [minLng, minLat],
+            [maxLng, maxLat],
+          ],
+          { padding: 200, duration: 1000 }
+        );
+      } catch (error) {
+        console.error(error);
+      }
+    }, 500);
+  }, [geojsonWithStyleList]);
+
+  return (
+    <MapProvider>
+      <BaseMap
+        mapRef={mapRef}
+        style={style}
+        longitude={0}
+        latitude={0}
+        zoom={1}
+        enableInteractions={false}
+        attributionPosition="bottom-right"
+      >
+        {geojsonWithStyleList &&
+          geojsonWithStyleList.map((geojsonWithStyle) => {
+            return (
+              <GeoJsonToMarkers
+                key={geojsonWithStyle.id}
+                geojson={geojsonWithStyle.geojson}
+                style={geojsonWithStyle.style}
+              />
+            );
+          })}
+      </BaseMap>
+    </MapProvider>
+  );
+};

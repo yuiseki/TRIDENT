@@ -1,6 +1,7 @@
 import React, { MutableRefObject, useCallback } from "react";
 import {
   AttributionControl,
+  ControlPosition,
   GeolocateControl,
   Map,
   MapRef,
@@ -11,7 +12,7 @@ import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 
 export const BaseMap: React.FC<{
-  id: string;
+  id?: string;
   mapRef: MutableRefObject<MapRef | null>;
   longitude: number;
   latitude: number;
@@ -21,6 +22,8 @@ export const BaseMap: React.FC<{
   onMapLoad?: () => void;
   onMapMove?: () => void;
   onMapMoveEnd?: (e: ViewStateChangeEvent) => void;
+  enableInteractions?: boolean;
+  attributionPosition?: string;
 }> = ({
   id,
   mapRef,
@@ -34,6 +37,8 @@ export const BaseMap: React.FC<{
   onMapLoad,
   onMapMove,
   onMapMoveEnd,
+  enableInteractions = true,
+  attributionPosition = "top-right",
 }) => {
   const onLoad = useCallback(() => {
     if (onMapLoad) {
@@ -79,16 +84,28 @@ export const BaseMap: React.FC<{
       hash={false}
       maxZoom={22}
       maxPitch={85}
+      scrollZoom={enableInteractions ? true : false}
+      dragPan={enableInteractions ? true : false}
     >
       {children}
-      <GeolocateControl position="bottom-right" />
-      <NavigationControl
-        position="bottom-right"
-        visualizePitch={true}
-        showZoom={true}
-        showCompass={true}
+      {enableInteractions && (
+        <>
+          <GeolocateControl position="bottom-right" />
+          <NavigationControl
+            position="bottom-right"
+            visualizePitch={true}
+            showZoom={true}
+            showCompass={true}
+          />
+        </>
+      )}
+      <AttributionControl
+        position={
+          attributionPosition
+            ? (attributionPosition as ControlPosition)
+            : "bottom-right"
+        }
       />
-      <AttributionControl position="top-right" />
     </Map>
   );
 };
