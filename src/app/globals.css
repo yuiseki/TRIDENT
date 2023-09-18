@@ -281,6 +281,10 @@ main.tridentMain {
   font-size: 2em;
 }
 
+.tridentAgentSection p {
+  margin-top: 1.5em;
+}
+
 .tridentAgentSectionTitle {
   position: absolute;
   top: 0em;
@@ -302,6 +306,30 @@ main.tridentMain {
   width: 100%;
   height: 100vh;
   z-index: 10;
+}
+
+.tridentAgentSectionMain ul {
+  position: absolute;
+  top: 6em;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 2em;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.tridentAgentSectionMain ul {
+  position: absolute;
+  top: 6em;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 2em;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.tridentAgentSectionMain ul li {
+  font-size: 1.5em;
 }
 
 .tridentAgentSectionDescription {
