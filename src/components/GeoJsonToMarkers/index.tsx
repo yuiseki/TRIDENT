@@ -177,7 +177,11 @@ export const GeoJsonToMarkers: React.FC<{
                       id: `${feature.id}-fill`,
                       type: "fill",
                       paint: {
-                        "fill-color": style?.color ? style.color : "#00b8ff",
+                        "fill-color": style?.fillColor
+                          ? style.fillColor
+                          : style?.color
+                          ? style.color
+                          : "#00b8ff",
                         "fill-opacity": 0.2,
                       },
                     }}

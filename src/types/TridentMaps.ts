@@ -1,5 +1,6 @@
 export type TridentMapsStyle = {
   color?: string;
+  fillColor?: string;
   emoji?: string;
 };
 

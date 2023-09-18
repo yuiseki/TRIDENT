@@ -32,6 +32,7 @@ export default function Page() {
           <StaticRegionsMap
             mapStyle="/map_styles/fiord-color-gl-style/style.json"
             regionNames={["Morocco"]}
+            mapPadding={400}
           />
         </div>
         <div className="tridentAgentSectionDescription">

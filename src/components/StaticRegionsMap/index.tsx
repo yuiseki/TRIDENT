@@ -10,9 +10,11 @@ import osmtogeojson from "osmtogeojson";
 
 export const StaticRegionsMap: React.FC<{
   mapStyle: string;
+  mapPadding?: number;
   regionNames: string[];
 }> = ({
   mapStyle = "/map_styles/fiord-color-gl-style/style.json",
+  mapPadding = 200,
   regionNames,
 }) => {
   const [geojsonWithStyleList, setGeojsonWithStyleList] = useState<
@@ -41,6 +43,7 @@ export const StaticRegionsMap: React.FC<{
             id: idx.toString(),
             style: {
               color: "yellow",
+              fillColor: "transparent",
             },
             geojson: newGeojson,
           },
@@ -50,6 +53,10 @@ export const StaticRegionsMap: React.FC<{
   }, [regionNames]);
 
   return (
-    <StaticMap style={mapStyle} geojsonWithStyleList={geojsonWithStyleList} />
+    <StaticMap
+      style={mapStyle}
+      mapPadding={mapPadding}
+      geojsonWithStyleList={geojsonWithStyleList}
+    />
   );
 };

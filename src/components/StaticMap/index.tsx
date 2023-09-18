@@ -13,9 +13,11 @@ export const StaticMap: React.FC<{
     style: TridentMapsStyle;
     geojson: FeatureCollection;
   }>;
+  mapPadding?: number;
 }> = ({
   style = "/map_styles/fiord-color-gl-style/style.json",
   geojsonWithStyleList = [],
+  mapPadding = 200,
 }) => {
   const mapRef = useRef<MapRef | null>(null);
 
@@ -40,13 +42,13 @@ export const StaticMap: React.FC<{
             [minLng, minLat],
             [maxLng, maxLat],
           ],
-          { padding: 200, duration: 1000 }
+          { padding: mapPadding, duration: 1000 }
         );
       } catch (error) {
         console.error(error);
       }
     }, 500);
-  }, [geojsonWithStyleList]);
+  }, [geojsonWithStyleList, mapPadding]);
 
   return (
     <MapProvider>
