@@ -2,25 +2,30 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 import { AgentAction, AgentStep } from "langchain/schema";
-import { OpenAI } from "langchain/llms/openai";
+import { OpenAI, OpenAIChat } from "langchain/llms/openai";
 
 import { Wikipedia } from "../src/utils/langchain/tools/wikipedia/index.ts";
-import { ReliefWeb } from "../src/utils/langchain/tools/reliefweb/index.ts";
+import {
+  ReliefWebDisasters,
+  ReliefWebReports,
+} from "../src/utils/langchain/tools/reliefweb/index.ts";
 import { loadDateTimeChainTool } from "../src/utils/langchain/tools/datetime/index.ts";
 
 import { loadTridentAgentChain } from "../src/utils/langchain/agents/index.ts";
 import { TridentOutputParser } from "../src/utils/langchain/agents/parser.ts";
+import { loadReflectionTool } from "../src/utils/langchain/tools/reflection/index.ts";
 
 const llm = new OpenAI({ temperature: 0 });
 const tools = [
   new Wikipedia(),
-  new ReliefWeb(),
+  new ReliefWebReports(),
+  new ReliefWebDisasters(),
+  await loadReflectionTool(llm),
   await loadDateTimeChainTool(llm),
 ];
 const llmChain = loadTridentAgentChain({ llm, tools });
 
-const input = `How many **days** before today did UNIFIL begin?`;
-//const input = `Report on the geopolitical risks in Lebanon`;
+const input = `リビアで起きている洪水について詳細にレポートをまとめてください。`;
 
 const outputParser = new TridentOutputParser();
 const firstResult = await llmChain.call({
@@ -37,6 +42,7 @@ let result = firstResult;
 const steps = [];
 
 while (true) {
+  console.log("\n----- ----- ----- ----- ----- -----\n");
   const output = (await outputParser.parse(result.text)) as AgentAction;
   if ("returnValues" in output) {
     console.log("----- -----");
@@ -50,9 +56,13 @@ while (true) {
   const tool = tools.filter((tool) => {
     return tool.name.match(action.tool);
   })[0];
-  const observation = await tool.call({ input: action.toolInput });
-  const step = { action, observation };
-  steps.push(step);
+  if (tool === undefined) {
+    break;
+  } else {
+    const observation = await tool.call({ input: action.toolInput });
+    const step = { action, observation };
+    steps.push(step);
+  }
 
   const agentScratchpad = steps.reduce(
     (thoughts, { action, observation }) =>
@@ -76,5 +86,4 @@ while (true) {
   console.log("resultText:", actionResult.text);
   console.log("----- -----");
   result = actionResult;
-  console.log("\n----- ----- ----- ----- ----- -----\n");
 }
