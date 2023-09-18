@@ -250,18 +250,18 @@ export default function Page() {
               OpenStreetMapを通じて災害対応を支援することができます
             </a>
           </h4>
-          {window && (
-            <h4>
-              <a
-                href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
-                  "2023年9月 モロッコ地震 レポート - TRIDENT Agent (Sep 18 version)\n"
-                )}&url=${encodeURIComponent(window.location.href)}`}
-                target="_blank"
-              >
-                このレポートをXへ投稿する
-              </a>
-            </h4>
-          )}
+          <h4>
+            <a
+              href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
+                "2023年9月 モロッコ地震 レポート - TRIDENT Agent (Sep 18 version)\n"
+              )}&url=${encodeURIComponent(
+                "https://trident.yuiseki.net/agent/eq-2023-000166-mar"
+              )}`}
+              target="_blank"
+            >
+              このレポートをXへ投稿する
+            </a>
+          </h4>
         </section>
       </article>
     </>
