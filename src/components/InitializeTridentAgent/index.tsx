@@ -36,7 +36,7 @@ export const InitializeTridentAgent: React.FC<{
         if (index === initializingSequence.length - 1) return index;
         return index + 1;
       });
-    }, 100);
+    }, 50);
     return () => clearInterval(interval);
   }, [
     initializeSequenceIndex,
