@@ -236,8 +236,16 @@ main.tridentMain {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   position: relative;
+}
+
+.tridentAgentSection {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.tridentAgentReportList {
+  color: rgba(255, 255, 255, 1);
 }
 
 .tridentAgentReportList ul {
@@ -254,6 +262,11 @@ main.tridentMain {
 
 .tridentAgentReportList ul li a {
   font-size: 1.6em;
+  color: rgba(255, 255, 255, 1);
+}
+
+.tridentAgentReportList ul li a:visited {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .tridentAgentReportList h3 {
@@ -266,23 +279,23 @@ main.tridentMain {
 }
 
 .tridentAgentSection h1 {
-  font-size: 4em;
+  font-size: 6em;
 }
 
 .tridentAgentSection h2 {
-  font-size: 4em;
+  font-size: 5em;
 }
 
 .tridentAgentSection h3 {
-  font-size: 3em;
+  font-size: 4em;
 }
 
 .tridentAgentSection h4 {
-  font-size: 2em;
+  font-size: 3em;
 }
 
 .tridentAgentSection p {
-  margin-top: 1.5em;
+  margin-top: 2.5em;
 }
 
 .tridentAgentSectionTitle {
@@ -295,8 +308,8 @@ main.tridentMain {
 
 .tridentAgentSectionTitle h3 {
   font-size: 3em;
-  background-color: rgba(255, 255, 255, 0.6);
-  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 14px;
 }
 
 .tridentAgentSectionMain {
@@ -310,22 +323,12 @@ main.tridentMain {
 
 .tridentAgentSectionMain ul {
   position: absolute;
-  top: 6em;
+  top: 8em;
   left: 0;
   width: 100%;
   z-index: 10;
-  padding: 2em;
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
-.tridentAgentSectionMain ul {
-  position: absolute;
-  top: 6em;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-  padding: 2em;
-  background-color: rgba(255, 255, 255, 0.6);
+  padding: 2.5em;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .tridentAgentSectionMain ul li {
@@ -341,15 +344,23 @@ main.tridentMain {
 }
 
 .tridentAgentSectionDescription h3 {
-  font-size: 2em;
-  background-color: rgba(255, 255, 255, 0.6);
-  padding: 8px;
+  font-size: 3em;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 14px;
 }
 
 .tridentAgentSectionDescription h4 {
-  font-size: 1.5em;
-  background-color: rgba(255, 255, 255, 0.6);
-  padding: 8px;
+  font-size: 2em;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 14px;
+}
+
+.tridentAgentSection h4 a {
+  color: rgba(255, 255, 255, 1);
+}
+
+.tridentAgentSection h4 a:visited {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 @media screen and (max-width: 600px) {
