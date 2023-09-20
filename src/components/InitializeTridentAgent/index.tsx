@@ -3,57 +3,39 @@ import { useEffect, useState } from "react";
 export const InitializeTridentAgent: React.FC<{
   setInitialized: React.Dispatch<React.SetStateAction<boolean>>;
 }> = ({ setInitialized }) => {
-  const initializingSequence = [
-    "",
-    ".",
-    "..",
-    "...",
-    "....",
-    ".....",
-    "......",
-    ".......",
-    "........",
-    ".........",
-    "..........",
-    "...........",
-    "............",
-    ".............",
-    "..............",
-    "...............",
-    "................",
-    ".................",
-    "..................",
-  ];
   const [initializeSequenceIndex, setInitializeSequenceIndex] = useState(1);
   useEffect(() => {
     const interval = setInterval(() => {
       setInitializeSequenceIndex((index: number) => {
-        if (index === initializingSequence.length - 1) return index;
+        if (index === 100) return index;
         return index + 1;
       });
-    }, 100);
+    }, 10);
     return () => clearInterval(interval);
-  }, [
-    initializeSequenceIndex,
-    initializingSequence.length,
-    setInitializeSequenceIndex,
-  ]);
+  }, [initializeSequenceIndex, setInitializeSequenceIndex]);
 
   useEffect(() => {
-    if (initializeSequenceIndex === initializingSequence.length - 1) {
+    if (initializeSequenceIndex === 100) {
       setTimeout(() => {
         setInitialized(true);
-      }, 3000);
+      }, 2000);
     }
-  }, [initializeSequenceIndex, initializingSequence.length, setInitialized]);
+  }, [initializeSequenceIndex, setInitialized]);
   return (
     <article className="tridentAgentArticle tridentAgentArticleInitializing">
-      {initializeSequenceIndex === initializingSequence.length - 1 && (
-        <section className="tridentAgentSectionInitialized" />
-      )}
+      <section
+        className="tridentAgentSectionInitialized"
+        style={{
+          opacity: initializeSequenceIndex / 100 - 0.1,
+        }}
+      />
       <section className="tridentAgentSection">
         <h3>Initializing TRIDENT Agent</h3>
-        <h3>{initializingSequence[initializeSequenceIndex]}</h3>
+        <h3>
+          {Array.from(Array(initializeSequenceIndex).keys()).map((_v, i) => {
+            return ".";
+          })}
+        </h3>
         <p></p>
       </section>
     </article>

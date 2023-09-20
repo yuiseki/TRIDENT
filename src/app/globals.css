@@ -229,16 +229,7 @@ main.tridentMain {
 
 .tridentAgentArticleInitializing {
   background-image: none;
-}
-
-@keyframes initializing-background {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0.4;
-  }
+  background-color: rgba(0, 158, 219, 0.2);
 }
 
 .tridentAgentSectionInitialized {
@@ -251,7 +242,6 @@ main.tridentMain {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  animation: initializing-background 3s ease-in-out;
 }
 
 @keyframes scroll-down {
