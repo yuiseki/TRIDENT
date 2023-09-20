@@ -275,7 +275,7 @@ main.tridentMain {
   right: 0;
   z-index: 1000;
   width: 1vw;
-  height: 20vh;
+  height: 50vh;
   background-image: linear-gradient(
     -180deg,
     transparent,
@@ -286,7 +286,7 @@ main.tridentMain {
   background-repeat: no-repeat;
   background-size: 100% 200%;
   animation-name: scroll-down;
-  animation-duration: 4s;
+  animation-duration: 6s;
   animation-timing-function: cubic-bezier(
     0.22,
     1,
@@ -403,12 +403,13 @@ main.tridentMain {
 }
 
 .tridentAgentSectionMain ul li {
-  font-size: 1.5em;
+  font-size: 2em;
+  padding: 10px;
 }
 
 .tridentAgentSectionDescription {
   position: absolute;
-  bottom: 1.5em;
+  bottom: 2em;
   left: 0;
   width: 100%;
   z-index: 100;
