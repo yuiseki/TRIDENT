@@ -86,6 +86,7 @@ const MainContent: React.FC = () => {
           <div className="tridentAgentSectionDescription">
             <h4>リビアは北アフリカに位置する国で、地中海に面しています。</h4>
           </div>
+          <span className="scrollDown"></span>
         </section>
         <section className="tridentAgentSection">
           <div className="tridentAgentSectionTitle">
