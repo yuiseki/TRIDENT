@@ -48,7 +48,7 @@ export const InitializeTridentAgent: React.FC<{
     if (initializeSequenceIndex === initializingSequence.length - 1) {
       setTimeout(() => {
         setInitialized(true);
-      }, 1000);
+      }, 1500);
     }
   }, [initializeSequenceIndex, initializingSequence.length, setInitialized]);
   return (

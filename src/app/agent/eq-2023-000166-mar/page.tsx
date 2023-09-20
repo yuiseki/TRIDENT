@@ -200,7 +200,7 @@ const MainContent: React.FC = () => {
                 position: "absolute",
                 left: 0,
                 bottom: "8em",
-                backgroundColor: "white",
+                backgroundColor: "rgba(0, 0, 0, 0.6)",
                 paddingBottom: "5px",
               }}
             >
