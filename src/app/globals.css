@@ -227,9 +227,22 @@ main.tridentMain {
   background-position: center;
 }
 
+/*
 .tridentAgentArticleInitializing {
   background-image: none;
   background-color: rgba(0, 158, 219, 0.2);
+}
+*/
+
+.tridentAgentSectionInitializing {
+  background-image: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1000;
 }
 
 .tridentAgentSectionInitialized {
@@ -242,6 +255,7 @@ main.tridentMain {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 999;
 }
 
 @keyframes scroll-down {
@@ -299,6 +313,7 @@ main.tridentMain {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.6);
   position: relative;
+  z-index: 1000;
 }
 
 .tridentAgentSection {
