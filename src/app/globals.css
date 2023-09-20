@@ -227,6 +227,33 @@ main.tridentMain {
   background-position: center;
 }
 
+.tridentAgentArticleInitializing {
+  background-image: none;
+}
+
+@keyframes initializing-background {
+  0% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 0.6;
+  }
+}
+
+.tridentAgentSectionInitialized {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url("/Flag_of_the_United_Nations.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: initializing-background 1s ease-in-out;
+}
+
 .tridentAgentSection,
 .tridentAgentReportList {
   height: 100vh;

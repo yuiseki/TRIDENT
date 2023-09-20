@@ -1,8 +1,10 @@
 "use client";
 
+import { InitializeTridentAgent } from "@/components/InitializeTridentAgent";
 import { StaticRegionsMap } from "@/components/StaticRegionsMap";
+import { useState } from "react";
 
-export default function Page() {
+const MainContent: React.FC = () => {
   return (
     <>
       <title>
@@ -256,6 +258,19 @@ export default function Page() {
           </h4>
         </section>
       </article>
+    </>
+  );
+};
+
+export default function Page() {
+  const [initialized, setInitialized] = useState(false);
+  return (
+    <>
+      {initialized ? (
+        <MainContent />
+      ) : (
+        <InitializeTridentAgent setInitialized={setInitialized} />
+      )}
     </>
   );
 }
