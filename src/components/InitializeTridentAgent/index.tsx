@@ -23,11 +23,6 @@ export const InitializeTridentAgent: React.FC<{
     "................",
     ".................",
     "..................",
-    "..................",
-    "..................",
-    "..................",
-    "..................",
-    "..................",
   ];
   const [initializeSequenceIndex, setInitializeSequenceIndex] = useState(1);
   useEffect(() => {
@@ -36,7 +31,7 @@ export const InitializeTridentAgent: React.FC<{
         if (index === initializingSequence.length - 1) return index;
         return index + 1;
       });
-    }, 50);
+    }, 100);
     return () => clearInterval(interval);
   }, [
     initializeSequenceIndex,
@@ -48,7 +43,7 @@ export const InitializeTridentAgent: React.FC<{
     if (initializeSequenceIndex === initializingSequence.length - 1) {
       setTimeout(() => {
         setInitialized(true);
-      }, 1500);
+      }, 3000);
     }
   }, [initializeSequenceIndex, initializingSequence.length, setInitialized]);
   return (
