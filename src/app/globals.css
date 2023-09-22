@@ -281,15 +281,13 @@ main.tridentMain {
 .scrollDown {
   display: block;
   position: absolute;
-  bottom: 0;
-  right: 0;
   z-index: 1000;
-  width: 0.4vw;
+  width: 1vw;
   height: 100vh;
   background-image: linear-gradient(
     -180deg,
     transparent,
-    white 50%,
+    rgba(0, 158, 219, 1) 50%,
     transparent 50%,
     transparent
   );
@@ -306,6 +304,14 @@ main.tridentMain {
   animation-delay: 0.7s;
   animation-iteration-count: infinite;
   animation-fill-mode: backwards;
+}
+.scrollDownLeft {
+  bottom: 0;
+  left: 0;
+}
+.scrollDownRight {
+  bottom: 0;
+  right: 0;
 }
 
 .tridentAgentSection,

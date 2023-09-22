@@ -33,7 +33,8 @@ const MainContent: React.FC = () => {
               </li>
             </ul>
           </div>
-          <span className="scrollDown"></span>
+          <span className="scrollDown scrollDownLeft"></span>
+          <span className="scrollDown scrollDownRight"></span>
         </section>
         <section className="tridentAgentSection">
           <div className="tridentAgentSectionTitle">
@@ -70,7 +71,8 @@ const MainContent: React.FC = () => {
               </li>
             </ul>
           </div>
-          <span className="scrollDown"></span>
+          <span className="scrollDown scrollDownLeft"></span>
+          <span className="scrollDown scrollDownRight"></span>
         </section>
         <section className="tridentAgentSection">
           <div className="tridentAgentSectionTitle">
@@ -86,7 +88,8 @@ const MainContent: React.FC = () => {
           <div className="tridentAgentSectionDescription">
             <h4>リビアは北アフリカに位置する国で、地中海に面しています。</h4>
           </div>
-          <span className="scrollDown"></span>
+          <span className="scrollDown scrollDownLeft"></span>
+          <span className="scrollDown scrollDownRight"></span>
         </section>
         <section className="tridentAgentSection">
           <div className="tridentAgentSectionTitle">
@@ -106,7 +109,8 @@ const MainContent: React.FC = () => {
               リビアは乾燥した砂漠気候が広がり、夏は非常に暑く、冬は比較的穏やかです。内陸部では気温が極端に上昇することもあります。
             </h4>
           </div>
-          <span className="scrollDown"></span>
+          <span className="scrollDown scrollDownLeft"></span>
+          <span className="scrollDown scrollDownRight"></span>
         </section>
         <section className="tridentAgentSection">
           <div className="tridentAgentSectionTitle">
@@ -122,7 +126,8 @@ const MainContent: React.FC = () => {
           <div className="tridentAgentSectionDescription">
             <h4>被害の中心は、デルナ県です。</h4>
           </div>
-          <span className="scrollDown"></span>
+          <span className="scrollDown scrollDownLeft"></span>
+          <span className="scrollDown scrollDownRight"></span>
         </section>
         <section className="tridentAgentSection">
           <div className="tridentAgentSectionTitle">
@@ -238,7 +243,8 @@ const MainContent: React.FC = () => {
               <h4>災害被害の詳細は、今後更新される予定です。</h4>
             </div>
           </div>
-          <span className="scrollDown"></span>
+          <span className="scrollDown scrollDownLeft"></span>
+          <span className="scrollDown scrollDownRight"></span>
         </section>
         <section className="tridentAgentSection">
           <h4>レポートは以上です。</h4>
