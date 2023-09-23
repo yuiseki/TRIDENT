@@ -2,6 +2,7 @@ import {
   BasePromptTemplate,
   BaseStringPromptTemplate,
   SerializedBasePromptTemplate,
+  StringPromptValue,
   renderTemplate,
 } from "langchain/prompts";
 import { AgentStep, InputValues, PartialValues } from "langchain/schema";
@@ -42,7 +43,7 @@ export class TridentAgentPromptTemplate extends BaseStringPromptTemplate {
   }
 
   _getPromptType(): string {
-    throw new Error("Not implemented");
+    return "prompt";
   }
 
   format(input: InputValues): Promise<string> {
@@ -68,8 +69,12 @@ export class TridentAgentPromptTemplate extends BaseStringPromptTemplate {
     return Promise.resolve(renderTemplate(template, "f-string", newInput));
   }
 
-  partial(_values: PartialValues): Promise<BasePromptTemplate> {
-    throw new Error("Not implemented");
+  partial(
+    values: PartialValues
+  ): Promise<BasePromptTemplate<any, StringPromptValue, any>> {
+    return new Promise((resolve, reject) => {
+      return undefined;
+    });
   }
 
   serialize(): SerializedBasePromptTemplate {

@@ -13,6 +13,14 @@ services:
       - 3000:3000
     networks:
       - myapp
+  llama-cpp:
+    image: local/llama.cpp:full
+    ports:
+      - 8080:8080
+    tty: true
+    command: --server -m /models/llama-2-7b.Q4_K_M.gguf --mlock --no-mmap --ctx-size 2048 --threads 8 --port 8080 --host 0.0.0.0 --embedding
+    volumes:
+      - ~/llama.cpp/models:/models
 
 networks:
   myapp:

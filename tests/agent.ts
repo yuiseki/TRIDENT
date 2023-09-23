@@ -2,7 +2,6 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 import { AgentAction, AgentFinish, AgentStep } from "langchain/schema";
-import { OpenAI, OpenAIChat } from "langchain/llms/openai";
 
 import { Wikipedia } from "../src/utils/langchain/tools/wikipedia/index.ts";
 import {
@@ -15,7 +14,9 @@ import { loadTridentAgentChain } from "../src/utils/langchain/agents/index.ts";
 import { TridentOutputParser } from "../src/utils/langchain/agents/parser.ts";
 import { loadReflectionTool } from "../src/utils/langchain/tools/reflection/index.ts";
 
-const llm = new OpenAI({ temperature: 0 });
+import { LlamaCppServerCompletion } from "../src/utils/langchain/llms/llama_cpp_server.ts";
+
+const llm = new LlamaCppServerCompletion();
 const tools = [
   new Wikipedia(),
   new ReliefWebReports(),
