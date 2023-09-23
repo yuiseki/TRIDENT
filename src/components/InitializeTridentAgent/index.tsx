@@ -1,7 +1,12 @@
 /* eslint-disable @next/next/no-page-custom-font */
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from "react";
-const TOTAL_MILL_SECONDS = 500;
+const SEQUENCE_INDEX_TOTAL = 350;
+const SEQUENCE_INDEX_LOGO_BEGIN = 100;
+const SEQUENCE_INDEX_LOGO_ZOOM_BEGIN = 150;
+const SEQUENCE_INDEX_LOGO_FINISH = 250;
+const SEQUENCE_INDEX_PROGRESS_BEGIN = 200;
+const SEQUENCE_INDEX_PROGRESS_FINISH = 300;
 
 const TridentLogo: React.FC<{ initializeSequenceIndex: number }> = ({
   initializeSequenceIndex,
@@ -14,11 +19,16 @@ const TridentLogo: React.FC<{ initializeSequenceIndex: number }> = ({
         alignItems: "center",
         justifyContent: "center",
         position: "absolute",
-        opacity: `${1 - (initializeSequenceIndex / TOTAL_MILL_SECONDS) * 1.6}`,
+        opacity: `${
+          1 - (initializeSequenceIndex / SEQUENCE_INDEX_TOTAL) * 1.6
+        }`,
         transform: `scale(${
-          initializeSequenceIndex < 150
+          initializeSequenceIndex < SEQUENCE_INDEX_LOGO_ZOOM_BEGIN
             ? 1
-            : 1 + ((initializeSequenceIndex - 150) / TOTAL_MILL_SECONDS) * 150
+            : 1 +
+              ((initializeSequenceIndex - SEQUENCE_INDEX_LOGO_ZOOM_BEGIN) /
+                SEQUENCE_INDEX_TOTAL) *
+                150
         })`,
         transition: "all 1ms linear",
         zIndex: 2000,
@@ -76,14 +86,14 @@ const TridentInitializingProgressCard: React.FC<{
         pointerEvents: "none",
         userSelect: "none",
         opacity: `${
-          initializeSequenceIndex < 150
+          initializeSequenceIndex < SEQUENCE_INDEX_PROGRESS_BEGIN
             ? 0
-            : initializeSequenceIndex / TOTAL_MILL_SECONDS + 0.5
+            : initializeSequenceIndex / SEQUENCE_INDEX_TOTAL + 0.5
         }`,
         transform: `scale(${
-          initializeSequenceIndex < 150
+          initializeSequenceIndex < SEQUENCE_INDEX_PROGRESS_BEGIN
             ? 0.6
-            : 0.6 + (initializeSequenceIndex / TOTAL_MILL_SECONDS) * 1.008
+            : 0.6 + (initializeSequenceIndex / SEQUENCE_INDEX_TOTAL) * 1.008
         })`,
         transition: "all 1ms liner",
       }}
@@ -99,7 +109,9 @@ const TridentInitializingProgressCard: React.FC<{
       >
         <div
           style={{
-            width: `${(initializeSequenceIndex / 400) * 100}%`,
+            width: `${
+              (initializeSequenceIndex / SEQUENCE_INDEX_PROGRESS_FINISH) * 100
+            }%`,
             height: "15px",
             backgroundColor: "rgba(255, 255, 255, 0.4)",
           }}
@@ -131,20 +143,22 @@ const InitializeTridentSequences: React.FC<{
 }> = ({ initializeSequenceIndex }) => {
   return (
     <>
-      {initializeSequenceIndex < 100 && (
+      {initializeSequenceIndex < SEQUENCE_INDEX_LOGO_BEGIN && (
         <TridentAuthenticationMessageCard
           initializeSequenceIndex={initializeSequenceIndex}
         />
       )}
-      {100 < initializeSequenceIndex && initializeSequenceIndex < 250 && (
-        <TridentLogo initializeSequenceIndex={initializeSequenceIndex} />
-      )}
-      {150 < initializeSequenceIndex && initializeSequenceIndex < 400 && (
-        <TridentInitializingProgressCard
-          initializeSequenceIndex={initializeSequenceIndex}
-        />
-      )}
-      {400 < initializeSequenceIndex && (
+      {SEQUENCE_INDEX_LOGO_BEGIN < initializeSequenceIndex &&
+        initializeSequenceIndex < SEQUENCE_INDEX_LOGO_FINISH && (
+          <TridentLogo initializeSequenceIndex={initializeSequenceIndex} />
+        )}
+      {SEQUENCE_INDEX_PROGRESS_BEGIN < initializeSequenceIndex &&
+        initializeSequenceIndex < SEQUENCE_INDEX_PROGRESS_FINISH && (
+          <TridentInitializingProgressCard
+            initializeSequenceIndex={initializeSequenceIndex}
+          />
+        )}
+      {SEQUENCE_INDEX_PROGRESS_FINISH < initializeSequenceIndex && (
         <TridentAuthenticationMessageCard
           initializeSequenceIndex={initializeSequenceIndex}
         />
@@ -160,7 +174,7 @@ export const InitializeTridentAgent: React.FC<{
   useEffect(() => {
     const interval = setInterval(() => {
       setInitializeSequenceIndex((index: number) => {
-        if (index === TOTAL_MILL_SECONDS) return index;
+        if (index === SEQUENCE_INDEX_TOTAL) return index;
         return index + 1;
       });
     }, 10);
@@ -168,7 +182,7 @@ export const InitializeTridentAgent: React.FC<{
   }, [initializeSequenceIndex, setInitializeSequenceIndex]);
 
   useEffect(() => {
-    if (initializeSequenceIndex === TOTAL_MILL_SECONDS) {
+    if (initializeSequenceIndex === SEQUENCE_INDEX_TOTAL) {
       setTimeout(() => {
         setInitialized(true);
         //window.location.reload();
@@ -194,7 +208,7 @@ export const InitializeTridentAgent: React.FC<{
         <section
           className="tridentAgentSectionInitializingOverlay"
           style={{
-            opacity: 1 - initializeSequenceIndex / TOTAL_MILL_SECONDS,
+            opacity: 1 - initializeSequenceIndex / SEQUENCE_INDEX_TOTAL,
             transition: "all 0.1s linear",
           }}
         />
@@ -204,7 +218,7 @@ export const InitializeTridentAgent: React.FC<{
             opacity: `${
               initializeSequenceIndex < 200
                 ? 0
-                : initializeSequenceIndex / TOTAL_MILL_SECONDS
+                : initializeSequenceIndex / SEQUENCE_INDEX_TOTAL
             }`,
             backgroundImage: 'url("/Flag_of_the_United_Nations.svg")',
             transition: "all 1s linear",
