@@ -277,13 +277,13 @@ main.tridentMain {
 
 @keyframes zoom-in-zoom-out-1 {
   0% {
-    transform: scale(1, 1) translate(0, 0) rotate(0);
+    transform: scale(1, 1) translate(0, 0) rotate(0deg);
   }
   50% {
-    transform: scale(1.2, 1.2) translate(0, 0) rotate(180deg);
+    transform: scale(1.2, 1.2) translate(0, 0) rotate(45deg);
   }
   100% {
-    transform: scale(1, 1) translate(0, 0) rotate(360deg);
+    transform: scale(1, 1) translate(0, 0) rotate(90deg);
   }
 }
 
@@ -299,19 +299,19 @@ main.tridentMain {
   height: 30vh;
   border: 8px dashed rgba(0, 158, 219, 0.4);
   border-radius: 30vh;
-  animation: zoom-in-zoom-out-1 2.5s linear infinite;
+  animation: zoom-in-zoom-out-1 4s linear infinite;
   z-index: -1;
 }
 
 @keyframes zoom-in-zoom-out-2 {
   0% {
-    transform: scale(1, 1) translate(0, 0) rotate(360);
+    transform: scale(1, 1) translate(0, 0) rotate(360deg);
   }
   50% {
-    transform: scale(1.2, 1.2) translate(0, 0) rotate(180deg);
+    transform: scale(1.2, 1.2) translate(0, 0) rotate(315deg);
   }
   100% {
-    transform: scale(1, 1) translate(0, 0) rotate(0deg);
+    transform: scale(1, 1) translate(0, 0) rotate(270deg);
   }
 }
 
@@ -327,7 +327,7 @@ main.tridentMain {
   height: 40vh;
   border: 4px dashed rgba(0, 158, 219, 0.4);
   border-radius: 40vh;
-  animation: zoom-in-zoom-out-2 2.5s linear infinite;
+  animation: zoom-in-zoom-out-2 4s linear infinite;
   z-index: -1;
 }
 
@@ -343,6 +343,11 @@ main.tridentMain {
   100% {
     background-position: 0 -100%;
   }
+}
+
+.tridentParticlesWrapper canvas {
+  width: 100vw !important;
+  height: 100vw !important;
 }
 
 .scrollDown {

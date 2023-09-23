@@ -1,12 +1,15 @@
 /* eslint-disable @next/next/no-page-custom-font */
 /* eslint-disable @next/next/no-img-element */
-import React, { useEffect, useState } from "react";
-const SEQUENCE_INDEX_TOTAL = 300;
-const SEQUENCE_INDEX_LOGO_BEGIN = 10;
-const SEQUENCE_INDEX_LOGO_ZOOM_BEGIN = 100;
-const SEQUENCE_INDEX_LOGO_FINISH = 200;
-const SEQUENCE_INDEX_PROGRESS_BEGIN = 150;
-const SEQUENCE_INDEX_PROGRESS_FINISH = 250;
+import React, { useCallback, useEffect, useState } from "react";
+import Particles from "react-particles";
+import { loadFull } from "tsparticles";
+import type { Container, Engine } from "tsparticles-engine";
+const SEQUENCE_INDEX_TOTAL = 250;
+const SEQUENCE_INDEX_LOGO_BEGIN = 5;
+const SEQUENCE_INDEX_LOGO_ZOOM_BEGIN = 50;
+const SEQUENCE_INDEX_LOGO_FINISH = 100;
+const SEQUENCE_INDEX_PROGRESS_BEGIN = 80;
+const SEQUENCE_INDEX_PROGRESS_FINISH = 220;
 
 const TridentLogo: React.FC<{ initializeSequenceIndex: number }> = ({
   initializeSequenceIndex,
@@ -96,6 +99,8 @@ const TridentInitializingProgressCard: React.FC<{
             : 0.6 + (initializeSequenceIndex / SEQUENCE_INDEX_TOTAL) * 1.008
         })`,
         transition: "all 1ms liner",
+        border: "2px solid rgba(255, 255, 255, 0.2)",
+        padding: "0px 1em 1em 1em",
       }}
     >
       <h4
@@ -148,6 +153,73 @@ const TridentAuthenticationMessageCard: React.FC<{
   );
 };
 
+const TridentParticles: React.FC<{ initializeSequenceIndex: number }> = ({
+  initializeSequenceIndex,
+}) => {
+  const particlesInit = useCallback(async (engine: Engine) => {
+    console.log(engine);
+    await loadFull(engine);
+  }, []);
+
+  const particlesLoaded = useCallback(
+    async (container: Container | undefined) => {
+      await console.log(container);
+    },
+    []
+  );
+
+  return (
+    <Particles
+      id="tsparticles"
+      className="tridentParticlesWrapper"
+      init={particlesInit}
+      loaded={particlesLoaded}
+      options={{
+        fpsLimit: 30,
+        fullScreen: {
+          enable: false,
+        },
+        particles: {
+          color: {
+            value: "#009edb",
+          },
+          opacity: {
+            value: 0.5,
+            random: true,
+          },
+          shape: {
+            type: "edge",
+          },
+          polygon: {
+            nb_sides: 4,
+          },
+          size: {
+            value: { min: 3, max: 10 },
+          },
+          move: {
+            enable: true,
+            direction: "inside",
+            outModes: {
+              default: "out",
+            },
+            random: true,
+            speed: 20,
+            straight: false,
+          },
+          number: {
+            value: 400,
+            density: {
+              enable: true,
+              area: 1000,
+            },
+          },
+        },
+        detectRetina: true,
+      }}
+    />
+  );
+};
+
 const InitializeTridentSequences: React.FC<{
   initializeSequenceIndex: number;
 }> = ({ initializeSequenceIndex }) => {
@@ -164,6 +236,10 @@ const InitializeTridentSequences: React.FC<{
           <div className="tridentAgentSectionInitializingBackgroundEffectCircle2" />
         </>
       )}
+      {SEQUENCE_INDEX_PROGRESS_BEGIN < initializeSequenceIndex &&
+        initializeSequenceIndex < SEQUENCE_INDEX_PROGRESS_FINISH && (
+          <TridentParticles initializeSequenceIndex={initializeSequenceIndex} />
+        )}
       {SEQUENCE_INDEX_LOGO_BEGIN < initializeSequenceIndex &&
         initializeSequenceIndex < SEQUENCE_INDEX_LOGO_FINISH && (
           <TridentLogo initializeSequenceIndex={initializeSequenceIndex} />
