@@ -1,7 +1,7 @@
 import * as dotenv from "dotenv";
 dotenv.config();
 
-import { AgentAction, AgentStep } from "langchain/schema";
+import { AgentAction, AgentFinish, AgentStep } from "langchain/schema";
 import { OpenAI, OpenAIChat } from "langchain/llms/openai";
 
 import { Wikipedia } from "../src/utils/langchain/tools/wikipedia/index.ts";
@@ -31,7 +31,6 @@ const questions = [
   "リビアはどのような地形ですか？",
   "リビアの面積はどれくらいですか？",
   "リビアはどのような統治体制ですか？",
-  "リビアはどのような政治状況ですか？",
   "リビアはどのような気候ですか？",
   "リビアで主要な言語は何ですか？",
   "リビアの人口はどれくらいで、年齢別構成はどうなっていますか？",
@@ -41,6 +40,7 @@ const questions = [
   "リビアの主要通貨は何ですか？",
   "リビアの経済規模はどれくらいですか？",
   "リビアの主要産業は何ですか？",
+  "リビアはどのような政治状況ですか？",
   "リビアの国内治安状況はどうなっていますか？",
   "リビアの地政学的リスクはありますか？",
 ];
@@ -55,18 +55,18 @@ for await (const question of questions) {
     intermediate_steps: [],
   });
 
-  console.log("\n----- ----- ----- ----- ----- -----\n");
+  console.log("----- ----- ----- ----- ----- -----");
   console.log("Q:", input);
 
   let result = firstResult;
   const steps = [];
 
   while (true) {
-    console.log("\n----- ----- ----- ----- ----- -----\n");
-    const output = (await outputParser.parse(result.text)) as AgentAction;
+    //console.log("\n----- ----- ----- ----- ----- -----\n");
+    const output = (await outputParser.parse(result.text)) as AgentFinish;
     if ("returnValues" in output) {
       console.log("----- -----");
-      console.log("Final Answer:", output.returnValues);
+      console.log("Final Answer:", output.returnValues.output);
       console.log("----- -----");
       break;
     }
@@ -92,9 +92,9 @@ for await (const question of questions) {
           .replace("\n\n", "\n"),
       ""
     );
-    console.log("----- -----");
-    console.log("agentScratchpad:", agentScratchpad);
-    console.log("----- -----");
+    //console.log("----- -----");
+    //console.log("agentScratchpad:", agentScratchpad);
+    //console.log("----- -----");
 
     const actionResult = await llmChain.call({
       input: input,
@@ -102,9 +102,9 @@ for await (const question of questions) {
       stop: ["\nObservation"],
       intermediate_steps: [],
     });
-    console.log("----- -----");
-    console.log("resultText:", actionResult.text);
-    console.log("----- -----");
+    //console.log("----- -----");
+    //console.log("resultText:", actionResult.text);
+    //console.log("----- -----");
     result = actionResult;
   }
 }
