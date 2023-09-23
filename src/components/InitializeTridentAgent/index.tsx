@@ -91,13 +91,15 @@ const TridentInitializeProgressCard: React.FC<{
         transform: `scale(${
           initializeSequenceIndex < 150
             ? 0.6
-            : 0.6 + (initializeSequenceIndex / TOTAL_MILL_SECONDS) * 1.04
+            : 0.6 + (initializeSequenceIndex / TOTAL_MILL_SECONDS) * 1.02
         })`,
-        transition: "all 1ms ease-in",
+        transition: "all 1ms liner",
       }}
     >
-      <h3 style={{ fontWeight: "normal" }}>INITIALIZING</h3>
-      <h4>{".".repeat(progress)}</h4>
+      <h4 style={{ fontWeight: "normal", color: "rgba(255, 255, 255, 0.8)" }}>
+        INITIALIZING
+      </h4>
+      <h5>{".".repeat(progress)}</h5>
     </div>
   );
 };
