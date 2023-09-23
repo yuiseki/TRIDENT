@@ -9,7 +9,7 @@ const SEQUENCE_INDEX_LOGO_BEGIN = 5;
 const SEQUENCE_INDEX_LOGO_ZOOM_BEGIN = 50;
 const SEQUENCE_INDEX_LOGO_FINISH = 100;
 const SEQUENCE_INDEX_PROGRESS_BEGIN = 80;
-const SEQUENCE_INDEX_PROGRESS_FINISH = 220;
+const SEQUENCE_INDEX_PROGRESS_FINISH = 240;
 
 const TridentLogo: React.FC<{ initializeSequenceIndex: number }> = ({
   initializeSequenceIndex,
@@ -96,18 +96,19 @@ const TridentInitializingProgressCard: React.FC<{
         transform: `scale(${
           initializeSequenceIndex < SEQUENCE_INDEX_PROGRESS_BEGIN
             ? 0.6
-            : 0.6 + (initializeSequenceIndex / SEQUENCE_INDEX_TOTAL) * 1.008
+            : 0.6 + (initializeSequenceIndex / SEQUENCE_INDEX_TOTAL) * 0.25
         })`,
         transition: "all 1ms liner",
-        border: "2px solid rgba(255, 255, 255, 0.2)",
-        padding: "0px 1em 1em 1em",
+        padding: "1rem 2rem 2rem 2rem",
+        backgroundColor: "rgba(0, 0, 0, 0.4)",
       }}
     >
       <h4
         style={{
           fontWeight: "normal",
           color: "rgba(255, 255, 255, 0.8)",
-          textShadow: "2px 1px 4px rgba(255, 255, 255, 0.4)",
+          textShadow: "1px 1px 2px rgba(255, 255, 255, 0.4)",
+          letterSpacing: "0.05em",
         }}
       >
         INITIALIZING
@@ -207,7 +208,7 @@ const TridentParticles: React.FC<{ initializeSequenceIndex: number }> = ({
             straight: false,
           },
           number: {
-            value: 400,
+            value: 200,
             density: {
               enable: true,
               area: 1000,
