@@ -210,7 +210,7 @@ const TridentParticles: React.FC<{ initializeSequenceIndex: number }> = ({
             offset: { x: 4, y: 4 },
           },
           size: {
-            value: { min: 4, max: 14 },
+            value: { min: 6, max: 16 },
           },
           move: {
             enable: true,
