@@ -5,13 +5,13 @@ import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { loadImageShape } from "tsparticles-shape-image";
 import type { Container, Engine } from "tsparticles-engine";
-const SEQUENCE_INDEX_TOTAL = 300;
-const SEQUENCE_INDEX_LOGO_BEGIN = 5;
-const SEQUENCE_INDEX_LOGO_ZOOM_BEGIN = 50;
-const SEQUENCE_INDEX_LOGO_FINISH = 100;
-const SEQUENCE_INDEX_PROGRESS_BEGIN = 80;
-const SEQUENCE_INDEX_PROGRESS_FINISH = 240;
-const SEQUENCE_INDEX_PROGRESS_FINISH_WAIT = 30;
+const SEQUENCE_INDEX_TOTAL = 500;
+const SEQUENCE_INDEX_LOGO_BEGIN = 10;
+const SEQUENCE_INDEX_LOGO_ZOOM_BEGIN = 100;
+const SEQUENCE_INDEX_LOGO_FINISH = 220;
+const SEQUENCE_INDEX_PROGRESS_BEGIN = 160;
+const SEQUENCE_INDEX_PROGRESS_FINISH = 350;
+const SEQUENCE_INDEX_PROGRESS_FINISH_WAIT = 150;
 
 const SEQUENCE_INDEX_SUBTITLE_1 = "自律型地理空間情報探索エージェント";
 const SEQUENCE_INDEX_SUBTITLE_2 = "トライデント";
@@ -282,10 +282,10 @@ const TridentSubTitle: React.FC<{ initializeSequenceIndex: number }> = ({
         <TridentSubTitleItem subTitle={SEQUENCE_INDEX_SUBTITLE_1} />
       )}
       {SEQUENCE_INDEX_LOGO_FINISH < initializeSequenceIndex &&
-        initializeSequenceIndex < SEQUENCE_INDEX_PROGRESS_BEGIN + 100 && (
+        initializeSequenceIndex < SEQUENCE_INDEX_PROGRESS_BEGIN + 150 && (
           <TridentSubTitleItem subTitle={SEQUENCE_INDEX_SUBTITLE_2} />
         )}
-      {SEQUENCE_INDEX_PROGRESS_BEGIN + 100 < initializeSequenceIndex &&
+      {SEQUENCE_INDEX_PROGRESS_BEGIN + 150 < initializeSequenceIndex &&
         [SEQUENCE_INDEX_SUBTITLE_2, SEQUENCE_INDEX_SUBTITLE_3].map(
           (subTitle, idx) => {
             return (
