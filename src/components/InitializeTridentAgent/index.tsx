@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-page-custom-font */
 /* eslint-disable @next/next/no-img-element */
-import { initialize } from "next/dist/server/lib/render-server";
 import React, { useEffect, useState } from "react";
 const TOTAL_MILL_SECONDS = 500;
 
@@ -62,7 +61,7 @@ const TridentLogo: React.FC<{ initializeSequenceIndex: number }> = ({
   );
 };
 
-const TridentInitializeProgressCard: React.FC<{
+const TridentInitializingProgressCard: React.FC<{
   initializeSequenceIndex: number;
 }> = ({ initializeSequenceIndex }) => {
   const [progress, setProgress] = useState(1);
@@ -136,7 +135,7 @@ const InitializeTridentSequences: React.FC<{
         <TridentLogo initializeSequenceIndex={initializeSequenceIndex} />
       )}
       {150 < initializeSequenceIndex && initializeSequenceIndex < 400 && (
-        <TridentInitializeProgressCard
+        <TridentInitializingProgressCard
           initializeSequenceIndex={initializeSequenceIndex}
         />
       )}
