@@ -102,7 +102,7 @@ const TridentInitializingProgressCard: React.FC<{
         })`,
         transition: "all 1ms liner",
         padding: "1rem 2rem 2rem 2rem",
-        backgroundColor: "rgba(0, 0, 0, 0.4)",
+        backgroundColor: "rgba(0, 0, 0, 0.5)",
       }}
     >
       <h4
@@ -190,8 +190,7 @@ const TridentParticles: React.FC<{ initializeSequenceIndex: number }> = ({
             value: "#009edb",
           },
           opacity: {
-            value: 0.5,
-            random: true,
+            value: { min: 0.2, max: 0.6 },
           },
           shape: {
             type: "image",
@@ -199,8 +198,14 @@ const TridentParticles: React.FC<{ initializeSequenceIndex: number }> = ({
               src: "/favicon.ico",
             },
           },
+          shadow: {
+            blur: 4,
+            color: { value: "#009edb" },
+            enable: true,
+            offset: { x: 4, y: 4 },
+          },
           size: {
-            value: { min: 3, max: 10 },
+            value: { min: 4, max: 14 },
           },
           move: {
             enable: true,
@@ -209,14 +214,14 @@ const TridentParticles: React.FC<{ initializeSequenceIndex: number }> = ({
               default: "out",
             },
             random: true,
-            speed: 20,
+            speed: 10,
             straight: false,
           },
           number: {
             value: 200,
             density: {
               enable: true,
-              area: 1000,
+              area: 1500,
             },
           },
         },
