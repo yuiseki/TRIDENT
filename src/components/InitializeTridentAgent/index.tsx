@@ -187,7 +187,7 @@ export const InitializeTridentAgent: React.FC<{
         <section
           className="tridentAgentSectionInitializingOverlay"
           style={{
-            opacity: 1 - initializeSequenceIndex / 100,
+            opacity: 1 - initializeSequenceIndex / TOTAL_MILL_SECONDS,
             transition: "all 0.1s linear",
           }}
         />
@@ -195,7 +195,7 @@ export const InitializeTridentAgent: React.FC<{
           className="tridentAgentSectionInitializingBackground"
           style={{
             opacity: `${
-              initializeSequenceIndex < 300
+              initializeSequenceIndex < 200
                 ? 0
                 : initializeSequenceIndex / TOTAL_MILL_SECONDS
             }`,
