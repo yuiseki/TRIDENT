@@ -20,7 +20,7 @@ const TridentLogo: React.FC<{ initializeSequenceIndex: number }> = ({
         justifyContent: "center",
         position: "absolute",
         opacity: `${
-          1 - (initializeSequenceIndex / SEQUENCE_INDEX_TOTAL) * 1.6
+          1 - (initializeSequenceIndex / SEQUENCE_INDEX_TOTAL) * 1.2
         }`,
         transform: `scale(${
           initializeSequenceIndex < SEQUENCE_INDEX_LOGO_ZOOM_BEGIN
@@ -41,7 +41,7 @@ const TridentLogo: React.FC<{ initializeSequenceIndex: number }> = ({
         style={{
           width: 100,
           height: 100,
-          opacity: 0.8,
+          opacity: 1,
           boxShadow:
             "4px 4px 15px rgba(0, 158, 219, 0.6), -4px -4px 15px rgba(0, 158, 219, 0.6)",
         }}
@@ -57,7 +57,7 @@ const TridentLogo: React.FC<{ initializeSequenceIndex: number }> = ({
         <h5
           style={{
             textAlign: "center",
-            color: "rgba(0, 158, 219, 0.6)",
+            color: "rgba(0, 158, 219, 0.8)",
             textShadow:
               "4px 4px 15px rgba(0, 158, 219, 0.6), -4px -4px 15px rgba(0, 158, 219, 0.6)",
           }}

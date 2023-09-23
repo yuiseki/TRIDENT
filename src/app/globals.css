@@ -334,6 +334,19 @@ main.tridentMain {
   color: rgba(255, 255, 255, 0.9);
 }
 
+@keyframes append-animate {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.tridentAgentSectionFirst {
+  animation: append-animate 0.3s linear;
+}
+
 .tridentAgentReportList {
   color: rgba(255, 255, 255, 1);
 }
