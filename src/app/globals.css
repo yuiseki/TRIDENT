@@ -299,7 +299,7 @@ main.tridentMain {
   height: 30vh;
   border: 8px dashed rgba(0, 158, 219, 0.4);
   border-radius: 30vh;
-  animation: zoom-in-zoom-out-1 4s linear infinite;
+  animation: zoom-in-zoom-out-1 5s linear infinite;
   z-index: -1;
 }
 
@@ -327,7 +327,7 @@ main.tridentMain {
   height: 40vh;
   border: 4px dashed rgba(0, 158, 219, 0.4);
   border-radius: 40vh;
-  animation: zoom-in-zoom-out-2 4s linear infinite;
+  animation: zoom-in-zoom-out-2 5s linear infinite;
   z-index: -1;
 }
 
