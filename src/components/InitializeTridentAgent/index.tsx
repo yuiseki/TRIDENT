@@ -1,12 +1,12 @@
 /* eslint-disable @next/next/no-page-custom-font */
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from "react";
-const SEQUENCE_INDEX_TOTAL = 350;
-const SEQUENCE_INDEX_LOGO_BEGIN = 30;
-const SEQUENCE_INDEX_LOGO_ZOOM_BEGIN = 150;
-const SEQUENCE_INDEX_LOGO_FINISH = 250;
-const SEQUENCE_INDEX_PROGRESS_BEGIN = 200;
-const SEQUENCE_INDEX_PROGRESS_FINISH = 300;
+const SEQUENCE_INDEX_TOTAL = 300;
+const SEQUENCE_INDEX_LOGO_BEGIN = 10;
+const SEQUENCE_INDEX_LOGO_ZOOM_BEGIN = 100;
+const SEQUENCE_INDEX_LOGO_FINISH = 200;
+const SEQUENCE_INDEX_PROGRESS_BEGIN = 150;
+const SEQUENCE_INDEX_PROGRESS_FINISH = 250;
 
 const TridentLogo: React.FC<{ initializeSequenceIndex: number }> = ({
   initializeSequenceIndex,
@@ -98,7 +98,13 @@ const TridentInitializingProgressCard: React.FC<{
         transition: "all 1ms liner",
       }}
     >
-      <h4 style={{ fontWeight: "normal", color: "rgba(255, 255, 255, 0.8)" }}>
+      <h4
+        style={{
+          fontWeight: "normal",
+          color: "rgba(255, 255, 255, 0.8)",
+          textShadow: "2px 1px 4px rgba(255, 255, 255, 0.4)",
+        }}
+      >
         INITIALIZING
       </h4>
       <div
@@ -117,6 +123,7 @@ const TridentInitializingProgressCard: React.FC<{
             }%`,
             height: "15px",
             backgroundColor: "rgba(255, 255, 255, 0.4)",
+            boxShadow: "2px 0px 2px rgba(255, 255, 255, 0.6)",
           }}
         />
       </div>
@@ -226,7 +233,7 @@ export const InitializeTridentAgent: React.FC<{
           className="tridentAgentSectionInitializingBackground"
           style={{
             opacity: `${
-              initializeSequenceIndex < 200
+              initializeSequenceIndex < SEQUENCE_INDEX_PROGRESS_BEGIN
                 ? 0
                 : initializeSequenceIndex / SEQUENCE_INDEX_TOTAL
             }`,
