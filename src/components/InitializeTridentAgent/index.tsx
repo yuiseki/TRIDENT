@@ -96,17 +96,14 @@ const InitializeTridentSequences: React.FC<{
   if (150 <= initializeSequenceIndex && initializeSequenceIndex < 300) {
     return <TridentLogo initializeSequenceIndex={initializeSequenceIndex} />;
   }
-  if (300 <= initializeSequenceIndex && initializeSequenceIndex < 700) {
+  if (300 <= initializeSequenceIndex && initializeSequenceIndex < 800) {
     return (
       <TridentInitializeMessageCard
         initializeSequenceIndex={initializeSequenceIndex}
       />
     );
   }
-  if (500 <= initializeSequenceIndex && initializeSequenceIndex < 700) {
-    return "";
-  }
-  if (700 <= initializeSequenceIndex && initializeSequenceIndex < 1000) {
+  if (800 <= initializeSequenceIndex && initializeSequenceIndex < 1000) {
     return "";
   }
 };
