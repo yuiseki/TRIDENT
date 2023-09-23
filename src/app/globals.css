@@ -275,6 +275,62 @@ main.tridentMain {
   z-index: 998;
 }
 
+@keyframes zoom-in-zoom-out-1 {
+  0% {
+    transform: scale(1, 1) translate(0, 0) rotate(0);
+  }
+  50% {
+    transform: scale(1.2, 1.2) translate(0, 0) rotate(180deg);
+  }
+  100% {
+    transform: scale(1, 1) translate(0, 0) rotate(360deg);
+  }
+}
+
+.tridentAgentSectionInitializingBackgroundEffectCircle1 {
+  content: "";
+  position: absolute;
+  top: calc((100vh - 30vh) / 2);
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30vh;
+  height: 30vh;
+  border: 8px dashed rgba(0, 158, 219, 0.4);
+  border-radius: 30vh;
+  animation: zoom-in-zoom-out-1 2.5s linear infinite;
+  z-index: -1;
+}
+
+@keyframes zoom-in-zoom-out-2 {
+  0% {
+    transform: scale(1, 1) translate(0, 0) rotate(360);
+  }
+  50% {
+    transform: scale(1.2, 1.2) translate(0, 0) rotate(180deg);
+  }
+  100% {
+    transform: scale(1, 1) translate(0, 0) rotate(0deg);
+  }
+}
+
+.tridentAgentSectionInitializingBackgroundEffectCircle2 {
+  content: "";
+  position: absolute;
+  top: calc((100vh - 40vh) / 2);
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40vh;
+  height: 40vh;
+  border: 4px dashed rgba(0, 158, 219, 0.4);
+  border-radius: 40vh;
+  animation: zoom-in-zoom-out-2 2.5s linear infinite;
+  z-index: -1;
+}
+
 @keyframes scroll-down {
   0% {
     background-position: 0 100%;

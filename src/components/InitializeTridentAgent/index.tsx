@@ -2,7 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from "react";
 const SEQUENCE_INDEX_TOTAL = 350;
-const SEQUENCE_INDEX_LOGO_BEGIN = 100;
+const SEQUENCE_INDEX_LOGO_BEGIN = 30;
 const SEQUENCE_INDEX_LOGO_ZOOM_BEGIN = 150;
 const SEQUENCE_INDEX_LOGO_FINISH = 250;
 const SEQUENCE_INDEX_PROGRESS_BEGIN = 200;
@@ -150,6 +150,12 @@ const InitializeTridentSequences: React.FC<{
         <TridentAuthenticationMessageCard
           initializeSequenceIndex={initializeSequenceIndex}
         />
+      )}
+      {initializeSequenceIndex < SEQUENCE_INDEX_LOGO_ZOOM_BEGIN && (
+        <>
+          <div className="tridentAgentSectionInitializingBackgroundEffectCircle1" />
+          <div className="tridentAgentSectionInitializingBackgroundEffectCircle2" />
+        </>
       )}
       {SEQUENCE_INDEX_LOGO_BEGIN < initializeSequenceIndex &&
         initializeSequenceIndex < SEQUENCE_INDEX_LOGO_FINISH && (
