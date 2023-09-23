@@ -3,6 +3,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
+import { loadImageShape } from "tsparticles-shape-image";
 import type { Container, Engine } from "tsparticles-engine";
 const SEQUENCE_INDEX_TOTAL = 280;
 const SEQUENCE_INDEX_LOGO_BEGIN = 5;
@@ -163,6 +164,7 @@ const TridentParticles: React.FC<{ initializeSequenceIndex: number }> = ({
   const particlesInit = useCallback(async (engine: Engine) => {
     console.log(engine);
     await loadFull(engine);
+    await loadImageShape(engine);
   }, []);
 
   const particlesLoaded = useCallback(
@@ -192,10 +194,10 @@ const TridentParticles: React.FC<{ initializeSequenceIndex: number }> = ({
             random: true,
           },
           shape: {
-            type: "edge",
-          },
-          polygon: {
-            nb_sides: 4,
+            type: "image",
+            image: {
+              src: "/favicon.ico",
+            },
           },
           size: {
             value: { min: 3, max: 10 },
