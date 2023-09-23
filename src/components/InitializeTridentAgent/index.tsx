@@ -17,9 +17,9 @@ const TridentLogo: React.FC<{ initializeSequenceIndex: number }> = ({
         position: "absolute",
         opacity: `${1 - (initializeSequenceIndex / TOTAL_MILL_SECONDS) * 1.6}`,
         transform: `scale(${
-          initializeSequenceIndex < 100
+          initializeSequenceIndex < 150
             ? 1
-            : 1 + ((initializeSequenceIndex - 100) / TOTAL_MILL_SECONDS) * 150
+            : 1 + ((initializeSequenceIndex - 150) / TOTAL_MILL_SECONDS) * 150
         })`,
         transition: "all 1ms linear",
         zIndex: 2000,
@@ -32,6 +32,7 @@ const TridentLogo: React.FC<{ initializeSequenceIndex: number }> = ({
         style={{
           width: 100,
           height: 100,
+          opacity: 0.8,
           boxShadow:
             "4px 4px 15px rgba(0, 158, 219, 0.6), -4px -4px 15px rgba(0, 158, 219, 0.6)",
         }}
