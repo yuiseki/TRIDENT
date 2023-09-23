@@ -195,7 +195,7 @@ const MainContent: React.FC = () => {
             <div
               style={{
                 position: "absolute",
-                left: 0,
+                left: "3vw",
                 bottom: "8em",
                 backgroundColor: "rgba(0, 0, 0, 0.6)",
                 paddingBottom: "5px",

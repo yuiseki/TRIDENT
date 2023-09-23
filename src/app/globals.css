@@ -426,7 +426,7 @@ main.tridentMain {
 .tridentAgentSectionTitle h3 {
   font-size: 3em;
   background-color: rgba(0, 0, 0, 0.4);
-  padding: 14px;
+  padding: 14px 2vw;
 }
 
 .tridentAgentSectionMain {
@@ -444,13 +444,14 @@ main.tridentMain {
   left: 0;
   width: 100%;
   z-index: 10;
-  padding: 2.5em;
+  padding: 2.5em 2vw;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
 .tridentAgentSectionMain ul li {
   font-size: 2em;
-  padding: 10px;
+  padding: 5px;
+  margin-left: 2vw;
 }
 
 .tridentAgentSectionDescription {
@@ -464,13 +465,13 @@ main.tridentMain {
 .tridentAgentSectionDescription h3 {
   font-size: 3em;
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 14px;
+  padding: 14px 2vw;
 }
 
 .tridentAgentSectionDescription h4 {
   font-size: 2em;
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 14px;
+  padding: 14px 2vw;
 }
 
 .tridentAgentSection h4 a {

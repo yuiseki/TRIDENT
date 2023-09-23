@@ -43,7 +43,7 @@ const TridentLogo: React.FC<{ initializeSequenceIndex: number }> = ({
           height: 100,
           opacity: 1,
           boxShadow:
-            "4px 4px 15px rgba(0, 158, 219, 0.6), -4px -4px 15px rgba(0, 158, 219, 0.6)",
+            "8px 8px 30px rgba(0, 158, 219, 0.6), -8px -8px 30px rgba(0, 158, 219, 0.6)",
         }}
       >
         <img
@@ -59,7 +59,7 @@ const TridentLogo: React.FC<{ initializeSequenceIndex: number }> = ({
             textAlign: "center",
             color: "rgba(0, 158, 219, 0.8)",
             textShadow:
-              "4px 4px 15px rgba(0, 158, 219, 0.6), -4px -4px 15px rgba(0, 158, 219, 0.6)",
+              "8px 8px 30px rgba(0, 158, 219, 0.6), -8px -8px 30px rgba(0, 158, 219, 0.6)",
           }}
         >
           TRIDENT
