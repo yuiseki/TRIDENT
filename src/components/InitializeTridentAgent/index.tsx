@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-page-custom-font */
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from "react";
-const TOTAL_MILL_SECONDS = 500;
+const TOTAL_MILL_SECONDS = 600;
 
 const TridentLogo: React.FC<{ initializeSequenceIndex: number }> = ({
   initializeSequenceIndex,
@@ -72,17 +72,17 @@ const TridentInitializeMessageCard: React.FC<{
         zIndex: 2000,
         pointerEvents: "none",
         userSelect: "none",
-        opacity: `${initializeSequenceIndex / 1000 + 0.4}`,
+        opacity: `${initializeSequenceIndex / 1000 + 0.5}`,
         transform: `scale(${
           initializeSequenceIndex < 300
-            ? 1
-            : 1 + ((initializeSequenceIndex - 300) / 1000) * 1.8
+            ? 0.8
+            : 0.8 + ((initializeSequenceIndex - 300) / 1000) * 2.2
         })`,
         transition: "all 0.001s linear",
       }}
     >
       <h3>Initializing</h3>
-      <h4>{".".repeat(Math.floor(initializeSequenceIndex / 100) - 2)}</h4>
+      <h4>{".".repeat(Math.floor(initializeSequenceIndex / 50) - 5)}</h4>
     </div>
   );
 };
@@ -96,15 +96,25 @@ const InitializeTridentSequences: React.FC<{
   if (150 <= initializeSequenceIndex && initializeSequenceIndex < 300) {
     return <TridentLogo initializeSequenceIndex={initializeSequenceIndex} />;
   }
-  if (300 <= initializeSequenceIndex && initializeSequenceIndex < 800) {
+  if (300 <= initializeSequenceIndex && initializeSequenceIndex < 550) {
     return (
       <TridentInitializeMessageCard
         initializeSequenceIndex={initializeSequenceIndex}
       />
     );
   }
-  if (800 <= initializeSequenceIndex && initializeSequenceIndex < 1000) {
-    return "";
+  if (550 <= initializeSequenceIndex && initializeSequenceIndex < 1000) {
+    return (
+      <div
+        style={{
+          position: "absolute",
+          bottom: 0,
+          left: 0,
+        }}
+      >
+        {JSON.stringify(initializeSequenceIndex)}
+      </div>
+    );
   }
 };
 
