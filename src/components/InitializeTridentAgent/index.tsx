@@ -64,14 +64,6 @@ const TridentLogo: React.FC<{ initializeSequenceIndex: number }> = ({
 const TridentInitializingProgressCard: React.FC<{
   initializeSequenceIndex: number;
 }> = ({ initializeSequenceIndex }) => {
-  const [progress, setProgress] = useState(1);
-  useEffect(() => {
-    const newProgress = Math.floor(initializeSequenceIndex / 50) - 2;
-    console.log(newProgress);
-    if (newProgress > 0) {
-      setProgress(newProgress);
-    }
-  }, [initializeSequenceIndex]);
   return (
     <div
       style={{
@@ -91,7 +83,7 @@ const TridentInitializingProgressCard: React.FC<{
         transform: `scale(${
           initializeSequenceIndex < 150
             ? 0.6
-            : 0.6 + (initializeSequenceIndex / TOTAL_MILL_SECONDS) * 1.02
+            : 0.6 + (initializeSequenceIndex / TOTAL_MILL_SECONDS) * 1.008
         })`,
         transition: "all 1ms liner",
       }}
@@ -99,7 +91,20 @@ const TridentInitializingProgressCard: React.FC<{
       <h4 style={{ fontWeight: "normal", color: "rgba(255, 255, 255, 0.8)" }}>
         INITIALIZING
       </h4>
-      <h5>{".".repeat(progress)}</h5>
+      <div
+        style={{
+          width: "100%",
+          marginTop: "10px",
+        }}
+      >
+        <div
+          style={{
+            width: `${(initializeSequenceIndex / 400) * 100}%`,
+            height: "15px",
+            backgroundColor: "rgba(255, 255, 255, 0.4)",
+          }}
+        />
+      </div>
     </div>
   );
 };
