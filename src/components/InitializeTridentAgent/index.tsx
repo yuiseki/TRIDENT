@@ -4,12 +4,13 @@ import React, { useCallback, useEffect, useState } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import type { Container, Engine } from "tsparticles-engine";
-const SEQUENCE_INDEX_TOTAL = 250;
+const SEQUENCE_INDEX_TOTAL = 280;
 const SEQUENCE_INDEX_LOGO_BEGIN = 5;
 const SEQUENCE_INDEX_LOGO_ZOOM_BEGIN = 50;
 const SEQUENCE_INDEX_LOGO_FINISH = 100;
 const SEQUENCE_INDEX_PROGRESS_BEGIN = 80;
 const SEQUENCE_INDEX_PROGRESS_FINISH = 240;
+const SEQUENCE_INDEX_PROGRESS_FINISH_WAIT = 30;
 
 const TridentLogo: React.FC<{ initializeSequenceIndex: number }> = ({
   initializeSequenceIndex,
@@ -122,10 +123,12 @@ const TridentInitializingProgressCard: React.FC<{
         <div
           style={{
             width: `${
-              ((initializeSequenceIndex - SEQUENCE_INDEX_PROGRESS_BEGIN) /
-                (SEQUENCE_INDEX_PROGRESS_FINISH -
-                  SEQUENCE_INDEX_PROGRESS_BEGIN)) *
-              100
+              initializeSequenceIndex < SEQUENCE_INDEX_PROGRESS_FINISH
+                ? ((initializeSequenceIndex - SEQUENCE_INDEX_PROGRESS_BEGIN) /
+                    (SEQUENCE_INDEX_PROGRESS_FINISH -
+                      SEQUENCE_INDEX_PROGRESS_BEGIN)) *
+                  100
+                : 100
             }%`,
             height: "15px",
             backgroundColor: "rgba(255, 255, 255, 0.4)",
@@ -246,7 +249,9 @@ const InitializeTridentSequences: React.FC<{
           <TridentLogo initializeSequenceIndex={initializeSequenceIndex} />
         )}
       {SEQUENCE_INDEX_PROGRESS_BEGIN < initializeSequenceIndex &&
-        initializeSequenceIndex < SEQUENCE_INDEX_PROGRESS_FINISH && (
+        initializeSequenceIndex <
+          SEQUENCE_INDEX_PROGRESS_FINISH +
+            SEQUENCE_INDEX_PROGRESS_FINISH_WAIT && (
           <TridentInitializingProgressCard
             initializeSequenceIndex={initializeSequenceIndex}
           />
