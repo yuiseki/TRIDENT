@@ -110,7 +110,10 @@ const TridentInitializingProgressCard: React.FC<{
         <div
           style={{
             width: `${
-              (initializeSequenceIndex / SEQUENCE_INDEX_PROGRESS_FINISH) * 100
+              ((initializeSequenceIndex - SEQUENCE_INDEX_PROGRESS_BEGIN) /
+                (SEQUENCE_INDEX_PROGRESS_FINISH -
+                  SEQUENCE_INDEX_PROGRESS_BEGIN)) *
+              100
             }%`,
             height: "15px",
             backgroundColor: "rgba(255, 255, 255, 0.4)",
