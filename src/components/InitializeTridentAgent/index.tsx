@@ -208,6 +208,7 @@ export const InitializeTridentAgent: React.FC<{
         rel="stylesheet"
       ></link>
       <article className="tridentAgentArticle tridentAgentArticleInitializing">
+        <section className="tridentAgentSectionBackground" />
         <section
           className="tridentAgentSectionInitializingOverlay"
           style={{
