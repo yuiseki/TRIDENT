@@ -5,13 +5,17 @@ import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { loadImageShape } from "tsparticles-shape-image";
 import type { Container, Engine } from "tsparticles-engine";
-const SEQUENCE_INDEX_TOTAL = 280;
+const SEQUENCE_INDEX_TOTAL = 300;
 const SEQUENCE_INDEX_LOGO_BEGIN = 5;
 const SEQUENCE_INDEX_LOGO_ZOOM_BEGIN = 50;
 const SEQUENCE_INDEX_LOGO_FINISH = 100;
 const SEQUENCE_INDEX_PROGRESS_BEGIN = 80;
 const SEQUENCE_INDEX_PROGRESS_FINISH = 240;
 const SEQUENCE_INDEX_PROGRESS_FINISH_WAIT = 30;
+
+const SEQUENCE_INDEX_SUBTITLE_1 = "自律型地理空間情報探索エージェント";
+const SEQUENCE_INDEX_SUBTITLE_2 = "トライデント";
+const SEQUENCE_INDEX_SUBTITLE_3 = "起動しました";
 
 const TridentLogo: React.FC<{ initializeSequenceIndex: number }> = ({
   initializeSequenceIndex,
@@ -110,7 +114,7 @@ const TridentInitializingProgressCard: React.FC<{
           fontWeight: "normal",
           color: "rgba(255, 255, 255, 0.8)",
           textShadow: "1px 1px 2px rgba(255, 255, 255, 0.4)",
-          letterSpacing: "0.05em",
+          letterSpacing: "0.1em",
         }}
       >
         INITIALIZING
@@ -132,7 +136,7 @@ const TridentInitializingProgressCard: React.FC<{
                 : 100
             }%`,
             height: "15px",
-            backgroundColor: "rgba(255, 255, 255, 0.4)",
+            backgroundColor: "rgba(255, 255, 255, 0.5)",
             boxShadow: "2px 0px 2px rgba(255, 255, 255, 0.6)",
           }}
         />
@@ -231,6 +235,71 @@ const TridentParticles: React.FC<{ initializeSequenceIndex: number }> = ({
   );
 };
 
+const TridentSubTitleItem: React.FC<{ subTitle: string }> = ({ subTitle }) => {
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    if (!visible) {
+      setVisible(true);
+    }
+    return () => {
+      setVisible(false);
+    };
+  }, []);
+  return (
+    <div
+      style={{
+        width: "fit-content",
+        backgroundColor: "rgba(8, 8, 8, 0.75)",
+        padding: "0.5rem 0.5rem",
+        fontSize: "2.2em",
+        color: "rgba(255, 255, 255, 1)",
+        whiteSpace: "pre-wrap",
+        transition: "all 0.4s linear",
+        opacity: `${visible ? 1 : 0}`,
+      }}
+    >
+      {subTitle}
+    </div>
+  );
+};
+
+const TridentSubTitle: React.FC<{ initializeSequenceIndex: number }> = ({
+  initializeSequenceIndex,
+}) => {
+  return (
+    <div
+      style={{
+        width: "fit-content",
+        position: "absolute",
+        bottom: "5vh",
+        left: "5vw",
+        textAlign: "left",
+        marginRight: "5vw",
+        zIndex: 2000,
+      }}
+    >
+      {initializeSequenceIndex < SEQUENCE_INDEX_LOGO_FINISH && (
+        <TridentSubTitleItem subTitle={SEQUENCE_INDEX_SUBTITLE_1} />
+      )}
+      {SEQUENCE_INDEX_LOGO_FINISH < initializeSequenceIndex &&
+        initializeSequenceIndex < SEQUENCE_INDEX_PROGRESS_BEGIN + 100 && (
+          <TridentSubTitleItem subTitle={SEQUENCE_INDEX_SUBTITLE_2} />
+        )}
+      {SEQUENCE_INDEX_PROGRESS_BEGIN + 100 < initializeSequenceIndex &&
+        [SEQUENCE_INDEX_SUBTITLE_2, SEQUENCE_INDEX_SUBTITLE_3].map(
+          (subTitle, idx) => {
+            return (
+              <TridentSubTitleItem
+                key={`trident-subtitle-item-${idx}`}
+                subTitle={subTitle}
+              />
+            );
+          }
+        )}
+    </div>
+  );
+};
+
 const InitializeTridentSequences: React.FC<{
   initializeSequenceIndex: number;
 }> = ({ initializeSequenceIndex }) => {
@@ -263,7 +332,8 @@ const InitializeTridentSequences: React.FC<{
             initializeSequenceIndex={initializeSequenceIndex}
           />
         )}
-      {SEQUENCE_INDEX_PROGRESS_FINISH < initializeSequenceIndex && (
+      {SEQUENCE_INDEX_PROGRESS_FINISH + SEQUENCE_INDEX_PROGRESS_FINISH_WAIT <
+        initializeSequenceIndex && (
         <TridentAuthenticationMessageCard
           initializeSequenceIndex={initializeSequenceIndex}
         />
@@ -344,6 +414,7 @@ export const InitializeTridentAgent: React.FC<{
             initializeSequenceIndex={initializeSequenceIndex}
           />
         </section>
+        <TridentSubTitle initializeSequenceIndex={initializeSequenceIndex} />
       </article>
     </>
   );
