@@ -219,7 +219,7 @@ const TridentParticles: React.FC<{ initializeSequenceIndex: number }> = ({
               default: "out",
             },
             random: true,
-            speed: 10,
+            speed: 20,
             straight: false,
           },
           number: {
