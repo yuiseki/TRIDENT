@@ -9,7 +9,7 @@ export async function POST(request: Request) {
   console.log("----- ----- -----");
 
   const res = await request.json();
-  const pastMessagesJsonString = res.pastMessages;
+  const pastMessagesJsonString = JSON.parse(res.pastMessages);
 
   console.log("pastMessagesJsonString");
   console.log(pastMessagesJsonString);
@@ -17,16 +17,19 @@ export async function POST(request: Request) {
   let chatHistory = undefined;
   let chatHistoryLines = "";
   if (pastMessagesJsonString && pastMessagesJsonString !== "undefined") {
-    const pastMessages: Array<{ type: string; data: { content: string } }> =
-      JSON.parse(pastMessagesJsonString);
+    const pastMessages: Array<{
+      type: string;
+      id: string[];
+      kwargs: { content: string };
+    }> = pastMessagesJsonString;
     chatHistory =
       pastMessages &&
       pastMessages
         .map((message) => {
-          switch (message.type) {
-            case "human":
-              return `Human: ${message.data.content}`;
-            case "ai":
+          switch (message.id[2]) {
+            case "HumanMessage":
+              return `Human: ${message.kwargs.content}`;
+            case "AIMessage":
               return null;
             default:
               return null;
@@ -38,6 +41,7 @@ export async function POST(request: Request) {
     }
   }
 
+  console.log("chatHistoryLines");
   console.log(chatHistoryLines);
 
   const model = new OpenAI({ temperature: 0 });

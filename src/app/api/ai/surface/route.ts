@@ -1,11 +1,7 @@
 import { NextResponse } from "next/server";
 import { OpenAI } from "langchain/llms/openai";
 import { BufferMemory, ChatMessageHistory } from "langchain/memory";
-import {
-  AIChatMessage,
-  BaseChatMessage,
-  HumanChatMessage,
-} from "langchain/schema";
+import { AIMessage, HumanMessage } from "langchain/schema";
 import { loadTridentSurfaceChain } from "@/utils/langchain/chains/surface";
 
 export async function POST(request: Request) {
@@ -17,27 +13,29 @@ export async function POST(request: Request) {
   const query = res.query;
   const pastMessagesJsonString = res.pastMessages;
 
-  console.log(pastMessagesJsonString);
+  console.log(JSON.stringify(pastMessagesJsonString, null, 2));
 
   let chatHistory = undefined;
-  const pastMessages: BaseChatMessage[] = [];
 
   if (pastMessagesJsonString && pastMessagesJsonString !== "undefined") {
-    const pastMessages: Array<{ type: string; data: { content: string } }> =
-      JSON.parse(pastMessagesJsonString);
+    const pastMessages: Array<{
+      type: string;
+      id: string[];
+      kwargs: { content: string };
+    }> = JSON.parse(pastMessagesJsonString);
 
     const chatHistoryMessages = pastMessages.map((message) => {
-      if (message.data.content) {
-        switch (message.type) {
+      if (message.kwargs.content) {
+        switch (message.id[2]) {
           case "human":
-            return new HumanChatMessage(message.data.content);
+            return new HumanMessage(message.kwargs.content);
           case "ai":
-            return new AIChatMessage(message.data.content);
+            return new AIMessage(message.kwargs.content);
           default:
-            return new HumanChatMessage("");
+            return new HumanMessage("");
         }
       } else {
-        return new HumanChatMessage("");
+        return new HumanMessage("");
       }
     });
     chatHistory = new ChatMessageHistory(chatHistoryMessages);
