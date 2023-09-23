@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-page-custom-font */
 /* eslint-disable @next/next/no-img-element */
+import { initialize } from "next/dist/server/lib/render-server";
 import React, { useEffect, useState } from "react";
-const TOTAL_MILL_SECONDS = 600;
+const TOTAL_MILL_SECONDS = 500;
 
 const TridentLogo: React.FC<{ initializeSequenceIndex: number }> = ({
   initializeSequenceIndex,
@@ -14,13 +15,13 @@ const TridentLogo: React.FC<{ initializeSequenceIndex: number }> = ({
         alignItems: "center",
         justifyContent: "center",
         position: "absolute",
-        opacity: `${1 - (initializeSequenceIndex / 1000) * 1.6}`,
+        opacity: `${1 - (initializeSequenceIndex / TOTAL_MILL_SECONDS) * 1.6}`,
         transform: `scale(${
-          initializeSequenceIndex < 200
+          initializeSequenceIndex < 100
             ? 1
-            : 1 + ((initializeSequenceIndex - 200) / 1000) * 100
+            : 1 + ((initializeSequenceIndex - 100) / TOTAL_MILL_SECONDS) * 150
         })`,
-        transition: "all 0.001s linear",
+        transition: "all 1ms linear",
         zIndex: 2000,
         pointerEvents: "none",
         userSelect: "none",
@@ -29,14 +30,15 @@ const TridentLogo: React.FC<{ initializeSequenceIndex: number }> = ({
       <div
         className="avatarIconAssistant"
         style={{
-          width: 200,
-          height: 200,
-          boxShadow: "2px 0 10px rgba(0, 158, 219, 1)",
+          width: 100,
+          height: 100,
+          boxShadow:
+            "4px 4px 15px rgba(0, 158, 219, 0.6), -4px -4px 15px rgba(0, 158, 219, 0.6)",
         }}
       >
         <img
-          width={200}
-          height={200}
+          width={100}
+          height={100}
           src="https://i.gyazo.com/d597c2b08219ea88a211cf98859d9265.png"
           alt="ai icon"
         />
@@ -45,8 +47,9 @@ const TridentLogo: React.FC<{ initializeSequenceIndex: number }> = ({
         <h5
           style={{
             textAlign: "center",
-            color: "rgba(0, 158, 219, 1)",
-            textShadow: "2px 0 10px rgba(0, 158, 219, 1)",
+            color: "rgba(0, 158, 219, 0.6)",
+            textShadow:
+              "4px 4px 15px rgba(0, 158, 219, 0.6), -4px -4px 15px rgba(0, 158, 219, 0.6)",
           }}
         >
           TRIDENT
@@ -58,9 +61,17 @@ const TridentLogo: React.FC<{ initializeSequenceIndex: number }> = ({
   );
 };
 
-const TridentInitializeMessageCard: React.FC<{
+const TridentInitializeProgressCard: React.FC<{
   initializeSequenceIndex: number;
 }> = ({ initializeSequenceIndex }) => {
+  const [progress, setProgress] = useState(1);
+  useEffect(() => {
+    const newProgress = Math.floor(initializeSequenceIndex / 50) - 2;
+    console.log(newProgress);
+    if (newProgress > 0) {
+      setProgress(newProgress);
+    }
+  }, [initializeSequenceIndex]);
   return (
     <div
       style={{
@@ -72,17 +83,38 @@ const TridentInitializeMessageCard: React.FC<{
         zIndex: 2000,
         pointerEvents: "none",
         userSelect: "none",
-        opacity: `${initializeSequenceIndex / 1000 + 0.5}`,
+        opacity: `${
+          initializeSequenceIndex < 150
+            ? 0
+            : initializeSequenceIndex / TOTAL_MILL_SECONDS + 0.5
+        }`,
         transform: `scale(${
-          initializeSequenceIndex < 300
-            ? 0.8
-            : 0.8 + ((initializeSequenceIndex - 300) / 1000) * 2.2
+          initializeSequenceIndex < 150
+            ? 0.6
+            : 0.6 + (initializeSequenceIndex / TOTAL_MILL_SECONDS) * 1.04
         })`,
-        transition: "all 0.001s linear",
+        transition: "all 1ms ease-in",
       }}
     >
-      <h3>Initializing</h3>
-      <h4>{".".repeat(Math.floor(initializeSequenceIndex / 50) - 5)}</h4>
+      <h3 style={{ fontWeight: "normal" }}>INITIALIZING</h3>
+      <h4>{".".repeat(progress)}</h4>
+    </div>
+  );
+};
+
+const TridentAuthenticationMessageCard: React.FC<{
+  initializeSequenceIndex: number;
+}> = ({ initializeSequenceIndex }) => {
+  return (
+    <div
+      style={{
+        position: "absolute",
+        bottom: "50%",
+        left: "50%",
+        opacity: 0,
+      }}
+    >
+      {JSON.stringify(initializeSequenceIndex)}
     </div>
   );
 };
@@ -90,32 +122,28 @@ const TridentInitializeMessageCard: React.FC<{
 const InitializeTridentSequences: React.FC<{
   initializeSequenceIndex: number;
 }> = ({ initializeSequenceIndex }) => {
-  if (initializeSequenceIndex < 150) {
-    return "";
-  }
-  if (150 <= initializeSequenceIndex && initializeSequenceIndex < 300) {
-    return <TridentLogo initializeSequenceIndex={initializeSequenceIndex} />;
-  }
-  if (300 <= initializeSequenceIndex && initializeSequenceIndex < 550) {
-    return (
-      <TridentInitializeMessageCard
-        initializeSequenceIndex={initializeSequenceIndex}
-      />
-    );
-  }
-  if (550 <= initializeSequenceIndex && initializeSequenceIndex < 1000) {
-    return (
-      <div
-        style={{
-          position: "absolute",
-          bottom: 0,
-          left: 0,
-        }}
-      >
-        {JSON.stringify(initializeSequenceIndex)}
-      </div>
-    );
-  }
+  return (
+    <>
+      {initializeSequenceIndex < 100 && (
+        <TridentAuthenticationMessageCard
+          initializeSequenceIndex={initializeSequenceIndex}
+        />
+      )}
+      {100 < initializeSequenceIndex && initializeSequenceIndex < 250 && (
+        <TridentLogo initializeSequenceIndex={initializeSequenceIndex} />
+      )}
+      {150 < initializeSequenceIndex && initializeSequenceIndex < 400 && (
+        <TridentInitializeProgressCard
+          initializeSequenceIndex={initializeSequenceIndex}
+        />
+      )}
+      {400 < initializeSequenceIndex && (
+        <TridentAuthenticationMessageCard
+          initializeSequenceIndex={initializeSequenceIndex}
+        />
+      )}
+    </>
+  );
 };
 
 export const InitializeTridentAgent: React.FC<{
@@ -136,9 +164,8 @@ export const InitializeTridentAgent: React.FC<{
     if (initializeSequenceIndex === TOTAL_MILL_SECONDS) {
       setTimeout(() => {
         setInitialized(true);
-        //setInitializeSequenceIndex(0);
         //window.location.reload();
-      }, 500);
+      }, 100);
     }
   }, [initializeSequenceIndex, setInitialized]);
 
