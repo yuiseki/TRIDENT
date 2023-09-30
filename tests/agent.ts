@@ -33,6 +33,7 @@ const llmChain = loadTridentAgentChain({ llm, tools });
 
 const questions = [
   "リビアの首都はどこですか？",
+  "リビアの主要通貨は何ですか？",
   "リビアの正式な国名は何ですか？",
   "リビアはどの地域に位置していますか？",
   "リビアはどのような地形ですか？",
@@ -40,11 +41,11 @@ const questions = [
   "リビアはどのような統治体制ですか？",
   "リビアはどのような気候ですか？",
   "リビアで主要な言語は何ですか？",
-  "リビアの人口はどれくらいで、年齢別構成はどうなっていますか？",
+  "リビアの人口はどれくらいですか？",
+  "リビアの年代別の人口構成はどのようになっていますか？",
   "リビアはどのような民族構成ですか？",
   "リビアの医療水準はどの程度ですか？",
   "リビアの教育水準はどの程度ですか？",
-  "リビアの主要通貨は何ですか？",
   "リビアの経済規模はどれくらいですか？",
   "リビアの主要産業は何ですか？",
   "リビアはどのような政治状況ですか？",
@@ -54,7 +55,7 @@ const questions = [
 
 for await (const question of questions) {
   const input = question;
-  console.log("----- ----- ----- ----- ----- -----");
+  //console.log("----- ----- ----- ----- ----- -----");
   console.log("----- ----- ----- ----- ----- -----");
   console.log("Question:", input);
 
@@ -71,8 +72,8 @@ for await (const question of questions) {
   //console.log("----- -----");
   //console.log("----- -----");
   //console.log("----- -----");
-  console.debug("----- result.text -----");
-  console.debug(result.text);
+  //console.debug("----- result.text -----");
+  //console.debug(result.text);
   //console.log("----- -----");
   //console.log("----- -----");
   //console.log("----- -----");
@@ -83,9 +84,11 @@ for await (const question of questions) {
     try {
       const output = (await outputParser.parse(result.text)) as AgentFinish;
       if ("returnValues" in output) {
+        //console.log("----- -----");
+        console.log("Final Answer:", output.returnValues.output.split("\n")[0]);
         console.log("----- -----");
-        console.log("Final Answer:", output.returnValues.output);
-        console.log("----- -----");
+        //console.log("----- -----");
+        //console.log("----- -----");
         break;
       }
 
@@ -95,55 +98,63 @@ for await (const question of questions) {
           action: {
             tool: "over-the-limit-of-10-steps",
             toolInput: "over-the-limit-of-10-steps",
-            log: "over-the-limit-of-10-steps",
+            log: "I must stop here and output the final answer.",
           },
           observation:
             "Notice that you are over the limit of 10 steps. You should stop here and output the final answer.",
         });
-        continue;
-      }
-
-      const actions = [output as AgentAction];
-      const action = actions[0];
-      const tool = tools.filter((tool) => {
-        return tool.name.match(action.tool);
-      })[0];
-      if (tool === undefined) {
-        steps.push({
-          action: {
-            tool: "no-tools-specified",
-            toolInput: "no-tools-specified",
-            log: "no-tools-specified",
-          },
-          observation:
-            "Notice that you are not specifying any tools. That may be means you are not required to use any more tools. You should stop here and output the final answer.",
-        });
-        continue;
       } else {
-        let lastStep;
-        if (steps.length > 0) {
-          lastStep = steps[steps.length - 1];
-        }
-        if (lastStep) {
-          if (
-            lastStep.action.tool === tool.name &&
-            lastStep.action.toolInput === action.toolInput
-          ) {
-            steps.push({
-              action: {
-                tool: "do-not-repeat",
-                toolInput: "do-not-repeat",
-                log: "do-not-repeat",
-              },
-              observation:
-                "Notice that you are repeating the same tool. That may be means you are not required to use any more tools. You should stop here and output the final answer.",
-            });
-            continue;
-          }
+        const actions = [output as AgentAction];
+        const action = actions[0];
+        const tool = tools.filter((tool) => {
+          return tool.name.match(action.tool);
+        })[0];
+
+        if (tool === undefined) {
+          steps.push({
+            action: {
+              tool: "no-tools-specified",
+              toolInput: "no-tools-specified",
+              log: "I must specify a valid tool.",
+            },
+            observation:
+              "Notice that you are not specifying any valid tool. That may be means you are not required to use any more tools. You may be stop here and output the final answer.",
+          });
         } else {
-          const observation = await tool.call({ input: action.toolInput });
-          const step = { action, observation };
-          steps.push(step);
+          let lastStep;
+          if (steps.length >= 0) {
+            lastStep = steps[steps.length - 1];
+          }
+          if (lastStep) {
+            console.log("Action Name:", lastStep.action.tool, tool.name);
+            console.log(
+              "Action Input:",
+              lastStep.action.toolInput,
+              action.toolInput
+            );
+            if (
+              lastStep.action.tool == tool.name &&
+              lastStep.action.toolInput == action.toolInput
+            ) {
+              console.error("Repeating same tool.");
+              steps.push({
+                action: {
+                  tool: "do-not-repeat",
+                  toolInput: "do-not-repeat",
+                  log: "I should notice that I am repeating the same tool and same input. I should stop here and output the final answer.",
+                },
+                observation:
+                  "Notice that you are repeating the same tool. That may be means you are not required to use any more tools. You should stop here and output the final answer.",
+              });
+            }
+          } else {
+            console.log("Executing action");
+            console.log("Action Name:", tool.name);
+            console.log("Action Input:", action.toolInput);
+            const observation = await tool.call({ input: action.toolInput });
+            const step = { action, observation };
+            steps.push(step);
+          }
         }
       }
 
@@ -168,7 +179,7 @@ for await (const question of questions) {
       const actionResult = await llmChain.call({
         input: input,
         agent_scratchpad: agentScratchpad,
-        stop: ["\nObservation"],
+        stop: ["\nObservation", "\nObserv", "\nObation"],
         intermediate_steps: [],
       });
       //console.log("----- -----");

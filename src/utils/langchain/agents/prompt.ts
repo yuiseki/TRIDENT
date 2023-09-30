@@ -10,24 +10,29 @@ import { Tool } from "langchain/tools";
 
 // You MUST ALWAYS think in English.
 const PREFIX = `You are an helpful assistant.
-You always respond to request as accurately as possible.
+You respond as accurately as possible.
+You respond as concisely as possible, but be careful not to leave out any detail points.
 You respond as quickly as possible.
+You did not abuse the tools.
 You can use the following tools to help you answer the question, But you can't use the same tools over and over again.
 `;
 const formatInstructions = (
   toolNames: string
-) => `You MUST ALWAYS use the following format in your response:
+) => `You MUST ALWAYS STRICTLY use the following format in your response:
 
-Question: the input question you must answer
+Question: the input question you must answer.
 Thought: you should always think about what to do as detail as possible, based on question and observation.
-Action Name: the action to take, should be one of [${toolNames}]. Action always takes an input.
+Action Name: the action to take, must be one of [${toolNames}]. Action always takes an input.
 Action Input: the input to the action.
 Observation: the result of the action.
-... (this Thought/Action/Action Input/Observation can be repeated up to 10 times)
+... (this Thought/Action Name/Action Input/Observation can be repeated up to 10 times)
 Thought: I now know the final answer.
-Final Answer: the final answer to the question.
+Final Answer: the final answer to the original question.
+
+Note that line breaks and white space are very important.
+Take utmost care to thought in English even when the question is not in English, but answer in the language of the question.
 `;
-const SUFFIX = `Take a deep breath, calm down, and take it one step at a time.
+const SUFFIX = `Take a deep breath, calm down, and take it one step at one time.
 Begin!
 
 Question: {input}

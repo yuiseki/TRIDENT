@@ -2,7 +2,7 @@ import { Tool } from "langchain/tools";
 
 export class Wikipedia extends Tool {
   name = "search-wikipedia";
-  description = `useful for when you need to ask general questions about people, places, companies, facts, historical events, or other subjects. Input: a search keyword`;
+  description = `useful for when you need to ask general questions about people, places, companies, facts, historical events, or other subjects. Action Input: a search keyword, pay attention to the must be in English.`;
 
   async _call(input: string) {
     try {

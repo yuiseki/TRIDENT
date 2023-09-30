@@ -12,7 +12,11 @@ export class TridentOutputParser extends AgentActionOutputParser {
 
     const match = /Action Name: (.*)\nAction Input: (.*)/s.exec(text);
     if (!match) {
-      throw new Error(`Could not parse LLM output: ${text}`);
+      return {
+        tool: "no-tools-specified",
+        toolInput: "no-tools-specified",
+        log: "Notice that you are not specifying Action Name and Action Input",
+      };
     }
 
     return {
