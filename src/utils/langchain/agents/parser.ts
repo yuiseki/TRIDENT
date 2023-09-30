@@ -10,7 +10,7 @@ export class TridentOutputParser extends AgentActionOutputParser {
       return { log: text, returnValues: finalAnswers };
     }
 
-    const match = /Action: (.*)\nAction Input: (.*)/s.exec(text);
+    const match = /Action Name: (.*)\nAction Input: (.*)/s.exec(text);
     if (!match) {
       throw new Error(`Could not parse LLM output: ${text}`);
     }

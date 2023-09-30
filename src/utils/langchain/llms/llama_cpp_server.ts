@@ -1,22 +1,30 @@
 import { LLM, BaseLLMParams, BaseLLMCallOptions } from "langchain/llms/base";
 
 type LlamaCppServerCompletionCallParams = {
-  temperature: number;
-  n_predict: number;
-  repeat_penalty: number;
-  stop: string[];
+  temperature?: number;
+  n_predict?: number;
+  repeat_penalty?: number;
+  stop?: string[];
 };
 
 export class LlamaCppServerCompletion extends LLM<
   BaseLLMCallOptions & LlamaCppServerCompletionCallParams
 > {
-  constructor(fields?: BaseLLMParams) {
+  temperature = 0.8;
+  n_predict = 128;
+  repeat_penalty = 1.1;
+  stop = [];
+
+  constructor(fields?: BaseLLMParams & LlamaCppServerCompletionCallParams) {
     super(fields ?? {});
+    this.temperature = fields?.temperature ?? this.temperature;
+    this.n_predict = fields?.n_predict ?? this.n_predict;
+    this.repeat_penalty = fields?.repeat_penalty ?? this.repeat_penalty;
   }
 
   async _call(
     prompt: string,
-    options: this["ParsedCallOptions"]
+    options?: this["ParsedCallOptions"]
   ): Promise<string> {
     return this.caller.call(async () => {
       try {
@@ -35,8 +43,13 @@ export class LlamaCppServerCompletion extends LLM<
 
   private async callCompletionApi(
     input: string,
-    options: LlamaCppServerCompletionCallParams
+    options?: LlamaCppServerCompletionCallParams
   ) {
+    options = options ?? {};
+    options.temperature = this.temperature;
+    options.n_predict = this.n_predict;
+    options.repeat_penalty = this.repeat_penalty;
+    // options.stop = this.stop;
     return fetch("http://localhost:8080/completion", {
       method: "POST",
       headers: {

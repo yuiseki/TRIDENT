@@ -13,18 +13,27 @@ services:
       - 3000:3000
     networks:
       - myapp
-  llama-cpp:
+  llama-cpp-server:
+    # ~/llama.cpp/server --embedding --host 0.0.0.0 --port 8080 --n-gpu-layers 100 --threads 8 --ctx-size 2048 -m ~/llama.cpp/models/llama-2-7b.Q4_K_M.gguf
     # docker build -t local/llama.cpp:full-cuda -f ~/llama.cpp/.devops/full-cuda.Dockerfile --build-arg CUDA_VERSION=12.2.0 ~/llama.cpp
-    # docker run --gpus all -v ~/llama.cpp/models:/models local/llama.cpp:full-cuda --run -m /models/llama-2-7b.Q4_K_M.gguf -p "Building a website can be done in 10 simple steps:" -n 512 -ngl 100
+    # docker run --rm -it --gpus all --name llama-cpp-server -p 8080:8080 -v ~/llama.cpp/models:/models local/llama.cpp:full-cuda --server --embedding --host 0.0.0.0 --port 8080 --n-gpu-layers 100 --threads 8 --ctx-size 2048 -m /models/llama-2-7b.Q4_K_M.gguf
+    # docker compose up llama-cpp-server
     image: local/llama.cpp:full-cuda
     ports:
       - 8080:8080
     networks:
       - myapp
     tty: true
-    command: --server -m /models/llama-2-7b.Q4_K_M.gguf --mlock --no-mmap --ctx-size 2048 --threads 8 --port 8080 --host 0.0.0.0 --embedding
+    command: --server --embedding --host 0.0.0.0 --port 8080 --n-gpu-layers 100 --threads 8 --ctx-size 2048 -m /models/llama-2-7b.Q4_K_M.gguf
     volumes:
       - ~/llama.cpp/models:/models
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
 
 networks:
   myapp:
