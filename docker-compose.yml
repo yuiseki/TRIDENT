@@ -14,9 +14,13 @@ services:
     networks:
       - myapp
   llama-cpp:
-    image: local/llama.cpp:full
+    # docker build -t local/llama.cpp:full-cuda -f ~/llama.cpp/.devops/full-cuda.Dockerfile --build-arg CUDA_VERSION=11.7.1 ~/llama.cpp
+    # docker run -v ~/llama.cpp/models:/models local/llama.cpp:full-cuda --run -m /models/llama-2-7b.Q4_K_M.gguf -p "Building a website can be done in 10 simple steps:" -n 512
+    image: local/llama.cpp:full-cuda
     ports:
       - 8080:8080
+    networks:
+      - myapp
     tty: true
     command: --server -m /models/llama-2-7b.Q4_K_M.gguf --mlock --no-mmap --ctx-size 2048 --threads 8 --port 8080 --host 0.0.0.0 --embedding
     volumes:
