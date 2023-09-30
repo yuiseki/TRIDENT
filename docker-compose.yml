@@ -14,8 +14,8 @@ services:
     networks:
       - myapp
   llama-cpp:
-    # docker build -t local/llama.cpp:full-cuda -f ~/llama.cpp/.devops/full-cuda.Dockerfile --build-arg CUDA_VERSION=11.7.1 ~/llama.cpp
-    # docker run -v ~/llama.cpp/models:/models local/llama.cpp:full-cuda --run -m /models/llama-2-7b.Q4_K_M.gguf -p "Building a website can be done in 10 simple steps:" -n 512
+    # docker build -t local/llama.cpp:full-cuda -f ~/llama.cpp/.devops/full-cuda.Dockerfile --build-arg CUDA_VERSION=12.2.0 ~/llama.cpp
+    # docker run --gpus all -v ~/llama.cpp/models:/models local/llama.cpp:full-cuda --run -m /models/llama-2-7b.Q4_K_M.gguf -p "Building a website can be done in 10 simple steps:" -n 512 -ngl 100
     image: local/llama.cpp:full-cuda
     ports:
       - 8080:8080
