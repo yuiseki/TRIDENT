@@ -15,6 +15,7 @@ services:
       - myapp
   llama-cpp-server:
     # ~/llama.cpp/server --embedding --host 0.0.0.0 --port 8080 --n-gpu-layers 100 --threads 8 --ctx-size 2048 -m ~/llama.cpp/models/llama-2-7b.Q4_K_M.gguf
+    # ~/llama.cpp/server --embedding --host 0.0.0.0 --port 8080 --n-gpu-layers 100 --threads 8 --ctx-size 2048 -m ~/llama.cpp/models/llama-2-70b.Q4_K_M.gguf
     # docker build -t local/llama.cpp:full-cuda -f ~/llama.cpp/.devops/full-cuda.Dockerfile --build-arg CUDA_VERSION=12.2.0 ~/llama.cpp
     # docker run --rm -it --gpus all --name llama-cpp-server -p 8080:8080 -v ~/llama.cpp/models:/models local/llama.cpp:full-cuda --server --embedding --host 0.0.0.0 --port 8080 --n-gpu-layers 100 --threads 8 --ctx-size 2048 -m /models/llama-2-7b.Q4_K_M.gguf
     # docker compose up llama-cpp-server

@@ -17,8 +17,8 @@ import { loadReflectionTool } from "../src/utils/langchain/tools/reflection/inde
 import { LlamaCppServerCompletion } from "../src/utils/langchain/llms/llama_cpp_server.ts";
 
 const llm = new LlamaCppServerCompletion({
-  temperature: 0.0,
-  repeat_penalty: 1.2,
+  temperature: 0.2,
+  repeat_penalty: 1.3,
   n_predict: 128,
 });
 
