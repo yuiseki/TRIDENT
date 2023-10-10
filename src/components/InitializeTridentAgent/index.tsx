@@ -227,7 +227,7 @@ const TridentParticles: React.FC<{ initializeSequenceIndex: number }> = ({
             straight: false,
           },
           number: {
-            value: 200,
+            value: 80,
             density: {
               enable: true,
               area: 1500,
