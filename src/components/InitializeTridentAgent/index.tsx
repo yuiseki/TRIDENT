@@ -14,9 +14,13 @@ const SEQUENCE_INDEX_PROGRESS_FINISH_WAIT = 200;
 const SEQUENCE_INDEX_TOTAL =
   SEQUENCE_INDEX_PROGRESS_FINISH + SEQUENCE_INDEX_PROGRESS_FINISH_WAIT;
 
-const SEQUENCE_INDEX_SUBTITLE_1 = "自律型地理空間情報探索エージェント";
-const SEQUENCE_INDEX_SUBTITLE_2 = "トライデント";
-const SEQUENCE_INDEX_SUBTITLE_3 = "起動しました";
+//const SEQUENCE_INDEX_SUBTITLE_1 = "自律型地理空間情報探索エージェント";
+//const SEQUENCE_INDEX_SUBTITLE_2 = "トライデント";
+//const SEQUENCE_INDEX_SUBTITLE_3 = "起動しました";
+
+const SEQUENCE_INDEX_SUBTITLE_1 = "Autonomous geospatial information exploring agent";
+const SEQUENCE_INDEX_SUBTITLE_2 = "TRIDENT";
+const SEQUENCE_INDEX_SUBTITLE_3 = "has been initialized.";
 
 const TridentLogo: React.FC<{ initializeSequenceIndex: number }> = ({
   initializeSequenceIndex,
