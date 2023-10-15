@@ -11,7 +11,8 @@
     "test:counter": "node --loader ts-node/esm ./tests/counter.ts",
     "test:sortByArea": "node --loader ts-node/esm ./tests/sortByArea.ts",
     "test:sortByDistance": "node --loader ts-node/esm ./tests/sortByDistance.ts",
-    "test:agent": "node --loader ts-node/esm ./tests/agent.ts"
+    "test:agent": "node --loader ts-node/esm ./tests/agent.ts",
+    "site:api.reliefweb.int:fetch": "node --loader ts-node/esm ./scripts/api.reliefweb.int/fetch.ts"
   },
   "dependencies": {
     "@ducanh2912/next-pwa": "^9.0.0",
