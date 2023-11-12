@@ -79,8 +79,8 @@ const NewsWithMap: React.FC<{ concern: ConcernEvent }> = ({ concern }) => {
   const [mapping, setMapping] = useState(false);
 
   const currentDate = new Date(concern.currentDate);
-  const whenHappens = `${formatDate(currentDate)}に、`;
-  const whereHappens = `${concern.where}で、`;
+  const whenHappens = `${formatDate(currentDate)}、`;
+  const whereHappens = `${concern.where}。`;
   const whereAndWhenHappens = whenHappens + whereHappens;
   const whatHappens = concern.whatHappenings;
   const displayMaps = concern.requestToDisplayMaps;
@@ -219,13 +219,19 @@ const NewsWithMap: React.FC<{ concern: ConcernEvent }> = ({ concern }) => {
     <div
       key={concern.title}
       style={{
-        margin: "40px 0",
+        width: "100vw",
+        height: "100vh",
       }}
     >
-      <h3>{whereAndWhenHappens}</h3>
-      <p>{whatHappens}</p>
-      <code>{displayMaps}</code>
-      <div className="tridentInlineMapWrap" style={{ height: "40vh" }}>
+      <div
+        style={{
+          height: "20vh",
+        }}
+      >
+        <h2>{whereAndWhenHappens}</h2>
+        <h3>{whatHappens}</h3>
+      </div>
+      <div className="tridentInlineMapWrap" style={{ height: "75vh" }}>
         <MapProvider>
           <BaseMap
             id="mainMap"
@@ -248,6 +254,11 @@ const NewsWithMap: React.FC<{ concern: ConcernEvent }> = ({ concern }) => {
               })}
           </BaseMap>
         </MapProvider>
+      </div>
+      <div style={{ height: "5vh", display: "flex", justifyContent: "center", alignContent: "center"}}>
+        <div style={{height: "5vh", lineHeight: "5vh"}}>
+        ↓
+        </div>
       </div>
     </div>
   );
@@ -339,19 +350,12 @@ export default function Page() {
         if (!weeklyConcerns) return null;
         if (weeklyConcerns.length === 0) return null;
         return (
-          <div key={idx} style={{ margin: "40px 0" }}>
-            <h2 style={{ width: "100%" }}>
-              {startDate.getFullYear()}年{startDate.getMonth() + 1}月
-              {startDate.getDate()}日〜{endDate.getFullYear()}年
-              {endDate.getMonth() + 1}月{endDate.getDate()}日
-            </h2>
-            <div>
-              {weeklyConcerns &&
-                weeklyConcerns.slice(0, 1).map((concern) => {
-                  return <NewsWithMap key={concern.link} concern={concern} />;
-                })}
-            </div>
-          </div>
+          <>
+            {weeklyConcerns &&
+              weeklyConcerns.slice(0, 1).map((concern) => {
+                return <NewsWithMap key={concern.link} concern={concern} />;
+              })}
+          </>
         );
       })}
     </div>
