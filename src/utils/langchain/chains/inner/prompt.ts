@@ -118,6 +118,26 @@ ColorForConcern: Doctors, lightpink
 Area: Taito, Tokyo
 AreaWithConcern: Taito, Tokyo, Hospitals
 AreaWithConcern: Taito, Tokyo, Doctors
+Important note: If Human asks you to show hospitals, you must also include doctors.
+
+Input text:
+Human: 浦安を表示して
+Human: 病院を表示して
+Human: 駅を表示して
+Output:
+ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+TitleOfMap: 浦安市の駅と病院
+EmojiForConcern: Hospitals, 🏥
+ColorForConcern: Hospitals, pink
+EmojiForConcern: Doctors, 🩺
+ColorForConcern: Doctors, lightpink
+EmojiForConcern: Stations, 🚉
+ColorForConcern: Stations, blue
+Area: Urayasu, Chiba
+AreaWithConcern: Urayasu, Chiba, Hospitals
+AreaWithConcern: Urayasu, Chiba, Doctors
+AreaWithConcern: Urayasu, Chiba, Stations
+Important note: If Human asks you to show hospitals, you must also include doctors.
 
 Input text:
 Human: レバノンを表示して

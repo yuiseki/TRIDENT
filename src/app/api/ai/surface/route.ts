@@ -1,19 +1,16 @@
 import { NextResponse } from "next/server";
-import { OpenAI } from "langchain/llms/openai";
+import { OpenAI, OpenAIChat } from "langchain/llms/openai";
 import { BufferMemory, ChatMessageHistory } from "langchain/memory";
 import { AIMessage, HumanMessage } from "langchain/schema";
 import { loadTridentSurfaceChain } from "@/utils/langchain/chains/surface";
 
 export async function POST(request: Request) {
   console.log("----- ----- -----");
-  console.log("----- surface -----");
-  console.log("----- ----- -----");
+  console.log("----- star surface -----");
 
-  const res = await request.json();
-  const query = res.query;
-  const pastMessagesJsonString = res.pastMessages;
-
-  console.log(JSON.stringify(pastMessagesJsonString, null, 2));
+  const reqJson = await request.json();
+  const query = reqJson.query;
+  const pastMessagesJsonString = reqJson.pastMessages;
 
   let chatHistory = undefined;
 
@@ -27,9 +24,9 @@ export async function POST(request: Request) {
     const chatHistoryMessages = pastMessages.map((message) => {
       if (message.kwargs.content) {
         switch (message.id[2]) {
-          case "human":
+          case "HumanMessage":
             return new HumanMessage(message.kwargs.content);
-          case "ai":
+          case "AIMessage":
             return new AIMessage(message.kwargs.content);
           default:
             return new HumanMessage("");
@@ -47,7 +44,7 @@ export async function POST(request: Request) {
     chatHistory: chatHistory,
   });
 
-  const model = new OpenAI({ temperature: 0 });
+  const model = new OpenAIChat({ temperature: 0 });
   const surfaceChain = loadTridentSurfaceChain({ llm: model, memory });
   const surfaceResult = await surfaceChain.call({ input: query });
 
@@ -55,11 +52,15 @@ export async function POST(request: Request) {
   console.log("AI:", surfaceResult.response);
   console.log("");
 
-  console.log(await memory.chatHistory.getMessages());
+  const history = await memory.chatHistory.getMessages();
+  console.log(history);
+
+  console.log("----- end surface -----");
+  console.log("----- ----- -----");
 
   return NextResponse.json({
     query: query,
     surface: surfaceResult.response,
-    history: await memory.chatHistory.getMessages(),
+    history: history,
   });
 }

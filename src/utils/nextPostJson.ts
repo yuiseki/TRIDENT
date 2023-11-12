@@ -19,7 +19,7 @@ export const nextPostJsonWithCache = async (
   const md5 = new Md5();
   md5.appendStr(`${url}\n${bodyJsonString}`);
   const hash = md5.end();
-  const key = `trident-cache_2023-08-27_${hash}`;
+  const key = `trident-cache_2023-11-12-j_${hash}`;
   const unixtime = Math.floor(new Date().getTime() / 1000);
 
   const fetchAndCache = async () => {
@@ -37,7 +37,11 @@ export const nextPostJsonWithCache = async (
       resJson: json,
       unixtime: unixtime,
     };
-    window.localStorage.setItem(key, JSON.stringify(valueToStore));
+    try {
+      window.localStorage.setItem(key, JSON.stringify(valueToStore));
+    } catch (error) {
+      console.error("nextPostJsonWithCache error:", error);
+    }
     return json;
   };
 

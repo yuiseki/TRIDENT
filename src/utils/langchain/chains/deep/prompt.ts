@@ -1,5 +1,8 @@
 import { PromptTemplate } from "langchain/prompts";
 
+const tridentDeepExamples = `
+`;
+
 const tridentDeepHints = `
 Embassies: nwr["office"="diplomatic"]
 Hotels: nwr["tourism"="hotel"]
@@ -49,7 +52,7 @@ Area: Sudan
 Output:
 \`\`\`
 [out:json][timeout:30000];
-relation[boundary="administrative"]["name"="Sudan"];
+relation["boundary"="administrative"]["name"="Sudan"];
 out geom;
 \`\`\`
 
@@ -58,7 +61,7 @@ Area: Lebanon
 Output:
 \`\`\`
 [out:json][timeout:30000];
-relation[boundary="administrative"]["name"="Lebanon"];
+relation["boundary"="administrative"]["name"="Lebanon"];
 out geom;
 \`\`\`
 
@@ -67,7 +70,7 @@ Area: New York City
 Output:
 \`\`\`
 [out:json][timeout:30000];
-relation[boundary="administrative"]["name"="City of New York"];
+relation["boundary"="administrative"]["name"="City of New York"];
 out geom;
 \`\`\`
 
@@ -76,7 +79,7 @@ Area: Tokyo
 Output:
 \`\`\`
 [out:json][timeout:30000];
-relation[boundary="administrative"]["name"="Tokyo"];
+relation["boundary"="administrative"]["name"="Tokyo"];
 out geom;
 \`\`\`
 
@@ -87,7 +90,7 @@ Output:
 [out:json][timeout:30000];
 area["name"="Tokyo"]->.searchArea;
 (
-  relation[boundary="administrative"]["name"="Taito"](area.searchArea);
+  relation["boundary"="administrative"]["name"="Taito"](area.searchArea);
 );
 out geom;
 \`\`\`
@@ -99,7 +102,19 @@ Output:
 [out:json][timeout:30000];
 area["name"="Tokyo"]->.searchArea;
 (
-  relation[boundary="administrative"]["name"="Kita"](area.searchArea);
+  relation["boundary"="administrative"]["name"="Kita"](area.searchArea);
+);
+out geom;
+\`\`\`
+
+Input text:
+Area: Urayasu, Chiba
+Output:
+\`\`\`
+[out:json][timeout:30000];
+area["name"="Chiba Prefecture"]->.searchArea;
+(
+  relation["boundary"="administrative"]["name"="Urayasu"](area.searchArea);
 );
 out geom;
 \`\`\`
@@ -121,7 +136,6 @@ Output:
 area["name"="Sudan"]->.searchArea;
 (
   nwr["amenity"="hospital"](area.searchArea);
-  nwr["amenity"="doctors"](area.searchArea);
 );
 out geom;
 \`\`\`
@@ -135,6 +149,19 @@ area["name"="Sudan"]->.searchArea;
 (
   nwr["amenity"="shelter"](area.searchArea);
   nwr["amenity"="refugee_site"](area.searchArea);
+);
+out geom;
+\`\`\`
+
+Input text:
+AreaWithConcern: Urayasu, Chiba, Hospitals
+Output:
+\`\`\`
+[out:json][timeout:30000];
+area["name"="Chiba Prefecture"]->.chiba;
+area["name"="Urayasu"]->.searchArea;
+(
+  nwr["amenity"="hospital"](area.searchArea)(area.chiba);
 );
 out geom;
 \`\`\`
