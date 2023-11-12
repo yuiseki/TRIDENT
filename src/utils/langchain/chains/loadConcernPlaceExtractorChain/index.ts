@@ -37,8 +37,8 @@ Output:
 CurrentDate: 2023-11-12
 WhereHappening: ガザ地区
 WhoAndWhatHappening: UNDP＝国連開発計画が、ガザ地区にある国連の事務所に砲撃があったと発表しました。
-RequestToDisplayMap: ガザ地区の地図を表示してください。
-RequestToDisplayMap: ガザ地区のUNDPの施設の地図を表示してください。
+RequestToDisplayMap: ガザ地区の地図を表示します。
+RequestToDisplayMap: ガザ地区のUNDPの施設の地図を表示します。
 
 Input text:
 2023-11-12 配信
@@ -49,10 +49,10 @@ WhereHappening: ガザ地区
 WhoAndWhatHappening: UNRWA＝国連パレスチナ難民救済事業機関が、ガザ地区で亡くなった国連職員やスタッフの人数があわせて101人にのぼったと明らかにしました。
 WhoAndWhatHappening: イスラエル軍が、ガザ地区北部の住民に南部への退避を通告しました。
 WhoAndWhatHappening: OCHA＝国連人道問題調整事務所が、ガザ地区の人口の6割を超える150万人以上が住まいを追われているとしました。
-RequestToDisplayMap: ガザ地区の地図を表示してください。
-RequestToDisplayMap: ガザ地区のUNRWAの施設の地図を表示してください。
-RequestToDisplayMap: ガザ地区のOCHAの施設の地図を表示してください。
-RequestToDisplayMap: ガザ地区の避難民キャンプの地図を表示してください。
+RequestToDisplayMap: ガザ地区の地図を表示します。
+RequestToDisplayMap: ガザ地区のUNRWAの施設の地図を表示します。
+RequestToDisplayMap: ガザ地区のOCHAの施設の地図を表示します。
+RequestToDisplayMap: ガザ地区の避難民キャンプの地図を表示します。
 
 Input text:
 2023-11-09 配信
@@ -63,8 +63,8 @@ WhereHappening: ガザ地区
 WhoAndWhatHappening: イスラエル軍が、ガザ地区の病院に攻撃を加えました。
 WhoAndWhatHappening: 国連安全保障理事会で緊急会合が開かれ、各国からは懸念を示す意見が相次ぎました。
 WhoAndWhatHappening: アメリカが、イスラム組織ハマスが病院に武器を保管しているなどとしてイスラエルを擁護する姿勢を示しました。
-RequestToDisplayMap: ガザ地区の地図を表示してください。
-RequestToDisplayMap: ガザ地区の病院の地図を表示してください。
+RequestToDisplayMap: ガザ地区の地図を表示します。
+RequestToDisplayMap: ガザ地区の病院の地図を表示します。
 
 Input text:
 2023-11-06 配信
@@ -76,8 +76,8 @@ WhoAndWhatHappening: 山岳地帯で地震が発生しました。
 WhoAndWhatHappening: 少なくとも157人が、死亡しました。
 WhoAndWhatHappening: 少なくとも560人余りのけが人が確認され、その半数が子どもたちであることがわかっています。
 WhoAndWhatHappening: ユニセフ＝国連児童基金が、被災地での支援を急いでいます。
-RequestToDisplayMap: ネパールの地図を表示してください。
-RequestToDisplayMap: ネパールのユニセフの施設の地図を表示してください。
+RequestToDisplayMap: ネパールの地図を表示します。
+RequestToDisplayMap: ネパールのユニセフの施設の地図を表示します。
 
 Input text:
 2023-11-06 配信
@@ -87,8 +87,8 @@ CurrentDate: 2023-11-06
 WhereHappening: アフガニスタン
 WhoAndWhatHappening: イスラム主義勢力タリバンが、女性への抑圧を強めています。
 WhoAndWhatHappening: UNDP＝国連開発計画のアジア太平洋地域の責任者が、女性の就労の権利などが制限されている現状に懸念を示しました。
-RequestToDisplayMap: アフガニスタンの地図を表示してください。
-RequestToDisplayMap: アフガニスタンのUNDPの施設の地図を表示してください。
+RequestToDisplayMap: アフガニスタンの地図を表示します。
+RequestToDisplayMap: アフガニスタンのUNDPの施設の地図を表示します。
 
 Input text:
 2023-11-01 配信
@@ -99,7 +99,7 @@ WhereHappening: ウクライナ
 WhoAndWhatHappening: 国連の安全保障理事会で、ウクライナ情勢をめぐる会合が開かれました。
 WhoAndWhatHappening: 国連の高官が、去年2月のロシアによる軍事侵攻以降、ウクライナでは9900人以上の市民が死亡したと明らかにしました。
 WhoAndWhatHappening: 国連の高官が、イスラエル軍とイスラム組織ハマスの軍事衝突が続く中でも、ウクライナの人道状況の悪化に国際社会が対処すべきだと訴えました。
-RequestToDisplayMap: ウクライナの地図を表示してください。
+RequestToDisplayMap: ウクライナの地図を表示します。
 
 Input text:
 2023-10-20 配信
@@ -113,7 +113,7 @@ WhoAndWhatHappening: 国連のグテーレス事務総長が、ガザ地区と�
 WhoAndWhatHappening: 国連のグテーレス事務総長が、一刻も早い物資の搬入などを訴えました。
 WhoAndWhatHappening: 国連のグテーレス事務総長が、搬入の具体的な時期については言及しませんでした。
 WhoAndWhatHappening: 国連は、避難民キャンプが標的になったとして強く非難しています。
-RequestToDisplayMap: ラファ検問所の地図を表示してください。
+RequestToDisplayMap: ラファ検問所の地図を表示します。
 
 Input text:
 2023-10-10 配信
@@ -125,8 +125,8 @@ WhoAndWhatHappening: 実権を握る軍と民主派勢力との間での戦闘�
 WhoAndWhatHappening: 北部にある避難民キャンプに攻撃がありました。
 WhoAndWhatHappening: 武装勢力の報道官は、子ども11人を含む少なくとも29人が死亡したと明らかにしました。
 WhoAndWhatHappening: 国連は、避難民キャンプが標的になったとして強く非難しています。
-RequestToDisplayMap: ミャンマーの地図を表示してください。
-RequestToDisplayMap: ミャンマーの避難民キャンプの地図を表示してください。
+RequestToDisplayMap: ミャンマーの地図を表示します。
+RequestToDisplayMap: ミャンマーの避難民キャンプの地図を表示します。
 -----
 
 Input text:

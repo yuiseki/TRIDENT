@@ -67,7 +67,7 @@ const NewsWithMap: React.FC<{ concern: ConcernEvent }> = ({ concern }) => {
             [minLng, minLat],
             [maxLng, maxLat],
           ],
-          { padding: 40, duration: 1000 }
+          { padding: 100, duration: 1000 }
         );
       } catch (error) {
         console.error(error);
@@ -88,11 +88,15 @@ const NewsWithMap: React.FC<{ concern: ConcernEvent }> = ({ concern }) => {
   useEffect(() => {
     const f = async () => {
       const pastMessages = displayMaps.map((requestToDisplayMap) => {
+        const cleanedRequestToDisplayMap = requestToDisplayMap
+          .replaceAll("北東部", "")
+          .replaceAll("東部", "")
+          .replaceAll("西部", "");
         return {
           type: "constructor",
           id: ["langchain", "schema", "HumanMessage"],
           kwargs: {
-            content: requestToDisplayMap,
+            content: cleanedRequestToDisplayMap,
           },
         } as {
           type: string;
@@ -217,7 +221,6 @@ const NewsWithMap: React.FC<{ concern: ConcernEvent }> = ({ concern }) => {
 
   return (
     <div
-      key={concern.title}
       style={{
         width: "100vw",
         height: "100vh",
@@ -225,13 +228,26 @@ const NewsWithMap: React.FC<{ concern: ConcernEvent }> = ({ concern }) => {
     >
       <div
         style={{
-          height: "20vh",
+          height: "30vh",
+          padding: "1rem",
         }}
       >
-        <h2>{whereAndWhenHappens}</h2>
-        <h3>{whatHappens}</h3>
+        <h2 style={{ fontSize: "3em" }}>{whereAndWhenHappens}</h2>
+        <h3 style={{ fontSize: "1.8em" }}>{whatHappens}</h3>
+        <p>
+          <ul
+            style={{
+              marginTop: "0.5rem",
+              marginLeft: "1.5rem",
+            }}
+          >
+            {displayMaps.map((req, idx) => {
+              return <li key={`${concern.link}-req-${idx}`}>{req}</li>;
+            })}
+          </ul>
+        </p>
       </div>
-      <div className="tridentInlineMapWrap" style={{ height: "75vh" }}>
+      <div className="tridentInlineMapWrap" style={{ height: "65vh" }}>
         <MapProvider>
           <BaseMap
             id="mainMap"
@@ -240,13 +256,14 @@ const NewsWithMap: React.FC<{ concern: ConcernEvent }> = ({ concern }) => {
             latitude={0}
             zoom={1}
             style={mapStyleJsonUrl}
+            enableInteractions={false}
           >
             {geojsonWithStyleList &&
               geojsonWithStyleList.map((geojsonWithStyle, idx) => {
-                //console.log(geojsonWithStyle);
+                console.log(geojsonWithStyle);
                 return (
                   <GeoJsonToMarkers
-                    key={idx}
+                    key={`${concern.link}-geojson-${idx}`}
                     geojson={geojsonWithStyle.geojson}
                     style={geojsonWithStyle.style}
                   />
@@ -255,9 +272,23 @@ const NewsWithMap: React.FC<{ concern: ConcernEvent }> = ({ concern }) => {
           </BaseMap>
         </MapProvider>
       </div>
-      <div style={{ height: "5vh", display: "flex", justifyContent: "center", alignContent: "center"}}>
-        <div style={{height: "5vh", lineHeight: "5vh"}}>
-        ↓
+      <div
+        style={{
+          height: "5vh",
+          display: "flex",
+          justifyContent: "center",
+          alignContent: "center",
+        }}
+      >
+        <div
+          style={{
+            height: "5vh",
+            lineHeight: "5vh",
+            fontSize: "2em",
+            fontWeight: "bold",
+          }}
+        >
+          ↓
         </div>
       </div>
     </div>
@@ -281,20 +312,35 @@ export default function Page() {
 
     const newSortedConcerns = data
       .filter((v) => v)
-      .filter((element, index: number, self) => {
-        return self.findIndex((e) => e.link === element.link) === index;
-      })
       .filter((concern) => {
         if (
           concern.currentDate === null ||
           concern.currentDate === "Unknown" ||
           concern.currentDate === "unknown" ||
           concern.where === "Unknown" ||
-          concern.where === "unknown"
+          concern.where === "unknown" ||
+          concern.requestToDisplayMaps.length === 0
         ) {
           return false;
         }
         return true;
+      })
+      .filter((concern) => {
+        if (
+          concern.whatHappenings
+            .map(
+              (happenings) =>
+                happenings.includes("目指す") || happenings.includes("関係各国")
+            )
+            .includes(true) ||
+          concern.requestToDisplayMaps
+            .map((req) => req.includes("近海"))
+            .includes(true)
+        ) {
+          return false;
+        } else {
+          return true;
+        }
       })
       .sort((a, b) => {
         return (
@@ -309,12 +355,14 @@ export default function Page() {
       if (!sortedConcerns) {
         return;
       }
+      console.log("sortedConcerns", sortedConcerns.length);
       const filteredConcerns = sortedConcerns.filter((event) => {
         return (
           start.getTime() <= new Date(event.currentDate).getTime() &&
           new Date(event.currentDate).getTime() <= end.getTime()
         );
       });
+      console.log("filteredConcerns", filteredConcerns.length);
       return filteredConcerns;
     },
     [sortedConcerns]
@@ -328,7 +376,8 @@ export default function Page() {
         backgroundColor: "#fff",
       }}
     >
-      {Array.from({ length: 1 }, (_, i) => i + 1).map((idx) => {
+      {Array.from({ length: 12 }, (_, i) => i + 1).map((weekIndex) => {
+        console.log("week: ", weekIndex);
         const now = new Date();
         // 今日が何曜日かを取得する
         const dayOfWeek = now.getDay();
@@ -337,23 +386,31 @@ export default function Page() {
         const startDate = new Date(
           now.getFullYear(),
           now.getMonth(),
-          now.getDate() - 7 * (idx - 1) - dayOfWeek
+          now.getDate() - 7 * (weekIndex - 1) - dayOfWeek
         );
 
         const endDate = new Date(
           now.getFullYear(),
           now.getMonth(),
-          now.getDate() - 7 * (idx - 1) - dayOfWeek + 6
+          now.getDate() - 7 * (weekIndex - 1) - dayOfWeek + 6
         );
 
         const weeklyConcerns = getConcerns(startDate, endDate);
         if (!weeklyConcerns) return null;
         if (weeklyConcerns.length === 0) return null;
+        console.log("weeklyConcerns", weeklyConcerns.length);
         return (
           <>
             {weeklyConcerns &&
-              weeklyConcerns.slice(0, 1).map((concern) => {
-                return <NewsWithMap key={concern.link} concern={concern} />;
+              weeklyConcerns.slice(0, 2).map((concern) => {
+                console.log(concern);
+                console.log(concern.link);
+                return (
+                  <NewsWithMap
+                    key={`${concern.link}-${weekIndex}-0`}
+                    concern={concern}
+                  />
+                );
               })}
           </>
         );
