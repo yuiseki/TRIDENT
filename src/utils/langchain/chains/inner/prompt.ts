@@ -42,10 +42,10 @@ export const TRIDENT_INNER_PROMPT = new PromptTemplate({
 Use the following format for map definition:
 ConfirmHelpful: text that meanings "Mapping has been completed. Do you have any other requests? Have we been helpful to you?", MUST be the last language written by the human
 TitleOfMap: very shot text that best suited to explain this map.
-EmojiForConcern: emoji best suited to expressing specific concern, MUST be unique for each concern
-ColorForConcern: color name best suited to expressing specific concern, MUST be unique for each concern, should be one of the name of Web Safe Color
 Area: geospatial area mentioned by human
 AreaWithConcern: pair of geospatial area and concern mentioned by human
+EmojiForConcern: emoji best suited to expressing specific concern, MUST be unique for each concern
+ColorForConcern: color name best suited to expressing specific concern, MUST be unique for each concern, should be one of the name of Web Safe Color
 ... (You MUST ALWAYS output only one ConfirmHelpful)
 ... (this Area/AreaWithConcern/EmojiForConcern/ColorForConcern can repeat N times)
 
@@ -111,14 +111,14 @@ Human: 病院を表示して
 Output:
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
 TitleOfMap: 台東区の病院
-EmojiForConcern: Hospitals, 🏥
-ColorForConcern: Hospitals, red
-EmojiForConcern: Doctors, 🩺
-ColorForConcern: Doctors, lightpink
 Area: Taito, Tokyo
 AreaWithConcern: Taito, Tokyo, Hospitals
+EmojiForConcern: Hospitals, 🏥
+ColorForConcern: Hospitals, pink
 AreaWithConcern: Taito, Tokyo, Doctors
-Important note: If Human asks you to show hospitals, you must also include doctors.
+EmojiForConcern: Doctors, 🩺
+ColorForConcern: Doctors, lightpink
+Important note: If Human asks you to show hospitals, you MUST also include doctors.
 
 Input text:
 Human: 浦安を表示して
@@ -127,17 +127,17 @@ Human: 駅を表示して
 Output:
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
 TitleOfMap: 浦安市の駅と病院
-EmojiForConcern: Hospitals, 🏥
-ColorForConcern: Hospitals, pink
-EmojiForConcern: Doctors, 🩺
-ColorForConcern: Doctors, lightpink
-EmojiForConcern: Stations, 🚉
-ColorForConcern: Stations, blue
 Area: Urayasu, Chiba
 AreaWithConcern: Urayasu, Chiba, Hospitals
+EmojiForConcern: Hospitals, 🏥
+ColorForConcern: Hospitals, pink
 AreaWithConcern: Urayasu, Chiba, Doctors
+EmojiForConcern: Doctors, 🩺
+ColorForConcern: Doctors, lightpink
 AreaWithConcern: Urayasu, Chiba, Stations
-Important note: If Human asks you to show hospitals, you must also include doctors.
+EmojiForConcern: Stations, 🚉
+ColorForConcern: Stations, blue
+Important note: If Human asks you to show hospitals, you MUST also include doctors.
 
 Input text:
 Human: レバノンを表示して
@@ -146,39 +146,39 @@ Human: 軍事施設も表示して
 Output:
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
 TitleOfMap: レバノンの大使館と軍事施設
-EmojiForConcern: Embassies, 🏢
-ColorForConcern: Embassies, lightblue
-EmojiForConcern: Military facilities, 🪖
-ColorForConcern: Military facilities, yellow
 Area: Lebanon
 AreaWithConcern: Lebanon, Embassies
+EmojiForConcern: Embassies, 🏢
+ColorForConcern: Embassies, lightblue
 AreaWithConcern: Lebanon, Military facilities
+EmojiForConcern: Military facilities, 🪖
+ColorForConcern: Military facilities, yellow
 
 Input text:
 Human: 日本でソニーの名前を持つ会社・工場などを表示して
 Output:
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
 TitleOfMap: 日本のソニー関連の会社と工場
-EmojiForConcern: Sony companies, 🏢
-ColorForConcern: Sony companies, blue
-EmojiForConcern: Sony factories, 🏭
-ColorForConcern: Sony factories, lightgrey
 Area: Japan
 AreaWithConcern: Japan, Sony companies
+EmojiForConcern: Sony companies, 🏢
+ColorForConcern: Sony companies, blue
 AreaWithConcern: Japan, Sony factories
+EmojiForConcern: Sony factories, 🏭
+ColorForConcern: Sony factories, lightgrey
 
 Input text:
 Human: Show AL Apartments and Innovation and Training Park Prizren in Municipality of Prizren, Kosovo.
 Output:
 ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
 TitleOfMap: Apartment and Park in Municipality of Prizren
-EmojiForConcern: AL Apartments, 🏠
-ColorForConcern: AL Apartments, cyan
-EmojiForConcern: Innovation and Training Park Prizren, 🏢
-ColorForConcern: Innovation and Training Park Prizren, blue
 Area: Municipality of Prizren, Kosovo
 AreaWithConcern: Municipality of Prizren, Kosovo, AL Apartments
+EmojiForConcern: AL Apartments, 🏠
+ColorForConcern: AL Apartments, cyan
 AreaWithConcern: Municipality of Prizren, Kosovo, Innovation and Training Park Prizren
+EmojiForConcern: Innovation and Training Park Prizren, 🏢
+ColorForConcern: Innovation and Training Park Prizren, blue
 ===
 
 Useful hints of map definition:${tridentInnerHints}
