@@ -130,8 +130,10 @@ export const GeoJsonToMarkers: React.FC<{
         let center: Feature<Point, GeoJsonProperties> | undefined = undefined;
         switch (feature.geometry.type) {
           case "Polygon":
-            const polygonFeatures = turf.polygon(feature.geometry.coordinates);
-            center = turf.centroid(polygonFeatures);
+            const options = {tolerance: 0.0001, highQuality: true};
+            const poly = turf.cleanCoords(turf.simplify(feature as turf.AllGeoJSON, options));
+            const polygonFeature = turf.polygon(poly.geometry.coordinates);
+            center = turf.centroid(polygonFeature);
             break;
           case "MultiPolygon":
             const multiPolygonFeatures = turf.multiPolygon(
