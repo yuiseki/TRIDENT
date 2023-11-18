@@ -19,7 +19,7 @@ export const nextPostJsonWithCache = async (
   const md5 = new Md5();
   md5.appendStr(`${url}\n${bodyJsonString}`);
   const hash = md5.end();
-  const key = `trident-cache_2023-11-18-b_${hash}`;
+  const key = `trident-cache_2023-11-18-5_${hash}`;
   const unixtime = Math.floor(new Date().getTime() / 1000);
 
   const fetchAndCache = async () => {

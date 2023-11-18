@@ -130,8 +130,10 @@ export const GeoJsonToMarkers: React.FC<{
         let center: Feature<Point, GeoJsonProperties> | undefined = undefined;
         switch (feature.geometry.type) {
           case "Polygon":
-            const options = {tolerance: 0.0001, highQuality: true};
-            const poly = turf.cleanCoords(turf.simplify(feature as turf.AllGeoJSON, options));
+            const options = { tolerance: 0.0001, highQuality: true };
+            const poly = turf.cleanCoords(
+              turf.simplify(feature as turf.AllGeoJSON, options)
+            );
             const polygonFeature = turf.polygon(poly.geometry.coordinates);
             center = turf.centroid(polygonFeature);
             break;
@@ -157,6 +159,23 @@ export const GeoJsonToMarkers: React.FC<{
 
         return (
           <Fragment key={feature.id}>
+            {feature.geometry.type === "LineString" && (
+              <Source type="geojson" data={feature}>
+                {
+                  <Layer
+                    {...{
+                      id: `${feature.id}-line`,
+                      type: "line",
+                      paint: {
+                        "line-width": 4,
+                        "line-color": style?.color ? style.color : "#f2f8fc",
+                        "line-opacity": 0.8,
+                      },
+                    }}
+                  />
+                }
+              </Source>
+            )}
             {(feature.geometry.type === "Polygon" ||
               feature.geometry.type === "MultiPolygon") && (
               <Source type="geojson" data={feature}>

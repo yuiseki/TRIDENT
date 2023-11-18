@@ -22,6 +22,8 @@ EmojiForConcern: Shrine, ⛩
 ColorForConcern: Shrine, lightgreen
 EmojiForConcern: National treasure castles, 🏯
 ColorForConcern: National treasure castles, white
+EmojiForConcern: River, 💧
+ColorForConcern: River, blue
 `;
 const bboxInnerLang = `
 Input text:
@@ -47,6 +49,7 @@ AreaWithConcern: pair of geospatial area and concern mentioned by human
 EmojiForConcern: emoji best suited to expressing specific concern, MUST be unique for each concern
 ColorForConcern: color name best suited to expressing specific concern, MUST be unique for each concern, should be one of the name of Web Safe Color
 ... (You MUST ALWAYS output only one ConfirmHelpful)
+... (When you output AreaWithConcern, you MUST also output EmojiForConcern and ColorForConcern that correspond to the AreaWithConcern)
 ... (this Area/AreaWithConcern/EmojiForConcern/ColorForConcern can repeat N times)
 
 You will always reply according to the following rules:
@@ -63,6 +66,8 @@ You will always reply according to the following rules:
 - Be careful, If the last conversation mentioned popularity, only output "No map specified."
 - You absolutely cannot output map definition about popularity!!
 - If you can't output map definition, only output "No map specified."
+- You should not leave out most widely Area.
+- You must always, without fail, output as much of Human's intent as possible.
 
 Examples of map definition:
 ===
@@ -87,6 +92,20 @@ Output:
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
 TitleOfMap: 静岡県伊豆市
 Area: Izu, Shizuoka Prefecture 
+
+Input text:
+Human: Area: Rukum District, Karnali Province, Nepal
+Output:
+ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
+TitleOfMap: Rukum District, Karnali Province, Nepal
+Area: Western Rukum District, Karnali Province, Nepal
+
+Input text:
+Human: Area: Mandera County, Kenya
+Output:
+ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
+TitleOfMap: Mandera County, Kenya
+Area: Mandera County, Kenya
 
 Input text:
 Human: スーダンと南スーダンの首都を表示して

@@ -18,9 +18,9 @@ AreaWithConcern: pair of geospatial area and specific concern mentioned in the t
 
 You will always reply according to the following rules:
 - Note that what we call Concerns here is an interest in concrete categories of geographic features in OpenStreetMap.
-- So, Be careful, You MUTS NOT include specific natural disasters like Floods or epidemics in Concerns.
+- So, Be careful, You MUTS NOT include specific natural disasters like Floods or specific epidemics link Dengue hotspots, Dengue cases in Concerns.
 - Also note that You MUST NOT include disruption, damages, risk, or impact of the disaster in Concerns.
-- Please DO NOT include Roads, because it is too many and too general.
+- Please DO NOT include Roads and Bridges, because it is too many and too general.
 
 Examples:
 ===
@@ -29,11 +29,10 @@ Heavy rainfall has been affecting southern and eastern Ethiopia, in particular t
 
 Output:
 Area: Ethiopia
-Area: Somali Region
-Area: Genale River
-AreaWithConcern: Somali Region, Bridges
-AreaWithConcern: Somali Region, Shelters
-AreaWithConcern: Somali Region, Hospitals
+Area: Somali Region, Ethiopia
+AreaWithConcern: Somali Region, Ethiopia, Genale River
+AreaWithConcern: Somali Region, Ethiopia, Shelters
+AreaWithConcern: Somali Region, Ethiopia, Hospitals
 
 Input:
 On 03 November at 18:02 UTC a 5.6 M earthquake at a depth of 17.9 km struck Nepal, with epicentre in Jajarkot of Karnali province. Several aftershocks have occurred since. Tremors were felt across North India. According to the National Disaster Risk Reduction and Management Authority (NDRRMA) 140 people have been killed and 140 injured. ([ECHO, 04 Nov 2023](https://reliefweb.int/node/4011963))
@@ -44,13 +43,13 @@ According to the National Emergency Operation Centre (NEOC), by 15 November, app
 
 Output:
 Area: Nepal
-Area: Karnali Province
-Area: Jajarkot, Karnali Province
-Area: Western Rukum District, Karnali Province
-AreaWithConcern: Jajarkot, Karnali Province, Shelters
-AreaWithConcern: Jajarkot, Karnali Province, Hospitals
-AreaWithConcern: Western Rukum District, Karnali Province, Shelters
-AreaWithConcern: Western Rukum District, Karnali Province, Hospitals
+Area: Karnali Province, Nepal
+Area: Jajarkot, Karnali Province, Nepal
+Area: Western Rukum District, Karnali Province, Nepal
+AreaWithConcern: Jajarkot, Karnali Province, Nepal, Shelters
+AreaWithConcern: Jajarkot, Karnali Province, Nepal, Hospitals
+AreaWithConcern: Western Rukum District, Karnali Province, Nepal, Shelters
+AreaWithConcern: Western Rukum District, Karnali Province, Nepal, Hospitals
 
 ===
 

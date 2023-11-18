@@ -124,9 +124,105 @@ Area: Prizren, Kosovo
 Output:
 \`\`\`
 [out:json][timeout:30000];
-relation[boundary="administrative"]["name"="Municipality of Prizren"];
+area["name"="Kosovo"]->.searchArea;
+(
+  relation["boundary"="administrative"]["name"="Municipality of Prizren"](area.searchArea);
+);
 out geom;
 \`\`\`
+
+Input text:
+Area: Mandera County, Kenya
+Output:
+\`\`\`
+[out:json][timeout:30000];
+area["name"="Kenya"]->.searchArea;
+(
+  relation["boundary"="administrative"]["name"="Mandera County"](area.searchArea);
+);
+out geom;
+\`\`\`
+
+Input text:
+Western Province, Sri Lanka
+Output:
+\`\`\`
+[out:json][timeout:30000];
+area["name"="Sri Lanka"]->.searchArea;
+(
+  relation["boundary"="administrative"]["name"="Western Province"](area.searchArea);
+);
+out geom;
+\`\`\`
+
+Input text:
+Area: Jajarkot, Karnali Province, Nepal
+Output:
+\`\`\`
+[out:json][timeout:30000];
+area["name"="Nepal"]->.outer;
+area["name"="Karnali Province"]->.inner;
+(
+  relation["boundary"="administrative"]["name"="Jajarkot"](area.inner)(area.outer);
+);
+out geom;
+\`\`\`
+
+Input text:
+Area: Rukum District, Karnali Province, Nepal
+Output:
+\`\`\`
+[out:json][timeout:30000];
+area["name:en"="Nepal"]->.outer;
+area["name:en"="Karnali Province"]->.inner;
+(
+  relation["boundary"="administrative"]["name:en"="Western Rukum District"](area.inner)(area.outer);
+);
+out geom;
+\`\`\`
+
+Input text:
+Somali Region, Ethiopia, Genale River
+Output:
+\`\`\`
+[out:json][timeout:30000];
+area["name"="Ethiopia"]->.outer;
+area["name"="Somali Region"]->.inner;
+(
+  nwr["name"="Genale river"](area.inner)(area.outer);
+);
+out geom;
+\`\`\`
+
+Input text:
+Somali Region, Ethiopia, Shelters
+Output:
+\`\`\`
+[out:json][timeout:30000];
+area["name"="Ethiopia"]->.outer;
+area["name"="Somali Region"]->.inner;
+(
+  nwr["amenity"="shelter"](area.inner)(area.outer);
+  nwr["amenity"="refugee_site"](area.inner)(area.outer);
+);
+out geom;
+\`\`\`
+
+Input text:
+Jajarkot, Karnali Province, Nepal, Shelters
+Output:
+\`\`\`
+[out:json][timeout:30000];
+area["name"="Nepal"]->.outer;
+area["name"="Karnali Province"]->.inner;
+area["name"="Jajarkot"]->.inner2;
+(
+  nwr["amenity"="shelter"](area.inner2)(area.inner)(area.outer);
+  nwr["amenity"="refugee_site"](area.inner2)(area.inner)(area.outer);
+);
+out geom;
+\`\`\`
+
 
 Input text:
 AreaWithConcern: Sudan, Hospitals
@@ -154,14 +250,27 @@ out geom;
 \`\`\`
 
 Input text:
+AreaWithConcern: Kurunegala District, Sri Lanka, Hospitals
+Output:
+\`\`\`
+[out:json][timeout:30000];
+area["name"="Sri Lanka"]->.outer;
+area["name"="Kurunegala District"]->.inner;
+(
+  nwr["amenity"="hospital"](area.inner)(area.outer);
+);
+out geom;
+\`\`\`
+
+Input text:
 AreaWithConcern: Urayasu, Chiba, Hospitals
 Output:
 \`\`\`
 [out:json][timeout:30000];
-area["name"="Chiba Prefecture"]->.chiba;
-area["name"="Urayasu"]->.searchArea;
+area["name"="Chiba Prefecture"]->.outer;
+area["name"="Urayasu"]->.inner;
 (
-  nwr["amenity"="hospital"](area.searchArea)(area.chiba);
+  nwr["amenity"="hospital"](area.inner)(area.outer);
 );
 out geom;
 \`\`\`
@@ -171,10 +280,10 @@ AreaWithConcern: Taito, Tokyo, Hotels
 Output:
 \`\`\`
 [out:json][timeout:30000];
-area["name"="Tokyo"]->.tokyo;
-area["name"="Taito"]->.searchArea;
+area["name"="Tokyo"]->.outer;
+area["name"="Taito"]->.inner;
 (
-  nwr["tourism"="hotel"](area.searchArea)(area.tokyo);
+  nwr["tourism"="hotel"](area.inner)(area.outer);
 );
 out geom;
 \`\`\`
@@ -196,10 +305,10 @@ AreaWithConcern: Juba, South Sudan, Military facilities
 Output:
 \`\`\`
 [out:json][timeout:30000];
-area["name"="South Sudan"]->.sudan;
-area["name"="Juba"]->.searchArea;
+area["name"="South Sudan"]->.outer;
+area["name"="Juba"]->.inner;
 (
-  nwr["landuse"="military"](area.searchArea)(area.sudan);
+  nwr["landuse"="military"](area.inner)(area.outer);
 );
 out geom;
 \`\`\`

@@ -197,6 +197,7 @@ export default function Page() {
           styles[concern].color = color;
         }
       });
+      console.log("styles", styles);
 
       // extract correct lines
       const linesWithAreaAndOrConcern = lines.filter((line: string) =>
@@ -305,7 +306,7 @@ export default function Page() {
             latitude={0}
             zoom={1}
             style={mapStyleJsonUrl}
-            enableInteractions={false}
+            enableInteractions={true}
           >
             {geojsonWithStyleList &&
               geojsonWithStyleList.map((geojsonWithStyle, idx) => {
