@@ -49,10 +49,16 @@ export default function Page() {
     "/map_styles/fiord-color-gl-style/style.json"
   );
 
-  const { data, error } = useSWR<Array<ConcernEvent>>(
+  const { data: newsData, error: newsDataError } = useSWR<Array<ConcernEvent>>(
     "/data/www3.nhk.or.jp/concerns/latest_concerns.json",
     jsonFetcher
   );
+
+  const { data: disasterData, error: disasterDataError } = useSWR<Array<ConcernEvent>>(
+    "/data/api.reliefweb.int/concerns/latest_concerns.json",
+    jsonFetcher
+  );
+
 
   const onSelectMapStyleJsonUrl = useCallback(
     (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -62,15 +68,16 @@ export default function Page() {
   );
 
   useEffect(() => {
-    // dataがない場合は何もしない
-    if (!data) {
-      return;
-    }
     // idがない場合は何もしない
     if (!id) {
       return;
     }
+    // dataがない場合は何もしない
+    if (!newsData || !disasterData) {
+      return;
+    }
     // idに該当するconcernを探し、newConcernに格納する
+    const data = [...newsData, ...disasterData];
     const newConcern = data.find((concern) =>
       concern.url.includes(id as string)
     );
@@ -79,7 +86,7 @@ export default function Page() {
     }
     // concernが変わったら、stateを更新する
     setConcern(newConcern);
-  }, [data, id]);
+  }, [disasterData, id, newsData]);
 
   useEffect(() => {
     setTimeout(() => {

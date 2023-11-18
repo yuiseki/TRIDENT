@@ -25,15 +25,23 @@ export default function Page() {
     Array<ConcernEvent> | undefined
   >(undefined);
 
-  const { data, error } = useSWR<Array<ConcernEvent>>(
+  const { data: newsData, error: newsDataError } = useSWR<Array<ConcernEvent>>(
     "/data/www3.nhk.or.jp/concerns/latest_concerns.json",
     jsonFetcher
   );
 
+  const { data: disasterData, error: disasterDataError } = useSWR<Array<ConcernEvent>>(
+    "/data/api.reliefweb.int/concerns/latest_concerns.json",
+    jsonFetcher
+  );
+
+
   useEffect(() => {
-    if (!data) {
+    if (!newsData || !disasterData) {
       return;
     }
+
+    const data = [...newsData, ...disasterData]
 
     const newSortedConcerns = data
       .filter((v) => v)
@@ -71,7 +79,7 @@ export default function Page() {
         );
       });
     setSortedConcerns(newSortedConcerns);
-  }, [data]);
+  }, [disasterData, newsData]);
 
   const getConcerns = useCallback(
     (start: Date, end: Date) => {
@@ -135,7 +143,7 @@ export default function Page() {
                         {concern.title}
                       </Link>
                       <br />
-                      {concern.displayMaps}
+                      {concern.displayMaps.join(", ").replaceAll("AreaWithConcern:", "").replaceAll("Area:", "")}
                     </li>
                   );
                 })}

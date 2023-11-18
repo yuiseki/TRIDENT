@@ -13,6 +13,8 @@
     "test:sortByDistance": "node --loader ts-node/esm ./tests/sortByDistance.ts",
     "test:agent": "node --loader ts-node/esm ./tests/agent.ts",
     "site:api.reliefweb.int:fetch": "node --loader ts-node/esm ./scripts/api.reliefweb.int/fetch.ts",
+    "site:api.reliefweb.int:analyze_reports": "node --loader ts-node/esm ./scripts/api.reliefweb.int/analyze_reports.ts",
+    "site:api.reliefweb.int:analyze_disasters": "node --loader ts-node/esm ./scripts/api.reliefweb.int/analyze_disasters.ts",
     "site:www3.nhk.or.jp:fetch": "node --loader ts-node/esm ./scripts/www3.nhk.or.jp/fetch.ts"
   },
   "dependencies": {

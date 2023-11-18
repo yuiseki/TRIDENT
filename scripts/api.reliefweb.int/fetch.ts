@@ -4,9 +4,7 @@ const sleep = (msec: number) =>
   new Promise((resolve) => setTimeout(resolve, msec));
 
 const limit = 200;
-for await (const offset of [
-  0, 200, 400, 600, 800, 1000, 1200, 1400, 1600, 1800, 2000,
-]) {
+for await (const offset of [0, 200, 400]) {
   // Disasters
   const disastersEndpoint = "https://api.reliefweb.int/v1/disasters";
   const disastersParams = new URLSearchParams();
