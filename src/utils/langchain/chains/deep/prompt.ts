@@ -182,6 +182,19 @@ out geom;
 \`\`\`
 
 Input text:
+Area: Acapulco, Guerrero State, Mexico
+Output:
+\`\`\`
+[out:json][timeout:30000];
+area["name"="México"]->.outer;
+area["name"="Guerrero"]->.inner;
+(
+  relation["boundary"="administrative"]["name"="Acapulco de Juárez"](area.inner)(area.outer);
+);
+out geom;
+\`\`\`
+
+Input text:
 Somali Region, Ethiopia, Genale River
 Output:
 \`\`\`

@@ -18,7 +18,16 @@ import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 
 const formatDate = (date: Date) => {
-  return `${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日`;
+  const userLang = navigator.language;
+  console.log(userLang);
+  switch (userLang) {
+    case "ja-JP":
+      return `${date.getFullYear()}年${
+        date.getMonth() + 1
+      }月${date.getDate()}日`;
+    default:
+      return `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
+  }
 };
 
 type ConcernEvent = {
@@ -54,11 +63,9 @@ export default function Page() {
     jsonFetcher
   );
 
-  const { data: disasterData, error: disasterDataError } = useSWR<Array<ConcernEvent>>(
-    "/data/api.reliefweb.int/concerns/latest_concerns.json",
-    jsonFetcher
-  );
-
+  const { data: disasterData, error: disasterDataError } = useSWR<
+    Array<ConcernEvent>
+  >("/data/api.reliefweb.int/concerns/latest_concerns.json", jsonFetcher);
 
   const onSelectMapStyleJsonUrl = useCallback(
     (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -114,38 +121,36 @@ export default function Page() {
     }, 500);
   }, [geojsonWithStyleList]);
 
-  const whereAndWhenHappens = useMemo(() => {
+  const whenAndWhatHappens = useMemo(() => {
     // concernがない場合は何もしない
     if (!concern) {
       return "";
     }
     const currentDate = new Date(concern.currentDate);
-    const whenHappens = `${formatDate(currentDate)}。`;
+    const whenHappens = `${formatDate(currentDate)}`;
     return whenHappens;
   }, [concern]);
 
   useEffect(() => {
     const f = async () => {
-      const pastMessages = concern?.displayMaps.map(
-        (displayMap) => {
-          const cleanedDisplayMap = displayMap
-            .replaceAll("北東部", "")
-            .replaceAll("東部", "")
-            .replaceAll("西部", "")
-            .replaceAll("山岳地帯の", "");
-          return {
-            type: "constructor",
-            id: ["langchain", "schema", "HumanMessage"],
-            kwargs: {
-              content: cleanedDisplayMap,
-            },
-          } as {
-            type: string;
-            id: string[];
-            kwargs: { content: string };
-          };
-        }
-      );
+      const pastMessages = concern?.displayMaps.map((displayMap) => {
+        const cleanedDisplayMap = displayMap
+          .replaceAll("北東部", "")
+          .replaceAll("東部", "")
+          .replaceAll("西部", "")
+          .replaceAll("山岳地帯の", "");
+        return {
+          type: "constructor",
+          id: ["langchain", "schema", "HumanMessage"],
+          kwargs: {
+            content: cleanedDisplayMap,
+          },
+        } as {
+          type: string;
+          id: string[];
+          kwargs: { content: string };
+        };
+      });
       console.log("pastMessages", pastMessages);
 
       // call inner layer
@@ -272,17 +277,33 @@ export default function Page() {
         width: "100vw",
         height: "100vh",
         backgroundColor: "#fff",
+        display: "flex",
+        flexDirection: "row",
       }}
     >
       <div
         style={{
-          height: "30vh",
+          width: "40vw",
           padding: "1rem",
+          overflowY: "scroll",
         }}
       >
         <Link href="/agent">&lt; /agent</Link>
-        <h2 style={{ fontSize: "3em" }}>{whereAndWhenHappens}</h2>
-        <h3 style={{ fontSize: "1.8em" }}>{concern.whatHappenings}</h3>
+        <h2 style={{ fontSize: "2em", padding: "0.2em 0" }}>
+          {whenAndWhatHappens}
+        </h2>
+        <div>
+          {concern.whatHappenings.map((line, idx) => {
+            return (
+              <h4
+                key={idx}
+                style={{ fontSize: "1.5em", paddingBottom: "0.4em" }}
+              >
+                {line}
+              </h4>
+            );
+          })}
+        </div>
         <p>
           <ul
             style={{
@@ -297,7 +318,7 @@ export default function Page() {
           </ul>
         </p>
       </div>
-      <div className="tridentInlineMapWrap" style={{ height: "65vh" }}>
+      <div className="tridentInlineMapWrap" style={{ width: "60vw" }}>
         <MapProvider>
           <BaseMap
             id="mainMap"
@@ -321,25 +342,6 @@ export default function Page() {
               })}
           </BaseMap>
         </MapProvider>
-      </div>
-      <div
-        style={{
-          height: "5vh",
-          display: "flex",
-          justifyContent: "center",
-          alignContent: "center",
-        }}
-      >
-        <div
-          style={{
-            height: "5vh",
-            lineHeight: "5vh",
-            fontSize: "2em",
-            fontWeight: "bold",
-          }}
-        >
-          ↓
-        </div>
       </div>
     </div>
   );

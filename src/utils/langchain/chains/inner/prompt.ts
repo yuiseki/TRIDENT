@@ -12,10 +12,6 @@ EmojiForConcern: Fast foods, 🍔
 ColorForConcern: Fast foods, coral
 EmojiForConcern: Bars, 🍻
 ColorForConcern: Bars, yellow
-EmojiForConcern: Ramen shops, 🍜
-ColorForConcern: Ramen shops, lightyellow
-EmojiForConcern: Soba noodle shops, 🍜
-ColorForConcern: Soba noodle shops, lightgreen
 EmojiForConcern: Buddhist temple, 🛕
 ColorForConcern: Buddhist temple, lightyellow
 EmojiForConcern: Shrine, ⛩
@@ -139,6 +135,20 @@ AreaWithConcern: Taito, Tokyo, Doctors
 EmojiForConcern: Doctors, 🩺
 ColorForConcern: Doctors, lightpink
 Important note: If Human asks you to show hospitals, you MUST also include doctors.
+
+Input text:
+Human: 台東区のラーメン屋と蕎麦屋を表示してください。
+Output:
+ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+TitleOfMap: 台東区のラーメン屋と蕎麦屋
+Area: Taito, Tokyo
+AreaWithConcern: Taito, Tokyo, Ramen shops
+EmojiForConcern: Ramen shops, 🏥
+EmojiForConcern: Ramen shops, 🍜
+ColorForConcern: Ramen shops, lightyellow
+EmojiForConcern: Taito, Tokyo, Soba noodle shops
+EmojiForConcern: Soba noodle shops, 🍜
+ColorForConcern: Soba noodle shops, lightgreen
 
 Input text:
 Human: 浦安を表示して

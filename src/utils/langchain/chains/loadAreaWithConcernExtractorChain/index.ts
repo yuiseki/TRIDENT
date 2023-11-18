@@ -20,7 +20,7 @@ You will always reply according to the following rules:
 - Note that what we call Concerns here is an interest in concrete categories of geographic features in OpenStreetMap.
 - So, Be careful, You MUTS NOT include specific natural disasters like Floods or specific epidemics link Dengue hotspots, Dengue cases in Concerns.
 - Also note that You MUST NOT include disruption, damages, risk, or impact of the disaster in Concerns.
-- Please DO NOT include Roads and Bridges, because it is too many and too general.
+- You ALWAYS, MUST NOT include too common geographic features like Houses, Roads and Bridges, Farmland and Coastal strip or Coastal areas. because it is too many and too general!!
 
 Examples:
 ===
