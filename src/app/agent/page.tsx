@@ -16,9 +16,8 @@ type ConcernEvent = {
   title: string;
   pubDate: string;
   currentDate: string;
-  where: string;
   whatHappenings: string[];
-  requestToDisplayMaps: string[];
+  displayMaps: string[];
 };
 
 export default function Page() {
@@ -43,9 +42,7 @@ export default function Page() {
           concern.currentDate === null ||
           concern.currentDate === "Unknown" ||
           concern.currentDate === "unknown" ||
-          concern.where === "Unknown" ||
-          concern.where === "unknown" ||
-          concern.requestToDisplayMaps.length === 0
+          concern.displayMaps.length === 0
         ) {
           return false;
         }
@@ -59,8 +56,8 @@ export default function Page() {
                 happenings.includes("目指す") || happenings.includes("関係各国")
             )
             .includes(true) ||
-          concern.requestToDisplayMaps
-            .map((req) => req.includes("近海"))
+          concern.displayMaps
+            .map((ma) => ma.includes("近海") || ma.includes("Unknown"))
             .includes(true)
         ) {
           return false;
@@ -81,14 +78,12 @@ export default function Page() {
       if (!sortedConcerns) {
         return;
       }
-      console.log("sortedConcerns", sortedConcerns.length);
       const filteredConcerns = sortedConcerns.filter((event) => {
         return (
           start.getTime() <= new Date(event.currentDate).getTime() &&
           new Date(event.currentDate).getTime() <= end.getTime()
         );
       });
-      console.log("filteredConcerns", filteredConcerns.length);
       return filteredConcerns;
     },
     [sortedConcerns]
@@ -130,10 +125,6 @@ export default function Page() {
               {weeklyConcerns &&
                 weeklyConcerns.map((concern) => {
                   const concernUrlArray = concern.url.split("/");
-                  console.log(
-                    "permalink",
-                    concernUrlArray[concernUrlArray.length - 1]
-                  );
                   return (
                     <li key={concern.url} style={{ padding: "0.5rem 0" }}>
                       <Link
@@ -144,7 +135,7 @@ export default function Page() {
                         {concern.title}
                       </Link>
                       <br />
-                      {concern.requestToDisplayMaps}
+                      {concern.displayMaps}
                     </li>
                   );
                 })}

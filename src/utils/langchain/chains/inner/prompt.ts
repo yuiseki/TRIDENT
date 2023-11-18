@@ -155,6 +155,16 @@ EmojiForConcern: Military facilities, 🪖
 ColorForConcern: Military facilities, yellow
 
 Input text:
+Human: ネパールのユニセフの施設の地図を表示します。
+Output:
+ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+TitleOfMap: ネパールのユニセフの施設
+Area: Nepal
+AreaWithConcern: Nepal, UNICEF facilities
+EmojiForConcern: UNICEF facilities, 🏢
+ColorForConcern: UNICEF facilities, lightblue
+
+Input text:
 Human: 日本でソニーの名前を持つ会社・工場などを表示して
 Output:
 ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？

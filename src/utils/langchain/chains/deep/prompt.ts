@@ -218,6 +218,19 @@ out geom;
 \`\`\`
 
 Input text:
+AreaWithConcern: Gaza Strip, UN facilities
+Output:
+\`\`\`
+[out:json][timeout:30000];
+area["name"="Gaza Strip"]->.searchArea;
+(
+  nwr["name"~"UN"](area.searchArea);
+  nwr["name"~"UN"](area.searchArea);
+);
+out geom;
+\`\`\`
+
+Input text:
 AreaWithConcern: Prizren, Bars
 Output:
 \`\`\`

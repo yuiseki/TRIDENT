@@ -27,9 +27,8 @@ type ConcernEvent = {
   title: string;
   pubDate: string;
   currentDate: string;
-  where: string;
   whatHappenings: string[];
-  requestToDisplayMaps: string[];
+  displayMaps: string[];
 };
 
 export default function Page() {
@@ -114,16 +113,15 @@ export default function Page() {
       return "";
     }
     const currentDate = new Date(concern.currentDate);
-    const whenHappens = `${formatDate(currentDate)}、`;
-    const whereHappens = `${concern.where}。`;
-    return whenHappens + whereHappens;
+    const whenHappens = `${formatDate(currentDate)}。`;
+    return whenHappens;
   }, [concern]);
 
   useEffect(() => {
     const f = async () => {
-      const pastMessages = concern?.requestToDisplayMaps.map(
-        (requestToDisplayMap) => {
-          const cleanedRequestToDisplayMap = requestToDisplayMap
+      const pastMessages = concern?.displayMaps.map(
+        (displayMap) => {
+          const cleanedDisplayMap = displayMap
             .replaceAll("北東部", "")
             .replaceAll("東部", "")
             .replaceAll("西部", "")
@@ -132,7 +130,7 @@ export default function Page() {
             type: "constructor",
             id: ["langchain", "schema", "HumanMessage"],
             kwargs: {
-              content: cleanedRequestToDisplayMap,
+              content: cleanedDisplayMap,
             },
           } as {
             type: string;
@@ -284,7 +282,7 @@ export default function Page() {
               marginLeft: "1.5rem",
             }}
           >
-            {concern.requestToDisplayMaps.map((req, idx) => {
+            {concern.displayMaps.map((req, idx) => {
               return <li key={`${concern.url}-req-${idx}`}>{req}</li>;
             })}
             {mapping && <li>loading...</li>}
