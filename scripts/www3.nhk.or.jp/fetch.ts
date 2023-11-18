@@ -32,7 +32,7 @@ try {
 }
 
 const newsUrl1 =
-  "https://noa-api.nhk.jp/r1/db/_search?q=%28%22%E5%9B%BD%E9%80%A3%22%29&index=news&fields=title%2Cdescription&_source=link%2CpubDate%2Ctitle%2Cdescription&sortkey=pubDate&order=desc&from=0&limit=15";
+  "https://noa-api.nhk.jp/r1/db/_search?q=%28%22%E5%9B%BD%E9%80%A3%22%29&index=news&fields=title%2Cdescription&_source=link%2CpubDate%2Ctitle%2Cdescription&sortkey=pubDate&order=desc&from=0&limit=60";
 
 const newsUrl2 =
   "https://noa-api.nhk.jp/r1/db/_search?q=%28%22%E5%9C%B0%E9%9C%87%22%29&index=news&fields=title%2Cdescription&_source=link%2CpubDate%2Ctitle%2Cdescription&sortkey=pubDate&order=desc&from=0&limit=30";
