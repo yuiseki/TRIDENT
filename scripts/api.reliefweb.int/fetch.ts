@@ -50,7 +50,7 @@ for await (const offset of [0, 200, 400]) {
         JSON.stringify(disastersDetailApiJson.data, null, 2)
       );
     }
-    await sleep(1000);
+    await sleep(200);
   }
 
   // Reports
@@ -96,6 +96,6 @@ for await (const offset of [0, 200, 400]) {
         JSON.stringify(reportsDetailApiJson.data, null, 2)
       );
     }
-    await sleep(1000);
+    await sleep(200);
   }
 }
