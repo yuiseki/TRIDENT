@@ -18,7 +18,8 @@ const SEQUENCE_INDEX_TOTAL =
 //const SEQUENCE_INDEX_SUBTITLE_2 = "トライデント";
 //const SEQUENCE_INDEX_SUBTITLE_3 = "起動しました";
 
-const SEQUENCE_INDEX_SUBTITLE_1 = "Autonomous geospatial information exploring agent";
+const SEQUENCE_INDEX_SUBTITLE_1 =
+  "Autonomous geospatial information exploring agent";
 const SEQUENCE_INDEX_SUBTITLE_2 = "TRIDENT";
 const SEQUENCE_INDEX_SUBTITLE_3 = "has been initialized.";
 
@@ -249,6 +250,7 @@ const TridentSubTitleItem: React.FC<{ subTitle: string }> = ({ subTitle }) => {
     return () => {
       setVisible(false);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <div
