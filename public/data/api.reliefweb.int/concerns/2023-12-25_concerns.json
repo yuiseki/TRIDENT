@@ -38,35 +38,5 @@
       "AreaWithConcern: Yemeni asylum seekers, Jordan, Shelters",
       "AreaWithConcern: Yemeni asylum seekers, Jordan, Hospitals"
     ]
-  },
-  {
-    "url": "https://reliefweb.int/disaster/dr-2023-000254-swz",
-    "description": "[...] For successive years, Eswatini has been battling with prolonged drought whose effect on agriculture were further escalated by socio-economic cumulative challenges that the country did not overcome. ACAPS classification of the food insecurity in Eswatini on 30th November was high. 25% of the population is concerned by the food insecurity vulnerabilities with challenge accessing food needs and water insecure, with many households still reliant on welfare and social safety nets. \n\nThe Integrated Food Security Phase Classification (IPC) report published on August 2023 indicates that approximately 238,500 people (20%) of the population were estimated to be facing acute food insecurity and requiring urgent humanitarian assistance in September 2023. From October 2023 to March 2024, it was projected that approximately 268,000 people will be classified in IPC Phase 3 (Crisis), and nearly 14,700 will be in IPC Phase 4 (Emergency). On average 25% will be facing acute food insecurity in the predicted period. The regions with the highest prevalence of food insecurity are Lubombo and Shiswelweni, the areas most affected by the drought.\n\nThe magnitude of the drought and its consequences on food security escalation in the country will worsen with the forecasted El Nino (January - March period). Seasonal forecasts released by the SADC Meteorological Center and the local meteorological department predict a high inclination to the El Nino phenomenon in the January to March period. ([IFRC, 24 Dec 2023](https://reliefweb.int/node/4026018))",
-    "title": "Eswatini: Drought - Jun 2023",
-    "pubDate": "2023-12-27T00:33:12+00:00",
-    "currentDate": "2023-12-27T00:34:48+00:00",
-    "whatHappenings": [
-      "- Eswatini has been experiencing a prolonged drought.",
-      "- The drought has had a negative impact on agriculture.",
-      "- The country is facing socio-economic challenges.",
-      "- The ACAPS classification of food insecurity in Eswatini is high.",
-      "- 25% of the population is affected by food insecurity and struggles to access food and water.",
-      "- Many households rely on welfare and social safety nets.",
-      "- Approximately 238,500 people (20% of the population) are facing acute food insecurity and need urgent humanitarian assistance.",
-      "- From October 2023 to March 2024, around 268,000 people will be in IPC Phase 3 (Crisis) and nearly 14,700 will be in IPC Phase 4 (Emergency).",
-      "- The regions most affected by food insecurity are Lubombo and Shiswelweni.",
-      "- The drought's impact on food security will worsen with the forecasted El Nino phenomenon in the January to March period."
-    ],
-    "displayMaps": [
-      "Area: Eswatini",
-      "Area: Lubombo, Eswatini",
-      "Area: Shiswelweni, Eswatini",
-      "AreaWithConcern: Eswatini, Food insecurity",
-      "AreaWithConcern: Eswatini, Water insecurity",
-      "AreaWithConcern: Lubombo, Eswatini, Shelters",
-      "AreaWithConcern: Lubombo, Eswatini, Hospitals",
-      "AreaWithConcern: Shiswelweni, Eswatini, Shelters",
-      "AreaWithConcern: Shiswelweni, Eswatini, Hospitals"
-    ]
   }
 ]

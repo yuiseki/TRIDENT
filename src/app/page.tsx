@@ -98,6 +98,7 @@ export default function Home() {
         setLazyInserting(true);
       }
     },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     []
   );
   const [lazyInsertingInitialized, setLazyInsertingInitialized] =
