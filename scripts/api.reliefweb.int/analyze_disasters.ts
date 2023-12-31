@@ -3,6 +3,8 @@ import { loadListedSummarizationChain } from "../../src/utils/langchain/chains/l
 import { OpenAIChat } from "langchain/llms/openai";
 import fs from "node:fs/promises";
 import { exit } from "node:process";
+import * as dotenv from "dotenv";
+dotenv.config();
 
 const now = new Date();
 const today = now
