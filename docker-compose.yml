@@ -36,7 +36,27 @@ services:
           devices:
             - driver: nvidia
               capabilities: [gpu]
+  overpass-api:
+    # MEMO:
+    # http://localhost:5000/api/interpreter?data=[out:json];rel(2220322);out;
+    image: wiktorn/overpass-api
+    ports:
+      - 5000:80
+    volumes:
+      - overpass-db:/db
+    environment:
+      - OVERPASS_META=no
+      - OVERPASS_MODE=init
+      - OVERPASS_PLANET_URL=http://download.geofabrik.de/europe/monaco-latest.osm.bz2
+      - OVERPASS_DIFF_URL=http://download.openstreetmap.fr/replication/europe/monaco/minute/
+      - OVERPASS_UPDATE_SLEEP=60
+      - OVERPASS_USE_AREAS=true
+      - OVERPASS_STOP_AFTER_INIT=false
+      - OVERPASS_MAX_TIMEOUT=30000
 
 networks:
   myapp:
     name: myapp
+
+volumes:
+  overpass-db:
