@@ -1,0 +1,19 @@
+.select {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 10000;
+  max-width: 250px;
+  text-overflow: ellipsis;
+  font-size: 1rem;
+  line-height: 1.4;
+  appearance: none;
+  border-radius: 12px;
+  min-height: 20px;
+  margin: 0px;
+  padding: 2px 8px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: white;
+  font-family: sans-serif, emoji;
+}

@@ -16,13 +16,36 @@ import * as turf from "@turf/turf";
 import { TridentMapsStyle } from "@/types/TridentMaps";
 import { useLocalStorage } from "@/hooks/localStorage";
 import { FloatingChatButton } from "@/components/FloatingActionButton";
+import { MapStyleSelector } from "@/components/MapStyleSelector";
 
 const greetings = `Hello! I'm TRIDENT, interactive Smart Maps assistant. Could you indicate me the areas and themes you want to see as the map?`;
 
 export default function Home() {
   // input ref and state
-  const textareaRef = useRef<HTMLTextAreaElement>(null);
   const [inputText, setInputText] = useState("");
+
+  // dialogue ref and state
+  const dialogueRef = useRef<HTMLDivElement | null>(null);
+  const dialogueEndRef = useRef<HTMLDivElement | null>(null);
+  const [dialogueList, setDialogueList] = useState<DialogueElement[]>([]);
+  const [lazyInserting, setLazyInserting] = useState(false);
+  const [insertingText, setInsertingText] = useState(greetings);
+
+  const scrollToBottom = useCallback(async () => {
+    await sleep(50);
+    if (dialogueEndRef.current) {
+      dialogueEndRef.current.scrollIntoView({ behavior: "instant" });
+    }
+  }, []);
+
+  // floating chat button state
+  const [showingFloatingChat, setShowingFloatingChat] = useState(true);
+  const onChangeFloatingChatButton = useCallback((showing: boolean) => {
+    setShowingFloatingChat(showing);
+    if (showing) {
+      scrollToBottom();
+    }
+  }, [scrollToBottom]);
 
   // maps ref and state
   const mapRef = useRef<MapRef | null>(null);
@@ -42,43 +65,71 @@ export default function Home() {
     },
     [setMapStyleJsonUrl]
   );
+
+  // fit bounds to all geojson in the geojsonWithStyleList
   useEffect(() => {
     setTimeout(() => {
       if (!mapRef || !mapRef.current) return;
       if (geojsonWithStyleList.length === 0) return;
+
       try {
-        console.log(geojsonWithStyleList);
+        // everything - all geojson in the geojsonWithStyleList
         const everything: FeatureCollection = {
           type: "FeatureCollection",
           features: geojsonWithStyleList
             .map((item) => item.geojson.features)
             .flat(),
         };
+
+        // bounding box of all everything
         const [minLng, minLat, maxLng, maxLat] = turf.bbox(everything);
+
+        // padding of the map
+        let padding = {
+          top: 40,
+          left: 40,
+          right: 40,
+          bottom: 40,
+        };
+
+        // if floating chat is showing, add more padding
+        if (showingFloatingChat) {
+          const windowWidth = window.innerWidth;
+          // if the window is big like desktop, add little padding to left and bottom
+          // if the window is small like mobile, add more padding to bottom
+          if (windowWidth > 600) {
+            padding = {
+              top: 40,
+              left: 40,
+              right: 120,
+              bottom: 120,
+            };
+          } else {
+            padding = {
+              top: 40,
+              left: 40,
+              right: 40,
+              bottom: 400,
+            };
+          }
+        }
+
         mapRef.current.fitBounds(
           [
             [minLng, minLat],
             [maxLng, maxLat],
           ],
-          { padding: 40, duration: 1000 }
+          {
+            padding: padding,
+            duration: 1000,
+          }
         );
       } catch (error) {
         console.error(error);
       }
     }, 500);
-  }, [geojsonWithStyleList]);
+  }, [geojsonWithStyleList, showingFloatingChat]);
 
-  // dialogue ref and state
-  const dialogueRef = useRef<HTMLDivElement | null>(null);
-  const [dialogueList, setDialogueList] = useState<DialogueElement[]>([]);
-  const [lazyInserting, setLazyInserting] = useState(false);
-  const [insertingText, setInsertingText] = useState(greetings);
-  const scrollToBottom = useCallback(async () => {
-    await sleep(100);
-    if (dialogueRef.current) {
-      dialogueRef.current.scrollTop = dialogueRef.current.scrollHeight;
-    }
-  }, []);
   const insertNewDialogue = useCallback(
     (newDialogueElement: DialogueElement, lazy?: boolean) => {
       if (!lazy) {
@@ -319,10 +370,6 @@ export default function Home() {
         },
         false
       );
-    } else {
-      if (textareaRef.current) {
-        textareaRef.current.focus();
-      }
     }
   }, [mounted, insertNewDialogue]);
   if (!mounted) return null;
@@ -331,88 +378,11 @@ export default function Home() {
     <>
       <title>{pageTitle}</title>
       <main className="tridentMain">
-        <div className="tridentBackgroundWrap">
-          <div className="tridentBackgroundFlag"></div>
-          <div className="tridentBackgroundOverlay"></div>
-        </div>
-        <div className="tridentDialogueOuterWrap" ref={dialogueRef}>
-          <div className="tridentMapTitle">{mapTitle}</div>
-          <div className="tridentDialogueInnerWrap">
-            {dialogueList.map((dialogueElement, dialogueIndex) => {
-              return (
-                <div key={dialogueIndex}>
-                  <DialogueElementView
-                    dialogueElement={dialogueElement}
-                    dialogueIndex={dialogueIndex}
-                    isResponding={
-                      (responding || lazyInserting || mapping) &&
-                      dialogueIndex === dialogueList.length - 1
-                    }
-                  />
-                </div>
-              );
-            })}
-          </div>
-        </div>
-        <div className="tridentInputOuterWrap">
-          <div className="tridentInputInnerWrap">
-            <TextInput
-              textareaRef={textareaRef}
-              disabled={responding || lazyInserting || mapping}
-              placeholder={
-                responding || lazyInserting || mapping
-                  ? "..."
-                  : "Show embassies in Lebanon."
-              }
-              inputText={inputText}
-              setInputText={setInputText}
-              onSubmit={onSubmit}
-            />
-          </div>
-          <div
-            style={{
-              fontSize: "0.8rem",
-              color: "white",
-              width: "100%",
-              textAlign: "center",
-              opacity: 0.8,
-            }}
-          >
-            TRIDENT may produce inaccurate information.
-          </div>
-        </div>
         <div className="tridentMapWrap">
-          <div className="tridentMapSelectWrap">
-            <select
-              style={{
-                position: "absolute",
-                top: 10,
-                left: 10,
-                zIndex: 10000,
-                maxWidth: "250px",
-                textOverflow: "ellipsis",
-              }}
-              value={mapStyleJsonUrl}
-              onChange={onSelectMapStyleJsonUrl}
-            >
-              <option value={"/map_styles/fiord-color-gl-style/style.json"}>
-                🗺 OSM Fiord color (vector)
-              </option>
-              <option
-                value={
-                  "https://tile.openstreetmap.jp/styles/osm-bright/style.json"
-                }
-              >
-                🗺 OSM JP bright (vector)
-              </option>
-              <option value={"/map_styles/osm-hot/style.json"}>
-                🗺 OSM HOT (raster)
-              </option>
-              <option value={"/map_styles/arcgis-world-imagery/style.json"}>
-                🛰 ArcGIS World Imagery (raster)
-              </option>
-            </select>
-          </div>
+          <MapStyleSelector
+            mapStyleJsonUrl={mapStyleJsonUrl}
+            onSelectMapStyleJsonUrl={onSelectMapStyleJsonUrl}
+          />
           <MapProvider>
             <BaseMap
               id="mainMap"
@@ -434,6 +404,50 @@ export default function Home() {
                 })}
             </BaseMap>
           </MapProvider>
+          <FloatingChatButton onChange={onChangeFloatingChatButton}>
+            <div className="logsOuterWrap" ref={dialogueRef}>
+              <div className="tridentMapTitle">
+                {mapTitle ? mapTitle : "Untitled Map"}
+              </div>
+              {dialogueList.map((dialogueElement, dialogueIndex) => {
+                return (
+                  <div key={dialogueIndex}>
+                    <DialogueElementView
+                      dialogueElement={dialogueElement}
+                      dialogueIndex={dialogueIndex}
+                      isResponding={
+                        (responding || lazyInserting || mapping) &&
+                        dialogueIndex === dialogueList.length - 1
+                      }
+                    />
+                  </div>
+                );
+              })}
+              <div style={{ height: '1px' }} ref={dialogueEndRef} />
+            </div>
+            <TextInput
+              disabled={responding || lazyInserting || mapping}
+              placeholder={
+                responding || lazyInserting || mapping
+                  ? "..."
+                  : "Show embassies in Lebanon."
+              }
+              inputText={inputText}
+              setInputText={setInputText}
+              onSubmit={onSubmit}
+            />
+            <div
+              style={{
+                fontSize: "0.8rem",
+                color: "white",
+                width: "100%",
+                textAlign: "center",
+                opacity: 0.8,
+              }}
+            >
+              TRIDENT may produce inaccurate information.
+            </div>
+          </FloatingChatButton>
         </div>
       </main>
     </>

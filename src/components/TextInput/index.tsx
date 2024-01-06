@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { RefObject, useCallback, useRef } from "react";
+import React, { RefObject, useCallback, useEffect, useRef, useState } from "react";
 import styles from "./styles.module.css";
 
 export const TextInput = ({
@@ -8,15 +8,25 @@ export const TextInput = ({
   inputText,
   setInputText,
   onSubmit,
-  textareaRef,
 }: {
   disabled?: boolean;
   placeholder?: string;
   inputText: string;
   setInputText: (inputText: string) => void;
   onSubmit: () => void;
-  textareaRef: RefObject<HTMLTextAreaElement>;
 }) => {
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
+
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    if (!mounted) {
+      setMounted(true);
+    }
+    if (textareaRef.current) {
+      textareaRef.current.focus();
+    }
+  }, [mounted, textareaRef]);
+
   const onKeyDown: React.KeyboardEventHandler<HTMLTextAreaElement> =
     useCallback(
       (event: React.KeyboardEvent<HTMLTextAreaElement>) => {

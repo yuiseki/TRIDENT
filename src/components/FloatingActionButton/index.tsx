@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { useState } from "react";
@@ -5,8 +6,9 @@ import styles from "./styles.module.scss";
 
 export const FloatingChatButton: React.FC<{
   children: React.ReactNode;
-}> = ({ children }) => {
-  const [showing, setShowing] = useState(false);
+  onChange?: (showing: boolean) => void;
+}> = ({ children, onChange }) => {
+  const [showing, setShowing] = useState(true);
   return (
     <>
       {!showing && (
@@ -16,6 +18,9 @@ export const FloatingChatButton: React.FC<{
               className={styles.button}
               onClick={() => {
                 setShowing(true);
+                if (onChange) {
+                  onChange(true);
+                }
               }}
             >
               <img
@@ -35,6 +40,9 @@ export const FloatingChatButton: React.FC<{
             className={styles.closeButton}
             onClick={() => {
               setShowing(false);
+              if (onChange) {
+                onChange(false);
+              }
             }}
           >
             ✖
