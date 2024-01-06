@@ -434,7 +434,6 @@ export default function Home() {
                 })}
             </BaseMap>
           </MapProvider>
-          <FloatingChatButton>test</FloatingChatButton>
         </div>
       </main>
     </>
