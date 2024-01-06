@@ -331,56 +331,6 @@ export default function Home() {
     <>
       <title>{pageTitle}</title>
       <main className="tridentMain">
-        <div className="tridentBackgroundWrap">
-          <div className="tridentBackgroundFlag"></div>
-          <div className="tridentBackgroundOverlay"></div>
-        </div>
-        <div className="tridentDialogueOuterWrap" ref={dialogueRef}>
-          <div className="tridentMapTitle">{mapTitle}</div>
-          <div className="tridentDialogueInnerWrap">
-            {dialogueList.map((dialogueElement, dialogueIndex) => {
-              return (
-                <div key={dialogueIndex}>
-                  <DialogueElementView
-                    dialogueElement={dialogueElement}
-                    dialogueIndex={dialogueIndex}
-                    isResponding={
-                      (responding || lazyInserting || mapping) &&
-                      dialogueIndex === dialogueList.length - 1
-                    }
-                  />
-                </div>
-              );
-            })}
-          </div>
-        </div>
-        <div className="tridentInputOuterWrap">
-          <div className="tridentInputInnerWrap">
-            <TextInput
-              textareaRef={textareaRef}
-              disabled={responding || lazyInserting || mapping}
-              placeholder={
-                responding || lazyInserting || mapping
-                  ? "..."
-                  : "Show embassies in Lebanon."
-              }
-              inputText={inputText}
-              setInputText={setInputText}
-              onSubmit={onSubmit}
-            />
-          </div>
-          <div
-            style={{
-              fontSize: "0.8rem",
-              color: "white",
-              width: "100%",
-              textAlign: "center",
-              opacity: 0.8,
-            }}
-          >
-            TRIDENT may produce inaccurate information.
-          </div>
-        </div>
         <div className="tridentMapWrap">
           <div className="tridentMapSelectWrap">
             <select
@@ -434,6 +384,50 @@ export default function Home() {
                 })}
             </BaseMap>
           </MapProvider>
+          <FloatingChatButton>
+            <div className="logsOuterWrap" ref={dialogueRef}>
+              <div className="tridentMapTitle">
+                {mapTitle ? mapTitle : "Untitled"}
+              </div>
+              {dialogueList.map((dialogueElement, dialogueIndex) => {
+                return (
+                  <div key={dialogueIndex}>
+                    <DialogueElementView
+                      dialogueElement={dialogueElement}
+                      dialogueIndex={dialogueIndex}
+                      isResponding={
+                        (responding || lazyInserting || mapping) &&
+                        dialogueIndex === dialogueList.length - 1
+                      }
+                    />
+                  </div>
+                );
+              })}
+            </div>
+            <TextInput
+              textareaRef={textareaRef}
+              disabled={responding || lazyInserting || mapping}
+              placeholder={
+                responding || lazyInserting || mapping
+                  ? "..."
+                  : "Show embassies in Lebanon."
+              }
+              inputText={inputText}
+              setInputText={setInputText}
+              onSubmit={onSubmit}
+            />
+            <div
+              style={{
+                fontSize: "0.8rem",
+                color: "white",
+                width: "100%",
+                textAlign: "center",
+                opacity: 0.8,
+              }}
+            >
+              TRIDENT may produce inaccurate information.
+            </div>
+          </FloatingChatButton>
         </div>
       </main>
     </>
