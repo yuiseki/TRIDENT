@@ -1,7 +1,8 @@
 .buttonOuterWrap {
-  width: 100vw;
+  max-width: 400px;
   position: absolute;
   bottom: 0px;
+  right: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,9 +36,10 @@
 
 .childrenWrap {
   z-index: 100000;
-  width: 100vw;
+  width: 400px;
   position: absolute;
   bottom: 0px;
+  right: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
