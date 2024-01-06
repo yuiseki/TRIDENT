@@ -88,24 +88,24 @@ export const BaseMap: React.FC<{
       dragPan={enableInteractions ? true : false}
     >
       {children}
+      <AttributionControl
+        position={
+          attributionPosition
+            ? (attributionPosition as ControlPosition)
+            : "top-right"
+        }
+      />
       {enableInteractions && (
         <>
-          <GeolocateControl position="bottom-right" />
+          <GeolocateControl position="top-right" />
           <NavigationControl
-            position="bottom-right"
+            position="top-right"
             visualizePitch={true}
             showZoom={true}
             showCompass={true}
           />
         </>
       )}
-      <AttributionControl
-        position={
-          attributionPosition
-            ? (attributionPosition as ControlPosition)
-            : "bottom-right"
-        }
-      />
     </Map>
   );
 };

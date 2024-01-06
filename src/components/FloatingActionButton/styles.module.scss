@@ -1,0 +1,53 @@
+.buttonOuterWrap {
+  width: 400px;
+  max-width: 100vw;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonInnerWrap {
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 158, 219, 0.6) !important;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.button {
+  border: none;
+  background: transparent;
+}
+
+.buttonImage {
+  width: 30px;
+  height: 30px;
+}
+
+.childrenWrap {
+  width: 400px;
+  max-width: 100vw;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.closeButton {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: transparent;
+  background: rgba(5, 5, 5, 0.5);
+  border-radius: 50%;
+}

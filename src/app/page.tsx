@@ -15,6 +15,7 @@ import osmtogeojson from "osmtogeojson";
 import * as turf from "@turf/turf";
 import { TridentMapsStyle } from "@/types/TridentMaps";
 import { useLocalStorage } from "@/hooks/localStorage";
+import { FloatingChatButton } from "@/components/FloatingActionButton";
 
 const greetings = `Hello! I'm TRIDENT, interactive Smart Maps assistant. Could you indicate me the areas and themes you want to see as the map?`;
 
@@ -385,7 +386,7 @@ export default function Home() {
             <select
               style={{
                 position: "absolute",
-                bottom: 10,
+                top: 10,
                 left: 10,
                 zIndex: 10000,
                 maxWidth: "250px",
@@ -433,6 +434,7 @@ export default function Home() {
                 })}
             </BaseMap>
           </MapProvider>
+          <FloatingChatButton>test</FloatingChatButton>
         </div>
       </main>
     </>
