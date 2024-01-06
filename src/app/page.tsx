@@ -60,7 +60,15 @@ export default function Home() {
             [minLng, minLat],
             [maxLng, maxLat],
           ],
-          { padding: 40, duration: 1000 }
+          {
+            padding: {
+              top: 40,
+              left: 40,
+              right: 40,
+              bottom: 400,
+            },
+            duration: 1000,
+          }
         );
       } catch (error) {
         console.error(error);
