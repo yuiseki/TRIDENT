@@ -235,20 +235,6 @@ main.tridentMain {
   z-index: 1000;
 }
 
-.tridentMapSelectWrap select {
-  font-size: 1rem;
-  line-height: 1.4;
-  appearance: none;
-  border-radius: 12px;
-  min-height: 20px;
-  margin: 0px;
-  padding: 2px 8px;
-  cursor: pointer;
-  color: rgba(0, 0, 0, 0.8);
-  background-color: white;
-  font-family: sans-serif, emoji;
-}
-
 .tridentAgentArticle,
 .tridentAgentReportListWrap {
   height: 100vh;
@@ -605,7 +591,7 @@ main.tridentMain {
     width: 100%;
     top: 0;
     left: 0;
-    height: 50dvh;
+    height: 100dvh;
   }
   .dialogueElementItem {
     gap: 0px;

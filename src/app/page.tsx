@@ -16,6 +16,7 @@ import * as turf from "@turf/turf";
 import { TridentMapsStyle } from "@/types/TridentMaps";
 import { useLocalStorage } from "@/hooks/localStorage";
 import { FloatingChatButton } from "@/components/FloatingActionButton";
+import { MapStyleSelector } from "@/components/MapStyleSelector";
 
 const greetings = `Hello! I'm TRIDENT, interactive Smart Maps assistant. Could you indicate me the areas and themes you want to see as the map?`;
 
@@ -340,37 +341,10 @@ export default function Home() {
       <title>{pageTitle}</title>
       <main className="tridentMain">
         <div className="tridentMapWrap">
-          <div className="tridentMapSelectWrap">
-            <select
-              style={{
-                position: "absolute",
-                top: 10,
-                left: 10,
-                zIndex: 10000,
-                maxWidth: "250px",
-                textOverflow: "ellipsis",
-              }}
-              value={mapStyleJsonUrl}
-              onChange={onSelectMapStyleJsonUrl}
-            >
-              <option value={"/map_styles/fiord-color-gl-style/style.json"}>
-                🗺 OSM Fiord color (vector)
-              </option>
-              <option
-                value={
-                  "https://tile.openstreetmap.jp/styles/osm-bright/style.json"
-                }
-              >
-                🗺 OSM JP bright (vector)
-              </option>
-              <option value={"/map_styles/osm-hot/style.json"}>
-                🗺 OSM HOT (raster)
-              </option>
-              <option value={"/map_styles/arcgis-world-imagery/style.json"}>
-                🛰 ArcGIS World Imagery (raster)
-              </option>
-            </select>
-          </div>
+          <MapStyleSelector
+            mapStyleJsonUrl={mapStyleJsonUrl}
+            onSelectMapStyleJsonUrl={onSelectMapStyleJsonUrl}
+          />
           <MapProvider>
             <BaseMap
               id="mainMap"
@@ -395,7 +369,7 @@ export default function Home() {
           <FloatingChatButton>
             <div className="logsOuterWrap" ref={dialogueRef}>
               <div className="tridentMapTitle">
-                {mapTitle ? mapTitle : "Untitled"}
+                {mapTitle ? mapTitle : "Untitled Map"}
               </div>
               {dialogueList.map((dialogueElement, dialogueIndex) => {
                 return (
