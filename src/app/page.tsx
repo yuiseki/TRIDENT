@@ -19,7 +19,7 @@ import { MapStyleSelector } from "@/components/MapStyleSelector";
 import { fitBoundsToGeoJson } from "@/utils/map/fitBoundsToGeoJson";
 import { parseInnerResJson } from "@/utils/trident/parseInnerResJson";
 import { LegalNotice } from "@/components/LegalNotice";
-import { SuggestByCurrentLocation } from "@/components/SuggestByCurrentLocation";
+import { InputSuggest } from "@/components/InputSuggest";
 
 const greetings = {
   en: "Welcome! I'm TRIDENT, interactive Smart Maps assistant. Could you indicate me the areas and themes you want to see as the map?",
@@ -411,7 +411,7 @@ export default function Home() {
                 );
               })}
               {dialogueList.length === 1 && inputText.length === 0 && (
-                <SuggestByCurrentLocation onSelected={onSelectedSuggestions} />
+                <InputSuggest onSelected={onSelectedSuggestions} />
               )}
               <div style={{ height: "1px" }} ref={dialogueEndRef} />
             </div>
