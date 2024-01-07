@@ -167,7 +167,7 @@ ColorForConcern: River, blue
 const tridentInnerPromptPrefix = `You are a conversation analysis assistant dedicated to generate web maps. You analyze the following conversation and accurately output map definition to instruct the Map Building Agent. Map definition MUST be enclosed by three backticks on new lines, denoting that it is a code block.
 
 Use the following format for map definition:
-ConfirmHelpful: text that meanings "Mapping has been completed. Do you have any other requests? Have we been helpful to you?", MUST be the last language written by the human
+ConfirmHelpful: text that meanings "Mapping has been completed. Do you have any other requests? Have we been helpful to you?", MUST ALWAYS output this item IN THE LANGUAGE IN THE INPUT.
 TitleOfMap: very shot text that best suited to explain this map.
 Area: geospatial area mentioned by human
 AreaWithConcern: pair of geospatial area and concern mentioned by human
@@ -204,7 +204,7 @@ export const loadTridentInnerPrompt = async (embeddings: Embeddings) => {
     inputKeys: ["input"],
   });
   const examplePrompt = PromptTemplate.fromTemplate(
-    `Human:
+    `Input:
 {input}
 
 Output:
