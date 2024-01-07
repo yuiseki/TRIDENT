@@ -47,7 +47,6 @@ export async function POST(request: Request) {
 
   let embeddings: OpenAIEmbeddings;
   let llm: OpenAIChat;
-
   if (process.env.CLOUDFLARE_AI_GATEWAY) {
     embeddings = new OpenAIEmbeddings({
       configuration: {

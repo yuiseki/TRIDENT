@@ -1,15 +1,19 @@
 import { LLMChain } from "langchain/chains";
-import { TRIDENT_DEEP_PROMPT } from "./prompt";
+import { loadTridentDeepPrompt } from "./prompt";
 import { BaseLanguageModel } from "langchain/dist/base_language";
+import { Embeddings } from "langchain/embeddings/base";
 
-export const loadTridentDeepChain = ({
+export const loadTridentDeepChain = async ({
+  embeddings,
   llm,
 }: {
+  embeddings: Embeddings;
   llm: BaseLanguageModel;
-}): LLMChain => {
+}): Promise<LLMChain> => {
+  const prompt = await loadTridentDeepPrompt(embeddings);
   const chain = new LLMChain({
     llm: llm,
-    prompt: TRIDENT_DEEP_PROMPT,
+    prompt: prompt,
   });
   return chain;
 };
