@@ -205,7 +205,7 @@ main.tridentMain {
   width: 400px;
   max-width: 95vw;
   min-height: 52px;
-  max-height: 300px;
+  max-height: 60vh;
   overflow: auto;
   padding: 0 !important;
 }
@@ -576,6 +576,9 @@ main.tridentMain {
     height: 50dvh;
     top: inherit;
     bottom: 0;
+  }
+  .logsOuterWrap {
+    max-height: 250px;
   }
   .tridentDialogueOuterWrap {
     width: 100%;

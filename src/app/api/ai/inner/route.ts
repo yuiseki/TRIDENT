@@ -42,7 +42,8 @@ export async function POST(request: Request) {
     }
   }
 
-  console.log("chatHistoryLines");
+  console.log("");
+  console.log("chatHistoryLines:");
   console.log(chatHistoryLines);
 
   let embeddings: OpenAIEmbeddings;

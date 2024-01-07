@@ -153,7 +153,6 @@ export default function Home() {
       return;
     }
 
-    setGeojsonWithStyleList([]);
     setMapping(true);
 
     const {
@@ -182,6 +181,7 @@ export default function Home() {
         setMapping(false);
         return;
       }
+      setGeojsonWithStyleList([]);
       const overpassQuery = deepResJson.deep.split("```")[1];
 
       const handleOverpassResponseJson = async (

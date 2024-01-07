@@ -58,6 +58,12 @@ Area: Khartoum, Sudan
 Area: Juba, South Sudan`,
   },
   {
+    input: "台東区を表示して",
+    output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+TitleOfMap: 東京都台東区
+Area: Taito, Tokyo`,
+  },
+  {
     input: `台東区を表示して
 病院を表示して`,
     output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
@@ -70,6 +76,29 @@ AreaWithConcern: Taito, Tokyo, Doctors
 EmojiForConcern: Doctors, 🩺
 ColorForConcern: Doctors, lightpink
 Important note: If Human asks you to show hospitals, you MUST also include doctors.`,
+  },
+  {
+    input: "石川県を表示して",
+    output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+TitleOfMap: 石川県
+Area: Ishikawa Prefecture`,
+  },
+
+  {
+    input: `石川県を表示して
+金沢市に絞り込んで`,
+    output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+TitleOfMap: 石川県金沢市
+Area: Kanazawa, Ishikawa Prefecture`,
+  },
+  {
+    input: `石川県を表示して
+金沢市に絞り込んで
+避難所を表示して`,
+    output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+TitleOfMap: 石川県金沢市の避難所
+Area: Kanazawa, Ishikawa Prefecture
+AreaWithConcern: Kanazawa, Ishikawa Prefecture, Shelters`,
   },
   {
     input: "台東区のラーメン屋と蕎麦屋を表示してください。",
