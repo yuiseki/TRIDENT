@@ -40,7 +40,7 @@ export const parseInnerResJson = (innerResJson: {
   });
 
   const linesWithTitle = lines.filter((line: string) =>
-    line.includes("Title:")
+    line.includes("TitleOfMap:")
   );
 
   // determine confirm message
