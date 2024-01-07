@@ -26,12 +26,12 @@
 
 .suggestListWrap {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: no-wrap;
   gap: 2%;
 }
 
 .suggestListItem {
-  flex: 46%;
   font-size: 0.8em;
   margin-top: 12px;
   padding: 6px;

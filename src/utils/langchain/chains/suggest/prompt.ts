@@ -11,11 +11,17 @@ export const tridentSuggestExampleList: Array<{
   output: string;
 }> = [
   {
-    input: "台東区",
-    output: `台東区のラーメン屋を表示して
-台東区の駅を表示して
-台東区の公園を表示して
-台東区の病院を表示して`,
+    input: "台東区, 東京都, 日本",
+    output: `台東区の地図を表示して
+東京都の地図を表示して
+日本の地図を表示して`,
+  },
+  {
+    input: "台東区の地図を表示して",
+    output: `ラーメン屋を表示して
+駅を表示して
+公園を表示して
+病院を表示して`,
   },
   {
     input: "New York",
@@ -32,7 +38,7 @@ You will always output according to the following rules:
 - You MUST ALWAYS output IN THE LANGUAGE WHICH INPUT IS WRITING.
 - You MUST NOT output in any language other than the language written by the input.
 - You output with the most accurate grammar possible.
-- You SHOULD output 4 lines of text.
+- You SHOULD output max 4 lines of text.
 - Your output MUST be the list of suggestions of the maps based on the input.
 
 ### Examples: ###`;

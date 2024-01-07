@@ -27,7 +27,7 @@ export const SuggestByCurrentLocation: React.FC<{
         10
       );
       console.log("address", address);
-      const name = address.name;
+      const name = address.display_name;
       setAddress(name);
       setSuggests([]);
     };
