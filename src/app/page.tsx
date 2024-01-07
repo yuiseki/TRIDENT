@@ -17,6 +17,7 @@ import { TridentMapsStyle } from "@/types/TridentMaps";
 import { useLocalStorage } from "@/hooks/localStorage";
 import { FloatingChatButton } from "@/components/FloatingActionButton";
 import { MapStyleSelector } from "@/components/MapStyleSelector";
+import { fitBoundsToGeoJson } from "@/utils/map/fitBoundsToGeoJson";
 
 const greetings = `Hello! I'm TRIDENT, interactive Smart Maps assistant. Could you indicate me the areas and themes you want to see as the map?`;
 
@@ -40,12 +41,15 @@ export default function Home() {
 
   // floating chat button state
   const [showingFloatingChat, setShowingFloatingChat] = useState(true);
-  const onChangeFloatingChatButton = useCallback((showing: boolean) => {
-    setShowingFloatingChat(showing);
-    if (showing) {
-      scrollToBottom();
-    }
-  }, [scrollToBottom]);
+  const onChangeFloatingChatButton = useCallback(
+    (showing: boolean) => {
+      setShowingFloatingChat(showing);
+      if (showing) {
+        scrollToBottom();
+      }
+    },
+    [scrollToBottom]
+  );
 
   // maps ref and state
   const mapRef = useRef<MapRef | null>(null);
@@ -81,9 +85,6 @@ export default function Home() {
             .flat(),
         };
 
-        // bounding box of all everything
-        const [minLng, minLat, maxLng, maxLat] = turf.bbox(everything);
-
         // padding of the map
         let padding = {
           top: 40,
@@ -114,16 +115,7 @@ export default function Home() {
           }
         }
 
-        mapRef.current.fitBounds(
-          [
-            [minLng, minLat],
-            [maxLng, maxLat],
-          ],
-          {
-            padding: padding,
-            duration: 1000,
-          }
-        );
+        fitBoundsToGeoJson(mapRef, everything, padding);
       } catch (error) {
         console.error(error);
       }
@@ -423,7 +415,7 @@ export default function Home() {
                   </div>
                 );
               })}
-              <div style={{ height: '1px' }} ref={dialogueEndRef} />
+              <div style={{ height: "1px" }} ref={dialogueEndRef} />
             </div>
             <TextInput
               disabled={responding || lazyInserting || mapping}
