@@ -3,6 +3,8 @@ import {
   AttributionControl,
   ControlPosition,
   GeolocateControl,
+  GeolocateControlRef,
+  GeolocateResultEvent,
   Map,
   MapRef,
   NavigationControl,
@@ -24,6 +26,8 @@ export const BaseMap: React.FC<{
   onMapMoveEnd?: (e: ViewStateChangeEvent) => void;
   enableInteractions?: boolean;
   attributionPosition?: string;
+  geolocateControlRef?: MutableRefObject<GeolocateControlRef | null>;
+  onGeolocate?: ((e: GeolocateResultEvent) => void) | undefined;
 }> = ({
   id,
   mapRef,
@@ -39,6 +43,8 @@ export const BaseMap: React.FC<{
   onMapMoveEnd,
   enableInteractions = true,
   attributionPosition = "top-right",
+  geolocateControlRef,
+  onGeolocate,
 }) => {
   const onLoad = useCallback(() => {
     if (onMapLoad) {
@@ -97,7 +103,11 @@ export const BaseMap: React.FC<{
       />
       {enableInteractions && (
         <>
-          <GeolocateControl position="top-right" />
+          <GeolocateControl
+            position="top-right"
+            ref={geolocateControlRef}
+            onGeolocate={onGeolocate}
+          />
           <NavigationControl
             position="top-right"
             visualizePitch={true}

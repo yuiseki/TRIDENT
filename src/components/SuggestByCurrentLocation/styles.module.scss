@@ -1,0 +1,30 @@
+.geolocateButton {
+  width: 50%;
+  padding: 6px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.suggestAddress {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  color: rgba(236, 236, 241, 1);
+  background: rgba(52, 53, 65, 0.8);
+  backdrop-filter: blur(2px);
+  line-height: 2.5rem;
+  height: 2.5rem;
+}
+
+.suggestListWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+
+.suggestListItem {
+  flex: 46%;
+  font-size: 0.8em;
+  margin-top: 12px;
+  padding: 6px;
+}

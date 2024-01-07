@@ -1,5 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { RefObject, useCallback, useEffect, useRef, useState } from "react";
+import React, {
+  RefObject,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import styles from "./styles.module.css";
 
 export const TextInput = ({
@@ -15,17 +21,29 @@ export const TextInput = ({
   setInputText: (inputText: string) => void;
   onSubmit: () => void;
 }) => {
+  const [mounted, setMounted] = useState(false);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
-  const [mounted, setMounted] = useState(false);
+  const focusToEndOfText = useCallback(() => {
+    if (textareaRef.current) {
+      textareaRef.current.focus();
+      textareaRef.current.setSelectionRange(
+        textareaRef.current.value.length,
+        textareaRef.current.value.length
+      );
+    }
+  }, [textareaRef]);
+
   useEffect(() => {
     if (!mounted) {
       setMounted(true);
     }
-    if (textareaRef.current) {
-      textareaRef.current.focus();
-    }
-  }, [mounted, textareaRef]);
+    focusToEndOfText();
+  }, [mounted, focusToEndOfText]);
+
+  useEffect(() => {
+    focusToEndOfText();
+  }, [inputText, focusToEndOfText]);
 
   const onKeyDown: React.KeyboardEventHandler<HTMLTextAreaElement> =
     useCallback(

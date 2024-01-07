@@ -8,11 +8,10 @@ import { DialogueElement } from "@/types/DialogueElement";
 import { nextPostJson, nextPostJsonWithCache } from "@/utils/nextPostJson";
 import { sleep } from "@/utils/sleep";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { MapProvider, MapRef } from "react-map-gl";
+import { GeolocateControlRef, MapProvider, MapRef } from "react-map-gl";
 import { FeatureCollection } from "geojson";
 import { getOverpassResponseJsonWithCache } from "@/utils/getOverpassResponse";
 import osmtogeojson from "osmtogeojson";
-import * as turf from "@turf/turf";
 import { TridentMapsStyle } from "@/types/TridentMaps";
 import { useLocalStorage } from "@/hooks/localStorage";
 import { FloatingChatButton } from "@/components/FloatingActionButton";
@@ -20,6 +19,7 @@ import { MapStyleSelector } from "@/components/MapStyleSelector";
 import { fitBoundsToGeoJson } from "@/utils/map/fitBoundsToGeoJson";
 import { parseInnerResJson } from "@/utils/trident/parseInnerResJson";
 import { LegalNotice } from "@/components/LegalNotice";
+import { SuggestByCurrentLocation } from "@/components/SuggestByCurrentLocation";
 
 const greetings = {
   en: "Welcome! I'm TRIDENT, interactive Smart Maps assistant. Could you indicate me the areas and themes you want to see as the map?",
@@ -35,13 +35,24 @@ const untitledMaps = {
   fr: "Carte sans titre",
 };
 
+const placeholders = {
+  en: "Show embassies in Lebanon",
+  ja: "レバノンの大使館を表示して",
+  ch: "在黎巴嫩显示大使馆",
+  fr: "Afficher les ambassades au Liban",
+};
+
 export default function Home() {
   // all state
-  const [pageTitle, setPageTitle] = useState("TRIDENT");
   const [mounted, setMounted] = useState(false);
+  const [pageTitle, setPageTitle] = useState("TRIDENT");
+  const [mapInputPlaceholder, setMapInputPlaceholder] = useState<
+    string | undefined
+  >(undefined);
 
   // maps ref and state
   const mapRef = useRef<MapRef | null>(null);
+  const geolocationControlRef = useRef<GeolocateControlRef | null>(null);
   const [mapTitle, setMapTitle] = useState<string | undefined>(undefined);
   const [geojsonWithStyleList, setGeojsonWithStyleList] = useState<
     Array<{ id: string; style: TridentMapsStyle; geojson: FeatureCollection }>
@@ -115,132 +126,146 @@ export default function Home() {
     []
   );
 
-  const onSubmit = useCallback(async () => {
-    const newInputText = inputText.trim();
-    setInputText("");
-    setResponding(true);
+  const onSubmit = useCallback(
+    async (newestInputText?: string) => {
+      let newInputText = inputText.trim();
+      if (newestInputText) {
+        newInputText = newestInputText;
+      }
 
-    insertNewDialogue({ who: "user", text: newInputText });
+      setInputText("");
+      setResponding(true);
 
-    await sleep(200);
-    scrollToBottom();
+      insertNewDialogue({ who: "user", text: newInputText });
 
-    const surfaceRes = await nextPostJson("/api/ai/surface", {
-      query: newInputText,
-      pastMessages: pastMessages ? JSON.stringify(pastMessages) : undefined,
-      bounds: JSON.stringify(mapRef.current?.getBounds()),
-      center: JSON.stringify(mapRef.current?.getCenter()),
-    });
-    const surfaceResJson: {
-      surface: string;
-      history: Array<any>;
-    } = await surfaceRes.json();
-    console.log(surfaceResJson);
-    setPastMessages((prev) => {
-      return [prev, surfaceResJson.history].flat().filter((v) => v);
-    });
-    insertNewDialogue(
-      {
-        who: "assistant",
-        text: surfaceResJson.surface,
-      },
-      false
-    );
-    setMapping(true);
-    setResponding(true);
-    const innerRes = await nextPostJson("/api/ai/inner", {
-      pastMessages: JSON.stringify(surfaceResJson.history),
-      bounds: JSON.stringify(mapRef.current?.getBounds()),
-      center: JSON.stringify(mapRef.current?.getCenter()),
-    });
-    const innerResJson = await innerRes.json();
-    setResponding(false);
-    if (innerResJson.inner === undefined) {
-      setGeojsonWithStyleList([]);
-      setMapping(false);
-      return;
-    }
-    if (innerResJson.inner.toLowerCase().includes("no map")) {
-      setResponding(false);
-      setMapping(false);
-      return;
-    }
+      await sleep(200);
+      scrollToBottom();
 
-    setMapping(true);
-
-    const {
-      styles,
-      linesWithTitle,
-      linesWithConfirm,
-      linesWithAreaAndOrConcern,
-    } = parseInnerResJson(innerResJson);
-
-    if (linesWithTitle.length > 0) {
-      setMapTitle(linesWithTitle[0].split(":")[1]);
-    }
-
-    linesWithAreaAndOrConcern.map(async (line: string, idx: number) => {
-      let style = {};
-      Object.keys(styles).map((concern) => {
-        if (line.includes(concern)) {
-          style = styles[concern];
-        }
+      const surfaceRes = await nextPostJson("/api/ai/surface", {
+        query: newInputText,
+        pastMessages: pastMessages ? JSON.stringify(pastMessages) : undefined,
+        bounds: JSON.stringify(mapRef.current?.getBounds()),
+        center: JSON.stringify(mapRef.current?.getCenter()),
       });
+      const surfaceResJson: {
+        surface: string;
+        history: Array<any>;
+      } = await surfaceRes.json();
+      console.log(surfaceResJson);
+      setPastMessages((prev) => {
+        return [prev, surfaceResJson.history].flat().filter((v) => v);
+      });
+      insertNewDialogue(
+        {
+          who: "assistant",
+          text: surfaceResJson.surface,
+        },
+        false
+      );
       setMapping(true);
-      const deepResJson = await nextPostJsonWithCache("/api/ai/deep", {
-        query: line,
+      setResponding(true);
+      const innerRes = await nextPostJson("/api/ai/inner", {
+        pastMessages: JSON.stringify(surfaceResJson.history),
+        bounds: JSON.stringify(mapRef.current?.getBounds()),
+        center: JSON.stringify(mapRef.current?.getCenter()),
       });
-      if (deepResJson.deep.toLowerCase().includes("no valid")) {
+      const innerResJson = await innerRes.json();
+      setResponding(false);
+      if (innerResJson.inner === undefined) {
+        setGeojsonWithStyleList([]);
         setMapping(false);
         return;
       }
-      setGeojsonWithStyleList([]);
-      const overpassQuery = deepResJson.deep.split("```")[1];
+      if (innerResJson.inner.toLowerCase().includes("no map")) {
+        setResponding(false);
+        setMapping(false);
+        return;
+      }
 
-      const handleOverpassResponseJson = async (
-        overpassResponseJson: any,
-        retry: boolean
-      ) => {
-        const newGeojson = osmtogeojson(overpassResponseJson);
-        console.log("features", newGeojson.features.length);
-        if (newGeojson.features.length !== 0) {
-          setGeojsonWithStyleList((prev) => {
-            return [
-              ...prev,
-              { id: idx.toString(), style: style, geojson: newGeojson },
-            ];
-          });
-          if (idx === linesWithAreaAndOrConcern.length - 1) {
-            console.log("Finish!!!!!");
-            insertNewDialogue(
-              {
-                who: "assistant",
-                text:
-                  linesWithConfirm.length > 0
-                    ? linesWithConfirm[0].split(":")[1]
-                    : "Mapping has been completed. Have we been helpful to you? Do you have any other requests",
-              },
-              false
-            );
-            setMapping(false);
+      setMapping(true);
+
+      const {
+        styles,
+        linesWithTitle,
+        linesWithConfirm,
+        linesWithAreaAndOrConcern,
+      } = parseInnerResJson(innerResJson);
+
+      if (linesWithTitle.length > 0) {
+        setMapTitle(linesWithTitle[0].split(":")[1]);
+      }
+
+      linesWithAreaAndOrConcern.map(async (line: string, idx: number) => {
+        let style = {};
+        Object.keys(styles).map((concern) => {
+          if (line.includes(concern)) {
+            style = styles[concern];
           }
-        } else {
-          if (retry) {
-            getOverpassResponseJsonWithCache(overpassQuery.replace('["name"', '["name:en"')).then(
-              (overpassResponseJson) => {
+        });
+        setMapping(true);
+        const deepResJson = await nextPostJsonWithCache("/api/ai/deep", {
+          query: line,
+        });
+        if (deepResJson.deep.toLowerCase().includes("no valid")) {
+          setMapping(false);
+          return;
+        }
+        setGeojsonWithStyleList([]);
+        const overpassQuery = deepResJson.deep.split("```")[1];
+
+        const handleOverpassResponseJson = async (
+          overpassResponseJson: any,
+          retry: boolean
+        ) => {
+          const newGeojson = osmtogeojson(overpassResponseJson);
+          console.log("features", newGeojson.features.length);
+          if (newGeojson.features.length !== 0) {
+            setGeojsonWithStyleList((prev) => {
+              return [
+                ...prev,
+                { id: idx.toString(), style: style, geojson: newGeojson },
+              ];
+            });
+            if (idx === linesWithAreaAndOrConcern.length - 1) {
+              console.log("Finish!!!!!");
+              insertNewDialogue(
+                {
+                  who: "assistant",
+                  text:
+                    linesWithConfirm.length > 0
+                      ? linesWithConfirm[0].split(":")[1]
+                      : "Mapping has been completed. Have we been helpful to you? Do you have any other requests",
+                },
+                false
+              );
+              setMapping(false);
+            }
+          } else {
+            if (retry) {
+              getOverpassResponseJsonWithCache(
+                overpassQuery.replace('["name"', '["name:en"')
+              ).then((overpassResponseJson) => {
                 handleOverpassResponseJson(overpassResponseJson, false);
-              }
-            );
+              });
+            }
           }
-        }
-      };
-      getOverpassResponseJsonWithCache(overpassQuery).then(
-        (overpassResponseJson) => {
-          handleOverpassResponseJson(overpassResponseJson, true);
-        }
-      );
-    });
-  }, [inputText, insertNewDialogue, pastMessages, scrollToBottom]);
+        };
+        getOverpassResponseJsonWithCache(overpassQuery).then(
+          (overpassResponseJson) => {
+            handleOverpassResponseJson(overpassResponseJson, true);
+          }
+        );
+      });
+    },
+    [inputText, insertNewDialogue, pastMessages, scrollToBottom]
+  );
+
+  const onSelectedSuggestions = useCallback(
+    async (value: string) => {
+      await onSubmit(value);
+    },
+    [onSubmit]
+  );
 
   useEffect(() => {
     setPageTitle(mapTitle ? `${mapTitle} | TRIDENT` : "TRIDENT");
@@ -305,17 +330,21 @@ export default function Home() {
 
       let greeting = greetings.en;
       let initialTitle = untitledMaps.en;
+      let placeholder = placeholders.en;
       if (window) {
         const language = window.navigator.language;
         if (language.includes("ja")) {
           greeting = greetings.ja;
           initialTitle = untitledMaps.ja;
+          placeholder = placeholders.ja;
         } else if (language.includes("ch")) {
           greeting = greetings.ch;
           initialTitle = untitledMaps.ch;
+          placeholder = placeholders.ch;
         } else if (language.includes("fr")) {
           greeting = greetings.fr;
           initialTitle = untitledMaps.fr;
+          placeholder = placeholders.fr;
         }
       }
 
@@ -326,6 +355,7 @@ export default function Home() {
         },
       ]);
       setMapTitle(initialTitle);
+      setMapInputPlaceholder(placeholder);
       scrollToBottom();
       setResponding(false);
     }
@@ -380,12 +410,19 @@ export default function Home() {
                   </div>
                 );
               })}
+              {dialogueList.length === 1 && inputText.length === 0 && (
+                <SuggestByCurrentLocation onSelected={onSelectedSuggestions} />
+              )}
               <div style={{ height: "1px" }} ref={dialogueEndRef} />
             </div>
             <TextInput
               disabled={responding || mapping}
               placeholder={
-                responding || mapping ? "..." : "Show embassies in Lebanon."
+                responding || mapping
+                  ? "..."
+                  : mapInputPlaceholder
+                  ? mapInputPlaceholder
+                  : placeholders.en
               }
               inputText={inputText}
               setInputText={setInputText}
