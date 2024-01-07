@@ -18,6 +18,7 @@ import { useLocalStorage } from "@/hooks/localStorage";
 import { FloatingChatButton } from "@/components/FloatingActionButton";
 import { MapStyleSelector } from "@/components/MapStyleSelector";
 import { fitBoundsToGeoJson } from "@/utils/map/fitBoundsToGeoJson";
+import { parseInnerResJson } from "@/utils/trident/parseInnerResJson";
 
 const greetings = `Hello! I'm TRIDENT, interactive Smart Maps assistant. Could you indicate me the areas and themes you want to see as the map?`;
 
@@ -244,46 +245,16 @@ export default function Home() {
     setGeojsonWithStyleList([]);
     setMapping(true);
 
-    // determine style of concerns
-    const styles: {
-      [key: string]: {
-        emoji?: string;
-        color?: string;
-      };
-    } = {};
-    const lines = innerResJson.inner.split("\n");
-    lines.map(async (line: string, idx: number) => {
-      console.log(`inner line ${idx}:`, line);
-      if (line.includes("Title")) {
-        const newMapTitle = line.split(":")[1];
-        setMapTitle(newMapTitle);
-      }
-      if (line.includes("Emoji")) {
-        const concern = line.split(":")[1].split(",")[0];
-        const emoji = line.split(":")[1].split(",")[1];
-        if (styles[concern] === undefined) {
-          styles[concern] = {};
-        }
-        styles[concern].emoji = emoji;
-      }
-      if (line.includes("Color")) {
-        const concern = line.split(":")[1].split(",")[0];
-        const color = line.split(":")[1].split(", ")[1];
-        if (styles[concern] === undefined) {
-          styles[concern] = {};
-        }
-        styles[concern].color = color;
-      }
-    });
+    const {
+      styles,
+      linesWithTitle,
+      linesWithConfirm,
+      linesWithAreaAndOrConcern,
+    } = parseInnerResJson(innerResJson);
 
-    // determine confirm message
-    const linesWithConfirm = lines.filter((line: string) =>
-      line.includes("ConfirmHelpful:")
-    );
-
-    const linesWithAreaAndOrConcern = lines.filter((line: string) =>
-      line.includes("Area")
-    );
+    if (linesWithTitle.length > 0) {
+      setMapTitle(linesWithTitle[0].split(":")[1]);
+    }
 
     linesWithAreaAndOrConcern.map(async (line: string, idx: number) => {
       let style = {};
