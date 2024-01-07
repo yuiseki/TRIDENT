@@ -1,15 +1,19 @@
 import { LLMChain } from "langchain/chains";
 import { BaseLanguageModel } from "langchain/dist/base_language";
-import { TRIDENT_INNER_PROMPT } from "./prompt";
+import { loadTridentInnerPrompt } from "./prompt";
+import { Embeddings } from "langchain/embeddings/base";
 
-export const loadTridentInnerChain = ({
+export const loadTridentInnerChain = async ({
+  embeddings,
   llm,
 }: {
+  embeddings: Embeddings;
   llm: BaseLanguageModel;
-}): LLMChain => {
+}): Promise<LLMChain> => {
+  const prompt = await loadTridentInnerPrompt(embeddings);
   const chain = new LLMChain({
     llm: llm,
-    prompt: TRIDENT_INNER_PROMPT,
+    prompt: prompt,
   });
   return chain;
 };
