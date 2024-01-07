@@ -202,6 +202,7 @@ export default function Home() {
         retry: boolean
       ) => {
         const newGeojson = osmtogeojson(overpassResponseJson);
+        console.log("features", newGeojson.features.length);
         if (newGeojson.features.length !== 0) {
           setGeojsonWithStyleList((prev) => {
             return [
@@ -225,7 +226,7 @@ export default function Home() {
           }
         } else {
           if (retry) {
-            getOverpassResponseJsonWithCache(overpassQuery).then(
+            getOverpassResponseJsonWithCache(overpassQuery.replace('["name"', '["name:en"')).then(
               (overpassResponseJson) => {
                 handleOverpassResponseJson(overpassResponseJson, false);
               }
@@ -233,11 +234,11 @@ export default function Home() {
           }
         }
       };
-      getOverpassResponseJsonWithCache(
-        overpassQuery
-      ).then((overpassResponseJson) => {
-        handleOverpassResponseJson(overpassResponseJson, true);
-      });
+      getOverpassResponseJsonWithCache(overpassQuery).then(
+        (overpassResponseJson) => {
+          handleOverpassResponseJson(overpassResponseJson, true);
+        }
+      );
     });
   }, [inputText, insertNewDialogue, pastMessages, scrollToBottom]);
 
