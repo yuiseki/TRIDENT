@@ -101,6 +101,15 @@ Area: Kanazawa, Ishikawa Prefecture
 AreaWithConcern: Kanazawa, Ishikawa Prefecture, Shelters`,
   },
   {
+    input: "台東区のラーメン屋を表示して",
+    output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+TitleOfMap: 台東区のラーメン屋と蕎麦屋
+Area: Taito, Tokyo
+AreaWithConcern: Taito, Tokyo, Ramen shops
+EmojiForConcern: Ramen shops, 🍜
+ColorForConcern: Ramen shops, lightyellow`,
+  },
+  {
     input: "台東区のラーメン屋と蕎麦屋を表示してください。",
     output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
 TitleOfMap: 台東区のラーメン屋と蕎麦屋
@@ -238,7 +247,7 @@ export const loadTridentInnerPrompt = async (embeddings: Embeddings) => {
   const memoryVectorStore = new MemoryVectorStore(embeddings);
   const exampleSelector = new SemanticSimilarityExampleSelector({
     vectorStore: memoryVectorStore,
-    k: 3,
+    k: 5,
     inputKeys: ["input"],
   });
   const examplePrompt = PromptTemplate.fromTemplate(

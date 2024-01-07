@@ -19,8 +19,21 @@ import { FloatingChatButton } from "@/components/FloatingActionButton";
 import { MapStyleSelector } from "@/components/MapStyleSelector";
 import { fitBoundsToGeoJson } from "@/utils/map/fitBoundsToGeoJson";
 import { parseInnerResJson } from "@/utils/trident/parseInnerResJson";
+import { LegalNotice } from "@/components/LegalNotice";
 
-const greetings = `Hello! I'm TRIDENT, interactive Smart Maps assistant. Could you indicate me the areas and themes you want to see as the map?`;
+const greetings = {
+  en: "Welcome! I'm TRIDENT, interactive Smart Maps assistant. Could you indicate me the areas and themes you want to see as the map?",
+  ja: "ようこそ！私は対話型スマート地図アシスタント、TRIDENTです。地図に表示したいエリアやテーマを教えてください。",
+  ch: "欢迎您！我是互动智能地图助理 TRIDENT。您能告诉我您想在地图上看到的区域和主题吗？",
+  fr: "Bienvenue! Je suis TRIDENT, assistant de cartes intelligentes interactives. Pourriez-vous m'indiquer les zones et les thèmes que vous souhaitez voir sur la carte?",
+};
+
+const untitledMaps = {
+  en: "Untitled Map",
+  ja: "無題の地図",
+  ch: "无标题地图",
+  fr: "Carte sans titre",
+};
 
 export default function Home() {
   // all state
@@ -29,12 +42,12 @@ export default function Home() {
 
   // maps ref and state
   const mapRef = useRef<MapRef | null>(null);
+  const [mapTitle, setMapTitle] = useState<string | undefined>(undefined);
   const [geojsonWithStyleList, setGeojsonWithStyleList] = useState<
     Array<{ id: string; style: TridentMapsStyle; geojson: FeatureCollection }>
   >([]);
-  const [mapTitle, setMapTitle] = useState<string | undefined>(undefined);
 
-  // base maps
+  // base maps style state
   const [mapStyleJsonUrl, setMapStyleJsonUrl] = useLocalStorage<string>(
     "trident-selected-map-style-json-url",
     "/map_styles/fiord-color-gl-style/style.json"
@@ -232,7 +245,6 @@ export default function Home() {
     setPageTitle(mapTitle ? `${mapTitle} | TRIDENT` : "TRIDENT");
   }, [mapTitle]);
 
-
   // fit bounds to all geojson in the geojsonWithStyleList
   useEffect(() => {
     setTimeout(() => {
@@ -288,17 +300,35 @@ export default function Home() {
   useEffect(() => {
     if (!mounted) {
       setMounted(true);
-      insertNewDialogue(
+      console.log("mounted");
+
+      let greeting = greetings.en;
+      let initialTitle = untitledMaps.en;
+      if (window) {
+        const language = window.navigator.language;
+        if (language.includes("ja")) {
+          greeting = greetings.ja;
+          initialTitle = untitledMaps.ja;
+        } else if (language.includes("ch")) {
+          greeting = greetings.ch;
+          initialTitle = untitledMaps.ch;
+        } else if (language.includes("fr")) {
+          greeting = greetings.fr;
+          initialTitle = untitledMaps.fr;
+        }
+      }
+
+      setDialogueList([
         {
           who: "assistant",
-          text: greetings,
+          text: greeting,
         },
-        false
-      );
+      ]);
+      setMapTitle(initialTitle);
+      scrollToBottom();
+      setResponding(false);
     }
-  }, [mounted, insertNewDialogue]);
-
-  if (!mounted) return null;
+  }, [mounted, insertNewDialogue, dialogueList.length, scrollToBottom]);
 
   return (
     <>
@@ -333,7 +363,7 @@ export default function Home() {
           <FloatingChatButton onChange={onChangeFloatingChatButton}>
             <div className="logsOuterWrap" ref={dialogueRef}>
               <div className="tridentMapTitle">
-                {mapTitle ? mapTitle : "Untitled Map"}
+                {mapTitle ? mapTitle : "Loading..."}
               </div>
               {dialogueList.map((dialogueElement, dialogueIndex) => {
                 return (
@@ -360,17 +390,7 @@ export default function Home() {
               setInputText={setInputText}
               onSubmit={onSubmit}
             />
-            <div
-              style={{
-                fontSize: "0.8rem",
-                color: "white",
-                width: "100%",
-                textAlign: "center",
-                opacity: 0.8,
-              }}
-            >
-              TRIDENT may produce inaccurate information.
-            </div>
+            <LegalNotice />
           </FloatingChatButton>
         </div>
       </main>
