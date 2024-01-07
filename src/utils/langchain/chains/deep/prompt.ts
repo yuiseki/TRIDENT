@@ -13,25 +13,37 @@ export const tridentDeepExampleList: Array<{
   {
     input: "Area: Sudan",
     output: `[out:json][timeout:30000];
-relation["boundary"="administrative"]["name"="Sudan"];
+relation["boundary"="administrative"]["admin_level"=2]["name"="Sudan"];
 out geom;`,
   },
   {
     input: "Area: Lebanon",
     output: `[out:json][timeout:30000];
-relation["boundary"="administrative"]["name"="Lebanon"];
+relation["boundary"="administrative"]["admin_level"=2]["name"="Lebanon"];
+out geom;`,
+  },
+  {
+    input: "Area: Kosovo",
+    output: `[out:json][timeout:30000];
+relation["boundary"="administrative"]["admin_level"=2]["name"="Kosovo"];
+out geom;`,
+  },
+  {
+    input: "Area: Nepal",
+    output: `[out:json][timeout:30000];
+relation["boundary"="administrative"]["admin_level"=2]["name"="Nepal"];
 out geom;`,
   },
   {
     input: "Area: New York City",
     output: `[out:json][timeout:30000];
-relation["boundary"="administrative"]["name"="City of New York"];
+relation["boundary"="administrative"]["admin_level"=5]["name"="City of New York"];
 out geom;`,
   },
   {
     input: "Area: Tokyo",
     output: `[out:json][timeout:30000];
-relation["boundary"="administrative"]["name"="Tokyo"];
+relation["boundary"="administrative"]["admin_level"=4]["name"="Tokyo"];
 out geom;`,
   },
   {
@@ -95,7 +107,16 @@ out geom;`,
 area["name:en"="Nepal"]->.outer;
 area["name:en"="Karnali Province"]->.inner;
 (
-  relation["boundary"="administrative"]["name:en"="Western Rukum District"](area.inner)(area.outer);
+  relation["boundary"="administrative"]["name"="Western Rukum District"](area.inner)(area.outer);
+);
+out geom;`,
+  },
+  {
+    input: "Nepal, UNICEF facilities",
+    output: `[out:json][timeout:30000];
+area["name"="Nepal"]->.searchArea;
+(
+  nwr["name"~"UNICEF"](area.searchArea);
 );
 out geom;`,
   },
@@ -371,7 +392,7 @@ export const loadTridentDeepPrompt = async (embeddings: Embeddings) => {
   const memoryVectorStore = new MemoryVectorStore(embeddings);
   const exampleSelector = new SemanticSimilarityExampleSelector({
     vectorStore: memoryVectorStore,
-    k: 3,
+    k: 5,
     inputKeys: ["input"],
   });
   const examplePrompt = PromptTemplate.fromTemplate(

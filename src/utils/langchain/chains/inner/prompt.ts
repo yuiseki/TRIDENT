@@ -107,6 +107,15 @@ EmojiForConcern: Military facilities, 🪖
 ColorForConcern: Military facilities, yellow`,
   },
   {
+    input: "コソボの大使館を表示して",
+    output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+TitleOfMap: コソボの大使館
+Area: Kosovo
+AreaWithConcern: Kosovo, Embassies
+EmojiForConcern: Embassies, 🏢
+ColorForConcern: Embassies, lightblue`,
+  },
+  {
     input: `ネパールのユニセフの施設の地図を表示します。`,
     output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
 TitleOfMap: ネパールのユニセフの施設
