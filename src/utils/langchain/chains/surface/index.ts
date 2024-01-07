@@ -1,21 +1,25 @@
 import { BaseLanguageModel } from "langchain/dist/base_language";
-import { TRIDENT_SURFACE_PROMPT } from "./prompt";
+import { loadTridentSurfacePrompt } from "./prompt";
 import { ConversationChain, LLMChain } from "langchain/chains";
 import { BaseMemory, BufferMemory } from "langchain/memory";
+import { Embeddings } from "langchain/embeddings/base";
 
-export const loadTridentSurfaceChain = ({
+export const loadTridentSurfaceChain = async ({
+  embeddings,
   llm,
   memory,
 }: {
+  embeddings: Embeddings;
   llm: BaseLanguageModel;
   memory?: BaseMemory;
-}): LLMChain => {
+}): Promise<LLMChain> => {
   if (memory === undefined) {
     memory = new BufferMemory();
   }
+  const prompt = await loadTridentSurfacePrompt(embeddings);
   const chain = new ConversationChain({
     llm: llm,
-    prompt: TRIDENT_SURFACE_PROMPT,
+    prompt: prompt,
     memory: memory,
   });
   return chain;
