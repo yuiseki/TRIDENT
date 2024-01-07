@@ -11,7 +11,7 @@ export const tridentInnerExampleList: Array<{
   output: string;
 }> = [
   {
-    input: "Sudan and South Sudan.",
+    input: "Sudan and South Sudan",
     output: `ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
 TitleOfMap: Sudan and South Sudan
 Area: Sudan
@@ -160,7 +160,7 @@ EmojiForConcern: Shrine, ⛩
 ColorForConcern: Shrine, lightgreen
 EmojiForConcern: National treasure castles, 🏯
 ColorForConcern: National treasure castles, white
-EmojiForConcern: River, 💧
+EmojiForConcern: River, 🏞
 ColorForConcern: River, blue
 `;
 
