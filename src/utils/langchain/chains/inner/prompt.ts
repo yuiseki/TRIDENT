@@ -140,6 +140,19 @@ EmojiForConcern: Railway stations, 🚉
     `,
   },
   {
+    input: `台東区を表示して
+ラーメン屋を表示して
+文京区まで広げて`,
+    output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+TitleOfMap: 台東区と文京区のラーメン屋
+Area: Taito, Tokyo
+Area: Bunkyo, Tokyo
+AreaWithConcern: Taito, Tokyo, Ramen shops
+AreaWithConcern: Bunkyo, Tokyo, Ramen shops
+EmojiForConcern: Ramen shops, 🍜
+ColorForConcern: Ramen shops, lightyellow`,
+  },
+  {
     input: `レバノンを表示して
     大使館を表示して
     軍事施設も表示して`,

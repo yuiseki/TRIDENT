@@ -234,7 +234,7 @@ export default function Home() {
         }
       };
       getOverpassResponseJsonWithCache(
-        overpassQuery.replaceAll('["name"', '["name:en"')
+        overpassQuery
       ).then((overpassResponseJson) => {
         handleOverpassResponseJson(overpassResponseJson, true);
       });
