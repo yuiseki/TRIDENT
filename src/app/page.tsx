@@ -23,34 +23,9 @@ import { parseInnerResJson } from "@/utils/trident/parseInnerResJson";
 const greetings = `Hello! I'm TRIDENT, interactive Smart Maps assistant. Could you indicate me the areas and themes you want to see as the map?`;
 
 export default function Home() {
-  // input ref and state
-  const [inputText, setInputText] = useState("");
-
-  // dialogue ref and state
-  const dialogueRef = useRef<HTMLDivElement | null>(null);
-  const dialogueEndRef = useRef<HTMLDivElement | null>(null);
-  const [dialogueList, setDialogueList] = useState<DialogueElement[]>([]);
-  const [lazyInserting, setLazyInserting] = useState(false);
-  const [insertingText, setInsertingText] = useState(greetings);
-
-  const scrollToBottom = useCallback(async () => {
-    await sleep(50);
-    if (dialogueEndRef.current) {
-      dialogueEndRef.current.scrollIntoView({ behavior: "instant" });
-    }
-  }, []);
-
-  // floating chat button state
-  const [showingFloatingChat, setShowingFloatingChat] = useState(true);
-  const onChangeFloatingChatButton = useCallback(
-    (showing: boolean) => {
-      setShowingFloatingChat(showing);
-      if (showing) {
-        scrollToBottom();
-      }
-    },
-    [scrollToBottom]
-  );
+  // all state
+  const [pageTitle, setPageTitle] = useState("TRIDENT");
+  const [mounted, setMounted] = useState(false);
 
   // maps ref and state
   const mapRef = useRef<MapRef | null>(null);
@@ -64,64 +39,46 @@ export default function Home() {
     "trident-selected-map-style-json-url",
     "/map_styles/fiord-color-gl-style/style.json"
   );
+
+  // dialogue ref and state
+  const dialogueRef = useRef<HTMLDivElement | null>(null);
+  const dialogueEndRef = useRef<HTMLDivElement | null>(null);
+  const [dialogueList, setDialogueList] = useState<DialogueElement[]>([]);
+
+  // communication state
+  const [responding, setResponding] = useState(false);
+  const [mapping, setMapping] = useState(false);
+  const [pastMessages, setPastMessages] = useState<Array<any> | undefined>();
+
+  // floating chat button state
+  const [showingFloatingChat, setShowingFloatingChat] = useState(true);
+
+  // input ref and state
+  const [inputText, setInputText] = useState("");
+
+  const scrollToBottom = useCallback(async () => {
+    await sleep(50);
+    if (dialogueEndRef.current) {
+      dialogueEndRef.current.scrollIntoView({ behavior: "instant" });
+    }
+  }, []);
+
+  const onChangeFloatingChatButton = useCallback(
+    (showing: boolean) => {
+      setShowingFloatingChat(showing);
+      if (showing) {
+        scrollToBottom();
+      }
+    },
+    [scrollToBottom]
+  );
+
   const onSelectMapStyleJsonUrl = useCallback(
     (e: React.ChangeEvent<HTMLSelectElement>) => {
       setMapStyleJsonUrl(e.target.value);
     },
     [setMapStyleJsonUrl]
   );
-
-  // fit bounds to all geojson in the geojsonWithStyleList
-  useEffect(() => {
-    setTimeout(() => {
-      if (!mapRef || !mapRef.current) return;
-      if (geojsonWithStyleList.length === 0) return;
-
-      try {
-        // everything - all geojson in the geojsonWithStyleList
-        const everything: FeatureCollection = {
-          type: "FeatureCollection",
-          features: geojsonWithStyleList
-            .map((item) => item.geojson.features)
-            .flat(),
-        };
-
-        // padding of the map
-        let padding = {
-          top: 40,
-          left: 40,
-          right: 40,
-          bottom: 40,
-        };
-
-        // if floating chat is showing, add more padding
-        if (showingFloatingChat) {
-          const windowWidth = window.innerWidth;
-          // if the window is big like desktop, add little padding to left and bottom
-          // if the window is small like mobile, add more padding to bottom
-          if (windowWidth > 600) {
-            padding = {
-              top: 40,
-              left: 40,
-              right: 120,
-              bottom: 120,
-            };
-          } else {
-            padding = {
-              top: 40,
-              left: 40,
-              right: 40,
-              bottom: 400,
-            };
-          }
-        }
-
-        fitBoundsToGeoJson(mapRef, everything, padding);
-      } catch (error) {
-        console.error(error);
-      }
-    }, 500);
-  }, [geojsonWithStyleList, showingFloatingChat]);
 
   const insertNewDialogue = useCallback(
     (newDialogueElement: DialogueElement, lazy?: boolean) => {
@@ -139,58 +96,12 @@ export default function Home() {
         setDialogueList((prev) => {
           return [...prev, lazyNewDialogueElement];
         });
-        setInsertingText(newDialogueElement.text);
-        setLazyInserting(true);
       }
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
     []
   );
-  const [lazyInsertingInitialized, setLazyInsertingInitialized] =
-    useState(false);
-  const [intervalId, setIntervalId] = useState<NodeJS.Timer>();
-  useEffect(() => {
-    if (lazyInserting) {
-      if (!lazyInsertingInitialized) {
-        const newIntervalId = setInterval(() => {
-          setDialogueList((prev) => {
-            const last = prev[prev.length - 1];
-            last.text = insertingText.slice(0, last.text.length + 1);
-            scrollToBottom();
-            if (insertingText.length === last.text.length) {
-              setLazyInserting(false);
-              setLazyInsertingInitialized(false);
-              setInsertingText("");
-              setResponding(false);
-            }
-            return [...prev.slice(0, prev.length - 1), last];
-          });
-        }, 50);
-        setIntervalId(newIntervalId);
-        setLazyInsertingInitialized(true);
-      }
-    } else {
-      clearInterval(intervalId);
-      setIntervalId(undefined);
-    }
-    return () => {
-      if (!lazyInserting) {
-        clearInterval(intervalId);
-        setIntervalId(undefined);
-      }
-    };
-  }, [
-    intervalId,
-    lazyInserting,
-    lazyInsertingInitialized,
-    insertingText,
-    scrollToBottom,
-  ]);
 
-  // communication state
-  const [responding, setResponding] = useState(false);
-  const [mapping, setMapping] = useState(false);
-  const [pastMessages, setPastMessages] = useState<Array<any> | undefined>();
   const onSubmit = useCallback(async () => {
     const newInputText = inputText.trim();
     setInputText("");
@@ -317,12 +228,63 @@ export default function Home() {
     });
   }, [inputText, insertNewDialogue, pastMessages, scrollToBottom]);
 
-  const [pageTitle, setPageTitle] = useState("TRIDENT");
   useEffect(() => {
     setPageTitle(mapTitle ? `${mapTitle} | TRIDENT` : "TRIDENT");
   }, [mapTitle]);
 
-  const [mounted, setMounted] = useState(false);
+
+  // fit bounds to all geojson in the geojsonWithStyleList
+  useEffect(() => {
+    setTimeout(() => {
+      if (!mapRef || !mapRef.current) return;
+      if (geojsonWithStyleList.length === 0) return;
+
+      try {
+        // everything - all geojson in the geojsonWithStyleList
+        const everything: FeatureCollection = {
+          type: "FeatureCollection",
+          features: geojsonWithStyleList
+            .map((item) => item.geojson.features)
+            .flat(),
+        };
+
+        // padding of the map
+        let padding = {
+          top: 40,
+          left: 40,
+          right: 40,
+          bottom: 40,
+        };
+
+        // if floating chat is showing, add more padding
+        if (showingFloatingChat) {
+          const windowWidth = window.innerWidth;
+          // if the window is big like desktop, add little padding to left and bottom
+          // if the window is small like mobile, add more padding to bottom
+          if (windowWidth > 600) {
+            padding = {
+              top: 40,
+              left: 40,
+              right: 120,
+              bottom: 120,
+            };
+          } else {
+            padding = {
+              top: 40,
+              left: 40,
+              right: 40,
+              bottom: 400,
+            };
+          }
+        }
+
+        fitBoundsToGeoJson(mapRef, everything, padding);
+      } catch (error) {
+        console.error(error);
+      }
+    }, 500);
+  }, [geojsonWithStyleList, showingFloatingChat]);
+
   useEffect(() => {
     if (!mounted) {
       setMounted(true);
@@ -335,6 +297,7 @@ export default function Home() {
       );
     }
   }, [mounted, insertNewDialogue]);
+
   if (!mounted) return null;
 
   return (
@@ -379,7 +342,7 @@ export default function Home() {
                       dialogueElement={dialogueElement}
                       dialogueIndex={dialogueIndex}
                       isResponding={
-                        (responding || lazyInserting || mapping) &&
+                        (responding || mapping) &&
                         dialogueIndex === dialogueList.length - 1
                       }
                     />
@@ -389,11 +352,9 @@ export default function Home() {
               <div style={{ height: "1px" }} ref={dialogueEndRef} />
             </div>
             <TextInput
-              disabled={responding || lazyInserting || mapping}
+              disabled={responding || mapping}
               placeholder={
-                responding || lazyInserting || mapping
-                  ? "..."
-                  : "Show embassies in Lebanon."
+                responding || mapping ? "..." : "Show embassies in Lebanon."
               }
               inputText={inputText}
               setInputText={setInputText}
