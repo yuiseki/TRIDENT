@@ -58,26 +58,6 @@ Area: Khartoum, Sudan
 Area: Juba, South Sudan`,
   },
   {
-    input: "台東区を表示して",
-    output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
-TitleOfMap: 東京都台東区
-Area: Taito, Tokyo`,
-  },
-  {
-    input: `台東区を表示して
-病院を表示して`,
-    output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
-TitleOfMap: 台東区の病院
-Area: Taito, Tokyo
-AreaWithConcern: Taito, Tokyo, Hospitals
-EmojiForConcern: Hospitals, 🏥
-ColorForConcern: Hospitals, pink
-AreaWithConcern: Taito, Tokyo, Doctors
-EmojiForConcern: Doctors, 🩺
-ColorForConcern: Doctors, lightpink
-Important note: If Human asks you to show hospitals, you MUST also include doctors.`,
-  },
-  {
     input: "石川県を表示して",
     output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
 TitleOfMap: 石川県
@@ -101,7 +81,36 @@ Area: Kanazawa, Ishikawa Prefecture
 AreaWithConcern: Kanazawa, Ishikawa Prefecture, Shelters`,
   },
   {
+    input: "台東区を表示して",
+    output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+TitleOfMap: 東京都台東区
+Area: Taito, Tokyo`,
+  },
+  {
+    input: `台東区を表示して
+病院を表示して`,
+    output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+TitleOfMap: 台東区の病院
+Area: Taito, Tokyo
+AreaWithConcern: Taito, Tokyo, Hospitals
+EmojiForConcern: Hospitals, 🏥
+ColorForConcern: Hospitals, pink
+AreaWithConcern: Taito, Tokyo, Doctors
+EmojiForConcern: Doctors, 🩺
+ColorForConcern: Doctors, lightpink
+Important note: If Human asks you to show hospitals, you MUST also include doctors.`,
+  },
+  {
     input: "台東区のラーメン屋を表示して",
+    output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+TitleOfMap: 台東区のラーメン屋と蕎麦屋
+Area: Taito, Tokyo
+AreaWithConcern: Taito, Tokyo, Ramen shops
+EmojiForConcern: Ramen shops, 🍜
+ColorForConcern: Ramen shops, lightyellow`,
+  },
+  {
+    input: "台東区のラーメン屋",
     output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
 TitleOfMap: 台東区のラーメン屋と蕎麦屋
 Area: Taito, Tokyo
@@ -240,6 +249,7 @@ You will always reply according to the following rules:
 - If you can't output map definition, only output "No map specified."
 - You should not leave out most widely Area.
 - You must always, without fail, output as much of Human's intent as possible.
+- Input should always, without fail, be trying to draw a map, so please try to capture that intent as much as possible.
 
 ### Examples of map definition: ###`;
 
