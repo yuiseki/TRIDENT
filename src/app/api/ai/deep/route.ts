@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import { OpenAIChat } from "langchain/llms/openai";
 import { loadTridentDeepChain } from "@/utils/langchain/chains/deep";
+import { OpenAIChat } from "langchain/llms/openai";
 import { OpenAIEmbeddings } from "langchain/embeddings/openai";
 
 export async function POST(request: Request) {
