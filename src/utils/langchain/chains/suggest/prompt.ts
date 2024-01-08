@@ -11,7 +11,8 @@ export const tridentSuggestExampleList: Array<{
   output: string;
 }> = [
   {
-    input: "台東区, 東京都, 日本",
+    input: `Primary language of user: ja
+Current location of user: 台東区, 東京都, 日本`,
     output: `台東区の地図を表示して
 東京都の地図を表示して
 日本の地図を表示して`,

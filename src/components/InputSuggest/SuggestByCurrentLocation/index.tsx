@@ -43,7 +43,8 @@ export const SuggestByCurrentLocation: React.FC<{
     }
     const thisEffect = async () => {
       const resJson = await nextPostJsonWithCache("/api/ai/suggests", {
-        query: address,
+        lang: window.navigator.language,
+        location: address,
       });
       console.log(resJson.suggests);
       if (!resJson.suggests) {

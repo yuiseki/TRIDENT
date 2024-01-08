@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
-import { OpenAI, OpenAIChat } from "langchain/llms/openai";
+import { OpenAIChat } from "langchain/llms/openai";
 import { loadTridentInnerChain } from "@/utils/langchain/chains/inner";
-import { BaseChatMessage } from "langchain/schema";
 import { OpenAIEmbeddings } from "langchain/embeddings/openai";
+import { parsePastMessagesToLines } from "@/utils/trident/parsePastMessagesToLines";
 
 export async function POST(request: Request) {
   console.log("----- ----- -----");
@@ -14,33 +14,10 @@ export async function POST(request: Request) {
   console.log("pastMessagesJsonString");
   console.debug(pastMessagesJsonString);
 
-  let chatHistory = undefined;
-  let chatHistoryLines = "";
-  if (pastMessagesJsonString && pastMessagesJsonString !== "undefined") {
-    const pastMessages: Array<{
-      type: string;
-      id: string[];
-      kwargs: { content: string };
-    }> = JSON.parse(pastMessagesJsonString);
-
-    chatHistory =
-      pastMessages &&
-      pastMessages
-        .map((message) => {
-          switch (message.id[2]) {
-            case "HumanMessage":
-              return `${message.kwargs.content}`;
-            case "AIMessage":
-              return null;
-            default:
-              return null;
-          }
-        })
-        .filter((v) => v);
-    if (chatHistory) {
-      chatHistoryLines = chatHistory.join("\n").replace("\n\n", "\n");
-    }
-  }
+  const chatHistoryLines = parsePastMessagesToLines(
+    pastMessagesJsonString,
+    true
+  );
 
   console.log("");
   console.log("chatHistoryLines:");

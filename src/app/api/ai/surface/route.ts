@@ -5,6 +5,7 @@ import { loadTridentSurfaceChain } from "@/utils/langchain/chains/surface";
 // using openai
 import { OpenAIChat } from "langchain/llms/openai";
 import { OpenAIEmbeddings } from "langchain/embeddings/openai";
+import { parsePastMessagesToChatHistory } from "@/utils/trident/parsePastMessagesToChatHistory";
 
 export async function POST(request: Request) {
   console.log("----- ----- -----");
@@ -14,36 +15,12 @@ export async function POST(request: Request) {
   const query = reqJson.query;
   const pastMessagesJsonString = reqJson.pastMessages;
 
-  let chatHistory = undefined;
-
-  if (pastMessagesJsonString && pastMessagesJsonString !== "undefined") {
-    const pastMessages: Array<{
-      type: string;
-      id: string[];
-      kwargs: { content: string };
-    }> = JSON.parse(pastMessagesJsonString);
-
-    const chatHistoryMessages = pastMessages.map((message) => {
-      if (message.kwargs.content) {
-        switch (message.id[2]) {
-          case "HumanMessage":
-            return new HumanMessage(message.kwargs.content);
-          case "AIMessage":
-            return new AIMessage(message.kwargs.content);
-          default:
-            return new HumanMessage("");
-        }
-      } else {
-        return new HumanMessage("");
-      }
-    });
-    chatHistory = new ChatMessageHistory(chatHistoryMessages);
-  }
+  const chatHistory = parsePastMessagesToChatHistory(pastMessagesJsonString);
 
   const memory = new BufferMemory({
     returnMessages: true,
     memoryKey: "history",
-    chatHistory: chatHistory,
+    chatHistory,
   });
 
   let embeddings: OpenAIEmbeddings;

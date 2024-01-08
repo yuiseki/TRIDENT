@@ -2,10 +2,42 @@ import { NextResponse } from "next/server";
 import { OpenAIChat } from "langchain/llms/openai";
 import { loadTridentSuggestChain } from "@/utils/langchain/chains/suggest";
 import { OpenAIEmbeddings } from "langchain/embeddings/openai";
+import { parsePastMessagesToLines } from "@/utils/trident/parsePastMessagesToLines";
 
 export async function POST(request: Request) {
-  const res = await request.json();
-  const query = res.query;
+  console.log("----- ----- -----");
+  console.log("----- start suggests -----");
+
+  const reqJson = await request.json();
+  const lang = reqJson.lang;
+  const location = reqJson.location;
+  const pastMessagesJsonString = reqJson.pastMessages;
+
+  console.log("pastMessagesJsonString");
+  console.debug(pastMessagesJsonString);
+
+  const chatHistoryLines = parsePastMessagesToLines(
+    pastMessagesJsonString,
+    true
+  );
+
+  let input = "";
+
+  if (lang) {
+    input = `Primary language of user: ${lang}\n`;
+  }
+
+  if (location) {
+    input += `Current location of user: ${location}\n`;
+  }
+
+  if (chatHistoryLines) {
+    input += `\nChat history:\n${chatHistoryLines}`;
+  }
+
+  console.log("");
+  console.log("input:");
+  console.log(input);
 
   let embeddings: OpenAIEmbeddings;
   let llm: OpenAIChat;
@@ -27,19 +59,16 @@ export async function POST(request: Request) {
   }
 
   const chain = await loadTridentSuggestChain({ embeddings, llm });
-  const result = await chain.call({ input: query });
+  const result = await chain.call({ input });
 
-  console.log("----- ----- -----");
-  console.log("----- start suggest -----");
-  console.log("Human:", query);
-  console.log("AI:", result.text);
+  console.log("");
+  console.log("Suggests:\n", result.text);
   console.log("");
 
   console.log("----- end suggest -----");
   console.log("----- ----- -----");
 
   return NextResponse.json({
-    query: query,
     suggests: result.text,
   });
 }
