@@ -55,7 +55,8 @@ export async function POST(request: Request) {
   console.log("");
 
   const history = await memory.chatHistory.getMessages();
-  console.log(history);
+  // debug用
+  //console.log(history);
 
   console.log("----- end surface -----");
   console.log("----- ----- -----");

@@ -6,9 +6,10 @@ import styles from "./styles.module.scss";
 
 export const SuggestByCurrentLocation: React.FC<{
   coordinates: GeolocationCoordinates | null;
+  onChangeLocation?: (location: string) => void;
   onSelected?: (value: string) => void;
-}> = ({ coordinates, onSelected }) => {
-  const [address, setAddress] = useState<string | null>(null);
+}> = ({ coordinates, onChangeLocation, onSelected }) => {
+  const [location, setLocation] = useState<string | null>(null);
   const [suggests, setSuggests] = useState<string[]>([]);
 
   useEffect(() => {
@@ -27,15 +28,18 @@ export const SuggestByCurrentLocation: React.FC<{
         10
       );
       console.log("address", address);
-      const name = address.display_name;
-      setAddress(name);
+      const newLocation = address.display_name;
+      setLocation(newLocation);
+      if (onChangeLocation) {
+        onChangeLocation(newLocation);
+      }
       setSuggests([]);
     };
     thisEffect();
-  }, [coordinates]);
+  }, [coordinates, onChangeLocation]);
 
   useEffect(() => {
-    if (!address) {
+    if (!location) {
       return;
     }
     if (suggests.length > 0) {
@@ -44,7 +48,7 @@ export const SuggestByCurrentLocation: React.FC<{
     const thisEffect = async () => {
       const resJson = await nextPostJsonWithCache("/api/ai/suggests", {
         lang: window.navigator.language,
-        location: address,
+        location: location,
       });
       console.log(resJson.suggests);
       if (!resJson.suggests) {
@@ -54,11 +58,11 @@ export const SuggestByCurrentLocation: React.FC<{
       setSuggests(newSuggests);
     };
     thisEffect();
-  }, [address, suggests]);
+  }, [location, suggests]);
 
   return (
     <div className={styles.geolocationWrap}>
-      {address && <div className={styles.suggestAddress}>{address}</div>}
+      {location && <div className={styles.suggestAddress}>{location}</div>}
       {coordinates && suggests?.length > 0 && (
         <div className={styles.suggestListWrap}>
           {suggests.map((suggest) => (

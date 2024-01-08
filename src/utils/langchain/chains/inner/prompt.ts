@@ -231,6 +231,9 @@ EmojiForConcern: National treasure castles, 🏯
 ColorForConcern: National treasure castles, white
 EmojiForConcern: River, 🏞
 ColorForConcern: River, blue
+EmojiForConcern: Cafe, ☕️
+ColorForConcern: Cafe, brown
+Important note: lightbrown is not a Web Safe Color, so you must not use it.
 `;
 
 const tridentInnerPromptPrefix = `You are a conversation analysis assistant dedicated to generate web maps. You analyze the following conversation and accurately output map definition to instruct the Map Building Agent. Map definition MUST be enclosed by three backticks on new lines, denoting that it is a code block.

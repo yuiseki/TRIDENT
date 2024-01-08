@@ -47,6 +47,12 @@ relation["boundary"="administrative"]["admin_level"=4]["name:en"="Tokyo"];
 out geom;`,
   },
   {
+    input: "Area: Kanto region",
+    output: `[out:json][timeout:30000];
+relation["type"="boundary"]["name:en"="Kanto"];
+out geom;`,
+  },
+  {
     input: "Area: Taito, Tokyo",
     output: `[out:json][timeout:30000];
 area["name:en"="Tokyo"]->.searchArea;

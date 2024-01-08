@@ -8,7 +8,8 @@ import { SuggestByTrend } from "./SuggestByTrend";
 
 export const InputSuggest: React.FC<{
   onSelected?: (value: string) => void;
-}> = ({ onSelected }) => {
+  onChangeLocation?: (location: string) => void;
+}> = ({ onSelected, onChangeLocation }) => {
   const [suggestMode, setSuggestMode] = useState<"location" | "trend" | null>(
     null
   );
@@ -46,6 +47,7 @@ export const InputSuggest: React.FC<{
         <SuggestByCurrentLocation
           coordinates={coordinates}
           onSelected={onSelected}
+          onChangeLocation={onChangeLocation}
         />
       )}
       {suggestMode === "trend" && <SuggestByTrend onSelected={onSelected} />}

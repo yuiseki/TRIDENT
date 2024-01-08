@@ -20,6 +20,8 @@ import { fitBoundsToGeoJson } from "@/utils/map/fitBoundsToGeoJson";
 import { parseInnerResJson } from "@/utils/trident/parseInnerResJson";
 import { LegalNotice } from "@/components/LegalNotice";
 import { InputSuggest } from "@/components/InputSuggest";
+import { InputPredict } from "@/components/InputPredict";
+import { LocationProvider } from "@/contexts/LocationContext";
 
 const greetings = {
   en: "Welcome! I'm TRIDENT, interactive Smart Maps assistant. Could you indicate me the areas and themes you want to see as the map?",
@@ -52,11 +54,11 @@ export default function Home() {
 
   // maps ref and state
   const mapRef = useRef<MapRef | null>(null);
-  const geolocationControlRef = useRef<GeolocateControlRef | null>(null);
   const [mapTitle, setMapTitle] = useState<string | undefined>(undefined);
   const [geojsonWithStyleList, setGeojsonWithStyleList] = useState<
     Array<{ id: string; style: TridentMapsStyle; geojson: FeatureCollection }>
   >([]);
+  const [location, setLocation] = useState<string | undefined>(undefined);
 
   // base maps style state
   const [mapStyleJsonUrl, setMapStyleJsonUrl] = useLocalStorage<string>(
@@ -135,6 +137,7 @@ export default function Home() {
 
       setInputText("");
       setResponding(true);
+      setMapping(true);
 
       insertNewDialogue({ who: "user", text: newInputText });
 
@@ -228,6 +231,7 @@ export default function Home() {
             });
             if (idx === linesWithAreaAndOrConcern.length - 1) {
               console.log("Finish!!!!!");
+              setMapping(false);
               insertNewDialogue(
                 {
                   who: "assistant",
@@ -238,7 +242,6 @@ export default function Home() {
                 },
                 false
               );
-              setMapping(false);
             }
           } else {
             if (retry) {
@@ -262,6 +265,7 @@ export default function Home() {
 
   const onSelectedSuggestions = useCallback(
     async (value: string) => {
+      setResponding(true);
       await onSubmit(value);
     },
     [onSubmit]
@@ -319,6 +323,8 @@ export default function Home() {
         fitBoundsToGeoJson(mapRef, everything, padding);
       } catch (error) {
         console.error(error);
+        setResponding(false);
+        setMapping(false);
       }
     }, 500);
   }, [geojsonWithStyleList, showingFloatingChat]);
@@ -410,9 +416,28 @@ export default function Home() {
                   </div>
                 );
               })}
-              {dialogueList.length === 1 && inputText.length === 0 && (
-                <InputSuggest onSelected={onSelectedSuggestions} />
-              )}
+              <LocationProvider locationInfo={{ location: location }}>
+                {dialogueList.length === 1 && inputText.length === 0 && (
+                  <InputSuggest
+                    onSelected={onSelectedSuggestions}
+                    onChangeLocation={(v) => {
+                      setLocation(v);
+                    }}
+                  />
+                )}
+                {pastMessages &&
+                  pastMessages.length > 1 &&
+                  !responding &&
+                  !mapping && (
+                    <InputPredict
+                      pastMessages={pastMessages}
+                      onUpdateSuggestions={() => {
+                        scrollToBottom();
+                      }}
+                      onSelected={onSelectedSuggestions}
+                    />
+                  )}
+              </LocationProvider>
               <div style={{ height: "1px" }} ref={dialogueEndRef} />
             </div>
             <TextInput

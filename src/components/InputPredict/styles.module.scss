@@ -1,0 +1,12 @@
+.suggestListWrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  gap: 2%;
+}
+
+.suggestListItem {
+  font-size: 0.8em;
+  margin-top: 12px;
+  padding: 6px;
+}

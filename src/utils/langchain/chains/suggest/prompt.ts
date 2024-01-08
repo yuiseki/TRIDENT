@@ -13,12 +13,73 @@ export const tridentSuggestExampleList: Array<{
   {
     input: `Primary language of user: ja
 Current location of user: 台東区, 東京都, 日本`,
-    output: `台東区の地図を表示して
-東京都の地図を表示して
-日本の地図を表示して`,
+    output: `台東区を表示して
+東京都を表示して
+日本を表示して`,
   },
   {
-    input: "台東区の地図を表示して",
+    input: `Primary language of user: ja
+Current location of user: 台東区, 東京都, 日本
+
+Chat history:
+台東区を表示して`,
+    output: `ラーメン屋を表示して
+カフェを表示して
+駅を表示して
+病院を表示して`,
+  },
+  {
+    input: `Primary language of user: ja
+Current location of user: 台東区, 東京都, 日本
+
+Chat history:
+台東区を表示して
+ラーメン屋を表示して`,
+    output: `蕎麦屋を表示して
+寿司屋を表示して
+ハンバーガー屋を表示して
+カレー屋を表示して`,
+  },
+  {
+    input: `Primary language of user: ja
+Current location of user: 台東区, 東京都, 日本
+
+Chat history:
+台東区を表示して
+カフェを表示して`,
+    output: `公園を表示して
+ベンチを表示して`,
+  },
+  {
+    input: `Primary language of user: ja
+Current location of user: 台東区, 東京都, 日本
+
+Chat history:
+台東区を表示して
+公園を表示して`,
+    output: `ベンチを表示して
+川を表示して`,
+  },
+  {
+    input: `Primary language of user: ja
+Current location of user: 台東区, 東京都, 日本
+
+Chat history:
+東京都を表示して`,
+    output: `台東区に絞り込んで
+文京区に絞り込んで
+関東に広げて
+日本に広げて`,
+  },
+  {
+    input: `input:
+Primary language of user: ja
+Current location of user: 台東区, 東京都, 日本
+
+Chat history:
+東京都を表示して
+関東に広げて
+台東区に絞り込んで`,
     output: `ラーメン屋を表示して
 駅を表示して
 公園を表示して
@@ -48,7 +109,7 @@ export const loadTridentSuggestPrompt = async (embeddings: Embeddings) => {
   const memoryVectorStore = new MemoryVectorStore(embeddings);
   const exampleSelector = new SemanticSimilarityExampleSelector({
     vectorStore: memoryVectorStore,
-    k: 3,
+    k: 5,
     inputKeys: ["input"],
   });
   const examplePrompt = PromptTemplate.fromTemplate(

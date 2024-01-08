@@ -13,9 +13,6 @@ export async function POST(request: Request) {
   const location = reqJson.location;
   const pastMessagesJsonString = reqJson.pastMessages;
 
-  console.log("pastMessagesJsonString");
-  console.debug(pastMessagesJsonString);
-
   const chatHistoryLines = parsePastMessagesToLines(
     pastMessagesJsonString,
     true
@@ -62,7 +59,8 @@ export async function POST(request: Request) {
   const result = await chain.call({ input });
 
   console.log("");
-  console.log("Suggests:\n", result.text);
+  console.log("Suggests:");
+  console.log(result.text);
   console.log("");
 
   console.log("----- end suggest -----");

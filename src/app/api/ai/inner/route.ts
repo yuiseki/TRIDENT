@@ -11,9 +11,6 @@ export async function POST(request: Request) {
   const reqJson = await request.json();
   const pastMessagesJsonString = reqJson.pastMessages;
 
-  console.log("pastMessagesJsonString");
-  console.debug(pastMessagesJsonString);
-
   const chatHistoryLines = parsePastMessagesToLines(
     pastMessagesJsonString,
     true
