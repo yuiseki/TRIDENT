@@ -86,6 +86,17 @@ Chat history:
 病院を表示して`,
   },
   {
+    input: `Primary language of user: ja
+Current location of user: 台東区, 東京都, 日本
+
+Chat history:
+日本を表示して`,
+    output: `首都に絞り込んで
+首都を表示して
+広島に絞り込んで
+沖縄に絞り込んで`,
+  },
+  {
     input: "New York",
     output: `Show the pizza shops in New York
 Show the train stations in New York
