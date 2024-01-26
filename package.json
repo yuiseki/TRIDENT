@@ -20,7 +20,7 @@
   "dependencies": {
     "@ducanh2912/next-pwa": "^10.0.0",
     "@turf/turf": "^6.5.0",
-    "@types/node": "20.11.6",
+    "@types/node": "20.11.7",
     "@types/react": "18.2.48",
     "@types/react-dom": "18.2.18",
     "@typescript-eslint/eslint-plugin": "^6.15.0",
