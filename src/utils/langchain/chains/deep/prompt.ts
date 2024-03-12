@@ -377,6 +377,26 @@ area["name:en"="Taito"]->.inner;
 );
 out geom;`,
   },
+  {
+    input: "Area: Chuo, Kobe",
+    output: `[out:json][timeout:30000];
+area["name:en"="Kobe"]->.searchArea;
+(
+  relation["boundary"="administrative"]["name:en"="Chuo Ward"](area.searchArea);
+);
+out geom;`,
+  },
+  {
+    input: "AreaWithConcern: Chuo, Kobe, Ramen shops",
+    output: `[out:json][timeout:30000];
+area["name:en"="Kobe"]->.outer;
+area["name:en"="Chuo Ward"]->.inner;
+(
+  nwr["amenity"="restaurant"]["cuisine"="ramen"](area.inner)(area.outer);
+);
+out geom;
+    `,
+  },
 ];
 
 const tridentDeepHints = `
