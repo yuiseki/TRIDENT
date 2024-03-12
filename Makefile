@@ -1,6 +1,5 @@
 
 all: \
-	fetch_nhk \
 	fetch_reliefweb \
 	analyze_disasters
 
