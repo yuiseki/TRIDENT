@@ -72,7 +72,7 @@ export default function Page() {
         );
       });
     setSortedConcerns(newSortedConcerns);
-  }, [disasterData, newsData]);
+  }, [disasterData]);
 
   const getConcerns = useCallback(
     (start: Date, end: Date) => {
