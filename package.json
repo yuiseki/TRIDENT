@@ -22,7 +22,7 @@
     "@ducanh2912/next-pwa": "^10.0.0",
     "@turf/turf": "^6.5.0",
     "@types/node": "20.11.30",
-    "@types/react": "18.2.66",
+    "@types/react": "18.2.67",
     "@types/react-dom": "18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "^7.0.0",
