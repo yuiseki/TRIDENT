@@ -24,6 +24,7 @@
     "@langchain/community": "^0.2.5",
     "@langchain/core": "^0.2.5",
     "@langchain/openai": "^0.1.0",
+    "@langchain/qdrant": "^0.0.5",
     "@turf/turf": "^6.5.0",
     "hnswlib-node": "^3.0.0",
     "langchain": "^0.2.0",
