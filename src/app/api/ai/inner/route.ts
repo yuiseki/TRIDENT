@@ -3,7 +3,7 @@ import { ChatOpenAI } from "@langchain/openai";
 import { loadTridentInnerChain } from "@/utils/langchain/chains/inner";
 import { OpenAIEmbeddings } from "@langchain/openai";
 import { parsePastMessagesToLines } from "@/utils/trident/parsePastMessagesToLines";
-import { QdrantVectorStore } from "@langchain/qdrant";
+import { MemoryVectorStore } from "langchain/vectorstores/memory";
 
 export async function POST(request: Request) {
   console.log("----- ----- -----");
@@ -40,11 +40,7 @@ export async function POST(request: Request) {
     embeddings = new OpenAIEmbeddings();
   }
 
-  const vectorStore = new QdrantVectorStore(embeddings, {
-    url: process.env.QDRANT_URL,
-    apiKey: process.env.QDRANT_API_KEY,
-    collectionName: "trident_inner_examples_openai",
-  });
+  const vectorStore = new MemoryVectorStore(embeddings);
 
   const chain = await loadTridentInnerChain({ llm, vectorStore });
   const result = await chain.invoke({ input: chatHistoryLines });

@@ -440,6 +440,7 @@ export const loadTridentDeepPrompt = async (vectorStore: VectorStore) => {
     k: 5,
     inputKeys: ["input"],
   });
+
   const examplePrompt = PromptTemplate.fromTemplate(
     `Input:
 {input}
