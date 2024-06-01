@@ -1,10 +1,7 @@
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
-import {
-  SemanticSimilarityExampleSelector,
-  PromptTemplate,
-  FewShotPromptTemplate,
-} from "langchain/prompts";
-import { Embeddings } from "langchain/embeddings/base";
+import { SemanticSimilarityExampleSelector } from "@langchain/core/example_selectors";
+import { PromptTemplate, FewShotPromptTemplate } from "@langchain/core/prompts";
+import { Embeddings } from "@langchain/core/embeddings";
 
 export const tridentSuggestExampleList: Array<{
   input: string;
@@ -116,7 +113,9 @@ You will always output according to the following rules:
 
 ### Examples: ###`;
 
-export const loadTridentSuggestPrompt = async (embeddings: Embeddings) => {
+export const loadTridentSuggestPrompt = async (
+  embeddings: Embeddings
+) => {
   const memoryVectorStore = new MemoryVectorStore(embeddings);
   const exampleSelector = new SemanticSimilarityExampleSelector({
     vectorStore: memoryVectorStore,

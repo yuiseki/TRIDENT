@@ -1,12 +1,9 @@
-import { BaseLanguageModel } from "langchain/dist/base_language";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
-import {
-  SemanticSimilarityExampleSelector,
-  PromptTemplate,
-  FewShotPromptTemplate,
-} from "langchain/prompts";
-import { RunnableSequence } from "langchain/dist/schema/runnable";
+import { OpenAIEmbeddings } from "@langchain/openai";
+import { SemanticSimilarityExampleSelector } from "@langchain/core/example_selectors";
+import { FewShotPromptTemplate, PromptTemplate } from "@langchain/core/prompts";
+import { BaseLanguageModel } from "@langchain/core/language_models/base";
+import { RunnableSequence } from "@langchain/core/runnables";
 
 const concernPlaceExtractExamples: Array<{ input: string; output: string }> = [
   {
@@ -241,6 +238,6 @@ export const loadConcernPlaceExtractorChain = async ({
   llm: BaseLanguageModel;
 }): Promise<RunnableSequence<any, any>> => {
   const dynamicPrompt = await setupConcernPlaceExtractorDynamicPrompt();
-  const chain = dynamicPrompt.pipe(llm);
+  const chain = RunnableSequence.from([dynamicPrompt, llm]);
   return chain;
 };

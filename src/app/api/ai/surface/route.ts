@@ -1,11 +1,10 @@
 import { NextResponse } from "next/server";
-import { BufferMemory, ChatMessageHistory } from "langchain/memory";
-import { AIMessage, HumanMessage } from "langchain/schema";
 import { loadTridentSurfaceChain } from "@/utils/langchain/chains/surface";
 // using openai
-import { OpenAIChat } from "langchain/llms/openai";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
+import { ChatOpenAI } from "@langchain/openai";
+import { OpenAIEmbeddings } from "@langchain/openai";
 import { parsePastMessagesToChatHistory } from "@/utils/trident/parsePastMessagesToChatHistory";
+import { BufferMemory } from "langchain/memory";
 
 export async function POST(request: Request) {
   console.log("----- ----- -----");
@@ -24,7 +23,7 @@ export async function POST(request: Request) {
   });
 
   let embeddings: OpenAIEmbeddings;
-  let llm: OpenAIChat;
+  let llm: ChatOpenAI;
 
   if (process.env.CLOUDFLARE_AI_GATEWAY) {
     embeddings = new OpenAIEmbeddings({
@@ -32,7 +31,7 @@ export async function POST(request: Request) {
         baseURL: process.env.CLOUDFLARE_AI_GATEWAY + "/openai",
       },
     });
-    llm = new OpenAIChat({
+    llm = new ChatOpenAI({
       configuration: {
         baseURL: process.env.CLOUDFLARE_AI_GATEWAY + "/openai",
       },
@@ -40,7 +39,7 @@ export async function POST(request: Request) {
     });
   } else {
     embeddings = new OpenAIEmbeddings();
-    llm = new OpenAIChat({ temperature: 0 });
+    llm = new ChatOpenAI({ temperature: 0 });
   }
 
   const surfaceChain = await loadTridentSurfaceChain({

@@ -1,5 +1,5 @@
+import { AIMessage, HumanMessage } from "@langchain/core/messages";
 import { ChatMessageHistory } from "langchain/memory";
-import { AIMessage, HumanMessage } from "langchain/schema";
 
 export const parsePastMessagesToChatHistory = (
   pastMessagesJsonString: string

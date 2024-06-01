@@ -3,6 +3,8 @@
 *.log
 tmp
 !tmp/sample
+src/**/*.d.ts
+src/**/*.d.ts.map
 
 # dependencies
 /node_modules

@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
-import { OpenAIChat } from "langchain/llms/openai";
+import { ChatOpenAI } from "@langchain/openai";
 import { loadTridentSuggestChain } from "@/utils/langchain/chains/suggest";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
+import { OpenAIEmbeddings } from "@langchain/openai";
 import { parsePastMessagesToLines } from "@/utils/trident/parsePastMessagesToLines";
 
 export async function POST(request: Request) {
@@ -37,14 +37,14 @@ export async function POST(request: Request) {
   console.log(input);
 
   let embeddings: OpenAIEmbeddings;
-  let llm: OpenAIChat;
+  let llm: ChatOpenAI;
   if (process.env.CLOUDFLARE_AI_GATEWAY) {
     embeddings = new OpenAIEmbeddings({
       configuration: {
         baseURL: process.env.CLOUDFLARE_AI_GATEWAY + "/openai",
       },
     });
-    llm = new OpenAIChat({
+    llm = new ChatOpenAI({
       configuration: {
         baseURL: process.env.CLOUDFLARE_AI_GATEWAY + "/openai",
       },
@@ -52,11 +52,11 @@ export async function POST(request: Request) {
     });
   } else {
     embeddings = new OpenAIEmbeddings();
-    llm = new OpenAIChat({ temperature: 0 });
+    llm = new ChatOpenAI({ temperature: 0 });
   }
 
   const chain = await loadTridentSuggestChain({ embeddings, llm });
-  const result = await chain.call({ input });
+  const result = await chain.invoke(input);
 
   console.log("");
   console.log("Suggests:");

@@ -1,6 +1,6 @@
 import { loadAreaWithConcernExtractorChain } from "../../src/utils/langchain/chains/loadAreaWithConcernExtractorChain/index.ts";
 import { loadListedSummarizationChain } from "../../src/utils/langchain/chains/loadListedSummarizationChain/index.ts";
-import { OpenAIChat } from "langchain/llms/openai";
+import { ChatOpenAI } from "@langchain/openai";
 import fs from "node:fs/promises";
 import { exit } from "node:process";
 import * as dotenv from "dotenv";
@@ -47,7 +47,7 @@ await walk(disastersBaseDir);
 
 //console.log("disasterJsonPaths:", disasterJsonPaths);
 
-const llm = new OpenAIChat({ temperature: 0 });
+const llm = new ChatOpenAI({ temperature: 0 });
 const listedSummarizationChain = loadListedSummarizationChain({ llm });
 const areaWithConcernExtractorChain = loadAreaWithConcernExtractorChain({
   llm,

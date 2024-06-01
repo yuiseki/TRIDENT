@@ -1,10 +1,7 @@
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
-import {
-  SemanticSimilarityExampleSelector,
-  PromptTemplate,
-  FewShotPromptTemplate,
-} from "langchain/prompts";
-import { Embeddings } from "langchain/embeddings/base";
+import { SemanticSimilarityExampleSelector } from "@langchain/core/example_selectors";
+import { PromptTemplate, FewShotPromptTemplate } from "@langchain/core/prompts";
+import { Embeddings } from "@langchain/core/embeddings";
 
 export const tridentInnerExampleList: Array<{
   input: string;

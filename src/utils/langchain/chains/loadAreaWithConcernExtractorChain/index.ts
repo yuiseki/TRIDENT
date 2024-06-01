@@ -1,12 +1,12 @@
-import { LLMChain } from "langchain/chains";
-import { BaseLanguageModel } from "langchain/dist/base_language";
-import { PromptTemplate } from "langchain/prompts";
+import { BaseLanguageModel } from "@langchain/core/language_models/base";
+import { PromptTemplate } from "@langchain/core/prompts";
+import { RunnableSequence } from "@langchain/core/runnables";
 
 export const loadAreaWithConcernExtractorChain = ({
   llm,
 }: {
   llm: BaseLanguageModel;
-}): LLMChain => {
+}): RunnableSequence => {
   const templateString = `You are a text mining system that extracts area and concerns mentioned in the input text.
 
 Entity Definition and Output Format:
@@ -59,9 +59,6 @@ Input:
 Output:`;
 
   const promptTemplate = PromptTemplate.fromTemplate(templateString);
-  const chain = new LLMChain({
-    llm: llm,
-    prompt: promptTemplate,
-  });
+  const chain = RunnableSequence.from([promptTemplate, llm]);
   return chain;
 };

@@ -1,10 +1,7 @@
+import { Embeddings } from "@langchain/core/embeddings";
+import { SemanticSimilarityExampleSelector } from "@langchain/core/example_selectors";
+import { FewShotPromptTemplate, PromptTemplate } from "@langchain/core/prompts";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
-import {
-  SemanticSimilarityExampleSelector,
-  PromptTemplate,
-  FewShotPromptTemplate,
-} from "langchain/prompts";
-import { Embeddings } from "langchain/embeddings/base";
 
 export const tridentSurfaceExampleList: Array<{
   input: string;

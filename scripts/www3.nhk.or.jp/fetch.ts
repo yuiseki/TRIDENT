@@ -1,7 +1,7 @@
 import * as dotenv from "dotenv";
 dotenv.config();
 
-import { OpenAI, OpenAIChat } from "langchain/llms/openai";
+import { OpenAI, ChatOpenAI } from "@langchain/openai";
 import {
   loadConcernPlaceExtractorChain,
   setupConcernPlaceExtractorDynamicPrompt,
@@ -43,7 +43,7 @@ const newsUrl3 =
 const newsUrlList = [newsUrl1];
 
 // setup concern place extractor chain
-const llm = new OpenAIChat({ temperature: 0 });
+const llm = new ChatOpenAI({ temperature: 0 });
 const chain = await loadConcernPlaceExtractorChain({ llm });
 
 const newsItems: Array<{

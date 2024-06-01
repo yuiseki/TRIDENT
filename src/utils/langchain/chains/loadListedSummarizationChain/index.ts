@@ -1,12 +1,12 @@
-import { LLMChain } from "langchain/chains";
-import { BaseLanguageModel } from "langchain/dist/base_language";
-import { PromptTemplate } from "langchain/prompts";
+import { BaseLanguageModel } from "@langchain/core/language_models/base";
+import { PromptTemplate } from "@langchain/core/prompts";
+import { RunnableSequence } from "@langchain/core/runnables";
 
 export const loadListedSummarizationChain = ({
   llm,
 }: {
   llm: BaseLanguageModel;
-}): LLMChain => {
+}): RunnableSequence => {
   const templateString = `# INSTRUCTIONS:
 You are a professional text writer.
 Please output the best summary as list based on the following constraints and input text.
@@ -27,9 +27,6 @@ Output:
 `;
 
   const promptTemplate = PromptTemplate.fromTemplate(templateString);
-  const chain = new LLMChain({
-    llm: llm,
-    prompt: promptTemplate,
-  });
+  const chain = RunnableSequence.from([promptTemplate, llm]);
   return chain;
 };
