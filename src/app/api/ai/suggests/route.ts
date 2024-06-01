@@ -1,9 +1,16 @@
 import { NextResponse } from "next/server";
 import { ChatOpenAI } from "@langchain/openai";
-import { loadTridentSuggestChain } from "@/utils/langchain/chains/suggest";
+import {
+  initializeTridentSuggestExampleList,
+  loadTridentSuggestChain,
+} from "@/utils/langchain/chains/suggest";
 import { OpenAIEmbeddings } from "@langchain/openai";
 import { parsePastMessagesToLines } from "@/utils/trident/parsePastMessagesToLines";
-import { MemoryVectorStore } from "langchain/vectorstores/memory";
+import { VercelPostgres } from "@langchain/community/vectorstores/vercel_postgres";
+import {
+  createCheckDocumentExists,
+  createCheckTableExists,
+} from "@/utils/langchain/vectorstores/vercel_postgres";
 
 export async function POST(request: Request) {
   console.log("----- ----- -----");
@@ -56,10 +63,25 @@ export async function POST(request: Request) {
     embeddings = new OpenAIEmbeddings();
   }
 
-  const vectorStore = new MemoryVectorStore(embeddings);
+  const tableName = "trident_suggest_examples_openai";
+  const vectorStore = await VercelPostgres.initialize(embeddings, {
+    tableName: tableName,
+  });
+
+  const checkTableExists = createCheckTableExists({ vectorStore, tableName });
+  const checkDocumentExists = createCheckDocumentExists({
+    vectorStore,
+    tableName,
+  });
+  await initializeTridentSuggestExampleList({
+    vectorStore,
+    checkTableExists,
+    checkDocumentExists,
+  });
 
   const chain = await loadTridentSuggestChain({ llm, vectorStore });
   const result = await chain.invoke({ input: input });
+  await vectorStore.end();
 
   console.log("");
   console.log("Suggests:");
