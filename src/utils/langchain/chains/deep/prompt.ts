@@ -2,6 +2,7 @@ import { MemoryVectorStore } from "langchain/vectorstores/memory";
 import { SemanticSimilarityExampleSelector } from "@langchain/core/example_selectors";
 import { PromptTemplate, FewShotPromptTemplate } from "@langchain/core/prompts";
 import { Embeddings } from "@langchain/core/embeddings";
+import { VectorStore } from "@langchain/core/vectorstores";
 
 export const tridentDeepExampleList: Array<{
   input: string;
@@ -433,10 +434,9 @@ You will always reply according to the following rules:
 ### Examples: ###
 `;
 
-export const loadTridentDeepPrompt = async (embeddings: Embeddings) => {
-  const memoryVectorStore = new MemoryVectorStore(embeddings);
+export const loadTridentDeepPrompt = async (vectorStore: VectorStore) => {
   const exampleSelector = new SemanticSimilarityExampleSelector({
-    vectorStore: memoryVectorStore,
+    vectorStore: vectorStore,
     k: 5,
     inputKeys: ["input"],
   });

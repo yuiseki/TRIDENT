@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { loadTridentDeepChain } from "@/utils/langchain/chains/deep";
 import { ChatOpenAI } from "@langchain/openai";
 import { OpenAIEmbeddings } from "@langchain/openai";
+import { QdrantVectorStore } from "@langchain/qdrant";
 
 export async function POST(request: Request) {
   const res = await request.json();
@@ -26,7 +27,13 @@ export async function POST(request: Request) {
     embeddings = new OpenAIEmbeddings();
   }
 
-  const chain = await loadTridentDeepChain({ llm, embeddings });
+  const vectorStore = new QdrantVectorStore(embeddings, {
+    url: process.env.QDRANT_URL,
+    apiKey: process.env.QDRANT_API_KEY,
+    collectionName: "trident_deep_examples_openai",
+  });
+
+  const chain = await loadTridentDeepChain({ llm, vectorStore });
   const result = await chain.invoke({ input: query });
 
   console.log("----- ----- -----");
