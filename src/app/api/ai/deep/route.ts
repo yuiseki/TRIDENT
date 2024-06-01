@@ -27,7 +27,7 @@ export async function POST(request: Request) {
   }
 
   const chain = await loadTridentDeepChain({ embeddings, llm });
-  const result = await chain.invoke(query);
+  const result = await chain.invoke({ input: query });
 
   console.log("----- ----- -----");
   console.log("----- start deep -----");

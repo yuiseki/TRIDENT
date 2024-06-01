@@ -40,7 +40,7 @@ export async function POST(request: Request) {
   }
 
   const chain = await loadTridentInnerChain({ embeddings, llm });
-  const result = await chain.invoke(chatHistoryLines);
+  const result = await chain.invoke({ input: chatHistoryLines });
   console.log(result.text);
   console.log("");
 

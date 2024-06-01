@@ -56,7 +56,7 @@ export async function POST(request: Request) {
   }
 
   const chain = await loadTridentSuggestChain({ embeddings, llm });
-  const result = await chain.invoke(input);
+  const result = await chain.invoke({ input: input });
 
   console.log("");
   console.log("Suggests:");
