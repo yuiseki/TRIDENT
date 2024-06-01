@@ -1,6 +1,5 @@
-import { tridentInnerExampleList } from "../src/utils/langchain/chains/inner/prompt.ts";
-import { tridentDeepExampleList } from "../src/utils/langchain/chains/deep/prompt.ts";
-
+import { tridentDeepExampleList } from "@/utils/langchain/chains/deep/examples";
+import { tridentInnerExampleList } from "@/utils/langchain/chains/inner/examples";
 import fs from "node:fs/promises";
 
 // output tridentInnerExampleList as jsonnl
