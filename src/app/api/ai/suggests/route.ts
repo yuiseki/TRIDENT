@@ -39,7 +39,6 @@ export async function POST(request: Request) {
 
   let llm: ChatOpenAI;
   let embeddings: OpenAIEmbeddings;
-  let qdrantCollectionName: string = "trident_suggest_examples_openai";
   if (process.env.CLOUDFLARE_AI_GATEWAY) {
     llm = new ChatOpenAI({
       configuration: {
@@ -53,14 +52,14 @@ export async function POST(request: Request) {
       },
     });
   } else {
-    embeddings = new OpenAIEmbeddings();
     llm = new ChatOpenAI({ temperature: 0 });
+    embeddings = new OpenAIEmbeddings();
   }
 
   const vectorStore = new QdrantVectorStore(embeddings, {
     url: process.env.QDRANT_URL,
     apiKey: process.env.QDRANT_API_KEY,
-    collectionName: qdrantCollectionName,
+    collectionName: "trident_suggest_examples_openai",
   });
 
   const chain = await loadTridentSuggestChain({ llm, vectorStore });

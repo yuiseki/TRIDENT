@@ -3,6 +3,7 @@ import { ChatOpenAI } from "@langchain/openai";
 import { loadTridentInnerChain } from "@/utils/langchain/chains/inner";
 import { OpenAIEmbeddings } from "@langchain/openai";
 import { parsePastMessagesToLines } from "@/utils/trident/parsePastMessagesToLines";
+import { QdrantVectorStore } from "@langchain/qdrant";
 
 export async function POST(request: Request) {
   console.log("----- ----- -----");
@@ -20,26 +21,32 @@ export async function POST(request: Request) {
   console.log("chatHistoryLines:");
   console.log(chatHistoryLines);
 
-  let embeddings: OpenAIEmbeddings;
   let llm: ChatOpenAI;
+  let embeddings: OpenAIEmbeddings;
   if (process.env.CLOUDFLARE_AI_GATEWAY) {
-    embeddings = new OpenAIEmbeddings({
-      configuration: {
-        baseURL: process.env.CLOUDFLARE_AI_GATEWAY + "/openai",
-      },
-    });
     llm = new ChatOpenAI({
       configuration: {
         baseURL: process.env.CLOUDFLARE_AI_GATEWAY + "/openai",
       },
       temperature: 0,
     });
+    embeddings = new OpenAIEmbeddings({
+      configuration: {
+        baseURL: process.env.CLOUDFLARE_AI_GATEWAY + "/openai",
+      },
+    });
   } else {
-    embeddings = new OpenAIEmbeddings();
     llm = new ChatOpenAI({ temperature: 0 });
+    embeddings = new OpenAIEmbeddings();
   }
 
-  const chain = await loadTridentInnerChain({ embeddings, llm });
+  const vectorStore = new QdrantVectorStore(embeddings, {
+    url: process.env.QDRANT_URL,
+    apiKey: process.env.QDRANT_API_KEY,
+    collectionName: "trident_inner_examples_openai",
+  });
+
+  const chain = await loadTridentInnerChain({ llm, vectorStore });
   const result = await chain.invoke({ input: chatHistoryLines });
   console.log(result.text);
   console.log("");

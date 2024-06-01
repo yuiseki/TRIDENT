@@ -2,6 +2,7 @@ import { MemoryVectorStore } from "langchain/vectorstores/memory";
 import { SemanticSimilarityExampleSelector } from "@langchain/core/example_selectors";
 import { PromptTemplate, FewShotPromptTemplate } from "@langchain/core/prompts";
 import { Embeddings } from "@langchain/core/embeddings";
+import { VectorStore } from "@langchain/core/vectorstores";
 
 export const tridentInnerExampleList: Array<{
   input: string;
@@ -266,10 +267,9 @@ You will always reply according to the following rules:
 
 ### Examples of map definition: ###`;
 
-export const loadTridentInnerPrompt = async (embeddings: Embeddings) => {
-  const memoryVectorStore = new MemoryVectorStore(embeddings);
+export const loadTridentInnerPrompt = async (vectorStore: VectorStore) => {
   const exampleSelector = new SemanticSimilarityExampleSelector({
-    vectorStore: memoryVectorStore,
+    vectorStore: vectorStore,
     k: 5,
     inputKeys: ["input"],
   });

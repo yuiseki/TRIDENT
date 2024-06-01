@@ -22,29 +22,28 @@ export async function POST(request: Request) {
     chatHistory,
   });
 
-  let embeddings: OpenAIEmbeddings;
   let llm: ChatOpenAI;
-
+  let embeddings: OpenAIEmbeddings;
   if (process.env.CLOUDFLARE_AI_GATEWAY) {
-    embeddings = new OpenAIEmbeddings({
-      configuration: {
-        baseURL: process.env.CLOUDFLARE_AI_GATEWAY + "/openai",
-      },
-    });
     llm = new ChatOpenAI({
       configuration: {
         baseURL: process.env.CLOUDFLARE_AI_GATEWAY + "/openai",
       },
       temperature: 0,
     });
+    embeddings = new OpenAIEmbeddings({
+      configuration: {
+        baseURL: process.env.CLOUDFLARE_AI_GATEWAY + "/openai",
+      },
+    });
   } else {
-    embeddings = new OpenAIEmbeddings();
     llm = new ChatOpenAI({ temperature: 0 });
+    embeddings = new OpenAIEmbeddings();
   }
 
   const surfaceChain = await loadTridentSurfaceChain({
-    embeddings,
     llm,
+    embeddings,
     memory,
   });
   const surfaceResult = await surfaceChain.call({ input: query });
