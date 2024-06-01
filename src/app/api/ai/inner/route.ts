@@ -1,9 +1,16 @@
 import { NextResponse } from "next/server";
 import { ChatOpenAI } from "@langchain/openai";
-import { loadTridentInnerChain } from "@/utils/langchain/chains/inner";
+import {
+  initializeTridentInnerExampleList,
+  loadTridentInnerChain,
+} from "@/utils/langchain/chains/inner";
 import { OpenAIEmbeddings } from "@langchain/openai";
 import { parsePastMessagesToLines } from "@/utils/trident/parsePastMessagesToLines";
-import { MemoryVectorStore } from "langchain/vectorstores/memory";
+import { VercelPostgres } from "@langchain/community/vectorstores/vercel_postgres";
+import {
+  createCheckDocumentExists,
+  createCheckTableExists,
+} from "@/utils/langchain/vectorstores/vercel_postgres";
 
 export async function POST(request: Request) {
   console.log("----- ----- -----");
@@ -40,7 +47,21 @@ export async function POST(request: Request) {
     embeddings = new OpenAIEmbeddings();
   }
 
-  const vectorStore = new MemoryVectorStore(embeddings);
+  const tableName = "trident_inner_example_openai";
+  const vectorStore = await VercelPostgres.initialize(embeddings, {
+    tableName,
+  });
+
+  const checkTableExists = createCheckTableExists({ vectorStore, tableName });
+  const checkDocumentExists = createCheckDocumentExists({
+    vectorStore,
+    tableName,
+  });
+  await initializeTridentInnerExampleList({
+    vectorStore,
+    checkTableExists,
+    checkDocumentExists,
+  });
 
   const chain = await loadTridentInnerChain({ llm, vectorStore });
   const result = await chain.invoke({ input: chatHistoryLines });
