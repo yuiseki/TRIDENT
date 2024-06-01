@@ -1,8 +1,15 @@
 import { NextResponse } from "next/server";
-import { loadTridentDeepChain } from "@/utils/langchain/chains/deep";
+import {
+  initializeTridentDeepExampleList,
+  loadTridentDeepChain,
+} from "@/utils/langchain/chains/deep";
 import { ChatOpenAI } from "@langchain/openai";
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { MemoryVectorStore } from "langchain/vectorstores/memory";
+import { VercelPostgres } from "@langchain/community/vectorstores/vercel_postgres";
+import {
+  createCheckDocumentExists,
+  createCheckTableExists,
+} from "@/utils/langchain/vectorstores/vercel_postgres";
 
 export async function POST(request: Request) {
   const res = await request.json();
@@ -27,7 +34,21 @@ export async function POST(request: Request) {
     embeddings = new OpenAIEmbeddings();
   }
 
-  const vectorStore = new MemoryVectorStore(embeddings);
+  const tableName = "trident_deep_example_openai";
+  const vectorStore = await VercelPostgres.initialize(embeddings, {
+    tableName,
+  });
+
+  const checkTableExists = createCheckTableExists({ vectorStore, tableName });
+  const checkDocumentExists = createCheckDocumentExists({
+    vectorStore,
+    tableName,
+  });
+  await initializeTridentDeepExampleList({
+    vectorStore,
+    checkTableExists,
+    checkDocumentExists,
+  });
 
   const chain = await loadTridentDeepChain({ llm, vectorStore });
   const result = await chain.invoke({ input: query });

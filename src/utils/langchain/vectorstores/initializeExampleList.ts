@@ -17,11 +17,6 @@ export const initializeExampleList = async ({
   checkTableExists: () => Promise<boolean>;
   checkDocumentExists: (hash: string) => Promise<boolean>;
 }) => {
-  // Check if the table exists
-  const tableExists = await checkTableExists();
-  if (tableExists) {
-    return;
-  }
   // Add examples to the vector store
   for (const example of exampleList) {
     // Create a string from the example
@@ -37,6 +32,7 @@ export const initializeExampleList = async ({
     const hash = md5.end()?.toString();
     // If the hash is empty, something went wrong, skip this example
     if (!hash) {
+      console.error("Hash is empty for example", example);
       continue;
     }
     // Check if the document exists
@@ -49,6 +45,7 @@ export const initializeExampleList = async ({
       pageContent: stringExample,
       metadata: { ...example, hash },
     });
+    console.info("Adding document", document);
     // Add the document to the vector store
     await vectorStore.addDocuments([document]);
   }

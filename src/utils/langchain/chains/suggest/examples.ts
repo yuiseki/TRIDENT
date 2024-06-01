@@ -1,5 +1,16 @@
 import { PromptTemplate } from "@langchain/core/prompts";
 
+export const tridentSuggestExamplePrompt = PromptTemplate.fromTemplate(
+  `Input:
+{input}
+
+Output:
+{output}
+`
+);
+
+export const tridentSuggestExampleInputKeys = ["input"];
+
 export const tridentSuggestExampleList: Array<{
   input: string;
   output: string;
@@ -98,14 +109,3 @@ Show the parks in New York
 Show the hospitals in New York`,
   },
 ];
-
-export const tridentSuggestExamplePrompt = PromptTemplate.fromTemplate(
-  `Input:
-{input}
-
-Output:
-{output}
-`
-);
-
-export const tridentSuggestExampleInputKeys = ["input"];
