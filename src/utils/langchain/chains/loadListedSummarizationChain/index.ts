@@ -11,7 +11,6 @@ export const loadListedSummarizationChain = ({
 You are a professional text writer.
 Please output the best summary as list based on the following constraints and input text.
 
-
 You will always reply according to the following rules:
 - About 300 words.
 - Easy to understand for elementary school students.

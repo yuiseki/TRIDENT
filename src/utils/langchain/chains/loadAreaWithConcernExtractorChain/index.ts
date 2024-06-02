@@ -56,7 +56,8 @@ AreaWithConcern: Western Rukum District, Karnali Province, Nepal, Hospitals
 Input:
 {input}
 
-Output:`;
+Output:
+`;
 
   const promptTemplate = PromptTemplate.fromTemplate(templateString);
   const chain = RunnableSequence.from([promptTemplate, llm]);
