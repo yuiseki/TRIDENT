@@ -4,6 +4,7 @@ import { ChatOpenAI } from "@langchain/openai";
 import fs from "node:fs/promises";
 import { exit } from "node:process";
 import * as dotenv from "dotenv";
+import { ChatOllama } from "@langchain/community/chat_models/ollama";
 dotenv.config();
 
 const now = new Date();
@@ -15,7 +16,33 @@ const today = now
   })
   .split("/")
   .join("-");
-const concernsTodayJsonFilePath = `public/data/api.reliefweb.int/concerns/${today}_concerns.json`;
+
+const modelAndDirList = [
+  {
+    modelName: "phi3:3.8b",
+    concernDirName: "concerns/phi3/3.8b",
+  },
+  {
+    modelName: "phi3:14b",
+    concernDirName: "concerns/phi3/14b",
+  },
+  {
+    modelName: "gemma:7b-instruct",
+    concernDirName: "concerns/gemma/7b-instruct",
+  },
+  {
+    modelName: "mistral:7b-instruct",
+    concernDirName: "concerns/mistral/7b-instruct",
+  },
+  {
+    modelName: "mixtral:8x7b",
+    concernDirName: "concerns/mixtral/8x7b",
+  },
+];
+
+const { modelName, concernDirName } = modelAndDirList[0];
+
+const concernsTodayJsonFilePath = `public/data/api.reliefweb.int/${concernDirName}/${today}_concerns.json`;
 
 try {
   const alreadyFetched = (await fs.lstat(concernsTodayJsonFilePath)).isFile();
@@ -47,7 +74,10 @@ await walk(disastersBaseDir);
 
 //console.log("disasterJsonPaths:", disasterJsonPaths);
 
-const llm = new ChatOpenAI({ temperature: 0 });
+// const llm = new ChatOpenAI({ temperature: 0 });
+const llm = new ChatOllama({
+  model: modelName,
+});
 const listedSummarizationChain = loadListedSummarizationChain({ llm });
 const areaWithConcernExtractorChain = loadAreaWithConcernExtractorChain({
   llm,
@@ -103,13 +133,15 @@ for (const disasterJsonPath of disasterJsonPaths) {
     const listedSummarizationResult = await listedSummarizationChain.invoke({
       input: disasterDescription,
     });
-    console.log("Summary");
+    console.log("----- ----- ----- ----- -----");
+    console.log("Generated Summary");
     console.log(listedSummarizationResult.text);
     // disasterDescriptionをareaWithConcernExtractorChainに入力して結果を出力
     const areaWithConcernResult = await areaWithConcernExtractorChain.invoke({
       input: disasterDescription,
     });
-    console.log("AreaWithConcern");
+    console.log("----- ----- ----- ----- -----");
+    console.log("Generated AreaWithConcern");
     console.log(areaWithConcernResult.text);
     console.log("----- ----- ----- ----- -----");
     console.log("----- ----- ----- ----- -----");
@@ -128,8 +160,7 @@ for (const disasterJsonPath of disasterJsonPaths) {
 
 console.log(concerns.length);
 
-const concernsLatestJsonFilePath =
-  "public/data/api.reliefweb.int/concerns/latest_concerns.json";
+const concernsLatestJsonFilePath = `public/data/api.reliefweb.int/${concernDirName}/latest_concerns.json`;
 
 await fs.writeFile(
   concernsLatestJsonFilePath,
