@@ -76,7 +76,6 @@ const getConcernsTodayJsonFilePath = (llmModel: LLMModel) => {
 
 // 既に解析済みかどうかを確認する
 const checkAlreadyFetched = async (llmModel: LLMModel) => {
-  const { concernDirName } = llmModel;
   const concernsTodayJsonFilePath = getConcernsTodayJsonFilePath(llmModel);
   try {
     const alreadyFetched = (await fs.lstat(concernsTodayJsonFilePath)).isFile();
