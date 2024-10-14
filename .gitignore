@@ -5,6 +5,7 @@ tmp
 !tmp/sample
 src/**/*.d.ts
 src/**/*.d.ts.map
+!src/global.d.ts
 
 # dependencies
 /node_modules
