@@ -2,7 +2,7 @@ import { TridentMapsStyle } from "@/types/TridentMaps";
 import * as turf from "@turf/turf";
 import { Feature, FeatureCollection, GeoJsonProperties, Point } from "geojson";
 import { Fragment, useCallback, useEffect, useState } from "react";
-import { Layer, Marker, Source, useMap } from "react-map-gl";
+import { Layer, Marker, Source, useMap } from "react-map-gl/maplibre";
 
 export const GeoJsonToMarkers: React.FC<{
   geojson?: FeatureCollection;

@@ -5,7 +5,7 @@ import { jsonFetcher } from "@/utils/jsonFetcher";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import React from "react";
 import { nextPostJson, nextPostJsonWithCache } from "@/utils/nextPostJson";
-import { MapProvider, MapRef } from "react-map-gl";
+import { MapProvider, MapRef } from "react-map-gl/maplibre";
 import { TridentMapsStyle } from "@/types/TridentMaps";
 import { FeatureCollection } from "geojson";
 import { useLocalStorage } from "@/hooks/localStorage";

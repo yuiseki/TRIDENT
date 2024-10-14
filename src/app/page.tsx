@@ -8,7 +8,7 @@ import { DialogueElement } from "@/types/DialogueElement";
 import { nextPostJson, nextPostJsonWithCache } from "@/utils/nextPostJson";
 import { sleep } from "@/utils/sleep";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { GeolocateControlRef, MapProvider, MapRef } from "react-map-gl";
+import { MapProvider, MapRef } from "react-map-gl/maplibre";
 import { FeatureCollection } from "geojson";
 import { getOverpassResponseJsonWithCache } from "@/utils/getOverpassResponse";
 import osmtogeojson from "osmtogeojson";

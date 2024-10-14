@@ -1,4 +1,4 @@
-import { MapRef, PaddingOptions } from "react-map-gl";
+import { MapRef, PaddingOptions } from "react-map-gl/maplibre";
 import * as turf from "@turf/turf";
 import { MutableRefObject } from "react";
 

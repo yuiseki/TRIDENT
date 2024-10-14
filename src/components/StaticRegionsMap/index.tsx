@@ -9,7 +9,7 @@ import { getOverpassResponseJsonWithCache } from "@/utils/getOverpassResponse";
 import osmtogeojson from "osmtogeojson";
 
 export const StaticRegionsMap: React.FC<{
-  mapStyle: string | mapboxgl.Style;
+  mapStyle: string | maplibregl.StyleSpecification;
   mapPadding?: number;
   regionNames: string[];
 }> = ({

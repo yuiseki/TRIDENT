@@ -1,4 +1,4 @@
-import { MapProvider, MapRef } from "react-map-gl";
+import { MapProvider, MapRef } from "react-map-gl/maplibre";
 import { BaseMap } from "../BaseMap";
 import { useEffect, useRef } from "react";
 import { TridentMapsStyle } from "@/types/TridentMaps";
@@ -7,7 +7,7 @@ import * as turf from "@turf/turf";
 import { GeoJsonToMarkers } from "../GeoJsonToMarkers";
 
 export const StaticMap: React.FC<{
-  style: string | mapboxgl.Style;
+  style: string | maplibregl.StyleSpecification;
   geojsonWithStyleList?: Array<{
     id: string;
     style: TridentMapsStyle;
