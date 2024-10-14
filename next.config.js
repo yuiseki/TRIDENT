@@ -10,7 +10,6 @@ const nextConfig = {
       ...config.experiments,
       asyncWebAssembly: true,
       syncWebAssembly: true,
-      serverComponentsExternalPackages: ["duckdb", "duckdb-async"],
     };
 
     config.module.rules.push({

@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "NODE_OPTIONS=--experimental-wasm-modules next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
+    "build": "NODE_OPTIONS=--experimental-wasm-modules next build",
+    "start": "NODE_OPTIONS=--experimental-wasm-modules next start",
+    "lint": "NODE_OPTIONS=--experimental-wasm-modules next lint",
     "extract": "node --loader ts-node/esm ./scripts/extractExamples.ts",
     "test": "jest",
     "test:counter": "node --loader ts-node/esm ./tests/counter.ts",
