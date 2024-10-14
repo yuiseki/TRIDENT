@@ -24,7 +24,7 @@
     "@langchain/community": "^0.2.5",
     "@langchain/core": "^0.2.5",
     "@langchain/openai": "^0.2.0",
-    "@langchain/qdrant": "^0.0.5",
+    "@langchain/qdrant": "^0.1.0",
     "@qdrant/js-client-rest": "^1.9.0",
     "@turf/turf": "^7.1.0",
     "@vercel/postgres": "^0.5.1",
