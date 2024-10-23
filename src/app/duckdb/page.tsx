@@ -60,9 +60,7 @@ const initDuckDB = async (
   setMyDuckDB(db);
 };
 
-export const NumberOfCountries: React.FC<{ db: duckdb.AsyncDuckDB }> = ({
-  db,
-}) => {
+const NumberOfCountries: React.FC<{ db: duckdb.AsyncDuckDB }> = ({ db }) => {
   // 国の数を取得するクエリ
   const query = `
     SELECT COUNT(*) FROM countries;
