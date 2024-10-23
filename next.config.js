@@ -12,6 +12,9 @@ const nextConfig = {
       syncWebAssembly: true,
     };
 
+    // Ignore specific warnings
+    config.module.exprContextCritical = false;
+
     config.module.rules.push({
       test: /.*\.wasm$/,
       type: "asset/resource",
