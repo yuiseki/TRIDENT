@@ -37,22 +37,32 @@ const MANUAL_BUNDLES: duckdb.DuckDBBundles = {
 const initDuckDB = async (
   setMyDuckDB: React.Dispatch<React.SetStateAction<duckdb.AsyncDuckDB | null>>
 ) => {
-  // Select a bundle based on browser checks
   const bundle = await duckdb.selectBundle(MANUAL_BUNDLES);
-  // Instantiate the asynchronous version of DuckDB-wasm
   const worker = new Worker(bundle.mainWorker!);
   const logger = new duckdb.ConsoleLogger();
   const db = new duckdb.AsyncDuckDB(logger, worker);
   await db.instantiate(bundle.mainModule, bundle.pthreadWorker);
-  setMyDuckDB(db);
   const c = await db.connect();
   await c.query(`
     INSTALL json;
     INSTALL spatial;
   `);
+
+  const origin = window.location.origin;
+
+  const loadQuery = `
+    LOAD json;
+    LOAD spatial;
+    CREATE TABLE countries AS SELECT * FROM ST_Read('${origin}/ne_110m_admin_0_countries.json');
+  `;
+
+  await c.query(loadQuery);
+  setMyDuckDB(db);
 };
 
-const NumberOfCountries: React.FC<{ db: duckdb.AsyncDuckDB }> = ({ db }) => {
+export const NumberOfCountries: React.FC<{ db: duckdb.AsyncDuckDB }> = ({
+  db,
+}) => {
   // 国の数を取得するクエリ
   const query = `
     SELECT COUNT(*) FROM countries;
@@ -82,74 +92,24 @@ const NumberOfCountries: React.FC<{ db: duckdb.AsyncDuckDB }> = ({ db }) => {
   );
 };
 
-export default function Page() {
-  const [duckdbInitialized, setDuckDBInitialized] = useState(false);
-  const [duckdbLoaded, setDuckDBLoaded] = useState(false);
+const App: React.FC = () => {
   const [myDuckDB, setMyDuckDB] = useState<duckdb.AsyncDuckDB | null>(null);
-  const origin = global.window ? global.window.location.origin : "";
-  const path = global.window ? global.window.location.pathname : "";
-  let basename = origin;
-  if (path !== "/") {
-    basename = origin + path;
-  }
-
-  const loadQuery = `
-    LOAD json;
-    LOAD spatial;
-    CREATE TABLE countries AS SELECT * FROM ST_Read('${origin}/ne_110m_admin_0_countries.json');
-  `;
 
   useEffect(() => {
-    if (!duckdbInitialized) {
+    if (!myDuckDB) {
       initDuckDB(setMyDuckDB);
-      setDuckDBInitialized(true);
     }
-  }, [duckdbInitialized]);
-
-  useEffect(() => {
-    const loadDuckDB = async (db: duckdb.AsyncDuckDB) => {
-      const conn = await db.connect();
-      await conn.query(loadQuery);
-      await conn.close();
-      setDuckDBLoaded(true);
-    };
-    if (myDuckDB) {
-      loadDuckDB(myDuckDB);
-    }
-  }, [loadQuery, myDuckDB]);
+  }, [myDuckDB]);
 
   return (
-    <>
-      {myDuckDB ? (
-        <div
-          className="App"
-          style={{
-            backgroundColor: "white",
-          }}
-        >
-          <header className="App-header">
-            <p>DuckDB-Wasm has initialized.</p>
-          </header>
-          {duckdbLoaded ? (
-            <>
-              <p>Data loaded.</p>
-              <pre>{loadQuery}</pre>
-              <hr />
-              <NumberOfCountries db={myDuckDB} />
-              <hr />
-              <hr />
-            </>
-          ) : (
-            <p>Loading data...</p>
-          )}
-        </div>
-      ) : (
-        <div className="App">
-          <header className="App-header">
-            <p>Initializing DuckDB-Wasm...</p>
-          </header>
-        </div>
-      )}
-    </>
+    <div
+      style={{
+        color: "white",
+      }}
+    >
+      {myDuckDB ? <NumberOfCountries db={myDuckDB} /> : <div>Loading...</div>}
+    </div>
   );
-}
+};
+
+export default App;
