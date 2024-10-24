@@ -128,6 +128,10 @@ const CountryResultsSourceLayer: React.FC<{
   );
 };
 
+/*
+duckdb spatial extensionでは、以下が使えない
+- ST_LineString
+*/
 const queriesWithQuestions = [
   {
     question: "世界で一番人口の多い国は？",
@@ -179,6 +183,35 @@ FROM countries
 WHERE name != 'Antarctica'
 ORDER BY value DESC
 LIMIT 1
+    `,
+  },
+  {
+    question: "日本とブラジルはどちらが面積が広い？",
+    query: `
+SELECT name as name, ST_AREA(geom) as value, ST_AsGeoJSON(geom) as geom
+FROM countries
+WHERE name IN ('Japan', 'Brazil')
+ORDER BY value DESC
+LIMIT 1
+    `,
+  },
+  {
+    question: "日本とブラジルの距離は？",
+    query: `
+SELECT 
+'日本とブラジルの距離' as name,
+ST_Distance(
+  (SELECT geom FROM countries WHERE name = 'Japan'),
+  (SELECT geom FROM countries WHERE name = 'Brazil')
+) as value,
+ST_AsGeoJSON(
+  ST_MakeLine(
+    ST_Centroid((SELECT geom FROM countries WHERE name = 'Japan')),
+    ST_Centroid((SELECT geom FROM countries WHERE name = 'Brazil'))
+  )
+) as geom
+FROM countries
+WHERE name IN ('Japan', 'Brazil')
     `,
   },
 ];
