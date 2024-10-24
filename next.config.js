@@ -10,10 +10,8 @@ const nextConfig = {
       ...config.experiments,
       asyncWebAssembly: true,
       syncWebAssembly: true,
+      layers: true,
     };
-
-    // Ignore specific warnings
-    config.module.exprContextCritical = false;
 
     config.module.rules.push({
       test: /.*\.wasm$/,
