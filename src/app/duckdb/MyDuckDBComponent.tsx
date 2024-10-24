@@ -12,6 +12,7 @@ import * as turf from "@turf/turf";
 import { Feature, FeatureCollection } from "geojson";
 import Map, {
   Layer,
+  LayerProps,
   LngLatBoundsLike,
   MapProvider,
   Source,
@@ -97,6 +98,15 @@ const CountryResultsSourceLayer: React.FC<{
     }
   }, [results, map]);
 
+  const firstFeaturesType = results.features[0].geometry.type;
+  const textLayerStyle: LayerProps | undefined =
+    firstFeaturesType === "LineString"
+      ? ({
+          "text-anchor": "center",
+          "symbol-placement": "line-center",
+        } as unknown as LayerProps)
+      : undefined;
+
   return (
     <>
       <Source type="geojson" data={results}>
@@ -112,6 +122,7 @@ const CountryResultsSourceLayer: React.FC<{
             "text-field": ["format", ["get", "name"], { "font-scale": 1.2 }],
             "text-size": 16,
             "text-offset": [0, -1.5],
+            ...textLayerStyle,
           }}
         />
         <Layer
@@ -120,7 +131,8 @@ const CountryResultsSourceLayer: React.FC<{
           layout={{
             "text-field": ["format", ["get", "value"], { "font-scale": 1.2 }],
             "text-size": 14,
-            "text-offset": [0, 1],
+            "text-offset": [0, 1.5],
+            ...textLayerStyle,
           }}
         />
       </Source>
@@ -183,6 +195,14 @@ FROM countries
 WHERE name != 'Antarctica'
 ORDER BY value DESC
 LIMIT 1
+    `,
+  },
+  {
+    question: "日本の人口は？",
+    query: `
+SELECT '日本の人口' as name, POP_EST as value, ST_AsGeoJSON(geom) as geom
+FROM countries
+WHERE name = 'Japan'
     `,
   },
   {
