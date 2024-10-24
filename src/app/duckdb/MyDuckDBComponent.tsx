@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { use, useEffect, useState } from "react";
 
 import * as duckdb from "@duckdb/duckdb-wasm";
 import duckdb_wasm from "@duckdb/duckdb-wasm/dist/duckdb-mvp.wasm";
@@ -181,10 +181,69 @@ const queriesWithQuestions = [
   },
 ];
 
+type MyDuckDBTableColumn = {
+  column_name: string;
+  column_type: string;
+  null: string;
+  key: string | null;
+  default: string | null;
+  extra: string | null;
+};
+
+type MyDuckDBTableSchema = {
+  tableName: string;
+  columns: MyDuckDBTableColumn[];
+};
+
 const ChatMapWithDuckDB: React.FC<{ db: duckdb.AsyncDuckDB }> = ({ db }) => {
   const [results, setResults] = useState<FeatureCollection | null>(null);
   const [input, setInput] = useState<string>("世界で一番人口の多い国はどこ？");
   const [query, setQuery] = useState<string | null>(null);
+  const [tableSchemes, setTableSchemes] = useState<
+    MyDuckDBTableSchema[] | null
+  >(null);
+  const [summaryOfTableSchemes, setSummaryOfTableSchemes] = useState<
+    string | null
+  >(null);
+
+  useEffect(() => {
+    // get table schema
+    const doit = async () => {
+      const conn = await db.connect();
+      const result1: Table = await conn.query(`
+        SHOW;
+      `);
+      const resultRows1: StructRowProxy<any>[] = result1.toArray();
+      const newTableSchemes: MyDuckDBTableSchema[] = [];
+      for (const row1 of resultRows1) {
+        const table = row1.toJSON();
+        const tableName = table.name as string;
+        const result2: Table = await conn.query(`
+          DESCRIBE TABLE ${tableName};
+        `);
+        const resultRows2: StructRowProxy<any>[] = result2.toArray();
+        newTableSchemes.push({
+          tableName: tableName,
+          columns: resultRows2.map((row) =>
+            row.toJSON()
+          ) as MyDuckDBTableColumn[],
+        });
+        setTableSchemes(newTableSchemes);
+        const summaryOfTableSchemes =
+          "Summary of tables:\n" +
+          newTableSchemes.map((tableScheme) => {
+            return `${tableScheme.tableName}:\n${tableScheme.columns
+              .map((column) => {
+                return `  ${column.column_name}: ${column.column_type}`;
+              })
+              .join("\n")}`;
+          });
+        setSummaryOfTableSchemes(summaryOfTableSchemes);
+        console.log(summaryOfTableSchemes);
+      }
+    };
+    doit();
+  }, [db]);
 
   useEffect(() => {
     const doit = async () => {
