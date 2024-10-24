@@ -1,6 +1,6 @@
 "use client";
 
-import { use, useEffect, useState } from "react";
+import { use, useCallback, useEffect, useState } from "react";
 
 import * as duckdb from "@duckdb/duckdb-wasm";
 import duckdb_wasm from "@duckdb/duckdb-wasm/dist/duckdb-mvp.wasm";
@@ -18,6 +18,8 @@ import Map, {
   useMap,
 } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
+import { TextInput } from "@/components/TextInput";
+import { nextPostJsonWithCache } from "@/utils/nextPostJson";
 
 class ExtraURL {
   constructor(url: string, meta: string) {}
@@ -128,55 +130,55 @@ const CountryResultsSourceLayer: React.FC<{
 
 const queriesWithQuestions = [
   {
-    question: "世界で一番人口の多い国はどこ？",
+    question: "世界で一番人口の多い国は？",
     query: `
-      SELECT name as name, POP_EST as value, ST_AsGeoJSON(geom) as geom
-      FROM countries
-      ORDER BY value DESC
-      LIMIT 1
+SELECT name as name, POP_EST as value, ST_AsGeoJSON(geom) as geom
+FROM countries
+ORDER BY value DESC
+LIMIT 1
     `,
   },
   {
-    question: "世界で一番人口の少ない国はどこ？",
+    question: "世界で一番人口の少ない国は？",
     query: `
-      SELECT name as name, POP_EST as value, ST_AsGeoJSON(geom) as geom
-      FROM countries
-      ORDER BY value ASC
-      LIMIT 1
+SELECT name as name, POP_EST as value, ST_AsGeoJSON(geom) as geom
+FROM countries
+ORDER BY value ASC
+LIMIT 1
     `,
   },
   {
-    question: "日本より人口が多い国はどこ？",
+    question: "日本より人口が多い国は？",
     query: `
-      SELECT name as name, POP_EST as value, ST_AsGeoJSON(geom) as geom
-      FROM countries
-      WHERE POP_EST >= (
-        SELECT POP_EST
-        FROM countries
-        WHERE name = 'Japan'
-      )
+SELECT name as name, POP_EST as value, ST_AsGeoJSON(geom) as geom
+FROM countries
+WHERE POP_EST >= (
+  SELECT POP_EST
+  FROM countries
+  WHERE name = 'Japan'
+)
     `,
   },
   {
-    question: "南極より人口が少ない国はどこ？",
+    question: "南極より人口が少ない国は？",
     query: `
-      SELECT name as name, POP_EST as value, ST_AsGeoJSON(geom) as geom
-      FROM countries
-      WHERE POP_EST <= (
-        SELECT POP_EST
-        FROM countries
-        WHERE name = 'Antarctica'
-      )
+SELECT name as name, POP_EST as value, ST_AsGeoJSON(geom) as geom
+FROM countries
+WHERE POP_EST <= (
+  SELECT POP_EST
+  FROM countries
+  WHERE name = 'Antarctica'
+)
     `,
   },
   {
-    question: "南極の次に面積の広い国はどこ？",
+    question: "南極の次に面積の広い国は？",
     query: `
-      SELECT name as name, ST_AREA(geom) as value, ST_AsGeoJSON(geom) as geom
-      FROM countries
-      WHERE name != 'Antarctica'
-      ORDER BY value DESC
-      LIMIT 1
+SELECT name as name, ST_AREA(geom) as value, ST_AsGeoJSON(geom) as geom
+FROM countries
+WHERE name != 'Antarctica'
+ORDER BY value DESC
+LIMIT 1
     `,
   },
 ];
@@ -197,7 +199,8 @@ type MyDuckDBTableSchema = {
 
 const ChatMapWithDuckDB: React.FC<{ db: duckdb.AsyncDuckDB }> = ({ db }) => {
   const [results, setResults] = useState<FeatureCollection | null>(null);
-  const [input, setInput] = useState<string>("世界で一番人口の多い国はどこ？");
+  const [inputText, setInputText] = useState<string>("");
+  const [lastInputText, setLastInputText] = useState<string | null>(null);
   const [query, setQuery] = useState<string | null>(null);
   const [tableSchemes, setTableSchemes] = useState<
     MyDuckDBTableSchema[] | null
@@ -273,12 +276,48 @@ const ChatMapWithDuckDB: React.FC<{ db: duckdb.AsyncDuckDB }> = ({ db }) => {
     doit();
   }, [db, query]);
 
-  useEffect(() => {
-    const q = queriesWithQuestions.find((q) => q.question === input);
-    if (q) {
-      setQuery(q.query);
+  const onSubmit = useCallback(async () => {
+    if (!inputText || !summaryOfTableSchemes) {
+      return;
     }
-  }, [input]);
+
+    setInputText("");
+    setQuery(null);
+    setLastInputText(inputText);
+
+    const prompt = `You are an expert of PostgreSQL and PostGIS. You output the best PostgreSQL query based on given table schema and input text.
+
+You will always reply according to the following rules:
+- Output valid PostgreSQL query.
+- The query MUST be return name, value and geom columns.
+- The query MUST be enclosed by three backticks on new lines, denoting that it is a code block.
+
+### Table Schema: ###
+${summaryOfTableSchemes}
+
+
+### Examples: ###
+${queriesWithQuestions
+  .map(
+    (q) => `
+${q.question}
+${q.query}
+`
+  )
+  .join("\n")}
+
+### Input text: ###
+${inputText}
+`;
+    console.log(prompt);
+    const resJson = await nextPostJsonWithCache("/api/ai/duckdb", {
+      prompt: prompt,
+      query: inputText,
+    });
+    const newQuery = resJson.duckdb.split("```")[1].trim();
+    console.log(newQuery);
+    setQuery(newQuery);
+  }, [inputText, summaryOfTableSchemes]);
 
   return (
     <div>
@@ -293,30 +332,53 @@ const ChatMapWithDuckDB: React.FC<{ db: duckdb.AsyncDuckDB }> = ({ db }) => {
           backgroundColor: "rgba(0, 0, 0, 0.5)",
         }}
       >
-        <select value={input} onChange={(e) => setInput(e.target.value)}>
-          {queriesWithQuestions.map((q) => (
-            <option key={q.question} value={q.question}>
-              {q.question}
-            </option>
-          ))}
-        </select>
-        {!results && <div>Loading...</div>}
-        <pre
+        <div
           style={{
-            marginTop: "10px",
-            backgroundColor: "lightgray",
-            color: "black",
-            padding: "8px",
-            fontSize: "14px",
-            whiteSpace: "pre-line",
-            wordBreak: "break-all",
+            width: "400px",
           }}
         >
-          {
-            /* 先頭の空改行を削除 */
-            query?.replace(/^\n/, "")
-          }
-        </pre>
+          <TextInput
+            disabled={!summaryOfTableSchemes}
+            placeholder="世界で一番人口が多い国は？"
+            inputText={inputText}
+            setInputText={setInputText}
+            onSubmit={onSubmit}
+          />
+        </div>
+        {lastInputText && (
+          <div
+            style={{
+              marginTop: "10px",
+              backgroundColor: "lightgray",
+              color: "black",
+              padding: "8px",
+              fontSize: "14px",
+              whiteSpace: "pre-line",
+              wordBreak: "break-all",
+            }}
+          >
+            {lastInputText}
+          </div>
+        )}
+        {lastInputText && !results && <div>Loading...</div>}
+        {results && (
+          <pre
+            style={{
+              marginTop: "10px",
+              backgroundColor: "lightgray",
+              color: "black",
+              padding: "8px",
+              fontSize: "14px",
+              whiteSpace: "pre-line",
+              wordBreak: "break-all",
+            }}
+          >
+            {
+              /* 先頭の空改行を削除 */
+              query?.replace(/^\n/, "")
+            }
+          </pre>
+        )}
       </div>
       <MapProvider>
         <Map
