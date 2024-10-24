@@ -216,6 +216,16 @@ LIMIT 1
     `,
   },
   {
+    question: "台湾と北朝鮮どちらが人口が多い？",
+    query: `
+SELECT name as name, POP_EST as value, ST_AsGeoJSON(geom) as geom
+FROM countries
+WHERE name IN ('Taiwan', 'North Korea')
+ORDER BY value DESC
+LIMIT 1
+    `,
+  },
+  {
     question: "日本とブラジルの距離は？",
     query: `
 SELECT 
