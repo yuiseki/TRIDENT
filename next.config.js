@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  swcMinify: false,
   webpack: (config, { isServer, dev }) => {
     config.output.webassemblyModuleFilename =
       isServer && !dev
