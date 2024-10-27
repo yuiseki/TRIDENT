@@ -67,7 +67,7 @@ const initDuckDB = async (
   const loadQuery = `
     LOAD json;
     LOAD spatial;
-    CREATE TABLE countries AS SELECT * FROM ST_Read('${origin}/ne_110m_admin_0_countries.json');
+    CREATE TABLE countries AS SELECT * FROM ST_Read('${origin}/ne_110m_admin_0_countries.geojson');
   `;
 
   await c.query(loadQuery);
@@ -294,19 +294,19 @@ const ChatMapWithDuckDB: React.FC<{ db: duckdb.AsyncDuckDB }> = ({ db }) => {
             row.toJSON()
           ) as MyDuckDBTableColumn[],
         });
-        setTableSchemes(newTableSchemes);
-        const summaryOfTableSchemes =
-          "Summary of tables:\n" +
-          newTableSchemes.map((tableScheme) => {
-            return `${tableScheme.tableName}:\n${tableScheme.columns
-              .map((column) => {
-                return `  ${column.column_name}: ${column.column_type}`;
-              })
-              .join("\n")}`;
-          });
-        setSummaryOfTableSchemes(summaryOfTableSchemes);
-        console.log(summaryOfTableSchemes);
       }
+      setTableSchemes(newTableSchemes);
+      const summaryOfTableSchemes =
+        "Summary of tables:" +
+        newTableSchemes.map((tableScheme) => {
+          return `\n${tableScheme.tableName}:\n${tableScheme.columns
+            .map((column) => {
+              return `  ${column.column_name}: ${column.column_type}`;
+            })
+            .join("\n")}`;
+        });
+      console.log(summaryOfTableSchemes);
+      setSummaryOfTableSchemes(summaryOfTableSchemes);
     };
     doit();
   }, [db]);
@@ -372,7 +372,6 @@ ${q.query}
 ### Input text: ###
 ${inputText}
 `;
-    console.log(prompt);
     const resJson = await nextPostJsonWithCache("/api/ai/duckdb", {
       prompt: prompt,
       query: inputText,
