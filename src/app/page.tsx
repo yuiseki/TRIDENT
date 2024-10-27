@@ -213,7 +213,6 @@ export default function Home() {
           setMapping(false);
           return;
         }
-        setGeojsonWithStyleList([]);
         const overpassQuery = deepResJson.deep.split("```")[1];
 
         const handleOverpassResponseJson = async (
@@ -226,7 +225,11 @@ export default function Home() {
             setGeojsonWithStyleList((prev) => {
               return [
                 ...prev,
-                { id: idx.toString(), style: style, geojson: newGeojson },
+                {
+                  id: "layer-" + prev.length + 1,
+                  style: style,
+                  geojson: newGeojson,
+                },
               ];
             });
             if (idx === linesWithAreaAndOrConcern.length - 1) {
