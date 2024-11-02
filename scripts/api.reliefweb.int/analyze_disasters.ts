@@ -127,11 +127,16 @@ const LLMModelAndDirList: LLMModel[] = [
 // 解析結果を保存するファイルパス
 const getConcernsTodayJsonFilePath = (llmModel: LLMModel) => {
   const { concernDirName } = llmModel;
+  const concernDirPath = `public/data/api.reliefweb.int/${concernDirName}`;
+  // create directory if not exists
+  fs.mkdir(concernDirPath, { recursive: true });
   return `public/data/api.reliefweb.int/${concernDirName}/${today}_concerns.json`;
 };
 
 // 既に解析済みかどうかを確認する
 const checkAlreadyFetched = async (llmModel: LLMModel) => {
+  // modelNameを出力
+  console.log(llmModel.modelName);
   const concernsTodayJsonFilePath = getConcernsTodayJsonFilePath(llmModel);
   try {
     const alreadyFetched = (await fs.lstat(concernsTodayJsonFilePath)).isFile();
@@ -204,19 +209,37 @@ const extractConcernsFromDisasters = async (llmModel: LLMModel) => {
       console.log(
         `${disasterName}\n${disasterPrimaryCountryName}\n${disasterTypeName}`
       );
-      //console.log(disasterDescription);
-      // disasterDescriptionをlistedSummarizationChainに入力して結果を出力
-      const listedSummarizationResult = await listedSummarizationChain.invoke({
-        input: disasterDescription,
-      });
-      console.log("----- ----- ----- ----- -----");
+      const disasterSummaryPath = `./tmp/api.reliefweb.int/v1/disasters/${disasterData.id}_${llmModel.modelName}_summary_v0.0.1.txt`;
+      let listedSummarizationResultText = "";
+      // check disasterSummaryPath is already exists
+      try {
+        const alreadyExists = (await fs.lstat(disasterSummaryPath)).isFile();
+        if (alreadyExists) {
+          console.log("already exists, load:", disasterSummaryPath);
+          listedSummarizationResultText = await fs.readFile(
+            disasterSummaryPath,
+            "utf-8"
+          );
+        }
+      } catch (error) {
+        console.log("not yet exists:", disasterSummaryPath);
+        //console.log(disasterDescription);
+        // disasterDescriptionをlistedSummarizationChainに入力して結果を出力
+        const listedSummarizationResult = await listedSummarizationChain.invoke(
+          {
+            input: disasterDescription,
+          }
+        );
+        listedSummarizationResultText = listedSummarizationResult.text;
+        await fs.writeFile(disasterSummaryPath, listedSummarizationResultText);
+      }
       console.log("Generated Summary");
-      console.log(listedSummarizationResult.text);
+      console.log(listedSummarizationResultText);
+      console.log("----- ----- ----- ----- -----");
       // disasterDescriptionをareaWithConcernExtractorChainに入力して結果を出力
       const areaWithConcernResult = await areaWithConcernExtractorChain.invoke({
         input: disasterDescription,
       });
-      console.log("----- ----- ----- ----- -----");
       console.log("Generated AreaWithConcern");
       console.log(areaWithConcernResult.text);
       console.log("----- ----- ----- ----- -----");
@@ -227,7 +250,7 @@ const extractConcernsFromDisasters = async (llmModel: LLMModel) => {
         title: disasterName,
         pubDate: disasterData.fields.date.created,
         currentDate: disasterData.fields.date.changed,
-        whatHappenings: listedSummarizationResult.text.split("\n"),
+        whatHappenings: listedSummarizationResultText.split("\n"),
         displayMaps: areaWithConcernResult.text.split("\n"),
       };
       concerns.push(concern);
@@ -238,15 +261,19 @@ const extractConcernsFromDisasters = async (llmModel: LLMModel) => {
 
   const concernsLatestJsonFilePath = `public/data/api.reliefweb.int/${concernDirName}/latest_concerns.json`;
 
-  await fs.writeFile(
-    concernsLatestJsonFilePath,
-    JSON.stringify(concerns, null, 2)
-  );
+  try {
+    await fs.writeFile(
+      concernsLatestJsonFilePath,
+      JSON.stringify(concerns, null, 2)
+    );
 
-  await fs.writeFile(
-    getConcernsTodayJsonFilePath(llmModel),
-    JSON.stringify(concerns, null, 2)
-  );
+    await fs.writeFile(
+      getConcernsTodayJsonFilePath(llmModel),
+      JSON.stringify(concerns, null, 2)
+    );
+  } catch (error) {
+    console.error(error);
+  }
 };
 
 for (const llmModel of LLMModelAndDirList) {
