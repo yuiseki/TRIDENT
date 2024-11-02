@@ -4,7 +4,7 @@ import { ChatOpenAI } from "@langchain/openai";
 import fs from "node:fs/promises";
 import { exit } from "node:process";
 import * as dotenv from "dotenv";
-import { ChatOllama } from "@langchain/community/chat_models/ollama";
+import { ChatOllama } from "@langchain/ollama";
 dotenv.config();
 
 const disastersBaseDir = `./tmp/api.reliefweb.int/v1/disasters`;
@@ -43,28 +43,84 @@ type LLMModel = {
 
 const LLMModelAndDirList: LLMModel[] = [
   {
-    modelName: "phi:2.7b",
-    concernDirName: "concerns/phi/2.7b",
+    modelName: "smollm:135m",
+    concernDirName: "concerns/smollm/135m",
   },
   {
-    modelName: "phi3:3.8b",
-    concernDirName: "concerns/phi3/3.8b",
+    modelName: "smollm:360m",
+    concernDirName: "concerns/smollm/360m",
+  },
+  {
+    modelName: "smollm:1.7b",
+    concernDirName: "concerns/smollm/1.7b",
+  },
+  {
+    modelName: "smollm2:135m",
+    concernDirName: "concerns/smollm2/135m",
+  },
+  {
+    modelName: "smollm2:360m",
+    concernDirName: "concerns/smollm2/360m",
+  },
+  {
+    modelName: "smollm2:1.7b",
+    concernDirName: "concerns/smollm2/1.7b",
+  },
+  {
+    modelName: "qwen2.5:0.5b",
+    concernDirName: "concerns/qwen2.5/0.5b",
+  },
+  {
+    modelName: "qwen2.5:1.5b",
+    concernDirName: "concerns/qwen2.5/1.5b",
+  },
+  {
+    modelName: "qwen2:0.5b",
+    concernDirName: "concerns/qwen2/0.5b",
+  },
+  {
+    modelName: "qwen2:1.5b",
+    concernDirName: "concerns/qwen2/1.5b",
+  },
+  {
+    modelName: "qwen:0.5b",
+    concernDirName: "concerns/qwen/0.5b",
+  },
+  {
+    modelName: "qwen:1.8b",
+    concernDirName: "concerns/qwen/1.8b",
+  },
+  {
+    modelName: "llama3.2:1b",
+    concernDirName: "concerns/llama3.2/1b",
+  },
+  {
+    modelName: "gemma2:2b",
+    concernDirName: "concerns/gemma2/2b",
   },
   {
     modelName: "gemma:2b-instruct",
     concernDirName: "concerns/gemma/2b-instruct",
   },
   {
-    modelName: "gemma:7b-instruct",
-    concernDirName: "concerns/gemma/7b-instruct",
+    modelName: "codegemma:2b",
+    concernDirName: "concerns/codegemma/2b",
   },
   {
-    modelName: "gemma2:9b",
-    concernDirName: "concerns/gemma2/9b",
+    modelName: "orca-mini:3b",
+    concernDirName: "concerns/orca-mini/3b",
   },
   {
-    modelName: "mistral:7b-instruct",
-    concernDirName: "concerns/mistral/7b-instruct",
+    modelName: "phi:2.7b",
+    concernDirName: "concerns/phi/2.7b",
+  },
+  {
+    modelName: "phi3.5:3.8b",
+    concernDirName: "concerns/phi3.5/3.8b",
+  },
+  {
+    modelName: "phi3:3.8b",
+    concernDirName: "concerns/phi3/3.8b",
   },
 ];
 
