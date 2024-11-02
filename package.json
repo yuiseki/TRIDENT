@@ -22,7 +22,7 @@
     "@ducanh2912/next-pwa": "^10.0.0",
     "@duckdb/duckdb-wasm": "^1.29.0",
     "@langchain/community": "^0.3.10",
-    "@langchain/core": "^0.2.5",
+    "@langchain/core": "^0.3.0",
     "@langchain/openai": "^0.2.0",
     "@turf/turf": "^7.1.0",
     "@vercel/postgres": "^0.5.1",
