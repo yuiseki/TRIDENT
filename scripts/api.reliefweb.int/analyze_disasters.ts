@@ -177,9 +177,15 @@ const extractConcernsFromDisasters = async (llmModel: LLMModel) => {
 
   // JSONを一つづつ読み込む
   for (const disasterJsonPath of disasterJsonPaths) {
-    const disasterListJson = JSON.parse(
-      await fs.readFile(disasterJsonPath, "utf-8")
-    );
+    let disasterListJson;
+    try {
+      disasterListJson = JSON.parse(
+        await fs.readFile(disasterJsonPath, "utf-8")
+      );
+    } catch (error) {
+      console.error(error);
+      continue;
+    }
     for (const disasterData of disasterListJson) {
       // disasterData.fields.statusがpastだったらスキップ
       if (disasterData.fields.status === "past") {
@@ -238,12 +244,28 @@ const extractConcernsFromDisasters = async (llmModel: LLMModel) => {
       console.log("----- ----- ----- ----- -----");
       try {
         // disasterDescriptionをareaWithConcernExtractorChainに入力して結果を出力
-        const areaWithConcernResult =
-          await areaWithConcernExtractorChain.invoke({
-            input: disasterDescription,
-          });
+        const areaWithConcernPath = `./tmp/api.reliefweb.int/v1/disasters/${disasterData.id}_${llmModel.modelName}_area_with_concern_v0.0.1.txt`;
+        let areaWithConcernResultText = "";
+        try {
+          const alreadyExists = (await fs.lstat(areaWithConcernPath)).isFile();
+          if (alreadyExists) {
+            console.log("already exists, load:", areaWithConcernPath);
+            areaWithConcernResultText = await fs.readFile(
+              areaWithConcernPath,
+              "utf-8"
+            );
+          }
+        } catch (error) {
+          console.log("not yet exists:", areaWithConcernPath);
+          const areaWithConcernResult =
+            await areaWithConcernExtractorChain.invoke({
+              input: disasterDescription,
+            });
+          areaWithConcernResultText = areaWithConcernResult.text;
+          await fs.writeFile(areaWithConcernPath, areaWithConcernResultText);
+        }
         console.log("Generated AreaWithConcern");
-        console.log(areaWithConcernResult.text);
+        console.log(areaWithConcernResultText);
         console.log("----- ----- ----- ----- -----");
         console.log("----- ----- ----- ----- -----");
         const concern: Concern = {
@@ -253,11 +275,12 @@ const extractConcernsFromDisasters = async (llmModel: LLMModel) => {
           pubDate: disasterData.fields.date.created,
           currentDate: disasterData.fields.date.changed,
           whatHappenings: listedSummarizationResultText.split("\n"),
-          displayMaps: areaWithConcernResult.text.split("\n"),
+          displayMaps: areaWithConcernResultText.split("\n"),
         };
         concerns.push(concern);
       } catch (error) {
         console.error(error);
+        continue;
       }
     }
   }
