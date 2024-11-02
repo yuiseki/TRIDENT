@@ -236,11 +236,12 @@ const extractConcernsFromDisasters = async (llmModel: LLMModel) => {
       console.log("Generated Summary");
       console.log(listedSummarizationResultText);
       console.log("----- ----- ----- ----- -----");
-      // disasterDescriptionをareaWithConcernExtractorChainに入力して結果を出力
-      const areaWithConcernResult = await areaWithConcernExtractorChain.invoke({
-        input: disasterDescription,
-      });
       try {
+        // disasterDescriptionをareaWithConcernExtractorChainに入力して結果を出力
+        const areaWithConcernResult =
+          await areaWithConcernExtractorChain.invoke({
+            input: disasterDescription,
+          });
         console.log("Generated AreaWithConcern");
         console.log(areaWithConcernResult.text);
         console.log("----- ----- ----- ----- -----");
