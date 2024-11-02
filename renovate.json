@@ -14,7 +14,7 @@
     },
     {
       "groupName": "langchain",
-      "matchPackageNames": ["@langchain/community", "@langchain/core", "@langchain/openai", "langchain"],
+      "matchPackageNames": ["@langchain/community", "@langchain/core", "@langchain/openai", "@langchain/ollama", "langchain"],
       "matchPackagePrefixes": ["@langchain/"]
     }
   ]
