@@ -240,20 +240,24 @@ const extractConcernsFromDisasters = async (llmModel: LLMModel) => {
       const areaWithConcernResult = await areaWithConcernExtractorChain.invoke({
         input: disasterDescription,
       });
-      console.log("Generated AreaWithConcern");
-      console.log(areaWithConcernResult.text);
-      console.log("----- ----- ----- ----- -----");
-      console.log("----- ----- ----- ----- -----");
-      const concern: Concern = {
-        url: disasterData.fields.url_alias,
-        description: disasterDescription,
-        title: disasterName,
-        pubDate: disasterData.fields.date.created,
-        currentDate: disasterData.fields.date.changed,
-        whatHappenings: listedSummarizationResultText.split("\n"),
-        displayMaps: areaWithConcernResult.text.split("\n"),
-      };
-      concerns.push(concern);
+      try {
+        console.log("Generated AreaWithConcern");
+        console.log(areaWithConcernResult.text);
+        console.log("----- ----- ----- ----- -----");
+        console.log("----- ----- ----- ----- -----");
+        const concern: Concern = {
+          url: disasterData.fields.url_alias,
+          description: disasterDescription,
+          title: disasterName,
+          pubDate: disasterData.fields.date.created,
+          currentDate: disasterData.fields.date.changed,
+          whatHappenings: listedSummarizationResultText.split("\n"),
+          displayMaps: areaWithConcernResult.text.split("\n"),
+        };
+        concerns.push(concern);
+      } catch (error) {
+        console.error(error);
+      }
     }
   }
 
