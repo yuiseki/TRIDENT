@@ -146,7 +146,7 @@ const checkAlreadyFetched = async (llmModel: LLMModel) => {
     const alreadyFetched = (await fs.lstat(concernsTodayJsonFilePath)).isFile();
     if (alreadyFetched) {
       console.log("already extracted, finish:", concernsTodayJsonFilePath);
-      // 一時的にfalseを返す
+      // NOTE: 一時的にfalseを返す
       return false;
       return true;
     }
