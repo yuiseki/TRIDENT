@@ -23,8 +23,8 @@ for await (const offset of [0, 200, 400]) {
     const disasterBaseDir = `./tmp/api.reliefweb.int/v1/disasters/${disasterId.slice(
       0,
       1
-    )}/${disasterId.slice(0, 2)}`;
-    const disasterJsonPath = `${disasterBaseDir}/${disasterId}.json`;
+    )}/${disasterId.slice(0, 2)}/${disasterId}`;
+    const disasterJsonPath = `${disasterBaseDir}/disaster.json`;
 
     try {
       const disastersAlreadyFetched = (
@@ -71,8 +71,8 @@ for await (const offset of [0, 200, 400]) {
     const reportBaseDir = `./tmp/api.reliefweb.int/v1/reports/${reportId.slice(
       0,
       1
-    )}/${reportId.slice(0, 2)}`;
-    const reportJsonPath = `${reportBaseDir}/${reportId}.json`;
+    )}/${reportId.slice(0, 2)}/${reportId}`;
+    const reportJsonPath = `${reportBaseDir}/report.json`;
 
     try {
       const reportsAlreadyFetched = (await fs.lstat(reportJsonPath)).isFile();
