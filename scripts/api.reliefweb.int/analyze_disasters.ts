@@ -19,6 +19,10 @@ const walk = async (dir: string) => {
     if (dirent.isDirectory()) {
       await walk(`${dir}/${dirent.name}`);
     } else {
+      // jsonファイルのみを対象とする
+      if (!dirent.name.endsWith(".json")) {
+        continue;
+      }
       disasterJsonPaths.push(`${dir}/${dirent.name}`);
     }
   }
@@ -170,7 +174,9 @@ const extractConcernsFromDisasters = async (llmModel: LLMModel) => {
   const llm = new ChatOllama({
     model: modelName,
     temperature: 0.0,
+    repeatPenalty: 1.1,
     numCtx: 1024,
+    numPredict: 512,
   });
   const listedSummarizationChain = loadListedSummarizationChain({ llm });
   const areaWithConcernExtractorChain = loadAreaWithConcernExtractorChain({
@@ -190,6 +196,12 @@ const extractConcernsFromDisasters = async (llmModel: LLMModel) => {
     }
     for (const disasterData of disasterListJson) {
       // disasterData.fields.statusがpastだったらスキップ
+      if (disasterData.fields === undefined) {
+        continue;
+      }
+      if ("status" in disasterData.fields === false) {
+        continue;
+      }
       if (disasterData.fields.status === "past") {
         continue;
       }
