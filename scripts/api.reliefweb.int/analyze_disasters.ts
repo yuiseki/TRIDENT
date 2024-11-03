@@ -220,7 +220,7 @@ const extractConcernsFromDisasters = async (llmModel: LLMModel) => {
       const disasterBaseDir = `./tmp/api.reliefweb.int/v1/disasters/${disasterId.slice(
         0,
         1
-      )}/${disasterId.slice(0, 2)}`;
+      )}/${disasterId.slice(0, 2)}/${disasterId}`;
       const disasterSummaryPath = `${disasterBaseDir}/${llmModel.modelDirName}/summary_v0.0.1.txt`;
       let listedSummarizationResultText = "";
       // check disasterSummaryPath is already exists
