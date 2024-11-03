@@ -220,8 +220,10 @@ const extractConcernsFromDisasters = async (llmModel: LLMModel) => {
       const disasterBaseDir = `./tmp/api.reliefweb.int/v1/disasters/${disasterId.slice(
         0,
         1
-      )}/${disasterId.slice(0, 2)}/${disasterId}`;
-      const disasterSummaryPath = `${disasterBaseDir}/${llmModel.modelDirName}/summary_v0.0.1.txt`;
+      )}/${disasterId.slice(0, 2)}/${disasterId}/${llmModel.modelDirName}`;
+      // make directory if not exists
+      await fs.mkdir(disasterBaseDir, { recursive: true });
+      const disasterSummaryPath = `${disasterBaseDir}/summary_v0.0.1.txt`;
       let listedSummarizationResultText = "";
       // check disasterSummaryPath is already exists
       try {
@@ -250,7 +252,7 @@ const extractConcernsFromDisasters = async (llmModel: LLMModel) => {
       console.log("----- ----- ----- ----- -----");
       try {
         // disasterDescriptionをareaWithConcernExtractorChainに入力して結果を出力
-        const areaWithConcernPath = `${disasterBaseDir}/${llmModel.modelDirName}/area_with_concern_v0.0.1.txt`;
+        const areaWithConcernPath = `${disasterBaseDir}/area_with_concern_v0.0.1.txt`;
         let areaWithConcernResultText = "";
         try {
           const alreadyExists = (await fs.lstat(areaWithConcernPath)).isFile();
