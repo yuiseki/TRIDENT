@@ -146,6 +146,8 @@ const checkAlreadyFetched = async (llmModel: LLMModel) => {
     const alreadyFetched = (await fs.lstat(concernsTodayJsonFilePath)).isFile();
     if (alreadyFetched) {
       console.log("already extracted, finish:", concernsTodayJsonFilePath);
+      // 一時的にfalseを返す
+      return false;
       return true;
     }
   } catch (error) {
@@ -174,7 +176,7 @@ const extractConcernsFromDisasters = async (llmModel: LLMModel) => {
   const llm = new ChatOllama({
     model: modelName,
     temperature: 0.0,
-    repeatPenalty: 1.1,
+    repeatPenalty: 1.2,
     numCtx: 1024,
     numPredict: 512,
   });
@@ -237,7 +239,7 @@ const extractConcernsFromDisasters = async (llmModel: LLMModel) => {
       )}/${disasterId.slice(0, 2)}/${disasterId}/${llmModel.modelDirName}`;
       // make directory if not exists
       await fs.mkdir(disasterBaseDir, { recursive: true });
-      const disasterSummaryPath = `${disasterBaseDir}/summary_v0.0.1.txt`;
+      const disasterSummaryPath = `${disasterBaseDir}/summary_v0.0.2.txt`;
       let listedSummarizationResultText = "";
       // check disasterSummaryPath is already exists
       try {
@@ -266,7 +268,7 @@ const extractConcernsFromDisasters = async (llmModel: LLMModel) => {
       console.log("----- ----- ----- ----- -----");
       try {
         // disasterDescriptionをareaWithConcernExtractorChainに入力して結果を出力
-        const areaWithConcernPath = `${disasterBaseDir}/area_with_concern_v0.0.1.txt`;
+        const areaWithConcernPath = `${disasterBaseDir}/area_with_concern_v0.0.2.txt`;
         let areaWithConcernResultText = "";
         try {
           const alreadyExists = (await fs.lstat(areaWithConcernPath)).isFile();
