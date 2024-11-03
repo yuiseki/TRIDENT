@@ -169,6 +169,7 @@ const extractConcernsFromDisasters = async (llmModel: LLMModel) => {
   const { modelName, modelDirName } = llmModel;
   const llm = new ChatOllama({
     model: modelName,
+    temperature: 0.0,
   });
   const listedSummarizationChain = loadListedSummarizationChain({ llm });
   const areaWithConcernExtractorChain = loadAreaWithConcernExtractorChain({
