@@ -25,10 +25,12 @@ const extractAffectedAreasFromDisasters = async (
   llmModel: LLMModel,
   disasterDescription: string
 ) => {
-  console.log(`----- ----- ${llmModel.modelName} ----- -----`);
+  console.log(`>>>>> ----- ----- ${llmModel.modelName} ----- ----- -----`);
   const llm = await getOllamaLlm(llmModel);
   const affectedAreas = await llm.invoke(
     `You are a text mining system that extracts only the affected areas from descriptions of disasters.
+
+### Rules ###
 
 You will always reply according to the following rules:
 - You MUST reply only with the affected areas.
@@ -54,6 +56,7 @@ ${disasterDescription}
 - Nangarhar Province, Afghanistan
 - Kunar Province, Afghanistan
 
+### Rules ###
 
 You will always reply according to the following rules:
 - You MUST reply only with the affected areas.
@@ -61,13 +64,14 @@ You will always reply according to the following rules:
 - You MUST ALWAYS respond in a Markdown list format.
 - You MUST represent one area per one line.
 
-### Affected areas ###`,
+### Disaster Affected areas (Markdown list format) ###`,
     {
       stop: ["\n\n"],
     }
   );
   console.log(affectedAreas.content);
-  console.log(`----- ----- ${llmModel.modelName} ----- -----`);
+  console.log(`----- ----- ----- ${llmModel.modelName} ----- ----- <<<<<`);
+  console.log("\n");
 };
 
 for (const disasterJsonPath of disasterJsonPaths) {
