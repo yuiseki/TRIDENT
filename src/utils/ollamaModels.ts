@@ -2,30 +2,6 @@ import { LLMModel } from "@/types/LLMModel";
 
 export const ollamaModels: LLMModel[] = [
   {
-    modelName: "smollm:135m",
-    modelDirName: "smollm/135m",
-  },
-  {
-    modelName: "smollm:360m",
-    modelDirName: "smollm/360m",
-  },
-  {
-    modelName: "smollm:1.7b",
-    modelDirName: "smollm/1.7b",
-  },
-  {
-    modelName: "smollm2:135m",
-    modelDirName: "smollm2/135m",
-  },
-  {
-    modelName: "smollm2:360m",
-    modelDirName: "smollm2/360m",
-  },
-  {
-    modelName: "smollm2:1.7b",
-    modelDirName: "smollm2/1.7b",
-  },
-  {
     modelName: "qwen2.5:0.5b",
     modelDirName: "qwen2.5/0.5b",
   },
@@ -80,5 +56,29 @@ export const ollamaModels: LLMModel[] = [
   {
     modelName: "phi3:3.8b",
     modelDirName: "phi3/3.8b",
+  },
+  {
+    modelName: "smollm:135m",
+    modelDirName: "smollm/135m",
+  },
+  {
+    modelName: "smollm:360m",
+    modelDirName: "smollm/360m",
+  },
+  {
+    modelName: "smollm:1.7b",
+    modelDirName: "smollm/1.7b",
+  },
+  {
+    modelName: "smollm2:135m",
+    modelDirName: "smollm2/135m",
+  },
+  {
+    modelName: "smollm2:360m",
+    modelDirName: "smollm2/360m",
+  },
+  {
+    modelName: "smollm2:1.7b",
+    modelDirName: "smollm2/1.7b",
   },
 ];

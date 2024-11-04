@@ -32,7 +32,7 @@ const extractAffectedAreasFromDisasters = async (
 
 You will always reply according to the following rules:
 - You MUST reply only with the affected areas.
-- You MUST ALWAYS respond in a format that follows these examples. 
+- You MUST ALWAYS respond in a Markdown list format.
 
 ### Disaster Description ###
 ${disasterDescription}
@@ -44,6 +44,10 @@ ${disasterDescription}
 - Chiba City, Chiba Prefecture, Japan
 - Afghanistan
 - Kabul, Afghanistan
+
+You will always reply according to the following rules:
+- You MUST reply only with the affected areas.
+- You MUST ALWAYS respond in a Markdown list format.
 
 ### Affected areas ###
 - `,
