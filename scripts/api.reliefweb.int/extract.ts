@@ -32,7 +32,9 @@ const extractAffectedAreasFromDisasters = async (
 
 You will always reply according to the following rules:
 - You MUST reply only with the affected areas.
+- You MUST specify which country if the area is a state or province.
 - You MUST ALWAYS respond in a Markdown list format.
+- You MUST represent one area per one line.
 
 ### Disaster Description ###
 ${disasterDescription}
@@ -47,12 +49,13 @@ ${disasterDescription}
 
 You will always reply according to the following rules:
 - You MUST reply only with the affected areas.
+- You MUST specify which country if the area is a state or province.
 - You MUST ALWAYS respond in a Markdown list format.
+- You MUST represent one area per one line.
 
-### Affected areas ###
-- `,
+### Affected areas ###`,
     {
-      stop: ["\n"],
+      stop: ["\n\n"],
     }
   );
   console.log(affectedAreas.content);
