@@ -42,10 +42,18 @@ ${disasterDescription}
 ### Examples of Output ###
 - Japan
 - Tokyo, Japan
+- Taito, Tokyo, Japan
+- Kanagawa Prefecture, Japan
 - Yokohama, Kanagawa Prefecture, Japan
 - Chiba City, Chiba Prefecture, Japan
 - Afghanistan
-- Kabul, Afghanistan
+- Kabul Province, Afghanistan
+- Panjshir Province, Afghanistan
+- Parwan Province, Afghanistan
+- Jalalabad, Nangarhar Province, Afghanistan
+- Nangarhar Province, Afghanistan
+- Kunar Province, Afghanistan
+
 
 You will always reply according to the following rules:
 - You MUST reply only with the affected areas.
