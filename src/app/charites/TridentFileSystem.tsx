@@ -5,7 +5,7 @@ import { vscodeDark } from "@uiw/codemirror-theme-vscode";
 import { yaml } from "@codemirror/lang-yaml";
 import { useKeyBind } from "@/hooks/keybind";
 import { parseYamlWithIncludes } from "@/utils/parseYaml";
-import Map from "react-map-gl/maplibre";
+import Map, { GeolocateControl } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
 
 // デフォルトの内容
@@ -553,7 +553,9 @@ export const TridentFileSystem: React.FC = () => {
           }}
           style={{ width: "100vw", height: "80vh" }}
           mapStyle={styleJsonOutput}
-        />
+        >
+          <GeolocateControl />
+        </Map>
       </div>
     </div>
   );
