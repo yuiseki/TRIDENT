@@ -161,6 +161,7 @@ export const TridentFileSystem: React.FC = () => {
       await updateMapStyleJson();
     };
     void initializeAndSave();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
