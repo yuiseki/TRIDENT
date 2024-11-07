@@ -38,7 +38,7 @@ layers:
     content: `id: background
 type: background
 paint:
-  background-color: '#D3D3C9'`,
+  background-color: '#45516E'`,
   },
   {
     path: "layers/water.yml",
@@ -57,7 +57,8 @@ filter:
 layout:
   visibility: visible
 paint:
-  fill-color: hsl(210, 67%, 85%)`,
+  fill-antialias: false
+  fill-color: '#38435C'`,
   },
   {
     path: "layers/landcover-park-green.yml",
@@ -74,8 +75,8 @@ filter:
     - class
     - grass
 paint:
-  fill-color: '#d8e8c8'
-  fill-opacity: 0.8`,
+  fill-color: hsl(204, 17%, 35%)
+  fill-opacity: 0.3`,
   },
   {
     path: "layers/highway.yml",
@@ -99,8 +100,9 @@ filter:
     - primary
     - secondary
 paint:
-  line-color: '#fea'
-  line-opacity: 0.5
+  line-color: '#3C4357'
+  line-opacity: 1
+  line-dasharray: [2, 2]
   line-width:
     base: 1.2
     stops:
@@ -162,7 +164,7 @@ layout:
   line-join: round
   visibility: visible
 paint:
-  line-color: '#9e9cab'
+  line-color: hsla(195, 47%, 62%, 0.26)
   line-dasharray:
     - 3
     - 1
@@ -200,7 +202,7 @@ layout:
   line-join: round
   visibility: visible
 paint:
-  line-color: '#000000'
+  line-color: hsl(214, 63%, 76%)
   line-width:
     base: 1
     stops:
@@ -242,8 +244,8 @@ layout:
         - 24
   visibility: visible
 paint:
-  text-color: '#333'
-  text-halo-color: rgba(255,255,255,0.8)
+  text-color: hsl(195, 41%, 49%)
+  text-halo-color: hsla(228, 60%, 21%, 0.7)
   text-halo-width: 1.2`,
   },
   {
@@ -271,10 +273,10 @@ layout:
   text-transform: uppercase
   visibility: visible
 paint:
-  text-color: '#FF0000'
+  text-color: rgb(153, 153, 153)
   text-halo-blur: 1
-  text-halo-color: rgba(255,255,255,0.8)
-  text-halo-width: 2`,
+  text-halo-color: hsla(228, 60%, 21%, 0.7)
+  text-halo-width: 1.4`,
   },
 ];
 
