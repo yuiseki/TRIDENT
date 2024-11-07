@@ -19,12 +19,6 @@ export const TridentFileSystem: React.FC = () => {
   const [currentFileName, setCurrentFileName] = useState<string>("style.yml");
   const [styleJsonOutput, setStyleJsonOutput] = useState<any | null>(null);
 
-  useKeyBind({
-    key: "s",
-    ctrlKey: true,
-    onKeyDown: () => saveFile(),
-  });
-
   // OPFSを初期化する
   const initializeFileSystem = async () => {
     try {
@@ -83,29 +77,15 @@ export const TridentFileSystem: React.FC = () => {
         }
       }
       setLayersFiles(files.sort());
-      setNotification(
-        "ファイルシステムを初期化しました。ファイルを保存すると地図が描画されます"
-      );
+      setNotification("ファイルシステムを初期化しました");
     } catch (error) {
       console.error(error);
       setNotification("ファイルシステムの初期化に失敗しました");
     }
   };
 
-  // 内容を保存する
-  const saveFile = useCallback(async () => {
-    if (!fileHandle) return;
-
-    try {
-      const writable = await fileHandle.createWritable();
-      await writable.write(content);
-      await writable.close();
-      setNotification("ファイルを保存しました");
-    } catch (error) {
-      console.error(error);
-      setNotification("ファイルの保存に失敗しました");
-    }
-
+  // ファイルシステムの内容全体を地図に反映する
+  const updateMapStyleJson = useCallback(async () => {
     try {
       const rootDirHandle = await navigator.storage.getDirectory();
       const styleFileHandle = await rootDirHandle.getFileHandle("style.yml");
@@ -119,10 +99,36 @@ export const TridentFileSystem: React.FC = () => {
     } catch (error) {
       console.error(error);
       setNotification(
-        "YAMLのJSONへの変換に失敗しました。文法を確認してください"
+        "ファイルシステム内のYAMLのJSONへの変換に失敗しました。文法を確認してください"
       );
     }
-  }, [content, fileHandle]);
+  }, []);
+
+  // エディターの内容をファイルシステムに保存する
+  const saveFile = useCallback(async () => {
+    console.log("saveFile");
+    if (!fileHandle) return;
+
+    try {
+      const writable = await fileHandle.createWritable();
+      await writable.write(content);
+      await writable.close();
+      setNotification("ファイルを保存しました");
+    } catch (error) {
+      console.error(error);
+      setNotification("ファイルの保存に失敗しました");
+    }
+
+    // ファイル保存後に内容を反映
+    await updateMapStyleJson();
+  }, [content, fileHandle, updateMapStyleJson]);
+
+  // Ctrl + S で保存
+  useKeyBind({
+    key: "s",
+    ctrlKey: true,
+    onKeyDown: () => saveFile(),
+  });
 
   // ファイルを選択して内容を読み込む
   const selectFile = async (fileName: string) => {
@@ -150,7 +156,11 @@ export const TridentFileSystem: React.FC = () => {
 
   // 初回レンダリング時にファイルシステムを初期化
   useEffect(() => {
-    void initializeFileSystem();
+    const initializeAndSave = async () => {
+      await initializeFileSystem();
+      await updateMapStyleJson();
+    };
+    void initializeAndSave();
   }, []);
 
   return (
