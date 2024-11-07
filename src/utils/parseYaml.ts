@@ -28,8 +28,6 @@ export const parseYamlWithIncludes = async (
     text = text.replace(match[0], includedYamlText);
   }
 
-  console.log(text);
-
   // すべての !!inc/file を置換した後にYAML全体をパースしてJSONに変換
   return yaml.parse(text);
 };

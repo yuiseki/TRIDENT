@@ -71,7 +71,6 @@ export const TridentFileSystem: React.FC = () => {
       // layers ディレクトリ内のファイルリストを取得して表示
       const files: string[] = [];
       for await (const [name, entry] of layersDirHandle.entries()) {
-        console.info(name);
         if (entry.kind === "file") {
           files.push(entry.name);
         }
@@ -84,6 +83,35 @@ export const TridentFileSystem: React.FC = () => {
     }
   };
 
+  // 全ファイルの内容のEmbeddingsを更新する
+  const updateEmbeddings = useCallback(async () => {
+    try {
+      // rootDirHandleに基づいてファイルシステム内の全ファイルパスと内容をresultsに格納する再帰関数、walk
+      const results: { path: string; text: string }[] = [];
+      const rootDirHandle = await navigator.storage.getDirectory();
+      const walk = async (
+        dirHandle: FileSystemDirectoryHandle,
+        path: string
+      ) => {
+        for await (const [name, entry] of dirHandle.entries()) {
+          if (entry.kind === "file") {
+            const fileHandle = entry as FileSystemFileHandle;
+            const file = await fileHandle.getFile();
+            const text = await file.text();
+            results.push({ path: path + name, text });
+          } else {
+            const subDirHandle = await dirHandle.getDirectoryHandle(name);
+            await walk(subDirHandle, path + name + "/");
+          }
+        }
+      };
+      await walk(rootDirHandle, "");
+      console.log(results);
+    } catch (error) {
+      console.error(error);
+    }
+  }, []);
+
   // ファイルシステムの内容全体を地図に反映する
   const updateMapStyleJson = useCallback(async () => {
     try {
@@ -95,7 +123,6 @@ export const TridentFileSystem: React.FC = () => {
       setNotification(
         "ファイルシステム内のYAMLをJSONに変換しました。地図を描画します"
       );
-      console.log(JSON.stringify(data, null, 2));
     } catch (error) {
       console.error(error);
       setNotification(
@@ -106,7 +133,6 @@ export const TridentFileSystem: React.FC = () => {
 
   // エディターの内容をファイルシステムに保存する
   const saveFile = useCallback(async () => {
-    console.log("saveFile");
     if (!fileHandle) return;
 
     try {
@@ -121,7 +147,8 @@ export const TridentFileSystem: React.FC = () => {
 
     // ファイル保存後に内容を反映
     await updateMapStyleJson();
-  }, [content, fileHandle, updateMapStyleJson]);
+    await updateEmbeddings();
+  }, [content, fileHandle, updateEmbeddings, updateMapStyleJson]);
 
   // Ctrl + S で保存
   useKeyBind({
@@ -159,9 +186,10 @@ export const TridentFileSystem: React.FC = () => {
     const initializeAndSave = async () => {
       await initializeFileSystem();
       await updateMapStyleJson();
+      await updateEmbeddings();
     };
     void initializeAndSave();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
