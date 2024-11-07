@@ -42,14 +42,20 @@ export const TridentFileSystem: React.FC = () => {
         const dirHandle = dirPath
           ? await rootDir.getDirectoryHandle(dirPath)
           : rootDir;
-        // ファイルを作成
-        const fileName = pathParts[pathParts.length - 1];
-        const fileHandle = await dirHandle.getFileHandle(fileName, {
-          create: true,
-        });
-        const writable = await fileHandle.createWritable();
-        await writable.write(content);
-        await writable.close();
+        // ファイルが存在する場合はスキップ
+        try {
+          await dirHandle.getFileHandle(pathParts[pathParts.length - 1]);
+          continue;
+        } catch (error) {
+          // ファイルが存在しない場合は作成
+          const fileName = pathParts[pathParts.length - 1];
+          const fileHandle = await dirHandle.getFileHandle(fileName, {
+            create: true,
+          });
+          const writable = await fileHandle.createWritable();
+          await writable.write(content);
+          await writable.close();
+        }
       }
 
       // style.yml ファイルを作成または取得
