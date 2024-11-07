@@ -26,7 +26,7 @@ layers:
   },
   {
     path: "layers/background.yml",
-    content: `# prompt: 地図の背景色を定義しているファイル
+    content: `# prompt: 地図の背景色＝地図上の各国の色を定義しているファイル。国の色を変更する場合にはこのファイルを変更する
 id: background
 type: background
 paint:
@@ -34,7 +34,8 @@ paint:
   },
   {
     path: "layers/water.yml",
-    content: `id: water
+    content: `# prompt: 地図上の水の色を定義しているファイル
+id: water
 type: fill
 source: openmaptiles
 source-layer: water
