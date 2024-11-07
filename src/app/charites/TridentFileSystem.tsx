@@ -352,7 +352,9 @@ export const TridentFileSystem: React.FC = () => {
         }
       }
       setLayersFiles(files.sort());
-      setNotification("ファイルシステムを初期化しました");
+      setNotification(
+        "ファイルシステムを初期化しました。ファイルを保存すると地図が描画されます"
+      );
     } catch (error) {
       console.error(error);
       setNotification("ファイルシステムの初期化に失敗しました");
@@ -379,11 +381,15 @@ export const TridentFileSystem: React.FC = () => {
       // 再帰的に !!inc/file を処理し、JSON変換
       const data = await parseYamlWithIncludes(styleFileHandle, rootDirHandle);
       setStyleJsonOutput(data); // JSON出力を状態に保存
-      setNotification("YAMLをJSONに変換しました");
+      setNotification(
+        "ファイルシステム内のYAMLをJSONに変換しました。地図を描画します"
+      );
       console.log(JSON.stringify(data, null, 2));
     } catch (error) {
       console.error(error);
-      setNotification("YAMLの変換に失敗しました");
+      setNotification(
+        "YAMLのJSONへの変換に失敗しました。文法を確認してください"
+      );
     }
   }, [content, fileHandle]);
 
@@ -474,7 +480,7 @@ export const TridentFileSystem: React.FC = () => {
                       currentFileName !== "style.yml" ? "lightblue" : "white",
                   }}
                 >
-                  layers
+                  layers/
                 </li>
                 <ul>
                   {layersFiles.map((fileName) => (
@@ -528,7 +534,7 @@ export const TridentFileSystem: React.FC = () => {
               onClick={saveFile}
               disabled={!fileHandle}
             >
-              Save (Ctrl + S)
+              ファイルを保存 (Ctrl + S)
             </button>
             <span
               style={{
