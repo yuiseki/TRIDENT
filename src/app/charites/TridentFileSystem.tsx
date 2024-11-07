@@ -270,6 +270,7 @@ export const TridentFileSystem: React.FC = () => {
       <div
         style={{
           width: "400px",
+          marginBottom: "5px",
         }}
       >
         <TextInput
