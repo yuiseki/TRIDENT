@@ -26,11 +26,10 @@ export async function POST(request: Request) {
       },
       temperature: 0,
     });
-  }
-  else {
+  } else {
     llm = new ChatOpenAI({ temperature: 0 });
   }
-  
+
   const result = await llm.invoke(prompt);
 
   console.log("AI:", result.content);

@@ -8,6 +8,8 @@ import { parseYamlWithIncludes } from "@/utils/parseYaml";
 import Map, { GeolocateControl } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { TridentCharitesDefaultContents } from "@/lib/trident/charites/default";
+import { TextInput } from "@/components/TextInput";
+import { nextPostJsonWithCache } from "@/utils/nextPostJson";
 
 export const TridentFileSystem: React.FC = () => {
   const [content, setContent] = useState<string>("");
@@ -18,6 +20,7 @@ export const TridentFileSystem: React.FC = () => {
   const [layersFiles, setLayersFiles] = useState<string[]>([]);
   const [currentFileName, setCurrentFileName] = useState<string>("style.yml");
   const [styleJsonOutput, setStyleJsonOutput] = useState<any | null>(null);
+  const [inputText, setInputText] = useState<string>("");
 
   // OPFSを初期化する
   const initializeFileSystem = async () => {
@@ -89,35 +92,6 @@ export const TridentFileSystem: React.FC = () => {
     }
   };
 
-  // 全ファイルの内容のEmbeddingsを更新する
-  const updateEmbeddings = useCallback(async () => {
-    try {
-      // rootDirHandleに基づいてファイルシステム内の全ファイルパスと内容をresultsに格納する再帰関数、walk
-      const results: { path: string; text: string }[] = [];
-      const rootDirHandle = await navigator.storage.getDirectory();
-      const walk = async (
-        dirHandle: FileSystemDirectoryHandle,
-        path: string
-      ) => {
-        for await (const [name, entry] of dirHandle.entries()) {
-          if (entry.kind === "file") {
-            const fileHandle = entry as FileSystemFileHandle;
-            const file = await fileHandle.getFile();
-            const text = await file.text();
-            results.push({ path: path + name, text });
-          } else {
-            const subDirHandle = await dirHandle.getDirectoryHandle(name);
-            await walk(subDirHandle, path + name + "/");
-          }
-        }
-      };
-      await walk(rootDirHandle, "");
-      console.log(results);
-    } catch (error) {
-      console.error(error);
-    }
-  }, []);
-
   // ファイルシステムの内容全体を地図に反映する
   const updateMapStyleJson = useCallback(async () => {
     try {
@@ -153,8 +127,7 @@ export const TridentFileSystem: React.FC = () => {
 
     // ファイル保存後に内容を反映
     await updateMapStyleJson();
-    await updateEmbeddings();
-  }, [content, fileHandle, updateEmbeddings, updateMapStyleJson]);
+  }, [content, fileHandle, updateMapStyleJson]);
 
   // Ctrl + S で保存
   useKeyBind({
@@ -192,11 +165,92 @@ export const TridentFileSystem: React.FC = () => {
     const initializeAndSave = async () => {
       await initializeFileSystem();
       await updateMapStyleJson();
-      await updateEmbeddings();
     };
     void initializeAndSave();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  const onSubmit = useCallback(async () => {
+    if (!inputText) {
+      return;
+    }
+
+    setInputText("");
+    setNotification("AIによるファイルの編集を実行しています……");
+
+    try {
+      // 全ファイルの内容をJSONにする
+      // rootDirHandleに基づいてファイルシステム内の全ファイルパスと内容をresultsに格納する再帰関数、walk
+      const results: { path: string; content: string }[] = [];
+      const rootDirHandle = await navigator.storage.getDirectory();
+      const walk = async (
+        dirHandle: FileSystemDirectoryHandle,
+        path: string
+      ) => {
+        for await (const [name, entry] of dirHandle.entries()) {
+          if (entry.kind === "file") {
+            const fileHandle = entry as FileSystemFileHandle;
+            const file = await fileHandle.getFile();
+            const content = await file.text();
+            results.push({ path: path + name, content });
+          } else {
+            const subDirHandle = await dirHandle.getDirectoryHandle(name);
+            await walk(subDirHandle, path + name + "/");
+          }
+        }
+      };
+      await walk(rootDirHandle, "");
+      const stringifiedResults = JSON.stringify(results, null, 2);
+      const resJson = await nextPostJsonWithCache("/api/ai/charites", {
+        fs: stringifiedResults,
+        prompt: inputText,
+      });
+      console.log(resJson.content);
+      const resContent = resJson.content;
+      const newFilePath = resContent.split("\n")[0].replace("# path: ", "");
+      const newDirPath = newFilePath.split("/").slice(0, -1).join("/");
+      const newFileName = newFilePath.split("/").pop();
+      const newContent = resContent.split("\n").slice(1).join("\n");
+      const newDirHandle = await rootDirHandle.getDirectoryHandle(newDirPath);
+
+      const newFileHandle = await newDirHandle.getFileHandle(newFileName, {
+        create: true,
+      });
+      const newWritable = await newFileHandle.createWritable();
+      await newWritable.write(newContent);
+      await newWritable.close();
+
+      await selectFile(newFileName);
+      await updateMapStyleJson();
+      setNotification("AIによるファイルの編集が完了しました");
+    } catch (error) {
+      console.error(error);
+    }
+
+    setInputText("");
+  }, [inputText, updateMapStyleJson]);
+
+  // OPFSの内容を完全に消去して、初期値に戻し、画面をリロードする
+  const resetOPFS = async () => {
+    try {
+      const rootDirHandle = await navigator.storage.getDirectory();
+      const entries = [];
+      for await (const entry of rootDirHandle.values()) {
+        entries.push(entry);
+      }
+      for (const entry of entries) {
+        if (entry.kind === "file") {
+          await rootDirHandle.removeEntry(entry.name);
+        } else if (entry.kind === "directory") {
+          await rootDirHandle.removeEntry(entry.name, { recursive: true });
+        }
+      }
+      window.location.reload();
+    } catch (error) {
+      console.error(error);
+      setNotification("ファイルシステムのリセットに失敗しました");
+    }
+  };
 
   return (
     <div
@@ -211,8 +265,21 @@ export const TridentFileSystem: React.FC = () => {
           margin: "4px 0",
         }}
       >
-        TRIDENT Charites v0.0.0
+        TRIDENT Charites v0.0.1
       </h1>
+      <div
+        style={{
+          width: "400px",
+        }}
+      >
+        <TextInput
+          disabled={false}
+          placeholder="国の名前を黄色にして"
+          inputText={inputText}
+          setInputText={setInputText}
+          onSubmit={onSubmit}
+        />
+      </div>
       <div
         style={{
           display: "flex",
@@ -290,36 +357,6 @@ export const TridentFileSystem: React.FC = () => {
               />
             </div>
           </div>
-          <div
-            style={{
-              height: "2vh",
-            }}
-          >
-            <button
-              style={{
-                margin: "10px",
-                borderRadius: "8px",
-                border: "1px solid transparent",
-                padding: "0.3em 0.6em",
-                fontSize: "1em",
-                fontWeight: 500,
-                fontFamily: "inherit",
-                cursor: "pointer",
-                transition: "border-color 0.25s",
-              }}
-              onClick={saveFile}
-              disabled={!fileHandle}
-            >
-              ファイルを保存 (Ctrl + S)
-            </button>
-            <span
-              style={{
-                color: "white",
-              }}
-            >
-              {notification}
-            </span>
-          </div>
         </div>
         <Map
           initialViewState={{
@@ -332,6 +369,57 @@ export const TridentFileSystem: React.FC = () => {
         >
           <GeolocateControl />
         </Map>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          alignContent: "center",
+          alignItems: "center",
+          justifyContent: "space-between",
+          width: "100%",
+        }}
+      >
+        <button
+          style={{
+            margin: "10px",
+            borderRadius: "8px",
+            border: "1px solid transparent",
+            padding: "0.3em 0.6em",
+            fontSize: "1em",
+            fontWeight: 500,
+            fontFamily: "inherit",
+            cursor: "pointer",
+            transition: "border-color 0.25s",
+          }}
+          onClick={saveFile}
+          disabled={!fileHandle}
+        >
+          ファイルを保存 (Ctrl + S)
+        </button>
+        <span
+          style={{
+            color: "white",
+          }}
+        >
+          {notification}
+        </span>
+        <button
+          style={{
+            margin: "10px",
+            borderRadius: "8px",
+            border: "1px solid transparent",
+            padding: "0.3em 0.6em",
+            fontSize: "1em",
+            fontWeight: 500,
+            fontFamily: "inherit",
+            cursor: "pointer",
+            transition: "border-color 0.25s",
+            backgroundColor: "darkred",
+          }}
+          onClick={resetOPFS}
+        >
+          ファイルシステムをリセット
+        </button>
       </div>
     </div>
   );

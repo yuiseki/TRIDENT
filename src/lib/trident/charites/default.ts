@@ -3,7 +3,8 @@
 export const TridentCharitesDefaultContents = [
   {
     path: "style.yml",
-    content: `version: 8
+    content: `# prompt: 基本のファイルなので絶対に変更するな
+version: 8
 name: TRIDENT Charites Like OPFS Style 
 metadata: {}
 sources:
@@ -52,7 +53,8 @@ paint:
   },
   {
     path: "layers/landcover-park-green.yml",
-    content: `id: landcover-park-green
+    content: `# prompt: 公園の色を決めているファイル
+id: landcover-park-green
 type: fill
 source: openmaptiles
 source-layer: landcover
@@ -207,7 +209,8 @@ paint:
   },
   {
     path: "layers/place-settlement.yml",
-    content: `id: place-settlement
+    content: `# prompt: 地域の名前の色を定義しているファイル
+id: place-settlement
 type: symbol
 source: openmaptiles
 source-layer: place
@@ -240,7 +243,8 @@ paint:
   },
   {
     path: "layers/place-country-2.yml",
-    content: `id: place-country-2
+    content: `# prompt: 国の名前の色を定義しているファイル
+id: place-country-2
 type: symbol
 source: openmaptiles
 source-layer: place
