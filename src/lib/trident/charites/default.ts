@@ -26,7 +26,8 @@ layers:
   },
   {
     path: "layers/background.yml",
-    content: `id: background
+    content: `# prompt: 地図の背景色を定義しているファイル
+id: background
 type: background
 paint:
   background-color: '#45516E'`,
@@ -174,7 +175,8 @@ paint:
   },
   {
     path: "layers/boundary-land-level-2.yml",
-    content: `id: boundary-land-level-2
+    content: `# 国境の色を定義しているファイル
+id: boundary-land-level-2
 type: line
 source: openmaptiles
 source-layer: boundary
