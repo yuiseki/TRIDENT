@@ -2,11 +2,9 @@
 
 import dynamic from "next/dynamic";
 
-const MyCharitesComponent = dynamic(
+const MyComponent = dynamic(
   () =>
-    import("./MyCharitesComponent").then(
-      (module) => module.MyCharitesComponent
-    ),
+    import("./TridentFileSystem").then((module) => module.TridentFileSystem),
   {
     ssr: false,
   }
@@ -15,7 +13,7 @@ const MyCharitesComponent = dynamic(
 export default function Page() {
   return (
     <>
-      <MyCharitesComponent />
+      <MyComponent />
     </>
   );
 }
