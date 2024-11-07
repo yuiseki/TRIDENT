@@ -14,7 +14,7 @@ export const setupCharitesDynamicPrompt = async (
 ) => {
   const exampleSelector = new SemanticSimilarityExampleSelector({
     vectorStore: vectorStore,
-    k: 3,
+    k: 5,
     inputKeys: ["input"],
   });
   for (const example of examples) {
@@ -44,14 +44,22 @@ You must always, without fail, output in English.
 You must not output in Japanese, Chinese, Korean, Arabic, French, German, Spanish, Portuguese, Russian, or any other language.
 Do not generate any output that is not in Examples.
 You must always, without fail, output with an approach that overwrites existing files whenever possible.
+You always, invariably, do not create new files.
+You always invariably edit the file shown in the example.
+# path: から始まる行は、常に必ず例に登場するものでなければならない。
 
 Examples:`,
     suffix: `===
 Input:
 {input}
 
-Remember, You must always, without fail, output in English.
+Remember,
+You must always, without fail, output in English.
 You must always, without fail, output with an approach that overwrites existing files whenever possible.
+You always, invariably, do not create new files.
+You always invariably edit the file shown in the example.
+# path: から始まる行は、常に必ず例に登場するものでなければならない。
+
 
 Output:
 `,

@@ -74,7 +74,8 @@ paint:
   },
   {
     path: "layers/highway.yml",
-    content: `id: highway
+    content: `# prompt: 高速道路の色を定義しているファイル
+id: highway
 type: line
 minzoom: 10
 source: openmaptiles
@@ -109,7 +110,8 @@ paint:
   },
   {
     path: "layers/road-major.yml",
-    content: `id: road-major
+    content: `# prompt: 主要道路の色を定義しているファイル
+id: road-major
 type: line
 minzoom: 10
 source: openmaptiles
@@ -138,7 +140,8 @@ paint:
   },
   {
     path: "layers/boundary-land-level-4.yml",
-    content: `id: boundary-land-level-4
+    content: `# prompt: 州や都道府県の境界線の色を定義しているファイル
+id: boundary-land-level-4
 type: line
 source: openmaptiles
 source-layer: boundary
@@ -176,7 +179,7 @@ paint:
   },
   {
     path: "layers/boundary-land-level-2.yml",
-    content: `# 国境の色を定義しているファイル
+    content: `# prompt: 国境線の色を定義しているファイル。 boundary-land-level-2 は国の境界線を示す
 id: boundary-land-level-2
 type: line
 source: openmaptiles
