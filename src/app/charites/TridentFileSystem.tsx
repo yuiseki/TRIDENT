@@ -419,121 +419,136 @@ export const TridentFileSystem: React.FC = () => {
   return (
     <div
       style={{
-        display: "flex",
+        margin: "5px",
       }}
     >
+      <h1
+        style={{
+          color: "white",
+          fontSize: "1.5em",
+          margin: "4px 0",
+        }}
+      >
+        TRIDENT Charites v0.0.0
+      </h1>
       <div
         style={{
           display: "flex",
-          flexDirection: "column",
         }}
       >
         <div
           style={{
             display: "flex",
-            marginRight: "4px",
+            flexDirection: "column",
           }}
         >
           <div
             style={{
-              marginRight: "2px",
-              width: "340px",
-              backgroundColor: "#2b2b2b",
-              color: "white",
+              display: "flex",
+              marginRight: "4px",
             }}
           >
-            <ul>
-              <li
-                onClick={() => selectFile("style.yml")}
-                style={{
-                  cursor: "pointer",
-                  color:
-                    currentFileName === "style.yml" ? "lightblue" : "white",
-                }}
-              >
-                style.yml
-              </li>
-              <li
-                style={{
-                  cursor: "pointer",
-                  color:
-                    currentFileName !== "style.yml" ? "lightblue" : "white",
-                }}
-              >
-                layers
-              </li>
+            <div
+              style={{
+                marginRight: "2px",
+                width: "340px",
+                backgroundColor: "#2b2b2b",
+                color: "white",
+              }}
+            >
               <ul>
-                {layersFiles.map((fileName) => (
-                  <li
-                    key={fileName}
-                    onClick={() => selectFile(fileName)}
-                    style={{
-                      cursor: "pointer",
-                      color:
-                        currentFileName === fileName ? "lightblue" : "white",
-                    }}
-                  >
-                    {fileName}
-                  </li>
-                ))}
+                <li
+                  onClick={() => selectFile("style.yml")}
+                  style={{
+                    cursor: "pointer",
+                    color:
+                      currentFileName === "style.yml" ? "lightblue" : "white",
+                  }}
+                >
+                  style.yml
+                </li>
+                <li
+                  style={{
+                    cursor: "pointer",
+                    color:
+                      currentFileName !== "style.yml" ? "lightblue" : "white",
+                  }}
+                >
+                  layers
+                </li>
+                <ul>
+                  {layersFiles.map((fileName) => (
+                    <li
+                      key={fileName}
+                      onClick={() => selectFile(fileName)}
+                      style={{
+                        cursor: "pointer",
+                        color:
+                          currentFileName === fileName ? "lightblue" : "white",
+                      }}
+                    >
+                      {fileName}
+                    </li>
+                  ))}
+                </ul>
               </ul>
-            </ul>
+            </div>
+            <div
+              style={{
+                height: "80vh",
+              }}
+            >
+              <CodeMirror
+                value={content}
+                theme={vscodeDark}
+                extensions={[yaml(), color]}
+                onChange={(value) => setContent(value)}
+                height="80vh"
+                width="600px"
+              />
+            </div>
           </div>
           <div
             style={{
-              height: "80vh",
+              height: "2vh",
             }}
           >
-            <CodeMirror
-              value={content}
-              theme={vscodeDark}
-              extensions={[yaml(), color]}
-              onChange={(value) => setContent(value)}
-              height="80vh"
-              width="600px"
-            />
+            <button
+              style={{
+                margin: "10px",
+                borderRadius: "8px",
+                border: "1px solid transparent",
+                padding: "0.3em 0.6em",
+                fontSize: "1em",
+                fontWeight: 500,
+                fontFamily: "inherit",
+                cursor: "pointer",
+                transition: "border-color 0.25s",
+              }}
+              onClick={saveFile}
+              disabled={!fileHandle}
+            >
+              Save (Ctrl + S)
+            </button>
+            <span
+              style={{
+                color: "white",
+              }}
+            >
+              {notification}
+            </span>
           </div>
         </div>
-        <div
-          style={{
-            height: "2vh",
+        <Map
+          initialViewState={{
+            longitude: 1,
+            latitude: 1,
+            zoom: 4,
           }}
-        >
-          <button
-            style={{
-              margin: "10px",
-              borderRadius: "8px",
-              border: "1px solid transparent",
-              padding: "0.3em 0.6em",
-              fontSize: "1em",
-              fontWeight: 500,
-              fontFamily: "inherit",
-              cursor: "pointer",
-              transition: "border-color 0.25s",
-            }}
-            onClick={saveFile}
-            disabled={!fileHandle}
-          >
-            Save (Ctrl + S)
-          </button>
-          <span
-            style={{
-              color: "white",
-            }}
-          >
-            {notification}
-          </span>
-        </div>
+          style={{ width: "100vw", height: "80vh" }}
+          mapStyle={styleJsonOutput}
+        />
       </div>
-      <Map
-        initialViewState={{
-          longitude: 1,
-          latitude: 1,
-          zoom: 4,
-        }}
-        style={{ width: "100vw", height: "80vh" }}
-        mapStyle={styleJsonOutput}
-      />
     </div>
   );
 };
