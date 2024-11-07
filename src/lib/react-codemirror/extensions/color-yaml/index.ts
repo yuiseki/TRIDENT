@@ -134,8 +134,6 @@ function colorDecorations(view: EditorView) {
           (type.name === "QuotedLiteral" && callExp.startsWith("'#"))
         ) {
           const [color, alpha] = toFullHex(callExp);
-          console.log(color);
-          // FIXME: YAML対応なのでCSSとの互換性がなくなる
           const colorRaw = callExp.startsWith("'#")
             ? callExp.slice(1, -1)
             : callExp;
@@ -167,8 +165,6 @@ function colorDecorations(view: EditorView) {
             });
             widgets.push(widget.range(from));
           }
-        } else {
-          //console.info(type.name, callExp);
         }
       },
     });
@@ -221,7 +217,7 @@ class ColorWidget extends WidgetType {
   }
 }
 
-export const colorView = (showPicker: boolean = true) =>
+export const colorViewForYaml = (showPicker: boolean = true) =>
   ViewPlugin.fromClass(
     class ColorView {
       decorations: DecorationSet;
@@ -299,7 +295,6 @@ export const colorView = (showPicker: boolean = true) =>
               })`;
             }
           }
-          // FIXMI: YAML対応なのでCSSで壊れる
           if (converted.startsWith("#")) {
             converted = converted.replace("#", "'#") + "'";
           }
@@ -342,4 +337,4 @@ export const colorTheme = EditorView.baseTheme({
   },
 });
 
-export const color: Extension = [colorView(), colorTheme];
+export const colorForYaml: Extension = [colorViewForYaml(), colorTheme];

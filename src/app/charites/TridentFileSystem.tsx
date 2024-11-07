@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react";
 import CodeMirror from "@uiw/react-codemirror";
-import { color } from "@/lib/react-codemirror/extensions/color-yaml/index.ts";
+import { colorForYaml } from "@/lib/react-codemirror/extensions/color-yaml/index.ts";
 import { vscodeDark } from "@uiw/codemirror-theme-vscode";
 import { yaml } from "@codemirror/lang-yaml";
 import { useKeyBind } from "@/hooks/keybind";
@@ -457,7 +457,7 @@ export const TridentFileSystem: React.FC = () => {
             <div
               style={{
                 marginRight: "2px",
-                width: "340px",
+                width: "300px",
                 backgroundColor: "#2b2b2b",
                 color: "white",
               }}
@@ -507,10 +507,10 @@ export const TridentFileSystem: React.FC = () => {
               <CodeMirror
                 value={content}
                 theme={vscodeDark}
-                extensions={[yaml(), color]}
+                extensions={[yaml(), colorForYaml]}
                 onChange={(value) => setContent(value)}
                 height="80vh"
-                width="600px"
+                width="550px"
               />
             </div>
           </div>
