@@ -25,6 +25,7 @@ import { LocationProvider } from "@/contexts/LocationContext";
 import { greetings } from "@/constants/Greetings";
 import { untitledMaps } from "@/constants/UntitledMap";
 import { tridentPlaceholders } from "@/constants/TridentPlaceholder";
+import { useScrollToBottom } from "@/hooks/scrollToBottom";
 
 export default function Home() {
   // all state
@@ -48,28 +49,22 @@ export default function Home() {
     "/map_styles/fiord-color-gl-style/style.json"
   );
 
+  // floating chat button state
+  const [showingFloatingChat, setShowingFloatingChat] = useState(true);
+
   // dialogue ref and state
   const dialogueRef = useRef<HTMLDivElement | null>(null);
   const dialogueEndRef = useRef<HTMLDivElement | null>(null);
   const [dialogueList, setDialogueList] = useState<DialogueElement[]>([]);
+  const scrollToBottom = useScrollToBottom(dialogueEndRef);
 
   // communication state
   const [responding, setResponding] = useState(false);
   const [mapping, setMapping] = useState(false);
   const [pastMessages, setPastMessages] = useState<Array<any> | undefined>();
 
-  // floating chat button state
-  const [showingFloatingChat, setShowingFloatingChat] = useState(true);
-
   // input ref and state
   const [inputText, setInputText] = useState("");
-
-  const scrollToBottom = useCallback(async () => {
-    await sleep(50);
-    if (dialogueEndRef.current) {
-      dialogueEndRef.current.scrollIntoView({ behavior: "instant" });
-    }
-  }, []);
 
   const onChangeFloatingChatButton = useCallback(
     (showing: boolean) => {
@@ -81,6 +76,7 @@ export default function Home() {
     [scrollToBottom]
   );
 
+  // base maps style change
   const onSelectMapStyleJsonUrl = useCallback(
     (e: React.ChangeEvent<HTMLSelectElement>) => {
       setMapStyleJsonUrl(e.target.value);
