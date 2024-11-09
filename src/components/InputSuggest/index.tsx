@@ -7,9 +7,9 @@ import { SuggestByCurrentLocationButton } from "./SuggestByCurrentLocation/butto
 import { SuggestByTrend } from "./SuggestByTrend";
 
 export const InputSuggest: React.FC<{
-  onSelected?: (value: string) => void;
+  onSelect?: (value: string) => void;
   onChangeLocation?: (location: string) => void;
-}> = ({ onSelected, onChangeLocation }) => {
+}> = ({ onSelect, onChangeLocation }) => {
   const [suggestMode, setSuggestMode] = useState<"location" | "trend" | null>(
     null
   );
@@ -18,11 +18,7 @@ export const InputSuggest: React.FC<{
   );
 
   const onChangeSuggestByCurrentLocation = useCallback(
-    ({
-      coordinates,
-    }: {
-      coordinates: GeolocationCoordinates | null;
-    }) => {
+    ({ coordinates }: { coordinates: GeolocationCoordinates | null }) => {
       setCoordinates(coordinates);
     },
     []
@@ -46,11 +42,11 @@ export const InputSuggest: React.FC<{
       {suggestMode === "location" && (
         <SuggestByCurrentLocation
           coordinates={coordinates}
-          onSelected={onSelected}
+          onSelect={onSelect}
           onChangeLocation={onChangeLocation}
         />
       )}
-      {suggestMode === "trend" && <SuggestByTrend onSelected={onSelected} />}
+      {suggestMode === "trend" && <SuggestByTrend onSelect={onSelect} />}
     </div>
   );
 };

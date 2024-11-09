@@ -7,7 +7,7 @@ import { TextInput } from "@/components/TextInput";
 import { DialogueElement } from "@/types/DialogueElement";
 import { nextPostJson, nextPostJsonWithCache } from "@/utils/nextPostJson";
 import { sleep } from "@/utils/sleep";
-import { useCallback, useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import { MapProvider, MapRef } from "react-map-gl/maplibre";
 import { FeatureCollection } from "geojson";
 import { getOverpassResponseJsonWithCache } from "@/utils/getOverpassResponse";
@@ -41,6 +41,7 @@ export default function Home() {
   const [geojsonWithStyleList, setGeojsonWithStyleList] = useState<
     Array<{ id: string; style: TridentMapsStyle; geojson: FeatureCollection }>
   >([]);
+
   const [location, setLocation] = useState<string | undefined>(undefined);
 
   // base maps style state
@@ -65,24 +66,6 @@ export default function Home() {
 
   // input ref and state
   const [inputText, setInputText] = useState("");
-
-  const onChangeFloatingChatButton = useCallback(
-    (showing: boolean) => {
-      setShowingFloatingChat(showing);
-      if (showing) {
-        scrollToBottom();
-      }
-    },
-    [scrollToBottom]
-  );
-
-  // base maps style change
-  const onSelectMapStyleJsonUrl = useCallback(
-    (e: React.ChangeEvent<HTMLSelectElement>) => {
-      setMapStyleJsonUrl(e.target.value);
-    },
-    [setMapStyleJsonUrl]
-  );
 
   const insertNewDialogue = useCallback(
     (newDialogueElement: DialogueElement, lazy?: boolean) => {
@@ -244,7 +227,7 @@ export default function Home() {
     [inputText, insertNewDialogue, pastMessages, scrollToBottom]
   );
 
-  const onSelectedSuggestions = useCallback(
+  const onSelectSuggestions = useCallback(
     async (value: string) => {
       setResponding(true);
       await onSubmit(value);
@@ -355,7 +338,11 @@ export default function Home() {
         <div className="tridentMapWrap">
           <MapStyleSelector
             mapStyleJsonUrl={mapStyleJsonUrl}
-            onSelectMapStyleJsonUrl={onSelectMapStyleJsonUrl}
+            onSelectMapStyleJsonUrl={(
+              e: React.ChangeEvent<HTMLSelectElement>
+            ) => {
+              setMapStyleJsonUrl(e.target.value);
+            }}
           />
           <MapProvider>
             <BaseMap
@@ -378,7 +365,14 @@ export default function Home() {
                 })}
             </BaseMap>
           </MapProvider>
-          <FloatingChatButton onChange={onChangeFloatingChatButton}>
+          <FloatingChatButton
+            onChange={(showing: boolean) => {
+              setShowingFloatingChat(showing);
+              if (showing) {
+                scrollToBottom();
+              }
+            }}
+          >
             <div className="logsOuterWrap" ref={dialogueRef}>
               <div className="tridentMapTitle">
                 {mapTitle ? mapTitle : "Loading..."}
@@ -400,7 +394,7 @@ export default function Home() {
               <LocationProvider locationInfo={{ location: location }}>
                 {dialogueList.length === 1 && inputText.length === 0 && (
                   <InputSuggest
-                    onSelected={onSelectedSuggestions}
+                    onSelect={onSelectSuggestions}
                     onChangeLocation={(v) => {
                       setLocation(v);
                     }}
@@ -415,7 +409,7 @@ export default function Home() {
                       onUpdateSuggestions={() => {
                         scrollToBottom();
                       }}
-                      onSelected={onSelectedSuggestions}
+                      onSelect={onSelectSuggestions}
                     />
                   )}
               </LocationProvider>

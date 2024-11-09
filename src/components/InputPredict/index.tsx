@@ -7,8 +7,8 @@ import styles from "./styles.module.scss";
 export const InputPredict: React.FC<{
   pastMessages?: any[];
   onUpdateSuggestions?: () => void;
-  onSelected?: (value: string) => void;
-}> = ({ pastMessages, onUpdateSuggestions, onSelected }) => {
+  onSelect?: (value: string) => void;
+}> = ({ pastMessages, onUpdateSuggestions, onSelect }) => {
   const locationInfo = useContext(LocationContext);
   const [requesting, setRequesting] = useState(false);
   const [suggests, setSuggests] = useState<string[] | undefined>(undefined);
@@ -50,7 +50,7 @@ export const InputPredict: React.FC<{
               className={styles.suggestListItem}
               key={suggest}
               onClick={() => {
-                onSelected && onSelected(suggest);
+                onSelect && onSelect(suggest);
               }}
             >
               {suggest}

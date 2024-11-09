@@ -7,8 +7,8 @@ import styles from "./styles.module.scss";
 export const SuggestByCurrentLocation: React.FC<{
   coordinates: GeolocationCoordinates | null;
   onChangeLocation?: (location: string) => void;
-  onSelected?: (value: string) => void;
-}> = ({ coordinates, onChangeLocation, onSelected }) => {
+  onSelect?: (value: string) => void;
+}> = ({ coordinates, onChangeLocation, onSelect }) => {
   const [location, setLocation] = useState<string | null>(null);
   const [suggests, setSuggests] = useState<string[]>([]);
 
@@ -70,8 +70,8 @@ export const SuggestByCurrentLocation: React.FC<{
               key={suggest}
               className={styles.suggestListItem}
               onClick={() => {
-                if (onSelected) {
-                  onSelected(suggest);
+                if (onSelect) {
+                  onSelect(suggest);
                 }
               }}
             >

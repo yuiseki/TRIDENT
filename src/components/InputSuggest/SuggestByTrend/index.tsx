@@ -3,8 +3,8 @@ import styles from "./styles.module.scss";
 import { nextPostJsonWithCache } from "@/utils/nextPostJson";
 
 export const SuggestByTrend: React.FC<{
-  onSelected?: (value: string) => void;
-}> = ({ onSelected }) => {
+  onSelect?: (value: string) => void;
+}> = ({ onSelect }) => {
   const [trends, setTrends] = useState<string[]>([
     "ガザ地区の避難所を表示して",
     "ウクライナの首都を表示して",
@@ -33,7 +33,7 @@ export const SuggestByTrend: React.FC<{
               className={styles.suggestListItem}
               key={trend}
               onClick={() => {
-                onSelected && onSelected(trend);
+                onSelect && onSelect(trend);
               }}
             >
               {trend}
