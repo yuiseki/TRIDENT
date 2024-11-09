@@ -26,19 +26,21 @@ export const InputSuggest: React.FC<{
 
   return (
     <div className={styles.inputSuggestWrap}>
-      <div className={styles.inputSuggestButtonsWrap}>
-        <SuggestByCurrentLocationButton
-          onClick={() => {
-            setSuggestMode("location");
-          }}
-          onChange={onChangeSuggestByCurrentLocation}
-        />
-        <SuggestByTrendButton
-          onClick={() => {
-            setSuggestMode("trend");
-          }}
-        />
-      </div>
+      {!coordinates && (
+        <div className={styles.inputSuggestButtonsWrap}>
+          <SuggestByCurrentLocationButton
+            onClick={() => {
+              setSuggestMode("location");
+            }}
+            onChange={onChangeSuggestByCurrentLocation}
+          />
+          <SuggestByTrendButton
+            onClick={() => {
+              setSuggestMode("trend");
+            }}
+          />
+        </div>
+      )}
       {suggestMode === "location" && (
         <SuggestByCurrentLocation
           coordinates={coordinates}
