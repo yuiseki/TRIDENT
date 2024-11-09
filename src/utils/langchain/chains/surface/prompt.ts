@@ -7,22 +7,22 @@ export const tridentSurfaceExampleList: Array<{
   output: string;
 }> = [
   {
-    input: "Human: Show map of New York City.",
+    input: "Show map of New York City.",
     output:
       "I copy. I'm generating maps that shows the city of New York based on OpenStreetMap data. Please wait a while...",
   },
   {
-    input: "Human: ニューヨークの地図を表示して",
+    input: "ニューヨークの地図を表示して",
     output:
       "了解しました。OpenStreetMapのデータに基づいてニューヨーク市を表示する地図を作成しています。しばらくお待ちください……",
   },
   {
-    input: "Human: 台東区を表示して",
+    input: "台東区を表示して",
     output:
       "了解しました。OpenStreetMapのデータに基づいて台東区を表示する地図を作成しています。しばらくお待ちください……",
   },
   {
-    input: "Human: 显示纽约地图",
+    input: "显示纽约地图",
     output: "知道了。我正在生成基于OpenStreetMap数据的纽约市地图。请稍等……",
   },
 ];
@@ -53,10 +53,10 @@ export const loadTridentSurfacePrompt = async (vectorStore: VectorStore) => {
     inputKeys: ["input"],
   });
   const examplePrompt = PromptTemplate.fromTemplate(
-    `Human:
+    `Input:
 {input}
 
-AI:
+Output:
 {output}
 `
   );
@@ -72,10 +72,10 @@ AI:
     suffix: `
 ### Current conversation: ###
 
-Human:
+Input:
 {input}
 
-AI:
+Output:
 `,
     inputVariables: ["input"],
   });
