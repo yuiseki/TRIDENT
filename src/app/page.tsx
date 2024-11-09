@@ -14,7 +14,7 @@ import { getOverpassResponseJsonWithCache } from "@/utils/getOverpassResponse";
 import osmtogeojson from "osmtogeojson";
 import { TridentMapsStyle } from "@/types/TridentMaps";
 import { useLocalStorage } from "@/hooks/localStorage";
-import { FloatingChatButton } from "@/components/FloatingActionButton";
+import { FloatingChatButton } from "@/components/FloatingChatButton";
 import { MapStyleSelector } from "@/components/MapStyleSelector";
 import { fitBoundsToGeoJson } from "@/utils/map/fitBoundsToGeoJson";
 import { parseInnerResJson } from "@/utils/trident/parseInnerResJson";
