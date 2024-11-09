@@ -36,8 +36,8 @@ export default function Home() {
   >(undefined);
 
   // maps ref and state
-  const mapRef = useRef<MapRef | null>(null);
   const [mapTitle, setMapTitle] = useState<string | undefined>(undefined);
+  const mapRef = useRef<MapRef | null>(null);
   const [geojsonWithStyleList, setGeojsonWithStyleList] = useState<
     Array<{ id: string; style: TridentMapsStyle; geojson: FeatureCollection }>
   >([]);
@@ -156,7 +156,9 @@ export default function Home() {
       } = parseInnerResJson(innerResJson);
 
       if (linesWithTitle.length > 0) {
-        setMapTitle(linesWithTitle[0].split(":")[1]);
+        const newMapTitle = linesWithTitle[0].split(":")[1];
+        setMapTitle(newMapTitle);
+        setPageTitle(newMapTitle ? `${newMapTitle} | TRIDENT` : "TRIDENT");
       }
 
       linesWithAreaAndOrConcern.map(async (line: string, idx: number) => {
@@ -226,18 +228,6 @@ export default function Home() {
     },
     [inputText, insertNewDialogue, pastMessages, scrollToBottom]
   );
-
-  const onSelectSuggestions = useCallback(
-    async (value: string) => {
-      setResponding(true);
-      await onSubmit(value);
-    },
-    [onSubmit]
-  );
-
-  useEffect(() => {
-    setPageTitle(mapTitle ? `${mapTitle} | TRIDENT` : "TRIDENT");
-  }, [mapTitle]);
 
   // fit bounds to all geojson in the geojsonWithStyleList
   useEffect(() => {
@@ -394,7 +384,10 @@ export default function Home() {
               <LocationProvider locationInfo={{ location: location }}>
                 {dialogueList.length === 1 && inputText.length === 0 && (
                   <InputSuggest
-                    onSelect={onSelectSuggestions}
+                    onSelect={(value: string) => {
+                      setInputText(value);
+                      onSubmit(value);
+                    }}
                     onChangeLocation={(v) => {
                       setLocation(v);
                     }}
@@ -409,7 +402,10 @@ export default function Home() {
                       onUpdateSuggestions={() => {
                         scrollToBottom();
                       }}
-                      onSelect={onSelectSuggestions}
+                      onSelect={(value: string) => {
+                        setInputText(value);
+                        onSubmit(value);
+                      }}
                     />
                   )}
               </LocationProvider>
