@@ -39,7 +39,12 @@ export default function Home() {
   const [mapTitle, setMapTitle] = useState<string | undefined>(undefined);
   const mapRef = useRef<MapRef | null>(null);
   const [geojsonWithStyleList, setGeojsonWithStyleList] = useState<
-    Array<{ id: string; style: TridentMapsStyle; geojson: FeatureCollection }>
+    Array<{
+      id: string;
+      line: string;
+      style: TridentMapsStyle;
+      geojson: FeatureCollection;
+    }>
   >([]);
 
   const [location, setLocation] = useState<string | undefined>(undefined);
@@ -194,6 +199,7 @@ export default function Home() {
                 ...prev,
                 {
                   id: "layer-" + prev.length + 1,
+                  line: line,
                   style: style,
                   geojson: newGeojson,
                 },
