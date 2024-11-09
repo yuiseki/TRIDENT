@@ -208,7 +208,7 @@ export default function Home() {
                   text:
                     linesWithConfirm.length > 0
                       ? linesWithConfirm[0].split(":")[1]
-                      : "Mapping has been completed. Have we been helpful to you? Do you have any other requests",
+                      : "Mapping has been completed. Have we been helpful to you? Do you have any other requests?",
                 },
                 false
               );
