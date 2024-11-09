@@ -13,7 +13,7 @@ import * as turf from "@turf/turf";
 import osmtogeojson from "osmtogeojson";
 import { getOverpassResponseJsonWithCache } from "@/utils/getOverpassResponse";
 import { BaseMap } from "@/components/BaseMap";
-import { GeoJsonToMarkers } from "@/components/GeoJsonToMarkers";
+import { GeoJsonToSourceLayer } from "@/components/GeoJsonToSourceLayer";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 
@@ -333,7 +333,7 @@ export default function Page() {
               geojsonWithStyleList.map((geojsonWithStyle, idx) => {
                 console.log(geojsonWithStyle);
                 return (
-                  <GeoJsonToMarkers
+                  <GeoJsonToSourceLayer
                     key={`${concern.url}-geojson-${idx}`}
                     geojson={geojsonWithStyle.geojson}
                     style={geojsonWithStyle.style}

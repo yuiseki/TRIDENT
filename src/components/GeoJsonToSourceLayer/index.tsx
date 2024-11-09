@@ -4,7 +4,7 @@ import { Feature, FeatureCollection, GeoJsonProperties, Point } from "geojson";
 import { Fragment, useCallback, useEffect, useState } from "react";
 import { Layer, Marker, Source, useMap } from "react-map-gl/maplibre";
 
-export const GeoJsonToMarkers: React.FC<{
+export const GeoJsonToSourceLayer: React.FC<{
   geojson?: FeatureCollection;
   emoji?: string;
   style?: TridentMapsStyle;

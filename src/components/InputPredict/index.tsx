@@ -1,5 +1,4 @@
 import { LocationContext } from "@/contexts/LocationContext";
-import { DialogueElement } from "@/types/DialogueElement";
 import { nextPostJsonWithCache } from "@/utils/nextPostJson";
 import { useContext, useEffect, useState } from "react";
 

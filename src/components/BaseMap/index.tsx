@@ -34,8 +34,6 @@ export const BaseMap: React.FC<{
   zoom,
   children,
   style = "/map_styles/fiord-color-gl-style/style.json",
-  //style = "/map_styles/arcgis-world-imagery/style.json",
-  //style = "/map_styles/osm-hot/style.json",
   onMapLoad,
   onMapMove,
   onMapMoveEnd,

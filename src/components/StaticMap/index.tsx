@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { TridentMapsStyle } from "@/types/TridentMaps";
 import { FeatureCollection } from "geojson";
 import * as turf from "@turf/turf";
-import { GeoJsonToMarkers } from "../GeoJsonToMarkers";
+import { GeoJsonToSourceLayer } from "../GeoJsonToSourceLayer";
 
 export const StaticMap: React.FC<{
   style: string | maplibregl.StyleSpecification;
@@ -64,7 +64,7 @@ export const StaticMap: React.FC<{
         {geojsonWithStyleList &&
           geojsonWithStyleList.map((geojsonWithStyle) => {
             return (
-              <GeoJsonToMarkers
+              <GeoJsonToSourceLayer
                 key={geojsonWithStyle.id}
                 geojson={geojsonWithStyle.geojson}
                 style={geojsonWithStyle.style}

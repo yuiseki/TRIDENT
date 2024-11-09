@@ -1,6 +1,6 @@
 import { FeatureCollection } from "geojson";
 import * as turf from "@turf/turf";
-import { GeoJsonToMarkers } from "../GeoJsonToMarkers";
+import { GeoJsonToSourceLayer } from "../GeoJsonToSourceLayer";
 import { useEffect, useRef, useState } from "react";
 import { TridentMapsStyle } from "@/types/TridentMaps";
 import { StaticMap } from "../StaticMap";

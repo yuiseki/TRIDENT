@@ -2,7 +2,7 @@
 
 import { BaseMap } from "@/components/BaseMap";
 import { DialogueElementView } from "@/components/DialogueElementView";
-import { GeoJsonToMarkers } from "@/components/GeoJsonToMarkers";
+import { GeoJsonToSourceLayer } from "@/components/GeoJsonToSourceLayer";
 import { TextInput } from "@/components/TextInput";
 import { DialogueElement } from "@/types/DialogueElement";
 import { nextPostJson, nextPostJsonWithCache } from "@/utils/nextPostJson";
@@ -391,7 +391,7 @@ export default function Home() {
               {geojsonWithStyleList &&
                 geojsonWithStyleList.map((geojsonWithStyle) => {
                   return (
-                    <GeoJsonToMarkers
+                    <GeoJsonToSourceLayer
                       key={geojsonWithStyle.id}
                       geojson={geojsonWithStyle.geojson}
                       style={geojsonWithStyle.style}
