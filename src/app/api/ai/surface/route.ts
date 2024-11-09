@@ -19,7 +19,7 @@ export async function POST(request: Request) {
 
   console.log("");
   console.log("chatHistoryLines:");
-  console.log(chatHistoryLines);
+  console.log(chatHistoryLines.join("\n"));
 
   let llm: ChatOpenAI;
   let embeddings: OpenAIEmbeddings;

@@ -412,8 +412,10 @@ export default function Home() {
                     }}
                   />
                 )}
-                {(!responding && !mapping && dialogueList.length > 1) ||
-                  (ability && ["apology", "ask-more"].includes(ability) && (
+                {!responding &&
+                  !mapping &&
+                  dialogueList.length > 1 &&
+                  !(ability && ["apology", "ask-more"].includes(ability)) && (
                     <InputPredict
                       dialogueList={dialogueList}
                       onUpdateSuggestions={() => {
@@ -424,7 +426,7 @@ export default function Home() {
                         onSubmit(value);
                       }}
                     />
-                  ))}
+                  )}
               </LocationProvider>
               <div style={{ height: "1px" }} ref={dialogueEndRef} />
             </div>
