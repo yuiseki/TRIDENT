@@ -88,11 +88,18 @@ div.overlay {
     rgb(var(--background-start-rgb));
 }
 
+.blinkingCursor {
+  margin: 0;
+  padding: 0;
+}
+
 .blinkingCursor::after {
+  position: relative;
+  top: 4px;
   content: "";
   width: 10px;
-  height: 1.17em;
-  margin-top: 4px;
+  height: 1.1em;
+  margin-top: 0;
   margin-left: 4px;
   background: rgba(0, 158, 219, 1);
   display: inline-block;
