@@ -14,8 +14,6 @@ export const InputPredict: React.FC<{
   const [requesting, setRequesting] = useState(false);
   const [suggests, setSuggests] = useState<string[] | undefined>(undefined);
 
-  console.log("pastMessages", dialogueList);
-
   useEffect(() => {
     if (requesting) {
       return;
