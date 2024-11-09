@@ -3,23 +3,20 @@ import { nextPostJsonWithCache } from "@/utils/nextPostJson";
 import { useContext, useEffect, useState } from "react";
 
 import styles from "./styles.module.scss";
+import { DialogueElement } from "@/types/DialogueElement";
 
 export const InputPredict: React.FC<{
-  pastMessages?: any[];
+  dialogueList: DialogueElement[];
   onUpdateSuggestions?: () => void;
   onSelect?: (value: string) => void;
-}> = ({ pastMessages, onUpdateSuggestions, onSelect }) => {
+}> = ({ dialogueList, onUpdateSuggestions, onSelect }) => {
   const locationInfo = useContext(LocationContext);
   const [requesting, setRequesting] = useState(false);
   const [suggests, setSuggests] = useState<string[] | undefined>(undefined);
 
+  console.log("pastMessages", dialogueList);
+
   useEffect(() => {
-    if (!pastMessages) {
-      return;
-    }
-    if (pastMessages.length === 0) {
-      return;
-    }
     if (requesting) {
       return;
     }
@@ -28,7 +25,10 @@ export const InputPredict: React.FC<{
       const resJson = await nextPostJsonWithCache("/api/ai/suggests", {
         lang: window.navigator.language,
         location: locationInfo.location,
-        pastMessages: JSON.stringify(pastMessages),
+        dialogueList: dialogueList
+          .filter((d) => d.who === "user")
+          .map((d) => d.text)
+          .join("\n"),
       });
       if (!resJson.suggests) {
         return;
@@ -39,7 +39,7 @@ export const InputPredict: React.FC<{
       setRequesting(false);
     };
     thisEffect();
-  }, [locationInfo, onUpdateSuggestions, pastMessages, requesting]);
+  }, [dialogueList, locationInfo, onUpdateSuggestions, requesting]);
 
   return (
     <>

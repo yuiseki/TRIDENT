@@ -1,5 +1,5 @@
 export type DialogueElement = {
-  who: string;
+  who: "user" | "assistant";
   text: string;
   textEnd?: string;
 };

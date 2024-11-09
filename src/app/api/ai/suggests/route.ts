@@ -5,7 +5,6 @@ import {
   loadTridentSuggestChain,
 } from "@/utils/langchain/chains/suggest";
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { parsePastMessagesToLines } from "@/utils/trident/parsePastMessagesToLines";
 import { VercelPostgres } from "@langchain/community/vectorstores/vercel_postgres";
 import {
   createCheckDocumentExists,
@@ -19,12 +18,7 @@ export async function POST(request: Request) {
   const reqJson = await request.json();
   const lang = reqJson.lang;
   const location = reqJson.location;
-  const pastMessagesJsonString = reqJson.pastMessages;
-
-  const chatHistoryLines = parsePastMessagesToLines(
-    pastMessagesJsonString,
-    true
-  );
+  const chatHistoryLines = reqJson.dialogueList;
 
   let input = "";
 

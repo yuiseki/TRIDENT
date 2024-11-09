@@ -398,21 +398,18 @@ export default function Home() {
                     }}
                   />
                 )}
-                {pastMessages &&
-                  pastMessages.length > 1 &&
-                  !responding &&
-                  !mapping && (
-                    <InputPredict
-                      pastMessages={pastMessages}
-                      onUpdateSuggestions={() => {
-                        scrollToBottom();
-                      }}
-                      onSelect={(value: string) => {
-                        setInputText(value);
-                        onSubmit(value);
-                      }}
-                    />
-                  )}
+                {!responding && !mapping && dialogueList.length > 1 && (
+                  <InputPredict
+                    dialogueList={dialogueList}
+                    onUpdateSuggestions={() => {
+                      scrollToBottom();
+                    }}
+                    onSelect={(value: string) => {
+                      setInputText(value);
+                      onSubmit(value);
+                    }}
+                  />
+                )}
               </LocationProvider>
               <div style={{ height: "1px" }} ref={dialogueEndRef} />
             </div>
