@@ -26,6 +26,7 @@ import { greetings } from "@/constants/Greetings";
 import { untitledMaps } from "@/constants/UntitledMap";
 import { tridentPlaceholders } from "@/constants/TridentPlaceholder";
 import { useScrollToBottom } from "@/hooks/scrollToBottom";
+import { parseSurfaceResJson } from "@/utils/trident/parseSurfaceResJson";
 
 export default function Home() {
   // all state
@@ -63,6 +64,8 @@ export default function Home() {
   const dialogueEndRef = useRef<HTMLDivElement | null>(null);
   const [dialogueList, setDialogueList] = useState<DialogueElement[]>([]);
   const scrollToBottom = useScrollToBottom(dialogueEndRef);
+
+  const [ability, setAbility] = useState<string | undefined>(undefined);
 
   // communication state
   const [responding, setResponding] = useState(false);
@@ -121,15 +124,22 @@ export default function Home() {
         surface: string;
         history: Array<string>;
       } = await surfaceRes.json();
-      console.log(surfaceResJson);
       setPastMessages(surfaceResJson.history);
+      console.log(surfaceResJson);
+      const { ability, reply } = parseSurfaceResJson(surfaceResJson);
       insertNewDialogue(
         {
           who: "assistant",
-          text: surfaceResJson.surface,
+          text: reply,
         },
         false
       );
+      setAbility(ability);
+      if (["apology", "ask-more"].includes(ability)) {
+        setResponding(false);
+        setMapping(false);
+        return;
+      }
       setMapping(true);
       setResponding(true);
 
@@ -402,18 +412,19 @@ export default function Home() {
                     }}
                   />
                 )}
-                {!responding && !mapping && dialogueList.length > 1 && (
-                  <InputPredict
-                    dialogueList={dialogueList}
-                    onUpdateSuggestions={() => {
-                      scrollToBottom();
-                    }}
-                    onSelect={(value: string) => {
-                      setInputText(value);
-                      onSubmit(value);
-                    }}
-                  />
-                )}
+                {(!responding && !mapping && dialogueList.length > 1) ||
+                  (ability && ["apology", "ask-more"].includes(ability) && (
+                    <InputPredict
+                      dialogueList={dialogueList}
+                      onUpdateSuggestions={() => {
+                        scrollToBottom();
+                      }}
+                      onSelect={(value: string) => {
+                        setInputText(value);
+                        onSubmit(value);
+                      }}
+                    />
+                  ))}
               </LocationProvider>
               <div style={{ height: "1px" }} ref={dialogueEndRef} />
             </div>
