@@ -5,7 +5,6 @@ import {
   loadTridentInnerChain,
 } from "@/utils/langchain/chains/inner";
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { parsePastMessagesToLines } from "@/utils/trident/parsePastMessagesToLines";
 import { VercelPostgres } from "@langchain/community/vectorstores/vercel_postgres";
 import {
   createCheckDocumentExists,
@@ -18,7 +17,9 @@ export async function POST(request: Request) {
 
   const reqJson = await request.json();
   const pastMessagesJsonString = reqJson.pastMessages;
-  const chatHistoryLines = pastMessagesJsonString;
+  const chatHistoryLines = pastMessagesJsonString
+    ? JSON.parse(pastMessagesJsonString)
+    : [];
 
   console.log("");
   console.log("chatHistoryLines:");
@@ -60,7 +61,7 @@ export async function POST(request: Request) {
   });
 
   const chain = await loadTridentInnerChain({ llm, vectorStore });
-  const result = await chain.invoke({ input: chatHistoryLines });
+  const result = await chain.invoke({ input: chatHistoryLines.join("\n") });
   console.log(result.text);
   console.log("");
 

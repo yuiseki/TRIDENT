@@ -67,7 +67,7 @@ export default function Home() {
   // communication state
   const [responding, setResponding] = useState(false);
   const [mapping, setMapping] = useState(false);
-  const [pastMessages, setPastMessages] = useState<Array<any> | undefined>();
+  const [pastMessages, setPastMessages] = useState<Array<string> | undefined>();
 
   // input ref and state
   const [inputText, setInputText] = useState("");
@@ -119,12 +119,10 @@ export default function Home() {
       });
       const surfaceResJson: {
         surface: string;
-        history: Array<any>;
+        history: Array<string>;
       } = await surfaceRes.json();
       console.log(surfaceResJson);
-      setPastMessages((prev) => {
-        return [prev, surfaceResJson.history].flat().filter((v) => v);
-      });
+      setPastMessages(surfaceResJson.history);
       insertNewDialogue(
         {
           who: "assistant",

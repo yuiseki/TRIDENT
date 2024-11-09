@@ -3,7 +3,6 @@ import { loadTridentSurfaceChain } from "@/utils/langchain/chains/surface";
 // using openai
 import { ChatOpenAI } from "@langchain/openai";
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { parsePastMessagesToLines } from "@/utils/trident/parsePastMessagesToLines";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
 
 export async function POST(request: Request) {
@@ -11,10 +10,12 @@ export async function POST(request: Request) {
   console.log("----- start surface -----");
 
   const reqJson = await request.json();
-  const query = reqJson.query;
+  const query = reqJson.query as string;
   const pastMessagesJsonString = reqJson.pastMessages;
-  let chatHistoryLines = pastMessagesJsonString;
-  chatHistoryLines = chatHistoryLines + "\nHuman: " + query;
+  let chatHistoryLines = pastMessagesJsonString
+    ? (JSON.parse(pastMessagesJsonString) as string[])
+    : [];
+  chatHistoryLines.push(query);
 
   console.log("");
   console.log("chatHistoryLines:");
@@ -45,7 +46,9 @@ export async function POST(request: Request) {
     llm,
     vectorStore,
   });
-  const surfaceResult = await surfaceChain.invoke({ input: chatHistoryLines });
+  const surfaceResult = await surfaceChain.invoke({
+    input: chatHistoryLines.join("\n"),
+  });
 
   console.log("Human:", query);
   console.log("AI:", surfaceResult.text);
