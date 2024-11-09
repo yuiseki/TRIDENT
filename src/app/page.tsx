@@ -22,27 +22,9 @@ import { LegalNotice } from "@/components/LegalNotice";
 import { InputSuggest } from "@/components/InputSuggest";
 import { InputPredict } from "@/components/InputPredict";
 import { LocationProvider } from "@/contexts/LocationContext";
-
-const greetings = {
-  en: "Welcome! I'm TRIDENT, interactive Smart Maps assistant. Could you indicate me the areas and themes you want to see as the map?",
-  ja: "ようこそ！私は対話型スマート地図アシスタント、TRIDENTです。地図に表示したいエリアやテーマを教えてください。",
-  ch: "欢迎您！我是互动智能地图助理 TRIDENT。您能告诉我您想在地图上看到的区域和主题吗？",
-  fr: "Bienvenue! Je suis TRIDENT, assistant de cartes intelligentes interactives. Pourriez-vous m'indiquer les zones et les thèmes que vous souhaitez voir sur la carte?",
-};
-
-const untitledMaps = {
-  en: "Untitled Map",
-  ja: "無題の地図",
-  ch: "无标题地图",
-  fr: "Carte sans titre",
-};
-
-const placeholders = {
-  en: "Show embassies in Lebanon",
-  ja: "レバノンの大使館を表示して",
-  ch: "在黎巴嫩显示大使馆",
-  fr: "Afficher les ambassades au Liban",
-};
+import { greetings } from "@/constants/Greetings";
+import { untitledMaps } from "@/constants/UntitledMap";
+import { tridentPlaceholders } from "@/constants/TridentPlaceholder";
 
 export default function Home() {
   // all state
@@ -339,21 +321,21 @@ export default function Home() {
 
       let greeting = greetings.en;
       let initialTitle = untitledMaps.en;
-      let placeholder = placeholders.en;
+      let placeholder = tridentPlaceholders.en;
       if (window) {
         const language = window.navigator.language;
         if (language.includes("ja")) {
           greeting = greetings.ja;
           initialTitle = untitledMaps.ja;
-          placeholder = placeholders.ja;
+          placeholder = tridentPlaceholders.ja;
         } else if (language.includes("ch")) {
           greeting = greetings.ch;
           initialTitle = untitledMaps.ch;
-          placeholder = placeholders.ch;
+          placeholder = tridentPlaceholders.ch;
         } else if (language.includes("fr")) {
           greeting = greetings.fr;
           initialTitle = untitledMaps.fr;
-          placeholder = placeholders.fr;
+          placeholder = tridentPlaceholders.fr;
         }
       }
 
@@ -450,7 +432,7 @@ export default function Home() {
                   ? "..."
                   : mapInputPlaceholder
                   ? mapInputPlaceholder
-                  : placeholders.en
+                  : tridentPlaceholders.en
               }
               inputText={inputText}
               setInputText={setInputText}
