@@ -1,7 +1,6 @@
-import { Embeddings } from "@langchain/core/embeddings";
 import { SemanticSimilarityExampleSelector } from "@langchain/core/example_selectors";
 import { FewShotPromptTemplate, PromptTemplate } from "@langchain/core/prompts";
-import { MemoryVectorStore } from "langchain/vectorstores/memory";
+import { VectorStore } from "@langchain/core/vectorstores";
 
 export const tridentSurfaceExampleList: Array<{
   input: string;
@@ -16,6 +15,11 @@ export const tridentSurfaceExampleList: Array<{
     input: "ニューヨークの地図を表示して",
     output:
       "了解しました。OpenStreetMapのデータに基づいてニューヨーク市を表示する地図を作成しています。しばらくお待ちください……",
+  },
+  {
+    input: "台東区を表示して",
+    output:
+      "了解しました。OpenStreetMapのデータに基づいて台東区を表示する地図を作成しています。しばらくお待ちください……",
   },
   {
     input: "显示纽约地图",
@@ -42,10 +46,9 @@ You will always reply according to the following rules:
 
 ### Examples: ###`;
 
-export const loadTridentSurfacePrompt = async (embeddings: Embeddings) => {
-  const memoryVectorStore = new MemoryVectorStore(embeddings);
+export const loadTridentSurfacePrompt = async (vectorStore: VectorStore) => {
   const exampleSelector = new SemanticSimilarityExampleSelector({
-    vectorStore: memoryVectorStore,
+    vectorStore: vectorStore,
     k: 3,
     inputKeys: ["input"],
   });
@@ -69,10 +72,13 @@ AI:
     suffix: `
 ### Current conversation: ###
 
-{history}
-Human: {input}
-AI: `,
-    inputVariables: ["history", "input"],
+Human:
+{input}
+
+AI:
+`,
+    inputVariables: ["input"],
   });
+
   return dynamicPrompt;
 };
