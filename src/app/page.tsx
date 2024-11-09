@@ -105,6 +105,7 @@ export default function Home() {
       await sleep(200);
       scrollToBottom();
 
+      // invoke surface layer
       const surfaceRes = await nextPostJson("/api/ai/surface", {
         query: newInputText,
         pastMessages: pastMessages ? JSON.stringify(pastMessages) : undefined,
@@ -128,6 +129,8 @@ export default function Home() {
       );
       setMapping(true);
       setResponding(true);
+
+      // invoke inner layer
       const innerRes = await nextPostJson("/api/ai/inner", {
         pastMessages: JSON.stringify(surfaceResJson.history),
         bounds: JSON.stringify(mapRef.current?.getBounds()),
@@ -161,6 +164,7 @@ export default function Home() {
         setPageTitle(newMapTitle ? `${newMapTitle} | TRIDENT` : "TRIDENT");
       }
 
+      // invoke deep layer by each item of linesWithAreaAndOrConcern
       linesWithAreaAndOrConcern.map(async (line: string, idx: number) => {
         let style = {};
         Object.keys(styles).map((concern) => {
