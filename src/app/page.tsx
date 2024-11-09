@@ -283,6 +283,7 @@ export default function Home() {
     }, 500);
   }, [geojsonWithStyleList, showingFloatingChat]);
 
+  // initialize at mount
   useEffect(() => {
     if (!mounted) {
       setMounted(true);
