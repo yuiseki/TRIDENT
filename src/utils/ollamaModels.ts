@@ -34,16 +34,16 @@ export const ollamaModels: LLMModel[] = [
     modelDirName: "llama3.2/3b",
   },
   {
-    modelName: "qwen2.5:0.5b",
-    modelDirName: "qwen2.5/0.5b",
-  },
-  {
     modelName: "phi3.5:3.8b",
     modelDirName: "phi3.5/3.8b",
   },
   {
     modelName: "phi3:3.8b",
     modelDirName: "phi3/3.8b",
+  },
+  {
+    modelName: "qwen2.5:0.5b",
+    modelDirName: "qwen2.5/0.5b",
   },
   {
     modelName: "qwen2.5:1.5b",
