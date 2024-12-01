@@ -50,6 +50,10 @@ export const ollamaModels: LLMModel[] = [
     modelDirName: "qwen2.5/1.5b",
   },
   {
+    modelName: "qwen2.5:7b",
+    modelDirName: "qwen2.5/7b",
+  },
+  {
     modelName: "smollm:1.7b",
     modelDirName: "smollm/1.7b",
   },
