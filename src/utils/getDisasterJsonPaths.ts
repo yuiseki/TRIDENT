@@ -21,6 +21,5 @@ export const getDisasterJsonPaths = async () => {
     }
   };
   await walk(disastersBaseDir);
-  console.info("disasterJsonPaths:", disasterJsonPaths.length);
   return disasterJsonPaths;
 };

@@ -6,19 +6,22 @@ import { LLMModel } from "../../src/types/LLMModel.ts";
 import { getDisasterJsonPaths } from "../../src//utils/getDisasterJsonPaths.ts";
 import { ollamaModels } from "../../src/utils/ollamaModels.ts";
 import { ChatOllama } from "@langchain/ollama";
+import { OllamaEmbeddings } from "@langchain/ollama";
+import { loadAreaExtractorChain } from "../../src/utils/langchain/chains/loadAreaExtractorChain/index.ts";
 
 const disasterJsonPaths = await getDisasterJsonPaths();
 
-const getOllamaLlm = async (llmModel: LLMModel) => {
+const getOllamaModel = async (llmModel: LLMModel) => {
   const { modelName } = llmModel;
-  const llm = new ChatOllama({
+  const model = new ChatOllama({
     model: modelName,
     temperature: 0.0,
     repeatPenalty: 1.1,
-    numCtx: 1024,
+    numCtx: 2048,
     numPredict: 128,
+    stop: ["\n\n"],
   });
-  return llm;
+  return model;
 };
 
 const extractAffectedAreasFromDisasters = async (
@@ -26,99 +29,87 @@ const extractAffectedAreasFromDisasters = async (
   disasterDescription: string
 ) => {
   console.log(`>>>>> ----- ----- ${llmModel.modelName} ----- ----- -----`);
-  const llm = await getOllamaLlm(llmModel);
-  const affectedAreas = await llm.invoke(
-    `You are a text mining system that extracts only the affected areas from descriptions of disasters.
+  const llm = await getOllamaModel(llmModel);
+  const embeddings = new OllamaEmbeddings({
+    model: "snowflake-arctic-embed:22m",
+  });
+  const chain = await loadAreaExtractorChain({
+    llm,
+    embeddings,
+  });
+  const result = await chain.invoke({ input: disasterDescription });
 
-### Rules ###
-
-You will always reply according to the following rules:
-- You MUST reply only with the affected areas.
-- You MUST specify which country if the area is a state or province.
-- You MUST ALWAYS respond in a Markdown list format.
-- You MUST represent one area per one line.
-
-### Disaster Description ###
-${disasterDescription}
-
-### Examples of Output ###
-- Japan
-- Tokyo, Japan
-- Taito, Tokyo, Japan
-- Kanagawa Prefecture, Japan
-- Yokohama, Kanagawa Prefecture, Japan
-- Chiba City, Chiba Prefecture, Japan
-- Afghanistan
-- Kabul Province, Afghanistan
-- Panjshir Province, Afghanistan
-- Parwan Province, Afghanistan
-- Jalalabad, Nangarhar Province, Afghanistan
-- Nangarhar Province, Afghanistan
-- Kunar Province, Afghanistan
-
-### Rules ###
-
-You will always reply according to the following rules:
-- You MUST reply only with the affected areas.
-- You MUST specify which country if the area is a state or province.
-- You MUST ALWAYS respond in a Markdown list format.
-- You MUST represent one area per one line.
-
-### Disaster Affected areas (Markdown list format) ###`,
-    {
-      stop: ["\n\n"],
-    }
-  );
-  console.log(affectedAreas.content);
+  console.log(result.content);
   console.log(`----- ----- ----- ${llmModel.modelName} ----- ----- <<<<<`);
   console.log("\n");
 };
 
-for (const disasterJsonPath of disasterJsonPaths) {
-  let disasterListJson;
-  try {
-    disasterListJson = JSON.parse(await fs.readFile(disasterJsonPath, "utf-8"));
-  } catch (error) {
-    console.error("error:", error);
+for (const llmModel of ollamaModels) {
+  // gemma2:2b や qwen2.5:1.5b から 2000000000, 1500000000 というパラメーターサイズを得る
+  let modelParamSize;
+  if (llmModel.modelName.endsWith("b")) {
+    modelParamSize =
+      parseFloat(llmModel.modelName.split(":")[1].replace("b", "")) *
+      1000000000;
+  }
+  if (llmModel.modelName.endsWith("m")) {
+    modelParamSize =
+      parseFloat(llmModel.modelName.split(":")[1].replace("m", "")) * 1000000;
+  }
+  // 2000000000 よりの大きかったらスキップ
+  if (!modelParamSize) {
     continue;
   }
-  for (const disasterData of disasterListJson) {
-    if (disasterData.fields.status === "past") {
-      continue;
-    }
-    if (disasterData.fields.primary_country === undefined) {
-      continue;
-    }
-    // disasterData.fields.date.changedの日付を取得
-    const disasterDateChanged = new Date(disasterData.fields.date.changed);
-    // disasterDateChangedが一週間前より古かったらスキップ
-    const dateOneWeekAgo = new Date();
-    dateOneWeekAgo.setDate(dateOneWeekAgo.getDate() - 7);
-    if (disasterDateChanged < dateOneWeekAgo) {
-      continue;
-    }
-    // disasterData.idの文字列を取得
-    const disasterId = disasterData.id;
-    // disasterData.fields.nameの文字列を取得
-    const disasterName = disasterData.fields.name;
-    // disasterData.fields.primary_country.nameの文字列を取得
-    const disasterPrimaryCountryName = disasterData.fields.primary_country.name;
-    // disasterData.fields.primary_type.nameの文字列を取得
-    const disasterTypeName = disasterData.fields.primary_type.name;
-    // disasterData.fields.descriptionの文字列を取得
-    const disasterDescription = `${disasterName}
-${disasterPrimaryCountryName}
-${disasterTypeName}
+  console.log("modelName:", llmModel.modelName);
+  console.log("modelParamSize:", modelParamSize);
+  if (modelParamSize > 2000000000) {
+    continue;
+  }
 
-${disasterData.fields.description}`;
-    console.log("===== ===== ===== =====");
-    console.log("===== ===== ===== =====");
-    console.log(disasterJsonPath);
-    // disasterIdとdisasterNameとdisasterPrimaryCountryNameとdisasterTypeNameを改行区切りで出力
-    console.log(
-      `${disasterId}\n${disasterName}\n${disasterPrimaryCountryName}\n${disasterTypeName}`
-    );
-    for (const llmModel of ollamaModels) {
+  for (const disasterJsonPath of disasterJsonPaths.reverse()) {
+    let disasterListJson;
+    try {
+      disasterListJson = JSON.parse(
+        await fs.readFile(disasterJsonPath, "utf-8")
+      );
+    } catch (error) {
+      console.error("error:", error);
+      continue;
+    }
+    for (const disasterData of disasterListJson) {
+      if (disasterData.fields.status !== "ongoing") {
+        continue;
+      }
+
+      const disasterId = disasterListJson[0].id;
+      const disasterName = disasterListJson[0].fields.name;
+      const disasterCountries = disasterListJson[0].fields.country
+        .map((c: any) => c.shortname)
+        .join(", ");
+      const disasterTypes = disasterListJson[0].fields.type
+        .map((t: any) => t.name)
+        .join(", ");
+      const disasterOverview = disasterListJson[0].fields.profile.overview;
+      const disasterDescription = `# ${disasterName}
+Countries: ${disasterCountries}
+Types: ${disasterTypes}
+
+${disasterOverview}`;
+
+      console.log("===== ===== ===== =====");
+      console.log("===== ===== ===== =====");
+      console.log("description length", disasterDescription.length);
+      // lengthが 2000 文字以上だったらスキップ
+      if (disasterDescription.length > 2000) {
+        continue;
+      }
+      // disasterIdとdisasterNameとdisasterPrimaryCountryNameとdisasterTypeNameを改行区切りで出力
+      console.log(
+        `ID: ${disasterId}
+Name: ${disasterName}
+Countries: ${disasterCountries}
+Types: ${disasterTypes}`
+      );
       await extractAffectedAreasFromDisasters(llmModel, disasterDescription);
     }
   }
