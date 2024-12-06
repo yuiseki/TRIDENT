@@ -42,6 +42,18 @@ export const ollamaModels: LLMModel[] = [
     modelDirName: "phi3/3.8b",
   },
   {
+    modelName: "qwen2.5-coder:0.5b",
+    modelDirName: "qwen2.5-coder/0.5b",
+  },
+  {
+    modelName: "qwen2.5-coder:1.5b",
+    modelDirName: "qwen2.5-coder/1.5b",
+  },
+  {
+    modelName: "qwen2.5-coder:7b",
+    modelDirName: "qwen2.5-coder/7b",
+  },
+  {
     modelName: "qwen2.5:0.5b",
     modelDirName: "qwen2.5/0.5b",
   },
