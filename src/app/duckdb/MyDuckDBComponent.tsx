@@ -265,9 +265,6 @@ const ChatMapWithDuckDB: React.FC<{ db: duckdb.AsyncDuckDB }> = ({ db }) => {
   const [inputText, setInputText] = useState<string>("");
   const [lastInputText, setLastInputText] = useState<string | null>(null);
   const [query, setQuery] = useState<string | null>(null);
-  const [tableSchemes, setTableSchemes] = useState<
-    MyDuckDBTableSchema[] | null
-  >(null);
   const [summaryOfTableSchemes, setSummaryOfTableSchemes] = useState<
     string | null
   >(null);
@@ -295,7 +292,6 @@ const ChatMapWithDuckDB: React.FC<{ db: duckdb.AsyncDuckDB }> = ({ db }) => {
           ) as MyDuckDBTableColumn[],
         });
       }
-      setTableSchemes(newTableSchemes);
       const summaryOfTableSchemes =
         "Summary of tables:" +
         newTableSchemes.map((tableScheme) => {
