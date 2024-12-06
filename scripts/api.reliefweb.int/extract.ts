@@ -41,7 +41,6 @@ const extractAffectedAreasFromDisasters = async (
 
   console.log(result.content);
   console.log(`----- ----- ----- ${llmModel.modelName} ----- ----- <<<<<`);
-  console.log("\n");
 };
 
 for (const llmModel of ollamaModels) {
@@ -95,14 +94,12 @@ Countries: ${disasterCountries}
 Types: ${disasterTypes}
 
 ${disasterOverview}`;
-
-      console.log("===== ===== ===== =====");
-      console.log("===== ===== ===== =====");
-      console.log("description length", disasterDescription.length);
       // lengthが 2000 文字以上だったらスキップ
       if (disasterDescription.length > 2000) {
         continue;
       }
+      console.log("===== ===== ===== =====");
+      console.log("description length", disasterDescription.length);
       // disasterIdとdisasterNameとdisasterPrimaryCountryNameとdisasterTypeNameを改行区切りで出力
       console.log(
         `ID: ${disasterId}
