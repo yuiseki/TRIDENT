@@ -59,11 +59,11 @@ for (const llmModel of ollamaModels) {
   if (!modelParamSize) {
     continue;
   }
-  console.log("modelName:", llmModel.modelName);
-  console.log("modelParamSize:", modelParamSize);
   if (modelParamSize > 2000000000) {
     continue;
   }
+  console.log("modelName:", llmModel.modelName);
+  console.log("modelParamSize:", modelParamSize);
 
   for (const disasterJsonPath of disasterJsonPaths.reverse()) {
     let disasterListJson;
