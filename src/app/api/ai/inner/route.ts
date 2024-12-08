@@ -3,7 +3,7 @@ import { ChatOpenAI } from "@langchain/openai";
 import {
   initializeTridentInnerExampleList,
   loadTridentInnerChain,
-} from "@/utils/langchain/chains/inner";
+} from "@/utils/langchain/chains/loadTridentInnerChain";
 import { OpenAIEmbeddings } from "@langchain/openai";
 import { VercelPostgres } from "@langchain/community/vectorstores/vercel_postgres";
 import {

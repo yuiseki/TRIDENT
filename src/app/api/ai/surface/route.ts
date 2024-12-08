@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { loadTridentSurfaceChain } from "@/utils/langchain/chains/surface";
+import { loadTridentSurfaceChain } from "@/utils/langchain/chains/loadTridentSurfaceChain";
 // using openai
 import { ChatOpenAI } from "@langchain/openai";
 import { OpenAIEmbeddings } from "@langchain/openai";

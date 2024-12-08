@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import {
   initializeTridentDeepExampleList,
   loadTridentDeepChain,
-} from "@/utils/langchain/chains/deep";
+} from "@/utils/langchain/chains/loadTridentDeepChain";
 import { ChatOpenAI } from "@langchain/openai";
 import { OpenAIEmbeddings } from "@langchain/openai";
 import { VercelPostgres } from "@langchain/community/vectorstores/vercel_postgres";
