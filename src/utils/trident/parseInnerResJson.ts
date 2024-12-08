@@ -7,8 +7,8 @@ export const parseInnerResJson = (innerResJson: {
       color?: string;
     };
   };
-  linesWithTitle: string[];
-  linesWithConfirm: string[];
+  mapTitle?: string;
+  confirmMessage: string;
   linesWithAreaAndOrConcern: string[];
 } => {
   const styles: {
@@ -42,11 +42,22 @@ export const parseInnerResJson = (innerResJson: {
   const linesWithTitle = lines.filter((line: string) =>
     line.includes("TitleOfMap:")
   );
+  let mapTitle = undefined;
+  if (linesWithTitle.length > 0) {
+    mapTitle = linesWithTitle[0].split(":")[1];
+  }
 
   // determine confirm message
   const linesWithConfirm = lines.filter((line: string) =>
     line.includes("ConfirmHelpful:")
   );
+  let confirmMessage = undefined;
+  if (linesWithConfirm.length > 0) {
+    confirmMessage = linesWithConfirm[0].split(":")[1];
+  }
+  if (!confirmMessage) {
+    confirmMessage = "Mapping has been completed. Have we been helpful to you? Do you have any other requests?";
+  }
 
   const linesWithAreaAndOrConcern = lines.filter((line: string) =>
     line.includes("Area")
@@ -54,8 +65,8 @@ export const parseInnerResJson = (innerResJson: {
 
   return {
     styles,
-    linesWithTitle,
-    linesWithConfirm,
+    mapTitle,
+    confirmMessage,
     linesWithAreaAndOrConcern,
   };
 };

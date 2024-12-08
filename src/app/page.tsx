@@ -122,17 +122,12 @@ export default function Home() {
 
       setMapping(true);
 
-      const {
-        styles,
-        linesWithTitle,
-        linesWithConfirm,
-        linesWithAreaAndOrConcern,
-      } = parseInnerResJson(innerResJson);
+      const { styles, mapTitle, confirmMessage, linesWithAreaAndOrConcern } =
+        parseInnerResJson(innerResJson);
 
-      if (linesWithTitle.length > 0) {
-        const newMapTitle = linesWithTitle[0].split(":")[1];
-        setMapTitle(newMapTitle);
-        setPageTitle(newMapTitle ? `${newMapTitle} | TRIDENT` : "TRIDENT");
+      if (mapTitle) {
+        setMapTitle(mapTitle);
+        setPageTitle(mapTitle ? `${mapTitle} | TRIDENT` : "TRIDENT");
       }
 
       // invoke deep layer by each item of linesWithAreaAndOrConcern
@@ -177,10 +172,7 @@ export default function Home() {
               insertNewDialogue(
                 {
                   who: "assistant",
-                  text:
-                    linesWithConfirm.length > 0
-                      ? linesWithConfirm[0].split(":")[1]
-                      : "Mapping has been completed. Have we been helpful to you? Do you have any other requests?",
+                  text: confirmMessage,
                 },
                 false
               );
