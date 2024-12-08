@@ -4,7 +4,7 @@ import { BaseLanguageModel } from "@langchain/core/language_models/base";
 import { FewShotPromptTemplate, PromptTemplate } from "@langchain/core/prompts";
 import { RunnableSequence } from "@langchain/core/runnables";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
-import { areaExtractExamples } from "./areaExtractExamples.ts";
+import { areaExtractExamples } from "./examples.ts";
 
 export const setupAreaExtractorDynamicPrompt = async (
   embeddings: Embeddings
