@@ -199,6 +199,7 @@ export default function Home() {
 
   const onSubmit = useCallback(async () => {
     const newInputText = inputText.trim();
+    console.log("newInputText", newInputText);
 
     setInputText("");
     setResponding(true);
@@ -245,6 +246,15 @@ export default function Home() {
     pastMessages,
     scrollToBottom,
   ]);
+
+  const onSelect = useCallback((newText: string) => {
+    setInputText(newText);
+    /*
+    setTimeout(() => {
+      onSubmit();
+    }, 200);
+    */
+  }, []);
 
   // fit bounds to all geojson in the geojsonWithStyleList
   useEffect(() => {
@@ -402,10 +412,7 @@ export default function Home() {
               <LocationProvider locationInfo={{ location: location }}>
                 {dialogueList.length === 1 && inputText.length === 0 && (
                   <InputSuggest
-                    onSelect={(value: string) => {
-                      setInputText(value);
-                      onSubmit();
-                    }}
+                    onSelect={onSelect}
                     onChangeLocation={(v) => {
                       setLocation(v);
                     }}
@@ -420,10 +427,7 @@ export default function Home() {
                       onUpdateSuggestions={() => {
                         scrollToBottom();
                       }}
-                      onSelect={(value: string) => {
-                        setInputText(value);
-                        onSubmit();
-                      }}
+                      onSelect={onSelect}
                     />
                   )}
               </LocationProvider>
