@@ -4,8 +4,8 @@ import { GeoJsonToSourceLayer } from "../GeoJsonToSourceLayer";
 import { useEffect, useRef, useState } from "react";
 import { TridentMapsStyle } from "@/types/TridentMaps";
 import { StaticMap } from "../StaticMap";
-import { getNominatimResponseJsonWithCache } from "@/utils/getNominatimResponse";
-import { getOverpassResponseJsonWithCache } from "@/utils/getOverpassResponse";
+import { getNominatimResponseJsonWithCache } from "@/lib/osm/getNominatim";
+import { getOverpassResponseJsonWithCache } from "@/lib/osm/getOverpass";
 import osmtogeojson from "osmtogeojson";
 
 export const StaticRegionsMap: React.FC<{

@@ -11,7 +11,7 @@ import { FeatureCollection } from "geojson";
 import { useLocalStorage } from "@/hooks/localStorage";
 import * as turf from "@turf/turf";
 import osmtogeojson from "osmtogeojson";
-import { getOverpassResponseJsonWithCache } from "@/utils/getOverpassResponse";
+import { getOverpassResponseJsonWithCache } from "@/lib/osm/getOverpass";
 import { BaseMap } from "@/components/BaseMap";
 import { GeoJsonToSourceLayer } from "@/components/GeoJsonToSourceLayer";
 import { usePathname, useRouter } from "next/navigation";

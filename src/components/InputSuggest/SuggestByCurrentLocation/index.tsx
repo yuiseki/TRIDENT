@@ -1,4 +1,4 @@
-import { getNominatimReverseResponseJsonWithCache } from "@/utils/getNominatimReverseResponse";
+import { getNominatimReverseResponseJsonWithCache } from "@/lib/osm/getNominatimReverse";
 import { nextPostJsonWithCache } from "@/utils/nextPostJson";
 import { useCallback, useEffect, useState } from "react";
 
