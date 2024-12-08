@@ -99,6 +99,8 @@ export default function Home() {
 
   const invokeOverpass = useCallback(
     async (history: string[]) => {
+      setMapping(true);
+      setResponding(true);
       // invoke inner layer
       const innerRes = await nextPostJson("/api/ai/inner", {
         pastMessages: JSON.stringify(history),
@@ -242,8 +244,6 @@ export default function Home() {
       setMapping(false);
       return;
     } else if (ability === "overpass-api") {
-      setMapping(true);
-      setResponding(true);
       await invokeOverpass(surfaceResJson.history);
     }
   }, [
