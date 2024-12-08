@@ -97,55 +97,11 @@ export default function Home() {
     []
   );
 
-  const onSubmit = useCallback(
-    async (newestInputText?: string) => {
-      let newInputText = inputText.trim();
-      if (newestInputText) {
-        newInputText = newestInputText;
-      }
-
-      setInputText("");
-      setResponding(true);
-      setMapping(true);
-
-      insertNewDialogue({ who: "user", text: newInputText });
-
-      await sleep(200);
-      scrollToBottom();
-
-      // invoke surface layer
-      const surfaceRes = await nextPostJson("/api/ai/surface", {
-        query: newInputText,
-        pastMessages: pastMessages ? JSON.stringify(pastMessages) : undefined,
-        bounds: JSON.stringify(mapRef.current?.getBounds()),
-        center: JSON.stringify(mapRef.current?.getCenter()),
-      });
-      const surfaceResJson: {
-        surface: string;
-        history: Array<string>;
-      } = await surfaceRes.json();
-      setPastMessages(surfaceResJson.history);
-      console.log(surfaceResJson);
-      const { ability, reply } = parseSurfaceResJson(surfaceResJson);
-      insertNewDialogue(
-        {
-          who: "assistant",
-          text: reply,
-        },
-        false
-      );
-      setAbility(ability);
-      if (["apology", "ask-more"].includes(ability)) {
-        setResponding(false);
-        setMapping(false);
-        return;
-      }
-      setMapping(true);
-      setResponding(true);
-
+  const invokeOverpass = useCallback(
+    async (history: string[]) => {
       // invoke inner layer
       const innerRes = await nextPostJson("/api/ai/inner", {
-        pastMessages: JSON.stringify(surfaceResJson.history),
+        pastMessages: JSON.stringify(history),
         bounds: JSON.stringify(mapRef.current?.getBounds()),
         center: JSON.stringify(mapRef.current?.getCenter()),
       });
@@ -244,8 +200,59 @@ export default function Home() {
         );
       });
     },
-    [inputText, insertNewDialogue, pastMessages, scrollToBottom]
+    [insertNewDialogue]
   );
+
+  const onSubmit = useCallback(async () => {
+    const newInputText = inputText.trim();
+
+    setInputText("");
+    setResponding(true);
+    setMapping(true);
+
+    insertNewDialogue({ who: "user", text: newInputText });
+
+    await sleep(200);
+    scrollToBottom();
+
+    // invoke surface layer
+    const surfaceRes = await nextPostJson("/api/ai/surface", {
+      query: newInputText,
+      pastMessages: pastMessages ? JSON.stringify(pastMessages) : undefined,
+      bounds: JSON.stringify(mapRef.current?.getBounds()),
+      center: JSON.stringify(mapRef.current?.getCenter()),
+    });
+    const surfaceResJson: {
+      surface: string;
+      history: Array<string>;
+    } = await surfaceRes.json();
+    setPastMessages(surfaceResJson.history);
+    console.log(surfaceResJson.history);
+    const { ability, reply } = parseSurfaceResJson(surfaceResJson);
+    insertNewDialogue(
+      {
+        who: "assistant",
+        text: reply,
+      },
+      false
+    );
+    setAbility(ability);
+    if (["apology", "ask-more"].includes(ability)) {
+      setResponding(false);
+      setMapping(false);
+      return;
+    } else if (ability === "overpass-api") {
+      setMapping(true);
+      setResponding(true);
+      await invokeOverpass(surfaceResJson.history);
+    }
+  }, [
+    inputText,
+    insertNewDialogue,
+    invokeOverpass,
+    pastMessages,
+    scrollToBottom,
+  ]);
 
   // fit bounds to all geojson in the geojsonWithStyleList
   useEffect(() => {
@@ -405,7 +412,7 @@ export default function Home() {
                   <InputSuggest
                     onSelect={(value: string) => {
                       setInputText(value);
-                      onSubmit(value);
+                      onSubmit();
                     }}
                     onChangeLocation={(v) => {
                       setLocation(v);
@@ -423,7 +430,7 @@ export default function Home() {
                       }}
                       onSelect={(value: string) => {
                         setInputText(value);
-                        onSubmit(value);
+                        onSubmit();
                       }}
                     />
                   )}
