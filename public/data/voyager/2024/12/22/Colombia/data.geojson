@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.07,
+          3.9
+        ]
+      },
+      "properties": {
+        "id": "52215",
+        "name": "Colombia: Floods - Nov 2024",
+        "status": "ongoing",
+        "description": "The Colombian government has declared a national state of emergency for the second time this year due to heavy rains and floods, primarily impacting Chocó and La Guajira. In Chocó, flooding from the Atrato, San Juan and Baudó rivers has affected more than 188,000 people, with strikes in five municipalities by a non-state armed group limiting mobility for at least 20,000 people. In La Guajira, flooding has affected at least 195,000 people, including migrants and refugees. Priority needs include food, shelter, clean water, cooking supplies, hygiene items, and healthcare. The Colombian government is leading the emergency response with support from the Humanitarian Country Team. Other climate-related emergencies are ongoing across the country, including water shortages in Bogotá and floods and landslides in Antioquia, Magdalena, Valle del Cauca, Meta, and Caldas. ([OCHA, 15 Nov 2024](https://reliefweb.int/node/4110842))\n\nUNOCHA reports, as of 25 November, around 28,500 displaced people and a total of approximately 383,300 affected people across 36 municipalities of the aforementioned affected departments. In addition, 105 schools have been damaged in the Chocó and the La Guajira departments. Over the next 48 hours, more heavy rainfall is forecast over most of the country. ([ECHO, 26 Nov 2024](https://reliefweb.int/node/4113419))\n\nThe impact of the rainy season in Chocó, a department in the Pacific region, continues to rise, affecting nearly 215,000 people. The most affected municipalities include Alto Baudó, Bojayá, Litoral del San Juan, Medio Baudó, Nóvita and Riosucio. The severe weather has destroyed 17,000 hectares of crops and caused the loss of 23,000 animals, severely compromising food security. Flooding has damaged more than 2,100 houses and destroyed more than 300, leaving nearly 3,600 families without access to public services. Overcrowding in relatives’ homes and inadequate waste management have increased the risk of tropical and infectious diseases, as well as incidents of violence, including sexual assault. Educational disruptions have impacted more than 47,000 students across 74 educational centres. Humanitarian efforts are ongoing in 27 municipalities, but the situation remains critical. ([OCHA, 29 Nov 2024](https://reliefweb.int/node/4114567))",
+        "country": "Colombia",
+        "createdDate": "2024-11-21T16:46:51+00:00",
+        "changedDate": "2024-12-16T16:30:02+00:00"
+      }
+    }
+  ]
+}

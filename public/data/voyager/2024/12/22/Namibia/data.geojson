@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.29,
+          -21.2
+        ]
+      },
+      "properties": {
+        "id": "52019",
+        "name": "Namibia: Drought - May 2024",
+        "status": "ongoing",
+        "description": "On 22 May, the Government of Namibia declared the State of Emergency following the worst drought that the country has experienced in 100 years. According to media reports, every one in five Namibians is considered food insecure. Against the backdrop of scarce rains, over 331,000 households have already registered for the government-funded drought relief programme to assist the affected communities. This programme amounts to EUR 40 million but it currently has a funding gap of EUR 25 million. At the extraordinary summit held on 20 May by the Southern African Development Community (SADC) to discuss the El Niño-induced drought and floods affecting member states, the Namibian President called for assistance from SADC countries and the International Community at large to bridge the above-mentioned funding gap. ([ECHO, 29 May 2024](https://reliefweb.int/node/4065957))\n\nBetween April and June 2024, an estimated 1.2 million people (40 percent of the analysed population) in Namibia face high levels of acute food insecurity (IPC Phase 3 or above) and require urgent action to reduce food gaps and protect livelihoods. These are the most vulnerable groups (unemployed, marginalized communities, those with no national documents to benefit from social safety nets, children under the age of five, pregnant and breastfeeding women and pensioners) in both urban and rural areas. This number has more than doubled from 491,000 people (19 percent of the population analysed) which were projected to be facing acute food insecurity during the period under review in the July 2023 analysis.The entire country (all 14 regions) is classified in Crisis (IPC Phase 3) and need action for livelihood protection. Namibia’s deteriorating food security is mainly driven by the impact of El Nino on crop and livestock production, climatic shocks, price shocks, economic decline and unemployment. ([IPC, 8 Jul 2024](https://reliefweb.int/node/4076162))\n\nDuring the current period of analysis, from July to September 2024, 1.15 million people in Namibia (38 percent of the analysed population) face high levels of acute food insecurity (IPC Phase 3 or above) and require urgent action to reduce food gaps and protect livelihoods; all the 14 areas of analysis are classified in IPC Phase 3 (Crisis). This represents an improvement compared to what was projected in the last July 2023 analysis, where 1.44 million people (48 percent) were expected to face high levels of food insecurity (IPC Phase 3 or above) for the same period (July-September 2024). While the main assumption on the impact of El Nino was adjusted, the deterioration of the food security situation is still linked to the negative impact of El Nino on crop and livestock production, price shocks, economic decline and unemployment. In the first projection period (October 2024 – March 2025), the food security situation is expected to worsen due to the start of the lean season, and seasonal price increases, where 1.26 million people (41 percent of the analysed population) are expected to be in IPC Phase 3 or above. ([IPC, 6 Sep 2024](https://reliefweb.int/node/4092040))\n### Appeals & Response Plans\n\n- [![SADC: SADC Regional Humanitarian Appeal: Response to the El Niño Induced Drought and Floods - May 2024 - Cover preview](https://reliefweb.int/sites/default/files/styles/small/public/previews/7e/f1/7ef10501-eaaf-4860-8dcd-777b3c17bca3.png) SADC: SADC Regional Humanitarian Appeal: Response to the El Niño Induced Drought and Floods - May 2024](https://reliefweb.int/node/4067778)",
+        "country": "Namibia",
+        "createdDate": "2024-05-29T13:49:49+00:00",
+        "changedDate": "2024-09-06T13:22:59+00:00"
+      }
+    }
+  ]
+}
