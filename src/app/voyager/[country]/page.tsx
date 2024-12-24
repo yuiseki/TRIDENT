@@ -23,6 +23,7 @@ const CountryDisasters: React.FC = () => {
 
   useEffect(() => {
     if (!country) return;
+    if (disasters && disasters.length > 0) return;
 
     const fetchDisasters = async () => {
       setLoading(true);

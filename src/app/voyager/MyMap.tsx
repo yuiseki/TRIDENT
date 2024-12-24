@@ -10,6 +10,7 @@ const CountriesDisastersMap: React.FC = () => {
   const router = useRouter();
 
   useEffect(() => {
+    if (geoJSON) return;
     // サンプルとして固定されたパスのGeoJSONを取得
     const year = "2024";
     const month = "12";
