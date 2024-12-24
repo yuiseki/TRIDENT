@@ -16,6 +16,7 @@
     "test:agent": "node --loader ts-node/esm ./tests/agent.ts",
     "voyager": "node --loader ts-node/esm ./scripts/api.reliefweb.int/voyager.ts",
     "site:api.reliefweb.int:fetch": "node --loader ts-node/esm ./scripts/api.reliefweb.int/fetch.ts",
+    "site:api.reliefweb.int:update": "node --loader ts-node/esm ./scripts/api.reliefweb.int/update_disasters.ts",
     "site:api.reliefweb.int:extract": "node --loader ts-node/esm ./scripts/api.reliefweb.int/extract.ts",
     "site:api.reliefweb.int:analyze_reports": "node --loader ts-node/esm ./scripts/api.reliefweb.int/analyze_reports.ts",
     "site:api.reliefweb.int:analyze_disasters": "node --loader ts-node/esm ./scripts/api.reliefweb.int/analyze_disasters.ts",

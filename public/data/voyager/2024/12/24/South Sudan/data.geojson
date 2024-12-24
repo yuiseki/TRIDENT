@@ -11,6 +11,25 @@
         ]
       },
       "properties": {
+        "id": "51538",
+        "name": "South Sudan: Measles - Dec 2022",
+        "status": "ongoing",
+        "description": "The Ministry of Health of the Republic of South Sudan declared a measles outbreak on the 10th of Dec 2022. This is the second declaration of a measles outbreak last year after the first one on 23 February 2022. South Sudan started reporting measles cases in January 2022 in two counties -Torit in Eastern Equatoria State and Maban in Upper Nile State and as of week 5 (ending 04 February 2023), 55 counties across all 10 States have reported suspected measles cases. Out of the counties reporting measles cases, outbreaks have been confirmed in 25 counties after surpassing the outbreak threshold. [Gov't South Sudan/WHO, 6 Feb 2023](https://reliefweb.int/node/3948315)\n\nData obtained from January 1, 2022, to March 19, 2023, shows that a total of 63 counties across all 10 States have reported at least one suspected measles case, with confirmed outbreaks in 36 counties.  \nTwenty-one (21) counties conducted reactive campaigns with 937,123 children vaccinated. A cumulative sum of 5,810 suspected cases have been reported; 4,137 and 1,673 in 2022 and 2023, respectively. [Gov't South Sudan/WHO, 28 Mar 2023](https://reliefweb.int/node/3948324)\n\nThe Ministry of Health, South Sudan, in partnership with Gavi, the Vaccine Alliance, UNICEF, WHO and other key partners, has launched a nationwide measles vaccination campaign. The campaign aims to vaccinate more than 2.7 million children aged 6-59 months against the highly infectious disease. [GAVI, 24 Apr 2023](https://reliefweb.int/node/3955469)\n\nClose to 2,000 measles cases were recorded between January - April 2023. [UNICEF, 30 Apr 2023](https://reliefweb.int/node/3968286)\n\nFrom January 2022 to May 2023, at least 6,138 suspected measles cases, including 59 deaths were reported across the 10 states. [OCHA, 26 Jun 2023](https://reliefweb.int/node/3976493)\n\n1,526 suspected measles cases were reported in July, a 140.3 per cent increase as compared to June 2023, and a 663 per cent increase as compared to July 2022.([UNICEF, 31 Jul 2023](https://reliefweb.int/node/3994994/))\n\nThe Health Cluster has reported that the number of suspected measles cases across Sudan has increased by more than 1,000 new cases, compared to the 3,311 cases reported last week and reached 4,334 cases since April. This includes 127 deaths (40 more than those reported last week), representing a case fatality rate of 2.9 per cent. White Nile State accounts for 98 deaths—77 per cent of measles-related deaths. ([OCHA, 22 Sep 2023](https://reliefweb.int/node/3999361/))\n\nIn 2023, from week 1 through week 43 (ending 29 October ) a total of 6 957 with 150 related deaths have been reported with a CFR of 2.2% . About 65% of cases are in children less than five years of age with 76.6% of all related deaths. ([WHO, 19 Nov 2023](https://reliefweb.int/node/4020542))",
+        "country": "South Sudan",
+        "createdDate": "2023-03-31T18:48:41+00:00",
+        "changedDate": "2023-12-14T11:53:17+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.5,
+          6.9
+        ]
+      },
+      "properties": {
         "id": "51873",
         "name": "South Sudan: Hepatitis E Outbreak - Sep 2023",
         "status": "ongoing",
