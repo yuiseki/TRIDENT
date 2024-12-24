@@ -19,6 +19,25 @@
         "createdDate": "2024-09-27T01:19:57+00:00",
         "changedDate": "2024-09-27T01:41:19+00:00"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.86,
+          0.53
+        ]
+      },
+      "properties": {
+        "id": "52160",
+        "name": "Kenya: Polio Outbreak - Sep 2024",
+        "status": "ongoing",
+        "description": "Kenya is currently facing a public health challenge due to an outbreak of circulating vaccine-derived poliovirus type 2 (cVDPV2) with three (3) cases confirmed so far in 2024. All are confirmed in a very volatile context with high risk of transmission and low vaccination coverage. \n\nOn 8th September 2024 two samples out of 60 were confirmed positive. KRCS received information from the Turkana County health department of two new polio cases in the refugee camp located in Turkana West sub-county. Over the past 12 months, Kenya has conducted rapid campaigns, vaccinating millions of children using the oral polio vaccine. In response to the new cases, the Ministry of Health, with technical guidance from the Polio-Global Eradication Initiative and WHO, has planned a Supplementary Immunization Activity (SIA) rollout for the next month. Round 1 of the SIA is scheduled for 2 to 6 October 2024. ([IFRC, 25 Sep 2024](https://reliefweb.int/node/4097258/))",
+        "country": "Kenya",
+        "createdDate": "2024-09-27T01:19:57+00:00",
+        "changedDate": "2024-09-27T01:41:19+00:00"
+      }
     }
   ]
 }

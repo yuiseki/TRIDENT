@@ -19,6 +19,25 @@
         "createdDate": "2024-09-27T01:25:10+00:00",
         "changedDate": "2024-10-07T12:37:50+00:00"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.34,
+          49.74
+        ]
+      },
+      "properties": {
+        "id": "52161",
+        "name": "Central Europe: Floods - Sep 2024",
+        "status": "ongoing",
+        "description": "The 2024 Central European floods in the **Czech Republic** were caused by Storm Boris, which brought record rainfall beginning on 13 September 2024. Over 200 rivers overflowed, with Northern Moravia, particularly Jeseník, Opava, and Ostrava, among the hardest-hit areas. The rain totals in parts of Jeseník exceeded 500 mm (20 inches), surpassing previous flood records. Roads, railways, and bridges suffered extensive damage, especially in Ostrava, where train services were suspended. These regions experienced severe flooding, leading to the destruction of homes and infrastructure. Thousands of people were evacuated, and approximately 250,000 were left without electricity. [...] The situation remains critical in parts of the South Bohemian Region, where ongoing threats of further flooding persist. As of 19 September, five fatalities were reported, along with widespread displacement of about 10,000 residents. ([IFRC, 25 Sep 2024](https://reliefweb.int/node/4097173/))\n\nHeavy rains brought by Storm Boris have caused severe flooding in southwestern **Poland**, particularly affecting the voivodeships of Dolnoslaskie, Opolskie, Slaskie, and Malopolskie. Rivers like the Morawka have overflowed, and some dams have collapsed, leading to widespread flooding. On 16 September, the Council of Ministers declared a \"state of natural disaster\" for a period of 30 days in parts of the Lower Silesian, Opole, and Silesian voivodeships. [...] As of 19 September 2024, seven people have been confirmed dead due to the flooding. The Prime Minister's Office reported that the disaster has directly affected 57,000 people, with 6,544 residents evacuated as waters continue to rise. ([IFRC, 26 Sep 2024](https://reliefweb.int/node/4097267))\n\nThe 2024 Central European floods in **Romania** were triggered by Storm Boris, which brought torrential rains to the counties of Galați and Vaslui on 14 September. In less than 24 hours, over 150 mm of rainfall per square meter caused ash floods in several areas. Galați was the hardest hit, with flood waters reaching depths of 1.5 to 2 meters in the localities of Cudalbi, Cuza-Vodă, Pechea, Slobozia-Conachi, Tudor Vladimirescu, and Costache Negri. In Vaslui, the southern localities of Zorleni, Grivița, and Trestiana were most affected. The floods caused widespread destruction, severely damaging infrastructure such as roads, bridges, power systems, and schools. More than 6,000 homes were either damaged or destroyed across both counties. Around 400 people remain displaced and are currently being sheltered in temporary housing provided by authorities. Tragically, seven deaths have been confirmed. ([IFRC, 2 Oct 2024](https://reliefweb.int/node/4098614))\n\nHeavy rainfall has been affecting central **Bosnia and Herzegovina** (in particular the Herzegovina-Neretva canton, Federation of Bosnia and Herzegovina) since 3 October in the evening (UTC), causing severe floods and flash floods and triggering landslides that have resulted in casualties and damage. Media report, as of 7 October, 18 fatalities, dozens of people still missing and an uncertain number of injured people across the area of Jablanica town, Konjic town and Donja Jablanica village (Herzegovina-Neretva canton, approximately 70 km south-west of Sarajevo city). The Government of Federation of Bosnia and Herzegovina declared the state of emergency on 5 October for the territory of Federation of Bosnia and Herzegovina. ([ECHO, 7 Oct 2024](https://reliefweb.int/node/4099639))",
+        "country": "Czechia",
+        "createdDate": "2024-09-27T01:25:10+00:00",
+        "changedDate": "2024-10-07T12:37:50+00:00"
+      }
     }
   ]
 }

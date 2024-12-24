@@ -30,6 +30,25 @@
         ]
       },
       "properties": {
+        "id": "51538",
+        "name": "South Sudan: Measles - Dec 2022",
+        "status": "ongoing",
+        "description": "The Ministry of Health of the Republic of South Sudan declared a measles outbreak on the 10th of Dec 2022. This is the second declaration of a measles outbreak last year after the first one on 23 February 2022. South Sudan started reporting measles cases in January 2022 in two counties -Torit in Eastern Equatoria State and Maban in Upper Nile State and as of week 5 (ending 04 February 2023), 55 counties across all 10 States have reported suspected measles cases. Out of the counties reporting measles cases, outbreaks have been confirmed in 25 counties after surpassing the outbreak threshold. [Gov't South Sudan/WHO, 6 Feb 2023](https://reliefweb.int/node/3948315)\n\nData obtained from January 1, 2022, to March 19, 2023, shows that a total of 63 counties across all 10 States have reported at least one suspected measles case, with confirmed outbreaks in 36 counties.  \nTwenty-one (21) counties conducted reactive campaigns with 937,123 children vaccinated. A cumulative sum of 5,810 suspected cases have been reported; 4,137 and 1,673 in 2022 and 2023, respectively. [Gov't South Sudan/WHO, 28 Mar 2023](https://reliefweb.int/node/3948324)\n\nThe Ministry of Health, South Sudan, in partnership with Gavi, the Vaccine Alliance, UNICEF, WHO and other key partners, has launched a nationwide measles vaccination campaign. The campaign aims to vaccinate more than 2.7 million children aged 6-59 months against the highly infectious disease. [GAVI, 24 Apr 2023](https://reliefweb.int/node/3955469)\n\nClose to 2,000 measles cases were recorded between January - April 2023. [UNICEF, 30 Apr 2023](https://reliefweb.int/node/3968286)\n\nFrom January 2022 to May 2023, at least 6,138 suspected measles cases, including 59 deaths were reported across the 10 states. [OCHA, 26 Jun 2023](https://reliefweb.int/node/3976493)\n\n1,526 suspected measles cases were reported in July, a 140.3 per cent increase as compared to June 2023, and a 663 per cent increase as compared to July 2022.([UNICEF, 31 Jul 2023](https://reliefweb.int/node/3994994/))\n\nThe Health Cluster has reported that the number of suspected measles cases across Sudan has increased by more than 1,000 new cases, compared to the 3,311 cases reported last week and reached 4,334 cases since April. This includes 127 deaths (40 more than those reported last week), representing a case fatality rate of 2.9 per cent. White Nile State accounts for 98 deaths—77 per cent of measles-related deaths. ([OCHA, 22 Sep 2023](https://reliefweb.int/node/3999361/))\n\nIn 2023, from week 1 through week 43 (ending 29 October ) a total of 6 957 with 150 related deaths have been reported with a CFR of 2.2% . About 65% of cases are in children less than five years of age with 76.6% of all related deaths. ([WHO, 19 Nov 2023](https://reliefweb.int/node/4020542))",
+        "country": "South Sudan",
+        "createdDate": "2023-03-31T18:48:41+00:00",
+        "changedDate": "2023-12-14T11:53:17+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.5,
+          6.9
+        ]
+      },
+      "properties": {
         "id": "51873",
         "name": "South Sudan: Hepatitis E Outbreak - Sep 2023",
         "status": "ongoing",
@@ -37,6 +56,44 @@
         "country": "South Sudan",
         "createdDate": "2024-01-30T11:32:34+00:00",
         "changedDate": "2024-09-08T09:14:38+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.5,
+          6.9
+        ]
+      },
+      "properties": {
+        "id": "51873",
+        "name": "South Sudan: Hepatitis E Outbreak - Sep 2023",
+        "status": "ongoing",
+        "description": "On 26th September 2023, the National Ministry of Health declared a Hepatitis E Virus outbreak in Old Fangak, Jonglei State and Greater Pibor Administrative Area, after 3 out of 13 samples tested positive for HEV. The outbreak has affected 63 people and caused 12 deaths, with a case fatality rate of 19%. ([UNICEF, 3 November 2023](https://reliefweb.int/node/4011661))\n\nIn Fangak county, Jonglei State, a Hepatitis E Virus (HEV) outbreak was declared in September 2023, with 118 cumulative cases recorded, including 6 deaths. UNICEF State Health, WASH, and SBC teams, in October 2023, mobilized a response with implementing partners and local authorities to contain the outbreak.  ([UNICEF, 7 December 2023](https://reliefweb.int/node/4021069))\n\nIn response to a deadly Hepatitis E outbreak in South Sudan, Doctors Without Borders/Médecins Sans Frontières (MSF) has launched a mass vaccination campaign in collaboration with the Ministry of Health to safeguard women and girls of reproductive age, who are at greatest risk of death from the disease. Since April 2023, 501 cases of Hepatitis E have been treated at the MSF hospital in Old Fangak, Jonglei state, and 21 people have died—mainly women. The fatality can be as high as 40 percent for pregnant women, and there is no cure, meaning that many people with advanced stages of illness do not survive. MSF's vaccination campaign is the first to be conducted during the acute stages of an active Hepatitis E outbreak anywhere in the world. It is made more challenging by the remoteness and isolation of the area of South Sudan where it is taking place. But if the campaign succeeds, it will save lives. ([MSF, 29 January 2024](https://reliefweb.int/node/4033620))\n\nThe current outbreak in Bentiu POC continues. As of 18 September 2023, a cumulative total of 63 cases with symptoms and signs consistent with HEV disease and 12 deaths (CFR 19%) were reported from Fangak. Most cases (36.5%) are from the village of Old Fangak. The median age group affected is 33 years (Interquartile range: 2 -59). Males are the most affected accounting for 58.7% of all reported cases. ([WHO, 20 Feb 2024.](https://reliefweb.int/node/4039961))\n\nAs of 24 March 2024, Hepatitis E oubreak was ongoing in South Sudan. On 04 March 2024, Warrap State government in South Sudan officially declared an outbreak of hepatitis E in Twic County, prompted by a 3-year-old girl's positive test result, marking a significant public health concern in the region. This alarming declaration came after 2 individuals exhibited symptoms consistent with hepatitis E and one positive case was confirmed in Juba after laboratory tests. PH prevention measures are underway.  ([WHO, 24 Mar 2024.](https://reliefweb.int/node/4053297))\n\nThe ongoing Hepatitis E outbreak is active in Rubkona county (Bentiu IDPs camp), Unity State since December 2018, in Fangak county, Jonglei State since 2023 and in Western Bahr EL-Ghazal State since February 2023 (week 8). As of week 24, 2024, in Fangak county 655 cases, with 23 reported deaths since the outbreak began in week 2 of 2023; in Rubkona county ( (Bentiu IDPs camp) , since the outbreak began in 2018, 5 619 cases and 27 deaths have been reported; in Western Bahr EL-Ghazal State, a total of 501 cases were reported, with 19 deaths. In Twic county, Warrap State, In March, an outbreak of Hepatitis E was officially declared by the State Ministry of Health, from week 6 to week 22 of 2024, a total of 32 suspected cases were reported, with no fatalities. ([WHO, 14 Jul 2024](https://reliefweb.int/node/4084740))\n\nWith increased transmission, new outbreaks were reported in Twic and Abyei counties in February and June 2024, affecting four counties in South Sudan. Since the beginning of the outbreak, 6 483 cases have been reported, with nearly (90%) 5 770 cases reported from Rubkona in Bentui IDP Camp. The other cases have been reported from Fangak, 655 cases (10.1%), Twic 32 cases (0.5%) and 26 cases (0.4%) from Abyei County. All 29 deaths were from Bentui IDP Camp in Rubkona County. ([WHO, 8 Sep 2024](https://reliefweb.int/node/4092260))",
+        "country": "South Sudan",
+        "createdDate": "2024-01-30T11:32:34+00:00",
+        "changedDate": "2024-09-08T09:14:38+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.5,
+          6.9
+        ]
+      },
+      "properties": {
+        "id": "52100",
+        "name": "South Sudan: Floods - Jul 2024",
+        "status": "ongoing",
+        "description": "Humanitarian partners expect floods in the second half of 2024, with a peak from September to December. This is compatible with the 4-month lead time expected between the Eastern Nile Lakes peak. However, humanitarian needs will likely arise before that date as the flooding progressively increases, thus SRCS expects to start response operations in the weeks before September. Following the alerts from IGAD Climate Prediction and Applications Centre of the high probability of wetter-than-usual conditions in South Sudan for the current rainy season, together with the highest ever recorded in the history of Lake Victoria and the incoming water pressure over the Jinja Dam in Uganda, the South Sudan Ministry of Water Resources and Irrigation together with the Ministry of Humanitarian Assistance are expecting unprecedented floods over large areas of the country. Similar scenarios are also projected by major UN partners in the country, as well as independent experts, with the seasonal flood extent minimum reached in May, which was similar to the minima of recent seasons and the above-average rainfall in South Sudan will likely feed itself into the flood extent and reduce evaporation losses. ([IFRC, 1 Aug 2024](https://reliefweb.int/node/4083163))\n\nContinuous heavy rains since May, combined with controlled water releases from Lake Victoria, have significantly raised Nile River levels, affecting up to 472,000 people across 26 of South Sudan's 78 counties and Abyei Administrative Area. The floods have devastated homes, destroyed crops, disrupted education and health services, and restricted access to essential facilities. ([OCHA, 30 Aug 2024](https://reliefweb.int/node/4091161))\n\nAs of 12 September, flooding has affected over 735,000 people across 38 of South Sudan’s 78 counties and the Abyei Administrative Area. According to the International Organization for Migration (IOM), 65,000 people have been displaced, with over 41,000 in Warrap State alone. The United Nations Central Emergency Response Fund (CERF) has allocated $10 million to aid 700,000 flood-affected people in five severely impacted counties. The South Sudan Humanitarian Fund (SSHF) allocated $5 million to complement this effort. ([OCHA, 12 Sep 2024](https://reliefweb.int/node/4093561))\n\nFlooding has affected over 890,000 people across the country. The latest increase is attributed to newly confirmed numbers of affected people in the Abyei Administrative Area, Western Bahr el Ghazal and Lakes states. About 226,000 people are flood-displaced, including 114,480 reported from Unity State alone. Due to damaged and impassable roads, physical access to affected communities remains a challenge. On 3 October, the Council of Ministers endorsed the declaration of a state of emergency in flood-affected states. ([OCHA, 4 Oct 2024](https://reliefweb.int/node/4099213))",
+        "country": "South Sudan",
+        "createdDate": "2024-08-02T02:03:21+00:00",
+        "changedDate": "2024-10-11T13:27:19+00:00"
       }
     },
     {

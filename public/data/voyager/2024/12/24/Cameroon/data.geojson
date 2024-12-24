@@ -19,6 +19,25 @@
         "createdDate": "2024-09-04T07:19:58+00:00",
         "changedDate": "2024-10-03T10:14:15+00:00"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.21,
+          4.81
+        ]
+      },
+      "properties": {
+        "id": "52142",
+        "name": "Cameroon: Floods - Aug 2024",
+        "status": "ongoing",
+        "description": "Severe flooding in Cameroon's Far North region has affected over 158,620 people, including 38,069 women of reproductive age and 4,133 pregnant women. The hardest-hit areas are Mayo-Tsanaga, Mayo-Danay, and Logone-and-Chari divisions, with significant damage to infrastructure, farmland, and disruption of essential services. UNFPA has deployed midwives and social workers to affected areas and is coordinating with partners to track displacement and assess needs. UNFPA-supported health facilities continue to operate in some areas, providing essential SRH and GBV services. The response efforts are focusing on food security, shelter, non-food items, health (including SRH), and water, hygiene, and sanitation. Ongoing heavy rains and the risk of disease outbreaks, including cholera, pose additional challenges to the humanitarian response. UNFPA is urgently appealing for USD 1,174,045 to scale up SRH and GBV interventions in flood-affected areas, targeting 129,149 people. ([UNFPA, 3 Sep 2024](https://reliefweb.int/node/4091202))\n\nCameroon's Far North region has been experiencing flooding since the start of the rainy season, which began in the second half of July with an average rainfall frequency of one day out of four. The intensification and recurrence of rains starting from August 10, 2024, has led to a progressive increase in rainfall levels between August 10 and August 19, 2024. Series of floods have been recorded since August 19, reaching critical levels in the Logone et Chari and Mayo Danay divisions between August 11 and 21, 2024. The peak of the floods was recorded on August 28 with the breaking of water retention dikes in Mayo Danay, causing the town of Yagoua and other villages to be flooded. The most affected districts are Blangoua, Mackary, and Zina in the Logone and Chari department, and Maga, Yagoua in the Mayo Danay division. Following these events, OCHA published a bulletin on the flood situation in the Far North region on August 28, 2024. The initial information in this bulletin presents the damage recorded in the 02 affected divisions. In the Logone et Chari division, the affected districts are: - Blangoua with nearly 75,000 people affected; Makary with 43,000; Zina with 9,000 people affected. In the Mayo Danay division:  Maga with 18,000 people affected; - Yagoua with nearly 13,000 people. The rains continue with weather forecasts predicting more significant impacts in the divisions already mentioned above, as well as in others that have also been experiencing heavy rainfall for several days. Notably, in the Diamaré division, where Ndoukoula district has reported over 400 people affected to date, while in Mayo Tsanaga, Mokolo district, has recorded nearly 200 affected people. ([IFRC, 13 Sep 2024](https://reliefweb.int/node/4093942))\n\nHeavy rains from July to September 2024 caused flooding in several localities in the Far North. According to the Regional Delegation of Health, 60,777 households, including 123,441 children under 5 and 26,591 pregnant women were severely affected by the floods and at least 17 persons died due to drowning or the collapsing of houses. As of 13 September. OCHA reports that 1,678 heads of livestock were lost and 13,471 hectares of agricultural land were destroyed.  ([UNICEF, 18 Sep 2024](https://reliefweb.int/node/4094937))\n\nAccording to [UNICEF](https://reliefweb.int/node/4096871/) and DG ECHO reports, as of 25 September, at least 30 people died, 155,000 people have been displaced, and some 365,000 people have been affected. In addition, 262 schools, 56,084 houses and more than 82,500 ha of crops have been destroyed ([ECHO, 26 Sep 2024](https://reliefweb.int/node/4097052/))",
+        "country": "Cameroon",
+        "createdDate": "2024-09-04T07:19:58+00:00",
+        "changedDate": "2024-10-03T10:14:15+00:00"
+      }
     }
   ]
 }

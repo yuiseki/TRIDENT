@@ -30,6 +30,44 @@
         ]
       },
       "properties": {
+        "id": "51766",
+        "name": "Guinea: Diphtheria Outbreak - Sep 2023",
+        "status": "ongoing",
+        "description": "On 5 September 2023, the Ministry of Health notified WHO of the current diphtheria outbreak in Guinea. Since 4 July and as of 13 October 2023, 538 cases have been reported, including 18 confirmed cases. In total, 58 deaths including 13 among confirmed cases were registered (case fatality rate (CFR) among all cases, 11%)., and 461 contacts are being followed up. Of the cases reported, 62% are female. The 1-4 years age group, with 445 cases, accounted for the largest proportion of reported cases, 82%, followed by the 5-9 years age group, with 5% and 5% for the 10 years and above age group. Children under the age of 12 months make up 7% of reported cases. None of the 538 cases were vaccinated. ([WHO, 18 Sep 2023](https://reliefweb.int/node/4006950))\n\nIn Guinea, Diphtheria cases were recorded in Kankan region spanning 4 districts, namely Siguiri, Mandiana, Kankan, and Kouroussa. Since epidemiological week 40 (ending 8 0ctober 2023), an incremental increase in suspected cases have been observed, over time. During epidemiological week 42 (ending 22 October 2023), 7 new cases with no deaths were recorded in Siguiri region. Additionally, there were 31 new contacts identified, 17 suspected cases under treatment and only 2 improved cases, were released. From July to 16 October 2023, a cumulative total of 576 cases, including 20 laboratory-confirmed cases and 556 suspected cases have been reported in Kankan region.\nSiguiri district was the most affected with over 95.0% (n=547) of the total cases, followed by Mandiana, Kankan, and Kouroussa. A total of 58 deaths were recorded, with 49 within health facilities and 9 in the community. Children aged 1 - 4 years old were the most affected.([WHO, 1 Dec 2023](https://reliefweb.int/node/4019312))\n\nFrom 4 July 2023 to 25 February 2024, Guinea reported 3,965 suspected cases out of which 3,712 were confirmed cases and 91 deaths. The case fatality ratio among suspected cases was 2.3%. Among confirmed cases, 43(1%) were confirmed through laboratory tests, 107(3%) of the cases have been linked epidemiologically, and 3,562 (96%) through clinical compatibility.  ([WHO, 29 Mar 2024](https://reliefweb.int/node/4045897))\n\nAn outbreak of diphtheria has been reported in the Kankan region of Guinea since 4 July 2023. As of 9 April 2024, 4 517 suspected cases were reported from the Kankan, Faranah, Labé, Mamou, Conakry and N'Nzérékoré regions, including 4 307 confirmed cases and 105 deaths. Of the confirmed cases, 29 were laboratory-confirmed, 4 173 were clinically compatible and 105 were epidemiologically linked. The Siguiri health district in the Kankan region is the epicenter of the outbreak, with 98.4% of suspected cases reported.  ([WHO, 27 Oct 2024](https://reliefweb.int/node/4111313))",
+        "country": "Guinea",
+        "createdDate": "2023-10-18T12:49:18+00:00",
+        "changedDate": "2024-11-21T18:39:29+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -11.03,
+          10.79
+        ]
+      },
+      "properties": {
+        "id": "52115",
+        "name": "Guinea: Floods - Jul 2024",
+        "status": "ongoing",
+        "description": "During the night of July 29 to 30, 2024, heavy rainfall caused flooding and severe damage in 14 neighborhoods of the urban commune of Siguiri and 4 surrounding sub-prefectures. [...] The flood on July 30, 2024, wreaked havoc across more than 23 localities, with the most severely affected areas being the urban municipality districts of BTN, Bolibana, Sigurikoura, Nankoda, Kokomo, Heremakonon, Chinese City, Tiguibiry, Konoba, Abatoire, Setceur TP, Téléladji, ORS1, and Mandén. Additionally, the sub-prefectures of Kintinian (including Kintian Centre, Boukaria, Balata, and Kofilanin), Djomabanan (including Djomanan Centre and Karakoro), Kinièbakoura (including Kinièbakoura Centre), and Niandankoro (including Niandankoro Centre and Damissakoro) were heavily impacted. These areas are characterized by high population density and are situated on the outskirts of Siguiri city, with the sub-prefectures located along the Niger River. [...] Initial rapid assessments conducted by volunteers revealed significant impacts on the affected communities. Several individuals sustained injuries, and 3,863 families, totaling 19,195 people, were affected. Of these, 2,438 households, comprising 17,066 people, were identified as the most severely impacted. ([IFRC, 16 Aug 2024](https://reliefweb.int/node/4086935))\n\nAs of 8 October, flooding has affected 132,496 people, the majority of whom are women (58%), in Conakry, Coyah,\nKankan, Siguiri, Kouroussa, Mandiana Dubreka, Forecariah, Telimélé, Kindia, Yomou and N’Zérékoré. This includes\n423 women who are currently pregnant and 724 women who are breastfeeding. Around 860 households have been\ndisplaced, 4 health facilities flooded and 4 fatalities registered.  ([UNFPA,8 Oct 2024](https://reliefweb.int/node/4100058))\n### Appeals & Response Plans\n\n- [![FAO: Guinée : plan de réponse d’urgence inondations - groupe de coordination intersectoriel, octobre 2024 - Cover preview](https://reliefweb.int/sites/default/files/styles/small/public/previews/44/76/44762740-c03b-4946-b7ba-4c5d944d7b79.png) FAO: Guinée : plan de réponse d’urgence inondations - groupe de coordination intersectoriel, octobre 2024](https://reliefweb.int/node/4103425)",
+        "country": "Guinea",
+        "createdDate": "2024-08-19T00:44:10+00:00",
+        "changedDate": "2024-10-22T13:22:36+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -11.03,
+          10.79
+        ]
+      },
+      "properties": {
         "id": "52115",
         "name": "Guinea: Floods - Jul 2024",
         "status": "ongoing",
