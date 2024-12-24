@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -11.79,
+          8.56
+        ]
+      },
+      "properties": {
+        "id": "52171",
+        "name": "Sierra Leone: Floods - Sep 2024",
+        "status": "ongoing",
+        "description": "The National Disaster Management Agency (NDMA) has reported extensive flooding across Sierra Leone, significantly impacting communities, farmlands, businesses, and infrastructure. By September 23, 2024, the NDMA identified 27 flood events across multiple districts, affecting 3,330 households and 23,596 people. Hardest-hit areas include Bo, Bonthe, Bombali, Falaba, Kambia, Moyamba, Tonkolili, Port Loko, Pujehun, and the Western Area. Heavy rainfall from Guinea triggered these floods, resulting in the collapse of 167 buildings, including 27 essential infrastructures like schools, hospitals, and places of worship. Additionally, 7,324 hectares of farmland have been flooded, and many roads remain impassable, disrupting local economies. Between August and 23 September, more floods were reported, displacing over 50 communities and affecting over 1,500 farmers, jeopardizing both current food supplies and long-term recovery. ([IFRC, 08 Oct 2024](https://reliefweb.int/node/4100023))",
+        "country": "Sierra Leone",
+        "createdDate": "2024-10-08T14:14:01+00:00",
+        "changedDate": "2024-10-08T14:27:18+00:00"
+      }
+    }
+  ]
+}

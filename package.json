@@ -14,6 +14,7 @@
     "test:sortByArea": "node --loader ts-node/esm ./tests/sortByArea.ts",
     "test:sortByDistance": "node --loader ts-node/esm ./tests/sortByDistance.ts",
     "test:agent": "node --loader ts-node/esm ./tests/agent.ts",
+    "voyager": "node --loader ts-node/esm ./scripts/api.reliefweb.int/voyager.ts",
     "site:api.reliefweb.int:fetch": "node --loader ts-node/esm ./scripts/api.reliefweb.int/fetch.ts",
     "site:api.reliefweb.int:extract": "node --loader ts-node/esm ./scripts/api.reliefweb.int/extract.ts",
     "site:api.reliefweb.int:analyze_reports": "node --loader ts-node/esm ./scripts/api.reliefweb.int/analyze_reports.ts",

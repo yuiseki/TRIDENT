@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.48,
+          6.57
+        ]
+      },
+      "properties": {
+        "id": "52146",
+        "name": "Central African Republic: Floods - Aug 2024",
+        "status": "ongoing",
+        "description": "Recent torrential rains and strong winds have destroyed 1,700 houses and caused the displacing of a further 3,300 people. ([UNFPA, 3 Sep 2024](https://reliefweb.int/node/4091171))\n\nIn the Central African Republic (CAR), torrential rains and strong winds affected 2,700 people and destroyed 500 buildings (OCHA) during the month of August. On 18 August, Mbomou prefecture was severely impacted; several people were injured, including a pregnant woman who had to be evacuated to Bangassou hospital for medical care. In addition, around 186 houses were damaged, including temporary shelters for asylum seekers. Heavy rain and \nstrong winds also hit Moyenne-Sido, in the sub-prefecture of Kabo, destroying 139 houses. ([UNFPA, 9 Sep 2024](https://reliefweb.int/node/4092557))",
+        "country": "Central African Republic",
+        "createdDate": "2024-09-09T13:14:31+00:00",
+        "changedDate": "2024-10-17T19:24:29+00:00"
+      }
+    }
+  ]
+}

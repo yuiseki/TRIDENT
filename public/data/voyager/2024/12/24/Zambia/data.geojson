@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.43,
+          -14
+        ]
+      },
+      "properties": {
+        "id": "51911",
+        "name": "Zambia: Drought - Jan 2024",
+        "status": "ongoing",
+        "description": "The dry spell has from mid-January this year affected most of the central and southern half of the country, which has received less than normal rainfall leaving 1 million hectares of maize destroyed, almost half of the country’s maize cultivation. It is also projected that the drought will lead to a power deficit or 430 Megawatts and affect ground and surface water levels, with severe consequences for sectors beyond agriculture since +80 per cent of Zambia electricity generation comes from hydropower. ([UNICEF, 4 Mar 2024](https://reliefweb.int/node/404362))\n\nThe Zambian president declared a drought, disaster and emergency in Zambia on 29th February and called for local and international support. On 4th March, the Government through the Office of the vice president and Disaster Management Mitigation Unit (DMMU) called for consultative meeting with all relevant stakeholders to lobby for support following the declaration of the emergency. The Government indicated that there is need for multisectoral collaboration in responding to the emergency that has affected 1 million families across Zambia. The whole Southern half of Zambia is experiencing a drought. The provinces affected include North-Western, Southern, Western, Central and Eastern. The country started experiencing the dry spells from 20th January when the rains were expected to be at a peak and crops to establish. The drought currently experienced has affected a total of 8 provinces across the country with highest impacts in Southern, Central, Eastern, North-western, Western, and Lusaka Provinces. 1 million households have been affected, and the situation has resulted in devastating impacts, with about 1 million hectors of maize field affected out of 2.2 million hectors planted in 2023/2024 season. ([IFRC, 2 Apr 2024](https://reliefweb.int/node/4051484))\n\nJoint rapid assessments conducted in 27 of the most affected districts confirmed a dire humanitarian situation with local markets reporting critical shortages of food (only 11.4% reporting availability of maize and 31.1% maize meal). 51.7% of 4,277 surveyed households reported poor Food Consumption Score. Based on the modelled Minimum Expenditure Basket (MEB), 70.6% of the surveyed households were unable to meet food needs. Generalising these proportions to the 27 districts’ total population: 2.3 million were found moderately food insecure and 0.6 million severely food insecure. ([ECHO, 11 Apr 2024](https://reliefweb.int/node/4053788))\n### Appeals & Response Plans\n\n- [![OCHA: Zambia: Drought Response Appeal May 2024 - December 2024 (May 2024) - Cover preview](https://reliefweb.int/sites/default/files/styles/small/public/previews/98/90/9890d85b-000f-4eb3-81cf-7e0984a452ea.png) OCHA: Zambia: Drought Response Appeal May 2024 - December 2024 (May 2024)](https://reliefweb.int/node/4060370)\n- [![WFP: WFP Zambia Drought Response, June 2024 - Cover preview](https://reliefweb.int/sites/default/files/styles/small/public/previews/43/05/4305497f-8776-4147-b015-0b18dca28a1c.png) WFP: WFP Zambia Drought Response, June 2024](https://reliefweb.int/node/4080455)\n- [![SADC: SADC Regional Humanitarian Appeal: Response to the El Niño Induced Drought and Floods - May 2024 - Cover preview](https://reliefweb.int/sites/default/files/styles/small/public/previews/7e/f1/7ef10501-eaaf-4860-8dcd-777b3c17bca3.png) SADC: SADC Regional Humanitarian Appeal: Response to the El Niño Induced Drought and Floods - May 2024](https://reliefweb.int/node/4067778)\n- [![Govt. Zambia: Republic of Zambia: Disaster Management And Mitigation Unit - Food Security Drought Response Plan (April 2024) - Cover preview](https://reliefweb.int/sites/default/files/styles/small/public/previews/9f/b5/9fb50539-d88f-4780-a92b-354fed08f999.png) Govt. Zambia: Republic of Zambia: Disaster Management And Mitigation Unit - Food Security Drought Response Plan (April 2024)](https://reliefweb.int/node/4059826)",
+        "country": "Zambia",
+        "createdDate": "2024-03-06T09:41:08+00:00",
+        "changedDate": "2024-07-24T20:31:47+00:00"
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.4,
+          17.43
+        ]
+      },
+      "properties": {
+        "id": "51805",
+        "name": "Niger: Diphtheria Outbreak - Oct 2023",
+        "status": "ongoing",
+        "description": "The first case of diphtheria in Niger was reported on 17 July 2023. Initially reported in 17 health districts spanning seven out of eight regions, the outbreak has now spread to three additional health districts, namely Agadez, Takieta and Tchirozerine, with an upward trend over time.  During epidemiological week 42 (ending 22 October 2023), a total of 98 new suspected diphtheria cases, including two deaths (CFR 2.0%), were reported making a 64.3% increase in cases, compared to the 35 cases reported in epidemiological week 41. From 17 July to 23 October 2023, a cumulative total of 1 690 suspected cases were reported in 20 health districts, resulting in 75 deaths (CFR 4.4%). More than 80% (n=1 371) of cases were reported from three health districts, including Matameye (58%, n=973), Magaria (15%, n=260), and Tanout (8%, n=138). Of the 75 recorded deaths, 22.7% (n=17) were reported from Matameye, followed by Zinder (21.3%, n=16), Tanout (12.0%, n=9), Magaria (9.3%, n=7), Aderbissinat (8%, n=6), and Gouree (6.6%, n=5).  ([WHO, 9 Nov 2023](https://reliefweb.int/node/4013225))\n\nOn 20 October 2023, the Government of Niger, through the Ministry of Public Health, Population and Social Affairs, declared a diphtheria outbreak. The first case was registered on 17 July 2023. As of 02 November, all eight regions of the country have notified at least 1 case of diphtheria. A total of 1,838 suspected cases of diphtheria, including 91 deaths (lethality: 5%), have been reported. The regions of Zinder (1,578 cases) and Agadez (132 cases) are the most impacted, contributing to 86% and 7% of the total caseload, respectively. 47% of positive cases are among children aged 5 to 14 years, 22% of positive cases are aged 12 to 59 months, 2.5% of positive cases are less than 1 year old and about 28.5% are aged 15 and above. Since the onset of the outbreak, UNICEF has initiated its response in support of and partnership with the Ministry of Public Health and other partners involved in the response. To date, 50,000 children aged 0 to 14 years have already been vaccinated. ([UNICEF, 10 Nov 2023](https://reliefweb.int/node/4013997))\n\nThe Niger Red Cross (CRN) regularly participates in the meeting of the health cluster, where on October 11, 2023, the Ministry alerted partners on the registration of diphtheria cases in the regions of Zinder and Maradi, DREF intervention areas, where 1,440 cases had been recorded including 69 deaths (source: Ministry of Health). A national response plan was immediately developed, and the ministry held an emergency meeting on October 23, 2023, to ask the support of all its partners. Following the meeting, the NS received a formal letter requesting support.  ([IFRC, 13 Nov 2023](https://reliefweb.int/node/4014279))\n\nHumanitarian partners have undertaken a vaccination campaign against diphtheria. The campaign aims to cover 800,000 children under 14 years old for the first round, in the Zinder region in the east-central part of the country, the epicentre of the epidemic. Efforts are underway to mobilize resources to cover the entire target, which is estimated at 4 million in that region. This year, prior to the current campaign, technical and logistical support was provided for vaccination response in the Kantché and Amsoudou health districts (Zinder region). This enabled 50,000 children aged 0-14 to be vaccinated. As of 11 October, health authorities reported that the diphtheria epidemic had led to 1,331 cases and caused 65 deaths, representing a 4.9 per cent case-fatality rate across the country. ([OCHA, 27 Nov 2023](https://reliefweb.int/node/4018388))\n\nAn outbreak of diphtheria has been confirmed in Matameye health district, Zinder region. The first case was reported on 17 July 2023. As of 25 February 2024, 3536 suspected cases, including 174 deaths (CFR 4.9 %) were reported. Public health response activities are ongoing in affected districts. ([WHO, 24 Mar 2024](https://reliefweb.int/node/4053297))\n\nAs of week number 24 of 2024, 5367 suspected cases, including 320 deaths (CFR 6 %) were reported. Public health response activities are ongoing in affected districts. ([WHO, 14 Jul 2024](https://reliefweb.int/node/4084740))",
+        "country": "Niger",
+        "createdDate": "2023-11-11T12:03:12+00:00",
+        "changedDate": "2024-08-08T12:36:47+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.4,
+          17.43
+        ]
+      },
+      "properties": {
+        "id": "52082",
+        "name": "Niger: Floods - Jun 2024",
+        "status": "ongoing",
+        "description": "As of 11 June, 26 communes across Niger have been affected by heavy rainfall and floods. The worst affected communes include 15 in Maradi in the south-central part of the country, five in Tahoua in the west, three in Tillabéri in the southwestern, two in Zinder in the south-centre, and one in Agadez in the north. According to UN OCHA, 18 people died, almost 4,000 people were affected, 329 houses were damaged and eight schools were destroyed. ([ECHO, 19 Jun 2024](https://reliefweb.int/node/4071456))\n\n*Niger is experiencing its worst flooding since 2020* As of 29 July, heavy rains affected more than 63,000 people across the country, resulting in 71 deaths, according to the authorities. Damages include 5,421 houses and 32 classrooms destroyed and 11,584 dead livestock. In 2023 more than 26,200 people were affected during the same period, with 19 deaths. The 2024 floods are the worst compared to the last four years. Humanitarian response efforts remain insufficient to address the growing needs. Shelter, non-food items, and food, particularly sugar, salt, and oil, are in critical shortage. While the government has provided cereals, significant gaps persist. To mitigate the impact of future flood, the government is collaborating with partners to establish early warning systems, identify high-risk areas, and enhance community disaster preparedness. ([OCHA, 5 Aug 2024](https://reliefweb.int/node/4084233))\n\nSince the heavy rains started at the end of July 2024 that continued through September, the toll of flooding in Niger has continued to worsen. The country's precarious socio-economic conditions exacerbate the vulnerability of its population too, particularly those living in refugee camps, peripheral neighbourhoods, flood-prone areas and densely populated urban zones... A meeting on flood management chaired by Niger's Prime Minister also found that as of 13 September 2024, 125,772 households - representing 924,799 individuals - have been affected. A total of 95,028 homes have been destroyed, 309 people have lost their lives and approximately 21,145 tonnes of food have been lost in the affected regions, further worsening the plight of the population. Additionally, 13,289 hectares of crops have been wiped out and 17,979 head of livestock have perished. ([IFRC, 19 Sep 2024](https://reliefweb.int/node/4095359))",
+        "country": "Niger",
+        "createdDate": "2024-07-18T06:55:04+00:00",
+        "changedDate": "2024-09-20T08:48:23+00:00"
+      }
+    }
+  ]
+}
