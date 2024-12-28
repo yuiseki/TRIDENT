@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.24,
+          -29.58
+        ]
+      },
+      "properties": {
+        "id": "52003",
+        "name": "Lesotho: Drought - Apr 2024",
+        "status": "ongoing",
+        "description": "According to the weather update for quarter 1 of 2024 issued by the Lesotho Meteorological Services, the persistent heatwaves and exceptionally high temperatures experienced between January and March 2024 have led to widespread dryness of crops across most fields. The continuous crop failures over the past seasons is exacerbated. The past two quarters have seen the same crop failure leading automatically to the high food prices. There are 41% of rural families spending more than half of their income on food while most of the families leave with low income. In two consecutive agricultural seasons (2021/2022 and 2022/2023), Lesotho experienced harsh climatic induced shocks such as hailstorms, pests and heavy rainfall/waterlogging in most parts of the country. On the other hands, the heavy rainfalls in late December 2023 and early 2024 led to waterlogged fields which resulted in crop failure. The inflation resulting from this crop failures or production failures have a direct incidence to the families already struggling with low income and other factors that make them more vulnerable to food insecurity. Approximately, 325,000 individuals are experiencing the ramifications of the ongoing food insecurity based on IPC information, stemming from the enduring drought that has gripped the nation for years and increased the food insecurity situation. This figure represents approximately 22% of the population. Eight districts on the ten in Lesotho are under Integrated Food Security Phase Classification 3 (IPC3), signifying a crisis state. Berea, Maseru, Mafeteng, Mohale’s Hoek, Quthing, Thaba Tseka, and Leribe areas. In these districts, access to adequate food and nutrition is severely compromised, necessitating urgent intervention and support measures to alleviate the hardship faced by affected communities. ([IFRC, 17 May 2024](https://reliefweb.int/node/4063043))\n\nA below-normal harvest and increased market reliance have resulted in maize prices rising during the main harvest. Although a larger area was planted in the 2023/24 than the previous season, dry conditions damaged much of the crop between January and March, especially maize. Some poor and very poor households that experienced significant crop losses are already relying on food purchases from local markets, which is earlier than normal. Retail staple food prices are expected to increase further due to below-average local production and higher prices for imported maize. Consequently, household purchasing capacity is expected to decline, particularly between August and September, when market purchases are the main food source, and labor opportunities are often seasonally limited. Overall, most households are likely to continue to meet their food needs through September, driving area-level Stressed (IPC Phase 2) outcomes. ([FEWS NET , 21 Jun 2024](https://reliefweb.int/node/4072219))\n### Appeals & Response Plans\n\n- [![SADC: SADC Regional Humanitarian Appeal: Response to the El Niño Induced Drought and Floods - May 2024 - Cover preview](https://reliefweb.int/sites/default/files/styles/small/public/previews/7e/f1/7ef10501-eaaf-4860-8dcd-777b3c17bca3.png) SADC: SADC Regional Humanitarian Appeal: Response to the El Niño Induced Drought and Floods - May 2024](https://reliefweb.int/node/4067778)",
+        "country": "Lesotho",
+        "createdDate": "2024-05-17T03:49:15+00:00",
+        "changedDate": "2024-07-12T13:21:57+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.24,
+          -29.58
+        ]
+      },
+      "properties": {
+        "id": "52003",
+        "name": "Lesotho: Drought - Apr 2024",
+        "status": "ongoing",
+        "description": "According to the weather update for quarter 1 of 2024 issued by the Lesotho Meteorological Services, the persistent heatwaves and exceptionally high temperatures experienced between January and March 2024 have led to widespread dryness of crops across most fields. The continuous crop failures over the past seasons is exacerbated. The past two quarters have seen the same crop failure leading automatically to the high food prices. There are 41% of rural families spending more than half of their income on food while most of the families leave with low income. In two consecutive agricultural seasons (2021/2022 and 2022/2023), Lesotho experienced harsh climatic induced shocks such as hailstorms, pests and heavy rainfall/waterlogging in most parts of the country. On the other hands, the heavy rainfalls in late December 2023 and early 2024 led to waterlogged fields which resulted in crop failure. The inflation resulting from this crop failures or production failures have a direct incidence to the families already struggling with low income and other factors that make them more vulnerable to food insecurity. Approximately, 325,000 individuals are experiencing the ramifications of the ongoing food insecurity based on IPC information, stemming from the enduring drought that has gripped the nation for years and increased the food insecurity situation. This figure represents approximately 22% of the population. Eight districts on the ten in Lesotho are under Integrated Food Security Phase Classification 3 (IPC3), signifying a crisis state. Berea, Maseru, Mafeteng, Mohale’s Hoek, Quthing, Thaba Tseka, and Leribe areas. In these districts, access to adequate food and nutrition is severely compromised, necessitating urgent intervention and support measures to alleviate the hardship faced by affected communities. ([IFRC, 17 May 2024](https://reliefweb.int/node/4063043))\n\nA below-normal harvest and increased market reliance have resulted in maize prices rising during the main harvest. Although a larger area was planted in the 2023/24 than the previous season, dry conditions damaged much of the crop between January and March, especially maize. Some poor and very poor households that experienced significant crop losses are already relying on food purchases from local markets, which is earlier than normal. Retail staple food prices are expected to increase further due to below-average local production and higher prices for imported maize. Consequently, household purchasing capacity is expected to decline, particularly between August and September, when market purchases are the main food source, and labor opportunities are often seasonally limited. Overall, most households are likely to continue to meet their food needs through September, driving area-level Stressed (IPC Phase 2) outcomes. ([FEWS NET , 21 Jun 2024](https://reliefweb.int/node/4072219))\n### Appeals & Response Plans\n\n- [![SADC: SADC Regional Humanitarian Appeal: Response to the El Niño Induced Drought and Floods - May 2024 - Cover preview](https://reliefweb.int/sites/default/files/styles/small/public/previews/7e/f1/7ef10501-eaaf-4860-8dcd-777b3c17bca3.png) SADC: SADC Regional Humanitarian Appeal: Response to the El Niño Induced Drought and Floods - May 2024](https://reliefweb.int/node/4067778)",
+        "country": "Lesotho",
+        "createdDate": "2024-05-17T03:49:15+00:00",
+        "changedDate": "2024-07-12T13:21:57+00:00"
+      }
+    }
+  ]
+}

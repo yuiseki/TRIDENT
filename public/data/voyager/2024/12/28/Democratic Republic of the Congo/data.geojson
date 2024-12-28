@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.7587,
+          -4.03833
+        ]
+      },
+      "properties": {
+        "id": "51857",
+        "name": "DR Congo: Floods - Jan 2024",
+        "status": "ongoing",
+        "description": "In the last few days, heavy rainfall has affected parts of the Democratic Republic of the Congo (DRC), particularly the eastern and southern areas, causing floods and triggering landslides that resulted in casualties and damage. According to media, as of 28 December, 60 fatalities have been reported, of whom 22 were in Kasai-Central Province, 20 in Bukavu City (South Kivu Province) and 20 in Burhinyi Village, 50 km from Bukavu City. Moreover, 16 people are still missing and more than 1,400 houses have been damaged. Floods are also reported in the northern part of the country. Over 100 households would have lost their homes in Mbandaka (Province of Équateur) according to media reports. ([ECHO, 3 Jan 2024](https://reliefweb.int/node/4027325))\n\nHeavy rainfall has been affecting the north-eastern Democratic Republic of the Congo (DRC) over the last months, causing floods and flash floods due to the rising of the Congo River water level that has resulted in casualties and damage. According to media, as of 12 January, at least 300 people died and nearly 300,000 households have been affected by floods, the capital Kinshasa is one of the most affected areas. In addition, tens of thousands of houses have been destroyed. ([ECHO, 12 Jan 2024](https://reliefweb.int/node/4029353))\n\nOn 18-19 October, heavy rainfall hit several neighbourhoods of Kinshasa, the capital and largest city of DRC, located in the western part of the country, causing floods and resulting in casualties and damage. According to media, one person died while houses, buildings and roads were flooded and damaged across the affected city. ([ECHO, 21 Oct 2024](https://reliefweb.int/node/4103302))",
+        "country": "Democratic Republic of the Congo",
+        "createdDate": "2024-01-12T11:14:27+00:00",
+        "changedDate": "2024-10-21T10:12:38+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.7587,
+          -4.03833
+        ]
+      },
+      "properties": {
+        "id": "51857",
+        "name": "DR Congo: Floods - Jan 2024",
+        "status": "ongoing",
+        "description": "In the last few days, heavy rainfall has affected parts of the Democratic Republic of the Congo (DRC), particularly the eastern and southern areas, causing floods and triggering landslides that resulted in casualties and damage. According to media, as of 28 December, 60 fatalities have been reported, of whom 22 were in Kasai-Central Province, 20 in Bukavu City (South Kivu Province) and 20 in Burhinyi Village, 50 km from Bukavu City. Moreover, 16 people are still missing and more than 1,400 houses have been damaged. Floods are also reported in the northern part of the country. Over 100 households would have lost their homes in Mbandaka (Province of Équateur) according to media reports. ([ECHO, 3 Jan 2024](https://reliefweb.int/node/4027325))\n\nHeavy rainfall has been affecting the north-eastern Democratic Republic of the Congo (DRC) over the last months, causing floods and flash floods due to the rising of the Congo River water level that has resulted in casualties and damage. According to media, as of 12 January, at least 300 people died and nearly 300,000 households have been affected by floods, the capital Kinshasa is one of the most affected areas. In addition, tens of thousands of houses have been destroyed. ([ECHO, 12 Jan 2024](https://reliefweb.int/node/4029353))\n\nOn 18-19 October, heavy rainfall hit several neighbourhoods of Kinshasa, the capital and largest city of DRC, located in the western part of the country, causing floods and resulting in casualties and damage. According to media, one person died while houses, buildings and roads were flooded and damaged across the affected city. ([ECHO, 21 Oct 2024](https://reliefweb.int/node/4103302))",
+        "country": "Democratic Republic of the Congo",
+        "createdDate": "2024-01-12T11:14:27+00:00",
+        "changedDate": "2024-10-21T10:12:38+00:00"
+      }
+    }
+  ]
+}

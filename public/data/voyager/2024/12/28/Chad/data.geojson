@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.66,
+          15.36
+        ]
+      },
+      "properties": {
+        "id": "52108",
+        "name": "Chad: Floods - Aug 2024",
+        "status": "ongoing",
+        "description": "The humanitarian impact of the widespread flooding caused by rainfall and strong winds that has been affecting central and south-western Chad since mid-May is increasing. According to the UN Office for the Coordination of Humanitarian Affairs (OCHA), as of 7 August, at least 40 people died and more than 112,413 people have been affected by flooding in 13 provinces, including 71,000 in Sila, 18,000 in Logone Oriental, 8,400 in Logone Occidental, 3,900 in Chari Baguirmi, and at least 1,356 in N'Djamena city (south-western Chad). In addition, 6,799 houses have been damaged. On 9-10 August, more rainfall is forecast over central and southern Chad, with locally very heavy rainfall in the western part of the country. ([ECHO, 9 Aug 2024](https://reliefweb.int/node/4085117))\n\nSince late July, torrential rains have caused flooding in the 23 provinces of Chad. There are 964,068 people affected, 145 deaths, and 70,000 houses destroyed. According to Government data the most severely affected provinces are Mayo Kebbi Est, Tandjile, Mandoul, Salamat, N’Djaména, and Sila. N’Djaména, the capital, counts 58,804 people affected. ([UNICEF, 30 Aug 2024](https://reliefweb.int/node/4090459))\n\nThe situation continues to evolve very rapidly with the number of people affected rising from 960,000 to more than 1,495,000 (over 266,000 households) in the last week alone. Torrential rainfall has caused rivers to overflow, displacing communities and disrupting access to essential services. As of 10 September, the government has recorded 164,000 houses destroyed, five million hectares inundated (including 400,000 hectares of croplands, of which 259,000 are completely destroyed), and 66,700 livestock washed away. This number will continue to increase as assessments continue. ([IFRC, 18 Sept 2024](https://reliefweb.int/node/4094698/))",
+        "country": "Chad",
+        "createdDate": "2024-08-09T12:25:08+00:00",
+        "changedDate": "2024-10-03T10:25:47+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.66,
+          15.36
+        ]
+      },
+      "properties": {
+        "id": "52108",
+        "name": "Chad: Floods - Aug 2024",
+        "status": "ongoing",
+        "description": "The humanitarian impact of the widespread flooding caused by rainfall and strong winds that has been affecting central and south-western Chad since mid-May is increasing. According to the UN Office for the Coordination of Humanitarian Affairs (OCHA), as of 7 August, at least 40 people died and more than 112,413 people have been affected by flooding in 13 provinces, including 71,000 in Sila, 18,000 in Logone Oriental, 8,400 in Logone Occidental, 3,900 in Chari Baguirmi, and at least 1,356 in N'Djamena city (south-western Chad). In addition, 6,799 houses have been damaged. On 9-10 August, more rainfall is forecast over central and southern Chad, with locally very heavy rainfall in the western part of the country. ([ECHO, 9 Aug 2024](https://reliefweb.int/node/4085117))\n\nSince late July, torrential rains have caused flooding in the 23 provinces of Chad. There are 964,068 people affected, 145 deaths, and 70,000 houses destroyed. According to Government data the most severely affected provinces are Mayo Kebbi Est, Tandjile, Mandoul, Salamat, N’Djaména, and Sila. N’Djaména, the capital, counts 58,804 people affected. ([UNICEF, 30 Aug 2024](https://reliefweb.int/node/4090459))\n\nThe situation continues to evolve very rapidly with the number of people affected rising from 960,000 to more than 1,495,000 (over 266,000 households) in the last week alone. Torrential rainfall has caused rivers to overflow, displacing communities and disrupting access to essential services. As of 10 September, the government has recorded 164,000 houses destroyed, five million hectares inundated (including 400,000 hectares of croplands, of which 259,000 are completely destroyed), and 66,700 livestock washed away. This number will continue to increase as assessments continue. ([IFRC, 18 Sept 2024](https://reliefweb.int/node/4094698/))",
+        "country": "Chad",
+        "createdDate": "2024-08-09T12:25:08+00:00",
+        "changedDate": "2024-10-03T10:25:47+00:00"
+      }
+    }
+  ]
+}

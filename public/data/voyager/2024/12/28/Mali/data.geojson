@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.25,
+          17.35
+        ]
+      },
+      "properties": {
+        "id": "52111",
+        "name": "Mali: Floods - Jul 2024",
+        "status": "ongoing",
+        "description": "Since 22 July, Bla town, in Segou region (central Mali), has been experiencing days with heavy rainfall, causing floods that have resulted in damage. According to UN OCHA, as of 29 July, 8,700 people have been affected in the aforementioned town. Regional authorities are coordinating the response for those affected by the floods. ([ECHO, 31 Jul 2024](https://reliefweb.int/node/4082500))\n\nHydro-climatic forecasts for the 2024 rainy season indicate a high risk of flooding in several regions of Mali, particularly in the basins of the Niger and Senegal rivers. Mali is already experiencing the effects of these floods. In some areas, dams have been opened due to rising water levels. According to these meteorological data, the likelihood of heavy rainfall will continue over the coming weeks, indicating a significant risk of flooding. Alerts received from ACMAD and technical agencies in Mali demonstrate a strong probability of flooding in various regions, with a peak expected in August, which is typically the rainiest month. The risk is particularly acute in areas prone to severe flooding, such as the Inner Niger Delta and the basins of the Bani and Senegal rivers, including Mopti, Sikasso, and Segou, which are currently on alert following forecasts of heavy rains since the end of July ... In addition to the opened dams in the country to release excess water flow, heavy rainfall has been recorded in Bla (Ségou) since July 22, 2024, leading to flooding in the districts of Flawèrè, Bakaribougou, Nouméa, and Bléla. These floods have damaged homes, latrines, and wells, resulting in material losses and impacts on livelihoods. The flooding has caused considerable damage to local infrastructure: 380 homes have collapsed, 165 latrines have been destroyed, and 128 wells have been damaged. Significant losses of food and livestock reserves have also been reported. Responders have mobilized to address emergency needs according to the response plan established by the authorities. ([IFRC, 4 Aug 2024](https://reliefweb.int/node/4085726))\n\nThe Government of Mali has declared a national disaster following floods that have claimed 30 lives and affected 47,374 people since the start of the rainy season. ([OCHA, 2 Sep 2024](https://reliefweb.int/node/4090699))\n\nAs of 9 September, the floods have worsened considerably in all 19 of Mali’s regions. The regions of Ségou (39,245), Timbuktu (36,317), Gao (19,238), Bamako (17,127), and Mopti (1,782) have recorded the highest number of people affected. There have been 374 incidences of flooding and 29,644 buildings have collapsed across Mali. ([UNICEF, 16 Sep 2024](https://reliefweb.int/node/4094297))",
+        "country": "Mali",
+        "createdDate": "2024-08-13T00:37:20+00:00",
+        "changedDate": "2024-09-17T13:25:56+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.25,
+          17.35
+        ]
+      },
+      "properties": {
+        "id": "52111",
+        "name": "Mali: Floods - Jul 2024",
+        "status": "ongoing",
+        "description": "Since 22 July, Bla town, in Segou region (central Mali), has been experiencing days with heavy rainfall, causing floods that have resulted in damage. According to UN OCHA, as of 29 July, 8,700 people have been affected in the aforementioned town. Regional authorities are coordinating the response for those affected by the floods. ([ECHO, 31 Jul 2024](https://reliefweb.int/node/4082500))\n\nHydro-climatic forecasts for the 2024 rainy season indicate a high risk of flooding in several regions of Mali, particularly in the basins of the Niger and Senegal rivers. Mali is already experiencing the effects of these floods. In some areas, dams have been opened due to rising water levels. According to these meteorological data, the likelihood of heavy rainfall will continue over the coming weeks, indicating a significant risk of flooding. Alerts received from ACMAD and technical agencies in Mali demonstrate a strong probability of flooding in various regions, with a peak expected in August, which is typically the rainiest month. The risk is particularly acute in areas prone to severe flooding, such as the Inner Niger Delta and the basins of the Bani and Senegal rivers, including Mopti, Sikasso, and Segou, which are currently on alert following forecasts of heavy rains since the end of July ... In addition to the opened dams in the country to release excess water flow, heavy rainfall has been recorded in Bla (Ségou) since July 22, 2024, leading to flooding in the districts of Flawèrè, Bakaribougou, Nouméa, and Bléla. These floods have damaged homes, latrines, and wells, resulting in material losses and impacts on livelihoods. The flooding has caused considerable damage to local infrastructure: 380 homes have collapsed, 165 latrines have been destroyed, and 128 wells have been damaged. Significant losses of food and livestock reserves have also been reported. Responders have mobilized to address emergency needs according to the response plan established by the authorities. ([IFRC, 4 Aug 2024](https://reliefweb.int/node/4085726))\n\nThe Government of Mali has declared a national disaster following floods that have claimed 30 lives and affected 47,374 people since the start of the rainy season. ([OCHA, 2 Sep 2024](https://reliefweb.int/node/4090699))\n\nAs of 9 September, the floods have worsened considerably in all 19 of Mali’s regions. The regions of Ségou (39,245), Timbuktu (36,317), Gao (19,238), Bamako (17,127), and Mopti (1,782) have recorded the highest number of people affected. There have been 374 incidences of flooding and 29,644 buildings have collapsed across Mali. ([UNICEF, 16 Sep 2024](https://reliefweb.int/node/4094297))",
+        "country": "Mali",
+        "createdDate": "2024-08-13T00:37:20+00:00",
+        "changedDate": "2024-09-17T13:25:56+00:00"
+      }
+    }
+  ]
+}

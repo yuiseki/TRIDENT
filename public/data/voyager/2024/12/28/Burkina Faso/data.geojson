@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.57,
+          12.28
+        ]
+      },
+      "properties": {
+        "id": "52086",
+        "name": "Burkina Faso: Floods - May 2024",
+        "status": "ongoing",
+        "description": "Since April, there have been floods in several parts of the country, the worst of which occurred in Boulsa in the province of Namentenga, in the Centre-Nord region.\nOn the night of 29 May 2024, the town of Boulsa was hit by torrential rain between 8pm and 10pm. The rain, accompanied by strong winds, caused extensive material damage and loss of life (07 deaths, including 3 children under the age of 10 and 2 adults, a 35-year-old woman and a 50-year-old man, and 42 injured people treated in the various health centres. Two children under the age of 15 were evacuated to Ouagadougou for more appropriate care.\nAccording to initial reports, as of 07 June, more than 1,000 households had been affected. This has been confirmed by the current registration, which shows a provisional total of more than 1,147 households, or 7,648 people affected, and 925 houses either completely or partially destroyed.\nBurkina Faso is a country vulnerable to extreme rainfall and flooding, with major humanitarian consequences. Every year during the rainy season, thousands of people are affected. The country has in-country response capacity, but support remained needed. Official data from Department of Humanitarian Affairs (DHA) received on 13 June 2024 indicates the affected households that required assistance and local Government expressed their request for support to the NS. ([IFRC, 22 Jul 2024](https://reliefweb.int/node/4079946))",
+        "country": "Burkina Faso",
+        "createdDate": "2024-07-22T20:27:39+00:00",
+        "changedDate": "2024-07-22T20:29:21+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.57,
+          12.28
+        ]
+      },
+      "properties": {
+        "id": "52086",
+        "name": "Burkina Faso: Floods - May 2024",
+        "status": "ongoing",
+        "description": "Since April, there have been floods in several parts of the country, the worst of which occurred in Boulsa in the province of Namentenga, in the Centre-Nord region.\nOn the night of 29 May 2024, the town of Boulsa was hit by torrential rain between 8pm and 10pm. The rain, accompanied by strong winds, caused extensive material damage and loss of life (07 deaths, including 3 children under the age of 10 and 2 adults, a 35-year-old woman and a 50-year-old man, and 42 injured people treated in the various health centres. Two children under the age of 15 were evacuated to Ouagadougou for more appropriate care.\nAccording to initial reports, as of 07 June, more than 1,000 households had been affected. This has been confirmed by the current registration, which shows a provisional total of more than 1,147 households, or 7,648 people affected, and 925 houses either completely or partially destroyed.\nBurkina Faso is a country vulnerable to extreme rainfall and flooding, with major humanitarian consequences. Every year during the rainy season, thousands of people are affected. The country has in-country response capacity, but support remained needed. Official data from Department of Humanitarian Affairs (DHA) received on 13 June 2024 indicates the affected households that required assistance and local Government expressed their request for support to the NS. ([IFRC, 22 Jul 2024](https://reliefweb.int/node/4079946))",
+        "country": "Burkina Faso",
+        "createdDate": "2024-07-22T20:27:39+00:00",
+        "changedDate": "2024-07-22T20:29:21+00:00"
+      }
+    }
+  ]
+}

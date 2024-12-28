@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.74,
+          -13.22
+        ]
+      },
+      "properties": {
+        "id": "52000",
+        "name": "Malawi: Drought - Mar 2024",
+        "status": "ongoing",
+        "description": "About nine million people in Malawi are reeling from the devastating impacts of El Niño-induced floods and drought, which are destroying harvests and causing hunger to soar to crisis levels ... An El Niño-induced drought has severely affected this season’s maize harvest, resulting in a forecast 45 percent decline against the five-year average and exacerbating food insecurity, and about 40 percent of the population could be facing acute hunger by the end of year because of the drought. In addition, about 14,000 people were displaced by floods and landslides in the northern part of the country. On 25 March, the President of Malawi declared a national disaster. The National Response Plan launched in April estimates the needs at US$449 million. Similarly, neighbouring countries of Zambia and Zimbabwe have also declared national drought emergencies. ([CCC, FAO, Gov't of Malawi, OCHA, WFP 13 May 2024](https://reliefweb.int/node/4061924))\n\nApproximately 4.2 million people (20 percent of the analysed population) are expected to experience high levels of acute food insecurity (IPC Phase 3 or above) in Malawi in the current period (June and September 2024), including 56,000 people in IPC Phase 4 (Emergency) and 4.1 million people in IPC Phase 3 (Crisis). These populations require urgent humanitarian action to reduce their food consumption gaps, protect and restore their livelihoods and prevent high levels of acute malnutrition. An additional 6.7 million people are classified in IPC Phase 2 (Stressed) between the same period and require interventions to mitigate disaster risks and safeguard their livelihoods. Most of the population in Phase 3 or above are not able to produce enough of their own food and are dependent on market purchases for their food needs. The situation is anticipated to deteriorate during the projection period from October 2024 to March 2025 which coincides with the lean season in Malawi. The resulting impact of El Niño on crop production will exacerbate the situation further and is likely to result in an earlier onset of the lean season. In this projected period, 5.7 million people (28 percent of the analysed population are estimated to be in IPC Phase 3 or above). These people will require urgent humanitarian action to reduce food gaps, particularly for the 416,000 people in Phase 4, protect and restore livelihoods and prevent acute malnutrition.  ([IPC, 5 Jul 2024](https://reliefweb.int/node/4075611))\n### Appeals & Response Plans\n\n- [![OCHA: Malawi: Drought Flash Appeal July 2024 - April 2025 (July 2024) - Cover preview](https://reliefweb.int/sites/default/files/styles/small/public/previews/9c/d8/9cd80453-dd32-4e94-a897-d264634dd054.png) OCHA: Malawi: Drought Flash Appeal July 2024 - April 2025 (July 2024)](https://reliefweb.int/node/4080189)\n- [![SADC: SADC Regional Humanitarian Appeal: Response to the El Niño Induced Drought and Floods - May 2024 - Cover preview](https://reliefweb.int/sites/default/files/styles/small/public/previews/7e/f1/7ef10501-eaaf-4860-8dcd-777b3c17bca3.png) SADC: SADC Regional Humanitarian Appeal: Response to the El Niño Induced Drought and Floods - May 2024](https://reliefweb.int/node/4067778)",
+        "country": "Malawi",
+        "createdDate": "2024-05-14T08:57:15+00:00",
+        "changedDate": "2024-07-23T14:34:11+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.74,
+          -13.22
+        ]
+      },
+      "properties": {
+        "id": "52000",
+        "name": "Malawi: Drought - Mar 2024",
+        "status": "ongoing",
+        "description": "About nine million people in Malawi are reeling from the devastating impacts of El Niño-induced floods and drought, which are destroying harvests and causing hunger to soar to crisis levels ... An El Niño-induced drought has severely affected this season’s maize harvest, resulting in a forecast 45 percent decline against the five-year average and exacerbating food insecurity, and about 40 percent of the population could be facing acute hunger by the end of year because of the drought. In addition, about 14,000 people were displaced by floods and landslides in the northern part of the country. On 25 March, the President of Malawi declared a national disaster. The National Response Plan launched in April estimates the needs at US$449 million. Similarly, neighbouring countries of Zambia and Zimbabwe have also declared national drought emergencies. ([CCC, FAO, Gov't of Malawi, OCHA, WFP 13 May 2024](https://reliefweb.int/node/4061924))\n\nApproximately 4.2 million people (20 percent of the analysed population) are expected to experience high levels of acute food insecurity (IPC Phase 3 or above) in Malawi in the current period (June and September 2024), including 56,000 people in IPC Phase 4 (Emergency) and 4.1 million people in IPC Phase 3 (Crisis). These populations require urgent humanitarian action to reduce their food consumption gaps, protect and restore their livelihoods and prevent high levels of acute malnutrition. An additional 6.7 million people are classified in IPC Phase 2 (Stressed) between the same period and require interventions to mitigate disaster risks and safeguard their livelihoods. Most of the population in Phase 3 or above are not able to produce enough of their own food and are dependent on market purchases for their food needs. The situation is anticipated to deteriorate during the projection period from October 2024 to March 2025 which coincides with the lean season in Malawi. The resulting impact of El Niño on crop production will exacerbate the situation further and is likely to result in an earlier onset of the lean season. In this projected period, 5.7 million people (28 percent of the analysed population are estimated to be in IPC Phase 3 or above). These people will require urgent humanitarian action to reduce food gaps, particularly for the 416,000 people in Phase 4, protect and restore livelihoods and prevent acute malnutrition.  ([IPC, 5 Jul 2024](https://reliefweb.int/node/4075611))\n### Appeals & Response Plans\n\n- [![OCHA: Malawi: Drought Flash Appeal July 2024 - April 2025 (July 2024) - Cover preview](https://reliefweb.int/sites/default/files/styles/small/public/previews/9c/d8/9cd80453-dd32-4e94-a897-d264634dd054.png) OCHA: Malawi: Drought Flash Appeal July 2024 - April 2025 (July 2024)](https://reliefweb.int/node/4080189)\n- [![SADC: SADC Regional Humanitarian Appeal: Response to the El Niño Induced Drought and Floods - May 2024 - Cover preview](https://reliefweb.int/sites/default/files/styles/small/public/previews/7e/f1/7ef10501-eaaf-4860-8dcd-777b3c17bca3.png) SADC: SADC Regional Humanitarian Appeal: Response to the El Niño Induced Drought and Floods - May 2024](https://reliefweb.int/node/4067778)",
+        "country": "Malawi",
+        "createdDate": "2024-05-14T08:57:15+00:00",
+        "changedDate": "2024-07-23T14:34:11+00:00"
+      }
+    }
+  ]
+}

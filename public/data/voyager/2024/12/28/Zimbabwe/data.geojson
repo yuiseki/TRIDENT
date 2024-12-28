@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.94,
+          -19.19
+        ]
+      },
+      "properties": {
+        "id": "51995",
+        "name": "Zimbabwe: Drought - Apr 2024",
+        "status": "ongoing",
+        "description": "Following the severe impacts of the El Nino induced drought which affected more than 80% of the country resulting in significantly below-normal harvest, the country declared the 2023-2024 agriculture season a state of national disaster at the beginning of April 2024. The government appealed to humanitarian partners for resource mobilization to alleviate the possible impacts of the drought. ([WFP, 19 Apr 2024](https://reliefweb.int/node/4056008))\n\nAn estimated population of 6 million are expected to be food insecure in Zimbabwe during 2024-2025 lean season. The current El Niño induced drought is expected to impact the food and nutrition security situation, reducing food access and diversity, and thereby the overall quality of people’s diets. Poor rainfall led to partial or complete crop failure in most parts of the country –40 percent poor and 60 percent written off (i.e. completely lost). The drought will only further worsen water shortages in Zimbabwe, exposing 2.6 million people to water insecurity. The current El Niño event threatens nearly 1.8 million learners across Zimbabwe's 72 education districts, with the most severe impacts to be felt by more than 1.24 million students, in 30 most drought-affected districts. ([OCHA, 5 May 2024](https://reliefweb.int/node/4060387))\n\nArea-level Crisis (IPC Phase 3) outcomes are expected to expand in Zimbabwe from June 2024 to January 2025. Following a historic dry spell at a critical period of crop development that resulted in a very poor harvest, millions of people are expected to rely on alternative sources of income, social support, and humanitarian assistance to access food during the longer-than-normal 2024/25 lean season. Crisis (IPC Phase 3) outcomes will be widespread from October 2024 to January 2025. Althoughthe start of the 2024/25 rainy season in late 2024 is forecast to be average and will likely support engagement in agricultural activity, humanitarian assistance needs will remain high in many areas of the country until the harvest in 2025 due to poor purchasing capacity as a result of limited income-earning opportunities and high food prices. ([FEWS NET, 3 Jul 2024](https://reliefweb.int/node/4075080))\n\nCrisis (IPC Phase 3) outcomes are expected throughout the country from October 2024 through May 2025. Following the 2023/24 El Niño-induced drought, own-produced food stocks are widely unavailable, even in typical surplus-producing areas, while high prices and below-average income are constraining access to markets. As a result, higher-than-normal food assistance needs are expected throughout the annual lean season. ([FEWS NET, 1 Nov 2024](https://reliefweb.int/node/4107174))\n### Appeals & Response Plans\n\n- [![OCHA: Zimbabwe: Drought Flash Appeal May 2024 - April 2025 (May 2024) - Cover preview](https://reliefweb.int/sites/default/files/styles/small/public/previews/8c/bb/8cbb6c5b-99df-41ab-bd12-7628f4d46f6f.png) OCHA: Zimbabwe: Drought Flash Appeal May 2024 - April 2025 (May 2024)](https://reliefweb.int/node/4060387)\n- [![SADC: SADC Regional Humanitarian Appeal: Response to the El Niño Induced Drought and Floods - May 2024 - Cover preview](https://reliefweb.int/sites/default/files/styles/small/public/previews/7e/f1/7ef10501-eaaf-4860-8dcd-777b3c17bca3.png) SADC: SADC Regional Humanitarian Appeal: Response to the El Niño Induced Drought and Floods - May 2024](https://reliefweb.int/node/4067778)",
+        "country": "Zimbabwe",
+        "createdDate": "2024-05-09T10:52:47+00:00",
+        "changedDate": "2024-11-01T09:01:38+00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.94,
+          -19.19
+        ]
+      },
+      "properties": {
+        "id": "51995",
+        "name": "Zimbabwe: Drought - Apr 2024",
+        "status": "ongoing",
+        "description": "Following the severe impacts of the El Nino induced drought which affected more than 80% of the country resulting in significantly below-normal harvest, the country declared the 2023-2024 agriculture season a state of national disaster at the beginning of April 2024. The government appealed to humanitarian partners for resource mobilization to alleviate the possible impacts of the drought. ([WFP, 19 Apr 2024](https://reliefweb.int/node/4056008))\n\nAn estimated population of 6 million are expected to be food insecure in Zimbabwe during 2024-2025 lean season. The current El Niño induced drought is expected to impact the food and nutrition security situation, reducing food access and diversity, and thereby the overall quality of people’s diets. Poor rainfall led to partial or complete crop failure in most parts of the country –40 percent poor and 60 percent written off (i.e. completely lost). The drought will only further worsen water shortages in Zimbabwe, exposing 2.6 million people to water insecurity. The current El Niño event threatens nearly 1.8 million learners across Zimbabwe's 72 education districts, with the most severe impacts to be felt by more than 1.24 million students, in 30 most drought-affected districts. ([OCHA, 5 May 2024](https://reliefweb.int/node/4060387))\n\nArea-level Crisis (IPC Phase 3) outcomes are expected to expand in Zimbabwe from June 2024 to January 2025. Following a historic dry spell at a critical period of crop development that resulted in a very poor harvest, millions of people are expected to rely on alternative sources of income, social support, and humanitarian assistance to access food during the longer-than-normal 2024/25 lean season. Crisis (IPC Phase 3) outcomes will be widespread from October 2024 to January 2025. Althoughthe start of the 2024/25 rainy season in late 2024 is forecast to be average and will likely support engagement in agricultural activity, humanitarian assistance needs will remain high in many areas of the country until the harvest in 2025 due to poor purchasing capacity as a result of limited income-earning opportunities and high food prices. ([FEWS NET, 3 Jul 2024](https://reliefweb.int/node/4075080))\n\nCrisis (IPC Phase 3) outcomes are expected throughout the country from October 2024 through May 2025. Following the 2023/24 El Niño-induced drought, own-produced food stocks are widely unavailable, even in typical surplus-producing areas, while high prices and below-average income are constraining access to markets. As a result, higher-than-normal food assistance needs are expected throughout the annual lean season. ([FEWS NET, 1 Nov 2024](https://reliefweb.int/node/4107174))\n### Appeals & Response Plans\n\n- [![OCHA: Zimbabwe: Drought Flash Appeal May 2024 - April 2025 (May 2024) - Cover preview](https://reliefweb.int/sites/default/files/styles/small/public/previews/8c/bb/8cbb6c5b-99df-41ab-bd12-7628f4d46f6f.png) OCHA: Zimbabwe: Drought Flash Appeal May 2024 - April 2025 (May 2024)](https://reliefweb.int/node/4060387)\n- [![SADC: SADC Regional Humanitarian Appeal: Response to the El Niño Induced Drought and Floods - May 2024 - Cover preview](https://reliefweb.int/sites/default/files/styles/small/public/previews/7e/f1/7ef10501-eaaf-4860-8dcd-777b3c17bca3.png) SADC: SADC Regional Humanitarian Appeal: Response to the El Niño Induced Drought and Floods - May 2024](https://reliefweb.int/node/4067778)",
+        "country": "Zimbabwe",
+        "createdDate": "2024-05-09T10:52:47+00:00",
+        "changedDate": "2024-11-01T09:01:38+00:00"
+      }
+    }
+  ]
+}
