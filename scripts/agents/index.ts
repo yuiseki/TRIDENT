@@ -1,10 +1,11 @@
 import { END, Annotation } from "@langchain/langgraph";
 import { BaseMessage, HumanMessage } from "@langchain/core/messages";
 import { START, StateGraph } from "@langchain/langgraph";
-import { supervisorChain } from "./supervisor";
 import { RunnableConfig } from "@langchain/core/runnables";
-import { wikipediaAgent } from "./wikipedia";
+import { loadSupervisorChain } from "./supervisor";
+import { loadWikipediaAgent } from "./wikipedia";
 import fs from "node:fs/promises";
+import { ChatOllama } from "@langchain/ollama";
 
 // This defines the object that is passed between each node
 // in the graph. We will create different nodes for each agent and tool
@@ -20,12 +21,18 @@ const AgentState = Annotation.Root({
   }),
 });
 
+const model = new ChatOllama({
+  model: "qwen2.5:7b",
+  temperature: 0,
+});
+
 const members = ["wikipedia_researcher"] as const;
 
 const wikipediaResearcherNode = async (
   state: typeof AgentState.State,
   config?: RunnableConfig
 ) => {
+  const wikipediaAgent = await loadWikipediaAgent(model);
   const result = await wikipediaAgent.invoke(state, config);
   const lastMessage = result.messages[result.messages.length - 1];
   return {
@@ -42,6 +49,7 @@ const supervisorNode = async (
   state: typeof AgentState.State,
   config?: RunnableConfig
 ) => {
+  const supervisorChain = await loadSupervisorChain(model, members);
   const result = await supervisorChain.invoke(state, config);
   return {
     next: result.next,
