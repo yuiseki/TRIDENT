@@ -1,6 +1,6 @@
 import { Tool } from "langchain/tools";
 
-export class Nominatim extends Tool {
+export class NominatimOpenStreetMap extends Tool {
   name = "nominatim-search-openstreetmap";
   description = `useful for when you need to get OpenStreetMap entity by name of location. Input: a name of location.`;
 

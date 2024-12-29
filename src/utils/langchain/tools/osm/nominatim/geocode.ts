@@ -1,6 +1,6 @@
 import { Tool } from "langchain/tools";
 
-export class Nominatim extends Tool {
+export class NominatimGeocode extends Tool {
   name = "nominatim-geocode";
   description = `useful for when you need to geocode address or name of location to latitude, longitude. Input: a address or a name of location.`;
 
