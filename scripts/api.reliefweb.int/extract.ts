@@ -3,7 +3,7 @@ dotenv.config();
 
 import fs from "node:fs/promises";
 import { LLMModel } from "../../src/types/LLMModel.ts";
-import { getDisasterJsonPaths } from "../../src//utils/getDisasterJsonPaths.ts";
+import { getDisasterJsonPaths } from "../../src/utils/getDisasterJsonPaths.ts";
 import { ollamaModels } from "../../src/utils/ollamaModels.ts";
 import { ChatOllama } from "@langchain/ollama";
 import { OllamaEmbeddings } from "@langchain/ollama";
