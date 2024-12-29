@@ -4,80 +4,40 @@ import { AIMessage, BaseMessage, HumanMessage } from "@langchain/core/messages";
 // Tools
 import { Tool } from "langchain/tools";
 import { Wikipedia } from "../src/utils/langchain/tools/wikipedia/index.ts";
-import { Calculator } from "@langchain/community/tools/calculator";
 
 // langgraph
-import {
-  MemorySaver,
-  Annotation,
-  messagesStateReducer,
-} from "@langchain/langgraph";
 import { createReactAgent } from "@langchain/langgraph/prebuilt";
-import { ToolNode } from "@langchain/langgraph/prebuilt";
-import { StateGraph, MessagesAnnotation } from "@langchain/langgraph";
 
-const tools: Array<Tool> = [new Calculator(), new Wikipedia()];
-
-const toolNode = new ToolNode(tools);
+const tools: Array<Tool> = [new Wikipedia()];
 
 const model = new ChatOllama({
-  model: "qwen2.5-coder:1.5b",
-  format: "json",
+  model: "qwen2.5:7b",
   temperature: 0,
-}).bindTools(tools);
-
-// Define the graph state
-// See here for more info: https://langchain-ai.github.io/langgraphjs/how-tos/define-state/
-const StateAnnotation = Annotation.Root({
-  messages: Annotation<BaseMessage[]>({
-    // `messagesStateReducer` function defines how `messages` state key should be updated
-    // (in this case it appends new messages to the list and overwrites messages with the same ID)
-    reducer: messagesStateReducer,
-  }),
 });
 
-// Define the function that determines whether to continue or not
-// We can extract the state typing via `StateAnnotation.State`
-function shouldContinue(state: typeof StateAnnotation.State) {
-  const messages = state.messages;
-  const lastMessage = messages[messages.length - 1] as AIMessage;
-
-  // If the LLM makes a tool call, then we route to the "tools" node
-  if (lastMessage.tool_calls?.length) {
-    return "tools";
-  }
-  // Otherwise, we stop (reply to the user)
-  return "__end__";
-}
-
-// Define the function that calls the model
-async function callModel(state: typeof StateAnnotation.State) {
-  const messages = state.messages;
-  const response = await model.invoke(messages);
-
-  // We return a list, because this will get added to the existing list
-  return { messages: [response] };
-}
-
-// Define a new graph
-const workflow = new StateGraph(StateAnnotation)
-  .addNode("agent", callModel)
-  .addNode("tools", toolNode)
-  .addEdge("__start__", "agent")
-  .addConditionalEdges("agent", shouldContinue)
-  .addEdge("tools", "agent");
-
-// Initialize memory to persist state between graph runs
-const checkpointer = new MemorySaver();
-
-// Finally, we compile it into a LangChain Runnable.
-const app = workflow.compile({ checkpointer });
+const agent = createReactAgent({ llm: model, tools: tools });
 
 // Use the agent
-const finalState = await app.invoke(
+const stream = await agent.stream(
   {
     messages: [new HumanMessage("Who is the president of the United States?")],
   },
-  { configurable: { thread_id: "42" }, recursionLimit: 30 }
+  {
+    streamMode: "values",
+    recursionLimit: 30,
+  }
 );
-console.log(finalState.messages[finalState.messages.length - 1].content);
+for await (const chunk of stream) {
+  const lastMessage = chunk.messages[chunk.messages.length - 1];
+  const type = lastMessage._getType();
+  const content = lastMessage.content;
+  const toolCalls = lastMessage.tool_calls;
+  console.dir(
+    {
+      type,
+      content: content.length < 100 ? content : content.slice(0, 100) + "...",
+      toolCalls,
+    },
+    { depth: null }
+  );
+}
