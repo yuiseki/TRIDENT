@@ -21,7 +21,7 @@ const tools: Array<Tool> = [new Calculator(), new Wikipedia()];
 const toolNode = new ToolNode(tools);
 
 const model = new ChatOllama({
-  model: "qwen2.5-coder:7b",
+  model: "qwen2.5-coder:1.5b",
   format: "json",
   temperature: 0,
 }).bindTools(tools);
