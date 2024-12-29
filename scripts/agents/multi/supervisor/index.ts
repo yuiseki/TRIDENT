@@ -3,7 +3,7 @@ import { BaseMessage, HumanMessage } from "@langchain/core/messages";
 import { START, StateGraph } from "@langchain/langgraph";
 import { RunnableConfig } from "@langchain/core/runnables";
 import { loadSupervisorChain } from "./supervisor";
-import { loadWikipediaAgent } from "./wikipedia";
+import { loadWikipediaAgent } from "../../wikipedia";
 import fs from "node:fs/promises";
 import { ChatOllama } from "@langchain/ollama";
 
