@@ -7,6 +7,11 @@ import { loadWikipediaAgent } from "./wikipedia";
 import fs from "node:fs/promises";
 import { ChatOllama } from "@langchain/ollama";
 
+const model = new ChatOllama({
+  model: "qwen2.5:7b",
+  temperature: 0,
+});
+
 // This defines the object that is passed between each node
 // in the graph. We will create different nodes for each agent and tool
 const AgentState = Annotation.Root({
@@ -19,11 +24,6 @@ const AgentState = Annotation.Root({
     reducer: (x, y) => y ?? x ?? END,
     default: () => END,
   }),
-});
-
-const model = new ChatOllama({
-  model: "qwen2.5:7b",
-  temperature: 0,
 });
 
 const members = ["wikipedia_researcher"] as const;
