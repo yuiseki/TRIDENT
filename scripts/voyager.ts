@@ -11,11 +11,30 @@ import { createReactAgent } from "@langchain/langgraph/prebuilt";
 const tools: Array<Tool> = [new Wikipedia()];
 
 const model = new ChatOllama({
+  // 速いがツールを使わずに返答しちゃう
+  // model: "qwen2.5:1.5b",
+  // 速いがツールを使い続けて無限ループしちゃう
+  // model: "qwen2.5-coder:1.5b",
+  // 速いし無限ループには陥らずツールを使えるが出力が雑
+  // model: "smollm2:1.7b",
+  // 速いがツールを使わずに返答しちゃう
+  // model: "granite3-dense:2b",
+  // 速いがツールを使わずに返答しちゃう
+  // model: "granite3-moe:1b",
+  // 速いがツールを使わずに返答しちゃう
+  // model: "granite3-moe:3b",
+  // 遅いが正確に動く
   model: "qwen2.5:7b",
   temperature: 0,
 });
 
-const agent = createReactAgent({ llm: model, tools: tools });
+const prompt =
+  "You are a Wikipedia researcher. Be sure to search Wikipedia and reply based on the results. You have up to 10 chances to search Wikipedia.";
+const agent = createReactAgent({
+  llm: model,
+  tools: tools,
+  stateModifier: prompt,
+});
 
 // Use the agent
 const stream = await agent.stream(
@@ -24,7 +43,7 @@ const stream = await agent.stream(
   },
   {
     streamMode: "values",
-    recursionLimit: 30,
+    recursionLimit: 10,
   }
 );
 for await (const chunk of stream) {
