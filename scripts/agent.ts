@@ -1,14 +1,8 @@
 import { ChatOllama } from "@langchain/ollama";
-import { AIMessage, BaseMessage, HumanMessage } from "@langchain/core/messages";
-
-// Tools
-import { Tool } from "langchain/tools";
-import { Wikipedia } from "../src/utils/langchain/tools/wikipedia/index.ts";
+import { HumanMessage } from "@langchain/core/messages";
 
 // langgraph
-import { createReactAgent } from "@langchain/langgraph/prebuilt";
-
-const tools: Array<Tool> = [new Wikipedia()];
+import { loadWikipediaAgent } from "./agents/wikipedia.ts";
 
 const model = new ChatOllama({
   // 速いがツールを使わずに返答しちゃう
@@ -28,13 +22,7 @@ const model = new ChatOllama({
   temperature: 0,
 });
 
-const prompt =
-  "You are a Wikipedia researcher. Be sure to search Wikipedia and reply based on the results. You have up to 10 chances to search Wikipedia.";
-const agent = createReactAgent({
-  llm: model,
-  tools: tools,
-  stateModifier: prompt,
-});
+const agent = await loadWikipediaAgent(model);
 
 // Use the agent
 const stream = await agent.stream(
