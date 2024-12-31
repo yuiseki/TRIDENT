@@ -8,6 +8,7 @@ import { createReactAgent } from "@langchain/langgraph/prebuilt";
 
 // tool
 import { OverpassTokyoRamenCount } from "../src/utils/langchain/tools/osm/overpass/tokyo_ramen/index.ts";
+import { Wikipedia } from "../src/utils/langchain/tools/wikipedia/index.ts";
 
 const model = new ChatOllama({
   // 速いがツールを使わずに返答しちゃう
@@ -23,14 +24,16 @@ const model = new ChatOllama({
   // 速いがツールを使わずに返答しちゃう
   // model: "granite3-moe:3b",
   // 遅いが正確に動く
-  model: "qwen2.5:7b",
+  // model: "qwen2.5:7b",
+  // 12GB VRAMギリギリ
+  model: "qwen2.5:14b",
   temperature: 0,
 });
 
 export const loadAgent = async (model: BaseChatModel) => {
   const tools: Array<Tool> = [new OverpassTokyoRamenCount()];
   const prompt =
-    "You are a specialist of ramen shops. Be sure to use overpass-tokyo-ramen-count tool and reply based on the results. You have up to 10 chances to use tool.";
+    "You are a specialist of ramen shops. Be sure to use overpass-tokyo-ramen-count tool and reply based on the results. You can only use one tool at a time. Before you answer, think if you are right.";
   return createReactAgent({
     llm: model,
     tools: tools,
@@ -41,15 +44,21 @@ export const loadAgent = async (model: BaseChatModel) => {
 const agent = await loadAgent(model);
 
 // Use the agent
-const stream = await agent.stream(
-  {
-    messages: [new HumanMessage("東京都台東区のラーメン屋の数を教えて")],
-  },
-  {
-    streamMode: "values",
-    recursionLimit: 10,
-  }
-);
+const stream = await agent
+  .withConfig({
+    maxConcurrency: 1,
+  })
+  .stream(
+    {
+      messages: [
+        new HumanMessage("東京都23区で一番ラーメン屋が多いのはどこ？"),
+      ],
+    },
+    {
+      streamMode: "values",
+      recursionLimit: 100,
+    }
+  );
 for await (const chunk of stream) {
   const lastMessage = chunk.messages[chunk.messages.length - 1];
   const type = lastMessage._getType();
@@ -58,7 +67,7 @@ for await (const chunk of stream) {
   console.dir(
     {
       type,
-      content: content.length < 100 ? content : content.slice(0, 100) + "...",
+      content: content.length < 200 ? content : content.slice(0, 200) + "...",
       toolCalls,
     },
     { depth: null }

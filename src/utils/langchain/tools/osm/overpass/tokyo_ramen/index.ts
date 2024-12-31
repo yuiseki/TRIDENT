@@ -30,9 +30,10 @@ out geom;`;
         return "failed to fetch. change query";
       }
 
-      const answer = json.elements.length;
-      // console.debug("Tool: OverpassTokyoRamenCount, answer:");
-      // console.debug(answer);
+      let answer = json.elements.length;
+      answer = `${input}には${answer}軒のラーメン屋があります。`;
+      console.debug("Tool: OverpassTokyoRamenCount, answer:");
+      console.debug("\t" + answer);
       // console.debug("");
       return answer;
     } catch (error) {
