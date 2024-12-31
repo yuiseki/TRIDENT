@@ -52,6 +52,7 @@ const stream = await agent
     {
       messages: [
         new HumanMessage("東京都23区で一番ラーメン屋が多いのはどこ？"),
+        // new HumanMessage("台東区のラーメン屋の数を教えて"),
       ],
     },
     {
