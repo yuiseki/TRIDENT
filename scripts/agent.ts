@@ -1,8 +1,13 @@
 import { ChatOllama } from "@langchain/ollama";
 import { HumanMessage } from "@langchain/core/messages";
+import { Tool } from "@langchain/core/tools";
+import { BaseChatModel } from "@langchain/core/language_models/chat_models";
 
 // langgraph
-import { loadWikipediaAgent } from "./agents/wikipedia.ts";
+import { createReactAgent } from "@langchain/langgraph/prebuilt";
+
+// tool
+import { OverpassTokyoRamenCount } from "../src/utils/langchain/tools/osm/overpass/tokyo_ramen/index.ts";
 
 const model = new ChatOllama({
   // 速いがツールを使わずに返答しちゃう
@@ -22,12 +27,23 @@ const model = new ChatOllama({
   temperature: 0,
 });
 
-const agent = await loadWikipediaAgent(model);
+export const loadAgent = async (model: BaseChatModel) => {
+  const tools: Array<Tool> = [new OverpassTokyoRamenCount()];
+  const prompt =
+    "You are a specialist of ramen shops. Be sure to use overpass-tokyo-ramen-count tool and reply based on the results. You have up to 10 chances to use tool.";
+  return createReactAgent({
+    llm: model,
+    tools: tools,
+    stateModifier: prompt,
+  });
+};
+
+const agent = await loadAgent(model);
 
 // Use the agent
 const stream = await agent.stream(
   {
-    messages: [new HumanMessage("Who is the president of the United States?")],
+    messages: [new HumanMessage("東京都台東区のラーメン屋の数を教えて")],
   },
   {
     streamMode: "values",
