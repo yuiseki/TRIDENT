@@ -5,7 +5,6 @@ export class OverpassTokyoRamenCount extends Tool {
   description = `useful for when you need to count number of ramen shops by a name of area. Input: a name of area in Tokyo in Japanese.`;
 
   async _call(input: string) {
-    // console.debug("Tool: OverpassTokyoRamenCount, input:", input);
     try {
       const overpassQuery = `[out:json][timeout:30000];
 area["name"="東京都"]->.outer;
@@ -27,7 +26,7 @@ out geom;`;
       const json = await res.json();
 
       if (json.elements.length === 0) {
-        return "failed to fetch. change query";
+        return "Failed to fetch. change query";
       }
 
       let answer = json.elements.length;
