@@ -232,7 +232,9 @@ export default function Page() {
           overpassResponseJson: any,
           retry: boolean
         ) => {
-          const newGeojson = osmtogeojson(overpassResponseJson);
+          const newGeojson = osmtogeojson(
+            overpassResponseJson
+          ) as FeatureCollection;
           console.log("newGeojson", newGeojson);
           if (newGeojson.features.length !== 0) {
             setGeojsonWithStyleList((prev) => {

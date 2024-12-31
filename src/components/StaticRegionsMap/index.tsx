@@ -39,7 +39,7 @@ export const StaticRegionsMap: React.FC<{
       const overpassResJson = await getOverpassResponseJsonWithCache(
         overpassQuery
       );
-      const newGeojson = osmtogeojson(overpassResJson);
+      const newGeojson = osmtogeojson(overpassResJson) as FeatureCollection;
       setGeojsonWithStyleList((prev) => {
         return [
           ...prev,
