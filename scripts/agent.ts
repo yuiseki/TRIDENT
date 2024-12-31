@@ -24,9 +24,11 @@ const model = new ChatOllama({
   // 速いがツールを使わずに返答しちゃう
   // model: "granite3-moe:3b",
   // 遅いが正確に動く
-  // model: "qwen2.5:7b",
-  // 12GB VRAMギリギリ
-  model: "qwen2.5:14b",
+  model: "qwen2.5:7b",
+  // 12GB VRAM ギリギリ
+  //model: "qwen2.5:14b",
+  // 12GB VRAM 超える
+  // model: "qwq:32b",
   temperature: 0,
 });
 
