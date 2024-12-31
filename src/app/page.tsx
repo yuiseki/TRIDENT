@@ -152,7 +152,9 @@ export default function Home() {
           overpassResponseJson: any,
           retry: boolean
         ) => {
-          const newGeojson = osmtogeojson(overpassResponseJson);
+          const newGeojson = osmtogeojson(
+            overpassResponseJson
+          ) as FeatureCollection;
           console.log("features", newGeojson.features.length);
           if (newGeojson.features.length !== 0) {
             setGeojsonWithStyleList((prev) => {
