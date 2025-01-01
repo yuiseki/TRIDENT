@@ -85,7 +85,14 @@ const CountryDisasters: React.FC = () => {
           </li>
         ))}
       </ul>
-      <div style={{ width: "100%", height: "400px" }}>
+      <div
+        style={{
+          width: "100%",
+          height: "400px",
+          position: "absolute",
+          bottom: 0,
+        }}
+      >
         <CountryDisasterMap disasters={disasters} />
       </div>
     </div>
