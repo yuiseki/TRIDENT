@@ -41,6 +41,11 @@ Reply: 了解しました。OpenStreetMapのデータに基づいて台東区の
 Reply: 了解しました。どの地域のラーメン屋を表示しますか？`,
   },
   {
+    input: "台東区のラーメン屋を教えて",
+    output: `Ability: overpass-api
+Reply: 了解しました。OpenStreetMapのデータに基づいて台東区のラーメン屋を表示する地図を作成しています。しばらくお待ちください……`,
+  },
+  {
     input: `台東区の人気のラーメン屋を教えて`,
     output: `Ability: apology
 Reply: 申し訳ありません。私はOpenStreetMapのデータ以外の情報に基づいて地図を生成することはできません。`,
@@ -68,4 +73,16 @@ Reply: 了解しました。OpenStreetMapのデータに基づいて台東区の
     output: `Ability: overpass-api
 Reply: 了解しました。OpenStreetMapのデータに基づいて台東区と文京区のラーメン屋を表示する地図を作成しています。しばらくお待ちください……`,
   },
+  {
+    input: `東京駅から秋葉原駅までのルートを教えて`,
+    output: `Ability: valhalla-api
+Reply: 了解しました。OpenStreetMapのデータに基づいて東京駅から秋葉原駅までのルートを表示する地図を作成しています。しばらくお待ちください……`,
+  },
+  /*
+  {
+    input: "世界で一番広い国は？",
+    output: `Ability: duckdb
+Reply: 世界で一番広い国を調べています。しばらくお待ちください……`,
+  },
+  */
 ];
