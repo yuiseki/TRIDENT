@@ -8,6 +8,8 @@ import fs from "node:fs/promises";
 import { ChatOllama } from "@langchain/ollama";
 import { loadTavilySearchAgent } from "../../tavily";
 
+
+
 const model = new ChatOllama({
   model: "qwen2.5:7b",
   temperature: 0,
@@ -27,7 +29,7 @@ const AgentState = Annotation.Root({
   }),
 });
 
-const members = ["wikipedia_researcher", "tavily_searcher"] as const;
+const members = ["wikipedia_researcher"] as const;
 
 const wikipediaResearcherNode = async (
   state: typeof AgentState.State,
@@ -50,14 +52,14 @@ const tavilySearcherNode = async (
   state: typeof AgentState.State,
   config?: RunnableConfig
 ) => {
-  const duckduckgoAgent = await loadTavilySearchAgent(model);
-  const result = await duckduckgoAgent.invoke(state, config);
+  const tavilyAgent = await loadTavilySearchAgent(model);
+  const result = await tavilyAgent.invoke(state, config);
   const lastMessage = result.messages[result.messages.length - 1];
   return {
     messages: [
       new HumanMessage({
         content: lastMessage.content,
-        name: "DuckDuckGo Searcher",
+        name: "Tavily Searcher",
       }),
     ],
   };
@@ -78,7 +80,6 @@ const supervisorNode = async (
 const workflow = new StateGraph(AgentState)
   // 2. Add the nodes; these will do the work
   .addNode("wikipedia_researcher", wikipediaResearcherNode)
-  .addNode("tavily_searcher", tavilySearcherNode)
   .addNode("supervisor", supervisorNode);
 // 3. Define the edges. We will define both regular and conditional ones
 // After a worker completes, report to supervisor
