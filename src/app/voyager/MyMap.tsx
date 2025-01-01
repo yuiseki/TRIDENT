@@ -11,12 +11,8 @@ const CountriesDisastersMap: React.FC = () => {
 
   useEffect(() => {
     if (geoJSON) return;
-    // サンプルとして固定されたパスのGeoJSONを取得
-    const year = "2024";
-    const month = "12";
-    const day = "22";
 
-    fetch(`/data/voyager/${year}/${month}/${day}/data.geojson`)
+    fetch(`/data/voyager/latest/data.geojson`)
       .then((res) => {
         if (!res.ok) {
           throw new Error("Failed to fetch GeoJSON");

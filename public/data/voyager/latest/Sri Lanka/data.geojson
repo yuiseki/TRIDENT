@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.7,
+          7.61
+        ]
+      },
+      "properties": {
+        "id": "52237",
+        "name": "Tropical Cyclone Fengal - Nov 2024",
+        "status": "ongoing",
+        "description": "The deep depression in the Bay of Bengal conditions to the northeast of Sri Lanka has caused heavy rains across the country since 23 November 2024. The heavy rainfall along the coastal side, which has continued since 23 November, triggered flash floods in the country on 26 November 2024.\n\nThe deep depression was moved along the coast of the eastern and northeastern parts of the country, and it was located approximately 100 km northeast of Trincomalee district on 27 November 2024.\n\nOn 29 November 2024, the Department of Meteorology issued a ‘Red’ alert warning for Cyclone “Fengal” over the Southwest Bay of Bengal for the land and the deep and shallow sea areas around the island. As per the warning, the deep Depression over Southwest Bay of Bengal moved north-northwestwards and intensified into a cyclonic storm “Fengal” and was located about 280 km northeast of Kankasanthurai and 310 km north-northeast of Trincomalee.\n\nDue to the extreme weather conditions caused by Storm Fengal, rainfall exceeding 200 mm has been recorded in the Eastern, Northeastern, North Central, and Northern Provinces. Very strong winds, reaching speeds of up to 60 km/h, have caused damage to infrastructure, homes, and agricultural lands in these areas. [...]\n\nFurthermore, the intensity of flooding has increased due to the release of water from medium-sized reservoirs, leading to a significant influx of flash floods. 46 minor to medium reservoirs in the Eastern and Northern provinces reported damage. Additionally, the level 2 spill gates of major reservoirs in the Ampara, Batticaloa, Trincomalee, Mullaitivu, and Anuradhapura districts were opened to release excess water, which resulted in further damage to small bridges and canals in many areas.\n\nThe Disaster Management Centre reports that, as of 29 November, 441,373 individuals have been affected across 232 Divisional Secretariat Divisions in 24 districts due to the indirect impacts of Cyclone Fengal. ([IFRC, 09 Dec 2024](https://reliefweb.int/node/4116742/))\n\nAs of December 2, the Disaster Management Centre reported 17 deaths and 19 injured persons. A total of 475,225 individuals (141,151 families) were affected, with 106 houses damaged fully and 2,516 houses partially damaged. At the height of the situation on November 28, a total of 61,290 individuals (18,025 families) were relocated to 279 safe locations, with nearly double that number finding refuge with relatives. By December 2, this reduced to 7,308 individuals (2,170 families) placed in 78 safe locations. The floods also led to significant losses in agricultural crops and livestock, severely impacting the livelihoods of those affected. As of 12 Dec, all displaced people returned to their homes. ([UNFPA, 20 Dec 2024](https://reliefweb.int/node/4120672))",
+        "country": "Sri Lanka",
+        "createdDate": "2024-12-09T19:35:19+00:00",
+        "changedDate": "2024-12-23T00:54:55+00:00"
+      }
+    }
+  ]
+}

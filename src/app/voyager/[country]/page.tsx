@@ -31,14 +31,7 @@ const CountryDisasters: React.FC = () => {
 
       try {
         // Fetch disaster data for the specified country
-        const now = new Date();
-        const year = String(now.getUTCFullYear());
-        const month = String(now.getUTCMonth() + 1).padStart(2, "0");
-        const day = String(now.getUTCDate()).padStart(2, "0");
-
-        const res = await fetch(
-          `/data/voyager/${year}/${month}/${day}/${country}/data.geojson`
-        );
+        const res = await fetch(`/data/voyager/latest/${country}/data.geojson`);
 
         if (!res.ok) {
           throw new Error("Failed to fetch disaster data");
