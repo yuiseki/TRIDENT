@@ -2,19 +2,38 @@
 
 ## Goal
 
-- ReliefWeb から災害情報を取得する
-- それぞれの災害に関連する GIS オープンデータを取得する
-- それらを地図上に表示する
+- 自律的に地理空間情報を取得、加工、可視化する生成 AI エージェントを生み出すこと
+
+## Milestones
+
+- [x] ReliefWeb から災害情報を取得する
+  - [x] 災害ごとのページを表示する
+- [ ] それぞれの災害に関連する GIS オープンデータを取得する
+  - [ ] それらのデータを Web ページに表示できる形式に変換する
+- [ ] それらを地図上に適切に表示する
 
 ## Directory Structure
 
 ### Overview
 
+- `Makefile`
 - `docs/voyager/`
 - `public/data/voyager/`
 - `tmp/voyager`
 - `scripts/voyager/`
 - `src/app/voyager/`
+
+### `Makefile`
+
+TRIDENT 全体の Makefile。
+
+`make voyager` で TRIDENT Voyager を実行する。
+
+### `package.json`
+
+TRIDENT 全体の package.json。
+package.json の scripts に `voyager` というコマンドがあり、
+Makefile の `voyager` ターゲットを実行すると、このコマンドが実行される。
 
 ### `docs/voyager/` directory
 
