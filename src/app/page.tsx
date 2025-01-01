@@ -27,19 +27,20 @@ import { untitledMaps } from "@/constants/UntitledMap";
 import { tridentPlaceholders } from "@/constants/TridentPlaceholder";
 import { useScrollToBottom } from "@/hooks/scrollToBottom";
 import { parseSurfaceResJson } from "@/utils/trident/parseSurfaceResJson";
+import { Ability } from "@/types/Ability";
 
 export default function Home() {
   // all state
   const [mounted, setMounted] = useState(false);
-  const [pageTitle, setPageTitle] = useState("TRIDENT");
   const [mapInputPlaceholder, setMapInputPlaceholder] = useState<
     string | undefined
   >(undefined);
+  const [pageTitle, setPageTitle] = useState("TRIDENT");
+  const [mapTitle, setMapTitle] = useState<string | undefined>(undefined);
 
   // maps ref and state
-  const [mapTitle, setMapTitle] = useState<string | undefined>(undefined);
   const mapRef = useRef<MapRef | null>(null);
-  const [geojsonWithStyleList, setGeojsonWithStyleList] = useState<
+  const [geoJsonWithStyleList, setGeoJsonWithStyleList] = useState<
     Array<{
       id: string;
       line: string;
@@ -65,7 +66,8 @@ export default function Home() {
   const [dialogueList, setDialogueList] = useState<DialogueElement[]>([]);
   const scrollToBottom = useScrollToBottom(dialogueEndRef);
 
-  const [ability, setAbility] = useState<string | undefined>(undefined);
+  // ability state
+  const [ability, setAbility] = useState<Ability | undefined>(undefined);
 
   // communication state
   const [responding, setResponding] = useState(false);
@@ -97,7 +99,7 @@ export default function Home() {
     []
   );
 
-  const invokeOverpass = useCallback(
+  const invokeOverpassInner = useCallback(
     async (history: string[]) => {
       setMapping(true);
       setResponding(true);
@@ -110,7 +112,7 @@ export default function Home() {
       const innerResJson = await innerRes.json();
       setResponding(false);
       if (innerResJson.inner === undefined) {
-        setGeojsonWithStyleList([]);
+        setGeoJsonWithStyleList([]);
         setMapping(false);
         return;
       }
@@ -122,14 +124,31 @@ export default function Home() {
 
       setMapping(true);
 
+      const newParsedInnerResJson = parseInnerResJson(innerResJson);
+      await invokeOverpassDeep(newParsedInnerResJson);
+    },
+    [insertNewDialogue]
+  );
+
+  const invokeOverpassDeep = useCallback(
+    async (parsedInnerResJson: {
+      styles: {
+        [key: string]: {
+          emoji?: string;
+          color?: string;
+        };
+      };
+      mapTitle?: string;
+      confirmMessage: string;
+      linesWithAreaAndOrConcern: string[];
+    }) => {
       const { styles, mapTitle, confirmMessage, linesWithAreaAndOrConcern } =
-        parseInnerResJson(innerResJson);
+        parsedInnerResJson;
 
       if (mapTitle) {
         setMapTitle(mapTitle);
         setPageTitle(mapTitle ? `${mapTitle} | TRIDENT` : "TRIDENT");
       }
-
       // invoke deep layer by each item of linesWithAreaAndOrConcern
       linesWithAreaAndOrConcern.map(async (line: string, idx: number) => {
         let style = {};
@@ -152,19 +171,19 @@ export default function Home() {
           overpassResponseJson: any,
           retry: boolean
         ) => {
-          const newGeojson = osmtogeojson(
+          const newGeoJson = osmtogeojson(
             overpassResponseJson
           ) as FeatureCollection;
-          console.log("features", newGeojson.features.length);
-          if (newGeojson.features.length !== 0) {
-            setGeojsonWithStyleList((prev) => {
+          console.log("features", newGeoJson.features.length);
+          if (newGeoJson.features.length !== 0) {
+            setGeoJsonWithStyleList((prev) => {
               return [
                 ...prev,
                 {
                   id: "layer-" + prev.length + 1,
                   line: line,
                   style: style,
-                  geojson: newGeojson,
+                  geojson: newGeoJson,
                 },
               ];
             });
@@ -196,7 +215,7 @@ export default function Home() {
         );
       });
     },
-    [insertNewDialogue]
+    []
   );
 
   const onSubmit = useCallback(async () => {
@@ -233,18 +252,25 @@ export default function Home() {
       },
       false
     );
+
     setAbility(ability);
-    if (["apology", "ask-more"].includes(ability)) {
-      setResponding(false);
-      setMapping(false);
-      return;
-    } else if (ability === "overpass-api") {
-      await invokeOverpass(surfaceResJson.history);
+
+    switch (ability) {
+      case "overpass-api":
+        await invokeOverpassInner(surfaceResJson.history);
+        break;
+      case "apology":
+      case "ask-more":
+        break;
+      default:
+        break;
     }
+    setResponding(false);
+    setMapping(false);
   }, [
     inputText,
     insertNewDialogue,
-    invokeOverpass,
+    invokeOverpassInner,
     pastMessages,
     scrollToBottom,
   ]);
@@ -262,13 +288,13 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => {
       if (!mapRef || !mapRef.current) return;
-      if (geojsonWithStyleList.length === 0) return;
+      if (geoJsonWithStyleList.length === 0) return;
 
       try {
         // everything - all geojson in the geojsonWithStyleList
         const everything: FeatureCollection = {
           type: "FeatureCollection",
-          features: geojsonWithStyleList
+          features: geoJsonWithStyleList
             .map((item) => item.geojson.features)
             .flat(),
         };
@@ -310,7 +336,7 @@ export default function Home() {
         setMapping(false);
       }
     }, 500);
-  }, [geojsonWithStyleList, showingFloatingChat]);
+  }, [geoJsonWithStyleList, showingFloatingChat]);
 
   // initialize at mount
   useEffect(() => {
@@ -373,8 +399,8 @@ export default function Home() {
               zoom={1}
               style={mapStyleJsonUrl}
             >
-              {geojsonWithStyleList &&
-                geojsonWithStyleList.map((geojsonWithStyle) => {
+              {geoJsonWithStyleList &&
+                geoJsonWithStyleList.map((geojsonWithStyle) => {
                   return (
                     <GeoJsonToSourceLayer
                       key={geojsonWithStyle.id}
