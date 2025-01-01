@@ -2,7 +2,7 @@ import { Tool } from "langchain/tools";
 
 export class OverpassTokyoRamenCount extends Tool {
   name = "overpass-tokyo-ramen-count";
-  description = `useful for when you need to count number of ramen shops by a name of area. Input: a name of area in Tokyo in Japanese.`;
+  description = `useful for when you need to count number of ramen shops by a name of area. Input: a name of administrative district in Tokyo.`;
 
   async _call(input: string) {
     try {
@@ -26,7 +26,7 @@ out geom;`;
       const json = await res.json();
 
       if (json.elements.length === 0) {
-        return "Failed to fetch. change query";
+        return "Failed to fetch. change query and try again.";
       }
 
       let answer = json.elements.length;

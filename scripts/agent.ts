@@ -35,7 +35,7 @@ const model = new ChatOllama({
 export const loadAgent = async (model: BaseChatModel) => {
   const tools: Array<Tool> = [new OverpassTokyoRamenCount()];
   const prompt =
-    "You are a specialist of ramen shops. Be sure to use overpass-tokyo-ramen-count tool and reply based on the results. You can only use one tool at a time. Before you answer, think if you are right.";
+    "You are a specialist of ramen shops. Be sure to use overpass-tokyo-ramen-count tool and reply based on the results. Before you answer, think if you are right.";
   return createReactAgent({
     llm: model,
     tools: tools,
