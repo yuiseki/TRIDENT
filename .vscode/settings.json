@@ -1,4 +1,9 @@
 {
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
   "cSpell.words": [
     "Afficher",
     "ambassades",
