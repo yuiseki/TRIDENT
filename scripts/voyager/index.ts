@@ -29,98 +29,58 @@ interface GeoJSONFeature {
   };
 }
 
-async function createVoyagerGeoJSON() {
-  const disasterJsonPaths = await getDisasterJsonPaths();
+async function processDisasterJson(disasterJsonPath: string, countryGeoJSONMap: Map<string, { type: string; features: GeoJSONFeature[] }>) {
+  try {
+    const disasterListJson = JSON.parse(await fs.readFile(disasterJsonPath, "utf-8"));
+    const disasterStatus = disasterListJson[0]?.fields?.status;
+    if (disasterStatus !== "ongoing") return;
 
-  console.info("Processing disaster JSON paths:", disasterJsonPaths.length);
+    const latitude = disasterListJson[0]?.fields?.primary_country?.location?.lat;
+    const longitude = disasterListJson[0]?.fields?.primary_country?.location?.lon;
+    if (!latitude || !longitude) return;
 
-  // 国ごとのGeoJSONを保持するMap
-  const countryGeoJSONMap: Map<
-    string,
-    { type: string; features: GeoJSONFeature[] }
-  > = new Map();
+    const country = disasterListJson[0]?.fields?.primary_country?.name;
+    if (!country) return;
 
-  for (const disasterJsonPath of disasterJsonPaths) {
-    try {
-      // JSONファイルを読み込む
-      const disasterListJson = JSON.parse(
-        await fs.readFile(disasterJsonPath, "utf-8")
-      );
+    const feature: GeoJSONFeature = {
+      type: "Feature",
+      geometry: {
+        type: "Point",
+        coordinates: [longitude, latitude],
+      },
+      properties: {
+        id: disasterListJson[0]?.id,
+        name: disasterListJson[0]?.fields?.name,
+        status: disasterStatus,
+        description: disasterListJson[0]?.fields?.description,
+        country: country,
+        createdDate: disasterListJson[0]?.fields?.date?.created,
+        changedDate: disasterListJson[0]?.fields?.date?.changed,
+      },
+    };
 
-      // `status`が`ongoing`かどうか確認
-      const disasterStatus = disasterListJson[0]?.fields?.status;
-      if (disasterStatus !== "ongoing") {
-        continue;
-      }
-
-      // 緯度経度を取得（存在しない場合はスキップ）
-      const latitude =
-        disasterListJson[0]?.fields?.primary_country?.location?.lat;
-      const longitude =
-        disasterListJson[0]?.fields?.primary_country?.location?.lon;
-      if (!latitude || !longitude) {
-        continue;
-      }
-
-      // 国名を取得（存在しない場合はスキップ）
-      const country = disasterListJson[0]?.fields?.primary_country?.name;
-      if (!country) {
-        continue;
-      }
-
-      // GeoJSONのFeatureを作成
-      const feature: GeoJSONFeature = {
-        type: "Feature",
-        geometry: {
-          type: "Point",
-          coordinates: [longitude, latitude], // GeoJSON形式: [lon, lat]
-        },
-        properties: {
-          id: disasterListJson[0]?.id,
-          name: disasterListJson[0]?.fields?.name,
-          status: disasterStatus,
-          description: disasterListJson[0]?.fields?.description,
-          country: country,
-          createdDate: disasterListJson[0]?.fields?.date?.created,
-          changedDate: disasterListJson[0]?.fields?.date?.changed,
-        },
-      };
-
-      // 国ごとのGeoJSONにフィーチャーを追加
-      if (!countryGeoJSONMap.has(country)) {
-        countryGeoJSONMap.set(country, {
-          type: "FeatureCollection",
-          features: [],
-        });
-      }
-      countryGeoJSONMap.get(country)?.features.push(feature);
-    } catch (error) {
-      console.error(`Error processing file ${disasterJsonPath}:`, error);
+    if (!countryGeoJSONMap.has(country)) {
+      countryGeoJSONMap.set(country, {
+        type: "FeatureCollection",
+        features: [],
+      });
     }
+    countryGeoJSONMap.get(country)?.features.push(feature);
+  } catch (error) {
+    console.error(`Error processing file ${disasterJsonPath}:`, error);
   }
+}
 
-  // 国ごとにGeoJSONを保存
+async function saveGeoJSONFiles(countryGeoJSONMap: Map<string, { type: string; features: GeoJSONFeature[] }>) {
   for (const [country, geoJSON] of countryGeoJSONMap.entries()) {
     try {
       const countryLatestDir = path.join(outputBaseDir, "latest", country);
       const countryLatestFilePath = path.join(countryLatestDir, "data.geojson");
       await fs.mkdir(countryLatestDir, { recursive: true });
-      await fs.writeFile(
-        countryLatestFilePath,
-        JSON.stringify(geoJSON, null, 2)
-      );
-      console.log(
-        `GeoJSON file created for ${country} at: ${countryLatestFilePath}`
-      );
+      await fs.writeFile(countryLatestFilePath, JSON.stringify(geoJSON, null, 2));
+      console.log(`GeoJSON file created for ${country} at: ${countryLatestFilePath}`);
 
-      const countryTmpDir = path.join(
-        "./tmp",
-        "voyager",
-        year,
-        month,
-        day,
-        country
-      );
+      const countryTmpDir = path.join("./tmp", "voyager", year, month, day, country);
       const countryTmpFilePath = path.join(countryTmpDir, "data.geojson");
       await fs.mkdir(countryTmpDir, { recursive: true });
       await fs.writeFile(countryTmpFilePath, JSON.stringify(geoJSON, null, 2));
@@ -128,24 +88,32 @@ async function createVoyagerGeoJSON() {
       console.error(`Error saving GeoJSON file for ${country}: ${error}`);
     }
   }
+}
 
-  // ./public/data/voyager/latest/**/*.geojson を ./public/data/voyager/latest/data.geojson にマージして保存
-  // FeatureCollectionにしないといけない
-  interface GeoJSONFeatureCollection {
-    type: string;
-    features: GeoJSONFeature[];
-  }
-  const allGeoJSON: GeoJSONFeatureCollection = {
+async function mergeAllGeoJSONFiles(countryGeoJSONMap: Map<string, { type: string; features: GeoJSONFeature[] }>) {
+  const allGeoJSON: { type: string; features: GeoJSONFeature[] } = {
     type: "FeatureCollection",
     features: [],
   };
-  for (const [country, geoJSON] of countryGeoJSONMap.entries()) {
+  for (const geoJSON of countryGeoJSONMap.values()) {
     allGeoJSON.features.push(...geoJSON.features);
   }
   const allGeoJSONFilePath = path.join(outputBaseDir, "latest", "data.geojson");
   await fs.writeFile(allGeoJSONFilePath, JSON.stringify(allGeoJSON, null, 2));
   console.log(`All GeoJSON file created at: ${allGeoJSONFilePath}`);
-  
+}
+
+async function createVoyagerGeoJSON() {
+  const disasterJsonPaths = await getDisasterJsonPaths();
+  console.info("Processing disaster JSON paths:", disasterJsonPaths.length);
+
+  const countryGeoJSONMap: Map<string, { type: string; features: GeoJSONFeature[] }> = new Map();
+  for (const disasterJsonPath of disasterJsonPaths) {
+    await processDisasterJson(disasterJsonPath, countryGeoJSONMap);
+  }
+
+  await saveGeoJSONFiles(countryGeoJSONMap);
+  await mergeAllGeoJSONFiles(countryGeoJSONMap);
 }
 
 // 実行
