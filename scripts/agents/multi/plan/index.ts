@@ -195,7 +195,7 @@ async function replanStep(
       .join("\n"),
   });
 
-  const toolCall = output[0];
+  const toolCall = (output as any[])[0];
 
   if (!toolCall) {
     console.log("----- ----- replanStep output ----- -----");
