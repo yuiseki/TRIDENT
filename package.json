@@ -39,7 +39,7 @@
     "apache-arrow": "^17.0.0",
     "hnswlib-node": "^3.0.0",
     "langchain": "^0.3.0",
-    "maplibre-gl": "^4.7.1",
+    "maplibre-gl": "^5.0.0",
     "next": "14.2.22",
     "osmtogeojson": "^3.0.0-beta.5",
     "pmtiles": "^4.0.0",
