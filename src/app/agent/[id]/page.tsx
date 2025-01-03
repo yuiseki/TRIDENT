@@ -14,7 +14,7 @@ import osmtogeojson from "osmtogeojson";
 import { getOverpassResponseJsonWithCache } from "@/lib/osm/getOverpass";
 import { BaseMap } from "@/components/BaseMap";
 import { GeoJsonToSourceLayer } from "@/components/GeoJsonToSourceLayer";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 const formatDate = (date: Date) => {

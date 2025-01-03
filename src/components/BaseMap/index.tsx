@@ -6,10 +6,10 @@ import {
   GeolocateResultEvent,
   Map,
   MapRef,
+  MapStyle,
   NavigationControl,
   ViewStateChangeEvent,
 } from "react-map-gl/maplibre";
-import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 
 export const BaseMap: React.FC<{
@@ -19,7 +19,7 @@ export const BaseMap: React.FC<{
   latitude: number;
   zoom: number;
   children?: any;
-  style?: string | maplibregl.StyleSpecification;
+  style?: string | MapStyle;
   onMapLoad?: () => void;
   onMapMove?: () => void;
   onMapMoveEnd?: (e: ViewStateChangeEvent) => void;
@@ -74,7 +74,6 @@ export const BaseMap: React.FC<{
       onLoad={onLoad}
       onMove={onMove}
       onMoveEnd={onMoveEnd}
-      mapLib={maplibregl}
       mapStyle={style}
       attributionControl={false}
       initialViewState={{

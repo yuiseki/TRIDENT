@@ -1,7 +1,6 @@
 import { FeatureCollection } from "geojson";
-import * as turf from "@turf/turf";
-import { GeoJsonToSourceLayer } from "../GeoJsonToSourceLayer";
-import { useEffect, useRef, useState } from "react";
+import { MapStyle } from "react-map-gl/maplibre";
+import { useEffect, useState } from "react";
 import { TridentMapsStyle } from "@/types/TridentMaps";
 import { StaticMap } from "../StaticMap";
 import { getNominatimResponseJsonWithCache } from "@/lib/osm/getNominatim";
@@ -9,7 +8,7 @@ import { getOverpassResponseJsonWithCache } from "@/lib/osm/getOverpass";
 import osmtogeojson from "osmtogeojson";
 
 export const StaticRegionsMap: React.FC<{
-  mapStyle: string | maplibregl.StyleSpecification;
+  mapStyle: string | MapStyle;
   mapPadding?: number;
   regionNames: string[];
 }> = ({
