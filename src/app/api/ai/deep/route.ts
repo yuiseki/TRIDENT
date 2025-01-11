@@ -5,19 +5,26 @@ import {
 } from "@/utils/langchain/chains/loadTridentDeepChain";
 import { ChatOpenAI } from "@langchain/openai";
 import { OpenAIEmbeddings } from "@langchain/openai";
-import { VercelPostgres } from "@langchain/community/vectorstores/vercel_postgres";
-import {
-  createCheckDocumentExists,
-  createCheckTableExists,
-} from "@/utils/langchain/vectorstores/vercel_postgres";
+import { ChatOllama } from "@langchain/community/chat_models/ollama";
+import { OllamaEmbeddings } from "@langchain/community/embeddings/ollama";
+import { MemoryVectorStore } from "langchain/vectorstores/memory";
 
 export async function POST(request: Request) {
   const res = await request.json();
   const query = res.query;
 
-  let llm: ChatOpenAI;
-  let embeddings: OpenAIEmbeddings;
-  if (process.env.CLOUDFLARE_AI_GATEWAY) {
+  let llm: ChatOpenAI | ChatOllama;
+  let embeddings: OpenAIEmbeddings | OllamaEmbeddings;
+  
+  if (process.env.USE_OLLAMA === "1") {
+    llm = new ChatOllama({
+      model: "tinyllama:1.1b-chat",
+      temperature: 0,
+    });
+    embeddings = new OllamaEmbeddings({
+      model: "all-minilm:22m",
+    });
+  } else if (process.env.CLOUDFLARE_AI_GATEWAY) {
     llm = new ChatOpenAI({
       configuration: {
         baseURL: process.env.CLOUDFLARE_AI_GATEWAY + "/openai",
@@ -34,36 +41,39 @@ export async function POST(request: Request) {
     embeddings = new OpenAIEmbeddings();
   }
 
-  const tableName = "trident_deep_example_openai";
-  const vectorStore = await VercelPostgres.initialize(embeddings, {
-    tableName,
-  });
-
-  const checkTableExists = createCheckTableExists({ vectorStore, tableName });
-  const checkDocumentExists = createCheckDocumentExists({
-    vectorStore,
-    tableName,
-  });
+  const vectorStore = new MemoryVectorStore(embeddings);
   await initializeTridentDeepExampleList({
     vectorStore,
-    checkTableExists,
-    checkDocumentExists,
+    checkTableExists: async () => false,
+    checkDocumentExists: async () => false,
   });
 
-  const chain = await loadTridentDeepChain({ llm, vectorStore });
-  const result = await chain.invoke({ input: query });
+  try {
+    console.log("Creating deep chain with model:", process.env.USE_OLLAMA === "1" ? "phi4:14b" : "openai");
+    const chain = await loadTridentDeepChain({ llm, vectorStore });
+    
+    console.log("Invoking deep chain...");
+    const result = await chain.invoke({ input: query });
 
-  console.log("----- ----- -----");
-  console.log("----- start deep -----");
-  console.log("Human:", query);
-  console.log("AI:", result.text);
-  console.log("");
+    console.log("----- ----- -----");
+    console.log("----- start deep -----");
+    console.log("Human:", query);
+    console.log("AI:", result.text);
+    console.log("");
 
-  console.log("----- end deep -----");
-  console.log("----- ----- -----");
+    console.log("----- end deep -----");
+    console.log("----- ----- -----");
 
-  return NextResponse.json({
-    query: query,
-    deep: result.text,
-  });
+    return NextResponse.json({
+      query: query,
+      deep: result.text,
+    });
+  } catch (error: any) {
+    console.error("Error in deep route:", error);
+    const errorMessage = error?.message || "Unknown error occurred";
+    return NextResponse.json(
+      { error: "Failed to process request", details: errorMessage },
+      { status: 500 }
+    );
+  }
 }
