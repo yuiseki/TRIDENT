@@ -8,6 +8,8 @@ import { OpenAIEmbeddings } from "@langchain/openai";
 import { ChatOllama } from "@langchain/community/chat_models/ollama";
 import { OllamaEmbeddings } from "@langchain/community/embeddings/ollama";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
+import { BaseLanguageModel } from "@langchain/core/language_models/base";
+import { VectorStore } from "@langchain/core/vectorstores";
 
 export async function POST(request: Request) {
   console.log("----- ----- -----");
@@ -36,13 +38,24 @@ export async function POST(request: Request) {
   let embeddings: OpenAIEmbeddings | OllamaEmbeddings;
   
   if (process.env.USE_OLLAMA === "1") {
-    llm = new ChatOllama({
-      model: "tinyllama:1.1b-chat",
-      temperature: 0,
-    });
-    embeddings = new OllamaEmbeddings({
-      model: "all-minilm:22m",
-    });
+    console.log("Initializing ollama models...");
+    try {
+      llm = new ChatOllama({
+        model: "phi4:14b",
+        temperature: 0,
+        maxConcurrency: 1,
+        maxRetries: 3,
+      });
+      console.log("ChatOllama initialized successfully");
+      
+      embeddings = new OllamaEmbeddings({
+        model: "phi4:14b",
+      });
+      console.log("OllamaEmbeddings initialized successfully");
+    } catch (error) {
+      console.error("Error initializing ollama models:", error);
+      throw error;
+    }
   } else if (process.env.CLOUDFLARE_AI_GATEWAY) {
     llm = new ChatOpenAI({
       configuration: {
@@ -72,11 +85,20 @@ export async function POST(request: Request) {
     console.log("LLM config:", JSON.stringify(llm));
     console.log("VectorStore config:", JSON.stringify(vectorStore));
     
+    console.log("Creating inner chain...");
     const chain = await loadTridentInnerChain({ llm, vectorStore });
     console.log("Chain created successfully");
     
     console.log("Invoking inner chain with input:", chatHistoryLines.join("\n"));
-    const result = await chain.invoke({ input: chatHistoryLines.join("\n") });
+    console.log("LLM type:", llm.constructor.name);
+    console.log("VectorStore type:", vectorStore.constructor.name);
+    
+    const result = await Promise.race([
+      chain.invoke({ input: chatHistoryLines.join("\n") }),
+      new Promise((_, reject) => 
+        setTimeout(() => reject(new Error("Chain invocation timeout after 60s")), 60000)
+      )
+    ]);
     console.log("Chain result:", result);
     console.log("Result text:", result.text);
     console.log("");

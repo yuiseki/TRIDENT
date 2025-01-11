@@ -8,6 +8,8 @@ import { OpenAIEmbeddings } from "@langchain/openai";
 import { ChatOllama } from "@langchain/community/chat_models/ollama";
 import { OllamaEmbeddings } from "@langchain/community/embeddings/ollama";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
+import { BaseLanguageModel } from "@langchain/core/language_models/base";
+import { VectorStore } from "@langchain/core/vectorstores";
 
 export async function POST(request: Request) {
   const res = await request.json();
@@ -18,11 +20,13 @@ export async function POST(request: Request) {
   
   if (process.env.USE_OLLAMA === "1") {
     llm = new ChatOllama({
-      model: "tinyllama:1.1b-chat",
+      model: "phi4:14b",
       temperature: 0,
+      maxConcurrency: 1,
+      maxRetries: 3,
     });
     embeddings = new OllamaEmbeddings({
-      model: "all-minilm:22m",
+      model: "phi4:14b",
     });
   } else if (process.env.CLOUDFLARE_AI_GATEWAY) {
     llm = new ChatOpenAI({

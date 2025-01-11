@@ -7,6 +7,8 @@ import { OpenAIEmbeddings } from "@langchain/openai";
 import { ChatOllama } from "@langchain/community/chat_models/ollama";
 import { OllamaEmbeddings } from "@langchain/community/embeddings/ollama";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
+import { BaseLanguageModel } from "@langchain/core/language_models/base";
+import { VectorStore } from "@langchain/core/vectorstores";
 
 export async function POST(request: Request) {
   console.log("----- ----- -----");
@@ -31,6 +33,8 @@ export async function POST(request: Request) {
     llm = new ChatOllama({
       model: "phi4:14b",
       temperature: 0,
+      maxConcurrency: 1,
+      maxRetries: 3,
     });
     embeddings = new OllamaEmbeddings({
       model: "phi4:14b",
