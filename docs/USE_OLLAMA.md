@@ -1,19 +1,19 @@
-# Using Ollama with TRIDENT
+# Using ollama with TRIDENT
 
-This guide explains how to set up and use Ollama, particularly with the phi4:14b model, for enhanced language processing capabilities.
+This guide explains how to set up and use ollama, particularly with the phi4:14b model, for enhanced language processing capabilities.
 
 ## Installation
 
-Install Ollama using the official installation script:
+Install ollama using the official installation script:
 
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 
 This command will:
-1. Download the Ollama installation script
-2. Install Ollama on your system
-3. Set up the Ollama service
+1. Download the ollama installation script
+2. Install ollama on your system
+3. Set up the ollama service
 
 ## Using phi4:14b Model
 
@@ -58,7 +58,7 @@ Example response:
 
 If you encounter any issues:
 
-1. Verify Ollama is running:
+1. Verify ollama is running:
 ```bash
 systemctl status ollama
 ```
