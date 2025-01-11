@@ -4,10 +4,9 @@ TRIDENT is an AI-powered Interactive Smart Maps Assistant that combines OpenStre
 
 ## System Overview
 
-TRIDENTは3層のアーキテクチャで構成されています：
 TRIDENT is built on a three-layer architecture:
 
-### 1. Surface Layer (表層)
+### 1. Surface Layer
 
 The Surface Layer handles user interactions and ability selection:
 - Manages dialogue with users
@@ -15,13 +14,7 @@ The Surface Layer handles user interactions and ability selection:
 - Implemented in `loadTridentSurfaceChain`
 - Processes natural language inputs and determines the appropriate course of action
 
-表層は以下の役割を担います：
-- ユーザーとの対話管理
-- タスク達成に適切なアビリティの選択
-- `loadTridentSurfaceChain`による実装
-- 自然言語入力の処理とアクションの決定
-
-### 2. Inner Layer (内層)
+### 2. Inner Layer
 
 The Inner Layer processes dialogue history and generates intermediate representations:
 - Analyzes conversation history between user and surface layer
@@ -29,25 +22,13 @@ The Inner Layer processes dialogue history and generates intermediate representa
 - Converts natural language requirements into structured map queries
 - Manages map styling and visualization parameters
 
-内層は以下の機能を提供します：
-- ユーザーと表層間の対話履歴の分析
-- TRIDENT中間言語による地図コンテンツの指定
-- 自然言語要件の構造化マップクエリへの変換
-- 地図のスタイリングと視覚化パラメータの管理
-
-### 3. Deep Layer (深層)
+### 3. Deep Layer
 
 The Deep Layer handles geospatial data retrieval:
 - Generates Overpass API queries based on AreaWithConcern specifications
 - Processes TRIDENT Intermediate Language
 - Manages data retrieval and caching
 - Implements OpenStreetMap data integration
-
-深層は地理空間データの取得を担当します：
-- AreaWithConcernに基づくOverpass APIクエリの生成
-- TRIDENT中間言語の処理
-- データ取得とキャッシュの管理
-- OpenStreetMapデータの統合
 
 ## Technical Implementation
 
