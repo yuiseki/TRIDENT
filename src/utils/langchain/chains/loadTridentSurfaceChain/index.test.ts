@@ -14,7 +14,7 @@ describe("loadTridentSurfaceChain", () => {
         model: "qwen2.5:1.5b",
       });
       const embeddings = new OllamaEmbeddings({
-        model: "all-minilm:22m",
+        model: "snowflake-arctic-embed:22m",
       });
       const vectorStore = new MemoryVectorStore(embeddings);
       const chain = await loadTridentSurfaceChain({ llm, vectorStore });

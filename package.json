@@ -9,7 +9,7 @@
     "start": "NODE_OPTIONS=--experimental-wasm-modules next start",
     "lint": "eslint",
     "extract": "node --loader ts-node/esm ./scripts/extractExamples.ts",
-    "test": "jest",
+    "test": "jest --silent",
     "test:counter": "node --loader ts-node/esm ./tests/counter.ts",
     "test:sortByArea": "node --loader ts-node/esm ./tests/sortByArea.ts",
     "test:sortByDistance": "node --loader ts-node/esm ./tests/sortByDistance.ts",

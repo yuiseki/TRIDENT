@@ -1,14 +1,9 @@
 import { NextResponse } from "next/server";
-import { loadTridentSurfaceChain } from "@/utils/langchain/chains/loadTridentSurfaceChain";
-// using openai
-import { ChatOpenAI } from "@langchain/openai";
-import { OpenAIEmbeddings } from "@langchain/openai";
-// using ollama
-import { ChatOllama } from "@langchain/ollama";
-import { OllamaEmbeddings } from "@langchain/ollama";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
-import { BaseLanguageModel } from "@langchain/core/language_models/base";
-import { Embeddings } from "@langchain/core/embeddings";
+
+import { loadTridentSurfaceChain } from "@/utils/langchain/chains/loadTridentSurfaceChain";
+import { getChatModel } from "@/utils/trident/getChatModel";
+import { getEmbeddingModel } from "@/utils/trident/getEmbeddingModel";
 
 export async function POST(request: Request) {
   console.log("----- ----- -----");
@@ -34,35 +29,8 @@ export async function POST(request: Request) {
   console.log("chatHistoryLines:");
   console.log(chatHistoryLines.join("\n"));
 
-  let llm: BaseLanguageModel;
-  let embeddings: Embeddings;
-
-  if (process.env.USE_OLLAMA === "1") {
-    llm = new ChatOllama({
-      model: "phi4:14b",
-      temperature: 0,
-      maxConcurrency: 1,
-      maxRetries: 3,
-    });
-    embeddings = new OllamaEmbeddings({
-      model: "snowflake-arctic-embed:22m",
-    });
-  } else if (process.env.CLOUDFLARE_AI_GATEWAY) {
-    llm = new ChatOpenAI({
-      configuration: {
-        baseURL: process.env.CLOUDFLARE_AI_GATEWAY + "/openai",
-      },
-      temperature: 0,
-    });
-    embeddings = new OpenAIEmbeddings({
-      configuration: {
-        baseURL: process.env.CLOUDFLARE_AI_GATEWAY + "/openai",
-      },
-    });
-  } else {
-    llm = new ChatOpenAI({ temperature: 0 });
-    embeddings = new OpenAIEmbeddings();
-  }
+  const llm = getChatModel();
+  const embeddings = getEmbeddingModel();
 
   const vectorStore = new MemoryVectorStore(embeddings);
 

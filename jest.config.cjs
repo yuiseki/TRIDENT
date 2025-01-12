@@ -10,4 +10,5 @@ module.exports = {
   moduleNameMapper: {
     "@/(.*)$": "<rootDir>/src/$1",
   },
+  globalSetup: "<rootDir>/src/tests/setup.ts",
 };

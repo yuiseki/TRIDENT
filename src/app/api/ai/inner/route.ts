@@ -1,15 +1,16 @@
 import { NextResponse } from "next/server";
-import { ChatOpenAI } from "@langchain/openai";
+import { VercelPostgres } from "@langchain/community/vectorstores/vercel_postgres";
+
 import {
   initializeTridentInnerExampleList,
   loadTridentInnerChain,
 } from "@/utils/langchain/chains/loadTridentInnerChain";
-import { OpenAIEmbeddings } from "@langchain/openai";
-import { ChatOllama } from "@langchain/ollama";
-import { OllamaEmbeddings } from "@langchain/ollama";
-import { MemoryVectorStore } from "langchain/vectorstores/memory";
-import { BaseLanguageModel } from "@langchain/core/language_models/base";
-import { Embeddings } from "@langchain/core/embeddings";
+import { getChatModel } from "@/utils/trident/getChatModel";
+import { getEmbeddingModel } from "@/utils/trident/getEmbeddingModel";
+import {
+  createCheckDocumentExists,
+  createCheckTableExists,
+} from "@/utils/langchain/vectorstores/vercel_postgres";
 
 export async function POST(request: Request) {
   console.log("----- ----- -----");
@@ -34,41 +35,23 @@ export async function POST(request: Request) {
   console.log("chatHistoryLines:");
   console.log(chatHistoryLines.join("\n"));
 
-  let llm: BaseLanguageModel;
-  let embeddings: Embeddings;
+  const llm = getChatModel();
+  const embeddings = getEmbeddingModel();
 
-  if (process.env.USE_OLLAMA === "1") {
-    llm = new ChatOllama({
-      model: "phi4:14b",
-      temperature: 0,
-      maxConcurrency: 1,
-      maxRetries: 3,
-    });
-    embeddings = new OllamaEmbeddings({
-      model: "snowflake-arctic-embed:22m",
-    });
-  } else if (process.env.CLOUDFLARE_AI_GATEWAY) {
-    llm = new ChatOpenAI({
-      configuration: {
-        baseURL: process.env.CLOUDFLARE_AI_GATEWAY + "/openai",
-      },
-      temperature: 0,
-    });
-    embeddings = new OpenAIEmbeddings({
-      configuration: {
-        baseURL: process.env.CLOUDFLARE_AI_GATEWAY + "/openai",
-      },
-    });
-  } else {
-    llm = new ChatOpenAI({ temperature: 0 });
-    embeddings = new OpenAIEmbeddings();
-  }
+  const tableName = "trident_inner_example_openai";
+  const vectorStore = await VercelPostgres.initialize(embeddings, {
+    tableName,
+  });
 
-  const vectorStore = new MemoryVectorStore(embeddings);
+  const checkTableExists = createCheckTableExists({ vectorStore, tableName });
+  const checkDocumentExists = createCheckDocumentExists({
+    vectorStore,
+    tableName,
+  });
   await initializeTridentInnerExampleList({
     vectorStore,
-    checkTableExists: async () => false,
-    checkDocumentExists: async () => false,
+    checkTableExists,
+    checkDocumentExists,
   });
 
   try {
