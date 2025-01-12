@@ -22,3 +22,17 @@ make setup
 npm ci
 npm test
 ```
+
+### Linting
+
+To check code quality and maintain consistent style:
+
+```bash
+npm run lint
+```
+
+To automatically fix linting issues:
+
+```bash
+npm run lint -- --fix
+```
