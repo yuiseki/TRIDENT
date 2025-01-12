@@ -10,5 +10,6 @@ module.exports = {
   moduleNameMapper: {
     "@/(.*)$": "<rootDir>/src/$1",
   },
+  testTimeout: 60 * 1000,
   globalSetup: "<rootDir>/src/tests/setup.ts",
 };
