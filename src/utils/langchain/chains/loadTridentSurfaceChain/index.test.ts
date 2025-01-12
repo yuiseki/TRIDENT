@@ -1,27 +1,26 @@
-import { ChatOllama } from "@langchain/community/chat_models/ollama";
-import { OllamaEmbeddings } from "@langchain/community/embeddings/ollama";
-import { loadTridentSuggestChain } from ".";
+import { ChatOllama } from "@langchain/ollama";
+import { OllamaEmbeddings } from "@langchain/ollama";
+import { loadTridentSurfaceChain } from ".";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
 
 // 60s
 const TEST_TIMEOUT = 60000;
 
-describe("loadTridentSuggestChain", () => {
+describe("loadTridentSurfaceChain", () => {
   it(
     "should return a RunnableSequence",
     async () => {
       const llm = new ChatOllama({
-        model: "tinyllama:1.1b-chat",
+        model: "qwen2.5:1.5b",
       });
       const embeddings = new OllamaEmbeddings({
         model: "all-minilm:22m",
       });
       const vectorStore = new MemoryVectorStore(embeddings);
-      const chain = await loadTridentSuggestChain({ llm, vectorStore });
+      const chain = await loadTridentSurfaceChain({ llm, vectorStore });
       expect(chain).toBeDefined();
       const result = await chain.invoke({
-        input:
-          "Primary language of user: ja\nCurrent location of user: 台東区, 東京都, 日本",
+        input: "台東区のラーメン屋を教えて",
       });
       console.info("result", result.content);
       expect(result.content).toBeDefined();
