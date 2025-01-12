@@ -1,49 +1,29 @@
-version: "3.9"
-
 services:
-  trident:
+  nextjs:
     build:
       context: .
       dockerfile: Dockerfile
+    command: npm run dev
     volumes:
       - type: bind
         source: ${LOCAL_WORKSPACE_FOLDER:-.}
         target: /app
-    command: npm run dev
     ports:
       - 3000:3000
     networks:
-      - myapp
-  llama-cpp-server:
-    image: local/llama.cpp:full
-    ports:
-      - 8080:8080
-    networks:
-      - myapp
-    tty: true
-    command: >
-      --server
-      --model /models/${MODEL_NAME:-tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf}
-      --ctx-size ${CONTEXT_SIZE:-2048}
-      --threads ${THREADS:-8}
-      --mlock --no-mmap --embedding
-      --port 8080 --host 0.0.0.0
+      - trident
+  ollama:
+    image: ollama/ollama
     volumes:
-      - ~/llama.cpp/models:/models
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              capabilities: [gpu]
+      - ollama:/root/.ollama
+    ports:
+      - 11434:11434
+    networks:
+      - trident
   overpass-api:
     # MEMO:
     # http://localhost:5000/api/interpreter?data=[out:json];rel(2220322);out;
     image: wiktorn/overpass-api
-    ports:
-      - 5000:80
-    volumes:
-      - overpass-db:/db
     environment:
       - OVERPASS_META=no
       - OVERPASS_MODE=init
@@ -53,10 +33,17 @@ services:
       - OVERPASS_USE_AREAS=true
       - OVERPASS_STOP_AFTER_INIT=false
       - OVERPASS_MAX_TIMEOUT=30000
+    volumes:
+      - overpass-db:/db
+    ports:
+      - 5000:80
+    networks:
+      - trident
 
 networks:
-  myapp:
-    name: myapp
+  trident:
+    name: trident
 
 volumes:
+  ollama:
   overpass-db:

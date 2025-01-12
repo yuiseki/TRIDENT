@@ -30,6 +30,7 @@
     "colorraw",
     "datetime",
     "dirents",
+    "distroless",
     "ducanh",
     "duckdb",
     "exintro",
@@ -71,9 +72,11 @@
     "Mandera",
     "Masó",
     "México",
+    "myapp",
     "Nangarhar",
     "NDRRMA",
     "NEOC",
+    "nextjs",
     "nonlatin",
     "OPENAI",
     "openstreetmap",
@@ -81,6 +84,7 @@
     "pageid",
     "Panjshir",
     "Parwan",
+    "pgvector",
     "Pilon",
     "Pourriez",
     "qdrant",
@@ -88,6 +92,7 @@
     "reliefweb",
     "replanner",
     "Rukum",
+    "setuptools",
     "smollm",
     "Söhne",
     "souhaitez",
@@ -107,8 +112,10 @@
     "Urayasu",
     "USGS",
     "vectorstores",
+    "vercel",
     "VFJJREVOV",
     "voir",
-    "vous"
+    "vous",
+    "wiktorn"
   ]
 }

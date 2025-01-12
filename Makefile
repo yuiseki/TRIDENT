@@ -4,6 +4,16 @@ all: \
 	update_reliefweb \
 	voyager
 
+.PHONY: setup
+setup:
+	test ollama || $(MAKE) setup_ollama
+	ollama pull qwen2.5:1.5b
+	ollama pull snowflake-arctic-embed:22m
+
+.PHONY: setup_ollama
+setup_ollama:
+	curl -fsSL https://ollama.com/install.sh | sh
+
 .PHONY: fetch_nhk
 fetch_nhk:
 	npm run site:www3.nhk.or.jp:fetch
