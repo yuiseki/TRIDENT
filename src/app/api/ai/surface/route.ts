@@ -4,11 +4,11 @@ import { loadTridentSurfaceChain } from "@/utils/langchain/chains/loadTridentSur
 import { ChatOpenAI } from "@langchain/openai";
 import { OpenAIEmbeddings } from "@langchain/openai";
 // using ollama
-import { ChatOllama } from "@langchain/community/chat_models/ollama";
-import { OllamaEmbeddings } from "@langchain/community/embeddings/ollama";
+import { ChatOllama } from "@langchain/ollama";
+import { OllamaEmbeddings } from "@langchain/ollama";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
 import { BaseLanguageModel } from "@langchain/core/language_models/base";
-import { VectorStore } from "@langchain/core/vectorstores";
+import { Embeddings } from "@langchain/core/embeddings";
 
 export async function POST(request: Request) {
   console.log("----- ----- -----");
@@ -17,18 +17,26 @@ export async function POST(request: Request) {
   const reqJson = await request.json();
   const query = reqJson.query as string;
   const pastMessagesJsonString = reqJson.pastMessages;
-  let chatHistoryLines = pastMessagesJsonString
-    ? (Array.isArray(pastMessagesJsonString) ? pastMessagesJsonString : JSON.parse(pastMessagesJsonString))
-    : [];
-  chatHistoryLines.push(query);
+  let chatHistoryLines = [];
+
+  try {
+    chatHistoryLines = Array.isArray(pastMessagesJsonString)
+      ? pastMessagesJsonString
+      : typeof pastMessagesJsonString === "string"
+      ? JSON.parse(pastMessagesJsonString)
+      : [];
+  } catch (error) {
+    console.error("Error parsing pastMessages:", error);
+    chatHistoryLines = [];
+  }
 
   console.log("");
   console.log("chatHistoryLines:");
   console.log(chatHistoryLines.join("\n"));
 
-  let llm: ChatOpenAI | ChatOllama;
-  let embeddings: OpenAIEmbeddings | OllamaEmbeddings;
-  
+  let llm: BaseLanguageModel;
+  let embeddings: Embeddings;
+
   if (process.env.USE_OLLAMA === "1") {
     llm = new ChatOllama({
       model: "phi4:14b",
@@ -37,7 +45,7 @@ export async function POST(request: Request) {
       maxRetries: 3,
     });
     embeddings = new OllamaEmbeddings({
-      model: "phi4:14b",
+      model: "snowflake-arctic-embed:22m",
     });
   } else if (process.env.CLOUDFLARE_AI_GATEWAY) {
     llm = new ChatOpenAI({
@@ -59,12 +67,15 @@ export async function POST(request: Request) {
   const vectorStore = new MemoryVectorStore(embeddings);
 
   try {
-    console.log("Creating surface chain with model:", process.env.USE_OLLAMA === "1" ? "phi4:14b" : "openai");
+    console.log(
+      "Creating surface chain with model:",
+      process.env.USE_OLLAMA === "1" ? "ollama" : "openai"
+    );
     const surfaceChain = await loadTridentSurfaceChain({
       llm,
       vectorStore,
     });
-    
+
     console.log("Invoking surface chain...");
     const surfaceResult = await surfaceChain.invoke({
       input: chatHistoryLines.join("\n"),
@@ -84,6 +95,8 @@ export async function POST(request: Request) {
     });
   } catch (error: any) {
     console.error("Error in surface route:", error);
+    console.error("Error stack:", error.stack);
+    console.error("Error cause:", error.cause);
     const errorMessage = error?.message || "Unknown error occurred";
     return NextResponse.json(
       { error: "Failed to process request", details: errorMessage },
