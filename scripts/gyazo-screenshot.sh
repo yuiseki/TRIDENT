@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Check if GYAZO_ACCESS_KEY is set
-if [ -z "${GYAZO_ACCESS_KEY}" ]; then
-    echo "Error: GYAZO_ACCESS_KEY environment variable is not set"
+# Check if GYAZO_ACCESS_TOKEN is set
+if [ -z "${GYAZO_ACCESS_TOKEN}" ]; then
+    echo "Error: GYAZO_ACCESS_TOKEN environment variable is not set"
     exit 1
 fi
 
@@ -95,7 +95,7 @@ fi
 if [ -f "${screenshot_path}" ]; then
     echo "Uploading screenshot to Gyazo..."
     curl -s -X POST \
-         -H "Authorization: Bearer ${GYAZO_ACCESS_KEY}" \
+         -H "Authorization: Bearer ${GYAZO_ACCESS_TOKEN}" \
          -F "imagedata=@${screenshot_path}" \
          https://upload.gyazo.com/api/upload | jq -r '.permalink_url'
     
