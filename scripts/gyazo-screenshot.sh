@@ -13,12 +13,6 @@ screenshot_path="/home/ubuntu/screenshots/browser_${timestamp}.png"
 # Ensure screenshots directory exists
 mkdir -p /home/ubuntu/screenshots
 
-# Install required tools if not present
-if ! command -v xdotool >/dev/null 2>&1; then
-    echo "Installing xdotool for window management..."
-    sudo apt-get update && sudo apt-get install -y xdotool
-fi
-
 # Function to check if a command exists
 command_exists() {
     command -v "$1" >/dev/null 2>&1
@@ -32,58 +26,17 @@ for cmd in jq curl; do
     fi
 done
 
-# Navigate to URL if provided
-if [ -n "$1" ]; then
-    echo "Navigating to URL: $1"
-    # The browser navigation and screenshot commands would typically be handled by the browser automation system
-    # For this script, we assume the browser is already at the desired page
+# Find the most recent screenshot
+echo "Looking for recent screenshot..."
+latest_screenshot=$(ls -t /home/ubuntu/screenshots/localhost_*.png 2>/dev/null | head -n1)
+
+if [ -z "$latest_screenshot" ]; then
+    echo "Error: No screenshot found in /home/ubuntu/screenshots/"
+    exit 1
 fi
 
-# Take screenshot using browser
-echo "Taking screenshot..."
-# Function to take screenshot
-take_screenshot() {
-    local url="$1"
-    local output_path="$2"
-    
-    # If URL is provided, navigate to it
-    if [ -n "$url" ]; then
-        echo "Navigating to $url..."
-        # Browser navigation would happen here
-        sleep 2  # Wait for page load
-    fi
-    
-    # Take screenshot using browser automation
-    echo "Taking screenshot..."
-    
-    # Use browser automation to capture screenshot
-    echo "Capturing browser screenshot..."
-    
-    # Check if required tools are available
-    if ! command -v import >/dev/null 2>&1; then
-        echo "Installing ImageMagick for screenshot capture..."
-        sudo apt-get update && sudo apt-get install -y imagemagick
-    fi
-    
-    # Take screenshot of the active window
-    if command -v import >/dev/null 2>&1; then
-        # Get the active window ID
-        active_window=$(xdotool getactivewindow)
-        if [ -n "$active_window" ]; then
-            import -window "$active_window" "$output_path"
-            echo "Screenshot saved to: $output_path"
-        else
-            echo "Error: Could not find active browser window"
-            exit 1
-        fi
-    else
-        echo "Error: Screenshot tools not available"
-        exit 1
-    fi
-}
-
-# Take the screenshot
-take_screenshot "$1" "${screenshot_path}"
+echo "Found screenshot: $latest_screenshot"
+cp "$latest_screenshot" "${screenshot_path}"
 
 # Ensure the screenshot exists and is readable
 if [ ! -f "${screenshot_path}" ]; then
