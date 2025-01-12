@@ -17,6 +17,7 @@ export async function POST(request: Request) {
 
   let llm: ChatOpenAI;
   let embeddings: OpenAIEmbeddings;
+
   if (process.env.CLOUDFLARE_AI_GATEWAY) {
     llm = new ChatOpenAI({
       configuration: {
@@ -44,26 +45,38 @@ export async function POST(request: Request) {
     vectorStore,
     tableName,
   });
+
   await initializeTridentDeepExampleList({
     vectorStore,
     checkTableExists,
     checkDocumentExists,
   });
 
-  const chain = await loadTridentDeepChain({ llm, vectorStore });
-  const result = await chain.invoke({ input: query });
+  try {
+    const chain = await loadTridentDeepChain({ llm, vectorStore });
 
-  console.log("----- ----- -----");
-  console.log("----- start deep -----");
-  console.log("Human:", query);
-  console.log("AI:", result.text);
-  console.log("");
+    console.log("Invoking deep chain...");
+    const result = await chain.invoke({ input: query });
 
-  console.log("----- end deep -----");
-  console.log("----- ----- -----");
+    console.log("----- ----- -----");
+    console.log("----- start deep -----");
+    console.log("Human:", query);
+    console.log("AI:", result.text);
+    console.log("");
 
-  return NextResponse.json({
-    query: query,
-    deep: result.text,
-  });
+    console.log("----- end deep -----");
+    console.log("----- ----- -----");
+
+    return NextResponse.json({
+      query: query,
+      deep: result.text,
+    });
+  } catch (error: any) {
+    console.error("Error in deep route:", error);
+    const errorMessage = error?.message || "Unknown error occurred";
+    return NextResponse.json(
+      { error: "Failed to process request", details: errorMessage },
+      { status: 500 }
+    );
+  }
 }

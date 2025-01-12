@@ -1,7 +1,7 @@
 import { RunnableSequence } from "@langchain/core/runnables";
 import { BaseLanguageModel } from "@langchain/core/language_models/base";
-import { loadTridentDeepPrompt } from "./prompt";
 import { VectorStore } from "@langchain/core/vectorstores";
+import { loadTridentDeepPrompt } from "./prompt";
 import { initializeExampleList } from "../../vectorstores/initializeExampleList";
 import {
   tridentDeepExampleInputKeys,
