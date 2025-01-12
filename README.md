@@ -17,6 +17,7 @@ TRIDENT, an Interactive Smart Maps Assistant.
 - ollama
 
 ```bash
+make setup_ollama
 make setup
 npm ci
 npm test
