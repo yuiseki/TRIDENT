@@ -1,9 +1,10 @@
 services:
   db:
-    hostname: 127.0.0.1
     image: pgvector/pgvector:pg17
     ports:
-      - 5432:5432
+      - 5433:5432
+    networks:
+      - trident
     restart: always
     environment:
       - POSTGRES_DB=verceldb

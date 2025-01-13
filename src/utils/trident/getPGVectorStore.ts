@@ -5,7 +5,6 @@ import {
 import { VercelPostgres } from "@langchain/community/vectorstores/vercel_postgres";
 import { Embeddings } from "@langchain/core/embeddings";
 import pg from "pg";
-import { PoolConfig } from "pg";
 
 export const getPGVectorStore = async (
   embeddings: Embeddings,
@@ -13,7 +12,7 @@ export const getPGVectorStore = async (
 ) => {
   if (process.env.USE_POSTGRES === "1") {
     const reusablePool = new pg.Pool({
-      host: "127.0.0.1",
+      host: "db",
       port: 5432,
       user: "default",
       password: "password",
