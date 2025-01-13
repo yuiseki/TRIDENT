@@ -5,14 +5,9 @@
 ```bash
 git clone git@github.com:yuiseki/TRIDENT.git
 cd TRIDENT
-cp .env.example .env
-# 必要な環境変数を設定
-# USE_OLLAMA=1
-# OLLAMA_BASE_URL="http://ollama:11434"
-# USE_POSTGRES=1
-# VERCEL_ENV=development
 
 # TRIDENTを起動
+# 環境変数は.env.developmentから自動的に読み込まれます
 docker compose up
 ```
 
