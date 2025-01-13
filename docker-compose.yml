@@ -1,9 +1,58 @@
 services:
+  db-pooler:
+    image: pgvector/pgvector:pg17
+    ports:
+      - 5433:5432
+    restart: always
+    environment:
+      - POSTGRES_DB=verceldb
+      - POSTGRES_USER=default
+      - POSTGRES_PASSWORD=password
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "pg_isready -h localhost -U ${POSTGRES_USER:-default} -d ${POSTGRES_DB:-verceldb}",
+        ]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+  ollama:
+    image: ollama/ollama
+    volumes:
+      - ollama:/root/.ollama
+    ports:
+      - 1143:11434
+    networks:
+      - trident
+    healthcheck:
+      test: ["CMD", "bash", "-c", "ollama list | grep qwen2.5:1.5b"]
+      interval: 10s
+      timeout: 10s
+      retries: 1000
+  x-ollama-pull:
+    image: ollama/ollama:latest
+    container_name: ollama-pull
+    volumes:
+      - ollama:/root/.ollama
+    entrypoint: /bin/sh
+    command:
+      - "-c"
+      - "sleep 5; OLLAMA_HOST=ollama:11434 ollama pull snowflake-arctic-embed:22m; OLLAMA_HOST=ollama:11434 ollama pull qwen2.5:1.5b"
+    networks:
+      - trident
   nextjs:
     build:
       context: .
       dockerfile: Dockerfile
     command: npm run dev
+    depends_on:
+      db-pooler:
+        condition: service_healthy
+      ollama:
+        condition: service_healthy
+    env_file:
+      - .env.development
     volumes:
       - type: bind
         source: ${LOCAL_WORKSPACE_FOLDER:-.}
