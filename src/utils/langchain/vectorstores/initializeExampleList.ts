@@ -17,6 +17,7 @@ export const initializeExampleList = async ({
   checkTableExists: () => Promise<boolean>;
   checkDocumentExists: (hash: string) => Promise<boolean>;
 }) => {
+  await checkTableExists();
   // Add examples to the vector store
   for (const example of exampleList) {
     // Create a string from the example

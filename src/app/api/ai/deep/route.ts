@@ -3,42 +3,23 @@ import {
   initializeTridentDeepExampleList,
   loadTridentDeepChain,
 } from "@/utils/langchain/chains/loadTridentDeepChain";
-import { ChatOpenAI } from "@langchain/openai";
-import { OpenAIEmbeddings } from "@langchain/openai";
-import { VercelPostgres } from "@langchain/community/vectorstores/vercel_postgres";
 import {
   createCheckDocumentExists,
   createCheckTableExists,
 } from "@/utils/langchain/vectorstores/vercel_postgres";
+import { getChatModel } from "@/utils/trident/getChatModel";
+import { getEmbeddingModel } from "@/utils/trident/getEmbeddingModel";
+import { getPGVectorStore } from "@/utils/trident/getPGVectorStore";
 
 export async function POST(request: Request) {
   const res = await request.json();
   const query = res.query;
 
-  let llm: ChatOpenAI;
-  let embeddings: OpenAIEmbeddings;
-
-  if (process.env.CLOUDFLARE_AI_GATEWAY) {
-    llm = new ChatOpenAI({
-      configuration: {
-        baseURL: process.env.CLOUDFLARE_AI_GATEWAY + "/openai",
-      },
-      temperature: 0,
-    });
-    embeddings = new OpenAIEmbeddings({
-      configuration: {
-        baseURL: process.env.CLOUDFLARE_AI_GATEWAY + "/openai",
-      },
-    });
-  } else {
-    llm = new ChatOpenAI({ temperature: 0 });
-    embeddings = new OpenAIEmbeddings();
-  }
+  const llm = getChatModel();
+  const embeddings = getEmbeddingModel();
 
   const tableName = "trident_deep_example_openai";
-  const vectorStore = await VercelPostgres.initialize(embeddings, {
-    tableName,
-  });
+  const vectorStore = await getPGVectorStore(embeddings, tableName);
 
   const checkTableExists = createCheckTableExists({ vectorStore, tableName });
   const checkDocumentExists = createCheckDocumentExists({

@@ -1,6 +1,7 @@
 import { loadCharitesChain } from "@/utils/langchain/chains/charites";
+import { getChatModel } from "@/utils/trident/getChatModel";
+import { getEmbeddingModel } from "@/utils/trident/getEmbeddingModel";
 import { Example } from "@langchain/core/prompts";
-import { ChatOpenAI, OpenAIEmbeddings } from "@langchain/openai";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
 import { NextResponse } from "next/server";
 
@@ -16,24 +17,8 @@ export async function POST(request: Request) {
   console.log("----- start charites-ai -----");
   console.log("Human:", prompt);
 
-  let llm: ChatOpenAI;
-  let embeddings: OpenAIEmbeddings;
-  if (process.env.CLOUDFLARE_AI_GATEWAY) {
-    llm = new ChatOpenAI({
-      configuration: {
-        baseURL: process.env.CLOUDFLARE_AI_GATEWAY + "/openai",
-      },
-      temperature: 0,
-    });
-    embeddings = new OpenAIEmbeddings({
-      configuration: {
-        baseURL: process.env.CLOUDFLARE_AI_GATEWAY + "/openai",
-      },
-    });
-  } else {
-    llm = new ChatOpenAI({ temperature: 0 });
-    embeddings = new OpenAIEmbeddings();
-  }
+  const llm = getChatModel();
+  const embeddings = getEmbeddingModel();
 
   const vectorStore = new MemoryVectorStore(embeddings);
 

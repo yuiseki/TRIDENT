@@ -1,5 +1,4 @@
 import { NextResponse } from "next/server";
-import { VercelPostgres } from "@langchain/community/vectorstores/vercel_postgres";
 
 import {
   initializeTridentInnerExampleList,
@@ -11,6 +10,7 @@ import {
   createCheckDocumentExists,
   createCheckTableExists,
 } from "@/utils/langchain/vectorstores/vercel_postgres";
+import { getPGVectorStore } from "@/utils/trident/getPGVectorStore";
 
 export async function POST(request: Request) {
   console.log("----- ----- -----");
@@ -39,9 +39,7 @@ export async function POST(request: Request) {
   const embeddings = getEmbeddingModel();
 
   const tableName = "trident_inner_example_openai";
-  const vectorStore = await VercelPostgres.initialize(embeddings, {
-    tableName,
-  });
+  const vectorStore = await getPGVectorStore(embeddings, tableName);
 
   const checkTableExists = createCheckTableExists({ vectorStore, tableName });
   const checkDocumentExists = createCheckDocumentExists({

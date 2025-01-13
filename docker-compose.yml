@@ -1,5 +1,6 @@
 services:
-  db-pooler:
+  db:
+    hostname: 127.0.0.1
     image: pgvector/pgvector:pg17
     ports:
       - 5433:5432
@@ -47,7 +48,7 @@ services:
       dockerfile: Dockerfile
     command: npm run dev
     depends_on:
-      db-pooler:
+      db:
         condition: service_healthy
       ollama:
         condition: service_healthy

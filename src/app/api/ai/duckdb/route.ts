@@ -1,4 +1,4 @@
-import { ChatOpenAI } from "@langchain/openai";
+import { getChatModel } from "@/utils/trident/getChatModel";
 import { NextResponse } from "next/server";
 
 export async function POST(request: Request) {
@@ -18,17 +18,7 @@ export async function POST(request: Request) {
     });
   }
 
-  let llm: ChatOpenAI;
-  if (process.env.CLOUDFLARE_AI_GATEWAY) {
-    llm = new ChatOpenAI({
-      configuration: {
-        baseURL: process.env.CLOUDFLARE_AI_GATEWAY + "/openai",
-      },
-      temperature: 0,
-    });
-  } else {
-    llm = new ChatOpenAI({ temperature: 0 });
-  }
+  let llm = getChatModel();
 
   const result = await llm.invoke(prompt);
 
