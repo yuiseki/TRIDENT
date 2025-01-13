@@ -12,33 +12,6 @@ services:
       - 3000:3000
     networks:
       - trident
-  ollama:
-    image: ollama/ollama
-    volumes:
-      - ollama:/root/.ollama
-    ports:
-      - 11434:11434
-    networks:
-      - trident
-  overpass-api:
-    # MEMO:
-    # http://localhost:5000/api/interpreter?data=[out:json];rel(2220322);out;
-    image: wiktorn/overpass-api
-    environment:
-      - OVERPASS_META=no
-      - OVERPASS_MODE=init
-      - OVERPASS_PLANET_URL=http://download.geofabrik.de/europe/monaco-latest.osm.bz2
-      - OVERPASS_DIFF_URL=http://download.openstreetmap.fr/replication/europe/monaco/minute/
-      - OVERPASS_UPDATE_SLEEP=60
-      - OVERPASS_USE_AREAS=true
-      - OVERPASS_STOP_AFTER_INIT=false
-      - OVERPASS_MAX_TIMEOUT=30000
-    volumes:
-      - overpass-db:/db
-    ports:
-      - 5000:80
-    networks:
-      - trident
 
 networks:
   trident:
