@@ -29,7 +29,7 @@
     "@langchain/community": "^0.3.24",
     "@langchain/core": "^0.3.27",
     "@langchain/langgraph": "^0.2.36",
-    "@langchain/ollama": "^0.1.4",
+    "@langchain/ollama": "^0.2.0",
     "@langchain/openai": "^0.4.0",
     "@turf/turf": "^7.1.0",
     "@uiw/codemirror-extensions-color": "^4.23.6",
