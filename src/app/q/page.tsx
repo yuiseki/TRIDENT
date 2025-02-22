@@ -28,75 +28,30 @@ export default function Page() {
   };
 
   return (
-    <div className="tridentWrap">
-      <div
-        style={{
-          padding: "20px",
-          backgroundColor: "rgb(255, 255, 255)",
-        }}
-      >
-        <h1
-          style={{
-            color: "rgb(0, 158, 219)",
-            fontWeight: "bold",
-          }}
-        >
-          TRIDENT Quiz (JGeoGLUE)
-        </h1>
-        <AccountButton />
-      </div>
-      {session === undefined && (
+    <>
+      <title>TRIDENT Quiz (JGeoGLUE)</title>
+      <div className="tridentWrap">
         <div
           style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            height: "100vh",
-            color: "white",
+            padding: "20px",
+            backgroundColor: "rgb(255, 255, 255)",
           }}
         >
-          <div>
-            <h2>Loading...</h2>
-          </div>
-        </div>
-      )}
-      {session === null && <RequireLoginCard />}
-      {session?.user && allTasks?.length === 0 && (
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            height: "100%",
-          }}
-        >
-          <div
-            style={{
-              width: "80%",
-              border: "1px solid #ccc",
-              backgroundColor: "#f9f9f9",
-              padding: "20px",
-            }}
-          >
-            <h2
+          <h1>
+            <a
+              href="/q"
               style={{
-                textAlign: "center",
                 color: "rgb(0, 158, 219)",
-                marginBottom: "20px",
+                fontWeight: "bold",
+                textDecoration: "none",
               }}
             >
-              全問正解！
-            </h2>
-            <a href="/q/answers">
-              <p style={{ textAlign: "center" }}>解答を確認する</p>
+              TRIDENT Quiz (JGeoGLUE)
             </a>
-          </div>
+          </h1>
+          <AccountButton />
         </div>
-      )}
-      {session?.user && currentTask && (
-        <>
+        {session === undefined && (
           <div
             style={{
               display: "flex",
@@ -104,34 +59,86 @@ export default function Page() {
               alignItems: "center",
               justifyContent: "center",
               height: "100vh",
+              color: "white",
             }}
           >
+            <div>
+              <h2>Loading...</h2>
+            </div>
+          </div>
+        )}
+        {session === null && <RequireLoginCard />}
+        {session?.user && allTasks?.length === 0 && (
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              height: "100%",
+            }}
+          >
+            <div
+              style={{
+                width: "80%",
+                border: "1px solid #ccc",
+                backgroundColor: "#f9f9f9",
+                padding: "20px",
+              }}
+            >
+              <h2
+                style={{
+                  textAlign: "center",
+                  color: "rgb(0, 158, 219)",
+                  marginBottom: "20px",
+                }}
+              >
+                全問正解！
+              </h2>
+              <a href="/q/answers">
+                <p style={{ textAlign: "center" }}>解答を確認する</p>
+              </a>
+            </div>
+          </div>
+        )}
+        {session?.user && currentTask && (
+          <>
             <div
               style={{
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "center",
-                padding: "20px",
-                borderRadius: "5px",
-                margin: "20px",
-                width: "100vw",
+                height: "100vh",
               }}
             >
               <div
                 style={{
-                  width: "80%",
-                  border: "1px solid #ccc",
-                  backgroundColor: "#f9f9f9",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
                   padding: "20px",
+                  borderRadius: "5px",
+                  margin: "20px",
+                  width: "100vw",
                 }}
               >
-                <GeoGLUETaskCard task={currentTask} onNext={handleNext} />
+                <div
+                  style={{
+                    width: "80%",
+                    border: "1px solid #ccc",
+                    backgroundColor: "#f9f9f9",
+                    padding: "20px",
+                  }}
+                >
+                  <GeoGLUETaskCard task={currentTask} onNext={handleNext} />
+                </div>
               </div>
             </div>
-          </div>
-        </>
-      )}
-    </div>
+          </>
+        )}
+      </div>
+    </>
   );
 }

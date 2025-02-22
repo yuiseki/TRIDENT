@@ -22,51 +22,65 @@ export default function Page() {
   }
 
   return (
-    <div>
-      <div
-        style={{
-          padding: "20px",
-          backgroundColor: "rgba(255, 255, 255, 0.8)",
-        }}
-      >
-        <h1>TRIDENT Admin</h1>
-        <AccountButton />
-      </div>
-      {tasks === undefined ? (
+    <>
+      <title>TRIDENT Quiz (JGeoGLUE) | Admin</title>
+      <div>
         <div
           style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            height: "100vh",
-            color: "white",
+            padding: "20px",
+            backgroundColor: "rgb(255, 255, 255)",
           }}
         >
-          <div>
-            <h2>Loading...</h2>
-          </div>
-        </div>
-      ) : (
-        <div>
-          <AddTaskForm />
-          {tasks?.map((task) => (
-            <div
-              key={task.id}
+          <h1>
+            <a
+              href="/q"
               style={{
-                backgroundColor: "white",
-                width: "60vw",
-                margin: "20px auto",
-                padding: "20px",
+                color: "rgb(0, 158, 219)",
+                fontWeight: "bold",
+                textDecoration: "none",
               }}
             >
-              <h2>{task.question}</h2>
-              <p>type: {task.type}</p>
-              <p>answer: {task.correctAnswer}</p>
-            </div>
-          ))}
+              TRIDENT Quiz (JGeoGLUE)
+            </a>
+          </h1>
+          <AccountButton />
         </div>
-      )}
-    </div>
+        {tasks === undefined ? (
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              height: "100vh",
+              color: "white",
+            }}
+          >
+            <div>
+              <h2>Loading...</h2>
+            </div>
+          </div>
+        ) : (
+          <div>
+            <AddTaskForm />
+            {tasks?.map((task) => (
+              <div
+                key={task.id}
+                style={{
+                  backgroundColor: "white",
+                  width: "60vw",
+                  margin: "20px auto",
+                  padding: "20px",
+                }}
+              >
+                <h2>{task.question}</h2>
+                <p>type: {task.type}</p>
+                <p>answer: {task.correctAnswer}</p>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </>
   );
 }
