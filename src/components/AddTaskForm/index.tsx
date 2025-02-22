@@ -1,10 +1,17 @@
 import { useMemo, useState } from "react";
 import { useSWRConfig } from "swr";
+import {
+  JGeoGLUETaskType,
+  GeoEAGOptions,
+  GeoETAOptions,
+  GeoQICOptions,
+  GeoRCCOptions,
+  GeoSECOptions,
+  JGeoGLUETaskTypes,
+} from "@/constants/JGeoGLUE";
 
 export const AddTaskForm: React.FC = () => {
-  const [type, setType] = useState<"GeoEAG" | "GeoETA" | "" | undefined>(
-    undefined
-  );
+  const [type, setType] = useState<JGeoGLUETaskType | "">("");
   const [question, setQuestion] = useState("");
   const [correctAnswer, setCorrectAnswer] = useState("");
   const { mutate } = useSWRConfig();
@@ -69,28 +76,62 @@ export const AddTaskForm: React.FC = () => {
         <div>
           <select
             value={type}
-            onChange={(e) => setType(e.target.value as "GeoEAG" | "GeoETA")}
+            onChange={(e) => setType(e.target.value as JGeoGLUETaskType)}
             style={{
               fontSize: "1.2rem",
               padding: "0.5rem",
             }}
           >
             <option value="">Select Task Type</option>
-            <option value="GeoEAG">GeoEAG</option>
-            <option value="GeoETA">GeoETA</option>
+            {JGeoGLUETaskTypes.map((taskType) => (
+              <option key={taskType} value={taskType}>
+                {taskType}
+              </option>
+            ))}
           </select>
         </div>
         <div>
-          {type === "GeoEAG" && (
-            <p>
-              GeoEAG(Geographic Entity AliGnment): 2つの地名が同じかどうかを判定
-            </p>
-          )}
-          {type === "GeoETA" && (
-            <p>
-              GeoETA(Geographic Elements TAgging): 与えられた地名の種類を判定
-            </p>
-          )}
+          {(() => {
+            switch (type) {
+              case "GeoEAG":
+                return (
+                  <p>
+                    GeoEAG(Geographic Entity AliGnment):
+                    2つの地名が同じかどうかを判定
+                  </p>
+                );
+              case "GeoETA":
+                return (
+                  <p>
+                    GeoETA(Geographic Elements TAgging):
+                    与えられた地名の種類を判定
+                  </p>
+                );
+              case "GeoQIC":
+                return (
+                  <p>
+                    GeoQIC(Geospatial Query Intent Classification):
+                    文章の地理的な質問意図を分類
+                  </p>
+                );
+              case "GeoSEC":
+                return (
+                  <p>
+                    GeoSEC(Geospatial Spatial Expression Classification):
+                    文章内の空間表現を分類
+                  </p>
+                );
+              case "GeoRCC":
+                return (
+                  <p>
+                    GeoRCC(Geospatial Relation Classification):
+                    文章内の2つの地名の関係を分類
+                  </p>
+                );
+              default:
+                return <p></p>;
+            }
+          })()}
         </div>
         <div
           style={{
@@ -115,56 +156,50 @@ export const AddTaskForm: React.FC = () => {
             fontSize: "1.2rem",
           }}
         >
-          {type === "GeoEAG" && (
-            <>
-              {["全く同じ", "部分的に一致", "全く違う"].map((answer) => (
-                <label
-                  key={answer}
+          {(() => {
+            let options: { label: string; value: string }[] = [];
+            switch (type) {
+              case "GeoEAG":
+                options = GeoEAGOptions;
+                break;
+              case "GeoETA":
+                options = GeoETAOptions;
+                break;
+              case "GeoQIC":
+                options = GeoQICOptions;
+                break;
+              case "GeoSEC":
+                options = GeoSECOptions;
+                break;
+              case "GeoRCC":
+                options = GeoRCCOptions;
+                break;
+              default:
+                options = [];
+                break;
+            }
+            console.log(options);
+            return options.map((option) => (
+              <label
+                key={option.value}
+                style={{
+                  fontSize: "1.2rem",
+                  padding: "0.5rem",
+                }}
+              >
+                <input
+                  type="radio"
+                  name="correctAnswer"
+                  value={option.value}
+                  onChange={(e) => setCorrectAnswer(e.target.value)}
                   style={{
-                    fontSize: "1.2rem",
-                    padding: "0.5rem",
+                    marginRight: "0.25rem",
                   }}
-                >
-                  <input
-                    type="radio"
-                    name="correctAnswer"
-                    value={answer}
-                    onChange={(e) => setCorrectAnswer(e.target.value)}
-                    style={{
-                      marginRight: "0.25rem",
-                    }}
-                  />
-                  {answer}
-                </label>
-              ))}
-            </>
-          )}
-          {type === "GeoETA" && (
-            <>
-              {["都道府県", "市区町村", "町名", "番地", "施設名", "その他"].map(
-                (answer) => (
-                  <label
-                    key={answer}
-                    style={{
-                      fontSize: "1.2rem",
-                      padding: "0.5rem",
-                    }}
-                  >
-                    <input
-                      type="radio"
-                      name="correctAnswer"
-                      value={answer}
-                      onChange={(e) => setCorrectAnswer(e.target.value)}
-                      style={{
-                        marginRight: "0.25rem",
-                      }}
-                    />
-                    {answer}
-                  </label>
-                )
-              )}
-            </>
-          )}
+                />
+                {option.label}
+              </label>
+            ));
+          })()}
         </div>
         <br />
         <button

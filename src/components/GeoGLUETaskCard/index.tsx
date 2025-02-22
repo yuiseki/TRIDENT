@@ -1,21 +1,13 @@
+import {
+  GeoEAGOptions,
+  GeoETAOptions,
+  GeoQICOptions,
+  GeoRCCOptions,
+  GeoSECOptions,
+} from "@/constants/JGeoGLUE";
 import { JGeoGLUETask } from "@prisma/client";
 import { useState } from "react";
 import { useSWRConfig } from "swr";
-
-const GeoEAGOptions = [
-  { label: "✅ 全く同じ", value: "全く同じ" },
-  { label: "🟡 部分的に一致", value: "部分的に一致" },
-  { label: "❌️ 全く違う", value: "全く違う" },
-];
-
-const GeoETAOptions = [
-  { label: "🏞️ 都道府県", value: "都道府県" },
-  { label: "🏙️ 市区町村", value: "市区町村" },
-  { label: "🏘️ 町名", value: "町名" },
-  { label: "🏠 番地", value: "番地" },
-  { label: "🏢 施設名", value: "施設名" },
-  { label: "🏗️ その他", value: "その他" },
-];
 
 export const GeoGLUETaskCard: React.FC<{
   task: JGeoGLUETask;
@@ -24,7 +16,20 @@ export const GeoGLUETaskCard: React.FC<{
   const [answerIsCorrect, setAnswerIsCorrect] = useState<boolean | null>(null);
   const { mutate } = useSWRConfig();
 
-  const options = task.type === "GeoEAG" ? GeoEAGOptions : GeoETAOptions;
+  const options = (() => {
+    switch (task.type) {
+      case "GeoEAG":
+        return GeoEAGOptions;
+      case "GeoETA":
+        return GeoETAOptions;
+      case "GeoQIC":
+        return GeoQICOptions;
+      case "GeoSEC":
+        return GeoSECOptions;
+      case "GeoRCC":
+        return GeoRCCOptions;
+    }
+  })();
 
   const handleAnswer = (optionValue: string) => {
     const isCorrect = task.correctAnswer === optionValue;
@@ -74,7 +79,7 @@ export const GeoGLUETaskCard: React.FC<{
           margin: "20px",
         }}
       >
-        {options.map((option) => {
+        {options?.map((option) => {
           return (
             <button
               key={option.value}
