@@ -38,8 +38,13 @@ export default function Page() {
                 textDecoration: "none",
               }}
             >
-              TRIDENT Quiz (JGeoGLUE)
+              TRIDENT Quiz
             </a>
+            &nbsp; (
+            <a href="/docs/JGeoGLUE" style={{ color: "rgb(0, 158, 219)" }}>
+              JGeoGLUE
+            </a>
+            )
           </h1>
           <AccountButton />
         </div>
