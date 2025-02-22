@@ -1,3 +1,5 @@
+import { AccountButton } from "../AccountButton";
+
 export const RequireLoginCard: React.FC = () => {
   return (
     <div
@@ -29,17 +31,29 @@ export const RequireLoginCard: React.FC = () => {
             href="/api/auth/signin"
             style={{
               display: "flex",
+              flexDirection: "column",
               justifyContent: "center",
               alignItems: "center",
             }}
           >
-            <span
+            <div
               style={{
-                margin: "0 10px",
+                width: "40px",
+                height: "40px",
+                borderRadius: "40px",
+                overflow: "hidden",
+                marginBottom: "10px",
               }}
             >
-              ログインして地理クイズに挑戦！
-            </span>
+              <img
+                width={40}
+                height={40}
+                src="icons/icon-48x48.png"
+                alt="Not signed in"
+                title="Not signed in"
+              />
+            </div>
+            <span>ログインして地理クイズに挑戦！</span>
           </a>
         </div>
       </div>

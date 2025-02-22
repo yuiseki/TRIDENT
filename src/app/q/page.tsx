@@ -27,7 +27,7 @@ export default function Page() {
           backgroundColor: "rgba(255, 255, 255, 0.8)",
         }}
       >
-        <h1>TRIDENT JGeoGLUE</h1>
+        <h1>TRIDENT Quiz (JGeoGLUE)</h1>
         <AccountButton />
       </div>
       {session === undefined && (

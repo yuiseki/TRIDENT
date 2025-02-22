@@ -16,8 +16,9 @@ model User {
   accounts      Account[]
   sessions      Session[]
 
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  createdAt      DateTime         @default(now())
+  updatedAt      DateTime         @updatedAt
+  JGeoGLUEAnswer JGeoGLUEAnswer[]
 }
 
 model Account {
@@ -57,4 +58,27 @@ model VerificationToken {
   expires    DateTime
 
   @@id([identifier, token])
+}
+
+model JGeoGLUETask {
+  id             String           @id @default(cuid())
+  type           String
+  question       String
+  correctAnswer  String
+  createdAt      DateTime         @default(now())
+  updatedAt      DateTime         @updatedAt
+  JGeoGLUEAnswer JGeoGLUEAnswer[]
+}
+
+model JGeoGLUEAnswer {
+  id        String   @id @default(cuid())
+  taskId    String
+  userId    String
+  answer    String
+  isCorrect Boolean
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  task JGeoGLUETask @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  user User         @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
