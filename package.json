@@ -22,6 +22,7 @@
     "site:api.reliefweb.int:analyze_disasters": "node --loader ts-node/esm ./scripts/api.reliefweb.int/analyze_disasters.ts",
     "site:www3.nhk.or.jp:fetch": "node --loader ts-node/esm ./scripts/www3.nhk.or.jp/fetch.ts"
   },
+  "postinstall": "prisma generate",
   "dependencies": {
     "@auth/core": "^0.37.4",
     "@auth/prisma-adapter": "^2.7.4",
