@@ -1,4 +1,5 @@
 import "./globals.css";
+import { SessionProvider } from "next-auth/react";
 
 const APP_NAME = "TRIDENT";
 const APP_DEFAULT_TITLE = "TRIDENT";
@@ -49,7 +50,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <SessionProvider>{children}</SessionProvider>
+      </body>
     </html>
   );
 }

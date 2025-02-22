@@ -28,6 +28,7 @@ import { tridentPlaceholders } from "@/constants/TridentPlaceholder";
 import { useScrollToBottom } from "@/hooks/scrollToBottom";
 import { parseSurfaceResJson } from "@/utils/trident/parseSurfaceResJson";
 import { Ability } from "@/types/Ability";
+import { AccountButton } from "@/components/AccountButton";
 
 export default function Home() {
   // all state
@@ -382,6 +383,7 @@ export default function Home() {
       <title>{pageTitle}</title>
       <main className="tridentMain">
         <div className="tridentMapWrap">
+          <AccountButton />
           <MapStyleSelector
             mapStyleJsonUrl={mapStyleJsonUrl}
             onSelectMapStyleJsonUrl={(
