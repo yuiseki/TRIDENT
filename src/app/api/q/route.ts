@@ -39,6 +39,9 @@ export async function GET(req: NextRequest) {
         createdAt: "desc",
       },
     });
+    const shuffledNotYetAnsweredTasks = notYetAnsweredTasks.sort(
+      () => Math.random() - 0.5
+    );
     const mistakenTasks = await prisma.jGeoGLUETask.findMany({
       where: {
         JGeoGLUEAnswer: {
@@ -52,7 +55,10 @@ export async function GET(req: NextRequest) {
         createdAt: "desc",
       },
     });
-    const tasks = [...notYetAnsweredTasks, ...mistakenTasks].slice(0, 10);
+    const tasks = [...shuffledNotYetAnsweredTasks, ...mistakenTasks].slice(
+      0,
+      10
+    );
 
     return NextResponse.json(tasks);
   } catch (error) {
