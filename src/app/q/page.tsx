@@ -3,6 +3,7 @@
 import { AccountButton } from "@/components/AccountButton";
 import { GeoEAGTaskComponent } from "@/components/GeoEAGTaskComponent";
 import { GeoETATaskComponent } from "@/components/GeoETATaskComponent";
+import { GeoGLUETaskCard } from "@/components/GeoGLUETaskCard";
 import { RequireLoginCard } from "@/components/RequireLoginCard";
 import { GeoGLUETasks } from "@/constants/GeoGLUETasks";
 import { useSession } from "next-auth/react";
@@ -79,11 +80,7 @@ export default function Page() {
                   padding: "20px",
                 }}
               >
-                {currentTask.type === "GeoEAG" ? (
-                  <GeoEAGTaskComponent task={currentTask} onNext={handleNext} />
-                ) : (
-                  <GeoETATaskComponent task={currentTask} onNext={handleNext} />
-                )}
+                <GeoGLUETaskCard task={currentTask} onNext={handleNext} />
               </div>
             </div>
           </div>

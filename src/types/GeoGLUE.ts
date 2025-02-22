@@ -10,15 +10,13 @@ export type GeoETAOptions =
 export type GeoEAGTask = {
   type: "GeoEAG";
   question: string;
-  options: GeoEAGOptions[];
   correctAnswer: GeoEAGOptions;
 };
 
 export type GeoETATask = {
   type: "GeoETA";
   question: string;
-  options: GeoETAOptions[];
-  correctAnswer: string;
+  correctAnswer: GeoETAOptions;
 };
 
 export type GeoGLUETask = GeoEAGTask | GeoETATask;
