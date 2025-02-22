@@ -47,9 +47,18 @@ export default function Page() {
         <div>
           <AddTaskForm />
           {tasks?.map((task) => (
-            <div key={task.id}>
+            <div
+              key={task.id}
+              style={{
+                backgroundColor: "white",
+                width: "60vw",
+                margin: "20px auto",
+                padding: "20px",
+              }}
+            >
               <h2>{task.question}</h2>
-              <p>{task.correctAnswer}</p>
+              <p>type: {task.type}</p>
+              <p>answer: {task.correctAnswer}</p>
             </div>
           ))}
         </div>

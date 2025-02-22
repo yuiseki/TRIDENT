@@ -3,15 +3,26 @@
 import { AccountButton } from "@/components/AccountButton";
 import { GeoGLUETaskCard } from "@/components/GeoGLUETaskCard";
 import { RequireLoginCard } from "@/components/RequireLoginCard";
-import { JGeoGLUETasks } from "@/constants/JGeoGLUETasks";
+import { JGeoGLUETask } from "@prisma/client";
 import { useSession } from "next-auth/react";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import useSWR from "swr";
 
 export default function Page() {
   const { data: session } = useSession();
+  const { data: JGeoGLUETasks } = useSWR<JGeoGLUETask[]>(
+    "/api/q",
+    (url: string) => fetch(url).then((res) => res.json())
+  );
   const [currentTaskIndex, setCurrentTaskIndex] = useState(0);
-  const currentTask = JGeoGLUETasks[currentTaskIndex];
+  const [currentTask, setCurrentTask] = useState<JGeoGLUETask | null>(null);
+
+  useEffect(() => {
+    if (JGeoGLUETasks) {
+      setCurrentTask(JGeoGLUETasks[currentTaskIndex]);
+    }
+  }, [JGeoGLUETasks, currentTaskIndex]);
 
   const handleNext = () => {
     setCurrentTaskIndex((prev) => prev + 1);

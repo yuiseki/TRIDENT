@@ -2,7 +2,9 @@ import { useMemo, useState } from "react";
 import { useSWRConfig } from "swr";
 
 export const AddTaskForm: React.FC = () => {
-  const [type, setType] = useState<"GeoEAG" | "GeoETA" | undefined>(undefined);
+  const [type, setType] = useState<"GeoEAG" | "GeoETA" | "" | undefined>(
+    undefined
+  );
   const [question, setQuestion] = useState("");
   const [correctAnswer, setCorrectAnswer] = useState("");
   const { mutate } = useSWRConfig();
@@ -35,9 +37,13 @@ export const AddTaskForm: React.FC = () => {
     });
 
     if (res.ok) {
-      setType(undefined);
+      setType("");
       setQuestion("");
       setCorrectAnswer("");
+    } else {
+      const data = await res.json();
+      console.error(data);
+      alert(`Failed to add task, ${data.error}`);
     }
     mutate("/api/q");
   };
@@ -161,7 +167,14 @@ export const AddTaskForm: React.FC = () => {
           )}
         </div>
         <br />
-        <button type="submit" disabled={!canSubmit}>
+        <button
+          type="submit"
+          disabled={!canSubmit}
+          style={{
+            fontSize: "1.2rem",
+            padding: "0.5rem",
+          }}
+        >
           Add Task
         </button>
       </form>
