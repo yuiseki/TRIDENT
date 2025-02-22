@@ -13,9 +13,9 @@ export default function Page() {
 
   const { data: tasks } = useSWR<JGeoGLUETask[]>("/api/q", fetcher);
 
-  console.log("session:", session);
-
-  console.log("tasks:", tasks);
+  if (session?.user?.role !== "admin") {
+    window.location.href = "/";
+  }
 
   return (
     <div className="tridentWrap">
