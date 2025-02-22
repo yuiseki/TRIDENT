@@ -7,7 +7,7 @@ export const AccountButton: React.FC = () => {
 
   console.log("session:", session);
 
-  if (!session?.user)
+  if (!session?.user) {
     return (
       <div
         className={styles.accountButton}
@@ -26,6 +26,7 @@ export const AccountButton: React.FC = () => {
         </a>
       </div>
     );
+  }
   if (!session.user.image) return null;
   if (!session.user.name) return null;
 

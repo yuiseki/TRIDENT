@@ -248,7 +248,8 @@ main.tridentMain {
   border: 10px solid rgba(0, 0, 0, 0.5);
 }
 
-.tridentMapWrap {
+.tridentMapWrap,
+.tridentWrap {
   position: fixed;
   top: 0;
   left: 0;
