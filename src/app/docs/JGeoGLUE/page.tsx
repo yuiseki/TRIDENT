@@ -117,7 +117,13 @@ export default function Page() {
                 href="https://trident.yuiseki.net/q"
                 className="external-link button is-normal is-rounded is-dark"
               >
-                <span className="icon">
+                <span
+                  className="icon"
+                  style={{
+                    width: "16px",
+                    height: "16px",
+                  }}
+                >
                   <svg
                     className="svg-inline--fa fa-globe fa-w-16"
                     aria-hidden="true"
