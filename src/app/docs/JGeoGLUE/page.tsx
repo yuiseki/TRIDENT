@@ -1,10 +1,35 @@
+export const metadata = {
+  title:
+    "JGeoGLUE: A GeoGraphic Language Understanding Evaluation Benchmark for Japanese | TRIDENT",
+  description:
+    "本研究では、従来中国語を対象に発展してきた地理空間自然言語処理の評価枠組み「GeoGLUE」を参考とし、日本語固有の地理空間言語表現の課題に対応する新たなベンチマーク「JGeoGLUE」を提案する。",
+  openGraph: {
+    title:
+      "JGeoGLUE: A GeoGraphic Language Understanding Evaluation Benchmark for Japanese",
+    description:
+      "本研究では、従来中国語を対象に発展してきた地理空間自然言語処理の評価枠組み「GeoGLUE」を参考とし、日本語固有の地理空間言語表現の課題に対応する新たなベンチマーク「JGeoGLUE」を提案する。",
+    images: [
+      {
+        url: "https://trident.yuiseki.net/og_images/jgeoglue.png",
+        width: 1200,
+        height: 630,
+        alt: "JGeoGLUE Overview Image",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "JGeoGLUE: A GeoGraphic Language Understanding Evaluation Benchmark for Japanese",
+    description:
+      "本研究では、従来中国語を対象に発展してきた地理空間自然言語処理の評価枠組み「GeoGLUE」を参考とし、日本語固有の地理空間言語表現の課題に対応する新たなベンチマーク「JGeoGLUE」を提案する。",
+    images: ["https://trident.yuiseki.net/og_images/jgeoglue.png"],
+  },
+};
+
 export default function Page() {
   return (
     <>
-      <title>
-        JGeoGLUE: A GeoGraphic Language Understanding Evaluation Benchmark for
-        Japanese | TRIDENT
-      </title>
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
