@@ -84,10 +84,14 @@ export default function Page() {
               style={{
                 textAlign: "center",
                 color: "rgb(0, 158, 219)",
+                marginBottom: "20px",
               }}
             >
               全問正解！
             </h2>
+            <a href="/q/answers">
+              <p style={{ textAlign: "center" }}>解答を確認する</p>
+            </a>
           </div>
         </div>
       )}
