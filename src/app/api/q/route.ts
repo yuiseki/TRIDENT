@@ -4,7 +4,36 @@ import { auth } from "@/app/auth";
 
 export async function GET() {
   try {
+    const session = await auth();
+    if (!session?.user) {
+      return NextResponse.json(
+        { error: "Please log in to view tasks" },
+        { status: 403 }
+      );
+    }
+
     const tasks = await prisma.jGeoGLUETask.findMany({
+      where: {
+        OR: [
+          {
+            NOT: {
+              JGeoGLUEAnswer: {
+                some: {
+                  userId: session.user.id,
+                },
+              },
+            },
+          },
+          {
+            JGeoGLUEAnswer: {
+              some: {
+                userId: session.user.id,
+                isCorrect: false,
+              },
+            },
+          },
+        ],
+      },
       orderBy: {
         createdAt: "desc",
       },
