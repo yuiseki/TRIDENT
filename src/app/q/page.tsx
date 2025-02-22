@@ -3,7 +3,7 @@
 import { AccountButton } from "@/components/AccountButton";
 import { GeoGLUETaskCard } from "@/components/GeoGLUETaskCard";
 import { RequireLoginCard } from "@/components/RequireLoginCard";
-import { GeoGLUETasks } from "@/constants/GeoGLUETasks";
+import { JGeoGLUETasks } from "@/constants/JGeoGLUETasks";
 import { useSession } from "next-auth/react";
 
 import { useState } from "react";
@@ -11,7 +11,7 @@ import { useState } from "react";
 export default function Page() {
   const { data: session } = useSession();
   const [currentTaskIndex, setCurrentTaskIndex] = useState(0);
-  const currentTask = GeoGLUETasks[currentTaskIndex];
+  const currentTask = JGeoGLUETasks[currentTaskIndex];
 
   const handleNext = () => {
     setCurrentTaskIndex((prev) => prev + 1);

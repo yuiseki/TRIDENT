@@ -1,4 +1,4 @@
-import { GeoEAGTask, GeoETATask } from "@/types/GeoGLUE";
+import { GeoEAGTask, GeoETATask } from "@/types/JGeoGLUE";
 import { useState } from "react";
 
 const GeoEAGOptions = ["✅ 全く同じ", "🟡 部分的に一致", "❌️ 全く違う"];

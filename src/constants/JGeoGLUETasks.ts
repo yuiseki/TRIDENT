@@ -1,6 +1,6 @@
-import { GeoGLUETask } from "@/types/GeoGLUE";
+import { JGeoGLUETask } from "@/types/JGeoGLUE";
 
-export const GeoGLUETasks: GeoGLUETask[] = [
+export const JGeoGLUETasks: JGeoGLUETask[] = [
   {
     type: "GeoEAG",
     question:
