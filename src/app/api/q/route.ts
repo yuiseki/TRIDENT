@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/app/prisma";
+import { auth } from "@/app/auth";
 
 export async function GET() {
   try {
@@ -23,6 +24,14 @@ import { NextRequest } from "next/server";
 
 export async function POST(req: NextRequest) {
   try {
+    const session = await auth();
+
+    if (session?.user?.role !== "admin") {
+      return NextResponse.json(
+        { error: "You do not have permission to create tasks" },
+        { status: 403 }
+      );
+    }
     const body = await req.json();
     const { task } = body;
     const createdTask = await prisma.jGeoGLUETask.create({
