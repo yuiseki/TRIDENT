@@ -11,9 +11,13 @@ const fetcher = (url: string) => fetch(url).then((res) => res.json());
 export default function Page() {
   const { data: session } = useSession();
 
-  const { data: tasks } = useSWR<JGeoGLUETask[]>("/api/q", fetcher);
+  const { data: tasks } = useSWR<JGeoGLUETask[]>("/api/q?admin=true", fetcher);
 
-  if (session?.user?.role !== "admin") {
+  if (session !== undefined && session === null) {
+    window.location.href = "/";
+  }
+
+  if (session !== undefined && session?.user?.role !== "admin") {
     window.location.href = "/";
   }
 

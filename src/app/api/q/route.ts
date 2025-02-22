@@ -1,8 +1,9 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/app/prisma";
 import { auth } from "@/app/auth";
+import { NextRequest } from "next/server";
 
-export async function GET() {
+export async function GET(req: NextRequest) {
   try {
     const session = await auth();
     if (!session?.user) {
@@ -10,6 +11,18 @@ export async function GET() {
         { error: "Please log in to view tasks" },
         { status: 403 }
       );
+    }
+
+    const searchParams = req.nextUrl.searchParams;
+    const isAdminQuery = searchParams.get("admin") === "true";
+
+    if (isAdminQuery) {
+      const allTasks = await prisma.jGeoGLUETask.findMany({
+        orderBy: {
+          createdAt: "desc",
+        },
+      });
+      return NextResponse.json(allTasks);
     }
 
     const notYetAnsweredTasks = await prisma.jGeoGLUETask.findMany({
@@ -50,8 +63,6 @@ export async function GET() {
     );
   }
 }
-
-import { NextRequest } from "next/server";
 
 export async function POST(req: NextRequest) {
   try {
