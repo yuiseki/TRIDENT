@@ -58,7 +58,7 @@ export default function Page() {
         </div>
       )}
       {session === null && <RequireLoginCard />}
-      {session?.user && (
+      {session?.user && currentTask && (
         <>
           <div
             style={{

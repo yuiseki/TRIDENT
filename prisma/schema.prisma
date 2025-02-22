@@ -72,14 +72,14 @@ model JGeoGLUETask {
 }
 
 model JGeoGLUEAnswer {
-  id        String   @id @default(cuid())
   taskId    String
   userId    String
   answer    String
   isCorrect Boolean
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
+  task      JGeoGLUETask @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  user      User         @relation(fields: [userId], references: [id], onDelete: Cascade)
 
-  task JGeoGLUETask @relation(fields: [taskId], references: [id], onDelete: Cascade)
-  user User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@id([taskId, userId])
 }

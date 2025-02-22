@@ -1,27 +1,45 @@
-import { GeoEAGTask, GeoETATask } from "@/types/JGeoGLUE";
+import { JGeoGLUETask } from "@prisma/client";
 import { useState } from "react";
 
-const GeoEAGOptions = ["✅ 全く同じ", "🟡 部分的に一致", "❌️ 全く違う"];
+const GeoEAGOptions = [
+  { label: "✅ 全く同じ", value: "全く同じ" },
+  { label: "🟡 部分的に一致", value: "部分的に一致" },
+  { label: "❌️ 全く違う", value: "全く違う" },
+];
 
 const GeoETAOptions = [
-  "🏞️ 都道府県",
-  "🏙️ 市区町村",
-  "🏘️ 町名",
-  "🏠 番地",
-  "🏢 施設名",
-  "🏗️ その他",
+  { label: "🏞️ 都道府県", value: "都道府県" },
+  { label: "🏙️ 市区町村", value: "市区町村" },
+  { label: "🏘️ 町名", value: "町名" },
+  { label: "🏠 番地", value: "番地" },
+  { label: "🏢 施設名", value: "施設名" },
+  { label: "🏗️ その他", value: "その他" },
 ];
 
 export const GeoGLUETaskCard: React.FC<{
-  task: GeoEAGTask | GeoETATask;
+  task: JGeoGLUETask;
   onNext: () => void;
 }> = ({ task, onNext }) => {
   const [answerIsCorrect, setAnswerIsCorrect] = useState<boolean | null>(null);
 
   const options = task.type === "GeoEAG" ? GeoEAGOptions : GeoETAOptions;
 
-  const handleAnswer = (option: string) => {
-    setAnswerIsCorrect(option.includes(task.correctAnswer));
+  const handleAnswer = (optionValue: string) => {
+    const isCorrect = task.correctAnswer === optionValue;
+    setAnswerIsCorrect(isCorrect);
+    fetch("/api/tasks/answer", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        answer: {
+          taskId: task.id,
+          answer: optionValue,
+          isCorrect,
+        },
+      }),
+    });
   };
 
   const handleNext = () => {
@@ -56,8 +74,8 @@ export const GeoGLUETaskCard: React.FC<{
         {options.map((option) => {
           return (
             <button
-              key={option}
-              onClick={() => handleAnswer(option)}
+              key={option.value}
+              onClick={() => handleAnswer(option.value)}
               style={{
                 border: "none",
                 borderRadius: "0.375rem",
@@ -65,10 +83,10 @@ export const GeoGLUETaskCard: React.FC<{
                 padding: "10px",
               }}
               disabled={
-                answerIsCorrect !== null && option !== task.correctAnswer
+                answerIsCorrect !== null && option.value !== task.correctAnswer
               }
             >
-              {option}
+              {option.label}
             </button>
           );
         })}
