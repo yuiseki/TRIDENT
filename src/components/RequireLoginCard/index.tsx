@@ -28,7 +28,7 @@ export const RequireLoginCard: React.FC = () => {
           }}
         >
           <a
-            href="/api/auth/signin"
+            href="/api/auth/signin?callbackUrl=/q"
             style={{
               display: "flex",
               flexDirection: "column",
