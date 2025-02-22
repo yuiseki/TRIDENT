@@ -9,6 +9,28 @@ import { useSession } from "next-auth/react";
 import { useEffect, useState } from "react";
 import useSWR from "swr";
 
+export const metadata = {
+  title: "TRIDENT Quiz",
+  description: "地理クイズに挑戦＆出題しよう！",
+  openGraph: {
+    title: "TRIDENT Quiz",
+    description: "地理クイズに挑戦＆出題しよう！",
+    images: [
+      {
+        url: "https://trident.yuiseki.net/og_images/quiz.png",
+        width: 1200,
+        height: 630,
+        alt: "TRIDENT Quiz",
+      },
+    ],
+  },
+  twitter: {
+    title: "TRIDENT Quiz",
+    description: "地理クイズに挑戦＆出題しよう！",
+    images: ["https://trident.yuiseki.net/og_images/quiz.png"],
+  },
+};
+
 export default function Page() {
   const { data: session } = useSession();
   const { data: allTasks } = useSWR<JGeoGLUETask[]>("/api/q", (url: string) =>
@@ -29,7 +51,6 @@ export default function Page() {
 
   return (
     <>
-      <title>TRIDENT Quiz (JGeoGLUE)</title>
       <div className="tridentWrap">
         <div
           style={{
