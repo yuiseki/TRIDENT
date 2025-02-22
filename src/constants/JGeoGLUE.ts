@@ -10,8 +10,15 @@ export const JGeoGLUETaskTypes = [
 // GeoEAG: Geographic Entity AliGnment
 // 2つの地名が同じかどうかを判定
 export const GeoEAGOptions = [
+  // 「ユニバーサル・スタジオ・ジャパン」と「USJ」は同じ場所ですか？
+  // 「東京ビッグサイト」と「東京国際展示場」は同じ場所ですか？
+  // 「関空」と「関西国際空港」は同じ場所ですか？
   { label: "✅ 全く同じ", value: "全く同じ" },
+  // 「六本木ヒルズ森タワー」と「六本木ヒルズ」は同じ場所ですか？
+  // 「原爆ドーム」と「広島平和記念公園」は同じ場所ですか？
+  // 「東京大学本郷キャンパス」と「東大」は同じ場所ですか？
   { label: "🟡 部分的に一致", value: "部分的に一致" },
+  // 「代々木公園」と「明治神宮」は同じ場所ですか？
   { label: "❌️ 全く違う", value: "全く違う" },
 ];
 
@@ -20,8 +27,10 @@ export const GeoEAGOptions = [
 export const GeoETAOptions = [
   { label: "🏞️ 都道府県", value: "都道府県" },
   { label: "🏙️ 市区町村", value: "市区町村" },
+  // 「東京都港区芝公園4-2-8 東京タワー」 の「芝公園」は何に分類される？
   { label: "🏘️ 町名", value: "町名" },
   { label: "🏠 番地", value: "番地" },
+  // 「東京都港区芝公園4-2-8 東京タワー」 の「東京タワー」は何に分類される？
   { label: "🏢 施設名", value: "施設名" },
   { label: "🏗️ その他", value: "その他" },
 ];
