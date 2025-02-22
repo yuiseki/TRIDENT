@@ -1,5 +1,6 @@
 import { JGeoGLUETask } from "@prisma/client";
 import { useState } from "react";
+import { useSWRConfig } from "swr";
 
 const GeoEAGOptions = [
   { label: "✅ 全く同じ", value: "全く同じ" },
@@ -21,6 +22,7 @@ export const GeoGLUETaskCard: React.FC<{
   onNext: () => void;
 }> = ({ task, onNext }) => {
   const [answerIsCorrect, setAnswerIsCorrect] = useState<boolean | null>(null);
+  const { mutate } = useSWRConfig();
 
   const options = task.type === "GeoEAG" ? GeoEAGOptions : GeoETAOptions;
 
@@ -40,6 +42,7 @@ export const GeoGLUETaskCard: React.FC<{
         },
       }),
     });
+    mutate("/api/q");
   };
 
   const handleNext = () => {

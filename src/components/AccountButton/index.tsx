@@ -5,8 +5,6 @@ import styles from "./styles.module.scss";
 export const AccountButton: React.FC = () => {
   const { data: session } = useSession();
 
-  console.log("session:", session);
-
   if (!session?.user) {
     return (
       <div

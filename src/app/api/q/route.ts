@@ -12,32 +12,34 @@ export async function GET() {
       );
     }
 
-    const tasks = await prisma.jGeoGLUETask.findMany({
+    const notYetAnsweredTasks = await prisma.jGeoGLUETask.findMany({
       where: {
-        OR: [
-          {
-            NOT: {
-              JGeoGLUEAnswer: {
-                some: {
-                  userId: session.user.id,
-                },
-              },
+        NOT: {
+          JGeoGLUEAnswer: {
+            some: {
+              userId: session.user.id,
             },
           },
-          {
-            JGeoGLUEAnswer: {
-              some: {
-                userId: session.user.id,
-                isCorrect: false,
-              },
-            },
-          },
-        ],
+        },
       },
       orderBy: {
         createdAt: "desc",
       },
     });
+    const mistakenTasks = await prisma.jGeoGLUETask.findMany({
+      where: {
+        JGeoGLUEAnswer: {
+          some: {
+            userId: session.user.id,
+            isCorrect: false,
+          },
+        },
+      },
+      orderBy: {
+        createdAt: "desc",
+      },
+    });
+    const tasks = [...notYetAnsweredTasks, ...mistakenTasks].slice(0, 10);
 
     return NextResponse.json(tasks);
   } catch (error) {

@@ -11,24 +11,21 @@ import useSWR from "swr";
 
 export default function Page() {
   const { data: session } = useSession();
-  const { data: JGeoGLUETasks } = useSWR<JGeoGLUETask[]>(
-    "/api/q",
-    (url: string) => fetch(url).then((res) => res.json())
+  const { data: allTasks } = useSWR<JGeoGLUETask[]>("/api/q", (url: string) =>
+    fetch(url).then((res) => res.json())
   );
   const [currentTaskIndex, setCurrentTaskIndex] = useState(0);
   const [currentTask, setCurrentTask] = useState<JGeoGLUETask | null>(null);
 
   useEffect(() => {
-    if (JGeoGLUETasks) {
-      setCurrentTask(JGeoGLUETasks[currentTaskIndex]);
+    if (allTasks) {
+      setCurrentTask(allTasks[currentTaskIndex]);
     }
-  }, [JGeoGLUETasks, currentTaskIndex]);
+  }, [allTasks, currentTaskIndex]);
 
   const handleNext = () => {
     setCurrentTaskIndex((prev) => prev + 1);
   };
-
-  console.log("session:", session);
 
   return (
     <div className="tridentWrap">
@@ -65,6 +62,35 @@ export default function Page() {
         </div>
       )}
       {session === null && <RequireLoginCard />}
+      {session?.user && allTasks?.length === 0 && (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            height: "100%",
+          }}
+        >
+          <div
+            style={{
+              width: "80%",
+              border: "1px solid #ccc",
+              backgroundColor: "#f9f9f9",
+              padding: "20px",
+            }}
+          >
+            <h2
+              style={{
+                textAlign: "center",
+                color: "rgb(0, 158, 219)",
+              }}
+            >
+              全問正解！
+            </h2>
+          </div>
+        </div>
+      )}
       {session?.user && currentTask && (
         <>
           <div
