@@ -1,5 +1,3 @@
-import { AccountButton } from "../AccountButton";
-
 export const RequireLoginCard: React.FC = () => {
   return (
     <div
