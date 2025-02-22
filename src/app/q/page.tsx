@@ -35,10 +35,17 @@ export default function Page() {
       <div
         style={{
           padding: "20px",
-          backgroundColor: "rgba(255, 255, 255, 0.8)",
+          backgroundColor: "rgb(255, 255, 255)",
         }}
       >
-        <h1>TRIDENT Quiz (JGeoGLUE)</h1>
+        <h1
+          style={{
+            color: "rgb(0, 158, 219)",
+            fontWeight: "bold",
+          }}
+        >
+          TRIDENT Quiz (JGeoGLUE)
+        </h1>
         <AccountButton />
       </div>
       {session === undefined && (
