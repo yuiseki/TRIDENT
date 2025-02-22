@@ -1,7 +1,10 @@
 export default function Page() {
   return (
     <>
-      <title>TRIDENT | JGeoGLUE</title>
+      <title>
+        JGeoGLUE: A GeoGraphic Language Understanding Evaluation Benchmark for
+        Japanese | TRIDENT
+      </title>
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
