@@ -22,7 +22,7 @@ export default function Page() {
   }
 
   return (
-    <div className="tridentWrap">
+    <div>
       <div
         style={{
           padding: "20px",

@@ -29,7 +29,7 @@ export const GeoGLUETaskCard: React.FC<{
   const handleAnswer = (optionValue: string) => {
     const isCorrect = task.correctAnswer === optionValue;
     setAnswerIsCorrect(isCorrect);
-    fetch("/api/tasks/answer", {
+    fetch("/api/tasks/answers", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
