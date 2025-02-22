@@ -1,8 +1,6 @@
 "use client";
 
 import { AccountButton } from "@/components/AccountButton";
-import { GeoEAGTaskComponent } from "@/components/GeoEAGTaskComponent";
-import { GeoETATaskComponent } from "@/components/GeoETATaskComponent";
 import { GeoGLUETaskCard } from "@/components/GeoGLUETaskCard";
 import { RequireLoginCard } from "@/components/RequireLoginCard";
 import { GeoGLUETasks } from "@/constants/GeoGLUETasks";
