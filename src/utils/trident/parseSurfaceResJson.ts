@@ -14,6 +14,8 @@ export const parseSurfaceResJson = (surfaceResJson: {
 
     if (line.includes("Ability")) {
       ability = line.split(": ")[1] as Ability;
+      // 空白除去
+      ability = ability.replace(/\s+/g, "");
     }
     if (line.includes("Reply")) {
       reply = line.split(": ")[1];

@@ -24,6 +24,7 @@ export async function POST(request: Request) {
     console.error("Error parsing pastMessages:", error);
     chatHistoryLines = [];
   }
+  chatHistoryLines.push(query);
 
   console.log("");
   console.log("chatHistoryLines:");

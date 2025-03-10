@@ -8,7 +8,7 @@ import { DialogueElement } from "@/types/DialogueElement";
 import { nextPostJson, nextPostJsonWithCache } from "@/utils/nextPostJson";
 import { sleep } from "@/lib/sleep";
 import React, { useCallback, useEffect, useRef, useState } from "react";
-import { MapProvider, MapRef } from "react-map-gl/maplibre";
+import { MapProvider, MapRef, useMap } from "react-map-gl/maplibre";
 import { FeatureCollection } from "geojson";
 import { getOverpassResponseJsonWithCache } from "@/lib/osm/getOverpass";
 import osmtogeojson from "osmtogeojson";
@@ -29,6 +29,7 @@ import { useScrollToBottom } from "@/hooks/scrollToBottom";
 import { parseSurfaceResJson } from "@/utils/trident/parseSurfaceResJson";
 import { Ability } from "@/types/Ability";
 import { AccountButton } from "@/components/AccountButton";
+import * as turf from "@turf/turf";
 
 export default function Home() {
   // all state
@@ -41,6 +42,7 @@ export default function Home() {
 
   // maps ref and state
   const mapRef = useRef<MapRef | null>(null);
+  const { mainMap } = useMap();
   const [geoJsonWithStyleList, setGeoJsonWithStyleList] = useState<
     Array<{
       id: string;
@@ -258,6 +260,7 @@ export default function Home() {
 
     switch (ability) {
       case "overpass-api":
+        console.debug("ability: overpass-api");
         await invokeOverpassInner(surfaceResJson.history);
         break;
       case "apology":
@@ -288,7 +291,7 @@ export default function Home() {
   // fit bounds to all geojson in the geojsonWithStyleList
   useEffect(() => {
     setTimeout(() => {
-      if (!mapRef || !mapRef.current) return;
+      console.log("geoJsonWithStyleList", geoJsonWithStyleList);
       if (geoJsonWithStyleList.length === 0) return;
 
       try {
@@ -329,8 +332,20 @@ export default function Home() {
             };
           }
         }
+        console.log("map", mainMap);
+        if (!mainMap || mainMap === undefined) return;
 
-        fitBoundsToGeoJson(mapRef, everything, padding);
+        const [minLng, minLat, maxLng, maxLat] = turf.bbox(everything);
+        mainMap.fitBounds(
+          [
+            [minLng, minLat],
+            [maxLng, maxLat],
+          ],
+          {
+            padding: padding,
+            duration: 1000,
+          }
+        );
       } catch (error) {
         console.error(error);
         setResponding(false);
@@ -400,6 +415,9 @@ export default function Home() {
               latitude={0}
               zoom={1}
               style={mapStyleJsonUrl}
+              onMapLoad={() => {
+                console.log("Map loaded");
+              }}
             >
               {geoJsonWithStyleList &&
                 geoJsonWithStyleList.map((geojsonWithStyle) => {
@@ -439,6 +457,7 @@ export default function Home() {
                   </div>
                 );
               })}
+              {/*
               <LocationProvider locationInfo={{ location: location }}>
                 {dialogueList.length === 1 && inputText.length === 0 && (
                   <InputSuggest
@@ -461,6 +480,7 @@ export default function Home() {
                     />
                   )}
               </LocationProvider>
+               */}
               <div style={{ height: "1px" }} ref={dialogueEndRef} />
             </div>
             <TextInput
