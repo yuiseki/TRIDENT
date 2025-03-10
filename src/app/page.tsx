@@ -42,7 +42,6 @@ export default function Home() {
 
   // maps ref and state
   const mapRef = useRef<MapRef | null>(null);
-  const { mainMap } = useMap();
   const [geoJsonWithStyleList, setGeoJsonWithStyleList] = useState<
     Array<{
       id: string;
@@ -292,7 +291,6 @@ export default function Home() {
   const fitBounds = useCallback(() => {
     console.log("geoJsonWithStyleList", geoJsonWithStyleList);
     console.log("mapRef", mapRef);
-    console.log("map", mainMap);
     if (geoJsonWithStyleList.length === 0) return;
 
     try {
@@ -333,25 +331,15 @@ export default function Home() {
           };
         }
       }
-      if (!mainMap || mainMap === undefined) return;
+      if (!mapRef || mapRef === undefined) return;
 
-      const [minLng, minLat, maxLng, maxLat] = turf.bbox(everything);
-      mainMap.fitBounds(
-        [
-          [minLng, minLat],
-          [maxLng, maxLat],
-        ],
-        {
-          padding: padding,
-          duration: 1000,
-        }
-      );
+      fitBoundsToGeoJson(mapRef, everything, padding);
     } catch (error) {
       console.error(error);
       setResponding(false);
       setMapping(false);
     }
-  }, [geoJsonWithStyleList, showingFloatingChat, mapRef, mainMap]);
+  }, [geoJsonWithStyleList, showingFloatingChat, mapRef]);
 
   useEffect(() => {
     fitBounds();
