@@ -206,12 +206,24 @@ export const TridentFileSystem: React.FC = () => {
         prompt: inputText,
       });
       console.log(resJson.content);
-      const resContent = resJson.content;
-      const newFilePath = resContent.split("\n")[0].replace("# path: ", "");
+      const resContent = resJson.content as string;
+      const regex = /```(?:yaml)?\n([\s\S]+)\n```/;
+      const resMatched = resContent.match(regex);
+      const resBody = resMatched ? resMatched[1] : null;
+      if (!resBody) {
+        throw new Error("AIによるファイルの編集に失敗しました");
+      }
+      const newFilePath = resBody.split("\n")[0].replace("# path: ", "");
+      console.log(newFilePath);
       const newDirPath = newFilePath.split("/").slice(0, -1).join("/");
+      console.log(newDirPath);
       const newFileName = newFilePath.split("/").pop();
-      const newContent = resContent.split("\n").slice(1).join("\n");
+      console.log(newFileName);
+      if (!newFileName || !newDirPath) {
+        throw new Error("AIによるファイルの編集に失敗しました");
+      }
       const newDirHandle = await rootDirHandle.getDirectoryHandle(newDirPath);
+      const newContent = resBody.split("\n").slice(1).join("\n");
 
       const newFileHandle = await newDirHandle.getFileHandle(newFileName, {
         create: true,
@@ -366,7 +378,7 @@ export const TridentFileSystem: React.FC = () => {
             zoom: 4,
           }}
           style={{ width: "100vw", height: "80vh" }}
-          mapStyle={styleJsonOutput}
+          mapStyle={styleJsonOutput ? styleJsonOutput : {}}
         >
           <GeolocateControl />
         </Map>
