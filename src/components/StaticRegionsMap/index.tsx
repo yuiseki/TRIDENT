@@ -1,5 +1,5 @@
 import { FeatureCollection } from "geojson";
-import { MapStyle } from "react-map-gl/maplibre";
+import { StyleSpecification } from "react-map-gl/maplibre";
 import { useEffect, useState } from "react";
 import { TridentMapsStyle } from "@/types/TridentMaps";
 import { StaticMap } from "../StaticMap";
@@ -8,7 +8,7 @@ import { getOverpassResponseJsonWithCache } from "@/lib/osm/getOverpass";
 import osmtogeojson from "osmtogeojson";
 
 export const StaticRegionsMap: React.FC<{
-  mapStyle: string | MapStyle;
+  mapStyle: string | StyleSpecification;
   mapPadding?: number;
   regionNames: string[];
 }> = ({

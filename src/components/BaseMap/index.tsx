@@ -1,4 +1,5 @@
 import React, { MutableRefObject, useCallback } from "react";
+
 import {
   AttributionControl,
   ControlPosition,
@@ -6,9 +7,9 @@ import {
   GeolocateResultEvent,
   Map,
   MapRef,
-  MapStyle,
   NavigationControl,
   ViewStateChangeEvent,
+  StyleSpecification,
 } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
 
@@ -19,7 +20,7 @@ export const BaseMap: React.FC<{
   latitude: number;
   zoom: number;
   children?: any;
-  style?: string | MapStyle;
+  style?: string | StyleSpecification;
   onMapLoad?: () => void;
   onMapMove?: () => void;
   onMapMoveEnd?: (e: ViewStateChangeEvent) => void;
