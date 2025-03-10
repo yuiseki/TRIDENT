@@ -372,9 +372,11 @@ ${inputText}
       prompt: prompt,
       query: inputText,
     });
+    console.log(resJson.duckdb);
     const newQuery = resJson.duckdb.split("```")[1].trim();
-    console.log(newQuery);
-    setQuery(newQuery);
+    const newQueryWithoutSql = newQuery.replace(/^sql\n/, "");
+    console.log(newQueryWithoutSql);
+    setQuery(newQueryWithoutSql);
   }, [inputText, summaryOfTableSchemes]);
 
   return (
