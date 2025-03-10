@@ -64,7 +64,7 @@ export async function POST(request: Request) {
       input: chatHistoryLines.join("\n"),
     });
 
-    console.log("Chain result:", result);
+    // console.log("Chain result:", result);
     console.log("Result text:", result.text);
     console.log("");
 
