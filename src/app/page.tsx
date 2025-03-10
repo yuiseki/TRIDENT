@@ -289,8 +289,10 @@ export default function Home() {
   }, []);
 
   // fit bounds to all geojson in the geojsonWithStyleList
-  useEffect(() => {
+  const fitBounds = useCallback(() => {
     console.log("geoJsonWithStyleList", geoJsonWithStyleList);
+    console.log("mapRef", mapRef);
+    console.log("map", mainMap);
     if (geoJsonWithStyleList.length === 0) return;
 
     try {
@@ -331,7 +333,6 @@ export default function Home() {
           };
         }
       }
-      console.log("map", mainMap);
       if (!mainMap || mainMap === undefined) return;
 
       const [minLng, minLat, maxLng, maxLat] = turf.bbox(everything);
@@ -350,7 +351,11 @@ export default function Home() {
       setResponding(false);
       setMapping(false);
     }
-  }, [geoJsonWithStyleList, showingFloatingChat]);
+  }, [geoJsonWithStyleList, showingFloatingChat, mapRef, mainMap]);
+
+  useEffect(() => {
+    fitBounds();
+  }, [fitBounds]);
 
   // initialize at mount
   useEffect(() => {

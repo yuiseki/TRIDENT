@@ -72,13 +72,6 @@ export const BaseMap: React.FC<{
       }}
       id={id}
       ref={mapRef}
-      onLoad={() => {
-        console.log("Map loaded");
-        onLoad();
-      }}
-      onRender={() => {
-        console.log("Map rendered");
-      }}
       onMove={onMove}
       onMoveEnd={onMoveEnd}
       mapStyle={style}
