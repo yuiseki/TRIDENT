@@ -6,7 +6,7 @@ const CountryDisasterMap: React.FC<{ disasters: any[] }> = ({ disasters }) => {
   const geoJSON = {
     type: "FeatureCollection",
     features: disasters,
-  };
+  } as any;
 
   return (
     <Map
