@@ -290,68 +290,66 @@ export default function Home() {
 
   // fit bounds to all geojson in the geojsonWithStyleList
   useEffect(() => {
-    setTimeout(() => {
-      console.log("geoJsonWithStyleList", geoJsonWithStyleList);
-      if (geoJsonWithStyleList.length === 0) return;
+    console.log("geoJsonWithStyleList", geoJsonWithStyleList);
+    if (geoJsonWithStyleList.length === 0) return;
 
-      try {
-        // everything - all geojson in the geojsonWithStyleList
-        const everything: FeatureCollection = {
-          type: "FeatureCollection",
-          features: geoJsonWithStyleList
-            .map((item) => item.geojson.features)
-            .flat(),
-        };
+    try {
+      // everything - all geojson in the geojsonWithStyleList
+      const everything: FeatureCollection = {
+        type: "FeatureCollection",
+        features: geoJsonWithStyleList
+          .map((item) => item.geojson.features)
+          .flat(),
+      };
 
-        // padding of the map
-        let padding = {
-          top: 40,
-          left: 40,
-          right: 40,
-          bottom: 40,
-        };
+      // padding of the map
+      let padding = {
+        top: 40,
+        left: 40,
+        right: 40,
+        bottom: 40,
+      };
 
-        // if floating chat is showing, add more padding
-        if (showingFloatingChat) {
-          const windowWidth = window.innerWidth;
-          // if the window is big like desktop, add little padding to left and bottom
-          // if the window is small like mobile, add more padding to bottom
-          if (windowWidth > 600) {
-            padding = {
-              top: 40,
-              left: 40,
-              right: 120,
-              bottom: 120,
-            };
-          } else {
-            padding = {
-              top: 40,
-              left: 40,
-              right: 40,
-              bottom: 400,
-            };
-          }
+      // if floating chat is showing, add more padding
+      if (showingFloatingChat) {
+        const windowWidth = window.innerWidth;
+        // if the window is big like desktop, add little padding to left and bottom
+        // if the window is small like mobile, add more padding to bottom
+        if (windowWidth > 600) {
+          padding = {
+            top: 40,
+            left: 40,
+            right: 120,
+            bottom: 120,
+          };
+        } else {
+          padding = {
+            top: 40,
+            left: 40,
+            right: 40,
+            bottom: 400,
+          };
         }
-        console.log("map", mainMap);
-        if (!mainMap || mainMap === undefined) return;
-
-        const [minLng, minLat, maxLng, maxLat] = turf.bbox(everything);
-        mainMap.fitBounds(
-          [
-            [minLng, minLat],
-            [maxLng, maxLat],
-          ],
-          {
-            padding: padding,
-            duration: 1000,
-          }
-        );
-      } catch (error) {
-        console.error(error);
-        setResponding(false);
-        setMapping(false);
       }
-    }, 500);
+      console.log("map", mainMap);
+      if (!mainMap || mainMap === undefined) return;
+
+      const [minLng, minLat, maxLng, maxLat] = turf.bbox(everything);
+      mainMap.fitBounds(
+        [
+          [minLng, minLat],
+          [maxLng, maxLat],
+        ],
+        {
+          padding: padding,
+          duration: 1000,
+        }
+      );
+    } catch (error) {
+      console.error(error);
+      setResponding(false);
+      setMapping(false);
+    }
   }, [geoJsonWithStyleList, showingFloatingChat]);
 
   // initialize at mount
