@@ -360,6 +360,7 @@ export const TridentFileSystem: React.FC = () => {
           </div>
         </div>
         <Map
+          reuseMaps={true}
           initialViewState={{
             longitude: 1,
             latitude: 1,

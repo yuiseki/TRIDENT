@@ -373,8 +373,9 @@ ${inputText}
       query: inputText,
     });
     const newQuery = resJson.duckdb.split("```")[1].trim();
-    console.log(newQuery);
-    setQuery(newQuery);
+    const newQueryWithoutSQL = newQuery.replace(/^sql\n/, "");
+    console.log(newQueryWithoutSQL);
+    setQuery(newQueryWithoutSQL);
   }, [inputText, summaryOfTableSchemes]);
 
   return (
@@ -441,6 +442,7 @@ ${inputText}
       <MapProvider>
         <Map
           id="countriesMap"
+          reuseMaps={true}
           style={{ width: "100vw", height: "100vh" }}
           initialViewState={{
             latitude: 0,

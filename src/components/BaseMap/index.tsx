@@ -70,8 +70,10 @@ export const BaseMap: React.FC<{
         width: "100%",
         height: "100%",
       }}
+      reuseMaps={true}
       id={id}
       ref={mapRef}
+      onLoad={onLoad}
       onMove={onMove}
       onMoveEnd={onMoveEnd}
       mapStyle={style}
