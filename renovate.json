@@ -3,13 +3,13 @@
   "extends": ["config:base"],
   "packageRules": [
     {
-      "groupName": "react",
-      "matchPackageNames": ["react", "react-dom", "@types/react", "@types/react-dom"]
+      "groupName": "next",
+      "matchPackageNames": ["next", "next-auth", "next-transpile-modules", "@ducanh2912/next-pwa"],
+      "matchPackagePrefixes": ["next-"]
     },
     {
-      "groupName": "eslint",
-      "matchPackageNames": ["@types/eslint", "babel-eslint"],
-      "matchPackagePrefixes": ["@typescript-eslint/", "eslint"]
+      "groupName": "map",
+      "matchPackageNames": ["react-map-gl", "maplibre-gl", "pmtiles"]
     },
     {
       "groupName": "langchain",
@@ -17,13 +17,18 @@
       "matchPackagePrefixes": ["@langchain/"]
     },
     {
-      "groupName": "map",
-      "matchPackageNames": ["react-map-gl", "maplibre-gl", "pmtiles"]
+      "groupName": "codemirror",
+      "matchPackageNames": ["@uiw/codemirror-extensions-color", "@uiw/codemirror-theme-vscode", "@uiw/react-codemirror"],
+      "matchPackagePrefixes": ["@codemirror/"]
     },
     {
-      "groupName": "next",
-      "matchPackageNames": ["next", "next-auth", "next-transpile-modules", "@ducanh2912/next-pwa"],
-      "matchPackagePrefixes": ["next-"]
+      "groupName": "react",
+      "matchPackageNames": ["react", "react-dom", "@types/react", "@types/react-dom"]
+    },
+    {
+      "groupName": "eslint",
+      "matchPackageNames": ["@types/eslint", "babel-eslint"],
+      "matchPackagePrefixes": ["@typescript-eslint/", "eslint"]
     }
   ]
 }
