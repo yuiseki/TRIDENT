@@ -4,8 +4,7 @@
   "packageRules": [
     {
       "groupName": "react",
-      "matchPackageNames": ["@types/react", "@types/react-dom"],
-      "matchPackagePrefixes": ["react"]
+      "matchPackageNames": ["react", "react-dom", "@types/react", "@types/react-dom"]
     },
     {
       "groupName": "eslint",
@@ -16,6 +15,15 @@
       "groupName": "langchain",
       "matchPackageNames": ["@langchain/community", "@langchain/core", "@langchain/openai", "@langchain/ollama", "langchain"],
       "matchPackagePrefixes": ["@langchain/"]
+    },
+    {
+      "groupName": "map",
+      "matchPackageNames": ["react-map-gl", "maplibre-gl", "pmtiles"]
+    },
+    {
+      "groupName": "next",
+      "matchPackageNames": ["next", "next-auth", "next-transpile-modules", "@ducanh2912/next-pwa"],
+      "matchPackagePrefixes": ["next-"]
     }
   ]
 }
