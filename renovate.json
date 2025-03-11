@@ -9,7 +9,7 @@
     },
     {
       "groupName": "auth",
-      "matchPackagePrefixes": ["@auth"]
+      "matchPackagePrefixes": ["@auth/"]
     },
     {
       "groupName": "map",
