@@ -8,6 +8,10 @@
       "matchPackagePrefixes": ["next-"]
     },
     {
+      "groupName": "auth",
+      "matchPackagePrefixes": ["@auth"]
+    },
+    {
       "groupName": "map",
       "matchPackageNames": ["react-map-gl", "maplibre-gl", "pmtiles"]
     },
