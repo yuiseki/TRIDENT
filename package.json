@@ -40,7 +40,6 @@
     "@uiw/codemirror-theme-vscode": "^4.23.6",
     "@uiw/react-codemirror": "^4.23.6",
     "@vercel/postgres": "^0.10.0",
-    "@xmldom/xmldom": "0.8.10",
     "apache-arrow": "^17.0.0",
     "hnswlib-node": "^3.0.0",
     "langchain": "^0.3.0",
@@ -87,5 +86,8 @@
   },
   "overrides": {
     "@xmldom/xmldom@0.8.3": "0.8.10"
+  },
+  "resolutions": {
+    "@xmldom/xmldom": "0.8.10"
   }
 }
