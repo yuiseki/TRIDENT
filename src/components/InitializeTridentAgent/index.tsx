@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-page-custom-font */
 /* eslint-disable @next/next/no-img-element */
 import React, { useCallback, useEffect, useState } from "react";
-import Particles from "react-particles";
-import { loadFull } from "tsparticles";
-import { loadImageShape } from "tsparticles-shape-image";
-import type { Container, Engine } from "tsparticles-engine";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { loadAll } from "@tsparticles/all";
+import { loadImageShape } from "@tsparticles/shape-image";
+import type { Container, Engine } from "@tsparticles/engine";
 const SEQUENCE_INDEX_LOGO_BEGIN = 10;
 const SEQUENCE_INDEX_LOGO_ZOOM_BEGIN = 200;
 const SEQUENCE_INDEX_LOGO_FINISH = 330;
@@ -171,10 +171,11 @@ const TridentAuthenticationMessageCard: React.FC<{
 const TridentParticles: React.FC<{ initializeSequenceIndex: number }> = ({
   initializeSequenceIndex,
 }) => {
-  const particlesInit = useCallback(async (engine: Engine) => {
-    console.log(engine);
-    await loadFull(engine);
-    await loadImageShape(engine);
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      await loadAll(engine);
+      await loadImageShape(engine);
+    });
   }, []);
 
   const particlesLoaded = useCallback(
@@ -188,8 +189,7 @@ const TridentParticles: React.FC<{ initializeSequenceIndex: number }> = ({
     <Particles
       id="tsparticles"
       className="tridentParticlesWrapper"
-      init={particlesInit}
-      loaded={particlesLoaded}
+      particlesLoaded={particlesLoaded}
       options={{
         fpsLimit: 30,
         fullScreen: {
@@ -204,8 +204,10 @@ const TridentParticles: React.FC<{ initializeSequenceIndex: number }> = ({
           },
           shape: {
             type: "image",
-            image: {
-              src: "/favicon.ico",
+            options: {
+              image: {
+                src: "/favicon.ico",
+              },
             },
           },
           shadow: {
@@ -228,11 +230,10 @@ const TridentParticles: React.FC<{ initializeSequenceIndex: number }> = ({
             straight: false,
           },
           number: {
-            value: 80,
             density: {
               enable: true,
-              area: 1500,
             },
+            value: 80,
           },
         },
         detectRetina: true,
@@ -356,6 +357,14 @@ export const InitializeTridentAgent: React.FC<{
   setInitialized: React.Dispatch<React.SetStateAction<boolean>>;
 }> = ({ setInitialized }) => {
   const [initializeSequenceIndex, setInitializeSequenceIndex] = useState(0);
+
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      await loadAll(engine);
+      await loadImageShape(engine);
+    });
+  }, []);
+
   useEffect(() => {
     const interval = setInterval(() => {
       setInitializeSequenceIndex((index: number) => {
