@@ -10,7 +10,6 @@
         "next",
         "next-auth",
         "next-transpile-modules",
-        "@ducanh2912/next-pwa",
         "next-{/,}**"
       ]
     },

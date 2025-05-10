@@ -27,7 +27,6 @@
     "@auth/core": "^0.39.0",
     "@auth/prisma-adapter": "^2.7.4",
     "@codemirror/lang-yaml": "^6.1.1",
-    "@ducanh2912/next-pwa": "^10.0.0",
     "@duckdb/duckdb-wasm": "^1.29.0",
     "@langchain/community": "^0.3.24",
     "@langchain/core": "^0.3.27",
