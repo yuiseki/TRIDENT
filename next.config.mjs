@@ -26,9 +26,4 @@ const nextConfig = {
   },
 };
 
-import withPWA from "@ducanh2912/next-pwa";
-
-const withPWAConfig = withPWA({
-  dest: "public",
-});
-export default withPWAConfig(nextConfig);
+export default nextConfig;
