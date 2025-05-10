@@ -55,7 +55,6 @@
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-map-gl": "^8.0.1",
-    "react-particles": "^2.12.2",
     "recharts": "^2.8.0",
     "sass": "^1.69.6",
     "swr": "^2.2.4",
