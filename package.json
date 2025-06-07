@@ -65,7 +65,7 @@
     "@types/node": "^22.10.5",
     "@types/osmtogeojson": "^2.2.34",
     "@types/react": "19.1.6",
-    "@types/react-dom": "19.1.5",
+    "@types/react-dom": "19.1.6",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^8.0.0",
     "dotenv": "^16.3.1",
