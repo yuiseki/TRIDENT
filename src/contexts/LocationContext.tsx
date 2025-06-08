@@ -1,11 +1,14 @@
+import { LngLatBoundsLike, LngLatLike } from "maplibre-gl";
 import React, { createContext } from "react";
 
 export type LocationInfo = {
-  location: string | undefined;
+  center: LngLatLike | undefined;
+  bounds: LngLatBoundsLike | undefined;
 };
 
 export const LocationContext = createContext<LocationInfo>({
-  location: undefined,
+  center: undefined,
+  bounds: undefined,
 });
 
 export const LocationProvider = ({
@@ -21,4 +24,3 @@ export const LocationProvider = ({
     </LocationContext.Provider>
   );
 };
-

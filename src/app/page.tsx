@@ -8,7 +8,13 @@ import { DialogueElement } from "@/types/DialogueElement";
 import { nextPostJson, nextPostJsonWithCache } from "@/utils/nextPostJson";
 import { sleep } from "@/lib/sleep";
 import React, { useCallback, useEffect, useRef, useState } from "react";
-import { MapProvider, MapRef, useMap } from "react-map-gl/maplibre";
+import {
+  LngLatBoundsLike,
+  LngLatLike,
+  MapProvider,
+  MapRef,
+  useMap,
+} from "react-map-gl/maplibre";
 import { FeatureCollection } from "geojson";
 import { getOverpassResponseJsonWithCache } from "@/lib/osm/getOverpass";
 import osmtogeojson from "osmtogeojson";
@@ -51,7 +57,8 @@ export default function Home() {
     }>
   >([]);
 
-  const [location, setLocation] = useState<string | undefined>(undefined);
+  const [center, setCenter] = useState<LngLatLike | undefined>(undefined);
+  const [bounds, setBounds] = useState<LngLatBoundsLike | undefined>(undefined);
 
   // base maps style state
   const [mapStyleJsonUrl, setMapStyleJsonUrl] = useLocalStorage<string>(
@@ -385,7 +392,7 @@ export default function Home() {
   }, [mounted, insertNewDialogue, dialogueList.length, scrollToBottom]);
 
   return (
-    <>
+    <LocationProvider locationInfo={{ center: center, bounds: bounds }}>
       <title>{pageTitle}</title>
       <main className="tridentMain">
         <div className="tridentMapWrap">
@@ -408,6 +415,17 @@ export default function Home() {
               style={mapStyleJsonUrl}
               onMapLoad={() => {
                 console.log("Map loaded");
+              }}
+              onMapMoveEnd={(e) => {
+                console.log("Map moved", e.viewState);
+                if (mapRef.current) {
+                  const bounds = mapRef.current.getBounds();
+                  const center = mapRef.current.getCenter();
+                  console.log("New bounds:", bounds);
+                  console.log("New center:", center);
+                  setCenter(center);
+                  setBounds(bounds);
+                }
               }}
             >
               {geoJsonWithStyleList &&
@@ -449,7 +467,6 @@ export default function Home() {
                 );
               })}
               {/*
-              <LocationProvider locationInfo={{ location: location }}>
                 {dialogueList.length === 1 && inputText.length === 0 && (
                   <InputSuggest
                     onSelect={onSelect}
@@ -470,7 +487,6 @@ export default function Home() {
                       onSelect={onSelect}
                     />
                   )}
-              </LocationProvider>
                */}
               <div style={{ height: "1px" }} ref={dialogueEndRef} />
             </div>
@@ -491,6 +507,6 @@ export default function Home() {
           </FloatingChatButton>
         </div>
       </main>
-    </>
+    </LocationProvider>
   );
 }
