@@ -22,7 +22,7 @@ export const InputPredict: React.FC<{
       setRequesting(true);
       const resJson = await nextPostJsonWithCache("/api/ai/suggests", {
         lang: window.navigator.language,
-        location: locationInfo.location,
+        location: locationInfo.center,
         dialogueList: dialogueList
           .filter((d) => d.who === "user")
           .map((d) => d.text)
