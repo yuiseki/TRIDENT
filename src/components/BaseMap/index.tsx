@@ -100,13 +100,13 @@ export const BaseMap: React.FC<{
       {enableInteractions && (
         <>
           <GlobeControl position="top-right" />
-          <GeolocateControl position="top-right" onGeolocate={onGeolocate} />
           <NavigationControl
             position="top-right"
             visualizePitch={true}
             showZoom={true}
             showCompass={true}
           />
+          <GeolocateControl position="top-right" onGeolocate={onGeolocate} />
         </>
       )}
     </Map>
