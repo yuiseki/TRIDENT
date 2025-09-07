@@ -12,6 +12,7 @@ import {
   StyleSpecification,
 } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
+import { GlobeControl } from "../GlobeControl";
 
 export const BaseMap: React.FC<{
   id?: string;
@@ -98,6 +99,7 @@ export const BaseMap: React.FC<{
       />
       {enableInteractions && (
         <>
+          <GlobeControl position="top-right" />
           <GeolocateControl position="top-right" onGeolocate={onGeolocate} />
           <NavigationControl
             position="top-right"
