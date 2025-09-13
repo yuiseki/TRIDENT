@@ -227,7 +227,7 @@ main.tridentMain {
   border: 8px solid transparent;
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 395px;
   max-width: 95vw;
   min-height: 52px;
   max-height: 60vh;
