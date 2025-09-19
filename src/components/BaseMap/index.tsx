@@ -83,6 +83,7 @@ export const BaseMap: React.FC<{
         latitude: latitude,
         zoom: zoom,
       }}
+      projection={"globe"}
       hash={false}
       maxZoom={22}
       maxPitch={85}

@@ -411,7 +411,7 @@ export default function Home() {
               mapRef={mapRef}
               longitude={0}
               latitude={0}
-              zoom={1}
+              zoom={2.5}
               style={mapStyleJsonUrl}
               onMapLoad={() => {
                 console.log("Map loaded");
