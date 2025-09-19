@@ -60,6 +60,7 @@ export const BaseMap: React.FC<{
     mapInstance.setLight({
       anchor: "map",
       position: [1.5, 90, 80],
+      intensity: 0.1,
     });
   };
 
