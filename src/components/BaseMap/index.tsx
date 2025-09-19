@@ -43,12 +43,43 @@ export const BaseMap: React.FC<{
   attributionPosition = "top-right",
   onGeolocate,
 }) => {
+  const applyAtmosphere = (mapInstance: maplibregl.Map) => {
+    mapInstance.setSky({
+      "atmosphere-blend": [
+        "interpolate",
+        ["linear"],
+        ["zoom"],
+        0,
+        1,
+        5,
+        1,
+        7,
+        0,
+      ],
+    });
+    mapInstance.setLight({
+      anchor: "map",
+      position: [1.5, 90, 80],
+    });
+  };
+
   const onLoad = useCallback(() => {
+    const mapInstance = mapRef.current?.getMap?.();
+    if (mapInstance) {
+      applyAtmosphere(mapInstance);
+    }
     console.log("Map loaded");
     if (onMapLoad) {
       onMapLoad();
     }
-  }, [onMapLoad]);
+  }, [mapRef, onMapLoad]);
+
+  const onStyleChange = useCallback(() => {
+    const mapInstance = mapRef.current?.getMap?.();
+    if (mapInstance) {
+      applyAtmosphere(mapInstance);
+    }
+  }, [mapRef]);
 
   const onMove = useCallback(() => {
     if (onMapMove) {
@@ -74,8 +105,10 @@ export const BaseMap: React.FC<{
       }}
       id={id}
       ref={mapRef}
+      onLoad={onLoad}
       onMove={onMove}
       onMoveEnd={onMoveEnd}
+      onStyleData={onStyleChange}
       mapStyle={style}
       attributionControl={false}
       initialViewState={{
