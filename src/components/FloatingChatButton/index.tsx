@@ -36,17 +36,19 @@ export const FloatingChatButton: React.FC<{
       {showing && (
         <div className={styles.childrenWrap}>
           <div>{children}</div>
-          <button
-            className={styles.closeButton}
-            onClick={() => {
-              setShowing(false);
-              if (onChange) {
-                onChange(false);
-              }
-            }}
-          >
-            ✖
-          </button>
+          <div className={styles.closeButtonWrap}>
+            <button
+              className={styles.closeButton}
+              onClick={() => {
+                setShowing(false);
+                if (onChange) {
+                  onChange(false);
+                }
+              }}
+            >
+              ✕
+            </button>
+          </div>
         </div>
       )}
     </>
