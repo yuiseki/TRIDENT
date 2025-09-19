@@ -18,12 +18,13 @@ export const AccountButton: React.FC = () => {
           background: "rgba(60, 60, 60, 0.4)",
         }}>
           <img
-            width={35}
-            height={35}
+            width={30}
+            height={30}
             src="menu-icon.svg"
             alt="Not signed in"
             title="Not signed in"
             style={{
+              paddingTop: "4px",
               fill: "white !important",
             }}
           />
