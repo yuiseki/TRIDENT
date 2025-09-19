@@ -2,96 +2,219 @@
 
 import { BaseMap } from "@/components/BaseMap";
 import { MapProvider } from "react-map-gl/maplibre";
-import { useRef, useState, useCallback } from "react";
-import type { MapRef } from "react-map-gl/maplibre";
+import { useCallback, useMemo, useRef, useState } from "react";
+import type { MutableRefObject } from "react";
+import type {
+  MapRef,
+  ViewState,
+  ViewStateChangeEvent,
+} from "react-map-gl/maplibre";
+
+type RegionConfig = {
+  name: string;
+  longitude: number;
+  latitude: number;
+  zoom: number;
+  bearing?: number;
+  pitch?: number;
+};
+
+const SYNC_THROTTLE_MS = 30;
+const MINIMUM_ZOOM = 0.5;
 
 export default function SplitPage() {
-  const mapRefs = Array.from({ length: 6 }, () => useRef<MapRef | null>(null));
-  
-  // 同期フラグ（簡潔に）
-  const [isSyncing, setIsSyncing] = useState(false);
-
   // メルカトル図法の緯度歪み係数を計算
-  const calculateZoomLevel = useCallback((latitude: number, baseZoom: number = 2.9): number => {
-    const latRad = (latitude * Math.PI) / 180;
-    const distortionFactor = 1 / Math.cos(latRad);
-    const adjustedZoom = baseZoom - Math.log2(distortionFactor);
-    return Math.max(0.5, adjustedZoom);
-  }, []);
+  const calculateZoomLevel = useCallback(
+    (latitude: number, baseZoom: number = 2.9): number => {
+      const latRad = (latitude * Math.PI) / 180;
+      const distortionFactor = 1 / Math.cos(latRad);
+      const adjustedZoom = baseZoom - Math.log2(Math.max(distortionFactor, 1));
+      return Math.max(MINIMUM_ZOOM, adjustedZoom);
+    },
+    []
+  );
 
-  // 世界の重要な地域の座標（基準位置）
-  const regions = [
-    { 
-      name: "アジア太平洋", 
-      longitude: 139.6917, 
-      latitude: 35.6895, 
-      zoom: calculateZoomLevel(35.6895),
-    },
-    { 
-      name: "ヨーロッパ", 
-      longitude: 2.3522, 
-      latitude: 48.8566, 
-      zoom: calculateZoomLevel(48.8566),
-    },
-    { 
-      name: "北アメリカ", 
-      longitude: -74.006, 
-      latitude: 40.7128, 
-      zoom: calculateZoomLevel(40.7128),
-    },
-    { 
-      name: "南アメリカ", 
-      longitude: -58.3816, 
-      latitude: -34.6037, 
-      zoom: calculateZoomLevel(-34.6037),
-    },
-    { 
-      name: "アフリカ", 
-      longitude: 18.4241, 
-      latitude: -33.9249, 
-      zoom: calculateZoomLevel(-33.9249),
-    },
-    { 
-      name: "中東", 
-      longitude: 51.5074, 
-      latitude: 25.2769, 
-      zoom: calculateZoomLevel(25.2769),
-    },
-  ];
+  const regions = useMemo<RegionConfig[]>(
+    () => [
+      {
+        name: "アジア太平洋",
+        longitude: 139.6917,
+        latitude: 35.6895,
+        zoom: calculateZoomLevel(35.6895),
+        bearing: 0,
+        pitch: 0,
+      },
+      {
+        name: "ヨーロッパ",
+        longitude: 2.3522,
+        latitude: 48.8566,
+        zoom: calculateZoomLevel(48.8566),
+        bearing: 0,
+        pitch: 0,
+      },
+      {
+        name: "北アメリカ",
+        longitude: -74.006,
+        latitude: 40.7128,
+        zoom: calculateZoomLevel(40.7128),
+        bearing: 0,
+        pitch: 0,
+      },
+      {
+        name: "南アメリカ",
+        longitude: -58.3816,
+        latitude: -34.6037,
+        zoom: calculateZoomLevel(-34.6037),
+        bearing: 0,
+        pitch: 0,
+      },
+      {
+        name: "アフリカ",
+        longitude: 18.4241,
+        latitude: -33.9249,
+        zoom: calculateZoomLevel(-33.9249),
+        bearing: 0,
+        pitch: 0,
+      },
+      {
+        name: "中東",
+        longitude: 51.5074,
+        latitude: 25.2769,
+        zoom: calculateZoomLevel(25.2769),
+        bearing: 0,
+        pitch: 0,
+      },
+    ],
+    [calculateZoomLevel]
+  );
 
-  // シンプルな同期処理
-  const handleMapMoveEnd = useCallback((sourceMapIndex: number, viewState: any) => {
-    if (isSyncing) return; // 同期中は処理しない
-    
-    setIsSyncing(true);
-    
-    // 移動量を計算
-    const sourceRegion = regions[sourceMapIndex];
-    const lngOffset = viewState.longitude - sourceRegion.longitude;
-    const latOffset = viewState.latitude - sourceRegion.latitude;
-    
-    // 他の地図を同期（requestAnimationFrameで次のフレームで実行）
-    requestAnimationFrame(() => {
+  const mapRefs = useMemo<MutableRefObject<MapRef | null>[]>(
+    () =>
+      Array.from({ length: regions.length }, () =>
+        ({ current: null } as MutableRefObject<MapRef | null>)
+      ),
+    [regions.length]
+  );
+
+  const suppressMoveEventsRef = useRef<boolean[]>(
+    Array(regions.length).fill(false)
+  );
+  const lastSyncTimeRef = useRef<number>(0);
+  const isUserDraggingRef = useRef<boolean>(false);
+  const [activeMapIndex, setActiveMapIndex] = useState<number>(-1);
+
+  const performSync = useCallback(
+    (sourceMapIndex: number, viewState: ViewState) => {
+      const sourceRegion = regions[sourceMapIndex];
+      if (!sourceRegion) {
+        return;
+      }
+
+      const longitude = viewState.longitude ?? sourceRegion.longitude;
+      const latitude = viewState.latitude ?? sourceRegion.latitude;
+      const zoom = viewState.zoom ?? sourceRegion.zoom;
+      const bearing = viewState.bearing ?? sourceRegion.bearing ?? 0;
+      const pitch = viewState.pitch ?? sourceRegion.pitch ?? 0;
+
+      const lngOffset = longitude - sourceRegion.longitude;
+      const latOffset = latitude - sourceRegion.latitude;
+      const zoomDelta = zoom - sourceRegion.zoom;
+      const bearingDelta = bearing - (sourceRegion.bearing ?? 0);
+      const pitchDelta = pitch - (sourceRegion.pitch ?? 0);
+
       mapRefs.forEach((mapRef, index) => {
-        if (index !== sourceMapIndex && mapRef.current) {
-          const targetRegion = regions[index];
-          const targetMap = mapRef.current.getMap();
-          
-          // 位置を更新（jumpToは内部的にイベントを発火しないモードで実行）
-          targetMap.jumpTo({
-            center: [
-              targetRegion.longitude + lngOffset,
-              targetRegion.latitude + latOffset
-            ],
-            zoom: targetRegion.zoom,
-          });
+        if (index === sourceMapIndex) {
+          return;
         }
+
+        const targetRegion = regions[index];
+        const targetMapRef = mapRef.current;
+        if (!targetRegion || !targetMapRef) {
+          return;
+        }
+
+        const mapInstance = targetMapRef.getMap?.();
+        if (!mapInstance) {
+          return;
+        }
+
+        suppressMoveEventsRef.current[index] = true;
+
+        const clearSuppression = () => {
+          if (!suppressMoveEventsRef.current[index]) {
+            return;
+          }
+          suppressMoveEventsRef.current[index] = false;
+        };
+
+        const fallback = setTimeout(clearSuppression, SYNC_THROTTLE_MS * 4);
+
+        mapInstance.once("moveend", () => {
+          clearTimeout(fallback);
+          clearSuppression();
+        });
+
+        mapInstance.jumpTo({
+          center: [
+            targetRegion.longitude + lngOffset,
+            targetRegion.latitude + latOffset,
+          ] as [number, number],
+          zoom: Math.max(MINIMUM_ZOOM, targetRegion.zoom + zoomDelta),
+          bearing: (targetRegion.bearing ?? 0) + bearingDelta,
+          pitch: (targetRegion.pitch ?? 0) + pitchDelta,
+        });
       });
-      
-      // 同期フラグをリセット
-      setTimeout(() => setIsSyncing(false), 10);
-    });
-  }, [isSyncing, regions]);
+    },
+    [mapRefs, regions]
+  );
+
+  const handleMapMove = useCallback(
+    (sourceMapIndex: number, event: ViewStateChangeEvent) => {
+      if (suppressMoveEventsRef.current[sourceMapIndex]) {
+        return;
+      }
+
+      if (!isUserDraggingRef.current || activeMapIndex !== sourceMapIndex) {
+        return;
+      }
+
+      const now = Date.now();
+      if (now - lastSyncTimeRef.current < SYNC_THROTTLE_MS) {
+        return;
+      }
+
+      lastSyncTimeRef.current = now;
+      performSync(sourceMapIndex, event.viewState);
+    },
+    [activeMapIndex, performSync]
+  );
+
+  const handleMapMoveStart = useCallback(
+    (index: number, event: ViewStateChangeEvent) => {
+      if (suppressMoveEventsRef.current[index]) {
+        return;
+      }
+
+      isUserDraggingRef.current = true;
+      setActiveMapIndex(index);
+      lastSyncTimeRef.current = Date.now();
+      performSync(index, event.viewState);
+    },
+    [performSync]
+  );
+
+  const handleMapMoveEnd = useCallback(
+    (index: number, event: ViewStateChangeEvent) => {
+      if (suppressMoveEventsRef.current[index]) {
+        return;
+      }
+
+      performSync(index, event.viewState);
+      isUserDraggingRef.current = false;
+      setActiveMapIndex(-1);
+    },
+    [performSync]
+  );
 
   return (
     <main
@@ -105,18 +228,18 @@ export default function SplitPage() {
       }}
     >
       <MapProvider>
-        {Array.from({ length: 6 }, (_, index) => (
-          <div key={index} style={{ position: "relative" }}>
+        {regions.map((region, index) => (
+          <div key={region.name} style={{ position: "relative" }}>
             <BaseMap
               id={`map-${index}`}
               mapRef={mapRefs[index]}
-              longitude={regions[index].longitude}
-              latitude={regions[index].latitude}
-              zoom={regions[index].zoom}
+              longitude={region.longitude}
+              latitude={region.latitude}
+              zoom={region.zoom}
               style="/map_styles/fiord-color-gl-style/style.json"
-              onMapMoveEnd={(e) => {
-                handleMapMoveEnd(index, e.viewState);
-              }}
+              onMapMoveStart={(event) => handleMapMoveStart(index, event)}
+              onMapMove={(event) => handleMapMove(index, event)}
+              onMapMoveEnd={(event) => handleMapMoveEnd(index, event)}
             />
           </div>
         ))}

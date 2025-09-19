@@ -23,7 +23,8 @@ export const BaseMap: React.FC<{
   children?: any;
   style?: string | StyleSpecification;
   onMapLoad?: () => void;
-  onMapMove?: () => void;
+  onMapMove?: (e: ViewStateChangeEvent) => void;
+  onMapMoveStart?: (e: ViewStateChangeEvent) => void;
   onMapMoveEnd?: (e: ViewStateChangeEvent) => void;
   enableInteractions?: boolean;
   attributionPosition?: string;
@@ -38,6 +39,7 @@ export const BaseMap: React.FC<{
   style = "/map_styles/fiord-color-gl-style/style.json",
   onMapLoad,
   onMapMove,
+  onMapMoveStart,
   onMapMoveEnd,
   enableInteractions = true,
   attributionPosition = "top-right",
@@ -123,11 +125,23 @@ export const BaseMap: React.FC<{
     }
   }, [mapRef]);
 
-  const onMove = useCallback(() => {
-    if (onMapMove) {
-      onMapMove();
-    }
-  }, [onMapMove]);
+  const onMove = useCallback(
+    (event: ViewStateChangeEvent) => {
+      if (onMapMove) {
+        onMapMove(event);
+      }
+    },
+    [onMapMove]
+  );
+
+  const onMoveStart = useCallback(
+    (event: ViewStateChangeEvent) => {
+      if (onMapMoveStart) {
+        onMapMoveStart(event);
+      }
+    },
+    [onMapMoveStart]
+  );
 
   const onMoveEnd = useCallback(
     (e: ViewStateChangeEvent) => {
@@ -149,6 +163,7 @@ export const BaseMap: React.FC<{
       ref={mapRef}
       onLoad={onLoad}
       onMove={onMove}
+      onMoveStart={onMoveStart}
       onMoveEnd={onMoveEnd}
       onStyleData={onStyleChange}
       mapStyle={style}
