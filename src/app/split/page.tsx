@@ -26,8 +26,10 @@ export default function SplitPage() {
   // メルカトル図法の緯度歪み係数を計算
   const calculateZoomLevel = useCallback(
     (latitude: number, baseZoom: number = 2.9): number => {
-      const latRad = (latitude * Math.PI) / 180;
-      const distortionFactor = 1 / Math.cos(latRad);
+      const clampedLat = Math.max(-85, Math.min(85, latitude));
+      const latRad = (clampedLat * Math.PI) / 180;
+      const cosLat = Math.cos(latRad);
+      const distortionFactor = cosLat === 0 ? Number.POSITIVE_INFINITY : 1 / cosLat;
       const adjustedZoom = baseZoom - Math.log2(Math.max(distortionFactor, 1));
       return Math.max(MINIMUM_ZOOM, adjustedZoom);
     },
@@ -118,9 +120,9 @@ export default function SplitPage() {
 
       const lngOffset = longitude - sourceRegion.longitude;
       const latOffset = latitude - sourceRegion.latitude;
-      const zoomDelta = zoom - sourceRegion.zoom;
-      const bearingDelta = bearing - (sourceRegion.bearing ?? 0);
-      const pitchDelta = pitch - (sourceRegion.pitch ?? 0);
+
+      const sourceExpectedZoom = calculateZoomLevel(latitude);
+      const zoomDiffFromExpected = zoom - sourceExpectedZoom;
 
       mapRefs.forEach((mapRef, index) => {
         if (index === sourceMapIndex) {
@@ -154,18 +156,31 @@ export default function SplitPage() {
           clearSuppression();
         });
 
+        const targetCenterLatitude = Math.max(
+          -85,
+          Math.min(85, targetRegion.latitude + latOffset)
+        );
+        const targetCenterLongitudeRaw = targetRegion.longitude + lngOffset;
+        const targetCenterLongitude =
+          ((targetCenterLongitudeRaw + 180) % 360 + 360) % 360 - 180;
+        const targetExpectedZoom = calculateZoomLevel(targetCenterLatitude);
+        const targetZoom = Math.max(
+          MINIMUM_ZOOM,
+          targetExpectedZoom + zoomDiffFromExpected
+        );
+
         mapInstance.jumpTo({
           center: [
-            targetRegion.longitude + lngOffset,
-            targetRegion.latitude + latOffset,
+            targetCenterLongitude,
+            targetCenterLatitude,
           ] as [number, number],
-          zoom: Math.max(MINIMUM_ZOOM, targetRegion.zoom + zoomDelta),
-          bearing: (targetRegion.bearing ?? 0) + bearingDelta,
-          pitch: (targetRegion.pitch ?? 0) + pitchDelta,
+          zoom: targetZoom,
+          bearing,
+          pitch,
         });
       });
     },
-    [mapRefs, regions]
+    [calculateZoomLevel, mapRefs, regions]
   );
 
   const handleMapMove = useCallback(
