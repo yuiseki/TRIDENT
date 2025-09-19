@@ -10,16 +10,22 @@ export const AccountButton: React.FC = () => {
       <div
         className={styles.accountButton}
         style={{
-          opacity: 0.5,
+          opacity: 0.8,
         }}
       >
-        <a href="/api/auth/signin">
+        <a href="/api/auth/signin" style={{
+          fill: "white !important",
+          background: "rgba(60, 60, 60, 0.4)",
+        }}>
           <img
-            width={40}
-            height={40}
-            src="icons/icon-48x48.png"
+            width={35}
+            height={35}
+            src="menu-icon.svg"
             alt="Not signed in"
             title="Not signed in"
+            style={{
+              fill: "white !important",
+            }}
           />
         </a>
       </div>
