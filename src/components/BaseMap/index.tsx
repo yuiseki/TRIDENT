@@ -1,4 +1,4 @@
-import React, { MutableRefObject, useCallback } from "react";
+import React, { MutableRefObject, useCallback, useEffect, useRef } from "react";
 
 import {
   AttributionControl,
@@ -43,12 +43,85 @@ export const BaseMap: React.FC<{
   attributionPosition = "top-right",
   onGeolocate,
 }) => {
+  const applyAtmosphere = (mapInstance: maplibregl.Map) => {
+    // 現在の時刻から太陽の位置を計算
+    const now = new Date();
+    const dayOfYear = Math.floor((now.getTime() - new Date(now.getFullYear(), 0, 0).getTime()) / 86400000);
+    const timeOfDay = (now.getUTCHours() + now.getUTCMinutes() / 60 + now.getUTCSeconds() / 3600) / 24;
+    
+    // 太陽の赤緯を計算 (地球の軸の傾きによる季節変化)
+    const solarDeclination = 23.45 * Math.sin((2 * Math.PI * (dayOfYear - 81)) / 365);
+    
+    // 太陽の方位角と高度角を計算
+    const hourAngle = 2 * Math.PI * (timeOfDay - 0.5); // UTC正午を基準
+    const sunAzimuth = Math.atan2(Math.sin(hourAngle), Math.cos(hourAngle) * Math.sin(Math.PI * solarDeclination / 180));
+    const sunElevation = Math.asin(Math.cos(Math.PI * solarDeclination / 180) * Math.cos(hourAngle));
+    
+    // MapLibreのlight position用に変換 (azimuth, elevation, distance)
+    const azimuthDegrees = (sunAzimuth * 180 / Math.PI + 360) % 360;
+    const elevationDegrees = Math.max(5, sunElevation * 180 / Math.PI + 90); // 最小5度に制限
+    
+    mapInstance.setSky({
+      "atmosphere-blend": [
+        "interpolate",
+        ["linear"],
+        ["zoom"],
+        0,
+        1,
+        5,
+        1,
+        7,
+        0,
+      ],
+    });
+    mapInstance.setLight({
+      anchor: "map",
+      position: [azimuthDegrees, elevationDegrees, 80],
+      intensity: Math.max(0.05, Math.min(0.3, (elevationDegrees - 90) / 90 * 0.3 + 0.1)),
+    });
+  };
+
+  // リアルタイム更新用のインターバル
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+
+  useEffect(() => {
+    const updateAtmosphere = () => {
+      const mapInstance = mapRef.current?.getMap?.();
+      if (mapInstance) {
+        applyAtmosphere(mapInstance);
+      }
+    };
+
+    // 初回実行
+    updateAtmosphere();
+
+    // 10秒おきに更新
+    intervalRef.current = setInterval(updateAtmosphere, 10000);
+
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+    };
+  }, [mapRef]);
+
   const onLoad = useCallback(() => {
+    const mapInstance = mapRef.current?.getMap?.();
+    if (mapInstance) {
+      applyAtmosphere(mapInstance);
+    }
     console.log("Map loaded");
     if (onMapLoad) {
       onMapLoad();
     }
-  }, [onMapLoad]);
+  }, [mapRef, onMapLoad]);
+
+  const onStyleChange = useCallback(() => {
+    const mapInstance = mapRef.current?.getMap?.();
+    if (mapInstance) {
+      applyAtmosphere(mapInstance);
+    }
+  }, [mapRef]);
 
   const onMove = useCallback(() => {
     if (onMapMove) {
@@ -74,8 +147,10 @@ export const BaseMap: React.FC<{
       }}
       id={id}
       ref={mapRef}
+      onLoad={onLoad}
       onMove={onMove}
       onMoveEnd={onMoveEnd}
+      onStyleData={onStyleChange}
       mapStyle={style}
       attributionControl={false}
       initialViewState={{
