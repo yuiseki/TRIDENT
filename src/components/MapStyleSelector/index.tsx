@@ -10,6 +10,9 @@ export const MapStyleSelector: React.FC<{
       value={mapStyleJsonUrl}
       onChange={onSelectMapStyleJsonUrl}
     >
+      <option value={"/map_styles/dark-matter-gl-style/style.json"}>
+        🗺 OSM Dark Matter (vector)
+      </option>
       <option value={"/map_styles/fiord-color-gl-style/style.json"}>
         🗺 OSM Fiord color (vector)
       </option>

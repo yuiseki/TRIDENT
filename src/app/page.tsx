@@ -63,7 +63,7 @@ export default function Home() {
   // base maps style state
   const [mapStyleJsonUrl, setMapStyleJsonUrl] = useLocalStorage<string>(
     "trident-selected-map-style-json-url",
-    "/map_styles/fiord-color-gl-style/style.json"
+    "/map_styles/dark-matter-gl-style/style.json"
   );
 
   // floating chat button state

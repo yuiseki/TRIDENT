@@ -25,7 +25,7 @@ const MINIMUM_ZOOM = 0.5;
 export default function SplitPage() {
   // メルカトル図法の緯度歪み係数を計算
   const calculateZoomLevel = useCallback(
-    (latitude: number, baseZoom: number = 2.9): number => {
+    (latitude: number, baseZoom: number = 1.8): number => {
       const clampedLat = Math.max(-85, Math.min(85, latitude));
       const latRad = (clampedLat * Math.PI) / 180;
       const cosLat = Math.cos(latRad);
@@ -251,7 +251,7 @@ export default function SplitPage() {
               longitude={region.longitude}
               latitude={region.latitude}
               zoom={region.zoom}
-              style="/map_styles/fiord-color-gl-style/style.json"
+              style="/map_styles/dark-matter-gl-style/style.json"
               onMapMoveStart={(event) => handleMapMoveStart(index, event)}
               onMapMove={(event) => handleMapMove(index, event)}
               onMapMoveEnd={(event) => handleMapMoveEnd(index, event)}
