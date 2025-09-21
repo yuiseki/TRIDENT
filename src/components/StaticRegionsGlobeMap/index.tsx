@@ -52,8 +52,8 @@ export const StaticRegionsGlobeMap: React.FC<{
             regionName,
             id: `region-${idx}-${osmId}`,
             style: {
-              color: "yellow",
-              fillColor: "transparent",
+              color: "rgba(247, 204, 140, 0.8)",
+              fillColor: "rgba(247, 204, 140, 0.5)",
             },
             geojson: newGeojson,
           },
@@ -71,7 +71,7 @@ export const StaticRegionsGlobeMap: React.FC<{
       showAtmosphere={true}
       showAttribution={showAttribution}
       showControls={showControls}
-      maxZoom={1.3}
+      maxZoom={1.8}
     >
       {children}
     </StaticMap>

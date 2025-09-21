@@ -48,49 +48,14 @@ export const StaticMap: React.FC<{
           .map((item) => item.geojson.features)
           .flat(),
       };
-      if (projection === "mercator") {
-        console.log("fitBounds for mercator");
-        const [minLng, minLat, maxLng, maxLat] = turf.bbox(everything);
-        mapRef.current.fitBounds(
-          [
-            [minLng, minLat],
-            [maxLng, maxLat],
-          ],
-          { padding: mapPadding, duration: 1000, maxZoom: maxZoom }
-        );
-      } else {
-        console.log("fitBounds for globe");
-        // 緯度の変更に伴う zoom 補正量を求める関数
-        function getZoomAdjustment(oldLat: number, newLat: number) {
-          return Math.log2(
-            Math.cos((newLat * Math.PI) / 180) /
-              Math.cos((oldLat * Math.PI) / 180)
-          );
-        }
-        const current = mapRef.current.getCenter();
-
-        const centerFeature = turf.center(everything).geometry.coordinates;
-        const center: LngLatLike = [centerFeature[0], centerFeature[1]];
-
-        const adjustedZoom =
-          mapRef.current.getZoom() +
-          getZoomAdjustment(current.lat, centerFeature[1]);
-
-        // paddingをリセット
-        mapRef.current.setPadding({
-          top: 0,
-          bottom: 0,
-          left: 0,
-          right: 0,
-        });
-        mapRef.current.easeTo({
-          center,
-          zoom: adjustedZoom,
-          pitch: 0,
-          bearing: 0,
-          duration: 1000,
-        });
-      }
+      const [minLng, minLat, maxLng, maxLat] = turf.bbox(everything);
+      mapRef.current.fitBounds(
+        [
+          [minLng, minLat],
+          [maxLng, maxLat],
+        ],
+        { padding: mapPadding, duration: 1000, maxZoom: maxZoom }
+      );
     } catch (error) {
       console.error(error);
     }
@@ -99,7 +64,7 @@ export const StaticMap: React.FC<{
   useEffect(() => {
     setTimeout(() => {
       onMapLoad();
-    }, 1000);
+    }, 2000);
   }, [onMapLoad]);
 
   return (
