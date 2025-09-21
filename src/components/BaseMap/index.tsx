@@ -22,13 +22,14 @@ export const BaseMap: React.FC<{
   zoom: number;
   children?: any;
   style?: string | StyleSpecification;
+  enableInteractions?: boolean;
+  showControls?: boolean;
+  attributionPosition?: string;
+  showAtmosphere?: boolean;
   onMapLoad?: () => void;
   onMapMove?: (e: ViewStateChangeEvent) => void;
   onMapMoveStart?: (e: ViewStateChangeEvent) => void;
   onMapMoveEnd?: (e: ViewStateChangeEvent) => void;
-  enableInteractions?: boolean;
-  showControls?: boolean;
-  attributionPosition?: string;
   onGeolocate?: ((e: GeolocateResultEvent) => void) | undefined;
 }> = ({
   id,
@@ -38,13 +39,14 @@ export const BaseMap: React.FC<{
   zoom,
   children,
   style = "/map_styles/fiord-color-gl-style/style.json",
+  enableInteractions = true,
+  showControls = true,
+  attributionPosition = "top-right",
+  showAtmosphere = false,
   onMapLoad,
   onMapMove,
   onMapMoveStart,
   onMapMoveEnd,
-  enableInteractions = true,
-  showControls = true,
-  attributionPosition = "top-right",
   onGeolocate,
 }) => {
   const applyAtmosphere = (mapInstance: maplibregl.Map) => {
@@ -110,6 +112,8 @@ export const BaseMap: React.FC<{
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
+    if (!showAtmosphere) return;
+
     const updateAtmosphere = () => {
       const mapInstance = mapRef.current?.getMap?.();
       if (mapInstance) {
@@ -128,25 +132,25 @@ export const BaseMap: React.FC<{
         clearInterval(intervalRef.current);
       }
     };
-  }, [mapRef]);
+  }, [mapRef, showAtmosphere]);
 
   const onLoad = useCallback(() => {
     const mapInstance = mapRef.current?.getMap?.();
-    if (mapInstance) {
+    if (mapInstance && showAtmosphere) {
       applyAtmosphere(mapInstance);
     }
     console.log("Map loaded");
     if (onMapLoad) {
       onMapLoad();
     }
-  }, [mapRef, onMapLoad]);
+  }, [mapRef, onMapLoad, showAtmosphere]);
 
   const onStyleChange = useCallback(() => {
     const mapInstance = mapRef.current?.getMap?.();
-    if (mapInstance) {
+    if (mapInstance && showAtmosphere) {
       applyAtmosphere(mapInstance);
     }
-  }, [mapRef]);
+  }, [mapRef, showAtmosphere]);
 
   const onMove = useCallback(
     (event: ViewStateChangeEvent) => {

@@ -29,7 +29,8 @@ export default function SplitPage() {
       const clampedLat = Math.max(-85, Math.min(85, latitude));
       const latRad = (clampedLat * Math.PI) / 180;
       const cosLat = Math.cos(latRad);
-      const distortionFactor = cosLat === 0 ? Number.POSITIVE_INFINITY : 1 / cosLat;
+      const distortionFactor =
+        cosLat === 0 ? Number.POSITIVE_INFINITY : 1 / cosLat;
       const adjustedZoom = baseZoom - Math.log2(Math.max(distortionFactor, 1));
       return Math.max(MINIMUM_ZOOM, adjustedZoom);
     },
@@ -92,8 +93,9 @@ export default function SplitPage() {
 
   const mapRefs = useMemo<MutableRefObject<MapRef | null>[]>(
     () =>
-      Array.from({ length: regions.length }, () =>
-        ({ current: null } as MutableRefObject<MapRef | null>)
+      Array.from(
+        { length: regions.length },
+        () => ({ current: null } as MutableRefObject<MapRef | null>)
       ),
     [regions.length]
   );
@@ -162,7 +164,7 @@ export default function SplitPage() {
         );
         const targetCenterLongitudeRaw = targetRegion.longitude + lngOffset;
         const targetCenterLongitude =
-          ((targetCenterLongitudeRaw + 180) % 360 + 360) % 360 - 180;
+          ((((targetCenterLongitudeRaw + 180) % 360) + 360) % 360) - 180;
         const targetExpectedZoom = calculateZoomLevel(targetCenterLatitude);
         const targetZoom = Math.max(
           MINIMUM_ZOOM,
@@ -170,10 +172,10 @@ export default function SplitPage() {
         );
 
         mapInstance.jumpTo({
-          center: [
-            targetCenterLongitude,
-            targetCenterLatitude,
-          ] as [number, number],
+          center: [targetCenterLongitude, targetCenterLatitude] as [
+            number,
+            number
+          ],
           zoom: targetZoom,
           bearing,
           pitch,
@@ -255,6 +257,7 @@ export default function SplitPage() {
               onMapMoveStart={(event) => handleMapMoveStart(index, event)}
               onMapMove={(event) => handleMapMove(index, event)}
               onMapMoveEnd={(event) => handleMapMoveEnd(index, event)}
+              showAtmosphere={true}
               showControls={false}
             />
           </div>
