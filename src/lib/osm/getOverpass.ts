@@ -23,7 +23,7 @@ export const getOverpassResponseJsonWithCache = async (
 
   console.log(overpassQuery);
 
-  const getAndCache = async () => {
+  const getAndCache = async (dontCache = false) => {
     const json = await getOverpassResponseJson(overpassQuery);
     const valueToStore = {
       query: overpassQuery,
@@ -32,15 +32,20 @@ export const getOverpassResponseJsonWithCache = async (
       unixtime: unixtime,
     };
     try {
+      if (dontCache) return json;
       window.localStorage.setItem(key, JSON.stringify(valueToStore));
     } catch (error) {
-      console.error("getOverpassResponseJsonWithCache error:", error);
+      console.log("getOverpassResponseJsonWithCache error:", error);
+      window.localStorage.setItem(key, "too large to cache");
     }
     return json;
   };
 
   const cache = window.localStorage.getItem(key);
   if (cache) {
+    if (cache === "too large to cache") {
+      return await getAndCache(true);
+    }
     const valueFromStore = JSON.parse(cache);
     if (
       "resJson" in valueFromStore &&

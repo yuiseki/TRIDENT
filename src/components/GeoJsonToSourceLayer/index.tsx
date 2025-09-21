@@ -167,7 +167,7 @@ export const GeoJsonToSourceLayer: React.FC<{
                       id: `${feature.id}-line`,
                       type: "line",
                       paint: {
-                        "line-width": 4,
+                        "line-width": 2,
                         "line-color": style?.color ? style.color : "#f2f8fc",
                         "line-opacity": 0.8,
                       },
@@ -185,7 +185,7 @@ export const GeoJsonToSourceLayer: React.FC<{
                       id: `${feature.id}-line`,
                       type: "line",
                       paint: {
-                        "line-width": 4,
+                        "line-width": 2,
                         "line-color": style?.color ? style.color : "#f2f8fc",
                         "line-opacity": 0.8,
                       },

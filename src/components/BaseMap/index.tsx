@@ -15,12 +15,14 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import { GlobeControl } from "../GlobeControl";
 
 export const BaseMap: React.FC<{
+  children?: any;
   id?: string;
   mapRef: MutableRefObject<MapRef | null>;
   longitude: number;
   latitude: number;
   zoom: number;
-  children?: any;
+  maxZoom?: number;
+  projection?: "mercator" | "globe";
   style?: string | StyleSpecification;
   enableInteractions?: boolean;
   showControls?: boolean;
@@ -33,12 +35,14 @@ export const BaseMap: React.FC<{
   onMapMoveEnd?: (e: ViewStateChangeEvent) => void;
   onGeolocate?: ((e: GeolocateResultEvent) => void) | undefined;
 }> = ({
+  children,
   id,
   mapRef,
   longitude,
   latitude,
   zoom,
-  children,
+  maxZoom = 22,
+  projection = "mercator",
   style = "/map_styles/fiord-color-gl-style/style.json",
   enableInteractions = true,
   showControls = true,
@@ -202,9 +206,9 @@ export const BaseMap: React.FC<{
         latitude: latitude,
         zoom: zoom,
       }}
-      projection={"globe"}
+      projection={projection}
       hash={false}
-      maxZoom={22}
+      maxZoom={maxZoom}
       maxPitch={85}
       scrollZoom={enableInteractions ? true : false}
       dragPan={enableInteractions ? true : false}

@@ -412,6 +412,7 @@ export default function Home() {
               longitude={0}
               latitude={0}
               zoom={2.5}
+              projection="globe"
               style={mapStyleJsonUrl}
               onMapLoad={() => {
                 console.log("Map loaded");

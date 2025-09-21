@@ -24,6 +24,7 @@ import {
 } from "recharts";
 
 import { realDisasters } from "@/constants/RealDisasters";
+import { StaticRegionsGlobeMap } from "@/components/StaticRegionsGlobeMap";
 
 type RegionConfig = {
   name: string;
@@ -31,8 +32,6 @@ type RegionConfig = {
   incidents: string[];
   responders?: string[];
   description: string;
-  longitude: number;
-  latitude: number;
   data?: { name: string; amt: number; pv: number; uv: number }[];
 };
 
@@ -54,20 +53,6 @@ const generateRandomData = () => {
 };
 
 export default function SplitPage() {
-  // メルカトル図法の緯度歪み係数を計算
-  const calculateZoomLevel = useCallback(
-    (latitude: number, baseZoom: number = 1.2): number => {
-      const clampedLat = Math.max(-85, Math.min(85, latitude));
-      const latRad = (clampedLat * Math.PI) / 180;
-      const cosLat = Math.cos(latRad);
-      const distortionFactor =
-        cosLat === 0 ? Number.POSITIVE_INFINITY : 1 / cosLat;
-      const adjustedZoom = baseZoom - Math.log2(Math.max(distortionFactor, 1));
-      return Math.max(MINIMUM_ZOOM, adjustedZoom);
-    },
-    []
-  );
-
   const regions = useMemo<RegionConfig[]>(() => {
     return realDisasters.map((disaster, index) => {
       return {
@@ -76,21 +61,10 @@ export default function SplitPage() {
         incidents: disaster.incidents,
         responders: disaster.responders,
         description: disaster.description,
-        longitude: 0 + index * 10,
-        latitude: -10 + index * 5,
         data: generateRandomData(),
       };
     });
-  }, [calculateZoomLevel]);
-
-  const mapRefs = useMemo<MutableRefObject<MapRef | null>[]>(
-    () =>
-      Array.from(
-        { length: regions.length },
-        () => ({ current: null } as MutableRefObject<MapRef | null>)
-      ),
-    [regions.length]
-  );
+  }, [realDisasters]);
 
   return (
     <main
@@ -112,19 +86,14 @@ export default function SplitPage() {
               border: "1px solid rgba(0, 158, 219, 0.6)",
               margin: "5px",
               padding: "10px",
-              minHeight: "300px",
+              minHeight: "350px",
               maxHeight: "500px",
             }}
           >
             <div style={{ height: "70%" }}>
-              <BaseMap
-                id={`map-${index}`}
-                mapRef={mapRefs[index]}
-                longitude={region.longitude}
-                latitude={region.latitude}
-                zoom={calculateZoomLevel(region.latitude)}
-                style="/map_styles/dark-matter-gl-style/style.json"
-                showAtmosphere={true}
+              <StaticRegionsGlobeMap
+                mapStyle="/map_styles/dark-matter-gl-style/style.json"
+                regionNames={[region.name]}
                 showAttribution={false}
                 showControls={false}
               >
@@ -156,7 +125,7 @@ export default function SplitPage() {
                     {region.description}
                   </h4>
                 </div>
-              </BaseMap>
+              </StaticRegionsGlobeMap>
             </div>
             <div
               style={{
