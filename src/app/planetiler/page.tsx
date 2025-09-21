@@ -41,8 +41,8 @@ export default function PlanetilerPage() {
   const styles = useMemo<StyleConfig[]>(
     () => [
       {
-        name: "Dark Matter",
-        styleUrl: "/map_styles/dark-matter-gl-style/style.json",
+        name: "Fiord color",
+        styleUrl: "/map_styles/fiord-color-gl-style/style.json",
         longitude: 0,
         latitude: 0,
         zoom: calculateZoomLevel(0),
