@@ -30,7 +30,8 @@ export default function PlanetilerPage() {
       const clampedLat = Math.max(-85, Math.min(85, latitude));
       const latRad = (clampedLat * Math.PI) / 180;
       const cosLat = Math.cos(latRad);
-      const distortionFactor = cosLat === 0 ? Number.POSITIVE_INFINITY : 1 / cosLat;
+      const distortionFactor =
+        cosLat === 0 ? Number.POSITIVE_INFINITY : 1 / cosLat;
       const adjustedZoom = baseZoom - Math.log2(Math.max(distortionFactor, 1));
       return Math.max(MINIMUM_ZOOM, adjustedZoom);
     },
@@ -68,7 +69,8 @@ export default function PlanetilerPage() {
       },
       {
         name: "Global Connectivity",
-        styleUrl: "https://tile.yuiseki.net/styles/global_connectivity/style.json",
+        styleUrl:
+          "https://tile.yuiseki.net/styles/global_connectivity/style.json",
         longitude: 0,
         latitude: 0,
         zoom: calculateZoomLevel(0),
@@ -99,8 +101,9 @@ export default function PlanetilerPage() {
 
   const mapRefs = useMemo<MutableRefObject<MapRef | null>[]>(
     () =>
-      Array.from({ length: styles.length }, () =>
-        ({ current: null } as MutableRefObject<MapRef | null>)
+      Array.from(
+        { length: styles.length },
+        () => ({ current: null } as MutableRefObject<MapRef | null>)
       ),
     [styles.length]
   );
@@ -169,7 +172,7 @@ export default function PlanetilerPage() {
         );
         const targetCenterLongitudeRaw = targetStyle.longitude + lngOffset;
         const targetCenterLongitude =
-          ((targetCenterLongitudeRaw + 180) % 360 + 360) % 360 - 180;
+          ((((targetCenterLongitudeRaw + 180) % 360) + 360) % 360) - 180;
         const targetExpectedZoom = calculateZoomLevel(targetCenterLatitude);
         const targetZoom = Math.max(
           MINIMUM_ZOOM,
@@ -177,10 +180,10 @@ export default function PlanetilerPage() {
         );
 
         mapInstance.jumpTo({
-          center: [
-            targetCenterLongitude,
-            targetCenterLatitude,
-          ] as [number, number],
+          center: [targetCenterLongitude, targetCenterLatitude] as [
+            number,
+            number
+          ],
           zoom: targetZoom,
           bearing,
           pitch,
