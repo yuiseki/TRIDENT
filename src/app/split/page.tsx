@@ -9,23 +9,352 @@ import type {
   ViewState,
   ViewStateChangeEvent,
 } from "react-map-gl/maplibre";
+import {
+  LineChart,
+  Line,
+  CartesianGrid,
+  XAxis,
+  YAxis,
+  BarChart,
+  Bar,
+  ResponsiveContainer,
+  ComposedChart,
+  Area,
+  Legend,
+} from "recharts";
 
 type RegionConfig = {
   name: string;
+  incident?: string;
+  responders?: string[];
   longitude: number;
   latitude: number;
   zoom: number;
   bearing?: number;
   pitch?: number;
+  data?: { name: string; amt: number; pv: number; uv: number }[];
 };
 
 const SYNC_THROTTLE_MS = 30;
 const MINIMUM_ZOOM = 0.5;
 
+const generateRandomData = () => {
+  const data = [];
+  for (let i = 0; i < 8; i++) {
+    data.push({
+      name: `Page ${String.fromCharCode(65 + i)}`,
+      amt: Math.floor(Math.random() * 200) + 100,
+      pv: Math.floor(Math.random() * 200) + 100,
+      uv: Math.floor(Math.random() * 100) + 100,
+    });
+  }
+  return data;
+};
+
+const respondersList = [
+  // System-wide coordination
+  { name: "OCHA", field: "Coordination", domain: "Inter-Cluster Coordination" },
+
+  // Protection cluster + AoRs
+  { name: "UNHCR", field: "Protection", domain: "Cluster" },
+  { name: "UNFPA", field: "Protection", domain: "GBV AoR" },
+  { name: "UNICEF", field: "Protection", domain: "Child Protection AoR" },
+  { name: "UNMAS", field: "Protection", domain: "Mine Action AoR" },
+  { name: "NRC", field: "Protection", domain: "HLP AoR" },
+  { name: "UN-Habitat", field: "Protection", domain: "HLP AoR" },
+
+  // CCCM
+  { name: "IOM", field: "CCCM", domain: "Cluster (Natural disasters lead)" },
+  { name: "UNHCR", field: "CCCM", domain: "Cluster (Conflict lead)" },
+
+  // Shelter
+  { name: "UNHCR", field: "Shelter", domain: "Cluster (Conflict lead)" },
+  {
+    name: "IFRC",
+    field: "Shelter",
+    domain: "Cluster (Natural disasters convenor/lead)",
+  },
+
+  // Education
+  { name: "UNICEF", field: "Education", domain: "Cluster (Co-lead)" },
+  {
+    name: "Save the Children",
+    field: "Education",
+    domain: "Cluster (Co-lead)",
+  },
+
+  // Food Security
+  { name: "FAO", field: "Food Security", domain: "Cluster (Co-lead)" },
+  { name: "WFP", field: "Food Security", domain: "Cluster (Co-lead)" },
+
+  // Health
+  { name: "WHO", field: "Health", domain: "Cluster" },
+
+  // Nutrition
+  { name: "UNICEF", field: "Nutrition", domain: "Cluster" },
+
+  // WASH
+  { name: "UNICEF", field: "WASH", domain: "Cluster" },
+
+  // Logistics
+  { name: "WFP", field: "Logistics", domain: "Cluster" },
+
+  // Emergency Telecommunications
+  { name: "WFP", field: "Emergency Telecommunications", domain: "Cluster" },
+
+  // Early Recovery
+  { name: "UNDP", field: "Early Recovery", domain: "Cluster" },
+];
+
+// responders が対応するべきインシデントのリスト
+const clusters = [
+  {
+    name: "Protection",
+    nameJa: "保護",
+    relatedIncidents: [
+      "Conflicts",
+      "Terrorism",
+      "Mass displacement",
+      "GBV",
+      "Child rights violations",
+      "Mines/ERW",
+      "Forced evictions",
+      "HLP disputes",
+    ],
+    relatedIncidentsJa: [
+      "紛争",
+      "テロ",
+      "大規模移動・避難",
+      "性暴力",
+      "子どもの権利侵害",
+      "地雷・不発弾",
+      "強制立ち退き",
+      "住居・土地・財産問題",
+    ],
+  },
+  {
+    name: "CCCM",
+    nameJa: "キャンプ管理",
+    relatedIncidents: [
+      "Mass displacement",
+      "IDP camp establishment",
+      "Conflicts",
+      "Sudden-onset disasters",
+    ],
+    relatedIncidentsJa: [
+      "大規模避難",
+      "国内避難民キャンプ設置",
+      "紛争",
+      "突発災害",
+    ],
+  },
+  {
+    name: "Shelter",
+    nameJa: "シェルター",
+    relatedIncidents: [
+      "Earthquakes",
+      "Floods",
+      "Cyclones/Typhoons",
+      "Urban fires",
+      "Conflicts",
+      "Winter emergencies",
+    ],
+    relatedIncidentsJa: [
+      "地震",
+      "洪水",
+      "サイクロン／台風",
+      "都市火災",
+      "紛争",
+      "冬季危機",
+    ],
+  },
+  {
+    name: "Education",
+    nameJa: "教育",
+    relatedIncidents: [
+      "School closures in emergencies",
+      "Conflicts",
+      "Natural disasters",
+      "Displacement",
+      "Attacks on education",
+    ],
+    relatedIncidentsJa: [
+      "緊急時の学校閉鎖",
+      "紛争",
+      "自然災害",
+      "避難・移動",
+      "教育への攻撃",
+    ],
+  },
+  {
+    name: "Food Security",
+    nameJa: "食料安全保障",
+    relatedIncidents: [
+      "Drought",
+      "Floods",
+      "Conflicts",
+      "Economic shocks",
+      "Market disruptions",
+      "Locust infestations",
+      "Famine risk",
+    ],
+    relatedIncidentsJa: [
+      "干ばつ",
+      "洪水",
+      "紛争",
+      "経済ショック",
+      "市場機能不全",
+      "サバクトビバッタ被害",
+      "飢饉リスク",
+    ],
+  },
+  {
+    name: "Health",
+    nameJa: "保健",
+    relatedIncidents: [
+      "Disease outbreaks",
+      "Pandemics",
+      "Mass casualty events",
+      "Conflicts",
+      "Natural disasters",
+      "Health system collapse",
+    ],
+    relatedIncidentsJa: [
+      "感染症の流行",
+      "パンデミック",
+      "多数傷病者事案",
+      "紛争",
+      "自然災害",
+      "保健医療体制の崩壊",
+    ],
+  },
+  {
+    name: "Nutrition",
+    nameJa: "栄養",
+    relatedIncidents: [
+      "Famine/IPC Phase 5",
+      "Acute malnutrition",
+      "Drought",
+      "Food price spikes",
+      "Disease outbreaks",
+    ],
+    relatedIncidentsJa: [
+      "飢饉（IPC5）",
+      "急性栄養不良",
+      "干ばつ",
+      "食料価格高騰",
+      "感染症流行",
+    ],
+  },
+  {
+    name: "WASH",
+    nameJa: "水・衛生（WASH）",
+    relatedIncidents: [
+      "Cholera and waterborne diseases",
+      "Floods",
+      "Drought/Water scarcity",
+      "Displacement settlements",
+      "Damage to water systems",
+    ],
+    relatedIncidentsJa: [
+      "コレラ等の水系感染症",
+      "洪水",
+      "干ばつ・水不足",
+      "避難・仮設居住地",
+      "給水・下水インフラ被害",
+    ],
+  },
+  {
+    name: "Logistics",
+    nameJa: "物流",
+    relatedIncidents: [
+      "Access constraints",
+      "Damaged infrastructure",
+      "Air/sea/land corridor disruptions",
+      "Import restrictions",
+      "Insecurity",
+    ],
+    relatedIncidentsJa: [
+      "アクセス制約",
+      "インフラ損壊",
+      "空路・海路・陸路の寸断",
+      "輸入規制",
+      "治安悪化",
+    ],
+  },
+  {
+    name: "Emergency Telecommunications",
+    nameJa: "緊急通信",
+    relatedIncidents: [
+      "Communications outages",
+      "Power failures",
+      "Natural disasters",
+      "Conflicts",
+      "Coordination ICT needs",
+    ],
+    relatedIncidentsJa: [
+      "通信途絶",
+      "停電",
+      "自然災害",
+      "紛争",
+      "調整用ICT需要",
+    ],
+  },
+  {
+    name: "Early Recovery",
+    nameJa: "早期回復",
+    relatedIncidents: [
+      "Post-disaster recovery",
+      "Post-conflict recovery",
+      "Debris management",
+      "Livelihoods restoration",
+      "Governance and essential services",
+    ],
+    relatedIncidentsJa: [
+      "災害後復旧",
+      "紛争後復旧",
+      "瓦礫撤去",
+      "生計回復",
+      "統治・基礎サービス再建",
+    ],
+  },
+];
+
+const respondersByIncidentJa = (incidents: string[]): string[] => {
+  const respondersSet = new Set<string>();
+
+  incidents.forEach((incident) => {
+    const matched = clusters.find((item) =>
+      item.relatedIncidentsJa.includes(incident)
+    );
+    if (matched) {
+      respondersList.forEach((responder) => {
+        if (responder.field === matched.name) {
+          respondersSet.add(responder.name);
+        }
+      });
+    }
+  });
+
+  return Array.from(respondersSet);
+};
+
+const generateRandomIncidentsFromSeed = (
+  seed: number,
+  count: number
+): string[] => {
+  const allIncidents = clusters.flatMap(
+    (cluster) => cluster.relatedIncidentsJa
+  );
+  const uniqueIncidents = Array.from(new Set(allIncidents));
+  const randomIndex = seed % uniqueIncidents.length;
+  return uniqueIncidents.slice(randomIndex, randomIndex + count);
+};
+
 export default function SplitPage() {
   // メルカトル図法の緯度歪み係数を計算
   const calculateZoomLevel = useCallback(
-    (latitude: number, baseZoom: number = 1.8): number => {
+    (latitude: number, baseZoom: number = 1.2): number => {
       const clampedLat = Math.max(-85, Math.min(85, latitude));
       const latRad = (clampedLat * Math.PI) / 180;
       const cosLat = Math.cos(latRad);
@@ -41,51 +370,81 @@ export default function SplitPage() {
     () => [
       {
         name: "アジア太平洋",
+        incident: generateRandomIncidentsFromSeed(1, 2).join(", "),
+        responders: respondersByIncidentJa(
+          generateRandomIncidentsFromSeed(1, 1)
+        ),
         longitude: 139.6917,
         latitude: 35.6895,
         zoom: calculateZoomLevel(35.6895),
         bearing: 0,
         pitch: 0,
+        data: generateRandomData(),
       },
       {
         name: "ヨーロッパ",
+        incident: generateRandomIncidentsFromSeed(2, 2).join(", "),
+        responders: respondersByIncidentJa(
+          generateRandomIncidentsFromSeed(2, 2)
+        ),
         longitude: 2.3522,
         latitude: 48.8566,
         zoom: calculateZoomLevel(48.8566),
         bearing: 0,
         pitch: 0,
+        data: generateRandomData(),
       },
       {
         name: "北アメリカ",
+        incident: generateRandomIncidentsFromSeed(3, 2).join(", "),
+        responders: respondersByIncidentJa(
+          generateRandomIncidentsFromSeed(3, 2)
+        ),
         longitude: -74.006,
         latitude: 40.7128,
         zoom: calculateZoomLevel(40.7128),
         bearing: 0,
         pitch: 0,
+        data: generateRandomData(),
       },
       {
         name: "南アメリカ",
+        incident: generateRandomIncidentsFromSeed(4, 2).join(", "),
+        responders: respondersByIncidentJa(
+          generateRandomIncidentsFromSeed(4, 2)
+        ),
         longitude: -58.3816,
         latitude: -34.6037,
         zoom: calculateZoomLevel(-34.6037),
         bearing: 0,
         pitch: 0,
+        data: generateRandomData(),
       },
       {
         name: "アフリカ",
+        incident: generateRandomIncidentsFromSeed(5, 2).join(", "),
+        responders: respondersByIncidentJa(
+          generateRandomIncidentsFromSeed(5, 2)
+        ),
         longitude: 18.4241,
         latitude: -33.9249,
         zoom: calculateZoomLevel(-33.9249),
         bearing: 0,
         pitch: 0,
+        data: generateRandomData(),
       },
       {
         name: "中東",
+        incident: generateRandomIncidentsFromSeed(6, 2).join(", "),
+        responders: respondersByIncidentJa(
+          generateRandomIncidentsFromSeed(6, 2)
+        ),
         longitude: 51.5074,
         latitude: 25.2769,
         zoom: calculateZoomLevel(25.2769),
         bearing: 0,
         pitch: 0,
+        data: generateRandomData(),
       },
     ],
     [calculateZoomLevel]
@@ -241,25 +600,120 @@ export default function SplitPage() {
         display: "grid",
         gridTemplateColumns: "1fr 1fr 1fr",
         gridTemplateRows: "1fr 1fr",
-        gap: "2px",
+        padding: "5px",
       }}
     >
       <MapProvider>
         {regions.map((region, index) => (
-          <div key={region.name} style={{ position: "relative" }}>
-            <BaseMap
-              id={`map-${index}`}
-              mapRef={mapRefs[index]}
-              longitude={region.longitude}
-              latitude={region.latitude}
-              zoom={region.zoom}
-              style="/map_styles/dark-matter-gl-style/style.json"
-              onMapMoveStart={(event) => handleMapMoveStart(index, event)}
-              onMapMove={(event) => handleMapMove(index, event)}
-              onMapMoveEnd={(event) => handleMapMoveEnd(index, event)}
-              showAtmosphere={true}
-              showControls={false}
-            />
+          <div
+            key={region.name}
+            style={{
+              position: "relative",
+              border: "1px solid rgba(0, 158, 219, 0.6)",
+              margin: "5px",
+              padding: "10px",
+            }}
+          >
+            <div style={{ height: "75%" }}>
+              <BaseMap
+                id={`map-${index}`}
+                mapRef={mapRefs[index]}
+                longitude={region.longitude}
+                latitude={region.latitude}
+                zoom={region.zoom}
+                style="/map_styles/dark-matter-gl-style/style.json"
+                onMapMoveStart={(event) => handleMapMoveStart(index, event)}
+                onMapMove={(event) => handleMapMove(index, event)}
+                onMapMoveEnd={(event) => handleMapMoveEnd(index, event)}
+                showAtmosphere={true}
+                showAttribution={false}
+                showControls={false}
+              />
+            </div>
+            <div
+              style={{
+                height: "28%",
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+                justifyContent: "center",
+                borderTop: "1px solid rgba(0, 158, 219, 0.6)",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "start",
+                  justifyContent: "start",
+                  height: "100%",
+                  width: "50%",
+                  paddingTop: "1%",
+                  color: "rgb(0, 158, 219)",
+                }}
+              >
+                <h3
+                  style={{
+                    fontWeight: "bold",
+                    fontSize: "1.2em",
+                  }}
+                >
+                  {region.name}
+                </h3>
+                <p><strong>インシデント：</strong>{region.incident}</p>
+                <p><strong>対応組織：</strong>{region.responders?.join(", ") ?? "なし"}</p>
+              </div>
+              <ResponsiveContainer
+                height={"100%"}
+                width="50%"
+                style={{ padding: "2%" }}
+              >
+                <ComposedChart
+                  accessibilityLayer
+                  barCategoryGap="10%"
+                  barGap={6}
+                  data={region.data}
+                  margin={{
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                    top: 10,
+                  }}
+                  syncMethod="index"
+                >
+                  <CartesianGrid stroke="rgba(0, 158, 219, 0.4)" />
+                  <XAxis tick={{ fill: "rgba(0, 158, 219, 0.8)" }} />
+                  <YAxis
+                    dataKey="uv"
+                    orientation="left"
+                    yAxisId={0}
+                    tick={{ fill: "rgba(0, 158, 219, 0.8)" }}
+                  />
+                  <Legend />
+                  <Area
+                    dataKey="amt"
+                    name="影響面積"
+                    fill="rgba(0, 158, 219, 0.4)"
+                    stroke="rgba(0, 158, 219, 0.4)"
+                    type="monotone"
+                  />
+                  <Bar
+                    dataKey="uv"
+                    name="発生件数"
+                    fill="rgba(0, 158, 219, 0.6)"
+                    barSize={20}
+                  />
+                  <Line
+                    dataKey="pv"
+                    name="死傷者数"
+                    fill="rgba(0, 158, 219, 0.8)"
+                    stroke="rgba(0, 158, 219, 0.8)"
+                    strokeDasharray="2 2"
+                    type="monotone"
+                  />
+                </ComposedChart>
+              </ResponsiveContainer>
+            </div>
           </div>
         ))}
       </MapProvider>

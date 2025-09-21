@@ -25,6 +25,7 @@ export const BaseMap: React.FC<{
   enableInteractions?: boolean;
   showControls?: boolean;
   attributionPosition?: string;
+  showAttribution?: boolean;
   showAtmosphere?: boolean;
   onMapLoad?: () => void;
   onMapMove?: (e: ViewStateChangeEvent) => void;
@@ -42,6 +43,7 @@ export const BaseMap: React.FC<{
   enableInteractions = true,
   showControls = true,
   attributionPosition = "top-right",
+  showAttribution = true,
   showAtmosphere = false,
   onMapLoad,
   onMapMove,
@@ -208,13 +210,15 @@ export const BaseMap: React.FC<{
       dragPan={enableInteractions ? true : false}
     >
       {children}
-      <AttributionControl
-        position={
-          attributionPosition
-            ? (attributionPosition as ControlPosition)
-            : "top-right"
-        }
-      />
+      {showAttribution && (
+        <AttributionControl
+          position={
+            attributionPosition
+              ? (attributionPosition as ControlPosition)
+              : "top-right"
+          }
+        />
+      )}
       {enableInteractions && showControls && (
         <>
           <GlobeControl position="top-right" />
