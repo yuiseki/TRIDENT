@@ -27,6 +27,7 @@ export const BaseMap: React.FC<{
   onMapMoveStart?: (e: ViewStateChangeEvent) => void;
   onMapMoveEnd?: (e: ViewStateChangeEvent) => void;
   enableInteractions?: boolean;
+  showControls?: boolean;
   attributionPosition?: string;
   onGeolocate?: ((e: GeolocateResultEvent) => void) | undefined;
 }> = ({
@@ -42,6 +43,7 @@ export const BaseMap: React.FC<{
   onMapMoveStart,
   onMapMoveEnd,
   enableInteractions = true,
+  showControls = true,
   attributionPosition = "top-right",
   onGeolocate,
 }) => {
@@ -209,7 +211,7 @@ export const BaseMap: React.FC<{
             : "top-right"
         }
       />
-      {enableInteractions && (
+      {enableInteractions && showControls && (
         <>
           <GlobeControl position="top-right" />
           <NavigationControl

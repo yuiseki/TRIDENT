@@ -255,6 +255,7 @@ export default function SplitPage() {
               onMapMoveStart={(event) => handleMapMoveStart(index, event)}
               onMapMove={(event) => handleMapMove(index, event)}
               onMapMoveEnd={(event) => handleMapMoveEnd(index, event)}
+              showControls={false}
             />
           </div>
         ))}
