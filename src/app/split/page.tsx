@@ -29,9 +29,18 @@ import { StaticRegionsGlobeMap } from "@/components/StaticRegionsGlobeMap";
 type RegionConfig = {
   name: string;
   title: string;
-  incidents: string[];
-  responders?: string[];
   description: string;
+  updatedAt: Date;
+  type: string;
+  countries: string[];
+  organizations: string[];
+  activitiesCount: number;
+  adminUnitsCount: number;
+  priorityNeeds: string[];
+  sources: {
+    url: string;
+    title: string;
+  }[];
   data?: { name: string; amt: number; pv: number; uv: number }[];
 };
 
@@ -58,9 +67,15 @@ export default function SplitPage() {
       return {
         name: disaster.countries[0],
         title: disaster.title,
-        incidents: disaster.incidents,
-        responders: disaster.responders,
         description: disaster.description,
+        updatedAt: disaster.updatedAt,
+        type: disaster.type,
+        countries: disaster.countries,
+        organizations: disaster.organizations,
+        activitiesCount: disaster.activitiesCount,
+        adminUnitsCount: disaster.adminUnitsCount,
+        priorityNeeds: disaster.priorityNeeds,
+        sources: disaster.sources,
         data: generateRandomData(),
       };
     });
@@ -125,6 +140,43 @@ export default function SplitPage() {
                     {region.description}
                   </h4>
                 </div>
+                <div
+                  style={{
+                    color: "rgb(0, 158, 219)",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "end",
+                    justifyContent: "end",
+                    position: "absolute",
+                    bottom: "5px",
+                    right: "5px",
+                    padding: "5px",
+                    backgroundColor: "rgba(0, 0, 0, 0.3)",
+                    backdropFilter: "blur(2px)",
+                  }}
+                >
+                  <h4
+                    style={{
+                      fontWeight: "normal",
+                    }}
+                  >
+                    Orgs: {region.organizations.length} 
+                  </h4>
+                  <h4
+                    style={{
+                      fontWeight: "normal",
+                    }}
+                  >
+                    Activities: {region.activitiesCount} 
+                  </h4>
+                  <h4
+                    style={{
+                      fontWeight: "normal",
+                    }}
+                  >
+                    Admin Units: {region.adminUnitsCount} 
+                  </h4>
+                </div>
               </StaticRegionsGlobeMap>
             </div>
             <div
@@ -142,33 +194,52 @@ export default function SplitPage() {
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "start",
-                  justifyContent: "start",
+                  justifyContent: "space-between",
                   height: "100%",
                   width: "50%",
                   paddingTop: "1%",
+                  paddingBottom: "1%",
                   color: "rgb(0, 158, 219)",
                 }}
               >
                 <p>
-                  <strong>インシデント：</strong>
+                  <strong>優先ニーズ：</strong>
                   <span
                     style={{
                       fontSize: "0.9em",
                     }}
                   >
-                    {region.incidents.join(", ")}
+                    {region.priorityNeeds.join(", ")}
                   </span>
                 </p>
                 <p>
-                  <strong>対応組織：</strong>
                   <span
                     style={{
                       fontSize: "0.9em",
                     }}
                   >
-                    {region.responders
-                      ? region.responders.join(", ")
-                      : "情報なし"}
+                    Updated at: {region.updatedAt.toLocaleDateString()}
+                  </span>
+                  <span>
+                    ,{" "}
+                  </span>
+                  <span>
+                    Sources: {region.sources.map((item, idx) => {
+                      return (
+                        <>
+                        <a
+                          key={idx}
+                          href={item.url}
+                          title={item.title}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{ color: "rgba(0, 158, 219, 0.8)" }}
+                        >
+                          {idx}
+                        </a>{" "}
+                        </>
+                      );
+                    })}
                   </span>
                 </p>
               </div>
