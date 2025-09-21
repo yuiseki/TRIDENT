@@ -587,8 +587,9 @@ main.tridentMain {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.recharts-cartesian-axis-tick-value {
-  font-size: 0.4em !important;
+.recharts-legend-item-text,
+.recharts-cartesian-axis-tick-value > tspan {
+  font-size: 0.6em !important;
 }
 
 @media screen and (max-width: 600px) {

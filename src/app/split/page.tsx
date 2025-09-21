@@ -45,7 +45,8 @@ const generateRandomData = () => {
       name: `Page ${String.fromCharCode(65 + i)}`,
       amt: Math.floor(Math.random() * 200) + 100,
       pv: Math.floor(Math.random() * 200) + 100,
-      uv: Math.floor(Math.random() * 100) + 100,
+      uv: Math.floor(Math.random() * 200) + 100,
+      nv: Math.floor(Math.random() * 200) + 100,
     });
   }
   return data;
@@ -347,8 +348,31 @@ const generateRandomIncidentsFromSeed = (
     (cluster) => cluster.relatedIncidentsJa
   );
   const uniqueIncidents = Array.from(new Set(allIncidents));
-  const randomIndex = seed % uniqueIncidents.length;
-  return uniqueIncidents.slice(randomIndex, randomIndex + count);
+
+  // シード値を使った疑似乱数生成器
+  const seededRandom = (s: number) => {
+    const x = Math.sin(s) * 10000;
+    return x - Math.floor(x);
+  };
+
+  const result: string[] = [];
+  const usedIndices = new Set<number>();
+
+  for (let i = 0; i < count && result.length < uniqueIncidents.length; i++) {
+    let randomValue = seededRandom(seed + i * 7 + result.length * 13);
+    let index = Math.floor(randomValue * uniqueIncidents.length);
+
+    // 重複を避けるため、使用済みのインデックスをスキップ
+    while (usedIndices.has(index)) {
+      randomValue = seededRandom(seed + i * 7 + result.length * 13 + index);
+      index = Math.floor(randomValue * uniqueIncidents.length);
+    }
+
+    usedIndices.add(index);
+    result.push(uniqueIncidents[index]);
+  }
+
+  return result;
 };
 
 export default function SplitPage() {
@@ -366,13 +390,20 @@ export default function SplitPage() {
     []
   );
 
+  const randomIntValueForIndex = useCallback((index: number) => {
+    return (index * 37) % 100;
+  }, []);
+
   const regions = useMemo<RegionConfig[]>(
     () => [
       {
         name: "アジア太平洋",
-        incident: generateRandomIncidentsFromSeed(1, 2).join(", "),
+        incident: generateRandomIncidentsFromSeed(
+          randomIntValueForIndex(1),
+          2
+        ).join(", "),
         responders: respondersByIncidentJa(
-          generateRandomIncidentsFromSeed(1, 1)
+          generateRandomIncidentsFromSeed(randomIntValueForIndex(1), 1)
         ),
         longitude: 139.6917,
         latitude: 35.6895,
@@ -383,9 +414,12 @@ export default function SplitPage() {
       },
       {
         name: "ヨーロッパ",
-        incident: generateRandomIncidentsFromSeed(2, 2).join(", "),
+        incident: generateRandomIncidentsFromSeed(
+          randomIntValueForIndex(2),
+          2
+        ).join(", "),
         responders: respondersByIncidentJa(
-          generateRandomIncidentsFromSeed(2, 2)
+          generateRandomIncidentsFromSeed(randomIntValueForIndex(2), 2)
         ),
         longitude: 2.3522,
         latitude: 48.8566,
@@ -396,9 +430,12 @@ export default function SplitPage() {
       },
       {
         name: "北アメリカ",
-        incident: generateRandomIncidentsFromSeed(3, 2).join(", "),
+        incident: generateRandomIncidentsFromSeed(
+          randomIntValueForIndex(3),
+          2
+        ).join(", "),
         responders: respondersByIncidentJa(
-          generateRandomIncidentsFromSeed(3, 2)
+          generateRandomIncidentsFromSeed(randomIntValueForIndex(3), 2)
         ),
         longitude: -74.006,
         latitude: 40.7128,
@@ -409,9 +446,12 @@ export default function SplitPage() {
       },
       {
         name: "南アメリカ",
-        incident: generateRandomIncidentsFromSeed(4, 2).join(", "),
+        incident: generateRandomIncidentsFromSeed(
+          randomIntValueForIndex(4),
+          2
+        ).join(", "),
         responders: respondersByIncidentJa(
-          generateRandomIncidentsFromSeed(4, 2)
+          generateRandomIncidentsFromSeed(randomIntValueForIndex(4), 2)
         ),
         longitude: -58.3816,
         latitude: -34.6037,
@@ -422,9 +462,12 @@ export default function SplitPage() {
       },
       {
         name: "アフリカ",
-        incident: generateRandomIncidentsFromSeed(5, 2).join(", "),
+        incident: generateRandomIncidentsFromSeed(
+          randomIntValueForIndex(5),
+          2
+        ).join(", "),
         responders: respondersByIncidentJa(
-          generateRandomIncidentsFromSeed(5, 2)
+          generateRandomIncidentsFromSeed(randomIntValueForIndex(5), 2)
         ),
         longitude: 18.4241,
         latitude: -33.9249,
@@ -435,9 +478,12 @@ export default function SplitPage() {
       },
       {
         name: "中東",
-        incident: generateRandomIncidentsFromSeed(6, 2).join(", "),
+        incident: generateRandomIncidentsFromSeed(
+          randomIntValueForIndex(6),
+          2
+        ).join(", "),
         responders: respondersByIncidentJa(
-          generateRandomIncidentsFromSeed(6, 2)
+          generateRandomIncidentsFromSeed(randomIntValueForIndex(6), 2)
         ),
         longitude: 51.5074,
         latitude: 25.2769,
@@ -614,7 +660,7 @@ export default function SplitPage() {
               padding: "10px",
             }}
           >
-            <div style={{ height: "75%" }}>
+            <div style={{ height: "70%" }}>
               <BaseMap
                 id={`map-${index}`}
                 mapRef={mapRefs[index]}
@@ -628,11 +674,24 @@ export default function SplitPage() {
                 showAtmosphere={true}
                 showAttribution={false}
                 showControls={false}
-              />
+              >
+                <h3
+                  style={{
+                    color: "rgb(0, 158, 219)",
+                    position: "absolute",
+                    top: "5px",
+                    left: "0px",
+                    fontWeight: "bold",
+                    fontSize: "1.4em",
+                  }}
+                >
+                  {region.name}
+                </h3>
+              </BaseMap>
             </div>
             <div
               style={{
-                height: "28%",
+                height: "33%",
                 display: "flex",
                 flexDirection: "row",
                 alignItems: "center",
@@ -652,22 +711,28 @@ export default function SplitPage() {
                   color: "rgb(0, 158, 219)",
                 }}
               >
-                <h3
-                  style={{
-                    fontWeight: "bold",
-                    fontSize: "1.2em",
-                  }}
-                >
-                  {region.name}
-                </h3>
-                <p><strong>インシデント：</strong>{region.incident}</p>
-                <p><strong>対応組織：</strong>{region.responders?.join(", ") ?? "なし"}</p>
+                <p>
+                  <strong>インシデント：</strong>
+                  <span
+                    style={{
+                      fontSize: "0.9em",
+                    }}
+                  >
+                    {region.incident}
+                  </span>
+                </p>
+                <p>
+                  <strong>対応組織：</strong>
+                  <span
+                    style={{
+                      fontSize: "0.9em",
+                    }}
+                  >
+                    {region.responders?.join(", ") ?? "なし"}
+                  </span>
+                </p>
               </div>
-              <ResponsiveContainer
-                height={"100%"}
-                width="50%"
-                style={{ padding: "2%" }}
-              >
+              <ResponsiveContainer height={"100%"} width="50%">
                 <ComposedChart
                   accessibilityLayer
                   barCategoryGap="10%"
@@ -677,7 +742,7 @@ export default function SplitPage() {
                     bottom: 0,
                     left: 0,
                     right: 0,
-                    top: 10,
+                    top: 15,
                   }}
                   syncMethod="index"
                 >
@@ -687,29 +752,36 @@ export default function SplitPage() {
                     dataKey="uv"
                     orientation="left"
                     yAxisId={0}
+                    ticks={[0, 50, 100, 150, 200, 250, 300]}
                     tick={{ fill: "rgba(0, 158, 219, 0.8)" }}
                   />
-                  <Legend />
                   <Area
                     dataKey="amt"
                     name="影響面積"
                     fill="rgba(0, 158, 219, 0.4)"
-                    stroke="rgba(0, 158, 219, 0.4)"
+                    stroke="rgba(0, 158, 219, 0.6)"
                     type="monotone"
                   />
                   <Bar
                     dataKey="uv"
-                    name="発生件数"
+                    name="要救助者"
                     fill="rgba(0, 158, 219, 0.6)"
                     barSize={20}
                   />
                   <Line
                     dataKey="pv"
-                    name="死傷者数"
-                    fill="rgba(0, 158, 219, 0.8)"
-                    stroke="rgba(0, 158, 219, 0.8)"
-                    strokeDasharray="2 2"
+                    name="支援者"
+                    fill="rgba(74, 128, 70, 0.8)"
+                    stroke="rgba(74, 128, 70, 0.8)"
                     type="monotone"
+                  />
+                  <Line
+                    dataKey="nv"
+                    name="損壊施設"
+                    fill="rgba(185, 117, 72, 0.6)"
+                    stroke="rgba(185, 117, 72, 0.6)"
+                    type="monotone"
+                    yAxisId={0}
                   />
                 </ComposedChart>
               </ResponsiveContainer>
