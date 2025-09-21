@@ -22,16 +22,17 @@ import {
   Area,
   Legend,
 } from "recharts";
+import { incidents } from "@/constants/Incidents";
+import { responders } from "@/constants/Responders";
 
 type RegionConfig = {
   name: string;
-  incident?: string;
+  title: string;
+  incidents: string[];
   responders?: string[];
+  description: string;
   longitude: number;
   latitude: number;
-  zoom: number;
-  bearing?: number;
-  pitch?: number;
   data?: { name: string; amt: number; pv: number; uv: number }[];
 };
 
@@ -52,328 +53,157 @@ const generateRandomData = () => {
   return data;
 };
 
-const respondersList = [
-  // System-wide coordination
-  { name: "OCHA", field: "Coordination", domain: "Inter-Cluster Coordination" },
-
-  // Protection cluster + AoRs
-  { name: "UNHCR", field: "Protection", domain: "Cluster" },
-  { name: "UNFPA", field: "Protection", domain: "GBV AoR" },
-  { name: "UNICEF", field: "Protection", domain: "Child Protection AoR" },
-  { name: "UNMAS", field: "Protection", domain: "Mine Action AoR" },
-  { name: "NRC", field: "Protection", domain: "HLP AoR" },
-  { name: "UN-Habitat", field: "Protection", domain: "HLP AoR" },
-
-  // CCCM
-  { name: "IOM", field: "CCCM", domain: "Cluster (Natural disasters lead)" },
-  { name: "UNHCR", field: "CCCM", domain: "Cluster (Conflict lead)" },
-
-  // Shelter
-  { name: "UNHCR", field: "Shelter", domain: "Cluster (Conflict lead)" },
-  {
-    name: "IFRC",
-    field: "Shelter",
-    domain: "Cluster (Natural disasters convenor/lead)",
-  },
-
-  // Education
-  { name: "UNICEF", field: "Education", domain: "Cluster (Co-lead)" },
-  {
-    name: "Save the Children",
-    field: "Education",
-    domain: "Cluster (Co-lead)",
-  },
-
-  // Food Security
-  { name: "FAO", field: "Food Security", domain: "Cluster (Co-lead)" },
-  { name: "WFP", field: "Food Security", domain: "Cluster (Co-lead)" },
-
-  // Health
-  { name: "WHO", field: "Health", domain: "Cluster" },
-
-  // Nutrition
-  { name: "UNICEF", field: "Nutrition", domain: "Cluster" },
-
-  // WASH
-  { name: "UNICEF", field: "WASH", domain: "Cluster" },
-
-  // Logistics
-  { name: "WFP", field: "Logistics", domain: "Cluster" },
-
-  // Emergency Telecommunications
-  { name: "WFP", field: "Emergency Telecommunications", domain: "Cluster" },
-
-  // Early Recovery
-  { name: "UNDP", field: "Early Recovery", domain: "Cluster" },
-];
-
-// responders が対応するべきインシデントのリスト
-const clusters = [
-  {
-    name: "Protection",
-    nameJa: "保護",
-    relatedIncidents: [
-      "Conflicts",
-      "Terrorism",
-      "Mass displacement",
-      "GBV",
-      "Child rights violations",
-      "Mines/ERW",
-      "Forced evictions",
-      "HLP disputes",
-    ],
-    relatedIncidentsJa: [
-      "紛争",
-      "テロ",
-      "大規模移動・避難",
-      "性暴力",
-      "子どもの権利侵害",
-      "地雷・不発弾",
-      "強制立ち退き",
-      "住居・土地・財産問題",
-    ],
-  },
-  {
-    name: "CCCM",
-    nameJa: "キャンプ管理",
-    relatedIncidents: [
-      "Mass displacement",
-      "IDP camp establishment",
-      "Conflicts",
-      "Sudden-onset disasters",
-    ],
-    relatedIncidentsJa: [
-      "大規模避難",
-      "国内避難民キャンプ設置",
-      "紛争",
-      "突発災害",
-    ],
-  },
-  {
-    name: "Shelter",
-    nameJa: "シェルター",
-    relatedIncidents: [
-      "Earthquakes",
-      "Floods",
-      "Cyclones/Typhoons",
-      "Urban fires",
-      "Conflicts",
-      "Winter emergencies",
-    ],
-    relatedIncidentsJa: [
-      "地震",
-      "洪水",
-      "サイクロン／台風",
-      "都市火災",
-      "紛争",
-      "冬季危機",
-    ],
-  },
-  {
-    name: "Education",
-    nameJa: "教育",
-    relatedIncidents: [
-      "School closures in emergencies",
-      "Conflicts",
-      "Natural disasters",
-      "Displacement",
-      "Attacks on education",
-    ],
-    relatedIncidentsJa: [
-      "緊急時の学校閉鎖",
-      "紛争",
-      "自然災害",
-      "避難・移動",
-      "教育への攻撃",
-    ],
-  },
-  {
-    name: "Food Security",
-    nameJa: "食料安全保障",
-    relatedIncidents: [
-      "Drought",
-      "Floods",
-      "Conflicts",
-      "Economic shocks",
-      "Market disruptions",
-      "Locust infestations",
-      "Famine risk",
-    ],
-    relatedIncidentsJa: [
-      "干ばつ",
-      "洪水",
-      "紛争",
-      "経済ショック",
-      "市場機能不全",
-      "サバクトビバッタ被害",
-      "飢饉リスク",
-    ],
-  },
-  {
-    name: "Health",
-    nameJa: "保健",
-    relatedIncidents: [
-      "Disease outbreaks",
-      "Pandemics",
-      "Mass casualty events",
-      "Conflicts",
-      "Natural disasters",
-      "Health system collapse",
-    ],
-    relatedIncidentsJa: [
-      "感染症の流行",
-      "パンデミック",
-      "多数傷病者事案",
-      "紛争",
-      "自然災害",
-      "保健医療体制の崩壊",
-    ],
-  },
-  {
-    name: "Nutrition",
-    nameJa: "栄養",
-    relatedIncidents: [
-      "Famine/IPC Phase 5",
-      "Acute malnutrition",
-      "Drought",
-      "Food price spikes",
-      "Disease outbreaks",
-    ],
-    relatedIncidentsJa: [
-      "飢饉（IPC5）",
-      "急性栄養不良",
-      "干ばつ",
-      "食料価格高騰",
-      "感染症流行",
-    ],
-  },
-  {
-    name: "WASH",
-    nameJa: "水・衛生（WASH）",
-    relatedIncidents: [
-      "Cholera and waterborne diseases",
-      "Floods",
-      "Drought/Water scarcity",
-      "Displacement settlements",
-      "Damage to water systems",
-    ],
-    relatedIncidentsJa: [
-      "コレラ等の水系感染症",
-      "洪水",
-      "干ばつ・水不足",
-      "避難・仮設居住地",
-      "給水・下水インフラ被害",
-    ],
-  },
-  {
-    name: "Logistics",
-    nameJa: "物流",
-    relatedIncidents: [
-      "Access constraints",
-      "Damaged infrastructure",
-      "Air/sea/land corridor disruptions",
-      "Import restrictions",
-      "Insecurity",
-    ],
-    relatedIncidentsJa: [
-      "アクセス制約",
-      "インフラ損壊",
-      "空路・海路・陸路の寸断",
-      "輸入規制",
-      "治安悪化",
-    ],
-  },
-  {
-    name: "Emergency Telecommunications",
-    nameJa: "緊急通信",
-    relatedIncidents: [
-      "Communications outages",
-      "Power failures",
-      "Natural disasters",
-      "Conflicts",
-      "Coordination ICT needs",
-    ],
-    relatedIncidentsJa: [
-      "通信途絶",
-      "停電",
-      "自然災害",
-      "紛争",
-      "調整用ICT需要",
-    ],
-  },
-  {
-    name: "Early Recovery",
-    nameJa: "早期回復",
-    relatedIncidents: [
-      "Post-disaster recovery",
-      "Post-conflict recovery",
-      "Debris management",
-      "Livelihoods restoration",
-      "Governance and essential services",
-    ],
-    relatedIncidentsJa: [
-      "災害後復旧",
-      "紛争後復旧",
-      "瓦礫撤去",
-      "生計回復",
-      "統治・基礎サービス再建",
-    ],
-  },
-];
-
-const respondersByIncidentJa = (incidents: string[]): string[] => {
+const respondersByIncidentJa = (inputIncidents: string[]): string[] => {
   const respondersSet = new Set<string>();
 
-  incidents.forEach((incident) => {
-    const matched = clusters.find((item) =>
-      item.relatedIncidentsJa.includes(incident)
-    );
-    if (matched) {
-      respondersList.forEach((responder) => {
-        if (responder.field === matched.name) {
-          respondersSet.add(responder.name);
-        }
-      });
-    }
+  inputIncidents.forEach((incidentJa) => {
+    incidents.forEach((incident) => {
+      if (incident.relatedIncidentsJa.includes(incidentJa)) {
+        responders.forEach((responder) => {
+          if (responder.field === incident.name) {
+            respondersSet.add(responder.name);
+          }
+        });
+      }
+    });
   });
-
   return Array.from(respondersSet);
 };
 
-const generateRandomIncidentsFromSeed = (
-  seed: number,
-  count: number
-): string[] => {
-  const allIncidents = clusters.flatMap(
-    (cluster) => cluster.relatedIncidentsJa
-  );
-  const uniqueIncidents = Array.from(new Set(allIncidents));
-
-  // シード値を使った疑似乱数生成器
-  const seededRandom = (s: number) => {
-    const x = Math.sin(s) * 10000;
-    return x - Math.floor(x);
-  };
-
-  const result: string[] = [];
-  const usedIndices = new Set<number>();
-
-  for (let i = 0; i < count && result.length < uniqueIncidents.length; i++) {
-    let randomValue = seededRandom(seed + i * 7 + result.length * 13);
-    let index = Math.floor(randomValue * uniqueIncidents.length);
-
-    // 重複を避けるため、使用済みのインデックスをスキップ
-    while (usedIndices.has(index)) {
-      randomValue = seededRandom(seed + i * 7 + result.length * 13 + index);
-      index = Math.floor(randomValue * uniqueIncidents.length);
-    }
-
-    usedIndices.add(index);
-    result.push(uniqueIncidents[index]);
-  }
-
-  return result;
-};
+const realDisasters = [
+  {
+    id: "AC-2025-000098-PAN",
+    title: "Panama: River Pollution - Jun 2025",
+    type: "Technological Disaster",
+    incidents: [
+      "Cholera and waterborne diseases",
+      "Damage to water systems",
+      "Water trucking needs",
+      "Livelihood disruption",
+    ],
+    countries: ["Panama"],
+    description:
+      "ラ・ビジャ川の汚染で飲料水供給が停止し、広域で給水支援が必要。",
+    responders: ["IFRC", "OCHA"],
+  },
+  {
+    id: "WF-2025-000109-SYR",
+    title: "Syria: Wild Fires - Jul 2025",
+    type: "Wild Fire",
+    incidents: [
+      "Mass displacement",
+      "Air quality deterioration",
+      "Shelter/NFI needs",
+      "Health risks (smoke)",
+    ],
+    countries: ["Syria"],
+    description: "ラタキア周辺で大規模森林火災が発生し避難と消火支援が継続。",
+    responders: ["SARC", "IFRC", "OCHA"],
+  },
+  {
+    id: "FL-2025-000112-HND",
+    title: "Honduras: Floods - Jun 2025",
+    type: "Flood",
+    incidents: ["Flooding", "Landslides", "Shelter damage", "WASH needs"],
+    countries: ["Honduras"],
+    description:
+      "豪雨による洪水・土砂災害で被害が拡大し、緊急WASHと避難支援が必要。",
+    responders: ["IFRC", "OCHA"],
+  },
+  {
+    id: "ST-2025-000097-GNB",
+    title: "Guinea-Bissau: Severe Local Storm - Jun 2025",
+    type: "Severe Local Storm",
+    incidents: [
+      "Wind damage",
+      "Roof destruction",
+      "Power outages",
+      "WASH needs",
+    ],
+    countries: ["Guinea-Bissau"],
+    description: "ガブ地域を強風と豪雨が直撃し家屋損壊と生活基盤に被害。",
+    responders: ["IFRC", "OCHA"],
+  },
+  {
+    id: "EP-2025-000087-CIV",
+    title: "Côte d'Ivoire: Cholera Outbreak - Jun 2025",
+    type: "Epidemic",
+    incidents: [
+      "Cholera and waterborne diseases",
+      "Strain on health services",
+      "Risk communication needs",
+      "WASH response",
+    ],
+    countries: ["Côte d'Ivoire"],
+    description: "15年ぶりのコレラ流行が発生し、保健・WASH体制の強化が急務。",
+    responders: ["UNICEF", "IFRC", "WHO", "OCHA"],
+  },
+  {
+    id: "FL-2025-000151-YEM",
+    title: "Yemen: Floods - Aug 2025",
+    type: "Flood",
+    incidents: [
+      "Flooding",
+      "Infrastructure damage",
+      "Disease risk",
+      "Shelter/NFI needs",
+    ],
+    countries: ["Yemen"],
+    description: "南部で洪水が発生し数十万人規模で支援需要が増大。",
+    responders: ["IRC", "OCHA"],
+  },
+  {
+    id: "WF-2025-000163-BOL",
+    title: "Bolivia: Wild Fires - Aug 2025",
+    type: "Wild Fire",
+    incidents: [
+      "Large wildfires",
+      "Air quality deterioration",
+      "Livelihood disruption",
+      "Protection risks",
+    ],
+    countries: ["Bolivia (Plurinational State of)"],
+    description: "東部中心に大規模山林火災が拡大し緊急支援が展開。",
+    responders: ["IFRC", "OCHA"],
+  },
+  {
+    id: "EQ-2025-000153-AFG",
+    title: "Afghanistan: Earthquakes - Aug 2025",
+    type: "Earthquake",
+    incidents: [
+      "Building collapse",
+      "Mass displacement",
+      "Trauma/injuries",
+      "Emergency shelter",
+    ],
+    countries: ["Afghanistan"],
+    description: "東部でM6.0地震が連続発生し死傷と家屋倒壊が広範に発生。",
+    responders: ["IFRC", "OCHA", "IOM", "UNICEF", "WHO"],
+  },
+  {
+    id: "FL-2025-000145-GNQ",
+    title: "Equatorial Guinea: Floods - Aug 2025",
+    type: "Flood",
+    incidents: [
+      "Urban flooding",
+      "WASH disruption",
+      "Health risks",
+      "Shelter damage",
+    ],
+    countries: ["Equatorial Guinea"],
+    description: "マラボを中心に豪雨浸水が発生し都市部のWASH・保健対応が必要。",
+    responders: ["IFRC", "OCHA"],
+  },
+  {
+    id: "FL-2025-000126-LAO",
+    title: "Lao PDR: Floods - Jul 2025",
+    type: "Flood",
+    incidents: ["Flooding", "Landslides", "Transport disruption", "WASH needs"],
+    countries: ["Lao People's Democratic Republic"],
+    description: "熱帯低気圧・台風影響の豪雨で各県が冠水し交通と生活がまひ。",
+    responders: ["IFRC", "OCHA"],
+  },
+];
 
 export default function SplitPage() {
   // メルカトル図法の緯度歪み係数を計算
@@ -394,107 +224,20 @@ export default function SplitPage() {
     return (index * 37) % 100;
   }, []);
 
-  const regions = useMemo<RegionConfig[]>(
-    () => [
-      {
-        name: "アジア太平洋",
-        incident: generateRandomIncidentsFromSeed(
-          randomIntValueForIndex(1),
-          2
-        ).join(", "),
-        responders: respondersByIncidentJa(
-          generateRandomIncidentsFromSeed(randomIntValueForIndex(1), 1)
-        ),
-        longitude: 139.6917,
-        latitude: 35.6895,
-        zoom: calculateZoomLevel(35.6895),
-        bearing: 0,
-        pitch: 0,
+  const regions = useMemo<RegionConfig[]>(() => {
+    return realDisasters.map((disaster, index) => {
+      return {
+        name: disaster.countries[0],
+        title: disaster.title,
+        incidents: disaster.incidents,
+        responders: disaster.responders,
+        description: disaster.description,
+        longitude: 0 + index * 10,
+        latitude: -10 + index * 5,
         data: generateRandomData(),
-      },
-      {
-        name: "ヨーロッパ",
-        incident: generateRandomIncidentsFromSeed(
-          randomIntValueForIndex(2),
-          2
-        ).join(", "),
-        responders: respondersByIncidentJa(
-          generateRandomIncidentsFromSeed(randomIntValueForIndex(2), 2)
-        ),
-        longitude: 2.3522,
-        latitude: 48.8566,
-        zoom: calculateZoomLevel(48.8566),
-        bearing: 0,
-        pitch: 0,
-        data: generateRandomData(),
-      },
-      {
-        name: "北アメリカ",
-        incident: generateRandomIncidentsFromSeed(
-          randomIntValueForIndex(3),
-          2
-        ).join(", "),
-        responders: respondersByIncidentJa(
-          generateRandomIncidentsFromSeed(randomIntValueForIndex(3), 2)
-        ),
-        longitude: -74.006,
-        latitude: 40.7128,
-        zoom: calculateZoomLevel(40.7128),
-        bearing: 0,
-        pitch: 0,
-        data: generateRandomData(),
-      },
-      {
-        name: "南アメリカ",
-        incident: generateRandomIncidentsFromSeed(
-          randomIntValueForIndex(4),
-          2
-        ).join(", "),
-        responders: respondersByIncidentJa(
-          generateRandomIncidentsFromSeed(randomIntValueForIndex(4), 2)
-        ),
-        longitude: -58.3816,
-        latitude: -34.6037,
-        zoom: calculateZoomLevel(-34.6037),
-        bearing: 0,
-        pitch: 0,
-        data: generateRandomData(),
-      },
-      {
-        name: "アフリカ",
-        incident: generateRandomIncidentsFromSeed(
-          randomIntValueForIndex(5),
-          2
-        ).join(", "),
-        responders: respondersByIncidentJa(
-          generateRandomIncidentsFromSeed(randomIntValueForIndex(5), 2)
-        ),
-        longitude: 18.4241,
-        latitude: -33.9249,
-        zoom: calculateZoomLevel(-33.9249),
-        bearing: 0,
-        pitch: 0,
-        data: generateRandomData(),
-      },
-      {
-        name: "中東",
-        incident: generateRandomIncidentsFromSeed(
-          randomIntValueForIndex(6),
-          2
-        ).join(", "),
-        responders: respondersByIncidentJa(
-          generateRandomIncidentsFromSeed(randomIntValueForIndex(6), 2)
-        ),
-        longitude: 51.5074,
-        latitude: 25.2769,
-        zoom: calculateZoomLevel(25.2769),
-        bearing: 0,
-        pitch: 0,
-        data: generateRandomData(),
-      },
-    ],
-    [calculateZoomLevel]
-  );
+      };
+    });
+  }, [calculateZoomLevel]);
 
   const mapRefs = useMemo<MutableRefObject<MapRef | null>[]>(
     () =>
@@ -505,146 +248,13 @@ export default function SplitPage() {
     [regions.length]
   );
 
-  const suppressMoveEventsRef = useRef<boolean[]>(
-    Array(regions.length).fill(false)
-  );
-  const lastSyncTimeRef = useRef<number>(0);
-  const isUserDraggingRef = useRef<boolean>(false);
-  const [activeMapIndex, setActiveMapIndex] = useState<number>(-1);
-
-  const performSync = useCallback(
-    (sourceMapIndex: number, viewState: ViewState) => {
-      const sourceRegion = regions[sourceMapIndex];
-      if (!sourceRegion) {
-        return;
-      }
-
-      const longitude = viewState.longitude ?? sourceRegion.longitude;
-      const latitude = viewState.latitude ?? sourceRegion.latitude;
-      const zoom = viewState.zoom ?? sourceRegion.zoom;
-      const bearing = viewState.bearing ?? sourceRegion.bearing ?? 0;
-      const pitch = viewState.pitch ?? sourceRegion.pitch ?? 0;
-
-      const lngOffset = longitude - sourceRegion.longitude;
-      const latOffset = latitude - sourceRegion.latitude;
-
-      const sourceExpectedZoom = calculateZoomLevel(latitude);
-      const zoomDiffFromExpected = zoom - sourceExpectedZoom;
-
-      mapRefs.forEach((mapRef, index) => {
-        if (index === sourceMapIndex) {
-          return;
-        }
-
-        const targetRegion = regions[index];
-        const targetMapRef = mapRef.current;
-        if (!targetRegion || !targetMapRef) {
-          return;
-        }
-
-        const mapInstance = targetMapRef.getMap?.();
-        if (!mapInstance) {
-          return;
-        }
-
-        suppressMoveEventsRef.current[index] = true;
-
-        const clearSuppression = () => {
-          if (!suppressMoveEventsRef.current[index]) {
-            return;
-          }
-          suppressMoveEventsRef.current[index] = false;
-        };
-
-        const fallback = setTimeout(clearSuppression, SYNC_THROTTLE_MS * 4);
-
-        mapInstance.once("moveend", () => {
-          clearTimeout(fallback);
-          clearSuppression();
-        });
-
-        const targetCenterLatitude = Math.max(
-          -85,
-          Math.min(85, targetRegion.latitude + latOffset)
-        );
-        const targetCenterLongitudeRaw = targetRegion.longitude + lngOffset;
-        const targetCenterLongitude =
-          ((((targetCenterLongitudeRaw + 180) % 360) + 360) % 360) - 180;
-        const targetExpectedZoom = calculateZoomLevel(targetCenterLatitude);
-        const targetZoom = Math.max(
-          MINIMUM_ZOOM,
-          targetExpectedZoom + zoomDiffFromExpected
-        );
-
-        mapInstance.jumpTo({
-          center: [targetCenterLongitude, targetCenterLatitude] as [
-            number,
-            number
-          ],
-          zoom: targetZoom,
-          bearing,
-          pitch,
-        });
-      });
-    },
-    [calculateZoomLevel, mapRefs, regions]
-  );
-
-  const handleMapMove = useCallback(
-    (sourceMapIndex: number, event: ViewStateChangeEvent) => {
-      if (suppressMoveEventsRef.current[sourceMapIndex]) {
-        return;
-      }
-
-      if (!isUserDraggingRef.current || activeMapIndex !== sourceMapIndex) {
-        return;
-      }
-
-      const now = Date.now();
-      if (now - lastSyncTimeRef.current < SYNC_THROTTLE_MS) {
-        return;
-      }
-
-      lastSyncTimeRef.current = now;
-      performSync(sourceMapIndex, event.viewState);
-    },
-    [activeMapIndex, performSync]
-  );
-
-  const handleMapMoveStart = useCallback(
-    (index: number, event: ViewStateChangeEvent) => {
-      if (suppressMoveEventsRef.current[index]) {
-        return;
-      }
-
-      isUserDraggingRef.current = true;
-      setActiveMapIndex(index);
-      lastSyncTimeRef.current = Date.now();
-      performSync(index, event.viewState);
-    },
-    [performSync]
-  );
-
-  const handleMapMoveEnd = useCallback(
-    (index: number, event: ViewStateChangeEvent) => {
-      if (suppressMoveEventsRef.current[index]) {
-        return;
-      }
-
-      performSync(index, event.viewState);
-      isUserDraggingRef.current = false;
-      setActiveMapIndex(-1);
-    },
-    [performSync]
-  );
-
   return (
     <main
       style={{
-        width: "100vw",
+        width: "99vw",
         height: "100vh",
         display: "grid",
-        gridTemplateColumns: "1fr 1fr 1fr",
+        gridTemplateColumns: "1fr 1fr",
         gridTemplateRows: "1fr 1fr",
         padding: "5px",
       }}
@@ -658,6 +268,7 @@ export default function SplitPage() {
               border: "1px solid rgba(0, 158, 219, 0.6)",
               margin: "5px",
               padding: "10px",
+              minHeight: "500px"
             }}
           >
             <div style={{ height: "70%" }}>
@@ -666,11 +277,8 @@ export default function SplitPage() {
                 mapRef={mapRefs[index]}
                 longitude={region.longitude}
                 latitude={region.latitude}
-                zoom={region.zoom}
+                zoom={calculateZoomLevel(region.latitude)}
                 style="/map_styles/dark-matter-gl-style/style.json"
-                onMapMoveStart={(event) => handleMapMoveStart(index, event)}
-                onMapMove={(event) => handleMapMove(index, event)}
-                onMapMoveEnd={(event) => handleMapMoveEnd(index, event)}
                 showAtmosphere={true}
                 showAttribution={false}
                 showControls={false}
@@ -685,7 +293,7 @@ export default function SplitPage() {
                     fontSize: "1.4em",
                   }}
                 >
-                  {region.name}
+                  {region.title}
                 </h3>
               </BaseMap>
             </div>
@@ -712,13 +320,23 @@ export default function SplitPage() {
                 }}
               >
                 <p>
+                  <strong>概要：</strong>
+                  <span
+                    style={{
+                      fontSize: "0.9em",
+                    }}
+                  >
+                    {region.description}
+                  </span>
+                </p>
+                <p>
                   <strong>インシデント：</strong>
                   <span
                     style={{
                       fontSize: "0.9em",
                     }}
                   >
-                    {region.incident}
+                    {region.incidents.join(", ")}
                   </span>
                 </p>
                 <p>
@@ -728,7 +346,7 @@ export default function SplitPage() {
                       fontSize: "0.9em",
                     }}
                   >
-                    {region.responders?.join(", ") ?? "なし"}
+                    {region.responders ? region.responders.join(", ") : "情報なし"}
                   </span>
                 </p>
               </div>
