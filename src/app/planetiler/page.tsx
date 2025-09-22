@@ -68,9 +68,18 @@ export default function PlanetilerPage() {
         pitch: 0,
       },
       {
-        name: "Global Connectivity",
+        name: "Peacekeeping Network",
         styleUrl:
-          "https://tile.yuiseki.net/styles/global_connectivity/style.json",
+          "https://tile.yuiseki.net/styles/peacekeeping_network/style.json",
+        longitude: 0,
+        latitude: 0,
+        zoom: calculateZoomLevel(0),
+        bearing: 0,
+        pitch: 0,
+      },
+      {
+        name: "UCDP Conflicts",
+        styleUrl: "http://tile.yuiseki.net/styles/conflicts/style.json",
         longitude: 0,
         latitude: 0,
         zoom: calculateZoomLevel(0),
