@@ -84,11 +84,11 @@ export default function SplitPage() {
   return (
     <main
       style={{
-        width: "99vw",
-        height: "100vh",
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr 1fr",
-        gridTemplateRows: "1fr 1fr",
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "space-evenly",
+        alignContent: "start",
+        flexWrap: "wrap",
         padding: "5px",
       }}
     >
@@ -102,6 +102,7 @@ export default function SplitPage() {
               margin: "5px",
               padding: "10px",
               height: "500px",
+              width: "600px",
             }}
           >
             <div style={{ height: "70%", position: "relative" }}>
@@ -193,7 +194,7 @@ export default function SplitPage() {
                 }}
               >
                 <StaticRegionsGlobeMap
-                  mapStyle="/map_styles/dark-matter-gl-style/style.json"
+                  mapStyle="/map_styles/fiord-color-gl-style/style.json"
                   regionNames={[region.name]}
                   showAttribution={false}
                   showControls={false}

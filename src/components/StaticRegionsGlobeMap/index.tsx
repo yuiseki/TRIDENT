@@ -68,7 +68,7 @@ export const StaticRegionsGlobeMap: React.FC<{
       mapPadding={mapPadding}
       geojsonWithStyleList={geojsonWithStyleList}
       projection="globe"
-      showAtmosphere={true}
+      showAtmosphere={false}
       showAttribution={showAttribution}
       showControls={showControls}
       showAsCircle={true}
