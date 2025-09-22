@@ -29,6 +29,7 @@ export const BaseMap: React.FC<{
   attributionPosition?: string;
   showAttribution?: boolean;
   showAtmosphere?: boolean;
+  showAsCircle?: boolean;
   onMapLoad?: () => void;
   onMapMove?: (e: ViewStateChangeEvent) => void;
   onMapMoveStart?: (e: ViewStateChangeEvent) => void;
@@ -49,6 +50,7 @@ export const BaseMap: React.FC<{
   attributionPosition = "top-right",
   showAttribution = true,
   showAtmosphere = false,
+  showAsCircle = false,
   onMapLoad,
   onMapMove,
   onMapMoveStart,
@@ -191,6 +193,7 @@ export const BaseMap: React.FC<{
         display: "block",
         width: "100%",
         height: "100%",
+        borderRadius: `${showAsCircle ? "50%" : "0px"}`,
       }}
       id={id}
       ref={mapRef}

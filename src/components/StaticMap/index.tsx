@@ -21,6 +21,7 @@ export const StaticMap: React.FC<{
   showAtmosphere?: boolean;
   showAttribution?: boolean;
   showControls?: boolean;
+  showAsCircle?: boolean;
 }> = ({
   children,
   style = "/map_styles/fiord-color-gl-style/style.json",
@@ -31,6 +32,7 @@ export const StaticMap: React.FC<{
   showAtmosphere = false,
   showAttribution = false,
   showControls = false,
+  showAsCircle = false,
 }) => {
   const mapRef = useRef<MapRef | null>(null);
 
@@ -82,6 +84,7 @@ export const StaticMap: React.FC<{
         showAtmosphere={showAtmosphere}
         showAttribution={showAttribution}
         showControls={showControls}
+        showAsCircle={showAsCircle}
         attributionPosition="bottom-right"
       >
         {children}

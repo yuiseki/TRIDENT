@@ -17,7 +17,7 @@ export const StaticRegionsGlobeMap: React.FC<{
 }> = ({
   children,
   mapStyle = "/map_styles/fiord-color-gl-style/style.json",
-  mapPadding = 50,
+  mapPadding = 80,
   regionNames,
   showAttribution = false,
   showControls = false,
@@ -71,7 +71,8 @@ export const StaticRegionsGlobeMap: React.FC<{
       showAtmosphere={true}
       showAttribution={showAttribution}
       showControls={showControls}
-      maxZoom={1.8}
+      showAsCircle={true}
+      maxZoom={6}
     >
       {children}
     </StaticMap>

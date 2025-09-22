@@ -101,16 +101,18 @@ export default function SplitPage() {
               border: "1px solid rgba(0, 158, 219, 0.6)",
               margin: "5px",
               padding: "10px",
-              minHeight: "350px",
-              maxHeight: "500px",
+              height: "500px",
             }}
           >
-            <div style={{ height: "70%" }}>
-              <StaticRegionsGlobeMap
-                mapStyle="/map_styles/dark-matter-gl-style/style.json"
-                regionNames={[region.name]}
-                showAttribution={false}
-                showControls={false}
+            <div style={{ height: "70%", position: "relative" }}>
+              <div
+                style={{
+                  position: "absolute",
+                  zIndex: 100,
+                  width: "100%",
+                  height: "100%",
+                  pointerEvents: "none",
+                }}
               >
                 <div
                   style={{
@@ -160,24 +162,43 @@ export default function SplitPage() {
                       fontWeight: "normal",
                     }}
                   >
-                    Orgs: {region.organizations.length} 
+                    Orgs: {region.organizations.length}
                   </h4>
                   <h4
                     style={{
                       fontWeight: "normal",
                     }}
                   >
-                    Activities: {region.activitiesCount} 
+                    Activities: {region.activitiesCount}
                   </h4>
                   <h4
                     style={{
                       fontWeight: "normal",
                     }}
                   >
-                    Admin Units: {region.adminUnitsCount} 
+                    Admin Units: {region.adminUnitsCount}
                   </h4>
                 </div>
-              </StaticRegionsGlobeMap>
+              </div>
+              <div
+                style={{
+                  position: "absolute",
+                  zIndex: 90,
+                  width: "335px",
+                  height: "335px",
+                  pointerEvents: "none",
+                  left: "50%",
+                  top: "50%",
+                  transform: "translate(-50%, -50%)",
+                }}
+              >
+                <StaticRegionsGlobeMap
+                  mapStyle="/map_styles/dark-matter-gl-style/style.json"
+                  regionNames={[region.name]}
+                  showAttribution={false}
+                  showControls={false}
+                />
+              </div>
             </div>
             <div
               style={{
@@ -220,23 +241,22 @@ export default function SplitPage() {
                   >
                     Updated at: {region.updatedAt.toLocaleDateString()}
                   </span>
+                  <span>, </span>
                   <span>
-                    ,{" "}
-                  </span>
-                  <span>
-                    Sources: {region.sources.map((item, idx) => {
+                    Sources:{" "}
+                    {region.sources.map((item, idx) => {
                       return (
                         <>
-                        <a
-                          key={idx}
-                          href={item.url}
-                          title={item.title}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          style={{ color: "rgba(0, 158, 219, 0.8)" }}
-                        >
-                          {idx}
-                        </a>{" "}
+                          <a
+                            key={idx}
+                            href={item.url}
+                            title={item.title}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ color: "rgba(0, 158, 219, 0.8)" }}
+                          >
+                            {idx}
+                          </a>{" "}
                         </>
                       );
                     })}
