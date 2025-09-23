@@ -1,5 +1,6 @@
 import "./globals.css";
 import { SessionProvider } from "next-auth/react";
+import { zenKaku } from "./fonts";
 
 const APP_NAME = "TRIDENT";
 const APP_DEFAULT_TITLE = "TRIDENT";
@@ -49,7 +50,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={zenKaku.variable}>
       <body>
         <SessionProvider>{children}</SessionProvider>
       </body>
