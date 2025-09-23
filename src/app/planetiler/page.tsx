@@ -59,8 +59,8 @@ export default function PlanetilerPage() {
         pitch: 0,
       },
       {
-        name: "UCDP Conflicts",
-        styleUrl: "https://tile.yuiseki.net/styles/conflicts/style.json",
+        name: "Water Stress",
+        styleUrl: "https://tile.yuiseki.net/styles/water_stress/style.json",
         longitude: 0,
         latitude: 0,
         zoom: calculateZoomLevel(0),
@@ -68,8 +68,8 @@ export default function PlanetilerPage() {
         pitch: 0,
       },
       {
-        name: "Water Stress",
-        styleUrl: "https://tile.yuiseki.net/styles/water_stress/style.json",
+        name: "UCDP Conflicts",
+        styleUrl: "https://tile.yuiseki.net/styles/conflicts/style.json",
         longitude: 0,
         latitude: 0,
         zoom: calculateZoomLevel(0),
