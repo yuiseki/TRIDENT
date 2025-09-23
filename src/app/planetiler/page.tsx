@@ -41,15 +41,6 @@ export default function PlanetilerPage() {
   const styles = useMemo<StyleConfig[]>(
     () => [
       {
-        name: "Fiord color",
-        styleUrl: "/map_styles/fiord-color-gl-style/style.json",
-        longitude: 0,
-        latitude: 0,
-        zoom: calculateZoomLevel(0),
-        bearing: 0,
-        pitch: 0,
-      },
-      {
         name: "Railways",
         styleUrl: "https://tile.yuiseki.net/styles/railways/style.json",
         longitude: 0,
@@ -61,16 +52,6 @@ export default function PlanetilerPage() {
       {
         name: "Rivers",
         styleUrl: "https://tile.yuiseki.net/styles/rivers/style.json",
-        longitude: 0,
-        latitude: 0,
-        zoom: calculateZoomLevel(0),
-        bearing: 0,
-        pitch: 0,
-      },
-      {
-        name: "Peacekeeping Network",
-        styleUrl:
-          "https://tile.yuiseki.net/styles/peacekeeping_network/style.json",
         longitude: 0,
         latitude: 0,
         zoom: calculateZoomLevel(0),
@@ -96,8 +77,37 @@ export default function PlanetilerPage() {
         pitch: 0,
       },
       {
+        name: "Peacekeeping Network",
+        styleUrl:
+          "https://tile.yuiseki.net/styles/peacekeeping_network/style.json",
+        longitude: 0,
+        latitude: 0,
+        zoom: calculateZoomLevel(0),
+        bearing: 0,
+        pitch: 0,
+      },
+      {
+        name: "Global Seismic Alerts",
+        styleUrl:
+          "https://tile.yuiseki.net/styles/global_seismic_alerts/style.json",
+        longitude: 0,
+        latitude: 0,
+        zoom: calculateZoomLevel(0),
+        bearing: 0,
+        pitch: 0,
+      },
+      {
         name: "Biodiversity",
         styleUrl: "https://tile.yuiseki.net/styles/biodiversity/style.json",
+        longitude: 0,
+        latitude: 0,
+        zoom: calculateZoomLevel(0),
+        bearing: 0,
+        pitch: 0,
+      },
+      {
+        name: "Fiord color",
+        styleUrl: "/map_styles/fiord-color-gl-style/style.json",
         longitude: 0,
         latitude: 0,
         zoom: calculateZoomLevel(0),
