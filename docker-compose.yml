@@ -20,15 +20,22 @@ services:
       timeout: 5s
       retries: 10
   ollama:
-    image: ollama/ollama
+    image: ollama/ollama:latest
     volumes:
       - ollama:/root/.ollama
     ports:
       - 1143:11434
     networks:
       - trident
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: ["gpu"]
     healthcheck:
-      test: ["CMD", "bash", "-c", "ollama list | grep qwen2.5:1.5b"]
+      test: ["CMD", "bash", "-c", "ollama list | grep gemma3:4b"]
       interval: 10s
       timeout: 10s
       retries: 1000
@@ -40,7 +47,7 @@ services:
     entrypoint: /bin/sh
     command:
       - "-c"
-      - "sleep 5; OLLAMA_HOST=ollama:11434 ollama pull snowflake-arctic-embed:22m; OLLAMA_HOST=ollama:11434 ollama pull qwen2.5:1.5b"
+      - "sleep 5; OLLAMA_HOST=ollama:11434 ollama pull snowflake-arctic-embed:22m; OLLAMA_HOST=ollama:11434 ollama pull gemma3:4b"
     networks:
       - trident
   nextjs:
