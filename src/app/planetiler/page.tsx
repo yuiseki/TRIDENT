@@ -41,6 +41,15 @@ export default function PlanetilerPage() {
   const styles = useMemo<StyleConfig[]>(
     () => [
       {
+        name: "Fiord color",
+        styleUrl: "/map_styles/fiord-color-gl-style/style.json",
+        longitude: 0,
+        latitude: 0,
+        zoom: calculateZoomLevel(0),
+        bearing: 0,
+        pitch: 0,
+      },
+      {
         name: "Railways",
         styleUrl: "https://tile.yuiseki.net/styles/railways/style.json",
         longitude: 0,
@@ -68,7 +77,7 @@ export default function PlanetilerPage() {
         pitch: 0,
       },
       {
-        name: "UCDP Conflicts",
+        name: "UCDP Armed Conflicts",
         styleUrl: "https://tile.yuiseki.net/styles/conflicts/style.json",
         longitude: 0,
         latitude: 0,
@@ -77,7 +86,7 @@ export default function PlanetilerPage() {
         pitch: 0,
       },
       {
-        name: "Peacekeeping Network",
+        name: "UN Peacekeeping Network",
         styleUrl:
           "https://tile.yuiseki.net/styles/peacekeeping_network/style.json",
         longitude: 0,
@@ -97,17 +106,8 @@ export default function PlanetilerPage() {
         pitch: 0,
       },
       {
-        name: "Biodiversity",
+        name: "Global Biodiversity",
         styleUrl: "https://tile.yuiseki.net/styles/biodiversity/style.json",
-        longitude: 0,
-        latitude: 0,
-        zoom: calculateZoomLevel(0),
-        bearing: 0,
-        pitch: 0,
-      },
-      {
-        name: "Fiord color",
-        styleUrl: "/map_styles/fiord-color-gl-style/style.json",
         longitude: 0,
         latitude: 0,
         zoom: calculateZoomLevel(0),
@@ -266,7 +266,7 @@ export default function PlanetilerPage() {
         width: "100vw",
         height: "100vh",
         display: "grid",
-        gridTemplateColumns: "1fr 1fr 1fr",
+        gridTemplateColumns: "1fr 1fr 1fr 1fr",
         gridTemplateRows: "1fr 1fr",
         gap: "2px",
       }}
@@ -282,11 +282,29 @@ export default function PlanetilerPage() {
               zoom={style.zoom}
               style={style.styleUrl}
               projection="globe"
+              showAttribution={false}
               onMapMoveStart={(event) => handleMapMoveStart(index, event)}
               onMapMove={(event) => handleMapMove(index, event)}
               onMapMoveEnd={(event) => handleMapMoveEnd(index, event)}
               showControls={false}
-            />
+            >
+              <h1
+                style={{
+                  position: "absolute",
+                  top: "10px",
+                  left: "10px",
+                  margin: 0,
+                  padding: "5px",
+                  backgroundColor: "rgba(0, 0, 0, 0.3)",
+                  backdropFilter: "blur(2px)",
+                  color: "white",
+                  fontSize: "1.5em",
+                  zIndex: 10000,
+                }}
+              >
+                {style.name}
+              </h1>
+            </BaseMap>
           </div>
         ))}
       </MapProvider>
