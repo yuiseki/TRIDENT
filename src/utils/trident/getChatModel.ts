@@ -3,7 +3,7 @@ import { ChatOpenAI } from "@langchain/openai";
 
 export const getChatModel = () => {
   if (process.env.USE_OLLAMA === "1") {
-    const model = process.env.OLLAMA_CHAT_MODEL !== undefined ? process.env.OLLAMA_CHAT_MODEL : "qwen2.5:1.5b";
+    const model = process.env.OLLAMA_CHAT_MODEL !== undefined ? process.env.OLLAMA_CHAT_MODEL : "qwen3:8b";
     const baseUrl = process.env.OLLAMA_BASE_URL !== undefined ? process.env.OLLAMA_BASE_URL : "http://ollama:11434";
     console.log("Using Ollama model:", model);
     console.log("Ollama base URL:", baseUrl);
