@@ -172,7 +172,15 @@ DisplayMap: リビアの国連施設の地図を表示します。`,
 
 export const setupConcernPlaceExtractorDynamicPrompt = async () => {
   let embeddings: OpenAIEmbeddings;
-  embeddings = new OpenAIEmbeddings();
+  if (process.env.CLOUDFLARE_AI_GATEWAY) {
+    embeddings = new OpenAIEmbeddings({
+      configuration: {
+        baseURL: process.env.CLOUDFLARE_AI_GATEWAY + "/openai",
+      },
+    });
+  } else {
+    embeddings = new OpenAIEmbeddings();
+  }
   const memoryVectorStore = new MemoryVectorStore(embeddings);
   const concernPlaceExtractExampleSelector =
     new SemanticSimilarityExampleSelector({
