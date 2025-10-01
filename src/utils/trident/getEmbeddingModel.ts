@@ -13,12 +13,6 @@ export const getEmbeddingModel = () => {
           ? process.env.OLLAMA_BASE_URL
           : "http://127.0.0.1:11434",
     });
-  } else if (process.env.CLOUDFLARE_AI_GATEWAY) {
-    return new OpenAIEmbeddings({
-      configuration: {
-        baseURL: process.env.CLOUDFLARE_AI_GATEWAY + "/openai",
-      },
-    });
   } else {
     return new OpenAIEmbeddings();
   }
