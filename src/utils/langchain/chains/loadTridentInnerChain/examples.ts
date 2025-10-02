@@ -145,6 +145,25 @@ EmojiForConcern: Railway stations, 🚉
     `,
   },
   {
+    input: "文京区のラーメン屋を表示して",
+    output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+TitleOfMap: 文京区のラーメン屋
+Area: Bunkyō, Tokyo
+AreaWithConcern: Bunkyō, Tokyo, Ramen shops
+EmojiForConcern: Ramen shops, 🍜
+ColorForConcern: Ramen shops, lightyellow
+`,
+  },
+  {
+    input: "文京区の駅を表示して",
+    output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+TitleOfMap: 文京区の駅
+Area: Bunkyō, Tokyo
+AreaWithConcern: Bunkyō, Tokyo, Railway stations
+EmojiForConcern: Railway stations, 🚉
+    `,
+  },
+  {
     input: `台東区を表示して
 ラーメン屋を表示して
 文京区まで広げて`,
