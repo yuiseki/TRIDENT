@@ -93,7 +93,7 @@ const CountryResultsSourceLayer: React.FC<{
           right: 5,
           bottom: 0,
         },
-        duration: 500,
+        duration: 10000,
       });
     }
   }, [results, map]);

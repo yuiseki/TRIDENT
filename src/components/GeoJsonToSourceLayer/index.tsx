@@ -73,6 +73,7 @@ export const GeoJsonToSourceLayer: React.FC<{
           center.geometry.coordinates[1],
         ],
         zoom: zoomTo,
+        duration: 10000,
       });
     },
     [map]

@@ -18,7 +18,7 @@ export const fitBoundsToGeoJson = (
     ],
     {
       padding: padding,
-      duration: 1000,
+      duration: 10000,
     }
   );
 };
