@@ -26,7 +26,7 @@ Area: South Sudan`,
     input: "東京都中央区",
     output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
 TitleOfMap: 東京都中央区
-Area: Chuo, Tokyo`,
+Area: Chūō, Tokyo`,
   },
   {
     input: "静岡県伊豆市",
@@ -141,8 +141,7 @@ ColorForConcern: Soba noodle shops, lightgreen`,
 TitleOfMap: 台東区の駅
 Area: Taito, Tokyo
 AreaWithConcern: Taito, Tokyo, Railway stations
-EmojiForConcern: Railway stations, 🚉
-    `,
+EmojiForConcern: Railway stations, 🚉`,
   },
   {
     input: "文京区のラーメン屋を表示して",
@@ -151,8 +150,7 @@ TitleOfMap: 文京区のラーメン屋
 Area: Bunkyō, Tokyo
 AreaWithConcern: Bunkyō, Tokyo, Ramen shops
 EmojiForConcern: Ramen shops, 🍜
-ColorForConcern: Ramen shops, lightyellow
-`,
+ColorForConcern: Ramen shops, lightyellow`,
   },
   {
     input: "文京区の駅を表示して",
@@ -160,8 +158,25 @@ ColorForConcern: Ramen shops, lightyellow
 TitleOfMap: 文京区の駅
 Area: Bunkyō, Tokyo
 AreaWithConcern: Bunkyō, Tokyo, Railway stations
-EmojiForConcern: Railway stations, 🚉
-    `,
+EmojiForConcern: Railway stations, 🚉`,
+  },
+  {
+    input: `中央区の駅を表示して
+東京都`,
+    output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+TitleOfMap: 東京都中央区の駅
+Area: Chūō, Tokyo
+AreaWithConcern: Chūō, Tokyo, Railway stations
+EmojiForConcern: Railway stations, 🚉`,
+  },
+  {
+    input: `中央区の駅を表示して
+神戸市`,
+    output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+TitleOfMap: 神戸市中央区の駅
+Area: Chuo Ward, Kobe
+AreaWithConcern: Chuo Ward, Kobe, Railway stations
+EmojiForConcern: Railway stations, 🚉`,
   },
   {
     input: `台東区を表示して
@@ -175,6 +190,15 @@ AreaWithConcern: Taito, Tokyo, Ramen shops
 AreaWithConcern: Bunkyō, Tokyo, Ramen shops
 EmojiForConcern: Ramen shops, 🍜
 ColorForConcern: Ramen shops, lightyellow`,
+  },
+  {
+    input: `台東区を表示して
+ラーメン屋を表示して
+中央区まで広げて`,
+    output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+TitleOfMap: 台東区と中央区のラーメン屋
+Area: Taito, Tokyo
+Area: Chūō, Tokyo`,
   },
   {
     input: `レバノンを表示して
