@@ -321,6 +321,26 @@ area["name:en"="Kosovo"]->.searchArea;
 out geom;`,
   },
   {
+    input: "AreaWithConcern: Bunkyō, Tokyo, Ramen shops",
+    output: `[out:json][timeout:30000];
+area["name:en"="Tokyo"]->.outer;
+area["name:en"="Bunkyō"]->.inner;
+(
+  nwr["amenity"="restaurant"]["cuisine"="ramen"](area.inner)(area.outer);
+);
+out geom;`,
+  },
+  {
+    input: "AreaWithConcern: Chūō, Tokyo, Ramen shops",
+    output: `[out:json][timeout:30000];
+area["name:en"="Tokyo"]->.outer;
+area["name:en"="Chūō"]->.inner;
+(
+  nwr["amenity"="restaurant"]["cuisine"="ramen"](area.inner)(area.outer);
+);
+out geom;`,
+  },
+  {
     input: "AreaWithConcern: Taito, Tokyo, Ramen shops",
     output: `[out:json][timeout:30000];
 area["name:en"="Tokyo"]->.outer;
