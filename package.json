@@ -73,7 +73,7 @@
     "eslint-config-next": "^15.0.1",
     "eslint-config-prettier": "^10.0.0",
     "eslint-plugin-react": "^7.37.2",
-    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-hooks": "^6.0.0",
     "happy-css-modules": "^4.0.0",
     "jest": "^30.0.0",
     "next-transpile-modules": "^10.0.1",
