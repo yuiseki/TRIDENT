@@ -78,6 +78,33 @@ area["name:en"="Tokyo"]->.searchArea;
 out geom;`,
   },
   {
+    input: "Area: Bunkyō, Tokyo",
+    output: `[out:json][timeout:30000];
+area["name:en"="Tokyo"]->.searchArea;
+(
+  relation["boundary"="administrative"]["name:en"="Bunkyō"](area.searchArea);
+);
+out geom;`,
+  },
+  {
+    input: "Area: Chūō, Tokyo",
+    output: `[out:json][timeout:30000];
+area["name:en"="Tokyo"]->.searchArea;
+(
+  relation["boundary"="administrative"]["admin_level"=7]["name:en"="Chūō"](area.searchArea);
+);
+out geom;`,
+  },
+  {
+    input: "Area: Chuo, Kobe",
+    output: `[out:json][timeout:30000];
+area["name:en"="Kobe"]->.searchArea;
+(
+  relation["boundary"="administrative"]["admin_level"=8]["name:en"="Chuo Ward"](area.searchArea);
+);
+out geom;`,
+  },
+  {
     input: "Area: Kanazawa, Ishikawa Prefecture",
     output: `[out:json][timeout:30000];
 area["name:en"="Ishikawa Prefecture"]->.searchArea;
