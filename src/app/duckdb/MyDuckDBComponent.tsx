@@ -449,7 +449,7 @@ ${inputText}
             longitude: 0,
             zoom: 1,
           }}
-          mapStyle="https://tile.openstreetmap.jp/styles/osm-bright/style.json"
+          mapStyle="/map_styles/fiord-color-gl-style/style.json"
         >
           {results && <CountryResultsSourceLayer results={results} />}
         </Map>
