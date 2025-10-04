@@ -88,10 +88,10 @@ const CountryResultsSourceLayer: React.FC<{
       ] as LngLatBoundsLike;
       map?.fitBounds(bounds, {
         padding: {
-          top: 300,
-          left: 5,
-          right: 5,
-          bottom: 0,
+          top: 100,
+          left: 100,
+          right: 100,
+          bottom: 100,
         },
         duration: 10000,
       });
@@ -244,6 +244,24 @@ FROM countries
 WHERE name IN ('Japan', 'Brazil')
     `,
   },
+  {
+    question: "日本から一番近い国は？",
+    query: `
+SELECT name as name,
+  MIN(
+    ST_Distance(
+      (SELECT geom FROM countries WHERE name = 'Japan'),
+      geom
+    )
+  ) as value,
+  ST_AsGeoJSON(geom) as geom
+FROM countries
+WHERE name != 'Japan'
+GROUP BY name, geom
+ORDER BY value ASC
+LIMIT 1
+    `,
+  }
 ];
 
 type MyDuckDBTableColumn = {
@@ -405,6 +423,18 @@ ${inputText}
             onSubmit={onSubmit}
           />
         </div>
+      </div>
+      <div
+        style={{
+          position: "fixed",
+          bottom: 60,
+          left: 0,
+          width: "100vw",
+          padding: "10px 30px",
+          zIndex: 1000,
+          backgroundColor: "rgba(0, 0, 0, 0.5)",
+        }}
+      >
         {lastInputText && (
           <div
             style={{
@@ -425,10 +455,10 @@ ${inputText}
           <pre
             style={{
               marginTop: "10px",
-              backgroundColor: "lightgray",
+              backgroundColor: "rgba(211, 211, 211, 0.6)",
               color: "black",
               padding: "8px",
-              fontSize: "14px",
+              fontSize: "10px",
               whiteSpace: "pre-line",
               wordBreak: "break-all",
             }}
