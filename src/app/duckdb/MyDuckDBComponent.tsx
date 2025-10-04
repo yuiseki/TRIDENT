@@ -444,10 +444,11 @@ ${inputText}
         <Map
           id="countriesMap"
           style={{ width: "100vw", height: "100vh" }}
+          projection={"globe"}
           initialViewState={{
             latitude: 0,
             longitude: 0,
-            zoom: 1,
+            zoom: 2,
           }}
           mapStyle="/map_styles/fiord-color-gl-style/style.json"
         >

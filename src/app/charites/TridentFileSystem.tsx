@@ -375,8 +375,9 @@ export const TridentFileSystem: React.FC = () => {
           initialViewState={{
             longitude: 1,
             latitude: 1,
-            zoom: 4,
+            zoom: 1,
           }}
+          projection={"globe"}
           style={{ width: "100vw", height: "80vh" }}
           mapStyle={styleJsonOutput ? styleJsonOutput : {}}
         >
