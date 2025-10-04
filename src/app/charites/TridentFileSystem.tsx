@@ -192,7 +192,8 @@ export const TridentFileSystem: React.FC = () => {
             const fileHandle = entry as FileSystemFileHandle;
             const file = await fileHandle.getFile();
             const content = await file.text();
-            results.push({ path: path + name, content });
+            const contentWithTripleBackQuotes = `\`\`\`\yaml\n# path: ${path + name}\n${content}\n\`\`\``;
+            results.push({ path: path + name, content: contentWithTripleBackQuotes });
           } else {
             const subDirHandle = await dirHandle.getDirectoryHandle(name);
             await walk(subDirHandle, path + name + "/");
@@ -210,6 +211,7 @@ export const TridentFileSystem: React.FC = () => {
       const regex = /```(?:yaml)?\n([\s\S]+)\n```/;
       const resMatched = resContent.match(regex);
       const resBody = resMatched ? resMatched[1] : null;
+
       if (!resBody) {
         throw new Error("AIによるファイルの編集に失敗しました");
       }
