@@ -375,7 +375,7 @@ export const TridentFileSystem: React.FC = () => {
           initialViewState={{
             longitude: 1,
             latitude: 1,
-            zoom: 1,
+            zoom: 2,
           }}
           projection={"globe"}
           style={{ width: "100vw", height: "80vh" }}
