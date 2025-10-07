@@ -30,6 +30,7 @@ export const BaseMap: React.FC<{
   showAttribution?: boolean;
   showAtmosphere?: boolean;
   showAsCircle?: boolean;
+  autoRotate?: boolean;
   onMapLoad?: () => void;
   onMapMove?: (e: ViewStateChangeEvent) => void;
   onMapMoveStart?: (e: ViewStateChangeEvent) => void;
@@ -51,6 +52,7 @@ export const BaseMap: React.FC<{
   showAttribution = true,
   showAtmosphere = false,
   showAsCircle = false,
+  autoRotate = false,
   onMapLoad,
   onMapMove,
   onMapMoveStart,
@@ -118,6 +120,11 @@ export const BaseMap: React.FC<{
 
   // リアルタイム更新用のインターバル
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  
+  // 自動回転用の状態とインターバル
+  const [isAutoRotating, setIsAutoRotating] = React.useState(autoRotate);
+  const [mapLoaded, setMapLoaded] = React.useState(false);
+  const rotationIntervalRef = useRef<number | null>(null);
 
   useEffect(() => {
     if (!showAtmosphere) return;
@@ -142,12 +149,62 @@ export const BaseMap: React.FC<{
     };
   }, [mapRef, showAtmosphere]);
 
+  // 自動回転の処理
+  useEffect(() => {
+    if (!isAutoRotating || projection !== "globe" || !mapLoaded) {
+      if (rotationIntervalRef.current) {
+        cancelAnimationFrame(rotationIntervalRef.current);
+        rotationIntervalRef.current = null;
+      }
+      return;
+    }
+
+    const mapInstance = mapRef.current?.getMap?.();
+    if (!mapInstance) return;
+
+    let currentLng = mapInstance.getCenter().lng;
+    const rotationSpeed = 0.05; // 回転速度（度/フレーム）
+    console.log('[BaseMap] Starting auto-rotation (clockwise)');
+
+    let frameCount = 0;
+    const rotate = () => {
+      if (!isAutoRotating) return;
+      
+      const mapInstance = mapRef.current?.getMap?.();
+      if (!mapInstance) return;
+
+      // 時計回りに回転（経度を増加）
+      currentLng += rotationSpeed;
+      if (currentLng > 180) {
+        currentLng -= 360;
+      }
+
+      mapInstance.easeTo({
+        center: [currentLng, mapInstance.getCenter().lat],
+        duration: 0,
+        easing: (t: number) => t,
+      });
+
+      rotationIntervalRef.current = requestAnimationFrame(rotate);
+    };
+
+    rotate();
+
+    return () => {
+      if (rotationIntervalRef.current) {
+        cancelAnimationFrame(rotationIntervalRef.current);
+        rotationIntervalRef.current = null;
+      }
+    };
+  }, [isAutoRotating, projection, mapRef, mapLoaded]);
+
   const onLoad = useCallback(() => {
     const mapInstance = mapRef.current?.getMap?.();
     if (mapInstance && showAtmosphere) {
       applyAtmosphere(mapInstance);
     }
-    console.log("Map loaded");
+    console.log("[BaseMap] Map loaded");
+    setMapLoaded(true);
     if (onMapLoad) {
       onMapLoad();
     }
@@ -171,11 +228,16 @@ export const BaseMap: React.FC<{
 
   const onMoveStart = useCallback(
     (event: ViewStateChangeEvent) => {
+      // ユーザーの操作による移動の場合、自動回転を停止
+      if (isAutoRotating && event.originalEvent) {
+        console.log('[BaseMap] User interaction detected. Stopping auto-rotation.');
+        setIsAutoRotating(false);
+      }
       if (onMapMoveStart) {
         onMapMoveStart(event);
       }
     },
-    [onMapMoveStart]
+    [onMapMoveStart, isAutoRotating]
   );
 
   const onMoveEnd = useCallback(

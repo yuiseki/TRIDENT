@@ -414,16 +414,14 @@ export default function Home() {
               zoom={2.5}
               projection="globe"
               style={mapStyleJsonUrl}
+              autoRotate={true}
               onMapLoad={() => {
                 console.log("Map loaded");
               }}
               onMapMoveEnd={(e) => {
-                console.log("Map moved", e.viewState);
                 if (mapRef.current) {
                   const bounds = mapRef.current.getBounds();
                   const center = mapRef.current.getCenter();
-                  console.log("New bounds:", bounds);
-                  console.log("New center:", center);
                   setCenter(center);
                   setBounds(bounds);
                 }
