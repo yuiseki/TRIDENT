@@ -18,6 +18,12 @@ export const tridentDeepExampleList: Array<{
   output: string;
 }> = [
   {
+    input: "Area: Japan",
+    output: `[out:json][timeout:30000];
+relation["boundary"="administrative"]["admin_level"=2]["name:en"="Japan"];
+out geom;`,
+  },
+  {
     input: "Area: Sudan",
     output: `[out:json][timeout:30000];
 relation["boundary"="administrative"]["admin_level"=2]["name:en"="Sudan"];

@@ -18,6 +18,26 @@ Reply: 了解しました。OpenStreetMapのデータに基づいてニューヨ
 Reply: 知道了。我正在生成基于OpenStreetMap数据的纽约市地图。请稍等……`,
   },
   {
+    input: "日本を表示して",
+    output: `Ability: overpass-api
+Reply: 了解しました。OpenStreetMapのデータに基づいて日本を表示する地図を作成しています。しばらくお待ちください……`,
+  },
+  {
+    input: "南スーダンを表示して",
+    output: `Ability: overpass-api
+Reply: 了解しました。OpenStreetMapのデータに基づいて南スーダンを表示する地図を作成しています。しばらくお待ちください……`,
+  },
+  {
+    input: "スーダンを表示して",
+    output: `Ability: overpass-api
+Reply: 了解しました。OpenStreetMapのデータに基づいてスーダンを表示する地図を作成しています。しばらくお待ちください……`,
+  },
+  {
+    input: "石川県を表示して",
+    output: `Ability: overpass-api
+Reply: 了解しました。OpenStreetMapのデータに基づいて石川県を表示する地図を作成しています。しばらくお待ちください……`,
+  },
+  {
     input: "台東区を表示して",
     output: `Ability: overpass-api
 Reply: 了解しました。OpenStreetMapのデータに基づいて台東区を表示する地図を作成しています。しばらくお待ちください……`,

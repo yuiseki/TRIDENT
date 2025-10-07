@@ -23,6 +23,18 @@ Area: Sudan
 Area: South Sudan`,
   },
   {
+    input: "南スーダンを表示して",
+    output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+TitleOfMap: 南スーダン
+Area: South Sudan`,
+  },
+  {
+    input: "スーダンを表示して",
+    output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+TitleOfMap: スーダン
+Area: Sudan`,
+  },
+  {
     input: "東京都中央区",
     output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
 TitleOfMap: 東京都中央区
@@ -63,6 +75,12 @@ Area: Khartoum, Sudan
 Area: Juba, South Sudan`,
   },
   {
+    input: "日本を表示して",
+    output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+TitleOfMap: 日本
+Area: Japan`,
+  },
+  {
     input: "石川県を表示して",
     output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
 TitleOfMap: 石川県
@@ -75,6 +93,31 @@ Area: Ishikawa Prefecture`,
     output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
 TitleOfMap: 石川県金沢市
 Area: Kanazawa, Ishikawa Prefecture`,
+  },
+  {
+    input: `日本を表示して
+台東区のラーメン屋だけ表示して`,
+    output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+TitleOfMap: 台東区のラーメン屋
+Area: Taito, Tokyo
+AreaWithConcern: Taito, Tokyo, Ramen shops
+EmojiForConcern: Ramen shops, 🍜
+ColorForConcern: Ramen shops, lightyellow
+Important note: When user asks to show only specific area with concerns after showing broader area, you MUST replace the broader area with the specific area, not add to it.`,
+  },
+  {
+    input: `日本を表示して
+台東区のラーメン屋だけを表示して
+この地図を文京区まで広げて`,
+    output: `ConfirmHelpful: 地図の作成が完了しました。他にご要望はありますか？私たちは皆さんのお役に立つことができましたでしょうか？
+TitleOfMap: 台東区と文京区のラーメン屋
+Area: Taito, Tokyo
+Area: Bunkyō, Tokyo
+AreaWithConcern: Taito, Tokyo, Ramen shops
+AreaWithConcern: Bunkyō, Tokyo, Ramen shops
+EmojiForConcern: Ramen shops, 🍜
+ColorForConcern: Ramen shops, lightyellow
+Important note: When user asks to expand the map to another area, you MUST add the new area while keeping the existing area and concerns.`,
   },
   {
     input: `石川県を表示して

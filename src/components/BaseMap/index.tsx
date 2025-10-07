@@ -126,6 +126,11 @@ export const BaseMap: React.FC<{
   const [mapLoaded, setMapLoaded] = React.useState(false);
   const rotationIntervalRef = useRef<number | null>(null);
 
+  // autoRotate propの変更を監視してisAutoRotatingを更新
+  useEffect(() => {
+    setIsAutoRotating(autoRotate);
+  }, [autoRotate]);
+
   useEffect(() => {
     if (!showAtmosphere) return;
 
