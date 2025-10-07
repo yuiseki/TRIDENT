@@ -18,12 +18,12 @@ export const getChatModel = () => {
         baseURL: process.env.CLOUDFLARE_AI_GATEWAY + "/openai",
       },
       model: "gpt-5-mini",
-      temperature: 1,
+      temperature: 0,
     });
   } else {
     return new ChatOpenAI({
       model: "gpt-5-mini",
-      temperature: 1,
+      temperature: 0,
     });
   }
 };
