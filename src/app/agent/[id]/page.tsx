@@ -113,7 +113,7 @@ export default function Page() {
             [minLng, minLat],
             [maxLng, maxLat],
           ],
-          { padding: 100, duration: 10000 }
+          { padding: 100, duration: 5000 }
         );
       } catch (error) {
         console.error(error);
