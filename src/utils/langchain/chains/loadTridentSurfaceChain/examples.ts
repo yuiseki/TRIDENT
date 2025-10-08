@@ -1,3 +1,16 @@
+import { PromptTemplate } from "@langchain/core/prompts";
+
+export const tridentSurfaceExamplePrompt = PromptTemplate.fromTemplate(
+  `Input:
+{input}
+
+Output:
+{output}
+`
+);
+
+export const tridentSurfaceExampleInputKeys = ["input"];
+
 export const tridentSurfaceExampleList: Array<{
   input: string;
   output: string;

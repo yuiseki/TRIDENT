@@ -1,9 +1,17 @@
 import { NextResponse } from "next/server";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
 
-import { loadTridentSurfaceChain } from "@/utils/langchain/chains/loadTridentSurfaceChain";
+import {
+  initializeTridentSurfaceExampleList,
+  loadTridentSurfaceChain,
+} from "@/utils/langchain/chains/loadTridentSurfaceChain";
 import { getChatModel } from "@/utils/trident/getChatModel";
 import { getEmbeddingModel } from "@/utils/trident/getEmbeddingModel";
+import { getPGVectorStore } from "@/utils/trident/getPGVectorStore";
+import {
+  createCheckDocumentExists,
+  createCheckTableExists,
+} from "@/utils/langchain/vectorstores/vercel_postgres";
 
 export async function POST(request: Request) {
   console.log("----- ----- -----");
@@ -33,7 +41,20 @@ export async function POST(request: Request) {
   const llm = getChatModel();
   const embeddings = getEmbeddingModel();
 
-  const vectorStore = new MemoryVectorStore(embeddings);
+  const tableName = "trident_surface_example_openai";
+  const vectorStore = await getPGVectorStore(embeddings, tableName);
+
+  const checkTableExists = createCheckTableExists({ vectorStore, tableName });
+  const checkDocumentExists = createCheckDocumentExists({
+    vectorStore,
+    tableName,
+  });
+
+  await initializeTridentSurfaceExampleList({
+    vectorStore,
+    checkTableExists,
+    checkDocumentExists,
+  });
 
   try {
     console.log(

@@ -46,6 +46,7 @@ export async function POST(request: Request) {
     vectorStore,
     tableName,
   });
+
   await initializeTridentInnerExampleList({
     vectorStore,
     checkTableExists,
