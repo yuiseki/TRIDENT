@@ -12,7 +12,71 @@ import {
 } from "@/utils/langchain/vectorstores/vercel_postgres";
 import { getPGVectorStore } from "@/utils/trident/getPGVectorStore";
 
+const innerTableName = "trident_inner_example_openai";
+let innerVectorStorePromise:
+  | Promise<Awaited<ReturnType<typeof getPGVectorStore>>>
+  | null = null;
 let innerExampleInitPromise: Promise<void> | null = null;
+let innerChainPromise:
+  | Promise<Awaited<ReturnType<typeof loadTridentInnerChain>>>
+  | null = null;
+
+const ensureInnerVectorStore = async () => {
+  if (!innerVectorStorePromise) {
+    innerVectorStorePromise = (async () => {
+      const embeddings = getEmbeddingModel();
+      return getPGVectorStore(embeddings, innerTableName);
+    })().catch((error) => {
+      innerVectorStorePromise = null;
+      throw error;
+    });
+  }
+  return innerVectorStorePromise;
+};
+
+const ensureInnerExamplesInitialized = async () => {
+  if (!innerExampleInitPromise) {
+    innerExampleInitPromise = (async () => {
+      const vectorStore = await ensureInnerVectorStore();
+      const checkTableExists = createCheckTableExists({
+        vectorStore,
+        tableName: innerTableName,
+      });
+      const checkDocumentExists = createCheckDocumentExists({
+        vectorStore,
+        tableName: innerTableName,
+      });
+      await initializeTridentInnerExampleList({
+        vectorStore,
+        checkTableExists,
+        checkDocumentExists,
+      });
+    })().catch((error) => {
+      innerExampleInitPromise = null;
+      throw error;
+    });
+  }
+  return innerExampleInitPromise;
+};
+
+const ensureInnerChain = async () => {
+  if (!innerChainPromise) {
+    innerChainPromise = (async () => {
+      const vectorStore = await ensureInnerVectorStore();
+      await ensureInnerExamplesInitialized();
+      const llm = getChatModel();
+      console.log(
+        "Creating inner chain with model:",
+        process.env.USE_OLLAMA === "1" ? "ollama" : "openai"
+      );
+      return loadTridentInnerChain({ llm, vectorStore });
+    })().catch((error) => {
+      innerChainPromise = null;
+      throw error;
+    });
+  }
+  return innerChainPromise;
+};
 
 export async function POST(request: Request) {
   console.log("----- ----- -----");
@@ -37,36 +101,10 @@ export async function POST(request: Request) {
   console.log("chatHistoryLines:");
   console.log(chatHistoryLines.join("\n"));
 
-  const llm = getChatModel();
-  const embeddings = getEmbeddingModel();
-
-  const tableName = "trident_inner_example_openai";
-  const vectorStore = await getPGVectorStore(embeddings, tableName);
-
-  const checkTableExists = createCheckTableExists({ vectorStore, tableName });
-  const checkDocumentExists = createCheckDocumentExists({
-    vectorStore,
-    tableName,
-  });
-
-  if (!innerExampleInitPromise) {
-    innerExampleInitPromise = initializeTridentInnerExampleList({
-      vectorStore,
-      checkTableExists,
-      checkDocumentExists,
-    }).catch((error) => {
-      innerExampleInitPromise = null;
-      throw error;
-    });
-  }
-  await innerExampleInitPromise;
+  await ensureInnerExamplesInitialized();
 
   try {
-    console.log(
-      "Creating inner chain with model:",
-      process.env.USE_OLLAMA === "1" ? "ollama" : "openai"
-    );
-    const innerChain = await loadTridentInnerChain({ llm, vectorStore });
+    const innerChain = await ensureInnerChain();
 
     console.log("Invoking inner chain...");
     const result = await innerChain.invoke({

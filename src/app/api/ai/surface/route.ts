@@ -1,5 +1,4 @@
 import { NextResponse } from "next/server";
-import { MemoryVectorStore } from "langchain/vectorstores/memory";
 
 import {
   initializeTridentSurfaceExampleList,
@@ -13,7 +12,74 @@ import {
   createCheckTableExists,
 } from "@/utils/langchain/vectorstores/vercel_postgres";
 
+const surfaceTableName = "trident_surface_example_openai";
+let surfaceVectorStorePromise:
+  | Promise<Awaited<ReturnType<typeof getPGVectorStore>>>
+  | null = null;
 let surfaceExampleInitPromise: Promise<void> | null = null;
+let surfaceChainPromise:
+  | Promise<Awaited<ReturnType<typeof loadTridentSurfaceChain>>>
+  | null = null;
+
+const ensureSurfaceVectorStore = async () => {
+  if (!surfaceVectorStorePromise) {
+    surfaceVectorStorePromise = (async () => {
+      const embeddings = getEmbeddingModel();
+      return getPGVectorStore(embeddings, surfaceTableName);
+    })().catch((error) => {
+      surfaceVectorStorePromise = null;
+      throw error;
+    });
+  }
+  return surfaceVectorStorePromise;
+};
+
+const ensureSurfaceExamplesInitialized = async () => {
+  if (!surfaceExampleInitPromise) {
+    surfaceExampleInitPromise = (async () => {
+      const vectorStore = await ensureSurfaceVectorStore();
+      const checkTableExists = createCheckTableExists({
+        vectorStore,
+        tableName: surfaceTableName,
+      });
+      const checkDocumentExists = createCheckDocumentExists({
+        vectorStore,
+        tableName: surfaceTableName,
+      });
+      await initializeTridentSurfaceExampleList({
+        vectorStore,
+        checkTableExists,
+        checkDocumentExists,
+      });
+    })().catch((error) => {
+      surfaceExampleInitPromise = null;
+      throw error;
+    });
+  }
+  return surfaceExampleInitPromise;
+};
+
+const ensureSurfaceChain = async () => {
+  if (!surfaceChainPromise) {
+    surfaceChainPromise = (async () => {
+      const vectorStore = await ensureSurfaceVectorStore();
+      await ensureSurfaceExamplesInitialized();
+      const llm = getChatModel();
+      console.log(
+        "Creating surface chain with model:",
+        process.env.USE_OLLAMA === "1" ? "ollama" : "openai"
+      );
+      return loadTridentSurfaceChain({
+        llm,
+        vectorStore,
+      });
+    })().catch((error) => {
+      surfaceChainPromise = null;
+      throw error;
+    });
+  }
+  return surfaceChainPromise;
+};
 
 export async function POST(request: Request) {
   console.log("----- ----- -----");
@@ -40,39 +106,10 @@ export async function POST(request: Request) {
   console.log("chatHistoryLines:");
   console.log(chatHistoryLines.join("\n"));
 
-  const llm = getChatModel();
-  const embeddings = getEmbeddingModel();
-
-  const tableName = "trident_surface_example_openai";
-  const vectorStore = await getPGVectorStore(embeddings, tableName);
-
-  const checkTableExists = createCheckTableExists({ vectorStore, tableName });
-  const checkDocumentExists = createCheckDocumentExists({
-    vectorStore,
-    tableName,
-  });
-
-  if (!surfaceExampleInitPromise) {
-    surfaceExampleInitPromise = initializeTridentSurfaceExampleList({
-      vectorStore,
-      checkTableExists,
-      checkDocumentExists,
-    }).catch((error) => {
-      surfaceExampleInitPromise = null;
-      throw error;
-    });
-  }
-  await surfaceExampleInitPromise;
+  await ensureSurfaceExamplesInitialized();
 
   try {
-    console.log(
-      "Creating surface chain with model:",
-      process.env.USE_OLLAMA === "1" ? "ollama" : "openai"
-    );
-    const surfaceChain = await loadTridentSurfaceChain({
-      llm,
-      vectorStore,
-    });
+    const surfaceChain = await ensureSurfaceChain();
 
     console.log("Invoking surface chain...");
     const surfaceResult = await surfaceChain.invoke({
