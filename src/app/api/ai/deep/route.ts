@@ -11,6 +11,8 @@ import { getChatModel } from "@/utils/trident/getChatModel";
 import { getEmbeddingModel } from "@/utils/trident/getEmbeddingModel";
 import { getPGVectorStore } from "@/utils/trident/getPGVectorStore";
 
+let deepExampleInitPromise: Promise<void> | null = null;
+
 export async function POST(request: Request) {
   const res = await request.json();
   const query = res.query;
@@ -27,11 +29,17 @@ export async function POST(request: Request) {
     tableName,
   });
 
-  await initializeTridentDeepExampleList({
-    vectorStore,
-    checkTableExists,
-    checkDocumentExists,
-  });
+  if (!deepExampleInitPromise) {
+    deepExampleInitPromise = initializeTridentDeepExampleList({
+      vectorStore,
+      checkTableExists,
+      checkDocumentExists,
+    }).catch((error) => {
+      deepExampleInitPromise = null;
+      throw error;
+    });
+  }
+  await deepExampleInitPromise;
 
   try {
     const chain = await loadTridentDeepChain({ llm, vectorStore });

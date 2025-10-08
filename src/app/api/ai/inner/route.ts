@@ -12,6 +12,8 @@ import {
 } from "@/utils/langchain/vectorstores/vercel_postgres";
 import { getPGVectorStore } from "@/utils/trident/getPGVectorStore";
 
+let innerExampleInitPromise: Promise<void> | null = null;
+
 export async function POST(request: Request) {
   console.log("----- ----- -----");
   console.log("----- start inner -----");
@@ -47,11 +49,17 @@ export async function POST(request: Request) {
     tableName,
   });
 
-  await initializeTridentInnerExampleList({
-    vectorStore,
-    checkTableExists,
-    checkDocumentExists,
-  });
+  if (!innerExampleInitPromise) {
+    innerExampleInitPromise = initializeTridentInnerExampleList({
+      vectorStore,
+      checkTableExists,
+      checkDocumentExists,
+    }).catch((error) => {
+      innerExampleInitPromise = null;
+      throw error;
+    });
+  }
+  await innerExampleInitPromise;
 
   try {
     console.log(

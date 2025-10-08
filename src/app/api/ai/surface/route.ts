@@ -13,6 +13,8 @@ import {
   createCheckTableExists,
 } from "@/utils/langchain/vectorstores/vercel_postgres";
 
+let surfaceExampleInitPromise: Promise<void> | null = null;
+
 export async function POST(request: Request) {
   console.log("----- ----- -----");
   console.log("----- start surface -----");
@@ -50,11 +52,17 @@ export async function POST(request: Request) {
     tableName,
   });
 
-  await initializeTridentSurfaceExampleList({
-    vectorStore,
-    checkTableExists,
-    checkDocumentExists,
-  });
+  if (!surfaceExampleInitPromise) {
+    surfaceExampleInitPromise = initializeTridentSurfaceExampleList({
+      vectorStore,
+      checkTableExists,
+      checkDocumentExists,
+    }).catch((error) => {
+      surfaceExampleInitPromise = null;
+      throw error;
+    });
+  }
+  await surfaceExampleInitPromise;
 
   try {
     console.log(
