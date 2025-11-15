@@ -1,6 +1,6 @@
-import { Tool } from "langchain/tools";
+import { ChainTool } from "@langchain/classic/tools";
 
-export class OverpassTokyoRamenCount extends Tool {
+export class OverpassTokyoRamenCount extends ChainTool {
   name = "overpass-tokyo-ramen-count";
   description = `useful for when you need to count number of ramen shops by a name of area. Input: a name of administrative district in Tokyo.`;
 

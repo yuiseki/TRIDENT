@@ -30,11 +30,12 @@
     {
       "groupName": "langchain",
       "matchPackageNames": [
+        "langchain",
+        "@langchain/classic",
         "@langchain/community",
         "@langchain/core",
         "@langchain/openai",
         "@langchain/ollama",
-        "langchain",
         "@langchain/{/,}**"
       ]
     },

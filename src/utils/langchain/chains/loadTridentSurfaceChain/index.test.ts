@@ -1,5 +1,5 @@
 import { loadTridentSurfaceChain } from ".";
-import { MemoryVectorStore } from "langchain/vectorstores/memory";
+import { MemoryVectorStore } from "@langchain/classic/vectorstores/memory";
 import { getChatModel } from "@/utils/trident/getChatModel";
 import { getEmbeddingModel } from "@/utils/trident/getEmbeddingModel";
 

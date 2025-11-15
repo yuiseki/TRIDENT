@@ -3,7 +3,7 @@ import { SemanticSimilarityExampleSelector } from "@langchain/core/example_selec
 import { BaseLanguageModel } from "@langchain/core/language_models/base";
 import { FewShotPromptTemplate, PromptTemplate } from "@langchain/core/prompts";
 import { RunnableSequence } from "@langchain/core/runnables";
-import { MemoryVectorStore } from "langchain/vectorstores/memory";
+import { MemoryVectorStore } from "@langchain/classic/vectorstores/memory";
 import { examples } from "./examples.ts";
 
 const setupDynamicPrompt = async (embeddings: Embeddings) => {
