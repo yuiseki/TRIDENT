@@ -3,8 +3,14 @@ import { ChatOpenAI } from "@langchain/openai";
 
 export const getChatModel = () => {
   if (process.env.USE_OLLAMA === "1") {
-    const model = process.env.OLLAMA_CHAT_MODEL !== undefined ? process.env.OLLAMA_CHAT_MODEL : "qwen3:8b";
-    const baseUrl = process.env.OLLAMA_BASE_URL !== undefined ? process.env.OLLAMA_BASE_URL : "http://ollama:11434";
+    const model =
+      process.env.OLLAMA_CHAT_MODEL !== undefined
+        ? process.env.OLLAMA_CHAT_MODEL
+        : "qwen3:8b";
+    const baseUrl =
+      process.env.OLLAMA_BASE_URL !== undefined
+        ? process.env.OLLAMA_BASE_URL
+        : "http://ollama:11434";
     console.log("Using Ollama model:", model);
     console.log("Ollama base URL:", baseUrl);
     return new ChatOllama({
@@ -17,13 +23,17 @@ export const getChatModel = () => {
       configuration: {
         baseURL: process.env.CLOUDFLARE_AI_GATEWAY + "/openai",
       },
-      model: "gpt-5-mini",
-      temperature: 1,
+      model: "gpt-5.1",
+      reasoning: {
+        effort: "none",
+      },
     });
   } else {
     return new ChatOpenAI({
-      model: "gpt-5-mini",
-      temperature: 1,
+      model: "gpt-5.1",
+      reasoning: {
+        effort: "none",
+      },
     });
   }
 };
