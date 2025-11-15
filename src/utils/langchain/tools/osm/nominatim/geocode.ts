@@ -7,7 +7,10 @@ export class NominatimGeocode extends ChainTool {
   async _call(input: string) {
     console.debug("Tool nominatim, input:", input);
     try {
-      const endpoint = "https://nominatim.openstreetmap.org/search";
+      const baseUrl = process.env.NOMINATIM_BASE_URL
+        ? process.env.NOMINATIM_BASE_URL
+        : "https://nominatim.openstreetmap.org";
+      const endpoint = `${baseUrl}/search`;
       const searchParams = new URLSearchParams();
       searchParams.append("format", "jsonv2");
       searchParams.append("polygon_geojson", "0");

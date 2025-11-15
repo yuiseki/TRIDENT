@@ -13,13 +13,13 @@ import {
 } from "@/utils/langchain/vectorstores/vercel_postgres";
 
 const surfaceTableName = "trident_surface_example_openai";
-let surfaceVectorStorePromise:
-  | Promise<Awaited<ReturnType<typeof getPGVectorStore>>>
-  | null = null;
+let surfaceVectorStorePromise: Promise<
+  Awaited<ReturnType<typeof getPGVectorStore>>
+> | null = null;
 let surfaceExampleInitPromise: Promise<void> | null = null;
-let surfaceChainPromise:
-  | Promise<Awaited<ReturnType<typeof loadTridentSurfaceChain>>>
-  | null = null;
+let surfaceChainPromise: Promise<
+  Awaited<ReturnType<typeof loadTridentSurfaceChain>>
+> | null = null;
 
 const ensureSurfaceVectorStore = async () => {
   if (!surfaceVectorStorePromise) {
@@ -106,7 +106,11 @@ export async function POST(request: Request) {
   console.log("chatHistoryLines:");
   console.log(chatHistoryLines.join("\n"));
 
-  await ensureSurfaceExamplesInitialized();
+  try {
+    await ensureSurfaceExamplesInitialized();
+  } catch (error) {
+    console.error("Error initializing surface examples:", error);
+  }
 
   try {
     const surfaceChain = await ensureSurfaceChain();

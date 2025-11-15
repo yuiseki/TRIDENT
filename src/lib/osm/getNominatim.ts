@@ -1,12 +1,16 @@
 import { Md5 } from "ts-md5";
 
 export const getNominatimResponse = async (query: string) => {
+  const baseUrl = process.env.NOMINATIM_BASE_URL
+    ? process.env.NOMINATIM_BASE_URL
+    : "https://nominatim.openstreetmap.org";
+
   const params = new URLSearchParams();
   params.append("format", "jsonv2");
   params.append("polygon_geojson", "0");
   params.append("q", query);
 
-  const nominatimUrl = `https://nominatim.openstreetmap.org/search?${params.toString()}`;
+  const nominatimUrl = `${baseUrl}/search?${params.toString()}`;
   return await fetch(nominatimUrl);
 };
 

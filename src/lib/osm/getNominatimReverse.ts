@@ -5,13 +5,17 @@ export const getNominatimReverseResponse = async (
   lon: number,
   zoom: number
 ) => {
+  const baseUrl = process.env.NOMINATIM_BASE_URL
+    ? process.env.NOMINATIM_BASE_URL
+    : "https://nominatim.openstreetmap.org";
+
   const params = new URLSearchParams();
   params.append("format", "jsonv2");
   params.append("lat", lat.toString());
   params.append("lon", lon.toString());
   params.append("zoom", zoom.toString());
 
-  const nominatimUrl = `https://nominatim.openstreetmap.org/reverse?${params.toString()}`;
+  const nominatimUrl = `${baseUrl}/reverse?${params.toString()}`;
   return await fetch(nominatimUrl);
 };
 

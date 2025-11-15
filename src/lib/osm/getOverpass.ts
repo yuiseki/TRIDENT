@@ -1,8 +1,11 @@
 import { Md5 } from "ts-md5";
 
 export const getOverpassResponse = async (overpassQuery: string) => {
+  const baseUrl = process.env.OVERPASS_BASE_URL
+    ? process.env.OVERPASS_BASE_URL
+    : "https://z.overpass-api.de";
   const queryString = `data=${encodeURIComponent(overpassQuery)}`;
-  const overpassApiUrl = `https://z.overpass-api.de/api/interpreter?${queryString}`;
+  const overpassApiUrl = `${baseUrl}/api/interpreter?${queryString}`;
   return await fetch(overpassApiUrl);
 };
 
