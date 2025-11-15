@@ -5,8 +5,8 @@ export const getNominatimReverseResponse = async (
   lon: number,
   zoom: number
 ) => {
-  const baseUrl = process.env.NOMINATIM_BASE_URL
-    ? process.env.NOMINATIM_BASE_URL
+  const baseUrl = process.env.NEXT_PUBLIC_NOMINATIM_BASE_URL
+    ? process.env.NEXT_PUBLIC_NOMINATIM_BASE_URL
     : "https://nominatim.openstreetmap.org";
 
   const params = new URLSearchParams();

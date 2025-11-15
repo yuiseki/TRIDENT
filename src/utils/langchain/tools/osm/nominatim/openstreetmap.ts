@@ -7,8 +7,8 @@ export class NominatimOpenStreetMap extends ChainTool {
   async _call(input: string) {
     console.debug("Tool nominatim, input:", input);
     try {
-      const baseUrl = process.env.NOMINATIM_BASE_URL
-        ? process.env.NOMINATIM_BASE_URL
+      const baseUrl = process.env.NEXT_PUBLIC_NOMINATIM_BASE_URL
+        ? process.env.NEXT_PUBLIC_NOMINATIM_BASE_URL
         : "https://nominatim.openstreetmap.org";
       const endpoint = `${baseUrl}/search`;
       const searchParams = new URLSearchParams();
