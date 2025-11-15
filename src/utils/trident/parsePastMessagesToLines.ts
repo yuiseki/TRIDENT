@@ -1,4 +1,4 @@
-import { ChatMessageHistory } from "langchain/memory";
+import { ChatMessageHistory } from "@langchain/classic/memory";
 
 export const parsePastMessagesToLines = (
   pastMessagesJsonString: string,

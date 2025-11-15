@@ -1,4 +1,4 @@
-import { Tool } from "langchain/tools";
+import { ChainTool } from "@langchain/classic/tools";
 
 // input: ISO-3 (ISO 3166 alpha-3) codes of the country
 // output:

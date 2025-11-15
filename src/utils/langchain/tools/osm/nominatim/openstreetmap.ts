@@ -1,6 +1,6 @@
-import { Tool } from "langchain/tools";
+import { ChainTool } from "@langchain/classic/tools";
 
-export class NominatimOpenStreetMap extends Tool {
+export class NominatimOpenStreetMap extends ChainTool {
   name = "nominatim-search-openstreetmap";
   description = `useful for when you need to get OpenStreetMap entity by name of location. Input: a name of location.`;
 
