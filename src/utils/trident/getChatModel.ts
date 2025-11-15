@@ -27,18 +27,12 @@ export const getChatModel = () => {
       reasoning: {
         effort: "none",
       },
-      text: {
-        verbosity: "low",
-      },
     });
   } else {
     return new ChatOpenAI({
       model: "gpt-5.1",
       reasoning: {
         effort: "none",
-      },
-      text: {
-        verbosity: "low",
       },
     });
   }
