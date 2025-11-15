@@ -1,6 +1,6 @@
-import { Tool } from "langchain/tools";
+import { ChainTool } from "@langchain/classic/tools";
 
-export class Wikipedia extends Tool {
+export class Wikipedia extends ChainTool {
   name = "search-wikipedia";
   description = `useful for when you need to ask general questions about people, places, companies, facts, historical events, or other subjects. Input: a very simple search query for wikipedia in English. MUST NOT input the question as-is.`;
 

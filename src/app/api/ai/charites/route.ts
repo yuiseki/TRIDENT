@@ -2,7 +2,7 @@ import { loadCharitesChain } from "@/utils/langchain/chains/charites";
 import { getChatModel } from "@/utils/trident/getChatModel";
 import { getEmbeddingModel } from "@/utils/trident/getEmbeddingModel";
 import { Example } from "@langchain/core/prompts";
-import { MemoryVectorStore } from "langchain/vectorstores/memory";
+import { MemoryVectorStore } from "@langchain/classic/vectorstores/memory";
 import { NextResponse } from "next/server";
 
 export async function POST(request: Request) {

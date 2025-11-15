@@ -1,8 +1,8 @@
-import { Tool } from "langchain/tools";
+import { ChainTool } from "@langchain/classic/tools";
 
 // input: a short name of country from the UN M49 Standard
 // output: ISO-3 (ISO 3166 alpha-3) codes of the country
-export class HDXCountryCode extends Tool {
+export class HDXCountryCode extends ChainTool {
   name = "hdx-country-code";
   description =
     "useful for when you need to get the ISO-3 (ISO 3166 alpha-3) codes of a country. Input: a short name of country from the UN M49 Standard.";
