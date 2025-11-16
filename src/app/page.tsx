@@ -161,10 +161,10 @@ export default function Home() {
       setMapTitle(mapTitle);
       setPageTitle(mapTitle ? `${mapTitle} | TRIDENT` : "TRIDENT");
     }
-    
+
     // Clear previous geojson data when starting new mapping
     setGeoJsonWithStyleList([]);
-    
+
     let completedCount = 0;
     const totalCount = linesWithAreaAndOrConcern.length;
     const newGeoJsonList: Array<{
@@ -173,67 +173,74 @@ export default function Home() {
       style: TridentMapsStyle;
       geojson: FeatureCollection;
     }> = [];
-    
-    // invoke deep layer by each item of linesWithAreaAndOrConcern
-    const promises = linesWithAreaAndOrConcern.map(async (line: string, idx: number) => {
-      let style = {};
-      Object.keys(styles).map((concern) => {
-        if (line.includes(concern)) {
-          style = styles[concern];
-        }
-      });
-      setMapping(true);
-      const deepResJson = await nextPostJsonWithCache("/api/ai/deep", {
-        query: line,
-      });
-      if (deepResJson.deep.toLowerCase().includes("no valid")) {
-        return null;
-      }
-      const overpassQuery = deepResJson.deep.split("```")[1];
 
-      const handleOverpassResponseJson = async (
-        overpassResponseJson: any,
-        retry: boolean
-      ): Promise<FeatureCollection | null> => {
-        const newGeoJson = osmtogeojson(
-          overpassResponseJson
-        ) as FeatureCollection;
-        console.log("features", newGeoJson.features.length);
-        if (newGeoJson.features.length !== 0) {
-          return newGeoJson;
-        } else {
-          if (retry) {
-            const retryResponse = await getOverpassResponseJsonWithCache(
-              overpassQuery.replace('["name"', '["name:en"')
-            );
-            return handleOverpassResponseJson(retryResponse, false);
+    // invoke deep layer by each item of linesWithAreaAndOrConcern
+    const promises = linesWithAreaAndOrConcern.map(
+      async (line: string, idx: number) => {
+        let style = {};
+        Object.keys(styles).map((concern) => {
+          if (line.includes(concern)) {
+            style = styles[concern];
           }
+        });
+        setMapping(true);
+        const deepResJson = await nextPostJsonWithCache("/api/ai/deep", {
+          query: line,
+        });
+        if (deepResJson.deep.toLowerCase().includes("no valid")) {
           return null;
         }
-      };
-      
-      const overpassResponseJson = await getOverpassResponseJsonWithCache(overpassQuery);
-      const geojson = await handleOverpassResponseJson(overpassResponseJson, true);
-      
-      if (geojson) {
-        return {
-          id: "layer-" + idx,
-          line: line,
-          style: style,
-          geojson: geojson,
+        const overpassQuery = deepResJson.deep.split("```")[1];
+
+        const handleOverpassResponseJson = async (
+          overpassResponseJson: any,
+          retry: boolean
+        ): Promise<FeatureCollection | null> => {
+          const newGeoJson = osmtogeojson(
+            overpassResponseJson
+          ) as FeatureCollection;
+          console.log("features", newGeoJson.features.length);
+          if (newGeoJson.features.length !== 0) {
+            return newGeoJson;
+          } else {
+            if (retry) {
+              const retryResponse = await getOverpassResponseJsonWithCache(
+                overpassQuery.replace('["name"', '["name:en"')
+              );
+              return handleOverpassResponseJson(retryResponse, false);
+            }
+            return null;
+          }
         };
+
+        const overpassResponseJson = await getOverpassResponseJsonWithCache(
+          overpassQuery.replace("[timeout:30000];", "[timeout:3000];")
+        );
+        const geojson = await handleOverpassResponseJson(
+          overpassResponseJson,
+          true
+        );
+
+        if (geojson) {
+          return {
+            id: "layer-" + idx,
+            line: line,
+            style: style,
+            geojson: geojson,
+          };
+        }
+        return null;
       }
-      return null;
-    });
-    
+    );
+
     const results = await Promise.all(promises);
-    const validResults = results.filter(r => r !== null) as Array<{
+    const validResults = results.filter((r) => r !== null) as Array<{
       id: string;
       line: string;
       style: TridentMapsStyle;
       geojson: FeatureCollection;
     }>;
-    
+
     if (validResults.length > 0) {
       setGeoJsonWithStyleList(validResults);
       setMapping(false);
@@ -325,10 +332,10 @@ export default function Home() {
     try {
       // 自動回転を停止
       setAutoRotate(false);
-      
+
       // 回転が完全に止まるまで少し待機
       await sleep(100);
-      
+
       // everything - all geojson in the geojsonWithStyleList
       const everything: FeatureCollection = {
         type: "FeatureCollection",
