@@ -47,7 +47,7 @@ services:
     entrypoint: /bin/sh
     command:
       - "-c"
-      - "sleep 5; OLLAMA_HOST=ollama:11434 ollama pull snowflake-arctic-embed:22m; OLLAMA_HOST=ollama:11434 ollama pull qwen3:8b; OLLAMA_HOST=ollama:11434 ollama pull granite4:3b-h; OLLAMA_HOST=ollama:11434 ollama pull gpt-oss:20b; "
+      - "sleep 5; OLLAMA_HOST=ollama:11434 ollama pull snowflake-arctic-embed:22m; OLLAMA_HOST=ollama:11434 ollama pull qwen3:8b; OLLAMA_HOST=ollama:11434 ollama pull qwen3:14b; OLLAMA_HOST=ollama:11434 ollama pull qwen3:32b;"
     networks:
       - trident
   nextjs:
