@@ -34,7 +34,7 @@ export const StaticRegionsMap: React.FC<{
       }
       const osmId = nominatimResJson[0].osm_id;
       console.log(regionName, osmId);
-      const overpassQuery = `[out:json][timeout:30000]; nwr(${osmId}); out geom;`;
+      const overpassQuery = `[out:json][timeout:3000]; nwr(${osmId}); out geom;`;
       const overpassResJson = await getOverpassResponseJsonWithCache(
         overpassQuery
       );
