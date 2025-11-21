@@ -35,7 +35,7 @@ services:
               count: all
               capabilities: ["gpu"]
     healthcheck:
-      test: ["CMD", "bash", "-c", "ollama list | grep  qwen3:14b"]
+      test: ["CMD", "bash", "-c", "ollama list | grep qwen3:14b"]
       interval: 10s
       timeout: 10s
       retries: 1000
@@ -47,7 +47,7 @@ services:
     entrypoint: /bin/sh
     command:
       - "-c"
-      - "sleep 5; OLLAMA_HOST=ollama:11434 ollama pull snowflake-arctic-embed:22m; OLLAMA_HOST=ollama:11434 ollama pull qwen3:14b;"
+      - "sleep 5; OLLAMA_HOST=ollama:11434 ollama pull snowflake-arctic-embed:22m; OLLAMA_HOST=ollama:11434 ollama pull qwen3:8b; OLLAMA_HOST=ollama:11434 ollama pull qwen3:14b;"
     networks:
       - trident
   nextjs:
