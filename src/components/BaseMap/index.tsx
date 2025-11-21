@@ -35,7 +35,7 @@ export const BaseMap: React.FC<{
   onMapMove?: (e: ViewStateChangeEvent) => void;
   onMapMoveStart?: (e: ViewStateChangeEvent) => void;
   onMapMoveEnd?: (e: ViewStateChangeEvent) => void;
-  onGeolocate?: ((e: GeolocateResultEvent) => void) | undefined;
+  onMapGeolocate?: ((e: GeolocateResultEvent) => void) | undefined;
 }> = ({
   children,
   id,
@@ -57,7 +57,7 @@ export const BaseMap: React.FC<{
   onMapMove,
   onMapMoveStart,
   onMapMoveEnd,
-  onGeolocate,
+  onMapGeolocate,
 }) => {
   const applyAtmosphere = (mapInstance: maplibregl.Map) => {
     // 現在の時刻から太陽の位置を計算
@@ -120,7 +120,7 @@ export const BaseMap: React.FC<{
 
   // リアルタイム更新用のインターバル
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
-  
+
   // 自動回転用の状態とインターバル
   const [isAutoRotating, setIsAutoRotating] = React.useState(autoRotate);
   const [mapLoaded, setMapLoaded] = React.useState(false);
@@ -169,12 +169,12 @@ export const BaseMap: React.FC<{
 
     let currentLng = mapInstance.getCenter().lng;
     const rotationSpeed = 0.05; // 回転速度（度/フレーム）
-    console.log('[BaseMap] Starting auto-rotation (clockwise)');
+    console.log("[BaseMap] Starting auto-rotation (clockwise)");
 
     let frameCount = 0;
     const rotate = () => {
       if (!isAutoRotating) return;
-      
+
       const mapInstance = mapRef.current?.getMap?.();
       if (!mapInstance) return;
 
@@ -231,11 +231,23 @@ export const BaseMap: React.FC<{
     [onMapMove]
   );
 
+  const onInteractionStart = useCallback(() => {
+    // ユーザーの操作による移動の場合、自動回転を停止
+    if (isAutoRotating) {
+      console.log(
+        "[BaseMap] User interaction detected. Stopping auto-rotation."
+      );
+      setIsAutoRotating(false);
+    }
+  }, [isAutoRotating]);
+
   const onMoveStart = useCallback(
     (event: ViewStateChangeEvent) => {
       // ユーザーの操作による移動の場合、自動回転を停止
       if (isAutoRotating && event.originalEvent) {
-        console.log('[BaseMap] User interaction detected. Stopping auto-rotation.');
+        console.log(
+          "[BaseMap] User interaction detected. Stopping auto-rotation."
+        );
         setIsAutoRotating(false);
       }
       if (onMapMoveStart) {
@@ -254,6 +266,27 @@ export const BaseMap: React.FC<{
     [onMapMoveEnd]
   );
 
+  const onGeolocate = useCallback(
+    (e: GeolocateResultEvent) => {
+      if (isAutoRotating) {
+        console.log("[BaseMap] Geolocation triggered. Stopping auto-rotation.");
+        setIsAutoRotating(false);
+      }
+      if (onMapGeolocate) {
+        onMapGeolocate(e);
+      } else {
+        setTimeout(() => {
+          mapRef.current?.flyTo({
+            center: [e.coords.longitude, e.coords.latitude],
+            zoom: 16,
+            duration: 5000,
+          });
+        }, 500);
+      }
+    },
+    [onMapGeolocate]
+  );
+
   return (
     <Map
       style={{
@@ -264,6 +297,9 @@ export const BaseMap: React.FC<{
       }}
       id={id}
       ref={mapRef}
+      onDragStart={onInteractionStart}
+      onTouchStart={onInteractionStart}
+      onZoomStart={onInteractionStart}
       onLoad={onLoad}
       onMove={onMove}
       onMoveStart={onMoveStart}
