@@ -19,7 +19,13 @@ export const MapStyleSelector: React.FC<{
       <option
         value={"https://tile.openstreetmap.jp/styles/osm-bright/style.json"}
       >
-        🗺 OSM JP bright (vector)
+        🗺 OSM JP Bright (vector)
+      </option>
+      <option value={"https://tile.yuiseki.net/styles/osm-fiord/style.json"}>
+        🗺 yuiseki Fiord color (vector)
+      </option>
+      <option value={"https://tile.yuiseki.net/styles/osm-bright/style.json"}>
+        🗺 yuiseki Bright (vector)
       </option>
       <option value={"/map_styles/osm-hot/style.json"}>
         🗺 OSM HOT (raster)
