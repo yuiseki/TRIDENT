@@ -208,12 +208,26 @@ export const BaseMap: React.FC<{
     if (mapInstance && showAtmosphere) {
       applyAtmosphere(mapInstance);
     }
+    
+    // ユーザーインタラクションの直接検知
+    if (mapInstance && autoRotate) {
+      const stopRotation = () => {
+        console.log("[BaseMap] User interaction detected via direct event. Stopping auto-rotation.");
+        setIsAutoRotating(false);
+      };
+      
+      mapInstance.on('mousedown', stopRotation);
+      mapInstance.on('touchstart', stopRotation);
+      mapInstance.on('wheel', stopRotation);
+      mapInstance.on('dragstart', stopRotation);
+    }
+    
     console.log("[BaseMap] Map loaded");
     setMapLoaded(true);
     if (onMapLoad) {
       onMapLoad();
     }
-  }, [mapRef, onMapLoad, showAtmosphere]);
+  }, [mapRef, onMapLoad, showAtmosphere, autoRotate]);
 
   const onStyleChange = useCallback(() => {
     const mapInstance = mapRef.current?.getMap?.();
@@ -230,16 +244,6 @@ export const BaseMap: React.FC<{
     },
     [onMapMove]
   );
-
-  const onInteractionStart = useCallback(() => {
-    // ユーザーの操作による移動の場合、自動回転を停止
-    if (isAutoRotating) {
-      console.log(
-        "[BaseMap] User interaction detected. Stopping auto-rotation."
-      );
-      setIsAutoRotating(false);
-    }
-  }, [isAutoRotating]);
 
   const onMoveStart = useCallback(
     (event: ViewStateChangeEvent) => {
@@ -297,9 +301,6 @@ export const BaseMap: React.FC<{
       }}
       id={id}
       ref={mapRef}
-      onDragStart={onInteractionStart}
-      onTouchStart={onInteractionStart}
-      onZoomStart={onInteractionStart}
       onLoad={onLoad}
       onMove={onMove}
       onMoveStart={onMoveStart}
