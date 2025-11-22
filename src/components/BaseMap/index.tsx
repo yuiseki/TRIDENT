@@ -1,4 +1,4 @@
-import React, { MutableRefObject, useCallback, useEffect, useRef } from "react";
+import React, { MutableRefObject, useCallback, useEffect, useRef, useState } from "react";
 
 import {
   AttributionControl,
@@ -15,7 +15,7 @@ import {
   Layer,
 } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
-import maplibregl from "maplibre-gl";
+import maplibregl, { ProjectionSpecification } from "maplibre-gl";
 import { Protocol as PMTilesProtocol } from "pmtiles";
 
 import { GlobeControl } from "../GlobeControl";
@@ -52,7 +52,7 @@ export const BaseMap: React.FC<{
   latitude: number;
   zoom: number;
   maxZoom?: number;
-  projection?: "mercator" | "globe";
+  initialProjection?: "mercator" | "globe";
   style?: string | StyleSpecification;
   enableInteractions?: boolean;
   showControls?: boolean;
@@ -75,7 +75,7 @@ export const BaseMap: React.FC<{
   latitude,
   zoom,
   maxZoom = 22,
-  projection = "mercator",
+  initialProjection = "mercator",
   style = "/map_styles/fiord-color-gl-style/style.json",
   enableInteractions = true,
   showControls = true,
@@ -91,6 +91,7 @@ export const BaseMap: React.FC<{
   onMapMoveEnd,
   onMapGeolocate,
 }) => {
+  const [projection, setProjection] = useState(initialProjection);
   const terrain = { source: "terrain-dem", exaggeration: 0.13 };
 
   const applyAtmosphere = (mapInstance: maplibregl.Map) => {
@@ -262,6 +263,12 @@ export const BaseMap: React.FC<{
       mapInstance.on("touchstart", stopRotation);
       mapInstance.on("wheel", stopRotation);
       mapInstance.on("dragstart", stopRotation);
+    }
+
+    if (mapInstance) {
+      mapInstance.on("projectiontransition", (e) => {
+        setProjection(e.newProjection as "mercator" | "globe");
+      });
     }
 
     console.log("[BaseMap] Map loaded");

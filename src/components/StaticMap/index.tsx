@@ -79,7 +79,7 @@ export const StaticMap: React.FC<{
         latitude={0}
         zoom={1}
         maxZoom={maxZoom}
-        projection={projection}
+        initialProjection={projection}
         enableInteractions={false}
         showAtmosphere={showAtmosphere}
         showAttribution={showAttribution}

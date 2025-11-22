@@ -281,7 +281,7 @@ export default function PlanetilerPage() {
               latitude={style.latitude}
               zoom={style.zoom}
               style={style.styleUrl}
-              projection="globe"
+              initialProjection="globe"
               showAttribution={false}
               onMapMoveStart={(event) => handleMapMoveStart(index, event)}
               onMapMove={(event) => handleMapMove(index, event)}
