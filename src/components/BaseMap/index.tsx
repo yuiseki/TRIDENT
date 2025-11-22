@@ -10,6 +10,9 @@ import {
   NavigationControl,
   ViewStateChangeEvent,
   StyleSpecification,
+  TerrainControl,
+  Source,
+  Layer,
 } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { GlobeControl } from "../GlobeControl";
@@ -30,6 +33,7 @@ export const BaseMap: React.FC<{
   showAttribution?: boolean;
   showAtmosphere?: boolean;
   showAsCircle?: boolean;
+  showTerrain?: boolean;
   autoRotate?: boolean;
   onMapLoad?: () => void;
   onMapMove?: (e: ViewStateChangeEvent) => void;
@@ -52,6 +56,7 @@ export const BaseMap: React.FC<{
   showAttribution = true,
   showAtmosphere = false,
   showAsCircle = false,
+  showTerrain = true,
   autoRotate = false,
   onMapLoad,
   onMapMove,
@@ -59,6 +64,8 @@ export const BaseMap: React.FC<{
   onMapMoveEnd,
   onMapGeolocate,
 }) => {
+  const terrain = { source: "terrain-dem", exaggeration: 1.5 };
+
   const applyAtmosphere = (mapInstance: maplibregl.Map) => {
     // 現在の時刻から太陽の位置を計算
     const now = new Date();
@@ -208,20 +215,22 @@ export const BaseMap: React.FC<{
     if (mapInstance && showAtmosphere) {
       applyAtmosphere(mapInstance);
     }
-    
+
     // ユーザーインタラクションの直接検知
     if (mapInstance && autoRotate) {
       const stopRotation = () => {
-        console.log("[BaseMap] User interaction detected via direct event. Stopping auto-rotation.");
+        console.log(
+          "[BaseMap] User interaction detected via direct event. Stopping auto-rotation."
+        );
         setIsAutoRotating(false);
       };
-      
-      mapInstance.on('mousedown', stopRotation);
-      mapInstance.on('touchstart', stopRotation);
-      mapInstance.on('wheel', stopRotation);
-      mapInstance.on('dragstart', stopRotation);
+
+      mapInstance.on("mousedown", stopRotation);
+      mapInstance.on("touchstart", stopRotation);
+      mapInstance.on("wheel", stopRotation);
+      mapInstance.on("dragstart", stopRotation);
     }
-    
+
     console.log("[BaseMap] Map loaded");
     setMapLoaded(true);
     if (onMapLoad) {
@@ -314,6 +323,7 @@ export const BaseMap: React.FC<{
         zoom: zoom,
       }}
       projection={projection}
+      terrain={terrain}
       hash={false}
       maxZoom={maxZoom}
       maxPitch={85}
@@ -321,6 +331,26 @@ export const BaseMap: React.FC<{
       dragPan={enableInteractions ? true : false}
     >
       {children}
+      <>
+        <Source
+          id="terrain-dem"
+          type="raster-dem"
+          url="https://tiles.mapterhorn.com/tilejson.json"
+          tileSize={256}
+        />
+        <Source
+          id="hillshade-dem"
+          type="raster-dem"
+          url="https://tiles.mapterhorn.com/tilejson.json"
+          tileSize={256}
+        >
+          <Layer
+            type="hillshade"
+            layout={{ visibility: "visible" }}
+            paint={{ "hillshade-shadow-color": "#473B24" }}
+          />
+        </Source>
+      </>
       {showAttribution && (
         <AttributionControl
           position={
@@ -339,6 +369,7 @@ export const BaseMap: React.FC<{
             showZoom={true}
             showCompass={true}
           />
+          <TerrainControl {...terrain} position="top-right" />
           <GeolocateControl position="top-right" onGeolocate={onGeolocate} />
         </>
       )}
