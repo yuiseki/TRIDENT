@@ -2,7 +2,7 @@
   max-width: 400px;
   position: absolute;
   bottom: 0px;
-  right: 0px;
+  right: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,7 +39,7 @@
   width: 400px;
   position: absolute;
   bottom: 0px;
-  right: 0px;
+  right: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,13 +54,12 @@
 }
 
 .closeButton {
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
   font-weight: bold;
   text-align: center;
   color: rgba(250, 250, 250, 0.8) !important;
   background: rgba(60, 60, 60, 0.4);
   border-radius: 50%;
   border: rgba(250, 250, 250, 0.2) solid 1px;
-  margin: 10px;
 }

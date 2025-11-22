@@ -36,6 +36,7 @@ import { parseSurfaceResJson } from "@/utils/trident/parseSurfaceResJson";
 import { Ability } from "@/types/Ability";
 import { AccountButton } from "@/components/AccountButton";
 import * as turf from "@turf/turf";
+import { FloatingGitHubButton } from "@/components/FloatingGitHubButton";
 
 export default function Home() {
   // all state
@@ -474,6 +475,7 @@ export default function Home() {
                 })}
             </BaseMap>
           </MapProvider>
+          <FloatingGitHubButton />
           <FloatingChatButton
             onChange={(showing: boolean) => {
               setShowingFloatingChat(showing);
