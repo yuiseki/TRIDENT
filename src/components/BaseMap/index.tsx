@@ -1,4 +1,10 @@
-import React, { MutableRefObject, useCallback, useEffect, useRef, useState } from "react";
+import React, {
+  MutableRefObject,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 
 import {
   AttributionControl,
@@ -377,21 +383,27 @@ export const BaseMap: React.FC<{
           type="raster-dem"
           url="mapterhorn://https://z.yuiseki.net/static/mapterhorn/planet.pmtiles"
           tileSize={256}
+          maxzoom={12}
         />
-        {/*
         <Source
           id="hillshade-dem"
           type="raster-dem"
           url="mapterhorn://https://z.yuiseki.net/static/mapterhorn/planet.pmtiles"
           tileSize={256}
+          maxzoom={12}
         >
           <Layer
             type="hillshade"
             layout={{ visibility: "visible" }}
-            paint={{ "hillshade-shadow-color": "rgba(71, 59, 36, 0.001)" }}
+            paint={{
+              "hillshade-shadow-color": "rgba(71, 59, 36, 0.1)",
+              "hillshade-highlight-color": "rgba(255, 255, 255, 0.2)",
+              "hillshade-accent-color": "rgba(130, 117, 98, 0.1)",
+            }}
           />
         </Source>
-        */}
+        {/*
+         */}
       </>
       {showAttribution && (
         <AttributionControl
