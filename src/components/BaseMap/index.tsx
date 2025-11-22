@@ -208,6 +208,7 @@ export const BaseMap: React.FC<{
         cancelAnimationFrame(rotationIntervalRef.current);
         rotationIntervalRef.current = null;
       }
+      console.log("[BaseMap] Auto-rotation stopped");
       return;
     }
 
@@ -273,7 +274,11 @@ export const BaseMap: React.FC<{
 
     if (mapInstance) {
       mapInstance.on("projectiontransition", (e) => {
+        console.log(`[BaseMap] Projection changed to ${e.newProjection}`);
         setProjection(e.newProjection as "mercator" | "globe");
+        if (e.newProjection === "globe") {
+          setIsAutoRotating(true);
+        }
       });
     }
 
@@ -385,25 +390,25 @@ export const BaseMap: React.FC<{
           tileSize={256}
           maxzoom={12}
         />
-        <Source
-          id="hillshade-dem"
-          type="raster-dem"
-          url="mapterhorn://https://z.yuiseki.net/static/mapterhorn/planet.pmtiles"
-          tileSize={256}
-          maxzoom={12}
-        >
-          <Layer
-            type="hillshade"
-            layout={{ visibility: "visible" }}
-            paint={{
-              "hillshade-shadow-color": "rgba(71, 59, 36, 0.1)",
-              "hillshade-highlight-color": "rgba(255, 255, 255, 0.2)",
-              "hillshade-accent-color": "rgba(130, 117, 98, 0.1)",
-            }}
-          />
-        </Source>
-        {/*
-         */}
+        {mapLoaded && (
+          <Source
+            id="hillshade-dem"
+            type="raster-dem"
+            url="mapterhorn://https://z.yuiseki.net/static/mapterhorn/planet.pmtiles"
+            tileSize={256}
+            maxzoom={12}
+          >
+            <Layer
+              type="hillshade"
+              layout={{ visibility: "visible" }}
+              paint={{
+                "hillshade-shadow-color": "rgba(71, 59, 36, 0.1)",
+                "hillshade-highlight-color": "rgba(255, 255, 255, 0.2)",
+                "hillshade-accent-color": "rgba(130, 117, 98, 0.1)",
+              }}
+            />
+          </Source>
+        )}
       </>
       {showAttribution && (
         <AttributionControl
