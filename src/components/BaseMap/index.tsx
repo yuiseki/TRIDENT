@@ -15,7 +15,34 @@ import {
   Layer,
 } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
+import maplibregl from "maplibre-gl";
+import { Protocol as PMTilesProtocol } from "pmtiles";
+
 import { GlobeControl } from "../GlobeControl";
+
+// Initialize PMTiles protocol once
+let pmTilesInitialized = false;
+const initializePMTiles = () => {
+  if (!pmTilesInitialized) {
+    const protocol = new PMTilesProtocol();
+    maplibregl.addProtocol("pmtiles", protocol.tile);
+    pmTilesInitialized = true;
+  }
+};
+
+// Initialize Mapterhorn protocol once
+let mapterhornInitialized = false;
+const initializeMapterhorn = () => {
+  if (!mapterhornInitialized) {
+    // 独自スキーム "mapterhorn://" を定義し、そこから planet.pmtiles のタイルを読む
+    const protocol = new PMTilesProtocol();
+    maplibregl.addProtocol("mapterhorn", (params, callback) => {
+      const url = params.url.replace(/^mapterhorn:\/\//, "pmtiles://");
+      return protocol.tile({ ...params, url }, callback);
+    });
+    mapterhornInitialized = true;
+  }
+};
 
 export const BaseMap: React.FC<{
   children?: any;
@@ -64,7 +91,7 @@ export const BaseMap: React.FC<{
   onMapMoveEnd,
   onMapGeolocate,
 }) => {
-  const terrain = { source: "terrain-dem", exaggeration: 1.5 };
+  const terrain = { source: "terrain-dem", exaggeration: 0.13 };
 
   const applyAtmosphere = (mapInstance: maplibregl.Map) => {
     // 現在の時刻から太陽の位置を計算
@@ -132,6 +159,12 @@ export const BaseMap: React.FC<{
   const [isAutoRotating, setIsAutoRotating] = React.useState(autoRotate);
   const [mapLoaded, setMapLoaded] = React.useState(false);
   const rotationIntervalRef = useRef<number | null>(null);
+
+  // PMTiles protocol, Mapterhorn protocol の初期化
+  useEffect(() => {
+    initializePMTiles();
+    initializeMapterhorn();
+  }, []);
 
   // autoRotate propの変更を監視してisAutoRotatingを更新
   useEffect(() => {
@@ -324,7 +357,7 @@ export const BaseMap: React.FC<{
       }}
       projection={projection}
       terrain={terrain}
-      hash={false}
+      hash={true}
       maxZoom={maxZoom}
       maxPitch={85}
       scrollZoom={enableInteractions ? true : false}
@@ -335,21 +368,23 @@ export const BaseMap: React.FC<{
         <Source
           id="terrain-dem"
           type="raster-dem"
-          url="https://tiles.mapterhorn.com/tilejson.json"
+          url="mapterhorn://https://z.yuiseki.net/static/mapterhorn/planet.pmtiles"
           tileSize={256}
         />
+        {/*
         <Source
           id="hillshade-dem"
           type="raster-dem"
-          url="https://tiles.mapterhorn.com/tilejson.json"
+          url="mapterhorn://https://z.yuiseki.net/static/mapterhorn/planet.pmtiles"
           tileSize={256}
         >
           <Layer
             type="hillshade"
             layout={{ visibility: "visible" }}
-            paint={{ "hillshade-shadow-color": "#473B24" }}
+            paint={{ "hillshade-shadow-color": "rgba(71, 59, 36, 0.001)" }}
           />
         </Source>
+        */}
       </>
       {showAttribution && (
         <AttributionControl
