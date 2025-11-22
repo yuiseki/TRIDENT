@@ -364,7 +364,7 @@ export const BaseMap: React.FC<{
       }}
       projection={projection}
       terrain={terrain}
-      hash={true}
+      hash={false}
       maxZoom={maxZoom}
       maxPitch={85}
       scrollZoom={enableInteractions ? true : false}
