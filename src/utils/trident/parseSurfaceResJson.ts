@@ -5,25 +5,31 @@ export const parseSurfaceResJson = (surfaceResJson: {
 }): {
   ability?: Ability;
   reply: string;
+  style?: string;
 } => {
   const lines = surfaceResJson.surface.split("\n");
-  let ability = undefined;
+  let ability: Ability | undefined = undefined;
   let reply = "";
+  let style: string | undefined = undefined;
   lines.map(async (line: string, idx: number) => {
     console.log(`surface line ${idx}:`, line);
 
     if (line.includes("Ability")) {
-      ability = line.split(": ")[1] as Ability;
-      // 空白除去
-      ability = ability.replace(/\s+/g, "");
+      const raw = line.split(": ")[1] as Ability;
+      ability = raw.replace(/\s+/g, "") as Ability;
     }
     if (line.includes("Reply")) {
       reply = line.split(": ")[1];
+    }
+    if (line.includes("Style")) {
+      const raw = line.split(": ")[1];
+      if (raw) style = raw.replace(/\s+/g, "");
     }
   });
 
   return {
     ability,
     reply,
+    style,
   };
 };

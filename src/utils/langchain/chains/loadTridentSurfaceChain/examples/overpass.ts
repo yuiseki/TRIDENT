@@ -1,17 +1,7 @@
-import { PromptTemplate } from "@langchain/core/prompts";
+// Surface examples for the overpass-api ability: the user wants to render a
+// POI / region on the map using OpenStreetMap data. Always included.
 
-export const tridentSurfaceExamplePrompt = PromptTemplate.fromTemplate(
-  `Input:
-{input}
-
-Output:
-{output}
-`
-);
-
-export const tridentSurfaceExampleInputKeys = ["input"];
-
-export const tridentSurfaceExampleList: Array<{
+export const surfaceOverpassExamples: Array<{
   input: string;
   output: string;
 }> = [
@@ -69,29 +59,9 @@ Reply: 了解しました。OpenStreetMapのデータに基づいて台東区の
 Reply: 了解しました。OpenStreetMapのデータに基づいて台東区のラーメン屋と蕎麦屋を表示する地図を作成しています。しばらくお待ちください……`,
   },
   {
-    input: "ラーメン屋を表示して",
-    output: `Ability: ask-more
-Reply: 了解しました。どの地域のラーメン屋を表示しますか？`,
-  },
-  {
     input: "台東区のラーメン屋を教えて",
     output: `Ability: overpass-api
 Reply: 了解しました。OpenStreetMapのデータに基づいて台東区のラーメン屋を表示する地図を作成しています。しばらくお待ちください……`,
-  },
-  {
-    input: `台東区の人気のラーメン屋を教えて`,
-    output: `Ability: apology
-Reply: 申し訳ありません。私はOpenStreetMapのデータ以外の情報に基づいて地図を生成することはできません。`,
-  },
-  {
-    input: `台東区で有名の観光スポットを教えて`,
-    output: `Ability: apology
-Reply: 申し訳ありません。私はOpenStreetMapのデータ以外の情報に基づいて地図を生成することはできません。`,
-  },
-  {
-    input: `台東区の人口を教えて`,
-    output: `Ability: apology
-Reply: 申し訳ありません。私はOpenStreetMapのデータ以外の情報に基づいて地図を生成することはできません。`,
   },
   {
     input: `台東区の人口を教えて
@@ -106,21 +76,4 @@ Reply: 了解しました。OpenStreetMapのデータに基づいて台東区の
     output: `Ability: overpass-api
 Reply: 了解しました。OpenStreetMapのデータに基づいて台東区と文京区のラーメン屋を表示する地図を作成しています。しばらくお待ちください……`,
   },
-  {
-    input: `中央区を表示して`,
-    output: `Ability: apology
-Reply: 申し訳ありません。中央区という地名が複数の場所に存在するため、特定の地域を表示することができません。どの地域の中央区を表示しますか？`,
-  },
-  {
-    input: `東京駅から秋葉原駅までのルートを教えて`,
-    output: `Ability: valhalla-api
-Reply: 了解しました。OpenStreetMapのデータに基づいて東京駅から秋葉原駅までのルートを表示する地図を作成しています。しばらくお待ちください……`,
-  },
-  /*
-  {
-    input: "世界で一番広い国は？",
-    output: `Ability: duckdb
-Reply: 世界で一番広い国を調べています。しばらくお待ちください……`,
-  },
-  */
 ];

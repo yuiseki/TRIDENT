@@ -9,6 +9,10 @@ const LLAMA_CPP_DEFAULT_PORTS: Record<TridentRole, number> = {
   deep: 18093,
 };
 
+// Mutual exclusion of USE_OPENAI_API / USE_LLAMA_CPP / USE_OLLAMA is enforced
+// at boot by assertInferenceBackend(). USE_OPENAI_API=1 falls through to the
+// final OpenAI branch (same as the no-flag default), so it doesn't need a
+// dedicated case here.
 export const getChatModel = (role?: TridentRole) => {
   if (process.env.USE_LLAMA_CPP === "1") {
     const port = role

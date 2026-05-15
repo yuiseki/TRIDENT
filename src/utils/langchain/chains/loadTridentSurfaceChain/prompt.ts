@@ -1,7 +1,24 @@
 import { SemanticSimilarityExampleSelector } from "@langchain/core/example_selectors";
 import { FewShotPromptTemplate, PromptTemplate } from "@langchain/core/prompts";
 import { VectorStore } from "@langchain/core/vectorstores";
-import { tridentSurfaceExampleList } from "./examples";
+import { MAP_STYLE_PRESETS } from "@/constants/MapStylePresets";
+import { isOpenAIBackend, tridentSurfaceExampleList } from "./examples";
+
+const buildAvailableAbilitiesBlock = (): string => {
+  const baseAbilities = [
+    "- overpass-api: render a region / POI on the map from OpenStreetMap data.",
+    "- ask-more: ask the human for clarification when the area is unclear.",
+    "- apology: refuse politely when the request cannot be served from OSM data.",
+  ];
+  if (!isOpenAIBackend()) return baseAbilities.join("\n");
+
+  const presetIds = MAP_STYLE_PRESETS.map((p) => p.id).join(", ");
+  return [
+    ...baseAbilities,
+    `- base-style-switch: change the basemap to one of these preset ids: ${presetIds}. Emit an extra "Style: <id>" line.`,
+    "- style-edit: edit the map style YAML (e.g. hide buildings, change colors).",
+  ].join("\n");
+};
 
 const tridentSurfacePromptPrefix = `Your name is TRIDENT, You are an interactive web maps generating assistant.
 You interact with the human, asking step-by-step about the areas and concerns (theme) of the map they want to create.
@@ -9,6 +26,9 @@ You interact with the human, asking step-by-step about the areas and concerns (t
 ### Definition of output format: ###
 - Ability: Text that indicates required ability to generate maps.
 - Reply: Text that indicates the response to the human.
+
+### Available abilities: ###
+${buildAvailableAbilitiesBlock()}
 
 You will always reply according to the following rules:
 - You MUST ALWAYS reply according to the output format.

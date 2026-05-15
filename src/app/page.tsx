@@ -37,6 +37,7 @@ import { Ability } from "@/types/Ability";
 import { AccountButton } from "@/components/AccountButton";
 import * as turf from "@turf/turf";
 import { FloatingGitHubButton } from "@/components/FloatingGitHubButton";
+import { getMapStylePresetById } from "@/constants/MapStylePresets";
 
 export default function Home() {
   // all state
@@ -283,7 +284,7 @@ export default function Home() {
     } = await surfaceRes.json();
     setPastMessages(surfaceResJson.history);
     console.log(surfaceResJson.history);
-    const { ability, reply } = parseSurfaceResJson(surfaceResJson);
+    const { ability, reply, style } = parseSurfaceResJson(surfaceResJson);
     insertNewDialogue(
       {
         who: "assistant",
@@ -298,6 +299,20 @@ export default function Home() {
       case "overpass-api":
         console.debug("ability: overpass-api");
         await invokeOverpassInner(surfaceResJson.history);
+        break;
+      case "base-style-switch": {
+        console.debug("ability: base-style-switch, style:", style);
+        const preset = style ? getMapStylePresetById(style) : undefined;
+        if (preset) {
+          setMapStyleJsonUrl(preset.url);
+        } else {
+          console.warn("base-style-switch: unknown preset id:", style);
+        }
+        break;
+      }
+      case "style-edit":
+        // Charites-driven YAML edit. Wiring deferred (see ADR-0001 Phase 3+).
+        console.debug("ability: style-edit (not yet wired)");
         break;
       case "apology":
       case "ask-more":
