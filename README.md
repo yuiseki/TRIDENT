@@ -14,11 +14,19 @@ TRIDENT, an Interactive Smart Maps Assistant.
 
 - Node.js
 - npm
-- ollama
+- llama.cpp (built locally at `${LLAMA_CPP_DIR}`)
+- tmux
 
 ```bash
-make setup_ollama
-make setup
 npm ci
+make setup        # starts 4 llama-server tmux sessions for inner/surface/deep/embedding
 npm test
 ```
+
+Stop with `make stop_llama_cpp`. Set `USE_LLAMA_CPP=1` in `.env.development`.
+
+To use the legacy Ollama backend instead, run `make setup_ollama` and set `USE_OLLAMA=1`.
+
+### Docker Compose
+
+`docker compose up` brings up pgvector + 4 llama-server containers (NVIDIA GPU required for `:server-cuda` image) + Next.js dev server. The Next.js container reaches each role via `LLAMA_CPP_*_BASE_URL` env vars.

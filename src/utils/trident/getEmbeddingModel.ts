@@ -2,7 +2,17 @@ import { OllamaEmbeddings } from "@langchain/ollama";
 import { OpenAIEmbeddings } from "@langchain/openai";
 
 export const getEmbeddingModel = () => {
-  if (process.env.USE_OLLAMA === "1") {
+  if (process.env.USE_LLAMA_CPP === "1") {
+    const baseURL =
+      process.env.LLAMA_CPP_EMBEDDING_BASE_URL?.replace(/\/$/, "") ??
+      "http://127.0.0.1:18094/v1";
+    console.log("Using llama-server embedding:", baseURL);
+    return new OpenAIEmbeddings({
+      configuration: { baseURL },
+      model: "trident-embedding",
+      apiKey: process.env.LLAMA_CPP_API_KEY ?? "dummy",
+    });
+  } else if (process.env.USE_OLLAMA === "1") {
     return new OllamaEmbeddings({
       model:
         process.env.OLLAMA_EMBEDDING_MODEL !== undefined

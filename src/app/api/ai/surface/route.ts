@@ -64,11 +64,8 @@ const ensureSurfaceChain = async () => {
     surfaceChainPromise = (async () => {
       const vectorStore = await ensureSurfaceVectorStore();
       await ensureSurfaceExamplesInitialized();
-      const llm = getChatModel();
-      console.log(
-        "Creating surface chain with model:",
-        process.env.USE_OLLAMA === "1" ? "ollama" : "openai"
-      );
+      const llm = getChatModel("surface");
+      console.log("Creating surface chain");
       return loadTridentSurfaceChain({
         llm,
         vectorStore,

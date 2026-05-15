@@ -1,8 +1,35 @@
 import { ChatOllama } from "@langchain/ollama";
 import { ChatOpenAI } from "@langchain/openai";
 
-export const getChatModel = () => {
-  if (process.env.USE_OLLAMA === "1") {
+export type TridentRole = "inner" | "surface" | "deep";
+
+const LLAMA_CPP_DEFAULT_PORTS: Record<TridentRole, number> = {
+  inner: 18091,
+  surface: 18092,
+  deep: 18093,
+};
+
+export const getChatModel = (role?: TridentRole) => {
+  if (process.env.USE_LLAMA_CPP === "1") {
+    const port = role
+      ? LLAMA_CPP_DEFAULT_PORTS[role]
+      : Number(process.env.LLAMA_CPP_DEFAULT_PORT ?? 18091);
+    const roleOverride = role
+      ? process.env[`LLAMA_CPP_${role.toUpperCase()}_BASE_URL`]
+      : undefined;
+    const baseURL =
+      roleOverride?.replace(/\/$/, "") ??
+      process.env.LLAMA_CPP_BASE_URL?.replace(/\/$/, "") ??
+      `http://127.0.0.1:${port}/v1`;
+    const model = role ? `trident-${role}` : "local";
+    console.log(`Using llama-server (${role ?? "default"}):`, baseURL, model);
+    return new ChatOpenAI({
+      configuration: { baseURL },
+      model,
+      apiKey: process.env.LLAMA_CPP_API_KEY ?? "dummy",
+      temperature: 0,
+    });
+  } else if (process.env.USE_OLLAMA === "1") {
     const model =
       process.env.OLLAMA_CHAT_MODEL !== undefined
         ? process.env.OLLAMA_CHAT_MODEL

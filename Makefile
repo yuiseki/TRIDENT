@@ -5,14 +5,21 @@ all: \
 	voyager
 
 .PHONY: setup
-setup:
-	test ollama || $(MAKE) setup_ollama
-	ollama pull qwen2.5:1.5b
-	ollama pull snowflake-arctic-embed:22m
+setup: setup_llama_cpp
+
+.PHONY: setup_llama_cpp
+setup_llama_cpp:
+	./scripts/llama.cpp/start-trident-all-mac.sh
+
+.PHONY: stop_llama_cpp
+stop_llama_cpp:
+	tmux ls 2>/dev/null | awk -F: '/^trident-/{print $$1}' | xargs -I{} tmux kill-session -t {}
 
 .PHONY: setup_ollama
 setup_ollama:
 	curl -fsSL https://ollama.com/install.sh | sh
+	ollama pull qwen3:8b
+	ollama pull snowflake-arctic-embed:22m
 
 .PHONY: fetch_nhk
 fetch_nhk:

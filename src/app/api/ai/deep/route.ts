@@ -63,11 +63,8 @@ const ensureDeepChain = async () => {
     deepChainPromise = (async () => {
       const vectorStore = await ensureDeepVectorStore();
       await ensureDeepExamplesInitialized();
-      const llm = getChatModel();
-      console.log(
-        "Creating deep chain with model:",
-        process.env.USE_OLLAMA === "1" ? "ollama" : "openai"
-      );
+      const llm = getChatModel("deep");
+      console.log("Creating deep chain");
       return loadTridentDeepChain({ llm, vectorStore });
     })().catch((error) => {
       deepChainPromise = null;

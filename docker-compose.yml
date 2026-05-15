@@ -19,12 +19,34 @@ services:
       interval: 5s
       timeout: 5s
       retries: 10
-  ollama:
-    image: ollama/ollama:latest
+
+  llama-inner:
+    image: ghcr.io/ggml-org/llama.cpp:server-cuda
+    command:
+      - "-hf"
+      - "unsloth/Qwen3-4B-GGUF:Q4_K_M"
+      - "-a"
+      - "trident-inner"
+      - "-ngl"
+      - "999"
+      - "-c"
+      - "8192"
+      - "-np"
+      - "1"
+      - "-fa"
+      - "on"
+      - "-ctk"
+      - "q8_0"
+      - "-ctv"
+      - "q8_0"
+      - "--reasoning"
+      - "off"
+      - "--host"
+      - "0.0.0.0"
+      - "--port"
+      - "18091"
     volumes:
-      - ollama:/root/.ollama
-    ports:
-      - 1143:11434
+      - llama-cache:/root/.cache/llama.cpp
     networks:
       - trident
     deploy:
@@ -35,21 +57,138 @@ services:
               count: all
               capabilities: ["gpu"]
     healthcheck:
-      test: ["CMD", "bash", "-c", "ollama list | grep qwen3:14b"]
+      test: ["CMD-SHELL", "curl -fs http://localhost:18091/v1/models || exit 1"]
       interval: 10s
       timeout: 10s
-      retries: 1000
-  x-ollama-pull:
-    image: ollama/ollama:latest
-    container_name: ollama-pull
-    volumes:
-      - ollama:/root/.ollama
-    entrypoint: /bin/sh
+      retries: 120
+      start_period: 60s
+
+  llama-surface:
+    image: ghcr.io/ggml-org/llama.cpp:server-cuda
     command:
+      - "-hf"
+      - "unsloth/Qwen3-8B-GGUF:Q4_K_M"
+      - "-a"
+      - "trident-surface"
+      - "-ngl"
+      - "999"
       - "-c"
-      - "sleep 5; OLLAMA_HOST=ollama:11434 ollama pull snowflake-arctic-embed:22m; OLLAMA_HOST=ollama:11434 ollama pull qwen3:8b; OLLAMA_HOST=ollama:11434 ollama pull qwen3:14b;"
+      - "8192"
+      - "-np"
+      - "1"
+      - "-fa"
+      - "on"
+      - "-ctk"
+      - "q8_0"
+      - "-ctv"
+      - "q8_0"
+      - "--reasoning"
+      - "off"
+      - "--host"
+      - "0.0.0.0"
+      - "--port"
+      - "18092"
+    volumes:
+      - llama-cache:/root/.cache/llama.cpp
     networks:
       - trident
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: ["gpu"]
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fs http://localhost:18092/v1/models || exit 1"]
+      interval: 10s
+      timeout: 10s
+      retries: 120
+      start_period: 60s
+
+  llama-deep:
+    image: ghcr.io/ggml-org/llama.cpp:server-cuda
+    command:
+      - "-hf"
+      - "yuiseki/qwen2.5-coder-0.5b-trident-deep-v4.2-gguf:Q4_K_M"
+      - "-a"
+      - "trident-deep"
+      - "-ngl"
+      - "999"
+      - "-c"
+      - "8192"
+      - "-np"
+      - "1"
+      - "-fa"
+      - "on"
+      - "-ctk"
+      - "q8_0"
+      - "-ctv"
+      - "q8_0"
+      - "--reasoning"
+      - "off"
+      - "--host"
+      - "0.0.0.0"
+      - "--port"
+      - "18093"
+    volumes:
+      - llama-cache:/root/.cache/llama.cpp
+    networks:
+      - trident
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: ["gpu"]
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fs http://localhost:18093/v1/models || exit 1"]
+      interval: 10s
+      timeout: 10s
+      retries: 120
+      start_period: 60s
+
+  llama-embedding:
+    image: ghcr.io/ggml-org/llama.cpp:server-cuda
+    command:
+      - "-hf"
+      - "nomic-ai/nomic-embed-text-v1.5-GGUF:f16"
+      - "-a"
+      - "trident-embedding"
+      - "--embedding"
+      - "--pooling"
+      - "mean"
+      - "-ngl"
+      - "999"
+      - "-c"
+      - "8192"
+      - "-ub"
+      - "8192"
+      - "-b"
+      - "8192"
+      - "--host"
+      - "0.0.0.0"
+      - "--port"
+      - "18094"
+    volumes:
+      - llama-cache:/root/.cache/llama.cpp
+    networks:
+      - trident
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: ["gpu"]
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fs http://localhost:18094/v1/models || exit 1"]
+      interval: 10s
+      timeout: 10s
+      retries: 120
+      start_period: 60s
+
   nextjs:
     build:
       context: .
@@ -58,13 +197,23 @@ services:
     depends_on:
       db:
         condition: service_healthy
-      ollama:
+      llama-inner:
+        condition: service_healthy
+      llama-surface:
+        condition: service_healthy
+      llama-deep:
+        condition: service_healthy
+      llama-embedding:
         condition: service_healthy
     env_file:
       - .env.development
     environment:
       - USE_POSTGRES=1
-      - USE_OLLAMA=1
+      - USE_LLAMA_CPP=1
+      - LLAMA_CPP_INNER_BASE_URL=http://llama-inner:18091/v1
+      - LLAMA_CPP_SURFACE_BASE_URL=http://llama-surface:18092/v1
+      - LLAMA_CPP_DEEP_BASE_URL=http://llama-deep:18093/v1
+      - LLAMA_CPP_EMBEDDING_BASE_URL=http://llama-embedding:18094/v1
     volumes:
       - type: bind
         source: ${LOCAL_WORKSPACE_FOLDER:-.}
@@ -79,5 +228,5 @@ networks:
     name: trident
 
 volumes:
-  ollama:
+  llama-cache:
   overpass-db:

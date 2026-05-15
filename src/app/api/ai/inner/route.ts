@@ -64,11 +64,8 @@ const ensureInnerChain = async () => {
     innerChainPromise = (async () => {
       const vectorStore = await ensureInnerVectorStore();
       await ensureInnerExamplesInitialized();
-      const llm = getChatModel();
-      console.log(
-        "Creating inner chain with model:",
-        process.env.USE_OLLAMA === "1" ? "ollama" : "openai"
-      );
+      const llm = getChatModel("inner");
+      console.log("Creating inner chain");
       return loadTridentInnerChain({ llm, vectorStore });
     })().catch((error) => {
       innerChainPromise = null;
