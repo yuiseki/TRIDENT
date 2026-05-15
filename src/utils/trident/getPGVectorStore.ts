@@ -11,12 +11,15 @@ export const getPGVectorStore = async (
   tableName: string
 ) => {
   if (process.env.USE_POSTGRES === "1") {
+    // Defaults match docker-compose's db service (reachable from sibling
+    // containers via `db:5432`). Override with POSTGRES_HOST=localhost
+    // POSTGRES_PORT=5433 to reach the same container from the docker host.
     const reusablePool = new pg.Pool({
-      host: "db",
-      port: 5432,
-      user: "default",
-      password: "password",
-      database: "verceldb",
+      host: process.env.POSTGRES_HOST ?? "db",
+      port: Number(process.env.POSTGRES_PORT ?? 5432),
+      user: process.env.POSTGRES_USER ?? "default",
+      password: process.env.POSTGRES_PASSWORD ?? "password",
+      database: process.env.POSTGRES_DB ?? "verceldb",
     });
     const config = {
       pool: reusablePool,
