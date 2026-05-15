@@ -20,11 +20,45 @@ services:
       timeout: 5s
       retries: 10
 
+  # Pre-download all GGUF models so the llama-server containers can boot
+  # without spending minutes silently fetching weights. tqdm prints progress
+  # to docker logs even in non-TTY mode.
+  model-downloader:
+    image: python:3.12-slim
+    volumes:
+      - llama-cache:/root/.cache/huggingface
+    networks:
+      - trident
+    entrypoint: ["sh", "-c"]
+    command:
+      - |
+        set -e
+        pip install --quiet --no-cache-dir -U 'huggingface_hub[cli]'
+        echo "==================================================="
+        echo "Pre-downloading 4 GGUF models (~2GB total)..."
+        echo "==================================================="
+        echo ""
+        echo "[1/4] inner: unsloth/Qwen3-0.6B-GGUF (Q4_K_M, ~400MB)"
+        hf download unsloth/Qwen3-0.6B-GGUF --include "*Q4_K_M*.gguf"
+        echo ""
+        echo "[2/4] surface: unsloth/Qwen3-1.7B-GGUF (Q4_K_M, ~1GB)"
+        hf download unsloth/Qwen3-1.7B-GGUF --include "*Q4_K_M*.gguf"
+        echo ""
+        echo "[3/4] deep: yuiseki/qwen2.5-coder-0.5b-trident-deep-v4.2-gguf (Q4_K_M, ~380MB)"
+        hf download yuiseki/qwen2.5-coder-0.5b-trident-deep-v4.2-gguf --include "*Q4_K_M*.gguf"
+        echo ""
+        echo "[4/4] embedding: nomic-ai/nomic-embed-text-v1.5-GGUF (f16, ~270MB)"
+        hf download nomic-ai/nomic-embed-text-v1.5-GGUF --include "*f16*.gguf"
+        echo ""
+        echo "==================================================="
+        echo "All models cached at /root/.cache/huggingface/hub/"
+        echo "==================================================="
+
   llama-inner:
     image: ghcr.io/ggml-org/llama.cpp:server-cuda
     command:
       - "-hf"
-      - "unsloth/Qwen3-4B-GGUF:Q4_K_M"
+      - "unsloth/Qwen3-0.6B-GGUF:Q4_K_M"
       - "-a"
       - "trident-inner"
       - "-ngl"
@@ -46,9 +80,12 @@ services:
       - "--port"
       - "18091"
     volumes:
-      - llama-cache:/root/.cache/llama.cpp
+      - llama-cache:/root/.cache/huggingface
     networks:
       - trident
+    depends_on:
+      model-downloader:
+        condition: service_completed_successfully
     deploy:
       resources:
         reservations:
@@ -60,14 +97,14 @@ services:
       test: ["CMD-SHELL", "curl -fs http://localhost:18091/v1/models || exit 1"]
       interval: 10s
       timeout: 10s
-      retries: 120
-      start_period: 60s
+      retries: 60
+      start_period: 30s
 
   llama-surface:
     image: ghcr.io/ggml-org/llama.cpp:server-cuda
     command:
       - "-hf"
-      - "unsloth/Qwen3-8B-GGUF:Q4_K_M"
+      - "unsloth/Qwen3-1.7B-GGUF:Q4_K_M"
       - "-a"
       - "trident-surface"
       - "-ngl"
@@ -89,9 +126,12 @@ services:
       - "--port"
       - "18092"
     volumes:
-      - llama-cache:/root/.cache/llama.cpp
+      - llama-cache:/root/.cache/huggingface
     networks:
       - trident
+    depends_on:
+      model-downloader:
+        condition: service_completed_successfully
     deploy:
       resources:
         reservations:
@@ -103,8 +143,8 @@ services:
       test: ["CMD-SHELL", "curl -fs http://localhost:18092/v1/models || exit 1"]
       interval: 10s
       timeout: 10s
-      retries: 120
-      start_period: 60s
+      retries: 60
+      start_period: 30s
 
   llama-deep:
     image: ghcr.io/ggml-org/llama.cpp:server-cuda
@@ -132,9 +172,12 @@ services:
       - "--port"
       - "18093"
     volumes:
-      - llama-cache:/root/.cache/llama.cpp
+      - llama-cache:/root/.cache/huggingface
     networks:
       - trident
+    depends_on:
+      model-downloader:
+        condition: service_completed_successfully
     deploy:
       resources:
         reservations:
@@ -146,8 +189,8 @@ services:
       test: ["CMD-SHELL", "curl -fs http://localhost:18093/v1/models || exit 1"]
       interval: 10s
       timeout: 10s
-      retries: 120
-      start_period: 60s
+      retries: 60
+      start_period: 30s
 
   llama-embedding:
     image: ghcr.io/ggml-org/llama.cpp:server-cuda
@@ -172,9 +215,12 @@ services:
       - "--port"
       - "18094"
     volumes:
-      - llama-cache:/root/.cache/llama.cpp
+      - llama-cache:/root/.cache/huggingface
     networks:
       - trident
+    depends_on:
+      model-downloader:
+        condition: service_completed_successfully
     deploy:
       resources:
         reservations:
@@ -186,8 +232,8 @@ services:
       test: ["CMD-SHELL", "curl -fs http://localhost:18094/v1/models || exit 1"]
       interval: 10s
       timeout: 10s
-      retries: 120
-      start_period: 60s
+      retries: 60
+      start_period: 30s
 
   nextjs:
     build:
