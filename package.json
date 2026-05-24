@@ -78,7 +78,7 @@
     "happy-css-modules": "^4.0.0",
     "jest": "^30.0.0",
     "next-transpile-modules": "^10.0.1",
-    "prisma": "^6.4.1",
+    "prisma": "^6.19.3",
     "ts-jest": "^29.1.4",
     "ts-node": "^10.9.1",
     "tsx": "^4.19.2",
