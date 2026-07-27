@@ -2,25 +2,6 @@ import * as React from "react";
 import { useEffect, memo } from "react";
 import { ControlPosition, useControl } from "react-map-gl/maplibre";
 
-// Type augmentation to add missing GlobeControl to MapLib
-import 'react-map-gl/maplibre';
-
-declare module 'react-map-gl/maplibre' {
-  interface MapLib {
-    GlobeControl: GlobeControlConstructor;
-  }
-
-  interface GlobeControlInstance {
-    onAdd(map: any): HTMLElement;
-    onRemove(): void;
-    _container: HTMLElement;
-  }
-
-  interface GlobeControlConstructor {
-    new (options?: any): GlobeControlInstance;
-  }
-}
-
 // Add applyReactStyle utility function
 const unitlessNumber = /box|flex|grid|column|lineHeight|fontWeight|opacity|order|tabSize|zIndex/;
 
