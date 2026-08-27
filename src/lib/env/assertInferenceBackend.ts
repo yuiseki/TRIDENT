@@ -2,7 +2,7 @@
 // Ambiguity here would silently change which model handles a request, so we
 // fail fast at boot via `instrumentation.ts`.
 
-const FLAGS = ["USE_OPENAI_API", "USE_LLAMA_CPP", "USE_OLLAMA"] as const;
+const FLAGS = ["USE_OPENAI_API", "USE_LLAMA_CPP"] as const;
 
 export const assertInferenceBackend = (): void => {
   const enabled = FLAGS.filter((name) => process.env[name] === "1");

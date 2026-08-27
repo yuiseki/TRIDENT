@@ -20,7 +20,7 @@ export const tridentSurfaceExampleInputKeys = ["input"];
 // quality of gpt-5.1, e.g. base-style-switch and style-edit. Mutual exclusion
 // is enforced at boot by assertInferenceBackend().
 export const isOpenAIBackend = (): boolean =>
-  process.env.USE_LLAMA_CPP !== "1" && process.env.USE_OLLAMA !== "1";
+  process.env.USE_LLAMA_CPP !== "1";
 
 export const tridentSurfaceExampleList: Array<{
   input: string;

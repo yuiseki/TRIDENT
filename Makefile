@@ -15,12 +15,6 @@ setup_llama_cpp:
 stop_llama_cpp:
 	tmux ls 2>/dev/null | awk -F: '/^trident-/{print $$1}' | xargs -I{} tmux kill-session -t {}
 
-.PHONY: setup_ollama
-setup_ollama:
-	curl -fsSL https://ollama.com/install.sh | sh
-	ollama pull qwen3:8b
-	ollama pull snowflake-arctic-embed:22m
-
 .PHONY: fetch_nhk
 fetch_nhk:
 	npm run site:www3.nhk.or.jp:fetch

@@ -4,7 +4,7 @@ TRIDENT is an Interactive Smart Maps Assistant that creates dynamic, AI-powered 
 
 ## Core Functionality
 
-- **AI-Powered Map Generation**: Uses LangChain and Ollama models to interpret natural language queries and generate interactive maps
+- **AI-Powered Map Generation**: Uses LangChain and locally served models to interpret natural language queries and generate interactive maps
 - **OpenStreetMap Integration**: Leverages OSM data via Overpass API to fetch real-world geographic information
 - **Multi-layered AI Architecture**: 
   - Surface layer: Interprets user intent and determines capabilities
