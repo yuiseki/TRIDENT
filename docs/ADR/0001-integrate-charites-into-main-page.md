@@ -1,5 +1,8 @@
 # ADR-0001: charites による地図スタイル編集機能を main page に統合する
 
+> 補足 (2026-08-27): 本 ADR が言及する `USE_OLLAMA` はその後削除された。
+> 推論バックエンドは `USE_OPENAI_API` と `USE_LLAMA_CPP` の 2 つのみ。
+
 ## Status
 
 Proposed

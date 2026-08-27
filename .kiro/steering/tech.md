@@ -8,7 +8,7 @@
 
 ## AI & Machine Learning
 - **LangChain 0.3.0**: AI orchestration framework
-- **Ollama**: Local LLM inference (qwen2.5:1.5b, snowflake-arctic-embed:22m)
+- **llama.cpp (llama-server)**: Local LLM inference, one server per TRIDENT role
 - **OpenAI Integration**: Via @langchain/openai for external models
 - **Vector Storage**: PostgreSQL with pgvector extension
 
@@ -73,12 +73,11 @@ npx prisma migrate reset
 
 ### AI Model Setup
 ```bash
-# Setup Ollama and models
-make setup
+# Start one llama-server per TRIDENT role (inner / surface / deep / embedding)
+make setup_llama_cpp
 
-# Pull specific models
-ollama pull qwen2.5:1.5b
-ollama pull snowflake-arctic-embed:22m
+# Stop them again
+make stop_llama_cpp
 ```
 
 ### Data Processing
