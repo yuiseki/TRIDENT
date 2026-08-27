@@ -1,3 +1,5 @@
+import { toAreaSearch } from "@/lib/osm/areaSearchTerms";
+
 // Replace name-matched area filters in a generated Overpass query with the
 // relation id Nominatim says the name means.
 //
@@ -11,7 +13,10 @@
 
 const AREA_FILTER = /area\[("name(?::en)?")="((?:[^"\\]|\\.)*)"\]/g;
 
-export type AreaResolver = (name: string) => Promise<number | null>;
+export type AreaResolver = (
+  name: string,
+  outer: string[]
+) => Promise<number | null>;
 
 /**
  * Ground every area filter it can. A name that does not resolve keeps its
@@ -19,7 +24,11 @@ export type AreaResolver = (name: string) => Promise<number | null>;
  */
 export const groundAreaFilters = async (
   query: string,
-  resolve: AreaResolver
+  resolve: AreaResolver,
+  // The areas the inner layer named, smallest first. A name found here is
+  // resolved with the areas around it, which is what lets the geocoder tell
+  // 広島市 from the railway station of the same name.
+  chain: string[] = []
 ): Promise<{ query: string; grounded: string[]; unresolved: string[] }> => {
   const grounded: string[] = [];
   const unresolved: string[] = [];
@@ -31,10 +40,23 @@ export const groundAreaFilters = async (
   const unique = Array.from(new Set(names));
   if (unique.length === 0) return { query, grounded, unresolved };
 
+  // The model often writes a shorter name than the inner layer gave it:
+  // "Hiroshima City" comes back as area["name:en"="Hiroshima"]. Match on the
+  // stripped form too, and resolve using the chain entry, which still carries
+  // the level the suffix declared.
+  const chainIndexOf = (name: string): number => {
+    const exact = chain.indexOf(name);
+    if (exact !== -1) return exact;
+    return chain.findIndex((entry) => toAreaSearch(entry).term === name);
+  };
+
   const ids = new Map<string, number | null>();
   await Promise.all(
     unique.map(async (name) => {
-      ids.set(name, await resolve(name));
+      const index = chainIndexOf(name);
+      const searchName = index === -1 ? name : chain[index];
+      const outer = index === -1 ? [] : chain.slice(index + 1);
+      ids.set(name, await resolve(searchName, outer));
     })
   );
 

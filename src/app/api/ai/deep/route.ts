@@ -20,6 +20,7 @@ import {
   OVERPASS_AREA_ID_OFFSET,
   resolveAreaId,
 } from "@/lib/osm/resolveAreaRelationId";
+import { areaChainFromLine } from "@/lib/osm/areaSearchTerms";
 import { resolveTridentDeepPromptStyle } from "@/utils/langchain/chains/loadTridentDeepChain/prompt";
 
 const deepTableName = "trident_deep_example_openai";
@@ -97,8 +98,11 @@ export async function POST(request: Request) {
     if (boundaryQuery) {
       // Prefer the relation the geocoder names. Matching on name:en alone
       // returns every boundary sharing the name.
+      const chain = areaChainFromLine(query ?? "");
       const target = areaLineTarget(query ?? "");
-      const areaId = target ? await resolveAreaId(target) : null;
+      const areaId = target
+        ? await resolveAreaId(target, chain.slice(1))
+        : null;
       const deep =
         areaId === null
           ? boundaryQuery
@@ -132,7 +136,11 @@ export async function POST(request: Request) {
     // in Tokushima. Ask the geocoder which relation the name means and filter
     // by its id. A name it cannot place keeps the filter the model wrote.
     const { query: groundedQuery, grounded, unresolved } =
-      await groundAreaFilters(result.text, resolveAreaId);
+      await groundAreaFilters(
+        result.text,
+        resolveAreaId,
+        areaChainFromLine(query ?? "")
+      );
     if (grounded.length > 0 || unresolved.length > 0) {
       console.log("Deep areas grounded:", grounded, "unresolved:", unresolved);
     }

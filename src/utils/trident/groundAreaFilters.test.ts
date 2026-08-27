@@ -92,4 +92,67 @@ describe("groundAreaFilters", () => {
   it("passes an empty query through", async () => {
     expect((await groundAreaFilters("", resolver({}))).query).toBe("");
   });
+
+  it("gives each name the areas that contain it", async () => {
+    const seen: Array<[string, string[]]> = [];
+    const query = [
+      'area["name:en"="Tokyo"]->.outer;',
+      'area["name:en"="Taito"]->.inner;',
+    ].join("\n");
+    await groundAreaFilters(
+      query,
+      async (name, outer) => {
+        seen.push([name, outer]);
+        return 1;
+      },
+      ["Taito", "Tokyo"]
+    );
+    expect(seen.sort()).toEqual([
+      ["Taito", ["Tokyo"]],
+      ["Tokyo", []],
+    ]);
+  });
+
+  it("passes no context for a name the chain does not mention", async () => {
+    const seen: string[][] = [];
+    await groundAreaFilters(
+      'area["name:en"="Kyoto"]->.a;',
+      async (_name, outer) => {
+        seen.push(outer);
+        return 1;
+      },
+      ["Taito", "Tokyo"]
+    );
+    expect(seen).toEqual([[]]);
+  });
+});
+
+describe("matching the model's shortened names to the inner chain", () => {
+  it("resolves using the chain entry when the model dropped a suffix", async () => {
+    // inner said "Hiroshima City"; the model wrote area["name:en"="Hiroshima"].
+    // Resolving the bare name loses the level and lands on the prefecture.
+    const asked: string[] = [];
+    await groundAreaFilters(
+      'area["name:en"="Hiroshima"]->.outer;',
+      async (name) => {
+        asked.push(name);
+        return 1;
+      },
+      ["Hiroshima City"]
+    );
+    expect(asked).toEqual(["Hiroshima City"]);
+  });
+
+  it("still passes the outer areas alongside the matched entry", async () => {
+    const asked: Array<[string, string[]]> = [];
+    await groundAreaFilters(
+      'area["name:en"="Sendai"]->.inner;',
+      async (name, outer) => {
+        asked.push([name, outer]);
+        return 1;
+      },
+      ["Sendai", "Miyagi Prefecture"]
+    );
+    expect(asked).toEqual([["Sendai", ["Miyagi Prefecture"]]]);
+  });
 });
