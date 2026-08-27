@@ -24,13 +24,39 @@
 # 実測 2026-08-27。1449 トークンの合成プロンプト、ignore_eos で 150 トークン
 # 生成を強制、pi4-r-1 / pi4-r-3 が静かな状態で 1 条件ずつ測った。
 #
-#   層       -t      prompt eval        生成
-#   内層      2       9.48 tok/s        2.51 tok/s
-#   内層      4      16.64 tok/s        3.40 tok/s   1.76 / 1.36 倍  採用
-#   深層      2      12.08 tok/s        5.23 tok/s
-#   深層      4      19.17 tok/s        6.33 tok/s   1.59 / 1.21 倍  採用
-#   表層      3       5.65 tok/s        2.03 tok/s   採用
-#   表層      4       6.11 tok/s        1.88 tok/s   生成が 7% 悪化。却下
+#   層  ノード     -t   prompt eval    生成
+#   内層 pi4-r-1    2     9.48 tok/s   2.51 tok/s
+#   内層 pi4-r-1    4    16.64 tok/s   3.40 tok/s
+#   内層 pi5-w-1    4    89.15 tok/s   7.41 tok/s
+#   内層 pi5-w-1    3    73.63 tok/s   7.47 tok/s   採用
+#   深層 pi4-r-1    2    12.08 tok/s   5.23 tok/s
+#   深層 pi4-r-1    4    19.17 tok/s   6.33 tok/s   1.59 / 1.21 倍  採用
+#   表層 pi4-r-3    3     5.65 tok/s   2.03 tok/s   採用
+#   表層 pi4-r-3    4     6.11 tok/s   1.88 tok/s   生成が 7% 悪化。却下
+#
+# ## 内層だけ pi5-w-1 に置く理由
+#
+# Pi 4 の Cortex-A72 に対し Pi 5 は A76、クロックは 1.5 から 2.4GHz。
+# プロンプト処理が演算律速なので世代差がそのまま出て 5.36 倍になる。
+# 内層は実プロンプトが 1585 トークンでプロンプト処理が支配項なので、
+# 3 層の中でここに置く効果が最も大きい。
+#
+# 三層の実応答時間 (concern 1 個、静かな状態、アプリの pod へ直接)
+#
+#            前      -t 4    内層を pi5    温めた後
+#   surface  17.9s   17.9s   17.9s        17.9s
+#   inner   190.5s  123.6s    33.1s        18.8s
+#   deep      8.0s    6.8s     6.9s         0.0s
+#   合計    216.4s  148.3s    57.9s        36.7s
+#
+# 温めた状態では表層と内層がほぼ同じ割合になる。内層はもう支配項ではない。
+#
+# 表層は移していない。次に効くのは表層だが、pi5-w-1 は AP と k3s server と
+# ビルドホストを兼ねる単一障害点で、2 層を載せると集中が進む。
+#
+# なお pi5-w-1 に新しいイメージを引くと、展開中に load が 24 まで上がり
+# ノード自身が NotReady になる。発表当日にこれをやってはいけない。
+# イメージは前日までに引いておくこと。
 #
 # 表層だけ結論が逆になる。 Qwen3-1.7B は帯域律速が強く、スレッドを増やすと
 # 同期のオーバーヘッドが勝つ。表層は自由文を長く生成する層なので、
@@ -42,10 +68,14 @@
 # キューに並び、層をまたいだ同時推論にはならない。ただし応答時間に
 # キュー待ちが含まれる。 遅いときはこれを推論時間と読み違えないこと。
 ---
+# 名前に pi5 が入っているのは、内層を pi5-w-1 へ移す実験で作った PVC を
+# そのまま正式採用したため。local-path なのでノードに紐づいており、
+# 名前を変えると新しい空の PVC になってモデルを再ダウンロードする。
+# 実体は pi5-w-1 のディスク上にあり、モデルは既に入っている。
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: llama-inner-cache
+  name: llama-inner-pi5-cache
   namespace: trident
 spec:
   accessModes: ["ReadWriteOnce"]
@@ -72,7 +102,7 @@ spec:
         app: llama-inner
     spec:
       nodeSelector:
-        kubernetes.io/hostname: pi4-r-1
+        kubernetes.io/hostname: pi5-w-1
       containers:
         - name: llama
           image: ghcr.io/ggml-org/llama.cpp:server
@@ -89,8 +119,11 @@ spec:
             - "4096"
             - "-np"
             - "1"
+            # pi5-w-1 は 4 コアだが 3 に留める。このノードは AP と k3s server と
+            # ビルドホストを兼ねる単一障害点なので、1 コアを残す。
+            # 代償は 3.4 秒 (prompt eval 89.15 -> 73.63 tok/s、生成は変わらない)
             - "-t"
-            - "4"
+            - "3"
             - "--reasoning"
             - "off"
             - "--host"
@@ -118,7 +151,7 @@ spec:
       volumes:
         - name: cache
           persistentVolumeClaim:
-            claimName: llama-inner-cache
+            claimName: llama-inner-pi5-cache
 ---
 apiVersion: v1
 kind: Service
