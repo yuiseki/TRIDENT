@@ -31,7 +31,7 @@ spec:
       containerConcurrency: 4
       timeoutSeconds: 300
       containers:
-        - image: 192.168.0.90:5000/trident:0.3.0-pi
+        - image: 192.168.0.90:5000/trident:0.4.2-pi
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3000
