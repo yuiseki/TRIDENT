@@ -11,6 +11,14 @@ Output:
 
 export const tridentInnerExampleInputKeys = ["input"];
 
+// 例の言語構成に注意すること。SemanticSimilarityExampleSelector は
+// 内容で検索して言語を見ないので、英語の問いでも同じ地名の日本語の例を
+// 引き当てる。ConfirmHelpful は入力言語で返す約束なのに、日本語の例が
+// 手本として渡ると日本語で返る。プロンプトには言語の指定が入っているが、
+// 0.6B は上の指示より目の前の例に従う。
+//
+// 表層で同じことが起きて 40 秒を失っていた (候補プール 18 件中 英語 1 件)。
+// 日本語の例を消すのではなく英語の対を足して直した。ここも同じ方針。
 export const tridentInnerExampleList: Array<{
   input: string;
   output: string;
@@ -53,7 +61,7 @@ TitleOfMap: UN facilities in New York City
 EmojiForConcern: UN facilities, 🇺🇳
 ColorForConcern: UN facilities, lightblue
 Area: City of New York
-AreaWithConcern City of New York, UN facilities`,
+AreaWithConcern: City of New York, UN facilities`,
   },
   {
     input: "Area: Rukum District, Karnali Province, Nepal",
@@ -299,5 +307,50 @@ ColorForConcern: AL Apartments, cyan
 AreaWithConcern: Municipality of Prizren, Kosovo, Innovation and Training Park Prizren
 EmojiForConcern: Innovation and Training Park Prizren, 🏢
 ColorForConcern: Innovation and Training Park Prizren, blue`,
+  },
+  {
+    input: "Show me cafes in Hiroshima City",
+    output: `ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
+TitleOfMap: Cafes in Hiroshima City
+Area: Hiroshima City, Hiroshima Prefecture, Japan
+AreaWithConcern: Hiroshima City, Hiroshima Prefecture, Japan, Cafes
+EmojiForConcern: Cafes, ☕️
+ColorForConcern: Cafes, brown`,
+  },
+  {
+    input: "Show me cafes in Taito, Tokyo",
+    output: `ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
+TitleOfMap: Cafes in Taito, Tokyo
+Area: Taito, Tokyo
+AreaWithConcern: Taito, Tokyo, Cafes
+EmojiForConcern: Cafes, ☕️
+ColorForConcern: Cafes, brown`,
+  },
+  {
+    input: "Show me ramen shops in Taito, Tokyo",
+    output: `ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
+TitleOfMap: Ramen shops in Taito, Tokyo
+Area: Taito, Tokyo
+AreaWithConcern: Taito, Tokyo, Ramen shops
+EmojiForConcern: Ramen shops, 🍜
+ColorForConcern: Ramen shops, orange`,
+  },
+  {
+    input: "Show me bakeries in Nishinari Ward, Osaka, Osaka Prefecture, Japan",
+    output: `ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
+TitleOfMap: Bakeries in Nishinari Ward, Osaka
+Area: Nishinari Ward, Osaka, Osaka Prefecture, Japan
+AreaWithConcern: Nishinari Ward, Osaka, Osaka Prefecture, Japan, Bakeries
+EmojiForConcern: Bakeries, 🥐
+ColorForConcern: Bakeries, wheat`,
+  },
+  {
+    input: "Show me airports in Chuo Ward, Niigata, Niigata Prefecture, Japan",
+    output: `ConfirmHelpful: Mapping has been completed. Do you have any other requests? Have we been helpful to you?
+TitleOfMap: Airports in Chuo Ward, Niigata
+Area: Chuo Ward, Niigata, Niigata Prefecture, Japan
+AreaWithConcern: Chuo Ward, Niigata, Niigata Prefecture, Japan, Airports
+EmojiForConcern: Airports, ✈️
+ColorForConcern: Airports, skyblue`,
   },
 ];
