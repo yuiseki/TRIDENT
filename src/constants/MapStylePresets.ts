@@ -3,6 +3,7 @@
 // `Style: ...` output and what page.tsx maps to a JSON URL.
 
 export type MapStylePresetId =
+  | "z-fiord"
   | "fiord-color"
   | "dark-matter"
   | "osm-jp-bright"
@@ -19,6 +20,14 @@ export type MapStylePreset = {
 };
 
 export const MAP_STYLE_PRESETS: readonly MapStylePreset[] = [
+  {
+    // The only preset with nothing external: tiles, glyphs and sprites all come from
+    // z.yuiseki.net. Every other entry reaches a host we do not run.
+    id: "z-fiord",
+    url: "https://z.yuiseki.net/static/maps/styles/osm-fiord.json",
+    label: "🌍 z Fiord color (self-hosted)",
+    description: "Fiord color served entirely from z.yuiseki.net, including glyphs and sprites",
+  },
   {
     id: "fiord-color",
     url: "/map_styles/fiord-color-gl-style/style.json",

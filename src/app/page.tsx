@@ -66,7 +66,7 @@ export default function Home() {
   // base maps style state
   const [mapStyleJsonUrl, setMapStyleJsonUrl] = useLocalStorage<string>(
     "trident-selected-map-style-json-url",
-    "/map_styles/fiord-color-gl-style/style.json"
+    "https://z.yuiseki.net/static/maps/styles/osm-fiord.json"
   );
 
   // auto rotate state

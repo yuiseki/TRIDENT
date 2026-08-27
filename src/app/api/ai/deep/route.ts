@@ -10,6 +10,8 @@ import {
 import { getChatModel } from "@/utils/trident/getChatModel";
 import { getEmbeddingModel } from "@/utils/trident/getEmbeddingModel";
 import { getPGVectorStore } from "@/utils/trident/getPGVectorStore";
+import { buildAreaBoundaryQuery } from "@/utils/trident/buildAreaBoundaryQuery";
+import { resolveTridentDeepPromptStyle } from "@/utils/langchain/chains/loadTridentDeepChain/prompt";
 
 const deepTableName = "trident_deep_example_openai";
 let deepVectorStorePromise:
@@ -77,6 +79,17 @@ const ensureDeepChain = async () => {
 export async function POST(request: Request) {
   const res = await request.json();
   const query = res.query;
+
+  // A bare "Area:" line asks to frame the map, not to find anything. The
+  // fine-tuned model only ever saw AreaWithConcern, so it answers one by
+  // inventing a concern. The boundary query is a template, so build it.
+  if (resolveTridentDeepPromptStyle(process.env) === "finetuned") {
+    const boundaryQuery = buildAreaBoundaryQuery(query ?? "");
+    if (boundaryQuery) {
+      console.log("Deep: area line handled without the model:", query);
+      return NextResponse.json({ query, deep: boundaryQuery });
+    }
+  }
 
   await ensureDeepExamplesInitialized();
 
