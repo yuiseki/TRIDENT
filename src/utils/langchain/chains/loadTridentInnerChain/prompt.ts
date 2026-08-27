@@ -61,15 +61,41 @@ You will always reply according to the following rules:
 
 ### Examples of map definition: ###`;
 
+/**
+ * How many retrieved examples to put in front of the model.
+ *
+ * Measured on Qwen3-0.6B, the model the Pi runs as its inner layer, over the
+ * ten cases in text2geoql-dataset/src/benchmark_inner.py:
+ *
+ *   5 examples   7/10 correct
+ *   0 examples   4/10 correct   area falls from 10/10 to 6/10
+ *
+ * Without them the model loses the shape of the answer entirely, so the
+ * default stays at five. The knob exists to ask the question again after
+ * fine-tuning, when a model that has learnt the format may not need them.
+ */
+export const resolveInnerExampleCount = (
+  env: Record<string, string | undefined>
+): number => {
+  const raw = env.TRIDENT_INNER_EXAMPLES;
+  // Digits only. parseInt would read "3.5" as 3 and quietly change the
+  // experiment rather than saying the value was not understood.
+  if (raw === undefined || !/^\d+$/.test(raw)) return 5;
+  return Number.parseInt(raw, 10);
+};
+
 export const loadTridentInnerPrompt = async (vectorStore: VectorStore) => {
+  const k = resolveInnerExampleCount(process.env);
   const exampleSelector = new SemanticSimilarityExampleSelector({
     vectorStore: vectorStore,
-    k: 5,
+    k,
     inputKeys: ["input"],
   });
 
   const dynamicPrompt = new FewShotPromptTemplate({
-    exampleSelector: exampleSelector,
+    ...(k > 0
+      ? { exampleSelector }
+      : { examples: [] as Array<Record<string, string>> }),
     examplePrompt: tridentInnerExamplePrompt,
     prefix: tridentInnerPromptPrefix,
     suffix: `

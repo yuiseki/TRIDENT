@@ -1,0 +1,121 @@
+# GPU を使わない上書き。
+#
+#   docker compose -f docker-compose.yml -f docker-compose.cpu.yml up -d
+#
+# 母艦 (yuisekin-z) の GPU は生成用 35B と常駐サービスで埋まっていて、
+# 4 本ぶんの VRAM (約 2.2GB) が空かない。Pi 5 側は CPU で同じ 4 本を
+# 動かしているので、CPU に寄せるほうが Pi の挙動に近いという利点もある。
+#
+# 変えているのは 3 つだけ。
+#   image    :server-cuda -> :server   (どちらも arm64/amd64 マニフェストあり)
+#   -ngl     外す。CPU ビルドにオフロード先は無い
+#   deploy   GPU の予約を空にする
+#
+# モデルの指定は触らない。inner=Qwen3-0.6B / surface=Qwen3-1.7B /
+# deep=v4.2 0.5B / embedding=nomic-embed-text-v1.5 で、k8s/pi と同じ。
+services:
+  llama-inner:
+    image: ghcr.io/ggml-org/llama.cpp:server
+    command:
+    - -hf
+    - unsloth/Qwen3-0.6B-GGUF:Q4_K_M
+    - -a
+    - trident-inner
+    - -c
+    - '8192'
+    - -np
+    - '1'
+    - -fa
+    - 'on'
+    - -ctk
+    - q8_0
+    - -ctv
+    - q8_0
+    - --reasoning
+    - 'off'
+    - --host
+    - 0.0.0.0
+    - --port
+    - '18091'
+    deploy:
+      resources:
+        reservations:
+          devices: []
+  llama-surface:
+    image: ghcr.io/ggml-org/llama.cpp:server
+    command:
+    - -hf
+    - unsloth/Qwen3-1.7B-GGUF:Q4_K_M
+    - -a
+    - trident-surface
+    - -c
+    - '8192'
+    - -np
+    - '1'
+    - -fa
+    - 'on'
+    - -ctk
+    - q8_0
+    - -ctv
+    - q8_0
+    - --reasoning
+    - 'off'
+    - --host
+    - 0.0.0.0
+    - --port
+    - '18092'
+    deploy:
+      resources:
+        reservations:
+          devices: []
+  llama-deep:
+    image: ghcr.io/ggml-org/llama.cpp:server
+    command:
+    - -hf
+    - yuiseki/qwen2.5-coder-0.5b-trident-deep-v4.2-gguf:Q4_K_M
+    - -a
+    - trident-deep
+    - -c
+    - '8192'
+    - -np
+    - '1'
+    - -fa
+    - 'on'
+    - -ctk
+    - q8_0
+    - -ctv
+    - q8_0
+    - --reasoning
+    - 'off'
+    - --host
+    - 0.0.0.0
+    - --port
+    - '18093'
+    deploy:
+      resources:
+        reservations:
+          devices: []
+  llama-embedding:
+    image: ghcr.io/ggml-org/llama.cpp:server
+    command:
+    - -hf
+    - nomic-ai/nomic-embed-text-v1.5-GGUF:f16
+    - -a
+    - trident-embedding
+    - --embedding
+    - --pooling
+    - mean
+    - -c
+    - '8192'
+    - -ub
+    - '8192'
+    - -b
+    - '8192'
+    - --host
+    - 0.0.0.0
+    - --port
+    - '18094'
+    deploy:
+      resources:
+        reservations:
+          devices: []
