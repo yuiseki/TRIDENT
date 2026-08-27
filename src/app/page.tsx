@@ -24,6 +24,7 @@ import { FloatingChatButton } from "@/components/FloatingChatButton";
 import { MapStyleSelector } from "@/components/MapStyleSelector";
 import { fitBoundsToGeoJson } from "@/lib/maplibre/fitBoundsToGeoJson";
 import { parseInnerResJson } from "@/utils/trident/parseInnerResJson";
+import { parseOverpassQueryFromDeep } from "@/utils/trident/parseOverpassQueryFromDeep";
 import { LegalNotice } from "@/components/LegalNotice";
 import { InputSuggest } from "@/components/InputSuggest";
 import { InputPredict } from "@/components/InputPredict";
@@ -189,10 +190,10 @@ export default function Home() {
         const deepResJson = await nextPostJsonWithCache("/api/ai/deep", {
           query: line,
         });
-        if (deepResJson.deep.toLowerCase().includes("no valid")) {
+        const overpassQuery = parseOverpassQueryFromDeep(deepResJson.deep);
+        if (!overpassQuery) {
           return null;
         }
-        const overpassQuery = deepResJson.deep.split("```")[1];
 
         const handleOverpassResponseJson = async (
           overpassResponseJson: any,
