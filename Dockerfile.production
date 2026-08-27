@@ -15,8 +15,11 @@ WORKDIR /app
 # ソースを先に COPY すると 1 行直すだけで npm ci からやり直しになる。
 # Raspberry Pi 5 での実測で npm ci が 274 秒、next build が 150 秒なので、
 # ビルド時間の 65% がこの順序で決まる。
-# prisma も同じ層に置く。postinstall が prisma generate を走らせるため。
-COPY package.json package-lock.json ./
+# この層には npm ci が読むものを漏れなく入れる。落とすと壊れる:
+#   .npmrc  legacy-peer-deps=true。無いと @langchain/community の
+#           peer 依存が ERESOLVE で解決できず npm ci が落ちる
+#   prisma  postinstall が prisma generate を走らせる
+COPY package.json package-lock.json .npmrc ./
 COPY prisma ./prisma
 RUN npm ci
 
