@@ -5,3 +5,7 @@ node_modules
 .vscode
 .docs
 .tmp
+# 実際の秘密が入る。COPY . /app でイメージに焼き込まれるのを防ぐ
+.env
+.env.*
+!.env.example

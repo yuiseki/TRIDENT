@@ -1,0 +1,361 @@
+# TRIDENT の 3 層 + embedding を担う llama-server 4 本。
+#
+# docker-compose.yml との差分と、その理由:
+#   - image は :server-cuda ではなく :server (CPU)。Pi に GPU は無い。
+#     どちらも arm64 マニフェストを持っているのは確認済み
+#   - -ngl を外した。CPU ビルドではオフロード先が無い
+#   - -fa / -ctk / -ctv (量子化 KV) を外した。Pi では効果が読めず、
+#     まず素直に通すことを優先した。速度が問題になってから足す
+#   - nodeSelector で 3 ノードに散らした。Pi 4 は 4 コアなので、
+#     同じノードに 2 本載せると生成が互いに遅くなる
+#   - -t はノードあたりの本数で割った (単独なら 3、2 本同居なら 2)。
+#     1 コアは kubelet と queue に残す
+#
+# モデルは -hf で起動時にダウンロードし、local-path PVC にキャッシュする。
+# PVC はノードに紐づくので、pod は結果的に同じノードに固定される。
+# nodeSelector はそれを明示しているだけで、二重の拘束ではない。
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: llama-inner-cache
+  namespace: trident
+spec:
+  accessModes: ["ReadWriteOnce"]
+  storageClassName: local-path
+  resources:
+    requests:
+      storage: 2Gi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: llama-inner
+  namespace: trident
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: llama-inner
+  template:
+    metadata:
+      labels:
+        app: llama-inner
+    spec:
+      nodeSelector:
+        kubernetes.io/hostname: pi4-r-1
+      containers:
+        - name: llama
+          image: ghcr.io/ggml-org/llama.cpp:server
+          args:
+            - "-hf"
+            - "unsloth/Qwen3-0.6B-GGUF:Q4_K_M"
+            - "-a"
+            - "trident-inner"
+            - "-c"
+            - "8192"
+            - "-np"
+            - "1"
+            - "-t"
+            - "2"
+            - "--reasoning"
+            - "off"
+            - "--host"
+            - "0.0.0.0"
+            - "--port"
+            - "18091"
+          ports:
+            - containerPort: 18091
+          volumeMounts:
+            - name: cache
+              mountPath: /root/.cache/huggingface
+          readinessProbe:
+            httpGet:
+              path: /v1/models
+              port: 18091
+            initialDelaySeconds: 20
+            periodSeconds: 10
+            failureThreshold: 60
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "512Mi"
+            limits:
+              memory: "2Gi"
+      volumes:
+        - name: cache
+          persistentVolumeClaim:
+            claimName: llama-inner-cache
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: llama-inner
+  namespace: trident
+spec:
+  selector:
+    app: llama-inner
+  ports:
+    - port: 18091
+      targetPort: 18091
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: llama-surface-cache
+  namespace: trident
+spec:
+  accessModes: ["ReadWriteOnce"]
+  storageClassName: local-path
+  resources:
+    requests:
+      storage: 4Gi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: llama-surface
+  namespace: trident
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: llama-surface
+  template:
+    metadata:
+      labels:
+        app: llama-surface
+    spec:
+      nodeSelector:
+        kubernetes.io/hostname: pi4-r-3
+      containers:
+        - name: llama
+          image: ghcr.io/ggml-org/llama.cpp:server
+          args:
+            - "-hf"
+            - "unsloth/Qwen3-1.7B-GGUF:Q4_K_M"
+            - "-a"
+            - "trident-surface"
+            - "-c"
+            - "8192"
+            - "-np"
+            - "1"
+            - "-t"
+            - "3"
+            - "--reasoning"
+            - "off"
+            - "--host"
+            - "0.0.0.0"
+            - "--port"
+            - "18092"
+          ports:
+            - containerPort: 18092
+          volumeMounts:
+            - name: cache
+              mountPath: /root/.cache/huggingface
+          readinessProbe:
+            httpGet:
+              path: /v1/models
+              port: 18092
+            initialDelaySeconds: 30
+            periodSeconds: 10
+            failureThreshold: 90
+          resources:
+            requests:
+              cpu: "200m"
+              memory: "1Gi"
+            limits:
+              memory: "3Gi"
+      volumes:
+        - name: cache
+          persistentVolumeClaim:
+            claimName: llama-surface-cache
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: llama-surface
+  namespace: trident
+spec:
+  selector:
+    app: llama-surface
+  ports:
+    - port: 18092
+      targetPort: 18092
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: llama-deep-cache
+  namespace: trident
+spec:
+  accessModes: ["ReadWriteOnce"]
+  storageClassName: local-path
+  resources:
+    requests:
+      storage: 2Gi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: llama-deep
+  namespace: trident
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: llama-deep
+  template:
+    metadata:
+      labels:
+        app: llama-deep
+    spec:
+      nodeSelector:
+        kubernetes.io/hostname: pi4-r-1
+      containers:
+        - name: llama
+          image: ghcr.io/ggml-org/llama.cpp:server
+          args:
+            - "-hf"
+            - "yuiseki/qwen2.5-coder-0.5b-trident-deep-v4.2-gguf:Q4_K_M"
+            - "-a"
+            - "trident-deep"
+            - "-c"
+            - "8192"
+            - "-np"
+            - "1"
+            - "-t"
+            - "2"
+            - "--host"
+            - "0.0.0.0"
+            - "--port"
+            - "18093"
+          ports:
+            - containerPort: 18093
+          volumeMounts:
+            - name: cache
+              mountPath: /root/.cache/huggingface
+          readinessProbe:
+            httpGet:
+              path: /v1/models
+              port: 18093
+            initialDelaySeconds: 20
+            periodSeconds: 10
+            failureThreshold: 60
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "512Mi"
+            limits:
+              memory: "2Gi"
+      volumes:
+        - name: cache
+          persistentVolumeClaim:
+            claimName: llama-deep-cache
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: llama-deep
+  namespace: trident
+spec:
+  selector:
+    app: llama-deep
+  ports:
+    - port: 18093
+      targetPort: 18093
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: llama-embedding-cache
+  namespace: trident
+spec:
+  accessModes: ["ReadWriteOnce"]
+  storageClassName: local-path
+  resources:
+    requests:
+      storage: 2Gi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: llama-embedding
+  namespace: trident
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: llama-embedding
+  template:
+    metadata:
+      labels:
+        app: llama-embedding
+    spec:
+      nodeSelector:
+        kubernetes.io/hostname: pi4-r-2
+      containers:
+        - name: llama
+          image: ghcr.io/ggml-org/llama.cpp:server
+          args:
+            - "-hf"
+            - "nomic-ai/nomic-embed-text-v1.5-GGUF:f16"
+            - "-a"
+            - "trident-embedding"
+            - "--embedding"
+            - "--pooling"
+            - "mean"
+            - "-c"
+            - "8192"
+            - "-ub"
+            - "8192"
+            - "-b"
+            - "8192"
+            - "-t"
+            - "3"
+            - "--host"
+            - "0.0.0.0"
+            - "--port"
+            - "18094"
+          ports:
+            - containerPort: 18094
+          volumeMounts:
+            - name: cache
+              mountPath: /root/.cache/huggingface
+          readinessProbe:
+            httpGet:
+              path: /v1/models
+              port: 18094
+            initialDelaySeconds: 20
+            periodSeconds: 10
+            failureThreshold: 60
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "512Mi"
+            limits:
+              memory: "2Gi"
+      volumes:
+        - name: cache
+          persistentVolumeClaim:
+            claimName: llama-embedding-cache
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: llama-embedding
+  namespace: trident
+spec:
+  selector:
+    app: llama-embedding
+  ports:
+    - port: 18094
+      targetPort: 18094

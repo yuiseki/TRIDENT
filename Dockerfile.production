@@ -13,6 +13,17 @@ WORKDIR /app
 COPY . /app
 
 RUN npm ci
+
+# NEXT_PUBLIC_* はクライアントバンドルに焼き込まれるので、実行時の env では
+# 変えられない。デプロイ先ごとに向き先が変わるため build arg で受ける。
+# .dockerignore が .env を除外している (実際の秘密が入るため) ので、
+# ファイル経由ではなくここが唯一の入口。未指定ならコード側の既定値
+# (nominatim.openstreetmap.org / z.overpass-api.de) が使われる。
+ARG NEXT_PUBLIC_NOMINATIM_BASE_URL
+ARG NEXT_PUBLIC_OVERPASS_BASE_URL
+ENV NEXT_PUBLIC_NOMINATIM_BASE_URL=${NEXT_PUBLIC_NOMINATIM_BASE_URL}
+ENV NEXT_PUBLIC_OVERPASS_BASE_URL=${NEXT_PUBLIC_OVERPASS_BASE_URL}
+
 RUN NODE_OPTIONS=--experimental-wasm-modules npm run build
 
 FROM node:24-bookworm-slim
