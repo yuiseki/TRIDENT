@@ -1,0 +1,109 @@
+# TRIDENT 本体 (Next.js)。母艦 (yuisekin-z) 用。OpenAI を使わない構成。
+#
+# k8s/pi/30-app.yaml が Pi 向けに Knative Service で同じアプリを載せるのに対し、
+# こちらは母艦の既存の Deployment + Service + Ingress に合わせた素の Deployment。
+#
+# 秘密は Secret trident-env に入っていて、ここには参照名しか書かない。
+# POSTGRES_HOST や POSTGRES_USER はそちら側。POSTGRES_DB だけは
+# 明示している。env は envFrom より優先されるので、これが効く。
+#
+# 各層の向き先:
+#   surface / inner  knative-pool の llama-server (gvt-llm, Qwen3.6-35B-A3B, GPU)
+#   deep             default の trident-deep (v4.2 0.5B, GPU 1)   k8s/z/trident-deep.yaml
+#   embedding        default の embedding-server (granite, 384 次元)
+#   Nominatim / Overpass  自前 (NEXT_PUBLIC_* はビルド時にも焼き込まれる)
+#
+# TRIDENT_DEEP_PROMPT_STYLE=finetuned は必須。これが無いと few-shot の
+# hints 表が効いて Cafes が restaurant + cuisine=cafe になり Overpass が空になる。
+#
+# イメージは registry に push せず、ホストで build して containerd に import する。
+# 手順は docs/OPERATIONS.z.md。
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: trident
+  namespace: trident
+  labels:
+    app.kubernetes.io/name: trident
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: trident
+  # Recreate。RollingUpdate だと新旧が同時に起動し、どちらも起動時に
+  # ベクタテーブルへ例を投入しようとする。
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: trident
+    spec:
+      containers:
+      - name: app
+        image: trident:noopenai-e1791e6
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 3000
+          name: http
+          protocol: TCP
+        env:
+        - name: VERCEL_ENV
+          value: production
+        - name: USE_POSTGRES
+          value: '1'
+        - name: USE_OPENAI_API
+          value: '0'
+        - name: NODE_OPTIONS
+          value: --experimental-wasm-modules
+        - name: USE_LLAMA_CPP
+          value: '1'
+        - name: NEXT_PUBLIC_NOMINATIM_BASE_URL
+          value: https://nominatim.yuiseki.net
+        - name: NEXT_PUBLIC_OVERPASS_BASE_URL
+          value: https://overpass.yuiseki.net
+        - name: TRIDENT_DEEP_PROMPT_STYLE
+          value: finetuned
+        - name: LLAMA_CPP_API_KEY
+          value: dummy
+        - name: POSTGRES_DB
+          value: trident
+        - name: LLAMA_CPP_INNER_BASE_URL
+          value: http://llama-server.knative-pool.svc.cluster.local:8080/v1
+        - name: LLAMA_CPP_SURFACE_BASE_URL
+          value: http://llama-server.knative-pool.svc.cluster.local:8080/v1
+        - name: LLAMA_CPP_DEEP_BASE_URL
+          value: http://trident-deep.default.svc.cluster.local:8080/v1
+        - name: LLAMA_CPP_EMBEDDING_BASE_URL
+          value: http://embedding-server.default.svc.cluster.local:8080/v1
+        envFrom:
+        - secretRef:
+            name: trident-env
+        resources:
+          limits:
+            cpu: '1'
+            memory: 1Gi
+          requests:
+            cpu: 100m
+            memory: 256Mi
+        readinessProbe:
+          failureThreshold: 3
+          httpGet:
+            path: /
+            port: http
+            scheme: HTTP
+          initialDelaySeconds: 5
+          periodSeconds: 10
+          successThreshold: 1
+          timeoutSeconds: 1
+        livenessProbe:
+          failureThreshold: 3
+          httpGet:
+            path: /
+            port: http
+            scheme: HTTP
+          initialDelaySeconds: 15
+          periodSeconds: 20
+          successThreshold: 1
+          timeoutSeconds: 1
