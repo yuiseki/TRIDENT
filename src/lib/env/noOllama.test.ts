@@ -31,6 +31,14 @@ describe("no Ollama dependency remains", () => {
     expect(grep("@langchain/ollama", "src", "scripts", "package.json")).toBe("");
   });
 
+  it("keeps the lockfile free of it too", () => {
+    // Dropping the dependency from package.json without regenerating the lock
+    // leaves npm ci still installing it.
+    expect(grep("@langchain/ollama|\"node_modules/ollama\"", "package-lock.json")).toBe(
+      ""
+    );
+  });
+
   it("uses none of the Ollama runtime symbols", () => {
     expect(
       grep("ChatOllama|OllamaEmbeddings|ollamaModels", "src", "scripts")
