@@ -1,4 +1,9 @@
 import { Md5 } from "ts-md5";
+import {
+  OVERPASS_CACHE_PREFIX,
+  TOO_LARGE_MARKER,
+  writeOverpassCache,
+} from "./overpassCache";
 
 export const getOverpassResponse = async (overpassQuery: string) => {
   const baseUrl = process.env.NEXT_PUBLIC_OVERPASS_BASE_URL
@@ -21,7 +26,7 @@ export const getOverpassResponseJsonWithCache = async (
   const md5 = new Md5();
   md5.appendStr(overpassQuery);
   const hash = md5.end();
-  const key = `trident-overpass-cache-${hash}`;
+  const key = `${OVERPASS_CACHE_PREFIX}${hash}`;
   const unixtime = Math.floor(new Date().getTime() / 1000);
 
   console.log(overpassQuery);
@@ -34,19 +39,21 @@ export const getOverpassResponseJsonWithCache = async (
       resJson: json,
       unixtime: unixtime,
     };
-    try {
-      if (dontCache) return json;
-      window.localStorage.setItem(key, JSON.stringify(valueToStore));
-    } catch (error) {
-      console.log("getOverpassResponseJsonWithCache error:", error);
-      window.localStorage.setItem(key, "too large to cache");
+    if (dontCache) return json;
+    const result = writeOverpassCache(
+      window.localStorage,
+      key,
+      JSON.stringify(valueToStore)
+    );
+    if (result !== "stored") {
+      console.log("getOverpassResponseJsonWithCache not cached:", result);
     }
     return json;
   };
 
   const cache = window.localStorage.getItem(key);
   if (cache) {
-    if (cache === "too large to cache") {
+    if (cache === TOO_LARGE_MARKER) {
       return await getAndCache(true);
     }
     const valueFromStore = JSON.parse(cache);
