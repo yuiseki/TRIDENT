@@ -216,7 +216,7 @@ export default function Home() {
         };
 
         const overpassResponseJson = await getOverpassResponseJsonWithCache(
-          overpassQuery.replace("[timeout:30000];", "[timeout:3000];")
+          overpassQuery.replace("[timeout:30];", "[timeout:3000];")
         );
         const geojson = await handleOverpassResponseJson(
           overpassResponseJson,

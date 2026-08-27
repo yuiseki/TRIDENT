@@ -6,7 +6,7 @@ export class OverpassTokyoRamenCount extends ChainTool {
 
   async _call(input: string) {
     try {
-      const overpassQuery = `[out:json][timeout:30000];
+      const overpassQuery = `[out:json][timeout:30];
 area["name"="東京都"]->.outer;
 area["name"="${input}"]->.inner;
 (
