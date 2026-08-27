@@ -1,0 +1,74 @@
+# TRIDENT 本体 (Next.js)。
+#
+# Knative Service にしているのは、pi5 の Caddy が *.yuiseki.dev を Kourier へ
+# 流しているため。これに乗せると Caddyfile を触らずに
+# https://trident.yuiseki.dev が生える。
+#
+# ただし scale-to-zero はしない (min-scale: 1)。Next.js のコールドスタートに
+# 加えて、この app は 4 本の llama-server へ接続を張り直すことになるので、
+# 落とすと最初の一問がひどく遅くなる。
+#
+# NEXT_PUBLIC_* はここに書いても効かない。クライアントバンドルに焼き込まれる
+# ので Dockerfile.production の build arg で渡している。
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: trident
+  namespace: trident
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/min-scale: "1"
+        autoscaling.knative.dev/max-scale: "1"
+    spec:
+      containerConcurrency: 4
+      timeoutSeconds: 300
+      containers:
+        - image: 192.168.0.90:5000/trident:0.1.1-pi
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 3000
+          env:
+            - name: USE_POSTGRES
+              value: "1"
+            - name: USE_LLAMA_CPP
+              value: "1"
+            - name: USE_OPENAI_API
+              value: "0"
+            # deep は v4.2 のファインチューン済み 0.5B なので、few-shot ではなく
+            # 学習時のプロンプトを使う。few-shot の hints 表は
+            # "X shops = amenity + cuisine=X" を教えるので、Cafes に対して
+            # restaurant + cuisine=cafe を返し Overpass が空になる。
+            - name: TRIDENT_DEEP_PROMPT_STYLE
+              value: "finetuned"
+            - name: NODE_OPTIONS
+              value: "--experimental-wasm-modules"
+            # docker-compose.yml と同じ役割分担。ここでは k8s の Service 名で引く
+            - name: LLAMA_CPP_INNER_BASE_URL
+              value: "http://llama-inner.trident.svc.cluster.local:18091/v1"
+            - name: LLAMA_CPP_SURFACE_BASE_URL
+              value: "http://llama-surface.trident.svc.cluster.local:18092/v1"
+            - name: LLAMA_CPP_DEEP_BASE_URL
+              value: "http://llama-deep.trident.svc.cluster.local:18093/v1"
+            - name: LLAMA_CPP_EMBEDDING_BASE_URL
+              value: "http://llama-embedding.trident.svc.cluster.local:18094/v1"
+            # クラスタ内の pgvector。compose と同じ資格情報
+            - name: POSTGRES_URL
+              value: "postgres://default:password@trident-db.trident.svc.cluster.local:5432/verceldb"
+            - name: POSTGRES_URL_NON_POOLING
+              value: "postgres://default:password@trident-db.trident.svc.cluster.local:5432/verceldb"
+            - name: POSTGRES_USER
+              value: "default"
+            - name: POSTGRES_PASSWORD
+              value: "password"
+            - name: POSTGRES_DATABASE
+              value: "verceldb"
+            - name: POSTGRES_HOST
+              value: "trident-db.trident.svc.cluster.local"
+          resources:
+            requests:
+              cpu: "200m"
+              memory: "512Mi"
+            limits:
+              memory: "2Gi"

@@ -1,0 +1,103 @@
+# deep 層だけを GPU に載せる llama-server 1 本。母艦 (yuisekin-z) 用。
+#
+# k8s/pi/20-llama.yaml が 3 層 + embedding を 4 本まとめて Pi に載せるのに対し、
+# こちらは deep 層だけを切り出す。母艦では surface / inner / embedding は
+# 既に別用途で常駐している llama-server と embedding-server を使い回すので、
+# 足りないのは deep だけだった。
+#
+# 設計の理由:
+#   - namespace は default。母艦の GPU 常駐サービス (embedding-server,
+#     whisper-server) が default にいるので、その隣に置く。
+#     trident namespace は Pi 側の一式が使っている
+#   - image は公式の :server-cuda。ホストでビルドしたバイナリを hostPath で
+#     持ち込むと libgomp / libcudart / OPENSSL の依存を延々追うことになる
+#   - runtimeClassName: nvidia が必須。これが無いと NVIDIA コンテナランタイムが
+#     使われず libcuda.so.1 が注入されず CrashLoopBackOff になる
+#   - NVIDIA_VISIBLE_DEVICES: "1" で GPU 1 に固定。GPU 0 はデスクトップの
+#     X11 が乗っていて空きが少ない。実測で GPU 1 の使用は 636 MiB
+#     (重み 374 MiB + KV 約 96 MiB + 計算バッファ)
+#   - Service にも app ラベルを付ける。Deployment だけに付けると
+#     `kubectl delete svc -l app=...` が空振りして孤児 Service が残る
+#   - モデルは -hf でダウンロードせず hostPath から読む。母艦には
+#     /home/yuiseki/Workspaces/models が既にあり、embedding-server も
+#     同じディレクトリを見ている
+#
+# 使う側は TRIDENT_DEEP_PROMPT_STYLE=finetuned と
+# LLAMA_CPP_DEEP_BASE_URL=http://127.0.0.1:30193/v1 を設定する。
+# fine-tune 済みモデルは学習時の prompt を前提にしているので、
+# 既定の few-shot prompt のままだと Cafes を restaurant + cuisine=cafe と答える。
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: trident-deep
+  namespace: default
+  labels:
+    app: trident-deep
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: trident-deep
+  template:
+    metadata:
+      labels:
+        app: trident-deep
+    spec:
+      runtimeClassName: nvidia
+      volumes:
+        - name: model-files
+          hostPath:
+            path: /home/yuiseki/Workspaces/models
+            type: Directory
+      containers:
+        - name: llama-server
+          image: ghcr.io/ggml-org/llama.cpp:server-cuda
+          args:
+            - "-m"
+            - "/models/qwen2.5-coder-0.5b-trident-deep-v4.2-Q4_K_M.gguf"
+            - "--alias"
+            - "trident-deep"
+            - "-ngl"
+            - "999"
+            - "-c"
+            - "8192"
+            - "--temp"
+            - "0"
+            - "--host"
+            - "0.0.0.0"
+            - "--port"
+            - "8080"
+          env:
+            - name: NVIDIA_VISIBLE_DEVICES
+              value: "1"
+            - name: NVIDIA_DRIVER_CAPABILITIES
+              value: "compute,utility"
+          volumeMounts:
+            - name: model-files
+              mountPath: /models
+              readOnly: true
+          ports:
+            - containerPort: 8080
+          readinessProbe:
+            httpGet:
+              path: /v1/models
+              port: 8080
+            initialDelaySeconds: 10
+            periodSeconds: 5
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: trident-deep
+  namespace: default
+  labels:
+    app: trident-deep
+spec:
+  type: NodePort
+  selector:
+    app: trident-deep
+  ports:
+    - port: 8080
+      targetPort: 8080
+      nodePort: 30193

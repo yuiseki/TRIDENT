@@ -1,4 +1,3 @@
-import { ChatOllama } from "@langchain/ollama";
 import { ChatOpenAI } from "@langchain/openai";
 
 export type TridentRole = "inner" | "surface" | "deep";
@@ -9,10 +8,10 @@ const LLAMA_CPP_DEFAULT_PORTS: Record<TridentRole, number> = {
   deep: 18093,
 };
 
-// Mutual exclusion of USE_OPENAI_API / USE_LLAMA_CPP / USE_OLLAMA is enforced
-// at boot by assertInferenceBackend(). USE_OPENAI_API=1 falls through to the
-// final OpenAI branch (same as the no-flag default), so it doesn't need a
-// dedicated case here.
+// Mutual exclusion of USE_OPENAI_API / USE_LLAMA_CPP is enforced at boot by
+// assertInferenceBackend(). USE_OPENAI_API=1 falls through to the final OpenAI
+// branch (same as the no-flag default), so it doesn't need a dedicated case
+// here.
 export const getChatModel = (role?: TridentRole) => {
   if (process.env.USE_LLAMA_CPP === "1") {
     const port = role
@@ -31,22 +30,6 @@ export const getChatModel = (role?: TridentRole) => {
       configuration: { baseURL },
       model,
       apiKey: process.env.LLAMA_CPP_API_KEY ?? "dummy",
-      temperature: 0,
-    });
-  } else if (process.env.USE_OLLAMA === "1") {
-    const model =
-      process.env.OLLAMA_CHAT_MODEL !== undefined
-        ? process.env.OLLAMA_CHAT_MODEL
-        : "qwen3:8b";
-    const baseUrl =
-      process.env.OLLAMA_BASE_URL !== undefined
-        ? process.env.OLLAMA_BASE_URL
-        : "http://ollama:11434";
-    console.log("Using Ollama model:", model);
-    console.log("Ollama base URL:", baseUrl);
-    return new ChatOllama({
-      model: model,
-      baseUrl: baseUrl,
       temperature: 0,
     });
   } else if (process.env.CLOUDFLARE_AI_GATEWAY) {

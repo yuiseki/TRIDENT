@@ -25,7 +25,6 @@ npm test
 
 Stop with `make stop_llama_cpp`. Set `USE_LLAMA_CPP=1` in `.env.development`.
 
-To use the legacy Ollama backend instead, run `make setup_ollama` and set `USE_OLLAMA=1`.
 
 ### Docker Compose
 

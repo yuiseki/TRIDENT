@@ -19,9 +19,10 @@ docker compose up
    - URL: http://localhost:3000
    - 正常に起動すると、TRIDENTのウェブインターフェースが表示されます
 
-2. Ollama サービス
-   - ポート: 1143 (コンテナ内部では11434)
-   - 必要なモデル（qwen2.5:1.5b、snowflake-arctic-embed:22m）が自動的にダウンロードされます
+2. llama-server サービス
+   - TRIDENT の役割ごとに1つずつ起動します
+     (inner 18091 / surface 18092 / deep 18093 / embedding 18094)
+   - 必要なモデルは `model-downloader` サービスが自動的にダウンロードします
 
 3. PostgreSQL データベース
    - ポート: 5433 (コンテナ内部では5432)
@@ -43,12 +44,12 @@ docker compose logs
 
 # 特定のサービスのログを表示
 docker compose logs nextjs
-docker compose logs ollama
+docker compose logs llama-inner
 docker compose logs db
 ```
 
 3. よくある問題と解決方法
-- Ollamaモデルのダウンロードに時間がかかる場合は、`docker compose logs ollama`で進行状況を確認できます
+- モデルのダウンロードに時間がかかる場合は、`docker compose logs model-downloader`で進行状況を確認できます
 - データベース接続エラーの場合は、`docker compose logs db`でPostgreSQLの起動状態を確認してください
 - ポートが既に使用されている場合は、`docker compose down`を実行してから再度起動してください
 

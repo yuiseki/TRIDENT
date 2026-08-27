@@ -26,8 +26,8 @@ export const getPGVectorStore = async (
       tableName: tableName,
       columns: {
         idColumnName: "id",
-        vectorColumnName: "vector",
-        contentColumnName: "content",
+        vectorColumnName: "embedding",
+        contentColumnName: "text",
         metadataColumnName: "metadata",
       },
       // supported distance strategies: cosine (default), innerProduct, or euclidean

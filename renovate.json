@@ -35,7 +35,6 @@
         "@langchain/community",
         "@langchain/core",
         "@langchain/openai",
-        "@langchain/ollama",
         "@langchain/{/,}**"
       ]
     },

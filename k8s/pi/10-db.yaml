@@ -1,0 +1,77 @@
+# pgvector。docker-compose.yml の db サービスと同じ資格情報にしてある
+# (POSTGRES_DB=verceldb / USER=default / PASSWORD=password)。
+# ここはローカル開発と同じ前提を崩さないことを優先した。外から到達できる
+# サービスではなく、namespace 内の ClusterIP でしか公開していない。
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: trident-db
+  namespace: trident
+spec:
+  accessModes: ["ReadWriteOnce"]
+  storageClassName: local-path
+  resources:
+    requests:
+      storage: 5Gi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: trident-db
+  namespace: trident
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: trident-db
+  template:
+    metadata:
+      labels:
+        app: trident-db
+    spec:
+      containers:
+        - name: postgres
+          image: pgvector/pgvector:pg17
+          env:
+            - name: POSTGRES_DB
+              value: verceldb
+            - name: POSTGRES_USER
+              value: default
+            - name: POSTGRES_PASSWORD
+              value: password
+            - name: PGDATA
+              value: /var/lib/postgresql/data/pgdata
+          ports:
+            - containerPort: 5432
+          volumeMounts:
+            - name: data
+              mountPath: /var/lib/postgresql/data
+          readinessProbe:
+            exec:
+              command: ["pg_isready", "-h", "localhost", "-U", "default", "-d", "verceldb"]
+            initialDelaySeconds: 10
+            periodSeconds: 10
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "256Mi"
+            limits:
+              memory: "1Gi"
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: trident-db
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: trident-db
+  namespace: trident
+spec:
+  selector:
+    app: trident-db
+  ports:
+    - port: 5432
+      targetPort: 5432

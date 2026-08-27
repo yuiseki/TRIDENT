@@ -19,9 +19,10 @@ The following services should be running:
    - URL: http://localhost:3000
    - When running correctly, you should see the TRIDENT web interface
 
-2. Ollama Service
-   - Port: 1143 (mapped to 11434 inside container)
-   - Required models (qwen2.5:1.5b and snowflake-arctic-embed:22m) will be downloaded automatically
+2. llama-server Services
+   - One server per TRIDENT role
+     (inner 18091 / surface 18092 / deep 18093 / embedding 18094)
+   - Models are downloaded automatically by the `model-downloader` service
 
 3. PostgreSQL Database
    - Port: 5433 (mapped to 5432 inside container)
@@ -43,12 +44,12 @@ docker compose logs
 
 # View specific service logs
 docker compose logs nextjs
-docker compose logs ollama
+docker compose logs llama-inner
 docker compose logs db
 ```
 
 3. Common Issues and Solutions
-- If Ollama model downloads are taking time, check progress with `docker compose logs ollama`
+- If model downloads are taking time, check progress with `docker compose logs model-downloader`
 - For database connection issues, verify PostgreSQL is healthy with `docker compose logs db`
 - If ports are already in use, run `docker compose down` before starting again
 

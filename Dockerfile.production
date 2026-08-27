@@ -1,0 +1,39 @@
+FROM node:24-bookworm-slim AS build
+
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    python3 \
+    python3-pip \
+    python3-dev \
+    python3-setuptools \
+    python3-wheel \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+COPY . /app
+
+RUN npm ci
+
+# NEXT_PUBLIC_* はクライアントバンドルに焼き込まれるので、実行時の env では
+# 変えられない。デプロイ先ごとに向き先が変わるため build arg で受ける。
+# .dockerignore が .env を除外している (実際の秘密が入るため) ので、
+# ファイル経由ではなくここが唯一の入口。未指定ならコード側の既定値
+# (nominatim.openstreetmap.org / z.overpass-api.de) が使われる。
+ARG NEXT_PUBLIC_NOMINATIM_BASE_URL
+ARG NEXT_PUBLIC_OVERPASS_BASE_URL
+ENV NEXT_PUBLIC_NOMINATIM_BASE_URL=${NEXT_PUBLIC_NOMINATIM_BASE_URL}
+ENV NEXT_PUBLIC_OVERPASS_BASE_URL=${NEXT_PUBLIC_OVERPASS_BASE_URL}
+
+RUN NODE_OPTIONS=--experimental-wasm-modules npm run build
+
+FROM node:24-bookworm-slim
+
+RUN apt-get update && apt-get install -y openssl && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+COPY --from=build /app /app
+
+EXPOSE 3000
+ENV NODE_OPTIONS=--experimental-wasm-modules
+
+CMD ["npm", "run", "start"]
