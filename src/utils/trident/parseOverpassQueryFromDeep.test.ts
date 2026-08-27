@@ -41,6 +41,23 @@ describe("parseOverpassQueryFromDeep", () => {
     );
   });
 
+  it("drops prose that precedes an unfenced query", () => {
+    // The fine-tuned model returns no fence, so a one-line preamble leaves the
+    // prose glued to the query and Overpass fails to parse it.
+    expect(
+      parseOverpassQueryFromDeep("Sure! Here is the query:\n" + BARE)
+    ).toBe(BARE);
+  });
+
+  it("keeps comment lines that sit inside a fence", () => {
+    // The model sometimes explains a tag choice above the settings block.
+    // Overpass accepts those comments, so do not cut them off.
+    const commented = "// Hotel is not an amenity.\n" + BARE;
+    expect(parseOverpassQueryFromDeep("```\n" + commented + "\n```")).toBe(
+      commented
+    );
+  });
+
   it("returns null when there is no query at all", () => {
     expect(parseOverpassQueryFromDeep("No valid query for this input.")).toBeNull();
     expect(parseOverpassQueryFromDeep("")).toBeNull();

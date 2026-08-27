@@ -73,8 +73,12 @@ export const parseInnerResJson = (innerResJson: {
       continue;
     }
     if (key === "Area" || key === "AreaWithConcern") {
-      // The deep layer is fed the raw line, so keep it exactly as written.
-      linesWithAreaAndOrConcern.push(line);
+      // These lines are handed straight to the deep layer, whose fine-tuned
+      // model is the most sensitive thing here to the shape of its input: its
+      // training data always wrote "AreaWithConcern: ...". Passing on what the
+      // inner model actually typed would forward the very colon it drops, so
+      // normalise instead of preserving.
+      linesWithAreaAndOrConcern.push(`${key}: ${value}`);
       continue;
     }
 

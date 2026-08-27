@@ -36,8 +36,10 @@ describe("parseInnerResJson", () => {
     expect(r.styles).toEqual({
       Hotels: { emoji: "🏨", color: "lightblue" },
     });
+    // The deep layer is prompt-sensitive and its training data always had the
+    // colon, so hand it the normalised form rather than what the model wrote.
     expect(r.linesWithAreaAndOrConcern).toEqual([
-      "AreaWithConcern Shinjuku, Tokyo, Hotels",
+      "AreaWithConcern: Shinjuku, Tokyo, Hotels",
     ]);
   });
 
@@ -74,6 +76,16 @@ describe("parseInnerResJson", () => {
     expect(() =>
       parseInnerResJson(inner(["EmojiForConcern:", "ColorForConcern"]))
     ).not.toThrow();
+  });
+
+  it("normalises the spacing of area lines it passes on", () => {
+    const r = parseInnerResJson(
+      inner(["  AreaWithConcern :   Taito, Tokyo, Cafes  ", "Area  Taito, Tokyo"])
+    );
+    expect(r.linesWithAreaAndOrConcern).toEqual([
+      "AreaWithConcern: Taito, Tokyo, Cafes",
+      "Area: Taito, Tokyo",
+    ]);
   });
 
   it("returns empty results for empty input", () => {

@@ -5,18 +5,28 @@
 
 const FENCE = /```[^\n]*\n([\s\S]*?)(?:\n```|$)/;
 
+// A query always opens with the settings block, so that is where it starts.
+const SETTINGS = "[out:";
+
 export const parseOverpassQueryFromDeep = (
   deepText: string | undefined | null
 ): string | null => {
   if (!deepText) return null;
 
   const fenced = deepText.match(FENCE);
-  const query = (fenced ? fenced[1] : deepText).trim();
-  if (!query) return null;
+  if (fenced) {
+    // Inside a fence, everything is meant to be the query. Comment lines above
+    // the settings block are valid Overpass QL, so keep them.
+    const query = fenced[1].trim();
+    return query.includes(SETTINGS) ? query : null;
+  }
 
-  // A query always opens with the settings block. Anything else is the model
-  // declining or chatting, and there is nothing to send to Overpass.
-  if (!query.includes("[out:")) return null;
+  // Unfenced, the model may put a sentence in front of the query. Anything
+  // before the settings block is prose, and sending it on gives Overpass a
+  // parse error.
+  const start = deepText.indexOf(SETTINGS);
+  if (start === -1) return null;
 
-  return query;
+  const query = deepText.slice(start).trim();
+  return query || null;
 };
