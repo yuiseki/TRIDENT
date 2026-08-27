@@ -1,5 +1,8 @@
 import { SemanticSimilarityExampleSelector } from "@langchain/core/example_selectors";
-import { FewShotPromptTemplate } from "@langchain/core/prompts";
+import {
+  ChatPromptTemplate,
+  FewShotPromptTemplate,
+} from "@langchain/core/prompts";
 import { VectorStore } from "@langchain/core/vectorstores";
 import { tridentInnerExamplePrompt } from "./examples";
 
@@ -74,6 +77,51 @@ You will always reply according to the following rules:
  * default stays at five. The knob exists to ask the question again after
  * fine-tuning, when a model that has learnt the format may not need them.
  */
+/**
+ * The prompt the fine-tuned inner model was trained against.
+ *
+ * Duplicated verbatim in text2geoql-dataset's
+ * examples/lora_finetune/dataset.py as INNER_SYSTEM_PROMPT. The two must not
+ * drift. The deep layer taught this the expensive way: a fine-tuned model
+ * asked in words it was never trained on answers worse than the base model,
+ * and the failure looks like a bad fine-tune rather than a mismatched prompt.
+ *
+ * Two rules are stated here rather than left to examples, because both were
+ * measured as failures of the base model: four-level areas coming back as two,
+ * and Japanese input answered in Korean or Chinese.
+ */
+export const TRIDENT_INNER_FINETUNED_SYSTEM_PROMPT =
+  "You turn a human's request for a map into TRIDENT's intermediate language. " +
+  "Reply with exactly these six lines and nothing else:\n" +
+  "ConfirmHelpful: a short confirmation, in the same language the human wrote in\n" +
+  "TitleOfMap: a title for the map\n" +
+  "Area: the administrative area, smallest first, then each larger area " +
+  "containing it, separated by commas\n" +
+  "AreaWithConcern: the same area, then the thing being looked for\n" +
+  "EmojiForConcern: the thing being looked for, then one emoji\n" +
+  "ColorForConcern: the thing being looked for, then one colour name\n" +
+  "Keep every level of the area the human named. Do not shorten " +
+  '"Chuo Ward, Niigata, Niigata Prefecture, Japan" to "Chuo, Niigata".';
+
+export type TridentInnerPromptStyle = "fewshot" | "finetuned";
+
+/**
+ * Which inner prompt to build. Few-shot unless explicitly asked otherwise, so
+ * an unset or misspelled variable keeps the behaviour that works with a base
+ * model rather than silently stripping the examples it depends on.
+ */
+export const resolveTridentInnerPromptStyle = (
+  env: Record<string, string | undefined>
+): TridentInnerPromptStyle =>
+  env.TRIDENT_INNER_PROMPT_STYLE === "finetuned" ? "finetuned" : "fewshot";
+
+/** The fine-tuned prompt: the system line and the human's words, nothing else. */
+export const loadTridentInnerFinetunedPrompt = () =>
+  ChatPromptTemplate.fromMessages([
+    ["system", TRIDENT_INNER_FINETUNED_SYSTEM_PROMPT],
+    ["human", "{input}"],
+  ]);
+
 export const resolveInnerExampleCount = (
   env: Record<string, string | undefined>
 ): number => {
