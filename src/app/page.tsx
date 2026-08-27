@@ -25,6 +25,7 @@ import { MapStyleSelector } from "@/components/MapStyleSelector";
 import { fitBoundsToGeoJson } from "@/lib/maplibre/fitBoundsToGeoJson";
 import { parseInnerResJson } from "@/utils/trident/parseInnerResJson";
 import { parseOverpassQueryFromDeep } from "@/utils/trident/parseOverpassQueryFromDeep";
+import { matchStyleForLine } from "@/utils/trident/matchStyleForLine";
 import { LegalNotice } from "@/components/LegalNotice";
 import { InputSuggest } from "@/components/InputSuggest";
 import { InputPredict } from "@/components/InputPredict";
@@ -185,12 +186,7 @@ export default function Home() {
     // invoke deep layer by each item of linesWithAreaAndOrConcern
     const promises = linesWithAreaAndOrConcern.map(
       async (line: string, idx: number) => {
-        let style = {};
-        Object.keys(styles).map((concern) => {
-          if (line.includes(concern)) {
-            style = styles[concern];
-          }
-        });
+        const style = matchStyleForLine(line, styles) ?? {};
         setMapping(true);
         const deepResJson = await nextPostJsonWithCache("/api/ai/deep", {
           query: line,
