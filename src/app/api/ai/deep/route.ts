@@ -10,7 +10,16 @@ import {
 import { getChatModel } from "@/utils/trident/getChatModel";
 import { getEmbeddingModel } from "@/utils/trident/getEmbeddingModel";
 import { getPGVectorStore } from "@/utils/trident/getPGVectorStore";
-import { buildAreaBoundaryQuery } from "@/utils/trident/buildAreaBoundaryQuery";
+import {
+  areaLineTarget,
+  buildAreaBoundaryQuery,
+  buildGroundedAreaBoundaryQuery,
+} from "@/utils/trident/buildAreaBoundaryQuery";
+import { groundAreaFilters } from "@/utils/trident/groundAreaFilters";
+import {
+  OVERPASS_AREA_ID_OFFSET,
+  resolveAreaId,
+} from "@/lib/osm/resolveAreaRelationId";
 import { resolveTridentDeepPromptStyle } from "@/utils/langchain/chains/loadTridentDeepChain/prompt";
 
 const deepTableName = "trident_deep_example_openai";
@@ -86,8 +95,18 @@ export async function POST(request: Request) {
   if (resolveTridentDeepPromptStyle(process.env) === "finetuned") {
     const boundaryQuery = buildAreaBoundaryQuery(query ?? "");
     if (boundaryQuery) {
-      console.log("Deep: area line handled without the model:", query);
-      return NextResponse.json({ query, deep: boundaryQuery });
+      // Prefer the relation the geocoder names. Matching on name:en alone
+      // returns every boundary sharing the name.
+      const target = areaLineTarget(query ?? "");
+      const areaId = target ? await resolveAreaId(target) : null;
+      const deep =
+        areaId === null
+          ? boundaryQuery
+          : buildGroundedAreaBoundaryQuery(areaId - OVERPASS_AREA_ID_OFFSET);
+      console.log("Deep: area line handled without the model:", query, {
+        grounded: areaId !== null,
+      });
+      return NextResponse.json({ query, deep });
     }
   }
 
@@ -108,9 +127,19 @@ export async function POST(request: Request) {
     console.log("----- end deep -----");
     console.log("----- ----- -----");
 
+    // The model writes area filters by name, and a name is not one place:
+    // `area["name:en"="Hiroshima"]` unions the city, an island and a quarter
+    // in Tokushima. Ask the geocoder which relation the name means and filter
+    // by its id. A name it cannot place keeps the filter the model wrote.
+    const { query: groundedQuery, grounded, unresolved } =
+      await groundAreaFilters(result.text, resolveAreaId);
+    if (grounded.length > 0 || unresolved.length > 0) {
+      console.log("Deep areas grounded:", grounded, "unresolved:", unresolved);
+    }
+
     return NextResponse.json({
       query: query,
-      deep: result.text,
+      deep: groundedQuery,
     });
   } catch (error: any) {
     console.error("Error in deep route:", error);

@@ -42,3 +42,19 @@ export const buildAreaBoundaryQuery = (line: string): string | null => {
   lines.push("out geom;");
   return lines.join("\n");
 };
+
+/** The innermost place named by an area line, or null when it is not one. */
+export const areaLineTarget = (line: string): string | null => {
+  const matched = line.match(AREA_LINE);
+  if (!matched || /^\s*AreaWithConcern/.test(line)) return null;
+  const first = matched[1].split(",")[0]?.trim();
+  return first || null;
+};
+
+/**
+ * The same boundary, addressed by relation id rather than by name.
+ * Preferred whenever the geocoder can place the name, since a name matches
+ * more than one boundary.
+ */
+export const buildGroundedAreaBoundaryQuery = (relationId: number): string =>
+  ["[out:json][timeout:30];", `relation(${relationId});`, "out geom;"].join("\n");

@@ -1,4 +1,8 @@
-import { buildAreaBoundaryQuery } from "./buildAreaBoundaryQuery";
+import {
+  areaLineTarget,
+  buildAreaBoundaryQuery,
+  buildGroundedAreaBoundaryQuery,
+} from "./buildAreaBoundaryQuery";
 
 describe("buildAreaBoundaryQuery", () => {
   it("builds a country boundary from a single name", () => {
@@ -49,5 +53,27 @@ describe("buildAreaBoundaryQuery", () => {
   it("escapes quotes so a name cannot break out of the filter", () => {
     const query = buildAreaBoundaryQuery('Area: He said "hi"');
     expect(query).toContain('\\"hi\\"');
+  });
+});
+
+describe("areaLineTarget", () => {
+  it("returns the innermost place", () => {
+    expect(areaLineTarget("Area: Taito, Tokyo")).toBe("Taito");
+    expect(areaLineTarget("Area Taito, Tokyo")).toBe("Taito");
+    expect(areaLineTarget("Area: Japan")).toBe("Japan");
+  });
+
+  it("declines anything that is not a bare area line", () => {
+    expect(areaLineTarget("AreaWithConcern: Taito, Tokyo, Cafes")).toBeNull();
+    expect(areaLineTarget("TitleOfMap: Taito")).toBeNull();
+    expect(areaLineTarget("Area:")).toBeNull();
+  });
+});
+
+describe("buildGroundedAreaBoundaryQuery", () => {
+  it("addresses the boundary by relation id", () => {
+    expect(buildGroundedAreaBoundaryQuery(1758888)).toBe(
+      ["[out:json][timeout:30];", "relation(1758888);", "out geom;"].join("\n")
+    );
   });
 });
