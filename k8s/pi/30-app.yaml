@@ -36,8 +36,12 @@ spec:
               value: "1"
             - name: USE_OPENAI_API
               value: "0"
-            - name: USE_OLLAMA
-              value: "0"
+            # deep は v4.2 のファインチューン済み 0.5B なので、few-shot ではなく
+            # 学習時のプロンプトを使う。few-shot の hints 表は
+            # "X shops = amenity + cuisine=X" を教えるので、Cafes に対して
+            # restaurant + cuisine=cafe を返し Overpass が空になる。
+            - name: TRIDENT_DEEP_PROMPT_STYLE
+              value: "finetuned"
             - name: NODE_OPTIONS
               value: "--experimental-wasm-modules"
             # docker-compose.yml と同じ役割分担。ここでは k8s の Service 名で引く
