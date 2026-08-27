@@ -64,9 +64,14 @@ export default function Home() {
   const [bounds, setBounds] = useState<LngLatBoundsLike | undefined>(undefined);
 
   // base maps style state
+  // Which self-hosted stack serves the map depends on where this is deployed:
+  // z.yuiseki.net for the workstation, yuiseki.dev for the pi cluster. Both are
+  // ours, and pointing at the wrong one is the last call outside the box, so
+  // take it from the build the same way the Nominatim and Overpass URLs are.
   const [mapStyleJsonUrl, setMapStyleJsonUrl] = useLocalStorage<string>(
     "trident-selected-map-style-json-url",
-    "https://z.yuiseki.net/static/maps/styles/osm-fiord.json"
+    process.env.NEXT_PUBLIC_MAP_STYLE_URL ||
+      "https://z.yuiseki.net/static/maps/styles/osm-fiord.json"
   );
 
   // auto rotate state

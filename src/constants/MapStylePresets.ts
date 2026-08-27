@@ -4,6 +4,7 @@
 
 export type MapStylePresetId =
   | "z-fiord"
+  | "pi-fiord"
   | "fiord-color"
   | "dark-matter"
   | "osm-jp-bright"
@@ -27,6 +28,15 @@ export const MAP_STYLE_PRESETS: readonly MapStylePreset[] = [
     url: "https://z.yuiseki.net/static/maps/styles/osm-fiord.json",
     label: "🌍 z Fiord color (self-hosted)",
     description: "Fiord color served entirely from z.yuiseki.net, including glyphs and sprites",
+  },
+  {
+    // The pi cluster's equivalent of z-fiord. pi5-w-1's Caddy serves the style,
+    // its glyphs, its sprites and planet.pmtiles, so a deployment on the pi
+    // reaches nothing outside itself.
+    id: "pi-fiord",
+    url: "https://yuiseki.dev/static/styles/osm-fiord.json",
+    label: "🌍 pi Fiord color (self-hosted)",
+    description: "Fiord color served entirely from yuiseki.dev, including glyphs and sprites",
   },
   {
     id: "fiord-color",
