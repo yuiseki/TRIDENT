@@ -22,6 +22,12 @@ spec:
         autoscaling.knative.dev/min-scale: "1"
         autoscaling.knative.dev/max-scale: "1"
     spec:
+      # イメージが 2.1GB あり、AP 経由の取得に数分かかる。ノードを固定しないと
+      # 設定を変えるたびに別ノードへ配置されて引き直しになる (実際 00002 が
+      # pi4-s-1、00003 が pi4-r-3 に行った)。pi4-r-1 は 8GB で、
+      # llama-inner と llama-deep も載っているノード。
+      nodeSelector:
+        kubernetes.io/hostname: pi4-r-1
       containerConcurrency: 4
       timeoutSeconds: 300
       containers:
