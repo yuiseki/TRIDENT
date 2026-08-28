@@ -16,6 +16,8 @@ import {
   buildGroundedAreaBoundaryQuery,
 } from "@/utils/trident/buildAreaBoundaryQuery";
 import { groundAreaFilters } from "@/utils/trident/groundAreaFilters";
+import { narrowToContainingAreas } from "@/utils/trident/narrowToContainingAreas";
+import { fetchAreaAncestors } from "@/lib/osm/areaAncestors";
 import {
   OVERPASS_AREA_ID_OFFSET,
   resolveAreaId,
@@ -135,7 +137,7 @@ export async function POST(request: Request) {
     // `area["name:en"="Hiroshima"]` unions the city, an island and a quarter
     // in Tokushima. Ask the geocoder which relation the name means and filter
     // by its id. A name it cannot place keeps the filter the model wrote.
-    const { query: groundedQuery, grounded, unresolved } =
+    const { query: groundedQuery, grounded, unresolved, chainAreaIds } =
       await groundAreaFilters(
         result.text,
         resolveAreaId,
@@ -145,9 +147,22 @@ export async function POST(request: Request) {
       console.log("Deep areas grounded:", grounded, "unresolved:", unresolved);
     }
 
+    // An area chain becomes an intersection, so an outer area that does not
+    // contain the inner one empties the result. The inner layer invents a
+    // parent for places it does not know — "Matsuyama City, Tokyo, Japan" —
+    // and both names resolve, so nothing before this point notices.
+    const { query: narrowedQuery, narrowed } = await narrowToContainingAreas(
+      groundedQuery,
+      chainAreaIds.map((id) => id - OVERPASS_AREA_ID_OFFSET),
+      fetchAreaAncestors
+    );
+    if (narrowed.length > 0) {
+      console.log("Deep areas narrowed, outer did not contain inner:", narrowed);
+    }
+
     return NextResponse.json({
       query: query,
-      deep: groundedQuery,
+      deep: narrowedQuery,
     });
   } catch (error: any) {
     console.error("Error in deep route:", error);

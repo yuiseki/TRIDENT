@@ -29,16 +29,24 @@ export const groundAreaFilters = async (
   // resolved with the areas around it, which is what lets the geocoder tell
   // 広島市 from the railway station of the same name.
   chain: string[] = []
-): Promise<{ query: string; grounded: string[]; unresolved: string[] }> => {
+): Promise<{
+  query: string;
+  grounded: string[];
+  unresolved: string[];
+  // The area ids the chain resolved to, smallest first. The caller needs
+  // these to check that each outer area really contains the inner one.
+  chainAreaIds: number[];
+}> => {
   const grounded: string[] = [];
   const unresolved: string[] = [];
-  if (!query) return { query, grounded, unresolved };
+  const chainAreaIds: number[] = [];
+  if (!query) return { query, grounded, unresolved, chainAreaIds };
 
   const names = Array.from(query.matchAll(AREA_FILTER)).map(
     (match) => match[2]
   );
   const unique = Array.from(new Set(names));
-  if (unique.length === 0) return { query, grounded, unresolved };
+  if (unique.length === 0) return { query, grounded, unresolved, chainAreaIds };
 
   // The model often writes a shorter name than the inner layer gave it:
   // "Hiroshima City" comes back as area["name:en"="Hiroshima"]. Match on the
@@ -70,5 +78,11 @@ export const groundAreaFilters = async (
     return `area(${areaId})`;
   });
 
-  return { query: rewritten, grounded, unresolved };
+  for (const entry of chain) {
+    const areaId =
+      ids.get(entry) ?? ids.get(toAreaSearch(entry).term) ?? null;
+    if (typeof areaId === "number") chainAreaIds.push(areaId);
+  }
+
+  return { query: rewritten, grounded, unresolved, chainAreaIds };
 };
