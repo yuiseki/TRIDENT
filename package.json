@@ -33,7 +33,7 @@
     "@prisma/client": "^6.4.1",
     "@tsparticles/all": "^3.8.1",
     "@tsparticles/engine": "^3.8.1",
-    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/react": "^4.0.0",
     "@tsparticles/shape-image": "^3.8.1",
     "@turf/turf": "^7.1.0",
     "@uiw/codemirror-extensions-color": "^4.23.6",
