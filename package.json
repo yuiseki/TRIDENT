@@ -31,7 +31,7 @@
     "@langchain/core": "^1.0.0",
     "@langchain/openai": "^1.0.0",
     "@prisma/client": "^6.4.1",
-    "@tsparticles/all": "^3.8.1",
+    "@tsparticles/all": "^4.0.0",
     "@tsparticles/engine": "^3.8.1",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/shape-image": "^3.8.1",
