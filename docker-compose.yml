@@ -24,7 +24,7 @@ services:
   # without spending minutes silently fetching weights. tqdm prints progress
   # to docker logs even in non-TTY mode.
   model-downloader:
-    image: python:3.12-slim
+    image: python:3.14-slim
     volumes:
       - llama-cache:/root/.cache/huggingface
     networks:
