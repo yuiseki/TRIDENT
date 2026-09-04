@@ -34,7 +34,7 @@
     "@tsparticles/all": "^3.8.1",
     "@tsparticles/engine": "^3.8.1",
     "@tsparticles/react": "^3.0.0",
-    "@tsparticles/shape-image": "^3.8.1",
+    "@tsparticles/shape-image": "^4.0.0",
     "@turf/turf": "^7.1.0",
     "@uiw/codemirror-extensions-color": "^4.23.6",
     "@uiw/codemirror-theme-vscode": "^4.23.6",
