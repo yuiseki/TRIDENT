@@ -22,8 +22,8 @@
     "site:www3.nhk.or.jp:fetch": "node --loader ts-node/esm ./scripts/www3.nhk.or.jp/fetch.ts"
   },
   "dependencies": {
-    "@auth/core": "^0.41.0",
-    "@auth/prisma-adapter": "^2.7.4",
+    "@auth/core": "^0.41.3",
+    "@auth/prisma-adapter": "^2.11.3",
     "@codemirror/lang-yaml": "^6.1.1",
     "@duckdb/duckdb-wasm": "^1.29.0",
     "@langchain/classic": "^1.0.3",
@@ -45,7 +45,7 @@
     "langchain": "^1.0.4",
     "maplibre-gl": "^5.0.0",
     "next": "15.5.18",
-    "next-auth": "^5.0.0-beta.25",
+    "next-auth": "^5.0.0-beta.32",
     "osmtogeojson": "^3.0.0-beta.5",
     "pg": "^8.13.1",
     "pmtiles": "^4.3.0",
